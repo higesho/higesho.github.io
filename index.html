@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>変愚蛮怒 ボクセル HD2D</title>
+<meta name="description" content="ローグライク『変愚蛮怒』を HD-2D で描く非公式のフロントエンド。Windows 向けの一式を配布しています。">
+<meta property="og:title" content="変愚蛮怒 ボクセル HD2D">
+<meta property="og:description" content="ローグライク『変愚蛮怒』を HD-2D で描く非公式のフロントエンド。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/angwil.jpg">
+<style>
+/* =================================================================
+   松明に照らされた石、という一つの世界に寄せて作ってある。
+   明るい配色は用意していない（この題材では反転が成立しないため）。
+   ================================================================= */
+:root{
+  color-scheme:dark;
+
+  /* 夜の町のキャプチャから拾った、青に寄った石の色 */
+  --ink:#0b0e13;          /* 地 */
+  --stone:#141924;        /* 一段浮かせた面 */
+  --rule:#28313f;         /* 罫 */
+  --rule-soft:#1b222d;
+  --parchment:#e9e4da;    /* 本文。純白ではなく灯りの下の紙 */
+  --dim:#96a0b0;          /* 副文 */
+  --faint:#616b7b;        /* 添え物 */
+  --torch:#e8a24a;        /* 唯一の差し色。松明 */
+  --torch-dim:#9a6b2c;
+
+  --serif:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP","Songti SC",serif;
+  --sans:"Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP","Meiryo",system-ui,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular","Consolas","Menlo",monospace;
+
+  --band:1240px;
+  --prose:680px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{
+  margin:0;background:var(--ink);color:var(--parchment);
+  font-family:var(--sans);font-size:16.5px;line-height:1.95;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+p{margin:0 0 1.35em}
+a{color:var(--torch);text-decoration-thickness:1px;text-underline-offset:4px}
+a:hover{color:#ffbe74}
+:focus-visible{outline:2px solid var(--torch);outline-offset:3px}
+
+.band{max-width:var(--band);margin-inline:auto;padding-inline:clamp(20px,4.5vw,44px)}
+.prose{max-width:var(--prose)}
+
+/* ---------------------------------------------------------------- 冒頭 */
+.hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;overflow:hidden}
+.hero .plate{position:absolute;inset:0;background:url(img/title.jpg) center/cover no-repeat}
+.hero .veil{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(11,14,19,.82) 0%,rgba(11,14,19,.38) 38%,rgba(11,14,19,.97) 100%),
+    radial-gradient(120% 70% at 50% 100%,rgba(232,162,74,.10),transparent 60%);
+}
+.hero .band{position:relative;width:100%;padding-block:96px 60px}
+.hero h1{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(34px,6.4vw,66px);line-height:1.22;letter-spacing:.06em;
+  margin:0 0 20px;text-wrap:balance;
+  text-shadow:0 2px 30px rgba(0,0,0,.9);
+}
+.kicker{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.24em;
+  color:var(--torch);text-transform:uppercase;margin:0 0 18px;
+}
+.hero .sub{
+  max-width:34em;font-size:clamp(15px,1.5vw,17.5px);color:#d3d8e0;
+  margin:0 0 34px;text-shadow:0 1px 14px rgba(0,0,0,.9);
+}
+.hero .sub b{color:#fff;font-weight:600}
+
+.actions{display:flex;flex-wrap:wrap;gap:14px 16px;align-items:center}
+.btn{
+  display:inline-block;padding:14px 28px;font-size:15px;font-weight:600;
+  text-decoration:none;border:1px solid transparent;transition:.16s ease;
+}
+.btn-main{background:var(--torch);color:#150c02;box-shadow:0 8px 34px rgba(232,162,74,.2)}
+.btn-main:hover{background:#ffbc68;color:#150c02;transform:translateY(-1px)}
+.btn-sub{border-color:#4a5464;color:var(--parchment);background:rgba(255,255,255,.04)}
+.btn-sub:hover{border-color:var(--torch);color:#fff;background:rgba(232,162,74,.08)}
+.meta{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.06em}
+
+/* ---------------------------------------------------------------- 節 */
+section{padding-block:88px}
+.head{border-top:1px solid var(--rule);padding-top:18px;margin-bottom:42px}
+.head .kicker{color:var(--torch-dim);margin-bottom:10px}
+.head h2{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(24px,3.4vw,36px);letter-spacing:.07em;margin:0;
+}
+h3{
+  font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--torch-dim);
+  margin:48px 0 14px;text-transform:uppercase;
+}
+
+/* ---------------------------------------------------------------- 図版 */
+.plates{display:grid;gap:44px}
+.pair{display:grid;gap:44px}
+@media(min-width:900px){.pair{grid-template-columns:1fr 1fr;gap:34px}}
+figure{margin:0}
+figure img{
+  width:100%;border:1px solid var(--rule);background:#000;cursor:zoom-in;
+  transition:border-color .18s ease;
+}
+figure img:hover{border-color:var(--torch-dim)}
+figcaption{
+  font-family:var(--mono);font-size:12.5px;line-height:1.85;color:var(--dim);
+  margin-top:12px;padding-left:14px;border-left:1px solid var(--rule);
+}
+figcaption b{
+  display:block;color:var(--parchment);font-weight:600;
+  font-family:var(--sans);font-size:14px;letter-spacing:.05em;margin-bottom:2px;
+}
+.reveal{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s ease}
+.reveal.seen{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------------------------------------------------------------- 表 */
+.scroll-x{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:15px 18px 15px 0;border-bottom:1px solid var(--rule-soft);vertical-align:baseline}
+th{
+  font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--faint);
+  font-weight:400;white-space:nowrap;width:11em;text-transform:uppercase;
+}
+td{color:var(--dim);line-height:1.85}
+td b{color:var(--parchment);font-weight:600}
+code{
+  font-family:var(--mono);font-size:.88em;color:#f0dcbc;
+  background:rgba(232,162,74,.09);padding:2px 6px;
+}
+td code{white-space:nowrap}
+
+/* ---------------------------------------------------------------- 脚 */
+footer{border-top:1px solid var(--rule);padding-block:48px 72px;color:var(--faint);font-size:13.5px;line-height:1.95}
+footer .links{display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:26px;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em}
+footer a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--rule)}
+footer a:hover{color:var(--torch);border-color:var(--torch-dim)}
+footer p{margin:0 0 .9em;max-width:var(--prose)}
+footer b{color:var(--dim)}
+
+/* ---------------------------------------------------------------- 拡大 */
+#lb{position:fixed;inset:0;z-index:60;display:none;background:rgba(5,7,10,.95);
+    align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:92vh;box-shadow:0 24px 80px rgba(0,0,0,.9)}
+</style>
+</head>
+<body>
+
+<!-- ============================================================== 冒頭 -->
+<header class="hero">
+  <div class="plate"></div>
+  <div class="veil"></div>
+  <div class="band">
+    <p class="kicker">Hengband &mdash; voxel HD-2D renderer</p>
+    <h1>変愚蛮怒 ボクセル HD2D</h1>
+    <p class="sub">
+      ローグライク『<b>変愚蛮怒</b>』を <b>HD-2D</b> で描く非公式のフロントエンドです。
+      地形はボクセル、キャラクタはビルボード。ゲーム本体はそのままです。
+    </p>
+    <div class="actions">
+      <a class="btn btn-main" href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">ダウンロード</a>
+      <a class="btn btn-sub" href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
+      <span class="meta">Windows / ZIP 約 174MB / Google ドライブ</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================== 画面 -->
+<section id="shots">
+  <div class="band">
+    <div class="head">
+      <p class="kicker">実機のキャプチャ</p>
+      <h2>画面</h2>
+    </div>
+
+    <div class="plates">
+      <figure class="reveal">
+        <img src="img/ui.jpg" alt="辺境の地の町を歩いているところ。左に能力値、右上に地図、下にメッセージが出ている">
+        <figcaption><b>辺境の地</b>いつもの情報は画面の縁に置いたまま、真ん中を立体の町に明け渡している。</figcaption>
+      </figure>
+
+      <div class="pair">
+        <figure class="reveal">
+          <img src="img/angwil.jpg" alt="森の中の町アングウィル。木々の間に木組みの家と看板が並ぶ">
+          <figcaption><b>アングウィル</b>木は 1 本ずつ形が違い、風で葉が揺れる。</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="img/night.jpg" alt="夜のモリバント。噴水のある広場と、灯りのともった窓">
+          <figcaption><b>モリバントの夜</b>時刻に応じて光が変わり、窓と街灯に火が入る。</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== 動かし方 -->
+<section id="run">
+  <div class="band">
+    <div class="head">
+      <p class="kicker">Windows / ZIP 約 174MB</p>
+      <h2>動かし方</h2>
+    </div>
+
+    <div class="scroll-x">
+      <table>
+        <tbody>
+          <tr><th>対応環境</th><td>Windows 10 / 11。<b>OpenGL 4.6 対応が必要です。</b></td></tr>
+          <tr><th>手順</th><td>ZIP を任意のフォルダへ展開し、その中の <code>HengbandHd2d.exe</code> を実行します。<b>必ずそのフォルダを作業ディレクトリにして起動してください</b>（<code>assets/</code> と <code>lib/</code> を相対で読みます）。</td></tr>
+          <tr><th>ゲームパッド</th><td><b>XInput 対応。</b>Xbox コントローラなどを繋ぐと十字キーで移動、A で決定、B で戻る、Select で機能メニューが開きます。</td></tr>
+          <tr><th>実行中のキー</th><td>F10 = 機能メニュー ／ F9 = 画面の作り ／ F8 = サブパネル ／ Alt + Enter = 全画面と窓の切り替え</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================== 脚 -->
+<footer>
+  <div class="band">
+    <div class="links">
+      <a href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">ダウンロード（Google ドライブ）</a>
+      <a href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
+      <a href="https://github.com/hengband/hengband" target="_blank" rel="noopener">本家 GitHub</a>
+      <a href="https://rephial.org/" target="_blank" rel="noopener">Angband</a>
+    </div>
+    <p>
+      本作は『変愚蛮怒』の<b>非公式</b>のフロントエンドです。本家の開発チームとは関係がありません。
+      ゲーム本体・データ・タイルの著作権はそれぞれの権利者に帰属します。
+      見え方の違いや不具合は本作の描画側の問題であって、本家に報告すべきものではありません。
+    </p>
+    <p>Moria &copy; 1985 Robert Alan Koeneke ／ Umoria &copy; 1989 James E. Wilson ／ Angband・ZAngband・変愚蛮怒 の各作者に感謝します。</p>
+  </div>
+</footer>
+
+<div id="lb" hidden><img alt=""></div>
+
+<script>
+(function(){
+  /* --- 図版の拡大 --- */
+  var lb = document.getElementById('lb');
+  var big = lb.querySelector('img');
+  function open(el){ big.src = el.src; big.alt = el.alt; lb.hidden = false; lb.classList.add('on'); }
+  function close(){ lb.classList.remove('on'); lb.hidden = true; big.removeAttribute('src'); }
+  document.querySelectorAll('figure img').forEach(function(el){
+    el.addEventListener('click', function(){ open(el); });
+  });
+  lb.addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+
+  /* --- 図版のせり上がり --- */
+  var targets = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    targets.forEach(function(el){ el.classList.add('seen'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) { en.target.classList.add('seen'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  targets.forEach(function(el){ io.observe(el); });
+
+  /* 監視が動かない環境でも図版が消えたままにならないようにする */
+  setTimeout(function(){ targets.forEach(function(el){ el.classList.add('seen'); }); }, 3000);
+})();
+</script>
+</body>
+</html>
