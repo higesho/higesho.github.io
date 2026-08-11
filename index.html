@@ -8,7 +8,7 @@
 <meta property="og:title" content="変愚蛮怒 ボクセル HD2D">
 <meta property="og:description" content="ローグライク『変愚蛮怒』を HD-2D で描く非公式のフロントエンド。">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/angwil.jpg">
+<meta property="og:image" content="img/moribant.jpg">
 <style>
 /* =================================================================
    松明に照らされた石、という一つの世界に寄せて作ってある。
@@ -112,13 +112,22 @@ figure img{
 }
 figure img:hover{border-color:var(--torch-dim)}
 figcaption{
-  font-family:var(--mono);font-size:12.5px;line-height:1.85;color:var(--dim);
-  margin-top:12px;padding-left:14px;border-left:1px solid var(--rule);
+  font-size:14px;line-height:1.7;color:var(--parchment);font-weight:600;
+  letter-spacing:.05em;margin-top:12px;padding-left:14px;
+  border-left:1px solid var(--torch-dim);
 }
-figcaption b{
-  display:block;color:var(--parchment);font-weight:600;
-  font-family:var(--sans);font-size:14px;letter-spacing:.05em;margin-bottom:2px;
+/* ---------------------------------------------------------------- 更新 */
+.news{list-style:none;margin:0;padding:0;max-width:var(--prose)}
+.news li{
+  padding:15px 0 15px 26px;border-bottom:1px solid var(--rule-soft);
+  position:relative;color:var(--parchment);
 }
+.news li::before{
+  content:"";position:absolute;left:0;top:calc(.95em + 2px);
+  width:9px;height:1px;background:var(--torch);
+}
+.news li span{color:var(--dim);font-size:14px}
+
 .reveal{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s ease}
 .reveal.seen{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){
@@ -141,6 +150,14 @@ code{
   background:rgba(232,162,74,.09);padding:2px 6px;
 }
 td code{white-space:nowrap}
+
+/* ---------------------------------------------------------------- 解除 */
+.unblock{display:grid;gap:26px;align-items:start}
+@media(min-width:760px){.unblock{grid-template-columns:minmax(0,1fr) 330px;gap:36px}}
+.unblock p{color:var(--dim);font-size:15px;margin:0 0 1em}
+.unblock p:last-child{margin-bottom:0}
+.unblock b{color:var(--parchment);font-weight:600}
+.unblock figure img{border-color:var(--rule-soft)}
 
 /* ---------------------------------------------------------------- 脚 */
 footer{border-top:1px solid var(--rule);padding-block:48px 72px;color:var(--faint);font-size:13.5px;line-height:1.95}
@@ -180,6 +197,22 @@ footer b{color:var(--dim)}
 
 <main>
 
+<!-- ============================================================== 更新 -->
+<section id="news">
+  <div class="band">
+    <div class="head">
+      <p class="kicker">2026-08-11</p>
+      <h2>更新</h2>
+    </div>
+
+    <ul class="news">
+      <li>FPS モード（一人称視点）を実装 <span>&mdash; F7 で見下ろしと切り替え</span></li>
+      <li>キーコンフィグを修正</li>
+      <li>その他バグ修正</li>
+    </ul>
+  </div>
+</section>
+
 <!-- ============================================================== 画面 -->
 <section id="shots">
   <div class="band">
@@ -189,19 +222,25 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="plates">
-      <figure class="reveal">
-        <img src="img/ui.jpg" alt="辺境の地の町を歩いているところ。左に能力値、右上に地図、下にメッセージが出ている">
-        <figcaption><b>辺境の地</b>いつもの情報は画面の縁に置いたまま、真ん中を立体の町に明け渡している。</figcaption>
-      </figure>
+      <div class="pair">
+        <figure class="reveal">
+          <img src="img/henkyo.jpg" alt="辺境の地の町。畑と柵に囲まれた家並みの中にプレイヤーが立っている">
+          <figcaption>辺境の地</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="img/moribant.jpg" alt="モリバントの噴水広場。石畳と木立の中で水柱が上がっている">
+          <figcaption>モリバント</figcaption>
+        </figure>
+      </div>
 
       <div class="pair">
         <figure class="reveal">
-          <img src="img/angwil.jpg" alt="森の中の町アングウィル。木々の間に木組みの家と看板が並ぶ">
-          <figcaption><b>アングウィル</b>木は 1 本ずつ形が違い、風で葉が揺れる。</figcaption>
+          <img src="img/moribantFPS.jpg" alt="モリバントを一人称視点で見たところ。石畳の通りの先に瓦屋根の家並みと城壁が見える">
+          <figcaption>モリバント（一人称）</figcaption>
         </figure>
         <figure class="reveal">
-          <img src="img/night.jpg" alt="夜のモリバント。噴水のある広場と、灯りのともった窓">
-          <figcaption><b>モリバントの夜</b>時刻に応じて光が変わり、窓と街灯に火が入る。</figcaption>
+          <img src="img/dungeon_FPS.jpg" alt="イークの洞穴を一人称視点で見たところ。灯りの届く先に 3 体のモンスターが並んでいる">
+          <figcaption>イークの洞穴（一人称）</figcaption>
         </figure>
       </div>
     </div>
@@ -222,9 +261,20 @@ footer b{color:var(--dim)}
           <tr><th>対応環境</th><td>Windows 10 / 11。<b>OpenGL 4.6 対応が必要です。</b></td></tr>
           <tr><th>手順</th><td>ZIP を任意のフォルダへ展開し、その中の <code>HengbandHd2d.exe</code> を実行します。<b>必ずそのフォルダを作業ディレクトリにして起動してください</b>（<code>assets/</code> と <code>lib/</code> を相対で読みます）。</td></tr>
           <tr><th>ゲームパッド</th><td><b>XInput 対応。</b>Xbox コントローラなどを繋ぐと十字キーで移動、A で決定、B で戻る、Select で機能メニューが開きます。</td></tr>
-          <tr><th>実行中のキー</th><td>F10 = 機能メニュー ／ F9 = 画面の作り ／ F8 = サブパネル ／ Alt + Enter = 全画面と窓の切り替え</td></tr>
+          <tr><th>実行中のキー</th><td>F10 = 機能メニュー ／ F9 = 画面の作り ／ F8 = サブパネル ／ <b>F7 = 一人称の出入り</b> ／ Alt + Enter = 全画面と窓の切り替え</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <h3>最初にブロックを解除する</h3>
+    <div class="unblock">
+      <div>
+        <p>ダウンロードした ZIP を展開しただけでは、Windows が「他のコンピューターから取得したファイル」と見なして実行を止めることがあります。</p>
+        <p><code>HengbandCore.exe</code> と <code>HengbandHd2d.exe</code> を右クリックして「プロパティ」を開き、全般タブのいちばん下にある<b>セキュリティの「許可する」にチェック</b>を入れて OK を押してください。<b>2 つとも必要です。</b></p>
+      </div>
+      <figure class="reveal">
+        <img src="img/propatie.jpg" alt="HengbandCore.exe のプロパティ画面。全般タブの下にあるセキュリティ欄の「許可する」チェックボックスが赤枠で示されている">
+      </figure>
     </div>
   </div>
 </section>
