@@ -84,6 +84,8 @@ a:hover{color:#ffbe74}
 }
 .btn-main{background:var(--torch);color:#150c02;box-shadow:0 8px 34px rgba(232,162,74,.2)}
 .btn-main:hover{background:#ffbc68;color:#150c02;transform:translateY(-1px)}
+.btn-alt{border-color:var(--torch);color:var(--torch);background:rgba(232,162,74,.07)}
+.btn-alt:hover{background:rgba(232,162,74,.16);color:#ffbc68;transform:translateY(-1px)}
 .btn-sub{border-color:#4a5464;color:var(--parchment);background:rgba(255,255,255,.04)}
 .btn-sub:hover{border-color:var(--torch);color:#fff;background:rgba(232,162,74,.08)}
 .meta{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.06em}
@@ -117,6 +119,8 @@ figcaption{
   border-left:1px solid var(--torch-dim);
 }
 /* ---------------------------------------------------------------- 更新 */
+.log{display:grid;gap:38px;max-width:var(--prose)}
+.entry .kicker{color:var(--torch-dim);margin-bottom:6px}
 .news{list-style:none;margin:0;padding:0;max-width:var(--prose)}
 .news li{
   padding:15px 0 15px 26px;border-bottom:1px solid var(--rule-soft);
@@ -188,9 +192,10 @@ footer b{color:var(--dim)}
       地形はボクセル、キャラクタはビルボード。ゲーム本体はそのままです。
     </p>
     <div class="actions">
-      <a class="btn btn-main" href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">ダウンロード</a>
+      <a class="btn btn-main" href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Windows 版をダウンロード</a>
+      <a class="btn btn-alt" href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Android 版をダウンロード</a>
       <a class="btn btn-sub" href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
-      <span class="meta">Windows / ZIP 約 174MB / Google ドライブ</span>
+      <span class="meta">Google ドライブ / Windows は ZIP 約 174MB・Android は APK</span>
     </div>
   </div>
 </header>
@@ -201,15 +206,28 @@ footer b{color:var(--dim)}
 <section id="news">
   <div class="band">
     <div class="head">
-      <p class="kicker">2026-08-11</p>
+      <p class="kicker">お知らせ</p>
       <h2>更新</h2>
     </div>
 
-    <ul class="news">
-      <li>FPS モード（一人称視点）を実装 <span>&mdash; F7 で見下ろしと切り替え</span></li>
-      <li>キーコンフィグを修正</li>
-      <li>その他バグ修正</li>
-    </ul>
+    <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-08-12</p>
+        <ul class="news">
+          <li><b>Android 版をリリース</b> <span>&mdash; Android 13 以降</span></li>
+          <li>FPS モードに雲を実装</li>
+          <li>バグ修正</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="kicker">2026-08-11</p>
+        <ul class="news">
+          <li>FPS モード（一人称視点）を実装 <span>&mdash; F7 で見下ろしと切り替え</span></li>
+          <li>キーコンフィグを修正</li>
+          <li>その他バグ修正</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -251,22 +269,23 @@ footer b{color:var(--dim)}
 <section id="run">
   <div class="band">
     <div class="head">
-      <p class="kicker">Windows / ZIP 約 174MB</p>
+      <p class="kicker">Windows / Android</p>
       <h2>動かし方</h2>
     </div>
 
     <div class="scroll-x">
       <table>
         <tbody>
-          <tr><th>対応環境</th><td>Windows 10 / 11。<b>OpenGL 4.6 対応が必要です。</b></td></tr>
-          <tr><th>手順</th><td>ZIP を任意のフォルダへ展開し、その中の <code>HengbandHd2d.exe</code> を実行します。<b>必ずそのフォルダを作業ディレクトリにして起動してください</b>（<code>assets/</code> と <code>lib/</code> を相対で読みます）。</td></tr>
+          <tr><th>対応環境</th><td>Windows 10 / 11（<b>OpenGL 4.6 対応が必要です</b>）／ Android 13 以降（arm64）</td></tr>
+          <tr><th>Windows</th><td>ZIP を任意のフォルダへ展開し、その中の <code>HengbandHd2d.exe</code> を実行します。<b>必ずそのフォルダを作業ディレクトリにして起動してください</b>（<code>assets/</code> と <code>lib/</code> を相対で読みます）。</td></tr>
+          <tr><th>Android</th><td>APK を端末に入れて開きます。ストアの外からの配布なので、<b>提供元不明のアプリのインストールを許可</b>する必要があります。</td></tr>
           <tr><th>ゲームパッド</th><td><b>XInput 対応。</b>Xbox コントローラなどを繋ぐと十字キーで移動、A で決定、B で戻る、Select で機能メニューが開きます。</td></tr>
           <tr><th>実行中のキー</th><td>F10 = 機能メニュー ／ F9 = 画面の作り ／ F8 = サブパネル ／ <b>F7 = 一人称の出入り</b> ／ Alt + Enter = 全画面と窓の切り替え</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3>最初にブロックを解除する</h3>
+    <h3>最初にブロックを解除する（Windows 版）</h3>
     <div class="unblock">
       <div>
         <p>ダウンロードした ZIP を展開しただけでは、Windows が「他のコンピューターから取得したファイル」と見なして実行を止めることがあります。</p>
@@ -285,7 +304,8 @@ footer b{color:var(--dim)}
 <footer>
   <div class="band">
     <div class="links">
-      <a href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">ダウンロード（Google ドライブ）</a>
+      <a href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Windows 版（Google ドライブ）</a>
+      <a href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Android 版（Google ドライブ）</a>
       <a href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
       <a href="https://github.com/hengband/hengband" target="_blank" rel="noopener">本家 GitHub</a>
       <a href="https://rephial.org/" target="_blank" rel="noopener">Angband</a>
