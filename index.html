@@ -107,6 +107,11 @@ h3{
 .plates{display:grid;gap:44px}
 .pair{display:grid;gap:44px}
 @media(min-width:900px){.pair{grid-template-columns:1fr 1fr;gap:34px}}
+/* 横持ち 2 枚を縦に積み、その右へ縦持ちの 1 枚を並べる */
+.android{display:grid;gap:34px}
+.android .stack{display:grid;gap:34px}
+.android .tall{max-width:320px;margin-inline:auto;width:100%}
+@media(min-width:900px){.android{grid-template-columns:minmax(0,1fr) 320px;align-items:start}}
 figure{margin:0}
 figure img{
   width:100%;border:1px solid var(--rule);background:#000;cursor:zoom-in;
@@ -215,6 +220,7 @@ footer b{color:var(--dim)}
         <p class="kicker">2026-08-12</p>
         <ul class="news">
           <li><b>Android 版をリリース</b> <span>&mdash; Android 13 以降</span></li>
+          <li>Android 版が縦持ちに対応</li>
           <li>FPS モードに雲を実装</li>
           <li>バグ修正</li>
         </ul>
@@ -259,6 +265,23 @@ footer b{color:var(--dim)}
         <figure class="reveal">
           <img src="img/dungeon_FPS.jpg" alt="イークの洞穴を一人称視点で見たところ。灯りの届く先に 3 体のモンスターが並んでいる">
           <figcaption>イークの洞穴（一人称）</figcaption>
+        </figure>
+      </div>
+
+      <div class="android">
+        <div class="stack">
+          <figure class="reveal">
+            <img src="img/Android_H.jpg" alt="Android 版を横持ちで遊んでいるところ。画面の上にバーチャルパッドが重なっている">
+            <figcaption>Android 版（横持ち）</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="img/Android_FPS.jpg" alt="Android 版の一人称視点。青空に雲が浮かび、通りの先に家並みが続く">
+            <figcaption>Android 版（一人称）</figcaption>
+          </figure>
+        </div>
+        <figure class="reveal tall">
+          <img src="img/Android_V.jpg" alt="Android 版を縦持ちで遊んでいるところ。上に画面、下にバーチャルパッドが並ぶ">
+          <figcaption>Android 版（縦持ち）</figcaption>
         </figure>
       </div>
     </div>
