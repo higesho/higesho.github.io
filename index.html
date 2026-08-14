@@ -126,6 +126,11 @@ figcaption{
 /* ---------------------------------------------------------------- 更新 */
 .log{display:grid;gap:38px;max-width:var(--prose)}
 .entry .kicker{color:var(--torch-dim);margin-bottom:6px}
+.group + .group{margin-top:24px}
+.glabel{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;
+  color:var(--faint);margin:0 0 2px;
+}
 .news{list-style:none;margin:0;padding:0;max-width:var(--prose)}
 .news li{
   padding:15px 0 15px 26px;border-bottom:1px solid var(--rule-soft);
@@ -216,6 +221,23 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-08-14</p>
+        <div class="group">
+          <p class="glabel">バグ修正</p>
+          <ul class="news">
+            <li>日本語入力が出来ない</li>
+            <li>マクロ定義が出来ない</li>
+            <li>色指定が出来ない</li>
+          </ul>
+        </div>
+        <div class="group">
+          <p class="glabel">機能追加</p>
+          <ul class="news">
+            <li>コントローラーの LB・RB と ABXY の同時押しに対応</li>
+          </ul>
+        </div>
+      </div>
       <div class="entry">
         <p class="kicker">2026-08-13</p>
         <ul class="news">
