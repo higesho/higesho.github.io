@@ -51,6 +51,31 @@ a:hover{color:#ffbe74}
 .band{max-width:var(--band);margin-inline:auto;padding-inline:clamp(20px,4.5vw,44px)}
 .prose{max-width:var(--prose)}
 
+/* ---------------------------------------------------------------- 言語 */
+.lang{
+  position:fixed;top:14px;right:14px;z-index:40;
+  display:flex;gap:1px;background:var(--rule);border:1px solid var(--rule);
+}
+.lang button{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;line-height:1.6;
+  padding:7px 13px;border:0;cursor:pointer;white-space:nowrap;
+  color:var(--dim);background:rgba(11,14,19,.86);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  transition:color .15s ease,background .15s ease;
+}
+.lang button:hover{color:var(--parchment);background:rgba(32,40,53,.92)}
+.lang button[aria-pressed="true"]{color:#150c02;background:var(--torch)}
+
+/* 日本語と英語の本文。JavaScript が動かないときは日本語を出す */
+html[data-lang="en"] .i18n[lang="ja"]{display:none}
+html:not([data-lang="en"]) .i18n[lang="en"]{display:none}
+
+/* 英語のときは本文も見出しもラテン字の面で組む */
+html[data-lang="en"]{
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
 /* ---------------------------------------------------------------- 冒頭 */
 .hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;overflow:hidden}
 .hero .plate{position:absolute;inset:0;background:url(img/title.jpg) center/cover no-repeat}
@@ -189,12 +214,35 @@ footer b{color:var(--dim)}
 </style>
 </head>
 <body>
+<script>
+/* 描画の前に言語を決める（ちらつきを避けるため本文の先頭に置く）。
+   ?lang= → 前に選んだもの → 閲覧者の言語、の順。日本語でなければ英語。 */
+(function () {
+  var d = document.documentElement, pick = null, saved = null;
+  var q = location.search.match(/[?&]lang=(ja|en)/i);
+  try { saved = localStorage.getItem('hd2d-lang'); } catch (e) {}
+  pick = (q && q[1].toLowerCase()) || saved;
+  if (pick !== 'ja' && pick !== 'en') {
+    var n = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    pick = (String(n).slice(0, 2).toLowerCase() === 'ja') ? 'ja' : 'en';
+  }
+  d.setAttribute('data-lang', pick);
+  d.lang = pick;
+  if (pick === 'en') { document.title = 'Hengband Voxel HD2D'; }
+})();
+</script>
+
+<nav class="lang" aria-label="Language / 言語">
+  <button type="button" data-set-lang="ja" aria-pressed="true">日本語</button>
+  <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+</nav>
 
 <!-- ============================================================== 冒頭 -->
 <header class="hero">
   <div class="plate"></div>
   <div class="veil"></div>
   <div class="band">
+    <div class="i18n" lang="ja">
     <p class="kicker">Hengband &mdash; voxel HD-2D renderer</p>
     <h1>変愚蛮怒 ボクセル HD2D</h1>
     <p class="sub">
@@ -205,12 +253,30 @@ footer b{color:var(--dim)}
       <a class="btn btn-main" href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Windows 版をダウンロード</a>
       <a class="btn btn-alt" href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Android 版をダウンロード</a>
       <a class="btn btn-sub" href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
+      <a class="btn btn-sub" href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">短愚蛮怒 公式サイト</a>
       <span class="meta">Google ドライブ / Windows は ZIP 約 174MB・Android は APK</span>
+    </div>
+    </div>
+    <div class="i18n" lang="en">
+    <p class="kicker">Hengband &mdash; voxel HD-2D renderer</p>
+    <h1>Hengband Voxel HD2D</h1>
+    <p class="sub">
+      An unofficial front end that draws the roguelike <b>Hengband</b> in <b>HD-2D</b>.
+      Voxel terrain, billboard characters. The game itself is untouched.
+    </p>
+    <div class="actions">
+      <a class="btn btn-main" href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Download for Windows</a>
+      <a class="btn btn-alt" href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Download for Android</a>
+      <a class="btn btn-sub" href="https://hengband.github.io/" target="_blank" rel="noopener">Official Hengband site</a>
+      <a class="btn btn-sub" href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">Official Tangband site</a>
+      <span class="meta">Google Drive / Windows: ZIP approx. 174MB &middot; Android: APK</span>
+    </div>
     </div>
   </div>
 </header>
 
 <main>
+<div class="i18n" lang="ja">
 
 <!-- ============================================================== 更新 -->
 <section id="news">
@@ -370,16 +436,180 @@ footer b{color:var(--dim)}
   </div>
 </section>
 
+</div>
+<div class="i18n" lang="en">
+
+<!-- ============================================================== updates -->
+<section id="news">
+  <div class="band">
+    <div class="head">
+      <p class="kicker">News</p>
+      <h2>Updates</h2>
+    </div>
+
+    <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-08-18</p>
+        <ul class="news">
+          <li>Added the Tangband game core</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="kicker">2026-08-16</p>
+        <ul class="news">
+          <li>Japanese / English switching</li>
+          <li>Tiles updated to 64px</li>
+          <li>VR mode bug fixes</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="kicker">2026-08-15</p>
+        <ul class="news">
+          <li>Provisional VR mode</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="kicker">2026-08-14</p>
+        <div class="group">
+          <p class="glabel">Bug fixes</p>
+          <ul class="news">
+            <li>Japanese input did not work</li>
+            <li>Macros could not be defined</li>
+            <li>Colours could not be set</li>
+          </ul>
+        </div>
+        <div class="group">
+          <p class="glabel">New</p>
+          <ul class="news">
+            <li>Controller: LB and RB together with ABXY</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <p class="kicker">2026-08-13</p>
+        <ul class="news">
+          <li>Real-time mode</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="kicker">2026-08-12</p>
+        <ul class="news">
+          <li><b>Android release</b> <span>&mdash; Android 13 and later</span></li>
+          <li>Portrait orientation on Android</li>
+          <li>Clouds in first-person mode</li>
+          <li>Bug fixes</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <p class="kicker">2026-08-11</p>
+        <ul class="news">
+          <li>First-person mode <span>&mdash; F7 switches to and from the top-down view</span></li>
+          <li>Key config fixed</li>
+          <li>Other bug fixes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== screens -->
+<section id="shots">
+  <div class="band">
+    <div class="head">
+      <p class="kicker">Captured in game</p>
+      <h2>Screens</h2>
+    </div>
+
+    <div class="plates">
+      <div class="pair">
+        <figure class="reveal">
+          <img src="img/henkyo.jpg" alt="The town of Outpost. The player stands among houses ringed by fields and fences">
+          <figcaption>Outpost</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="img/moribant.jpg" alt="The fountain square in Morivant. Water rises among paving stones and trees">
+          <figcaption>Morivant</figcaption>
+        </figure>
+      </div>
+
+      <div class="pair">
+        <figure class="reveal">
+          <img src="img/moribantFPS.jpg" alt="Morivant seen in first person. Tiled roofs and a city wall stand beyond a paved street">
+          <figcaption>Morivant (first person)</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="img/dungeon_FPS.jpg" alt="Yeek Cave seen in first person. Three monsters stand at the edge of the light">
+          <figcaption>Yeek Cave (first person)</figcaption>
+        </figure>
+      </div>
+
+      <div class="android">
+        <div class="stack">
+          <figure class="reveal">
+            <img src="img/Android_H.jpg" alt="The Android build held in landscape, with the virtual pad laid over the view">
+            <figcaption>Android (landscape)</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="img/Android_FPS.jpg" alt="First person on Android. Clouds drift in a blue sky above a street of houses">
+            <figcaption>Android (first person)</figcaption>
+          </figure>
+        </div>
+        <figure class="reveal tall">
+          <img src="img/Android_V.jpg" alt="The Android build held in portrait, the view above and the virtual pad below">
+          <figcaption>Android (portrait)</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== running -->
+<section id="run">
+  <div class="band">
+    <div class="head">
+      <p class="kicker">Windows / Android</p>
+      <h2>Running it</h2>
+    </div>
+
+    <div class="scroll-x">
+      <table>
+        <tbody>
+          <tr><th>Requirements</th><td>Windows 10 / 11 (<b>OpenGL 4.6 required</b>) / Android 13 or later (arm64)</td></tr>
+          <tr><th>Windows</th><td>Unzip it anywhere and run <code>HengbandHd2d.exe</code> from inside that folder. <b>Start it with that folder as the working directory</b> &mdash; <code>assets/</code> and <code>lib/</code> are read relative to it.</td></tr>
+          <tr><th>Android</th><td>Put the APK on your device and open it. It is distributed outside the store, so you need to <b>allow installing apps from unknown sources</b>.</td></tr>
+          <tr><th>VR mode</th><td><b>Run it from Virtual Desktop.</b></td></tr>
+          <tr><th>Gamepad</th><td><b>XInput.</b> Plug in an Xbox controller and the D-pad moves, A confirms, B goes back, and Select opens the function menu.</td></tr>
+          <tr><th>Keys</th><td>F10 = function menu / F9 = layout / F8 = sub panels / <b>F7 = enter and leave first person</b> / Alt + Enter = fullscreen or window</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Unblock the files first (Windows)</h3>
+    <div class="unblock">
+      <div>
+        <p>Unzipping the download is not always enough. Windows may decide the files came from another computer and refuse to run them.</p>
+        <p>Right-click <code>HengbandCore.exe</code> and <code>HengbandHd2d.exe</code>, open Properties, tick <b>Unblock</b> at the bottom of the General tab and press OK. <b>Both files need it.</b></p>
+      </div>
+      <figure class="reveal">
+        <img src="img/propatie.jpg" alt="The Properties window for HengbandCore.exe, with the Unblock checkbox at the bottom of the General tab marked in red">
+      </figure>
+    </div>
+  </div>
+</section>
+
+</div>
 </main>
 
 <!-- ============================================================== 脚 -->
 <footer>
   <div class="band">
+    <div class="i18n" lang="ja">
     <div class="links">
       <a href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Windows 版（Google ドライブ）</a>
       <a href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Android 版（Google ドライブ）</a>
       <a href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
       <a href="https://github.com/hengband/hengband" target="_blank" rel="noopener">本家 GitHub</a>
+      <a href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">短愚蛮怒 公式サイト</a>
       <a href="https://rephial.org/" target="_blank" rel="noopener">Angband</a>
     </div>
     <p>
@@ -388,6 +618,23 @@ footer b{color:var(--dim)}
       見え方の違いや不具合は本作の描画側の問題であって、本家に報告すべきものではありません。
     </p>
     <p>Moria &copy; 1985 Robert Alan Koeneke ／ Umoria &copy; 1989 James E. Wilson ／ Angband・ZAngband・変愚蛮怒 の各作者に感謝します。</p>
+    </div>
+    <div class="i18n" lang="en">
+    <div class="links">
+      <a href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Windows (Google Drive)</a>
+      <a href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Android (Google Drive)</a>
+      <a href="https://hengband.github.io/" target="_blank" rel="noopener">Official Hengband site</a>
+      <a href="https://github.com/hengband/hengband" target="_blank" rel="noopener">Hengband on GitHub</a>
+      <a href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">Official Tangband site</a>
+      <a href="https://rephial.org/" target="_blank" rel="noopener">Angband</a>
+    </div>
+    <p>
+      This is an <b>unofficial</b> front end for Hengband, with no connection to the Hengband
+      development team. The game, its data and its tiles belong to their respective authors.
+      Anything that looks wrong here is this project&rsquo;s rendering, not something to report upstream.
+    </p>
+    <p>Moria &copy; 1985 Robert Alan Koeneke &middot; Umoria &copy; 1989 James E. Wilson &middot; with thanks to the authors of Angband, ZAngband and Hengband.</p>
+    </div>
   </div>
 </footer>
 
@@ -422,6 +669,29 @@ footer b{color:var(--dim)}
 
   /* 監視が動かない環境でも図版が消えたままにならないようにする */
   setTimeout(function(){ targets.forEach(function(el){ el.classList.add('seen'); }); }, 3000);
+})();
+</script>
+<script>
+/* 言語の切り替え。選んだものは次に来たときも憶えている。 */
+(function () {
+  var d = document.documentElement;
+  var btns = document.querySelectorAll('[data-set-lang]');
+  function apply(l) {
+    d.setAttribute('data-lang', l);
+    d.lang = l;
+    document.title = (l === 'en') ? 'Hengband Voxel HD2D' : '変愚蠻怒 ボクセル HD2D';
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-set-lang') === l ? 'true' : 'false');
+    }
+  }
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () {
+      var l = this.getAttribute('data-set-lang');
+      try { localStorage.setItem('hd2d-lang', l); } catch (e) {}
+      apply(l);
+    });
+  }
+  apply(d.getAttribute('data-lang') === 'en' ? 'en' : 'ja');
 })();
 </script>
 </body>
