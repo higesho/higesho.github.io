@@ -103,6 +103,7 @@ html[data-lang="en"]{
 .hero .sub b{color:#fff;font-weight:600}
 
 .actions{display:flex;flex-wrap:wrap;gap:14px 16px;align-items:center}
+.actions + .actions{margin-top:18px}
 .btn{
   display:inline-block;padding:14px 28px;font-size:15px;font-weight:600;
   text-decoration:none;border:1px solid transparent;transition:.16s ease;
@@ -250,11 +251,16 @@ footer b{color:var(--dim)}
       地形はボクセル、キャラクタはビルボード。ゲーム本体はそのままです。
     </p>
     <div class="actions">
-      <a class="btn btn-main" href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Windows 版をダウンロード</a>
-      <a class="btn btn-alt" href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Android 版をダウンロード</a>
-      <a class="btn btn-sub" href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
+      <a class="btn btn-main" href="https://github.com/higesho/higesho.github.io/releases/latest/download/HengbandHd2d-win.zip" target="_blank" rel="noopener">Windows 版をダウンロード</a>
+      <a class="btn btn-alt" href="https://github.com/higesho/higesho.github.io/releases/latest/download/HengbandHd2d-android.apk" target="_blank" rel="noopener">Android 版をダウンロード</a>
+      <span class="meta">GitHub のリリース / Windows は ZIP・Android は APK</span>
+    </div>
+    <div class="actions sites">
+      <a class="btn btn-sub" href="https://hengband.github.io/" target="_blank" rel="noopener">変愚蛮怒 公式サイト</a>
       <a class="btn btn-sub" href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">短愚蛮怒 公式サイト</a>
-      <span class="meta">Google ドライブ / Windows は ZIP・Android は APK</span>
+      <a class="btn btn-sub" href="https://github.com/sil-quirk/sil-q/releases" target="_blank" rel="noopener">Sil-Q 公式サイト</a>
+      <a class="btn btn-sub" href="https://ask.band/frox" target="_blank" rel="noopener">FroxComposband 公式サイト</a>
+      <a class="btn btn-sub" href="https://gensoband.main.jp/index.html" target="_blank" rel="noopener">幻想蛮怒 公式サイト</a>
     </div>
     </div>
     <div class="i18n" lang="en">
@@ -265,11 +271,16 @@ footer b{color:var(--dim)}
       Voxel terrain, billboard characters. The game itself is untouched.
     </p>
     <div class="actions">
-      <a class="btn btn-main" href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Download for Windows</a>
-      <a class="btn btn-alt" href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Download for Android</a>
+      <a class="btn btn-main" href="https://github.com/higesho/higesho.github.io/releases/latest/download/HengbandHd2d-win.zip" target="_blank" rel="noopener">Download for Windows</a>
+      <a class="btn btn-alt" href="https://github.com/higesho/higesho.github.io/releases/latest/download/HengbandHd2d-android.apk" target="_blank" rel="noopener">Download for Android</a>
+      <span class="meta">GitHub Releases / Windows: ZIP &middot; Android: APK</span>
+    </div>
+    <div class="actions sites">
       <a class="btn btn-sub" href="https://hengband.github.io/" target="_blank" rel="noopener">Official Hengband site</a>
       <a class="btn btn-sub" href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">Official Tangband site</a>
-      <span class="meta">Google Drive / Windows: ZIP &middot; Android: APK</span>
+      <a class="btn btn-sub" href="https://github.com/sil-quirk/sil-q/releases" target="_blank" rel="noopener">Official Sil-Q site</a>
+      <a class="btn btn-sub" href="https://ask.band/frox" target="_blank" rel="noopener">Official FroxComposband site</a>
+      <a class="btn btn-sub" href="https://gensoband.main.jp/index.html" target="_blank" rel="noopener">Official Gensoband site</a>
     </div>
     </div>
   </div>
@@ -325,6 +336,19 @@ footer b{color:var(--dim)}
           <figcaption>Android 版（縦持ち）</figcaption>
         </figure>
       </div>
+
+      <figure class="reveal">
+        <img src="img/sil-q.jpg" alt="Sil-Q のコア。星空の下、石積みの部屋に灯りとキノコが並ぶ">
+        <figcaption>Sil-Q</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="img/Frox.jpg" alt="FroxComposband のコア。堀に囲まれた町で、灯りのともった長屋の前に立っている">
+        <figcaption>FroxComposband</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="img/genso.jpg" alt="幻想蛮怒のコア。鳥居と瓦屋根の並ぶ里の辻に立っている">
+        <figcaption>幻想蛮怒</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -338,6 +362,14 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-09-01</p>
+        <ul class="news">
+          <li>Sil-Q のゲームコアを導入（日本語化済）</li>
+          <li>FroxComposband のゲームコアを導入（日本語化済）</li>
+          <li>幻想蛮怒のゲームコアを導入（英語化済）</li>
+        </ul>
+      </div>
       <div class="entry">
         <p class="kicker">2026-08-18</p>
         <ul class="news">
@@ -486,6 +518,19 @@ footer b{color:var(--dim)}
           <figcaption>Android (portrait)</figcaption>
         </figure>
       </div>
+
+      <figure class="reveal">
+        <img src="img/sil-q.jpg" alt="The Sil-Q core. Under a starry sky, lights and mushrooms fill a room of stacked stone">
+        <figcaption>Sil-Q</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="img/Frox.jpg" alt="The FroxComposband core. A moated town, standing before a lit row house">
+        <figcaption>FroxComposband</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="img/genso.jpg" alt="The Gensoband core. A crossroads in a village of torii gates and tiled roofs">
+        <figcaption>Gensoband</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -499,6 +544,14 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-09-01</p>
+        <ul class="news">
+          <li>Added the Sil-Q game core (Japanese translation)</li>
+          <li>Added the FroxComposband game core (Japanese translation)</li>
+          <li>Added the Gensoband game core (English translation)</li>
+        </ul>
+      </div>
       <div class="entry">
         <p class="kicker">2026-08-18</p>
         <ul class="news">
@@ -605,8 +658,8 @@ footer b{color:var(--dim)}
   <div class="band">
     <div class="i18n" lang="ja">
     <div class="links">
-      <a href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Windows 版（Google ドライブ）</a>
-      <a href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Android 版（Google ドライブ）</a>
+      <a href="https://github.com/higesho/higesho.github.io/releases/latest/download/HengbandHd2d-win.zip" target="_blank" rel="noopener">Windows 版（GitHub）</a>
+      <a href="https://github.com/higesho/higesho.github.io/releases/latest/download/HengbandHd2d-android.apk" target="_blank" rel="noopener">Android 版（GitHub）</a>
       <a href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
       <a href="https://github.com/hengband/hengband" target="_blank" rel="noopener">本家 GitHub</a>
       <a href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">短愚蛮怒 公式サイト</a>
@@ -621,8 +674,8 @@ footer b{color:var(--dim)}
     </div>
     <div class="i18n" lang="en">
     <div class="links">
-      <a href="https://drive.google.com/file/d/1gloOvtebwDo4ToDjHKlIQRJxPsa7yEJz/view?usp=sharing" target="_blank" rel="noopener">Windows (Google Drive)</a>
-      <a href="https://drive.google.com/file/d/1IxYRblBFYRSewXxOBlff2Z6_iQskRY72/view?usp=sharing" target="_blank" rel="noopener">Android (Google Drive)</a>
+      <a href="https://github.com/higesho/higesho.github.io/releases/latest/download/HengbandHd2d-win.zip" target="_blank" rel="noopener">Windows (GitHub)</a>
+      <a href="https://github.com/higesho/higesho.github.io/releases/latest/download/HengbandHd2d-android.apk" target="_blank" rel="noopener">Android (GitHub)</a>
       <a href="https://hengband.github.io/" target="_blank" rel="noopener">Official Hengband site</a>
       <a href="https://github.com/hengband/hengband" target="_blank" rel="noopener">Hengband on GitHub</a>
       <a href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">Official Tangband site</a>
