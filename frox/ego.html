@@ -1,0 +1,1155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>エゴ — Frox スポイラー</title>
+<meta name="description" content="Frox のエゴ（銘）の一覧。">
+<link rel="stylesheet" href="frox.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">Frox スポイラー</a>
+  <nav><a href="index.html">入口</a><a href="start.html">序盤の進め方</a><a href="hengband.html">変愚との違い</a><a href="help.html">ヘルプ</a><a href="monster.html">敵</a><a href="item.html">アイテム</a><a href="artefact.html">アーティファクト</a><a href="ego.html" class=here>エゴ</a><a href="dungeon.html">ダンジョン</a><a href="quest.html">クエスト</a></nav>
+</div></header>
+<main class="band">
+<h1>エゴ</h1>
+<p class="lead">160 種。武器や防具に付く「銘」で、
+ <b>ふつうのアイテムに乗ると別物の強さになる</b>。
+ 「付く先」はその銘が乗りうるアイテムの型である。</p>
+<div class="bar">
+  <input type="search" id="q" placeholder="名前・説明で絞り込む" autocomplete="off">
+  <select id="depth"><option value="">深さで絞らない</option><option value="1-10">深さ 1〜10</option><option value="11-25">深さ 11〜25</option><option value="26-40">深さ 26〜40</option><option value="41-60">深さ 41〜60</option><option value="61-80">深さ 61〜80</option><option value="81-999">深さ 81 以深</option></select>
+  <span class="count" id="count"></span>
+</div>
+<div class="list one" id="list">
+<article class="card row" data-depth="0"
+ data-t="殺戮の of slaying">
+  <div class="txt">
+    <h3>殺戮の <span class="en">of Slaying</span></h3>
+    <p class="num">付く先 武器</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(祝福) (blessed)">
+  <div class="txt">
+    <h3>(祝福) <span class="en">(Blessed)</span></h3>
+    <p class="num">補正 +3／付く先 武器・掘る道具</p>
+    <p class="flags"><b class="fl">賢さ</b><b class="fl">祝福されている</b><b class="fl">力がもう一つ付く</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="モルグルの of morgul">
+  <div class="txt">
+    <h3>モルグルの <span class="en">of Morgul</span></h3>
+    <p class="num">命中 +20／ダメージ +20／防御 +10／付く先 武器</p>
+    <p class="flags"><b class="fl">透明が見える</b><b class="fl">敵を怒らせる</b><b class="fl">強い呪い</b><b class="fl">呪われている</b><b class="fl">特効: アンデッド</b><b class="fl">毒の属性</b><b class="fl">アンデッドを感じ取る</b><b class="fl">特効: 善良</b><b class="fl">呪いが付くことがある</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="穴掘りの of digging">
+  <div class="txt">
+    <h3>穴掘りの <span class="en">of Digging</span></h3>
+    <p class="num">補正 +5／付く先 掘る道具</p>
+    <p class="flags"><b class="fl">掘削</b><b class="fl">最初から正体が判っている</b><b class="fl">酸で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="守りの of protection">
+  <div class="txt">
+    <h3>守りの <span class="en">of Protection</span></h3>
+    <p class="num">防御 +10／付く先 鎧・盾・外套・兜・籠手・靴</p>
+    <p class="flags"><b class="fl">酸で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="元素防護の of elemental protection">
+  <div class="txt">
+    <h3>元素防護の <span class="en">of Elemental Protection</span></h3>
+    <p class="num">防御 +8／付く先 鎧・盾・外套</p>
+    <p class="flags"><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="忍びの of stealth">
+  <div class="txt">
+    <h3>忍びの <span class="en">of Stealth</span></h3>
+    <p class="num">補正 +3／付く先 外套・靴</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="麻痺知らずの of free action">
+  <div class="txt">
+    <h3>麻痺知らずの <span class="en">of Free Action</span></h3>
+    <p class="num">付く先 籠手・靴</p>
+    <p class="flags"><b class="fl">麻痺しない</b><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="鋭敏の of seeing">
+  <div class="txt">
+    <h3>鋭敏の <span class="en">of Seeing</span></h3>
+    <p class="num">補正 +6／付く先 兜・冠</p>
+    <p class="flags"><b class="fl">探索</b><b class="fl">盲目に耐える</b><b class="fl">透明が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="反射の of reflection">
+  <div class="txt">
+    <h3>反射の <span class="en">of Reflection</span></h3>
+    <p class="num">防御 +5／付く先 盾</p>
+    <p class="flags"><b class="fl">矢を跳ね返す</b><b class="fl">最初から正体が判っている</b><b class="fl">電撃で傷まない</b><b class="fl">酸で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">火で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="光と影の of night and day">
+  <div class="txt">
+    <h3>光と影の <span class="en">of Night and Day</span></h3>
+    <p class="num">防御 +5／付く先 盾</p>
+    <p class="flags"><b class="fl">閃光に耐える</b><b class="fl">暗黒に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="耐久の of endurance">
+  <div class="txt">
+    <h3>耐久の <span class="en">of Endurance</span></h3>
+    <p class="num">補正 +5／付く先 盾</p>
+    <p class="flags"><b class="fl">耐久</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(伝承) (lore)">
+  <div class="txt">
+    <h3>(伝承) <span class="en">(Lore)</span></h3>
+    <p class="num">補正 +3／付く先 ドラゴン鎧</p>
+    <p class="flags"><b class="fl">知能</b><b class="fl">手に取ると鑑定できる</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(ブレス) (breath)">
+  <div class="txt">
+    <h3>(ブレス) <span class="en">(Breath)</span></h3>
+    <p class="num">補正 +3／付く先 ドラゴン鎧</p>
+    <p class="flags"><b class="fl">耐久</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(攻撃) (attack)">
+  <div class="txt">
+    <h3>(攻撃) <span class="en">(Attack)</span></h3>
+    <p class="num">命中 +5／ダメージ +5／補正 +3／付く先 ドラゴン鎧</p>
+    <p class="flags"><b class="fl">腕力</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(匠) (craft)">
+  <div class="txt">
+    <h3>(匠) <span class="en">(Craft)</span></h3>
+    <p class="num">補正 +3／付く先 ドラゴン鎧</p>
+    <p class="flags"><b class="fl">賢さ</b><b class="fl">魔法道具の扱い</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(防御) (armor)">
+  <div class="txt">
+    <h3>(防御) <span class="en">(Armor)</span></h3>
+    <p class="num">防御 +5／補正 +3／付く先 ドラゴン鎧</p>
+    <p class="flags"><b class="fl">器用さ</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(支配) (domination)">
+  <div class="txt">
+    <h3>(支配) <span class="en">(Domination)</span></h3>
+    <p class="num">補正 +3／付く先 ドラゴン鎧</p>
+    <p class="flags"><b class="fl">魅力</b><b class="fl">恐怖に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(破邪) (crusade)">
+  <div class="txt">
+    <h3>(破邪) <span class="en">(Crusade)</span></h3>
+    <p class="num">命中 +5／ダメージ +5／補正 +1／付く先 ドラゴン鎧</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">魅力</b><b class="fl">経験値を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(暗黒) (death)">
+  <div class="txt">
+    <h3>(暗黒) <span class="en">(Death)</span></h3>
+    <p class="num">補正 +3／付く先 ドラゴン鎧</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">地獄に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="臆病の of cowardice">
+  <div class="txt">
+    <h3>臆病の <span class="en">of Cowardice</span></h3>
+    <p class="num">命中 -10／ダメージ -10／防御 -10／補正 +3／付く先 外套</p>
+    <p class="flags"><b class="fl">スピード</b><b class="fl">恐怖に弱い</b><b class="fl">魅力が下がる</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="知識の of knowledge">
+  <div class="txt">
+    <h3>知識の <span class="en">of Knowledge</span></h3>
+    <p class="num">補正 +3／付く先 兜</p>
+    <p class="flags"><b class="fl">知能</b><b class="fl">知能を保つ</b><b class="fl">手に取ると鑑定できる</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="敬虔の of piety">
+  <div class="txt">
+    <h3>敬虔の <span class="en">of Piety</span></h3>
+    <p class="num">補正 +3／付く先 兜</p>
+    <p class="flags"><b class="fl">賢さ</b><b class="fl">賢さを保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="支配の of domination">
+  <div class="txt">
+    <h3>支配の <span class="en">of Domination</span></h3>
+    <p class="num">補正 +3／付く先 兜</p>
+    <p class="flags"><b class="fl">魅力</b><b class="fl">魅力を保つ</b><b class="fl">恐怖に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="剛毅の of fortitude">
+  <div class="txt">
+    <h3>剛毅の <span class="en">of Fortitude</span></h3>
+    <p class="num">補正 +5／付く先 兜</p>
+    <p class="flags"><b class="fl">耐久</b><b class="fl">耐久を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(ドワーフ) (dwarven)">
+  <div class="txt">
+    <h3>(ドワーフ) <span class="en">(Dwarven)</span></h3>
+    <p class="num">防御 +12／補正 +3／付く先 兜</p>
+    <p class="flags"><b class="fl">盲目に耐える</b><b class="fl">赤外線視力</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="殺戮の of slaying">
+  <div class="txt">
+    <h3>殺戮の <span class="en">of Slaying</span></h3>
+    <p class="num">命中 +8／ダメージ +8／付く先 籠手</p>
+    <p class="flags"><b class="fl">修正が見える</b><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="イークの of the yeek">
+  <div class="txt">
+    <h3>イークの <span class="en">of the Yeek</span></h3>
+    <p class="num">命中 -10／ダメージ -10／補正 +7／付く先 籠手</p>
+    <p class="flags"><b class="fl">腕力が下がる</b><b class="fl">器用さが下がる</b><b class="fl">耐久が下がる</b><b class="fl">魅力が下がる</b><b class="fl">隠密</b><b class="fl">型を隠す</b><b class="fl">酸に耐える</b><b class="fl">酸で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="浮遊の of levitation">
+  <div class="txt">
+    <h3>浮遊の <span class="en">of Levitation</span></h3>
+    <p class="num">付く先 靴</p>
+    <p class="flags"><b class="fl">浮遊</b><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(ノーム) (gnomish)">
+  <div class="txt">
+    <h3>(ノーム) <span class="en">(Gnomish)</span></h3>
+    <p class="num">付く先 靴</p>
+    <p class="flags"><b class="fl">麻痺しない</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="高精度の of accuracy">
+  <div class="txt">
+    <h3>高精度の <span class="en">of Accuracy</span></h3>
+    <p class="num">命中 +10／ダメージ +5／付く先 弓</p>
+    <p class="flags"><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="高速度の of velocity">
+  <div class="txt">
+    <h3>高速度の <span class="en">of Velocity</span></h3>
+    <p class="num">命中 +5／ダメージ +5／付く先 弓</p>
+    <p class="flags"><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="ヴァンヤールの of the vanyar">
+  <div class="txt">
+    <h3>ヴァンヤールの <span class="en">of the Vanyar</span></h3>
+    <p class="num">付く先 竪琴</p>
+    <p class="flags"><b class="fl">魅力</b><b class="fl">賢さ</b><b class="fl">魅力を保つ</b><b class="fl">賢さを保つ</b><b class="fl">暗黒に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="エレボールの of erebor">
+  <div class="txt">
+    <h3>エレボールの <span class="en">of Erebor</span></h3>
+    <p class="num">付く先 竪琴</p>
+    <p class="flags"><b class="fl">魅力</b><b class="fl">魅力を保つ</b><b class="fl">腕力を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="光明の of extra light">
+  <div class="txt">
+    <h3>光明の <span class="en">of Extra Light</span></h3>
+    <p class="num">付く先 光源</p>
+    <p class="flags"><b class="fl">光る</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="イルミネーションの of illumination">
+  <div class="txt">
+    <h3>イルミネーションの <span class="en">of Illumination</span></h3>
+    <p class="num">付く先 光源</p>
+    <p class="flags"><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="長持ちの of duration">
+  <div class="txt">
+    <h3>長持ちの <span class="en">of Duration</span></h3>
+    <p class="num">付く先 光源</p>
+    <p class="flags"><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="赤外線視力の of infravision">
+  <div class="txt">
+    <h3>赤外線視力の <span class="en">of Infravision</span></h3>
+    <p class="num">補正 +3／付く先 光源</p>
+    <p class="flags"><b class="fl">赤外線視力</b><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(粗悪品) (blasted)">
+  <div class="txt">
+    <h3>(粗悪品) <span class="en">(Blasted)</span></h3>
+    <p class="num">付く先 特別なもの</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="爆発の of exploding">
+  <div class="txt">
+    <h3>爆発の <span class="en">of Exploding</span></h3>
+    <p class="num">深さ 1／付く先 矢弾</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="保持の of holding">
+  <div class="txt">
+    <h3>保持の <span class="en">of Holding</span></h3>
+    <p class="num">深さ 1／付く先 矢筒</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="守りの of protection">
+  <div class="txt">
+    <h3>守りの <span class="en">of Protection</span></h3>
+    <p class="num">深さ 1／付く先 矢筒</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="切れ味の of sharpness">
+  <div class="txt">
+    <h3>切れ味の <span class="en">of Sharpness</span></h3>
+    <p class="num">深さ 10／補正 +5／付く先 武器</p>
+    <p class="flags"><b class="fl">切れ味鋭い</b><b class="fl">掘削</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="溶解の of dissolving">
+  <div class="txt">
+    <h3>溶解の <span class="en">of Dissolving</span></h3>
+    <p class="num">深さ 10／ダメージ +3／補正 +5／付く先 掘る道具</p>
+    <p class="flags"><b class="fl">掘削</b><b class="fl">酸の属性</b><b class="fl">酸で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="(ドワーフ) (dwarven)">
+  <div class="txt">
+    <h3>(ドワーフ) <span class="en">(Dwarven)</span></h3>
+    <p class="num">深さ 10／命中 +5／ダメージ +5／防御 +12／付く先 盾</p>
+    <p class="flags"><b class="fl">腕力を保つ</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="(オーク) (orcish)">
+  <div class="txt">
+    <h3>(オーク) <span class="en">(Orcish)</span></h3>
+    <p class="num">深さ 10／命中 +3／ダメージ +6／防御 +10／補正 +3／付く先 盾</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">暗黒に耐える</b><b class="fl">上位の耐性が付く</b><b class="fl">知能が下がる</b><b class="fl">隠密が下がる</b><b class="fl">閃光に弱い</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="灼熱の of immolation">
+  <div class="txt">
+    <h3>灼熱の <span class="en">of Immolation</span></h3>
+    <p class="num">深さ 10／付く先 外套</p>
+    <p class="flags"><b class="fl">火で傷まない</b><b class="fl">火炎のオーラ</b><b class="fl">火炎に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="電撃の of electricity">
+  <div class="txt">
+    <h3>電撃の <span class="en">of Electricity</span></h3>
+    <p class="num">深さ 10／付く先 外套</p>
+    <p class="flags"><b class="fl">電撃で傷まない</b><b class="fl">電撃のオーラ</b><b class="fl">電撃に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="凍結の of freezing">
+  <div class="txt">
+    <h3>凍結の <span class="en">of Freezing</span></h3>
+    <p class="num">深さ 10／付く先 外套</p>
+    <p class="flags"><b class="fl">冷気で傷まない</b><b class="fl">冷気のオーラ</b><b class="fl">冷気に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="コボルドの of the kobold">
+  <div class="txt">
+    <h3>コボルドの <span class="en">of the Kobold</span></h3>
+    <p class="num">深さ 10／ダメージ +5／補正 +2／付く先 兜</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">毒に耐える</b><b class="fl">魅力が下がる</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="トロルの of the troll">
+  <div class="txt">
+    <h3>トロルの <span class="en">of the Troll</span></h3>
+    <p class="num">深さ 10／ダメージ +8／防御 +5／補正 +2／付く先 兜</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">回復が早い</b><b class="fl">知能が下がる</b><b class="fl">閃光に弱い</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="陽光の of sunlight">
+  <div class="txt">
+    <h3>陽光の <span class="en">of Sunlight</span></h3>
+    <p class="num">深さ 10／付く先 兜</p>
+    <p class="flags"><b class="fl">光る</b><b class="fl">閃光に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="トムテの of the tomte">
+  <div class="txt">
+    <h3>トムテの <span class="en">of the Tomte</span></h3>
+    <p class="num">深さ 10／命中 +8／ダメージ -8／防御 +3／補正 +5／付く先 兜</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="テレパシーの of telepathy">
+  <div class="txt">
+    <h3>テレパシーの <span class="en">of Telepathy</span></h3>
+    <p class="num">深さ 10／付く先 冠</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="盗賊の of the thief">
+  <div class="txt">
+    <h3>盗賊の <span class="en">of the Thief</span></h3>
+    <p class="num">深さ 10／命中 +5／ダメージ -5／補正 +4／付く先 籠手</p>
+    <p class="flags"><b class="fl">器用さ</b><b class="fl">隠密</b><b class="fl">器用さを保つ</b><b class="fl">型を隠す</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="強速射の of extra shots">
+  <div class="txt">
+    <h3>強速射の <span class="en">of Extra Shots</span></h3>
+    <p class="num">深さ 10／命中 +4／ダメージ +2／付く先 弓</p>
+    <p class="flags"><b class="fl">射撃回数が増える</b><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="殺戮の of slaying">
+  <div class="txt">
+    <h3>殺戮の <span class="en">of Slaying</span></h3>
+    <p class="num">深さ 10／付く先 矢弾</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="(元素) (elemental)">
+  <div class="txt">
+    <h3>(元素) <span class="en">(Elemental)</span></h3>
+    <p class="num">深さ 10／付く先 指輪・護符</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="守りの of protection">
+  <div class="txt">
+    <h3>守りの <span class="en">of Protection</span></h3>
+    <p class="num">深さ 10／付く先 指輪</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="戦闘の of combat">
+  <div class="txt">
+    <h3>戦闘の <span class="en">of Combat</span></h3>
+    <p class="num">深さ 10／付く先 指輪</p>
+    <p class="flags"><b class="fl">型を隠す</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="弓術の of archery">
+  <div class="txt">
+    <h3>弓術の <span class="en">of Archery</span></h3>
+    <p class="num">深さ 10／付く先 指輪</p>
+    <p class="flags"><b class="fl">型を隠す</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="蛮族の護符 &amp; barbarian talisman~">
+  <div class="txt">
+    <h3>蛮族の護符 <span class="en">&amp; Barbarian Talisman~</span></h3>
+    <p class="num">深さ 10／付く先 護符</p>
+    <p class="flags"><b class="fl">名前をそのまま出す</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="全耐性の of resistance">
+  <div class="txt">
+    <h3>全耐性の <span class="en">of Resistance</span></h3>
+    <p class="num">深さ 10／付く先 魔法道具</p>
+    <p class="flags"><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="(匠) (craft)">
+  <div class="txt">
+    <h3>(匠) <span class="en">(Craft)</span></h3>
+    <p class="num">深さ 15／付く先 武器</p>
+    <p class="flags"><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="(自然) (nature)">
+  <div class="txt">
+    <h3>(自然) <span class="en">(Nature)</span></h3>
+    <p class="num">深さ 15／補正 +2／付く先 武器</p>
+    <p class="flags"><b class="fl">知能</b><b class="fl">特効: 動物</b><b class="fl">回復が早い</b><b class="fl">動物を感じ取る</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="魔女の of the witch">
+  <div class="txt">
+    <h3>魔女の <span class="en">of the Witch</span></h3>
+    <p class="num">深さ 15／補正 +3／付く先 兜</p>
+    <p class="flags"><b class="fl">知能</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="(ドワーフ) (dwarven)">
+  <div class="txt">
+    <h3>(ドワーフ) <span class="en">(Dwarven)</span></h3>
+    <p class="num">深さ 15／防御 +10／補正 +3／付く先 靴</p>
+    <p class="flags"><b class="fl">麻痺しない</b><b class="fl">耐久</b><b class="fl">隠密が下がる</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="大容量の of capacity">
+  <div class="txt">
+    <h3>大容量の <span class="en">of Capacity</span></h3>
+    <p class="num">深さ 15／付く先 魔法道具</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="簡便の of simplicity">
+  <div class="txt">
+    <h3>簡便の <span class="en">of Simplicity</span></h3>
+    <p class="num">深さ 15／付く先 魔法道具</p>
+    <p class="flags"><b class="fl">唱えやすい</b></p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="インプの of the imp">
+  <div class="txt">
+    <h3>インプの <span class="en">of the Imp</span></h3>
+    <p class="num">深さ 18／命中 -5／ダメージ -5／防御 +5／補正 +3／付く先 鎧</p>
+    <p class="flags"><b class="fl">火炎に耐える</b><b class="fl">透明が見える</b><b class="fl">高位の耐性が付く</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="理力の of force">
+  <div class="txt">
+    <h3>理力の <span class="en">of Force</span></h3>
+    <p class="num">深さ 20／命中 +3／ダメージ +3／補正 +2／付く先 武器</p>
+    <p class="flags"><b class="fl">知能</b><b class="fl">賢さ</b><b class="fl">魔力の属性</b><b class="fl">透明が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="(暗黒) (death)">
+  <div class="txt">
+    <h3>(暗黒) <span class="en">(Death)</span></h3>
+    <p class="num">深さ 20／付く先 武器・掘る道具</p>
+    <p class="flags"><b class="fl">吸血の属性</b><b class="fl">経験値を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="(生命) (life)">
+  <div class="txt">
+    <h3>(生命) <span class="en">(Life)</span></h3>
+    <p class="num">深さ 20／補正 +4／付く先 武器</p>
+    <p class="flags"><b class="fl">経験値を保つ</b><b class="fl">生命力</b><b class="fl">祝福されている</b><b class="fl">特効: アンデッド</b><b class="fl">特効: 悪魔</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="(防衛者) (defender)">
+  <div class="txt">
+    <h3>(防衛者) <span class="en">(Defender)</span></h3>
+    <p class="num">深さ 20／命中 +4／ダメージ +4／防御 +8／付く先 武器</p>
+    <p class="flags"><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">いずれかの能力値を保つ</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="西方国の of westernesse">
+  <div class="txt">
+    <h3>西方国の <span class="en">of Westernesse</span></h3>
+    <p class="num">深さ 20／命中 +5／ダメージ +5／補正 +2／付く先 武器</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">器用さ</b><b class="fl">耐久</b><b class="fl">特効: オーク</b><b class="fl">特効: トロル</b><b class="fl">特効: 巨人</b><b class="fl">オークを感じ取る</b><b class="fl">トロルを感じ取る</b><b class="fl">巨人を感じ取る</b><b class="fl">麻痺しない</b><b class="fl">透明が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="馬上槍の of jousting">
+  <div class="txt">
+    <h3>馬上槍の <span class="en">of Jousting</span></h3>
+    <p class="num">深さ 20／命中 +5／ダメージ +5／付く先 武器</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="強力射の of extra might">
+  <div class="txt">
+    <h3>強力射の <span class="en">of Extra Might</span></h3>
+    <p class="num">深さ 20／命中 +2／ダメージ +4／補正 +3／付く先 弓</p>
+    <p class="flags"><b class="fl">腕力</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="狩人の of the hunter">
+  <div class="txt">
+    <h3>狩人の <span class="en">of the Hunter</span></h3>
+    <p class="num">深さ 20／命中 +10／ダメージ +5／補正 +4／付く先 弓</p>
+    <p class="flags"><b class="fl">隠密</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="元素の of elements">
+  <div class="txt">
+    <h3>元素の <span class="en">of Elements</span></h3>
+    <p class="num">深さ 20／付く先 矢弾</p>
+    <p class="flags"><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="灼熱の of immolation">
+  <div class="txt">
+    <h3>灼熱の <span class="en">of Immolation</span></h3>
+    <p class="num">深さ 20／付く先 光源</p>
+    <p class="flags"><b class="fl">火炎のオーラ</b><b class="fl">火で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="闇の of darkness">
+  <div class="txt">
+    <h3>闇の <span class="en">of Darkness</span></h3>
+    <p class="num">深さ 20／付く先 光源</p>
+    <p class="flags"><b class="fl">周りを暗くする</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="不朽の眼の of immortal eye">
+  <div class="txt">
+    <h3>不朽の眼の <span class="en">of Immortal Eye</span></h3>
+    <p class="num">深さ 20／付く先 光源</p>
+    <p class="flags"><b class="fl">盲目に耐える</b><b class="fl">透明が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="ゴンドリンの of gondolin">
+  <div class="txt">
+    <h3>ゴンドリンの <span class="en">of Gondolin</span></h3>
+    <p class="num">深さ 25／命中 +8／ダメージ +8／付く先 武器</p>
+    <p class="flags"><b class="fl">特効: 悪魔</b><b class="fl">特効: オーク</b><b class="fl">特効: トロル</b><b class="fl">特効: ドラゴン</b><b class="fl">光る</b><b class="fl">暗黒に耐える</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="魔道の of wizardry">
+  <div class="txt">
+    <h3>魔道の <span class="en">of Wizardry</span></h3>
+    <p class="num">深さ 25／付く先 指輪</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="(カオス) (chaos)">
+  <div class="txt">
+    <h3>(カオス) <span class="en">(Chaos)</span></h3>
+    <p class="num">深さ 30／付く先 武器</p>
+    <p class="flags"><b class="fl">カオスの属性</b><b class="fl">カオスに耐える</b><b class="fl">耐性がもう一つ付く</b><b class="fl">電撃で傷まない</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="(トランプ) (trump)">
+  <div class="txt">
+    <h3>(トランプ) <span class="en">(Trump)</span></h3>
+    <p class="num">深さ 30／命中 +4／ダメージ +4／補正 +2／付く先 武器</p>
+    <p class="flags"><b class="fl">特効: 邪悪</b><b class="fl">勝手に飛ぶ</b><b class="fl">麻痺しない</b><b class="fl">探索</b><b class="fl">回復が早い</b><b class="fl">腹が減りにくい</b><b class="fl">因果混乱に耐える</b><b class="fl">高位の耐性が付く</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="地獄の槍 &amp; hell lance~">
+  <div class="txt">
+    <h3>地獄の槍 <span class="en">&amp; Hell Lance~</span></h3>
+    <p class="num">深さ 30／命中 +6／ダメージ +6／付く先 武器</p>
+    <p class="flags"><b class="fl">特効: 善良</b><b class="fl">名前をそのまま出す</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="(ドワーフ) (dwarven)">
+  <div class="txt">
+    <h3>(ドワーフ) <span class="en">(Dwarven)</span></h3>
+    <p class="num">深さ 30／防御 +15／補正 +3／付く先 鎧</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="ウルクの of the uruk-hai">
+  <div class="txt">
+    <h3>ウルクの <span class="en">of the Uruk-hai</span></h3>
+    <p class="num">深さ 30／命中 +5／ダメージ +5／防御 +5／補正 +3／付く先 鎧</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">知能が下がる</b><b class="fl">酸に耐える</b><b class="fl">電撃に耐える</b><b class="fl">火炎に耐える</b><b class="fl">冷気に耐える</b><b class="fl">高位の耐性が付く</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="オログの of the olog-hai">
+  <div class="txt">
+    <h3>オログの <span class="en">of the Olog-hai</span></h3>
+    <p class="num">深さ 30／ダメージ +7／防御 +10／補正 +4／付く先 鎧</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">回復が早い</b><b class="fl">酸に耐える</b><b class="fl">毒に耐える</b><b class="fl">高位の耐性が付く</b><b class="fl">知能が下がる</b><b class="fl">酸で傷まない</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="エミュー王の of the emu-lord">
+  <div class="txt">
+    <h3>エミュー王の <span class="en">of the Emu-Lord</span></h3>
+    <p class="num">深さ 30／補正 +4／付く先 鎧</p>
+    <p class="flags"><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="永続の of permanence">
+  <div class="txt">
+    <h3>永続の <span class="en">of Permanence</span></h3>
+    <p class="num">深さ 30／防御 +10／付く先 長衣</p>
+    <p class="flags"><b class="fl">腕力を保つ</b><b class="fl">器用さを保つ</b><b class="fl">耐久を保つ</b><b class="fl">知能を保つ</b><b class="fl">賢さを保つ</b><b class="fl">魅力を保つ</b><b class="fl">経験値を保つ</b><b class="fl">酸に耐える</b><b class="fl">電撃に耐える</b><b class="fl">火炎に耐える</b><b class="fl">冷気に耐える</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">高位の耐性が付く</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="影の of shadows">
+  <div class="txt">
+    <h3>影の <span class="en">of Shadows</span></h3>
+    <p class="num">深さ 30／補正 +7／付く先 外套</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">暗黒に耐える</b><b class="fl">周りを暗くする</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="賢者の of the magi">
+  <div class="txt">
+    <h3>賢者の <span class="en">of the Magi</span></h3>
+    <p class="num">深さ 30／補正 +3／付く先 冠・兜</p>
+    <p class="flags"><b class="fl">知能</b><b class="fl">知能を保つ</b><b class="fl">高位の耐性が付く</b><b class="fl">力がもう一つ付く</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="力の of might">
+  <div class="txt">
+    <h3>力の <span class="en">of Might</span></h3>
+    <p class="num">深さ 30／補正 +3／付く先 冠</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">器用さ</b><b class="fl">耐久</b><b class="fl">腕力を保つ</b><b class="fl">器用さを保つ</b><b class="fl">耐久を保つ</b><b class="fl">麻痺しない</b><b class="fl">知能が下がる</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="尊厳の of lordliness">
+  <div class="txt">
+    <h3>尊厳の <span class="en">of Lordliness</span></h3>
+    <p class="num">深さ 30／補正 +3／付く先 冠</p>
+    <p class="flags"><b class="fl">賢さ</b><b class="fl">魅力</b><b class="fl">賢さを保つ</b><b class="fl">魅力を保つ</b><b class="fl">高位の耐性が付く</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="魔術師の of the wizard">
+  <div class="txt">
+    <h3>魔術師の <span class="en">of the Wizard</span></h3>
+    <p class="num">深さ 30／命中 -10／ダメージ -10／防御 -20／補正 +3／付く先 籠手</p>
+    <p class="flags"><b class="fl">知能</b><b class="fl">魔法道具の扱い</b><b class="fl">型を隠す</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="スピードの of speed">
+  <div class="txt">
+    <h3>スピードの <span class="en">of Speed</span></h3>
+    <p class="num">深さ 30／付く先 靴</p>
+    <p class="flags"><b class="fl">スピード</b><b class="fl">型を隠す</b><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="エルフの of elvenkind">
+  <div class="txt">
+    <h3>エルフの <span class="en">of Elvenkind</span></h3>
+    <p class="num">深さ 30／補正 +3／付く先 靴</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">スピード</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="スプライトの of the sprite">
+  <div class="txt">
+    <h3>スプライトの <span class="en">of the Sprite</span></h3>
+    <p class="num">深さ 30／補正 +3／付く先 靴</p>
+    <p class="flags"><b class="fl">浮遊</b><b class="fl">スピード</b><b class="fl">閃光に耐える</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="バック郷の of buckland">
+  <div class="txt">
+    <h3>バック郷の <span class="en">of Buckland</span></h3>
+    <p class="num">深さ 30／命中 +10／ダメージ +5／補正 +3／付く先 弓</p>
+    <p class="flags"><b class="fl">スピード</b><b class="fl">射撃回数が増える</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="スピードの of speed">
+  <div class="txt">
+    <h3>スピードの <span class="en">of Speed</span></h3>
+    <p class="num">深さ 30／付く先 指輪</p>
+    <p class="flags"><b class="fl">スピード</b><b class="fl">型を隠す</b><b class="fl">最初から正体が判っている</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="神聖なペンダント &amp; sacred pendant~">
+  <div class="txt">
+    <h3>神聖なペンダント <span class="en">&amp; Sacred Pendant~</span></h3>
+    <p class="num">深さ 30／付く先 護符</p>
+    <p class="flags"><b class="fl">名前をそのまま出す</b><b class="fl">型を隠す</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="賢者の of the magi">
+  <div class="txt">
+    <h3>賢者の <span class="en">of the Magi</span></h3>
+    <p class="num">深さ 30／付く先 護符</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="献身の of devotion">
+  <div class="txt">
+    <h3>献身の <span class="en">of Devotion</span></h3>
+    <p class="num">深さ 30／付く先 護符</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="詐術の of trickery">
+  <div class="txt">
+    <h3>詐術の <span class="en">of Trickery</span></h3>
+    <p class="num">深さ 30／付く先 護符</p>
+    <p class="flags"><b class="fl">型を隠す</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="再生の of regeneration">
+  <div class="txt">
+    <h3>再生の <span class="en">of Regeneration</span></h3>
+    <p class="num">深さ 30／付く先 魔法道具</p>
+    <p class="flags"><b class="fl">回復が早い</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="(ハルマゲドン) (armageddon)">
+  <div class="txt">
+    <h3>(ハルマゲドン) <span class="en">(Armageddon)</span></h3>
+    <p class="num">深さ 40／ダメージ +10／付く先 武器</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="(破邪) (crusade)">
+  <div class="txt">
+    <h3>(破邪) <span class="en">(Crusade)</span></h3>
+    <p class="num">深さ 40／命中 +6／ダメージ +6／補正 +4／付く先 武器</p>
+    <p class="flags"><b class="fl">賢さ</b><b class="fl">特効: 邪悪</b><b class="fl">特効: アンデッド</b><b class="fl">特効: 悪魔</b><b class="fl">透明が見える</b><b class="fl">祝福されている</b><b class="fl">恐怖に耐える</b><b class="fl">いずれかの能力値を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="(パターン) (pattern)">
+  <div class="txt">
+    <h3>(パターン) <span class="en">(Pattern)</span></h3>
+    <p class="num">深さ 40／命中 +6／ダメージ +6／補正 +3／付く先 武器</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">特効: 邪悪</b><b class="fl">特効: 悪魔</b><b class="fl">特効: アンデッド</b><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">高位の耐性が付く</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="聖なる槍 &amp; holy lance~">
+  <div class="txt">
+    <h3>聖なる槍 <span class="en">&amp; Holy Lance~</span></h3>
+    <p class="num">深さ 40／命中 +7／ダメージ +7／付く先 武器</p>
+    <p class="flags"><b class="fl">特効: 邪悪</b><b class="fl">祝福されている</b><b class="fl">名前をそのまま出す</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="エルフの of elvenkind">
+  <div class="txt">
+    <h3>エルフの <span class="en">of Elvenkind</span></h3>
+    <p class="num">深さ 40／防御 +10／補正 +3／付く先 鎧・盾</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">酸に耐える</b><b class="fl">電撃に耐える</b><b class="fl">火炎に耐える</b><b class="fl">冷気に耐える</b><b class="fl">高位の耐性が付く</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="吸血鬼の of the vampire">
+  <div class="txt">
+    <h3>吸血鬼の <span class="en">of the Vampire</span></h3>
+    <p class="num">深さ 40／補正 +3／付く先 兜</p>
+    <p class="flags"><b class="fl">周りを暗くする</b><b class="fl">暗黒に耐える</b><b class="fl">毒に耐える</b><b class="fl">経験値を保つ</b><b class="fl">腕力</b><b class="fl">魅力</b><b class="fl">隠密</b><b class="fl">賢さが下がる</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="ワルキューレの of the valkyrie">
+  <div class="txt">
+    <h3>ワルキューレの <span class="en">of the Valkyrie</span></h3>
+    <p class="num">深さ 40／命中 +5／ダメージ +5／補正 +2／付く先 兜</p>
+    <p class="flags"><b class="fl">スピード</b><b class="fl">腕力</b><b class="fl">魅力</b><b class="fl">恐怖に耐える</b><b class="fl">修正が見える</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="レイジの of rage">
+  <div class="txt">
+    <h3>レイジの <span class="en">of Rage</span></h3>
+    <p class="num">深さ 40／命中 -10／ダメージ +10／防御 -10／補正 +3／付く先 兜</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">恐怖に耐える</b><b class="fl">知能が下がる</b><b class="fl">賢さが下がる</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="巨人の of the giant">
+  <div class="txt">
+    <h3>巨人の <span class="en">of the Giant</span></h3>
+    <p class="num">深さ 40／命中 -5／ダメージ +10／補正 +4／付く先 籠手</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">修正が見える</b><b class="fl">型を隠す</b><b class="fl">腕力を保つ</b><b class="fl">知能が下がる</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="ゴーレムの of the golem">
+  <div class="txt">
+    <h3>ゴーレムの <span class="en">of the Golem</span></h3>
+    <p class="num">深さ 40／命中 +8／ダメージ +8／防御 +15／補正 +3／付く先 靴</p>
+    <p class="flags"><b class="fl">スピードが下がる</b><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">器用さが下がる</b><b class="fl">生命力</b><b class="fl">毒に耐える</b><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">高位の耐性が付く</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="帰還の of returning">
+  <div class="txt">
+    <h3>帰還の <span class="en">of Returning</span></h3>
+    <p class="num">深さ 40／付く先 矢弾</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="耐久の of endurance">
+  <div class="txt">
+    <h3>耐久の <span class="en">of Endurance</span></h3>
+    <p class="num">深さ 40／付く先 矢弾</p>
+    <p class="flags"><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="ヴァリノールの of valinor">
+  <div class="txt">
+    <h3>ヴァリノールの <span class="en">of Valinor</span></h3>
+    <p class="num">深さ 40／補正 +2／付く先 光源</p>
+    <p class="flags"><b class="fl">閃光に耐える</b><b class="fl">スピード</b><b class="fl">高位の耐性が付く</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="遠見の of scrying">
+  <div class="txt">
+    <h3>遠見の <span class="en">of Scrying</span></h3>
+    <p class="num">深さ 40／付く先 光源</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="追加攻撃の of extra attacks">
+  <div class="txt">
+    <h3>追加攻撃の <span class="en">of Extra Attacks</span></h3>
+    <p class="num">深さ 50／補正 +6／付く先 武器・掘る道具</p>
+    <p class="flags"><b class="fl">攻撃回数</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="(秘術) (arcane)">
+  <div class="txt">
+    <h3>(秘術) <span class="en">(Arcane)</span></h3>
+    <p class="num">深さ 50／付く先 武器</p>
+    <p class="flags"><b class="fl">呪文の威力</b><b class="fl">魔力の属性</b><b class="fl">腕力が下がる</b><b class="fl">器用さが下がる</b><b class="fl">耐久が下がる</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="破砕の of disruption">
+  <div class="txt">
+    <h3>破砕の <span class="en">of Disruption</span></h3>
+    <p class="num">深さ 50／ダメージ +7／補正 +5／付く先 掘る道具</p>
+    <p class="flags"><b class="fl">掘削</b><b class="fl">酸の属性</b><b class="fl">腕力</b><b class="fl">酸で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="天恵の of celestial protection">
+  <div class="txt">
+    <h3>天恵の <span class="en">of Celestial Protection</span></h3>
+    <p class="num">深さ 50／防御 +10／付く先 鎧・盾・冠</p>
+    <p class="flags"><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="増強の of augmentation">
+  <div class="txt">
+    <h3>増強の <span class="en">of Augmentation</span></h3>
+    <p class="num">深さ 50／防御 +15／補正 +4／付く先 鎧</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">知能</b><b class="fl">賢さ</b><b class="fl">器用さ</b><b class="fl">耐久</b><b class="fl">魅力</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="宵闇の of the twilight">
+  <div class="txt">
+    <h3>宵闇の <span class="en">of the Twilight</span></h3>
+    <p class="num">深さ 50／付く先 長衣</p>
+    <p class="flags"><b class="fl">腕力を保つ</b><b class="fl">器用さを保つ</b><b class="fl">耐久を保つ</b><b class="fl">知能を保つ</b><b class="fl">賢さを保つ</b><b class="fl">魅力を保つ</b><b class="fl">経験値を保つ</b><b class="fl">酸に耐える</b><b class="fl">電撃に耐える</b><b class="fl">火炎に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">地獄に耐える</b><b class="fl">因果混乱に耐える</b><b class="fl">カオスに耐える</b><b class="fl">閃光に耐える</b><b class="fl">暗黒に耐える</b><b class="fl">破片に耐える</b><b class="fl">轟音に耐える</b><b class="fl">劣化に耐える</b><b class="fl">混乱に耐える</b><b class="fl">盲目に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">浮遊</b><b class="fl">矢を跳ね返す</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="報復の of retribution">
+  <div class="txt">
+    <h3>報復の <span class="en">of Retribution</span></h3>
+    <p class="num">深さ 50／防御 -20／付く先 外套</p>
+    <p class="flags"><b class="fl">酸で傷まない</b><b class="fl">反撃のオーラ</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="至福の地アマンの of aman">
+  <div class="txt">
+    <h3>至福の地アマンの <span class="en">of Aman</span></h3>
+    <p class="num">深さ 50／防御 +10／補正 +3／付く先 外套</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">スピード</b><b class="fl">高位の耐性が付く</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="蝙蝠の of the bat">
+  <div class="txt">
+    <h3>蝙蝠の <span class="en">of the Bat</span></h3>
+    <p class="num">深さ 50／命中 -7／ダメージ -7／防御 -5／補正 +5／付く先 外套</p>
+    <p class="flags"><b class="fl">スピード</b><b class="fl">浮遊</b><b class="fl">暗黒に耐える</b><b class="fl">透明が見える</b><b class="fl">赤外線視力</b><b class="fl">隠密</b><b class="fl">型を隠す</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="幽鬼の of the nazgul">
+  <div class="txt">
+    <h3>幽鬼の <span class="en">of the Nazgul</span></h3>
+    <p class="num">深さ 50／命中 +6／ダメージ +6／防御 +6／補正 +3／付く先 外套</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">スピード</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">地獄に耐える</b><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">高位の耐性が付く</b><b class="fl">閃光に弱い</b><b class="fl">呪いが付くことがある</b><b class="fl">賢さが下がる</b><b class="fl">生命力が下がる</b><b class="fl">経験値を吸われる</b><b class="fl">強い呪い</b><b class="fl">型を隠す</b><b class="fl">修正が見える</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="英雄の of the hero">
+  <div class="txt">
+    <h3>英雄の <span class="en">of the Hero</span></h3>
+    <p class="num">深さ 50／命中 +4／ダメージ +4／防御 +2／補正 +2／付く先 外套</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">恐怖に耐える</b><b class="fl">麻痺しない</b><b class="fl">腕力を保つ</b><b class="fl">耐久を保つ</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="狙撃手の of the sniper">
+  <div class="txt">
+    <h3>狙撃手の <span class="en">of the Sniper</span></h3>
+    <p class="num">深さ 50／ダメージ +5／補正 +3／付く先 籠手</p>
+    <p class="flags"><b class="fl">弓の威力が上がる</b><b class="fl">隠密</b><b class="fl">修正が見える</b><b class="fl">型を隠す</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="地獄の胸当て &amp; hell harness~">
+  <div class="txt">
+    <h3>地獄の胸当て <span class="en">&amp; Hell Harness~</span></h3>
+    <p class="num">深さ 50／付く先 護符</p>
+    <p class="flags"><b class="fl">名前をそのまま出す</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="ドワーフのネックレス &amp; dwarven necklace~">
+  <div class="txt">
+    <h3>ドワーフのネックレス <span class="en">&amp; Dwarven Necklace~</span></h3>
+    <p class="num">深さ 50／付く先 護符</p>
+    <p class="flags"><b class="fl">名前をそのまま出す</b><b class="fl">型を隠す</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="腕力の of power">
+  <div class="txt">
+    <h3>腕力の <span class="en">of Power</span></h3>
+    <p class="num">深さ 50／付く先 魔法道具</p>
+    <p class="flags"><b class="fl">魔法道具の威力</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="保持の of holding">
+  <div class="txt">
+    <h3>保持の <span class="en">of Holding</span></h3>
+    <p class="num">深さ 50／付く先 魔法道具</p>
+    <p class="flags"><b class="fl">経験値を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="無限の矢筒 &amp; endless quiver~">
+  <div class="txt">
+    <h3>無限の矢筒 <span class="en">&amp; Endless Quiver~</span></h3>
+    <p class="num">深さ 50／付く先 矢筒</p>
+    <p class="flags"><b class="fl">名前をそのまま出す</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="転移の矢筒 &amp; phase quiver~">
+  <div class="txt">
+    <h3>転移の矢筒 <span class="en">&amp; Phase Quiver~</span></h3>
+    <p class="num">深さ 50／付く先 矢筒</p>
+    <p class="flags"><b class="fl">名前をそのまま出す</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="(トロイカ) (troika)">
+  <div class="txt">
+    <h3>(トロイカ) <span class="en">(Troika)</span></h3>
+    <p class="num">深さ 60／命中 +10／ダメージ +10／付く先 武器</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="悪魔の of the demon">
+  <div class="txt">
+    <h3>悪魔の <span class="en">of the Demon</span></h3>
+    <p class="num">深さ 60／ダメージ +7／防御 +10／補正 +4／付く先 鎧</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">知能</b><b class="fl">火炎に耐える</b><b class="fl">毒に耐える</b><b class="fl">地獄に耐える</b><b class="fl">火炎のオーラ</b><b class="fl">高位の耐性が付く</b><b class="fl">賢さが下がる</b><b class="fl">隠密が下がる</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="源氏の of genji">
+  <div class="txt">
+    <h3>源氏の <span class="en">of Genji</span></h3>
+    <p class="num">深さ 60／命中 +8／補正 +3／付く先 籠手</p>
+    <p class="flags"><b class="fl">器用さ</b><b class="fl">修正が見える</b><b class="fl">型を隠す</b><b class="fl">二刀流に向く</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="ロスローリエンの of lothlorien">
+  <div class="txt">
+    <h3>ロスローリエンの <span class="en">of Lothlorien</span></h3>
+    <p class="num">深さ 60／命中 +10／ダメージ +10／補正 +3／付く先 弓</p>
+    <p class="flags"><b class="fl">器用さ</b><b class="fl">隠密</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="聖なる of holy might">
+  <div class="txt">
+    <h3>聖なる <span class="en">of Holy Might</span></h3>
+    <p class="num">深さ 60／付く先 矢弾</p>
+    <p class="flags"><b class="fl">特効: 邪悪</b><b class="fl">特効: 悪魔</b><b class="fl">特効: アンデッド</b><b class="fl">火炎の属性</b><b class="fl">祝福されている</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="英雄の首輪 &amp; torc~ of the hero">
+  <div class="txt">
+    <h3>英雄の首輪 <span class="en">&amp; Torc~ of the Hero</span></h3>
+    <p class="num">深さ 60／付く先 護符</p>
+    <p class="flags"><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">腕力を保つ</b><b class="fl">器用さを保つ</b><b class="fl">恐怖に耐える</b><b class="fl">回復が早い</b><b class="fl">火炎のオーラ</b><b class="fl">型を隠す</b><b class="fl">名前をそのまま出す</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="敏速の of quickness">
+  <div class="txt">
+    <h3>敏速の <span class="en">of Quickness</span></h3>
+    <p class="num">深さ 60／付く先 魔法道具</p>
+    <p class="flags"><b class="fl">スピード</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="(悪魔) (daemon)">
+  <div class="txt">
+    <h3>(悪魔) <span class="en">(Daemon)</span></h3>
+    <p class="num">深さ 70／補正 +3／付く先 武器</p>
+    <p class="flags"><b class="fl">攻撃回数</b><b class="fl">腕力</b><b class="fl">器用さ</b><b class="fl">賢さが下がる</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="ノルドールの of the noldor">
+  <div class="txt">
+    <h3>ノルドールの <span class="en">of the Noldor</span></h3>
+    <p class="num">深さ 70／命中 +10／ダメージ +10／補正 +5／付く先 武器</p>
+    <p class="flags"><b class="fl">魅力</b><b class="fl">スピード</b><b class="fl">回復が早い</b><b class="fl">光る</b><b class="fl">特効: 邪悪</b><b class="fl">特効: 悪魔</b><b class="fl">特効: アンデッド</b><b class="fl">冷気の属性</b><b class="fl">閃光に耐える</b><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">腹が減りにくい</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="妖術師の of the sorcerer">
+  <div class="txt">
+    <h3>妖術師の <span class="en">of the Sorcerer</span></h3>
+    <p class="num">深さ 70／命中 -25／ダメージ -25／補正 +5／付く先 長衣</p>
+    <p class="flags"><b class="fl">知能</b><b class="fl">知能を保つ</b><b class="fl">消費魔力減</b><b class="fl">唱えやすい</b><b class="fl">魔力の容量</b><b class="fl">矢を跳ね返す</b><b class="fl">耐久が下がる</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="不信心者の of the unbeliever">
+  <div class="txt">
+    <h3>不信心者の <span class="en">of the Unbeliever</span></h3>
+    <p class="num">深さ 70／補正 +3／付く先 冠</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">透明が見える</b><b class="fl">混乱に耐える</b><b class="fl">高位の耐性が付く</b><b class="fl">魔法への抵抗</b><b class="fl">魔法を封じる</b><b class="fl">知能が下がる</b><b class="fl">賢さが下がる</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="狂戦士の of the berserker">
+  <div class="txt">
+    <h3>狂戦士の <span class="en">of the Berserker</span></h3>
+    <p class="num">深さ 70／命中 -15／ダメージ +8／防御 -15／補正 +3／付く先 籠手</p>
+    <p class="flags"><b class="fl">攻撃回数</b><b class="fl">修正が見える</b><b class="fl">恐怖に耐える</b><b class="fl">隠密が下がる</b><b class="fl">知能が下がる</b><b class="fl">付呪できない</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="ハラドリムの of the haradrim">
+  <div class="txt">
+    <h3>ハラドリムの <span class="en">of the Haradrim</span></h3>
+    <p class="num">深さ 70／命中 +5／ダメージ +10／補正 +3／付く先 弓</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="(防衛者) (defender)">
+  <div class="txt">
+    <h3>(防衛者) <span class="en">(Defender)</span></h3>
+    <p class="num">深さ 70／付く先 指輪・護符</p>
+    <p class="flags"><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="幽鬼の of the nazgul">
+  <div class="txt">
+    <h3>幽鬼の <span class="en">of the Nazgul</span></h3>
+    <p class="num">深さ 70／命中 +13／ダメージ +13／補正 +2／付く先 指輪</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">スピード</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">地獄に耐える</b><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">高位の耐性が付く</b><b class="fl">腕力</b><b class="fl">知能</b><b class="fl">賢さが下がる</b><b class="fl">器用さ</b><b class="fl">耐久が下がる</b><b class="fl">魅力</b><b class="fl">閃光に弱い</b><b class="fl">呪いが付くことがある</b><b class="fl">生命力が下がる</b><b class="fl">経験値を吸われる</b><b class="fl">強い呪い</b><b class="fl">型を隠す</b><b class="fl">修正が見える</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="ドワーフの of the dwarves">
+  <div class="txt">
+    <h3>ドワーフの <span class="en">of the Dwarves</span></h3>
+    <p class="num">深さ 70／命中 -10／ダメージ +13／補正 +2／付く先 指輪</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">掘削</b><b class="fl">隠密が下がる</b><b class="fl">回復が早い</b><b class="fl">盲目に耐える</b><b class="fl">高位の耐性が付く</b><b class="fl">呪いが付くことがある</b><b class="fl">経験値を吸われる</b><b class="fl">強い呪い</b><b class="fl">麻痺しない</b><b class="fl">透明が見える</b><b class="fl">耐久を保つ</b><b class="fl">型を隠す</b><b class="fl">修正が見える</b><b class="fl">酸で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">電撃で傷まない</b></p>
+  </div>
+</article><article class="card row" data-depth="80"
+ data-t="(野生) (wild)">
+  <div class="txt">
+    <h3>(野生) <span class="en">(Wild)</span></h3>
+    <p class="num">深さ 80／付く先 武器</p>
+    <p class="flags"><b class="fl">荒ぶる属性</b><b class="fl">耐性がもう一つ付く</b><b class="fl">高位の耐性が付く</b><b class="fl">力がもう一つ付く</b></p>
+  </div>
+</article><article class="card row" data-depth="90"
+ data-t="(秩序) (order)">
+  <div class="txt">
+    <h3>(秩序) <span class="en">(Order)</span></h3>
+    <p class="num">深さ 90／付く先 武器</p>
+    <p class="flags"><b class="fl">秩序の属性</b><b class="fl">轟音に耐える</b><b class="fl">破片に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="90"
+ data-t="魔王の of the demon-lord">
+  <div class="txt">
+    <h3>魔王の <span class="en">of the Demon-Lord</span></h3>
+    <p class="num">深さ 90／ダメージ +15／防御 +15／補正 +5／付く先 鎧</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">知能</b><b class="fl">耐久</b><b class="fl">テレパシー</b><b class="fl">火炎が効かない</b><b class="fl">毒に耐える</b><b class="fl">地獄に耐える</b><b class="fl">カオスに耐える</b><b class="fl">火炎のオーラ</b><b class="fl">高位の耐性が付く</b><b class="fl">賢さが下がる</b><b class="fl">敵を怒らせる</b><b class="fl">太古の怨念</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="90"
+ data-t="アングマールの of angmar">
+  <div class="txt">
+    <h3>アングマールの <span class="en">of Angmar</span></h3>
+    <p class="num">深さ 90／命中 +10／ダメージ +10／補正 +3／付く先 冠</p>
+    <p class="flags"><b class="fl">テレパシー</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">暗黒に耐える</b><b class="fl">地獄に耐える</b><b class="fl">経験値を保つ</b><b class="fl">透明が見える</b><b class="fl">隠密</b><b class="fl">閃光に弱い</b><b class="fl">火炎に弱い</b><b class="fl">太古の怨念</b><b class="fl">耐久が下がる</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b><b class="fl">型を隠す</b><b class="fl">修正が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="100"
+ data-t="フェアノールの of feanor">
+  <div class="txt">
+    <h3>フェアノールの <span class="en">of Feanor</span></h3>
+    <p class="num">深さ 100／付く先 靴</p>
+    <p class="flags"><b class="fl">スピード</b><b class="fl">型を隠す</b><b class="fl">麻痺しない</b><b class="fl">因果混乱に耐える</b><b class="fl">酸で傷まない</b><b class="fl">電撃で傷まない</b><b class="fl">火で傷まない</b><b class="fl">冷気で傷まない</b></p>
+  </div>
+</article>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>FroxComposband は Composband から続くローグライクで、
+     Angband の系譜に連なる。ここはその非公式のスポイラーである。</p>
+</div></footer>
+<script src="frox.js"></script>
+</body>
+</html>

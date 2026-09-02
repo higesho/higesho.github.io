@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>能力 — Sil-Q スポイラー</title>
+<meta name="description" content="Sil-Q の能力 84 個と前提条件。">
+<link rel="stylesheet" href="silq.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">Sil-Q スポイラー</a>
+  <nav><a href="index.html">入口</a><a href="manual.html">マニュアル</a><a href="monster.html">敵</a><a href="item.html">アイテム</a><a href="artefact.html">アーティファクト</a><a href="ability.html" class=here>能力</a><a href="race.html">種族と家</a></nav>
+</div></header>
+<main class="band">
+<h1>能力</h1>
+<p class="lead">技能 8 本に付いた 84 個の能力。「技能 N」は<b>その技能の値が N 以上</b>
+ でないと買えないという条件である。買う値段は経験点で、
+ <b>その技能ですでに持っている能力の数 ＋1 の 500 倍</b>——1 つ目が 500、2 つ目が 1,000、
+ 3 つ目が 1,500 と上がっていく。だから<b>一つの技能に能力を詰め込むほど高くつく</b>。
+ 種族や家にその技能の<b>素質</b>があれば 500 点、<b>熟達</b>なら 1,000 点安くなり、
+ 素質のある技能の最初の一つは只で取れる（<a href="race.html">種族と家</a>）。</p>
+<p class="jump"><a href="#s0">打撃</a> <a href="#s1">射撃</a> <a href="#s2">回避</a> <a href="#s3">隠密</a> <a href="#s4">知覚</a> <a href="#s5">意志</a> <a href="#s6">鍛冶</a> <a href="#s7">歌唱</a></p>
+<div class="bar">
+  <input type="search" id="q" placeholder="名前・説明・旗で絞り込む" autocomplete="off">
+  
+  <span class="count" id="count"></span>
+</div>
+<section class="tree"><h2 id="s0">打撃 <span class="en">Melee</span></h2><div class="list one"><article class="card row"
+ data-t="剛力 power 打撃の与えるダメージのダイスの面が+1される。ただし会心の一撃を出しにくくなる（必要な基準値が1上がる）。">
+  <div class="txt">
+    <h3><span class="lv">技能 1</span> 剛力
+        <span class="en">Power</span></h3>
+    <p class="desc">打撃の与えるダメージのダイスの面が+1される。ただし会心の一撃を出しにくくなる（必要な基準値が1上がる）。</p>
+    <p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="妙技 finesse 打撃で会心の一撃を得るのに必要な基準値が7 から 5 に下がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 2</span> 妙技
+        <span class="en">Finesse</span></h3>
+    <p class="desc">打撃で会心の一撃を得るのに必要な基準値が7 から 5 に下がる。</p>
+    <p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="打ち飛ばし knock back 打撃で敵を1マス弾き飛ばすことがある。実効の腕力と相手の耐久によって決まる。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 打ち飛ばし
+        <span class="en">Knock Back</span></h3>
+    <p class="desc">打撃で敵を1マス弾き飛ばすことがある。実効の腕力と相手の耐久によって決まる。</p>
+    <p class="pre">対象: 鈍器・長柄・剣・籠手・盾</p>
+  </div>
+</article><article class="card row"
+ data-t="長柄の達人 polearm mastery 長柄（槍とグレイブ）での攻撃に+2。また待機（z か 5）したとき、長柄を構えて、迫ってくる敵に手番を使わない一撃を与えられる。">
+  <div class="txt">
+    <h3><span class="lv">技能 4</span> 長柄の達人
+        <span class="en">Polearm Mastery</span></h3>
+    <p class="desc">長柄（槍とグレイブ）での攻撃に+2。また待機（z か 5）したとき、長柄を構えて、迫ってくる敵に手番を使わない一撃を与えられる。</p>
+    <p class="pre">対象: 籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="突撃 charge 敵に向かって移動した直後にその敵を攻撃すると、腕力と敏捷が3点高いものとして攻撃が計算される。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 突撃
+        <span class="en">Charge</span></h3>
+    <p class="desc">敵に向かって移動した直後にその敵を攻撃すると、腕力と敏捷が3点高いものとして攻撃が計算される。</p>
+    <p class="pre">対象: 鈍器・長柄・剣・靴・盾</p>
+  </div>
+</article><article class="card row"
+ data-t="追い討ち follow-through 敵を倒したとき、そのまま隣の別の敵へ移って攻撃を続けられる。">
+  <div class="txt">
+    <h3><span class="lv">技能 6</span> 追い討ち
+        <span class="en">Follow-Through</span></h3>
+    <p class="desc">敵を倒したとき、そのまま隣の別の敵へ移って攻撃を続けられる。</p>
+    <p class="pre">前提: 打撃『剛力』、打撃『妙技』</p><p class="pre">対象: 鈍器・長柄・剣</p>
+  </div>
+</article><article class="card row"
+ data-t="串刺し impale 長柄か大剣を使っているとき、敵を貫いて、あるいは越えて、その後ろの敵を攻撃できる。">
+  <div class="txt">
+    <h3><span class="lv">技能 7</span> 串刺し
+        <span class="en">Impale</span></h3>
+    <p class="desc">長柄か大剣を使っているとき、敵を貫いて、あるいは越えて、その後ろの敵を攻撃できる。</p>
+    <p class="pre">前提: 打撃『剛力』、打撃『長柄の達人』</p><p class="pre">対象: 剣・長柄・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="巧緻 subtlety 片手武器を使い、もう一方の手が空いているとき、打撃で会心の一撃を得るのに必要な基準値が2点下がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 8</span> 巧緻
+        <span class="en">Subtlety</span></h3>
+    <p class="desc">片手武器を使い、もう一方の手が空いているとき、打撃で会心の一撃を得るのに必要な基準値が2点下がる。</p>
+    <p class="pre">前提: 打撃『妙技』</p><p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="旋風撃 whirlwind attack 敵を攻撃するたび、隣接する他のすべての敵に手番を使わない一撃を与える。元の攻撃は通常の攻撃か、側面取りか、統制退却の攻撃でなければならない。">
+  <div class="txt">
+    <h3><span class="lv">技能 9</span> 旋風撃
+        <span class="en">Whirlwind Attack</span></h3>
+    <p class="desc">敵を攻撃するたび、隣接する他のすべての敵に手番を使わない一撃を与える。元の攻撃は通常の攻撃か、側面取りか、統制退却の攻撃でなければならない。</p>
+    <p class="pre">前提: 打撃『長柄の達人』、打撃『追い討ち』</p><p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="制圧圏 zone of control 敵が、こちらに隣接する二つのマスの間を移動するたびに、手番を使わない一撃を与える。">
+  <div class="txt">
+    <h3><span class="lv">技能 10</span> 制圧圏
+        <span class="en">Zone of Control</span></h3>
+    <p class="desc">敵が、こちらに隣接する二つのマスの間を移動するたびに、手番を使わない一撃を与える。</p>
+    <p class="pre">前提: 打撃『妙技』、打撃『長柄の達人』</p><p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="痛撃 smite 両手武器を使っているとき、その手番の最初の主攻撃は、当たったすべての敵に最大のダメージを与える。この攻撃を行うと、立て直しに1手番を失う。">
+  <div class="txt">
+    <h3><span class="lv">技能 11</span> 痛撃
+        <span class="en">Smite</span></h3>
+    <p class="desc">両手武器を使っているとき、その手番の最初の主攻撃は、当たったすべての敵に最大のダメージを与える。この攻撃を行うと、立て直しに1手番を失う。</p>
+    <p class="pre">前提: 打撃『打ち飛ばし』、打撃『突撃』</p><p class="pre">対象: 鈍器・長柄・剣</p>
+  </div>
+</article><article class="card row"
+ data-t="二刀流 two weapon fighting 利き手でない側に片手武器を持ち、追加の攻撃を行える（腕力と敏捷が3点低いものとして計算される）。">
+  <div class="txt">
+    <h3><span class="lv">技能 12</span> 二刀流
+        <span class="en">Two Weapon Fighting</span></h3>
+    <p class="desc">利き手でない側に片手武器を持ち、追加の攻撃を行える（腕力と敏捷が3点低いものとして計算される）。</p>
+    <p class="pre">前提: 打撃『妙技』、回避『受け流し』</p><p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="連撃 rapid attack 打撃の攻撃が1回増えるが、攻撃は腕力と敏捷が3点低いものとして計算される。">
+  <div class="txt">
+    <h3><span class="lv">技能 13</span> 連撃
+        <span class="en">Rapid Attack</span></h3>
+    <p class="desc">打撃の攻撃が1回増えるが、攻撃は腕力と敏捷が3点低いものとして計算される。</p>
+    <p class="pre">前提: 打撃『巧緻』、隠密『好機の一撃』</p><p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="腕力 strength 腕力が1点上がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 20</span> 腕力
+        <span class="en">Strength</span></h3>
+    <p class="desc">腕力が1点上がる。</p>
+    
+  </div>
+</article></div></section><section class="tree"><h2 id="s1">射撃 <span class="en">Archery</span></h2><div class="list one"><article class="card row"
+ data-t="敗走狙い rout 逃げる敵への射撃が、敏捷が5点高いものとして計算される。">
+  <div class="txt">
+    <h3><span class="lv">技能 2</span> 敗走狙い
+        <span class="en">Rout</span></h3>
+    <p class="desc">逃げる敵への射撃が、敏捷が5点高いものとして計算される。</p>
+    <p class="pre">対象: 弓</p>
+  </div>
+</article><article class="card row"
+ data-t="矢作り fletchery &#x27;-&#x27; の命令で、普通の矢に+3の補正を与えられる。矢1本につき1手番かかる。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 矢作り
+        <span class="en">Fletchery</span></h3>
+    <p class="desc">&#x27;-&#x27; の命令で、普通の矢に+3の補正を与えられる。矢1本につき1手番かかる。</p>
+    <p class="pre">対象: 籠手・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="至近射撃 point blank archery 射撃した相手から好機の一撃を受けることがない。">
+  <div class="txt">
+    <h3><span class="lv">技能 4</span> 至近射撃
+        <span class="en">Point Blank Archery</span></h3>
+    <p class="desc">射撃した相手から好機の一撃を受けることがない。</p>
+    <p class="pre">対象: 弓・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="射抜き puncture 敵の防護の出目が射撃のダメージの出目を完全に防ぎきるとき、代わりに一律5点のダメージを与える。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 射抜き
+        <span class="en">Puncture</span></h3>
+    <p class="desc">敵の防護の出目が射撃のダメージの出目を完全に防ぎきるとき、代わりに一律5点のダメージを与える。</p>
+    <p class="pre">対象: 弓・籠手・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="待ち伏せ ambush 油断している敵や眠っている敵に矢を当てたとき、会心のダメージのダイスが1つ増える。">
+  <div class="txt">
+    <h3><span class="lv">技能 6</span> 待ち伏せ
+        <span class="en">Ambush</span></h3>
+    <p class="desc">油断している敵や眠っている敵に矢を当てたとき、会心のダメージのダイスが1つ増える。</p>
+    <p class="pre">対象: 弓・籠手・外套</p>
+  </div>
+</article><article class="card row"
+ data-t="万能 versatility 射撃の技能点が打撃の技能点を上回っているとき、その差の半分だけ打撃に補正を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 7</span> 万能
+        <span class="en">Versatility</span></h3>
+    <p class="desc">射撃の技能点が打撃の技能点を上回っているとき、その差の半分だけ打撃に補正を得る。</p>
+    <p class="pre">対象: 弓・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="挫きの射 crippling shot 会心の一撃が、敵を一時的に鈍足にすることがある（会心の段と敵の意志による）。">
+  <div class="txt">
+    <h3><span class="lv">技能 8</span> 挫きの射
+        <span class="en">Crippling Shot</span></h3>
+    <p class="desc">会心の一撃が、敵を一時的に鈍足にすることがある（会心の段と敵の意志による）。</p>
+    <p class="pre">前提: 射撃『射抜き』、射撃『待ち伏せ』</p><p class="pre">対象: 弓</p>
+  </div>
+</article><article class="card row"
+ data-t="死の矢雨 deadly hail 矢で敵を倒した次の手番に射た矢は、通常の2倍のダメージを与える。">
+  <div class="txt">
+    <h3><span class="lv">技能 9</span> 死の矢雨
+        <span class="en">Deadly Hail</span></h3>
+    <p class="desc">矢で敵を倒した次の手番に射た矢は、通常の2倍のダメージを与える。</p>
+    <p class="pre">前提: 射撃『敗走狙い』、射撃『射抜き』</p><p class="pre">対象: 弓・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="敏捷 dexterity 敏捷が1点上がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 10</span> 敏捷
+        <span class="en">Dexterity</span></h3>
+    <p class="desc">敏捷が1点上がる。</p>
+    
+  </div>
+</article></div></section><section class="tree"><h2 id="s2">回避 <span class="en">Evasion</span></h2><div class="list one"><article class="card row"
+ data-t="身かわし dodging 前の手番に移動していれば、回避に+3の補正を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 2</span> 身かわし
+        <span class="en">Dodging</span></h3>
+    <p class="desc">前の手番に移動していれば、回避に+3の補正を得る。</p>
+    <p class="pre">対象: 靴・軽鎧・外套・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="盾受け blocking 前の手番に移動していなければ、盾の防護の出目がすべての攻撃に対して2倍になる。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 盾受け
+        <span class="en">Blocking</span></h3>
+    <p class="desc">前の手番に移動していなければ、盾の防護の出目がすべての攻撃に対して2倍になる。</p>
+    <p class="pre">対象: 盾</p>
+  </div>
+</article><article class="card row"
+ data-t="受け流し parry 主武器が与える回避の補正が2倍になる。">
+  <div class="txt">
+    <h3><span class="lv">技能 4</span> 受け流し
+        <span class="en">Parry</span></h3>
+    <p class="desc">主武器が与える回避の補正が2倍になる。</p>
+    <p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="乱戦 crowd fighting 敵に取り囲まれたときに敵が得る補正が半分になる。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 乱戦
+        <span class="en">Crowd Fighting</span></h3>
+    <p class="desc">敵に取り囲まれたときに敵が得る補正が半分になる。</p>
+    <p class="pre">対象: 籠手・鎖帷子・靴・兜</p>
+  </div>
+</article><article class="card row"
+ data-t="跳躍 leaping 前の手番にそちらへ移動していれば、裂け目や罠を飛び越えられる（ねぐらと蜘蛛の巣は飛び越えられない）。">
+  <div class="txt">
+    <h3><span class="lv">技能 6</span> 跳躍
+        <span class="en">Leaping</span></h3>
+    <p class="desc">前の手番にそちらへ移動していれば、裂け目や罠を飛び越えられる（ねぐらと蜘蛛の巣は飛び越えられない）。</p>
+    <p class="pre">対象: 靴・鈍器</p>
+  </div>
+</article><article class="card row"
+ data-t="疾走 sprinting ほぼ同じ方向へ4マス以上走ると、動きが速くなり始める。">
+  <div class="txt">
+    <h3><span class="lv">技能 7</span> 疾走
+        <span class="en">Sprinting</span></h3>
+    <p class="desc">ほぼ同じ方向へ4マス以上走ると、動きが速くなり始める。</p>
+    <p class="pre">前提: 回避『身かわし』、回避『跳躍』</p><p class="pre">対象: 靴</p>
+  </div>
+</article><article class="card row"
+ data-t="側面取り flanking 敵に隣接するマスから、同じくその敵に隣接する別のマスへ移ったとき、手番を使わない一撃を与える。">
+  <div class="txt">
+    <h3><span class="lv">技能 8</span> 側面取り
+        <span class="en">Flanking</span></h3>
+    <p class="desc">敵に隣接するマスから、同じくその敵に隣接する別のマスへ移ったとき、手番を使わない一撃を与える。</p>
+    <p class="pre">対象: 靴・軽鎧</p>
+  </div>
+</article><article class="card row"
+ data-t="重装の心得 heavy armour use [1dx] の防護を得る。x は鎧の総重量を 15 lbs で割った値である。">
+  <div class="txt">
+    <h3><span class="lv">技能 9</span> 重装の心得
+        <span class="en">Heavy Armour Use</span></h3>
+    <p class="desc">[1dX] の防護を得る。X は鎧の総重量を 15 lbs で割った値である。</p>
+    <p class="pre">前提: 回避『盾受け』、回避『乱戦』</p><p class="pre">対象: 鎖帷子・盾</p>
+  </div>
+</article><article class="card row"
+ data-t="反撃 riposte こちらへの攻撃が、10 ＋武器の重さ以上の差で外れたとき、その敵に手番を使わない一撃を与える（1手番に1回だけ）。">
+  <div class="txt">
+    <h3><span class="lv">技能 10</span> 反撃
+        <span class="en">Riposte</span></h3>
+    <p class="desc">こちらへの攻撃が、10 ＋武器の重さ以上の差で外れたとき、その敵に手番を使わない一撃を与える（1手番に1回だけ）。</p>
+    <p class="pre">前提: 回避『受け流し』</p><p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="統制退却 controlled retreat 敵から離れるように移動したとき、その敵に手番を使わない一撃を与える。ただし前の手番に移動していないときに限る。">
+  <div class="txt">
+    <h3><span class="lv">技能 11</span> 統制退却
+        <span class="en">Controlled Retreat</span></h3>
+    <p class="desc">敵から離れるように移動したとき、その敵に手番を使わない一撃を与える。ただし前の手番に移動していないときに限る。</p>
+    <p class="pre">前提: 回避『身かわし』、回避『盾受け』</p><p class="pre">対象: 鈍器・長柄・剣・盾・靴</p>
+  </div>
+</article><article class="card row"
+ data-t="敏捷 dexterity 敏捷が1点上がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 20</span> 敏捷
+        <span class="en">Dexterity</span></h3>
+    <p class="desc">敏捷が1点上がる。</p>
+    
+  </div>
+</article></div></section><section class="tree"><h2 id="s3">隠密 <span class="en">Stealth</span></h2><div class="list one"><article class="card row"
+ data-t="変装 disguise 目覚めてはいるが油断している敵が、こちらを視界に捉えていることで得る気づきやすさの補正が半分になる。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 変装
+        <span class="en">Disguise</span></h3>
+    <p class="desc">目覚めてはいるが油断している敵が、こちらを視界に捉えていることで得る気づきやすさの補正が半分になる。</p>
+    <p class="pre">対象: 靴・外套・軽鎧・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="暗殺 assassination 油断のない状態でない生き物に対して、隠密の値に等しい打撃の補正を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 4</span> 暗殺
+        <span class="en">Assassination</span></h3>
+    <p class="desc">油断のない状態でない生き物に対して、隠密の値に等しい打撃の補正を得る。</p>
+    <p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="残酷な一撃 cruel blow 会心の一撃が、痛みで敵を混乱させることがある（会心の段と敵の意志による）。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 残酷な一撃
+        <span class="en">Cruel Blow</span></h3>
+    <p class="desc">会心の一撃が、痛みで敵を混乱させることがある（会心の段と敵の意志による）。</p>
+    <p class="pre">前提: 隠密『暗殺』</p><p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="位置交換 exchange places &#x27;x&#x27; の命令で、隣接する敵と位置を入れ替えられる（すれ違いざま、その敵は手番を使わない一撃を得る）。">
+  <div class="txt">
+    <h3><span class="lv">技能 6</span> 位置交換
+        <span class="en">Exchange Places</span></h3>
+    <p class="desc">&#x27;X&#x27; の命令で、隣接する敵と位置を入れ替えられる（すれ違いざま、その敵は手番を使わない一撃を得る）。</p>
+    <p class="pre">前提: 隠密『変装』、回避『乱戦』</p><p class="pre">対象: 靴・軽鎧・護符</p>
+  </div>
+</article><article class="card row"
+ data-t="好機の一撃 opportunist 隣接する敵がこちらから離れるたびに、手番を使わない一撃を与える。">
+  <div class="txt">
+    <h3><span class="lv">技能 7</span> 好機の一撃
+        <span class="en">Opportunist</span></h3>
+    <p class="desc">隣接する敵がこちらから離れるたびに、手番を使わない一撃を与える。</p>
+    <p class="pre">前提: 隠密『暗殺』、打撃『追い討ち』</p><p class="pre">対象: 鈍器・長柄・剣・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="消失 vanish 敵の視界から外れているとき、敵を油断させるための隠密に+10の補正を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 8</span> 消失
+        <span class="en">Vanish</span></h3>
+    <p class="desc">敵の視界から外れているとき、敵を油断させるための隠密に+10の補正を得る。</p>
+    <p class="pre">前提: 隠密『変装』</p><p class="pre">対象: 靴・外套・軽鎧・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="敏捷 dexterity 敏捷が1点上がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 11</span> 敏捷
+        <span class="en">Dexterity</span></h3>
+    <p class="desc">敏捷が1点上がる。</p>
+    <p class="pre">前提: 隠密『変装』、隠密『暗殺』</p>
+  </div>
+</article></div></section><section class="tree"><h2 id="s4">知覚 <span class="en">Perception</span></h2><div class="list one"><article class="card row"
+ data-t="早学び quick study 前提となる能力を持っていなくても、上位の能力を取れるようになる。">
+  <div class="txt">
+    <h3><span class="lv">技能 1</span> 早学び
+        <span class="en">Quick Study</span></h3>
+    <p class="desc">前提となる能力を持っていなくても、上位の能力を取れるようになる。</p>
+    <p class="pre">対象: 護符</p>
+  </div>
+</article><article class="card row"
+ data-t="一点集中 focused attack 前の手番をやり過ごしていれば、攻撃に知覚の値の半分の補正を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 2</span> 一点集中
+        <span class="en">Focused attack</span></h3>
+    <p class="desc">前の手番をやり過ごしていれば、攻撃に知覚の値の半分の補正を得る。</p>
+    <p class="pre">対象: 鈍器・長柄・剣・兜・弓</p>
+  </div>
+</article><article class="card row"
+ data-t="鋭敏な感覚 keen senses 明かりの輪のすぐ外にいる敵が見えるようになり、『見えない』生き物を見つけるのに+5の補正を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 鋭敏な感覚
+        <span class="en">Keen Senses</span></h3>
+    <p class="desc">明かりの輪のすぐ外にいる敵が見えるようになり、『見えない』生き物を見つけるのに+5の補正を得る。</p>
+    <p class="pre">対象: 兜・光源・護符</p>
+  </div>
+</article><article class="card row"
+ data-t="集中 concentration 同じ敵を攻撃し続けた手番ごとに、攻撃に+1の補正を得る（最大で知覚の半分まで）。">
+  <div class="txt">
+    <h3><span class="lv">技能 4</span> 集中
+        <span class="en">Concentration</span></h3>
+    <p class="desc">同じ敵を攻撃し続けた手番ごとに、攻撃に+1の補正を得る（最大で知覚の半分まで）。</p>
+    <p class="pre">対象: 兜・軽鎧・護符</p>
+  </div>
+</article><article class="card row"
+ data-t="錬金術 alchemy 出会ったすべての薬草と薬、それに杖と角笛の用途が判るようになる。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 錬金術
+        <span class="en">Alchemy</span></h3>
+    <p class="desc">出会ったすべての薬草と薬、それに杖と角笛の用途が判るようになる。</p>
+    <p class="pre">対象: 兜・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="天敵 bane 選んだ種類の敵に対して、すべての技能の判定に補正を得る。倒すほど補正が増える。">
+  <div class="txt">
+    <h3><span class="lv">技能 6</span> 天敵
+        <span class="en">Bane</span></h3>
+    <p class="desc">選んだ種類の敵に対して、すべての技能の判定に補正を得る。倒すほど補正が増える。</p>
+    
+  </div>
+</article><article class="card row"
+ data-t="出し抜き outwit 会心の一撃を受けたとき、相手の知覚に対して知覚の判定を行う。成功すれば、会心による増分をすべて打ち消す。">
+  <div class="txt">
+    <h3><span class="lv">技能 7</span> 出し抜き
+        <span class="en">Outwit</span></h3>
+    <p class="desc">会心の一撃を受けたとき、相手の知覚に対して知覚の判定を行う。成功すれば、会心による増分をすべて打ち消す。</p>
+    <p class="pre">対象: 兜・光源・護符</p>
+  </div>
+</article><article class="card row"
+ data-t="聞き耳 listen 毎手番、見えない敵（角の向こうや扉の向こうも含む）を察知する機会を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 8</span> 聞き耳
+        <span class="en">Listen</span></h3>
+    <p class="desc">毎手番、見えない敵（角の向こうや扉の向こうも含む）を察知する機会を得る。</p>
+    <p class="pre">前提: 知覚『鋭敏な感覚』</p><p class="pre">対象: 兜</p>
+  </div>
+</article><article class="card row"
+ data-t="狩人の達人 master hunter 同じ種類の敵を倒すたびに、攻撃に+1の補正を得る（最大で知覚の半分まで）。">
+  <div class="txt">
+    <h3><span class="lv">技能 9</span> 狩人の達人
+        <span class="en">Master Hunter</span></h3>
+    <p class="desc">同じ種類の敵を倒すたびに、攻撃に+1の補正を得る（最大で知覚の半分まで）。</p>
+    <p class="pre">前提: 知覚『集中』、知覚『天敵』</p><p class="pre">対象: 兜・靴・弓</p>
+  </div>
+</article><article class="card row"
+ data-t="恩寵 grace 恩寵が1点上がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 10</span> 恩寵
+        <span class="en">Grace</span></h3>
+    <p class="desc">恩寵が1点上がる。</p>
+    
+  </div>
+</article></div></section><section class="tree"><h2 id="s5">意志 <span class="en">Will</span></h2><div class="list one"><article class="card row"
+ data-t="呪い断ち curse breaking アイテムを外そうとしたとき、その呪いを断ち切れるようになる。">
+  <div class="txt">
+    <h3><span class="lv">技能 1</span> 呪い断ち
+        <span class="en">Curse Breaking</span></h3>
+    <p class="desc">アイテムを外そうとしたとき、その呪いを断ち切れるようになる。</p>
+    <p class="pre">対象: 護符・兜・指輪・盾</p>
+  </div>
+</article><article class="card row"
+ data-t="交感 channeling すべての杖と角笛を自動的に見分けられるようになり、その効きが2倍になる。">
+  <div class="txt">
+    <h3><span class="lv">技能 2</span> 交感
+        <span class="en">Channeling</span></h3>
+    <p class="desc">すべての杖と角笛を自動的に見分けられるようになり、その効きが2倍になる。</p>
+    <p class="pre">対象: 兜・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="逆境の力 strength in adversity 深手を負ったとき、腕力・敏捷・恩寵に補正を得る。生命力が5割以下で+1、2割5分で+3。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 逆境の力
+        <span class="en">Strength in Adversity</span></h3>
+    <p class="desc">深手を負ったとき、腕力・敏捷・恩寵に補正を得る。生命力が5割以下で+1、2割5分で+3。</p>
+    <p class="pre">対象: 兜・軽鎧・鎖帷子・護符・光源</p>
+  </div>
+</article><article class="card row"
+ data-t="威圧 formidable 打撃で敵を討ち取ると、それを見た他のすべての敵が怯む。また敵は、こちらの傷から士気を得なくなる。">
+  <div class="txt">
+    <h3><span class="lv">技能 4</span> 威圧
+        <span class="en">Formidable</span></h3>
+    <p class="desc">打撃で敵を討ち取ると、それを見た他のすべての敵が怯む。また敵は、こちらの傷から士気を得なくなる。</p>
+    <p class="pre">対象: 鈍器・長柄・剣・兜・盾</p>
+  </div>
+</article><article class="card row"
+ data-t="不屈 indomitable 恐怖・混乱・よろけ・幻覚への耐性を得る。空腹の進みが通常の三分の一になる。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 不屈
+        <span class="en">Indomitable</span></h3>
+    <p class="desc">恐怖・混乱・よろけ・幻覚への耐性を得る。空腹の進みが通常の三分の一になる。</p>
+    <p class="pre">対象: 護符・兜・鎖帷子</p>
+  </div>
+</article><article class="card row"
+ data-t="内なる光 inner light 光の届く範囲の明るさが2点増す（範囲は広がらない）。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 内なる光
+        <span class="en">Inner Light</span></h3>
+    <p class="desc">光の届く範囲の明るさが2点増す（範囲は広がらない）。</p>
+    <p class="pre">対象: 兜・光源・軽鎧</p>
+  </div>
+</article><article class="card row"
+ data-t="誓い oath 大いなる誓いを立て、それを守ることで報われる。">
+  <div class="txt">
+    <h3><span class="lv">技能 6</span> 誓い
+        <span class="en">Oath</span></h3>
+    <p class="desc">大いなる誓いを立て、それを守ることで報われる。</p>
+    
+  </div>
+</article><article class="card row"
+ data-t="毒への耐性 poison resistance 毒への耐性を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 7</span> 毒への耐性
+        <span class="en">Poison Resistance</span></h3>
+    <p class="desc">毒への耐性を得る。</p>
+    
+  </div>
+</article><article class="card row"
+ data-t="復讐 vengeance 打撃で敵に傷を負わされると、次に当てた一撃にダメージのダイスが1つ加わる。この効果は重ならない。">
+  <div class="txt">
+    <h3><span class="lv">技能 8</span> 復讐
+        <span class="en">Vengeance</span></h3>
+    <p class="desc">打撃で敵に傷を負わされると、次に当てた一撃にダメージのダイスが1つ加わる。この効果は重ならない。</p>
+    <p class="pre">前提: 意志『逆境の力』</p><p class="pre">対象: 護符・兜</p>
+  </div>
+</article><article class="card row"
+ data-t="威光 majesty こちらの意志と敵の意志の差の半分だけ、敵の士気を下げる。">
+  <div class="txt">
+    <h3><span class="lv">技能 9</span> 威光
+        <span class="en">Majesty</span></h3>
+    <p class="desc">こちらの意志と敵の意志の差の半分だけ、敵の士気を下げる。</p>
+    <p class="pre">前提: 意志『呪い断ち』、意志『内なる光』</p><p class="pre">対象: 兜・軽鎧・護符</p>
+  </div>
+</article><article class="card row"
+ data-t="耐久 constitution 耐久が1点上がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 12</span> 耐久
+        <span class="en">Constitution</span></h3>
+    <p class="desc">耐久が1点上がる。</p>
+    
+  </div>
+</article></div></section><section class="tree"><h2 id="s6">鍛冶 <span class="en">Smithing</span></h2><div class="list one"><article class="card row"
+ data-t="武器鍛冶 weaponsmith 武器を作れるようになる。">
+  <div class="txt">
+    <h3><span class="lv">技能 2</span> 武器鍛冶
+        <span class="en">Weaponsmith</span></h3>
+    <p class="desc">武器を作れるようになる。</p>
+    <p class="pre">対象: 鈍器・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="防具鍛冶 armoursmith 防具を作れるようになる。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 防具鍛冶
+        <span class="en">Armoursmith</span></h3>
+    <p class="desc">防具を作れるようになる。</p>
+    <p class="pre">対象: 鈍器・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="宝石細工 jeweller 指輪・護符・角笛・光源を作れるようになり、出会ったそれらを鑑定できるようになる。">
+  <div class="txt">
+    <h3><span class="lv">技能 4</span> 宝石細工
+        <span class="en">Jeweller</span></h3>
+    <p class="desc">指輪・護符・角笛・光源を作れるようになり、出会ったそれらを鑑定できるようになる。</p>
+    <p class="pre">対象: 籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="付呪 enchantment {特別} のアイテムを作れるようになり、出会ったアイテムにどんな魔法が掛かっているか判るようになる。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 付呪
+        <span class="en">Enchantment</span></h3>
+    <p class="desc">{特別} のアイテムを作れるようになり、出会ったアイテムにどんな魔法が掛かっているか判るようになる。</p>
+    <p class="pre">対象: 鈍器・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="熟練 expertise アイテムを鍛えるのにかかる時間が半分になり、経験と能力値の費えがすべて無くなる。">
+  <div class="txt">
+    <h3><span class="lv">技能 6</span> 熟練
+        <span class="en">Expertise</span></h3>
+    <p class="desc">アイテムを鍛えるのにかかる時間が半分になり、経験と能力値の費えがすべて無くなる。</p>
+    <p class="pre">前提: 鍛冶『付呪』</p><p class="pre">対象: 鈍器・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="技巧 artifice 細かく誂えたアーティファクトを作れるようになる。">
+  <div class="txt">
+    <h3><span class="lv">技能 7</span> 技巧
+        <span class="en">Artifice</span></h3>
+    <p class="desc">細かく誂えたアーティファクトを作れるようになる。</p>
+    <p class="pre">前提: 鍛冶『宝石細工』、鍛冶『付呪』</p><p class="pre">対象: 鈍器・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="傑作 masterpiece 通常より難しいアイテムを作れるようになる。ただし超えた点数のぶんだけ鍛冶の技能が減る。">
+  <div class="txt">
+    <h3><span class="lv">技能 8</span> 傑作
+        <span class="en">Masterpiece</span></h3>
+    <p class="desc">通常より難しいアイテムを作れるようになる。ただし超えた点数のぶんだけ鍛冶の技能が減る。</p>
+    <p class="pre">前提: 鍛冶『付呪』</p><p class="pre">対象: 鈍器・籠手</p>
+  </div>
+</article><article class="card row"
+ data-t="恩寵 grace 恩寵が1点上がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 10</span> 恩寵
+        <span class="en">Grace</span></h3>
+    <p class="desc">恩寵が1点上がる。</p>
+    
+  </div>
+</article></div></section><section class="tree"><h2 id="s7">歌唱 <span class="en">Song</span></h2><div class="list one"><article class="card row"
+ data-t="エルベレスの歌 song of elbereth 近くのモルゴスの下僕たちを恐れさせる。">
+  <div class="txt">
+    <h3><span class="lv">技能 1</span> エルベレスの歌
+        <span class="en">Song of Elbereth</span></h3>
+    <p class="desc">近くのモルゴスの下僕たちを恐れさせる。</p>
+    <p class="pre">対象: 護符・外套・光源</p>
+  </div>
+</article><article class="card row"
+ data-t="挑みの歌 song of challenge 意志の弱い敵が、策を顧みずに攻め立ててくるようになる。遠隔の武器を持つ敵は打撃の間合いまで詰めてくる。">
+  <div class="txt">
+    <h3><span class="lv">技能 1</span> 挑みの歌
+        <span class="en">Song of Challenge</span></h3>
+    <p class="desc">意志の弱い敵が、策を顧みずに攻め立ててくるようになる。遠隔の武器を持つ敵は打撃の間合いまで詰めてくる。</p>
+    <p class="pre">対象: 兜・鈍器・長柄・剣</p>
+  </div>
+</article><article class="card row"
+ data-t="坑道の歌 song of delvings 既に判っている場所から順に、まわりの地形を少しずつ明らかにする。">
+  <div class="txt">
+    <h3><span class="lv">技能 2</span> 坑道の歌
+        <span class="en">Song of Delvings</span></h3>
+    <p class="desc">既に判っている場所から順に、まわりの地形を少しずつ明らかにする。</p>
+    <p class="pre">対象: 外套・掘る道具</p>
+  </div>
+</article><article class="card row"
+ data-t="解放の歌 song of freedom 近くの扉・罠・瓦礫を見つけ出し、取り除く。また移動の自由を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 2</span> 解放の歌
+        <span class="en">Song of Freedom</span></h3>
+    <p class="desc">近くの扉・罠・瓦礫を見つけ出し、取り除く。また移動の自由を得る。</p>
+    <p class="pre">対象: 護符・外套・鈍器</p>
+  </div>
+</article><article class="card row"
+ data-t="止血の歌 song of staunching あらゆる出血を止め、傷の癒えを速める。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 止血の歌
+        <span class="en">Song of Staunching</span></h3>
+    <p class="desc">あらゆる出血を止め、傷の癒えを速める。</p>
+    <p class="pre">対象: 護符・外套・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="静寂の歌 song of silence 近くの音をすべて弱め、敵がこちらの音も、互いの音も聞き取りにくくする。">
+  <div class="txt">
+    <h3><span class="lv">技能 3</span> 静寂の歌
+        <span class="en">Song of Silence</span></h3>
+    <p class="desc">近くの音をすべて弱め、敵がこちらの音も、互いの音も聞き取りにくくする。</p>
+    <p class="pre">対象: 護符・外套・靴</p>
+  </div>
+</article><article class="card row"
+ data-t="敷居の歌 song of thresholds この歌を歌いながら閉めた扉は、敵に対して封じられる。">
+  <div class="txt">
+    <h3><span class="lv">技能 4</span> 敷居の歌
+        <span class="en">Song of Thresholds</span></h3>
+    <p class="desc">この歌を歌いながら閉めた扉は、敵に対して封じられる。</p>
+    <p class="pre">前提: 歌唱『エルベレスの歌』、歌唱『坑道の歌』</p><p class="pre">対象: 護符・外套</p>
+  </div>
+</article><article class="card row"
+ data-t="二本の木の歌 song of the trees 歌唱5点につき、光の強さが1点増す。">
+  <div class="txt">
+    <h3><span class="lv">技能 5</span> 二本の木の歌
+        <span class="en">Song of the Trees</span></h3>
+    <p class="desc">歌唱5点につき、光の強さが1点増す。</p>
+    <p class="pre">前提: 歌唱『エルベレスの歌』、歌唱『止血の歌』</p><p class="pre">対象: 護符・外套・光源</p>
+  </div>
+</article><article class="card row"
+ data-t="殺戮の歌 song of slaying 敵の生命力が歌唱の値の2倍以下のとき、打撃の会心の一撃はダメージではなく即死をもたらす。">
+  <div class="txt">
+    <h3><span class="lv">技能 6</span> 殺戮の歌
+        <span class="en">Song of Slaying</span></h3>
+    <p class="desc">敵の生命力が歌唱の値の2倍以下のとき、打撃の会心の一撃はダメージではなく即死をもたらす。</p>
+    <p class="pre">前提: 歌唱『挑みの歌』、歌唱『解放の歌』</p><p class="pre">対象: 長柄・剣</p>
+  </div>
+</article><article class="card row"
+ data-t="不動の歌 song of staying 歌唱の値の半分に等しい意志の補正と、[2d2] の防護を得る。">
+  <div class="txt">
+    <h3><span class="lv">技能 7</span> 不動の歌
+        <span class="en">Song of Staying</span></h3>
+    <p class="desc">歌唱の値の半分に等しい意志の補正と、[2d2] の防護を得る。</p>
+    <p class="pre">前提: 歌唱『挑みの歌』、歌唱『止血の歌』</p><p class="pre">対象: 兜・盾・外套・指輪</p>
+  </div>
+</article><article class="card row"
+ data-t="ローリエンの歌 song of lorien 近くの敵を少しずつ眠りに落とす。">
+  <div class="txt">
+    <h3><span class="lv">技能 8</span> ローリエンの歌
+        <span class="en">Song of Lorien</span></h3>
+    <p class="desc">近くの敵を少しずつ眠りに落とす。</p>
+    <p class="pre">前提: 歌唱『静寂の歌』、歌唱『坑道の歌』</p><p class="pre">対象: 護符・外套</p>
+  </div>
+</article><article class="card row"
+ data-t="制圧の歌 song of mastery 近くの敵の動きや行いを、時折封じる。">
+  <div class="txt">
+    <h3><span class="lv">技能 10</span> 制圧の歌
+        <span class="en">Song of Mastery</span></h3>
+    <p class="desc">近くの敵の動きや行いを、時折封じる。</p>
+    <p class="pre">前提: 歌唱『解放の歌』、歌唱『静寂の歌』</p><p class="pre">対象: 護符・外套</p>
+  </div>
+</article><article class="card row"
+ data-t="織り合わせ woven themes 歌に『副の主題』を加えられるようになる。第二の歌の効果も得られるが、歌唱の値は通常の半分になる。">
+  <div class="txt">
+    <h3><span class="lv">技能 11</span> 織り合わせ
+        <span class="en">Woven Themes</span></h3>
+    <p class="desc">歌に『副の主題』を加えられるようになる。第二の歌の効果も得られるが、歌唱の値は通常の半分になる。</p>
+    <p class="pre">対象: 護符・外套</p>
+  </div>
+</article><article class="card row"
+ data-t="恩寵 grace 恩寵が1点上がる。">
+  <div class="txt">
+    <h3><span class="lv">技能 12</span> 恩寵
+        <span class="en">Grace</span></h3>
+    <p class="desc">恩寵が1点上がる。</p>
+    
+  </div>
+</article></div></section>
+</main>
+<footer class="foot"><div class="band">
+  <p>Sil-Q は Sil から続くローグライクで、J.R.R. トールキンの
+     『シルマリルの物語』の世界を題材にしている。
+     ここはその非公式のスポイラーである。</p>
+</div></footer>
+<script src="silq.js"></script>
+</body>
+</html>

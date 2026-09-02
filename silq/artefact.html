@@ -1,0 +1,1258 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アーティファクト — Sil-Q スポイラー</title>
+<meta name="description" content="Sil-Q のアーティファクト全数。">
+<link rel="stylesheet" href="silq.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">Sil-Q スポイラー</a>
+  <nav><a href="index.html">入口</a><a href="manual.html">マニュアル</a><a href="monster.html">敵</a><a href="item.html">アイテム</a><a href="artefact.html" class=here>アーティファクト</a><a href="ability.html">能力</a><a href="race.html">種族と家</a></nav>
+</div></header>
+<main class="band">
+<h1>アーティファクト</h1>
+<p class="lead">122 個。浅い順に並べてある。
+ 銘のうち <code>『〜』</code> はそのもの固有の名で、
+ <code>〜の</code> は持ち主だった人や土地から来た名である。
+ <b>一つの冒険で出会えるのはこのうちごく一部にすぎない。</b>
+ 鍛冶を修めれば、自分の銘を打ったものを作ることもできる。</p>
+<div class="bar">
+  <input type="search" id="q" placeholder="名前・説明・旗で絞り込む" autocomplete="off">
+  <select id="depth"><option value="">深さで絞らない</option><option value="1-5">深さ 1〜5（50〜250 ft）</option><option value="6-10">深さ 6〜10（300〜500 ft）</option><option value="11-15">深さ 11〜15（550〜750 ft）</option><option value="16-20">深さ 16〜20（800〜1000 ft）</option><option value="21-25">深さ 21〜25（1050 ft 以深）</option></select>
+  <span class="count" id="count"></span>
+</div>
+<div class="list one" id="list">
+<article class="card row" data-depth="0"
+ data-t="『ソーン』 &#x27;thorn&#x27; 剣 ねじれた木の柄に、鋭く磨かれた石の刃。血はその刃に残らない。柄が吸い取っているらしい。">
+  <div class="txt">
+    <h3>『ソーン』 <span class="kind">剣</span>
+        <span class="en">&#x27;Thorn&#x27;</span></h3>
+    <p class="num">重さ 0.5 ポンド／値 5,000／命中 +0・ダメージ 1d6</p>
+    <p class="desc">ねじれた木の柄に、鋭く磨かれた石の刃。血はその刃に残らない。柄が吸い取っているらしい。</p>
+    
+    <p class="flags"><b class="fl">投げられる</b><b class="fl">毒の属性</b><b class="fl">隠密</b><b class="fl">吸血</b><b class="fl">早く飢える</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 剣 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">剣</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">敏捷</b><b class="fl">耐久</b><b class="fl">恩寵</b><b class="fl">腕力減</b><b class="fl">敏捷減</b><b class="fl">耐久減</b><b class="fl">恩寵減</b><b class="fl">隠密</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">歌唱</b><b class="fl">掘削</b><b class="fl">鋭利</b><b class="fl">吸血</b><b class="fl">死を欺く</b><b class="fl">命中しやすい</b><b class="fl">特効（オーク）</b><b class="fl">特効（トロル）</b><b class="fl">特効（狼）</b><b class="fl">特効（蜘蛛）</b><b class="fl">特効（不死）</b><b class="fl">特効（ラウコ）</b><b class="fl">特効（竜）</b><b class="fl">電撃の属性</b><b class="fl">火の属性</b><b class="fl">冷気の属性</b><b class="fl">毒の属性</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 長柄 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">長柄</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">敏捷</b><b class="fl">耐久</b><b class="fl">恩寵</b><b class="fl">腕力減</b><b class="fl">敏捷減</b><b class="fl">耐久減</b><b class="fl">恩寵減</b><b class="fl">隠密</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">歌唱</b><b class="fl">掘削</b><b class="fl">鋭利</b><b class="fl">吸血</b><b class="fl">死を欺く</b><b class="fl">命中しやすい</b><b class="fl">特効（オーク）</b><b class="fl">特効（トロル）</b><b class="fl">特効（狼）</b><b class="fl">特効（蜘蛛）</b><b class="fl">特効（不死）</b><b class="fl">特効（ラウコ）</b><b class="fl">特効（竜）</b><b class="fl">電撃の属性</b><b class="fl">火の属性</b><b class="fl">冷気の属性</b><b class="fl">毒の属性</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 鈍器 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">鈍器</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">敏捷</b><b class="fl">耐久</b><b class="fl">恩寵</b><b class="fl">腕力減</b><b class="fl">敏捷減</b><b class="fl">耐久減</b><b class="fl">恩寵減</b><b class="fl">隠密</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">歌唱</b><b class="fl">死を欺く</b><b class="fl">命中しやすい</b><b class="fl">掘削</b><b class="fl">特効（オーク）</b><b class="fl">特効（トロル）</b><b class="fl">特効（狼）</b><b class="fl">特効（蜘蛛）</b><b class="fl">特効（不死）</b><b class="fl">特効（ラウコ）</b><b class="fl">特効（竜）</b><b class="fl">電撃の属性</b><b class="fl">火の属性</b><b class="fl">冷気の属性</b><b class="fl">毒の属性</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 掘る道具 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">掘る道具</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">敏捷</b><b class="fl">耐久</b><b class="fl">腕力減</b><b class="fl">敏捷減</b><b class="fl">耐久減</b><b class="fl">意志</b><b class="fl">吸血</b><b class="fl">特効（オーク）</b><b class="fl">特効（トロル）</b><b class="fl">特効（狼）</b><b class="fl">特効（蜘蛛）</b><b class="fl">特効（不死）</b><b class="fl">特効（ラウコ）</b><b class="fl">特効（竜）</b><b class="fl">電撃の属性</b><b class="fl">火の属性</b><b class="fl">冷気の属性</b><b class="fl">毒の属性</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 弓 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">弓</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">混乱に耐える</b><b class="fl">出血に耐える</b><b class="fl">輝き</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">透明が見える</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">腕力を保つ</b><b class="fl">麻痺しない</b><b class="fl">知覚</b><b class="fl">隠密</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b><b class="fl">命中しやすい</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 矢 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">矢</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">鋭利</b><b class="fl">特効（オーク）</b><b class="fl">特効（トロル）</b><b class="fl">特効（狼）</b><b class="fl">特効（蜘蛛）</b><b class="fl">特効（不死）</b><b class="fl">特効（ラウコ）</b><b class="fl">特効（竜）</b><b class="fl">火の属性</b><b class="fl">冷気の属性</b><b class="fl">毒の属性</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 指輪 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">指輪</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">敏捷</b><b class="fl">腕力減</b><b class="fl">敏捷減</b><b class="fl">射撃</b><b class="fl">隠密</b><b class="fl">知覚</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">手当て</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">速さ</b><b class="fl">早く飢える</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 護符 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">護符</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">耐久</b><b class="fl">恩寵</b><b class="fl">耐久減</b><b class="fl">恩寵減</b><b class="fl">隠密</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">歌唱</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">死を欺く</b><b class="fl">手当て</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 光源 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">光源</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">恩寵</b><b class="fl">恩寵減</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">恩寵を保つ</b><b class="fl">死を欺く</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">光</b><b class="fl">透明が見える</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 軽鎧 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">軽鎧</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">敏捷</b><b class="fl">耐久</b><b class="fl">恩寵</b><b class="fl">腕力減</b><b class="fl">敏捷減</b><b class="fl">耐久減</b><b class="fl">恩寵減</b><b class="fl">隠密</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">歌唱</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">速さ</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 鎖帷子 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">鎖帷子</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">敏捷</b><b class="fl">耐久</b><b class="fl">恩寵</b><b class="fl">腕力減</b><b class="fl">敏捷減</b><b class="fl">耐久減</b><b class="fl">恩寵減</b><b class="fl">隠密</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">歌唱</b><b class="fl">踏みとどまる</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">速さ</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 外套 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">外套</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">敏捷</b><b class="fl">耐久</b><b class="fl">敏捷減</b><b class="fl">耐久減</b><b class="fl">隠密</b><b class="fl">歌唱</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">消化が遅い</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">麻痺しない</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 盾 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">盾</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">腕力減</b><b class="fl">耐久減</b><b class="fl">意志</b><b class="fl">死を欺く</b><b class="fl">ダメージの面が増える</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">麻痺しない</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 兜 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">兜</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">恩寵</b><b class="fl">腕力減</b><b class="fl">耐久減</b><b class="fl">恩寵減</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">歌唱</b><b class="fl">腕力を保つ</b><b class="fl">耐久を保つ</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 冠 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">冠</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">恩寵</b><b class="fl">恩寵減</b><b class="fl">知覚</b><b class="fl">意志</b><b class="fl">歌唱</b><b class="fl">恩寵を保つ</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b><b class="fl">光</b><b class="fl">回復</b><b class="fl">透明が見える</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 籠手 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">籠手</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">敏捷</b><b class="fl">腕力減</b><b class="fl">敏捷減</b><b class="fl">射撃</b><b class="fl">手当て</b><b class="fl">回復</b><b class="fl">出血に耐える</b><b class="fl">腕力を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">麻痺しない</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">早く飢える</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">闇</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="『アルティメット』 &#x27;ultimate&#x27; 靴 ">
+  <div class="txt">
+    <h3>『アルティメット』 <span class="kind">靴</span>
+        <span class="en">&#x27;Ultimate&#x27;</span></h3>
+    <p class="num"></p>
+    <p class="desc"></p>
+    
+    <p class="flags"><b class="fl">敏捷</b><b class="fl">敏捷減</b><b class="fl">隠密</b><b class="fl">踏みとどまる</b><b class="fl">敏捷を保つ</b><b class="fl">輝き</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b><b class="fl">出血に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">混乱に耐える</b><b class="fl">回復</b><b class="fl">麻痺しない</b><b class="fl">速さ</b><b class="fl">罠を避ける</b><b class="fl">早く飢える</b><b class="fl">闇</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b><b class="fl">軽い呪い</b><b class="fl">祟られている</b><b class="fl">恐怖を招く</b><b class="fl">火に弱い</b><b class="fl">冷気に弱い</b><b class="fl">毒に弱い</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="2"
+ data-t="ハルミルの of halmir 鈍器 かつてこの杖を持ったハルミルは人間の族長であり、モルゴスの力に対して常に毅然としていた。">
+  <div class="txt">
+    <h3>ハルミルの <span class="kind">鈍器</span>
+        <span class="en">of Halmir</span></h3>
+    <p class="num">深さ 2／重さ 4.0 ポンド／値 250,000／命中 +0・ダメージ 2d4／回避 +3</p>
+    <p class="desc">かつてこの杖を持ったハルミルは人間の族長であり、モルゴスの力に対して常に毅然としていた。</p>
+    <p class="grant">授ける能力: 歌唱『坑道の歌』</p>
+    <p class="flags"><b class="fl">腕力を保つ</b><b class="fl">耐久を保つ</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="3"
+ data-t="ゴルリムの of gorlim 軽鎧 この鎧は裏切りの記憶で黒く染まっている。不幸者と呼ばれたゴルリムが身に着けていた。彼は死んだ妻についての偽りの約束と引き換えに、バラヒアをゴルサウルへ売った。">
+  <div class="txt">
+    <h3>ゴルリムの <span class="kind">軽鎧</span>
+        <span class="en">of Gorlim</span></h3>
+    <p class="num">深さ 3／重さ 7.0 ポンド／値 45,000／回避 +0・防護 1d5</p>
+    <p class="desc">この鎧は裏切りの記憶で黒く染まっている。不幸者と呼ばれたゴルリムが身に着けていた。彼は死んだ妻についての偽りの約束と引き換えに、バラヒアをゴルサウルへ売った。</p>
+    <p class="grant">授ける能力: 隠密『位置交換』</p>
+    <p class="flags"><b class="fl">恐怖を招く</b></p>
+  </div>
+</article><article class="card row" data-depth="3"
+ data-t="『サンドラハ』 &#x27;thandrach&#x27; 盾 外縁から中心へと渦を巻いて、びっしりとルーンが刻まれた小さな鉄の盾。その真ん中には、禍々しく尖った突起が据えられている。">
+  <div class="txt">
+    <h3>『サンドラハ』 <span class="kind">盾</span>
+        <span class="en">&#x27;Thandrach&#x27;</span></h3>
+    <p class="num">深さ 3／重さ 4.0 ポンド／値 15,000／回避 +0・防護 1d3</p>
+    <p class="desc">外縁から中心へと渦を巻いて、びっしりとルーンが刻まれた小さな鉄の盾。その真ん中には、禍々しく尖った突起が据えられている。</p>
+    <p class="grant">授ける能力: 意志『呪い断ち』</p>
+    <p class="flags"><b class="fl">意志</b></p>
+  </div>
+</article><article class="card row" data-depth="4"
+ data-t="アンドレスの of andreth 軽鎧 ベオル家の賢女アンドレスがかつて身に着けた長衣。深く豊かな緑色で、金糸の模様が織り込まれている。">
+  <div class="txt">
+    <h3>アンドレスの <span class="kind">軽鎧</span>
+        <span class="en">of Andreth</span></h3>
+    <p class="num">深さ 4／重さ 3.0 ポンド／値 25,000／回避 +2・防護 1d0</p>
+    <p class="desc">ベオル家の賢女アンドレスがかつて身に着けた長衣。深く豊かな緑色で、金糸の模様が織り込まれている。</p>
+    
+    <p class="flags"><b class="fl">歌唱</b><b class="fl">恩寵を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="4"
+ data-t="アイグノールの of aegnor 軽鎧 人間の女を愛したノルドールの王子アイグノールのために作られた。身に着ける者に決意と心の揺るぎなさを与える。">
+  <div class="txt">
+    <h3>アイグノールの <span class="kind">軽鎧</span>
+        <span class="en">of Aegnor</span></h3>
+    <p class="num">深さ 4／重さ 10.0 ポンド／値 35,000／回避 -2・防護 1d6</p>
+    <p class="desc">人間の女を愛したノルドールの王子アイグノールのために作られた。身に着ける者に決意と心の揺るぎなさを与える。</p>
+    <p class="grant">授ける能力: 知覚『集中』</p>
+    <p class="flags"><b class="fl">意志</b></p>
+  </div>
+</article><article class="card row" data-depth="4"
+ data-t="『ナフ』 &#x27;nakh&#x27; 剣 オークたちの間で大いに名高い、恐るべき黒い刃。その残忍な刃は、ノルドールがベレリアンドへ来るはるか以前、オロドルスで鍛えられた。">
+  <div class="txt">
+    <h3>『ナフ』 <span class="kind">剣</span>
+        <span class="en">&#x27;Nakh&#x27;</span></h3>
+    <p class="num">深さ 4／重さ 6.0 ポンド／値 30,000／命中 -1・ダメージ 2d5／回避 +1</p>
+    <p class="desc">オークたちの間で大いに名高い、恐るべき黒い刃。その残忍な刃は、ノルドールがベレリアンドへ来るはるか以前、オロドルスで鍛えられた。</p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">恩寵減</b><b class="fl">特効（人間・エルフ）</b><b class="fl">敵を起こす</b></p>
+  </div>
+</article><article class="card row" data-depth="4"
+ data-t="フィンウェの of finwe 光源 モルゴスがノルドールの上級王フィンウェを討ったとき、その宝物庫から数多くの宝玉を奪った。その多くは今や不光に呑まれて失われたが、これはなお清らかに輝いている。">
+  <div class="txt">
+    <h3>フィンウェの <span class="kind">光源</span>
+        <span class="en">of Finwe</span></h3>
+    <p class="num">深さ 4／重さ 0.1 ポンド／値 10,000</p>
+    <p class="desc">モルゴスがノルドールの上級王フィンウェを討ったとき、その宝物庫から数多くの宝玉を奪った。その多くは今や不光に呑まれて失われたが、これはなお清らかに輝いている。</p>
+    
+    <p class="flags"><b class="fl">火に耐える</b><b class="fl">光</b></p>
+  </div>
+</article><article class="card row" data-depth="5"
+ data-t="グンドルの of gundor 鎖帷子 ハドルの息子グンドルの鎖帷子。身に着ける者に、敵の軍勢の只中を歩む力を与える。">
+  <div class="txt">
+    <h3>グンドルの <span class="kind">鎖帷子</span>
+        <span class="en">of Gundor</span></h3>
+    <p class="num">深さ 5／重さ 35.0 ポンド／値 25,000／回避 -1・防護 2d4</p>
+    <p class="desc">ハドルの息子グンドルの鎖帷子。身に着ける者に、敵の軍勢の只中を歩む力を与える。</p>
+    <p class="grant">授ける能力: 回避『乱戦』</p>
+    <p class="flags"><b class="fl">腕力</b></p>
+  </div>
+</article><article class="card row" data-depth="5"
+ data-t="もぐらの of the mole 靴 黒いもぐらの皮で覆われた、エルフ作りの頑丈な長靴。不思議なほど汚れていない。">
+  <div class="txt">
+    <h3>もぐらの <span class="kind">靴</span>
+        <span class="en">of the Mole</span></h3>
+    <p class="num">深さ 5／重さ 1.5 ポンド／値 25,000／回避 +0・防護 1d2</p>
+    <p class="desc">黒いもぐらの皮で覆われた、エルフ作りの頑丈な長靴。不思議なほど汚れていない。</p>
+    <p class="grant">授ける能力: 隠密『消失』、回避『身かわし』</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="6"
+ data-t="アレゼルの of aredhel 軽鎧 ノルドールの白の姫がかつて身に着けた長衣。最上の白布を裁ち、銀糸で縁を取ってある。">
+  <div class="txt">
+    <h3>アレゼルの <span class="kind">軽鎧</span>
+        <span class="en">of Aredhel</span></h3>
+    <p class="num">深さ 6／重さ 3.0 ポンド／値 25,000／回避 +3・防護 1d0</p>
+    <p class="desc">ノルドールの白の姫がかつて身に着けた長衣。最上の白布を裁ち、銀糸で縁を取ってある。</p>
+    
+    <p class="flags"><b class="fl">麻痺しない</b><b class="fl">恩寵を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="6"
+ data-t="ハルダドの of haldad 軽鎧 ハレスの父ハルダドが最後の戦いで身に着けていた革鎧。彼は包囲するオークと戦って倒れた。">
+  <div class="txt">
+    <h3>ハルダドの <span class="kind">軽鎧</span>
+        <span class="en">of Haldad</span></h3>
+    <p class="num">深さ 6／重さ 4.0 ポンド／値 45,000／回避 -1・防護 1d4</p>
+    <p class="desc">ハレスの父ハルダドが最後の戦いで身に着けていた革鎧。彼は包囲するオークと戦って倒れた。</p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">恐怖に耐える</b><b class="fl">麻痺しない</b></p>
+  </div>
+</article><article class="card row" data-depth="6"
+ data-t="血の手の of the bloody hand 盾 縁を扇形に刻んだ黒い盾。血の滴る白い手の紋章を掲げている。">
+  <div class="txt">
+    <h3>血の手の <span class="kind">盾</span>
+        <span class="en">of the Bloody Hand</span></h3>
+    <p class="num">深さ 6／重さ 6.0 ポンド／値 25,000／回避 +1・防護 1d4</p>
+    <p class="desc">縁を扇形に刻んだ黒い盾。血の滴る白い手の紋章を掲げている。</p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">ダメージの面が増える</b><b class="fl">裏切る</b></p>
+  </div>
+</article><article class="card row" data-depth="6"
+ data-t="『ドゥグラフ』 &#x27;dugrakh&#x27; 長柄 にわかに焔流るる合戦の後、サウロンが鍛えた武器。人であれエルフであれマイアであれ、モルゴスの敵を屠るために穢されている。柄は黒く、頭は青銅で、影を落とさない。">
+  <div class="txt">
+    <h3>『ドゥグラフ』 <span class="kind">長柄</span>
+        <span class="en">&#x27;Dugrakh&#x27;</span></h3>
+    <p class="num">深さ 6／重さ 2.5 ポンド／値 50,000／命中 +1・ダメージ 1d11</p>
+    <p class="desc">にわかに焔流るる合戦の後、サウロンが鍛えた武器。人であれエルフであれマイアであれ、モルゴスの敵を屠るために穢されている。柄は黒く、頭は青銅で、影を落とさない。</p>
+    
+    <p class="flags"><b class="fl">特効（ラウコ）</b><b class="fl">特効（人間・エルフ）</b><b class="fl">透明が見える</b><b class="fl">麻痺しない</b><b class="fl">恩寵</b><b class="fl">敵を起こす</b><b class="fl">投げられる</b></p>
+  </div>
+</article><article class="card row" data-depth="6"
+ data-t="『ビナフクラム』 &#x27;binahkram&#x27; 長柄 頑丈な柄を持つ、鋭く見事な斧。青の山脈のドワーフから、ブレシルの人間の領主ハルダンへ贈られた。">
+  <div class="txt">
+    <h3>『ビナフクラム』 <span class="kind">長柄</span>
+        <span class="en">&#x27;Binahkram&#x27;</span></h3>
+    <p class="num">深さ 6／重さ 1.0 ポンド／値 1,000／命中 +0・ダメージ 4d3</p>
+    <p class="desc">頑丈な柄を持つ、鋭く見事な斧。青の山脈のドワーフから、ブレシルの人間の領主ハルダンへ贈られた。</p>
+    
+    <p class="flags"><b class="fl">耐久</b><b class="fl">特効（オーク）</b><b class="fl">特効（蜘蛛）</b></p>
+  </div>
+</article><article class="card row" data-depth="7"
+ data-t="ナルギルの of nargil 剣 『……北のナイフ、ノグロドにて鍛えられしもの。』">
+  <div class="txt">
+    <h3>ナルギルの <span class="kind">剣</span>
+        <span class="en">of Nargil</span></h3>
+    <p class="num">深さ 7／重さ 0.5 ポンド／値 50,000／命中 +5・ダメージ 1d5</p>
+    <p class="desc">『……北のナイフ、ノグロドにて鍛えられしもの。』</p>
+    
+    <p class="flags"><b class="fl">鋭利</b><b class="fl">投げられる</b></p>
+  </div>
+</article><article class="card row" data-depth="7"
+ data-t="ケレゴルムの of celegorm 弓 フェアノールの三男にして偉大な狩人、いにしえにはオロメ自らと狩りをしたケレゴルムの弓。">
+  <div class="txt">
+    <h3>ケレゴルムの <span class="kind">弓</span>
+        <span class="en">of Celegorm</span></h3>
+    <p class="num">深さ 7／重さ 2.0 ポンド／値 9,000／命中 +1・ダメージ 1d9</p>
+    <p class="desc">フェアノールの三男にして偉大な狩人、いにしえにはオロメ自らと狩りをしたケレゴルムの弓。</p>
+    <p class="grant">授ける能力: 射撃『射抜き』</p>
+    <p class="flags"><b class="fl">恩寵</b></p>
+  </div>
+</article><article class="card row" data-depth="7"
+ data-t="『ダイリル』 &#x27;dailir&#x27; 矢 ベレグ・クーサリオンの、決して外れぬ矢。">
+  <div class="txt">
+    <h3>『ダイリル』 <span class="kind">矢</span>
+        <span class="en">&#x27;Dailir&#x27;</span></h3>
+    <p class="num">深さ 7／重さ 0.1 ポンド／値 20,000</p>
+    <p class="desc">ベレグ・クーサリオンの、決して外れぬ矢。</p>
+    
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="マエズロスの of maedhros 冠 ノルドールの上級王マエズロスの王冠。彼はモルゴスとの談判に赴いて捕らえられ、三十年の間、右手一本でサンゴロドリムから吊るされた。">
+  <div class="txt">
+    <h3>マエズロスの <span class="kind">冠</span>
+        <span class="en">of Maedhros</span></h3>
+    <p class="num">深さ 8／重さ 3.0 ポンド／値 30,000／回避 +0・防護 1d1</p>
+    <p class="desc">ノルドールの上級王マエズロスの王冠。彼はモルゴスとの談判に赴いて捕らえられ、三十年の間、右手一本でサンゴロドリムから吊るされた。</p>
+    <p class="grant">授ける能力: 意志『威光』</p>
+    <p class="flags"><b class="fl">意志</b><b class="fl">恐怖に耐える</b><b class="fl">危険を招く</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="ベオルの of beor 軽鎧 よく使い込まれた古い鎧。一見したところ取り立てて見るべきものは無いが、やがて、丹念に手入れされ、巧みに作られたものだと判る。世の暗い場所で心を明るくしてくれる。">
+  <div class="txt">
+    <h3>ベオルの <span class="kind">軽鎧</span>
+        <span class="en">of Beor</span></h3>
+    <p class="num">深さ 8／重さ 12.0 ポンド／値 35,000／回避 -1・防護 1d6</p>
+    <p class="desc">よく使い込まれた古い鎧。一見したところ取り立てて見るべきものは無いが、やがて、丹念に手入れされ、巧みに作られたものだと判る。世の暗い場所で心を明るくしてくれる。</p>
+    <p class="grant">授ける能力: 意志『内なる光』</p>
+    <p class="flags"><b class="fl">毒に耐える</b><b class="fl">恩寵を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="フィンゴンの of fingon 鎖帷子 フィンゴルフィンの長子フィンゴンが身に着けた、輝く鎖帷子。">
+  <div class="txt">
+    <h3>フィンゴンの <span class="kind">鎖帷子</span>
+        <span class="en">of Fingon</span></h3>
+    <p class="num">深さ 8／重さ 26.0 ポンド／値 105,000／回避 -3・防護 2d4</p>
+    <p class="desc">フィンゴルフィンの長子フィンゴンが身に着けた、輝く鎖帷子。</p>
+    
+    <p class="flags"><b class="fl">恐怖に耐える</b><b class="fl">耐久</b><b class="fl">恩寵</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="グロールフィンデルの of glorfindel 盾 ゴンドリンの英雄グロールフィンデルの盾。彼は常に戦の先頭に立ち、エルフたちを率いて敵に速やかな報いを与えた。">
+  <div class="txt">
+    <h3>グロールフィンデルの <span class="kind">盾</span>
+        <span class="en">of Glorfindel</span></h3>
+    <p class="num">深さ 8／重さ 6.0 ポンド／値 25,000／回避 +1・防護 1d4</p>
+    <p class="desc">ゴンドリンの英雄グロールフィンデルの盾。彼は常に戦の先頭に立ち、エルフたちを率いて敵に速やかな報いを与えた。</p>
+    <p class="grant">授ける能力: 打撃『突撃』</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="ハドルの of hador 盾 マラハの民の偉大な指導者にしてドル＝ローミンの領主、『金の頭』ハドルの名高い盾。">
+  <div class="txt">
+    <h3>ハドルの <span class="kind">盾</span>
+        <span class="en">of Hador</span></h3>
+    <p class="num">深さ 8／重さ 9.0 ポンド／値 25,000／回避 +0・防護 1d6</p>
+    <p class="desc">マラハの民の偉大な指導者にしてドル＝ローミンの領主、『金の頭』ハドルの名高い盾。</p>
+    
+    <p class="flags"><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="『アガルハング』 &#x27;agarlhang&#x27; 剣 血のように赤く、触れるとぬめる刃。その柄を握ると、持つ者の感覚は鈍り、奇妙な渇きが目を覚ます。">
+  <div class="txt">
+    <h3>『アガルハング』 <span class="kind">剣</span>
+        <span class="en">&#x27;Agarlhang&#x27;</span></h3>
+    <p class="num">深さ 8／重さ 6.0 ポンド／値 30,000／命中 -1・ダメージ 2d5／回避 +1</p>
+    <p class="desc">血のように赤く、触れるとぬめる刃。その柄を握ると、持つ者の感覚は鈍り、奇妙な渇きが目を覚ます。</p>
+    
+    <p class="flags"><b class="fl">吸血</b><b class="fl">軽い呪い</b><b class="fl">意志</b><b class="fl">知覚</b><b class="fl">耐久減</b><b class="fl">早く飢える</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="アムロドの of amrod 剣 フェアノールの息子アムロドの狩りの刃。鞘から抜けば、持つ者の動きは囁きほどに小さくなり、感覚は研ぎ澄まされる。">
+  <div class="txt">
+    <h3>アムロドの <span class="kind">剣</span>
+        <span class="en">of Amrod</span></h3>
+    <p class="num">深さ 8／重さ 1.5 ポンド／値 15,000／命中 +1・ダメージ 1d7／回避 +1</p>
+    <p class="desc">フェアノールの息子アムロドの狩りの刃。鞘から抜けば、持つ者の動きは囁きほどに小さくなり、感覚は研ぎ澄まされる。</p>
+    
+    <p class="flags"><b class="fl">隠密</b><b class="fl">知覚</b><b class="fl">麻痺しない</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="ボルドグの of boldog 長柄 オークの猛々しい隊長ボルドグの鉄の槍。">
+  <div class="txt">
+    <h3>ボルドグの <span class="kind">長柄</span>
+        <span class="en">of Boldog</span></h3>
+    <p class="num">深さ 8／重さ 5.0 ポンド／値 30,000／命中 +0・ダメージ 1d12</p>
+    <p class="desc">オークの猛々しい隊長ボルドグの鉄の槍。</p>
+    
+    <p class="flags"><b class="fl">恐怖に耐える</b><b class="fl">特効（狼）</b><b class="fl">投げられる</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="『ケレブリスト』 &#x27;celebrist&#x27; 長柄 黒い木の長い柄に据えられた美しい刃。手の中で生き生きとしており、その穂先は要る所へ自ら導いてゆく。">
+  <div class="txt">
+    <h3>『ケレブリスト』 <span class="kind">長柄</span>
+        <span class="en">&#x27;Celebrist&#x27;</span></h3>
+    <p class="num">深さ 8／重さ 5.0 ポンド／値 22,000／命中 +0・ダメージ 2d10／回避 +2</p>
+    <p class="desc">黒い木の長い柄に据えられた美しい刃。手の中で生き生きとしており、その穂先は要る所へ自ら導いてゆく。</p>
+    
+    <p class="flags"><b class="fl">敏捷</b><b class="fl">麻痺しない</b><b class="fl">耐久減</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="アングロドの of angrod 兜 にわかに焔流るる合戦で斃れた、フィナルフィンの息子アングロドの兜。">
+  <div class="txt">
+    <h3>アングロドの <span class="kind">兜</span>
+        <span class="en">of Angrod</span></h3>
+    <p class="num">深さ 8／重さ 4.5 ポンド／値 4,500／回避 +0・防護 1d3</p>
+    <p class="desc">にわかに焔流るる合戦で斃れた、フィナルフィンの息子アングロドの兜。</p>
+    
+    <p class="flags"><b class="fl">冷気に耐える</b><b class="fl">恐怖に耐える</b><b class="fl">回復</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="誓いを破りし者の of the oathbreaker 兜 灰色の金属と、かつて主に刃を向けた、名も忘れられたオークのくすんだ骨とで作られた兜。">
+  <div class="txt">
+    <h3>誓いを破りし者の <span class="kind">兜</span>
+        <span class="en">of the Oathbreaker</span></h3>
+    <p class="num">深さ 8／重さ 1.5 ポンド／値 45,000／回避 +0・防護 1d3</p>
+    <p class="desc">灰色の金属と、かつて主に刃を向けた、名も忘れられたオークのくすんだ骨とで作られた兜。</p>
+    <p class="grant">授ける能力: 意志『復讐』</p>
+    <p class="flags"><b class="fl">裏切る</b><b class="fl">軽い呪い</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="燕の of the swallow 籠手 この手袋は、強弓をもってゴンドリンを禍から守る燕の家の紋章を掲げている。">
+  <div class="txt">
+    <h3>燕の <span class="kind">籠手</span>
+        <span class="en">of the Swallow</span></h3>
+    <p class="num">深さ 8／重さ 0.5 ポンド／値 36,000／回避 +0・防護 1d1</p>
+    <p class="desc">この手袋は、強弓をもってゴンドリンを禍から守る燕の家の紋章を掲げている。</p>
+    <p class="grant">授ける能力: 射撃『矢作り』</p>
+    <p class="flags"><b class="fl">射撃</b></p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="ルーミルの of rumil 籠手 しなやかな革の手袋。手と心に巧緻を与える。">
+  <div class="txt">
+    <h3>ルーミルの <span class="kind">籠手</span>
+        <span class="en">of Rumil</span></h3>
+    <p class="num">深さ 8／重さ 0.5 ポンド／値 36,000／回避 +0・防護 1d0</p>
+    <p class="desc">しなやかな革の手袋。手と心に巧緻を与える。</p>
+    <p class="grant">授ける能力: 打撃『巧緻』</p>
+    <p class="flags"><b class="fl">恩寵</b></p>
+  </div>
+</article><article class="card row" data-depth="9"
+ data-t="ガラドリエルの of galadriel 剣 遠いアルクウァロンデで、フェアノールの一党が船を奪おうと同族テレリに刃を向けたとき、ノルドールの姫ガラドリエルが同族を守るために取ったのがこの剣である。">
+  <div class="txt">
+    <h3>ガラドリエルの <span class="kind">剣</span>
+        <span class="en">of Galadriel</span></h3>
+    <p class="num">深さ 9／重さ 2.0 ポンド／値 30,000／命中 +0・ダメージ 1d8／回避 +3</p>
+    <p class="desc">遠いアルクウァロンデで、フェアノールの一党が船を奪おうと同族テレリに刃を向けたとき、ノルドールの姫ガラドリエルが同族を守るために取ったのがこの剣である。</p>
+    <p class="grant">授ける能力: 回避『反撃』</p>
+    <p class="flags"><b class="fl">恩寵を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="バラヒアの of barahir 指輪 双子の蛇が、花の冠の下で翠玉の目を合わせる形に作られた指輪。ノルドールの王子フィンロド・フェラグンドから、ベオル家のバラヒアへ贈られた。忠誠と信義の証である。">
+  <div class="txt">
+    <h3>バラヒアの <span class="kind">指輪</span>
+        <span class="en">of Barahir</span></h3>
+    <p class="num">深さ 10／重さ 0.1 ポンド／値 5,000／回避 +0・防護 1d1</p>
+    <p class="desc">双子の蛇が、花の冠の下で翠玉の目を合わせる形に作られた指輪。ノルドールの王子フィンロド・フェラグンドから、ベオル家のバラヒアへ贈られた。忠誠と信義の証である。</p>
+    <p class="grant">授ける能力: 歌唱『解放の歌』</p>
+    <p class="flags"><b class="fl">麻痺しない</b><b class="fl">毒に耐える</b><b class="fl">手当て</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="『キャットスキン』 &#x27;catskin&#x27; 軽鎧 この革は妙な釣り合いに見えるが、身に着けるとぴたりと合う。狩りへの欲が湧いてくる。">
+  <div class="txt">
+    <h3>『キャットスキン』 <span class="kind">軽鎧</span>
+        <span class="en">&#x27;Catskin&#x27;</span></h3>
+    <p class="num">深さ 10／重さ 5.0 ポンド／値 45,000／回避 +0・防護 1d4</p>
+    <p class="desc">この革は妙な釣り合いに見えるが、身に着けるとぴたりと合う。狩りへの欲が湧いてくる。</p>
+    <p class="grant">授ける能力: 回避『側面取り』、知覚『鋭敏な感覚』</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="白鳥の of the swan 盾 エルフの意匠による、長く先細りの盾。木に金属の板を重ねて作られ、青地に白鳥の翼の意匠を掲げている。トゥアゴンの去ったヴィンヤマールの館で長い年月を待ちながら曇ることなく、同じ耐えの力を持つ者へ伝える。">
+  <div class="txt">
+    <h3>白鳥の <span class="kind">盾</span>
+        <span class="en">of the Swan</span></h3>
+    <p class="num">深さ 10／重さ 7.0 ポンド／値 25,000／回避 +0・防護 1d7</p>
+    <p class="desc">エルフの意匠による、長く先細りの盾。木に金属の板を重ねて作られ、青地に白鳥の翼の意匠を掲げている。トゥアゴンの去ったヴィンヤマールの館で長い年月を待ちながら曇ることなく、同じ耐えの力を持つ者へ伝える。</p>
+    
+    <p class="flags"><b class="fl">意志</b><b class="fl">耐久を保つ</b><b class="fl">敏捷を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="『オルクリスト』 &#x27;orcrist&#x27; 剣 グラムドリングと対をなすこの煌めく刃は、その力を嫌というほど知ったオークたちから、ただ『かみつき丸』と呼ばれている。">
+  <div class="txt">
+    <h3>『オルクリスト』 <span class="kind">剣</span>
+        <span class="en">&#x27;Orcrist&#x27;</span></h3>
+    <p class="num">深さ 10／重さ 3.0 ポンド／値 40,000／命中 +2・ダメージ 2d5／回避 +2</p>
+    <p class="desc">グラムドリングと対をなすこの煌めく刃は、その力を嫌というほど知ったオークたちから、ただ『かみつき丸』と呼ばれている。</p>
+    
+    <p class="flags"><b class="fl">特効（オーク）</b><b class="fl">特効（トロル）</b><b class="fl">知覚</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="シリオンの of the sirion 長柄 その名を負う川の水のように、この見事な刃は常に動いている。戦いでは、どれほど束の間の隙にも流れ込むように見える。">
+  <div class="txt">
+    <h3>シリオンの <span class="kind">長柄</span>
+        <span class="en">of the Sirion</span></h3>
+    <p class="num">深さ 10／重さ 7.0 ポンド／値 50,000／命中 +0・ダメージ 2d10／回避 +1</p>
+    <p class="desc">その名を負う川の水のように、この見事な刃は常に動いている。戦いでは、どれほど束の間の隙にも流れ込むように見える。</p>
+    <p class="grant">授ける能力: 打撃『制圧圏』、隠密『好機の一撃』</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="『デスズ・スティング』 &#x27;death&#x27;s sting&#x27; 弓 よく作られてはいるが、見た目は目立たない弓。だが構えて狙うと、敵の鎧の弱い所へ自然と目が引き寄せられる。">
+  <div class="txt">
+    <h3>『デスズ・スティング』 <span class="kind">弓</span>
+        <span class="en">&#x27;Death&#x27;s Sting&#x27;</span></h3>
+    <p class="num">深さ 10／重さ 1.0 ポンド／値 9,000／命中 +1・ダメージ 1d8</p>
+    <p class="desc">よく作られてはいるが、見た目は目立たない弓。だが構えて狙うと、敵の鎧の弱い所へ自然と目が引き寄せられる。</p>
+    <p class="grant">授ける能力: 射撃『挫きの射』</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="『タワルクン』 &#x27;tawarcun&#x27; 弓 長く細身の弓。弦を掛ける刻みはよく擦り減っているが、触れるとしなやかで、引きも軽い。">
+  <div class="txt">
+    <h3>『タワルクン』 <span class="kind">弓</span>
+        <span class="en">&#x27;Tawarcun&#x27;</span></h3>
+    <p class="num">深さ 10／重さ 2.0 ポンド／値 3,500／命中 +2・ダメージ 2d5</p>
+    <p class="desc">長く細身の弓。弦を掛ける刻みはよく擦り減っているが、触れるとしなやかで、引きも軽い。</p>
+    
+    <p class="flags"><b class="fl">麻痺しない</b><b class="fl">命中しやすい</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="オロドレスの of orodreth 靴 エルフの王子オロドレスのために鍛えられたこの見事な脛当ては、ベレリアンドの合戦の初期に、火の悪鬼たるバルログと戦うために作られた。">
+  <div class="txt">
+    <h3>オロドレスの <span class="kind">靴</span>
+        <span class="en">of Orodreth</span></h3>
+    <p class="num">深さ 10／重さ 7.0 ポンド／値 12,000／回避 -1・防護 1d2</p>
+    <p class="desc">エルフの王子オロドレスのために鍛えられたこの見事な脛当ては、ベレリアンドの合戦の初期に、火の悪鬼たるバルログと戦うために作られた。</p>
+    
+    <p class="flags"><b class="fl">敏捷</b><b class="fl">火に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="ケレブリンボールの of celebrimbor 籠手 ナルゴスロンドの宝玉細工師にして、後の日に力の指輪を鍛えることになる偉大なケレブリンボールが身に着けた手袋。">
+  <div class="txt">
+    <h3>ケレブリンボールの <span class="kind">籠手</span>
+        <span class="en">of Celebrimbor</span></h3>
+    <p class="num">深さ 10／重さ 0.5 ポンド／値 36,000／回避 +0・防護 1d1</p>
+    <p class="desc">ナルゴスロンドの宝玉細工師にして、後の日に力の指輪を鍛えることになる偉大なケレブリンボールが身に着けた手袋。</p>
+    <p class="grant">授ける能力: 鍛冶『熟練』</p>
+    <p class="flags"><b class="fl">麻痺しない</b></p>
+  </div>
+</article><article class="card row" data-depth="11"
+ data-t="ネヴラストの of nevrast 鎖帷子 トゥアゴンがネヴラストのヴィンヤマールを去ったとき、この鎧を残していった。奇しき運命がそれをあの館から遠くへ運んだのである。鎖を二重に重ねて作られているので、多くの者には重すぎるが、並の鎧なら断ち割られたであろう打撃を幾度も逸らす。">
+  <div class="txt">
+    <h3>ネヴラストの <span class="kind">鎖帷子</span>
+        <span class="en">of Nevrast</span></h3>
+    <p class="num">深さ 11／重さ 50.0 ポンド／値 25,000／回避 -4・防護 2d8</p>
+    <p class="desc">トゥアゴンがネヴラストのヴィンヤマールを去ったとき、この鎧を残していった。奇しき運命がそれをあの館から遠くへ運んだのである。鎖を二重に重ねて作られているので、多くの者には重すぎるが、並の鎧なら断ち割られたであろう打撃を幾度も逸らす。</p>
+    
+    <p class="flags"><b class="fl">恩寵を保つ</b><b class="fl">腕力を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="11"
+ data-t="『ルインメギル』 &#x27;luinmegil&#x27; 剣 ヴィンヤマールでシンダールが作った剣。鋼の刃は曇り空の海のような濁った青で、柄は白墨のように白い。">
+  <div class="txt">
+    <h3>『ルインメギル』 <span class="kind">剣</span>
+        <span class="en">&#x27;Luinmegil&#x27;</span></h3>
+    <p class="num">深さ 11／重さ 4.0 ポンド／値 10,000／命中 -2・ダメージ 3d4／回避 +1</p>
+    <p class="desc">ヴィンヤマールでシンダールが作った剣。鋼の刃は曇り空の海のような濁った青で、柄は白墨のように白い。</p>
+    
+    <p class="flags"><b class="fl">命中しやすい</b><b class="fl">冷気に耐える</b><b class="fl">麻痺しない</b></p>
+  </div>
+</article><article class="card row" data-depth="11"
+ data-t="テルハルの of telchar 鈍器 ノグロドの偉大な鍛冶師テルハルの大槌。その硬い鋼は、ドワーフの鍛冶場でも、オークの盾の上でも鳴り響いた。">
+  <div class="txt">
+    <h3>テルハルの <span class="kind">鈍器</span>
+        <span class="en">of Telchar</span></h3>
+    <p class="num">深さ 11／重さ 4.5 ポンド／値 250,000／命中 +0・ダメージ 4d2</p>
+    <p class="desc">ノグロドの偉大な鍛冶師テルハルの大槌。その硬い鋼は、ドワーフの鍛冶場でも、オークの盾の上でも鳴り響いた。</p>
+    <p class="grant">授ける能力: 鍛冶『技巧』</p>
+    <p class="flags"><b class="fl">腕力を保つ</b><b class="fl">火に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="ティンファング・ゲリオンの of tinfang gelion 護符 精緻な意匠が刻まれた繊細な首飾り。首に留めると、偉大な英雄たちの記憶と、その行いを歌いたいという望みが胸に満ちる。">
+  <div class="txt">
+    <h3>ティンファング・ゲリオンの <span class="kind">護符</span>
+        <span class="en">of Tinfang Gelion</span></h3>
+    <p class="num">深さ 12／重さ 0.1 ポンド／値 5,000</p>
+    <p class="desc">精緻な意匠が刻まれた繊細な首飾り。首に留めると、偉大な英雄たちの記憶と、その行いを歌いたいという望みが胸に満ちる。</p>
+    <p class="grant">授ける能力: 歌唱『織り合わせ』</p>
+    <p class="flags"><b class="fl">歌唱</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="『ニンフェロス』 &#x27;nimphelos&#x27; 護符 バラールの湾から採れた最も見事な真珠。その輝きは海の泡に落ちる星明かりのようであった。ドリアスの王、灰色マントのシンゴルから、ベレゴストのドワーフの長へ贈られた。">
+  <div class="txt">
+    <h3>『ニンフェロス』 <span class="kind">護符</span>
+        <span class="en">&#x27;Nimphelos&#x27;</span></h3>
+    <p class="num">深さ 12／重さ 0.1 ポンド／値 5,000</p>
+    <p class="desc">バラールの湾から採れた最も見事な真珠。その輝きは海の泡に落ちる星明かりのようであった。ドリアスの王、灰色マントのシンゴルから、ベレゴストのドワーフの長へ贈られた。</p>
+    
+    <p class="flags"><b class="fl">恩寵</b><b class="fl">恩寵を保つ</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="マイロンの of mairon 指輪 この指輪は、マイロンがまだヴァラールに忠実を装っていたころ、メルコールの手ほどきを受けて鍛えたものである。その表には影がねじれ、絡み合い、死のように冷たい。">
+  <div class="txt">
+    <h3>マイロンの <span class="kind">指輪</span>
+        <span class="en">of Mairon</span></h3>
+    <p class="num">深さ 12／重さ 0.1 ポンド／値 10,000</p>
+    <p class="desc">この指輪は、マイロンがまだヴァラールに忠実を装っていたころ、メルコールの手ほどきを受けて鍛えたものである。その表には影がねじれ、絡み合い、死のように冷たい。</p>
+    <p class="grant">授ける能力: 隠密『消失』</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">歌唱</b><b class="fl">闇</b><b class="fl">裏切る</b><b class="fl">透明が見える</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="『ダグモル』 &#x27;dagmor&#x27; 剣 『闇を屠る者』。バラヒアの息子ベレンが帯びていた短い刃。">
+  <div class="txt">
+    <h3>『ダグモル』 <span class="kind">剣</span>
+        <span class="en">&#x27;Dagmor&#x27;</span></h3>
+    <p class="num">深さ 12／重さ 2.0 ポンド／値 15,000／命中 +2・ダメージ 1d8／回避 +1</p>
+    <p class="desc">『闇を屠る者』。バラヒアの息子ベレンが帯びていた短い刃。</p>
+    
+    <p class="flags"><b class="fl">恐怖に耐える</b><b class="fl">恩寵</b><b class="fl">光</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="『ナルシル』 &#x27;narsil&#x27; 剣 日と月の剣。ノグロドの偉大なドワーフの鍛冶師テルハルが鍛えたもので、来たるべき出来事において大きな役目を果たすことになる。">
+  <div class="txt">
+    <h3>『ナルシル』 <span class="kind">剣</span>
+        <span class="en">&#x27;Narsil&#x27;</span></h3>
+    <p class="num">深さ 12／重さ 2.5 ポンド／値 80,000／命中 +0・ダメージ 2d6／回避 +2</p>
+    <p class="desc">日と月の剣。ノグロドの偉大なドワーフの鍛冶師テルハルが鍛えたもので、来たるべき出来事において大きな役目を果たすことになる。</p>
+    
+    <p class="flags"><b class="fl">光</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="『グレンド』 &#x27;glend&#x27; 剣 巨人ナンの、長く恐ろしい刃。">
+  <div class="txt">
+    <h3>『グレンド』 <span class="kind">剣</span>
+        <span class="en">&#x27;Glend&#x27;</span></h3>
+    <p class="num">深さ 12／重さ 12.0 ポンド／値 100,000／命中 -1・ダメージ 3d6／回避 +1</p>
+    <p class="desc">巨人ナンの、長く恐ろしい刃。</p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">腕力を保つ</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="『ウンゴリアントの嘆き』 &#x27;ungoliant&#x27;s lament&#x27; 剣 赤い革を巻いた柄を持つ、長く仄かに光る刃。ノルドールがベレリアンドへ来た後の日々に、エレド・ゴルゴロスの蜘蛛が数多くこれによって討たれた。">
+  <div class="txt">
+    <h3>『ウンゴリアントの嘆き』 <span class="kind">剣</span>
+        <span class="en">&#x27;Ungoliant&#x27;s Lament&#x27;</span></h3>
+    <p class="num">深さ 12／重さ 4.0 ポンド／値 30,000／命中 -2・ダメージ 3d7／回避 +2</p>
+    <p class="desc">赤い革を巻いた柄を持つ、長く仄かに光る刃。ノルドールがベレリアンドへ来た後の日々に、エレド・ゴルゴロスの蜘蛛が数多くこれによって討たれた。</p>
+    
+    <p class="flags"><b class="fl">特効（蜘蛛）</b><b class="fl">光</b><b class="fl">麻痺しない</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="オグバルの of ogbar 長柄 鋼の鋭い棘のような穂先を持つ、長い槍。">
+  <div class="txt">
+    <h3>オグバルの <span class="kind">長柄</span>
+        <span class="en">of Ogbar</span></h3>
+    <p class="num">深さ 12／重さ 5.0 ポンド／値 60,000／命中 +2・ダメージ 1d14／回避 +2</p>
+    <p class="desc">鋼の鋭い棘のような穂先を持つ、長い槍。</p>
+    
+    <p class="flags"><b class="fl">鋭利</b><b class="fl">特効（蜘蛛）</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="『ドランボルレグ』 &#x27;dramborleg&#x27; 長柄 ゴンドリンの鍛冶場で作られた重い斧。その名は『打ちて鋭き』。棍棒の勢いで打ちながら、剣のように切り裂くからである。">
+  <div class="txt">
+    <h3>『ドランボルレグ』 <span class="kind">長柄</span>
+        <span class="en">&#x27;Dramborleg&#x27;</span></h3>
+    <p class="num">深さ 12／重さ 5.0 ポンド／値 21,000／命中 -2・ダメージ 3d6</p>
+    <p class="desc">ゴンドリンの鍛冶場で作られた重い斧。その名は『打ちて鋭き』。棍棒の勢いで打ちながら、剣のように切り裂くからである。</p>
+    
+    <p class="flags"><b class="fl">特効（ラウコ）</b><b class="fl">特効（オーク）</b><b class="fl">特効（トロル）</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="ガウリンの of gaurin 長柄 『……ガウリンのグレイブ、その煌めく一撃はロドリムの館の岩を裂いた。』">
+  <div class="txt">
+    <h3>ガウリンの <span class="kind">長柄</span>
+        <span class="en">of Gaurin</span></h3>
+    <p class="num">深さ 12／重さ 8.0 ポンド／値 50,000／命中 -1・ダメージ 2d9／回避 +1</p>
+    <p class="desc">『……ガウリンのグレイブ、その煌めく一撃はロドリムの館の岩を裂いた。』</p>
+    
+    <p class="flags"><b class="fl">掘削</b><b class="fl">鋭利</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="タウア＝ヌ＝フインの of taur-nu-fuin 靴 この長靴は、恐ろしきタウア＝ヌ＝フインの森からの逃走を、一度ならず助けてきた。">
+  <div class="txt">
+    <h3>タウア＝ヌ＝フインの <span class="kind">靴</span>
+        <span class="en">of Taur-nu-Fuin</span></h3>
+    <p class="num">深さ 12／重さ 2.0 ポンド／値 25,000／回避 +1・防護 1d1</p>
+    <p class="desc">この長靴は、恐ろしきタウア＝ヌ＝フインの森からの逃走を、一度ならず助けてきた。</p>
+    <p class="grant">授ける能力: 知覚『狩人の達人』</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">知覚</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="ブレゴラスの of bregolas 籠手 にわかに焔流るる合戦で、フィンゴルフィンの息子たちと肩を並べて戦い、命を落としたラドロスの領主ブレゴラスの、毛皮を裏に張った篭手。">
+  <div class="txt">
+    <h3>ブレゴラスの <span class="kind">籠手</span>
+        <span class="en">of Bregolas</span></h3>
+    <p class="num">深さ 12／重さ 6.0 ポンド／値 40,000／回避 +0・防護 1d2</p>
+    <p class="desc">にわかに焔流るる合戦で、フィンゴルフィンの息子たちと肩を並べて戦い、命を落としたラドロスの領主ブレゴラスの、毛皮を裏に張った篭手。</p>
+    
+    <p class="flags"><b class="fl">冷気に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="13"
+ data-t="ドゥリンの of durin 鎖帷子 ドゥリンはカザド＝ドゥームの長鬚族の父であり、その富に並ぶ者はほとんど無かった。これはその精緻な鎖帷子の一つで、王を守るための鎧である。">
+  <div class="txt">
+    <h3>ドゥリンの <span class="kind">鎖帷子</span>
+        <span class="en">of Durin</span></h3>
+    <p class="num">深さ 13／重さ 28.0 ポンド／値 105,000／回避 -3・防護 3d3</p>
+    <p class="desc">ドゥリンはカザド＝ドゥームの長鬚族の父であり、その富に並ぶ者はほとんど無かった。これはその精緻な鎖帷子の一つで、王を守るための鎧である。</p>
+    
+    <p class="flags"><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">回復</b></p>
+  </div>
+</article><article class="card row" data-depth="13"
+ data-t="マエズロスの of maedhros 鎖帷子 フェアノールの長子マエズロスがかつて身に着けた鎖帷子。彼がモルゴスの下僕たちにアングバンドへ連れ去られ、右手一本でサンゴロドリムから吊るされたとき、鎧は剥ぎ取られ、モルゴスの鉄の宝物庫に納められた。">
+  <div class="txt">
+    <h3>マエズロスの <span class="kind">鎖帷子</span>
+        <span class="en">of Maedhros</span></h3>
+    <p class="num">深さ 13／重さ 33.0 ポンド／値 105,000／回避 -3・防護 2d6</p>
+    <p class="desc">フェアノールの長子マエズロスがかつて身に着けた鎖帷子。彼がモルゴスの下僕たちにアングバンドへ連れ去られ、右手一本でサンゴロドリムから吊るされたとき、鎧は剥ぎ取られ、モルゴスの鉄の宝物庫に納められた。</p>
+    
+    <p class="flags"><b class="fl">火に耐える</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="13"
+ data-t="アモン・ルーズの of amon rudh 鎖帷子 アモン・ルーズの丘のまわりに住む者たちは硬く、その身に着ける鎧もまた硬い。">
+  <div class="txt">
+    <h3>アモン・ルーズの <span class="kind">鎖帷子</span>
+        <span class="en">of Amon Rudh</span></h3>
+    <p class="num">深さ 13／重さ 30.0 ポンド／値 25,000／回避 -3・防護 2d6</p>
+    <p class="desc">アモン・ルーズの丘のまわりに住む者たちは硬く、その身に着ける鎧もまた硬い。</p>
+    
+    <p class="flags"><b class="fl">踏みとどまる</b><b class="fl">意志</b></p>
+  </div>
+</article><article class="card row" data-depth="13"
+ data-t="フィンゴルフィンの of fingolfin 盾 水晶をはめ込んだ、輝く青い盾。ノルドールの上級王フィンゴルフィンが手にしていた。">
+  <div class="txt">
+    <h3>フィンゴルフィンの <span class="kind">盾</span>
+        <span class="en">of Fingolfin</span></h3>
+    <p class="num">深さ 13／重さ 7.0 ポンド／値 25,000／回避 +0・防護 1d8</p>
+    <p class="desc">水晶をはめ込んだ、輝く青い盾。ノルドールの上級王フィンゴルフィンが手にしていた。</p>
+    
+    <p class="flags"><b class="fl">耐久</b><b class="fl">耐久を保つ</b><b class="fl">恐怖に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="13"
+ data-t="マグロールの of maglor 外套 偉大な歌い手にして、フェアノールの息子たちの中で最も穏やかなマグロールが身に着けた外套。">
+  <div class="txt">
+    <h3>マグロールの <span class="kind">外套</span>
+        <span class="en">of Maglor</span></h3>
+    <p class="num">深さ 13／重さ 2.0 ポンド／値 35,000／回避 +1</p>
+    <p class="desc">偉大な歌い手にして、フェアノールの息子たちの中で最も穏やかなマグロールが身に着けた外套。</p>
+    <p class="grant">授ける能力: 歌唱『二本の木の歌』</p>
+    <p class="flags"><b class="fl">歌唱</b></p>
+  </div>
+</article><article class="card row" data-depth="13"
+ data-t="ルーシエンの of luthien 外套 柔らかなエルフの髪から織られた、影のような外套。死を知った者の中で最も美しい、ルーシエン・ティヌーヴィエルが作った。">
+  <div class="txt">
+    <h3>ルーシエンの <span class="kind">外套</span>
+        <span class="en">of Luthien</span></h3>
+    <p class="num">深さ 13／重さ 1.0 ポンド／値 45,000／回避 +4</p>
+    <p class="desc">柔らかなエルフの髪から織られた、影のような外套。死を知った者の中で最も美しい、ルーシエン・ティヌーヴィエルが作った。</p>
+    <p class="grant">授ける能力: 歌唱『ローリエンの歌』</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">闇</b><b class="fl">恩寵を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="メリアンの of melian 指輪 かつてドリアスの女王にして世界の力ある者の一人、メリアンの手を飾った指輪。彼女は何よりもその洞察で名高い。">
+  <div class="txt">
+    <h3>メリアンの <span class="kind">指輪</span>
+        <span class="en">of Melian</span></h3>
+    <p class="num">深さ 14／重さ 0.1 ポンド／値 50,000</p>
+    <p class="desc">かつてドリアスの女王にして世界の力ある者の一人、メリアンの手を飾った指輪。彼女は何よりもその洞察で名高い。</p>
+    <p class="grant">授ける能力: 意志『交感』</p>
+    <p class="flags"><b class="fl">知覚</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="『エレッサール』 &#x27;elessar&#x27; 護符 隠れた都でエネルディルが作った美しい緑の宝玉。その中には太陽の光が閉じ込められており、これを通して見る者は、老い衰えたものを再び若くしなやかであるかのように見ることができる。">
+  <div class="txt">
+    <h3>『エレッサール』 <span class="kind">護符</span>
+        <span class="en">&#x27;Elessar&#x27;</span></h3>
+    <p class="num">深さ 14／重さ 0.1 ポンド／値 7,000</p>
+    <p class="desc">隠れた都でエネルディルが作った美しい緑の宝玉。その中には太陽の光が閉じ込められており、これを通して見る者は、老い衰えたものを再び若くしなやかであるかのように見ることができる。</p>
+    <p class="grant">授ける能力: 意志『逆境の力』</p>
+    <p class="flags"><b class="fl">耐久</b><b class="fl">回復</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="ダイロンの of daeron 冠 『……羊歯の冠をかぶった黒髪のダイロンは、人を惑わす魔法の技をもって、心を引き裂く調べを奏でた。』">
+  <div class="txt">
+    <h3>ダイロンの <span class="kind">冠</span>
+        <span class="en">of Daeron</span></h3>
+    <p class="num">深さ 14／重さ 0.5 ポンド／値 600,000／回避 +0・防護 1d0</p>
+    <p class="desc">『……羊歯の冠をかぶった黒髪のダイロンは、人を惑わす魔法の技をもって、心を引き裂く調べを奏でた。』</p>
+    
+    <p class="flags"><b class="fl">歌唱</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="『アングリスト』 &#x27;angrist&#x27; 剣 ドワーフの鍛冶師の中で最も偉大なテルハルが隕鉄から鍛えた短刀。金属を肉と同じくたやすく切り裂き、その名『鉄断ち』を得た。">
+  <div class="txt">
+    <h3>『アングリスト』 <span class="kind">剣</span>
+        <span class="en">&#x27;Angrist&#x27;</span></h3>
+    <p class="num">深さ 14／重さ 0.5 ポンド／値 100,000／命中 +0・ダメージ 1d5</p>
+    <p class="desc">ドワーフの鍛冶師の中で最も偉大なテルハルが隕鉄から鍛えた短刀。金属を肉と同じくたやすく切り裂き、その名『鉄断ち』を得た。</p>
+    
+    <p class="flags"><b class="fl">鋭利（大）</b><b class="fl">投げられる</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="『グラムドリング』 &#x27;glamdring&#x27; 剣 この明るい刃はゴンドリンのエネルディルが鍛え、隠れの都の主トゥアゴンが帯びた。その刃はモルゴスの下僕の多くにとって禍である。">
+  <div class="txt">
+    <h3>『グラムドリング』 <span class="kind">剣</span>
+        <span class="en">&#x27;Glamdring&#x27;</span></h3>
+    <p class="num">深さ 14／重さ 3.0 ポンド／値 40,000／命中 +2・ダメージ 2d5／回避 +2</p>
+    <p class="desc">この明るい刃はゴンドリンのエネルディルが鍛え、隠れの都の主トゥアゴンが帯びた。その刃はモルゴスの下僕の多くにとって禍である。</p>
+    
+    <p class="flags"><b class="fl">特効（オーク）</b><b class="fl">特効（トロル）</b><b class="fl">特効（竜）</b><b class="fl">特効（ラウコ）</b><b class="fl">意志</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="『アイグロス』 &#x27;aeglos&#x27; 長柄 ギル＝ガラドの強大な槍。エルフの歌に『雪の穂先』として名高い。">
+  <div class="txt">
+    <h3>『アイグロス』 <span class="kind">長柄</span>
+        <span class="en">&#x27;Aeglos&#x27;</span></h3>
+    <p class="num">深さ 14／重さ 3.0 ポンド／値 140,000／命中 +1・ダメージ 1d9</p>
+    <p class="desc">ギル＝ガラドの強大な槍。エルフの歌に『雪の穂先』として名高い。</p>
+    
+    <p class="flags"><b class="fl">冷気の属性</b><b class="fl">投げられる</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="『マザルブルバルク』 &#x27;mazarbulbark&#x27; 長柄 この巨大な斧は、刃も柄も黒ずんだ鋼の一塊から作られている。斧頭には、ベレゴストの勇敢に散った戦士たちの名を記す、細かなドワーフのルーンが数多く刻まれている。">
+  <div class="txt">
+    <h3>『マザルブルバルク』 <span class="kind">長柄</span>
+        <span class="en">&#x27;Mazarbulbark&#x27;</span></h3>
+    <p class="num">深さ 14／重さ 9.0 ポンド／値 10,000／命中 -3・ダメージ 4d4</p>
+    <p class="desc">この巨大な斧は、刃も柄も黒ずんだ鋼の一塊から作られている。斧頭には、ベレゴストの勇敢に散った戦士たちの名を記す、細かなドワーフのルーンが数多く刻まれている。</p>
+    <p class="grant">授ける能力: 意志『復讐』</p>
+    <p class="flags"><b class="fl">意志</b><b class="fl">特効（トロル）</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="『ベルスロンディング』 &#x27;belthronding&#x27; 弓 ベレグ・クーサリオンの大弓。黒いイチイの木で作られ、淡く澄んだ金色に仄かに輝くエルフの髪を弦としている。">
+  <div class="txt">
+    <h3>『ベルスロンディング』 <span class="kind">弓</span>
+        <span class="en">&#x27;Belthronding&#x27;</span></h3>
+    <p class="num">深さ 14／重さ 4.0 ポンド／値 35,000／命中 +1・ダメージ 2d6</p>
+    <p class="desc">ベレグ・クーサリオンの大弓。黒いイチイの木で作られ、淡く澄んだ金色に仄かに輝くエルフの髪を弦としている。</p>
+    
+    <p class="flags"><b class="fl">知覚</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="ヘルカラクセの of the helcaraxe 靴 ノルドールの数多の偉業の中でも、ヘルカラクセの氷を渡ったことほど辛苦に満ちたものは無いと言われる。">
+  <div class="txt">
+    <h3>ヘルカラクセの <span class="kind">靴</span>
+        <span class="en">of the Helcaraxe</span></h3>
+    <p class="num">深さ 14／重さ 8.0 ポンド／値 12,000／回避 +0・防護 1d3</p>
+    <p class="desc">ノルドールの数多の偉業の中でも、ヘルカラクセの氷を渡ったことほど辛苦に満ちたものは無いと言われる。</p>
+    
+    <p class="flags"><b class="fl">冷気に耐える</b><b class="fl">回復</b><b class="fl">腕力を保つ</b><b class="fl">耐久を保つ</b><b class="fl">敏捷を保つ</b><b class="fl">恩寵を保つ</b></p>
+  </div>
+</article><article class="card row" data-depth="14"
+ data-t="『アズドゥラグ』 &#x27;azdulag&#x27; 籠手 星々の下の合戦でモルゴスの軍勢の多くとともに斃れた、オークの大族長ゴルグダズのために、モルゴスが鍛えた無慈悲な篭手。">
+  <div class="txt">
+    <h3>『アズドゥラグ』 <span class="kind">籠手</span>
+        <span class="en">&#x27;Azdulag&#x27;</span></h3>
+    <p class="num">深さ 14／重さ 5.0 ポンド／値 60,000／回避 -1・防護 2d1</p>
+    <p class="desc">星々の下の合戦でモルゴスの軍勢の多くとともに斃れた、オークの大族長ゴルグダズのために、モルゴスが鍛えた無慈悲な篭手。</p>
+    <p class="grant">授ける能力: 打撃『打ち飛ばし』</p>
+    <p class="flags"><b class="fl">腕力</b><b class="fl">闇</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="マエグリンの of maeglin 軽鎧 しなやかでありながら蛇の鱗より硬い、この輝く黒い鎧は、名工エオルが幾年も前に鍛え、息子マエグリンへ贈ったものである。">
+  <div class="txt">
+    <h3>マエグリンの <span class="kind">軽鎧</span>
+        <span class="en">of Maeglin</span></h3>
+    <p class="num">深さ 15／重さ 7.0 ポンド／値 45,000／回避 +1・防護 1d8</p>
+    <p class="desc">しなやかでありながら蛇の鱗より硬い、この輝く黒い鎧は、名工エオルが幾年も前に鍛え、息子マエグリンへ贈ったものである。</p>
+    
+    <p class="flags"><b class="fl">敏捷</b><b class="fl">毒に耐える</b><b class="fl">早く飢える</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="『アングイレル』 &#x27;anguirel&#x27; 剣 陰気なエオルが鍛えた苦き刃。星より落ちた金属から、密かに作られた。">
+  <div class="txt">
+    <h3>『アングイレル』 <span class="kind">剣</span>
+        <span class="en">&#x27;Anguirel&#x27;</span></h3>
+    <p class="num">深さ 15／重さ 5.0 ポンド／値 100,000／命中 +1・ダメージ 3d4／回避 +1</p>
+    <p class="desc">陰気なエオルが鍛えた苦き刃。星より落ちた金属から、密かに作られた。</p>
+    
+    <p class="flags"><b class="fl">鋭利</b><b class="fl">裏切る</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="『カルリス』 &#x27;calris&#x27; 剣 消えぬ焔をまとった、残忍で重い刃。もとは偉大なヴァララウコ、ゴスモグのために、モルゴスの軍勢の内輪もめを断ち切るべく鍛えられた。">
+  <div class="txt">
+    <h3>『カルリス』 <span class="kind">剣</span>
+        <span class="en">&#x27;Calris&#x27;</span></h3>
+    <p class="num">深さ 15／重さ 11.0 ポンド／値 100,000／命中 -5・ダメージ 3d7／回避 +1</p>
+    <p class="desc">消えぬ焔をまとった、残忍で重い刃。もとは偉大なヴァララウコ、ゴスモグのために、モルゴスの軍勢の内輪もめを断ち切るべく鍛えられた。</p>
+    
+    <p class="flags"><b class="fl">耐久</b><b class="fl">火の属性</b><b class="fl">光</b><b class="fl">冷気に弱い</b><b class="fl">軽い呪い</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="メルコールの of melkor 長柄 かつて暗黒の王自らが、怒りを抱いてヴァリノールへ来たときに振るった、強大な黒い槍。その毒を帯びた一突きは二本の木を貫き、癒えることのない傷を負わせた。">
+  <div class="txt">
+    <h3>メルコールの <span class="kind">長柄</span>
+        <span class="en">of Melkor</span></h3>
+    <p class="num">深さ 15／重さ 8.0 ポンド／値 100,000／命中 +1・ダメージ 1d15／回避 +1</p>
+    <p class="desc">かつて暗黒の王自らが、怒りを抱いてヴァリノールへ来たときに振るった、強大な黒い槍。その毒を帯びた一突きは二本の木を貫き、癒えることのない傷を負わせた。</p>
+    
+    <p class="flags"><b class="fl">恩寵</b><b class="fl">毒の属性</b><b class="fl">麻痺しない</b><b class="fl">毒に弱い</b><b class="fl">軽い呪い</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="母たちの悲しみの of mothers&#x27; woe 長柄 禍々しい刃を持つ黒い斧で、モルゴス・バウグリア自らが鍛えた。これが断ち切った命は数知れない。触れると血のように温かく、手に持てば忌まわしい。">
+  <div class="txt">
+    <h3>母たちの悲しみの <span class="kind">長柄</span>
+        <span class="en">of Mothers&#x27; Woe</span></h3>
+    <p class="num">深さ 15／重さ 6.0 ポンド／値 90,000／命中 -3・ダメージ 3d5</p>
+    <p class="desc">禍々しい刃を持つ黒い斧で、モルゴス・バウグリア自らが鍛えた。これが断ち切った命は数知れない。触れると血のように温かく、手に持てば忌まわしい。</p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">祟られている</b><b class="fl">吸血</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="クルフィンの of curufin 兜 フェアノールの息子クルフィンが被った兜。その暗い策謀はベレリアンドの多くを罠にかけた。">
+  <div class="txt">
+    <h3>クルフィンの <span class="kind">兜</span>
+        <span class="en">of Curufin</span></h3>
+    <p class="num">深さ 15／重さ 4.5 ポンド／値 45,000／回避 -1・防護 1d2</p>
+    <p class="desc">フェアノールの息子クルフィンが被った兜。その暗い策謀はベレリアンドの多くを罠にかけた。</p>
+    <p class="grant">授ける能力: 知覚『聞き耳』</p>
+    <p class="flags"><b class="fl">知覚</b><b class="fl">隠密</b><b class="fl">混乱に耐える</b><b class="fl">危険を招く</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="フィンロドの of finrod 靴 かつてナルゴスロンドの王であったフィンロド・フェラグンドは、ノルドールの中で最も偉大で、最も賢い者の一人であった。この見事な長靴は騎行のために作られたものだが、地の上でも同じく軽やかで、戦いを舞のように渡らせてくれる。">
+  <div class="txt">
+    <h3>フィンロドの <span class="kind">靴</span>
+        <span class="en">of Finrod</span></h3>
+    <p class="num">深さ 15／重さ 2.0 ポンド／値 40,000／回避 +3・防護 1d1</p>
+    <p class="desc">かつてナルゴスロンドの王であったフィンロド・フェラグンドは、ノルドールの中で最も偉大で、最も賢い者の一人であった。この見事な長靴は騎行のために作られたものだが、地の上でも同じく軽やかで、戦いを舞のように渡らせてくれる。</p>
+    
+    <p class="flags"><b class="fl">麻痺しない</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="『シルヴァーハンド』 &#x27;silverhand&#x27; 籠手 この妙なる手袋は鉄のように硬く、それでいて上等な革のようにしなやかである。これを着けた手は、素手のときよりも繊細に、そして素早く動く。">
+  <div class="txt">
+    <h3>『シルヴァーハンド』 <span class="kind">籠手</span>
+        <span class="en">&#x27;Silverhand&#x27;</span></h3>
+    <p class="num">深さ 15／重さ 1.0 ポンド／値 20,000／回避 +0・防護 1d2</p>
+    <p class="desc">この妙なる手袋は鉄のように硬く、それでいて上等な革のようにしなやかである。これを着けた手は、素手のときよりも繊細に、そして素早く動く。</p>
+    <p class="grant">授ける能力: 鍛冶『宝石細工』</p>
+    <p class="flags"><b class="fl">敏捷</b></p>
+  </div>
+</article><article class="card row" data-depth="16"
+ data-t="ドワーフの of the dwarves 護符 ナウグラミーア。ヴァリノールの輝く宝玉を数多くはめ込んだ黄金の頸飾りである。エレド・ルインのドワーフたちがフィンロド・フェラグンドのために作った。">
+  <div class="txt">
+    <h3>ドワーフの <span class="kind">護符</span>
+        <span class="en">of the Dwarves</span></h3>
+    <p class="num">深さ 16／重さ 0.1 ポンド／値 10,000</p>
+    <p class="desc">ナウグラミーア。ヴァリノールの輝く宝玉を数多くはめ込んだ黄金の頸飾りである。エレド・ルインのドワーフたちがフィンロド・フェラグンドのために作った。</p>
+    
+    <p class="flags"><b class="fl">耐久</b><b class="fl">恩寵</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="16"
+ data-t="『スターライト』 &#x27;starlight&#x27; 鎖帷子 この見事な上着は、見えぬほど小さなミスリルの輪から編まれており、ヴァルダの星々が夜空で瞬くように、松明の光の下で瞬く。">
+  <div class="txt">
+    <h3>『スターライト』 <span class="kind">鎖帷子</span>
+        <span class="en">&#x27;Starlight&#x27;</span></h3>
+    <p class="num">深さ 16／重さ 12.0 ポンド／値 50,000／回避 -1・防護 2d4</p>
+    <p class="desc">この見事な上着は、見えぬほど小さなミスリルの輪から編まれており、ヴァルダの星々が夜空で瞬くように、松明の光の下で瞬く。</p>
+    <p class="grant">授ける能力: 歌唱『エルベレスの歌』</p>
+    <p class="flags"><b class="fl">恐怖に耐える</b><b class="fl">盲目に耐える</b><b class="fl">知覚</b><b class="fl">歌唱</b></p>
+  </div>
+</article><article class="card row" data-depth="16"
+ data-t="ドワローデルフの of the dwarrowdelf 兜 湾曲した角を持つ、大きく飾り立てた兜。どんな状況であろうと戦い抜こうという決意を与える。">
+  <div class="txt">
+    <h3>ドワローデルフの <span class="kind">兜</span>
+        <span class="en">of the Dwarrowdelf</span></h3>
+    <p class="num">深さ 16／重さ 7.0 ポンド／値 6,000／回避 -2・防護 1d3</p>
+    <p class="desc">湾曲した角を持つ、大きく飾り立てた兜。どんな状況であろうと戦い抜こうという決意を与える。</p>
+    <p class="grant">授ける能力: 意志『逆境の力』</p>
+    <p class="flags"><b class="fl">意志</b><b class="fl">火に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="16"
+ data-t="エクセリオンの of ecthelion 兜 ミスリルで作られ、白い石を象嵌した美しい兜。優美に立ち上がり、どんな槍にも劣らず鋭い頂を成している。">
+  <div class="txt">
+    <h3>エクセリオンの <span class="kind">兜</span>
+        <span class="en">of Ecthelion</span></h3>
+    <p class="num">深さ 16／重さ 4.0 ポンド／値 25,000／回避 -1・防護 1d3</p>
+    <p class="desc">ミスリルで作られ、白い石を象嵌した美しい兜。優美に立ち上がり、どんな槍にも劣らず鋭い頂を成している。</p>
+    <p class="grant">授ける能力: 歌唱『不動の歌』</p>
+    <p class="flags"><b class="fl">歌唱</b><b class="fl">火に耐える</b><b class="fl">恐怖に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="17"
+ data-t="サイスナルの of saithnar 剣 銀のルーンを象嵌した、輝く大剣。">
+  <div class="txt">
+    <h3>サイスナルの <span class="kind">剣</span>
+        <span class="en">of Saithnar</span></h3>
+    <p class="num">深さ 17／重さ 7.0 ポンド／値 100,000／命中 +0・ダメージ 3d5／回避 +1</p>
+    <p class="desc">銀のルーンを象嵌した、輝く大剣。</p>
+    
+    <p class="flags"><b class="fl">鋭利</b><b class="fl">特効（不死）</b><b class="fl">祟られている</b><b class="fl">透明が見える</b></p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="イドリル・ケレブリンダルの of idril celebrindal 軽鎧 トゥアゴンの一人子にしてゴンドリンの光であった姫の長衣。滑らかな布の柔らかな襞は身を奮い立たせ、マンウェの疾き鷲たちの姿を胸に呼び起こす。">
+  <div class="txt">
+    <h3>イドリル・ケレブリンダルの <span class="kind">軽鎧</span>
+        <span class="en">of Idril Celebrindal</span></h3>
+    <p class="num">深さ 18／重さ 3.0 ポンド／値 25,000／回避 +0・防護 1d0</p>
+    <p class="desc">トゥアゴンの一人子にしてゴンドリンの光であった姫の長衣。滑らかな布の柔らかな襞は身を奮い立たせ、マンウェの疾き鷲たちの姿を胸に呼び起こす。</p>
+    
+    <p class="flags"><b class="fl">速さ</b></p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="ヴァリノールの of valinor 盾 満月のように輝き、祝福された国の意匠を掲げる盾。心を明るくしてくれる。">
+  <div class="txt">
+    <h3>ヴァリノールの <span class="kind">盾</span>
+        <span class="en">of Valinor</span></h3>
+    <p class="num">深さ 18／重さ 3.0 ポンド／値 25,000／回避 +1・防護 1d6</p>
+    <p class="desc">満月のように輝き、祝福された国の意匠を掲げる盾。心を明るくしてくれる。</p>
+    
+    <p class="flags"><b class="fl">光</b><b class="fl">恩寵</b></p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="ドルメドの of dolmed 長柄 はるか昔にガミル・ジラクが鍛えたこの巨大な斧は、長年ドワーフの都ノグロドの家宝であった。振るう者にそれを扱う力と、モルゴスの最も汚らわしい下僕たちと戦う力を与える。">
+  <div class="txt">
+    <h3>ドルメドの <span class="kind">長柄</span>
+        <span class="en">of Dolmed</span></h3>
+    <p class="num">深さ 18／重さ 11.0 ポンド／値 150,000／命中 -4・ダメージ 4d5</p>
+    <p class="desc">はるか昔にガミル・ジラクが鍛えたこの巨大な斧は、長年ドワーフの都ノグロドの家宝であった。振るう者にそれを扱う力と、モルゴスの最も汚らわしい下僕たちと戦う力を与える。</p>
+    
+    <p class="flags"><b class="fl">特効（ラウコ）</b><b class="fl">腕力</b><b class="fl">火に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="フェアノールの of feanor 冠 ノルドールの中で最も偉大なフェアノールの王冠。ヴァリノールの輝く宝玉を数多くはめ込んで見事に作られており、その光は闇より生まれた者たちへの挑みとなる。彼の欠けたるところは深かったが、この王冠はその偉大さを思い起こさせる。『あの歌々は高くついたと数えられよう。それでもなお、よい買い物であったと。値はほかにありえなかったのだから。』">
+  <div class="txt">
+    <h3>フェアノールの <span class="kind">冠</span>
+        <span class="en">of Feanor</span></h3>
+    <p class="num">深さ 20／重さ 3.5 ポンド／値 300,000／回避 +0・防護 1d1</p>
+    <p class="desc">ノルドールの中で最も偉大なフェアノールの王冠。ヴァリノールの輝く宝玉を数多くはめ込んで見事に作られており、その光は闇より生まれた者たちへの挑みとなる。彼の欠けたるところは深かったが、この王冠はその偉大さを思い起こさせる。『あの歌々は高くついたと数えられよう。それでもなお、よい買い物であったと。値はほかにありえなかったのだから。』</p>
+    <p class="grant">授ける能力: 鍛冶『付呪』、鍛冶『傑作』</p>
+    <p class="flags"><b class="fl">意志</b><b class="fl">火に耐える</b><b class="fl">透明が見える</b><b class="fl">光</b><b class="fl">敵を起こす</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="『アランルース』 &#x27;aranruth&#x27; 剣 シンゴルの美しい剣で、『王の怒り』の名にふさわしい。宝玉をはめた柄を握ると、揺るぎない自信が満ちてくる。">
+  <div class="txt">
+    <h3>『アランルース』 <span class="kind">剣</span>
+        <span class="en">&#x27;Aranruth&#x27;</span></h3>
+    <p class="num">深さ 20／重さ 4.0 ポンド／値 50,000／命中 +3・ダメージ 2d7／回避 +1</p>
+    <p class="desc">シンゴルの美しい剣で、『王の怒り』の名にふさわしい。宝玉をはめた柄を握ると、揺るぎない自信が満ちてくる。</p>
+    
+    <p class="flags"><b class="fl">意志</b><b class="fl">恐怖に耐える</b><b class="fl">危険を招く</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="『ケレグ・アイソルン』 &#x27;celeg aithorn&#x27; 剣 『……切り裂く嵐の薙ぎ払う鎌、閃く稲妻の跳ねる曲刀、世界をも断つケレグ・アイソルンそのものよ。』">
+  <div class="txt">
+    <h3>『ケレグ・アイソルン』 <span class="kind">剣</span>
+        <span class="en">&#x27;Celeg Aithorn&#x27;</span></h3>
+    <p class="num">深さ 20／重さ 2.0 ポンド／値 50,000／命中 +1・ダメージ 2d5／回避 +1</p>
+    <p class="desc">『……切り裂く嵐の薙ぎ払う鎌、閃く稲妻の跳ねる曲刀、世界をも断つケレグ・アイソルンそのものよ。』</p>
+    
+    <p class="flags"><b class="fl">電撃の属性</b><b class="fl">鋭利</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="『リンギル』 &#x27;ringil&#x27; 剣 ノルドールの上級王フィンゴルフィンの武器。消えぬ光に照らされた氷の柱のように輝く。かつてモルゴスは、これと相見えるのを嫌がった。その萎えた足が、再び相対するときにはこの剣の力を思い出させるだろう。">
+  <div class="txt">
+    <h3>『リンギル』 <span class="kind">剣</span>
+        <span class="en">&#x27;Ringil&#x27;</span></h3>
+    <p class="num">深さ 20／重さ 2.0 ポンド／値 300,000／命中 +3・ダメージ 2d5／回避 +3</p>
+    <p class="desc">ノルドールの上級王フィンゴルフィンの武器。消えぬ光に照らされた氷の柱のように輝く。かつてモルゴスは、これと相見えるのを嫌がった。その萎えた足が、再び相対するときにはこの剣の力を思い出させるだろう。</p>
+    
+    <p class="flags"><b class="fl">冷気の属性</b><b class="fl">光</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="アウレの怒りの of aule&#x27;s wrath 鈍器 強きログがヴァリノールから携え、にわかに焔流るる合戦の後の退却で失われた鎚。二本の木が滅ぼされた後の日々にアウレが作ったもので、柄も頭も黒い鉄で、赤金の帯が巻かれている。">
+  <div class="txt">
+    <h3>アウレの怒りの <span class="kind">鈍器</span>
+        <span class="en">of Aule&#x27;s Wrath</span></h3>
+    <p class="num">深さ 20／重さ 7.0 ポンド／値 250,000／命中 +0・ダメージ 4d2</p>
+    <p class="desc">強きログがヴァリノールから携え、にわかに焔流るる合戦の後の退却で失われた鎚。二本の木が滅ぼされた後の日々にアウレが作ったもので、柄も頭も黒い鉄で、赤金の帯が巻かれている。</p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">耐久</b><b class="fl">特効（ラウコ）</b><b class="fl">火に耐える</b><b class="fl">危険を招く</b><b class="fl">敵を起こす</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="『ブルクフェレク』 &#x27;burkfelek&#x27; 掘る道具 はるか昔にガミル・ジラクが鍛えた、強力なドワーフのつるはし。戦にも坑にも効くよう魔法が掛けられている。">
+  <div class="txt">
+    <h3>『ブルクフェレク』 <span class="kind">掘る道具</span>
+        <span class="en">&#x27;Burkfelek&#x27;</span></h3>
+    <p class="num">深さ 20／重さ 11.0 ポンド／値 30,000／命中 -4・ダメージ 6d2</p>
+    <p class="desc">はるか昔にガミル・ジラクが鍛えた、強力なドワーフのつるはし。戦にも坑にも効くよう魔法が掛けられている。</p>
+    
+    <p class="flags"><b class="fl">掘削</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="ドル＝ローミンの of dor-lomin 兜 ハドル家の伝説の竜の兜。モルゴスの下僕たちにとって恐怖の的である。">
+  <div class="txt">
+    <h3>ドル＝ローミンの <span class="kind">兜</span>
+        <span class="en">of Dor-Lomin</span></h3>
+    <p class="num">深さ 20／重さ 9.0 ポンド／値 300,000／回避 -2・防護 1d4</p>
+    <p class="desc">ハドル家の伝説の竜の兜。モルゴスの下僕たちにとって恐怖の的である。</p>
+    
+    <p class="flags"><b class="fl">腕力</b><b class="fl">恐怖に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">意志</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="ウトゥムノの of utumno 兜 モルゴスの最初の砦で、忘れられた年月のうちに作られた巨大な黒い兜。力を与えるが、被る者の意志を、自らの暗い目的へと捻じ曲げる。">
+  <div class="txt">
+    <h3>ウトゥムノの <span class="kind">兜</span>
+        <span class="en">of Utumno</span></h3>
+    <p class="num">深さ 20／重さ 10.0 ポンド／値 10,000／回避 -2・防護 1d4</p>
+    <p class="desc">モルゴスの最初の砦で、忘れられた年月のうちに作られた巨大な黒い兜。力を与えるが、被る者の意志を、自らの暗い目的へと捻じ曲げる。</p>
+    
+    <p class="flags"><b class="fl">耐久</b><b class="fl">恩寵減</b><b class="fl">火に弱い</b><b class="fl">軽い呪い</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="シンゴルの of thingol 外套 エル・シンゴルの名高い灰色の外套が、いかなる黒い裏切りによってアングバンドの宝の山に流れ着いたのか、それは判らない。">
+  <div class="txt">
+    <h3>シンゴルの <span class="kind">外套</span>
+        <span class="en">of Thingol</span></h3>
+    <p class="num">深さ 20／重さ 1.5 ポンド／値 35,000／回避 +2</p>
+    <p class="desc">エル・シンゴルの名高い灰色の外套が、いかなる黒い裏切りによってアングバンドの宝の山に流れ着いたのか、それは判らない。</p>
+    
+    <p class="flags"><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">麻痺しない</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="ドラウグルインの of draugluin 外套 人狼の祖ドラウグルインの毛皮。これを身にまとえば、敵の下僕の幾人かを欺けるかもしれない。">
+  <div class="txt">
+    <h3>ドラウグルインの <span class="kind">外套</span>
+        <span class="en">of Draugluin</span></h3>
+    <p class="num">深さ 20／重さ 13.0 ポンド／値 500,000／回避 -3・防護 1d4</p>
+    <p class="desc">人狼の祖ドラウグルインの毛皮。これを身にまとえば、敵の下僕の幾人かを欺けるかもしれない。</p>
+    <p class="grant">授ける能力: 隠密『変装』</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="アルヴェルニエンの of avernien 弓 討たれた竜の角一本から作られた、大きく見事な弓。エルダールの祝福が数多く掛けられている。">
+  <div class="txt">
+    <h3>アルヴェルニエンの <span class="kind">弓</span>
+        <span class="en">of Avernien</span></h3>
+    <p class="num">深さ 20／重さ 5.0 ポンド／値 35,000／命中 +1・ダメージ 4d3</p>
+    <p class="desc">討たれた竜の角一本から作られた、大きく見事な弓。エルダールの祝福が数多く掛けられている。</p>
+    
+    <p class="flags"><b class="fl">輝き</b><b class="fl">恐怖に耐える</b><b class="fl">混乱に耐える</b><b class="fl">朦朧に耐える</b><b class="fl">幻覚に耐える</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="モルゴスの of morgoth 冠 かつてアイヌアの中で最も強大な者の力の多くを宿していたこの飾り気のない鉄の王冠には、今や三つの空の窪みがあるばかりである。星のあるべき所の穴が。">
+  <div class="txt">
+    <h3>モルゴスの <span class="kind">冠</span>
+        <span class="en">of Morgoth</span></h3>
+    <p class="num">深さ 20／重さ 400.0 ポンド／値 10,000,000</p>
+    <p class="desc">かつてアイヌアの中で最も強大な者の力の多くを宿していたこの飾り気のない鉄の王冠には、今や三つの空の窪みがあるばかりである。星のあるべき所の穴が。</p>
+    
+    <p class="flags"><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="モルゴスの of morgoth 冠 アイヌアの中で最も強大な者の力の多くを宿すこの飾り気のない鉄の王冠には、中つ国最大の宝である、ただ一つ残ったシルマリルがはめ込まれている。">
+  <div class="txt">
+    <h3>モルゴスの <span class="kind">冠</span>
+        <span class="en">of Morgoth</span></h3>
+    <p class="num">深さ 20／重さ 400.0 ポンド／値 10,000,000</p>
+    <p class="desc">アイヌアの中で最も強大な者の力の多くを宿すこの飾り気のない鉄の王冠には、中つ国最大の宝である、ただ一つ残ったシルマリルがはめ込まれている。</p>
+    
+    <p class="flags"><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="モルゴスの of morgoth 冠 アイヌアの中で最も強大な者の力の多くを宿すこの飾り気のない鉄の王冠には、中つ国最大の宝である、残る二つのシルマリルがはめ込まれている。">
+  <div class="txt">
+    <h3>モルゴスの <span class="kind">冠</span>
+        <span class="en">of Morgoth</span></h3>
+    <p class="num">深さ 20／重さ 400.0 ポンド／値 10,000,000</p>
+    <p class="desc">アイヌアの中で最も強大な者の力の多くを宿すこの飾り気のない鉄の王冠には、中つ国最大の宝である、残る二つのシルマリルがはめ込まれている。</p>
+    
+    <p class="flags"><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="モルゴスの of morgoth 冠 アイヌアの中で最も強大な者の力の多くを宿すこの飾り気のない鉄の王冠には、中つ国最大の宝である、三つのシルマリルがはめ込まれている。王冠からシルマリルを切り取ろうとするには、その上に立って (k) を押す。">
+  <div class="txt">
+    <h3>モルゴスの <span class="kind">冠</span>
+        <span class="en">of Morgoth</span></h3>
+    <p class="num">深さ 20／重さ 400.0 ポンド／値 10,000,000</p>
+    <p class="desc">アイヌアの中で最も強大な者の力の多くを宿すこの飾り気のない鉄の王冠には、中つ国最大の宝である、三つのシルマリルがはめ込まれている。王冠からシルマリルを切り取ろうとするには、その上に立って (k) を押す。</p>
+    
+    <p class="flags"><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="『グロンド』 &#x27;grond&#x27; 鈍器 暗い呪術で黒ずんだ、冥府の大槌。これを振るう者は、モルゴスのすべての下僕の命をその手に握る。">
+  <div class="txt">
+    <h3>『グロンド』 <span class="kind">鈍器</span>
+        <span class="en">&#x27;Grond&#x27;</span></h3>
+    <p class="num">深さ 20／重さ 100.0 ポンド／値 500,000／命中 -9・ダメージ 6d5</p>
+    <p class="desc">暗い呪術で黒ずんだ、冥府の大槌。これを振るう者は、モルゴスのすべての下僕の命をその手に握る。</p>
+    
+    <p class="flags"><b class="fl">掘削</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article><article class="card row" data-depth="23"
+ data-t="スリングウェシルの of thuringwethil 外套 大きな黒い翼を持つこの吸血鬼の名残があれば、モルゴスのもとへ赴く使者として通れるだろうか。">
+  <div class="txt">
+    <h3>スリングウェシルの <span class="kind">外套</span>
+        <span class="en">of Thuringwethil</span></h3>
+    <p class="num">深さ 23／重さ 5.0 ポンド／値 500,000／回避 +2</p>
+    <p class="desc">大きな黒い翼を持つこの吸血鬼の名残があれば、モルゴスのもとへ赴く使者として通れるだろうか。</p>
+    <p class="grant">授ける能力: 隠密『変装』</p>
+    <p class="flags"><b class="fl">隠密</b><b class="fl">必ずアーティファクト</b></p>
+  </div>
+</article>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>Sil-Q は Sil から続くローグライクで、J.R.R. トールキンの
+     『シルマリルの物語』の世界を題材にしている。
+     ここはその非公式のスポイラーである。</p>
+</div></footer>
+<script src="silq.js"></script>
+</body>
+</html>

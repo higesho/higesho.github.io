@@ -116,6 +116,16 @@ html[data-lang="en"]{
 .btn-sub:hover{border-color:var(--torch);color:#fff;background:rgba(232,162,74,.08)}
 .meta{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.06em}
 
+/* スポイラーは配布物でも外部の公式でもないので、枠を外して読み物の顔にする */
+.btn-doc{
+  padding:7px 2px;border:0;border-bottom:1px solid var(--torch-dim);
+  font-family:var(--mono);font-size:13px;font-weight:400;letter-spacing:.08em;
+  color:var(--parchment);background:none;
+}
+.btn-doc::after{content:" →";color:var(--torch)}
+.btn-doc:hover{color:var(--torch);border-bottom-color:var(--torch);transform:none}
+.actions.docs{gap:10px 26px}
+
 /* ---------------------------------------------------------------- 節 */
 section{padding-block:88px}
 .head{border-top:1px solid var(--rule);padding-top:18px;margin-bottom:42px}
@@ -262,6 +272,10 @@ footer b{color:var(--dim)}
       <a class="btn btn-sub" href="https://ask.band/frox" target="_blank" rel="noopener">FroxComposband 公式サイト</a>
       <a class="btn btn-sub" href="https://gensoband.main.jp/index.html" target="_blank" rel="noopener">幻想蛮怒 公式サイト</a>
     </div>
+    <div class="actions docs">
+      <a class="btn btn-doc" href="silq/index.html">Sil-Q スポイラー</a>
+      <a class="btn btn-doc" href="frox/index.html">Frox スポイラー</a>
+    </div>
     </div>
     <div class="i18n" lang="en">
     <p class="kicker">Hengband &mdash; voxel HD-2D renderer</p>
@@ -281,6 +295,11 @@ footer b{color:var(--dim)}
       <a class="btn btn-sub" href="https://github.com/sil-quirk/sil-q/releases" target="_blank" rel="noopener">Official Sil-Q site</a>
       <a class="btn btn-sub" href="https://ask.band/frox" target="_blank" rel="noopener">Official FroxComposband site</a>
       <a class="btn btn-sub" href="https://gensoband.main.jp/index.html" target="_blank" rel="noopener">Official Gensoband site</a>
+    </div>
+    <div class="actions docs">
+      <a class="btn btn-doc" href="silq/index.html">Sil-Q spoilers</a>
+      <a class="btn btn-doc" href="frox/index.html">Frox spoilers</a>
+      <span class="meta">Japanese only</span>
     </div>
     </div>
   </div>
@@ -362,6 +381,13 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-09-02</p>
+        <ul class="news">
+          <li>Sil-Q と Frox の日本語スポイラーを作成</li>
+          <li>Frox の未翻訳箇所を修正</li>
+        </ul>
+      </div>
       <div class="entry">
         <p class="kicker">2026-09-01</p>
         <ul class="news">
@@ -544,6 +570,13 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-09-02</p>
+        <ul class="news">
+          <li>Japanese spoilers for Sil-Q and Frox</li>
+          <li>Fixed untranslated text in Frox</li>
+        </ul>
+      </div>
       <div class="entry">
         <p class="kicker">2026-09-01</p>
         <ul class="news">

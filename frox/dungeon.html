@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ダンジョン — Frox スポイラー</title>
+<meta name="description" content="Frox のダンジョン一覧。">
+<link rel="stylesheet" href="frox.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">Frox スポイラー</a>
+  <nav><a href="index.html">入口</a><a href="start.html">序盤の進め方</a><a href="hengband.html">変愚との違い</a><a href="help.html">ヘルプ</a><a href="monster.html">敵</a><a href="item.html">アイテム</a><a href="artefact.html">アーティファクト</a><a href="ego.html">エゴ</a><a href="dungeon.html" class=here>ダンジョン</a><a href="quest.html">クエスト</a></nav>
+</div></header>
+<main class="band">
+<h1>ダンジョン</h1>
+<p class="lead">44 本。浅い順に並べてある。
+ それぞれに主が居て、深さの上限もばらばらである。
+ <b>浅いダンジョンから順に潜るのが安全</b>だが、
+ 深いところにしか出ないものを狙って飛び込む手もある。</p>
+<div class="bar">
+  <input type="search" id="q" placeholder="名前・説明で絞り込む" autocomplete="off">
+  
+  <span class="count" id="count"></span>
+</div>
+<div class="list one" id="list">
+<article class="card row" data-depth="0"
+ data-t="荒野 wilderness 荒野">
+  <div class="txt">
+    <h3>荒野 <span class="en">Wilderness</span></h3>
+    <p class="num"></p>
+    <p class="desc">荒野</p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="鉄獄 angband 鉄獄のダンジョンの入口">
+  <div class="txt">
+    <h3>鉄獄 <span class="en">Angband</span></h3>
+    <p class="num">深さ 1〜127／入るのに必要な経験レベル 30</p>
+    <p class="desc">鉄獄のダンジョンの入口</p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="兎の巣穴 warrens 兎の巣穴の入口">
+  <div class="txt">
+    <h3>兎の巣穴 <span class="en">Warrens</span></h3>
+    <p class="num">深さ 1〜9／入るのに必要な経験レベル 1</p>
+    <p class="desc">兎の巣穴の入口</p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="謎の洞窟 mystery cave 謎の洞窟の霧に煙る入口">
+  <div class="txt">
+    <h3>謎の洞窟 <span class="en">Mystery cave</span></h3>
+    <p class="num">深さ 1〜100／入るのに必要な経験レベル 30</p>
+    <p class="desc">謎の洞窟の霧に煙る入口</p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="隠れ家 hideout 反乱者の隠れ家のうさんくさい入口">
+  <div class="txt">
+    <h3>隠れ家 <span class="en">Hideout</span></h3>
+    <p class="num">深さ 8〜18／入るのに必要な経験レベル 1</p>
+    <p class="desc">反乱者の隠れ家のうさんくさい入口</p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="男の隠れ家 man cave 男の隠れ家のうさんくさい入口">
+  <div class="txt">
+    <h3>男の隠れ家 <span class="en">Man cave</span></h3>
+    <p class="num">深さ 8〜18／入るのに必要な経験レベル 1</p>
+    <p class="desc">男の隠れ家のうさんくさい入口</p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="ねばねば洞窟 icky cave ねばねば洞窟の入口">
+  <div class="txt">
+    <h3>ねばねば洞窟 <span class="en">Icky cave</span></h3>
+    <p class="num">深さ 10〜20／入るのに必要な経験レベル 1</p>
+    <p class="desc">ねばねば洞窟の入口</p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="オークの洞窟 orc cave オークの洞窟へ続く暗い坑道">
+  <div class="txt">
+    <h3>オークの洞窟 <span class="en">Orc cave</span></h3>
+    <p class="num">深さ 15〜32／入るのに必要な経験レベル 5</p>
+    <p class="desc">オークの洞窟へ続く暗い坑道</p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="潮の洞窟 tidal cave 潮の洞窟の滑りやすい入口">
+  <div class="txt">
+    <h3>潮の洞窟 <span class="en">Tidal cave</span></h3>
+    <p class="num">深さ 15〜27／入るのに必要な経験レベル 1</p>
+    <p class="desc">潮の洞窟の滑りやすい入口</p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="オズの平原 plains of oz オズの平原へ続く煉瓦の道">
+  <div class="txt">
+    <h3>オズの平原 <span class="en">Plains of Oz</span></h3>
+    <p class="num">深さ 18〜36／入るのに必要な経験レベル 5</p>
+    <p class="desc">オズの平原へ続く煉瓦の道</p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="トロルの洞窟 troll cave トロルの洞窟へ続く暗い坑道">
+  <div class="txt">
+    <h3>トロルの洞窟 <span class="en">Troll cave</span></h3>
+    <p class="num">深さ 18〜36／入るのに必要な経験レベル 5</p>
+    <p class="desc">トロルの洞窟へ続く暗い坑道</p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="キャメロット camelot 伝説の地キャメロットの入口">
+  <div class="txt">
+    <h3>キャメロット <span class="en">Camelot</span></h3>
+    <p class="num">深さ 20〜35／入るのに必要な経験レベル 1</p>
+    <p class="desc">伝説の地キャメロットの入口</p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="迷宮 labyrinth 迷宮の恐ろしげな入口">
+  <div class="txt">
+    <h3>迷宮 <span class="en">Labyrinth</span></h3>
+    <p class="num">深さ 20〜28／入るのに必要な経験レベル 1</p>
+    <p class="desc">迷宮の恐ろしげな入口</p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="魔女の森 witch wood 魔女の森へ続くくねった小道">
+  <div class="txt">
+    <h3>魔女の森 <span class="en">Witch Wood</span></h3>
+    <p class="num">深さ 25〜40／入るのに必要な経験レベル 5</p>
+    <p class="desc">魔女の森へ続くくねった小道</p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="迷いの森 random forest 見知らぬ森へ入る小道">
+  <div class="txt">
+    <h3>迷いの森 <span class="en">Random Forest</span></h3>
+    <p class="num">深さ 25〜50／入るのに必要な経験レベル 5</p>
+    <p class="desc">見知らぬ森へ入る小道</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="カメレオン洞 chameleon cave カメレオン洞の入口">
+  <div class="txt">
+    <h3>カメレオン洞 <span class="en">Chameleon cave</span></h3>
+    <p class="num">深さ 30〜45／入るのに必要な経験レベル 30</p>
+    <p class="desc">カメレオン洞の入口</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="はなれ山 lonely mountain はなれ山の入口">
+  <div class="txt">
+    <h3>はなれ山 <span class="en">Lonely Mountain</span></h3>
+    <p class="num">深さ 30〜40／入るのに必要な経験レベル 30</p>
+    <p class="desc">はなれ山の入口</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="巨人の広間 giant&#x27;s hall 巨人の広間の入口">
+  <div class="txt">
+    <h3>巨人の広間 <span class="en">Giant&#x27;s Hall</span></h3>
+    <p class="num">深さ 30〜40／入るのに必要な経験レベル 20</p>
+    <p class="desc">巨人の広間の入口</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="古戦場 battlefield 呪われた古戦場の霧に包まれた入口">
+  <div class="txt">
+    <h3>古戦場 <span class="en">Battlefield</span></h3>
+    <p class="num">深さ 30〜50／入るのに必要な経験レベル 1</p>
+    <p class="desc">呪われた古戦場の霧に包まれた入口</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="雪の城 snow castle 雪の城の入口">
+  <div class="txt">
+    <h3>雪の城 <span class="en">Snow castle</span></h3>
+    <p class="num">深さ 30〜50／入るのに必要な経験レベル 20</p>
+    <p class="desc">雪の城の入口</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="城 castle 城の入口">
+  <div class="txt">
+    <h3>城 <span class="en">Castle</span></h3>
+    <p class="num">深さ 40〜65／入るのに必要な経験レベル 30</p>
+    <p class="desc">城の入口</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="猛禽の巣 eyrie 猛禽の巣へ続く道">
+  <div class="txt">
+    <h3>猛禽の巣 <span class="en">Eyrie</span></h3>
+    <p class="num">深さ 40〜50／入るのに必要な経験レベル 20</p>
+    <p class="desc">猛禽の巣へ続く道</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="反魔法の洞窟 anti-magic cave 反魔法の雲に満ちた洞窟の入口">
+  <div class="txt">
+    <h3>反魔法の洞窟 <span class="en">Anti-magic cave</span></h3>
+    <p class="num">深さ 40〜50／入るのに必要な経験レベル 30</p>
+    <p class="desc">反魔法の雲に満ちた洞窟の入口</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="反攻撃の洞窟 anti-melee cave 動きを縛る魔法の場に満ちた洞窟の入口">
+  <div class="txt">
+    <h3>反攻撃の洞窟 <span class="en">Anti-melee cave</span></h3>
+    <p class="num">深さ 40〜50／入るのに必要な経験レベル 30</p>
+    <p class="desc">動きを縛る魔法の場に満ちた洞窟の入口</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="水晶の城 crystal castle 水晶の城の入口">
+  <div class="txt">
+    <h3>水晶の城 <span class="en">Crystal castle</span></h3>
+    <p class="num">深さ 40〜60／入るのに必要な経験レベル 30</p>
+    <p class="desc">水晶の城の入口</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="迷いの山 random mountain 見知らぬ山へ続く道">
+  <div class="txt">
+    <h3>迷いの山 <span class="en">Random Mountain</span></h3>
+    <p class="num">深さ 40〜70／入るのに必要な経験レベル 20</p>
+    <p class="desc">見知らぬ山へ続く道</p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="墓地 graveyard 地下の墓地へ通じる穴">
+  <div class="txt">
+    <h3>墓地 <span class="en">Graveyard</span></h3>
+    <p class="num">深さ 50〜70／入るのに必要な経験レベル 18</p>
+    <p class="desc">地下の墓地へ通じる穴</p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="火山 volcano 火山の中心へ通じる穴">
+  <div class="txt">
+    <h3>火山 <span class="en">Volcano</span></h3>
+    <p class="num">深さ 50〜60／入るのに必要な経験レベル 18</p>
+    <p class="desc">火山の中心へ通じる穴</p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="闘技場 arena 闘技場の入口">
+  <div class="txt">
+    <h3>闘技場 <span class="en">Arena</span></h3>
+    <p class="num">深さ 50〜80／入るのに必要な経験レベル 20</p>
+    <p class="desc">闘技場の入口</p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="迷いの火山 random volcano 見知らぬ火山の中心へ通じる穴">
+  <div class="txt">
+    <h3>迷いの火山 <span class="en">Random Volcano</span></h3>
+    <p class="num">深さ 50〜90／入るのに必要な経験レベル 18</p>
+    <p class="desc">見知らぬ火山の中心へ通じる穴</p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="水没した遺跡 numenor 水没した遺跡へ続く水路">
+  <div class="txt">
+    <h3>水没した遺跡 <span class="en">Numenor</span></h3>
+    <p class="num">深さ 55〜75／入るのに必要な経験レベル 30</p>
+    <p class="desc">水没した遺跡へ続く水路</p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="暗闇の洞窟 dark cave 魔法の闇に満ちた洞窟の暗い入口">
+  <div class="txt">
+    <h3>暗闇の洞窟 <span class="en">Dark cave</span></h3>
+    <p class="num">深さ 55〜72／入るのに必要な経験レベル 30</p>
+    <p class="desc">魔法の闇に満ちた洞窟の暗い入口</p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="迷いの海 random sea 見知らぬ沈んだ地へ続く水路">
+  <div class="txt">
+    <h3>迷いの海 <span class="en">Random Sea</span></h3>
+    <p class="num">深さ 55〜75／入るのに必要な経験レベル 30</p>
+    <p class="desc">見知らぬ沈んだ地へ続く水路</p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="アトランティス atlantis 沈んだ島アトランティスへ続く水路">
+  <div class="txt">
+    <h3>アトランティス <span class="en">Atlantis</span></h3>
+    <p class="num">深さ 55〜65／入るのに必要な経験レベル 30</p>
+    <p class="desc">沈んだ島アトランティスへ続く水路</p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="竜の住みか dragon&#x27;s lair 竜の住みかへ続く大きな坑道">
+  <div class="txt">
+    <h3>竜の住みか <span class="en">Dragon&#x27;s lair</span></h3>
+    <p class="num">深さ 60〜72／入るのに必要な経験レベル 25</p>
+    <p class="desc">竜の住みかへ続く大きな坑道</p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="災厄の地 disaster area 災厄の地へ通じる鋼の門">
+  <div class="txt">
+    <h3>災厄の地 <span class="en">Disaster area</span></h3>
+    <p class="num">深さ 60〜80／入るのに必要な経験レベル 30</p>
+    <p class="desc">災厄の地へ通じる鋼の門</p>
+  </div>
+</article><article class="card row" data-depth="64"
+ data-t="ピラミッド型の墳丘 pyramidal mound ピラミッド型の墳丘へ下る暗い階段">
+  <div class="txt">
+    <h3>ピラミッド型の墳丘 <span class="en">Pyramidal mound</span></h3>
+    <p class="num">深さ 64〜92／入るのに必要な経験レベル 50</p>
+    <p class="desc">ピラミッド型の墳丘へ下る暗い階段</p>
+  </div>
+</article><article class="card row" data-depth="64"
+ data-t="アスガルド asgard アスガルドへ架かる虹の橋">
+  <div class="txt">
+    <h3>アスガルド <span class="en">Asgard</span></h3>
+    <p class="num">深さ 64〜88／入るのに必要な経験レベル 50</p>
+    <p class="desc">アスガルドへ架かる虹の橋</p>
+  </div>
+</article><article class="card row" data-depth="72"
+ data-t="須弥山 mount meru 須弥山への道">
+  <div class="txt">
+    <h3>須弥山 <span class="en">Mount Meru</span></h3>
+    <p class="num">深さ 72〜92／入るのに必要な経験レベル 50</p>
+    <p class="desc">須弥山への道</p>
+  </div>
+</article><article class="card row" data-depth="75"
+ data-t="金鉱 mine 金鉱の入口">
+  <div class="txt">
+    <h3>金鉱 <span class="en">Mine</span></h3>
+    <p class="num">深さ 75〜80／入るのに必要な経験レベル 50</p>
+    <p class="desc">金鉱の入口</p>
+  </div>
+</article><article class="card row" data-depth="80"
+ data-t="ルルイエ r&#x27;lyeh ルルイエへの道">
+  <div class="txt">
+    <h3>ルルイエ <span class="en">R&#x27;lyeh</span></h3>
+    <p class="num">深さ 80〜96／入るのに必要な経験レベル 45</p>
+    <p class="desc">ルルイエへの道</p>
+  </div>
+</article><article class="card row" data-depth="80"
+ data-t="オリュンポス山 mount olympus オリュンポス山の入口">
+  <div class="txt">
+    <h3>オリュンポス山 <span class="en">Mount Olympus</span></h3>
+    <p class="num">深さ 80〜90／入るのに必要な経験レベル 50</p>
+    <p class="desc">オリュンポス山の入口</p>
+  </div>
+</article><article class="card row" data-depth="555"
+ data-t="天界 heaven きらびやかな天界の門">
+  <div class="txt">
+    <h3>天界 <span class="en">Heaven</span></h3>
+    <p class="num">深さ 555〜586／入るのに必要な経験レベル 50</p>
+    <p class="desc">きらびやかな天界の門</p>
+  </div>
+</article><article class="card row" data-depth="666"
+ data-t="地獄 hell 地獄への階段">
+  <div class="txt">
+    <h3>地獄 <span class="en">Hell</span></h3>
+    <p class="num">深さ 666〜696／入るのに必要な経験レベル 50</p>
+    <p class="desc">地獄への階段</p>
+  </div>
+</article>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>FroxComposband は Composband から続くローグライクで、
+     Angband の系譜に連なる。ここはその非公式のスポイラーである。</p>
+</div></footer>
+<script src="frox.js"></script>
+</body>
+</html>

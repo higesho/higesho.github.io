@@ -1,0 +1,1371 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>敵 — Sil-Q スポイラー</title>
+<meta name="description" content="Sil-Q に出る敵の全数と数値。">
+<link rel="stylesheet" href="silq.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">Sil-Q スポイラー</a>
+  <nav><a href="index.html">入口</a><a href="manual.html">マニュアル</a><a href="monster.html" class=here>敵</a><a href="item.html">アイテム</a><a href="artefact.html">アーティファクト</a><a href="ability.html">能力</a><a href="race.html">種族と家</a></nav>
+</div></header>
+<main class="band wide">
+<h1>敵</h1>
+<p class="lead">148 体。浅い順に並べてある。<b>深さ 1 が 50 ft</b> で、
+ モルゴスの玉座は深さ 20（1000 ft）にある。ここに書いた深さは
+ <b>その敵が本来出てくる階</b>で、運が悪ければもっと浅いところでも出会う。
+ 「出現 1/n」は出会いにくさで、数が大きいほど珍しい。
+ <b>「地上」の印が付いた者は坑道には出てこない</b>——
+ ヴァラール、エルフの王たち、大鷲、エントである。</p>
+<div class="bar">
+  <input type="search" id="q" placeholder="名前・説明・旗で絞り込む" autocomplete="off">
+  <select id="depth"><option value="">深さで絞らない</option><option value="1-5">深さ 1〜5（50〜250 ft）</option><option value="6-10">深さ 6〜10（300〜500 ft）</option><option value="11-15">深さ 11〜15（550〜750 ft）</option><option value="16-20">深さ 16〜20（800〜1000 ft）</option><option value="21-25">深さ 21〜25（1050 ft 以深）</option><option value="26-999">地上（坑道には出ない）</option></select>
+  <span class="count" id="count"></span>
+</div>
+<div class="list" id="list">
+<article class="card" data-depth="1"
+ data-t="狼 wolf ぼろぼろに毛の逆立った狼で、オークの狼群の一頭である。 群れ 動きが乱れる（1/4） 狼">
+  <div class="art"><img loading="lazy" src="tile/SR11.png" alt=""></div>
+  <div class="txt">
+    <h3>狼 <span class="en">Wolf</span></h3>
+    <p class="num">深さ 1（50 フィート）／出現 1/1／体力 6d4／速度 3／回避 +1・防護 1d4／攻撃 噛みつき／切り裂き +3,2d3</p>
+    <p class="desc">ぼろぼろに毛の逆立った狼で、オークの狼群の一頭である。</p>
+    <p class="flags"><b class="fl">群れ</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">狼</b></p>
+  </div>
+</article><article class="card" data-depth="1"
+ data-t="絡み茨 tanglethorn 『……身をよじる巨大な茨が、もつれ合って這い広がっていた。長く突き刺す棘を持つものもあれば、刃物のように切り裂く鉤棘を持つものもあった。』 動かない 心を持たない 供 1 体 火に弱い 恐れない 毒に耐える 混乱しない 眠らない 会心を受けない">
+  <div class="art"><img loading="lazy" src="tile/SR12.png" alt=""></div>
+  <div class="txt">
+    <h3>絡み茨 <span class="en">Tanglethorn</span></h3>
+    <p class="num">深さ 1（50 フィート）／出現 1/1／体力 4d4／速度 2／回避 -5・防護 1d4／攻撃 棘／切り裂き +5,3d3</p>
+    <p class="desc">『……身をよじる巨大な茨が、もつれ合って這い広がっていた。長く突き刺す棘を持つものもあれば、刃物のように切り裂く鉤棘を持つものもあった。』</p>
+    <p class="flags"><b class="fl">動かない</b><b class="fl">心を持たない</b><b class="fl">供 1 体</b><b class="fl">火に弱い</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心を受けない</b></p>
+  </div>
+</article><article class="card" data-depth="1"
+ data-t="打ちひしがれた人間の虜囚 dejected human thrall 傷だらけの汚れた男で、腰布一枚をまとっているだけだ。首には金属の首輪がはめられ、そこから長い鎖が壁へと伸びている。 雄 人間 動かない 殴らない 賢い 襲ってこない 通常は湧かない">
+  <div class="art"><img loading="lazy" src="tile/SR13.png" alt=""></div>
+  <div class="txt">
+    <h3>打ちひしがれた人間の虜囚 <span class="en">Dejected human thrall</span></h3>
+    <p class="num">深さ 1（50 フィート）／体力 8d4／速度 2／回避 +0・防護なし</p>
+    <p class="desc">傷だらけの汚れた男で、腰布一枚をまとっているだけだ。首には金属の首輪がはめられ、そこから長い鎖が壁へと伸びている。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">人間</b><b class="fl">動かない</b><b class="fl">殴らない</b><b class="fl">賢い</b><b class="fl">襲ってこない</b><b class="fl">通常は湧かない</b></p>
+  </div>
+</article><article class="card" data-depth="1"
+ data-t="打ちひしがれたエルフの虜囚 dejected elven thrall 鎖に繋がれたエルフがうなだれている。汚れた髪が肩まで垂れ、目はうつろだ。背と腕には鞭の跡が残っている。 雄 エルフ 動かない 殴らない 賢い 襲ってこない 通常は湧かない">
+  <div class="art"><img loading="lazy" src="tile/SR14.png" alt=""></div>
+  <div class="txt">
+    <h3>打ちひしがれたエルフの虜囚 <span class="en">Dejected elven thrall</span></h3>
+    <p class="num">深さ 1（50 フィート）／体力 10d4／速度 2／回避 +0・防護なし</p>
+    <p class="desc">鎖に繋がれたエルフがうなだれている。汚れた髪が肩まで垂れ、目はうつろだ。背と腕には鞭の跡が残っている。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">エルフ</b><b class="fl">動かない</b><b class="fl">殴らない</b><b class="fl">賢い</b><b class="fl">襲ってこない</b><b class="fl">通常は湧かない</b></p>
+  </div>
+</article><article class="card" data-depth="1"
+ data-t="オークの虜囚頭 orc thrallmaster モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。ぼろぼろの革をまとい、棍棒と鞭を手にしている。 雄 扉を開ける 扉を壊す 通常は湧かない オーク 光に弱い 賢い 錠を開ける 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR15.png" alt=""></div>
+  <div class="txt">
+    <h3>オークの虜囚頭 <span class="en">Orc thrallmaster</span></h3>
+    <p class="num">深さ 1（50 フィート）／体力 6d4／速度 2／回避 +8・防護 1d4／攻撃 殴打／打撃 +12,1d6、鞭／武器落とし +8,1d4</p>
+    <p class="desc">モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。ぼろぼろの革をまとい、棍棒と鞭を手にしている。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">通常は湧かない</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">賢い</b><b class="fl">錠を開ける</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="1"
+ data-t="油断のない人間の虜囚 alert human thrall 傷だらけの汚れた男が、長い鎖で壁に繋がれている。顔を上げ、油断なくあたりをうかがっている。 雄 人間 動かない 殴らない 賢い 襲ってこない 通常は湧かない">
+  <div class="art"><img loading="lazy" src="tile/SR16.png" alt=""></div>
+  <div class="txt">
+    <h3>油断のない人間の虜囚 <span class="en">Alert human thrall</span></h3>
+    <p class="num">深さ 1（50 フィート）／体力 8d4／速度 2／回避 +0・防護なし</p>
+    <p class="desc">傷だらけの汚れた男が、長い鎖で壁に繋がれている。顔を上げ、油断なくあたりをうかがっている。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">人間</b><b class="fl">動かない</b><b class="fl">殴らない</b><b class="fl">賢い</b><b class="fl">襲ってこない</b><b class="fl">通常は湧かない</b></p>
+  </div>
+</article><article class="card" data-depth="1"
+ data-t="油断のないエルフの虜囚 alert elven thrall 鎖に繋がれたエルフがうずくまっている。汚れた髪が肩まで垂れ、気高い顔には乾いた血がこびりついている。その目はこちらを見据えている。 雄 エルフ 動かない 殴らない 賢い 襲ってこない 通常は湧かない">
+  <div class="art"><img loading="lazy" src="tile/SR17.png" alt=""></div>
+  <div class="txt">
+    <h3>油断のないエルフの虜囚 <span class="en">Alert elven thrall</span></h3>
+    <p class="num">深さ 1（50 フィート）／体力 10d4／速度 2／回避 +0・防護なし</p>
+    <p class="desc">鎖に繋がれたエルフがうずくまっている。汚れた髪が肩まで垂れ、気高い顔には乾いた血がこびりついている。その目はこちらを見据えている。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">エルフ</b><b class="fl">動かない</b><b class="fl">殴らない</b><b class="fl">賢い</b><b class="fl">襲ってこない</b><b class="fl">通常は湧かない</b></p>
+  </div>
+</article><article class="card" data-depth="2"
+ data-t="オークの散兵 orc skirmisher モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。鎧はほとんど身に着けていないが、残忍な刃を提げている。 雄 1/3 で落とす 扉を開ける オーク 光に弱い 賢い 供 1 体">
+  <div class="art"><img loading="lazy" src="tile/SR21.png" alt=""></div>
+  <div class="txt">
+    <h3>オークの散兵 <span class="en">Orc skirmisher</span></h3>
+    <p class="num">深さ 2（100 フィート）／出現 1/1／体力 7d4／速度 2／回避 +3・防護 1d4／攻撃 殴打／打撃 +2,2d6</p>
+    <p class="desc">モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。鎧はほとんど身に着けていないが、残忍な刃を提げている。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">1/3 で落とす</b><b class="fl">扉を開ける</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">賢い</b><b class="fl">供 1 体</b></p>
+  </div>
+</article><article class="card" data-depth="2"
+ data-t="鉄爪の猟鷹 grimhawk オークたちに愛される狩りの鳥で、その爪には鉄のかえりが付けられている。 飛ぶ 動きが乱れる（1/2） 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR22.png" alt=""></div>
+  <div class="txt">
+    <h3>鉄爪の猟鷹 <span class="en">Grimhawk</span></h3>
+    <p class="num">深さ 2（100 フィート）／出現 1/2／体力 1d4／速度 4／回避 +7・防護なし／攻撃 つつき／打撃 +8,1d5</p>
+    <p class="desc">オークたちに愛される狩りの鳥で、その爪には鉄のかえりが付けられている。</p>
+    <p class="flags"><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="2"
+ data-t="ミュウリップ mewlip 沼地に棲む邪悪な生き物で、近づいた者の骨を糧にする。 必ず落とす 扉を開ける 錠を開ける 扉を壊す 賢い 恐れない">
+  <div class="art"><img loading="lazy" src="tile/SR23.png" alt=""></div>
+  <div class="txt">
+    <h3>ミュウリップ <span class="en">Mewlip</span></h3>
+    <p class="num">深さ 2（100 フィート）／出現 1/1／体力 5d4／速度 3／回避 +1・防護 2d4／攻撃 引っかき／切り裂き +6,2d4</p>
+    <p class="desc">沼地に棲む邪悪な生き物で、近づいた者の骨を糧にする。</p>
+    <p class="flags"><b class="fl">必ず落とす</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">恐れない</b></p>
+  </div>
+</article><article class="card" data-depth="3"
+ data-t="オークの斥候 orc scout モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。この惨めな生き物はこちらから距離を取り、仲間の注意を引こうとする。粗末な槍を持っている。 雄 1/3 で落とす 扉を開ける 錠を開ける オーク 光に弱い 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR31.png" alt=""></div>
+  <div class="txt">
+    <h3>オークの斥候 <span class="en">Orc scout</span></h3>
+    <p class="num">深さ 3（150 フィート）／出現 1/1／体力 6d4／速度 2／回避 +4・防護 1d4／攻撃 殴打／打撃 +3,1d10</p>
+    <p class="desc">モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。この惨めな生き物はこちらから距離を取り、仲間の注意を引こうとする。粗末な槍を持っている。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">1/3 で落とす</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="3"
+ data-t="蜘蛛の子 spider hatchling 孵ったばかりの怪物じみた蜘蛛で、すでに犬ほどの背丈がある。その牙の毒さえなければ、大した脅威でもないのだが……。 蜘蛛 角を曲がって追わない 群れ 毒に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR32.png" alt=""></div>
+  <div class="txt">
+    <h3>蜘蛛の子 <span class="en">Spider hatchling</span></h3>
+    <p class="num">深さ 3（150 フィート）／出現 1/2／体力 1d4／速度 2／回避 +5・防護なし／攻撃 噛みつき／毒 +5,1d7</p>
+    <p class="desc">孵ったばかりの怪物じみた蜘蛛で、すでに犬ほどの背丈がある。その牙の毒さえなければ、大した脅威でもないのだが……。</p>
+    <p class="flags"><b class="fl">蜘蛛</b><b class="fl">角を曲がって追わない</b><b class="fl">群れ</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="3"
+ data-t="青い大蛇 blue serpent 人の背丈ほどもある蛇で、硬い青い鱗に覆われている。まわりの空気が冷えている。 蛇 動きが乱れる（1/2） 冷気に耐える 火に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR33.png" alt=""></div>
+  <div class="txt">
+    <h3>青い大蛇 <span class="en">Blue serpent</span></h3>
+    <p class="num">深さ 3（150 フィート）／出現 1/2／体力 2d4／速度 2／回避 +3・防護 4d4／攻撃 噛みつき／打撃 +5,2d5</p>
+    <p class="desc">人の背丈ほどもある蛇で、硬い青い鱗に覆われている。まわりの空気が冷えている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">冷気に耐える</b><b class="fl">火に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="4"
+ data-t="オークの兵士 orc soldier モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。黒い革をまとい、粗末な剣と盾を構えている。バウグリアの暗黒の軍勢の一兵である。 雄 群れ 1/3 で落とす 扉を開ける 扉を壊す オーク 光に弱い 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR41.png" alt=""></div>
+  <div class="txt">
+    <h3>オークの兵士 <span class="en">Orc soldier</span></h3>
+    <p class="num">深さ 4（200 フィート）／出現 1/1／体力 8d4／速度 2／回避 +3・防護 2d4／攻撃 殴打／打撃 +3,2d7</p>
+    <p class="desc">モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。黒い革をまとい、粗末な剣と盾を構えている。バウグリアの暗黒の軍勢の一兵である。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">群れ</b><b class="fl">1/3 で落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="4"
+ data-t="狂い茨 madthorn タウア＝ヌ＝フインの奥深くで最もよく見かける。その棘の毒は狂気をもたらすため、旅人には狼よりも恐れられている。 動かない 心を持たない 供 1 体 火に弱い 恐れない 毒に耐える 混乱しない 眠らない 会心を受けない">
+  <div class="art"><img loading="lazy" src="tile/SR42.png" alt=""></div>
+  <div class="txt">
+    <h3>狂い茨 <span class="en">Madthorn</span></h3>
+    <p class="num">深さ 4（200 フィート）／出現 1/1／体力 8d4／速度 2／回避 -5・防護 2d4／攻撃 棘／混乱 +5,4d3</p>
+    <p class="desc">タウア＝ヌ＝フインの奥深くで最もよく見かける。その棘の毒は狂気をもたらすため、旅人には狼よりも恐れられている。</p>
+    <p class="flags"><b class="fl">動かない</b><b class="fl">心を持たない</b><b class="fl">供 1 体</b><b class="fl">火に弱い</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心を受けない</b></p>
+  </div>
+</article><article class="card" data-depth="4"
+ data-t="屍鴉 gorcrow 鴉に近しい黒い生き物。むき出しの肉、とりわけ顔や目をついばむ。 供 1 体 飛ぶ 動きが乱れる（1/4）">
+  <div class="art"><img loading="lazy" src="tile/SR43.png" alt=""></div>
+  <div class="txt">
+    <h3>屍鴉 <span class="en">Gorcrow</span></h3>
+    <p class="num">深さ 4（200 フィート）／出現 1/2／体力 1d4／速度 4／回避 +9・防護なし／攻撃 つつき／盲目 +10,1d5</p>
+    <p class="desc">鴉に近しい黒い生き物。むき出しの肉、とりわけ顔や目をついばむ。</p>
+    <p class="flags"><b class="fl">供 1 体</b><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/4）</b></p>
+  </div>
+</article><article class="card" data-depth="4"
+ data-t="孕み蜘蛛 brood spider 背に卵の塊を負った、巨大で鈍重な蜘蛛。毛むくじゃらの顎は黒い液で濡れている。 蜘蛛 角を曲がって追わない 毒に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR44.png" alt=""></div>
+  <div class="txt">
+    <h3>孕み蜘蛛 <span class="en">Brood spider</span></h3>
+    <p class="num">深さ 4（200 フィート）／出現 1/3／体力 14d4／速度 1／回避 +6・防護なし／攻撃 噛みつき／毒 +12,2d8</p>
+    <p class="desc">背に卵の塊を負った、巨大で鈍重な蜘蛛。毛むくじゃらの顎は黒い液で濡れている。</p>
+    <p class="flags"><b class="fl">蜘蛛</b><b class="fl">角を曲がって追わない</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="5"
+ data-t="オークの射手 orc archer モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。粗末な剣と弓を携えている。 雄 群れ 1/3 で落とす 扉を開ける 扉を壊す オーク 光に弱い 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR51.png" alt=""></div>
+  <div class="txt">
+    <h3>オークの射手 <span class="en">Orc archer</span></h3>
+    <p class="num">深さ 5（250 フィート）／出現 1/3／体力 7d4／速度 2／回避 +4・防護 1d4／攻撃 殴打／打撃 +5,2d5</p>
+    <p class="desc">モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。粗末な剣と弓を携えている。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">群れ</b><b class="fl">1/3 で落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="5"
+ data-t="白狼 white wolf 北の荒れ地から来た、大きく獰猛な狼。 群れ 動きが乱れる（1/4） 狼 冷気に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR52.png" alt=""></div>
+  <div class="txt">
+    <h3>白狼 <span class="en">White wolf</span></h3>
+    <p class="num">深さ 5（250 フィート）／出現 1/1／体力 8d4／速度 3／回避 +6・防護 1d4／攻撃 噛みつき／切り裂き +8,2d4</p>
+    <p class="desc">北の荒れ地から来た、大きく獰猛な狼。</p>
+    <p class="flags"><b class="fl">群れ</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">狼</b><b class="fl">冷気に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="5"
+ data-t="赤い大蛇 red serpent 人の背丈ほどもある蛇で、硬い赤い鱗に覆われている。まわりの空気が熱で揺らいでいる。 蛇 動きが乱れる（1/2） 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR53.png" alt=""></div>
+  <div class="txt">
+    <h3>赤い大蛇 <span class="en">Red serpent</span></h3>
+    <p class="num">深さ 5（250 フィート）／出現 1/2／体力 2d4／速度 2／回避 +5・防護 4d4／攻撃 噛みつき／打撃 +7,2d6</p>
+    <p class="desc">人の背丈ほどもある蛇で、硬い赤い鱗に覆われている。まわりの空気が熱で揺らいでいる。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="5"
+ data-t="屠殺者ゴルゴル gorgol, the butcher オークの一隊を率いる隊長。ゴルゴルは暴力を見せつけて手下を従わせている。 唯一 雄 護衛 1 体 賢い 必ず落とす 良いアイテムを落とす 扉を開ける 扉を壊す オーク 光に弱い 錠を開ける">
+  <div class="art"><img loading="lazy" src="tile/SR54.png" alt=""></div>
+  <div class="txt">
+    <h3>屠殺者ゴルゴル <b class="uq">唯一</b> <span class="en">Gorgol, the Butcher</span></h3>
+    <p class="num">深さ 5（250 フィート）／出現 1/10／体力 12d4／速度 2／回避 +4・防護 3d4／攻撃 殴打／打撃 +6,3d7</p>
+    <p class="desc">オークの一隊を率いる隊長。ゴルゴルは暴力を見せつけて手下を従わせている。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">護衛 1 体</b><b class="fl">賢い</b><b class="fl">必ず落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">錠を開ける</b></p>
+  </div>
+</article><article class="card" data-depth="6"
+ data-t="オークの戦士 orc warrior モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。硬く鞣した革をまとい、斧を手にこちらへ駆けてくる。 雄 1/3 で落とす 扉を開ける 扉を壊す オーク 光に弱い 供 1 体 賢い 能力『突撃』（打撃）">
+  <div class="art"><img loading="lazy" src="tile/SR61.png" alt=""></div>
+  <div class="txt">
+    <h3>オークの戦士 <span class="en">Orc warrior</span></h3>
+    <p class="num">深さ 6（300 フィート）／出現 1/1／体力 9d4／速度 2／回避 +5・防護 2d4／攻撃 殴打／打撃 +3,3d6</p>
+    <p class="desc">モルゴスが先に生まれし者らを歪めて作った、忌まわしい模造の一つである。硬く鞣した革をまとい、斧を手にこちらへ駆けてくる。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">1/3 で落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">供 1 体</b><b class="fl">賢い</b><b class="fl">能力『突撃』（打撃）</b></p>
+  </div>
+</article><article class="card" data-depth="6"
+ data-t="剣蜘蛛 sword spider 剣のように鋭い顎を持つ、巨大な黒蜘蛛。せわしなく行き来している。 蜘蛛 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR62.png" alt=""></div>
+  <div class="txt">
+    <h3>剣蜘蛛 <span class="en">Sword spider</span></h3>
+    <p class="num">深さ 6（300 フィート）／出現 1/2／体力 12d4／速度 3／回避 +7・防護 1d4／攻撃 噛みつき／打撃 +8,2d9</p>
+    <p class="desc">剣のように鋭い顎を持つ、巨大な黒蜘蛛。せわしなく行き来している。</p>
+    <p class="flags"><b class="fl">蜘蛛</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="6"
+ data-t="クレバイン crebain 鴉の一種で、悪の勢力が斥候として特別に育てあげたものだ。 群れ 飛ぶ 動きが乱れる（1/4）">
+  <div class="art"><img loading="lazy" src="tile/SR63.png" alt=""></div>
+  <div class="txt">
+    <h3>クレバイン <span class="en">Crebain</span></h3>
+    <p class="num">深さ 6（300 フィート）／出現 1/2／体力 1d4／速度 4／回避 +11・防護なし／攻撃 つつき／切り裂き +12,1d5</p>
+    <p class="desc">鴉の一種で、悪の勢力が斥候として特別に育てあげたものだ。</p>
+    <p class="flags"><b class="fl">群れ</b><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/4）</b></p>
+  </div>
+</article><article class="card" data-depth="6"
+ data-t="幻影 phantom かつては人かエルフであったかもしれない、色褪せた気配。今は死霊術と影が生んだ、実体無きものである。 見えない 動きが乱れる（1/2） 不死 光に弱い 冷気に耐える 恐れない 毒に耐える 混乱しない 眠らない 供 1 体">
+  <div class="art"><img loading="lazy" src="tile/SR64.png" alt=""></div>
+  <div class="txt">
+    <h3>幻影 <span class="en">Phantom</span></h3>
+    <p class="num">深さ 6（300 フィート）／出現 1/3／体力 2d4／速度 1／回避 +5・防護なし／攻撃 触れる／恐怖 +15</p>
+    <p class="desc">かつては人かエルフであったかもしれない、色褪せた気配。今は死霊術と影が生んだ、実体無きものである。</p>
+    <p class="flags"><b class="fl">見えない</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">不死</b><b class="fl">光に弱い</b><b class="fl">冷気に耐える</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">供 1 体</b></p>
+  </div>
+</article><article class="card" data-depth="7"
+ data-t="アターコップ attercop 犬ほどの大きさの蜘蛛で、太い剛毛に覆われている。青白い出目に光が反射している。 蜘蛛 毒に耐える 角を曲がって追わない 群れ 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR71.png" alt=""></div>
+  <div class="txt">
+    <h3>アターコップ <span class="en">Attercop</span></h3>
+    <p class="num">深さ 7（350 フィート）／出現 1/1／体力 3d4／速度 3／回避 +10・防護 1d4／攻撃 噛みつき／呪縛 +6,1d8</p>
+    <p class="desc">犬ほどの大きさの蜘蛛で、太い剛毛に覆われている。青白い出目に光が反射している。</p>
+    <p class="flags"><b class="fl">蜘蛛</b><b class="fl">毒に耐える</b><b class="fl">角を曲がって追わない</b><b class="fl">群れ</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="7"
+ data-t="夜の茨 nightthorn このねじくれた植物は、まわりの空気から光を吸い取る。 動かない 心を持たない 火に弱い 恐れない 毒に耐える 混乱しない 眠らない 会心を受けない">
+  <div class="art"><img loading="lazy" src="tile/SR72.png" alt=""></div>
+  <div class="txt">
+    <h3>夜の茨 <span class="en">Nightthorn</span></h3>
+    <p class="num">深さ 7（350 フィート）／出現 1/1／体力 8d4／速度 2／回避 -5・防護 2d4／攻撃 棘／打撃 +5,5d3</p>
+    <p class="desc">このねじくれた植物は、まわりの空気から光を吸い取る。</p>
+    <p class="flags"><b class="fl">動かない</b><b class="fl">心を持たない</b><b class="fl">火に弱い</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心を受けない</b></p>
+  </div>
+</article><article class="card" data-depth="7"
+ data-t="緑の大蛇 green serpent 人の背丈ほどもある蛇で、硬い緑の鱗に覆われている。腐臭がする。 蛇 毒に耐える 動きが乱れる（1/2）">
+  <div class="art"><img loading="lazy" src="tile/SR73.png" alt=""></div>
+  <div class="txt">
+    <h3>緑の大蛇 <span class="en">Green serpent</span></h3>
+    <p class="num">深さ 7（350 フィート）／出現 1/2／体力 2d4／速度 2／回避 +7・防護 4d4／攻撃 噛みつき／打撃 +8,2d7</p>
+    <p class="desc">人の背丈ほどもある蛇で、硬い緑の鱗に覆われている。腐臭がする。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">毒に耐える</b><b class="fl">動きが乱れる（1/2）</b></p>
+  </div>
+</article><article class="card" data-depth="7"
+ data-t="山トロル mountain troll 北方の山々から来た、背の高いトロル。 雄 供 1 体 1/3 で落とす 急速に回復する 扉を開ける 扉を壊す トロル 光に弱い 賢い 恐れない 能力『打ち飛ばし』（打撃）">
+  <div class="art"><img loading="lazy" src="tile/SR74.png" alt=""></div>
+  <div class="txt">
+    <h3>山トロル <span class="en">Mountain troll</span></h3>
+    <p class="num">深さ 7（350 フィート）／出現 1/1／体力 14d4／速度 2／回避 +3・防護 2d4／攻撃 殴打／叩きつけ +6,4d5</p>
+    <p class="desc">北方の山々から来た、背の高いトロル。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">供 1 体</b><b class="fl">1/3 で落とす</b><b class="fl">急速に回復する</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">トロル</b><b class="fl">光に弱い</b><b class="fl">賢い</b><b class="fl">恐れない</b><b class="fl">能力『打ち飛ばし』（打撃）</b></p>
+  </div>
+</article><article class="card" data-depth="7"
+ data-t="ぼろをまとった亡者 tattered wight 破れて色褪せた経帷子にくるまれた、幽鬼の姿。その財宝はとうの昔に奪われている。 扉を開ける 不死 光に弱い 冷気に耐える 賢い 角を曲がって追わない 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい">
+  <div class="art"><img loading="lazy" src="tile/SR75.png" alt=""></div>
+  <div class="txt">
+    <h3>ぼろをまとった亡者 <span class="en">Tattered wight</span></h3>
+    <p class="num">深さ 7（350 フィート）／出現 1/2／体力 4d4／速度 1／回避 +5・防護 3d4／攻撃 殴打／打撃 +9,2d9、触れる／器用さ減 +9</p>
+    <p class="desc">破れて色褪せた経帷子にくるまれた、幽鬼の姿。その財宝はとうの昔に奪われている。</p>
+    <p class="flags"><b class="fl">扉を開ける</b><b class="fl">不死</b><b class="fl">光に弱い</b><b class="fl">冷気に耐える</b><b class="fl">賢い</b><b class="fl">角を曲がって追わない</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b></p>
+  </div>
+</article><article class="card" data-depth="7"
+ data-t="情け知らずのボルドグ boldog, the merciless オークの偉大な隊長で、エルフの地へ幾度も襲撃を率いた。 唯一 雄 護衛の一団 恐れない 扉を開ける 扉を壊す 錠を開ける オーク 賢い 1d2 個落とす 良いアイテムを落とす 決まったアイテムを落とす 光に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR76.png" alt=""></div>
+  <div class="txt">
+    <h3>情け知らずのボルドグ <b class="uq">唯一</b> <span class="en">Boldog, the Merciless</span></h3>
+    <p class="num">深さ 7（350 フィート）／出現 1/20／体力 13d4／速度 2／回避 +6・防護 3d4／攻撃 殴打／打撃 +11,1d16</p>
+    <p class="desc">オークの偉大な隊長で、エルフの地へ幾度も襲撃を率いた。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">護衛の一団</b><b class="fl">恐れない</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">錠を開ける</b><b class="fl">オーク</b><b class="fl">賢い</b><b class="fl">1d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">決まったアイテムを落とす</b><b class="fl">光に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="8"
+ data-t="オークの勇士 orc champion オークの群れの勇士。体に合った鎧をまとい、戦斧を振るう。 雄 必ず落とす 扉を開ける 扉を壊す オーク 光に弱い 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR81.png" alt=""></div>
+  <div class="txt">
+    <h3>オークの勇士 <span class="en">Orc champion</span></h3>
+    <p class="num">深さ 8（400 フィート）／出現 1/2／体力 11d4／速度 2／回避 +5・防護 3d4／攻撃 殴打／打撃 +6,3d8</p>
+    <p class="desc">オークの群れの勇士。体に合った鎧をまとい、戦斧を振るう。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">必ず落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="8"
+ data-t="東夷の戦士 easterling warrior しかし人間の裏切りが無かったなら、狼によっても、バルログによっても、竜によっても、モルゴスがその目的を遂げることはなかったであろう。この者は、遠い東方からベレリアンドへ近ごろ渡ってきて、モルゴスの支配下に落ちた民の一人である。 人間 雄 1/3 で落とす 扉を開ける 扉を壊す 群れ 賢い 能力『側面取り』（回避）">
+  <div class="art"><img loading="lazy" src="tile/SR82.png" alt=""></div>
+  <div class="txt">
+    <h3>東夷の戦士 <span class="en">Easterling warrior</span></h3>
+    <p class="num">深さ 8（400 フィート）／出現 1/2／体力 10d4／速度 2／回避 +5・防護 3d4／攻撃 殴打／打撃 +7,2d8</p>
+    <p class="desc">しかし人間の裏切りが無かったなら、狼によっても、バルログによっても、竜によっても、モルゴスがその目的を遂げることはなかったであろう。この者は、遠い東方からベレリアンドへ近ごろ渡ってきて、モルゴスの支配下に落ちた民の一人である。</p>
+    <p class="flags"><b class="fl">人間</b><b class="fl">雄</b><b class="fl">1/3 で落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">群れ</b><b class="fl">賢い</b><b class="fl">能力『側面取り』（回避）</b></p>
+  </div>
+</article><article class="card" data-depth="8"
+ data-t="唸り蜂 hummerhorn 唸りを上げる巨大な雀蜂。その針からは毒が滴っている。 飛ぶ 動きが乱れる（1/4） 動きが乱れる（1/2） 群れ 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR83.png" alt=""></div>
+  <div class="txt">
+    <h3>唸り蜂 <span class="en">Hummerhorn</span></h3>
+    <p class="num">深さ 8（400 フィート）／出現 1/3／体力 2d4／速度 4／回避 +14・防護なし／攻撃 刺す／混乱 +13,1d7</p>
+    <p class="desc">唸りを上げる巨大な雀蜂。その針からは毒が滴っている。</p>
+    <p class="flags"><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">群れ</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="8"
+ data-t="執拗なるバルクメグ balcmeg, the relentless オークの巨大な勇士で、厚い黒鎧をまとい、盾と刃こぼれだらけの斧を携えている。顔は傷だらけで、その目は小さく、悪意に満ちている。 唯一 雄 扉を開ける 扉を壊す 賢い オーク 必ず落とす 唯一の供 良いアイテムを落とす 光に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR84.png" alt=""></div>
+  <div class="txt">
+    <h3>執拗なるバルクメグ <b class="uq">唯一</b> <span class="en">Balcmeg, the Relentless</span></h3>
+    <p class="num">深さ 8（400 フィート）／出現 1/20／体力 15d4／速度 2／回避 +4・防護 4d4／攻撃 殴打／打撃 +8,3d8</p>
+    <p class="desc">オークの巨大な勇士で、厚い黒鎧をまとい、盾と刃こぼれだらけの斧を携えている。顔は傷だらけで、その目は小さく、悪意に満ちている。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">オーク</b><b class="fl">必ず落とす</b><b class="fl">唯一の供</b><b class="fl">良いアイテムを落とす</b><b class="fl">光に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="8"
+ data-t="醜怪なるルグ lug, the grotesque 小柄で並外れて醜いオーク。黒い革をまとい、短く幅広の刃を、薄気味悪いほど巧みに右手左手と持ち替えている。 唯一 雄 扉を開ける 錠を開ける 賢い オーク 必ず落とす 唯一の供 特別なアイテムを落とす 光に弱い 能力『残酷な一撃』（隠密）">
+  <div class="art"><img loading="lazy" src="tile/SR85.png" alt=""></div>
+  <div class="txt">
+    <h3>醜怪なるルグ <b class="uq">唯一</b> <span class="en">Lug, the Grotesque</span></h3>
+    <p class="num">深さ 8（400 フィート）／出現 1/20／体力 10d4／速度 2／回避 +16・防護 2d4／攻撃 殴打／打撃 +16,1d7</p>
+    <p class="desc">小柄で並外れて醜いオーク。黒い革をまとい、短く幅広の刃を、薄気味悪いほど巧みに右手左手と持ち替えている。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">賢い</b><b class="fl">オーク</b><b class="fl">必ず落とす</b><b class="fl">唯一の供</b><b class="fl">特別なアイテムを落とす</b><b class="fl">光に弱い</b><b class="fl">能力『残酷な一撃』（隠密）</b></p>
+  </div>
+</article><article class="card" data-depth="9"
+ data-t="オークの隊長 orc captain 鎧をまとい、自信ありげに歩くオーク。その曲刀の刃には刃こぼれがいくつも並んでいる。 雄 護衛 1 体 1d2 個落とす 扉を開ける 扉を壊す オーク 光に弱い 賢い 錠を開ける">
+  <div class="art"><img loading="lazy" src="tile/SR91.png" alt=""></div>
+  <div class="txt">
+    <h3>オークの隊長 <span class="en">Orc captain</span></h3>
+    <p class="num">深さ 9（450 フィート）／出現 1/3／体力 10d4／速度 2／回避 +7・防護 3d4／攻撃 殴打／打撃 +10,2d8</p>
+    <p class="desc">鎧をまとい、自信ありげに歩くオーク。その曲刀の刃には刃こぼれがいくつも並んでいる。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">護衛 1 体</b><b class="fl">1d2 個落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">賢い</b><b class="fl">錠を開ける</b></p>
+  </div>
+</article><article class="card" data-depth="9"
+ data-t="ワーグ warg 狡知に満ちた目をした、大きな狼である。 群れ 動きが乱れる（1/4） 扉を壊す 狼 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR92.png" alt=""></div>
+  <div class="txt">
+    <h3>ワーグ <span class="en">Warg</span></h3>
+    <p class="num">深さ 9（450 フィート）／出現 1/1／体力 10d4／速度 3／回避 +10・防護 1d4／攻撃 噛みつき／切り裂き +12,2d5</p>
+    <p class="desc">狡知に満ちた目をした、大きな狼である。</p>
+    <p class="flags"><b class="fl">群れ</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">扉を壊す</b><b class="fl">狼</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="9"
+ data-t="墓の亡者 grave wight 染みだらけの経帷子にくるまれた、幽鬼の姿。共に埋葬されたものを守っている。 必ず落とす 扉を開ける 不死 光に弱い 冷気に耐える 賢い 角を曲がって追わない 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい">
+  <div class="art"><img loading="lazy" src="tile/SR93.png" alt=""></div>
+  <div class="txt">
+    <h3>墓の亡者 <span class="en">Grave wight</span></h3>
+    <p class="num">深さ 9（450 フィート）／出現 1/2／体力 4d4／速度 2／回避 +7・防護 3d4／攻撃 殴打／打撃 +11,2d9、触れる／腕力減 +11</p>
+    <p class="desc">染みだらけの経帷子にくるまれた、幽鬼の姿。共に埋葬されたものを守っている。</p>
+    <p class="flags"><b class="fl">必ず落とす</b><b class="fl">扉を開ける</b><b class="fl">不死</b><b class="fl">光に弱い</b><b class="fl">冷気に耐える</b><b class="fl">賢い</b><b class="fl">角を曲がって追わない</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b></p>
+  </div>
+</article><article class="card" data-depth="9"
+ data-t="闇の大蛇 dark serpent 人の背丈ほどもある蛇で、光を映さぬ硬い鱗に覆われている。 蛇 動きが乱れる（1/2）">
+  <div class="art"><img loading="lazy" src="tile/SR94.png" alt=""></div>
+  <div class="txt">
+    <h3>闇の大蛇 <span class="en">Dark serpent</span></h3>
+    <p class="num">深さ 9（450 フィート）／出現 1/2／体力 2d4／速度 2／回避 +9・防護 4d4／攻撃 噛みつき／打撃 +10,2d8</p>
+    <p class="desc">人の背丈ほどもある蛇で、光を映さぬ硬い鱗に覆われている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">動きが乱れる（1/2）</b></p>
+  </div>
+</article><article class="card" data-depth="9"
+ data-t="オーク一の勇士オルコバル orcobal, champion of the orcs モルゴスのオークたちの、筆頭の勇士。 唯一 雄 護衛 1 体 1d2 個落とす 良いアイテムを落とす 扉を開ける 扉を壊す オーク 光に弱い 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR95.png" alt=""></div>
+  <div class="txt">
+    <h3>オーク一の勇士オルコバル <b class="uq">唯一</b> <span class="en">Orcobal, Champion of the Orcs</span></h3>
+    <p class="num">深さ 9（450 フィート）／出現 1/15／体力 15d4／速度 2／回避 +8・防護 3d4／攻撃 殴打／打撃 +10,3d10</p>
+    <p class="desc">モルゴスのオークたちの、筆頭の勇士。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">護衛 1 体</b><b class="fl">1d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="10"
+ data-t="囁く影 whispering shadow 広間に広がってゆく、揺らめく闇。その中から、焦がれるように、手招きするように、かすかな声が聞こえてくる。 動きが乱れる（1/4） 動きが乱れる（1/2） 供 1 体 増える 不死 光に弱い 冷気に耐える 角を曲がって追わない 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい">
+  <div class="art"><img loading="lazy" src="tile/SR101.png" alt=""></div>
+  <div class="txt">
+    <h3>囁く影 <span class="en">Whispering shadow</span></h3>
+    <p class="num">深さ 10（500 フィート）／出現 1/1／体力 6d4／速度 1／回避 +5・防護なし／攻撃 触れる／闇 +6,2d6</p>
+    <p class="desc">広間に広がってゆく、揺らめく闇。その中から、焦がれるように、手招きするように、かすかな声が聞こえてくる。</p>
+    <p class="flags"><b class="fl">動きが乱れる（1/4）</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">供 1 体</b><b class="fl">増える</b><b class="fl">不死</b><b class="fl">光に弱い</b><b class="fl">冷気に耐える</b><b class="fl">角を曲がって追わない</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b></p>
+  </div>
+</article><article class="card" data-depth="10"
+ data-t="膨れた蜘蛛 distended spider 毒で膨れ上がった球形の胴を持つ、巨大な蜘蛛である。 蜘蛛 毒に耐える 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR102.png" alt=""></div>
+  <div class="txt">
+    <h3>膨れた蜘蛛 <span class="en">Distended spider</span></h3>
+    <p class="num">深さ 10（500 フィート）／出現 1/1／体力 20d4／速度 2／回避 +7・防護なし／攻撃 噛みつき／毒 +9,2d11</p>
+    <p class="desc">毒で膨れ上がった球形の胴を持つ、巨大な蜘蛛である。</p>
+    <p class="flags"><b class="fl">蜘蛛</b><b class="fl">毒に耐える</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="10"
+ data-t="東夷の射手 easterling archer しかし人間の裏切りが無かったなら、狼によっても、バルログによっても、竜によっても、モルゴスがその目的を遂げることはなかったであろう。この者は、遠い東方からベレリアンドへ近ごろ渡ってきて、モルゴスの支配下に落ちた民の一人である。 人間 雄 1/3 で落とす 扉を開ける 扉を壊す 供 1 体 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR103.png" alt=""></div>
+  <div class="txt">
+    <h3>東夷の射手 <span class="en">Easterling archer</span></h3>
+    <p class="num">深さ 10（500 フィート）／出現 1/3／体力 9d4／速度 2／回避 +9・防護 2d4／攻撃 殴打／打撃 +9,1d7</p>
+    <p class="desc">しかし人間の裏切りが無かったなら、狼によっても、バルログによっても、竜によっても、モルゴスがその目的を遂げることはなかったであろう。この者は、遠い東方からベレリアンドへ近ごろ渡ってきて、モルゴスの支配下に落ちた民の一人である。</p>
+    <p class="flags"><b class="fl">人間</b><b class="fl">雄</b><b class="fl">1/3 で落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">供 1 体</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="10"
+ data-t="歪んだ蝙蝠 twisted bat 大型犬ほどもある、羽ばたく蝙蝠。頭は自然の釣り合いを外れて歪み、口からは長く湾曲した牙が垂れている。 飛ぶ 動きが乱れる（1/2） 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR104.png" alt=""></div>
+  <div class="txt">
+    <h3>歪んだ蝙蝠 <span class="en">Twisted bat</span></h3>
+    <p class="num">深さ 10（500 フィート）／出現 1/4／体力 2d4／速度 4／回避 +17・防護 1d4／攻撃 噛みつき／体格減 +15,2d5</p>
+    <p class="desc">大型犬ほどもある、羽ばたく蝙蝠。頭は自然の釣り合いを外れて歪み、口からは長く湾曲した牙が垂れている。</p>
+    <p class="flags"><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="10"
+ data-t="オーク王オスロド othrod, the orc lord この巨大なオークの目に宿る残忍さは、長年にわたり黒き敵の寵を保ってきた知恵を覆い隠している。 唯一 雄 護衛の一団 賢い 1d2 個落とす 特別なアイテムを落とす 扉を開ける 扉を壊す オーク 光に弱い 錠を開ける">
+  <div class="art"><img loading="lazy" src="tile/SR105.png" alt=""></div>
+  <div class="txt">
+    <h3>オーク王オスロド <b class="uq">唯一</b> <span class="en">Othrod, the Orc Lord</span></h3>
+    <p class="num">深さ 10（500 フィート）／出現 1/10／体力 15d4／速度 2／回避 +9・防護 4d4／攻撃 殴打／打撃 +15,2d9、鞭／武器落とし +12,2d4</p>
+    <p class="desc">この巨大なオークの目に宿る残忍さは、長年にわたり黒き敵の寵を保ってきた知恵を覆い隠している。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">護衛の一団</b><b class="fl">賢い</b><b class="fl">1d2 個落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">オーク</b><b class="fl">光に弱い</b><b class="fl">錠を開ける</b></p>
+  </div>
+</article><article class="card" data-depth="11"
+ data-t="雪トロル snow troll 強力な鉤爪の手を持つ、白いトロルである。 雄 供 1 体 1/3 で落とす 急速に回復する 扉を開ける 扉を壊す トロル 光に弱い 冷気に耐える 火に弱い 賢い 恐れない 能力『打ち飛ばし』（打撃）">
+  <div class="art"><img loading="lazy" src="tile/SR111.png" alt=""></div>
+  <div class="txt">
+    <h3>雪トロル <span class="en">Snow troll</span></h3>
+    <p class="num">深さ 11（550 フィート）／出現 1/1／体力 16d4／速度 2／回避 +7・防護 2d4／攻撃 殴打／叩きつけ +9,4d6、噛みつき／冷気 +8,2d9</p>
+    <p class="desc">強力な鉤爪の手を持つ、白いトロルである。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">供 1 体</b><b class="fl">1/3 で落とす</b><b class="fl">急速に回復する</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">トロル</b><b class="fl">光に弱い</b><b class="fl">冷気に耐える</b><b class="fl">火に弱い</b><b class="fl">賢い</b><b class="fl">恐れない</b><b class="fl">能力『打ち飛ばし』（打撃）</b></p>
+  </div>
+</article><article class="card" data-depth="11"
+ data-t="塚人 barrow wight 経帷子をまとった幽鬼の姿。解き放たれることもできぬまま、自らの埋葬室に住まっている。 必ず落とす 扉を開ける 通常は湧かない 不死 光に弱い 冷気に耐える 賢い 角を曲がって追わない 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい">
+  <div class="art"><img loading="lazy" src="tile/SR112.png" alt=""></div>
+  <div class="txt">
+    <h3>塚人 <span class="en">Barrow wight</span></h3>
+    <p class="num">深さ 11（550 フィート）／出現 1/100／体力 4d4／速度 2／回避 +8・防護 3d4／攻撃 殴打／打撃 +13,2d9、触れる／気品減 +13</p>
+    <p class="desc">経帷子をまとった幽鬼の姿。解き放たれることもできぬまま、自らの埋葬室に住まっている。</p>
+    <p class="flags"><b class="fl">必ず落とす</b><b class="fl">扉を開ける</b><b class="fl">通常は湧かない</b><b class="fl">不死</b><b class="fl">光に弱い</b><b class="fl">冷気に耐える</b><b class="fl">賢い</b><b class="fl">角を曲がって追わない</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b></p>
+  </div>
+</article><article class="card" data-depth="11"
+ data-t="潜む恐怖 lurking horror 墨のように黒い迷宮の闇の中で、こちらを待ち構えている。全身が爪と牙だけでできているように見える。 扉を壊す 目が悪い 恐れない 光に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR113.png" alt=""></div>
+  <div class="txt">
+    <h3>潜む恐怖 <span class="en">Lurking horror</span></h3>
+    <p class="num">深さ 11（550 フィート）／出現 1/5／体力 10d4／速度 2／回避 +11・防護 1d4／攻撃 噛みつき／呪縛 +10,2d9</p>
+    <p class="desc">墨のように黒い迷宮の闇の中で、こちらを待ち構えている。全身が爪と牙だけでできているように見える。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">目が悪い</b><b class="fl">恐れない</b><b class="fl">光に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="11"
+ data-t="巨人 giant 人の三倍の背丈を持つ大男。粗末な大棍棒で武装している。 必ず落とす 扉を開ける 扉を壊す 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR114.png" alt=""></div>
+  <div class="txt">
+    <h3>巨人 <span class="en">Giant</span></h3>
+    <p class="num">深さ 11（550 フィート）／出現 1/1／体力 30d4／速度 2／回避 +5・防護 1d4／攻撃 殴打／打撃 +6,4d9</p>
+    <p class="desc">人の三倍の背丈を持つ大男。粗末な大棍棒で武装している。</p>
+    <p class="flags"><b class="fl">必ず落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="11"
+ data-t="呪われしウルドル uldor, the accursed 黒のウルファングの息子で、涙尽きざる合戦においてエルフへの裏切りを率いた者。 唯一 人間 雄 必ず落とす 護衛 1 体 賢い 良いアイテムを落とす 扉を開ける 扉を壊す アイテムを拾う 錠を開ける 能力『挫きの射』（射撃）">
+  <div class="art"><img loading="lazy" src="tile/SR115.png" alt=""></div>
+  <div class="txt">
+    <h3>呪われしウルドル <b class="uq">唯一</b> <span class="en">Uldor, the Accursed</span></h3>
+    <p class="num">深さ 11（550 フィート）／出現 1/10／体力 14d4／速度 2／回避 +13・防護 3d4／攻撃 殴打／打撃 +16,2d7</p>
+    <p class="desc">黒のウルファングの息子で、涙尽きざる合戦においてエルフへの裏切りを率いた者。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">人間</b><b class="fl">雄</b><b class="fl">必ず落とす</b><b class="fl">護衛 1 体</b><b class="fl">賢い</b><b class="fl">良いアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">アイテムを拾う</b><b class="fl">錠を開ける</b><b class="fl">能力『挫きの射』（射撃）</b></p>
+  </div>
+</article><article class="card" data-depth="11"
+ data-t="甦りし王アルドル aldor, the risen king ノルドールが中つ国へ帰る前の人間の王。モルゴスの黒き力が、その魂をマンドスの館から遠く隔てて、この地に縛りつけている。豪奢な装いをまとい、幽鬼の指で長剣を握っている。 唯一 雄 賢い 必ず落とす 特別なアイテムを落とす 扉を開ける 通常は湧かない 不死 光に弱い 冷気に耐える 角を曲がって追わない 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい">
+  <div class="art"><img loading="lazy" src="tile/SR117.png" alt=""></div>
+  <div class="txt">
+    <h3>甦りし王アルドル <b class="uq">唯一</b> <span class="en">Aldor, the Risen King</span></h3>
+    <p class="num">深さ 11（550 フィート）／出現 1/100／体力 8d4／速度 2／回避 +8・防護 3d4／攻撃 触れる／体格減 +15、殴打／打撃 +15,2d9</p>
+    <p class="desc">ノルドールが中つ国へ帰る前の人間の王。モルゴスの黒き力が、その魂をマンドスの館から遠く隔てて、この地に縛りつけている。豪奢な装いをまとい、幽鬼の指で長剣を握っている。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b><b class="fl">必ず落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">通常は湧かない</b><b class="fl">不死</b><b class="fl">光に弱い</b><b class="fl">冷気に耐える</b><b class="fl">角を曲がって追わない</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b></p>
+  </div>
+</article><article class="card" data-depth="12"
+ data-t="東夷の密偵 easterling spy しかし人間の裏切りが無かったなら、狼によっても、バルログによっても、竜によっても、モルゴスがその目的を遂げることはなかったであろう。この者は、遠い東方からベレリアンドへ近ごろ渡ってきて、モルゴスの支配下に落ちた民の一人である。 人間 雄 1/3 で落とす 扉を開ける 錠を開ける 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR121.png" alt=""></div>
+  <div class="txt">
+    <h3>東夷の密偵 <span class="en">Easterling spy</span></h3>
+    <p class="num">深さ 12（600 フィート）／出現 1/3／体力 8d4／速度 2／回避 +13・防護 1d4／攻撃 殴打／打撃 +12,1d8</p>
+    <p class="desc">しかし人間の裏切りが無かったなら、狼によっても、バルログによっても、竜によっても、モルゴスがその目的を遂げることはなかったであろう。この者は、遠い東方からベレリアンドへ近ごろ渡ってきて、モルゴスの支配下に落ちた民の一人である。</p>
+    <p class="flags"><b class="fl">人間</b><b class="fl">雄</b><b class="fl">1/3 で落とす</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="12"
+ data-t="影蝙蝠 shadow bat 甲高く鳴きながら羽ばたく、闇の一片。 飛ぶ 動きが乱れる（1/2） 角を曲がって追わない 光に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR122.png" alt=""></div>
+  <div class="txt">
+    <h3>影蝙蝠 <span class="en">Shadow bat</span></h3>
+    <p class="num">深さ 12（600 フィート）／出現 1/4／体力 2d4／速度 4／回避 +19・防護 1d4／攻撃 噛みつき／打撃 +17,2d5</p>
+    <p class="desc">甲高く鳴きながら羽ばたく、闇の一片。</p>
+    <p class="flags"><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">角を曲がって追わない</b><b class="fl">光に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="12"
+ data-t="風の魔霊 sulrauko モルゴスの意志に捻じ曲げられた、風の精霊である。 扉を壊す 見えない 会心が効きにくい 毒に耐える 飛ぶ 動きが乱れる（1/2） ラウコ 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR123.png" alt=""></div>
+  <div class="txt">
+    <h3>風の魔霊 <span class="en">Sulrauko</span></h3>
+    <p class="num">深さ 12（600 フィート）／出現 1/2／体力 5d4／速度 2／回避 +14・防護 2d4／攻撃 殴打／叩きつけ +14,3d5</p>
+    <p class="desc">モルゴスの意志に捻じ曲げられた、風の精霊である。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">見えない</b><b class="fl">会心が効きにくい</b><b class="fl">毒に耐える</b><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">ラウコ</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="12"
+ data-t="火竜の子 fire-drake hatchling 生まれてまだ数か月に過ぎないが、この幼い竜はすでに人ほどの大きさがあり、恐るべき吐息を使い始めている。 扉を壊す 竜 動きが乱れる（1/4） 供 1 体 角を曲がって追わない 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR124.png" alt=""></div>
+  <div class="txt">
+    <h3>火竜の子 <span class="en">Fire-drake hatchling</span></h3>
+    <p class="num">深さ 12（600 フィート）／出現 1/6／体力 10d4／速度 2／回避 +11・防護 1d4／攻撃 噛みつき／炎 +13,2d5</p>
+    <p class="desc">生まれてまだ数か月に過ぎないが、この幼い竜はすでに人ほどの大きさがあり、恐るべき吐息を使い始めている。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">竜</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">供 1 体</b><b class="fl">角を曲がって追わない</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="12"
+ data-t="黒のウルファング ulfang the black ウルファングは東夷の偉大な指導者であり、彼らの裏切りを率いた。彼とその息子たちは、かつて上級エルフに公然と忠誠を誓いながら、密かにモルゴスに雇われていた。 唯一 人間 雄 2d2 個落とす 護衛 1 体 賢い 良いアイテムを落とす 扉を開ける 扉を壊す アイテムを拾う 能力『好機の一撃』（隠密）">
+  <div class="art"><img loading="lazy" src="tile/SR125.png" alt=""></div>
+  <div class="txt">
+    <h3>黒のウルファング <b class="uq">唯一</b> <span class="en">Ulfang the Black</span></h3>
+    <p class="num">深さ 12（600 フィート）／出現 1/10／体力 15d4／速度 2／回避 +13・防護 4d4／攻撃 殴打／打撃 +19,2d8</p>
+    <p class="desc">ウルファングは東夷の偉大な指導者であり、彼らの裏切りを率いた。彼とその息子たちは、かつて上級エルフに公然と忠誠を誓いながら、密かにモルゴスに雇われていた。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">人間</b><b class="fl">雄</b><b class="fl">2d2 個落とす</b><b class="fl">護衛 1 体</b><b class="fl">賢い</b><b class="fl">良いアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">アイテムを拾う</b><b class="fl">能力『好機の一撃』（隠密）</b></p>
+  </div>
+</article><article class="card" data-depth="12"
+ data-t="最も小さきバルログ、ドゥルイン duruin, least of the balrogs 力の悪鬼ヴァララウカールは、モルゴスの下僕の中でも最も強大な部類であり、広く恐れられている。目の前に立つのは夜の焔ドゥルイン、火と影に包まれた巨大な姿である。炎の剣と鞭を振るう。 唯一 雄 賢い 光る 1d2 個落とす 必ず落とす 特別なアイテムを落とす 恐れない 扉を壊す ラウコ 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR126.png" alt=""></div>
+  <div class="txt">
+    <h3>最も小さきバルログ、ドゥルイン <b class="uq">唯一</b> <span class="en">Duruin, Least of the Balrogs</span></h3>
+    <p class="num">深さ 12（600 フィート）／出現 1/30／体力 28d4／速度 2／回避 +13・防護 4d4／攻撃 殴打／炎 +18,2d12、鞭／武器落とし +14,3d6</p>
+    <p class="desc">力の悪鬼ヴァララウカールは、モルゴスの下僕の中でも最も強大な部類であり、広く恐れられている。目の前に立つのは夜の焔ドゥルイン、火と影に包まれた巨大な姿である。炎の剣と鞭を振るう。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b><b class="fl">光る</b><b class="fl">1d2 個落とす</b><b class="fl">必ず落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">恐れない</b><b class="fl">扉を壊す</b><b class="fl">ラウコ</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="13"
+ data-t="人狼 werewolf ただの狼ではない。あの燃える目の奥には、なにか悪意ある霊が潜んでいる。 動きが乱れる（1/4） 扉を開ける 扉を壊す 狼 供 1 体 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR131.png" alt=""></div>
+  <div class="txt">
+    <h3>人狼 <span class="en">Werewolf</span></h3>
+    <p class="num">深さ 13（650 フィート）／出現 1/1／体力 12d4／速度 3／回避 +14・防護 2d4／攻撃 引っかき／切り裂き +16,3d5、噛みつき／毒 +13,2d9</p>
+    <p class="desc">ただの狼ではない。あの燃える目の奥には、なにか悪意ある霊が潜んでいる。</p>
+    <p class="flags"><b class="fl">動きが乱れる（1/4）</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">狼</b><b class="fl">供 1 体</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="13"
+ data-t="影蜘蛛 shadow spider 影をまとった、大きな黒蜘蛛である。 蜘蛛 毒に耐える 光に弱い 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR132.png" alt=""></div>
+  <div class="txt">
+    <h3>影蜘蛛 <span class="en">Shadow spider</span></h3>
+    <p class="num">深さ 13（650 フィート）／出現 1/1／体力 14d4／速度 3／回避 +10・防護 1d4／攻撃 噛みつき／盲目 +11,2d9</p>
+    <p class="desc">影をまとった、大きな黒蜘蛛である。</p>
+    <p class="flags"><b class="fl">蜘蛛</b><b class="fl">毒に耐える</b><b class="fl">光に弱い</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="13"
+ data-t="影 shadow 部屋にできた闇の染みにしか見えないが、それでもこちらをつけ狙っている。 見えない 動きが乱れる（1/4） 扉を抜ける 不死 冷気に耐える 光に弱い 賢い 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい">
+  <div class="art"><img loading="lazy" src="tile/SR133.png" alt=""></div>
+  <div class="txt">
+    <h3>影 <span class="en">Shadow</span></h3>
+    <p class="num">深さ 13（650 フィート）／出現 1/3／体力 3d4／速度 2／回避 +13・防護 3d4／攻撃 触れる／闇 +16,2d5</p>
+    <p class="desc">部屋にできた闇の染みにしか見えないが、それでもこちらをつけ狙っている。</p>
+    <p class="flags"><b class="fl">見えない</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">扉を抜ける</b><b class="fl">不死</b><b class="fl">冷気に耐える</b><b class="fl">光に弱い</b><b class="fl">賢い</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b></p>
+  </div>
+</article><article class="card" data-depth="13"
+ data-t="青玉の大蛇 sapphire serpent 輝く青玉の鱗を持つ大蛇。氷のような冷気がまとわりついている。 蛇 色が変わる 動きが乱れる（1/4） 冷気に耐える 火に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR134.png" alt=""></div>
+  <div class="txt">
+    <h3>青玉の大蛇 <span class="en">Sapphire serpent</span></h3>
+    <p class="num">深さ 13（650 フィート）／出現 1/3／体力 8d4／速度 2／回避 +9・防護 5d4／攻撃 噛みつき／冷気 +13,2d6</p>
+    <p class="desc">輝く青玉の鱗を持つ大蛇。氷のような冷気がまとわりついている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">色が変わる</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">冷気に耐える</b><b class="fl">火に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="13"
+ data-t="エルマンの巨人ギリム gilim, the giant of eruman 冬と北の果ての巨人として知られる。巨人の中でも背が高く、その名は多くの国で呪われている。 1d2 個落とす 良いアイテムを落とす 扉を開ける 扉を壊す 冷気に耐える 唯一 雄 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR135.png" alt=""></div>
+  <div class="txt">
+    <h3>エルマンの巨人ギリム <b class="uq">唯一</b> <span class="en">Gilim, the Giant of Eruman</span></h3>
+    <p class="num">深さ 13（650 フィート）／出現 1/10／体力 35d4／速度 2／回避 +9・防護 1d4／攻撃 殴打／冷気 +10,4d9</p>
+    <p class="desc">冬と北の果ての巨人として知られる。巨人の中でも背が高く、その名は多くの国で呪われている。</p>
+    <p class="flags"><b class="fl">1d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">冷気に耐える</b><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="14"
+ data-t="紅玉の大蛇 ruby serpent 輝く紅玉の鱗を持つ大蛇。激しい熱を放っている。 蛇 色が変わる 動きが乱れる（1/4） 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR141.png" alt=""></div>
+  <div class="txt">
+    <h3>紅玉の大蛇 <span class="en">Ruby serpent</span></h3>
+    <p class="num">深さ 14（700 フィート）／出現 1/3／体力 8d4／速度 2／回避 +10・防護 5d4／攻撃 噛みつき／炎 +14,2d6</p>
+    <p class="desc">輝く紅玉の鱗を持つ大蛇。激しい熱を放っている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">色が変わる</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="14"
+ data-t="這い寄る恐怖 creeping horror 床を這いずり、こちらへにじり寄ってくる。捕まる様を思い浮かべるだけで心が引き裂かれる。 扉を壊す 恐れない 光に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR142.png" alt=""></div>
+  <div class="txt">
+    <h3>這い寄る恐怖 <span class="en">Creeping horror</span></h3>
+    <p class="num">深さ 14（700 フィート）／出現 1/4／体力 14d4／速度 1／回避 +13・防護 2d4／攻撃 引っかき／酸 +18,3d10</p>
+    <p class="desc">床を這いずり、こちらへにじり寄ってくる。捕まる様を思い浮かべるだけで心が引き裂かれる。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">恐れない</b><b class="fl">光に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="14"
+ data-t="氷の魔霊 ringrauko かろうじて人の形をしたこの者のまわりには、冷気が漂っている。手には冷たく光る刃を握っている。 扉を壊す 賢い 冷気に耐える 火に弱い ラウコ">
+  <div class="art"><img loading="lazy" src="tile/SR143.png" alt=""></div>
+  <div class="txt">
+    <h3>氷の魔霊 <span class="en">Ringrauko</span></h3>
+    <p class="num">深さ 14（700 フィート）／出現 1/1／体力 10d4／速度 2／回避 +14・防護 2d4／攻撃 殴打／冷気 +15,2d8</p>
+    <p class="desc">かろうじて人の形をしたこの者のまわりには、冷気が漂っている。手には冷たく光る刃を握っている。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">冷気に耐える</b><b class="fl">火に弱い</b><b class="fl">ラウコ</b></p>
+  </div>
+</article><article class="card" data-depth="14"
+ data-t="恐怖のバルログ、デルサウル delthaur, balrog of terror バルログを『恐怖の悪鬼』と呼ぶ者もいるが、デルサウルほどの恐れを呼ぶ者はいない。その身のまわりの空気そのものが、脅威に満ちている。 唯一 雄 賢い 光る 1d2 個落とす 必ず落とす 特別なアイテムを落とす 恐れない 扉を壊す ラウコ 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR145.png" alt=""></div>
+  <div class="txt">
+    <h3>恐怖のバルログ、デルサウル <b class="uq">唯一</b> <span class="en">Delthaur, Balrog of Terror</span></h3>
+    <p class="num">深さ 14（700 フィート）／出現 1/20／体力 32d4／速度 2／回避 +15・防護 4d4／攻撃 殴打／炎 +20,3d10、鞭／武器落とし +16,3d8</p>
+    <p class="desc">バルログを『恐怖の悪鬼』と呼ぶ者もいるが、デルサウルほどの恐れを呼ぶ者はいない。その身のまわりの空気そのものが、脅威に満ちている。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b><b class="fl">光る</b><b class="fl">1d2 個落とす</b><b class="fl">必ず落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">恐れない</b><b class="fl">扉を壊す</b><b class="fl">ラウコ</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="14"
+ data-t="巨人ナン nan, the giant 夏と南の巨人として知られ、大樹のようにこちらを見下ろしてそびえ立つ。右手には、これまで見たこともないほど長い剣を握っている。 1d2 個落とす 良いアイテムを落とす 決まったアイテムを落とす 扉を開ける 扉を壊す 唯一 雄 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR146.png" alt=""></div>
+  <div class="txt">
+    <h3>巨人ナン <b class="uq">唯一</b> <span class="en">Nan, the Giant</span></h3>
+    <p class="num">深さ 14（700 フィート）／出現 1/30／体力 40d4／速度 2／回避 +11・防護 1d4／攻撃 殴打／打撃 +15,3d13</p>
+    <p class="desc">夏と南の巨人として知られ、大樹のようにこちらを見下ろしてそびえ立つ。右手には、これまで見たこともないほど長い剣を握っている。</p>
+    <p class="flags"><b class="fl">1d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">決まったアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="15"
+ data-t="洞窟トロル cave troll トロルの中でも荒々しい大物で、大地の底そのものから這い出てきたかのようだ。 雄 供 1 体 1/3 で落とす 急速に回復する 扉を開ける 扉を壊す トロル 光に弱い 賢い 恐れない 能力『打ち飛ばし』（打撃）">
+  <div class="art"><img loading="lazy" src="tile/SR151.png" alt=""></div>
+  <div class="txt">
+    <h3>洞窟トロル <span class="en">Cave troll</span></h3>
+    <p class="num">深さ 15（750 フィート）／出現 1/1／体力 18d4／速度 2／回避 +11・防護 2d4／攻撃 殴打／叩きつけ +13,4d7、噛みつき／切り裂き +12,2d11</p>
+    <p class="desc">トロルの中でも荒々しい大物で、大地の底そのものから這い出てきたかのようだ。</p>
+    <p class="flags"><b class="fl">雄</b><b class="fl">供 1 体</b><b class="fl">1/3 で落とす</b><b class="fl">急速に回復する</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">トロル</b><b class="fl">光に弱い</b><b class="fl">賢い</b><b class="fl">恐れない</b><b class="fl">能力『打ち飛ばし』（打撃）</b></p>
+  </div>
+</article><article class="card" data-depth="15"
+ data-t="翠玉の大蛇 emerald serpent 輝く翠玉の鱗を持つ大蛇。有毒の靄がまとわりついている。 蛇 色が変わる 動きが乱れる（1/4） 毒に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR152.png" alt=""></div>
+  <div class="txt">
+    <h3>翠玉の大蛇 <span class="en">Emerald serpent</span></h3>
+    <p class="num">深さ 15（750 フィート）／出現 1/3／体力 8d4／速度 2／回避 +11・防護 5d4／攻撃 噛みつき／毒 +15,2d6</p>
+    <p class="desc">輝く翠玉の鱗を持つ大蛇。有毒の靄がまとわりついている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">色が変わる</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="15"
+ data-t="誓いの幽鬼 oathwraith 虚無でできたかのような姿。奇妙に人めいた形が影に包まれている。こちらへ手を伸ばしてくる。 不死 冷気に耐える 賢い 光に弱い 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい 扉を開ける">
+  <div class="art"><img loading="lazy" src="tile/SR153.png" alt=""></div>
+  <div class="txt">
+    <h3>誓いの幽鬼 <span class="en">Oathwraith</span></h3>
+    <p class="num">深さ 15（750 フィート）／出現 1/6／体力 12d4／速度 2／回避 +14・防護 3d4／攻撃 触れる／飢え +25</p>
+    <p class="desc">虚無でできたかのような姿。奇妙に人めいた形が影に包まれている。こちらへ手を伸ばしてくる。</p>
+    <p class="flags"><b class="fl">不死</b><b class="fl">冷気に耐える</b><b class="fl">賢い</b><b class="fl">光に弱い</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b><b class="fl">扉を開ける</b></p>
+  </div>
+</article><article class="card" data-depth="15"
+ data-t="猫の戦士 cat warrior 大きな猫が人のように立ち上がったかのようだ。その長く鎌のような爪が生まれつきのものかどうかは判らない。驚くべき速さと身のこなしで動く。 群れ 扉を開ける 錠を開ける 扉を壊す 賢い 1/3 で落とす 能力『位置交換』（隠密）">
+  <div class="art"><img loading="lazy" src="tile/SR154.png" alt=""></div>
+  <div class="txt">
+    <h3>猫の戦士 <span class="en">Cat warrior</span></h3>
+    <p class="num">深さ 15（750 フィート）／出現 1/1／体力 8d4／速度 3／回避 +15・防護 1d4／攻撃 引っかき／切り裂き +18,1d9</p>
+    <p class="desc">大きな猫が人のように立ち上がったかのようだ。その長く鎌のような爪が生まれつきのものかどうかは判らない。驚くべき速さと身のこなしで動く。</p>
+    <p class="flags"><b class="fl">群れ</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">1/3 で落とす</b><b class="fl">能力『位置交換』（隠密）</b></p>
+  </div>
+</article><article class="card" data-depth="16"
+ data-t="紫水晶の大蛇 amethyst serpent 暗く煌めく紫水晶の鱗を持つ大蛇。近づくにつれて影が濃くなる。 蛇 動きが乱れる（1/4） 光に弱い 色が変わる">
+  <div class="art"><img loading="lazy" src="tile/SR161.png" alt=""></div>
+  <div class="txt">
+    <h3>紫水晶の大蛇 <span class="en">Amethyst serpent</span></h3>
+    <p class="num">深さ 16（800 フィート）／出現 1/3／体力 8d4／速度 2／回避 +12・防護 5d4／攻撃 噛みつき／闇 +16,2d6</p>
+    <p class="desc">暗く煌めく紫水晶の鱗を持つ大蛇。近づくにつれて影が濃くなる。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">光に弱い</b><b class="fl">色が変わる</b></p>
+  </div>
+</article><article class="card" data-depth="16"
+ data-t="岩の魔霊 kemenrauko アングバンドを刻み出した岩そのものが、いまこちらに立ち向かってくるかのようだ。 扉を壊す 壁を掘る 石 ラウコ 賢い 冷気に耐える 火に耐える 毒に耐える 会心が効きにくい">
+  <div class="art"><img loading="lazy" src="tile/SR162.png" alt=""></div>
+  <div class="txt">
+    <h3>岩の魔霊 <span class="en">Kemenrauko</span></h3>
+    <p class="num">深さ 16（800 フィート）／出現 1/2／体力 10d4／速度 2／回避 +12・防護 4d4／攻撃 殴打／粉砕 +11,4d6</p>
+    <p class="desc">アングバンドを刻み出した岩そのものが、いまこちらに立ち向かってくるかのようだ。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">壁を掘る</b><b class="fl">石</b><b class="fl">ラウコ</b><b class="fl">賢い</b><b class="fl">冷気に耐える</b><b class="fl">火に耐える</b><b class="fl">毒に耐える</b><b class="fl">会心が効きにくい</b></p>
+  </div>
+</article><article class="card" data-depth="16"
+ data-t="石像鬼 grotesque 『彫り出されたトロルのごとき巨大な影が、そこに立ち並んでいた。砕けた岩から削り出され、人の似姿をあざける形へと。怪異にして脅かすもの、葬られしもの。跳ねては消える気まぐれな光の中で、曲がり角のたびに黙して立ち現れた。』 見えていない間だけ動く 冷気に耐える 火に耐える 石 扉を開ける 扉を壊す 心を持たない 恐れない 毒に耐える 混乱しない 眠らない 会心を受けない">
+  <div class="art"><img loading="lazy" src="tile/SR163.png" alt=""></div>
+  <div class="txt">
+    <h3>石像鬼 <span class="en">Grotesque</span></h3>
+    <p class="num">深さ 16（800 フィート）／出現 1/5／体力 10d4／速度 4／回避 -5・防護 8d4／攻撃 引っかき／切り裂き +16,3d9</p>
+    <p class="desc">『彫り出されたトロルのごとき巨大な影が、そこに立ち並んでいた。砕けた岩から削り出され、人の似姿をあざける形へと。怪異にして脅かすもの、葬られしもの。跳ねては消える気まぐれな光の中で、曲がり角のたびに黙して立ち現れた。』</p>
+    <p class="flags"><b class="fl">見えていない間だけ動く</b><b class="fl">冷気に耐える</b><b class="fl">火に耐える</b><b class="fl">石</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">心を持たない</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心を受けない</b></p>
+  </div>
+</article><article class="card" data-depth="16"
+ data-t="若い冷血竜 young cold-drake すべての竜が火の賜物を持つわけではない。だがそれも大して要りはしない――打ち払う尾、巨大な爪、鋭い牙、そして人を惑わす目があるのだから……。 1d2 個落とす 良いアイテムを落とす 賢い 角を曲がって追わない 扉を壊す 竜">
+  <div class="art"><img loading="lazy" src="tile/SR164.png" alt=""></div>
+  <div class="txt">
+    <h3>若い冷血竜 <span class="en">Young cold-drake</span></h3>
+    <p class="num">深さ 16（800 フィート）／出現 1/6／体力 30d4／速度 2／回避 +11・防護 2d4／攻撃 引っかき／打撃 +16,3d11、噛みつき／切り裂き +12,2d21</p>
+    <p class="desc">すべての竜が火の賜物を持つわけではない。だがそれも大して要りはしない――打ち払う尾、巨大な爪、鋭い牙、そして人を惑わす目があるのだから……。</p>
+    <p class="flags"><b class="fl">1d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">賢い</b><b class="fl">角を曲がって追わない</b><b class="fl">扉を壊す</b><b class="fl">竜</b></p>
+  </div>
+</article><article class="card" data-depth="16"
+ data-t="門番ウムイヤン umuiyan, the doorkeeper この猫は他の者より年老いて、より狡猾に見える。長らくテヴィルドの砦の入口を守ってきた。 護衛 1 体 唯一 雄 扉を開ける 扉を壊す 賢い 必ず落とす 錠を開ける 良いアイテムを落とす">
+  <div class="art"><img loading="lazy" src="tile/SR165.png" alt=""></div>
+  <div class="txt">
+    <h3>門番ウムイヤン <b class="uq">唯一</b> <span class="en">Umuiyan, the Doorkeeper</span></h3>
+    <p class="num">深さ 16（800 フィート）／出現 1/15／体力 12d4／速度 3／回避 +20・防護 1d4／攻撃 引っかき／切り裂き +25,1d11</p>
+    <p class="desc">この猫は他の者より年老いて、より狡猾に見える。長らくテヴィルドの砦の入口を守ってきた。</p>
+    <p class="flags"><b class="fl">護衛 1 体</b><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">必ず落とす</b><b class="fl">錠を開ける</b><b class="fl">良いアイテムを落とす</b></p>
+  </div>
+</article><article class="card" data-depth="16"
+ data-t="影のバルログ、ベレグワス belegwath, balrog of shadow 猛々しく燃え立つ姿。そのまわりには影の大翼が広がっている。イルーヴァタールの子らの多くにとって、これが最後に見たものとなった。 唯一 雄 賢い 光る 1d2 個落とす 必ず落とす 特別なアイテムを落とす 恐れない 扉を壊す ラウコ 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR166.png" alt=""></div>
+  <div class="txt">
+    <h3>影のバルログ、ベレグワス <b class="uq">唯一</b> <span class="en">Belegwath, Balrog of Shadow</span></h3>
+    <p class="num">深さ 16（800 フィート）／出現 1/20／体力 36d4／速度 2／回避 +17・防護 4d4／攻撃 殴打／炎 +22,2d14、鞭／武器落とし +18,3d8</p>
+    <p class="desc">猛々しく燃え立つ姿。そのまわりには影の大翼が広がっている。イルーヴァタールの子らの多くにとって、これが最後に見たものとなった。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b><b class="fl">光る</b><b class="fl">1d2 個落とす</b><b class="fl">必ず落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">恐れない</b><b class="fl">扉を壊す</b><b class="fl">ラウコ</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="16"
+ data-t="亡霊 spectre 実体無く、ぼろをまとった姿で、ほとんど目に見えない。崩れた顔には、二つの暗い落ち窪みが目をなしている。 動きが乱れる（1/4） 不死 群れ 冷気に耐える 賢い 光に弱い 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい 壁を抜ける">
+  <div class="art"><img loading="lazy" src="tile/SR167.png" alt=""></div>
+  <div class="txt">
+    <h3>亡霊 <span class="en">Spectre</span></h3>
+    <p class="num">深さ 16（800 フィート）／出現 1/6／体力 8d4／速度 2／回避 +10・防護なし／攻撃 触れる／冷気 +20,2d10、触れる／気品減 +30</p>
+    <p class="desc">実体無く、ぼろをまとった姿で、ほとんど目に見えない。崩れた顔には、二つの暗い落ち窪みが目をなしている。</p>
+    <p class="flags"><b class="fl">動きが乱れる（1/4）</b><b class="fl">不死</b><b class="fl">群れ</b><b class="fl">冷気に耐える</b><b class="fl">賢い</b><b class="fl">光に弱い</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b><b class="fl">壁を抜ける</b></p>
+  </div>
+</article><article class="card" data-depth="17"
+ data-t="ゴルゴロスの蜘蛛 spider of gorgoroth この大蜘蛛は、不光のウンゴリアントがエレド・ゴルゴロスの山中で産んだ一腹の一匹である。北のアングバンドへ渡り、砦の最も暗い底へと這い下りた者もいる。 扉を壊す 蜘蛛 光に弱い 毒に耐える 賢い 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR171.png" alt=""></div>
+  <div class="txt">
+    <h3>ゴルゴロスの蜘蛛 <span class="en">Spider of Gorgoroth</span></h3>
+    <p class="num">深さ 17（850 フィート）／出現 1/1／体力 18d4／速度 2／回避 +14・防護 1d4／攻撃 噛みつき／呪縛 +16,2d13</p>
+    <p class="desc">この大蜘蛛は、不光のウンゴリアントがエレド・ゴルゴロスの山中で産んだ一腹の一匹である。北のアングバンドへ渡り、砦の最も暗い底へと這い下りた者もいる。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">蜘蛛</b><b class="fl">光に弱い</b><b class="fl">毒に耐える</b><b class="fl">賢い</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="17"
+ data-t="大いなる人狼 greater werewolf 人のような知性に輝く目を持つ、巨大な狼である。 動きが乱れる（1/4） 扉を開ける 扉を壊す 狼 供 1 体 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR172.png" alt=""></div>
+  <div class="txt">
+    <h3>大いなる人狼 <span class="en">Greater werewolf</span></h3>
+    <p class="num">深さ 17（850 フィート）／出現 1/1／体力 14d4／速度 3／回避 +18・防護 2d4／攻撃 引っかき／切り裂き +20,3d7、噛みつき／毒 +17,2d11</p>
+    <p class="desc">人のような知性に輝く目を持つ、巨大な狼である。</p>
+    <p class="flags"><b class="fl">動きが乱れる（1/4）</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">狼</b><b class="fl">供 1 体</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="17"
+ data-t="金剛石の大蛇 adamant serpent 輝く金剛石の鱗を持つ大蛇。虹色の光を放って煌めいている。 蛇 色が変わる 動きが乱れる（1/4） 火に耐える 冷気に耐える 毒に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR173.png" alt=""></div>
+  <div class="txt">
+    <h3>金剛石の大蛇 <span class="en">Adamant serpent</span></h3>
+    <p class="num">深さ 17（850 フィート）／出現 1/3／体力 8d4／速度 2／回避 +13・防護 5d4／攻撃 噛みつき／切り裂き +17,3d6</p>
+    <p class="desc">輝く金剛石の鱗を持つ大蛇。虹色の光を放って煌めいている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">色が変わる</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="17"
+ data-t="下級の吸血鬼 lesser vampire 大蝙蝠のように素早く飛び交う。だが蝙蝠の目に、これほどの悪意が宿ることはあるまい。 飛ぶ 動きが乱れる（1/4） 扉を開ける 錠を開ける 光に弱い 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR174.png" alt=""></div>
+  <div class="txt">
+    <h3>下級の吸血鬼 <span class="en">Lesser vampire</span></h3>
+    <p class="num">深さ 17（850 フィート）／出現 1/1／体力 8d4／速度 3／回避 +21・防護 1d4／攻撃 引っかき／切り裂き +22,3d5、噛みつき／体格減 +17,2d7</p>
+    <p class="desc">大蝙蝠のように素早く飛び交う。だが蝙蝠の目に、これほどの悪意が宿ることはあるまい。</p>
+    <p class="flags"><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">光に弱い</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="17"
+ data-t="猫の暗殺者 cat assassin 影に身を潜める漆黒の猫で、残忍な弓を射るときですら見つけにくい。 見えない 扉を開ける 錠を開ける 扉を壊す 賢い 必ず落とす 供 1 体">
+  <div class="art"><img loading="lazy" src="tile/SR175.png" alt=""></div>
+  <div class="txt">
+    <h3>猫の暗殺者 <span class="en">Cat assassin</span></h3>
+    <p class="num">深さ 17（850 フィート）／出現 1/3／体力 8d4／速度 3／回避 +19・防護 1d4／攻撃 引っかき／切り裂き +20,1d11</p>
+    <p class="desc">影に身を潜める漆黒の猫で、残忍な弓を射るときですら見つけにくい。</p>
+    <p class="flags"><b class="fl">見えない</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">必ず落とす</b><b class="fl">供 1 体</b></p>
+  </div>
+</article><article class="card" data-depth="17"
+ data-t="蛇スカサ scatha the worm 床にとぐろを巻く、長くしなやかな蛇。その爪は鋭い。力によってか、狡知によってか、裏切りによってか、若い蛇にしては宝の山が大きい。 唯一 雄 角を曲がって追わない 2d2 個落とす 良いアイテムを落とす 賢い 扉を壊す 竜">
+  <div class="art"><img loading="lazy" src="tile/SR176.png" alt=""></div>
+  <div class="txt">
+    <h3>蛇スカサ <b class="uq">唯一</b> <span class="en">Scatha the Worm</span></h3>
+    <p class="num">深さ 17（850 フィート）／出現 1/30／体力 35d4／速度 2／回避 +14・防護 2d4／攻撃 引っかき／打撃 +20,3d11、噛みつき／切り裂き +17,2d21</p>
+    <p class="desc">床にとぐろを巻く、長くしなやかな蛇。その爪は鋭い。力によってか、狡知によってか、裏切りによってか、若い蛇にしては宝の山が大きい。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">角を曲がって追わない</b><b class="fl">2d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">賢い</b><b class="fl">扉を壊す</b><b class="fl">竜</b></p>
+  </div>
+</article><article class="card" data-depth="17"
+ data-t="テヴィルドの衛士オイケロイ oikeroi, guard of tevildo 猛々しく戦を好む猫で、テヴィルドの家臣として常にその傍らにある。 唯一 雄 扉を開ける 扉を壊す 賢い 錠を開ける 唯一の供 1d2 個落とす 良いアイテムを落とす">
+  <div class="art"><img loading="lazy" src="tile/SR177.png" alt=""></div>
+  <div class="txt">
+    <h3>テヴィルドの衛士オイケロイ <b class="uq">唯一</b> <span class="en">Oikeroi, Guard of Tevildo</span></h3>
+    <p class="num">深さ 17（850 フィート）／出現 1/15／体力 18d4／速度 3／回避 +21・防護 1d4／攻撃 引っかき／切り裂き +28,1d11</p>
+    <p class="desc">猛々しく戦を好む猫で、テヴィルドの家臣として常にその傍らにある。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">錠を開ける</b><b class="fl">唯一の供</b><b class="fl">1d2 個落とす</b><b class="fl">良いアイテムを落とす</b></p>
+  </div>
+</article><article class="card" data-depth="18"
+ data-t="若い火竜 young fire-drake ……大地は震えたが、足音は聞こえなかった。若き竜が渇きを癒したとき、暗い戸口で流れは湯気を上げた。じめついた床で炎は音を立て、彼は赤い火の中に独り死んだ。その骨は熱い泥の中の灰となった。 1d2 個落とす 良いアイテムを落とす 賢い 角を曲がって追わない 扉を壊す 竜 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR181.png" alt=""></div>
+  <div class="txt">
+    <h3>若い火竜 <span class="en">Young fire-drake</span></h3>
+    <p class="num">深さ 18（900 フィート）／出現 1/6／体力 30d4／速度 2／回避 +13・防護 2d4／攻撃 引っかき／打撃 +18,3d11、噛みつき／炎 +14,2d21</p>
+    <p class="desc">……大地は震えたが、足音は聞こえなかった。若き竜が渇きを癒したとき、暗い戸口で流れは湯気を上げた。じめついた床で炎は音を立て、彼は赤い火の中に独り死んだ。その骨は熱い泥の中の灰となった。</p>
+    <p class="flags"><b class="fl">1d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">賢い</b><b class="fl">角を曲がって追わない</b><b class="fl">扉を壊す</b><b class="fl">竜</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="18"
+ data-t="疾駆する恐怖 darting horror 狼ほどの大きさしかないが、はるかに速い。どのような邪な思いつきがこれをこの世に生み出したのか、およそ解しがたい。これ以上近くで見たくはないだろう。 扉を壊す 動きが乱れる（1/4） 恐れない">
+  <div class="art"><img loading="lazy" src="tile/SR182.png" alt=""></div>
+  <div class="txt">
+    <h3>疾駆する恐怖 <span class="en">Darting horror</span></h3>
+    <p class="num">深さ 18（900 フィート）／出現 1/5／体力 6d4／速度 4／回避 +20・防護 2d4／攻撃 噛みつき／幻覚 +22,2d9</p>
+    <p class="desc">狼ほどの大きさしかないが、はるかに速い。どのような邪な思いつきがこれをこの世に生み出したのか、およそ解しがたい。これ以上近くで見たくはないだろう。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">恐れない</b></p>
+  </div>
+</article><article class="card" data-depth="18"
+ data-t="幽鬼 wraith かつては人かエルフであったかもしれない、外套をまとった虚無の姿。今はモルゴスの黒い術によって、その下僕として歩いている。鼻も無いのに空気の匂いを嗅ぎ、あちらこちらへ首を巡らせる。 不死 冷気に耐える 賢い 恐れない 毒に耐える 混乱しない 眠らない 会心が効きにくい 光に弱い 扉を開ける">
+  <div class="art"><img loading="lazy" src="tile/SR183.png" alt=""></div>
+  <div class="txt">
+    <h3>幽鬼 <span class="en">Wraith</span></h3>
+    <p class="num">深さ 18（900 フィート）／出現 1/4／体力 14d4／速度 2／回避 +13・防護 4d4／攻撃 触れる／闇 +26,2d8</p>
+    <p class="desc">かつては人かエルフであったかもしれない、外套をまとった虚無の姿。今はモルゴスの黒い術によって、その下僕として歩いている。鼻も無いのに空気の匂いを嗅ぎ、あちらこちらへ首を巡らせる。</p>
+    <p class="flags"><b class="fl">不死</b><b class="fl">冷気に耐える</b><b class="fl">賢い</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心が効きにくい</b><b class="fl">光に弱い</b><b class="fl">扉を開ける</b></p>
+  </div>
+</article><article class="card" data-depth="18"
+ data-t="焔の魔霊 ururauko 純粋な焔の姿で、目を射るほど明るく、その形は捉えがたい。おそらくは太陽を導くアリエンの下位の同族であり、世界がまだ若かったころにメルコールの旗の下へ馳せ参じた者たちの一人である。 扉を壊す 賢い ラウコ 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR184.png" alt=""></div>
+  <div class="txt">
+    <h3>焔の魔霊 <span class="en">Ururauko</span></h3>
+    <p class="num">深さ 18（900 フィート）／出現 1/1／体力 4d4／速度 2／回避 +15・防護 2d4／攻撃 殴打／炎 +26,4d8</p>
+    <p class="desc">純粋な焔の姿で、目を射るほど明るく、その形は捉えがたい。おそらくは太陽を導くアリエンの下位の同族であり、世界がまだ若かったころにメルコールの旗の下へ馳せ参じた者たちの一人である。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">ラウコ</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="18"
+ data-t="猫の君テヴィルド tevildo, prince of cats 残忍な猫の一族の中ですら、その残忍さで名高い。この猛々しい戦士が王族であることに、何の不思議があろうか。 唯一 雄 扉を開ける 扉を壊す 賢い 錠を開ける 唯一の供 1d2 個落とす 特別なアイテムを落とす 能力『残酷な一撃』（隠密）">
+  <div class="art"><img loading="lazy" src="tile/SR185.png" alt=""></div>
+  <div class="txt">
+    <h3>猫の君テヴィルド <b class="uq">唯一</b> <span class="en">Tevildo, Prince of Cats</span></h3>
+    <p class="num">深さ 18（900 フィート）／出現 1/10／体力 14d4／速度 3／回避 +22・防護 1d4／攻撃 引っかき／切り裂き +26,1d13</p>
+    <p class="desc">残忍な猫の一族の中ですら、その残忍さで名高い。この猛々しい戦士が王族であることに、何の不思議があろうか。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">錠を開ける</b><b class="fl">唯一の供</b><b class="fl">1d2 個落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">能力『残酷な一撃』（隠密）</b></p>
+  </div>
+</article><article class="card" data-depth="18"
+ data-t="軍勢のバルログ、トゥルカノ turkano, balrog of the hosts バルログはみなアングバンドの強者と目され、その命は直ちに従われる。だがトゥルカノは真の戦の指揮官であり、ラウカールの軍勢を率いて、その邪悪な主に勝利に次ぐ栄光をもたらしてきた。 唯一 雄 賢い 光る 1d2 個落とす 必ず落とす 特別なアイテムを落とす 護衛の一団 恐れない 扉を壊す ラウコ 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR186.png" alt=""></div>
+  <div class="txt">
+    <h3>軍勢のバルログ、トゥルカノ <b class="uq">唯一</b> <span class="en">Turkano, Balrog of the Hosts</span></h3>
+    <p class="num">深さ 18（900 フィート）／出現 1/20／体力 40d4／速度 2／回避 +19・防護 5d4／攻撃 殴打／炎 +24,2d16、鞭／武器落とし +20,3d8</p>
+    <p class="desc">バルログはみなアングバンドの強者と目され、その命は直ちに従われる。だがトゥルカノは真の戦の指揮官であり、ラウカールの軍勢を率いて、その邪悪な主に勝利に次ぐ栄光をもたらしてきた。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b><b class="fl">光る</b><b class="fl">1d2 個落とす</b><b class="fl">必ず落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">護衛の一団</b><b class="fl">恐れない</b><b class="fl">扉を壊す</b><b class="fl">ラウコ</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="19"
+ data-t="古の青玉の大蛇 ancient sapphire serpent 青玉の鱗に覆われた、巨大な蛇の姿。頭から尾まで霜に覆われている。 蛇 色が変わる 動きが乱れる（1/4） 冷気に耐える 火に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR191.png" alt=""></div>
+  <div class="txt">
+    <h3>古の青玉の大蛇 <span class="en">Ancient sapphire serpent</span></h3>
+    <p class="num">深さ 19（950 フィート）／出現 1/6／体力 10d4／速度 2／回避 +15・防護 6d4／攻撃 噛みつき／冷気 +19,2d9</p>
+    <p class="desc">青玉の鱗に覆われた、巨大な蛇の姿。頭から尾まで霜に覆われている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">色が変わる</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">冷気に耐える</b><b class="fl">火に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="19"
+ data-t="トロルの親衛兵 troll guard トロルの中でも最も大きく頑強な者は、ゴスモグの供回りに取り立てられる。戦のために鍛えられ、黒い鎧と巨大な凶器を与えられている。 群れ 1/3 で落とす 急速に回復する 恐れない 扉を開ける 扉を壊す トロル 光に弱い 賢い 能力『打ち飛ばし』（打撃）">
+  <div class="art"><img loading="lazy" src="tile/SR192.png" alt=""></div>
+  <div class="txt">
+    <h3>トロルの親衛兵 <span class="en">Troll guard</span></h3>
+    <p class="num">深さ 19（950 フィート）／出現 1/1／体力 20d4／速度 2／回避 +14・防護 3d4／攻撃 殴打／叩きつけ +18,4d8</p>
+    <p class="desc">トロルの中でも最も大きく頑強な者は、ゴスモグの供回りに取り立てられる。戦のために鍛えられ、黒い鎧と巨大な凶器を与えられている。</p>
+    <p class="flags"><b class="fl">群れ</b><b class="fl">1/3 で落とす</b><b class="fl">急速に回復する</b><b class="fl">恐れない</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">トロル</b><b class="fl">光に弱い</b><b class="fl">賢い</b><b class="fl">能力『打ち飛ばし』（打撃）</b></p>
+  </div>
+</article><article class="card" data-depth="19"
+ data-t="吸血鬼 vampire 人ほどの大きさの、悪夢じみた蝙蝠の姿。 飛ぶ 動きが乱れる（1/4） 扉を開ける 錠を開ける 光に弱い 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR193.png" alt=""></div>
+  <div class="txt">
+    <h3>吸血鬼 <span class="en">Vampire</span></h3>
+    <p class="num">深さ 19（950 フィート）／出現 1/1／体力 10d4／速度 3／回避 +24・防護 1d4／攻撃 引っかき／切り裂き +25,3d5、噛みつき／腕力体格減 +20,2d9</p>
+    <p class="desc">人ほどの大きさの、悪夢じみた蝙蝠の姿。</p>
+    <p class="flags"><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">光に弱い</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="19"
+ data-t="名も無きもの nameless thing 『ドワーフの掘った最も深い坑道の、はるか、はるか下で、世界は名も無きものどもに齧られている……。』巨大な地虫のごとく、大地の根を食い進んでゆく。 扉を壊す 壁を掘る 急速に回復する 心を持たない 角を曲がって追わない 動きが乱れる（1/4） 動きが乱れる（1/2） 深さ固定">
+  <div class="art"><img loading="lazy" src="tile/SR194.png" alt=""></div>
+  <div class="txt">
+    <h3>名も無きもの <span class="en">Nameless thing</span></h3>
+    <p class="num">深さ 19（950 フィート）／出現 1/1／体力 70d4／速度 1／回避 +7・防護 6d4／攻撃 押し潰し／酸 +17,5d10</p>
+    <p class="desc">『ドワーフの掘った最も深い坑道の、はるか、はるか下で、世界は名も無きものどもに齧られている……。』巨大な地虫のごとく、大地の根を食い進んでゆく。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">壁を掘る</b><b class="fl">急速に回復する</b><b class="fl">心を持たない</b><b class="fl">角を曲がって追わない</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">深さ固定</b></p>
+  </div>
+</article><article class="card" data-depth="19"
+ data-t="黄金のスマウグ smaug the golden 若さゆえの好奇心を持つ竜。だが若い竜とてなお恐るべき敵であり、この者は大翼を広げて暗い広間を飛び回る。 唯一 雄 2d2 個落とす 良いアイテムを落とす 賢い 飛ぶ 角を曲がって追わない 扉を壊す 竜 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR195.png" alt=""></div>
+  <div class="txt">
+    <h3>黄金のスマウグ <b class="uq">唯一</b> <span class="en">Smaug the Golden</span></h3>
+    <p class="num">深さ 19（950 フィート）／出現 1/30／体力 35d4／速度 3／回避 +14・防護 2d4／攻撃 引っかき／打撃 +23,3d11、噛みつき／炎 +19,2d21</p>
+    <p class="desc">若さゆえの好奇心を持つ竜。だが若い竜とてなお恐るべき敵であり、この者は大翼を広げて暗い広間を飛び回る。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">2d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">賢い</b><b class="fl">飛ぶ</b><b class="fl">角を曲がって追わない</b><b class="fl">扉を壊す</b><b class="fl">竜</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="19"
+ data-t="ゴンドリンを売りしマエグリン maeglin, betrayer of gondolin 父たる黒エルフ、エオルによって『鋭い目』と名づけられた。マエグリンはゴンドリンの王トゥアゴンの謀議に深く与りながら、黒き敵モルゴス・バウグリアに王を売った。いかなる運命の綾が、ついに彼をあの暗き王の深き広間へ導いたのか、誰に言えようか。 唯一 エルフ 雄 1d2 個落とす 錠を開ける 決まったアイテムを落とす 特別なアイテムを落とす 扉を開ける 扉を壊す アイテムを拾う 賢い 能力『反撃』（回避）">
+  <div class="art"><img loading="lazy" src="tile/SR196.png" alt=""></div>
+  <div class="txt">
+    <h3>ゴンドリンを売りしマエグリン <b class="uq">唯一</b> <span class="en">Maeglin, Betrayer of Gondolin</span></h3>
+    <p class="num">深さ 19（950 フィート）／出現 1/100／体力 15d4／速度 2／回避 +23・防護 5d4／攻撃 殴打／打撃 +33,2d8</p>
+    <p class="desc">父たる黒エルフ、エオルによって『鋭い目』と名づけられた。マエグリンはゴンドリンの王トゥアゴンの謀議に深く与りながら、黒き敵モルゴス・バウグリアに王を売った。いかなる運命の綾が、ついに彼をあの暗き王の深き広間へ導いたのか、誰に言えようか。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">エルフ</b><b class="fl">雄</b><b class="fl">1d2 個落とす</b><b class="fl">錠を開ける</b><b class="fl">決まったアイテムを落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">アイテムを拾う</b><b class="fl">賢い</b><b class="fl">能力『反撃』（回避）</b></p>
+  </div>
+</article><article class="card" data-depth="20"
+ data-t="古の紅玉の大蛇 ancient ruby serpent 紅玉の鱗に覆われた、巨大な蛇の姿。鼻孔からは煙がひとすじ立ちのぼり、まわりの凄まじい熱に息が詰まる。 蛇 色が変わる 動きが乱れる（1/4） 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR201.png" alt=""></div>
+  <div class="txt">
+    <h3>古の紅玉の大蛇 <span class="en">Ancient ruby serpent</span></h3>
+    <p class="num">深さ 20（1000 フィート）／出現 1/3／体力 10d4／速度 2／回避 +16・防護 6d4／攻撃 噛みつき／炎 +20,2d9</p>
+    <p class="desc">紅玉の鱗に覆われた、巨大な蛇の姿。鼻孔からは煙がひとすじ立ちのぼり、まわりの凄まじい熱に息が詰まる。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">色が変わる</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="20"
+ data-t="大いなる冷血竜 great cold-drake 竜は成長を止めることがなく、恐ろしいほどの大きさに達する。最も年経た竜は、人の身には測りかねるほど巨大で狡猾である。 2d2 個落とす 良いアイテムを落とす 賢い 角を曲がって追わない 扉を壊す 竜">
+  <div class="art"><img loading="lazy" src="tile/SR202.png" alt=""></div>
+  <div class="txt">
+    <h3>大いなる冷血竜 <span class="en">Great cold-drake</span></h3>
+    <p class="num">深さ 20（1000 フィート）／出現 1/6／体力 50d4／速度 2／回避 +13・防護 2d4／攻撃 引っかき／打撃 +21,3d13、噛みつき／切り裂き +16,2d23</p>
+    <p class="desc">竜は成長を止めることがなく、恐ろしいほどの大きさに達する。最も年経た竜は、人の身には測りかねるほど巨大で狡猾である。</p>
+    <p class="flags"><b class="fl">2d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">賢い</b><b class="fl">角を曲がって追わない</b><b class="fl">扉を壊す</b><b class="fl">竜</b></p>
+  </div>
+</article><article class="card" data-depth="20"
+ data-t="沈黙の見張り silent watcher 玉座に座す巨大な像のようであった。それぞれが三つの体を繋ぎ合わせ、三つの頭が外へ、内へ、そして門の向こうへと向いていた。頭は禿鷲の顔をしており、大きな膝の上には鉤爪のような手が置かれていた。巨大な石塊から彫り出され、微動だにせぬように見えたが、それでいて彼らは知っていた。恐るべき邪悪な警戒の霊が、その内に宿っていたのだ。彼らは敵を見分けた。姿が見えようと見えまいと、気づかれずに通れる者はいなかった。彼らは入ることも、逃れることも許さなかった。 動かない 冷気に耐える 火に耐える 石 目が悪い 恐れない 毒に耐える 混乱しない 眠らない 会心を受けない">
+  <div class="art"><img loading="lazy" src="tile/SR203.png" alt=""></div>
+  <div class="txt">
+    <h3>沈黙の見張り <span class="en">Silent watcher</span></h3>
+    <p class="num">深さ 20（1000 フィート）／出現 1/10／体力 10d4／速度 2／回避 -5・防護 8d4</p>
+    <p class="desc">玉座に座す巨大な像のようであった。それぞれが三つの体を繋ぎ合わせ、三つの頭が外へ、内へ、そして門の向こうへと向いていた。頭は禿鷲の顔をしており、大きな膝の上には鉤爪のような手が置かれていた。巨大な石塊から彫り出され、微動だにせぬように見えたが、それでいて彼らは知っていた。恐るべき邪悪な警戒の霊が、その内に宿っていたのだ。彼らは敵を見分けた。姿が見えようと見えまいと、気づかれずに通れる者はいなかった。彼らは入ることも、逃れることも許さなかった。</p>
+    <p class="flags"><b class="fl">動かない</b><b class="fl">冷気に耐える</b><b class="fl">火に耐える</b><b class="fl">石</b><b class="fl">目が悪い</b><b class="fl">恐れない</b><b class="fl">毒に耐える</b><b class="fl">混乱しない</b><b class="fl">眠らない</b><b class="fl">会心を受けない</b></p>
+  </div>
+</article><article class="card" data-depth="20"
+ data-t="闇の魔霊 gwathrauko 闇そのものの精霊であり、イルーヴァタールに叛くメルコールの黒き旗が掲げられたとき、たやすくその側へ靡いた。 扉を壊す 賢い ラウコ 光に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR204.png" alt=""></div>
+  <div class="txt">
+    <h3>闇の魔霊 <span class="en">Gwathrauko</span></h3>
+    <p class="num">深さ 20（1000 フィート）／出現 1/4／体力 8d4／速度 2／回避 +18・防護 3d4／攻撃 殴打／闇 +18,2d8</p>
+    <p class="desc">闇そのものの精霊であり、イルーヴァタールに叛くメルコールの黒き旗が掲げられたとき、たやすくその側へ靡いた。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">賢い</b><b class="fl">ラウコ</b><b class="fl">光に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="20"
+ data-t="人狼の祖ドラウグルイン draugluin, sire of werewolves ドラウグルインはサウロンに恐るべき親衛を与えている。人の霊を宿した巨大な狼であり、その種族すべての長である。 唯一 雄 護衛 1 体 賢い 動きが乱れる（1/4） 1d2 個落とす 決まったアイテムを落とす 扉を開ける 扉を壊す 狼">
+  <div class="art"><img loading="lazy" src="tile/SR205.png" alt=""></div>
+  <div class="txt">
+    <h3>人狼の祖ドラウグルイン <b class="uq">唯一</b> <span class="en">Draugluin, Sire of Werewolves</span></h3>
+    <p class="num">深さ 20（1000 フィート）／出現 1/15／体力 22d4／速度 3／回避 +24・防護 3d4／攻撃 引っかき／切り裂き +26,3d9、噛みつき／毒 +23,2d13</p>
+    <p class="desc">ドラウグルインはサウロンに恐るべき親衛を与えている。人の霊を宿した巨大な狼であり、その種族すべての長である。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">護衛 1 体</b><b class="fl">賢い</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">1d2 個落とす</b><b class="fl">決まったアイテムを落とす</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">狼</b></p>
+  </div>
+</article><article class="card" data-depth="20"
+ data-t="突然の焔のバルログ、ヴァラハ vallach, balrog of sudden flame 炎と闇の双方をまとった、人に似た巨大な姿。残忍な炎の斧を振るい、その大きさからは考えられぬ速さで動く。 唯一 雄 賢い 光る 1d2 個落とす 必ず落とす 特別なアイテムを落とす 恐れない 扉を壊す ラウコ 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR206.png" alt=""></div>
+  <div class="txt">
+    <h3>突然の焔のバルログ、ヴァラハ <b class="uq">唯一</b> <span class="en">Vallach, Balrog of Sudden Flame</span></h3>
+    <p class="num">深さ 20（1000 フィート）／出現 1/20／体力 44d4／速度 3／回避 +21・防護 5d4／攻撃 殴打／炎 +26,3d12、鞭／武器落とし +22,3d8</p>
+    <p class="desc">炎と闇の双方をまとった、人に似た巨大な姿。残忍な炎の斧を振るい、その大きさからは考えられぬ速さで動く。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b><b class="fl">光る</b><b class="fl">1d2 個落とす</b><b class="fl">必ず落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">恐れない</b><b class="fl">扉を壊す</b><b class="fl">ラウコ</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="21"
+ data-t="古の蜘蛛 ancient spider ウンゴリアントの一腹の中でも最も年経た一匹で、巨大に膨れた胴からは毒が滴っている。 賢い 扉を壊す 蜘蛛 毒に耐える 角を曲がって追わない">
+  <div class="art"><img loading="lazy" src="tile/SR211.png" alt=""></div>
+  <div class="txt">
+    <h3>古の蜘蛛 <span class="en">Ancient spider</span></h3>
+    <p class="num">深さ 21（1050 フィート）／出現 1/3／体力 20d4／速度 2／回避 +19・防護 1d4／攻撃 噛みつき／毒 +22,2d19</p>
+    <p class="desc">ウンゴリアントの一腹の中でも最も年経た一匹で、巨大に膨れた胴からは毒が滴っている。</p>
+    <p class="flags"><b class="fl">賢い</b><b class="fl">扉を壊す</b><b class="fl">蜘蛛</b><b class="fl">毒に耐える</b><b class="fl">角を曲がって追わない</b></p>
+  </div>
+</article><article class="card" data-depth="21"
+ data-t="古の翠玉の大蛇 ancient emerald serpent 翠玉の鱗に覆われた、巨大な蛇の姿。有毒の靄の雲に包まれている。 蛇 色が変わる 動きが乱れる（1/4） 毒に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR212.png" alt=""></div>
+  <div class="txt">
+    <h3>古の翠玉の大蛇 <span class="en">Ancient emerald serpent</span></h3>
+    <p class="num">深さ 21（1050 フィート）／出現 1/3／体力 10d4／速度 2／回避 +17・防護 6d4／攻撃 噛みつき／毒 +21,2d9</p>
+    <p class="desc">翠玉の鱗に覆われた、巨大な蛇の姿。有毒の靄の雲に包まれている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">色が変わる</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="21"
+ data-t="吸血鬼の王 vampire lord 優美な、人の形をした蝙蝠のようだ。その黒い目は、まわりのすべてを獲物として見ている。 飛ぶ 扉を開ける 扉を壊す 錠を開ける 動きが乱れる（1/4） 賢い 光に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR213.png" alt=""></div>
+  <div class="txt">
+    <h3>吸血鬼の王 <span class="en">Vampire lord</span></h3>
+    <p class="num">深さ 21（1050 フィート）／出現 1/2／体力 12d4／速度 3／回避 +26・防護 1d4／攻撃 引っかき／切り裂き +29,3d7、噛みつき／全能力減 +24,2d9</p>
+    <p class="desc">優美な、人の形をした蝙蝠のようだ。その黒い目は、まわりのすべてを獲物として見ている。</p>
+    <p class="flags"><b class="fl">飛ぶ</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">錠を開ける</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">賢い</b><b class="fl">光に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="21"
+ data-t="エルフの禍ダゴルヒア dagorhir, the elfbane 山のようなトロルで、錆びた鉄板の鎧をまとっている。恐れられるトロルの親衛兵の一隊を率いている。 唯一 護衛 1 体 1d2 個落とす 良いアイテムを落とす 急速に回復する 恐れない 扉を開ける 扉を壊す トロル 雄 光に弱い 賢い 能力『天敵』（知覚） 能力『打ち飛ばし』（打撃）">
+  <div class="art"><img loading="lazy" src="tile/SR214.png" alt=""></div>
+  <div class="txt">
+    <h3>エルフの禍ダゴルヒア <b class="uq">唯一</b> <span class="en">Dagorhir, the Elfbane</span></h3>
+    <p class="num">深さ 21（1050 フィート）／出現 1/15／体力 24d4／速度 2／回避 +17・防護 4d4／攻撃 殴打／叩きつけ +17,4d10</p>
+    <p class="desc">山のようなトロルで、錆びた鉄板の鎧をまとっている。恐れられるトロルの親衛兵の一隊を率いている。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">護衛 1 体</b><b class="fl">1d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">急速に回復する</b><b class="fl">恐れない</b><b class="fl">扉を開ける</b><b class="fl">扉を壊す</b><b class="fl">トロル</b><b class="fl">雄</b><b class="fl">光に弱い</b><b class="fl">賢い</b><b class="fl">能力『天敵』（知覚）</b><b class="fl">能力『打ち飛ばし』（打撃）</b></p>
+  </div>
+</article><article class="card" data-depth="21"
+ data-t="恐ろしき眼差しゴスティア gostir, the dread glance 蛇の眼差しがこれほど命取りであるなら、火など何の要があろうか。 唯一 雄 角を曲がって追わない 2d2 個落とす 特別なアイテムを落とす 賢い 扉を壊す 竜">
+  <div class="art"><img loading="lazy" src="tile/SR215.png" alt=""></div>
+  <div class="txt">
+    <h3>恐ろしき眼差しゴスティア <b class="uq">唯一</b> <span class="en">Gostir, the Dread Glance</span></h3>
+    <p class="num">深さ 21（1050 フィート）／出現 1/30／体力 60d4／速度 2／回避 +14・防護 2d4／攻撃 引っかき／打撃 +24,3d13、噛みつき／切り裂き +19,2d23</p>
+    <p class="desc">蛇の眼差しがこれほど命取りであるなら、火など何の要があろうか。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">角を曲がって追わない</b><b class="fl">2d2 個落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">賢い</b><b class="fl">扉を壊す</b><b class="fl">竜</b></p>
+  </div>
+</article><article class="card" data-depth="22"
+ data-t="古の紫水晶の大蛇 ancient amethyst serpent 紫水晶の鱗に覆われた、巨大な蛇の姿。影をまとっている。 蛇 動きが乱れる（1/4） 光に弱い 色が変わる">
+  <div class="art"><img loading="lazy" src="tile/SR221.png" alt=""></div>
+  <div class="txt">
+    <h3>古の紫水晶の大蛇 <span class="en">Ancient amethyst serpent</span></h3>
+    <p class="num">深さ 22（1100 フィート）／出現 1/3／体力 10d4／速度 2／回避 +18・防護 6d4／攻撃 噛みつき／闇 +22,2d9</p>
+    <p class="desc">紫水晶の鱗に覆われた、巨大な蛇の姿。影をまとっている。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">光に弱い</b><b class="fl">色が変わる</b></p>
+  </div>
+</article><article class="card" data-depth="22"
+ data-t="大いなる火竜 great fire-drake 最も年経て最も大きな竜は、大きな宝の山を蓄えていることが多い。悪夢のような牙と爪が幅を利かせるアングバンドの底ですら、竜の焔に比べうるものなどあろうか。 2d2 個落とす 良いアイテムを落とす 賢い 角を曲がって追わない 扉を壊す 竜 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR222.png" alt=""></div>
+  <div class="txt">
+    <h3>大いなる火竜 <span class="en">Great fire-drake</span></h3>
+    <p class="num">深さ 22（1100 フィート）／出現 1/6／体力 50d4／速度 2／回避 +14・防護 2d4／攻撃 引っかき／打撃 +23,3d13、噛みつき／炎 +18,2d23</p>
+    <p class="desc">最も年経て最も大きな竜は、大きな宝の山を蓄えていることが多い。悪夢のような牙と爪が幅を利かせるアングバンドの底ですら、竜の焔に比べうるものなどあろうか。</p>
+    <p class="flags"><b class="fl">2d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">賢い</b><b class="fl">角を曲がって追わない</b><b class="fl">扉を壊す</b><b class="fl">竜</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="22"
+ data-t="霧の魔霊 hithrauko アングバンドの底には、数多の煙と奇怪な気が漂い、その少なからぬものが害を成す。だがこれほど生き生きとした悪意をもって動くものは稀である……。 扉を抜ける 見えない 会心が効きにくい 毒に耐える 飛ぶ 動きが乱れる（1/2） ラウコ 賢い">
+  <div class="art"><img loading="lazy" src="tile/SR223.png" alt=""></div>
+  <div class="txt">
+    <h3>霧の魔霊 <span class="en">Hithrauko</span></h3>
+    <p class="num">深さ 22（1100 フィート）／出現 1/2／体力 4d4／速度 3／回避 +17・防護 4d4／攻撃 呑み込み／幻覚 +27,4d5</p>
+    <p class="desc">アングバンドの底には、数多の煙と奇怪な気が漂い、その少なからぬものが害を成す。だがこれほど生き生きとした悪意をもって動くものは稀である……。</p>
+    <p class="flags"><b class="fl">扉を抜ける</b><b class="fl">見えない</b><b class="fl">会心が効きにくい</b><b class="fl">毒に耐える</b><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/2）</b><b class="fl">ラウコ</b><b class="fl">賢い</b></p>
+  </div>
+</article><article class="card" data-depth="22"
+ data-t="闇の蜘蛛シェロブ shelob, spider of darkness この大蜘蛛にはウンゴリアントの血筋が正しく受け継がれているらしい。まわりの迷宮そのものから光が吸い取られ、彼女はそれを紡いで命取りの巣を織り上げる。 唯一 雌 角を曲がって追わない 賢い 扉を壊す 蜘蛛 光に弱い 毒に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR224.png" alt=""></div>
+  <div class="txt">
+    <h3>闇の蜘蛛シェロブ <b class="uq">唯一</b> <span class="en">Shelob, Spider of Darkness</span></h3>
+    <p class="num">深さ 22（1100 フィート）／出現 1/30／体力 22d4／速度 2／回避 +20・防護 2d4／攻撃 噛みつき／呪縛 +25,2d15</p>
+    <p class="desc">この大蜘蛛にはウンゴリアントの血筋が正しく受け継がれているらしい。まわりの迷宮そのものから光が吸い取られ、彼女はそれを紡いで命取りの巣を織り上げる。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b><b class="fl">角を曲がって追わない</b><b class="fl">賢い</b><b class="fl">扉を壊す</b><b class="fl">蜘蛛</b><b class="fl">光に弱い</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="22"
+ data-t="バルログの主ルングォルシン lungorthin, lord of balrogs 炎をまとった巨大な姿。ルングォルシンは燻る目で、悪意に満ちてこちらを見据えている。その立つ迷宮の床は、体の熱で焦げている。 唯一 雄 賢い 光る 1d2 個落とす 必ず落とす 特別なアイテムを落とす 恐れない 扉を壊す ラウコ 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR225.png" alt=""></div>
+  <div class="txt">
+    <h3>バルログの主ルングォルシン <b class="uq">唯一</b> <span class="en">Lungorthin, Lord of Balrogs</span></h3>
+    <p class="num">深さ 22（1100 フィート）／出現 1/20／体力 48d4／速度 2／回避 +23・防護 5d4／攻撃 殴打／炎 +28,2d18、鞭／武器落とし +24,3d10</p>
+    <p class="desc">炎をまとった巨大な姿。ルングォルシンは燻る目で、悪意に満ちてこちらを見据えている。その立つ迷宮の床は、体の熱で焦げている。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b><b class="fl">光る</b><b class="fl">1d2 個落とす</b><b class="fl">必ず落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">恐れない</b><b class="fl">扉を壊す</b><b class="fl">ラウコ</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="23"
+ data-t="古の金剛石の大蛇 ancient adamant serpent 金剛石の鱗に覆われた、巨大な蛇の姿。鱗には虹色の光が煌めく。もう一匹を目にするまで生き延びる者は少ない。 蛇 色が変わる 動きが乱れる（1/4） 火に耐える 冷気に耐える 毒に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR231.png" alt=""></div>
+  <div class="txt">
+    <h3>古の金剛石の大蛇 <span class="en">Ancient adamant serpent</span></h3>
+    <p class="num">深さ 23（1150 フィート）／出現 1/3／体力 10d4／速度 2／回避 +19・防護 6d4／攻撃 噛みつき／切り裂き +23,3d9</p>
+    <p class="desc">金剛石の鱗に覆われた、巨大な蛇の姿。鱗には虹色の光が煌めく。もう一匹を目にするまで生き延びる者は少ない。</p>
+    <p class="flags"><b class="fl">蛇</b><b class="fl">色が変わる</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">火に耐える</b><b class="fl">冷気に耐える</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="23"
+ data-t="やまぬ恐怖 unrelenting horror こちらへよろめき進んでくるこの生き物を、何が生み出したのか見当もつかない。もし生き物と呼べるならばの話だが。絶えず自らを喰らいながら、しかも少しも減らずにいるように思える。このようなものをどうすれば殺せるのか、およそ判らない。 扉を壊す 急速に回復する 恐れない">
+  <div class="art"><img loading="lazy" src="tile/SR232.png" alt=""></div>
+  <div class="txt">
+    <h3>やまぬ恐怖 <span class="en">Unrelenting horror</span></h3>
+    <p class="num">深さ 23（1150 フィート）／出現 1/2／体力 100d4／速度 1／回避 +11・防護 3d4／攻撃 噛みつき／毒 +24,6d5</p>
+    <p class="desc">こちらへよろめき進んでくるこの生き物を、何が生み出したのか見当もつかない。もし生き物と呼べるならばの話だが。絶えず自らを喰らいながら、しかも少しも減らずにいるように思える。このようなものをどうすれば殺せるのか、およそ判らない。</p>
+    <p class="flags"><b class="fl">扉を壊す</b><b class="fl">急速に回復する</b><b class="fl">恐れない</b></p>
+  </div>
+</article><article class="card" data-depth="23"
+ data-t="黒のアンカラゴン ancalagon the black アングバンドの底から翼ある竜どもが現れた。それまで誰も見たことのないものであった。その恐ろしき軍勢の襲来はあまりに突然で、あまりに破滅的だったので、ヴァラールの軍勢は押し返された。竜どもの到来は、大いなる雷と、稲妻と、火の嵐を伴っていたからである。 唯一 雄 2d2 個落とす 特別なアイテムを落とす 賢い 扉を壊す 飛ぶ 角を曲がって追わない 竜 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR233.png" alt=""></div>
+  <div class="txt">
+    <h3>黒のアンカラゴン <b class="uq">唯一</b> <span class="en">Ancalagon the Black</span></h3>
+    <p class="num">深さ 23（1150 フィート）／出現 1/6／体力 35d4／速度 3／回避 +17・防護 2d4／攻撃 引っかき／打撃 +29,3d11、噛みつき／炎 +25,2d21</p>
+    <p class="desc">アングバンドの底から翼ある竜どもが現れた。それまで誰も見たことのないものであった。その恐ろしき軍勢の襲来はあまりに突然で、あまりに破滅的だったので、ヴァラールの軍勢は押し返された。竜どもの到来は、大いなる雷と、稲妻と、火の嵐を伴っていたからである。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">2d2 個落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">賢い</b><b class="fl">扉を壊す</b><b class="fl">飛ぶ</b><b class="fl">角を曲がって追わない</b><b class="fl">竜</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="23"
+ data-t="吸血鬼の使者スリングウェシル thuringwethil, the vampire messenger サウロンとモルゴスの間を行き交う筆頭の使者であり、吸血鬼の種族の中でも間違いなく最も恐ろしい。初めは魅惑的に見えるが、その翼と目が正体を露わにする。 唯一 雌 2d2 個落とす 良いアイテムを落とす 決まったアイテムを落とす 賢い 飛ぶ 動きが乱れる（1/4） 扉を開ける 錠を開ける 扉を壊す 光に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR234.png" alt=""></div>
+  <div class="txt">
+    <h3>吸血鬼の使者スリングウェシル <b class="uq">唯一</b> <span class="en">Thuringwethil, the Vampire Messenger</span></h3>
+    <p class="num">深さ 23（1150 フィート）／出現 1/3／体力 16d4／速度 4／回避 +30・防護 1d4／攻撃 引っかき／切り裂き +35,3d7、噛みつき／全能力減 +29,2d9</p>
+    <p class="desc">サウロンとモルゴスの間を行き交う筆頭の使者であり、吸血鬼の種族の中でも間違いなく最も恐ろしい。初めは魅惑的に見えるが、その翼と目が正体を露わにする。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b><b class="fl">2d2 個落とす</b><b class="fl">良いアイテムを落とす</b><b class="fl">決まったアイテムを落とす</b><b class="fl">賢い</b><b class="fl">飛ぶ</b><b class="fl">動きが乱れる（1/4）</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">扉を壊す</b><b class="fl">光に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="24"
+ data-t="バルログの長ゴスモグ gothmog, high captain of balrogs ゴスモグはアングバンドの総大将であり、モルゴスの親衛である。ノルドール・エルフの上級王のうち二人、フェアノールとフィンゴンを討ったことで名高く、戦いで敗れたことがない。炎の鞭と凄まじい火の息をもって、ウンゴリアントの怒りから主を救った。 唯一 雄 賢い 光る 1d2 個落とす 必ず落とす 特別なアイテムを落とす 恐れない 扉を壊す ラウコ 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR241.png" alt=""></div>
+  <div class="txt">
+    <h3>バルログの長ゴスモグ <b class="uq">唯一</b> <span class="en">Gothmog, High Captain of Balrogs</span></h3>
+    <p class="num">深さ 24（1200 フィート）／出現 1/3／体力 52d4／速度 2／回避 +25・防護 6d4／攻撃 殴打／炎 +30,3d14、鞭／武器落とし +26,3d10</p>
+    <p class="desc">ゴスモグはアングバンドの総大将であり、モルゴスの親衛である。ノルドール・エルフの上級王のうち二人、フェアノールとフィンゴンを討ったことで名高く、戦いで敗れたことがない。炎の鞭と凄まじい火の息をもって、ウンゴリアントの怒りから主を救った。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">賢い</b><b class="fl">光る</b><b class="fl">1d2 個落とす</b><b class="fl">必ず落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">恐れない</b><b class="fl">扉を壊す</b><b class="fl">ラウコ</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="24"
+ data-t="闇を織る者ウンゴリアント ungoliant, the gloomweaver この巨大で忌まわしい虚無の霊は、途方もない大きさの蜘蛛の姿をしている。生ける光をことごとく膨れた胴へ吸い込み、最も黒い闇を吐き出すため、その身は不光の雲に包まれている。常に飢え渇いており、飢えを凌ぐためなら自らをも食らうであろう。 唯一 雌 賢い 扉を壊す 角を曲がって追わない 蜘蛛 光に弱い 毒に耐える">
+  <div class="art"><img loading="lazy" src="tile/SR242.png" alt=""></div>
+  <div class="txt">
+    <h3>闇を織る者ウンゴリアント <b class="uq">唯一</b> <span class="en">Ungoliant, the Gloomweaver</span></h3>
+    <p class="num">深さ 24（1200 フィート）／出現 1/3／体力 36d4／速度 2／回避 +20・防護 3d4／攻撃 噛みつき／毒 +24,2d21</p>
+    <p class="desc">この巨大で忌まわしい虚無の霊は、途方もない大きさの蜘蛛の姿をしている。生ける光をことごとく膨れた胴へ吸い込み、最も黒い闇を吐き出すため、その身は不光の雲に包まれている。常に飢え渇いており、飢えを凌ぐためなら自らをも食らうであろう。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b><b class="fl">賢い</b><b class="fl">扉を壊す</b><b class="fl">角を曲がって追わない</b><b class="fl">蜘蛛</b><b class="fl">光に弱い</b><b class="fl">毒に耐える</b></p>
+  </div>
+</article><article class="card" data-depth="24"
+ data-t="欺く者グラウルング glaurung, the deceiver 見よ、地獄の神の黄金の竜を……。他の竜たちの父にして先祖であり、いまや巨大な大きさにまで育っている。それに比肩するのは、その身のまわりに集めた宝の山の大きさばかりである。 唯一 雄 3d2 個落とす 特別なアイテムを落とす 賢い 扉を壊す 角を曲がって追わない 竜 火に耐える 冷気に弱い">
+  <div class="art"><img loading="lazy" src="tile/SR243.png" alt=""></div>
+  <div class="txt">
+    <h3>欺く者グラウルング <b class="uq">唯一</b> <span class="en">Glaurung, the Deceiver</span></h3>
+    <p class="num">深さ 24（1200 フィート）／出現 1/3／体力 60d4／速度 2／回避 +16・防護 2d4／攻撃 引っかき／打撃 +29,3d15、噛みつき／炎 +24,2d25</p>
+    <p class="desc">見よ、地獄の神の黄金の竜を……。他の竜たちの父にして先祖であり、いまや巨大な大きさにまで育っている。それに比肩するのは、その身のまわりに集めた宝の山の大きさばかりである。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">3d2 個落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">賢い</b><b class="fl">扉を壊す</b><b class="fl">角を曲がって追わない</b><b class="fl">竜</b><b class="fl">火に耐える</b><b class="fl">冷気に弱い</b></p>
+  </div>
+</article><article class="card" data-depth="24"
+ data-t="モルゴスの下僕ゴルサウル gorthaur, servant of morgoth モルゴスの下僕の中で最も強大であり、自らも大軍を率いている。スーあるいはサウロンとも呼ばれ、多くの姿を取ることのできる強力なマイアである。今はもつれた毛と燃える目を持つ巨狼の姿で、こちらの前に現れている。 唯一 雄 2d2 個落とす 特別なアイテムを落とす 賢い 扉を開ける 錠を開ける 扉を壊す 狼 護衛 1 体">
+  <div class="art"><img loading="lazy" src="tile/SR244.png" alt=""></div>
+  <div class="txt">
+    <h3>モルゴスの下僕ゴルサウル <b class="uq">唯一</b> <span class="en">Gorthaur, Servant of Morgoth</span></h3>
+    <p class="num">深さ 24（1200 フィート）／出現 1/3／体力 30d4／速度 3／回避 +29・防護 3d4／攻撃 引っかき／切り裂き +31,3d11、噛みつき／毒 +28,2d15</p>
+    <p class="desc">モルゴスの下僕の中で最も強大であり、自らも大軍を率いている。スーあるいはサウロンとも呼ばれ、多くの姿を取ることのできる強力なマイアである。今はもつれた毛と燃える目を持つ巨狼の姿で、こちらの前に現れている。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">2d2 個落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">賢い</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">扉を壊す</b><b class="fl">狼</b><b class="fl">護衛 1 体</b></p>
+  </div>
+</article><article class="card" data-depth="25"
+ data-t="暗黒の王モルゴス morgoth, lord of darkness アングバンドの底の主。尽きせぬ怒りに荒れ狂い、この世の光あるもの、善きものすべてを支配しようと永遠に求めている。人が闇を恐れる心の源であり、その邪悪な力で数多の汚らわしい生き物を作り出した。オーク、竜、そしてトロルは彼の最も汚らわしい歪みであり、彼を喜ばせるために世に多くの苦痛と苦しみをもたらしている。右手には冥府の大槌『グロンド』を携えている。悪に歪んだその醜悪な面は鉄の王冠を戴き、三つのシルマリルが永久に彼を灼いている。あの王冠を手に入れねばならない。 唯一 討伐対象 雄 扉を開ける 錠を開ける 扉を壊す 壁を掘る 3d2 個落とす 特別なアイテムを落とす 決まったアイテムを落とす 賢い 恐れない">
+  <div class="art"><img loading="lazy" src="tile/SR251.png" alt=""></div>
+  <div class="txt">
+    <h3>暗黒の王モルゴス <b class="uq">唯一</b> <span class="en">Morgoth, Lord of Darkness</span></h3>
+    <p class="num">深さ 25（1250 フィート）／出現 1/1／体力 160d4／速度 2／回避 +20・防護 5d4／攻撃 殴打／粉砕 +20,6d10</p>
+    <p class="desc">アングバンドの底の主。尽きせぬ怒りに荒れ狂い、この世の光あるもの、善きものすべてを支配しようと永遠に求めている。人が闇を恐れる心の源であり、その邪悪な力で数多の汚らわしい生き物を作り出した。オーク、竜、そしてトロルは彼の最も汚らわしい歪みであり、彼を喜ばせるために世に多くの苦痛と苦しみをもたらしている。右手には冥府の大槌『グロンド』を携えている。悪に歪んだその醜悪な面は鉄の王冠を戴き、三つのシルマリルが永久に彼を灼いている。あの王冠を手に入れねばならない。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">討伐対象</b><b class="fl">雄</b><b class="fl">扉を開ける</b><b class="fl">錠を開ける</b><b class="fl">扉を壊す</b><b class="fl">壁を掘る</b><b class="fl">3d2 個落とす</b><b class="fl">特別なアイテムを落とす</b><b class="fl">決まったアイテムを落とす</b><b class="fl">賢い</b><b class="fl">恐れない</b></p>
+  </div>
+</article><article class="card" data-depth="25"
+ data-t="渇きの顎カルハロス carcharoth, the jaws of thirst ついに彼らははるか前方に、仄かに揺らめく昼の亡霊を、門の巨大なアーチを見た。そしてそこには新たな恐怖が待ち構えていた。敷居の上に、油断なく、恐ろしげに、鈍い火を新たに灯した目で、カルハロスがそびえ立っていた。待ち受ける破滅そのものだ。その顎は墓穴のように開き、牙はむき出し、舌は燃えていた。目覚めたまま、彼は見張っていた。ちらつく影も、追われる者の姿も、アングバンドから逃れ出ようとする何者も通さぬために。 唯一 雄 深さ固定 賢い 狼">
+  <div class="art"><img loading="lazy" src="tile/SR253.png" alt=""></div>
+  <div class="txt">
+    <h3>渇きの顎カルハロス <b class="uq">唯一</b> <span class="en">Carcharoth, the Jaws of Thirst</span></h3>
+    <p class="num">深さ 25（1250 フィート）／出現 1/1／体力 30d4／速度 4／回避 +30・防護 2d4／攻撃 噛みつき／毒 +29,2d17</p>
+    <p class="desc">ついに彼らははるか前方に、仄かに揺らめく昼の亡霊を、門の巨大なアーチを見た。そしてそこには新たな恐怖が待ち構えていた。敷居の上に、油断なく、恐ろしげに、鈍い火を新たに灯した目で、カルハロスがそびえ立っていた。待ち受ける破滅そのものだ。その顎は墓穴のように開き、牙はむき出し、舌は燃えていた。目覚めたまま、彼は見張っていた。ちらつく影も、追われる者の姿も、アングバンドから逃れ出ようとする何者も通さぬために。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b><b class="fl">深さ固定</b><b class="fl">賢い</b><b class="fl">狼</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="ノルドールの上級王フェアノール feanor, high king of the noldor  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR301.png" alt=""></div>
+  <div class="txt">
+    <h3>ノルドールの上級王フェアノール <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Feanor, High King of the Noldor</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/5／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="ルーシエン・ティヌーヴィエル luthien tinuviel  唯一 雌">
+  <div class="art"><img loading="lazy" src="tile/SR302.png" alt=""></div>
+  <div class="txt">
+    <h3>ルーシエン・ティヌーヴィエル <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Luthien Tinuviel</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/5／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="隠れたる王シンゴル thingol, the hidden king  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR303.png" alt=""></div>
+  <div class="txt">
+    <h3>隠れたる王シンゴル <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Thingol, the Hidden King</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/5／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="バラヒアの息子ベレン beren, son of barahir  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR304.png" alt=""></div>
+  <div class="txt">
+    <h3>バラヒアの息子ベレン <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Beren, Son of Barahir</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/5／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="ヴァリノールの猟犬フアン huan, hound of valinor  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR305.png" alt=""></div>
+  <div class="txt">
+    <h3>ヴァリノールの猟犬フアン <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Huan, Hound of Valinor</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/5／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="マンウェの鷲 eagle of manwe  ">
+  <div class="art"><img loading="lazy" src="tile/SR306.png" alt=""></div>
+  <div class="txt">
+    <h3>マンウェの鷲 <b class="sf">地上</b> <span class="en">Eagle of Manwe</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/5／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="鷲の王ソロンドール thorondor, king of eagles  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR307.png" alt=""></div>
+  <div class="txt">
+    <h3>鷲の王ソロンドール <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Thorondor, King of Eagles</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/10／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="エント ent  雄">
+  <div class="art"><img loading="lazy" src="tile/SR308.png" alt=""></div>
+  <div class="txt">
+    <h3>エント <b class="sf">地上</b> <span class="en">Ent</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/10／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="エントの妻 ent-wife  雌">
+  <div class="art"><img loading="lazy" src="tile/SR309.png" alt=""></div>
+  <div class="txt">
+    <h3>エントの妻 <b class="sf">地上</b> <span class="en">Ent-wife</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/10／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="アルダの息吹の主マンウェ manwe, lord of the breath of arda  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR320.png" alt=""></div>
+  <div class="txt">
+    <h3>アルダの息吹の主マンウェ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Manwe, Lord of the Breath of Arda</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/10／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="星々の后ヴァルダ varda, lady of the stars  唯一 雌">
+  <div class="art"><img loading="lazy" src="tile/SR321.png" alt=""></div>
+  <div class="txt">
+    <h3>星々の后ヴァルダ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Varda, Lady of the Stars</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/10／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="水の主ウルモ ulmo, lord of waters  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR322.png" alt=""></div>
+  <div class="txt">
+    <h3>水の主ウルモ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Ulmo, Lord of Waters</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/20／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="鍛冶のアウレ aule, the smith  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR323.png" alt=""></div>
+  <div class="txt">
+    <h3>鍛冶のアウレ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Aule, the Smith</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/20／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="果実を与える者ヤヴァンナ yavanna, the giver of fruits  唯一 雌">
+  <div class="art"><img loading="lazy" src="tile/SR324.png" alt=""></div>
+  <div class="txt">
+    <h3>果実を与える者ヤヴァンナ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Yavanna, the Giver of Fruits</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/30／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="ヴァラールの審判者マンドス mandos, doomsman of the valar  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR325.png" alt=""></div>
+  <div class="txt">
+    <h3>ヴァラールの審判者マンドス <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Mandos, Doomsman of the Valar</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/10／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="織り手ヴァイレ vaire, the weaver  唯一 雌">
+  <div class="art"><img loading="lazy" src="tile/SR326.png" alt=""></div>
+  <div class="txt">
+    <h3>織り手ヴァイレ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Vaire, the Weaver</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/40／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="夢の主ローリエン lorien, master of dreams  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR327.png" alt=""></div>
+  <div class="txt">
+    <h3>夢の主ローリエン <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Lorien, Master of Dreams</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/40／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="癒し手エステ este, the healer  唯一 雌">
+  <div class="art"><img loading="lazy" src="tile/SR328.png" alt=""></div>
+  <div class="txt">
+    <h3>癒し手エステ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Este, the Healer</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/40／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="嘆きの后ニエンナ nienna, lady of mourning  唯一 雌">
+  <div class="art"><img loading="lazy" src="tile/SR329.png" alt=""></div>
+  <div class="txt">
+    <h3>嘆きの后ニエンナ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Nienna, Lady of Mourning</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/40／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="勇猛なるトゥルカス tulkas, the valiant  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR330.png" alt=""></div>
+  <div class="txt">
+    <h3>勇猛なるトゥルカス <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Tulkas, the Valiant</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/10／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="踊り手ネッサ nessa, the dancer  唯一 雌">
+  <div class="art"><img loading="lazy" src="tile/SR331.png" alt=""></div>
+  <div class="txt">
+    <h3>踊り手ネッサ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Nessa, the Dancer</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/40／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="森の主オロメ orome, lord of forests  唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR332.png" alt=""></div>
+  <div class="txt">
+    <h3>森の主オロメ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Orome, Lord of Forests</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/40／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article><article class="card" data-depth="30"
+ data-t="永遠に若きヴァーナ vana, the ever young  唯一 雌">
+  <div class="art"><img loading="lazy" src="tile/SR333.png" alt=""></div>
+  <div class="txt">
+    <h3>永遠に若きヴァーナ <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Vana, the Ever Young</span></h3>
+    <p class="num">深さ 30（1500 フィート）／出現 1/40／速度 </p>
+    <p class="desc"></p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雌</b></p>
+  </div>
+</article><article class="card" data-depth="40"
+ data-t="アルダの正統なる王メルコール melkor, rightful lord of arda 輝く白衣をまとい、この堕ちた世にあって希望と力の灯火のように見える。 唯一 雄">
+  <div class="art"><img loading="lazy" src="tile/SR401.png" alt=""></div>
+  <div class="txt">
+    <h3>アルダの正統なる王メルコール <b class="uq">唯一</b> <b class="sf">地上</b> <span class="en">Melkor, Rightful Lord of Arda</span></h3>
+    <p class="num">深さ 40（2000 フィート）／速度 </p>
+    <p class="desc">輝く白衣をまとい、この堕ちた世にあって希望と力の灯火のように見える。</p>
+    <p class="flags"><b class="fl">唯一</b><b class="fl">雄</b></p>
+  </div>
+</article>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>Sil-Q は Sil から続くローグライクで、J.R.R. トールキンの
+     『シルマリルの物語』の世界を題材にしている。
+     ここはその非公式のスポイラーである。</p>
+</div></footer>
+<script src="silq.js"></script>
+</body>
+</html>
