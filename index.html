@@ -497,7 +497,8 @@ footer b{color:var(--dim)}
     <div class="unblock">
       <div>
         <p>ダウンロードした ZIP を展開しただけでは、Windows が「他のコンピューターから取得したファイル」と見なして実行を止めることがあります。</p>
-        <p><code>HengbandCore.exe</code> と <code>HengbandHd2d.exe</code> を右クリックして「プロパティ」を開き、全般タブのいちばん下にある<b>セキュリティの「許可する」にチェック</b>を入れて OK を押してください。<b>2 つとも必要です。</b></p>
+        <p>対象の exe を右クリックして「プロパティ」を開き、全般タブのいちばん下にある<b>セキュリティの「許可する」にチェック</b>を入れて OK を押してください。</p>
+        <p><b>場所は 2 か所です。</b>展開したフォルダの直下にある <code>HengbandHd2d.exe</code> と、その下の <code>cores</code> フォルダに入っているコアの exe（<code>HengbandCore.exe</code>・<code>TangbandCore.exe</code>・<code>GensobandCore.exe</code>・<code>SilCore.exe</code>・<code>FroxCore.exe</code>）。起動するのは <code>HengbandHd2d.exe</code> だけですが、そこから <code>cores</code> の中のコアを呼び出すので、<b>遊ぶコアのぶんも要ります。</b></p>
       </div>
       <figure class="reveal">
         <img src="img/propatie.jpg" alt="HengbandCore.exe のプロパティ画面。全般タブの下にあるセキュリティ欄の「許可する」チェックボックスが赤枠で示されている">
@@ -698,7 +699,8 @@ footer b{color:var(--dim)}
     <div class="unblock">
       <div>
         <p>Unzipping the download is not always enough. Windows may decide the files came from another computer and refuse to run them.</p>
-        <p>Right-click <code>HengbandCore.exe</code> and <code>HengbandHd2d.exe</code>, open Properties, tick <b>Unblock</b> at the bottom of the General tab and press OK. <b>Both files need it.</b></p>
+        <p>Right-click the executable, open Properties, tick <b>Unblock</b> at the bottom of the General tab and press OK.</p>
+        <p><b>They are in two places.</b> <code>HengbandHd2d.exe</code> sits at the top of the unzipped folder, and the game cores sit in <code>cores</code> below it (<code>HengbandCore.exe</code>, <code>TangbandCore.exe</code>, <code>GensobandCore.exe</code>, <code>SilCore.exe</code>, <code>FroxCore.exe</code>). You only launch <code>HengbandHd2d.exe</code>, but it starts a core from <code>cores</code>, so <b>the cores you play need it too.</b></p>
       </div>
       <figure class="reveal">
         <img src="img/propatie.jpg" alt="The Properties window for HengbandCore.exe, with the Unblock checkbox at the bottom of the General tab marked in red">
