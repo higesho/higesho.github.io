@@ -1,0 +1,1155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ego items &mdash; Frox spoilers</title>
+<meta name="description" content="Every ego item in Frox.">
+<link rel="stylesheet" href="../frox.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">Frox spoilers</a>
+  <nav><a href="index.html">Home</a><a href="start.html">Getting started</a><a href="hengband.html">Coming from Hengband</a><a href="help.html">In-game help</a><a href="monster.html">Monsters</a><a href="item.html">Items</a><a href="artefact.html">Artefacts</a><a href="ego.html" class=here>Ego items</a><a href="dungeon.html">Dungeons</a><a href="quest.html">Quests</a></nav>
+  <a class="lang" href="../ego.html">日本語</a>
+</div></header>
+<main class="band">
+<h1>Ego items</h1>
+<p class="lead">160 of them. These are the titles that attach to weapons and armour and
+ <b>turn an ordinary piece into something else entirely</b>.
+ &ldquo;Goes on&rdquo; lists the kinds of item the title can appear on.</p>
+<div class="bar">
+  <input type="search" id="q" placeholder="Filter by name or text" autocomplete="off">
+  <select id="depth"><option value="">Any depth</option><option value="1-10">Depth 1-10</option><option value="11-25">Depth 11-25</option><option value="26-40">Depth 26-40</option><option value="41-60">Depth 41-60</option><option value="61-80">Depth 61-80</option><option value="81-999">Depth 81 and below</option></select>
+  <span class="count" id="count"></span>
+</div>
+<div class="list one" id="list">
+<article class="card row" data-depth="0"
+ data-t="of slaying of slaying">
+  <div class="txt">
+    <h3>of Slaying</h3>
+    <p class="num">Goes on WEAPON</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(blessed) (blessed)">
+  <div class="txt">
+    <h3>(Blessed)</h3>
+    <p class="num">Bonus +3／Goes on WEAPON, DIGGER</p>
+    <p class="flags"><b class="fl">WIS</b><b class="fl">BLESSED</b><b class="fl">XTRA_POWER</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of morgul of morgul">
+  <div class="txt">
+    <h3>of Morgul</h3>
+    <p class="num">To-hit +20／Damage +20／Armour +10／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">SEE_INVIS</b><b class="fl">AGGRAVATE</b><b class="fl">HEAVY_CURSE</b><b class="fl">CURSED</b><b class="fl">SLAY_UNDEAD</b><b class="fl">BRAND_POIS</b><b class="fl">ESP_UNDEAD</b><b class="fl">SLAY_GOOD</b><b class="fl">RANDOM_CURSE2</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of digging of digging">
+  <div class="txt">
+    <h3>of Digging</h3>
+    <p class="num">Bonus +5／Goes on DIGGER</p>
+    <p class="flags"><b class="fl">TUNNEL</b><b class="fl">AWARE</b><b class="fl">IGNORE_ACID</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of protection of protection">
+  <div class="txt">
+    <h3>of Protection</h3>
+    <p class="num">Armour +10／Goes on BODY_ARMOR, SHIELD, CLOAK, HELMET, GLOVES, BOOTS</p>
+    <p class="flags"><b class="fl">IGNORE_ACID</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of elemental protection of elemental protection">
+  <div class="txt">
+    <h3>of Elemental Protection</h3>
+    <p class="num">Armour +8／Goes on BODY_ARMOR, SHIELD, CLOAK</p>
+    <p class="flags"><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of stealth of stealth">
+  <div class="txt">
+    <h3>of Stealth</h3>
+    <p class="num">Bonus +3／Goes on CLOAK, BOOTS</p>
+    <p class="flags"><b class="fl">STEALTH</b><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of free action of free action">
+  <div class="txt">
+    <h3>of Free Action</h3>
+    <p class="num">Goes on GLOVES, BOOTS</p>
+    <p class="flags"><b class="fl">FREE_ACT</b><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of seeing of seeing">
+  <div class="txt">
+    <h3>of Seeing</h3>
+    <p class="num">Bonus +6／Goes on HELMET, CROWN</p>
+    <p class="flags"><b class="fl">SEARCH</b><b class="fl">RES_BLIND</b><b class="fl">SEE_INVIS</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of reflection of reflection">
+  <div class="txt">
+    <h3>of Reflection</h3>
+    <p class="num">Armour +5／Goes on SHIELD</p>
+    <p class="flags"><b class="fl">REFLECT</b><b class="fl">AWARE</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_FIRE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of night and day of night and day">
+  <div class="txt">
+    <h3>of Night and Day</h3>
+    <p class="num">Armour +5／Goes on SHIELD</p>
+    <p class="flags"><b class="fl">RES_LITE</b><b class="fl">RES_DARK</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of endurance of endurance">
+  <div class="txt">
+    <h3>of Endurance</h3>
+    <p class="num">Bonus +5／Goes on SHIELD</p>
+    <p class="flags"><b class="fl">CON</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(lore) (lore)">
+  <div class="txt">
+    <h3>(Lore)</h3>
+    <p class="num">Bonus +3／Goes on DRAGON_ARMOR</p>
+    <p class="flags"><b class="fl">INT</b><b class="fl">LORE2</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(breath) (breath)">
+  <div class="txt">
+    <h3>(Breath)</h3>
+    <p class="num">Bonus +3／Goes on DRAGON_ARMOR</p>
+    <p class="flags"><b class="fl">CON</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(attack) (attack)">
+  <div class="txt">
+    <h3>(Attack)</h3>
+    <p class="num">To-hit +5／Damage +5／Bonus +3／Goes on DRAGON_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(craft) (craft)">
+  <div class="txt">
+    <h3>(Craft)</h3>
+    <p class="num">Bonus +3／Goes on DRAGON_ARMOR</p>
+    <p class="flags"><b class="fl">WIS</b><b class="fl">MAGIC_MASTERY</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(armor) (armor)">
+  <div class="txt">
+    <h3>(Armor)</h3>
+    <p class="num">Armour +5／Bonus +3／Goes on DRAGON_ARMOR</p>
+    <p class="flags"><b class="fl">DEX</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(domination) (domination)">
+  <div class="txt">
+    <h3>(Domination)</h3>
+    <p class="num">Bonus +3／Goes on DRAGON_ARMOR</p>
+    <p class="flags"><b class="fl">CHR</b><b class="fl">RES_FEAR</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(crusade) (crusade)">
+  <div class="txt">
+    <h3>(Crusade)</h3>
+    <p class="num">To-hit +5／Damage +5／Bonus +1／Goes on DRAGON_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">CHR</b><b class="fl">HOLD_LIFE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(death) (death)">
+  <div class="txt">
+    <h3>(Death)</h3>
+    <p class="num">Bonus +3／Goes on DRAGON_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">RES_NETHER</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of cowardice of cowardice">
+  <div class="txt">
+    <h3>of Cowardice</h3>
+    <p class="num">To-hit -10／Damage -10／Armour -10／Bonus +3／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">SPEED</b><b class="fl">VULN_FEAR</b><b class="fl">DEC_CHR</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of knowledge of knowledge">
+  <div class="txt">
+    <h3>of Knowledge</h3>
+    <p class="num">Bonus +3／Goes on HELMET</p>
+    <p class="flags"><b class="fl">INT</b><b class="fl">SUST_INT</b><b class="fl">LORE2</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of piety of piety">
+  <div class="txt">
+    <h3>of Piety</h3>
+    <p class="num">Bonus +3／Goes on HELMET</p>
+    <p class="flags"><b class="fl">WIS</b><b class="fl">SUST_WIS</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of domination of domination">
+  <div class="txt">
+    <h3>of Domination</h3>
+    <p class="num">Bonus +3／Goes on HELMET</p>
+    <p class="flags"><b class="fl">CHR</b><b class="fl">SUST_CHR</b><b class="fl">RES_FEAR</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of fortitude of fortitude">
+  <div class="txt">
+    <h3>of Fortitude</h3>
+    <p class="num">Bonus +5／Goes on HELMET</p>
+    <p class="flags"><b class="fl">CON</b><b class="fl">SUST_CON</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(dwarven) (dwarven)">
+  <div class="txt">
+    <h3>(Dwarven)</h3>
+    <p class="num">Armour +12／Bonus +3／Goes on HELMET</p>
+    <p class="flags"><b class="fl">RES_BLIND</b><b class="fl">INFRA</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of slaying of slaying">
+  <div class="txt">
+    <h3>of Slaying</h3>
+    <p class="num">To-hit +8／Damage +8／Goes on GLOVES</p>
+    <p class="flags"><b class="fl">SHOW_MODS</b><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of the yeek of the yeek">
+  <div class="txt">
+    <h3>of the Yeek</h3>
+    <p class="num">To-hit -10／Damage -10／Bonus +7／Goes on GLOVES</p>
+    <p class="flags"><b class="fl">DEC_STR</b><b class="fl">DEC_DEX</b><b class="fl">DEC_CON</b><b class="fl">DEC_CHR</b><b class="fl">STEALTH</b><b class="fl">HIDE_TYPE</b><b class="fl">RES_ACID</b><b class="fl">IGNORE_ACID</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of levitation of levitation">
+  <div class="txt">
+    <h3>of Levitation</h3>
+    <p class="num">Goes on BOOTS</p>
+    <p class="flags"><b class="fl">LEVITATION</b><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(gnomish) (gnomish)">
+  <div class="txt">
+    <h3>(Gnomish)</h3>
+    <p class="num">Goes on BOOTS</p>
+    <p class="flags"><b class="fl">FREE_ACT</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of accuracy of accuracy">
+  <div class="txt">
+    <h3>of Accuracy</h3>
+    <p class="num">To-hit +10／Damage +5／Goes on BOW</p>
+    <p class="flags"><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of velocity of velocity">
+  <div class="txt">
+    <h3>of Velocity</h3>
+    <p class="num">To-hit +5／Damage +5／Goes on BOW</p>
+    <p class="flags"><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of the vanyar of the vanyar">
+  <div class="txt">
+    <h3>of the Vanyar</h3>
+    <p class="num">Goes on HARP</p>
+    <p class="flags"><b class="fl">CHR</b><b class="fl">WIS</b><b class="fl">SUST_CHR</b><b class="fl">SUST_WIS</b><b class="fl">RES_DARK</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of erebor of erebor">
+  <div class="txt">
+    <h3>of Erebor</h3>
+    <p class="num">Goes on HARP</p>
+    <p class="flags"><b class="fl">CHR</b><b class="fl">SUST_CHR</b><b class="fl">SUST_STR</b><b class="fl">SUST_CON</b><b class="fl">RES_FEAR</b><b class="fl">RES_BLIND</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of extra light of extra light">
+  <div class="txt">
+    <h3>of Extra Light</h3>
+    <p class="num">Goes on LITE</p>
+    <p class="flags"><b class="fl">LITE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of illumination of illumination">
+  <div class="txt">
+    <h3>of Illumination</h3>
+    <p class="num">Goes on LITE</p>
+    <p class="flags"><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of duration of duration">
+  <div class="txt">
+    <h3>of Duration</h3>
+    <p class="num">Goes on LITE</p>
+    <p class="flags"><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="of infravision of infravision">
+  <div class="txt">
+    <h3>of Infravision</h3>
+    <p class="num">Bonus +3／Goes on LITE</p>
+    <p class="flags"><b class="fl">INFRA</b><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="(blasted) (blasted)">
+  <div class="txt">
+    <h3>(Blasted)</h3>
+    <p class="num">Goes on SPECIAL</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="of exploding of exploding">
+  <div class="txt">
+    <h3>of Exploding</h3>
+    <p class="num">Depth 1／Goes on AMMO</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="of holding of holding">
+  <div class="txt">
+    <h3>of Holding</h3>
+    <p class="num">Depth 1／Goes on QUIVER</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="of protection of protection">
+  <div class="txt">
+    <h3>of Protection</h3>
+    <p class="num">Depth 1／Goes on QUIVER</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of sharpness of sharpness">
+  <div class="txt">
+    <h3>of Sharpness</h3>
+    <p class="num">Depth 10／Bonus +5／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">VORPAL</b><b class="fl">TUNNEL</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of dissolving of dissolving">
+  <div class="txt">
+    <h3>of Dissolving</h3>
+    <p class="num">Depth 10／Damage +3／Bonus +5／Goes on DIGGER</p>
+    <p class="flags"><b class="fl">TUNNEL</b><b class="fl">BRAND_ACID</b><b class="fl">IGNORE_ACID</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="(dwarven) (dwarven)">
+  <div class="txt">
+    <h3>(Dwarven)</h3>
+    <p class="num">Depth 10／To-hit +5／Damage +5／Armour +12／Goes on SHIELD</p>
+    <p class="flags"><b class="fl">SUST_STR</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="(orcish) (orcish)">
+  <div class="txt">
+    <h3>(Orcish)</h3>
+    <p class="num">Depth 10／To-hit +3／Damage +6／Armour +10／Bonus +3／Goes on SHIELD</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">RES_DARK</b><b class="fl">XTRA_E_RES</b><b class="fl">DEC_INT</b><b class="fl">DEC_STEALTH</b><b class="fl">VULN_LITE</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of immolation of immolation">
+  <div class="txt">
+    <h3>of Immolation</h3>
+    <p class="num">Depth 10／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">IGNORE_FIRE</b><b class="fl">AURA_FIRE</b><b class="fl">RES_FIRE</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of electricity of electricity">
+  <div class="txt">
+    <h3>of Electricity</h3>
+    <p class="num">Depth 10／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">IGNORE_ELEC</b><b class="fl">AURA_ELEC</b><b class="fl">RES_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of freezing of freezing">
+  <div class="txt">
+    <h3>of Freezing</h3>
+    <p class="num">Depth 10／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">IGNORE_COLD</b><b class="fl">AURA_COLD</b><b class="fl">RES_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of the kobold of the kobold">
+  <div class="txt">
+    <h3>of the Kobold</h3>
+    <p class="num">Depth 10／Damage +5／Bonus +2／Goes on HELMET</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">RES_POIS</b><b class="fl">DEC_CHR</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of the troll of the troll">
+  <div class="txt">
+    <h3>of the Troll</h3>
+    <p class="num">Depth 10／Damage +8／Armour +5／Bonus +2／Goes on HELMET</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">REGEN</b><b class="fl">DEC_INT</b><b class="fl">VULN_LITE</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of sunlight of sunlight">
+  <div class="txt">
+    <h3>of Sunlight</h3>
+    <p class="num">Depth 10／Goes on HELMET</p>
+    <p class="flags"><b class="fl">LITE</b><b class="fl">RES_LITE</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of the tomte of the tomte">
+  <div class="txt">
+    <h3>of the Tomte</h3>
+    <p class="num">Depth 10／To-hit +8／Damage -8／Armour +3／Bonus +5／Goes on HELMET</p>
+    <p class="flags"><b class="fl">STEALTH</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of telepathy of telepathy">
+  <div class="txt">
+    <h3>of Telepathy</h3>
+    <p class="num">Depth 10／Goes on CROWN</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of the thief of the thief">
+  <div class="txt">
+    <h3>of the Thief</h3>
+    <p class="num">Depth 10／To-hit +5／Damage -5／Bonus +4／Goes on GLOVES</p>
+    <p class="flags"><b class="fl">DEX</b><b class="fl">STEALTH</b><b class="fl">SUST_DEX</b><b class="fl">HIDE_TYPE</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of extra shots of extra shots">
+  <div class="txt">
+    <h3>of Extra Shots</h3>
+    <p class="num">Depth 10／To-hit +4／Damage +2／Goes on BOW</p>
+    <p class="flags"><b class="fl">XTRA_SHOTS</b><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of slaying of slaying">
+  <div class="txt">
+    <h3>of Slaying</h3>
+    <p class="num">Depth 10／Goes on AMMO</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="(elemental) (elemental)">
+  <div class="txt">
+    <h3>(Elemental)</h3>
+    <p class="num">Depth 10／Goes on RING, AMULET</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of protection of protection">
+  <div class="txt">
+    <h3>of Protection</h3>
+    <p class="num">Depth 10／Goes on RING</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of combat of combat">
+  <div class="txt">
+    <h3>of Combat</h3>
+    <p class="num">Depth 10／Goes on RING</p>
+    <p class="flags"><b class="fl">HIDE_TYPE</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of archery of archery">
+  <div class="txt">
+    <h3>of Archery</h3>
+    <p class="num">Depth 10／Goes on RING</p>
+    <p class="flags"><b class="fl">HIDE_TYPE</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="&amp; barbarian talisman~ &amp; barbarian talisman~">
+  <div class="txt">
+    <h3>&amp; Barbarian Talisman~</h3>
+    <p class="num">Depth 10／Goes on AMULET</p>
+    <p class="flags"><b class="fl">FULL_NAME</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="of resistance of resistance">
+  <div class="txt">
+    <h3>of Resistance</h3>
+    <p class="num">Depth 10／Goes on DEVICE</p>
+    <p class="flags"><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="(craft) (craft)">
+  <div class="txt">
+    <h3>(Craft)</h3>
+    <p class="num">Depth 15／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="(nature) (nature)">
+  <div class="txt">
+    <h3>(Nature)</h3>
+    <p class="num">Depth 15／Bonus +2／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">INT</b><b class="fl">SLAY_ANIMAL</b><b class="fl">REGEN</b><b class="fl">ESP_ANIMAL</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="of the witch of the witch">
+  <div class="txt">
+    <h3>of the Witch</h3>
+    <p class="num">Depth 15／Bonus +3／Goes on HELMET</p>
+    <p class="flags"><b class="fl">INT</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="(dwarven) (dwarven)">
+  <div class="txt">
+    <h3>(Dwarven)</h3>
+    <p class="num">Depth 15／Armour +10／Bonus +3／Goes on BOOTS</p>
+    <p class="flags"><b class="fl">FREE_ACT</b><b class="fl">CON</b><b class="fl">DEC_STEALTH</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="of capacity of capacity">
+  <div class="txt">
+    <h3>of Capacity</h3>
+    <p class="num">Depth 15／Goes on DEVICE</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="of simplicity of simplicity">
+  <div class="txt">
+    <h3>of Simplicity</h3>
+    <p class="num">Depth 15／Goes on DEVICE</p>
+    <p class="flags"><b class="fl">EASY_SPELL</b></p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="of the imp of the imp">
+  <div class="txt">
+    <h3>of the Imp</h3>
+    <p class="num">Depth 18／To-hit -5／Damage -5／Armour +5／Bonus +3／Goes on BODY_ARMOR</p>
+    <p class="flags"><b class="fl">RES_FIRE</b><b class="fl">SEE_INVIS</b><b class="fl">XTRA_H_RES</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of force of force">
+  <div class="txt">
+    <h3>of Force</h3>
+    <p class="num">Depth 20／To-hit +3／Damage +3／Bonus +2／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">INT</b><b class="fl">WIS</b><b class="fl">BRAND_MANA</b><b class="fl">SEE_INVIS</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="(death) (death)">
+  <div class="txt">
+    <h3>(Death)</h3>
+    <p class="num">Depth 20／Goes on WEAPON, DIGGER</p>
+    <p class="flags"><b class="fl">BRAND_VAMP</b><b class="fl">HOLD_LIFE</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="(life) (life)">
+  <div class="txt">
+    <h3>(Life)</h3>
+    <p class="num">Depth 20／Bonus +4／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">HOLD_LIFE</b><b class="fl">LIFE</b><b class="fl">BLESSED</b><b class="fl">SLAY_UNDEAD</b><b class="fl">SLAY_DEMON</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="(defender) (defender)">
+  <div class="txt">
+    <h3>(Defender)</h3>
+    <p class="num">Depth 20／To-hit +4／Damage +4／Armour +8／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">ONE_SUSTAIN</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of westernesse of westernesse">
+  <div class="txt">
+    <h3>of Westernesse</h3>
+    <p class="num">Depth 20／To-hit +5／Damage +5／Bonus +2／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">DEX</b><b class="fl">CON</b><b class="fl">SLAY_ORC</b><b class="fl">SLAY_TROLL</b><b class="fl">SLAY_GIANT</b><b class="fl">ESP_ORC</b><b class="fl">ESP_TROLL</b><b class="fl">ESP_GIANT</b><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of jousting of jousting">
+  <div class="txt">
+    <h3>of Jousting</h3>
+    <p class="num">Depth 20／To-hit +5／Damage +5／Goes on WEAPON</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of extra might of extra might">
+  <div class="txt">
+    <h3>of Extra Might</h3>
+    <p class="num">Depth 20／To-hit +2／Damage +4／Bonus +3／Goes on BOW</p>
+    <p class="flags"><b class="fl">STR</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of the hunter of the hunter">
+  <div class="txt">
+    <h3>of the Hunter</h3>
+    <p class="num">Depth 20／To-hit +10／Damage +5／Bonus +4／Goes on BOW</p>
+    <p class="flags"><b class="fl">STEALTH</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of elements of elements">
+  <div class="txt">
+    <h3>of Elements</h3>
+    <p class="num">Depth 20／Goes on AMMO</p>
+    <p class="flags"><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of immolation of immolation">
+  <div class="txt">
+    <h3>of Immolation</h3>
+    <p class="num">Depth 20／Goes on LITE</p>
+    <p class="flags"><b class="fl">AURA_FIRE</b><b class="fl">IGNORE_FIRE</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of darkness of darkness">
+  <div class="txt">
+    <h3>of Darkness</h3>
+    <p class="num">Depth 20／Goes on LITE</p>
+    <p class="flags"><b class="fl">DARKNESS</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="of immortal eye of immortal eye">
+  <div class="txt">
+    <h3>of Immortal Eye</h3>
+    <p class="num">Depth 20／Goes on LITE</p>
+    <p class="flags"><b class="fl">RES_BLIND</b><b class="fl">SEE_INVIS</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="of gondolin of gondolin">
+  <div class="txt">
+    <h3>of Gondolin</h3>
+    <p class="num">Depth 25／To-hit +8／Damage +8／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">SLAY_DEMON</b><b class="fl">SLAY_ORC</b><b class="fl">SLAY_TROLL</b><b class="fl">SLAY_DRAGON</b><b class="fl">LITE</b><b class="fl">RES_DARK</b><b class="fl">SEE_INVIS</b><b class="fl">FREE_ACT</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="of wizardry of wizardry">
+  <div class="txt">
+    <h3>of Wizardry</h3>
+    <p class="num">Depth 25／Goes on RING</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="(chaos) (chaos)">
+  <div class="txt">
+    <h3>(Chaos)</h3>
+    <p class="num">Depth 30／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">BRAND_CHAOS</b><b class="fl">RES_CHAOS</b><b class="fl">XTRA_RES</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="(trump) (trump)">
+  <div class="txt">
+    <h3>(Trump)</h3>
+    <p class="num">Depth 30／To-hit +4／Damage +4／Bonus +2／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">SLAY_EVIL</b><b class="fl">TELEPORT</b><b class="fl">FREE_ACT</b><b class="fl">SEARCH</b><b class="fl">REGEN</b><b class="fl">SLOW_DIGEST</b><b class="fl">RES_NEXUS</b><b class="fl">XTRA_H_RES</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="&amp; hell lance~ &amp; hell lance~">
+  <div class="txt">
+    <h3>&amp; Hell Lance~</h3>
+    <p class="num">Depth 30／To-hit +6／Damage +6／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">SLAY_GOOD</b><b class="fl">FULL_NAME</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="(dwarven) (dwarven)">
+  <div class="txt">
+    <h3>(Dwarven)</h3>
+    <p class="num">Depth 30／Armour +15／Bonus +3／Goes on BODY_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of the uruk-hai of the uruk-hai">
+  <div class="txt">
+    <h3>of the Uruk-hai</h3>
+    <p class="num">Depth 30／To-hit +5／Damage +5／Armour +5／Bonus +3／Goes on BODY_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">DEC_INT</b><b class="fl">RES_ACID</b><b class="fl">RES_ELEC</b><b class="fl">RES_FIRE</b><b class="fl">RES_COLD</b><b class="fl">XTRA_H_RES</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of the olog-hai of the olog-hai">
+  <div class="txt">
+    <h3>of the Olog-hai</h3>
+    <p class="num">Depth 30／Damage +7／Armour +10／Bonus +4／Goes on BODY_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">REGEN</b><b class="fl">RES_ACID</b><b class="fl">RES_POIS</b><b class="fl">XTRA_H_RES</b><b class="fl">DEC_INT</b><b class="fl">IGNORE_ACID</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of the emu-lord of the emu-lord">
+  <div class="txt">
+    <h3>of the Emu-Lord</h3>
+    <p class="num">Depth 30／Bonus +4／Goes on BODY_ARMOR</p>
+    <p class="flags"><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of permanence of permanence">
+  <div class="txt">
+    <h3>of Permanence</h3>
+    <p class="num">Depth 30／Armour +10／Goes on ROBE</p>
+    <p class="flags"><b class="fl">SUST_STR</b><b class="fl">SUST_DEX</b><b class="fl">SUST_CON</b><b class="fl">SUST_INT</b><b class="fl">SUST_WIS</b><b class="fl">SUST_CHR</b><b class="fl">HOLD_LIFE</b><b class="fl">RES_ACID</b><b class="fl">RES_ELEC</b><b class="fl">RES_FIRE</b><b class="fl">RES_COLD</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">XTRA_H_RES</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of shadows of shadows">
+  <div class="txt">
+    <h3>of Shadows</h3>
+    <p class="num">Depth 30／Bonus +7／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">STEALTH</b><b class="fl">RES_DARK</b><b class="fl">DARKNESS</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of the magi of the magi">
+  <div class="txt">
+    <h3>of the Magi</h3>
+    <p class="num">Depth 30／Bonus +3／Goes on CROWN, HELMET</p>
+    <p class="flags"><b class="fl">INT</b><b class="fl">SUST_INT</b><b class="fl">XTRA_H_RES</b><b class="fl">XTRA_POWER</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of might of might">
+  <div class="txt">
+    <h3>of Might</h3>
+    <p class="num">Depth 30／Bonus +3／Goes on CROWN</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">DEX</b><b class="fl">CON</b><b class="fl">SUST_STR</b><b class="fl">SUST_DEX</b><b class="fl">SUST_CON</b><b class="fl">FREE_ACT</b><b class="fl">DEC_INT</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of lordliness of lordliness">
+  <div class="txt">
+    <h3>of Lordliness</h3>
+    <p class="num">Depth 30／Bonus +3／Goes on CROWN</p>
+    <p class="flags"><b class="fl">WIS</b><b class="fl">CHR</b><b class="fl">SUST_WIS</b><b class="fl">SUST_CHR</b><b class="fl">XTRA_H_RES</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of the wizard of the wizard">
+  <div class="txt">
+    <h3>of the Wizard</h3>
+    <p class="num">Depth 30／To-hit -10／Damage -10／Armour -20／Bonus +3／Goes on GLOVES</p>
+    <p class="flags"><b class="fl">INT</b><b class="fl">MAGIC_MASTERY</b><b class="fl">HIDE_TYPE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of speed of speed">
+  <div class="txt">
+    <h3>of Speed</h3>
+    <p class="num">Depth 30／Goes on BOOTS</p>
+    <p class="flags"><b class="fl">SPEED</b><b class="fl">HIDE_TYPE</b><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of elvenkind of elvenkind">
+  <div class="txt">
+    <h3>of Elvenkind</h3>
+    <p class="num">Depth 30／Bonus +3／Goes on BOOTS</p>
+    <p class="flags"><b class="fl">STEALTH</b><b class="fl">SPEED</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of the sprite of the sprite">
+  <div class="txt">
+    <h3>of the Sprite</h3>
+    <p class="num">Depth 30／Bonus +3／Goes on BOOTS</p>
+    <p class="flags"><b class="fl">LEVITATION</b><b class="fl">SPEED</b><b class="fl">RES_LITE</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of buckland of buckland">
+  <div class="txt">
+    <h3>of Buckland</h3>
+    <p class="num">Depth 30／To-hit +10／Damage +5／Bonus +3／Goes on BOW</p>
+    <p class="flags"><b class="fl">SPEED</b><b class="fl">XTRA_SHOTS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of speed of speed">
+  <div class="txt">
+    <h3>of Speed</h3>
+    <p class="num">Depth 30／Goes on RING</p>
+    <p class="flags"><b class="fl">SPEED</b><b class="fl">HIDE_TYPE</b><b class="fl">AWARE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="&amp; sacred pendant~ &amp; sacred pendant~">
+  <div class="txt">
+    <h3>&amp; Sacred Pendant~</h3>
+    <p class="num">Depth 30／Goes on AMULET</p>
+    <p class="flags"><b class="fl">FULL_NAME</b><b class="fl">HIDE_TYPE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of the magi of the magi">
+  <div class="txt">
+    <h3>of the Magi</h3>
+    <p class="num">Depth 30／Goes on AMULET</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of devotion of devotion">
+  <div class="txt">
+    <h3>of Devotion</h3>
+    <p class="num">Depth 30／Goes on AMULET</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of trickery of trickery">
+  <div class="txt">
+    <h3>of Trickery</h3>
+    <p class="num">Depth 30／Goes on AMULET</p>
+    <p class="flags"><b class="fl">HIDE_TYPE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="of regeneration of regeneration">
+  <div class="txt">
+    <h3>of Regeneration</h3>
+    <p class="num">Depth 30／Goes on DEVICE</p>
+    <p class="flags"><b class="fl">REGEN</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="(armageddon) (armageddon)">
+  <div class="txt">
+    <h3>(Armageddon)</h3>
+    <p class="num">Depth 40／Damage +10／Goes on WEAPON</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="(crusade) (crusade)">
+  <div class="txt">
+    <h3>(Crusade)</h3>
+    <p class="num">Depth 40／To-hit +6／Damage +6／Bonus +4／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">WIS</b><b class="fl">SLAY_EVIL</b><b class="fl">SLAY_UNDEAD</b><b class="fl">SLAY_DEMON</b><b class="fl">SEE_INVIS</b><b class="fl">BLESSED</b><b class="fl">RES_FEAR</b><b class="fl">ONE_SUSTAIN</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="(pattern) (pattern)">
+  <div class="txt">
+    <h3>(Pattern)</h3>
+    <p class="num">Depth 40／To-hit +6／Damage +6／Bonus +3／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">CON</b><b class="fl">SLAY_EVIL</b><b class="fl">SLAY_DEMON</b><b class="fl">SLAY_UNDEAD</b><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">XTRA_H_RES</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="&amp; holy lance~ &amp; holy lance~">
+  <div class="txt">
+    <h3>&amp; Holy Lance~</h3>
+    <p class="num">Depth 40／To-hit +7／Damage +7／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">SLAY_EVIL</b><b class="fl">BLESSED</b><b class="fl">FULL_NAME</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of elvenkind of elvenkind">
+  <div class="txt">
+    <h3>of Elvenkind</h3>
+    <p class="num">Depth 40／Armour +10／Bonus +3／Goes on BODY_ARMOR, SHIELD</p>
+    <p class="flags"><b class="fl">STEALTH</b><b class="fl">RES_ACID</b><b class="fl">RES_ELEC</b><b class="fl">RES_FIRE</b><b class="fl">RES_COLD</b><b class="fl">XTRA_H_RES</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of the vampire of the vampire">
+  <div class="txt">
+    <h3>of the Vampire</h3>
+    <p class="num">Depth 40／Bonus +3／Goes on HELMET</p>
+    <p class="flags"><b class="fl">DARKNESS</b><b class="fl">RES_DARK</b><b class="fl">RES_POIS</b><b class="fl">HOLD_LIFE</b><b class="fl">STR</b><b class="fl">CHR</b><b class="fl">STEALTH</b><b class="fl">DEC_WIS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of the valkyrie of the valkyrie">
+  <div class="txt">
+    <h3>of the Valkyrie</h3>
+    <p class="num">Depth 40／To-hit +5／Damage +5／Bonus +2／Goes on HELMET</p>
+    <p class="flags"><b class="fl">SPEED</b><b class="fl">STR</b><b class="fl">CHR</b><b class="fl">RES_FEAR</b><b class="fl">SHOW_MODS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of rage of rage">
+  <div class="txt">
+    <h3>of Rage</h3>
+    <p class="num">Depth 40／To-hit -10／Damage +10／Armour -10／Bonus +3／Goes on HELMET</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">RES_FEAR</b><b class="fl">DEC_INT</b><b class="fl">DEC_WIS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of the giant of the giant">
+  <div class="txt">
+    <h3>of the Giant</h3>
+    <p class="num">Depth 40／To-hit -5／Damage +10／Bonus +4／Goes on GLOVES</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">CON</b><b class="fl">SHOW_MODS</b><b class="fl">HIDE_TYPE</b><b class="fl">SUST_STR</b><b class="fl">DEC_INT</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of the golem of the golem">
+  <div class="txt">
+    <h3>of the Golem</h3>
+    <p class="num">Depth 40／To-hit +8／Damage +8／Armour +15／Bonus +3／Goes on BOOTS</p>
+    <p class="flags"><b class="fl">DEC_SPEED</b><b class="fl">STR</b><b class="fl">CON</b><b class="fl">DEC_DEX</b><b class="fl">LIFE</b><b class="fl">RES_POIS</b><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">XTRA_H_RES</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of returning of returning">
+  <div class="txt">
+    <h3>of Returning</h3>
+    <p class="num">Depth 40／Goes on AMMO</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of endurance of endurance">
+  <div class="txt">
+    <h3>of Endurance</h3>
+    <p class="num">Depth 40／Goes on AMMO</p>
+    <p class="flags"><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of valinor of valinor">
+  <div class="txt">
+    <h3>of Valinor</h3>
+    <p class="num">Depth 40／Bonus +2／Goes on LITE</p>
+    <p class="flags"><b class="fl">RES_LITE</b><b class="fl">SPEED</b><b class="fl">XTRA_H_RES</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="of scrying of scrying">
+  <div class="txt">
+    <h3>of Scrying</h3>
+    <p class="num">Depth 40／Goes on LITE</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of extra attacks of extra attacks">
+  <div class="txt">
+    <h3>of Extra Attacks</h3>
+    <p class="num">Depth 50／Bonus +6／Goes on WEAPON, DIGGER</p>
+    <p class="flags"><b class="fl">BLOWS</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="(arcane) (arcane)">
+  <div class="txt">
+    <h3>(Arcane)</h3>
+    <p class="num">Depth 50／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">SPELL_POWER</b><b class="fl">BRAND_MANA</b><b class="fl">DEC_STR</b><b class="fl">DEC_DEX</b><b class="fl">DEC_CON</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of disruption of disruption">
+  <div class="txt">
+    <h3>of Disruption</h3>
+    <p class="num">Depth 50／Damage +7／Bonus +5／Goes on DIGGER</p>
+    <p class="flags"><b class="fl">TUNNEL</b><b class="fl">BRAND_ACID</b><b class="fl">STR</b><b class="fl">IGNORE_ACID</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of celestial protection of celestial protection">
+  <div class="txt">
+    <h3>of Celestial Protection</h3>
+    <p class="num">Depth 50／Armour +10／Goes on BODY_ARMOR, SHIELD, CROWN</p>
+    <p class="flags"><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of augmentation of augmentation">
+  <div class="txt">
+    <h3>of Augmentation</h3>
+    <p class="num">Depth 50／Armour +15／Bonus +4／Goes on BODY_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">INT</b><b class="fl">WIS</b><b class="fl">DEX</b><b class="fl">CON</b><b class="fl">CHR</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of the twilight of the twilight">
+  <div class="txt">
+    <h3>of the Twilight</h3>
+    <p class="num">Depth 50／Goes on ROBE</p>
+    <p class="flags"><b class="fl">SUST_STR</b><b class="fl">SUST_DEX</b><b class="fl">SUST_CON</b><b class="fl">SUST_INT</b><b class="fl">SUST_WIS</b><b class="fl">SUST_CHR</b><b class="fl">HOLD_LIFE</b><b class="fl">RES_ACID</b><b class="fl">RES_ELEC</b><b class="fl">RES_FIRE</b><b class="fl">RES_COLD</b><b class="fl">RES_POIS</b><b class="fl">RES_NETHER</b><b class="fl">RES_NEXUS</b><b class="fl">RES_CHAOS</b><b class="fl">RES_LITE</b><b class="fl">RES_DARK</b><b class="fl">RES_SHARDS</b><b class="fl">RES_SOUND</b><b class="fl">RES_DISEN</b><b class="fl">RES_CONF</b><b class="fl">RES_BLIND</b><b class="fl">RES_FEAR</b><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">LEVITATION</b><b class="fl">REFLECT</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of retribution of retribution">
+  <div class="txt">
+    <h3>of Retribution</h3>
+    <p class="num">Depth 50／Armour -20／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">IGNORE_ACID</b><b class="fl">AURA_REVENGE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of aman of aman">
+  <div class="txt">
+    <h3>of Aman</h3>
+    <p class="num">Depth 50／Armour +10／Bonus +3／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">STEALTH</b><b class="fl">SPEED</b><b class="fl">XTRA_H_RES</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of the bat of the bat">
+  <div class="txt">
+    <h3>of the Bat</h3>
+    <p class="num">Depth 50／To-hit -7／Damage -7／Armour -5／Bonus +5／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">SPEED</b><b class="fl">LEVITATION</b><b class="fl">RES_DARK</b><b class="fl">SEE_INVIS</b><b class="fl">INFRA</b><b class="fl">STEALTH</b><b class="fl">HIDE_TYPE</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of the nazgul of the nazgul">
+  <div class="txt">
+    <h3>of the Nazgul</h3>
+    <p class="num">Depth 50／To-hit +6／Damage +6／Armour +6／Bonus +3／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">STEALTH</b><b class="fl">SPEED</b><b class="fl">RES_COLD</b><b class="fl">RES_POIS</b><b class="fl">RES_NETHER</b><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">XTRA_H_RES</b><b class="fl">VULN_LITE</b><b class="fl">RANDOM_CURSE2</b><b class="fl">DEC_WIS</b><b class="fl">DEC_LIFE</b><b class="fl">DRAIN_EXP</b><b class="fl">HEAVY_CURSE</b><b class="fl">HIDE_TYPE</b><b class="fl">SHOW_MODS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of the hero of the hero">
+  <div class="txt">
+    <h3>of the Hero</h3>
+    <p class="num">Depth 50／To-hit +4／Damage +4／Armour +2／Bonus +2／Goes on CLOAK</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">RES_FEAR</b><b class="fl">FREE_ACT</b><b class="fl">SUST_STR</b><b class="fl">SUST_CON</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of the sniper of the sniper">
+  <div class="txt">
+    <h3>of the Sniper</h3>
+    <p class="num">Depth 50／Damage +5／Bonus +3／Goes on GLOVES</p>
+    <p class="flags"><b class="fl">XTRA_MIGHT</b><b class="fl">STEALTH</b><b class="fl">SHOW_MODS</b><b class="fl">HIDE_TYPE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="&amp; hell harness~ &amp; hell harness~">
+  <div class="txt">
+    <h3>&amp; Hell Harness~</h3>
+    <p class="num">Depth 50／Goes on AMULET</p>
+    <p class="flags"><b class="fl">FULL_NAME</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="&amp; dwarven necklace~ &amp; dwarven necklace~">
+  <div class="txt">
+    <h3>&amp; Dwarven Necklace~</h3>
+    <p class="num">Depth 50／Goes on AMULET</p>
+    <p class="flags"><b class="fl">FULL_NAME</b><b class="fl">HIDE_TYPE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of power of power">
+  <div class="txt">
+    <h3>of Power</h3>
+    <p class="num">Depth 50／Goes on DEVICE</p>
+    <p class="flags"><b class="fl">DEVICE_POWER</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="of holding of holding">
+  <div class="txt">
+    <h3>of Holding</h3>
+    <p class="num">Depth 50／Goes on DEVICE</p>
+    <p class="flags"><b class="fl">HOLD_LIFE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="&amp; endless quiver~ &amp; endless quiver~">
+  <div class="txt">
+    <h3>&amp; Endless Quiver~</h3>
+    <p class="num">Depth 50／Goes on QUIVER</p>
+    <p class="flags"><b class="fl">FULL_NAME</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="&amp; phase quiver~ &amp; phase quiver~">
+  <div class="txt">
+    <h3>&amp; Phase Quiver~</h3>
+    <p class="num">Depth 50／Goes on QUIVER</p>
+    <p class="flags"><b class="fl">FULL_NAME</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="(troika) (troika)">
+  <div class="txt">
+    <h3>(Troika)</h3>
+    <p class="num">Depth 60／To-hit +10／Damage +10／Goes on WEAPON</p>
+    <p class="flags"></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="of the demon of the demon">
+  <div class="txt">
+    <h3>of the Demon</h3>
+    <p class="num">Depth 60／Damage +7／Armour +10／Bonus +4／Goes on BODY_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">INT</b><b class="fl">RES_FIRE</b><b class="fl">RES_POIS</b><b class="fl">RES_NETHER</b><b class="fl">AURA_FIRE</b><b class="fl">XTRA_H_RES</b><b class="fl">DEC_WIS</b><b class="fl">DEC_STEALTH</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="of genji of genji">
+  <div class="txt">
+    <h3>of Genji</h3>
+    <p class="num">Depth 60／To-hit +8／Bonus +3／Goes on GLOVES</p>
+    <p class="flags"><b class="fl">DEX</b><b class="fl">SHOW_MODS</b><b class="fl">HIDE_TYPE</b><b class="fl">DUAL_WIELDING</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="of lothlorien of lothlorien">
+  <div class="txt">
+    <h3>of Lothlorien</h3>
+    <p class="num">Depth 60／To-hit +10／Damage +10／Bonus +3／Goes on BOW</p>
+    <p class="flags"><b class="fl">DEX</b><b class="fl">STEALTH</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="of holy might of holy might">
+  <div class="txt">
+    <h3>of Holy Might</h3>
+    <p class="num">Depth 60／Goes on AMMO</p>
+    <p class="flags"><b class="fl">SLAY_EVIL</b><b class="fl">SLAY_DEMON</b><b class="fl">SLAY_UNDEAD</b><b class="fl">BRAND_FIRE</b><b class="fl">BLESSED</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="&amp; torc~ of the hero &amp; torc~ of the hero">
+  <div class="txt">
+    <h3>&amp; Torc~ of the Hero</h3>
+    <p class="num">Depth 60／Goes on AMULET</p>
+    <p class="flags"><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">SUST_STR</b><b class="fl">SUST_DEX</b><b class="fl">RES_FEAR</b><b class="fl">REGEN</b><b class="fl">AURA_FIRE</b><b class="fl">HIDE_TYPE</b><b class="fl">FULL_NAME</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="of quickness of quickness">
+  <div class="txt">
+    <h3>of Quickness</h3>
+    <p class="num">Depth 60／Goes on DEVICE</p>
+    <p class="flags"><b class="fl">SPEED</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="(daemon) (daemon)">
+  <div class="txt">
+    <h3>(Daemon)</h3>
+    <p class="num">Depth 70／Bonus +3／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">BLOWS</b><b class="fl">STR</b><b class="fl">DEX</b><b class="fl">DEC_WIS</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="of the noldor of the noldor">
+  <div class="txt">
+    <h3>of the Noldor</h3>
+    <p class="num">Depth 70／To-hit +10／Damage +10／Bonus +5／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">CHR</b><b class="fl">SPEED</b><b class="fl">REGEN</b><b class="fl">LITE</b><b class="fl">SLAY_EVIL</b><b class="fl">SLAY_DEMON</b><b class="fl">SLAY_UNDEAD</b><b class="fl">BRAND_COLD</b><b class="fl">RES_LITE</b><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">SLOW_DIGEST</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="of the sorcerer of the sorcerer">
+  <div class="txt">
+    <h3>of the Sorcerer</h3>
+    <p class="num">Depth 70／To-hit -25／Damage -25／Bonus +5／Goes on ROBE</p>
+    <p class="flags"><b class="fl">INT</b><b class="fl">SUST_INT</b><b class="fl">DEC_MANA</b><b class="fl">EASY_SPELL</b><b class="fl">SPELL_CAP</b><b class="fl">REFLECT</b><b class="fl">DEC_CON</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="of the unbeliever of the unbeliever">
+  <div class="txt">
+    <h3>of the Unbeliever</h3>
+    <p class="num">Depth 70／Bonus +3／Goes on CROWN</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">CON</b><b class="fl">SEE_INVIS</b><b class="fl">RES_CONF</b><b class="fl">XTRA_H_RES</b><b class="fl">MAGIC_RESISTANCE</b><b class="fl">NO_MAGIC</b><b class="fl">DEC_INT</b><b class="fl">DEC_WIS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="of the berserker of the berserker">
+  <div class="txt">
+    <h3>of the Berserker</h3>
+    <p class="num">Depth 70／To-hit -15／Damage +8／Armour -15／Bonus +3／Goes on GLOVES</p>
+    <p class="flags"><b class="fl">BLOWS</b><b class="fl">SHOW_MODS</b><b class="fl">RES_FEAR</b><b class="fl">DEC_STEALTH</b><b class="fl">DEC_INT</b><b class="fl">NO_ENCHANT</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="of the haradrim of the haradrim">
+  <div class="txt">
+    <h3>of the Haradrim</h3>
+    <p class="num">Depth 70／To-hit +5／Damage +10／Bonus +3／Goes on BOW</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="(defender) (defender)">
+  <div class="txt">
+    <h3>(Defender)</h3>
+    <p class="num">Depth 70／Goes on RING, AMULET</p>
+    <p class="flags"><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="of the nazgul of the nazgul">
+  <div class="txt">
+    <h3>of the Nazgul</h3>
+    <p class="num">Depth 70／To-hit +13／Damage +13／Bonus +2／Goes on RING</p>
+    <p class="flags"><b class="fl">STEALTH</b><b class="fl">SPEED</b><b class="fl">RES_COLD</b><b class="fl">RES_POIS</b><b class="fl">RES_NETHER</b><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">XTRA_H_RES</b><b class="fl">STR</b><b class="fl">INT</b><b class="fl">DEC_WIS</b><b class="fl">DEX</b><b class="fl">DEC_CON</b><b class="fl">CHR</b><b class="fl">VULN_LITE</b><b class="fl">RANDOM_CURSE2</b><b class="fl">DEC_LIFE</b><b class="fl">DRAIN_EXP</b><b class="fl">HEAVY_CURSE</b><b class="fl">HIDE_TYPE</b><b class="fl">SHOW_MODS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="of the dwarves of the dwarves">
+  <div class="txt">
+    <h3>of the Dwarves</h3>
+    <p class="num">Depth 70／To-hit -10／Damage +13／Bonus +2／Goes on RING</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">CON</b><b class="fl">TUNNEL</b><b class="fl">DEC_STEALTH</b><b class="fl">REGEN</b><b class="fl">RES_BLIND</b><b class="fl">XTRA_H_RES</b><b class="fl">RANDOM_CURSE2</b><b class="fl">DRAIN_EXP</b><b class="fl">HEAVY_CURSE</b><b class="fl">FREE_ACT</b><b class="fl">SEE_INVIS</b><b class="fl">SUST_CON</b><b class="fl">HIDE_TYPE</b><b class="fl">SHOW_MODS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">IGNORE_ELEC</b></p>
+  </div>
+</article><article class="card row" data-depth="80"
+ data-t="(wild) (wild)">
+  <div class="txt">
+    <h3>(Wild)</h3>
+    <p class="num">Depth 80／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">BRAND_WILD</b><b class="fl">XTRA_RES</b><b class="fl">XTRA_H_RES</b><b class="fl">XTRA_POWER</b></p>
+  </div>
+</article><article class="card row" data-depth="90"
+ data-t="(order) (order)">
+  <div class="txt">
+    <h3>(Order)</h3>
+    <p class="num">Depth 90／Goes on WEAPON</p>
+    <p class="flags"><b class="fl">BRAND_ORDER</b><b class="fl">RES_SOUND</b><b class="fl">RES_SHARDS</b></p>
+  </div>
+</article><article class="card row" data-depth="90"
+ data-t="of the demon-lord of the demon-lord">
+  <div class="txt">
+    <h3>of the Demon-Lord</h3>
+    <p class="num">Depth 90／Damage +15／Armour +15／Bonus +5／Goes on BODY_ARMOR</p>
+    <p class="flags"><b class="fl">STR</b><b class="fl">INT</b><b class="fl">CON</b><b class="fl">TELEPATHY</b><b class="fl">IM_FIRE</b><b class="fl">RES_POIS</b><b class="fl">RES_NETHER</b><b class="fl">RES_CHAOS</b><b class="fl">AURA_FIRE</b><b class="fl">XTRA_H_RES</b><b class="fl">DEC_WIS</b><b class="fl">AGGRAVATE</b><b class="fl">TY_CURSE</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="90"
+ data-t="of angmar of angmar">
+  <div class="txt">
+    <h3>of Angmar</h3>
+    <p class="num">Depth 90／To-hit +10／Damage +10／Bonus +3／Goes on CROWN</p>
+    <p class="flags"><b class="fl">TELEPATHY</b><b class="fl">RES_COLD</b><b class="fl">RES_POIS</b><b class="fl">RES_DARK</b><b class="fl">RES_NETHER</b><b class="fl">HOLD_LIFE</b><b class="fl">SEE_INVIS</b><b class="fl">STEALTH</b><b class="fl">VULN_LITE</b><b class="fl">VULN_FIRE</b><b class="fl">TY_CURSE</b><b class="fl">DEC_CON</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b><b class="fl">HIDE_TYPE</b><b class="fl">SHOW_MODS</b></p>
+  </div>
+</article><article class="card row" data-depth="100"
+ data-t="of feanor of feanor">
+  <div class="txt">
+    <h3>of Feanor</h3>
+    <p class="num">Depth 100／Goes on BOOTS</p>
+    <p class="flags"><b class="fl">SPEED</b><b class="fl">HIDE_TYPE</b><b class="fl">FREE_ACT</b><b class="fl">RES_NEXUS</b><b class="fl">IGNORE_ACID</b><b class="fl">IGNORE_ELEC</b><b class="fl">IGNORE_FIRE</b><b class="fl">IGNORE_COLD</b></p>
+  </div>
+</article>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>FroxComposband is a roguelike descended from Composband, in the Angband line. These are unofficial spoilers.</p>
+</div></footer>
+<script src="../frox.js"></script>
+</body>
+</html>

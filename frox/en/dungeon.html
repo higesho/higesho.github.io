@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dungeons &mdash; Frox spoilers</title>
+<meta name="description" content="Every dungeon in Frox.">
+<link rel="stylesheet" href="../frox.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">Frox spoilers</a>
+  <nav><a href="index.html">Home</a><a href="start.html">Getting started</a><a href="hengband.html">Coming from Hengband</a><a href="help.html">In-game help</a><a href="monster.html">Monsters</a><a href="item.html">Items</a><a href="artefact.html">Artefacts</a><a href="ego.html">Ego items</a><a href="dungeon.html" class=here>Dungeons</a><a href="quest.html">Quests</a></nav>
+  <a class="lang" href="../dungeon.html">日本語</a>
+</div></header>
+<main class="band">
+<h1>Dungeons</h1>
+<p class="lead">44 of them, shallowest first. Each has its own master and its own
+ floor limit. <b>Working through them from the shallowest is the safe way</b>, though
+ you can dive for something that only appears deep.</p>
+<div class="bar">
+  <input type="search" id="q" placeholder="Filter by name or text" autocomplete="off">
+  
+  <span class="count" id="count"></span>
+</div>
+<div class="list one" id="list">
+<article class="card row" data-depth="0"
+ data-t="wilderness wilderness wilderness">
+  <div class="txt">
+    <h3>Wilderness</h3>
+    <p class="num"></p>
+    <p class="desc">wilderness</p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="angband angband the entrance to the dungeon of angband">
+  <div class="txt">
+    <h3>Angband</h3>
+    <p class="num">Depth 1-127／Needs character level 30</p>
+    <p class="desc">the entrance to the Dungeon of Angband</p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="warrens warrens an entrance to a warren">
+  <div class="txt">
+    <h3>Warrens</h3>
+    <p class="num">Depth 1-9／Needs character level 1</p>
+    <p class="desc">an entrance to a warren</p>
+  </div>
+</article><article class="card row" data-depth="1"
+ data-t="mystery cave mystery cave the foggy entrance to a mysterious cave">
+  <div class="txt">
+    <h3>Mystery cave</h3>
+    <p class="num">Depth 1-100／Needs character level 30</p>
+    <p class="desc">the foggy entrance to a mysterious cave</p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="hideout hideout a shady entrance to a rebel hideout">
+  <div class="txt">
+    <h3>Hideout</h3>
+    <p class="num">Depth 8-18／Needs character level 1</p>
+    <p class="desc">a shady entrance to a rebel hideout</p>
+  </div>
+</article><article class="card row" data-depth="8"
+ data-t="man cave man cave the shady entrance of a man cave">
+  <div class="txt">
+    <h3>Man cave</h3>
+    <p class="num">Depth 8-18／Needs character level 1</p>
+    <p class="desc">the shady entrance of a man cave</p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="icky cave icky cave the entrance to the icky caves">
+  <div class="txt">
+    <h3>Icky cave</h3>
+    <p class="num">Depth 10-20／Needs character level 1</p>
+    <p class="desc">the entrance to the Icky caves</p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="orc cave orc cave a dark tunnel leading to an orc cave">
+  <div class="txt">
+    <h3>Orc cave</h3>
+    <p class="num">Depth 15-32／Needs character level 5</p>
+    <p class="desc">a dark tunnel leading to an Orc Cave</p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="tidal cave tidal cave a slippery entrance to a tidal cave">
+  <div class="txt">
+    <h3>Tidal cave</h3>
+    <p class="num">Depth 15-27／Needs character level 1</p>
+    <p class="desc">a slippery entrance to a tidal cave</p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="plains of oz plains of oz a brick path to the mysterious land of oz">
+  <div class="txt">
+    <h3>Plains of Oz</h3>
+    <p class="num">Depth 18-36／Needs character level 5</p>
+    <p class="desc">a brick path to the mysterious land of Oz</p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="troll cave troll cave a dark tunnel leading to a troll cave">
+  <div class="txt">
+    <h3>Troll cave</h3>
+    <p class="num">Depth 18-36／Needs character level 5</p>
+    <p class="desc">a dark tunnel leading to a troll cave</p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="camelot camelot the entrance to the fabled land of camelot">
+  <div class="txt">
+    <h3>Camelot</h3>
+    <p class="num">Depth 20-35／Needs character level 1</p>
+    <p class="desc">the entrance to the fabled land of Camelot</p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="labyrinth labyrinth the frightening entrance to the labyrinth">
+  <div class="txt">
+    <h3>Labyrinth</h3>
+    <p class="num">Depth 20-28／Needs character level 1</p>
+    <p class="desc">the frightening entrance to the Labyrinth</p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="witch wood witch wood a twisting path leading to the witch wood">
+  <div class="txt">
+    <h3>Witch Wood</h3>
+    <p class="num">Depth 25-40／Needs character level 5</p>
+    <p class="desc">a twisting path leading to the Witch Wood</p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="random forest random forest a path into an unknown forest">
+  <div class="txt">
+    <h3>Random Forest</h3>
+    <p class="num">Depth 25-50／Needs character level 5</p>
+    <p class="desc">a path into an unknown forest</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="chameleon cave chameleon cave the entrance to the chameleon&#x27;s den">
+  <div class="txt">
+    <h3>Chameleon cave</h3>
+    <p class="num">Depth 30-45／Needs character level 30</p>
+    <p class="desc">the entrance to the chameleon&#x27;s den</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="lonely mountain lonely mountain the entrance to the lonely mountain">
+  <div class="txt">
+    <h3>Lonely Mountain</h3>
+    <p class="num">Depth 30-40／Needs character level 30</p>
+    <p class="desc">the entrance to the Lonely Mountain</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="giant&#x27;s hall giant&#x27;s hall the entrance to the giant&#x27;s hall">
+  <div class="txt">
+    <h3>Giant&#x27;s Hall</h3>
+    <p class="num">Depth 30-40／Needs character level 20</p>
+    <p class="desc">the entrance to the Giant&#x27;s Hall</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="battlefield battlefield a shrouded entrance to a cursed battlefield">
+  <div class="txt">
+    <h3>Battlefield</h3>
+    <p class="num">Depth 30-50／Needs character level 1</p>
+    <p class="desc">a shrouded entrance to a cursed battlefield</p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="snow castle snow castle the entrance to the snow castle">
+  <div class="txt">
+    <h3>Snow castle</h3>
+    <p class="num">Depth 30-50／Needs character level 20</p>
+    <p class="desc">the entrance to the snow castle</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="castle castle the entrance to the castle">
+  <div class="txt">
+    <h3>Castle</h3>
+    <p class="num">Depth 40-65／Needs character level 30</p>
+    <p class="desc">the entrance to the Castle</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="eyrie eyrie a way leading to the eyrie">
+  <div class="txt">
+    <h3>Eyrie</h3>
+    <p class="num">Depth 40-50／Needs character level 20</p>
+    <p class="desc">a way leading to the Eyrie</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="anti-magic cave anti-magic cave the entrance to the cave filled with anti-magic cloud">
+  <div class="txt">
+    <h3>Anti-magic cave</h3>
+    <p class="num">Depth 40-50／Needs character level 30</p>
+    <p class="desc">the entrance to the cave filled with anti-magic cloud</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="anti-melee cave anti-melee cave the entrance to the cave filled with restricting magical field">
+  <div class="txt">
+    <h3>Anti-melee cave</h3>
+    <p class="num">Depth 40-50／Needs character level 30</p>
+    <p class="desc">the entrance to the cave filled with restricting magical field</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="crystal castle crystal castle the entrance to the crystal castle">
+  <div class="txt">
+    <h3>Crystal castle</h3>
+    <p class="num">Depth 40-60／Needs character level 30</p>
+    <p class="desc">the entrance to the crystal castle</p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="random mountain random mountain a way leading to an unknown mountain">
+  <div class="txt">
+    <h3>Random Mountain</h3>
+    <p class="num">Depth 40-70／Needs character level 20</p>
+    <p class="desc">a way leading to an unknown mountain</p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="graveyard graveyard a hole to the graveyard underground">
+  <div class="txt">
+    <h3>Graveyard</h3>
+    <p class="num">Depth 50-70／Needs character level 18</p>
+    <p class="desc">a hole to the Graveyard underground</p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="volcano volcano a hole to the center of the volcano">
+  <div class="txt">
+    <h3>Volcano</h3>
+    <p class="num">Depth 50-60／Needs character level 18</p>
+    <p class="desc">a hole to the center of the Volcano</p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="arena arena the entrance to the arena">
+  <div class="txt">
+    <h3>Arena</h3>
+    <p class="num">Depth 50-80／Needs character level 20</p>
+    <p class="desc">the entrance to the Arena</p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="random volcano random volcano a hole to the center of an unknown volcano">
+  <div class="txt">
+    <h3>Random Volcano</h3>
+    <p class="num">Depth 50-90／Needs character level 18</p>
+    <p class="desc">a hole to the center of an unknown volcano</p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="numenor numenor a submerged way to the lost land of numenor">
+  <div class="txt">
+    <h3>Numenor</h3>
+    <p class="num">Depth 55-75／Needs character level 30</p>
+    <p class="desc">a submerged way to the lost land of Numenor</p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="dark cave dark cave the dark entrance to the cave filled with magical darkness">
+  <div class="txt">
+    <h3>Dark cave</h3>
+    <p class="num">Depth 55-72／Needs character level 30</p>
+    <p class="desc">the dark entrance to the cave filled with magical darkness</p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="random sea random sea a submerged way to an unknown lost land">
+  <div class="txt">
+    <h3>Random Sea</h3>
+    <p class="num">Depth 55-75／Needs character level 30</p>
+    <p class="desc">a submerged way to an unknown lost land</p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="atlantis atlantis a submerged way to the lost island of atlantis">
+  <div class="txt">
+    <h3>Atlantis</h3>
+    <p class="num">Depth 55-65／Needs character level 30</p>
+    <p class="desc">a submerged way to the lost island of Atlantis</p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="dragon&#x27;s lair dragon&#x27;s lair a big tunnel leading to a dragon&#x27;s lair">
+  <div class="txt">
+    <h3>Dragon&#x27;s lair</h3>
+    <p class="num">Depth 60-72／Needs character level 25</p>
+    <p class="desc">a big tunnel leading to a Dragon&#x27;s Lair</p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="disaster area disaster area a steel gate leading into a disaster area">
+  <div class="txt">
+    <h3>Disaster area</h3>
+    <p class="num">Depth 60-80／Needs character level 30</p>
+    <p class="desc">a steel gate leading into a disaster area</p>
+  </div>
+</article><article class="card row" data-depth="64"
+ data-t="pyramidal mound pyramidal mound dark steps leading into a pyramidal mound">
+  <div class="txt">
+    <h3>Pyramidal mound</h3>
+    <p class="num">Depth 64-92／Needs character level 50</p>
+    <p class="desc">dark steps leading into a pyramidal mound</p>
+  </div>
+</article><article class="card row" data-depth="64"
+ data-t="asgard asgard the rainbow bridge to asgard">
+  <div class="txt">
+    <h3>Asgard</h3>
+    <p class="num">Depth 64-88／Needs character level 50</p>
+    <p class="desc">the rainbow bridge to Asgard</p>
+  </div>
+</article><article class="card row" data-depth="72"
+ data-t="mount meru mount meru the path to mount meru">
+  <div class="txt">
+    <h3>Mount Meru</h3>
+    <p class="num">Depth 72-92／Needs character level 50</p>
+    <p class="desc">the path to Mount Meru</p>
+  </div>
+</article><article class="card row" data-depth="75"
+ data-t="mine mine the entrance to the mine">
+  <div class="txt">
+    <h3>Mine</h3>
+    <p class="num">Depth 75-80／Needs character level 50</p>
+    <p class="desc">the entrance to the Mine</p>
+  </div>
+</article><article class="card row" data-depth="80"
+ data-t="r&#x27;lyeh r&#x27;lyeh a way to r&#x27;lyeh">
+  <div class="txt">
+    <h3>R&#x27;lyeh</h3>
+    <p class="num">Depth 80-96／Needs character level 45</p>
+    <p class="desc">a way to R&#x27;lyeh</p>
+  </div>
+</article><article class="card row" data-depth="80"
+ data-t="mount olympus mount olympus the entrance to mount olympus">
+  <div class="txt">
+    <h3>Mount Olympus</h3>
+    <p class="num">Depth 80-90／Needs character level 50</p>
+    <p class="desc">the entrance to Mount Olympus</p>
+  </div>
+</article><article class="card row" data-depth="555"
+ data-t="heaven heaven the opulent gates of heaven">
+  <div class="txt">
+    <h3>Heaven</h3>
+    <p class="num">Depth 555-586／Needs character level 50</p>
+    <p class="desc">the opulent gates of Heaven</p>
+  </div>
+</article><article class="card row" data-depth="666"
+ data-t="hell hell the stairway to hell">
+  <div class="txt">
+    <h3>Hell</h3>
+    <p class="num">Depth 666-696／Needs character level 50</p>
+    <p class="desc">the stairway to Hell</p>
+  </div>
+</article>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>FroxComposband is a roguelike descended from Composband, in the Angband line. These are unofficial spoilers.</p>
+</div></footer>
+<script src="../frox.js"></script>
+</body>
+</html>

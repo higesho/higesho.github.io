@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quests &mdash; Frox spoilers</title>
+<meta name="description" content="Every quest in Frox and the text you are given.">
+<link rel="stylesheet" href="../frox.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">Frox spoilers</a>
+  <nav><a href="index.html">Home</a><a href="start.html">Getting started</a><a href="hengband.html">Coming from Hengband</a><a href="help.html">In-game help</a><a href="monster.html">Monsters</a><a href="item.html">Items</a><a href="artefact.html">Artefacts</a><a href="ego.html">Ego items</a><a href="dungeon.html">Dungeons</a><a href="quest.html" class=here>Quests</a></nav>
+  <a class="lang" href="../quest.html">日本語</a>
+</div></header>
+<main class="band">
+<h1>Quests</h1>
+<p class="lead">92 of them, by the character level you need to take them on.
+ Most are given out in the towns; some build a level of their own, and some wait for you
+ deep in a dungeon.
+ <b>What is printed here is the text you are given when you accept.</b>
+ If you would rather not know what you will be asked, open this after taking the quest.</p>
+<div class="bar">
+  <input type="search" id="q" placeholder="Filter by name or text" autocomplete="off">
+  <select id="depth"><option value="">Any level</option><option value="1-20">Level 1-20</option><option value="21-40">Level 21-40</option><option value="41-60">Level 41-60</option><option value="61-99">Level 61-99</option><option value="100-999">Level 100-up</option></select>
+  <span class="count" id="count"></span>
+</div>
+<div class="list one" id="list">
+<article class="card row" data-depth="5"
+ data-t="the thieves&#x27; hideout (outpost) the thieves&#x27; hideout (outpost) for many years, the armies of my town have waged war against the forces of chaos. as the battles have become numerous,  i find that i am having trouble controlling the thieves who are beginning to move into my city. if you wish to show your allegience you must search the city and destroy the lair that these thieves call home. my troops report finding evidence of the thieves in the northeastern quarter. your task is to kill these ruffians.">
+  <div class="txt">
+    <h3>The Thieves&#x27; Hideout (Outpost)</h3>
+    <p class="num">Needs character level 5</p>
+    <p class="desc">For many years, the armies of my town have waged war against the forces of Chaos. As the battles have become numerous,  I find that I am having trouble controlling the thieves who are beginning to move into my city. If you wish to show your allegience you must search the city and destroy the lair that these thieves call home. My troops report finding evidence of the thieves in the northeastern quarter. Your task is to kill these ruffians.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="5"
+ data-t="pest control (outpost) pest control (outpost) our scouts report a large number of wargs in the dungeon. we don&#x27;t know who set them on guard at 250 feet, but we think their task is to hinder resupply of our outposts in the dungeon. we offer you a small reward if you clear the path for the supplies. the scouts of outpost have reported a large number of wargs in the dungeon. their presence at 250 feet hinders resupply to our troops in the dungeon. otick, the innkeeper, will offer you a small reward if you clear the path for our supplies.">
+  <div class="txt">
+    <h3>Pest Control (Outpost)</h3>
+    <p class="num">Needs character level 5／Where Warrens／Goal Kill 8 Warg</p>
+    <p class="desc">Our scouts report a large number of Wargs in the dungeon. We don&#x27;t know who set them on guard at 250 feet, but we think their task is to hinder resupply of our outposts in the dungeon. We offer you a small reward if you clear the path for the supplies.</p><p class="desc">The scouts of Outpost have reported a large number of Wargs in the dungeon. Their presence at 250 feet hinders resupply to our troops in the dungeon. Otick, the innkeeper, will offer you a small reward if you clear the path for our supplies.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="5"
+ data-t="trouble at home (outpost) trouble at home (outpost) a group of mercenaries have been frightening people at the bar. i need you to go and restore order. be sure to  send my condolences to the families.">
+  <div class="txt">
+    <h3>Trouble at Home (Outpost)</h3>
+    <p class="num">Needs character level 5／Goal Kill 5 Mean looking mercenary</p>
+    <p class="desc">A group of mercenaries have been frightening people at the bar. I need you to go and restore order. Be sure to  send my condolences to the families.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="random 1 random 1 ">
+  <div class="txt">
+    <h3>Random 1</h3>
+    <p class="num">Needs character level 10／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="10"
+ data-t="mushrooms (thalos) mushrooms (thalos) are you here to enrol? first thing i need from you is to go and get a pile of magic mushrooms. they grow in the icky cave.">
+  <div class="txt">
+    <h3>Mushrooms (Thalos)</h3>
+    <p class="num">Needs character level 10／Where Icky cave／Goal Kill 5 Magic mushroom patch</p>
+    <p class="desc">Are you here to enrol? First thing I need from you is to go and get a pile of magic mushrooms. They grow in the icky cave.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="12"
+ data-t="cop quest (anambar) cop quest (anambar) unfortunately, rates of violent crime in our city have soared in recent months. for some reason, we&#x27;ve started attracting all sorts of crazy outsiders who fancy themselves &quot;adventurers&quot;; and the mayor was happy with them at first because they brought in money, and the shopkeepers were happy too as you can probably guess. but now they&#x27;re braining innocent townsfolk for the sake of a few dollars, or using them as targets for test zaps on their new wands, or just slicing them in half because they happen to be in the way. a whole bunch of those carrot-suckers are based in a small secluded house southeast of here, near the south wall. regrettably, we can&#x27;t massacre them because we&#x27;re cops and need to obey the law; i would be most grateful for any help you can offer.">
+  <div class="txt">
+    <h3>Cop Quest (Anambar)</h3>
+    <p class="num">Needs character level 12</p>
+    <p class="desc">Unfortunately, rates of violent crime in our city have soared in recent months. For some reason, we&#x27;ve started attracting all sorts of crazy outsiders who fancy themselves &quot;adventurers&quot;; and the Mayor was happy with them at first because they brought in money, and the shopkeepers were happy too as you can probably guess. But now they&#x27;re braining innocent townsfolk for the sake of a few dollars, or using them as targets for test zaps on their new wands, or just slicing them in half because they happen to be in the way. A whole bunch of those carrot-suckers are based in a small secluded house southeast of here, near the south wall. Regrettably, we can&#x27;t massacre them because we&#x27;re cops and need to obey the law; I would be most grateful for any help you can offer.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="the sewer (outpost) the sewer (outpost) the sewer underneath the city has been acting strange lately. there are rumors of monsters living beneath our fair city. i need you to exterminate the vermin and bring the sewer back to its normal, if dirty, self.">
+  <div class="txt">
+    <h3>The Sewer (Outpost)</h3>
+    <p class="num">Needs character level 15</p>
+    <p class="desc">The sewer underneath the city has been acting strange lately. There are rumors of monsters living beneath our fair city. I need you to exterminate the vermin and bring the sewer back to its normal, if dirty, self.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="i hate snakes! (morivant) i hate snakes! (morivant) ...what is that you say? one of the buildings seems to be overrun with snakes! you might be interested to know that not long ago, a local adventurer dropped, i mean &quot;lost&quot; his prized  leather whip among the ruins when he came face to face with a  thousand snakes. perhaps you could perform a little house  cleaning in the ruins.">
+  <div class="txt">
+    <h3>I Hate Snakes! (Morivant)</h3>
+    <p class="num">Needs character level 15／Goal Find jones</p>
+    <p class="desc">...What is that you say? One of the buildings seems to be overrun with snakes! You might be interested to know that not long ago, a local adventurer dropped, I mean &quot;Lost&quot; his prized  leather whip among the ruins when he came face to face with a  thousand snakes. Perhaps you could perform a little house  cleaning in the ruins.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="crow&#x27;s nest (outpost) crow&#x27;s nest (outpost) there have been a flock of birds attacking people on the roads and carrying  away their valuables. we think they have a nest up in the hills to the south.  we need your help.">
+  <div class="txt">
+    <h3>Crow&#x27;s Nest (Outpost)</h3>
+    <p class="num">Needs character level 15</p>
+    <p class="desc">There have been a flock of birds attacking people on the roads and carrying  away their valuables. We think they have a nest up in the hills to the south.  We need your help.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="bear problem (outpost) bear problem (outpost) the bear population in our eastern forests has exploded recently; before we&#x27;d only see the occasional solitary grizzly, but now they&#x27;re forming groups and even use our roads. they seem to live in a cave near the southern edge of the forest, at the base of a large hill. the count believes them responsible for the disappearances of some of our citizens, who were last seen walking in that area. please explore their den and make our town safe again.">
+  <div class="txt">
+    <h3>Bear Problem (Outpost)</h3>
+    <p class="num">Needs character level 15</p>
+    <p class="desc">The bear population in our eastern forests has exploded recently; before we&#x27;d only see the occasional solitary grizzly, but now they&#x27;re forming groups and even use our roads. They seem to live in a cave near the southern edge of the forest, at the base of a large hill. The Count believes them responsible for the disappearances of some of our citizens, who were last seen walking in that area. Please explore their den and make our town safe again.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="15"
+ data-t="the compost heap (outpost) the compost heap (outpost) the compost heap on the other side of the city has started attracting large numbers of rats, some of them of a type we&#x27;ve never seen before. please try to locate their nest and stop the infestation.">
+  <div class="txt">
+    <h3>The Compost Heap (Outpost)</h3>
+    <p class="num">Needs character level 15</p>
+    <p class="desc">The compost heap on the other side of the city has started attracting large numbers of rats, some of them of a type we&#x27;ve never seen before. Please try to locate their nest and stop the infestation.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="18"
+ data-t="random 2 random 2 ">
+  <div class="txt">
+    <h3>Random 2</h3>
+    <p class="num">Needs character level 18／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="the orc camp (anambar) the orc camp (anambar) the marauding orcs approach ever closer to our quiet town, as is happening all over in these troubled times. to the southeast lies a valley where our scouts have found an orc raiding party preparing to overrun us once and for all. our forces are committed elsewhere; please repel this threat before they reach our borders.">
+  <div class="txt">
+    <h3>The Orc Camp (Anambar)</h3>
+    <p class="num">Needs character level 20</p>
+    <p class="desc">The marauding orcs approach ever closer to our quiet town, as is happening all over in these troubled times. To the southeast lies a valley where our scouts have found an orc raiding party preparing to overrun us once and for all. Our forces are committed elsewhere; please repel this threat before they reach our borders.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="tidy the laboratory (thalos) tidy the laboratory (thalos) you again. tell you what, a couple of other students left the laboratory in a mess. go and tidy it up! that should keep you busy.">
+  <div class="txt">
+    <h3>Tidy the Laboratory (Thalos)</h3>
+    <p class="num">Needs character level 20</p>
+    <p class="desc">You again. Tell you what, a couple of other students left the laboratory in a mess. Go and tidy it up! That should keep you busy.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="20"
+ data-t="shadow fairies (thalos) shadow fairies (thalos) the forests near our city, once a safe and pleasant place for a relaxing evening walk, have become increasingly dangerous as shadow fairies have settled there. my scouts report they usually lurk in a deep thicket northeast of the main gate. i would be most thankful should you go there and eliminate this threat to our safety.">
+  <div class="txt">
+    <h3>Shadow Fairies (Thalos)</h3>
+    <p class="num">Needs character level 20</p>
+    <p class="desc">The forests near our city, once a safe and pleasant place for a relaxing evening walk, have become increasingly dangerous as shadow fairies have settled there. My scouts report they usually lurk in a deep thicket northeast of the main gate. I would be most thankful should you go there and eliminate this threat to our safety.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="22"
+ data-t="the stranger (telmora) the stranger (telmora) one of the houses in town was recently sold to a foreign merchant. now more and more alarming things happen like a sudden plague of evil in the moats, animals dying, people getting sick, and a general run of bad luck for our town. it is like someone is playing around with powers of darkness. i have evidence that the origin of everything is the stranger living in the house in the north-west corner of town. i need you to take this foul invader out.">
+  <div class="txt">
+    <h3>The Stranger (Telmora)</h3>
+    <p class="num">Needs character level 22／Goal Kill Anti-paladin</p>
+    <p class="desc">One of the houses in town was recently sold to a foreign merchant. Now more and more alarming things happen like a sudden plague of evil in the moats, animals dying, people getting sick, and a general run of bad luck for our town. It is like someone is playing around with powers of darkness. I have evidence that the origin of everything is the stranger living in the house in the north-west corner of town. I need you to take this foul invader out.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="22"
+ data-t="old man willow quest (outpost) old man willow quest (outpost) old man willow has gone too far! he has turned a small section of the forest against all men. please kill him before his influence can spread any further, you will be well rewarded  for completing this quest. the quest is in a clearing east of the town.">
+  <div class="txt">
+    <h3>Old Man Willow Quest (Outpost)</h3>
+    <p class="num">Needs character level 22／Goal Kill Old Man Willow</p>
+    <p class="desc">Old Man Willow has gone too far! He has turned a small section of the forest against all men. Please kill him before his influence can spread any further, you will be well rewarded  for completing this quest. The quest is in a clearing east of the town.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="22"
+ data-t="cyclops&#x27;s lair (thalos) cyclops&#x27;s lair (thalos) there&#x27;s a cave to the east of the city, near the shore, that we&#x27;ve always been a bit afraid to approach; but until recently we never thought there was anything worse there than a couple of bears, and some spiders and bats near the entrance. now, though, it seems the bears have been driven out by a man-eating cyclops! we need a hero to visit the cave and rid us of that one-eyed giant.">
+  <div class="txt">
+    <h3>Cyclops&#x27;s Lair (Thalos)</h3>
+    <p class="num">Needs character level 22／Goal Kill Cyclops</p>
+    <p class="desc">There&#x27;s a cave to the east of the city, near the shore, that we&#x27;ve always been a bit afraid to approach; but until recently we never thought there was anything worse there than a couple of bears, and some spiders and bats near the entrance. Now, though, it seems the bears have been driven out by a man-eating cyclops! We need a hero to visit the cave and rid us of that one-eyed giant.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="24"
+ data-t="doom quest i (angwil) doom quest i (angwil) we need your help, adventurer. a hole has opened up to the northwest of our town, and strange demons lurk within. one of our townspeople investigated it unwittingly and barely  escaped with his life! please destroy these demons and  ensure the continued safety of our town, else we are surely doomed.">
+  <div class="txt">
+    <h3>Doom Quest I (Angwil)</h3>
+    <p class="num">Needs character level 24</p>
+    <p class="desc">We need your help, adventurer. A hole has opened up to the northwest of our town, and strange demons lurk within. One of our townspeople investigated it unwittingly and barely  escaped with his life! Please destroy these demons and  ensure the continued safety of our town, else we are surely doomed.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="vapor quest (outpost) vapor quest (outpost) something curious has taken root beneath our inn. otick, the innkeeper, has reported strange vapors and auras in the basement that drive out all living things. a caged canary was placed there to test the air quality; it died within minutes, though the strange scents had vanished when the investigators returned. then, suddenly, it was as if the air itself attacked! please see if you can detect what is amiss.">
+  <div class="txt">
+    <h3>Vapor Quest (Outpost)</h3>
+    <p class="num">Needs character level 25</p>
+    <p class="desc">Something curious has taken root beneath our Inn. Otick, the innkeeper, has reported strange vapors and auras in the basement that drive out all living things. A caged canary was placed there to test the air quality; it died within minutes, though the strange scents had vanished when the investigators returned. Then, suddenly, it was as if the air itself attacked! Please see if you can detect what is amiss.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="tengu and death swords (morivant) tengu and death swords (morivant) the magic shop&#x27;s owner is thinking of opening another thieves&#x27; guild.  i do not need the competition, here is the key to the magic shop&#x27;s back treasure room. destroy everything you find there and you will be rewarded.">
+  <div class="txt">
+    <h3>Tengu and Death Swords (Morivant)</h3>
+    <p class="num">Needs character level 25</p>
+    <p class="desc">The Magic Shop&#x27;s owner is thinking of opening another Thieves&#x27; Guild.  I do not need the competition, here is the key to the Magic Shop&#x27;s back treasure room. Destroy everything you find there and you will be rewarded.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="the mimic&#x27;s treasure (morivant) the mimic&#x27;s treasure (morivant) the black market&#x27;s owner is thinking of opening another thieves&#x27; guild.  i do not need the competition, here is the key to the black market&#x27;s treasure room. destroy everything you find there and you will be rewarded.">
+  <div class="txt">
+    <h3>The Mimic&#x27;s Treasure (Morivant)</h3>
+    <p class="num">Needs character level 25</p>
+    <p class="desc">The Black Market&#x27;s owner is thinking of opening another Thieves&#x27; Guild.  I do not need the competition, here is the key to the Black Market&#x27;s treasure room. Destroy everything you find there and you will be rewarded.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="the dark elven lords (morivant) the dark elven lords (morivant) a small group of dark elven lords have set up a small shop in town. i do not need any competition, so kill everything  in their shop. you will be very well rewarded. their shop is located in the magic shop&#x27;s building. they are well guarded, so be careful.">
+  <div class="txt">
+    <h3>The Dark Elven Lords (Morivant)</h3>
+    <p class="num">Needs character level 25</p>
+    <p class="desc">A small group of Dark Elven Lords have set up a small shop in town. I do not need any competition, so kill everything  in their shop. You will be very well rewarded. Their shop is located in the Magic Shop&#x27;s building. They are well guarded, so be careful.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="25"
+ data-t="the old barracks (morivant) the old barracks (morivant) the next building will be the barracks. as you have noticed, there are a lot of lost souls wandering the ruined buildings. therefore, this could be very dangerous as a lot of soldiers were quartered here.">
+  <div class="txt">
+    <h3>The Old Barracks (Morivant)</h3>
+    <p class="num">Needs character level 25</p>
+    <p class="desc">The next building will be the barracks. As you have noticed, there are a lot of lost souls wandering the ruined buildings. Therefore, this could be very dangerous as a lot of soldiers were quartered here.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="26"
+ data-t="random 3 random 3 ">
+  <div class="txt">
+    <h3>Random 3</h3>
+    <p class="num">Needs character level 26／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="27"
+ data-t="clear the tunnels (anambar) clear the tunnels (anambar) thank you for taking care of the orcs. i had my men search the area after you were finished and they discovered a secret tunnel in a nearby hill. we suspect this is where the orcs are coming from. secure the tunnels and you will be rewarded.">
+  <div class="txt">
+    <h3>Clear the Tunnels (Anambar)</h3>
+    <p class="num">Needs character level 27</p>
+    <p class="desc">Thank you for taking care of the orcs. I had my men search the area after you were finished and they discovered a secret tunnel in a nearby hill. We suspect this is where the orcs are coming from. Secure the tunnels and you will be rewarded.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="27"
+ data-t="djinni&#x27;s cavern (thalos) djinni&#x27;s cavern (thalos) we&#x27;ve had a few problems lately with the rogue djinni who lives in a cavern to the northeast of the city. it was previously quite tame and did the bidding of a local sorcerer, but the man vanished some time ago and the djinni has been out of control since then. please visit its cave and eliminate it and any lesser spirits that may attend to it. (i&#x27;ve heard rumours that the djinni might become friendly again if offered peppermint leaves; so if you have any, that could be an alternative way to deal with it.)">
+  <div class="txt">
+    <h3>Djinni&#x27;s Cavern (Thalos)</h3>
+    <p class="num">Needs character level 27</p>
+    <p class="desc">We&#x27;ve had a few problems lately with the rogue djinni who lives in a cavern to the northeast of the city. It was previously quite tame and did the bidding of a local sorcerer, but the man vanished some time ago and the djinni has been out of control since then. Please visit its cave and eliminate it and any lesser spirits that may attend to it. (I&#x27;ve heard rumours that the djinni might become friendly again if offered peppermint leaves; so if you have any, that could be an alternative way to deal with it.)</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="27"
+ data-t="the treasure of scary rock (anambar) the treasure of scary rock (anambar) i keep hearing persistent rumors of an old treasure chest hidden somewhere on scary rock, supposedly buried there by the pirates who infested these shores in days gone by. i would very much like to investigate this matter, unfortunately none of the local men are willing to go anywhere near that islet. i&#x27;m sure it&#x27;s just the name of the place keeping them away, you should have nothing to worry about.">
+  <div class="txt">
+    <h3>The Treasure of Scary Rock (Anambar)</h3>
+    <p class="num">Needs character level 27</p>
+    <p class="desc">I keep hearing persistent rumors of an old treasure chest hidden somewhere on Scary Rock, supposedly buried there by the pirates who infested these shores in days gone by. I would very much like to investigate this matter, unfortunately none of the local men are willing to go anywhere near that islet. I&#x27;m sure it&#x27;s just the name of the place keeping them away, you should have nothing to worry about.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="trial by fire (telmora) trial by fire (telmora) a volcano has been rumbling in the eastern part of our territory. but, we do not think it is natural. now, it is time to eliminate all creatures that are making their home at the volcano. you must exterminate them all if we are to avoid having lava ruin our crops!">
+  <div class="txt">
+    <h3>Trial by Fire (Telmora)</h3>
+    <p class="num">Needs character level 30</p>
+    <p class="desc">A volcano has been rumbling in the eastern part of our territory. But, we do not think it is natural. Now, it is time to eliminate all creatures that are making their home at the volcano. You must exterminate them all if we are to avoid having lava ruin our crops!</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="smugglers&#x27; den (anambar) smugglers&#x27; den (anambar) illegal mushrooms are showing up on the streets and even in the school, and more and more people are getting addicted. at first we thought the new shroomery was to blame, but we raided the place and couldn&#x27;t find anything illegal. it appears the actual culprits are smugglers who get the shrooms cheap from some old hobbit, sneak them into our town and sell them here at a tidy profit. we know who they are and where they&#x27;re operating from, unfortunately a certain corn-loving hag won&#x27;t give us a search warrant, so legally there&#x27;s absolutely nothing we can do. we&#x27;d appreciate it if a private detective paid those sons of vampire bats a quick visit and maybe killed them in self-defence. their base is a small house just north of here. illegal mushrooms are showing up on the streets, and i&#x27;m not behind it. the actual culprits are smugglers who get the shrooms cheap from some old hobbit, sneak them into the town and sell them at a tidy profit. i&#x27;d like to expand a bit and take over their operation, or at least steal their mushrooms; but it&#x27;s very dangerous, they&#x27;re a pretty tough group. i would appreciate your help, their base is a small house south of the arena.">
+  <div class="txt">
+    <h3>Smugglers&#x27; Den (Anambar)</h3>
+    <p class="num">Needs character level 30</p>
+    <p class="desc">Illegal mushrooms are showing up on the streets and even in the school, and more and more people are getting addicted. At first we thought the new shroomery was to blame, but we raided the place and couldn&#x27;t find anything illegal. It appears the actual culprits are smugglers who get the shrooms cheap from some old hobbit, sneak them into our town and sell them here at a tidy profit. We know who they are and where they&#x27;re operating from, unfortunately a certain corn-loving hag won&#x27;t give us a search warrant, so legally there&#x27;s absolutely nothing we can do. We&#x27;d appreciate it if a private detective paid those sons of vampire bats a quick visit and maybe killed them in self-defence. Their base is a small house just north of here.</p><p class="desc">Illegal mushrooms are showing up on the streets, and I&#x27;m not behind it. The actual culprits are smugglers who get the shrooms cheap from some old hobbit, sneak them into the town and sell them at a tidy profit. I&#x27;d like to expand a bit and take over their operation, or at least steal their mushrooms; but it&#x27;s very dangerous, they&#x27;re a pretty tough group. I would appreciate your help, their base is a small house south of the Arena.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="troll slayer (morivant) troll slayer (morivant) if you want our respect you need to prove yourself. go to the orc caves and kill ten ologs to show us you aren&#x27;t a wimp. if you want our respect you need to prove yourself. go to the troll caves and kill ten ologs to show us you aren&#x27;t a wimp.">
+  <div class="txt">
+    <h3>Troll Slayer (Morivant)</h3>
+    <p class="num">Needs character level 30／Where Orc cave／Goal Kill 10 Olog</p>
+    <p class="desc">If you want our respect you need to prove yourself. Go to the orc caves and kill ten Ologs to show us you aren&#x27;t a wimp.</p><p class="desc">If you want our respect you need to prove yourself. Go to the troll caves and kill ten Ologs to show us you aren&#x27;t a wimp.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="swamp lights (telmora) swamp lights (telmora) unusual and dangerous phenomena have been reported in the marshes to the northeast. strange lights are said to blink around, luring travelers away from safe paths and into quagmires; and one fowler even claims to have narrowly escaped with his life after being set upon by what looked like an enormous rolling pumpkin! i do not know how much truth there is behind these stories, but i would appreciate it if you investigated and made sure the swamps are safe.">
+  <div class="txt">
+    <h3>Swamp Lights (Telmora)</h3>
+    <p class="num">Needs character level 30</p>
+    <p class="desc">Unusual and dangerous phenomena have been reported in the marshes to the northeast. Strange lights are said to blink around, luring travelers away from safe paths and into quagmires; and one fowler even claims to have narrowly escaped with his life after being set upon by what looked like an enormous rolling pumpkin! I do not know how much truth there is behind these stories, but I would appreciate it if you investigated and made sure the swamps are safe.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="ghost town (morivant) ghost town (morivant) i would like you to explore the ruins of the old barracks. no one&#x27;s been there in decades; the rooms have largely caved in, and the ghosts of the soldiers who died in the great earthquake are rumoured to haunt the place. you could check whether it&#x27;s safe and whether anything valuable survived the earthquake.">
+  <div class="txt">
+    <h3>Ghost Town (Morivant)</h3>
+    <p class="num">Needs character level 30</p>
+    <p class="desc">I would like you to explore the ruins of the old barracks. No one&#x27;s been there in decades; the rooms have largely caved in, and the ghosts of the soldiers who died in the great earthquake are rumoured to haunt the place. You could check whether it&#x27;s safe and whether anything valuable survived the earthquake.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="30"
+ data-t="the angwilian stables (outpost) the angwilian stables (outpost) some time ago, a well-meaning chap from the elf-town of angwil tried to open a livery stable here; but the beasts he offered for hire were completely untamed and too vile to be ridden, and his business failed miserably. the angwilian left the town in humiliation; unfortunately, the beasts and the stables are still here, and the smell and reputation of the place are driving visitors away. we&#x27;re not getting the steady inflow of new customers i need; and even the locals prefer to stay indoors where the stench is not as bad, making them harder to rob. i would appreciate it if you cleaned the old place up a bit.">
+  <div class="txt">
+    <h3>The Angwilian Stables (Outpost)</h3>
+    <p class="num">Needs character level 30</p>
+    <p class="desc">Some time ago, a well-meaning chap from the elf-town of Angwil tried to open a livery stable here; but the beasts he offered for hire were completely untamed and too vile to be ridden, and his business failed miserably. The Angwilian left the town in humiliation; unfortunately, the beasts and the stables are still here, and the smell and reputation of the place are driving visitors away. We&#x27;re not getting the steady inflow of new customers I need; and even the locals prefer to stay indoors where the stench is not as bad, making them harder to rob. I would appreciate it if you cleaned the old place up a bit.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="32"
+ data-t="the old watchtower (thalos) the old watchtower (thalos) unfortunately, the citizens of thalos are still not safe. a young boy disappeared last week while out on a walk; we found his corpse in the forest a few days later, lifeless and sucked dry of blood. the city&#x27;s lawyers, afraid of being blamed by the public, are pressuring me to drive out the vampires who have taken over the old watchtower near the shore. please help me eliminate the vampires, you will be well rewarded. an old watchtower in the forest west of here, near the river, has been taken over by vampires. a young boy disappeared last week while out on a walk in the forest; his corpse was found near the tower a few days later, lifeless and sucked dry of blood. my lawyers are afraid of being blamed by the public and want the vampires driven out. please help me eliminate the vampires, you will be well rewarded.">
+  <div class="txt">
+    <h3>The Old Watchtower (Thalos)</h3>
+    <p class="num">Needs character level 32</p>
+    <p class="desc">Unfortunately, the citizens of Thalos are still not safe. A young boy disappeared last week while out on a walk; we found his corpse in the forest a few days later, lifeless and sucked dry of blood. The city&#x27;s lawyers, afraid of being blamed by the public, are pressuring me to drive out the vampires who have taken over the old watchtower near the shore. Please help me eliminate the vampires, you will be well rewarded.</p><p class="desc">An old watchtower in the forest west of here, near the river, has been taken over by vampires. A young boy disappeared last week while out on a walk in the forest; his corpse was found near the tower a few days later, lifeless and sucked dry of blood. My lawyers are afraid of being blamed by the public and want the vampires driven out. Please help me eliminate the vampires, you will be well rewarded.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="33"
+ data-t="dinosaur quest (anambar) dinosaur quest (anambar) this is strictly confidential, but i&#x27;ve heard reports that a local wizard is running a dinosaur reintroduction program! the nutjob&#x27;s using magic to resurrect dinosaurs and dimetrodons; so far he&#x27;s kept them under wraps at his own place, but it&#x27;s only a matter of time before he lets them loose. the last thing our city needs is a population of urban dinosaurs; i would be blamed and ousted in no time, no matter how hard i argued it was good for tourism. i hope you can unresurrect them before that happens. the wizard&#x27;s house is to the west of here, north of the  police station; i won&#x27;t be too sorry if it turns out you need to off him  as well.">
+  <div class="txt">
+    <h3>Dinosaur Quest (Anambar)</h3>
+    <p class="num">Needs character level 33</p>
+    <p class="desc">This is strictly confidential, but I&#x27;ve heard reports that a local wizard is running a dinosaur reintroduction program! The nutjob&#x27;s using magic to resurrect dinosaurs and dimetrodons; so far he&#x27;s kept them under wraps at his own place, but it&#x27;s only a matter of time before he lets them loose. The last thing our city needs is a population of urban dinosaurs; I would be blamed and ousted in no time, no matter how hard I argued it was good for tourism. I hope you can unresurrect them before that happens. The wizard&#x27;s house is to the west of here, north of the  police station; I won&#x27;t be too sorry if it turns out you need to off him  as well.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="33"
+ data-t="the dwarven embassy (morivant) the dwarven embassy (morivant) the ruins of the old dwarven embassy might be worth checking out. dangerous monsters lurk there now, but we both know dwarves&#x27; predilection for gold and treasures.">
+  <div class="txt">
+    <h3>The Dwarven Embassy (Morivant)</h3>
+    <p class="num">Needs character level 33</p>
+    <p class="desc">The ruins of the old Dwarven Embassy might be worth checking out. Dangerous monsters lurk there now, but we both know dwarves&#x27; predilection for gold and treasures.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="34"
+ data-t="random 4 random 4 ">
+  <div class="txt">
+    <h3>Random 4</h3>
+    <p class="num">Needs character level 34／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="35"
+ data-t="the vault (telmora) the vault (telmora) the vault outside the town was used as a minor fortress and stored many valuable items. it has since been overrun. please find the small sword known as sting and return it to us! the moment you find the sword, your quest will be complete. while the sword could be in any of the chambers, only look through one at a time. the monsters there are strong and we left traps to be concerned with as well.">
+  <div class="txt">
+    <h3>The Vault (Telmora)</h3>
+    <p class="num">Needs character level 35／Goal Find The Questing Beast</p>
+    <p class="desc">The vault outside the town was used as a minor fortress and stored many valuable items. It has since been overrun. Please find the small sword known as Sting and return it to us! The moment you find the sword, your quest will be complete. While the sword could be in any of the chambers, only look through one at a time. The monsters there are strong and we left traps to be concerned with as well.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="35"
+ data-t="the barrow downs (telmora) the barrow downs (telmora) lately, a dark evil has been discovered. an ancient burial ground has been taken over by something terrible. creatures black as night now inhabit the place, attacking our villagers and eating our young. please, we are desperate. we don&#x27;t have much to offer, but we beg you to help us!">
+  <div class="txt">
+    <h3>The Barrow Downs (Telmora)</h3>
+    <p class="num">Needs character level 35</p>
+    <p class="desc">Lately, a dark evil has been discovered. An ancient burial ground has been taken over by something terrible. Creatures black as night now inhabit the place, attacking our villagers and eating our young. Please, we are desperate. We don&#x27;t have much to offer, but we beg you to help us!</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="35"
+ data-t="the shopkeeper&#x27;s secret (morivant) the shopkeeper&#x27;s secret (morivant) while you were gone, i had a visit from an old friend and we were  reminiscing about the infamous storekeeper from the ancient city.  my dwarven friend always got the better end of the bargain when it  came to haggling, but he met his match whenever he encountered this  storekeeper. my advisor believes that the storekeeper used magic to charm his clients. why don&#x27;t you search the ruins and see if  you can shed some light on the matter.">
+  <div class="txt">
+    <h3>The Shopkeeper&#x27;s Secret (Morivant)</h3>
+    <p class="num">Needs character level 35</p>
+    <p class="desc">While you were gone, I had a visit from an old friend and we were  reminiscing about the infamous storekeeper from the ancient city.  My Dwarven friend always got the better end of the bargain when it  came to haggling, but he met his match whenever he encountered this  storekeeper. My advisor believes that the storekeeper used magic to charm his clients. Why don&#x27;t you search the ruins and see if  you can shed some light on the matter.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="35"
+ data-t="giant slayer (morivant) giant slayer (morivant) you&#x27;re not a total wimp but how about something a bit more challenging? go to the giant&#x27;s hall and kill ten lesser titans to show us you&#x27;re really strong. you&#x27;re not a total wimp but how about something a bit more challenging? go to the snow castle and kill ten lesser titans to show us you&#x27;re really strong.">
+  <div class="txt">
+    <h3>Giant Slayer (Morivant)</h3>
+    <p class="num">Needs character level 35／Where Giant&#x27;s Hall／Goal Kill 10 Lesser titan</p>
+    <p class="desc">You&#x27;re not a total wimp but how about something a bit more challenging? Go to the Giant&#x27;s Hall and kill ten lesser titans to show us you&#x27;re really strong.</p><p class="desc">You&#x27;re not a total wimp but how about something a bit more challenging? Go to the Snow Castle and kill ten lesser titans to show us you&#x27;re really strong.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="36"
+ data-t="giant slayer (morivant) giant slayer (morivant) you&#x27;re not a total wimp but how about something a bit more challenging? go to the giant&#x27;s hall and kill ten lesser titans to show us you&#x27;re really strong. you&#x27;re not a total wimp but how about something a bit more challenging? go to the snow castle and kill ten lesser titans to show us you&#x27;re really strong.">
+  <div class="txt">
+    <h3>Giant Slayer (Morivant)</h3>
+    <p class="num">Needs character level 36／Where Giant&#x27;s Hall／Goal Kill 10 Lesser titan</p>
+    <p class="desc">You&#x27;re not a total wimp but how about something a bit more challenging? Go to the Giant&#x27;s Hall and kill ten lesser titans to show us you&#x27;re really strong.</p><p class="desc">You&#x27;re not a total wimp but how about something a bit more challenging? Go to the Snow Castle and kill ten lesser titans to show us you&#x27;re really strong.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="38"
+ data-t="the sand pit (angwil) the sand pit (angwil) we desperately need help in clearing out a foul nest of worms. these eldritch abominations are sleeping in a nearby pit, waiting upon the stars. please, you must help us before it is too late. thank you. oh. no.">
+  <div class="txt">
+    <h3>The Sand Pit (Angwil)</h3>
+    <p class="num">Needs character level 38</p>
+    <p class="desc">We desperately need help in clearing out a foul nest of worms. These eldritch abominations are sleeping in a nearby pit, waiting upon the stars. Please, you must help us before it is too late. Thank you. Oh. no.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="38"
+ data-t="dragon slayer (morivant) dragon slayer (morivant) you&#x27;re pretty strong, so how about something to really  test you. go to the lonely mountain and kill ten ancient gold dragons. that&#x27;ll show us if you&#x27;re really great.">
+  <div class="txt">
+    <h3>Dragon Slayer (Morivant)</h3>
+    <p class="num">Needs character level 38／Where Lonely Mountain／Goal Kill 10 Ancient gold dragon</p>
+    <p class="desc">You&#x27;re pretty strong, so how about something to really  test you. Go to the lonely mountain and kill ten ancient gold dragons. That&#x27;ll show us if you&#x27;re really great.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="38"
+ data-t="the pit of despair (angwil) the pit of despair (angwil) unspeakable horrors inhabit the old quarry south of our town, spreading gloom and fear as they creep out at night. please, help us before it&#x27;s too late for angwil. unspeakable horrors inhabit an old quarry in the forest to the northwest, spreading gloom and fear as they creep out at night. please,  help us before it&#x27;s too late for outpost. thank you. oh. no.">
+  <div class="txt">
+    <h3>The Pit of Despair (Angwil)</h3>
+    <p class="num">Needs character level 38</p>
+    <p class="desc">Unspeakable horrors inhabit the old quarry south of our town, spreading gloom and fear as they creep out at night. Please, help us before it&#x27;s too late for Angwil. Unspeakable horrors inhabit an old quarry in the forest to the northwest, spreading gloom and fear as they creep out at night. Please,  help us before it&#x27;s too late for Outpost. Thank you. Oh. no.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="assault on montsalvat (telmora) assault on montsalvat (telmora) those annoying do-gooders who call themselves the knights of the holy grail are a pain in our flesh. we can tolerate them no longer! you must storm their castle montsalvat and show them who&#x27;s the boss!">
+  <div class="txt">
+    <h3>Assault on Montsalvat (Telmora)</h3>
+    <p class="num">Needs character level 40</p>
+    <p class="desc">Those annoying do-gooders who call themselves the knights of the Holy Grail are a pain in our flesh. We can tolerate them no longer! You must storm their Castle Montsalvat and show them who&#x27;s the boss!</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="the elven embassy (morivant) the elven embassy (morivant) you might be interested in exploring the old elven embassy among the ruins. the elves are known to have stored many excellent items within those walls, perchance there are still some left hidden among the embassy ruins.">
+  <div class="txt">
+    <h3>The Elven Embassy (Morivant)</h3>
+    <p class="num">Needs character level 40</p>
+    <p class="desc">You might be interested in exploring the old Elven Embassy among the ruins. The Elves are known to have stored many excellent items within those walls, perchance there are still some left hidden among the embassy ruins.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="basilisk cave (thalos) basilisk cave (thalos) hey you came back. okay, next thing you should study is that cave up there to the north. it&#x27;s full of basilisks. i want drawings of their gizzards. i warn you this is a graded examination and the pass rate is low. don&#x27;t let  that put you off i&#x27;m sure you&#x27;ve been hard at work reading.">
+  <div class="txt">
+    <h3>Basilisk Cave (Thalos)</h3>
+    <p class="num">Needs character level 40</p>
+    <p class="desc">Hey you came back. Okay, next thing you should study is that cave up there to the north. It&#x27;s full of basilisks. I want drawings of their gizzards. I warn you this is a graded examination and the pass rate is low. Don&#x27;t let  that put you off I&#x27;m sure you&#x27;ve been hard at work reading.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="crystal quest (anambar) crystal quest (anambar) i always... uh, our city always needs more money, and i know a mage in thalos who would pay handsomely for a shipment of dragons&#x27; hearts. what&#x27;d you say you open five great crystal drakes for him and we split the reward? you should find the drakes nesting in the crystal castle away to the east.">
+  <div class="txt">
+    <h3>Crystal Quest (Anambar)</h3>
+    <p class="num">Needs character level 40／Where Crystal castle／Goal Kill 5 Great crystal drake</p>
+    <p class="desc">I always... uh, our city always needs more money, and I know a mage in Thalos who would pay handsomely for a shipment of dragons&#x27; hearts. What&#x27;d you say you open five great crystal drakes for him and we split the reward? You should find the drakes nesting in the crystal castle away to the east.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="40"
+ data-t="staff recovery (thalos) staff recovery (thalos) back again? all right, another student of mine tried to play with the undead some time ago and came up second-best. see if you can bring back any of the valuables he had, or at least recover his wizard&#x27;s staff.">
+  <div class="txt">
+    <h3>Staff Recovery (Thalos)</h3>
+    <p class="num">Needs character level 40／Goal Find mokomagi</p>
+    <p class="desc">Back again? All right, another student of mine tried to play with the undead some time ago and came up second-best. See if you can bring back any of the valuables he had, or at least recover his wizard&#x27;s staff.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="42"
+ data-t="dragon quest (angwil) dragon quest (angwil) there&#x27;s a small dungeon in which dragons have created a home. they aren&#x27;t a threat to us, but what do you say to doing some looting? here&#x27;s the deal, you go in, kill everything in there, take what you like and i&#x27;ll send my men in for the rest. sound good? here&#x27;s a little something extra for you. disgraceful.">
+  <div class="txt">
+    <h3>Dragon Quest (Angwil)</h3>
+    <p class="num">Needs character level 42</p>
+    <p class="desc">There&#x27;s a small dungeon in which dragons have created a home. They aren&#x27;t a threat to us, but what do you say to doing some looting? Here&#x27;s the deal, you go in, kill everything in there, take what you like and I&#x27;ll send my men in for the rest. Sound good? Here&#x27;s a little something extra for you. Disgraceful.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="42"
+ data-t="random 5 random 5 ">
+  <div class="txt">
+    <h3>Random 5</h3>
+    <p class="num">Needs character level 42／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="43"
+ data-t="the lost temple of the spider-god (morivant) the lost temple of the spider-god (morivant) local explorers have discovered a well-preserved ancient temple hidden under the ruins of the old elven embassy. it seems, though, that the temple was less forgotten than we had assumed at first; the descendants of the spider-cultists who originally built it have kept it in active use. now i fear they will attempt to summon their dark god to punish us for disturbing his unholy shrine... we must strike first and destroy the spider cult, but you are the only one i can trust to do it.">
+  <div class="txt">
+    <h3>The Lost Temple of the Spider-God (Morivant)</h3>
+    <p class="num">Needs character level 43</p>
+    <p class="desc">Local explorers have discovered a well-preserved ancient temple hidden under the ruins of the old Elven Embassy. It seems, though, that the temple was less forgotten than we had assumed at first; the descendants of the spider-cultists who originally built it have kept it in active use. Now I fear they will attempt to summon their dark god to punish us for disturbing his unholy shrine... We must strike first and destroy the spider cult, but you are the only one I can trust to do it.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="44"
+ data-t="troll invasion (telmora) troll invasion (telmora) a few days ago, my men chanced upon a small group of trolls on the road to angwil, and managed to fight them off after a hard-fought battle. unfortunately, it seems the trolls they saw were only a scouting party for an enormous army hiding in the hills to the east, intent on destroying our town and subjecting us all to unimaginable horrors. please, we cannot deal with this threat on our own, we need your help. thank you for saving our town, please put this reward to good use. oh no! only the maintainer being too lazy to actually wipe us off the map can save us now.">
+  <div class="txt">
+    <h3>Troll Invasion (Telmora)</h3>
+    <p class="num">Needs character level 44</p>
+    <p class="desc">A few days ago, my men chanced upon a small group of trolls on the road to Angwil, and managed to fight them off after a hard-fought battle. Unfortunately, it seems the trolls they saw were only a scouting party for an enormous army hiding in the hills to the east, intent on destroying our town and subjecting us all to unimaginable horrors. Please, we cannot deal with this threat on our own, we need your help. Thank you for saving our town, please put this reward to good use. Oh no! Only the Maintainer being too lazy to actually wipe us off the map can save us now.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="45"
+ data-t="the haunted house (outpost) the haunted house (outpost) there is something evil going on in the old, thatched house near the south-east corner of the city wall. people say that the house is haunted and refuse to go near it. we need someone to exorcise the evil spirits that are infesting the house. well done, indeed! our citizens can finally sigh in relief. bah, what a loser! fortunately, a bunch of pilgrims who were passing by turned out to be ultra-elite paladins on their pilgrimage to the holy city, and -- as a spiritual exercise -- the cleaned up the house without even asking for a reward. maybe you should try to find them: you could learn a thing or two!">
+  <div class="txt">
+    <h3>The Haunted House (Outpost)</h3>
+    <p class="num">Needs character level 45</p>
+    <p class="desc">There is something evil going on in the old, thatched house near the south-east corner of the city wall. People say that the house is haunted and refuse to go near it. We need someone to exorcise the evil spirits that are infesting the house. Well done, indeed! Our citizens can finally sigh in relief. Bah, what a loser! Fortunately, a bunch of pilgrims who were passing by turned out to be ultra-elite paladins on their pilgrimage to the holy city, and -- as a spiritual exercise -- the cleaned up the house without even asking for a reward. Maybe you should try to find them: you could learn a thing or two!</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="45"
+ data-t="the cloning pits (thalos) the cloning pits (thalos) for the past few years we have been cloning exceptionally powerful  creatures for gladiatorial combat. something has gone very wrong in  the cloning pits. please eliminate all the clones and you will be well rewarded. the active security systems have stopped working. the clones can use magic, teleport, summon, etc. &quot;the ultimate dungeon  cleaner&quot; security bots are no longer controlled, so you will need to eliminate them as well. levitation and a good distance weapon are recommended.">
+  <div class="txt">
+    <h3>The Cloning Pits (Thalos)</h3>
+    <p class="num">Needs character level 45</p>
+    <p class="desc">For the past few years we have been cloning exceptionally powerful  creatures for gladiatorial combat. Something has gone very wrong in  the Cloning Pits. Please eliminate all the clones and you will be well rewarded. The active security systems have stopped working. The clones can use magic, teleport, summon, etc. &quot;The Ultimate Dungeon  Cleaner&quot; security bots are no longer controlled, so you will need to eliminate them as well. Levitation and a good distance weapon are recommended.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="45"
+ data-t="demon slayer (morivant) demon slayer (morivant) you&#x27;re one of the strongest we&#x27;ve seen, so here&#x27;s your final test - go to angband and kill ten lesser balrogs. if you can do it, we&#x27;ll sing songs to your glorious triumph.">
+  <div class="txt">
+    <h3>Demon Slayer (Morivant)</h3>
+    <p class="num">Needs character level 45／Where Angband／Goal Kill 10 Lesser Balrog</p>
+    <p class="desc">You&#x27;re one of the strongest we&#x27;ve seen, so here&#x27;s your final test - go to Angband and kill ten lesser balrogs. If you can do it, we&#x27;ll sing songs to your glorious triumph.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="45"
+ data-t="facing the books (angwil) facing the books (angwil) there&#x27;s a warehouse at the northern edge of the city that vanerion, the librarian, has used for storing rare books. about half a year ago, people started reporting a malevolent presence there, as if they were being spied on by someone unseen. last week vanerion went there for a book, and when he opened the door he barely recognized the place. a gang of thieves seems to have set up shop there; but more worryingly, the books themselves were coming to life. the malevolent presence was everywhere, and demonic signs appeared on the floor. please locate and destroy the source of this evil, reports indicate the ability to kill from range could be of paramount importance.">
+  <div class="txt">
+    <h3>Facing the Books (Angwil)</h3>
+    <p class="num">Needs character level 45／Goal Kill The Gospel of Mug</p>
+    <p class="desc">There&#x27;s a warehouse at the northern edge of the city that Vanerion, the librarian, has used for storing rare books. About half a year ago, people started reporting a malevolent presence there, as if they were being spied on by someone unseen. Last week Vanerion went there for a book, and when he opened the door he barely recognized the place. A gang of thieves seems to have set up shop there; but more worryingly, the books themselves were coming to life. The malevolent presence was everywhere, and demonic signs appeared on the floor. Please locate and destroy the source of this evil, reports indicate the ability to kill from range could be of paramount importance.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="45"
+ data-t="dark academy (thalos) dark academy (thalos) one of our former students has brought shame on the order of wizards by taking over the local museum and turning it into an academy of evil. he has begun teaching the dark arts to all applicants, and what&#x27;s worse, below market prices. put a stop to his treachery and reclaim our honour.">
+  <div class="txt">
+    <h3>Dark Academy (Thalos)</h3>
+    <p class="num">Needs character level 45</p>
+    <p class="desc">One of our former students has brought shame on the order of wizards by taking over the local museum and turning it into an academy of evil. He has begun teaching the dark arts to all applicants, and what&#x27;s worse, below market prices. Put a stop to his treachery and reclaim our honour.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="the rise and fall of micro$oft (angwil) the rise and fall of micro$oft (angwil) a mysterious building has appeared, with the eldritch runes &quot;m$&quot; inscribed in its walls. an aura of evil radiates from this building. people in nearby villages have lost their money and sanity, and turned into mindless zombies. beware -- it is rumoured that the dark lord who dwells inside this mansion of vast evil is the apocalyptic beast himself! who knows what unspeakable secrets lurk inside?">
+  <div class="txt">
+    <h3>The Rise and Fall of Micro$oft (Angwil)</h3>
+    <p class="num">Needs character level 50／Goal Kill Bull Gates</p>
+    <p class="desc">A mysterious building has appeared, with the eldritch runes &quot;M$&quot; inscribed in its walls. An aura of evil radiates from this building. People in nearby villages have lost their money and sanity, and turned into mindless zombies. Beware -- it is rumoured that the Dark Lord who dwells inside this mansion of vast evil is the Apocalyptic Beast himself! Who knows what unspeakable secrets lurk inside?</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="the killing fields (telmora) the killing fields (telmora) a mysterious army has appeared near the eastern border. their troops seem endless. there is not a hope a we can defeat them by numbers, we have to take out their general to make them retreat. your mission is to infiltrate their headquarters, find the horned general and then get out of there alive. beware of traps!">
+  <div class="txt">
+    <h3>The Killing Fields (Telmora)</h3>
+    <p class="num">Needs character level 50／Goal Kill Maulotaur</p>
+    <p class="desc">A mysterious army has appeared near the eastern border. Their troops seem endless. There is not a hope a we can defeat them by numbers, we have to take out their general to make them retreat. Your mission is to infiltrate their headquarters, find the horned general and then get out of there alive. Beware of traps!</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="the old castle (outpost) the old castle (outpost) the old castle northwest of here has been taken over by evil beings.  mighty undead, evil spell casters, dragons, and even titans are  rumored to lurk there. destroy all the monsters within the castle,  and your reward will be an artifact of great value.">
+  <div class="txt">
+    <h3>The Old Castle (Outpost)</h3>
+    <p class="num">Needs character level 50</p>
+    <p class="desc">The old castle northwest of here has been taken over by evil beings.  Mighty undead, evil spell casters, dragons, and even titans are  rumored to lurk there. Destroy ALL the monsters within the castle,  and your reward will be an artifact of great value.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="the mountain shrine (telmora) the mountain shrine (telmora) a forgotten shrine in a nearby mountain has become a den of monsters, please return silence to this ancient place. be warned that quite a few of these creatures are dangerous. thank you. please put this reward to good use. the quest was more than you could handle.">
+  <div class="txt">
+    <h3>The Mountain Shrine (Telmora)</h3>
+    <p class="num">Needs character level 50</p>
+    <p class="desc">A forgotten shrine in a nearby mountain has become a den of monsters, please return silence to this ancient place. Be warned that quite a few of these creatures are dangerous. Thank you. Please put this reward to good use. The quest was more than you could handle.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="random 6 random 6 ">
+  <div class="txt">
+    <h3>Random 6</h3>
+    <p class="num">Needs character level 50／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="the underground city (morivant) the underground city (morivant) our archeologists have discovered an ancient underground city. they have asked that you help them in clearing out any would be dangers. it stands to reason that you might find some interesting items in the process.">
+  <div class="txt">
+    <h3>The Underground City (Morivant)</h3>
+    <p class="num">Needs character level 50</p>
+    <p class="desc">Our archeologists have discovered an ancient underground city. They have asked that you help them in clearing out any would be dangers. It stands to reason that you might find some interesting items in the process.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="clear the wreckage (thalos) clear the wreckage (thalos) a ship carrying important documents has been wrecked near the shore. i need you to investigate the wreckage and report back to me.">
+  <div class="txt">
+    <h3>Clear the Wreckage (Thalos)</h3>
+    <p class="num">Needs character level 50</p>
+    <p class="desc">A ship carrying important documents has been wrecked near the shore. I need you to investigate the wreckage and report back to me.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="the renegade sorcerer (thalos) the renegade sorcerer (thalos) an old sorcerer has betrayed the order of wizards and gone over to serve the forces of darkness. he has built a tower nearby and  the sultan is growing concerned. go kill him, i&#x27;ll give you credit.">
+  <div class="txt">
+    <h3>The Renegade Sorcerer (Thalos)</h3>
+    <p class="num">Needs character level 50／Goal Kill Old sorcerer</p>
+    <p class="desc">An old sorcerer has betrayed the order of wizards and gone over to serve the forces of darkness. He has built a tower nearby and  the Sultan is growing concerned. Go kill him, I&#x27;ll give you credit.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="50"
+ data-t="the treachery of lord bovin (anambar) the treachery of lord bovin (anambar) lord bovin, the once-beloved warden of the high tower, has joined forces with a black enchantress and turned to evil. dark wizards and necromancers now frequent the high tower, plotting against our city. their plans must be disrupted before they raise an unstoppable army of demons, dragons and the dead. please help us and save our city.">
+  <div class="txt">
+    <h3>The Treachery of Lord Bovin (Anambar)</h3>
+    <p class="num">Needs character level 50</p>
+    <p class="desc">Lord Bovin, the once-beloved Warden of the High Tower, has joined forces with a black enchantress and turned to evil. Dark wizards and necromancers now frequent the High Tower, plotting against our city. Their plans must be disrupted before they raise an unstoppable army of demons, dragons and the dead. Please help us and save our city.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="52"
+ data-t="the thing under the mountain (telmora) the thing under the mountain (telmora) one of the mountains in the eastern part of our territory used to host a dwarven mining community; but they moved out in a hurry after their tunnels started spitting out lava. at first we thought it was just a normal volcano that had lain dormant for centuries, but it now appears their diggings disturbed the sleep of something even more dangerous. a shadowy horror, cloaked in flames, is rumoured to have lived under the old mine; we occasionally hear the mountain rumble at night, as if some enormous monster were trying to dig its way out. we hope you can put it back to sleep before it reaches the open.">
+  <div class="txt">
+    <h3>The Thing under the Mountain (Telmora)</h3>
+    <p class="num">Needs character level 52／Goal Kill Greater Balrog</p>
+    <p class="desc">One of the mountains in the eastern part of our territory used to host a dwarven mining community; but they moved out in a hurry after their tunnels started spitting out lava. At first we thought it was just a normal volcano that had lain dormant for centuries, but it now appears their diggings disturbed the sleep of something even more dangerous. A shadowy horror, cloaked in flames, is rumoured to have lived under the old mine; we occasionally hear the mountain rumble at night, as if some enormous monster were trying to dig its way out. We hope you can put it back to sleep before it reaches the open.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="doom quest ii (angwil) doom quest ii (angwil) another strange hole in reality has opened up on the edge of our town, and appears to be even more dangerous than the  last. five of our strongest knights ventured within -- only  one returned, scorched by fire and babbling incoherently.   we have not the resources to deal with this threat. do you?">
+  <div class="txt">
+    <h3>Doom Quest II (Angwil)</h3>
+    <p class="num">Needs character level 55</p>
+    <p class="desc">Another strange hole in reality has opened up on the edge of our town, and appears to be even more dangerous than the  last. Five of our strongest knights ventured within -- only  one returned, scorched by fire and babbling incoherently.   We have not the resources to deal with this threat. Do you?</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="the mystery of apina island (anambar) the mystery of apina island (anambar) sailors have become afraid of passing anywhere near apina island. they claim it&#x27;s haunted by the crew of the dread pirate roope, and fear attacks from his ghost ship. i&#x27;d dismiss it as just another silly maritime myth, but it&#x27;s starting to disturb trade; please investigate the island and make sure there&#x27;s no one there.">
+  <div class="txt">
+    <h3>The Mystery of Apina Island (Anambar)</h3>
+    <p class="num">Needs character level 55</p>
+    <p class="desc">Sailors have become afraid of passing anywhere near Apina Island. They claim it&#x27;s haunted by the crew of the dread pirate Roope, and fear attacks from his ghost ship. I&#x27;d dismiss it as just another silly maritime myth, but it&#x27;s starting to disturb trade; please investigate the island and make sure there&#x27;s no one there.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="eddies in the space-time continuum (zul) eddies in the space-time continuum (zul) unfortunately, reliable teleporting between zul and the outside world has become impossible, thanks to a group of strange time mages who moved in some time ago. their experiments have twisted the space-time fabric around our town. we could probably fix it with sorcery, but as things stand there would be little point - it would just get messed up all over again tomorrow. the time mages have refused to either leave or start behaving, and there&#x27;s too many of them for us to drive out of the town by force. we need the help of a great hero like you, i hope you can catch them napping.">
+  <div class="txt">
+    <h3>Eddies in the Space-Time Continuum (Zul)</h3>
+    <p class="num">Needs character level 55</p>
+    <p class="desc">Unfortunately, reliable teleporting between Zul and the outside world has become impossible, thanks to a group of strange time mages who moved in some time ago. Their experiments have twisted the space-time fabric around our town. We could probably fix it with sorcery, but as things stand there would be little point - it would just get messed up all over again tomorrow. The time mages have refused to either leave or start behaving, and there&#x27;s too many of them for us to drive out of the town by force. We need the help of a great hero like you, I hope you can catch them napping.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="55"
+ data-t="doom quest ii\: hell in angwil doom quest ii\: hell in angwil another strange hole in reality has opened up on the edge of our town, and appears to be even more dangerous than the  last. five of our strongest knights ventured within -- only  one returned, scorched by fire and babbling incoherently.   we have not the resources to deal with this threat. do you?">
+  <div class="txt">
+    <h3>Doom Quest II\: Hell in Angwil</h3>
+    <p class="num">Needs character level 55</p>
+    <p class="desc">Another strange hole in reality has opened up on the edge of our town, and appears to be even more dangerous than the  last. Five of our strongest knights ventured within -- only  one returned, scorched by fire and babbling incoherently.   We have not the resources to deal with this threat. Do you?</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="58"
+ data-t="random 7 random 7 ">
+  <div class="txt">
+    <h3>Random 7</h3>
+    <p class="num">Needs character level 58／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="60"
+ data-t="the volcano (telmora) the volcano (telmora) a volcano has been rumbling in the eastern part of our territory. but, we do not think it is natural. now, it is time to eliminate all creatures that are making their home at the volcano. you must exterminate them all if we are to avoid having lava ruin our crops!">
+  <div class="txt">
+    <h3>The Volcano (Telmora)</h3>
+    <p class="num">Needs character level 60</p>
+    <p class="desc">A volcano has been rumbling in the eastern part of our territory. But, we do not think it is natural. Now, it is time to eliminate all creatures that are making their home at the volcano. You must exterminate them all if we are to avoid having lava ruin our crops!</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="65"
+ data-t="the node of sorcery (zul) the node of sorcery (zul) the wizards of sorcery have discovered a magical node of sorcery  in a damp area nearby. you must seek the node and dispatch  its guardians so that the tower of sorcery can claim the  mystical energies of the node.">
+  <div class="txt">
+    <h3>The Node of Sorcery (Zul)</h3>
+    <p class="num">Needs character level 65</p>
+    <p class="desc">The Wizards of Sorcery have discovered a magical Node of Sorcery  in a damp area nearby. You must seek the Node and dispatch  its guardians so that the Tower of Sorcery can claim the  mystical energies of the Node.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="65"
+ data-t="the node of chaos (zul) the node of chaos (zul) the wizards of chaos have discovered a magical node of chaos in a nearby volcano. you must seek the node and dispatch its guardians so that the tower of chaos can claim the mystical energies of the node.">
+  <div class="txt">
+    <h3>The Node of Chaos (Zul)</h3>
+    <p class="num">Needs character level 65</p>
+    <p class="desc">The Wizards of Chaos have discovered a magical Node of Chaos in a nearby volcano. You must seek the Node and dispatch its guardians so that the Tower of Chaos can claim the mystical energies of the Node.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="65"
+ data-t="the node of nature (zul) the node of nature (zul) the wizards of nature have discovered a magical node of  nature in a nearby forest. you must seek the node and  dispatch its guardians so that the tower of nature can  claim the mystical energies of the node.">
+  <div class="txt">
+    <h3>The Node of Nature (Zul)</h3>
+    <p class="num">Needs character level 65</p>
+    <p class="desc">The Wizards of Nature have discovered a magical Node of  Nature in a nearby forest. You must seek the Node and  dispatch its guardians so that the Tower of Nature can  claim the mystical energies of the Node.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="65"
+ data-t="the spawning pits (angwil) the spawning pits (angwil) a great, great evil approaches, perhaps the end for our town. our scouts lie slaughtered, their bodies crushed and mangled by powerful beasts. i know not what you shall face.  monsters appear as if out of thin air, as if spawned by a foul  altar in a valley close to where you defeated the orcs. i am hesistant to ask for your help, knowing you may be sent  to your doom, and yet you are the last hope for our town.  approach each nook carefully, as evil lies in unexpected places. please prepare well, and strike hard in our names.">
+  <div class="txt">
+    <h3>The Spawning Pits (Angwil)</h3>
+    <p class="num">Needs character level 65</p>
+    <p class="desc">A great, great evil approaches, perhaps the end for our town. Our scouts lie slaughtered, their bodies crushed and mangled by powerful beasts. I know not what you shall face.  Monsters appear as if out of thin air, as if spawned by a foul  altar in a valley close to where you defeated the orcs. I am hesistant to ask for your help, knowing you may be sent  to your doom, and yet you are the last hope for our town.  Approach each nook carefully, as evil lies in unexpected places. Please prepare well, and strike hard in our names.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="66"
+ data-t="random 8 random 8 ">
+  <div class="txt">
+    <h3>Random 8</h3>
+    <p class="num">Needs character level 66／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="66"
+ data-t="dragon slayer (morivant) dragon slayer (morivant) you&#x27;re pretty strong, so how about something to really  test you. go to tiamat&#x27;s lair and kill ten great wyrms of many colours. that&#x27;ll show us if you&#x27;re really great.">
+  <div class="txt">
+    <h3>Dragon Slayer (Morivant)</h3>
+    <p class="num">Needs character level 66／Where Dragon&#x27;s lair／Goal Kill 10 Great Wyrm of Many Colours</p>
+    <p class="desc">You&#x27;re pretty strong, so how about something to really  test you. Go to Tiamat&#x27;s lair and kill ten great wyrms of many colours. That&#x27;ll show us if you&#x27;re really great.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="eric&#x27;s stronghold (telmora) eric&#x27;s stronghold (telmora) when oberon, the rightful ruler of amber, disappeared, eric  did not waste much time making his claim for the throne. eric is waiting for his own coronation in a secure stronghold. you must eliminate him before he is crowned, or other amberites may feel obliged to obey him -- and he&#x27;ll be invincible!">
+  <div class="txt">
+    <h3>Eric&#x27;s Stronghold (Telmora)</h3>
+    <p class="num">Needs character level 70／Goal Kill Eric the Usurper</p>
+    <p class="desc">When Oberon, the rightful ruler of Amber, disappeared, Eric  did not waste much time making his claim for the throne. Eric is waiting for his own coronation in a secure stronghold. You must eliminate him before he is crowned, or other Amberites may feel obliged to obey him -- and he&#x27;ll be invincible!</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="the royal crypt (outpost) the royal crypt (outpost) a mysterious force has entered the royal crypt and is desecrating the graves of the king&#x27;s noble ancestors. their bodily remains have been magically animated and their spirits enslaved and forcibly turned to evil. you must enter the crypt and seek out the archliches. once they have been eliminated, my guards should be able to take care of the rest. a mysterious force has entered the royal crypt and is desecrating the graves of the king&#x27;s noble ancestors. their bodily remains have been magically animated and their spirits enslaved and forcibly turned to evil. you must enter the crypt and seek out the archliches. once they have been eliminated, the town guard should be able to take care of the rest.">
+  <div class="txt">
+    <h3>The Royal Crypt (Outpost)</h3>
+    <p class="num">Needs character level 70／Goal Kill 5 Archlich</p>
+    <p class="desc">A mysterious force has entered the royal crypt and is desecrating the graves of the king&#x27;s noble ancestors. Their bodily remains have been magically animated and their spirits enslaved and forcibly turned to evil. You must enter the crypt and seek out the Archliches. Once they have been eliminated, my guards should be able to take care of the rest.</p><p class="desc">A mysterious force has entered the royal crypt and is desecrating the graves of the king&#x27;s noble ancestors. Their bodily remains have been magically animated and their spirits enslaved and forcibly turned to evil. You must enter the crypt and seek out the Archliches. Once they have been eliminated, the town guard should be able to take care of the rest.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="70"
+ data-t="the killer in the cellar (anambar) the killer in the cellar (anambar) some nights ago, a local woman heard a dreadful scream from the cellar next door and ran down to investigate. she found her neighbor&#x27;s mutilated body lying in a pool of blood on the cellar floor, with terrible scratch marks on his face and firewood still in his arms; there was no sign of the assailant or assailants. spooked, she ran for her life and reported the incident to us immediately. we sent an officer in to investigate, he was thrown back out by an invisible force as easily as if he had been a cheap rag doll. i know not what horrors you will face, i only know that this may well be your most dangerous mission yet, and hope i am not sending you to your death. good luck, and may the gods protect you.">
+  <div class="txt">
+    <h3>The Killer in the Cellar (Anambar)</h3>
+    <p class="num">Needs character level 70</p>
+    <p class="desc">Some nights ago, a local woman heard a dreadful scream from the cellar next door and ran down to investigate. She found her neighbor&#x27;s mutilated body lying in a pool of blood on the cellar floor, with terrible scratch marks on his face and firewood still in his arms; there was no sign of the assailant or assailants. Spooked, she ran for her life and reported the incident to us immediately. We sent an officer in to investigate, he was thrown back out by an invisible force as easily as if he had been a cheap rag doll. I know not what horrors you will face, I only know that this may well be your most dangerous mission yet, and hope I am not sending you to your death. Good luck, and may the gods protect you.</p>
+    <p class="flags"><b class="fl">TOWN</b><b class="fl">GENERATE</b></p>
+  </div>
+</article><article class="card row" data-depth="72"
+ data-t="demon slayer (morivant) demon slayer (morivant) you&#x27;re one of the strongest we&#x27;ve seen, so here&#x27;s your final test - go to angband and kill ten pit fiends. if you can do  it, we&#x27;ll sing songs to your glorious triumph.">
+  <div class="txt">
+    <h3>Demon Slayer (Morivant)</h3>
+    <p class="num">Needs character level 72／Where Angband／Goal Kill 10 Pit Fiend</p>
+    <p class="desc">You&#x27;re one of the strongest we&#x27;ve seen, so here&#x27;s your final test - go to Angband and kill ten pit fiends. If you can do  it, we&#x27;ll sing songs to your glorious triumph.</p>
+    <p class="flags"><b class="fl">TOWN</b></p>
+  </div>
+</article><article class="card row" data-depth="74"
+ data-t="random 9 random 9 ">
+  <div class="txt">
+    <h3>Random 9</h3>
+    <p class="num">Needs character level 74／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="82"
+ data-t="random 10 random 10 ">
+  <div class="txt">
+    <h3>Random 10</h3>
+    <p class="num">Needs character level 82／Where Angband／Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">RANDOM</b><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="99"
+ data-t="oberon oberon it is time to take the battle to the serpent. but before you can reach it, you must find and kill oberon. only after defeating the powerful king of amber will the stairs leading to the serpent&#x27;s lair be opened.">
+  <div class="txt">
+    <h3>Oberon</h3>
+    <p class="num">Needs character level 99／Where Angband／Goal Kill Oberon, King of Amber</p>
+    <p class="desc">It is time to take the battle to the Serpent. But before you can reach it, you must find and kill Oberon. Only after defeating the powerful king of Amber will the stairs leading to the Serpent&#x27;s lair be opened.</p>
+    <p class="flags"><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="100"
+ data-t="serpent of chaos serpent of chaos your final quest is the ultimate quest that has always been required of you. you must enter the realm of the serpent, travel deep, and defeat this source of all our problems. be prepared, be patient, and good luck. may the light shine on you.">
+  <div class="txt">
+    <h3>Serpent of Chaos</h3>
+    <p class="num">Needs character level 100／Where Angband／Goal Kill The Serpent of Chaos</p>
+    <p class="desc">Your final quest is the ultimate quest that has always been required of you. You must enter the realm of the Serpent, travel deep, and defeat this source of all our problems. Be prepared, be patient, and good luck. May the light shine on you.</p>
+    <p class="flags"><b class="fl">RETAKE</b></p>
+  </div>
+</article><article class="card row" data-depth="585"
+ data-t="metatron metatron if you can see this description, there&#x27;s a bug in the code, please report.">
+  <div class="txt">
+    <h3>Metatron</h3>
+    <p class="num">Needs character level 585／Where Heaven／Goal Kill Metatron, the High Angel</p>
+    <p class="desc">If you can see this description, there&#x27;s a bug in the code, please report.</p>
+    <p class="flags"><b class="fl">RETAKE</b><b class="fl">INVIS</b></p>
+  </div>
+</article><article class="card row" data-depth="0"
+ data-t="purple quest purple quest ">
+  <div class="txt">
+    <h3>Purple Quest</h3>
+    <p class="num">Goal Kill the monsters on this level</p>
+    
+    <p class="flags"><b class="fl">PURPLE</b></p>
+  </div>
+</article>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>FroxComposband is a roguelike descended from Composband, in the Angband line. These are unofficial spoilers.</p>
+</div></footer>
+<script src="../frox.js"></script>
+</body>
+</html>
