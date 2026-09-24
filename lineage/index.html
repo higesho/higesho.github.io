@@ -110,6 +110,17 @@ ul.links .kind{display:inline-block;min-width:7.5em;font:12px var(--mono);color:
   .pick{padding-inline:16px}
   .info{padding:18px 16px 32px}
 }
+/* スマートフォンの幅では見出しの帯と凡例を詰めて、系譜図の見える高さを確保する
+   （利用者の了承 2026-09-24。説明文はパネルの作品の解説と重なるので隠す）。 */
+@media (max-width:600px){
+  .top{gap:6px 12px;padding:8px 12px}
+  .crumb{flex-basis:100%}
+  h1{font-size:18px;flex:1}
+  .lede{display:none}
+  .seg button{padding:3px 10px;font-size:12px}
+  .legend{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;gap:14px;padding:6px 12px;font-size:11px}
+  .legend i{width:18px}
+}
 </style>
 </head>
 <body>
