@@ -262,7 +262,7 @@ footer b{color:var(--dim)}
     </p>
     <div class="actions">
       <a class="btn btn-main" href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-win.zip" target="_blank" rel="noopener">Windows 版をダウンロード</a>
-      <a class="btn btn-alt" href="https://github.com/higesho/hengband-hd2d/releases/download/v2026-09-11/HengbandHd2d-linux-x86_64.tar.gz" target="_blank" rel="noopener">Linux 版をダウンロード</a>
+      <a class="btn btn-alt" href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-linux-x86_64.tar.gz" target="_blank" rel="noopener">Linux 版をダウンロード</a>
       <a class="btn btn-alt" href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-android.apk" target="_blank" rel="noopener">Android 版をダウンロード</a>
       <span class="meta">GitHub のリリース / Windows は ZIP・Linux は tar.gz（x86_64）・Android は APK</span>
     </div>
@@ -275,6 +275,7 @@ footer b{color:var(--dim)}
       <a class="btn btn-sub" href="https://rephial.org/" target="_blank" rel="noopener">Angband 公式サイト</a>
       <a class="btn btn-sub" href="https://github.com/suzukiiichiro/Rogue2.Official" target="_blank" rel="noopener">RogueClone2 公式サイト</a>
       <a class="btn btn-sub" href="https://britzl.github.io/roguearchive/" target="_blank" rel="noopener">Rogue 3.6 / 5.4 配布アーカイブ</a>
+      <a class="btn btn-sub" href="https://github.com/dungeons-of-moria/umoria" target="_blank" rel="noopener">Umoria 公式サイト</a>
     </div>
     <div class="actions docs">
       <a class="btn btn-doc" href="silq/index.html">Sil-Q スポイラー</a>
@@ -293,7 +294,7 @@ footer b{color:var(--dim)}
     </p>
     <div class="actions">
       <a class="btn btn-main" href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-win.zip" target="_blank" rel="noopener">Download for Windows</a>
-      <a class="btn btn-alt" href="https://github.com/higesho/hengband-hd2d/releases/download/v2026-09-11/HengbandHd2d-linux-x86_64.tar.gz" target="_blank" rel="noopener">Download for Linux</a>
+      <a class="btn btn-alt" href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-linux-x86_64.tar.gz" target="_blank" rel="noopener">Download for Linux</a>
       <a class="btn btn-alt" href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-android.apk" target="_blank" rel="noopener">Download for Android</a>
       <span class="meta">GitHub Releases / Windows: ZIP &middot; Linux: tar.gz (x86_64) &middot; Android: APK</span>
     </div>
@@ -306,6 +307,7 @@ footer b{color:var(--dim)}
       <a class="btn btn-sub" href="https://rephial.org/" target="_blank" rel="noopener">Official Angband site</a>
       <a class="btn btn-sub" href="https://github.com/suzukiiichiro/Rogue2.Official" target="_blank" rel="noopener">Official RogueClone2 site</a>
       <a class="btn btn-sub" href="https://britzl.github.io/roguearchive/" target="_blank" rel="noopener">Rogue 3.6 / 5.4 archive</a>
+      <a class="btn btn-sub" href="https://github.com/dungeons-of-moria/umoria" target="_blank" rel="noopener">Official Umoria site</a>
     </div>
     <div class="actions docs">
       <a class="btn btn-doc" href="silq/en/index.html">Sil-Q spoilers</a>
@@ -386,6 +388,10 @@ footer b{color:var(--dim)}
         <img src="img/genso.jpg" alt="幻想蛮怒のコア。鳥居と瓦屋根の並ぶ里の辻に立っている">
         <figcaption>幻想蛮怒</figcaption>
       </figure>
+      <figure class="reveal">
+        <img src="img/umoria.jpg" alt="Umoria のコア。光るモリアの門へ続く並木道の両側に、灯りのともった石造りの店が並ぶ夜の町">
+        <figcaption>Umoria</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -399,6 +405,16 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-10-06</p>
+        <ul class="news">
+          <li>Umoria を実装（日本語化済）</li>
+          <li>変愚蛮怒を 3.0.2.5-Beta に更新</li>
+          <li>Windows 版を日本語の名前のフォルダに置くと、一部のコアを選んだ直後に止まる不具合を修正</li>
+          <li>新UIで、幻想蛮怒と FroxComposband の魔法書から呪文を覚えられない不具合を修正</li>
+          <li>変愚蛮怒と FroxComposband の熟練度の表示を修正</li>
+        </ul>
+      </div>
       <div class="entry">
         <p class="kicker">2026-09-30</p>
         <ul class="news">
@@ -519,16 +535,17 @@ footer b{color:var(--dim)}
 <section id="run">
   <div class="band">
     <div class="head">
-      <p class="kicker">Windows / Android</p>
+      <p class="kicker">Windows / Linux / Android</p>
       <h2>動かし方</h2>
     </div>
 
     <div class="scroll-x">
       <table>
         <tbody>
-          <tr><th>対応環境</th><td>Windows 10 / 11（<b>OpenGL 4.6 対応が必要です</b>）／ Android 13 以降（arm64）</td></tr>
+          <tr><th>対応環境</th><td>Windows 10 / 11（<b>OpenGL 4.6 対応が必要です</b>）／ Android 13 以降（arm64）／ Linux x86_64（glibc 2.43 以降。Ubuntu 26.04 で確認）</td></tr>
           <tr><th>Windows</th><td>ZIP を任意のフォルダへ展開し、その中の <code>HengbandHd2d.exe</code> を実行します。<b>必ずそのフォルダを作業ディレクトリにして起動してください</b>（<code>assets/</code> と <code>lib/</code> を相対で読みます）。</td></tr>
           <tr><th>Android</th><td>APK を端末に入れて開きます。ストアの外からの配布なので、<b>提供元不明のアプリのインストールを許可</b>する必要があります。</td></tr>
+          <tr><th>Linux</th><td><code>tar.gz</code> を展開し、その中の <code>HengbandHd2d.sh</code> を実行します。Ubuntu 24.04 以前ではそのまま起動できません。</td></tr>
           <tr><th>VR モード</th><td><b>Virtual Desktop から実行します。</b></td></tr>
           <tr><th>ゲームパッド</th><td><b>XInput 対応。</b>Xbox コントローラなどを繋ぐと十字キーで移動、A で決定、B で戻る、Select で機能メニューが開きます。</td></tr>
           <tr><th>実行中のキー</th><td>F10 = 機能メニュー ／ F9 = 画面の作り ／ F8 = サブパネル ／ <b>F7 = 一人称の出入り</b> ／ Alt + Enter = 全画面と窓の切り替え</td></tr>
@@ -540,11 +557,11 @@ footer b{color:var(--dim)}
     <div class="unblock">
       <div>
         <p>ダウンロードした ZIP を展開しただけでは、Windows が「他のコンピューターから取得したファイル」と見なして実行を止めることがあります。</p>
-        <p>対象の exe を右クリックして「プロパティ」を開き、全般タブのいちばん下にある<b>セキュリティの「許可する」にチェック</b>を入れて OK を押してください。</p>
-        <p><b>場所は 2 か所です。</b>展開したフォルダの直下にある <code>HengbandHd2d.exe</code> と、その下の <code>cores</code> フォルダに入っているコアの exe（<code>HengbandCore.exe</code>・<code>TangbandCore.exe</code>・<code>GensobandCore.exe</code>・<code>SilCore.exe</code>・<code>FroxCore.exe</code>）。起動するのは <code>HengbandHd2d.exe</code> だけですが、そこから <code>cores</code> の中のコアを呼び出すので、<b>遊ぶコアのぶんも要ります。</b></p>
+        <p><b>展開する前に</b>、ダウンロードした <code>HengbandHd2d-win.zip</code> を右クリックして「プロパティ」を開き、全般タブのいちばん下にある<b>セキュリティの「許可する」にチェック</b>を入れて OK を押してから展開してください。中のファイル（<code>HengbandHd2d.exe</code> と、<code>cores</code> フォルダの中のコア 10 本）がまとめて解除されます。</p>
+        <p>すでに展開してしまった場合は、上の手順のあとで展開し直すか、展開したフォルダで PowerShell を開いて <code>Get-ChildItem -Recurse | Unblock-File</code> を実行してください。</p>
       </div>
       <figure class="reveal">
-        <img src="img/propatie.jpg" alt="HengbandCore.exe のプロパティ画面。全般タブの下にあるセキュリティ欄の「許可する」チェックボックスが赤枠で示されている">
+        <img src="img/propatie.jpg" alt="ファイルのプロパティ画面。全般タブの下にあるセキュリティ欄の「許可する」チェックボックスが赤枠で示されている">
       </figure>
     </div>
   </div>
@@ -618,6 +635,10 @@ footer b{color:var(--dim)}
         <img src="img/genso.jpg" alt="The Gensoband core. A crossroads in a village of torii gates and tiled roofs">
         <figcaption>Gensoband</figcaption>
       </figure>
+      <figure class="reveal">
+        <img src="img/umoria.jpg" alt="The Umoria core. A night town where lit stone shops line an avenue of trees leading to the glowing gate of Moria">
+        <figcaption>Umoria</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -631,6 +652,16 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-10-06</p>
+        <ul class="news">
+          <li>Added Umoria (Japanese translation)</li>
+          <li>Updated Hengband to 3.0.2.5-Beta</li>
+          <li>Fixed some cores stopping right after you picked them when the Windows version sits in a folder with a Japanese name</li>
+          <li>Fixed spells not being learnable from books in Gensoband and FroxComposband with the new UI</li>
+          <li>Fixed the proficiency display in Hengband and FroxComposband</li>
+        </ul>
+      </div>
       <div class="entry">
         <p class="kicker">2026-09-30</p>
         <ul class="news">
@@ -745,16 +776,17 @@ footer b{color:var(--dim)}
 <section id="run">
   <div class="band">
     <div class="head">
-      <p class="kicker">Windows / Android</p>
+      <p class="kicker">Windows / Linux / Android</p>
       <h2>Running it</h2>
     </div>
 
     <div class="scroll-x">
       <table>
         <tbody>
-          <tr><th>Requirements</th><td>Windows 10 / 11 (<b>OpenGL 4.6 required</b>) / Android 13 or later (arm64)</td></tr>
+          <tr><th>Requirements</th><td>Windows 10 / 11 (<b>OpenGL 4.6 required</b>) / Android 13 or later (arm64) / Linux x86_64 (glibc 2.43 or later; tested on Ubuntu 26.04)</td></tr>
           <tr><th>Windows</th><td>Unzip it anywhere and run <code>HengbandHd2d.exe</code> from inside that folder. <b>Start it with that folder as the working directory</b> &mdash; <code>assets/</code> and <code>lib/</code> are read relative to it.</td></tr>
           <tr><th>Android</th><td>Put the APK on your device and open it. It is distributed outside the store, so you need to <b>allow installing apps from unknown sources</b>.</td></tr>
+          <tr><th>Linux</th><td>Extract the <code>tar.gz</code> and run <code>HengbandHd2d.sh</code> inside it. It does not start as is on Ubuntu 24.04 or earlier.</td></tr>
           <tr><th>VR mode</th><td><b>Run it from Virtual Desktop.</b></td></tr>
           <tr><th>Gamepad</th><td><b>XInput.</b> Plug in an Xbox controller and the D-pad moves, A confirms, B goes back, and Select opens the function menu.</td></tr>
           <tr><th>Keys</th><td>F10 = function menu / F9 = layout / F8 = sub panels / <b>F7 = enter and leave first person</b> / Alt + Enter = fullscreen or window</td></tr>
@@ -762,15 +794,15 @@ footer b{color:var(--dim)}
       </table>
     </div>
 
-    <h3>Unblock the files first (Windows)</h3>
+    <h3>Unblock the ZIP before extracting it (Windows)</h3>
     <div class="unblock">
       <div>
         <p>Unzipping the download is not always enough. Windows may decide the files came from another computer and refuse to run them.</p>
-        <p>Right-click the executable, open Properties, tick <b>Unblock</b> at the bottom of the General tab and press OK.</p>
-        <p><b>They are in two places.</b> <code>HengbandHd2d.exe</code> sits at the top of the unzipped folder, and the game cores sit in <code>cores</code> below it (<code>HengbandCore.exe</code>, <code>TangbandCore.exe</code>, <code>GensobandCore.exe</code>, <code>SilCore.exe</code>, <code>FroxCore.exe</code>). You only launch <code>HengbandHd2d.exe</code>, but it starts a core from <code>cores</code>, so <b>the cores you play need it too.</b></p>
+        <p><b>Before extracting</b>, right-click the downloaded <code>HengbandHd2d-win.zip</code>, open Properties, tick <b>Unblock</b> at the bottom of the General tab, press OK, and then extract it. Everything inside (<code>HengbandHd2d.exe</code> and the ten cores in the <code>cores</code> folder) is unblocked at once.</p>
+        <p>If you have already extracted it, either do the above and extract again, or open PowerShell in the extracted folder and run <code>Get-ChildItem -Recurse | Unblock-File</code>.</p>
       </div>
       <figure class="reveal">
-        <img src="img/propatie.jpg" alt="The Properties window for HengbandCore.exe, with the Unblock checkbox at the bottom of the General tab marked in red">
+        <img src="img/propatie.jpg" alt="A file's Properties window, with the Unblock checkbox at the bottom of the General tab marked in red">
       </figure>
     </div>
   </div>
@@ -785,12 +817,13 @@ footer b{color:var(--dim)}
     <div class="i18n" lang="ja">
     <div class="links">
       <a href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-win.zip" target="_blank" rel="noopener">Windows 版（GitHub）</a>
-      <a href="https://github.com/higesho/hengband-hd2d/releases/download/v2026-09-11/HengbandHd2d-linux-x86_64.tar.gz" target="_blank" rel="noopener">Linux 版（GitHub）</a>
+      <a href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-linux-x86_64.tar.gz" target="_blank" rel="noopener">Linux 版（GitHub）</a>
       <a href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-android.apk" target="_blank" rel="noopener">Android 版（GitHub）</a>
       <a href="https://hengband.github.io/" target="_blank" rel="noopener">本家 変愚蛮怒 公式サイト</a>
       <a href="https://github.com/hengband/hengband" target="_blank" rel="noopener">本家 GitHub</a>
       <a href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">短愚蛮怒 公式サイト</a>
       <a href="https://rephial.org/" target="_blank" rel="noopener">Angband</a>
+      <a href="https://github.com/dungeons-of-moria/umoria" target="_blank" rel="noopener">Umoria</a>
     </div>
     <p>
       本作は『変愚蛮怒』の<b>非公式</b>のフロントエンドです。本家の開発チームとは関係がありません。
@@ -802,12 +835,13 @@ footer b{color:var(--dim)}
     <div class="i18n" lang="en">
     <div class="links">
       <a href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-win.zip" target="_blank" rel="noopener">Windows (GitHub)</a>
-      <a href="https://github.com/higesho/hengband-hd2d/releases/download/v2026-09-11/HengbandHd2d-linux-x86_64.tar.gz" target="_blank" rel="noopener">Linux (GitHub)</a>
+      <a href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-linux-x86_64.tar.gz" target="_blank" rel="noopener">Linux (GitHub)</a>
       <a href="https://github.com/higesho/hengband-hd2d/releases/latest/download/HengbandHd2d-android.apk" target="_blank" rel="noopener">Android (GitHub)</a>
       <a href="https://hengband.github.io/" target="_blank" rel="noopener">Official Hengband site</a>
       <a href="https://github.com/hengband/hengband" target="_blank" rel="noopener">Hengband on GitHub</a>
       <a href="https://tanguband.github.io/tangband.html" target="_blank" rel="noopener">Official Tangband site</a>
       <a href="https://rephial.org/" target="_blank" rel="noopener">Angband</a>
+      <a href="https://github.com/dungeons-of-moria/umoria" target="_blank" rel="noopener">Umoria</a>
     </div>
     <p>
       This is an <b>unofficial</b> front end for Hengband, with no connection to the Hengband
