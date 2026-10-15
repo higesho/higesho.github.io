@@ -162,6 +162,9 @@ figcaption{
 /* ---------------------------------------------------------------- 更新 */
 .log{display:grid;gap:38px;max-width:var(--prose)}
 .entry .kicker{color:var(--torch-dim);margin-bottom:6px}
+.older>.log{margin-top:38px}
+.older>summary{cursor:pointer;color:var(--torch-dim);list-style:revert}
+.older[open]>summary{margin-bottom:6px}
 .group + .group{margin-top:24px}
 .glabel{
   font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;
@@ -406,6 +409,26 @@ footer b{color:var(--dim)}
 
     <div class="log">
       <div class="entry">
+        <p class="kicker">2026-10-15</p>
+        <ul class="news">
+          <li>画面の表示と見た目を全部のゲームコアで新しくしました。HP/MP の玉をゲームコアごとに別の意匠にし（短愚蛮怒は終末の日が近づくにつれて太陽が黒くなります）、かかっている状態のアイコン、光の届く範囲、魔法・ブレス・矢・投げた物の効果を、全部のゲームコアで描くようにしました</li>
+          <li>幻想蛮怒（41 種）・FroxComposband（23 種）・Sil-Q（2 種）に、そのゲームにしか無い魔法の見た目を新しく作りました</li>
+          <li>全部のゲームコアを通しで遊ぶテストを作って流し、見つかった不具合をまとめて直しました</li>
+          <li>Rogue 3.6・Rogue 5.4・RogueClone2 を英語でも遊べるようにしました</li>
+          <li>Shift＋矢印で走れるようにしました。位置の確認（L）の間は立体の絵も動き、「見る」の案内に見ている物の名前が出ます</li>
+          <li>Sil-Q と FroxComposband で、冒険者の名前に日本語を使えるようにしました</li>
+          <li>ゲームパッドの既定の割り当てを、ゲームコアごとに同じ意味のコマンドにそろえました（前の版の既定は自動で移ります）</li>
+          <li>Rogue の系譜のページから Umoria を起動できるようにしました</li>
+          <li>FroxComposband で一部の職業を選ぶとキャラクタ作成の最後で止まる不具合、性格を変えられない不具合を修正</li>
+          <li>FroxComposband の Android 版で、荒野で待ち伏せされると操作を受け付けなくなる不具合と、店で買えない・数量を変えられない不具合を修正</li>
+          <li>RogueClone2 を深いフォルダに置くと死んだときに止まる不具合、Angband を一部の漢字を含むフォルダに置くと起動できない不具合を修正</li>
+          <li>そのほかの細かな不具合を修正（詳しくは GitHub のリリースノート）</li>
+        </ul>
+      </div>
+      <details class="older">
+        <summary>過去の更新</summary>
+        <div class="log">
+      <div class="entry">
         <p class="kicker">2026-10-07</p>
         <ul class="news">
           <li>原作が持つキー配置（標準・ローグライク）を、すべてのゲームコアで使えるようにしました（Sil-Q の 4 つの配置と Umoria のローグライクの配置を含みます。キー配置を切り替えても、ゲームパッドとキーの割り当てはそのまま働きます）</li>
@@ -541,6 +564,8 @@ footer b{color:var(--dim)}
           <li>その他バグ修正</li>
         </ul>
       </div>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -666,6 +691,26 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-10-15</p>
+        <ul class="news">
+          <li>A new look for the on-screen display in every game core: each core now has its own HP/MP orb design (in Tangband the sun darkens day by day as the end of the world draws near), and every core shows status icons, the reach of your light, and 3D effects for spells, breaths, arrows and thrown items</li>
+          <li>New spell effects found only in their own games: Gensoband (41), FroxComposband (23) and Sil-Q (2)</li>
+          <li>We wrote play-through tests for every game core, ran them, and fixed the problems they found</li>
+          <li>Rogue 3.6, Rogue 5.4 and RogueClone2 can now be played in English</li>
+          <li>Shift+arrow now runs. While locating the map (L) the 3D view moves too, and the look prompt shows the name of what you are looking at</li>
+          <li>Sil-Q and FroxComposband accept Japanese character names</li>
+          <li>The default gamepad buttons now mean the same commands in every game core (buttons still on the old defaults move over automatically)</li>
+          <li>Umoria can now be started from the Rogue lineage page</li>
+          <li>Fixed FroxComposband stopping at the end of character creation for some classes, and the personality not being changeable</li>
+          <li>Fixed the Android version of FroxComposband no longer taking input after an ambush in the wilderness, and failing to buy in shops or change the quantity</li>
+          <li>Fixed RogueClone2 stopping on death when placed in a deep folder, and Angband failing to start in a folder whose name contains some kanji</li>
+          <li>Other small fixes (see the release notes on GitHub)</li>
+        </ul>
+      </div>
+      <details class="older">
+        <summary>Earlier updates</summary>
+        <div class="log">
       <div class="entry">
         <p class="kicker">2026-10-07</p>
         <ul class="news">
@@ -796,6 +841,8 @@ footer b{color:var(--dim)}
           <li>Other bug fixes</li>
         </ul>
       </div>
+        </div>
+      </details>
     </div>
   </div>
 </section>
