@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>職業 &mdash; DCSS スポイラー</title>
+<meta name="description" content="DCSS の選べる職業と、初期の技能・装備。">
+<link rel="stylesheet" href="dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="index.html">DCSS スポイラー</a>
+  <nav><a href="index.html">入口</a><a href="monster.html">モンスター</a><a href="spell.html">呪文</a><a href="item.html">アイテム</a><a href="artefact.html">固定アーティファクト</a><a href="species.html">種族</a><a href="job.html" class=here>職業</a><a href="god.html">神</a><a href="branch.html">ダンジョン</a><a href="mutation.html">突然変異</a><a href="misc.html">事典</a></nav>
+</div></header>
+<main class="band wide">
+<h1>職業</h1>
+<p class="lead">選べる 26 職業。能力値は種族の値に足される。技能の数字は始めたときの技能レベル。</p>
+<div class="bar">
+  <input type="search" id="q" placeholder="名前・説明で絞り込む" autocomplete="off">
+  
+  <span class="count" id="count"></span>
+</div>
+<div class="list" id="list">
+<article class="card" id="j-fighter" data-t="戦士 fighter 戦士は鎧と盾を装備し、好みの武器と怪力の薬を携えている。
+">
+  
+  <div class="txt">
+    <h3>戦士 <span class="en">Fighter</span></h3>
+    <p class="num">腕力 8/知力 0/器用 4</p>
+    <div class="desc">戦士は鎧と盾を装備し、好みの武器と怪力の薬を携えている。</div>
+    <p class="where">初期技能: 甲冑 3、戦闘 3、盾 3、選んだ武器 2</p>
+    <p class="where">装備: スケイルメイル、バックラー、怪力の薬 ×2、はじめに武器を選ぶ(良い品)</p>
+    <p class="where">勧められる種族: 山ドワーフ、トロル、ミノタウロス、ガーゴイル、アルマタウル、フォーミシッド、レヴナント</p>
+
+  </div>
+</article><article class="card" id="j-hedge-wizard" data-t="在野の魔術師 hedge wizard 在野の魔術師は魔法の万能家で、さまざまな手段を使いこなして敵を妨害し、戦場で優位に立つのが得意だ。
+">
+  
+  <div class="txt">
+    <h3>在野の魔術師 <span class="en">Hedge Wizard</span></h3>
+    <p class="num">腕力 2/知力 6/器用 4</p>
+    <div class="desc">在野の魔術師は魔法の万能家で、さまざまな手段を使いこなして敵を妨害し、戦場で優位に立つのが得意だ。</div>
+    <p class="where">初期技能: 妖術 2、躱し身 2、死霊術 1、呪文詠唱 3、隠密 2、召喚術 1、転位術 1</p>
+    <p class="where">装備: ダガー、ローブ、帽子、魔力の薬</p>
+    <p class="where">呪文: 魔法の矢、瞬間移動、インプの召喚、墓場の鉤爪、悪臭の雲</p>
+    <p class="where">勧められる種族: 闇エルフ、ナーガ、ドラコニアン、オクトポード、人間、ジンニー</p>
+
+  </div>
+</article><article class="card" id="j-gladiator" data-t="闘士 gladiator 闘士は軽鎧、好みの武器、そしていくつかの投擲武器と投げ網を持って、闘技場に臨む準備ができている。
+">
+  
+  <div class="txt">
+    <h3>闘士 <span class="en">Gladiator</span></h3>
+    <p class="num">腕力 6/知力 0/器用 6</p>
+    <div class="desc">闘士は軽鎧、好みの武器、そしていくつかの投擲武器と投げ網を持って、闘技場に臨む準備ができている。</div>
+    <p class="where">初期技能: 躱し身 3、戦闘 2、投擲 2、選んだ武器 3</p>
+    <p class="where">装備: レザーアーマー、兜、投げ網 ×3、はじめに武器を選ぶ(良い品)</p>
+    <p class="where">勧められる種族: 山ドワーフ、水棲の民、ミノタウロス、ガーゴイル、コグリン、歩き蔓</p>
+
+  </div>
+</article><article class="card" id="j-necromancer" data-t="死人使い necromancer 死人使いは魂の破片の呪文を持って出発する。やがて、死者を味方に変えたり、生ある者の生命力を使って自らを回復したりできるようになる。
+">
+  
+  <div class="txt">
+    <h3>死人使い <span class="en">Necromancer</span></h3>
+    <p class="num">腕力 0/知力 7/器用 5</p>
+    <div class="desc">死人使いは魂の破片の呪文を持って出発する。やがて、死者を味方に変えたり、生ある者の生命力を使って自らを回復したりできるようになる。</div>
+    <p class="where">初期技能: 躱し身 2、死霊術 4、呪文詠唱 2、隠密 2</p>
+    <p class="where">装備: ダガー、ローブ、魔力の薬</p>
+    <p class="where">呪文: 魂の破片、墓場の鉤爪、ヴァンパイアの吸血、死霊の蘇生、苦悶の呪い</p>
+    <p class="where">勧められる種族: 闇エルフ、ジンニー、山ドワーフ、悪魔の血族、ミイラ、レヴナント</p>
+    <details><summary>引用</summary><div class="quote">“Even now the intensity of his dread power can be felt
+ Weakening the body and saddening the heart
+ Ultimately they will become empty, mindless spectres
+ Stripped of will and soul
+ Only their thirst for freedom
+ Gives them hunger for vengeance...”
+    -Rush, “The Necromancer”. 1975.</div></details>
+  </div>
+</article><article class="card" id="j-brigand" data-t="山賊 brigand 山賊は毒のダーツと、少数の恐ろしいクラーレ毒のダーツを携えている。
+">
+  
+  <div class="txt">
+    <h3>山賊 <span class="en">Brigand</span></h3>
+    <p class="num">腕力 3/知力 3/器用 6</p>
+    <div class="desc">山賊は毒のダーツと、少数の恐ろしいクラーレ毒のダーツを携えている。</div>
+    <p class="where">初期技能: 躱し身 1、戦闘 2、隠密 4、投擲 2、選んだ武器 2</p>
+    <p class="where">装備: +2 のダガー、ローブ、クローク、ダーツ ×9、ダーツ ×3</p>
+    <p class="where">勧められる種族: トロル、スプリガン、悪魔の血族、歩き蔓、ノール</p>
+
+  </div>
+</article><article class="card" id="j-berserker" data-t="狂戦士 berserker 狂戦士は魔法を憎む怒りの神トログを信じている。
+序盤において怒れる狂戦士を止めるものは、自らの傲慢をおいて他にいない。
+">
+  
+  <div class="txt">
+    <h3>狂戦士 <span class="en">Berserker</span></h3>
+    <p class="num">腕力 9/知力 -1/器用 4</p>
+    <div class="desc">狂戦士は魔法を憎む怒りの神トログを信じている。
+序盤において怒れる狂戦士を止めるものは、自らの傲慢をおいて他にいない。</div>
+    <p class="where">初期技能: 躱し身 2、戦闘 3、選んだ武器 3</p>
+    <p class="where">装備: 獣の皮、はじめに武器を選ぶ</p>
+    <p class="where">勧められる種族: 山ドワーフ、鬼、水棲の民、ミノタウロス、ガーゴイル、アルマタウル</p>
+
+  </div>
+</article><article class="card" id="j-hunter" data-t="狩人 hunter 狩人はショートボウ、軽鎧、蝶の巻物を携えている。
+">
+  
+  <div class="txt">
+    <h3>狩人 <span class="en">Hunter</span></h3>
+    <p class="num">腕力 3/知力 1/器用 8</p>
+    <div class="desc">狩人はショートボウ、軽鎧、蝶の巻物を携えている。</div>
+    <p class="where">初期技能: 躱し身 2、戦闘 2、隠密 1、選んだ武器 4</p>
+    <p class="where">装備: ショートボウ、レザーアーマー、scroll of butterflies no_exclude</p>
+    <p class="where">勧められる種族: ミノタウロス、ノール、バラチ、コボルド、スプリガン</p>
+
+  </div>
+</article><article class="card" id="j-conjurer" data-t="妖術師 conjurer 妖術師は魔法の矢の呪文を持って出発し、他の属性を持たない呪文を覚えて、確実に敵を吹き飛ばすことができる。
+">
+  
+  <div class="txt">
+    <h3>妖術師 <span class="en">Conjurer</span></h3>
+    <p class="num">腕力 -1/知力 10/器用 3</p>
+    <div class="desc">妖術師は魔法の矢の呪文を持って出発し、他の属性を持たない呪文を覚えて、確実に敵を吹き飛ばすことができる。</div>
+    <p class="where">初期技能: 妖術 4、躱し身 2、呪文詠唱 2、隠密 2</p>
+    <p class="where">装備: ローブ、魔力の薬</p>
+    <p class="where">呪文: 魔法の矢、焼灼の光線、爆発性の晶柱、イスケンデルンの爆破の秘術</p>
+    <p class="where">勧められる種族: 闇エルフ、ナーガ、天狗、ドラコニアン、神々の末裔、ジンニー、アルマタウル</p>
+
+  </div>
+</article><article class="card" id="j-enchanter" data-t="呪術師 enchanter 呪術師は敵を無力化するさまざまな呪術を知っており、強化されたダガーと透明化の薬を備えている。
+">
+  
+  <div class="txt">
+    <h3>呪術師 <span class="en">Enchanter</span></h3>
+    <p class="num">腕力 0/知力 7/器用 5</p>
+    <div class="desc">呪術師は敵を無力化するさまざまな呪術を知っており、強化されたダガーと透明化の薬を備えている。</div>
+    <p class="where">初期技能: 躱し身 2、呪術 3、呪文詠唱 2、隠密 3、選んだ武器 1</p>
+    <p class="where">装備: +1 のダガー、ローブ、透明化の薬 ×2</p>
+    <p class="where">呪文: 魔法の眠り、混乱の一撃、ツキマーの舞踏、薄闇</p>
+    <p class="where">勧められる種族: 闇エルフ、フェリッド、コボルド、スプリガン、ナーガ、ポルターガイスト</p>
+
+  </div>
+</article><article class="card" id="j-fire-elementalist" data-t="火の精霊使い fire elementalist 火の精霊使いは狐火の呪文を習得している。最初に持っている他の呪文も、同じく炎と爆発による破壊に注力している。
+">
+  
+  <div class="txt">
+    <h3>火の精霊使い <span class="en">Fire Elementalist</span></h3>
+    <p class="num">腕力 0/知力 7/器用 5</p>
+    <div class="desc">火の精霊使いは狐火の呪文を習得している。最初に持っている他の呪文も、同じく炎と爆発による破壊に注力している。</div>
+    <p class="where">初期技能: 妖術 1、躱し身 2、炎の魔術 3、呪文詠唱 2、隠密 2</p>
+    <p class="where">装備: ローブ、魔力の薬</p>
+    <p class="where">呪文: 狐火、焦熱、不安定な爆発塵、内なる炎、炎の波</p>
+    <p class="where">勧められる種族: 闇エルフ、山ドワーフ、ナーガ、天狗、神々の末裔、ガーゴイル、ジンニー</p>
+
+  </div>
+</article><article class="card" id="j-ice-elementalist" data-t="氷の精霊使い ice elementalist 氷の精霊使いは氷結の呪文を持って出発する。のちに覚える呪文は攻撃にも防御にも強力だが、移動が制限されることがある。
+">
+  
+  <div class="txt">
+    <h3>氷の精霊使い <span class="en">Ice Elementalist</span></h3>
+    <p class="num">腕力 0/知力 7/器用 5</p>
+    <div class="desc">氷の精霊使いは氷結の呪文を持って出発する。のちに覚える呪文は攻撃にも防御にも強力だが、移動が制限されることがある。</div>
+    <p class="where">初期技能: 躱し身 2、氷の魔術 4、呪文詠唱 2、隠密 2</p>
+    <p class="where">装備: ローブ、魔力の薬</p>
+    <p class="where">呪文: 氷結、凍てつく城壁、オゾクブの鎧、氷の獣の召喚</p>
+    <p class="where">勧められる種族: 水棲の民、バラチ、ドラコニアン、神々の末裔、ガーゴイル、ジンニー、レヴナント</p>
+
+  </div>
+</article><article class="card" id="j-summoner" data-t="召喚術師 summoner 召喚術師は最初から小動物の召喚を唱えることができ、より強く珍しい味方を召喚する呪文を呪文ライブラリに持って出発する。
+">
+  
+  <div class="txt">
+    <h3>召喚術師 <span class="en">Summoner</span></h3>
+    <p class="num">腕力 0/知力 7/器用 5</p>
+    <div class="desc">召喚術師は最初から小動物の召喚を唱えることができ、より強く珍しい味方を召喚する呪文を呪文ライブラリに持って出発する。</div>
+    <p class="where">初期技能: 躱し身 2、呪文詠唱 2、隠密 2、召喚術 4</p>
+    <p class="where">装備: ローブ、魔力の薬</p>
+    <p class="where">呪文: 小動物の召喚、インプの召喚、犬族のしもべの召喚、エリンギャの驚きのクロコダイル、セイスモサウルスの卵の召喚</p>
+    <p class="where">勧められる種族: 闇エルフ、鬼、歩き蔓、水棲の民、天狗</p>
+
+  </div>
+</article><article class="card" id="j-air-elementalist" data-t="風の精霊使い air elementalist 風の精霊使いは電撃の呪文を習得している。その電気の魔法は敵の集団を傷つけることができ、風の呪文は敵と戦うときにも逃げるときにも助けになる。
+">
+  
+  <div class="txt">
+    <h3>風の精霊使い <span class="en">Air Elementalist</span></h3>
+    <p class="num">腕力 0/知力 7/器用 5</p>
+    <div class="desc">風の精霊使いは電撃の呪文を習得している。その電気の魔法は敵の集団を傷つけることができ、風の呪文は敵と戦うときにも逃げるときにも助けになる。</div>
+    <p class="where">初期技能: 風の魔術 3、妖術 1、躱し身 2、呪文詠唱 2、隠密 2</p>
+    <p class="where">装備: ローブ、魔力の薬</p>
+    <p class="where">呪文: 電撃、空電放射、俊足、旋風の一撃</p>
+    <p class="where">勧められる種族: 闇エルフ、天狗、ドラコニアン、ナーガ、歩き蔓、ジンニー</p>
+
+  </div>
+</article><article class="card" id="j-earth-elementalist" data-t="地の精霊使い earth elementalist 地の精霊使いは砂の突風の呪文を知っており、のちに、ひそかな急所突きにも力ずくの破壊にも向いた、さらなる大地の呪文を覚えることができる。
+">
+  
+  <div class="txt">
+    <h3>地の精霊使い <span class="en">Earth Elementalist</span></h3>
+    <p class="num">腕力 0/知力 7/器用 5</p>
+    <div class="desc">地の精霊使いは砂の突風の呪文を知っており、のちに、ひそかな急所突きにも力ずくの破壊にも向いた、さらなる大地の呪文を覚えることができる。</div>
+    <p class="where">初期技能: 妖術 1、躱し身 2、地の魔術 3、呪文詠唱 2、隠密 2</p>
+    <p class="where">装備: ローブ、魔力の薬</p>
+    <p class="where">呪文: 砂の突風、壁の透過、石錐の矢、石化、ブロムの転がる巨岩</p>
+    <p class="where">勧められる種族: 闇エルフ、スプリガン、ガーゴイル、神々の末裔、オクトポード、レヴナント</p>
+
+  </div>
+</article><article class="card" id="j-alchemist" data-t="錬金術師 alchemist 錬金術師は有毒の蒸気の呪文を持って出発し、その魔法は毒の効く敵に対してとても効果的だ。
+">
+  
+  <div class="txt">
+    <h3>錬金術師 <span class="en">Alchemist</span></h3>
+    <p class="num">腕力 0/知力 7/器用 5</p>
+    <div class="desc">錬金術師は有毒の蒸気の呪文を持って出発し、その魔法は毒の効く敵に対してとても効果的だ。</div>
+    <p class="where">初期技能: 錬金術 3、妖術 1、躱し身 2、呪文詠唱 2、隠密 2</p>
+    <p class="where">装備: ローブ、魔力の薬</p>
+    <p class="where">呪文: 有毒の蒸気、水銀の鏃、悪臭の雲、オルグレブの毒気の光輪、焼夷の炎</p>
+    <p class="where">勧められる種族: 闇エルフ、スプリガン、ナーガ、水棲の民、オクトポード、ジンニー、悪魔の血族</p>
+
+  </div>
+</article><article class="card" id="j-chaos-knight" data-t="混沌の騎士 chaos knight 混沌の騎士は気まぐれなゾムのおもちゃであり、
+しばしば起きる神の気分の変化に翻弄される。
+">
+  
+  <div class="txt">
+    <h3>混沌の騎士 <span class="en">Chaos Knight</span></h3>
+    <p class="num">腕力 4/知力 4/器用 4</p>
+    <div class="desc">混沌の騎士は気まぐれなゾムのおもちゃであり、
+しばしば起きる神の気分の変化に翻弄される。</div>
+    <p class="where">初期技能: 甲冑 1、躱し身 1、戦闘 3、選んだ武器 3</p>
+    <p class="where">装備: +2 のレザーアーマー、scroll of butterflies no_exclude、はじめに武器を選ぶ</p>
+    <p class="where">勧められる種族: スプリガン、トロル、ノール、水棲の民、ミノタウロス、ドラコニアン、悪魔の血族</p>
+
+  </div>
+</article><article class="card" id="j-shapeshifter" data-t="変身術師 shapeshifter 変身術師はタリスマンを使って姿を変え、防具を犠牲にして強力な近接戦闘の戦士(特に素手のとき)となる。
+">
+  
+  <div class="txt">
+    <h3>変身術師 <span class="en">Shapeshifter</span></h3>
+    <p class="num">腕力 6/知力 2/器用 4</p>
+    <div class="desc">変身術師はタリスマンを使って姿を変え、防具を犠牲にして強力な近接戦闘の戦士(特に素手のとき)となる。</div>
+    <p class="where">初期技能: 躱し身 2、戦闘 2、変身術 3、徒手格闘 3</p>
+    <p class="where">装備: 獣の皮、フラックス・ボーブル ×3、樹木化の薬、羽根ペンのタリスマン、変幻のタリスマン</p>
+    <p class="where">勧められる種族: ナーガ、水棲の民、ドラコニアン、神々の末裔、悪魔の血族、トロル</p>
+    <details><summary>引用</summary><div class="quote">「するとあの年老いた海の神が
+  深みから這い出してきて、肥えた子牛どもがそこにいるのを見つけ、
+  見回し、数をかぞえたが、われらの用いた
+  計略には近づかず、われら五人を子牛と数えた。
+  それから眠りでこめかみの疲れを癒やした。
+  そこへわれらは忌まわしい叫びをあげて飛び込み、
+  雄々しく両手を彼のまわりに投げかけた。
+  するとあの年老いた偽り者は、あらゆる姿に化けはじめた。
+  まずは見事なたてがみの獅子、
+  次は竜、それから斑の豹、
+  次は巨大な猪、そしてにわかに
+  すべてが水へと変じた。最後に彼は木となり、
+  梢は渦を巻き、空へとそびえ立った。」
+    ――ホメロス『オデュッセイア』第4歌602-614行
+     (英訳:ジョージ・チャップマン、1857年)</div></details>
+  </div>
+</article><article class="card" id="j-monk" data-t="修行僧 monk 修行僧は好みの簡素な武器、光のオーブ、アンブロシアの薬を持って出発し、最初に崇拝する神に対して付加的な信仰心を得る。
+">
+  
+  <div class="txt">
+    <h3>修行僧 <span class="en">Monk</span></h3>
+    <p class="num">腕力 3/知力 2/器用 7</p>
+    <div class="desc">修行僧は好みの簡素な武器、光のオーブ、アンブロシアの薬を持って出発し、最初に崇拝する神に対して付加的な信仰心を得る。</div>
+    <p class="where">初期技能: 躱し身 3、戦闘 3、選んだ武器 3</p>
+    <p class="where">装備: ローブ、アンブロシアの薬、オーブ、はじめに武器を選ぶ</p>
+    <p class="where">勧められる種族: 山ドワーフ、トロル、アルマタウル、水棲の民、ガーゴイル、悪魔の血族</p>
+
+  </div>
+</article><article class="card" id="j-warper" data-t="転位術師 warper 転位術師は好みの武器、瞬間移動の巻物、分解のダーツ、そして呪文ライブラリにいくつかの転位術の呪文を持って出発する。
+">
+  
+  <div class="txt">
+    <h3>転位術師 <span class="en">Warper</span></h3>
+    <p class="num">腕力 3/知力 5/器用 4</p>
+    <div class="desc">転位術師は好みの武器、瞬間移動の巻物、分解のダーツ、そして呪文ライブラリにいくつかの転位術の呪文を持って出発する。</div>
+    <p class="where">初期技能: 甲冑 1、躱し身 2、戦闘 2、呪文詠唱 2、投擲 1、転位術 3、選んだ武器 2</p>
+    <p class="where">装備: レザーアーマー、瞬間移動の巻物、ダーツ ×4、はじめに武器を選ぶ</p>
+    <p class="where">呪文: 瞬間移動、引き寄せ、他者のテレポート、マクスウェルの携帯式杭打ち機、ヴィーの電撃突進</p>
+    <p class="where">勧められる種族: フェリッド、スプリガン、アルマタウル、ドラコニアン、コグリン</p>
+
+  </div>
+</article><article class="card" id="j-wanderer" data-t="放浪者 wanderer 放浪者はランダムな装備とスキルを持って出発する。
+">
+  
+  <div class="txt">
+    <h3>放浪者 <span class="en">Wanderer</span></h3>
+    <p class="num">腕力 0/知力 0/器用 0</p>
+    <div class="desc">放浪者はランダムな装備とスキルを持って出発する。</div>
+    <p class="where">初期技能: </p>
+    <p class="where">勧められる種族: 山ドワーフ、ノール、水棲の民、ドラコニアン、人間、悪魔の血族、バラチ</p>
+
+  </div>
+</article><article class="card" id="j-artificer" data-t="発動術師 artificer 発動術師は数本の魔法のワンドと棍棒を持って出発する。ワンドを使い切る前に、よりよい武器と防具を見つける必要があるだろう。
+">
+  
+  <div class="txt">
+    <h3>発動術師 <span class="en">Artificer</span></h3>
+    <p class="num">腕力 4/知力 3/器用 5</p>
+    <div class="desc">発動術師は数本の魔法のワンドと棍棒を持って出発する。ワンドを使い切る前に、よりよい武器と防具を見つける必要があるだろう。</div>
+    <p class="where">初期技能: 甲冑 1、躱し身 1、発動 3、戦闘 1、隠密 1</p>
+    <p class="where">装備: 棍棒、レザーアーマー、火炎のワンド、wand of charming no_exclude、wand of iceblast no_exclude</p>
+    <p class="where">勧められる種族: コボルド、スプリガン、ドラコニアン、悪魔の血族、コグリン</p>
+
+  </div>
+</article><article class="card" id="j-hexslinger" data-t="呪術射手 hexslinger 呪術射手はスリングを携え、呪術の魔法を使って、遠くからの攻撃に対して敵を弱らせる。
+">
+  
+  <div class="txt">
+    <h3>呪術射手 <span class="en">Hexslinger</span></h3>
+    <p class="num">腕力 0/知力 5/器用 7</p>
+    <div class="desc">呪術射手はスリングを携え、呪術の魔法を使って、遠くからの攻撃に対して敵を弱らせる。</div>
+    <p class="where">初期技能: 躱し身 2、戦闘 1、炎の魔術 1、呪術 3、呪文詠唱 1、選んだ武器 2</p>
+    <p class="where">装備: ローブ、毒の巻物、+1 のスリング</p>
+    <p class="where">呪文: 不運の牙、束縛の印、内なる炎、恐慌の喚起、次元の的</p>
+    <p class="where">勧められる種族: フォーミシッド、闇エルフ、コボルド、スプリガン、ノール</p>
+
+  </div>
+</article><article class="card" id="j-delver" data-t="探索者 delver 探索者は地上から5階層下で冒険を始める。強力な魔法の品々が、地上へ向かう危険な旅を生き延びる助けになる。
+">
+  
+  <div class="txt">
+    <h3>探索者 <span class="en">Delver</span></h3>
+    <p class="num">腕力 4/知力 2/器用 6</p>
+    <div class="desc">探索者は地上から5階層下で冒険を始める。強力な魔法の品々が、地上へ向かう危険な旅を生き延びる助けになる。</div>
+    <p class="where">初期技能: 躱し身 2、戦闘 3、隠密 5、選んだ武器 2</p>
+    <p class="where">装備: レザーアーマー、煙幕の巻物、啓示の巻物、恐慌の巻物、スピードの薬、掘削のワンド、はじめに武器を選ぶ</p>
+    <p class="where">勧められる種族: フェリッド、スプリガン、コボルド、ノール</p>
+
+  </div>
+</article><article class="card" id="j-cinder-acolyte" data-t="燃え殻の侍祭 cinder acolyte 燃え殻の侍祭はイグニスを崇拝し、死にゆく神の炎を、何も残らなくなるまで引き出して使う。近接戦闘と炎の魔術の両方の能力を持つ。
+">
+  
+  <div class="txt">
+    <h3>燃え殻の侍祭 <span class="en">Cinder Acolyte</span></h3>
+    <p class="num">腕力 6/知力 6/器用 0</p>
+    <div class="desc">燃え殻の侍祭はイグニスを崇拝し、死にゆく神の炎を、何も残らなくなるまで引き出して使う。近接戦闘と炎の魔術の両方の能力を持つ。</div>
+    <p class="where">初期技能: 戦闘 3、炎の魔術 3、呪文詠唱 1、選んだ武器 3</p>
+    <p class="where">装備: ローブ、はじめに武器を選ぶ</p>
+    <p class="where">呪文: 焦熱</p>
+    <p class="where">勧められる種族: 山ドワーフ、ドラコニアン、鬼、ジンニー、ノール</p>
+
+  </div>
+</article><article class="card" id="j-reaver" data-t="略奪者 reaver 略奪者は好みの武器と、必要なときにそれを補う致命的な魔法を持って出発する。最初から死の接吻の呪文を使える。
+">
+  
+  <div class="txt">
+    <h3>略奪者 <span class="en">Reaver</span></h3>
+    <p class="num">腕力 4/知力 5/器用 3</p>
+    <div class="desc">略奪者は好みの武器と、必要なときにそれを補う致命的な魔法を持って出発する。最初から死の接吻の呪文を使える。</div>
+    <p class="where">初期技能: 妖術 3、躱し身 2、戦闘 2、呪文詠唱 2、選んだ武器 3</p>
+    <p class="where">装備: レザーアーマー、はじめに武器を選ぶ</p>
+    <p class="where">呪文: 死の接吻、慣性の一撃、雹の嵐、引き裂く刃</p>
+    <p class="where">勧められる種族: ノール、天狗、バラチ、悪魔の血族、ドラコニアン、山ドワーフ</p>
+
+  </div>
+</article><article class="card" id="j-forgewright" data-t="鍛冶師 forgewright 鍛冶師は、砲台や、ともに戦う機械の仲間を作り出すことを専門とする魔術師だ。
+">
+  
+  <div class="txt">
+    <h3>鍛冶師 <span class="en">Forgewright</span></h3>
+    <p class="num">腕力 2/知力 7/器用 3</p>
+    <div class="desc">鍛冶師は、砲台や、ともに戦う機械の仲間を作り出すことを専門とする魔術師だ。</div>
+    <p class="where">初期技能: 躱し身 2、鍛造術 4、呪文詠唱 2、隠密 2</p>
+    <p class="where">装備: メイス、ローブ、魔力の薬</p>
+    <p class="where">呪文: 動力式鉤縄、棘射出機の建造、ぜんまい仕掛けの蜂の射出、灼心のゴーレムの鍛造、稲妻の渦巻の鍛造</p>
+    <p class="where">勧められる種族: 山ドワーフ、コグリン、バラチ、人間、歩き蔓、水棲の民</p>
+
+  </div>
+</article>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>Dungeon Crawl Stone Soup(DCSS)は、公式のチームとその協力者が作り続けている
+     オープンソースのローグライクである(<a href="https://github.com/crawl/crawl">本家</a>)。
+     ここはその日本語版(0.34.1-ja1)の非公式のスポイラーで、
+     文と数値はすべてゲームの中の説明(ゲーム内の検索 <code>?/</code> と同じもの)から取ってある。
+     タイルの絵は DCSS のもの(CC0)。</p>
+</div></footer>
+<script src="dcss.js"></script>
+</body>
+</html>
