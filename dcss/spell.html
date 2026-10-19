@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>呪文 &mdash; DCSS スポイラー</title>
-<meta name="description" content="DCSS の呪文の全数と説明。">
+<meta name="description" content="DCSS の呪文すべてのデータと説明。">
 <link rel="stylesheet" href="dcss.css">
 </head>
 <body>
@@ -14,10 +14,10 @@
 </div></header>
 <main class="band wide">
 <h1>呪文</h1>
-<p class="lead">401 個(うちあなたが覚えられるもの 134 個)。覚えられる呪文を先に、レベルの低い順に並べ、モンスターだけが使う呪文はその後にまとめた。威力や射程は、ゲームの中ではあなたの技能と能力値で変わる。ここに出ているのはキャラクターのいないときの説明である。</p>
+<p class="lead">全401個のうち、プレイヤーが覚えられるのは134個です。覚えられる呪文をレベルの低い順に並べ、モンスターしか使わない呪文は最後にまとめました。威力や射程は、実際のゲームではキャラクターのスキルや能力値によって変わります。</p>
 <div class="bar">
-  <input type="search" id="q" placeholder="名前・説明で絞り込む" autocomplete="off">
-  <select id="b"><option value="">系統で絞らない</option><option value="召喚術">召喚術</option><option value="呪術">呪術</option><option value="地の魔術">地の魔術</option><option value="妖術">妖術</option><option value="死霊術">死霊術</option><option value="氷の魔術">氷の魔術</option><option value="炎の魔術">炎の魔術</option><option value="転位術">転位術</option><option value="錬金術">錬金術</option><option value="鍛造術">鍛造術</option><option value="風の魔術">風の魔術</option></select><select id="g"><option value="">使い手で絞らない</option><option value="p">あなたが覚えられる</option><option value="m">モンスター専用</option></select>
+  <input type="search" id="q" placeholder="名前や説明で検索" autocomplete="off">
+  <select id="b"><option value="">系統：すべて</option><option value="召喚術">召喚術</option><option value="呪術">呪術</option><option value="地の魔術">地の魔術</option><option value="妖術">妖術</option><option value="死霊術">死霊術</option><option value="氷の魔術">氷の魔術</option><option value="炎の魔術">炎の魔術</option><option value="転位術">転位術</option><option value="錬金術">錬金術</option><option value="鍛造術">鍛造術</option><option value="風の魔術">風の魔術</option></select><select id="g"><option value="">使い手：すべて</option><option value="p">プレイヤーが覚えられる</option><option value="m">モンスター専用</option></select>
   <span class="count" id="count"></span>
 </div>
 <div class="list" id="list">
@@ -29,7 +29,7 @@
   <div class="txt">
     <h3>動力式鉤縄 <span class="en">Kinetic Grapnel</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">鍛造術</b></p>
-    <p class="where">載っている本: 悪戯の魔法書</p>
+    <p class="where">載っている本：悪戯の魔法書</p>
     <div class="game">術者の近接武器に運動エネルギーの細い糸を巻きつけ、そのもう一方の端を近くの敵に向けて撃ち出す。この鉤縄が命中してダメージを与えると、相手に食い込む。すると術者が次にその相手に行う近接攻撃は必ず命中し、少しの殺傷力ボーナスを得る。
 
 レベル: 1        系統: 鍛造術</div>
@@ -45,7 +45,7 @@
   <div class="txt">
     <h3>収拾 <span class="en">Apportation</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: 悪戯の魔法書、パーティートリックの魔法書</p>
+    <p class="where">載っている本：悪戯の魔法書、パーティートリックの魔法書</p>
     <div class="game">離れた所にあるアイテムの山から、一番上のアイテム(または同じ種類のアイテムのまとまり)を術者の近くの床へ引き寄せる。威力が低いと、アイテムが術者の位置まで届かないことがある。
 
 ゾットのオーブのように極めて強力な魔法のアイテムは、この呪文の引力に能動的に抵抗することがある。
@@ -61,7 +61,7 @@
   <div class="txt">
     <h3>小動物の召喚 <span class="en">Summon Small Mammal</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 招集の魔法書、悪戯の魔法書</p>
+    <p class="where">載っている本：招集の魔法書、悪戯の魔法書</p>
     <div class="game">ネズミ、コウモリ、クワッカのいずれかを召喚して術者を助けさせる。呪文の威力が高いほど、クワッカを召喚する確率が上がる。
 
 レベル: 1        系統: 召喚術</div>
@@ -77,7 +77,7 @@
   <div class="txt">
     <h3>有毒の蒸気 <span class="en">Poisonous Vapours</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">錬金術</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 初級毒殺者の手引書、悪戯の魔法書</p>
+    <p class="where">載っている本：初級毒殺者の手引書、悪戯の魔法書</p>
     <div class="game">対象の周りの空気をわずかに有毒な蒸気へと変成させ、不運にもそれを吸い込んだ者を毒に冒す。影響を受ける空気の量はわずかで、唱えたターンより後までは残らない。
 
 毒への耐性を少しでも持つ者には効果がない。
@@ -106,7 +106,7 @@
   <div class="txt">
     <h3>氷結 <span class="en">Freeze</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">氷の魔術</b></p>
-    <p class="where">載っている本: 冷気の魔法書</p>
+    <p class="where">載っている本：冷気の魔法書</p>
     <div class="game">隣接するモンスターを凍えさせ、対象が身に着けている鎧を無視するダメージを与える。冷血のモンスターを一時的に減速させることがある。
 
 レベル: 1        系統: 氷の魔術</div>
@@ -120,7 +120,7 @@
   <div class="txt">
     <h3>減速 <span class="en">Slow</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">呪術</b></p>
-    <p class="where">載っている本: 衰弱の魔法書</p>
+    <p class="where">載っている本：衰弱の魔法書</p>
     <div class="game">この呪文は対象の動きを遅くする。
 
 レベル: 1        系統: 呪術</div>
@@ -134,7 +134,7 @@
   <div class="txt">
     <h3>狐火 <span class="en">Foxfire</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">妖術</b><b class="fl">炎の魔術</b></p>
-    <p class="where">載っている本: 猛火の魔法書</p>
+    <p class="where">載っている本：猛火の魔法書</p>
     <div class="game">術者の隣に燃える沼気の球を2つ生み出す。球は最も近いモンスターを素早く探し出して焼く。対象にたどり着けなかったり、術者が球と位置を入れ替えたりすると、害もなく消散する。
 
 レベル: 1        系統: 妖術/炎の魔術</div>
@@ -148,7 +148,7 @@
   <div class="txt">
     <h3>砂の突風 <span class="en">Sandblast</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">地の魔術</b></p>
-    <p class="where">載っている本: 地占術の魔法書</p>
+    <p class="where">載っている本：地占術の魔法書</p>
     <div class="game">高速の岩の破片を対象に浴びせる。周りの砂粒から岩を集めるのには時間がかかるため、この呪文はたいていの呪文の1.5倍の詠唱時間を要する。このダメージは鎧によって大きく軽減される。
 
 レベル: 1        系統: 地の魔術</div>
@@ -162,7 +162,7 @@
   <div class="txt">
     <h3>電撃 <span class="en">Shock</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">妖術</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 大気の魔法書</p>
+    <p class="where">載っている本：大気の魔法書</p>
     <div class="game">跳ね返る電光の矢を投げつける。防御側の鎧の半分を無視する。
 
 レベル: 1        系統: 妖術/風の魔術</div>
@@ -178,7 +178,7 @@
   <div class="txt">
     <h3>魂の破片 <span class="en">Soul Splinter</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: 死霊術の魔法書、反生命の魔法書</p>
+    <p class="where">載っている本：死霊術の魔法書、反生命の魔法書</p>
     <div class="game">生き物、神聖な存在、悪魔の魂のごく小さな欠片を無理やり体から離れさせ、魂の鬼火として実体化させようとする。この鬼火は名目上は死霊術師の支配下にあるが、本能的に本来の居場所へ戻ろうとして、自分が生み出された元のモンスターを何よりも優先して攻撃する。鬼火が元の場所に戻るまで、犠牲者は弱体化する。
 
 より強力な魂から生み出された鬼火ほど攻撃のダメージが大きいが、常に脆い。
@@ -206,7 +206,7 @@ _________________
   <div class="txt">
     <h3>魔法の矢 <span class="en">Magic Dart</span></h3>
     <p class="flags"><b class="lv">Lv 1</b><b class="fl">妖術</b></p>
-    <p class="where">載っている本: 下級魔術の魔法書、妖術の魔法書</p>
+    <p class="where">載っている本：下級魔術の魔法書、妖術の魔法書</p>
     <div class="game">この呪文は魔法のエネルギーによる小さな矢を放つ。これは決して外れることがない。
 
 レベル: 1        系統: 妖術</div>
@@ -230,7 +230,7 @@ _________________
   <div class="txt">
     <h3>インプの召喚 <span class="en">Call Imp</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 下級魔術の魔法書、招集の魔法書</p>
+    <p class="where">載っている本：下級魔術の魔法書、招集の魔法書</p>
     <div class="game">地獄の穴から下級の悪魔を一体呼び出す。この悪魔は術者の敵を突くための槍を携えている。インプの武器の質は呪文の威力に応じて上がる。
 
 レベル: 2        系統: 召喚術</div>
@@ -246,7 +246,7 @@ _________________
   <div class="txt">
     <h3>不運の牙 <span class="en">Jinxbite</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">呪術</b></p>
-    <p class="where">載っている本: 災難の魔法書、パーティートリックの魔法書</p>
+    <p class="where">載っている本：災難の魔法書、パーティートリックの魔法書</p>
     <div class="game">いたずら好きの精霊たちの注意を引く。効果が続く間、精霊たちは術者の攻撃に続けて追い打ちをかける。呪文が犠牲者の意志力に打ち勝つと、犠牲者は軽いダメージを受け、妖精たちの戯れの悪意によって衰弱させられる。
 
 しかし妖精の助けは気まぐれである。影響を受けやすい犠牲者が見えていなければ呼び寄せることはできず、そのような者がいなくなるとすぐに立ち去ってしまう。また、妖精を呼ぶと術者自身の意志力もしばらくの間低下する。
@@ -264,7 +264,7 @@ _________________
   <div class="txt">
     <h3>墓場の鉤爪 <span class="en">Grave Claw</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: 死霊術の魔法書</p>
+    <p class="where">載っている本：死霊術の魔法書</p>
     <div class="game">死んで間もない者たちの怨念を呼び起こし、骨の破片で指定した敵を串刺しにする。この呪文は決して外れず、対象を数ターンの間その場に縫い止めるが、唱えると術者にまとわりつく死の名残を急速に消費する。
 
 この呪文を唱えられるだけの怨念は最大3回分まで蓄えられ、補充するには十分な数の生き物を死に至らしめるしかない。
@@ -280,7 +280,7 @@ _________________
   <div class="txt">
     <h3>引き寄せ <span class="en">Lesser Beckoning</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: 空間転位の魔法書</p>
+    <p class="where">載っている本：空間転位の魔法書</p>
     <div class="game">対象を手招きし、術者の隣に引き寄せようとする。
 
 レベル: 2        系統: 転位術</div>
@@ -294,7 +294,7 @@ _________________
   <div class="txt">
     <h3>慣性の一撃 <span class="en">Momentum Strike</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">妖術</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: 空間転位の魔法書</p>
+    <p class="where">載っている本：空間転位の魔法書</p>
     <div class="game">術者自身の未来の動きから借りたエネルギーを対象に浴びせる。その後しばらくの間、術者は移動不可の状態になり、歩くことも、飛び回ることも、這うこともできなくなる。動くことのできるモンスターしかこの呪文を唱えられない。
 
 レベル: 2        系統: 妖術/転位術</div>
@@ -333,7 +333,7 @@ _________________
   <div class="txt">
     <h3>水銀の鏃 <span class="en">Mercury Arrow</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">妖術</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 初級毒殺者の手引書、我が沼地滞在記</p>
+    <p class="where">載っている本：初級毒殺者の手引書、我が沼地滞在記</p>
     <div class="game">元素の水銀の矢を生み出す。この矢は当たったものに直接毒のダメージを与え、さらに短い間その近接攻撃を弱めることがある。
 
 矢の物理的な勢いは、毒に完全な耐性を持つ者にも少しのダメージを与える。また、弱体化の効果は隣接する対象にも飛び散ることがあり、毒への耐性をまったく無視する。
@@ -370,7 +370,7 @@ _________________
   <div class="txt">
     <h3>焼灼の光線 <span class="en">Searing Ray</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">妖術</b></p>
-    <p class="where">載っている本: 妖術の魔法書</p>
+    <p class="where">載っている本：妖術の魔法書</p>
     <div class="game">術者の手から、貫通する秘術のエネルギーの光線を絶え間なく放つ。術者が呪文に集中を保ち、魔力を供給し続ける(その場で待機し、他の行動をとらない)限り、対象が動いても光線はそれを追い続ける。
 
 レベル: 2        系統: 妖術</div>
@@ -384,7 +384,7 @@ _________________
   <div class="txt">
     <h3>瞬間移動 <span class="en">Blink</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: 下級魔術の魔法書、空間転位の魔法書</p>
+    <p class="where">載っている本：下級魔術の魔法書、空間転位の魔法書</p>
     <div class="game">術者を無作為に短距離転移させる。この方法で転移したあとは、呪文の威力に応じたしばらくの間、この呪文を再び唱えることができない。
 
 レベル: 2        系統: 転位術</div>
@@ -428,7 +428,7 @@ _________________
   <div class="txt">
     <h3>魔法の眠り <span class="en">Ensorcelled Hibernation</span></h3>
     <p class="flags"><b class="lv">Lv 2</b><b class="fl">呪術</b><b class="fl">氷の魔術</b></p>
-    <p class="where">載っている本: 夜盗の魔法書、夢幻の魔法書</p>
+    <p class="where">載っている本：夜盗の魔法書、夢幻の魔法書</p>
     <div class="game">対象の代謝を低下させ、冬眠させる。目覚めたあとしばらくの間、対象は再び眠らされることがない。
 
 レベル: 2        系統: 呪術/氷の魔術</div>
@@ -448,7 +448,7 @@ _________________
   <div class="txt">
     <h3>ぜんまい仕掛けの蜂の射出 <span class="en">Launch Clockwork Bee</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">鍛造術</b></p>
-    <p class="where">載っている本: 我が沼地滞在記</p>
+    <p class="where">載っている本：我が沼地滞在記</p>
     <div class="game">機械仕掛けの蜂を組み立て、数ターンかけてそのぜんまいを巻き上げたあと、指定した敵に向けて放つ。蜂は素早く強力だが、攻撃するにつれてぜんまいがすぐにほどけ、最終的には動けずなすすべもない状態になる。
 
 術者は休眠中の蜂に向かって移動しようとすることで、1MPを消費して蜂を修理し、ぜんまいを巻き直すことができる。
@@ -466,7 +466,7 @@ _________________
   <div class="txt">
     <h3>オゾクブの鎧 <span class="en">Ozocubu&#x27;s Armour</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">氷の魔術</b></p>
-    <p class="where">載っている本: 戦いの魔法書</p>
+    <p class="where">載っている本：戦いの魔法書</p>
     <div class="game">術者の体を厚い氷の保護層で覆い、現在の場所に留まっている限り、防御力に大きなボーナスを与える。術者が新しい場所へ移動すると、氷はひび割れて剥がれ落ちる。重い鎧を着ているほどこの呪文の効果は下がり、術者の鎧の重さが大きいほど得られるボーナスは小さくなる。
 
 レベル: 3        系統: 氷の魔術</div>
@@ -514,7 +514,7 @@ _________________
   <div class="txt">
     <h3>ヴァンパイアの吸血 <span class="en">Vampiric Draining</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: 死霊術の魔法書</p>
+    <p class="where">載っている本：死霊術の魔法書</p>
     <div class="game">隣接する生き物の生命を奪い、術者に与える。
 
 レベル: 3        系統: 死霊術</div>
@@ -571,7 +571,7 @@ _________________
   <div class="txt">
     <h3>俊足 <span class="en">Swiftness</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 大気の魔法書、夜盗の魔法書</p>
+    <p class="where">載っている本：大気の魔法書、夜盗の魔法書</p>
     <div class="game">風を呼び起こし、術者の移動速度を大きく上げる。効果が終わったあと、しばらくの間術者の動きは鈍くなる。
 
 レベル: 3        系統: 風の魔術</div>
@@ -600,7 +600,7 @@ _________________
   <div class="txt">
     <h3>内なる炎 <span class="en">Inner Flame</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">呪術</b><b class="fl">炎の魔術</b></p>
-    <p class="where">載っている本: 炎の魔法書、自然発火の魔法書</p>
+    <p class="where">載っている本：炎の魔法書、自然発火の魔法書</p>
     <div class="game">敵を激しい炎で満たす。この炎は対象が攻撃を受けるたびに放たれ、死んだときには爆発的に解き放たれる。起こる爆発の大きさは対象の大きさによって決まる。
 
 レベル: 3        系統: 呪術/炎の魔術</div>
@@ -623,7 +623,7 @@ _________________
   <div class="txt">
     <h3>凍てつく城壁 <span class="en">Frozen Ramparts</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">氷の魔術</b></p>
-    <p class="where">載っている本: 冷気の魔法書</p>
+    <p class="where">載っている本：冷気の魔法書</p>
     <div class="game">短い間、周囲の壁を氷で覆う。凍りついた壁の近くに迷い込んだ敵はダメージを受け、冷血のモンスターは一時的に減速することがある。犠牲者一体が一度に影響を受けるのは、一つの氷の壁からだけである。
 
 術者が新しい場所へ移動すると、氷はひび割れて剥がれ落ちる。
@@ -648,7 +648,7 @@ _________________
   <div class="txt">
     <h3>壁の透過 <span class="en">Passwall</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">地の魔術</b></p>
-    <p class="where">載っている本: 地占術の魔法書、夜盗の魔法書</p>
+    <p class="where">載っている本：地占術の魔法書、夜盗の魔法書</p>
     <div class="game">術者が隣接する岩の壁の中を短い距離通り抜け、反対側に再び現れることを可能にする。この呪文は唱えるのに異常に長い時間がかかり、その間術者は行動できないが、岩と同調するため防御力が上がる。
 
 レベル: 3        系統: 地の魔術</div>
@@ -685,7 +685,7 @@ _________________
   <div class="txt">
     <h3>斃れし者の遁走曲 <span class="en">Fugue of the Fallen</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: 戦いの魔法書、夢幻の魔法書</p>
+    <p class="where">載っている本：戦いの魔法書、夢幻の魔法書</p>
     <div class="game">遠い昔の死者の残滓に呼びかける。この呪文が働いている間、術者またはその味方が召喚されたものでない敵を倒すたびに、より多くの復讐に燃える魂が術者の武器に引き寄せられ、一時的に近接攻撃と射撃の効果を高める。このボーナスが最大に達すると、攻撃が当たるたびに死者の苦しみの片鱗が解き放たれ、あなたの対象に隣接する他のすべての敵に苦痛のダメージを与える。
 
 この呪文を再び唱えると、引き寄せた魂への支配を手放し、蓄えたボーナスはすべて元に戻る。また、維持している間も、死者たちのけたたましい嘆きが望まぬ注意を引きつけることがある。
@@ -718,7 +718,7 @@ _________________
   <div class="txt">
     <h3>氷の獣の召喚 <span class="en">Summon Ice Beast</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">氷の魔術</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 獣の魔法書</p>
+    <p class="where">載っている本：獣の魔法書</p>
     <div class="game">氷の獣を呼び出して術者に仕えさせる。獣の強さは呪文の威力によって決まる。
 
 レベル: 3        系統: 氷の魔術/召喚術</div>
@@ -732,7 +732,7 @@ _________________
   <div class="txt">
     <h3>混乱の一撃 <span class="en">Confusing Touch</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">呪術</b></p>
-    <p class="where">載っている本: 衰弱の魔法書</p>
+    <p class="where">載っている本：衰弱の魔法書</p>
     <div class="game">術者の利き手に魔法のエネルギーを付与する。このエネルギーは術者がモンスターに触れたときに解放され、そのモンスターを混乱させることがある。この方法でモンスターに触れようとしている間、術者の攻撃はダメージを与えない。
 
 レベル: 3        系統: 呪術</div>
@@ -754,7 +754,7 @@ _________________
   <div class="txt">
     <h3>犬族のしもべの召喚 <span class="en">Call Canine Familiar</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 招集の魔法書</p>
+    <p class="where">載っている本：招集の魔法書</p>
     <div class="game">犬神を一体召喚して術者を助けさせる。この神秘の犬は召喚者と絆を結び、術者の呪文の威力にそのまま比例して強くなる。
 
 使い魔が近くにいるときにこの呪文を再び唱えると、使い魔に追加の魔力を吹き込む。傷の一部を癒し、毒を取り除き、次の攻撃をより素早くし、隣接する敵も薙ぎ払うようにする。
@@ -774,7 +774,7 @@ _________________
   <div class="txt">
     <h3>石錐の矢 <span class="en">Stone Arrow</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">妖術</b><b class="fl">地の魔術</b></p>
-    <p class="where">載っている本: 地占術の魔法書</p>
+    <p class="where">載っている本：地占術の魔法書</p>
     <div class="game">この呪文は鋭く尖った岩の杭を放つ。
 
 レベル: 3        系統: 妖術/地の魔術</div>
@@ -805,7 +805,7 @@ _________________
   <div class="txt">
     <h3>雹の嵐 <span class="en">Hailstorm</span></h3>
     <p class="flags"><b class="lv">Lv 3</b><b class="fl">妖術</b><b class="fl">氷の魔術</b></p>
-    <p class="where">載っている本: 冷気の魔法書</p>
+    <p class="where">載っている本：冷気の魔法書</p>
     <div class="game">雹の連続砲撃を呼び起こし、避けそこなった近くのモンスターを打ちのめす。嵐の目は十分に広いため、術者に隣接するモンスターは影響を受けない。強い衝撃と鋭い刃のため、ダメージの半分は冷気への耐性を無視する。
 
 レベル: 3        系統: 妖術/氷の魔術</div>
@@ -839,7 +839,7 @@ _________________
   <div class="txt">
     <h3>イスケンデルンの戦闘球 <span class="en">Iskenderun&#x27;s Battlesphere</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">妖術</b><b class="fl">鍛造術</b></p>
-    <p class="where">載っている本: 力の魔法書</p>
+    <p class="where">載っている本：力の魔法書</p>
     <div class="game">破壊のエネルギーの小さな球を生み出す。創造者が攻撃呪文を唱えるたびに、戦闘球も届く範囲で最も傷ついた近くの敵に向けて、必中のエネルギーの一斉射撃を放つ。
 
 戦闘球の創造者は、戦闘球を傷つけることなくその位置越しに自由に撃つことができる。
@@ -874,7 +874,7 @@ _________________
   <div class="txt">
     <h3>エリンギャの驚きのクロコダイル <span class="en">Eringya&#x27;s Surprising Crocodile</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 我が沼地滞在記、招集の魔法書</p>
+    <p class="where">載っている本：我が沼地滞在記、招集の魔法書</p>
     <div class="game">歯の鋭いクロコダイルを召喚し、隣接する敵を襲わせる。クロコダイルは濁った水の奔流とともに術者の足元に現れ、選んだ対象に強化された攻撃を加える。そして対象と術者の両方を後ろへ引きずったあと、術者を自分の背後に安全に降ろす。クロコダイルが活動している間は、再び唱えることはできない。
 
 レベル: 4        系統: 召喚術</div>
@@ -889,7 +889,7 @@ _________________
   <div class="txt">
     <h3>オルグレブの毒気の光輪 <span class="en">Olgreb&#x27;s Toxic Radiance</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 初級毒殺者の手引書</p>
+    <p class="where">載っている本：初級毒殺者の手引書</p>
     <div class="game">術者に毒の力を放射させ、呪文が続く限り、視界内のすべてのものに絶えず毒を与える。
 
 レベル: 4        系統: 錬金術</div>
@@ -918,7 +918,7 @@ _________________
   <div class="txt">
     <h3>シゴツヴィの腐敗 <span class="en">Cigotuvi&#x27;s Putrefaction</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">死霊術</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 衰弱の魔法書</p>
+    <p class="where">載っている本：衰弱の魔法書</p>
     <div class="game">傷ついた生体組織の腐敗を魔法で加速させ、指定した犠牲者の傷口から数ターンにわたって瘴気の大雲を噴き出させる。この瘴気は、その中に立つ生き物を減速させ、重い毒に冒すことがある。術者の立っている場所には気流のおかげで瘴気が生じないが、それ以外の点で術者がその効果から守られるわけではない。
 
 この呪文は少なくとも重傷を負った生き物にしか唱えられず、このような壊死の力を操ると、術者自身の体力も一時的に衰弱する(ただし、呪文の威力が高いほどこの副作用は和らぐ)。
@@ -943,7 +943,7 @@ _________________
   <div class="txt">
     <h3>セイスモサウルスの卵の召喚 <span class="en">Summon Seismosaurus Egg</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">召喚術</b><b class="fl">地の魔術</b></p>
-    <p class="where">載っている本: 荒野の魔法書、獣の魔法書</p>
+    <p class="where">載っている本：荒野の魔法書、獣の魔法書</p>
     <div class="game">孵化寸前の、獰猛なトカゲの卵を召喚する。近くに敵がいて、術者が卵に隣接している限り、召喚から数ターン後に孵化し、召喚者の敵に大暴れする。
 
 幼体であっても、セイスモサウルスは侮れない存在である。山のように頑強で、その足音は激しい地震の衝撃波を生み出すことができる。衝撃波はそれぞれ飛んでいない敵にかなりのダメージを与え、ときには完全に足場を失わせることさえある。
@@ -998,7 +998,7 @@ _________________
   <div class="txt">
     <h3>ヴィーの電撃突進 <span class="en">Vhi&#x27;s Electric Charge</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">転位術</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 稲妻の魔法書</p>
+    <p class="where">載っている本：稲妻の魔法書</p>
     <div class="game">術者を近くの選んだ敵に向けて猛然と突進させ、到着時に命中率の高い近接攻撃を繰り出す。突進の距離、呪文の威力、攻撃の物理ダメージに応じて、追加の電撃ダメージを与える。術者はねじれた空間の膜に包まれるため、モンスター、罠、有害な地形を安全に通り抜けることができ、到着地点にいるモンスターを押しのけることもできる。この呪文にかかる時間は、通常呪文を唱えるのに必要な時間と、近接攻撃を一回繰り出すのに必要な時間のうち長い方となる。
 
 レベル: 4        系統: 転位術/風の魔術</div>
@@ -1035,7 +1035,7 @@ _________________
   <div class="txt">
     <h3>恐慌の喚起 <span class="en">Cause Fear</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">呪術</b></p>
-    <p class="where">載っている本: 呪術の魔法書、ドラゴンの魔法書</p>
+    <p class="where">載っている本：呪術の魔法書、ドラゴンの魔法書</p>
     <div class="game">術者の近くにいる者に恐怖を抱かせる。影響を受けた者は術者に近づけなくなり、ときに近接攻撃をしそこなう。術者の視界から外れると、この効果は切れる。
 
 レベル: 4        系統: 呪術</div>
@@ -1053,7 +1053,7 @@ _________________
   <div class="txt">
     <h3>旋風の一撃 <span class="en">Airstrike</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 大気の魔法書</p>
+    <p class="where">載っている本：大気の魔法書</p>
     <div class="game">モンスターを取り巻く大気をねじり、気象の猛威の渦を起こす。周りが何もない空間である対象ほど大きなダメージを受ける。
 
 レベル: 4        系統: 風の魔術</div>
@@ -1085,7 +1085,7 @@ _________________
   <div class="txt">
     <h3>死霊の蘇生 <span class="en">Animate Dead</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: 死の魔法書</p>
+    <p class="where">載っている本：死の魔法書</p>
     <div class="game">この呪文を唱えてからしばらくの間、術者が殺した生き物はゾンビとして蘇る。モンスターを蘇らせる確率と効果の持続時間は、呪文の威力に応じて増す。この呪文を再び唱えるか、その階を離れると、ゾンビは塵に還る。
 
 レベル: 4        系統: 死霊術</div>
@@ -1104,7 +1104,7 @@ _________________
   <div class="txt">
     <h3>殉教者の弔鐘 <span class="en">Martyr&#x27;s Knell</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">死霊術</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 反生命の魔法書</p>
+    <p class="where">載っている本：反生命の魔法書</p>
     <div class="game">遠い昔に死んだ殉教者の魂を呼び寄せ、しばらくの間あなたの味方を守らせる。この魂は、本来なら味方が受けるはずのダメージの一部を代わりに引き受ける。
 
 この魂が(再び!)殺されると、皮剥げ幽霊に変わり、敵に幻の傷を負わせる。この傷ははかないもので、幽霊が去ると消えてしまう。その前にあなたが犠牲者を殺さない限りは。
@@ -1154,7 +1154,7 @@ _________________
   <div class="txt">
     <h3>炎の波 <span class="en">Flame Wave</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">妖術</b><b class="fl">炎の魔術</b></p>
-    <p class="where">載っている本: 炎の魔法書</p>
+    <p class="where">載っている本：炎の魔法書</p>
     <div class="game">術者の周囲に炎の波を浴びせる。術者が集中を保ち、呪文に魔力を供給し続ける(その場で待機し、他の行動をとらない)と、より多く、より大きな炎の波が外へと広がっていく。
 
 レベル: 4        系統: 妖術/炎の魔術</div>
@@ -1175,7 +1175,7 @@ _________________
   <div class="txt">
     <h3>焼夷の炎 <span class="en">Sticky Flame</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">炎の魔術</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 炎の魔法書</p>
+    <p class="where">載っている本：炎の魔法書</p>
     <div class="game">焼夷性の粘液を短い射程で噴きつける。粘液は隣接するモンスターにまとわりつき、数ターンにわたって鎧を無視する炎のダメージを与える。犠牲者が移動すると、火は早く消えてしまう。
 
 対象が実体を持たない場合、液体の炎はまとわりつかない。
@@ -1194,7 +1194,7 @@ _________________
   <div class="txt">
     <h3>爆発性の晶柱 <span class="en">Fulminant Prism</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">妖術</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 妖術の魔法書</p>
+    <p class="where">載っている本：妖術の魔法書</p>
     <div class="game">不安定な柔らかい金の合金でできた輝く晶柱を生み出す。しかし法定通貨としては役に立たない。残念ながら、少し時間が経つと秘術の力で激しく爆発してしまうからである。早く破壊されると、その爆発はずっと弱くなる。
 
 レベル: 4        系統: 妖術/錬金術</div>
@@ -1217,7 +1217,7 @@ _________________
   <div class="txt">
     <h3>石化 <span class="en">Petrify</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">錬金術</b><b class="fl">地の魔術</b></p>
-    <p class="where">載っている本: 変成の魔法書</p>
+    <p class="where">載っている本：変成の魔法書</p>
     <div class="game">指定したモンスターと、連鎖する最大2体の他の敵を石化させる。抵抗するだけの意志力を持たない者は短い間減速したあと、石に変わる。肉体に戻るまでは行動できないが、受けるダメージも半分になる。二次的な対象に対しては呪文の威力が弱まる。
 
 レベル: 4        系統: 錬金術/地の魔術</div>
@@ -1251,7 +1251,7 @@ _________________
   <div class="txt">
     <h3>苦悩 <span class="en">Anguish</span></h3>
     <p class="flags"><b class="lv">Lv 4</b><b class="fl">呪術</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: 呪術の魔法書、夢幻の魔法書</p>
+    <p class="where">載っている本：呪術の魔法書、夢幻の魔法書</p>
     <div class="game">近くの敵に超自然的な苦悶をもたらし、効果が続く間、その敵が与えたダメージをすべて自分自身に跳ね返らせる。意志の強い敵は苦痛と受難を見せる死霊術の幻影に抵抗することがあり、精神を持たないモンスターには効果がない。
 
 レベル: 4        系統: 呪術/死霊術</div>
@@ -1303,7 +1303,7 @@ _________________
   <div class="txt">
     <h3>アリステイアの酩酊 <span class="en">Alistair&#x27;s Intoxication</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: パーティートリックの魔法書</p>
+    <p class="where">載っている本：パーティートリックの魔法書</p>
     <div class="game">周りにいる者の脳内物質のごく一部をアルコールに変換し、視界内のすべての知性あるモンスターを混乱させようとする(ただし、毒への耐性を持つモンスターはこの効果に抵抗することがある)。他者の精神との接触に成功すると、術者も短い間酩酊する。この呪文はしばしば魔術師の宴会で場を和ませるために唱えられる。
 
 レベル: 5        系統: 錬金術</div>
@@ -1317,7 +1317,7 @@ _________________
   <div class="txt">
     <h3>ドライアドの召喚 <span class="en">Summon Forest</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">召喚術</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: 荒野の魔法書、沼沢の書</p>
+    <p class="where">載っている本：荒野の魔法書、沼沢の書</p>
     <div class="game">森に覆われた次元をこの世界と無理やり交差させる。成功するには開けた空間が必要である。呪文が続いている間、森の精霊が呼び出され、森の木々が目覚めて近くの敵にダメージを与える。呪文の威力が高いほど、交差した次元の持続時間、大きさ、木々の密度、そして精霊の強さが増す。
 
 レベル: 5        系統: 召喚術/転位術</div>
@@ -1348,7 +1348,7 @@ _________________
   <div class="txt">
     <h3>ファイアボール <span class="en">Fireball</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">妖術</b><b class="fl">炎の魔術</b></p>
-    <p class="where">載っている本: ドラゴンの魔法書</p>
+    <p class="where">載っている本：ドラゴンの魔法書</p>
     <div class="game">爆発する火の玉を投げつける。
 
 レベル: 5        系統: 妖術/炎の魔術</div>
@@ -1375,7 +1375,7 @@ _________________
   <div class="txt">
     <h3>マナバイパーの召喚 <span class="en">Summon Mana Viper</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">呪術</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 荒野の魔法書、獣の魔法書</p>
+    <p class="where">載っている本：荒野の魔法書、獣の魔法書</p>
     <div class="game">紫の鱗を持つ蛇を召喚する。その噛みつきは、ほとんどどんな敵の魔力の蓄えもたちまち奪い取る。威力が高いほど、この蛇の噛みつきの反魔法の性質はさらに強まる。
 
 レベル: 5        系統: 呪術/召喚術</div>
@@ -1389,7 +1389,7 @@ _________________
   <div class="txt">
     <h3>ヤーラの強制魔法解除術 <span class="en">Yara&#x27;s Violent Unravelling</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">呪術</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 災難の魔法書</p>
+    <p class="where">載っている本：災難の魔法書</p>
     <div class="game">すでに魔法の効果による祝福(または呪い)を受けているモンスターに唱えると、その効果を引き裂き、破壊的な変異性の放射線の飛沫に変える。犠牲者とその隣にいる者すべてはその放射線を浴びてひどく歪み、弱体化して鎧の効果が下がる。召喚されたモンスターは特に弱く、この次元に縛りつけている魔法がほどけて、ただちに送還されてしまう。
 
 レベル: 5        系統: 呪術/錬金術</div>
@@ -1451,7 +1451,7 @@ _________________
   <div class="txt">
     <h3>凍気の雲 <span class="en">Freezing Cloud</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">妖術</b><b class="fl">氷の魔術</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 氷結の魔法書</p>
+    <p class="where">載っている本：氷結の魔法書</p>
     <div class="game">この呪文は致命的な冷気の雲を出現させる。
 
 レベル: 5        系統: 妖術/氷の魔術/風の魔術</div>
@@ -1465,7 +1465,7 @@ _________________
   <div class="txt">
     <h3>弧状電撃 <span class="en">Arcjolt</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">妖術</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 稲妻の魔法書</p>
+    <p class="where">載っている本：稲妻の魔法書</p>
     <div class="game">術者に隣接するもの、およびそのすぐ近くにあるものすべてに電気の波を流す。電気は繋がったものすべてを連鎖的に伝わっていくが、術者自身は影響を受けない。このダメージは防御側の鎧の半分を無視する。
 
 レベル: 5        系統: 妖術/風の魔術</div>
@@ -1486,7 +1486,7 @@ _________________
   <div class="txt">
     <h3>放射の光 <span class="en">Irradiate</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">妖術</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 自然発火の魔法書、変成の魔法書</p>
+    <p class="where">載っている本：自然発火の魔法書、変成の魔法書</p>
     <div class="game">術者の皮膚(またはそれに相当するもの)のごく薄い層を純粋な魔法エネルギーへと直接変成させ、隣接するモンスターに浴びせる。犠牲者の体をひどく歪め、弱らせて鎧の効果を下げることがある。術者もまったく無傷で済むわけではない。魔力の一部がその身に残り、何度か唱えると危険なほど汚染されてしまう。
 
 レベル: 5        系統: 妖術/錬金術</div>
@@ -1505,7 +1505,7 @@ _________________
   <div class="txt">
     <h3>爆発の触媒 <span class="en">Detonation Catalyst</span></h3>
     <p class="flags"><b class="lv">Lv 5</b><b class="fl">炎の魔術</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 自然発火の魔法書、戦いの魔法書</p>
+    <p class="where">載っている本：自然発火の魔法書、戦いの魔法書</p>
     <div class="game">術者の拳または近接武器に揮発性の触媒を取り付け、攻撃のたびに主目標で炎の爆発を起こさせる。術者とその味方は爆発の影響から守られる。術者が攻撃を続けている限り触媒の働きはいつまでも長引かせられるが、他の行動をとると急速に効力を失う。術者の武器の基本ダメージと術者の呪文の威力は、それぞれ爆発のダメージを高める。
 
 レベル: 5        系統: 炎の魔術/錬金術</div>
@@ -1603,7 +1603,7 @@ _________________
   <div class="txt">
     <h3>エリンギャの毒沼 <span class="en">Eringya&#x27;s Noxious Bog</span></h3>
     <p class="flags"><b class="lv">Lv 6</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 沼沢の書</p>
+    <p class="where">載っている本：沼沢の書</p>
     <div class="game">術者から汚泥を奔流のように噴き出させ、近くの一帯を毒沼に変える。汚泥はすべてのモンスターにダメージを与えて毒に冒す。毒への耐性を持つ者も例外ではない。複数の固い地形に隣接する場所や、深い水や溶岩のように固い床のない場所には沼はできない。この変化は一時的なもので、術者の視界の外では維持できない。呪文の威力が高いほど沼が長く残る。
 
 レベル: 6        系統: 錬金術</div>
@@ -1638,7 +1638,7 @@ _________________
   <div class="txt">
     <h3>サボテンの巨人の召喚 <span class="en">Summon Cactus Giant</span></h3>
     <p class="flags"><b class="lv">Lv 6</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 荒野の魔法書</p>
+    <p class="where">載っている本：荒野の魔法書</p>
     <div class="game">とりわけ棘の多い部族から戦士を一人召喚する。この巨人を近接攻撃で打った敵は、痛い目を見て驚くことになる! 高い威力で唱えると、より年長で頑強な戦士が呼びかけに応える。
 
 レベル: 6        系統: 召喚術</div>
@@ -1673,7 +1673,7 @@ _________________
   <div class="txt">
     <h3>プラズマ光線 <span class="en">Plasma Beam</span></h3>
     <p class="flags"><b class="lv">Lv 6</b><b class="fl">炎の魔術</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 猛火の魔法書、稲妻の魔法書</p>
+    <p class="where">載っている本：猛火の魔法書、稲妻の魔法書</p>
     <div class="game">術者から最も遠くにいる敵の一体に向けて、貫通するプラズマの光線を放つ。電離した光線は防御側の鎧の半分を無視し、その後に続いて二本目の炎の光線が放たれる。
 
 レベル: 6        系統: 炎の魔術/風の魔術</div>
@@ -1725,7 +1725,7 @@ _________________
   <div class="txt">
     <h3>星の炸裂 <span class="en">Starburst</span></h3>
     <p class="flags"><b class="lv">Lv 6</b><b class="fl">妖術</b><b class="fl">炎の魔術</b></p>
-    <p class="where">載っている本: 猛火の魔法書</p>
+    <p class="where">載っている本：猛火の魔法書</p>
     <div class="game">術者からあらゆる方向へ、貫通する炎の矢を放つ。
 
 レベル: 6        系統: 妖術/炎の魔術</div>
@@ -1739,7 +1739,7 @@ _________________
   <div class="txt">
     <h3>死の霊媒術 <span class="en">Death Channel</span></h3>
     <p class="flags"><b class="lv">Lv 6</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: 反生命の魔法書</p>
+    <p class="where">載っている本：反生命の魔法書</p>
     <div class="game">殺された生き物、悪魔、神聖なモンスターの魂を縛りつけ、呪文の効果が続く間、その亡霊をこの世に留めて術者のために戦わせる。
 
 レベル: 6        系統: 死霊術</div>
@@ -1787,7 +1787,7 @@ _________________
   <div class="txt">
     <h3>砲撃 <span class="en">Bombard</span></h3>
     <p class="flags"><b class="lv">Lv 6</b><b class="fl">妖術</b><b class="fl">地の魔術</b></p>
-    <p class="where">載っている本: 力の魔法書</p>
+    <p class="where">載っている本：力の魔法書</p>
     <div class="game">鉄球を対象へと撃ち出す。その爆風の勢いで、術者はしばしばよろめいて後ずさる。
 
 レベル: 6        系統: 妖術/地の魔術</div>
@@ -1803,7 +1803,7 @@ _________________
   <div class="txt">
     <h3>要塞の爆風 <span class="en">Fortress Blast</span></h3>
     <p class="flags"><b class="lv">Lv 6</b><b class="fl">鍛造術</b></p>
-    <p class="where">載っている本: 力の魔法書</p>
+    <p class="where">載っている本：力の魔法書</p>
     <div class="game">術者自身の肉体の堅固さを引き出して運動エネルギーの衝撃波を生み出し、広い範囲の敵にダメージを与える。衝撃波ができ始めるまでの数ターンの間、術者はその場に固定され、その間に位置をずらされると呪文は取り消される。ただし、それ以外の行動は自由にとれる。
 
 呪文の威力が高いほど呪文が早く完成するが、ダメージは完全に術者のACで決まる。
@@ -1819,7 +1819,7 @@ _________________
   <div class="txt">
     <h3>転送 <span class="en">Dispersal</span></h3>
     <p class="flags"><b class="lv">Lv 6</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: 次元歪曲の魔法書</p>
+    <p class="where">載っている本：次元歪曲の魔法書</p>
     <div class="game">術者から短い距離内にいるモンスターをすべてテレポートで遠くへ飛ばす。意志力で抵抗したモンスターも、より短い距離ではあるが抵抗できずにブリンクさせられる。また、影響を受けたモンスターは、空間の歪みによって混乱することがある(その確率は意志力によって別に判定される)。
 
 レベル: 6        系統: 転位術</div>
@@ -1850,7 +1850,7 @@ _________________
   <div class="txt">
     <h3>オゾクブの瞬間凍結 <span class="en">Ozocubu&#x27;s Refrigeration</span></h3>
     <p class="flags"><b class="lv">Lv 7</b><b class="fl">氷の魔術</b></p>
-    <p class="where">載っている本: 氷結の魔法書</p>
+    <p class="where">載っている本：氷結の魔法書</p>
     <div class="game">大気を厳しく冷やし、視界内の他のすべてのモンスターを凍えさせる。密集しているモンスターにはあまり効果がない。味方に隣接している者は冷気からある程度守られ、受けるダメージが小さくなる。
 
 レベル: 7        系統: 氷の魔術</div>
@@ -1866,7 +1866,7 @@ _________________
   <div class="txt">
     <h3>スフィンクスの姉妹 <span class="en">Sphinx Sisters</span></h3>
     <p class="flags"><b class="lv">Lv 7</b><b class="fl">呪術</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 災難の魔法書、獣の魔法書</p>
+    <p class="where">載っている本：災難の魔法書、獣の魔法書</p>
     <div class="game">謎かけをするスフィンクスを一対召喚する。一体は守護者、一体は略奪者で、呪術で術者の敵を弱らせ、激しい風で打ちのめす。
 
 呪文の威力が高いほど、スフィンクスの耐久力とその呪文の威力が増す。
@@ -1895,7 +1895,7 @@ _________________
   <div class="txt">
     <h3>ヒドラの召喚 <span class="en">Summon Hydra</span></h3>
     <p class="flags"><b class="lv">Lv 7</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 沼沢の書</p>
+    <p class="where">載っている本：沼沢の書</p>
     <div class="game">多くの首を持つヒドラを召喚し、短い間術者と共に戦わせる。呪文の威力によって首の数が決まる。
 
 レベル: 7        系統: 召喚術</div>
@@ -1928,7 +1928,7 @@ _________________
   <div class="txt">
     <h3>多重攻撃 <span class="en">Manifold Assault</span></h3>
     <p class="flags"><b class="lv">Lv 7</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: 次元歪曲の魔法書、戦いの魔法書</p>
+    <p class="where">載っている本：次元歪曲の魔法書、戦いの魔法書</p>
     <div class="game">空間を逆説的な形に歪め、一度の近接攻撃で視界内の多くの敵を打つ。威力が高いほど一度に攻撃できる敵の数が増える。ただし、素手の攻撃では自らの手足を歪めるのにいっそうの注意が必要なため、一度に打てる対象の数は半分になる。
 
 攻撃にかかる時間は通常の近接攻撃とまったく同じである。この方法で行う攻撃は決して外れないが、打つ箇所を正確に制御できないため、油断している敵に追加のダメージを与えることはできない。
@@ -1944,7 +1944,7 @@ _________________
   <div class="txt">
     <h3>招霊 <span class="en">Haunt</span></h3>
     <p class="flags"><b class="lv">Lv 7</b><b class="fl">死霊術</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: 死の魔法書、ネクロノミコン</p>
+    <p class="where">載っている本：死の魔法書、ネクロノミコン</p>
     <div class="game">レイスや幽霊を呼び出して、術者の対象に取り憑かせる。彼らは取り憑いた相手しか攻撃せず、対象が死ぬとすぐに消散する。召喚される亡霊の数は呪文の威力に応じて増える。
 
 レベル: 7        系統: 死霊術/召喚術</div>
@@ -2013,7 +2013,7 @@ _________________
   <div class="txt">
     <h3>衰弱 <span class="en">Enfeeble</span></h3>
     <p class="flags"><b class="lv">Lv 7</b><b class="fl">呪術</b></p>
-    <p class="where">載っている本: 呪術の魔法書、災難の魔法書</p>
+    <p class="where">載っている本：呪術の魔法書、災難の魔法書</p>
     <div class="game">悪意に満ちたエネルギーで敵を圧倒し、抵抗できない力で近接攻撃を弱め、呪文の威力を下げる。さらに、呪いの全力に抵抗できなかった敵を眩暈と盲目の状態にする。視覚を持たない者でさえも!
 
 レベル: 7        系統: 呪術</div>
@@ -2027,7 +2027,7 @@ _________________
   <div class="txt">
     <h3>邪悪なる通り道 <span class="en">Malign Gateway</span></h3>
     <p class="flags"><b class="lv">Lv 7</b><b class="fl">召喚術</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: グラン・グリモア</p>
+    <p class="where">載っている本：グラン・グリモア</p>
     <div class="game">現実に深い裂け目を開き、未知の汚れた異世界への、自ら持続するが一時的な門を作り出す。成功するには開けた空間が必要である。少し時間が経つと、門の向こうから鉤爪のある強力な触手が伸びてきて、威力に応じた時間だけ術者の意志に従う。門が消えると触手は切り離され、術者に牙をむく。門の持続時間は呪文の威力に応じて延びる。
 
 レベル: 7        系統: 召喚術/転位術</div>
@@ -2067,7 +2067,7 @@ _________________
   <div class="txt">
     <h3>魔火花の従者 <span class="en">Spellspark Servitor</span></h3>
     <p class="flags"><b class="lv">Lv 7</b><b class="fl">妖術</b><b class="fl">鍛造術</b></p>
-    <p class="where">載っている本: 力の魔法書</p>
+    <p class="where">載っている本：力の魔法書</p>
     <div class="game">術者自身の秘術の知識の火花を核に宿した、金属の従者を組み立てる。この火花によって、従者は創造者の知る破壊的な呪文のいくつかを放つことができる。ただし、最も強力で不安定な魔法はこの方法で付与することはできない。従者の強さは呪文の威力に応じて増す。
 
 (この呪文を覚えている間、「従者への呪文付与」の能力で、条件を満たす呪文のうちどれを従者に唱えさせるかを選ぶことができる。)
@@ -2088,7 +2088,7 @@ _________________
   <div class="txt">
     <h3>おぞましきものの召喚 <span class="en">Summon Horrible Things</span></h3>
     <p class="flags"><b class="lv">Lv 8</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: グラン・グリモア</p>
+    <p class="where">載っている本：グラン・グリモア</p>
     <div class="game">アビスへの門を開き、その恐るべき場所から2体以上の醜悪な忌まわしきものを呼び出す。強力ではあるが、このようにしてアビスの織り目に精神を触れさせると、術者に破滅を招き、やがて大きな代償を払うことになるかもしれない。
 
 レベル: 8        系統: 召喚術</div>
@@ -2102,7 +2102,7 @@ _________________
   <div class="txt">
     <h3>スカラベの寄生 <span class="en">Infestation</span></h3>
     <p class="flags"><b class="lv">Lv 8</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: 死の魔法書</p>
+    <p class="where">載っている本：死の魔法書</p>
     <div class="game">スカラベの疫病を呼び起こし、威力に応じた時間にわたって影響を受けたモンスターに寄生させる。寄生された者が死ぬと、その体から死の太陽虫が育って飛び出す。
 
 レベル: 8        系統: 死霊術</div>
@@ -2118,7 +2118,7 @@ _________________
   <div class="txt">
     <h3>ボーグンジョルの究極治癒 <span class="en">Borgnjor&#x27;s Revivification</span></h3>
     <p class="flags"><b class="lv">Lv 8</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: ネクロノミコン</p>
+    <p class="where">載っている本：ネクロノミコン</p>
     <div class="game">術者の負ったあらゆる傷をたちまち癒すが、同時に術者の体力を恒久的に損なう。その度合いは威力によって決まり、威力が高いほど小さい。
 
 「死のとば口」の効果を打ち消すほど強力だが、そうすると術者は短い間麻痺してしまう。アンデッドには効果がない。
@@ -2162,7 +2162,7 @@ _________________
   <div class="txt">
     <h3>満ち溢れる一斉射撃 <span class="en">Fulsome Fusillade</span></h3>
     <p class="flags"><b class="lv">Lv 8</b><b class="fl">妖術</b><b class="fl">錬金術</b></p>
-    <p class="where">載っている本: 変成の魔法書</p>
+    <p class="where">載っている本：変成の魔法書</p>
     <div class="game">向こう見ずな化学の集大成であるこの呪文は、揮発性の試薬をあり余るほど呼び出して敵の上に降り注がせる。続く数ターンの間、視界内の最大3体の敵に無作為に爆発するビーカーが当たり、炎、冷気、電撃、毒のいずれかのダメージを与える。これらの爆発が重なり合うと、その反応によってさらに大きな抵抗できないダメージが生じ、爆発に巻き込まれた者に無作為な有害な状態を与えることもある。
 
 この呪文を維持するには毎ターン術者の魔力を少しずつ消費する。術者を傷つけるような位置に爆発を狙うことは決してないが、術者の味方(およびその周辺にいるその他すべてのもの)はそれほど幸運ではない。
@@ -2178,7 +2178,7 @@ _________________
   <div class="txt">
     <h3>点火 <span class="en">Ignition</span></h3>
     <p class="flags"><b class="lv">Lv 8</b><b class="fl">炎の魔術</b></p>
-    <p class="where">載っている本: 自然発火の魔法書</p>
+    <p class="where">載っている本：自然発火の魔法書</p>
     <div class="game">術者の周囲にいるすべての敵を火の玉で包み込む。術者とその味方は炎から守られ、この呪文で傷つくことは決してない。
 
 レベル: 8        系統: 炎の魔術</div>
@@ -2192,7 +2192,7 @@ _________________
   <div class="txt">
     <h3>空間分離 <span class="en">Disjunction</span></h3>
     <p class="flags"><b class="lv">Lv 8</b><b class="fl">転位術</b></p>
-    <p class="where">載っている本: 次元歪曲の魔法書</p>
+    <p class="where">載っている本：次元歪曲の魔法書</p>
     <div class="game">しばらくの間術者の周囲の球状の空間を不安定にし、近くにいる者を術者から離れるようにブリンクさせる。ブリンクする確率は術者からの距離によって決まり、すぐ隣にいるとほぼ確実である。
 
 レベル: 8        系統: 転位術</div>
@@ -2235,7 +2235,7 @@ _________________
   <div class="txt">
     <h3>ドラゴンの呼び声 <span class="en">Dragon&#x27;s Call</span></h3>
     <p class="flags"><b class="lv">Lv 9</b><b class="fl">召喚術</b></p>
-    <p class="where">載っている本: ドラゴンの魔法書</p>
+    <p class="where">載っている本：ドラゴンの魔法書</p>
     <div class="game">竜の領域へ強力な呼びかけを発し、次から次へとドラゴンを呼び寄せて召喚者の敵と戦わせる。この呪文を維持するのは負担が大きく、呼びかけに応じて新たなドラゴンが現れるたびに召喚者の魔力の蓄えがさらに減っていく。呼びかけが終わると、しばらくの間は再び呼びかけることができない。呼びかけの持続時間と呼び出されるドラゴンの種類は、呪文の威力によって決まる。
 
 レベル: 9        系統: 召喚術</div>
@@ -2263,7 +2263,7 @@ _________________
   <div class="txt">
     <h3>極渦 <span class="en">Polar Vortex</span></h3>
     <p class="flags"><b class="lv">Lv 9</b><b class="fl">氷の魔術</b></p>
-    <p class="where">載っている本: 氷結の魔法書</p>
+    <p class="where">載っている本：氷結の魔法書</p>
     <div class="game">術者の周りの空気を凍てつく渦に変え、巻き込まれた者すべてに途方もないダメージを与える。このダメージは冷気への耐性でも半分しか軽減できない。影響を受けた者は空中に巻き上げられ、振り回される。安全なのは嵐の目だけで、それは術者についていく。渦は長距離の転移では術者についていけない。閉ざされた場所では呪文の効果が大きく弱まる。渦が消えたあとは、しばらくの間再び呼び出すことができない。
 
 レベル: 9        系統: 氷の魔術</div>
@@ -2279,7 +2279,7 @@ _________________
   <div class="txt">
     <h3>死のとば口 <span class="en">Death&#x27;s Door</span></h3>
     <p class="flags"><b class="lv">Lv 9</b><b class="fl">死霊術</b></p>
-    <p class="where">載っている本: ネクロノミコン</p>
+    <p class="where">載っている本：ネクロノミコン</p>
     <div class="game">短い間術者をほとんど無敵にするが、その過程で術者を危険なまでに死に近づける。実のところあまりに近づくため、体は自らが死んだものと思い込み、回復の効果は何の役にも立たなくなる。
 
 呪文の効果が切れる少し前に、術者は一度だけ警告を受ける。効果が切れたあとすぐには再び唱えられないが、威力が高いと、効果が終わったときに術者は死からより遠い状態に残される。すでにアンデッドである者には効果がない。
@@ -2300,7 +2300,7 @@ _________________
   <div class="txt">
     <h3>炎の嵐 <span class="en">Fire Storm</span></h3>
     <p class="flags"><b class="lv">Lv 9</b><b class="fl">妖術</b><b class="fl">炎の魔術</b></p>
-    <p class="where">載っている本: 殲滅の魔法書</p>
+    <p class="where">載っている本：殲滅の魔法書</p>
     <div class="game">轟々と燃え盛る強大な炎の嵐を対象の真上に呼び下ろし、広い範囲にダメージを与えて、短命な炎の渦を残す。ダメージの半分は火炎への耐性を無視する。
 
 レベル: 9        系統: 妖術/炎の魔術</div>
@@ -2344,7 +2344,7 @@ _________________
   <div class="txt">
     <h3>粉砕 <span class="en">Shatter</span></h3>
     <p class="flags"><b class="lv">Lv 9</b><b class="fl">地の魔術</b></p>
-    <p class="where">載っている本: 殲滅の魔法書</p>
+    <p class="where">載っている本：殲滅の魔法書</p>
     <div class="game">術者の周囲に凄まじい衝撃の爆発を起こし、近くにいるすべてのモンスターに深刻なダメージを与える。氷や骨、あるいは壁のような物質(岩、金属、水晶など)でできたモンスターや、石化によって石に変えられたモンスターには特に効果的である。空を飛んでいるモンスター、ゼリー状のモンスター、実体のないモンスターにはあまり効果がない。近くの壁を壊すこともある。
 
 レベル: 9        系統: 地の魔術</div>
@@ -2366,7 +2366,7 @@ _________________
   <div class="txt">
     <h3>連鎖する稲妻 <span class="en">Chain Lightning</span></h3>
     <p class="flags"><b class="lv">Lv 9</b><b class="fl">妖術</b><b class="fl">風の魔術</b></p>
-    <p class="where">載っている本: 殲滅の魔法書</p>
+    <p class="where">載っている本：殲滅の魔法書</p>
     <div class="game">大規模な放電を起こす。電気は術者に最も近いモンスターへと弧を描いて飛び、そこからさらに外へと伝わっていく。遠くへ伝わるほど与えるダメージは小さくなる。二次的な弧の届く距離には限りがあり、術者にはわずかなダメージしか与えない。この呪文は防御側の鎧と電撃への耐性の半分を無視する。
 
 レベル: 9        系統: 妖術/風の魔術</div>
@@ -6033,11 +6033,7 @@ _________________
 </div>
 </main>
 <footer class="foot"><div class="band">
-  <p>Dungeon Crawl Stone Soup(DCSS)は、公式のチームとその協力者が作り続けている
-     オープンソースのローグライクである(<a href="https://github.com/crawl/crawl">本家</a>)。
-     ここはその日本語版(0.34.1-ja1)の非公式のスポイラーで、
-     文と数値はすべてゲームの中の説明(ゲーム内の検索 <code>?/</code> と同じもの)から取ってある。
-     タイルの絵は DCSS のもの(CC0)。</p>
+  <p>Dungeon Crawl Stone Soup(DCSS)はオープンソースのローグライクゲームです。本家は<a href="https://github.com/crawl/crawl">こちら</a>。このページは日本語版 0.34.1-ja1 の非公式スポイラーで、文章も数値もゲーム内の <code>?/</code> 検索で出てくるものをそのまま使っています。タイル画像も DCSS のもの(CC0)です。</p>
 </div></footer>
 <script src="dcss.js"></script>
 </body>

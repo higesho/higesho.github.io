@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>事典 &mdash; DCSS スポイラー</title>
-<meta name="description" content="DCSS の技能・能力・状態・雲・地形などの説明。">
+<meta name="description" content="DCSS のスキル・能力・状態・雲・地形などの説明。">
 <link rel="stylesheet" href="dcss.css">
 </head>
 <body>
@@ -14,16 +14,16 @@
 </div></header>
 <main class="band wide">
 <h1>事典</h1>
-<p class="lead">ゲーム内の検索(<code>?/</code>)で引ける残りの項目。技能・能力(神の力や種族の力を含む)・状態・雲・地形・カード(ネメレックスの札)・災い(悪運)。</p>
-<p class="jump"><a href="#g-skill">技能</a><a href="#g-ability">能力</a><a href="#g-status">状態</a><a href="#g-passive">常時の効果</a><a href="#g-cloud">雲</a><a href="#g-feature">地形</a><a href="#g-card">カード</a><a href="#g-bane">災い</a></p>
+<p class="lead"><code>?/</code> 検索で引ける項目のうち、ほかのページに入らなかったものです。能力には神様や種族の能力も入っています。カードはネメレックスのデッキのカードです。</p>
+<p class="jump"><a href="#g-skill">スキル</a><a href="#g-ability">能力</a><a href="#g-status">状態</a><a href="#g-passive">常時の効果</a><a href="#g-cloud">雲</a><a href="#g-feature">地形</a><a href="#g-card">カード</a><a href="#g-bane">災厄</a></p>
 <div class="bar">
-  <input type="search" id="q" placeholder="名前・説明で絞り込む" autocomplete="off">
-  <select id="g"><option value="">種類で絞らない</option><option value="skill">技能</option><option value="ability">能力</option><option value="status">状態</option><option value="passive">常時の効果</option><option value="cloud">雲</option><option value="feature">地形</option><option value="card">カード</option><option value="bane">災い</option></select>
+  <input type="search" id="q" placeholder="名前や説明で検索" autocomplete="off">
+  <select id="g"><option value="">種類：すべて</option><option value="skill">スキル</option><option value="ability">能力</option><option value="status">状態</option><option value="passive">常時の効果</option><option value="cloud">雲</option><option value="feature">地形</option><option value="card">カード</option><option value="bane">災厄</option></select>
   <span class="count" id="count"></span>
 </div>
 <div id="list">
 <section class="tree" id="g-skill">
-<h2>技能<span class="n">29</span></h2>
+<h2>スキル<span class="n">29</span></h2>
 <div class="list">
 <article class="card" data-g="skill" id="s-summonings" data-t="召喚術 summonings 召喚術は、別の次元から生き物を呼び出し、一時的にあなたを手助けさせる術を扱う。召喚術スキルを上げると、呪文によって、持続時間が長くなる、より強力な味方が呼べるなど、さまざまな効果が得られる。召喚された存在は倒しても死体を残さず、経験値も得られないこと、またその装備も本人と同じく一時的なものであることに注意。
 
@@ -7605,7 +7605,7 @@ MP : 8
 </article>
 </div>
 </section><section class="tree" id="g-bane">
-<h2>災い<span class="n">13</span></h2>
+<h2>災厄<span class="n">13</span></h2>
 <div class="list">
 <article class="card" data-g="bane" id="b-stumbling-bane" data-t="よろめきの災厄 stumbling bane 移動したか、何もせずにその場で待機したターンには、回避が25低下する。
 
@@ -7773,11 +7773,7 @@ MP : 8
 </div>
 </main>
 <footer class="foot"><div class="band">
-  <p>Dungeon Crawl Stone Soup(DCSS)は、公式のチームとその協力者が作り続けている
-     オープンソースのローグライクである(<a href="https://github.com/crawl/crawl">本家</a>)。
-     ここはその日本語版(0.34.1-ja1)の非公式のスポイラーで、
-     文と数値はすべてゲームの中の説明(ゲーム内の検索 <code>?/</code> と同じもの)から取ってある。
-     タイルの絵は DCSS のもの(CC0)。</p>
+  <p>Dungeon Crawl Stone Soup(DCSS)はオープンソースのローグライクゲームです。本家は<a href="https://github.com/crawl/crawl">こちら</a>。このページは日本語版 0.34.1-ja1 の非公式スポイラーで、文章も数値もゲーム内の <code>?/</code> 検索で出てくるものをそのまま使っています。タイル画像も DCSS のもの(CC0)です。</p>
 </div></footer>
 <script src="dcss.js"></script>
 </body>
