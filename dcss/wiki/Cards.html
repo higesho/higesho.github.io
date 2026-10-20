@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>カード &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="カード(Cards)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>カード <span class="en">Cards</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Cards">Cards</a>」(0.34 向け、2026-07-02 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Cards&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><b>カード</b>は、<a href="http://crawl.chaosforge.org/Nemelex_Xobeh" title="Nemelex Xobeh">ネメレクス・ソベー</a>の信者が使う独特の能力群だ(ネメレクスの<a href="http://crawl.chaosforge.org/Divine_retribution" title="Divine retribution">怒り</a>を買うと、逆にこちらに向けて使われる)。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Decks"><span class="tocnumber">1</span> <span class="toctext">デッキ</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Power"><span class="tocnumber">2</span> <span class="toctext">威力</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Lists_of_cards"><span class="tocnumber">3</span> <span class="toctext">カードの一覧</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Currently_available_cards"><span class="tocnumber">3.1</span> <span class="toctext">現行のカード</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Removed_cards"><span class="tocnumber">3.2</span> <span class="toctext">削除されたカード</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">関連項目</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Decks">デッキ</span></h2>
+<p>プレイヤーが引くデッキは<a href="http://crawl.chaosforge.org/Deck_of_destruction" title="Deck of destruction">破壊のデッキ</a>、<a href="http://crawl.chaosforge.org/Deck_of_escape" title="Deck of escape">脱出のデッキ</a>、<a href="http://crawl.chaosforge.org/Deck_of_summoning" title="Deck of summoning">召喚のデッキ</a>の3つ。ネメレクスを信仰していると、ときどきカードを<a href="http://crawl.chaosforge.org/Gift" title="Gift">贈り物</a>として授かる。どのデッキに配られたかはわかるが、個々のカードの中身までは(能力を使わない限り)わからない。持てるカードは破壊のデッキが最大26枚、ほかの2つが13枚まで。ネメレクスは<a href="http://crawl.chaosforge.org/Divine_retribution" title="Divine retribution">神罰</a>として<a href="http://crawl.chaosforge.org/Deck_of_punishment" title="Deck of punishment">懲罰のデッキ</a>からカードを引く。
+</p>
+<h2><span class="mw-headline" id="Power">威力</span></h2>
+<p>カードの効果の強さには2つの要素があり、ソースコードではそれぞれ "power" と "power_level" と呼ばれている。
+</p><p><i>威力</i>(power)はカード版の<a href="http://crawl.chaosforge.org/Spellpower" class="mw-redirect" title="Spellpower">呪文威力</a>だ。プレイヤーが引くカードの威力は <code>power = (9 × Invocations) + (1.5 × piety) + (piety × (Invocations + 25) / 27)</code> になる。
+怒りによって懲罰のデッキから引かれるカードの威力は、代わりに <code>18 × XL</code> となる。
+</p><p>ほとんどのカードは、この威力をさらに<i>威力段階</i>(power level)に換算する。威力段階は 0、1、2 のいずれかだ。段階が上がるごとに一段上の「ランク」になると考えてよく、新しい効果が加わったり単純に効果が強まったりする。たとえば<a href="http://crawl.chaosforge.org/Orb_card" title="Orb card">球体</a>は、威力段階2で破壊の球体を何発も放つ。カードを引くたびに <code>power / 900</code> と <code>power / 2700</code> の2回の判定が行われ、成功するごとに威力段階が1上がる。
+</p><p>下の表は、よくある祈祷スキルと信仰心の組み合わせで、それぞれの威力段階になる確率を「威力段階0/威力段階1/威力段階2」の順にパーセントで示したものだ。
+</p>
+<table class="wikitable">
+<tr>
+<th> 祈祷 \ 信仰心 </th>
+<th> 35 (*.....) </th>
+<th> 50 (**....) </th>
+<th> 75 (***...) </th>
+<th> 100 (****..) </th>
+<th> 120 (*****.) </th>
+<th> 160 (******) </th>
+<th> 200 (最大)
+</th></tr>
+<tr>
+<td> <b>0</b> </td>
+<td> 88/11/00 </td>
+<td> 82/17/01 </td>
+<td> 75/24/01 </td>
+<td> 67/31/02 </td>
+<td> 61/36/03 </td>
+<td> 49/45/06 </td>
+<td> 38/52/10
+</td></tr>
+<tr>
+<td> <b>5</b> </td>
+<td> 80/19/01 </td>
+<td> 76/23/01 </td>
+<td> 67/31/02 </td>
+<td> 58/38/04 </td>
+<td> 52/43/05 </td>
+<td> 40/51/09 </td>
+<td> 29/58/13
+</td></tr>
+<tr>
+<td> <b>10</b> </td>
+<td> 74/25/01 </td>
+<td> 68/30/02 </td>
+<td> 59/37/04 </td>
+<td> 51/43/06 </td>
+<td> 44/49/07 </td>
+<td> 32/56/12 </td>
+<td> 21/62/17
+</td></tr>
+<tr>
+<td> <b>15</b> </td>
+<td> 67/31/02 </td>
+<td> 61/36/03 </td>
+<td> 52/43/05 </td>
+<td> 44/48/08 </td>
+<td> 37/53/10 </td>
+<td> 25/60/15 </td>
+<td> 14/64/22
+</td></tr>
+<tr>
+<td> <b>21</b> </td>
+<td> 59/37/04 </td>
+<td> 53/42/05 </td>
+<td> 44/48/08 </td>
+<td> 35/54/11 </td>
+<td> 29/57/14 </td>
+<td> 16/64/20 </td>
+<td> 05/67/28
+</td></tr>
+<tr>
+<td> <b>27</b> </td>
+<td> 52/43/05 </td>
+<td> 46/47/07 </td>
+<td> 36/54/10 </td>
+<td> 27/59/14 </td>
+<td> 21/61/18 </td>
+<td> 09/65/26 </td>
+<td> 00/66/34
+</td></tr></table>
+<h2><span class="mw-headline" id="Lists_of_cards">カードの一覧</span></h2>
+<h3><span class="mw-headline" id="Currently_available_cards">現行のカード</span></h3>
+<table class="prettytable">
+<tr>
+<th> カード </th>
+<th> 効果
+</th></tr>
+<tr>
+<th style="text-align:left" colspan="4"> 破壊のデッキ
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Degeneration_card" title="Degeneration card">堕落</a> </td>
+<td> 視界内の敵を HD の低いモンスターに変化させ、さらに悪性変異を起こさせる。変化が効かない相手は眩暈状態になる。敵はそれぞれ、自分の<a href="http://crawl.chaosforge.org/Hit_dice" title="Hit dice">HD</a>と威力段階に応じた確率で抵抗を試みる。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Orb_card" title="Orb card">球体</a> </td>
+<td> 目標に向けて破壊の球体を1発放つ。威力段階が高いと、自分の周囲に3発または6発の球体がまとめて放たれる。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Pain_card" title="Pain card">苦痛</a> </td>
+<td> 威力段階0では<a href="http://crawl.chaosforge.org/Agony" title="Agony">苦悶</a>、威力段階1〜2では<a href="http://crawl.chaosforge.org/Bolt_of_Draining" title="Bolt of Draining">衰弱の矢</a>を放つ。威力段階2ではさらに<a href="http://crawl.chaosforge.org/Symbol_of_Torment" title="Symbol of Torment">苦痛の紋章</a>も発動する(自分は影響を受けない)。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Storm_card" title="Storm card">嵐</a> </td>
+<td> 全方向にモンスターを押しのける突風を起こし、自分の周囲に半径3の電撃の爆発を1〜9回起こす。爆発の回数と突風の強さは威力段階しだい。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Wild_Magic_card" title="Wild Magic card">暴走</a> </td>
+<td> 周囲のモンスターが、8つの<a href="http://crawl.chaosforge.org/Magic_school" class="mw-redirect" title="Magic school">魔法の系統</a>のどれかひとつからランダムに選ばれた<a href="http://crawl.chaosforge.org/Miscast_effect" title="Miscast effect">呪文失敗の効果</a>を受ける。効果を受けた敵1体につき、MP が 0〜4 回復する。敵はそれぞれ、自分の<a href="http://crawl.chaosforge.org/Hit_dice" title="Hit dice">HD</a>と威力段階に応じた確率で抵抗を試みる。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Vitriol_card" title="Vitriol card">硫酸</a> </td>
+<td> 威力段階0では<a href="http://crawl.chaosforge.org/Breathe_Acid" class="mw-redirect" title="Breathe Acid">酸のブレス</a>(Breathe Acid)、威力段階1〜2では<a href="http://crawl.chaosforge.org/Corrosive_Bolt" title="Corrosive Bolt">腐食の矢</a>を放つ。威力段階2ではさらに、視界内の敵がそれぞれ50%の確率で<a href="http://crawl.chaosforge.org/Corrosion" class="mw-redirect" title="Corrosion">腐食</a>を受ける。
+</td></tr>
+<tr>
+<th style="text-align:left" colspan="4"> 脱出のデッキ
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Cloud_card" title="Cloud card">雲烟</a> </td>
+<td> 視界内のすべてのモンスターの周り(モンスターのいるマスは除く)に雲を発生させる。雲の種類は、威力段階0なら悪臭の雲、1なら瘴気の雲、2なら石化する雲。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Elixir_card" title="Elixir card">霊薬</a> </td>
+<td> 1ターンごとに最大 HP の10%と最大 MP の10%ずつ、急速に回復する。効果の持続時間は威力段階しだい。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Exile_card" title="Exile card">放浪</a> </td>
+<td> 近くのモンスターを1〜5体<a href="http://crawl.chaosforge.org/Abyss" class="mw-redirect" title="Abyss">アビス</a>へ追放する。数は威力段階しだい。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Tomb_card" title="Tomb card">玄室</a> </td>
+<td> 自分の周りのマスに一時的な岩の壁を作る。持続時間は威力しだい。もともと壁があるマスやモンスターのいるマスには作られない。この壁は掘り進むことができ、玄室から出るとすぐに崩れ落ちる。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Velocity_card" title="Velocity card">加速</a> </td>
+<td> 威力段階 / 2 の確率で、自分にかかった<a href="http://crawl.chaosforge.org/Slow" title="Slow">減速</a>を解除する。近くの敵はそれぞれ <code>(1 + power level) / 3</code> の確率で減速し、近くの味方はそれぞれ <code>power level / 2</code> の確率で加速する。
+</td></tr>
+<tr>
+<th style="text-align:left" colspan="4"> 召喚のデッキ
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Dance_card" title="Dance card">舞踏</a> </td>
+<td> 味方の<a href="http://crawl.chaosforge.org/Dancing_weapon" title="Dancing weapon">宙を舞う武器</a>を召喚する。武器は、威力段階0なら六尺棒かハンドアックス、1ならブランド付きのこともある<a href="http://crawl.chaosforge.org/Long_sword" title="Long sword">ロングソード</a>か<a href="http://crawl.chaosforge.org/Trident" title="Trident">トライデント</a>、2なら強化値とブランドの付いた<a href="http://crawl.chaosforge.org/Demon_trident" title="Demon trident">悪魔の三叉戟</a>か<a href="http://crawl.chaosforge.org/Executioner%27s_axe" title="Executioner&#39;s axe">処刑人の斧</a>になる。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Elements_card" title="Elements card">元素</a> </td>
+<td> 次のどれかの組から味方を3体召喚する。
+<ul><li> 威力段階0: <a href="http://crawl.chaosforge.org/Raiju" title="Raiju">雷獣</a>、<a href="http://crawl.chaosforge.org/Basilisk" title="Basilisk">バジリスク</a>、<a href="http://crawl.chaosforge.org/Fire_bat" title="Fire bat">火炎コウモリ</a>、<a href="http://crawl.chaosforge.org/Ice_beast" title="Ice beast">氷の獣</a></li>
+<li> 威力段階1: <a href="http://crawl.chaosforge.org/Wind_drake" title="Wind drake">風ドレイク</a>、<a href="http://crawl.chaosforge.org/Catoblepas" title="Catoblepas">カトブレパス</a>、<a href="http://crawl.chaosforge.org/Molten_gargoyle" title="Molten gargoyle">溶岩ガーゴイル</a>、<a href="http://crawl.chaosforge.org/Polar_bear" title="Polar bear">北極熊</a></li>
+<li> 威力段階2: <a href="http://crawl.chaosforge.org/Shock_serpent" title="Shock serpent">電撃の大蛇</a>、<a href="http://crawl.chaosforge.org/War_gargoyle" title="War gargoyle">凶暴なガーゴイル</a>、<a href="http://crawl.chaosforge.org/Fire_dragon" title="Fire dragon">ファイアドラゴン</a>、<a href="http://crawl.chaosforge.org/Ice_dragon" title="Ice dragon">アイスドラゴン</a></li></ul>
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Illusion_card" title="Illusion card">幻影</a> </td>
+<td> 自分の<a href="http://crawl.chaosforge.org/Illusion" class="mw-redirect" title="Illusion">幻影</a>を味方として召喚する。威力段階で変わるのは持続時間だけ。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Pentagram_card" title="Pentagram card">五芒星</a> </td>
+<td> <a href="http://crawl.chaosforge.org/Demon" title="Demon">悪魔</a>1体と悪魔的な生き物1体を召喚する。悪魔は <code>1 / (power level + 4)</code> の確率で敵対する。
+<ul><li> 威力段階0: 4級悪魔(tier 4 demon)と<a href="http://crawl.chaosforge.org/Hell_hound" title="Hell hound">ヘルハウンド</a></li>
+<li> 威力段階1: 3級悪魔と<a href="http://crawl.chaosforge.org/Rakshasa" title="Rakshasa">ラクシャーサ</a></li>
+<li> 威力段階2: 2級悪魔と<a href="http://crawl.chaosforge.org/Pandemonium_lord" title="Pandemonium lord">パンデモニウムの君主</a></li></ul>
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Rangers_card" title="Rangers card">野伏</a> </td>
+<td> <a href="http://crawl.chaosforge.org/Centaur_warrior" title="Centaur warrior">セントールの戦士</a>、<a href="http://crawl.chaosforge.org/Naga_sharpshooter" title="Naga sharpshooter">ナーガの達人射手</a>、<a href="http://crawl.chaosforge.org/Deep_elf_master_archer" title="Deep elf master archer">闇エルフの達人射手</a>の中から、味方を2〜3体召喚する。顔ぶれは威力段階しだい。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Swarm_card" title="Swarm card">群れ</a> </td>
+<td> <a href="http://crawl.chaosforge.org/Killer_bee" title="Killer bee">殺人蜂</a>を1〜5匹召喚する。威力段階1〜2では<a href="http://crawl.chaosforge.org/Queen_bee" title="Queen bee">女王蜂</a>も、威力段階2ではさらに<a href="http://crawl.chaosforge.org/Meliai" title="Meliai">メリアイ</a>を3体召喚する。
+</td></tr>
+<tr>
+<th style="text-align:left" colspan="4"> 懲罰のデッキ
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Swine_card" title="Swine card">豚</a> </td>
+<td> あなたを<a href="http://crawl.chaosforge.org/Pig_Form" title="Pig Form">豚</a>に変える。この変身は<a href="http://crawl.chaosforge.org/Potions_of_cancellation" class="mw-redirect" title="Potions of cancellation">無力化の薬</a>でも解呪のエネルギー(dispelling energy)でも解除できない。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Torment_card" title="Torment card">拷問</a> </td>
+<td> あなたを<a href="http://crawl.chaosforge.org/Torment" title="Torment">拷問</a>にかける。あなたが<a href="http://crawl.chaosforge.org/Undead" title="Undead">アンデッド</a>か<a href="http://crawl.chaosforge.org/Demonic" class="mw-redirect" title="Demonic">悪魔</a>なら、代わりに<a href="http://crawl.chaosforge.org/Holy_word" title="Holy word">聖なる御言葉</a>が発動する。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Wraith_card" title="Wraith card">亡霊</a> </td>
+<td> あなたをひどく衰弱させる。どれだけ衰弱するかは威力しだいで、XL 27 では最大 HP の16%に達する。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Wrath_card" title="Wrath card">憤怒</a> </td>
+<td> ランダムに選ばれた別の神の怒りを招く。ただし、怒りが常時続く受動的なものである<a href="http://crawl.chaosforge.org/Ashenzari" title="Ashenzari">アシェンザリ</a>、<a href="http://crawl.chaosforge.org/Elyvilon" title="Elyvilon">エリヴィロン</a>、<a href="http://crawl.chaosforge.org/Gozag" class="mw-redirect" title="Gozag">ゴザーグ</a>、<a href="http://crawl.chaosforge.org/Hepliaklqana" title="Hepliaklqana">ヘプリアクルカナ</a>と、怒りそのものがない<a href="http://crawl.chaosforge.org/Ru" title="Ru">ルー</a>は選ばれない。
+</td></tr></table>
+<h3><span class="mw-headline" id="Removed_cards">削除されたカード</span></h3>
+<div>
+<ul><li><a href="http://crawl.chaosforge.org/Alchemist_card" title="Alchemist card">錬金術師</a>(Alchemist)</li>
+<li><a href="http://crawl.chaosforge.org/Banshee_card" title="Banshee card">バンシー</a>(Banshee)</li>
+<li><a href="http://crawl.chaosforge.org/Blade_card" title="Blade card">刃</a>(Blade)</li>
+<li><a href="http://crawl.chaosforge.org/Bones_card" title="Bones card">骨</a>(Bones)</li>
+<li><a href="http://crawl.chaosforge.org/Crusade_card" title="Crusade card">聖戦</a>(Crusade)</li>
+<li><a href="http://crawl.chaosforge.org/Curse_card" title="Curse card">呪い</a>(Curse)</li>
+<li><a href="http://crawl.chaosforge.org/Damnation_card" class="mw-redirect" title="Damnation card">地獄落ち</a>(Damnation)</li>
+<li><a href="http://crawl.chaosforge.org/Dowsing_card" title="Dowsing card">探知</a>(Dowsing)</li>
+<li><a href="http://crawl.chaosforge.org/Feast_card" title="Feast card">饗宴</a>(Feast)</li>
+<li><a href="http://crawl.chaosforge.org/Famine_card" title="Famine card">飢餓</a></li>
+<li><a href="http://crawl.chaosforge.org/Focus_card" title="Focus card">集中</a>(Focus)</li>
+<li><a href="http://crawl.chaosforge.org/Fortitude_card" title="Fortitude card">不屈</a>(Fortitude)</li>
+<li><a href="http://crawl.chaosforge.org/Hammer_card" title="Hammer card">鎚</a>(Hammer)</li>
+<li><a href="http://crawl.chaosforge.org/Helix_card" title="Helix card">螺旋</a>(Helix)</li>
+<li><a href="http://crawl.chaosforge.org/Helm_card" title="Helm card">兜</a>(Helm)</li>
+<li><a href="http://crawl.chaosforge.org/Herd_card" title="Herd card">群獣</a>(Herd)</li>
+<li><a href="http://crawl.chaosforge.org/Mercenary_card" title="Mercenary card">傭兵</a>(Mercenary)</li>
+<li><a href="http://crawl.chaosforge.org/Metamorphosis_card" title="Metamorphosis card">変身</a>(Metamorphosis)</li>
+<li><a href="http://crawl.chaosforge.org/Potion_card" title="Potion card">薬</a>(Potion)</li>
+<li><a href="http://crawl.chaosforge.org/Repulsiveness_card" title="Repulsiveness card">嫌悪</a>(Repulsiveness)</li>
+<li><a href="http://crawl.chaosforge.org/Shadow_card" title="Shadow card">影</a>(Shadow)</li>
+<li><a href="http://crawl.chaosforge.org/Placid_Magic_card" title="Placid Magic card">静穏な魔力</a>(Placid Magic)</li>
+<li><a href="http://crawl.chaosforge.org/Solitude_card" title="Solitude card">孤独</a>(Solitude)</li>
+<li><a href="http://crawl.chaosforge.org/Swap_card" title="Swap card">交換</a>(Swap)</li>
+<li><a href="http://crawl.chaosforge.org/Venom_card" title="Venom card">毒液</a>(Venom)</li>
+<li><a href="http://crawl.chaosforge.org/Warpwright_card" title="Warpwright card">歪曲の匠</a>(Warpwright)</li>
+<li><a href="http://crawl.chaosforge.org/Xom_card" title="Xom card">ゾム</a></li>
+<li><a href="http://crawl.chaosforge.org/Bargain_card" title="Bargain card">取引</a>(Bargain) </li>
+<li><a href="http://crawl.chaosforge.org/Battlelust_card" title="Battlelust card">闘争心</a>(Battlelust)</li>
+<li><a href="http://crawl.chaosforge.org/Experience_card" title="Experience card">経験</a>(Experience) </li>
+<li><a href="http://crawl.chaosforge.org/Flame_card" title="Flame card">炎</a>(Flame) </li>
+<li><a href="http://crawl.chaosforge.org/Flight_card" title="Flight card">飛行</a>(Flight) </li>
+<li><a href="http://crawl.chaosforge.org/Frost_card" title="Frost card">冷気</a>(Frost) </li>
+<li><a href="http://crawl.chaosforge.org/Genie_card" title="Genie card">魔神</a>(Genie)</li>
+<li><a href="http://crawl.chaosforge.org/Map_card" title="Map card">地図</a>(Map) </li>
+<li><a href="http://crawl.chaosforge.org/Minefield_card" title="Minefield card">地雷原</a>(Minefield) </li>
+<li><a href="http://crawl.chaosforge.org/Portal_card" title="Portal card">ポータル</a>(Portal)</li>
+<li><a href="http://crawl.chaosforge.org/Sage_card" title="Sage card">賢者</a>(Sage)</li>
+<li><a href="http://crawl.chaosforge.org/Shaft_card" title="Shaft card">縦穴</a></li>
+<li><a href="http://crawl.chaosforge.org/Shuffle_card" title="Shuffle card">シャッフル</a>(Shuffle) </li>
+<li><a href="http://crawl.chaosforge.org/Spade_card" title="Spade card">鋤</a>(Spade)</li>
+<li><a href="http://crawl.chaosforge.org/Spark_card" title="Spark card">火花</a>(Spark) </li>
+<li><a href="http://crawl.chaosforge.org/Summoning_card" title="Summoning card">召喚</a>(Summoning) </li>
+<li><a href="http://crawl.chaosforge.org/Trowel_card" title="Trowel card">鏝</a>(Trowel) </li>
+<li><a href="http://crawl.chaosforge.org/Vitrification_card" title="Vitrification card">ガラス化</a>(Vitrification) </li>
+<li><a href="http://crawl.chaosforge.org/Warp_card" title="Warp card">歪み</a>(Warp) </li>
+<li><a href="http://crawl.chaosforge.org/Water_card" title="Water card">水</a>(Water)</li></ul>
+</div>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Famine_card" title="Famine card">飢餓のカード</a>は、<a href="http://crawl.chaosforge.org/0.26" title="0.26">0.26</a>で食料がなくなったときに削除された。</li>
+<li><a href="http://crawl.chaosforge.org/0.23" title="0.23">0.23</a>より前は、デッキは等級の違いがある発動用のアイテムで、カードの威力と威力段階はデッキの質で決まっていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" title="0.19">0.19</a>より前は、デッキもカードもずっと多く、デッキは床に落ちていることもあった。カードの威力は、ネメレクスを信仰しているかどうかに関係なく発動スキルで決まっていた。</li></ul>
+<h2><span class="mw-headline" id="See_also">関連項目</span></h2>
+<p><a href="http://crawl.chaosforge.org/Decks" title="Decks">デッキ</a>
+</p>
+<center>
+<table class="prettytable" style="text-align: center; width: 65%">
+
+<tr>
+<th>デッキ
+</th>
+<th colspan="1"><a href="http://crawl.chaosforge.org/Nemelex" class="mw-redirect" title="Nemelex">ネメレクス</a>の<a class="mw-selflink selflink">カード</a>
+</th></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Deck_of_destruction" title="Deck of destruction">破壊のデッキ</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Degeneration_card" title="Degeneration card"> 堕落</a> • <a href="http://crawl.chaosforge.org/Orb_card" title="Orb card"> 球体</a> • <a href="http://crawl.chaosforge.org/Pain_card" title="Pain card"> 苦痛</a> • <a href="http://crawl.chaosforge.org/Storm_card" title="Storm card"> 嵐</a> • <a href="http://crawl.chaosforge.org/Vitriol_card" title="Vitriol card"> 硫酸</a> • <a href="http://crawl.chaosforge.org/Wild_Magic_card" title="Wild Magic card"> 暴走</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Deck_of_escape" title="Deck of escape">脱出のデッキ</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Cloud_card" title="Cloud card"> 雲烟</a> • <a href="http://crawl.chaosforge.org/Elixir_card" title="Elixir card"> 霊薬</a> • <a href="http://crawl.chaosforge.org/Exile_card" title="Exile card">放浪</a> • <a href="http://crawl.chaosforge.org/Tomb_card" title="Tomb card"> 玄室</a> • <a href="http://crawl.chaosforge.org/Velocity_card" title="Velocity card"> 加速</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Deck_of_summoning" title="Deck of summoning">召喚のデッキ</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Dance_card" title="Dance card"> 舞踏</a> • <a href="http://crawl.chaosforge.org/Elements_card" title="Elements card"> 元素</a> • <a href="http://crawl.chaosforge.org/Illusion_card" title="Illusion card"> 幻影</a> •  <a href="http://crawl.chaosforge.org/Swarm_card" title="Swarm card"> 群れ</a> • <a href="http://crawl.chaosforge.org/Pentagram_card" title="Pentagram card"> 五芒星</a> • <a href="http://crawl.chaosforge.org/Rangers_card" title="Rangers card"> 野伏</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Deck_of_punishment" title="Deck of punishment">懲罰のデッキ</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Swine_card" title="Swine card"> 豚</a> • <a href="http://crawl.chaosforge.org/Torment_card" title="Torment card"> 拷問</a> •  <a href="http://crawl.chaosforge.org/Wraith_card" title="Wraith card">亡霊</a> • <a href="http://crawl.chaosforge.org/Wrath_card" title="Wrath card"> 憤怒</a>
+</td></tr>
+</table>
+</center>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>魔力汚染 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="魔力汚染(Magic contamination)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>魔力汚染 <span class="en">Magic contamination</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Magic_contamination">Magic contamination</a>」(0.34 向け、2026-07-10 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Magic_contamination&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><b>魔力汚染</b>は、呪文の詠唱失敗や一部の魔法の効果によって起こる危険な状態だ。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">概要</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Contamination_Levels"><span class="tocnumber">2</span> <span class="toctext">汚染の段階</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Sources"><span class="tocnumber">3</span> <span class="toctext">汚染の原因</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Spells"><span class="tocnumber">3.1</span> <span class="toctext">呪文</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Spell_Miscasts"><span class="tocnumber">3.2</span> <span class="toctext">詠唱失敗</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Other"><span class="tocnumber">3.3</span> <span class="toctext">その他</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Dissipation"><span class="tocnumber">4</span> <span class="toctext">汚染の消散</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Tips_.26_Tricks"><span class="tocnumber">5</span> <span class="toctext">小技</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Summary_of_Major_Changes_in_0.34_Compared_to_Prior_Versions"><span class="tocnumber">6</span> <span class="toctext">0.34 で以前のバージョンから変わった主な点</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#History"><span class="tocnumber">7</span> <span class="toctext">変更履歴</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Sources_of_Contamination"><span class="tocnumber">7.1</span> <span class="toctext">汚染の原因</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">概要</span></h2>
+<p>さまざまな行動によって、有害な魔力が体内に溜まっていく。魔力汚染が少しだけ(灰色の「汚染: ○%」表示)なら害はなく、何も起こらないまま時間とともに消えていく。それより多く溜まると(黄色または赤の「魔力汚染」表示)、汚染された魔力で体が<a href="http://crawl.chaosforge.org/Glow" class="mw-redirect" title="Glow">発光</a>し始める。汚染は最大300%に対する百分率で表示され、内部では0-3000ポイントとして管理されている。
+</p><p>汚染がひどい段階にあると、攻撃が当たりやすくなり、<a href="http://crawl.chaosforge.org/Invisible" title="Invisible">透明</a>でも姿があらわになる。<a href="http://crawl.chaosforge.org/Corona" title="Corona">照明</a>の呪文と似た効果だ。さらに隠密が下がり、<a href="Bad_mutations.html" title="Bad mutations">悪い変異</a>やダメージを受ける爆発の危険にもさらされる。爆発の確率は汚染がひどいほど上がる。ダメージはプレイヤーの<a href="http://crawl.chaosforge.org/XL" class="mw-redirect" title="XL">XL</a>に応じて大きくなる。汚染が200%以上のときの爆発は、範囲もダメージも大きい。爆発が起きると変異の判定も行われ、1/5の確率で悪い変異1つかランダムな<a href="http://crawl.chaosforge.org/Mutation" title="Mutation">変異</a>が付く(結果は悪い変異に大きく偏っている)。
+</p><p>汚染が少しでもあると、隣にいる<a href="Ugly_thing.html" title="Ugly thing">醜きもの</a>の色が変わることがある。
+</p>
+<h2><span class="mw-headline" id="Contamination_Levels">汚染の段階</span></h2>
+<table class="wikitable">
+
+<tr>
+<th> 汚染
+</th>
+<th> 色
+</th>
+<th> 説明
+</th></tr>
+<tr>
+<td> 0-999 (0-99%)
+</td>
+<td> 灰色
+</td>
+<td> あなたは残留した魔力でごく軽度に汚染されている。
+</td></tr>
+<tr>
+<td> 1000-1999 (100-199%)
+</td>
+<td> 黄色
+</td>
+<td> あなたは残留した魔力で危険なほど汚染されている。(XL 27 で爆発のダメージは最大 27)
+</td></tr>
+<tr>
+<td> 2000-2999 (200-299%)
+</td>
+<td> 赤
+</td>
+<td> あなたは残留した魔力で極度に汚染されている。(XL 27 で爆発のダメージは最大 33)
+</td></tr>
+<tr>
+<td> 3000 (300%)
+</td>
+<td> 赤(最大)
+</td>
+<td> あなたは残留した魔力で完全に飽和している！(XL 27 で爆発のダメージは最大 33)
+</td></tr></table>
+<h2><span class="mw-headline" id="Sources">汚染の原因</span></h2>
+<h3><span class="mw-headline" id="Spells">呪文</span></h3>
+<ul><li><a href="http://crawl.chaosforge.org/Irradiate" title="Irradiate">放射の光</a>: 1回唱えるごとに 185-400。
+<ul><li>プレイヤーが放射の光を<i>浴びた</i>とき: 400-600。</li></ul></li></ul>
+<h3><span class="mw-headline" id="Spell_Miscasts">詠唱失敗</span></h3>
+<ul><li>すべての<a href="http://crawl.chaosforge.org/Miscast" class="mw-redirect" title="Miscast">詠唱失敗</a>: 失敗の度合いによる。詳しくは<a href="http://crawl.chaosforge.org/Miscast_effect#Effects" title="Miscast effect">詠唱失敗の効果</a>を参照。</li></ul>
+<h3><span class="mw-headline" id="Other">その他</span></h3>
+<ul><li>*Contam の付いた<a href="http://crawl.chaosforge.org/Artefact" title="Artefact">アーティファクト</a>を外す: 1200</li>
+<li><a href="http://crawl.chaosforge.org/Distortion" title="Distortion">歪曲</a>のブランドが付いた武器を外す: 3000(25%の確率)</li>
+<li><a href="http://crawl.chaosforge.org/Plutonium_Sword" class="mw-redirect" title="Plutonium Sword">プルトニウムの剣</a>を外す: 700-1350</li>
+<li><a href="http://crawl.chaosforge.org/Mutagenic_fog" title="Mutagenic fog">変異性の霧</a>: 1ターンにつき 250-500</li>
+<li><a href="http://crawl.chaosforge.org/Zot_trap" title="Zot trap">ゾットの罠</a>: 1500 - 3000(起こりうる多くの結果のうちの1つ)</li>
+<li><a href="http://crawl.chaosforge.org/Jiyva" title="Jiyva">ジーヴァ</a>の<a href="http://crawl.chaosforge.org/Penance" class="mw-redirect" title="Penance">贖罪</a>: 0 - <code>100 * penance</code>(起こりうる多くの結果のうちの1つ)</li></ul>
+<h2><span class="mw-headline" id="Dissipation">汚染の消散</span></h2>
+<p>魔力汚染は7ターン経つと、1ターンにつき20ずつ消え始める。<a href="http://crawl.chaosforge.org/Potion_of_cancellation" title="Potion of cancellation">無力化の薬</a>を飲むと、汚染がすぐに <code>-1 * (250-1000)</code> ポイント取り除かれる。
+</p>
+<h2><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h2>
+<p>アンデッドであるか、<a href="http://crawl.chaosforge.org/Talisman_of_death" title="Talisman of death">死のタリスマン</a>で死霊化していれば、汚染による悪性変異は起こらない。代わりに一時的に<a href="http://crawl.chaosforge.org/Drain" class="mw-redirect" title="Drain">衰弱</a>する。
+</p><p><a href="Amulet_of_dissipation.html" title="Amulet of dissipation">散逸の護符</a>を着けると汚染の抜ける速さが上がり、そのぶん悪い結果も起こりにくくなる。
+</p>
+<h2><span class="mw-headline" id="Summary_of_Major_Changes_in_0.34_Compared_to_Prior_Versions"><a href="0.34.html" title="0.34">0.34</a> で以前のバージョンから変わった主な点</span></h2>
+<p>以下の開発者ノートは、上で詳しく述べた主な変更点を分かりやすくまとめたものだ。旧システムの感覚でいるプレイヤーは、これで認識を改められるはずだ。
+</p>
+<ul><li>汚染の内部的な尺度が改められた。現在は1000から黄色、2000から赤になり、3000が絶対的な上限である。</li>
+<li>汚染は以前より速く減るが、最後に汚染を受けてから7ターン経つまでは減り始めない。</li>
+<li>黄色の中でも低めの段階は以前よりやや危険になり、低い段階と高い段階の差は縮まった。汚染がとても高い段階は以前より悪くなった(中くらいの段階は以前とほぼ同じ)。</li>
+<li>透明になっても、汚染の減少が完全に止まることはなくなった。</li>
+<li>透明化のスカーフを発動しても、ごくわずかな汚染を受けることはなくなった(もともとほとんど影響はなく、黄色に達するには6回続けて使う必要があった)。</li>
+<li>汚染による爆発は以前より低い汚染でも起こるようになり、ダメージが大幅に増えた(しかもプレイヤーのACを無視する)。爆発に属性はなく、基本ダメージは汚染の量ではなくプレイヤーのXLで決まる。黄色の段階の爆発は半径1、赤は半径2で、ダメージも黄色より大きい。</li>
+<li>汚染による変異が50%の確率でrMut(変異への耐性)を無視することはなくなった(「強制」扱いのせいで起きていた、変異同士の競合をめぐるいくつかの細かい挙動も同様)。rMutはこのシステムが最初に設計された頃よりずっと弱く、ずっと珍しくなっているので、もはや必要ないと思われる。</li>
+<li>汚染されているあいだは、汚染がUI上に百分率で表示されるようになった(破滅の表示の近く)。黄色が100%(つまり、実際にゲームに悪影響が出始めるところ)、赤が200%、上限が300%である。汚染が少ないうちは正確な数値はたいして重要ではないが、低い段階と高い段階の違いがプレイヤーに分かりやすくなる。何より、汚染を代償とする呪文が、今この時点でどれだけのリスクがあるかを示しやすくなる。</li>
+<li>汚染がステータス欄に表示されるのは、ゲームに影響が出るだけの量(つまり黄色以上)が溜まってからである。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.34.html" title="0.34">0.34</a>で、汚染のシステムを分かりやすく単純にするための大規模な作り直しが行われた。汚染を引き起こすものはすべて調整された。得られる変異の平均数は旧バージョンと「ほぼ同じになるはず」とされている。<a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/commit/dccffc7fa4ce">GitHub の該当コミット</a></li>
+<li><a href="http://crawl.chaosforge.org/0.29" title="0.29">0.29</a>より前は、薄い灰色の警告が出る汚染の量は3000ではなく3500だった。この変更は、このバージョンで汚染量が増えた<a href="http://crawl.chaosforge.org/Irradiate" title="Irradiate">放射の光</a>に合わせて行われた。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" title="0.28">0.28</a>より前は、<a href="http://crawl.chaosforge.org/Orb_of_Zot" title="Orb of Zot">ゾットのオーブ</a>を持っていると汚染が長引いた。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" title="0.26">0.26</a>より前は、魔力汚染の減り方がずっと遅かった。1ターンあたり-75ではなく-25で、悪い効果が起こる間隔も長かった(200 - 600ターン)。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" title="0.25">0.25</a>より前は<a href="http://crawl.chaosforge.org/Miscast_effect" title="Miscast effect">詠唱失敗の効果</a>が今とは違っていたので、汚染の量も違っていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" title="0.19">0.19</a>より前は、薄い灰色の汚染段階は存在しなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.10" title="0.10">0.10</a>より前は、この効果は単に<a href="http://crawl.chaosforge.org/Glow" class="mw-redirect" title="Glow">発光</a>と呼ばれていた。これはあいまいな言葉で、<a href="http://crawl.chaosforge.org/Sticky_Flame" title="Sticky Flame">焼夷の炎</a>や<a href="http://crawl.chaosforge.org/Corona" title="Corona">照明</a>による光(と汚染そのもの)も指していた。</li></ul>
+<h3><span class="mw-headline" id="Sources_of_Contamination">汚染の原因</span></h3>
+<ul><li><a href="http://crawl.chaosforge.org/0.28" title="0.28">0.28</a>より前は、<a href="http://crawl.chaosforge.org/Invisibility" title="Invisibility">透明化</a>していると時間とともに汚染が溜まり、<a href="http://crawl.chaosforge.org/Disjunction" title="Disjunction">空間分離</a>は唱えると750 - 1250の汚染を受けた。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" title="0.26">0.26</a>より前は、<a href="http://crawl.chaosforge.org/Controlled_Blink" title="Controlled Blink">精密瞬間移動</a>を唱えたり<a href="http://crawl.chaosforge.org/Scroll_of_blinking" title="Scroll of blinking">瞬間移動の巻物</a>を読んだりすると汚染を受けた。</li>
+<li><a href="http://crawl.chaosforge.org/0.20" title="0.20">0.20</a>より前は、<a href="http://crawl.chaosforge.org/Potion_of_haste" title="Potion of haste">スピードの薬</a>を飲むと汚染を受け、<a href="http://crawl.chaosforge.org/Haste" title="Haste">加速</a>の効果も時間とともに汚染をもたらした。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>逆棘 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="逆棘(Barbs)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>逆棘 <span class="en">Barbs</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Barbs">Barbs</a>」(0.34 向け、2026-05-17 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Barbs&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> あなたの肌には逆棘が刺さっており、動き回るとダメージを受ける。しばらくその場に留まれば、ダメージを受けずに逆棘を取り除ける。
+</td></tr></table>
+<p><b>逆棘</b>は<a href="http://crawl.chaosforge.org/Status_effect" class="mw-redirect" title="Status effect">状態異常</a>の一つだ。逆棘が刺さった者は、移動するたびに <code>2d(2 + times_barbs_inflicted)</code> のダメージを受ける(最大 2d6)。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><a href="http://crawl.chaosforge.org/Rampaging" title="Rampaging">猛進</a>したときは、1マス進むごとにダメージを受ける。
+</p><p>逆棘は4〜8ターン刺さったままになり、さらに刺さるたびに2〜4ターン延びる(一度に最大12ターン)。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>その場に留まっていれば(何をしていてもよい)、残りの時間は必ず減る。移動した場合に減る確率は 33% しかない。移動しながら逆棘を抜くこともできるが、かなりのダメージを覚悟することになる。
+</p><p>逆棘を受ける原因:
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Category:Barbs_flavour" title="Category:Barbs flavour">逆棘の効果を持つ攻撃</a> </li>
+<li><a href="http://crawl.chaosforge.org/Throw_Barbs" title="Throw Barbs">逆棘の射出</a>の呪文</li>
+<li><a href="http://crawl.chaosforge.org/Wu_Jian" title="Wu Jian">ウー・ジアン</a>の怒り(5〜10ターン続く)</li></ul>
+<p><a href="http://crawl.chaosforge.org/Insubstantial" title="Insubstantial">実体のない</a>プレイヤーには逆棘の状態は効かないが、逆棘の射出の呪文そのもののダメージは受ける。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li>逆棘の効果を持つ攻撃は <a href="http://crawl.chaosforge.org/0.28" title="0.28">0.28</a> で追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.22" title="0.22">0.22</a> より前は、残りの時間を確実に減らすには、わざわざ<a href="http://crawl.chaosforge.org/Wait" title="Wait">待機</a>(<b>5</b>、<b>s</b>、<b>.</b> のどれか)する必要があった。また、基本の持続時間も少し短く、4〜8ターンではなく3〜6ターンだった。</li>
+<li>逆棘は <a href="http://crawl.chaosforge.org/0.14" title="0.14">0.14</a> で追加された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/movement.cc#L141">movement.cc:141</a> (0.30.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/beam.cc#L4000">beam.cc:4000</a> (0.30.1)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

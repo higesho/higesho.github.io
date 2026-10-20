@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>盲目 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="盲目(Blind)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>盲目 <span class="en">Blind</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Blind">Blind</a>」(0.34 向け、2026-02-05 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Blind&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><b>盲目</b>は<a href="http://crawl.chaosforge.org/Status_effect" class="mw-redirect" title="Status effect">状態異常</a>のひとつ。盲目になったモンスターは、<a href="http://crawl.chaosforge.org/See_invisible" title="See invisible">霊視</a>を持っていても関係なく、あらゆる生き物を<a href="http://crawl.chaosforge.org/Invisible" title="Invisible">透明</a>であるかのように扱う。プレイヤーの場合は、相手との距離に応じて攻撃が当たりにくくなる。
+</p><p><b>眩惑</b>(Dazzled)の効果は盲目とまったく同じで、続く時間が短い。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Blindness"><span class="tocnumber">1</span> <span class="toctext">盲目の効果</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Immunity"><span class="tocnumber">2</span> <span class="toctext">無効</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Sources"><span class="tocnumber">3</span> <span class="toctext">原因</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Blindness">盲目の効果</span></h2>
+<p>盲目の効果は、かかったのがモンスターかプレイヤーかで違う。
+</p><p><b>モンスター:</b>
+プレイヤーが<a href="http://crawl.chaosforge.org/Invisible" title="Invisible">透明</a>になり、モンスターが<a href="http://crawl.chaosforge.org/See_invisible" title="See invisible">霊視</a>を持っていないときと同じふるまいになる。
+</p>
+<ul><li>盲目のモンスターが攻撃するときは、<a href="http://crawl.chaosforge.org/To-hit" class="mw-redirect" title="To-hit">命中判定</a>に -35% のペナルティがつく。</li>
+<li>盲目の敵は<a href="http://crawl.chaosforge.org/Attacks_of_opportunity" title="Attacks of opportunity">機会攻撃</a>をしてこない。</li>
+<li>盲目の敵が遠隔攻撃をすると、狙うマスを間違えることが多い。ほかの相手に当たったり、何にも当たらなかったりする。</li>
+<li><a href="http://crawl.chaosforge.org/Intelligence" title="Intelligence">知能</a>が動物並み以下のモンスターは、あなたを追ったり攻撃したりせず、混乱したようにうろつくことがある。ただし人間並みの知能があるモンスターは、ふだんどおりあなたを追ってくる。</li>
+<li>盲目の敵には、低い段階の<a href="http://crawl.chaosforge.org/Stabbing" title="Stabbing">急所突き</a>が決まる。</li></ul>
+<p><b>プレイヤー:</b>
+</p>
+<ul><li>EV で判定するすべての攻撃に、<code>15 * (distance + 1)</code>% の空振りの確率がつく。<code>distance</code> は相手までのマス数。
+<ul><li>この空振りの確率は最大で 90%。</li></ul></li>
+<li>原因によって、画面に色のフィルターがかかる。</li></ul>
+<h2><span class="mw-headline" id="Immunity">無効</span></h2>
+<p>一部のモンスターは<a href="http://crawl.chaosforge.org/Category:Unblindable" title="Category:Unblindable">盲目化無効のフラグ</a>を持っていて、<a href="http://crawl.chaosforge.org/Enfeeble" title="Enfeeble">衰弱</a>と<a href="http://crawl.chaosforge.org/God" title="God">神</a>の力以外では盲目にならない。<a href="http://crawl.chaosforge.org/List_of_jellies" title="List of jellies">ジェリー</a>や<a href="http://crawl.chaosforge.org/Glowing_orange_brain" title="Glowing orange brain">輝くオレンジ色の脳髄</a>のように目のないモンスターや、<a href="http://crawl.chaosforge.org/Bat" title="Bat">コウモリ</a>や<a href="http://crawl.chaosforge.org/Warg" title="Warg">ワーグ</a>のように視覚以外の感覚が鋭い生き物がこれにあたる。
+</p><p><a href="http://crawl.chaosforge.org/Nonliving" title="Nonliving">非生物</a>と<a href="http://crawl.chaosforge.org/Plant" title="Plant">植物</a>の生き物は、衰弱と神の力以外では盲目にならない。
+</p><p><a href="http://crawl.chaosforge.org/Undead" title="Undead">アンデッド</a>は、衰弱、神の力、<a href="http://crawl.chaosforge.org/Wand_of_light" title="Wand of light">光のワンド</a>以外では盲目にならない。
+</p>
+<h2><span class="mw-headline" id="Sources">原因</span></h2>
+<p><b>プレイヤーもモンスターも使えるもの:</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Atropa" title="Atropa">アトロパ毒</a>の<a href="http://crawl.chaosforge.org/Dart" title="Dart">ダーツ</a></li>
+<li><a href="http://crawl.chaosforge.org/Wand_of_light" title="Wand of light">光のワンド</a></li>
+<li><a href="http://crawl.chaosforge.org/Gloom" title="Gloom">薄闇</a>の呪文</li>
+<li><a href="http://crawl.chaosforge.org/Enfeeble" title="Enfeeble">衰弱</a>の呪文</li>
+<li><a href="http://crawl.chaosforge.org/Chaos" title="Chaos">混沌</a>の武器</li></ul>
+<p><b>プレイヤーだけが使えるもの:</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Cloak_of_Starlight" title="Cloak of Starlight">星明かりのクローク</a>を着ている</li>
+<li><a href="http://crawl.chaosforge.org/Ru" title="Ru">ルー</a>の力のオーラと黙示録</li>
+<li><a href="http://crawl.chaosforge.org/Zin" title="Zin">ジン</a>の説法の朗読(異端者に対して使ったとき)</li>
+<li><a href="http://crawl.chaosforge.org/The_Shining_One" title="The Shining One">輝けるもの</a>の神気の盾</li></ul>
+<p><b>プレイヤーが受けるもの:</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Gozag" class="mw-redirect" title="Gozag">ゴザーグ</a>の憤怒(金貨を見たときに発動することがある)</li>
+<li>ジンの憤怒</li>
+<li><a href="http://crawl.chaosforge.org/Throw_Klown_Pie" title="Throw Klown Pie">ピエロのパイの投擲</a></li>
+<li><a href="Black_Mark.html" title="Black Mark">黒の紋様</a>を受けたあとで近接攻撃を食らう</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.34.html" title="0.34">0.34</a> より前は、<a href="http://crawl.chaosforge.org/Undead" title="Undead">アンデッド</a>は盲目に完全に耐性があった。</li>
+<li><a href="http://crawl.chaosforge.org/0.32" title="0.32">0.32</a> より前は、プレイヤーが盲目になってもただ<a href="http://crawl.chaosforge.org/Confusion" title="Confusion">混乱</a>するだけだった。このバージョンで、プレイヤーが盲目になる原因が大幅に増えた。</li>
+<li><a href="http://crawl.chaosforge.org/0.31" title="0.31">0.31</a> より前は、分類が非生物と植物の生き物も光のワンドで盲目にできた。</li>
+<li>光のワンドは <a href="http://crawl.chaosforge.org/0.29" title="0.29">0.29</a> で追加された。</li>
+<li>星明かりのクロークは <a href="http://crawl.chaosforge.org/0.26" title="0.26">0.26</a> で *Dazzle がついた。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" title="0.16">0.16</a> より前は、モンスターが生まれつき持つ<a href="http://crawl.chaosforge.org/Sense_invisible" title="Sense invisible">透明感知</a>があると盲目にならなかった。</li>
+<li><a href="http://crawl.chaosforge.org/Jester" title="Jester">道化師</a>がいたわずかな期間には、<a href="http://crawl.chaosforge.org/Pie" class="mw-redirect" title="Pie">パイ</a>をぶつけてモンスターを一時的に盲目にすることもできた。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

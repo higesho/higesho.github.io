@@ -10,7 +10,7 @@
 <body>
 <header class="top"><div class="band">
   <a class="brand" href="../index.html">DCSS スポイラー</a>
-  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">突然変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
 </div></header>
 <main class="band">
 <h1>アーマークラス(AC) <span class="en">Armour class</span></h1>
@@ -22,7 +22,7 @@
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">役立つ情報</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
 <ul>
 <li class="toclevel-2 tocsection-2"><a href="#Guaranteed_Damage_Reduction"><span class="tocnumber">1.1</span> <span class="toctext">確定ダメージ軽減</span></a></li>
 </ul>
@@ -32,7 +32,7 @@
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Useful_Info">役立つ情報</span></h2>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
 <p>AC は攻撃のダメージを、0 から現在の AC の値までのあいだの絶対値で減らす。AC が 10 なら、ダメージは 0〜10 のランダムな値だけ減る。ほかのゲームなら防具を素通りするのが普通の<a href="http://crawl.chaosforge.org/Spell" title="Spell">呪文</a>による魔法ダメージにも、これは適用される。
 </p><p>ゲームは内部で AC を小数第2位まで保持している。AC が整数でないときは、ダメージを受けるたびにこの内部値が確率で切り上げか切り捨てに丸められる。たとえば AC が 10.60 なら、60% の確率で AC 11、40% の確率で AC 10 として扱われる。
 </p><p><code>BEAM_ELEC</code> のダメージ(<a href="http://crawl.chaosforge.org/Shock" title="Shock">電撃</a>や<a href="http://crawl.chaosforge.org/Lightning_Bolt" title="Lightning Bolt">稲妻の矢</a>など)は、対象の AC の半分を無視する。<code>BEAM_FRAG</code> のダメージ(<a href="http://crawl.chaosforge.org/Sandblast" title="Sandblast">砂の突風</a>や<a href="http://crawl.chaosforge.org/Tin_of_tremorstones" title="Tin of tremorstones">震動石の缶</a>など)は、AC の影響を3倍受ける。
@@ -49,7 +49,7 @@
 <li><a href="http://crawl.chaosforge.org/Anguish" title="Anguish">苦悩</a>、<a href="http://crawl.chaosforge.org/Injury_Mirror" title="Injury Mirror">創傷の鏡</a>、<a href="http://crawl.chaosforge.org/Injury_Bond" title="Injury Bond">創傷の絆</a>、<a href="http://crawl.chaosforge.org/Uskayaw#Given_Abilities" title="Uskayaw">痛み分け</a>、<a href="http://crawl.chaosforge.org/Spectral_weapon" class="mw-redirect" title="Spectral weapon">幽体の武器</a>による<b>肩代わりされたダメージ</b>(代わりに元の対象の AC を使う)。</li>
 <li><b>状態異常</b>: <a href="http://crawl.chaosforge.org/Poison" title="Poison">毒</a>、<a href="http://crawl.chaosforge.org/Sticky_flame" class="mw-redirect" title="Sticky flame">焼夷の炎</a>、<a href="http://crawl.chaosforge.org/Flay" title="Flay">皮剥ぎ</a>。</li>
 <li><b>呪術の効果</b>: <a href="http://crawl.chaosforge.org/Pain" title="Pain">苦痛</a> / <a href="http://crawl.chaosforge.org/Necrotise" title="Necrotise">壊死化</a>(Necrotise)、<a href="http://crawl.chaosforge.org/Wand_of_mindburst" title="Wand of mindburst">精神破裂</a>、<a href="http://crawl.chaosforge.org/Anguish" title="Anguish">苦悩</a>、<a href="http://crawl.chaosforge.org/Agony" title="Agony">苦悶</a></li>
-<li><b>武器の<a href="http://crawl.chaosforge.org/Brand" title="Brand">エゴ</a>によるダメージ</b>と、<b>モンスターの<a href="http://crawl.chaosforge.org/Attack_flavour" title="Attack flavour">攻撃の追加効果</a></b>(attack flavour)。
+<li><b>武器の<a href="Brand.html" title="Brand">エゴ</a>によるダメージ</b>と、<b>モンスターの<a href="Attack_flavour.html" title="Attack flavour">攻撃の追加効果</a></b>(attack flavour)。
 <ul><li> ただし武器のエゴによるダメージは、もともと AC で減ったあとのダメージの何割か、という形のものが多い。</li>
 <li> モンスターの攻撃の追加効果には、AC 判定のある物理攻撃がダメージを与えないと発動しないものもある。それでも追加効果そのものは AC の影響を受けない。</li></ul></li>
 <li><b>特定の呪文</b>: <a href="http://crawl.chaosforge.org/Freeze" title="Freeze">氷結</a>、<a href="http://crawl.chaosforge.org/Vampiric_Draining" title="Vampiric Draining">ヴァンパイアの吸血</a>、<a href="http://crawl.chaosforge.org/Static_Discharge" title="Static Discharge">空電放射</a>、<a href="http://crawl.chaosforge.org/Ignite_Poison" title="Ignite Poison">毒の燃焼</a>、<a href="http://crawl.chaosforge.org/Dispel_Undead" title="Dispel Undead">アンデッドの解呪</a> / <a href="http://crawl.chaosforge.org/Dispel_Undead_Range" title="Dispel Undead Range">アンデッドの解呪(遠隔)</a>、<a href="http://crawl.chaosforge.org/Lee%27s_Rapid_Deconstruction" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>(モンスターに直接かけた場合)。

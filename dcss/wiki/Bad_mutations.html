@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>悪い変異 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="悪い変異(Bad mutations)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>悪い変異 <span class="en">Bad mutations</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Bad_mutations">Bad mutations</a>」(0.34 向け、2026-07-07 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Bad_mutations&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p>ここでは、身につく可能性のある<b>悪性変異</b>(bad mutation)を<i>すべて</i>挙げる。場面によっては役に立つものもあるが、良くても功罪相半ばといったところだ。なお「悪性変異」はゲームが使う区分の名前で、良し悪しを評価した呼び名ではない。どの変異も、<a href="http://crawl.chaosforge.org/Mutation#Bad_mutations" title="Mutation">悪性変異をもたらすもの</a>なら何からでも受ける可能性がある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Offensive"><span class="tocnumber">1</span> <span class="toctext">攻撃面</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Reckless"><span class="tocnumber">1.1</span> <span class="toctext">無謀</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Defensive"><span class="tocnumber">2</span> <span class="toctext">防御面</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Deformed_Body"><span class="tocnumber">2.1</span> <span class="toctext">奇形の体</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Screaming"><span class="tocnumber">2.2</span> <span class="toctext">叫び声</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Teleportitis"><span class="tocnumber">2.3</span> <span class="toctext">不随意瞬間移動</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Electricity_Vulnerability"><span class="tocnumber">2.4</span> <span class="toctext">電撃に弱い</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Heat_Vulnerability"><span class="tocnumber">2.5</span> <span class="toctext">熱に弱い</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Cold_Vulnerability"><span class="tocnumber">2.6</span> <span class="toctext">冷気に弱い</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Consumable_usage"><span class="tocnumber">3</span> <span class="toctext">消耗品の使用</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Booming_Voice"><span class="tocnumber">3.1</span> <span class="toctext">轟く声</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#No_Potion_Heal"><span class="tocnumber">3.2</span> <span class="toctext">薬での回復不可</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#General"><span class="tocnumber">4</span> <span class="toctext">全般</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Spiteful_Blood"><span class="tocnumber">4.1</span> <span class="toctext">悪意ある血</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Spatial_Entanglement"><span class="tocnumber">4.2</span> <span class="toctext">空間のもつれ</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Potion_Fungus"><span class="tocnumber">4.3</span> <span class="toctext">薬の菌類</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Initially_attractive"><span class="tocnumber">4.4</span> <span class="toctext">初見の誘引</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Meek"><span class="tocnumber">4.5</span> <span class="toctext">柔弱</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Poor_Constitution"><span class="tocnumber">4.6</span> <span class="toctext">虚弱体質</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Devolution"><span class="tocnumber">4.7</span> <span class="toctext">退化</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Frail"><span class="tocnumber">4.8</span> <span class="toctext">虚弱</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Low_MP"><span class="tocnumber">4.9</span> <span class="toctext">魔力容量小</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Reduced_Attributes"><span class="tocnumber">4.10</span> <span class="toctext">能力値の低下</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Inhibited_Regeneration"><span class="tocnumber">4.11</span> <span class="toctext">再生阻害</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Subdued_Magic"><span class="tocnumber">4.12</span> <span class="toctext">抑制された魔力</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Persistent_Drain"><span class="tocnumber">4.13</span> <span class="toctext">持続する吸収</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#See_Also"><span class="tocnumber">5</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#History"><span class="tocnumber">6</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Offensive">攻撃面</span></h2>
+<h3><span class="mw-headline" id="Reckless">無謀</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>SHが半分になるが、両手武器で与えるダメージが15%増える</td>
+<td>あなたの盾値は半減するが、両手武器で与えるダメージが増える。
+</td></tr>
+<tr>
+<td colspan="3">
+<p>悪性変異か、それとも良性変異か。人生がレモンを投げてよこしたら、トリプルソードで人生の頭をぶん殴ってやればいい。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Defensive">防御面</span></h2>
+<h3><span class="mw-headline" id="Deformed_Body">奇形の体</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>胴鎧の基本ACが40%下がる。</td>
+<td>あなたの奇形の体には鎧がうまく合わない。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a href="http://crawl.chaosforge.org/Jiyva" title="Jiyva">ジーヴァ</a>の<a href="http://crawl.chaosforge.org/Jiyva_mutations#Pseudopods" title="Jiyva mutations">仮足</a>の変異とは重ならない。<br /><a href="http://crawl.chaosforge.org/Armour_skill" class="mw-redirect" title="Armour skill">甲冑スキル</a>によるACの上乗せ分も下がる。<br />それ以外から得るAC(ほかの装備、防具の<a href="http://crawl.chaosforge.org/Enchant" title="Enchant">強化値</a>、<a href="http://crawl.chaosforge.org/Protection" title="Protection">護り</a>のエゴなど)には影響しない。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><b>種族ごとの注:</b> <a href="http://crawl.chaosforge.org/Naga" title="Naga">ナーガ</a>と<a href="http://crawl.chaosforge.org/Armataur" title="Armataur">アルマタウル</a>は最初からこの変異を持っている。<br /><a href="http://crawl.chaosforge.org/Draconian" title="Draconian">ドラコニアン</a>、<a href="http://crawl.chaosforge.org/Octopode" title="Octopode">オクトポード</a>、<a href="http://crawl.chaosforge.org/Felid" title="Felid">フェリッド</a>は胴鎧を着られないので、この変異は受けない。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="Screaming">叫び声</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>ダメージを受けるたびに、一定の確率で大声で<a href="http://crawl.chaosforge.org/Shout" title="Shout">叫ぶ</a>(騒音は<a href="http://crawl.chaosforge.org/T" title="T">tt</a>と同じ)。</td>
+<td>あなたは敵に向かって時々抑えきれずに叫ぶ。
+</td></tr>
+<tr>
+<td>2</td>
+<td>叫ぶ確率が上がり、声も大きくなる。</td>
+<td>あなたは敵に向かってしばしば抑えきれずに怒鳴る。
+</td></tr>
+<tr>
+<td>3</td>
+<td>叫ぶ確率も声の大きさも最大になる。</td>
+<td>あなたは敵に向かって頻繁に抑えきれずに絶叫する。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="Teleportitis">不随意瞬間移動</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>時々モンスターの隣にテレポートしてしまう。 </td>
+<td>あなたはまれにモンスターの隣にテレポートするようになった。
+</td></tr>
+<tr>
+<td>2</td>
+<td>テレポートの頻度が上がる。</td>
+<td>あなたはしばしばモンスターの隣にテレポートするようになった。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><b>種族ごとの注:</b> <a href="http://crawl.chaosforge.org/Formicid" title="Formicid">フォーミシッド</a>はテレポートできないので、この変異は受けない。
+</p><p>不随意瞬間移動では、モンスターのそばへ飛ばされる前に数ターンのあいだ<i>転位準備</i>(!Tele!)の状態になる。この状態は<a href="http://crawl.chaosforge.org/Scroll_of_teleportation" title="Scroll of teleportation">テレポートの巻物</a>を読めば打ち消せる。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Electricity_Vulnerability">電撃に弱い</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>rElec-</td>
+<td>あなたは電撃に弱い。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a href="http://crawl.chaosforge.org/Qazlal" class="mw-redirect" title="Qazlal">クァズラル</a>から罰としてこの変異を与えられることがある。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Heat_Vulnerability">熱に弱い</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>rF-</td>
+<td>あなたは熱に弱い。
+</td></tr>
+<tr>
+<td>2</td>
+<td>rF--</td>
+<td>あなたはかなり熱に弱い。
+</td></tr>
+<tr>
+<td>3</td>
+<td>rF---</td>
+<td>あなたはきわめて熱に弱い。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a href="http://crawl.chaosforge.org/Qazlal" class="mw-redirect" title="Qazlal">クァズラル</a>から罰としてこの変異を与えられることがある。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Cold_Vulnerability">冷気に弱い</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>rC-</td>
+<td>あなたは冷気に弱い。
+</td></tr>
+<tr>
+<td>2</td>
+<td>rC--</td>
+<td>あなたはかなり冷気に弱い。
+</td></tr>
+<tr>
+<td>3</td>
+<td>rC---</td>
+<td>あなたはきわめて冷気に弱い。
+</td></tr>
+<tr>
+<td colspan="3"> <a href="http://crawl.chaosforge.org/Qazlal" class="mw-redirect" title="Qazlal">クァズラル</a>から罰としてこの変異を与えられることがある。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Consumable_usage">消耗品の使用</span></h2>
+<h3><span class="mw-headline" id="Booming_Voice">轟く声</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>敵の見ている前で巻物を読むと、銅鑼の盾並みの騒音(40)を立てる。</td>
+<td>敵対するモンスターが見ている前で巻物を読むと、あなたの声はとんでもない大音量で響き渡る。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="No_Potion_Heal">薬での回復不可</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>薬の回復量が通常の50%になる。</td>
+<td>薬による体力回復の効果が低い。
+</td></tr>
+<tr>
+<td>2</td>
+<td>薬でHPがまったく回復しない。</td>
+<td>薬で体力を回復することができない。
+</td></tr>
+<tr>
+<td colspan="3">
+<p>対象は<a href="http://crawl.chaosforge.org/Potion_of_curing" title="Potion of curing">治療の薬</a>、<a href="http://crawl.chaosforge.org/Potion_of_heal_wounds" title="Potion of heal wounds">怪我の治療の薬</a>、<a href="http://crawl.chaosforge.org/Potion_of_ambrosia" title="Potion of ambrosia">アンブロシアの薬</a>。<br />HP回復以外の効果(状態異常の治療、アンブロシアによるMPの回復)はそのまま働く。<a href="http://crawl.chaosforge.org/Gozag" class="mw-redirect" title="Gozag">ゴザーグ</a>による効果も変わらない。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><b>種族ごとの注:</b> <a href="http://crawl.chaosforge.org/Vine_Stalker" title="Vine Stalker">歩き蔓</a>は最初から段階2を持っている。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="General">全般</span></h2>
+<h3><span class="mw-headline" id="Spiteful_Blood">悪意ある血</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>HPが最大値の50%を下回ったとき、隣に<a href="http://crawl.chaosforge.org/Erythrospite" title="Erythrospite">エリスロスパイト</a>が1体現れることがある</td>
+<td>あなたが流した血は起き上がってあなたを襲うことがある。
+</td></tr>
+<tr>
+<td>2</td>
+<td>HPが最大値の50%を下回ったとき、隣にエリスロスパイトが2体現れることがある</td>
+<td>あなたが流した血は群れをなして起き上がり、あなたを襲うことがある。
+</td></tr>
+<tr>
+<td colspan="3">
+<p>段階1では、一度現れると、HPが全快して(そのうえで再び大きく傷を負って)からでないと次は現れない。段階2でも同じ仕組みで、数が2体になる。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Spatial_Entanglement">空間のもつれ</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果
+</td></tr>
+<tr>
+<td>1</td>
+<td>転位で移動するたびに、66%の確率でランダムなモンスターを1体道連れにする
+</td></tr>
+<tr>
+<td colspan="3">
+<p>移動先が元の位置から見える範囲なら、さっきまで視界にいたモンスターからランダムに1体を引き寄せる(移動先の視界に入っていないモンスターが優先される)。テレポートでもっと遠くへ飛んだ場合は、同じ階のどこにいるモンスターでも引き寄せられうる。
+</p><p>引き寄せられたモンスターは1ターンのあいだ朦朧とするので、プレイヤーは必ず相手より先に動ける。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Potion_Fungus">薬の菌類</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果
+</td></tr>
+<tr>
+<td>1</td>
+<td>自分が飲んだ有益な薬の効果を、時々ほかのモンスターにも分けてしまう
+</td></tr>
+<tr>
+<td colspan="3">
+<p>仲間に効くこと*も*あるが、ゲーム中には仲間よりも敵のほうがずっと多い(そもそも仲間を持たないキャラクターも多い)ので、基本的には不利な変異として作られている。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Initially_attractive">初見の誘引</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果
+</td></tr>
+<tr>
+<td>1</td>
+<td>あなたは新たに視界に入った生き物を時々自分の方へ引き寄せる。
+</td></tr>
+<tr>
+<td>2</td>
+<td>あなたは新たに視界に入った生き物を頻繁に自分の方へ引き寄せる。
+</td></tr>
+<tr>
+<td colspan="3">
+<p>引き寄せたモンスターは50%の確率で目を覚ます。ただしプレイヤーの居場所に気づくわけではないので、隠密に長けたキャラクターならしばらく見つからずに済むこともある。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Meek">柔弱</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果
+</td></tr>
+<tr>
+<td>1</td>
+<td>-3 <a href="http://crawl.chaosforge.org/Slaying" title="Slaying">殺傷</a>
+</td></tr>
+<tr>
+<td>2</td>
+<td>-5 <a href="http://crawl.chaosforge.org/Slaying" title="Slaying">殺傷</a>
+</td></tr>
+<tr>
+<td>3</td>
+<td>-7 <a href="http://crawl.chaosforge.org/Slaying" title="Slaying">殺傷</a>
+</td></tr>
+<tr>
+<td colspan="3">
+<p>あらゆる攻撃の効き目が落ち、ダメージが減るうえに命中も少し下がる。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Poor_Constitution">虚弱体質</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup></td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>最大HPの1/15を超えるダメージを受けるたびに、1/9の確率で<a href="http://crawl.chaosforge.org/Weak" title="Weak">虚弱</a>状態になる</td>
+<td>あなたの体はダメージを受けると時々弱体化する。
+</td></tr>
+<tr>
+<td>2</td>
+<td>最大HPの1/15を超えるダメージを受けるたびに、1/6の確率で<a href="http://crawl.chaosforge.org/Weak" title="Weak">虚弱</a>状態になる<br />虚弱状態になったときは、さらに1/2の確率で<a href="http://crawl.chaosforge.org/Slow" title="Slow">減速</a>状態にもなる。</td>
+<td>あなたの体はダメージを受けると時々弱体化し、鈍くなる。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="Devolution">退化</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>この特性が消えるまで、悪性変異を受け続ける。</td>
+<td>あなたは秘められた遺伝的欠陥を持っている。
+</td></tr>
+<tr>
+<td>2</td>
+<td>段階1と同じだが、長く続く。</td>
+<td>あなたは恐ろしい秘められた遺伝的欠陥を持っている。
+</td></tr>
+<tr>
+<td colspan="3">
+<p>およそ<a href="http://crawl.chaosforge.org/XL" class="mw-redirect" title="XL">XL</a>の1/4ぶんの経験値を得るたびに発動し、<a href="http://crawl.chaosforge.org/Bad_mutation" class="mw-redirect" title="Bad mutation">悪性変異</a>を1つ与える。2回発動するごとに段階が1つ下がる。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="Frail">虚弱</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>最大HP -10%</td>
+<td>あなたは虚弱だ。
+</td></tr>
+<tr>
+<td>2</td>
+<td>最大HP -20%</td>
+<td>あなたは非常に虚弱だ。
+</td></tr>
+<tr>
+<td>3</td>
+<td>最大HP -30%</td>
+<td>あなたはきわめて虚弱だ。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="Low_MP">魔力容量小</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>最大MP -10%</td>
+<td>あなたの魔力の容量は少ない。
+</td></tr>
+<tr>
+<td>2</td>
+<td>最大MP -20%</td>
+<td>あなたの魔力の容量はとても少ない。
+</td></tr>
+<tr>
+<td>3</td>
+<td>最大MP -30%</td>
+<td>あなたの魔力の容量はとてつもなく少ない。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="Reduced_Attributes">能力値の低下</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>腕力・知力・器用のいずれかが -3</td>
+<td>あなたは力が弱い。<br />あなたは愚かだ。<br />あなたは不器用だ。
+</td></tr>
+<tr>
+<td>2</td>
+<td>腕力・知力・器用のいずれかが -6</td>
+<td>あなたはとても力が弱い。<br />あなたはとても愚かだ。<br />あなたはとても不器用だ。
+</td></tr>
+<tr>
+<td colspan="3">
+<p>この変異は何度も受けることがあるが、能力値ごとに段階2までしか進まない。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Inhibited_Regeneration">再生阻害</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td>モンスターが視界にいるあいだは、通常のHPの<a href="http://crawl.chaosforge.org/Regeneration" class="mw-redirect" title="Regeneration">自然回復</a>が止まる。</td>
+<td>あなたはモンスターが視界にいる間自然に回復しない。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a href="http://crawl.chaosforge.org/Jiyva" title="Jiyva">ジーヴァ</a>による再生と<a href="http://crawl.chaosforge.org/Trog" title="Trog">トログ</a>の御手はふつうに働くが、それ以外の外から得る再生効果はすべて効かなくなる。<br />この変異の変更履歴は<a href="http://crawl.chaosforge.org/Inhibited_Regeneration#History" title="Inhibited Regeneration">再生阻害#変更履歴</a>を参照。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><b>種族ごとの注:</b>
+<a href="http://crawl.chaosforge.org/Ghoul" title="Ghoul">グール</a>は最初から段階1を持っている。<br /><a href="http://crawl.chaosforge.org/Vampire" title="Vampire">吸血鬼</a>は血が通っていない状態(Bloodless)のときにこの変異を持つので、ランダムに受けることはない。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="Subdued_Magic">抑制された魔力</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td><a href="http://crawl.chaosforge.org/Spell_Power" title="Spell Power">呪文の威力</a>-, <a href="Spell_Success.html" title="Spell Success">呪文の成功率</a>+</td>
+<td>あなたの呪文詠唱は少し易しいが、少し威力が低い。
+</td></tr>
+<tr>
+<td>2</td>
+<td><a href="http://crawl.chaosforge.org/Spell_Power" title="Spell Power">呪文の威力</a>--, <a href="Spell_Success.html" title="Spell Success">呪文の成功率</a>++</td>
+<td>あなたの呪文詠唱は易しいが、威力が低い。
+</td></tr>
+<tr>
+<td>3</td>
+<td><a href="http://crawl.chaosforge.org/Spell_Power" title="Spell Power">呪文の威力</a>---, <a href="Spell_Success.html" title="Spell Success">呪文の成功率</a>+++</td>
+<td>あなたの呪文詠唱はとても易しいが、とてつもなく威力が低い。
+</td></tr>
+<tr>
+<td colspan="3"> 段階ごとに、<a href="http://crawl.chaosforge.org/Spellpower" class="mw-redirect" title="Spellpower">補正前の呪文の威力</a>に-20%(段階の分を足し合わせてから掛ける)、<a href="Spell_Success.html#Modifiers" title="Spell Success">補正前の失敗率</a>に-2%(足し算)の補正がかかる。<br />
+<p>実際の影響は、ふつうはそれぞれ威力-20%・失敗率-2%より小さくなる。
+</p>
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<h3><span class="mw-headline" id="Persistent_Drain">持続する吸収</span></h3>
+<table>
+
+<tr>
+<td>段階</td>
+<td>効果</td>
+<td>ゲーム内の説明
+</td></tr>
+<tr>
+<td>1</td>
+<td><a href="http://crawl.chaosforge.org/Draining" title="Draining">衰弱</a>からの回復に2倍の時間がかかる。</td>
+<td>あなたは生命力吸収からの回復が遅くなった。
+</td></tr>
+<tr>
+<td colspan="3">
+<p><a class="mw-selflink selflink">悪性変異</a>
+</p>
+</td></tr></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Good_mutations" title="Good mutations">良性変異</a></li>
+<li><a href="http://crawl.chaosforge.org/Demonspawn_mutations" title="Demonspawn mutations">悪魔の血族の変異</a></li>
+<li><a href="http://crawl.chaosforge.org/Jiyva_mutations" title="Jiyva mutations">ジーヴァの変異</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.34.html" title="0.34">0.34</a>で、変異の大がかりな見直しにあわせて良性変異がいくつか追加され、一部が調整された。</li>
+<li><a href="http://crawl.chaosforge.org/0.33" title="0.33">0.33</a>で、<a href="http://crawl.chaosforge.org/Deterioration" title="Deterioration">劣化</a>(Deterioration)が<a href="http://crawl.chaosforge.org/Poor_Constitution" title="Poor Constitution">虚弱体質</a>に置き換えられた。<a href="http://crawl.chaosforge.org/Deformed" title="Deformed">奇形の体</a>による防具の基本ACの低下が50%から40%に減った。</li>
+<li><a href="http://crawl.chaosforge.org/0.31" title="0.31">0.31</a>で、<a href="http://crawl.chaosforge.org/Persistent_Drain" title="Persistent Drain">持続する吸収</a>が追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.30" title="0.30">0.30</a>で、<a href="http://crawl.chaosforge.org/Heat_Vulnerability" title="Heat Vulnerability">熱に弱い</a>と<a href="http://crawl.chaosforge.org/Cold_Vulnerability" title="Cold Vulnerability">冷気に弱い</a>が通常の変異になった。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" title="0.29">0.29</a>で、<a href="http://crawl.chaosforge.org/No_Unsafe_Potions" title="No Unsafe Potions">危険な薬の使用不可</a>(No Unsafe Potions)が通常の変異になった。多くの変異の段階数が2に増減した。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" title="0.28">0.28</a>で、<a href="http://crawl.chaosforge.org/Devolution" title="Devolution">退化</a>が追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" title="0.27">0.27</a>で、<a href="http://crawl.chaosforge.org/Blurry_Vision" title="Blurry Vision">かすみ目</a>(Blurry Vision)が<a href="http://crawl.chaosforge.org/No_Unsafe_Scrolls" title="No Unsafe Scrolls">危険な巻物の使用不可</a>(No Unsafe Scrolls)に置き換えられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.22" title="0.22">0.22</a>より前は、<a href="http://crawl.chaosforge.org/MP-Powered_Wands" title="MP-Powered Wands">魔力を消費する杖</a>の中身が今と違い、悪性変異として扱われていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.20" title="0.20">0.20</a>より前は、再生阻害の変異は3段階あった。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" title="0.17">0.17</a>より前は、<a href="http://crawl.chaosforge.org/Forlorn" title="Forlorn">孤独</a>の変異があった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" title="0.15">0.15</a>より前は、代謝が遅い・代謝が速い(Slow/Fast metabolism)の変異がランダムな変異として出た。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" title="0.14">0.14</a>より前は、移動が遅い変異がランダムに出た。また、治癒が遅い(Slow Healing)変異の段階1と段階2は、敵がいるかどうかに関係なく自然回復をそれぞれ33%、66%減らしていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" title="0.13">0.13</a>より前は、<a href="http://crawl.chaosforge.org/Reduced_Attributes" title="Reduced Attributes">能力値の低下</a>は最大14回まで受けることがあり、1段階ごとに-1だった。<div class="mw-references-wrap"><ol class="references"></li></ul>
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.34.1/crawl-ref/source/ouch.cc#L997">ouch.cc:997</a> (0.34.1)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
