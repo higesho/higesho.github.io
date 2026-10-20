@@ -49,17 +49,17 @@
 
 <h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
 <p>毒を受けるというのは、ふつうは毒の<a href="http://crawl.chaosforge.org/Status_effect" data-untr="1" class="mw-redirect" title="Status effect">状態異常</a>になることを指す。持続時間と1ターンあたりのダメージは毒の重さで決まる。毒は重ねがけでき、何度も毒を受けるほど重くなる。プレイヤーの場合、重さは「毒」の文字の色で表される(黄 → 明るい赤 → 赤)。モンスターの場合は、<b>x</b> で調べれば重さがわかる。タイル版では、モンスターの毒は緑のしずくで表される(「極めて重い毒に冒されている」= しずく3つ = 最大)。
-</p><p>また、<a href="http://crawl.chaosforge.org/Mercury_Arrow" data-untr="1" title="Mercury Arrow">水銀の鏃</a>、<a href="http://crawl.chaosforge.org/Poisonous_Vapours" data-untr="1" title="Poisonous Vapours">有毒の蒸気</a>、<a href="http://crawl.chaosforge.org/Poison_Arrow" data-untr="1" title="Poison Arrow">毒素の矢</a>などの呪文は、毒の<i>直撃</i>ダメージを与える。これはふつうのダメージと同じだが、毒耐性で軽減される。
+</p><p>また、<a href="Mercury_Arrow.html" title="Mercury Arrow">水銀の鏃</a>、<a href="Poisonous_Vapours.html" title="Poisonous Vapours">有毒の蒸気</a>、<a href="http://crawl.chaosforge.org/Poison_Arrow" data-untr="1" title="Poison Arrow">毒素の矢</a>などの呪文は、毒の<i>直撃</i>ダメージを与える。これはふつうのダメージと同じだが、毒耐性で軽減される。
 </p><p>軽い毒なら低レベルのキャラクターでもまず耐えられるが、重い毒は時間とともにとてつもないダメージになることがある。どちらにしても、毒が抜けるまでは戦闘を避けて休むのがほぼ常に最善だ。徘徊するモンスターを避けるなら、敵を片づけた階で休むとよい。
 </p><p>毒は<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外にいるモンスターにもダメージを与え続ける。ただし、別の階にいるモンスターには何も起こらない。
 </p>
 <h2><span class="mw-headline" id="Sources">毒を与える手段</span></h2>
 <p>プレイヤーは(そしてモンスターも)次の方法で毒を与えられる。
 </p>
-<ul><li>一部の<a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a>の呪文</li>
+<ul><li>一部の<a href="Alchemy.html" title="Alchemy">錬金術</a>の呪文</li>
 <li><a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>のブランドがついた近接武器</li>
 <li><a href="http://crawl.chaosforge.org/Staff_of_alchemy" data-untr="1" title="Staff of alchemy">錬金術の杖</a>や<a href="http://crawl.chaosforge.org/Staff_of_Olgreb" data-untr="1" title="Staff of Olgreb">オルグレブの杖</a></li>
-<li><a href="http://crawl.chaosforge.org/Poisoned" data-untr="1" title="Poisoned">毒</a>や<a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>を塗った<a href="http://crawl.chaosforge.org/Dart" data-untr="1" title="Dart">ダーツ</a></li>
+<li><a href="http://crawl.chaosforge.org/Poisoned" data-untr="1" title="Poisoned">毒</a>や<a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>を塗った<a href="Dart.html" title="Dart">ダーツ</a></li>
 <li><a href="Naga.html" title="Naga">ナーガ</a>は生まれつき<a href="http://crawl.chaosforge.org/Spit_Poison" data-untr="1" title="Spit Poison">毒の唾液</a>の能力を持っている。</li></ul>
 <h3><span class="mw-headline" id="Poison_Types">毒の種類</span></h3>
 <p><a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>のブランドの武器のほかに、生まれつき毒の攻撃を持つモンスターもいる。毒には通常の毒と強い毒の2種類があり、どちらも攻撃が当たるたびに1/3の確率で発動する。
@@ -69,16 +69,16 @@
 <p>毒液のブランドの武器は仕組みが違う。モンスターがプレイヤーを攻撃したときは、75%の確率で6〜13の毒ダメージに、与えた物理ダメージの0〜1.5倍のランダムな量を足した毒が加わる。プレイヤーがモンスターを攻撃したときは、<code>1 + (4 + 1d8 + 1d&lt;1.5 * dam&gt;)/7</code> 「スタック」の毒を敵に与える。
 </p>
 <h2><span class="mw-headline" id="Poison_Resistance">毒耐性</span></h2>
-<p>プレイヤーもモンスターも、1段階の毒耐性(rPois+)か、完全な免疫(rPois∞。コードの中では rPois+++ と表される)を持てる。rPois+ は重ならないので、<a href="http://crawl.chaosforge.org/Octopode" data-untr="1" title="Octopode">オクトポード</a>が指輪を3つはめても免疫にはならない。
+<p>プレイヤーもモンスターも、1段階の毒耐性(rPois+)か、完全な免疫(rPois∞。コードの中では rPois+++ と表される)を持てる。rPois+ は重ならないので、<a href="Octopode.html" title="Octopode">オクトポード</a>が指輪を3つはめても免疫にはならない。
 </p><p>毒耐性には次の効果がある。
 </p>
 <ul><li>ほとんどの毒の状態異常を66%(2/3)の確率で防ぐ。</li>
-<li><a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>による減速、<a href="http://crawl.chaosforge.org/Hornet" data-untr="1" title="Hornet">巨大赤色蜂</a>と<a href="http://crawl.chaosforge.org/Jorogumo" data-untr="1" title="Jorogumo">女郎蜘蛛</a>による減速・麻痺、<a href="http://crawl.chaosforge.org/Formless_jellyfish" data-untr="1" title="Formless jellyfish">形なきクラゲ</a>による麻痺、敵の<a href="http://crawl.chaosforge.org/Alistair%27s_Intoxication" data-untr="1" title="Alistair&#39;s Intoxication">アリステイアの酩酊</a>を66%の確率で防ぐ。</li>
+<li><a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>による減速、<a href="http://crawl.chaosforge.org/Hornet" data-untr="1" title="Hornet">巨大赤色蜂</a>と<a href="http://crawl.chaosforge.org/Jorogumo" data-untr="1" title="Jorogumo">女郎蜘蛛</a>による減速・麻痺、<a href="Formless_jellyfish.html" title="Formless jellyfish">形なきクラゲ</a>による麻痺、敵の<a href="http://crawl.chaosforge.org/Alistair%27s_Intoxication" data-untr="1" title="Alistair&#39;s Intoxication">アリステイアの酩酊</a>を66%の確率で防ぐ。</li>
 <li>毒の直撃ダメージが66%減る。</li>
-<li><a href="http://crawl.chaosforge.org/Clouds#Poison" data-untr="1" class="mw-redirect" title="Clouds">毒ガスの雲</a>、<a href="http://crawl.chaosforge.org/Mercury_Vapours" data-untr="1" class="mw-redirect" title="Mercury Vapours">水銀の蒸気</a>の毒、<a href="http://crawl.chaosforge.org/Mephitic_Cloud" data-untr="1" title="Mephitic Cloud">悪臭の雲</a>が完全に効かなくなる。</li></ul>
+<li><a href="http://crawl.chaosforge.org/Clouds#Poison" data-untr="1" class="mw-redirect" title="Clouds">毒ガスの雲</a>、<a href="http://crawl.chaosforge.org/Mercury_Vapours" data-untr="1" class="mw-redirect" title="Mercury Vapours">水銀の蒸気</a>の毒、<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>が完全に効かなくなる。</li></ul>
 <p>さらに、rPois を持つモンスターには(プレイヤーは別だが)<a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>がまったく効かない。ほとんどの効果について、毒耐性は受ける毒の量そのものは減らさ<i>ない</i>。減るのは毒を受ける確率だけだ。
 </p><p>毒に免疫のある生き物は、毒に冒されず、毒の直撃ダメージも受けない。
-</p><p>ただし、<a href="http://crawl.chaosforge.org/Mercury_Arrow" data-untr="1" title="Mercury Arrow">水銀の鏃</a>と<a href="Eringya's_Noxious_Bog.html" title="Eringya&#39;s Noxious Bog">エリンギャの毒沼</a>のダメージは70%が毒の直撃、30%が物理なので、毒に免疫のある生き物でもこれらの呪文からは多少のダメージを受ける。毒耐性を持つ生き物は、これらの呪文から合計53%のダメージを受ける。
+</p><p>ただし、<a href="Mercury_Arrow.html" title="Mercury Arrow">水銀の鏃</a>と<a href="Eringya's_Noxious_Bog.html" title="Eringya&#39;s Noxious Bog">エリンギャの毒沼</a>のダメージは70%が毒の直撃、30%が物理なので、毒に免疫のある生き物でもこれらの呪文からは多少のダメージを受ける。毒耐性を持つ生き物は、これらの呪文から合計53%のダメージを受ける。
 </p>
 <h3><span class="mw-headline" id="Poison_Vulnerability">毒への脆弱性</span></h3>
 <p>一部のモンスター(特に昆虫と蜘蛛)は毒に弱く、毒の攻撃から2倍のダメージを受け、受ける毒の量も2倍になる。<a href="http://crawl.chaosforge.org/Virulence" data-untr="1" title="Virulence">免疫の低下</a>の呪文によって脆弱になることもある。
@@ -112,14 +112,14 @@
 <p>毒耐性のないキャラクターでも、毒が抜けきる前に治してしまえば最悪の事態は避けられる。手段は次のとおり。
 </p>
 <ul><li><a href="http://crawl.chaosforge.org/Potion_of_curing" data-untr="1" title="Potion of curing">治療の薬</a>を<a href="http://crawl.chaosforge.org/Quaff" data-untr="1" title="Quaff">飲む</a>。</li>
-<li><a href="http://crawl.chaosforge.org/Elyvilon" data-untr="1" title="Elyvilon">エリヴィロン</a>の聖杯の清めの能力</li></ul>
+<li><a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の聖杯の清めの能力</li></ul>
 <h2><span class="mw-headline" id="Poisoned_Condition">毒の状態</span></h2>
 <p>毒の攻撃を受けたモンスターやプレイヤーは、たいてい「毒」の<a href="http://crawl.chaosforge.org/Condition" data-untr="1" class="mw-redirect" title="Condition">状態</a>になる。毒に冒されているあいだは、毒の重さに比例したダメージを受ける。毒を受けるたびに前の毒に「重なって」、最終的なダメージが増えていく。ダメージの式はプレイヤーとモンスターで異なる。
 </p>
 <h3><span class="mw-headline" id="Player_Formula">プレイヤーの場合の式</span></h3>
 <ul><li>プレイヤーの場合、毒の総ダメージはあらかじめ決まっていて、毎ターンその一部を受ける。毒が重いほど、1ターンあたりのダメージは大きく、持続時間も長くなる。最終的に受けるダメージの合計は、HP バーの黄色く強調された部分で表示される。</li></ul>
 <ul><li>&#160;% キーを押すと、毒がどれだけ残っているかがわかる。たとえば 16 -&gt; -16 なら、<a href="http://crawl.chaosforge.org/Regeneration" data-untr="1" class="mw-redirect" title="Regeneration">再生</a>と耐性を考慮したうえで、今の毒で HP が16から-16まで減るという意味だ。毒のダメージは少しずつ、10 aut ごとに残りの毒のおよそ1/5ずつ与えられる。たとえば再生がなければ、16 -&gt; -16 は最初の1回でおよそ6.4のダメージ、続いて 5.1 → 4.1 … となる。再生がある場合、表示される量はその間に回復する分をすでに差し引いているので、実際の毒のダメージは表示上の32より大きく、その32のダメージのうち毎ターン受ける割合は最初のほうに偏る(再生のアイテム1つなら 9 → 7.2 → 5.8 といった具合)。</li></ul>
-<ul><li><a href="http://crawl.chaosforge.org/Cheibriados" data-untr="1" title="Cheibriados">ケイブリアドス</a>を信仰していると(信仰心は問わない。贖罪中は除く)、毒の <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> あたりのダメージは2/3になるが、持続時間は1.5倍になる。つまりダメージが長い時間に分散されるので、そのぶん HP を回復する時間が稼げる。</li></ul>
+<ul><li><a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>を信仰していると(信仰心は問わない。贖罪中は除く)、毒の <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> あたりのダメージは2/3になるが、持続時間は1.5倍になる。つまりダメージが長い時間に分散されるので、そのぶん HP を回復する時間が稼げる。</li></ul>
 <h3><span class="mw-headline" id="Monster_Formula">モンスターの場合の式</span></h3>
 <p>モンスターの毒は、受けた毒の「スタック」の数で表される。毒を与える手段はそれぞれ1つ以上のスタックを与える。スタックは最大4つで、<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>そこまで達したモンスターは「この上ないほどに毒に冒された」状態になる。
 </p><p>1ターンあたりのダメージは、モンスターが受けている毒のスタックの数で決まる。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鎧の覚醒 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="鎧の覚醒(Awaken Armour)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>鎧の覚醒 <span class="en">Awaken Armour</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Awaken_Armour">Awaken Armour</a>」(0.33 向け、2025-10-22 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Awaken_Armour&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Awaken_armour.png" data-untr="1" class="image"><img alt="Awaken armour.png" src="img/Awaken_armour.png" width="32" height="32" /></a>&#8195;鎧の覚醒
+</th></tr>
+<tr>
+<th align="left"> レベル
+</th>
+<td> 4
+</td></tr>
+<tr>
+<th align="left"> 系統<sup>1</sup>
+</th>
+<td> <a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>
+</td></tr>
+
+<tr>
+<th align="left"> 系統<sup>2</sup>
+</th>
+<td> <a href="Forgecraft.html" title="Forgecraft">鍛造術</a>
+</td></tr>
+
+<tr>
+<th align="left"> 入手元
+</th>
+<td><a href="Book_of_the_Fortress.html" title="Book of the Fortress">城塞の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Iron" data-untr="1" title="Book of Iron">鉄の魔法書</a>
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 4
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 0
+</td></tr>
+
+<tr>
+<th align="left"> 威力の上限
+</th>
+<td> 50
+</td></tr>
+
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 身に着けている鎧の記憶を呼び起こし、その残響を実体化させて共に戦わせる。この残響の動きは遅いが、その打撃の威力は元になった鎧の重さに応じて大きく増す。また、鎧そのものが持つ防御上の特性をすべて備えている。
+<p>呪文の威力が高いほど耐久力が増す。
+</p>
+<hr />
+<p>「鍛冶師が鋼の芯を形づくるのは、指揮官が兵の心を形づくるのとまったく同じことだ。この鎧が口をきけたなら、わたしたちは同じ大義のために戦っているのだと言うだろう。」
+</p>
+</td></tr></table>
+<p><b>鎧の覚醒</b>はレベル4の<a href="http://crawl.chaosforge.org/Earth" data-untr="1" class="mw-redirect" title="Earth">地の魔術</a>/<a href="Forgecraft.html" title="Forgecraft">鍛造術</a>の呪文だ。着ている鎧の魂を<b>鎧の残響</b>として呼び出し、戦いに加わらせる。鎧が重いほど残響は強くなる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>着ている胴鎧の残響を作り出す。残響の能力は次のとおり。
+</p>
+<ul><li>HP: 基本 35</li>
+<li>HD: 15 + 威力/10</li>
+<li>AC: <code>2 * base AC + enchantment</code></li>
+<li>攻撃: 1 回に 2 度殴り、それぞれ <code> base AC + (base AC)^2 / 2</code> のダメージを与える。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup></li>
+<li>移動速度がきわめて遅い(33%)</li>
+<li><a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>は無限</li>
+<li><a href="Poison.html" title="Poison">毒</a>と<a href="http://crawl.chaosforge.org/Negative_energy" data-untr="1" title="Negative energy">負のエネルギー</a>が効かない</li>
+<li>心を持たず、<a href="http://crawl.chaosforge.org/Fly" data-untr="1" title="Fly">飛行</a>している。</li>
+<li>鎧の基本の種類とアーティファクトの特性に応じた耐性を得る。</li></ul>
+<p><a href="http://crawl.chaosforge.org/Deformed" data-untr="1" title="Deformed">奇形の体</a>や<a href="http://crawl.chaosforge.org/Form" data-untr="1" class="mw-redirect" title="Form">変身</a>による倍率は無視される。胴鎧に関係しない方法で<a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a>を上げても、残響の能力値は変わらない。
+</p><p>鎧の残響は1体までしか出せない。もう一度唱えると、前の残響はすぐに時間切れで消える。
+</p><p><a href="Draconian.html" title="Draconian">ドラコニアン</a>、<a href="Felid.html" title="Felid">フェリッド</a>、<a href="Octopode.html" title="Octopode">オクトポード</a>、<a href="Poltergeist.html" title="Poltergeist">ポルターガイスト</a>は胴鎧を着られないので、この呪文を使えない。鎧が体に融合する<a href="Transformation.html" title="Transformation">変身</a>をしている間も使えない。ただし、残響を呼んだあとで変身を切り替えたり鎧を脱いだりしても、残響は消えない。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>この呪文は主に近接戦闘と呪文を両立させるハイブリッド向けで、近接戦闘の味方を1体増やしてくれる。いちばん重い鎧で作っても残響は遅く、比較的もろいので、単独で勝てる戦いはあまり多くない。
+</p><p>残響の強さは鎧の AC に大きく左右される。<a href="Robe.html" title="Robe">ローブ</a>なら2回殴っても1回あたり最大4ダメージだが、比較的軽い<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>でも1回あたり最大40ダメージになる。<a href="Crystal_plate_armour.html" title="Crystal plate armour">水晶の鎧</a>なら最大112ダメージを<i>2回</i>与えられる。とはいえ、水晶の鎧を着たままこの呪文を唱えるのにかける大変な手間は、遅い味方を1体作るよりも効果的なことに回せたはずだ。一方、<a href="Quicksilver_dragon_scales.html" title="Quicksilver dragon scales">水銀ドラゴンの鱗一式</a>はこの呪文と相性がよい。基本 AC が高いのに、重さはとても軽いからだ。
+</p><p>相応の鎧を着たうえで呪文も唱えられるのは、<a href="Demigod.html" title="Demigod">神々の末裔</a>、<a href="Oni.html" title="Oni">鬼</a>、<a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>の信者のように能力値が高いキャラクターであることが多い。重い鎧による呪文詠唱へのペナルティが大幅に小さい<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>には特に効果的だ。もっとも、<a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">沼ドラゴン</a>や水銀ドラゴンの鱗一式のような中くらいの重さの鎧でなら、多くのキャラクターがこの呪文をうまく使いこなせる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> より前は、この呪文は<b>鎧の活性化(Animate Armour)</b>という名前で、レベル4の<a href="http://crawl.chaosforge.org/Summoning" data-untr="1" class="mw-redirect" title="Summoning">召喚術</a>/<a href="http://crawl.chaosforge.org/Earth" data-untr="1" class="mw-redirect" title="Earth">地の魔術</a>の呪文だった。また、強化値やアーティファクトの特性は写さず、着ている鎧と同じ基本の種類の +0 の複製を召喚していた。</li>
+<li><a href="0.32.html" title="0.32">0.32</a> より前は、活性化された鎧は基本の種類が本来持つ耐性を得なかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、活性化された鎧は<a href="http://crawl.chaosforge.org/Fly" data-untr="1" title="Fly">飛行</a>しなかった。</li>
+<li>鎧の活性化は<a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a>で追加された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.33.0/crawl-ref/source/mon-util.cc#L2042">mon-util.cc:2042</a> (0.33.0)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>武器の選び方 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="武器の選び方(Weapon choice)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>武器の選び方 <span class="en">Weapon choice</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Weapon_choice">Weapon choice</a>」(0.33 向け、2025-12-06 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Weapon_choice&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p><i>Crawl</i> では、プレイヤーとキャラクターの前に、戸惑うほど多くの<b><a href="Weapon.html" title="Weapon">武器</a>の選択肢</b>が並ぶ。とはいえ、土煙が晴れて、ショートソードや悪魔の鞭や棍棒の行列が通り過ぎてしまえば、武器の主な性質はいくつかしかない:
+</p>
+<ul><li>ターンあたりのダメージ: 武器が与えるダメージと、振るのにかかる時間との兼ね合い。</li>
+<li>命中とスキル: どれだけ当たるか。それと関連して、あなたの<a href="Species.html" title="Species">種族</a>がその種類の武器をどれだけ早く使いこなせるようになるか。</li>
+<li>持ち手: 片手武器は<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>と一緒に使える。</li>
+<li>特殊な性質: ほとんどの種類の武器には、それぞれ独自の性質がある。</li></ul>
+<p>このほかに、「実際に手に入る武器はどれか」「どのスキルを持っているか」、それに見つけた<a href="Artefact.html" title="Artefact">アーティファクト</a>など、ゲーム中のさまざまな事情も考えに入れなければならない。たとえば、使いたい武器が手に入らなければ、予定を変えるしかないこともある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Properties"><span class="tocnumber">1</span> <span class="toctext">性質</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Damage_per_turn"><span class="tocnumber">1.1</span> <span class="toctext">ターンあたりのダメージ</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Accuracy_.26_Skill"><span class="tocnumber">1.2</span> <span class="toctext">命中とスキル</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Cross-training"><span class="tocnumber">1.2.1</span> <span class="toctext">相互訓練</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#Handedness"><span class="tocnumber">1.3</span> <span class="toctext">持ち手</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Special"><span class="tocnumber">1.4</span> <span class="toctext">特殊な性質</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Weapon_Types"><span class="tocnumber">2</span> <span class="toctext">武器の種類</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Short_Blades"><span class="tocnumber">2.1</span> <span class="toctext">短剣</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Long_Blades"><span class="tocnumber">2.2</span> <span class="toctext">長剣</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Maces_.26_Flails"><span class="tocnumber">2.3</span> <span class="toctext">鈍器</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Axes"><span class="tocnumber">2.4</span> <span class="toctext">斧</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Polearms"><span class="tocnumber">2.5</span> <span class="toctext">長柄武器</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Physical_Staves"><span class="tocnumber">2.6</span> <span class="toctext">魔法でない杖</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Magical_Staves"><span class="tocnumber">2.7</span> <span class="toctext">魔法の杖</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Non-Standard_Weapons"><span class="tocnumber">3</span> <span class="toctext">変わり種の武器</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Unarmed_Combat"><span class="tocnumber">3.1</span> <span class="toctext">徒手格闘</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Ranged_Weapons"><span class="tocnumber">3.2</span> <span class="toctext">射撃武器</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#An_Ingame_Approach"><span class="tocnumber">4</span> <span class="toctext">ゲーム中での考え方</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Early_Game"><span class="tocnumber">4.1</span> <span class="toctext">序盤</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Mid.2FLate_Game"><span class="tocnumber">4.2</span> <span class="toctext">中盤・終盤</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Judging_Artefacts"><span class="tocnumber">5</span> <span class="toctext">アーティファクトの見極め</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Shield_or_Two-Handed.3F"><span class="tocnumber">6</span> <span class="toctext">盾か両手持ちか</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#History"><span class="tocnumber">7</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Properties">性質</span></h2>
+<h3><span class="mw-headline" id="Damage_per_turn">ターンあたりのダメージ</span></h3>
+<p>ターンあたりのダメージは、単純に <code>average damage / weapon delay</code>(平均ダメージ ÷ 武器のディレイ)に等しい。
+</p><p><b>ダメージ:</b> 武器のダメージの評価値(おおよその最大ダメージを切り上げたもの)は、<b><a href="http://crawl.chaosforge.org/I" data-untr="1" title="I">i</a></b> キーの所持品画面で見られる。武器を調べる(<b>? / i</b>)ことでも確認できる。計算方法について詳しくは<a href="http://crawl.chaosforge.org/Weapon_damage" data-untr="1" title="Weapon damage">武器のダメージ</a>を参照。ダメージの式は乱数を使い、端数を切り捨てるので、攻撃の弱い武器は評価値から思うより少し弱いことに注意。
+</p><p><b>武器のディレイ:</b> 武器のディレイとは、武器を振るのにかかる時間のことだ。ディレイが大きいほど振るのが遅い。次の式で求められる:
+</p>
+<pre>   Delay = base delay − weapon skill/2
+   IF Unarmed Combat: Delay = base delay - skill/5.4
+</pre>
+<p>武器には「最小ディレイ」があり、そこから先はスキルを上げても攻撃速度は変わらない(ダメージと命中はスキルで上がり続ける)。これも所持品画面で確認できる。たいていは次の値になる:
+</p>
+<pre>    smaller of: 0.7 OR base delay / 2
+</pre>
+<p>ただし例外もいくつかある。<a href="http://crawl.chaosforge.org/Rapier" data-untr="1" title="Rapier">レイピア</a>と<a href="Quick_blade.html" title="Quick blade">クイックブレード</a>は 0.5 に設定されており、一部の<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>は 1.0 で固定されている。
+</p><p>ディレイは<a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>単位(0.8、1.1 など)で表示される。<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>を装備していると、そこからさらに遅くなる。<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>に限っては、<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>でも攻撃が遅くなる。
+</p>
+<h3><span class="mw-headline" id="Accuracy_.26_Skill">命中とスキル</span></h3>
+<p>「スキル」には、互いに関係はあるが別々の要素が三つ含まれている。スキルはダメージのほかに、命中と武器を振る速さも上げる。さらに、<a href="Species.html" title="Species">種族</a>によって覚えやすいスキルとそうでないスキルがある。
+</p><p><b>命中:</b> 武器がどれだけ当たりやすいか。武器にはそれぞれ基本の命中があり、そこにスキル、器用、強化値による分が加わる。計算方法は<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>を参照。
+</p><p><b>基本ディレイ:</b> 基本ディレイの小さい武器ほど育てやすい。(たいていは)少ないスキルで最小ディレイに届くからだ。
+</p><p><b>種族の適性:</b> あなたの<a href="Species.html" title="Species">種族</a>がその武器のスキルをどれだけ早く覚えられるか。適性が高いほど、スキルのレベルを上げるのに必要な経験値が少なくて済む。
+</p><p>まとめると、基本ディレイが大きく命中の低い武器は、スキルが低いうちは使いにくい。適性が低いほど、スキルのレベルは上げにくくなる。
+</p>
+<h4><span class="mw-headline" id="Cross-training">相互訓練</span></h4>
+<p>武器のスキルの中には、互いに<a href="http://crawl.chaosforge.org/Cross-train" data-untr="1" title="Cross-train">相互訓練</a>されるものがある。ある武器のスキルを鍛えると、相互訓練の相手のスキルにも、その経験値の40%がタダで入る。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>と<a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a>は互いに相互訓練される</li>
+<li><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>と<a href="Staves.html" title="Staves">棒術</a>は、<a href="Polearms.html" title="Polearms">長柄武器</a>と<a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>を相互訓練する</li>
+<li><a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>と<a href="Polearms.html" title="Polearms">長柄武器</a>は、<a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>と<a href="Staves.html" title="Staves">棒術</a>を相互訓練する</li></ul>
+<p>(斧と棒術は互いには相互訓練されない。鈍器と長柄武器も同様だ。)
+</p><p>相互訓練だけを当てにするのは現実的ではないが、武器の種類を乗り換えやすくはなる。たとえば斧を鍛えていて、すばらしい<a href="Artefact.html" title="Artefact">アーティファクト</a>のトライデントを見つけたなら、持ち替えるのが楽になる。<a href="Hydra.html" title="Hydra">ヒドラ</a>への逃げ道にもなる。
+</p>
+<h3><span class="mw-headline" id="Handedness">持ち手</span></h3>
+<p>武器は片手持ちか両手持ちのどちらかだ。片手武器は<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>と一緒に使えるが、両手武器は使えない。
+</p><p>盾はかなりの防御をもたらすが、ペナルティもある(攻撃速度が落ち、呪文の失敗率が上がる)。このペナルティは腕力と盾のスキルで軽くなる。一方、両手武器は、ほぼ必ず同系統の片手武器より強い。結局のところ、腕力と種族の適性を踏まえて決めることになる。
+</p><p><a href="Kobold.html" title="Kobold">コボルド</a>と<a href="Spriggan.html" title="Spriggan">スプリガン</a>は小柄な種族なので、扱いにくい武器がある。片手武器の一部が両手持ちになり、両手武器の一部は使えない。<a href="Formicid.html" title="Formicid">フォーミシッド</a>は、<a href="http://crawl.chaosforge.org/Giant_club" data-untr="1" title="Giant club">巨大棍棒</a>以外のすべての武器を片手で持てる。
+</p>
+<h3><span class="mw-headline" id="Special">特殊な性質</span></h3>
+<p>ほとんどの種類の武器には、ほかと区別される特徴がある:
+</p><p><b>器用でダメージが上がるもの:</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>は基本ダメージが低いが、<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>のダメージにボーナスがあり、攻撃が速い。</li>
+<li><a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a>には特別な性質はないが、数値が平均より上だ。</li>
+<li><a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>はどんな距離からでも攻撃できる。ただし威力は低めで、胴鎧によるペナルティを受ける(重い鎧ほど重いペナルティになる)。</li></ul>
+<p><b>腕力でダメージが上がるもの:</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>には特別な性質はないが、数値が平均より上だ。</li>
+<li><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>には<a href="Cleaving.html" title="Cleaving">薙ぎ払い</a>がある。攻撃すると、隣にいるほかの敵全員にも70%のダメージで当たる。</li>
+<li><a href="Polearms.html" title="Polearms">長柄武器</a>には<a href="Reaching.html" title="Reaching">間合い</a>がある。2マス離れたところから攻撃でき、<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">仲間</a>の後ろからでも攻撃できる。</li>
+<li><a href="Staves.html" title="Staves">棒術</a>:
+<ul><li>魔法でない杖には特別な性質はないが、ダメージの割に基本ディレイが小さい。</li>
+<li>魔法の杖は弱いが、<a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">呪文の威力</a>を高め、近接攻撃で特殊な攻撃が出る。</li></ul></li>
+<li><a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a>はいつでも使える。スキルの影響が大きいが、拳を<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化</a>したり<a href="Brand.html" title="Brand">ブランド</a>を付けたりはできない。</li></ul>
+<p>また、一部の武器は<a href="Hydra.html" title="Hydra">ヒドラ</a>の首を切り落とす。長剣、斧、両手持ちの長柄武器、ラジャタンがそうだ。ヒドラの首を切り落とすと2本生えてくるので、武器に<a href="http://crawl.chaosforge.org/Flaming" data-untr="1" title="Flaming">火炎</a>のブランドが付いていない限り、首を切るのはよくない。
+</p>
+<h2><span class="mw-headline" id="Weapon_Types">武器の種類</span></h2>
+<h3><span class="mw-headline" id="Short_Blades"><a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a></span></h3>
+<p>適性が最も高い種族: +3(<a href="Kobold.html" title="Kobold">コボルド</a>)、+2(<a href="Merfolk.html" title="Merfolk">水棲の民</a>)
+</p><p>短剣が最も活きるのは急所攻撃を狙うキャラクターだ。<a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>、<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>、<a href="God.html" title="God">神</a>(<a href="http://crawl.chaosforge.org/Uskayaw" data-untr="1" title="Uskayaw">ウスカヤー</a>など)のどれを使って急所を突くにしても、それは変わらない。
+</p><p>急所攻撃でないときの短剣は、速いが弱い。そのため、「固定量」のダメージ源の恩恵をいちばん受ける。たとえば<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>は、一撃の強さに関係なく<i>当たるたびに</i>出る可能性がある。短剣は振るのが速いので、補助攻撃も多く出る。逆に、固定量でダメージを減らす<a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a>の影響はいちばん大きく受ける。全体として、短剣のダメージは平均を下回る。
+</p><p>序盤に<a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>や<a href="Electrocution.html" title="Electrocution">電撃</a>の短剣が手に入ると、序盤がぐっと楽になることがある。毒液も電撃も固定量のダメージを足すブランドで、ダガーとショートソードはどちらも最初からこのブランドが付いて生成されやすい。スキルが0でも、毒液のダガーなら<a href="http://crawl.chaosforge.org/Lair" data-untr="1" class="mw-redirect" title="Lair">獣の棲み処</a>より前のモンスターを切り裂ける。(ただし、だからといって短剣のスキルを鍛えるべきというわけではない。仕事のほとんどをしているのは武器ではなくブランドなので、それ以上鍛える必要はない。)
+</p><p><b>最強の武器</b>
+</p>
+<ul><li>固定量のダメージ源が充実していれば、ほぼどんな用途でも<a href="Quick_blade.html" title="Quick blade">クイックブレード</a>が最強の短剣だ。ダガーには急所攻撃のボーナスがあるが、クイックブレードは2倍の速さで攻撃する(だから急所攻撃の回数も2倍になり、眠っている相手以外ならダガーを上回る)。</li>
+<li><a href="http://crawl.chaosforge.org/Rapier" data-untr="1" title="Rapier">レイピア</a>はクイックブレードよりずっとよく見つかる。大きな固定量のダメージ源がなければ、クイックブレードと同じかそれ以上のダメージを出せる。</li></ul>
+<p><b>長所</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>のダメージにボーナスがある。<a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a>はさらに上乗せされる。</li>
+<li>ゲームで最も速く、最も命中の高い武器。
+<ul><li>固定量のダメージ(<a href="http://crawl.chaosforge.org/Slay" data-untr="1" class="mw-redirect" title="Slay">殺戮</a>、<a href="Might.html" title="Might">腕力強化</a>の状態、<a href="Electrocution.html" title="Electrocution">電撃</a>、<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>など)とそれなりに相性がよい。</li>
+<li>ディレイ 1.0 に届くのに必要なスキルが少ない。</li></ul></li>
+<li>同じく器用を使う長剣と相互訓練される。</li></ul>
+<p><b>短所</b>
+</p>
+<ul><li>急所攻撃なしではダメージが低い(固定量のダメージを考えに入れても)。
+<ul><li><a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a>の高い敵には特に弱い。</li></ul></li></ul>
+<h3><span class="mw-headline" id="Long_Blades"><a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a></span></h3>
+<p>適性が最も高い種族: +2(<a href="Barachi.html" title="Barachi">バラチ</a>、<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>)、+1(<a href="Merfolk.html" title="Merfolk">水棲の民</a>、<a href="Tengu.html" title="Tengu">天狗</a>)
+</p><p>長剣は数値のよい素直な武器だ。器用でダメージが伸びるので、<a href="Dodging.html" title="Dodging">躱し身</a>に頼るキャラクターにいちばん向いている。短剣とも相互訓練される。とはいえ、「重装備のキャラクターだから」というだけで、すばらしい<a href="Artefact.html" title="Artefact">アーティファクト</a>の長剣を無視するべきではない。
+</p><p><b>最強の武器</b>
+</p>
+<ul><li>片手持ちの長剣で最強なのは<a href="http://crawl.chaosforge.org/Double_sword" data-untr="1" title="Double sword">ダブルソード</a>と<a href="http://crawl.chaosforge.org/Demon_blade" data-untr="1" title="Demon blade">悪魔の刃</a>で、両者はほぼ互角だ。悪魔の刃は固定量のダメージと<i>わずかに</i>相性がよく、ダブルソードは AC の影響を<i>わずかに</i>受けにくいが、差は小さい。</li>
+<li>両手持ちの長剣で最強なのは<a href="http://crawl.chaosforge.org/Triple_sword" data-untr="1" title="Triple sword">トリプルソード</a>だ。</li></ul>
+<p><b>長所</b>
+</p>
+<ul><li>器用を使う近接武器の中でダメージが最も高い。</li>
+<li>同じく器用を使い、急所攻撃のダメージを高める短剣と相互訓練される。</li></ul>
+<p><b>短所</b>
+</p>
+<ul><li>キャラクターによっては腕力を使う武器のほうが合う。</li>
+<li><a href="Hydra.html" title="Hydra">ヒドラ</a>の首を切り落としてしまう。</li></ul>
+<h3><span class="mw-headline" id="Maces_.26_Flails"><a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a></span></h3>
+<p>適性が最も高い種族: +2(<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>、<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>)、+1(<a href="Barachi.html" title="Barachi">バラチ</a>、<a href="Tengu.html" title="Tengu">天狗</a>)
+</p><p>鈍器には特別な仕掛けがないが、その分だけ数値がよい(長剣とほぼ同じくらい)。長剣と違って、鈍器は腕力でダメージが伸びる。
+</p><p><b>最強の武器</b>
+</p>
+<ul><li>片手武器で最強なのは<a href="http://crawl.chaosforge.org/Eveningstar" data-untr="1" title="Eveningstar">イブニングスター</a>と<a href="http://crawl.chaosforge.org/Demon_whip" data-untr="1" title="Demon whip">悪魔の鞭</a>だ。イブニングスターはごく標準的な近接武器。悪魔の鞭は速い武器なので、固定量のダメージの効果をより多く受けられる(詳しくは<a href="#Short_Blades">#短剣</a>を参照)。</li>
+<li>大柄な種族か<a href="Formicid.html" title="Formicid">フォーミシッド</a>なら、<a href="http://crawl.chaosforge.org/Giant_spiked_club" data-untr="1" title="Giant spiked club">釘つき巨大棍棒</a>が最強の両手武器だ。</li>
+<li>それ以外の種族では、<a href="Great_mace.html" title="Great mace">大型メイス</a>が使える中で最強の両手武器になる。</li></ul>
+<p><b>長所</b>
+</p>
+<ul><li>腕力を使う近接武器の中でダメージが最も高い。</li>
+<li>斧・棒術と相互訓練される。</li></ul>
+<p><b>短所</b>
+</p>
+<ul><li>薙ぎ払いなどの特別な能力がない。</li>
+<li>大柄な種族やフォーミシッドでなければ、両手武器の選択肢は比較的弱い。</li></ul>
+<h3><span class="mw-headline" id="Axes"><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a></span></h3>
+<p>適性が最も高い種族: +2(<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>、<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>)、+1(<a href="Barachi.html" title="Barachi">バラチ</a>、<a href="Tengu.html" title="Tengu">天狗</a>)
+</p><p>斧には薙ぎ払いがある。モンスターを攻撃すると、隣にいるほかのモンスター全員にも70%のダメージで当たる(もともとの対象には100%のダメージで当たる)。
+</p><p>斧を使っていても、1対1か通路で戦うのが定石だ。そうすれば複数のモンスターからダメージを受けずに済む。それでも、周りを囲む複数のモンスターと同時に戦わざるを得ないこともある。たとえば足の速いモンスターに群がられたり、近くに通路のない場所で群れに出くわしたりした場合だ。そういうときに薙ぎ払いが役に立つ。
+</p><p><b>最強の武器</b>
+</p>
+<ul><li>片手武器で最強なのは<a href="http://crawl.chaosforge.org/Broad_axe" data-untr="1" title="Broad axe">ブロードアックス</a>だ。</li>
+<li>両手武器で最強なのは<a href="http://crawl.chaosforge.org/Executioner%27s_axe" data-untr="1" title="Executioner&#39;s axe">処刑人の斧</a>だ。</li></ul>
+<p><b>長所</b>
+</p>
+<ul><li>薙ぎ払いで複数の敵に当てられる。</li>
+<li>長柄武器・鈍器と相互訓練される。</li></ul>
+<p><b>短所</b>
+</p>
+<ul><li>このゲームは1対1の戦いを促すつくりになっていて、そういう場面では薙ぎ払いは役に立たない。</li>
+<li>ほかの武器と比べて数値が劣る。</li>
+<li>ヒドラの首を切り落としてしまう。</li></ul>
+<h3><span class="mw-headline" id="Polearms"><a href="Polearms.html" title="Polearms">長柄武器</a></span></h3>
+<p>適性が最も高い種族: +4(<a href="Merfolk.html" title="Merfolk">水棲の民</a>)、+2(<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>)
+</p><p>長柄武器には<a href="Reaching.html" title="Reaching">間合い</a>がある。1マスではなく2マス離れたところから攻撃できる。自分の<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">仲間</a>の後ろからも攻撃できるが、50%の確率で失敗する。ほとんどの敵に対して、これで「おまけ」の一撃を入れられる。
+</p><p><a href="http://crawl.chaosforge.org/Spear" data-untr="1" title="Spear">スピア</a>は(<a href="Aptitude.html" title="Aptitude">適性</a>を考えに入れなければ)「素直な」初期武器の中で最もよい。ターンあたりの素のダメージはやや劣るが、間合いがそれを補って余りある。しかもスピアは初期スキルだけでディレイ 1.0 以下で攻撃でき、命中の高さも頼りになる。
+</p><p><b>最強の武器</b>
+</p>
+<ul><li>片手武器で最強なのは<a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a>と<a href="Partisan.html" title="Partisan">パルチザン</a>で、両者はほぼ互角だ。</li>
+<li>両手武器で最強なのは<a href="Bardiche.html" title="Bardiche">バルディッシュ</a>だ。</li></ul>
+<p><b>長所</b>
+</p>
+<ul><li>間合い:
+<ul><li>多くの場面で、近接戦闘でおまけの一撃を入れられる。</li>
+<li><a href="http://crawl.chaosforge.org/Summon" data-untr="1" title="Summon">召喚物</a>、<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">仲間</a>、<a href="Deep_water.html" title="Deep water">深い水脈</a>などと相性がよい。その向こうから攻撃できる。</li></ul></li>
+<li>斧・鈍器と相互訓練される。</li></ul>
+<p><b>短所</b>
+</p>
+<ul><li>ほかの武器と比べて数値が劣る。
+<ul><li>小柄な種族には、よい片手武器の選択肢がない。</li></ul></li></ul>
+<h3><span class="mw-headline" id="Physical_Staves">魔法でない<a href="Staves.html" title="Staves">杖</a></span></h3>
+<p>適性が最も高い種族: +2(<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>)
+</p><p>魔法でない杖は<a href="http://crawl.chaosforge.org/Quarterstaff" data-untr="1" title="Quarterstaff">六尺棒</a>と<a href="http://crawl.chaosforge.org/Lajatang" data-untr="1" title="Lajatang">ラジャタン</a>の2種類だ。どちらも「スキルに優しい」武器で、ダメージの割に基本ディレイが小さい。ただし、どちらもあまり見つからない。
+</p><p><b>長所</b>
+</p>
+<ul><li>基本ディレイが小さい(スキルが低くてもターンあたりのダメージがよい)</li>
+<li>ラジャタンには<a href="http://crawl.chaosforge.org/Spectral" data-untr="1" class="mw-redirect" title="Spectral">霊体化</a>と<a href="Speed_(brand).html" title="Speed (brand)">早業</a>のブランドが付いて生成されることがある。</li>
+<li>長柄武器・鈍器と相互訓練される。</li></ul>
+<p><b>短所</b>
+</p>
+<ul><li>片手武器の選択肢がない。</li>
+<li>そもそも選択肢が少ない:
+<ul><li>ラジャタンは珍しい。</li>
+<li>六尺棒は序盤には優秀だが、すぐに見劣りするようになる。</li></ul></li></ul>
+<h3><span class="mw-headline" id="Magical_Staves"><a href="http://crawl.chaosforge.org/Magical_staves" data-untr="1" class="mw-redirect" title="Magical staves">魔法の杖</a></span></h3>
+<p>魔法の杖の主な役目は、特定の呪文の<a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">威力</a>を高めることだ。とはいえ、近接武器としてもそれなりに使える。魔法の杖で近接攻撃すると、特別なダメージのボーナスが付く。このボーナスは、杖の系統の魔術のスキルと<a href="Evocations.html" title="Evocations">発動</a>のスキルで伸びる。魔法の杖は強化もブランドの付与もできない。
+</p><p><b>長所</b>
+</p>
+<ul><li>呪文の威力を高める。</li>
+<li>ほとんどの魔法の杖は耐性を一つ与えてくれる。</li>
+<li>MP が尽きたときの手段としてそこそこ使える。</li></ul>
+<p><b>短所</b>
+</p>
+<ul><li>武器としての基本性能が弱く、<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化</a>も<a href="Brand.html" title="Brand">ブランド</a>の付与もできない。</li>
+<li>ほとんどの魔法の杖は属性ダメージを与えるので、敵の耐性に左右される。</li>
+<li>近接攻撃で通用させるには、棒術のスキルのほかに魔術のスキルと<a href="Evocations.html" title="Evocations">発動</a>も必要になる。</li></ul>
+<h2><span class="mw-headline" id="Non-Standard_Weapons">変わり種の武器</span></h2>
+<h3><span class="mw-headline" id="Unarmed_Combat"><a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a></span></h3>
+<p>適性が最も高い種族: +1(<a href="Barachi.html" title="Barachi">バラチ</a>、<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>、<a href="Revenant.html" title="Revenant">レヴナント</a>)
+</p><p>もちろん、敵を倒すのに武器を持つ必要はない。拳で殴り殺すのも十分に現実的だ。それに見合うかどうかは、キャラクターの構成しだいだ。
+</p><p>徒手格闘にはいくつか癖がある。拳は武器ではないので、<a href="Scroll.html" title="Scroll">ふつうの手段</a>では<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化</a>も<a href="Brand.html" title="Brand">ブランド</a>の付与もできない。また、徒手格闘はスキル1ポイントあたりのダメージの伸びが大きい。それ以外は、ほかの近接攻撃とほとんど同じように働く。
+</p><p>徒手格闘を特に好むキャラクターは2種類ある:
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a> - 爪は徒手格闘のダメージにボーナスを与える。終盤には大した差ではなくなるが、爪を持って始まる種族(<a href="http://crawl.chaosforge.org/Ghoul" data-untr="1" title="Ghoul">グール</a>と<a href="Troll.html" title="Troll">トロル</a>)にとって、序盤の上乗せはとても大きい。</li>
+<li><a href="Shapeshifting.html" title="Shapeshifting">変身術</a> - <a href="Talisman.html" title="Talisman">タリスマン</a>で徒手格闘のダメージを大きく高められる。</li></ul>
+<p><b>長所</b>
+</p>
+<ul><li>乱数の引きがどんなに悪くても、いつでも使える。</li>
+<li>攻撃のディレイは 1.0 から始まり、最小ディレイは 0.5。</li>
+<li><a href="Talisman.html" title="Talisman">タリスマン</a>で強化できる。</li>
+<li>スキルによるダメージのボーナスが大きい。</li></ul>
+<p><b>短所</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化値</a>、<a href="Brand.html" title="Brand">ブランド</a>、<a href="Artefact.html" title="Artefact">アーティファクト</a>の特性がない。</li>
+<li>スキルが低いうちは、変身していなければ徒手格闘は比較的弱い。</li></ul>
+<h3><span class="mw-headline" id="Ranged_Weapons">射撃武器</span></h3>
+<p><i>詳しくは: <a href="Ranged_Weapons.html#Strategy" title="Ranged Weapons">射撃武器#戦略</a></i>
+</p><p>適性が最も高い種族: +3(<a href="Deep_Elf.html" title="Deep Elf">闇エルフ</a>、<a href="Kobold.html" title="Kobold">コボルド</a>)
+</p><p>射撃武器はほかの武器とはだいぶ勝手が違う。言うまでもなく、近接攻撃に限られず、画面の端から端まで撃てる。<a href="http://crawl.chaosforge.org/Encumbrance_rating" data-untr="1" title="Encumbrance rating">防具の重さ</a>で遅くなるので、重装備のキャラクターは(腕力が高くても)不利になる。
+</p><p>射撃武器はどれも、腕力ではなく<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>でダメージが伸びる。
+</p><p><b>最強の武器</b>
+</p>
+<ul><li>片手武器で最強なのは<a href="http://crawl.chaosforge.org/Hand_cannon" data-untr="1" title="Hand cannon">ハンドキャノン</a>だ。</li>
+<li>両手武器で最強なのは<a href="http://crawl.chaosforge.org/Triple_crossbow" data-untr="1" title="Triple crossbow">トリプルクロスボウ</a>だ。</li></ul>
+<p><b>長所</b>
+</p>
+<ul><li>画面全体が射程になる。近接攻撃のモンスターには何発も「タダで」撃ちこめるし、遠距離攻撃のモンスターとも近づかずに戦える。</li>
+<li>モンスターからよく手に入る:
+<ul><li><a href="http://crawl.chaosforge.org/Centaur_(monster)" data-untr="1" title="Centaur (monster)">セントール</a>と<a href="http://crawl.chaosforge.org/Centaur_warrior" data-untr="1" title="Centaur warrior">セントールの戦士</a>は、ほぼ必ず<a href="http://crawl.chaosforge.org/Shortbow" data-untr="1" title="Shortbow">ショートボウ</a>か<a href="http://crawl.chaosforge.org/Orcbow" data-untr="1" title="Orcbow">オークの弓</a>を持っている。</li>
+<li><a href="http://crawl.chaosforge.org/Kobold_blastminer" data-untr="1" title="Kobold blastminer">コボルドの発破工</a>はよく<a href="http://crawl.chaosforge.org/Arbalest" data-untr="1" title="Arbalest">アーバレスト</a>を持っていて、まれに<a href="http://crawl.chaosforge.org/Hand_cannon" data-untr="1" title="Hand cannon">ハンドキャノン</a>を持っている。</li></ul></li></ul>
+<p><b>短所</b>
+</p>
+<ul><li>ほとんどの射撃武器は<a href="http://crawl.chaosforge.org/Hand" data-untr="1" class="mw-redirect" title="Hand">両手</a>持ちだ。</li>
+<li>胴鎧の<a href="http://crawl.chaosforge.org/Armour_encumbrance" data-untr="1" class="mw-redirect" title="Armour encumbrance">防具の重さ</a>でかなり遅くなる。</li>
+<li>同程度の近接武器よりダメージが低い。</li>
+<li>アーバレスト、ハンドキャノン、トリプルクロスボウは、どれも最小ディレイが 1.0 だ。</li></ul>
+<h2><span class="mw-headline" id="An_Ingame_Approach">ゲーム中での考え方</span></h2>
+<p>武器の種類ごとの知識は役に立つが、ここまでの内容はほとんどが理屈だ。理屈の上では<a href="http://crawl.chaosforge.org/Double_sword" data-untr="1" title="Double sword">ダブルソード</a>が最適だとしても、持っていないものは持っていない。すばらしい<a href="Randart.html" title="Randart">ランダムアーティファクト</a>のメイスを見つけたなら、「器用型のキャラクターだから」というだけで無視するべきではない。
+</p>
+<h3><span class="mw-headline" id="Early_Game">序盤</span></h3>
+<p>この段階で武器について最も大きな要素は、<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化値</a>と<a href="Brand.html" title="Brand">ブランド</a>、そして攻撃のディレイだ。
+</p>
+<ul><li>武器を持って始めたなら、床に落ちている<i>ふつうの</i>(+0 でブランドなしの)武器より、その種類の武器を使い続けるほうがおそらくよい。たとえば +0 のハンドアックスで始めたなら、+0 のメイスに持ち替えるべきではない。</li></ul>
+<ul><li>強化値が高くブランドの付いた武器なら、持ち替える価値があるかもしれない。手持ちが +0 のハンドアックスだけなら、+6 のフレイル {flaming, Int+2} は使う価値のある格上の武器だ。+6 の強化値も火炎のブランドも、ダメージを大きく上げてくれる。しかもこの場合は<a href="http://crawl.chaosforge.org/Cross-train" data-untr="1" title="Cross-train">相互訓練</a>の恩恵も受けられる。とはいえ、これが(斧とは相互訓練されない)+6 の火炎の<a href="http://crawl.chaosforge.org/Falchion" data-untr="1" title="Falchion">ファルシオン</a>だったとしても、持ち替えを考えてよいだろう。</li></ul>
+<ul><li>固定量のダメージを足すブランド、つまり<a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>と<a href="Electrocution.html" title="Electrocution">電撃</a>は際立っている。ダメージが武器やキャラクターの強さに左右されないからだ。毒液は迷宮:1 ではすばらしいが、迷宮:15 になる頃には物足りなくなる。電撃はもっと長く通用するが、それでも真価を発揮するのは迷宮の序盤だ。
+<ul><li>ありがたいことに、こうしたブランドは<a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a>、<a href="http://crawl.chaosforge.org/Whip" data-untr="1" title="Whip">鞭</a>、<a href="http://crawl.chaosforge.org/Spear" data-untr="1" title="Spear">スピア</a>のような序盤の武器に付きやすくなっている。これらの武器は命中が高く基本ディレイが小さいので、スキルが0でも役に立つ。(毒液のダガーのために短剣のスキルを鍛えるのは割に合わ<i>ない</i>。)</li>
+<li><a href="Distortion.html" title="Distortion">歪曲</a>は電撃よりさらに強いが、欠点がある。歪曲の武器を装備から外すと、ひどい副作用が起きる。</li></ul></li></ul>
+<ul><li>終盤級の武器を早いうちに見つけたら、少なくとも長い目で見て、その系統を使うことを考えよう。たとえば<a href="http://crawl.chaosforge.org/Amaemon" data-untr="1" title="Amaemon">アマイモン</a>は必ず<a href="http://crawl.chaosforge.org/Demon_whip" data-untr="1" title="Demon whip">悪魔の鞭</a>を持っていて、これはルーン3つのゲームを最後まで通せるほど優秀な武器だ。この場合、悪魔の鞭は多くのスキルを必要としないので、比較的早く持ち替えられる。</li></ul>
+<ul><li>大きな節目は<b>武器のディレイが 1.0 に届いたとき</b>だ。ディレイが 1.0 より上だと、通常速度のモンスターは、あなたが武器を1回振るたびに2回行動できることがある(つまり 1.1 は実質的に 2 に切り上がることがある)。ここまで来ると、武器の種類を乗り換えるコストがぐっと大きくなる。特に相互訓練があれば乗り換えられなくはないが、乗り換えるうまみは薄れる。</li></ul>
+<ul><li>まったく鍛えていなくても、射撃武器を一つ持っておくとよい。近接攻撃の敵が相手なら、射撃武器に持ち替えて何発か撃ちこみ、それから主武器に戻せる。鍛えていない武器は撃つのが遅いので、遠距離攻撃の敵とはこのやり方で戦わないこと。</li></ul>
+<h3><span class="mw-headline" id="Mid.2FLate_Game">中盤・終盤</span></h3>
+<p>武器使いとして<a href="http://crawl.chaosforge.org/Lair_of_Beasts" data-untr="1" class="mw-redirect" title="Lair of Beasts">獣の棲み処</a>を踏破したなら、たぶん「主力」の武器の種類が決まっているはずだ。特によいものが見つからない限り、それを使い続けよう。
+</p>
+<ul><li>武器のスキルに十分につぎこむと、そのスキルでゲームに勝てる段階が来る。もっと数値のよい別の武器が見つかるかもしれないが……乗り換えれば貴重な経験値を使うことになる。<a href="Wyrmbane.html" title="Wyrmbane">ドラゴン殺し</a>のようなものでも見つからない限り、乗り換える価値はおそらくない。この段階はスキル14〜16あたり(片手武器なら最小ディレイ、両手武器ならディレイ 1.0)で来ることが多いが、キャラクターによって早くも遅くもなる。</li></ul>
+<ul><li>この頃にはたいてい<a href="http://crawl.chaosforge.org/Scrolls_of_brand_weapon" data-untr="1" class="mw-redirect" title="Scrolls of brand weapon">魔力の武器の巻物</a>と<a href="http://crawl.chaosforge.org/Scrolls_of_enchant_weapon" data-untr="1" class="mw-redirect" title="Scrolls of enchant weapon">武器強化の巻物</a>を持っているので、ブランドと強化値はあまり問題にならない。上で述べたとおり、最も大事なのはすでにスキルにつぎこんだ量だ。その次が、手に入る武器と手に入る<a href="Artefact.html" title="Artefact">アーティファクト</a>になる。</li></ul>
+<ul><li>魔力の武器の巻物と武器強化の巻物は、<i>余裕があるなら</i>取っておこう。
+<ul><li>敵を楽に倒せているなら、自分の系統の「最上級」の武器のためにこれらの巻物を温存しよう。たとえば片手で斧を使っているなら、できれば<a href="http://crawl.chaosforge.org/Broad_axe" data-untr="1" title="Broad axe">ブロードアックス</a>のために取っておく。</li>
+<li>敵を楽に倒せそうにないなら、目先の生存のために巻物を使おう。たとえば +0 のウォーアックスで獣の棲み処の先の分岐に挑むのは、たぶんきつい。キャラクターがあまり強くないなら、強化の巻物をいくつか使って乗り切るのも手だ。</li>
+<li>早いうちに巻物がたくさんある(魔力の武器がおよそ3枚以上、武器強化が9枚以上)なら、好きに使ってかまわない。</li></ul></li></ul>
+<h2><span class="mw-headline" id="Judging_Artefacts">アーティファクトの見極め</span></h2>
+<p><a href="Artefact.html" title="Artefact">アーティファクト</a>は見た目が洒落ていて、名前も格好よく、おまけ効果もたくさん付いているかもしれない。でも、本当によいのはどんなときだろう?
+</p>
+<ul><li>まず、強化値、ブランド、基本の種類を見よう。+6 の冷気のアーティファクトの<a href="http://crawl.chaosforge.org/Trident" data-untr="1" title="Trident">トライデント</a>も、結局は +6 の冷気のトライデントにすぎず、しかも<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化</a>すらできない。これがよいかどうかはゲームの状況しだいだ。<a href="http://crawl.chaosforge.org/Spear" data-untr="1" title="Spear">スピア</a>しかない駆け出しの<a href="Merfolk.html" title="Merfolk">水棲の民</a>なら喜んで使うだろうが、<a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a>と比べれば戦闘ではほぼ役に立たない。
+<ul><li>上で述べたように、別の武器のスキルをかなり鍛えていて、そのアーティファクトには相互訓練すら効かないなら、考えるまでもない。ただし序盤は、まだスキルをそれほど鍛えていない。多くのアーティファクトは強化値が高いというだけで序盤を引っぱってくれるので、検討する価値がある。スキルを鍛えてからアーティファクトに持ち替えてもいいし、スキル0のまま使ってもいい。</li></ul></li>
+<li>装備すると危険な<a href="Randart.html#Properties" title="Randart">特性</a>もある。*Slow と *Rage がそうだ。これらの付いた武器を使うこと自体は十分にできるが、危険は承知しておく必要がある。*Drain や *Corrode のようなほかの悪い特性は、それに比べればずっと我慢できる。</li>
+<li>小さな能力値の修正はあまり関係ない。腕力 -2 によるダメージの低下はごくわずかだ。しかし大きな修正は効いてくる。腕力 +8 ならダメージがかなり上がるし、器用 +10 なら <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> が大きく上がる。また、キャラクターによっては<a href="Stat_zero.html" title="Stat zero">能力値ゼロ</a>に気をつけなければならない。</li>
+<li>武器として一度も使わなくても、<a href="http://crawl.chaosforge.org/Resistances" data-untr="1" class="mw-redirect" title="Resistances">耐性</a>をくれる武器なら持っておく価値があるかもしれない。危険な属性攻撃の敵が相手なら、耐性をくれる武器を装備し、<a href="Wand.html" title="Wand">ワンド</a>、<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>、<a href="God.html" title="God">神</a>の能力などで片づければよい。</li></ul>
+<h2><span class="mw-headline" id="Shield_or_Two-Handed.3F">盾か両手持ちか</span></h2>
+<p>両手武器のほうがダメージは高いが、盾は貴重な防御をもたらす。どちらを選ぶべきだろうか?
+</p>
+<ul><li>防げない攻撃を数に入れても、鍛えた +8 のタワーシールドなら、ゲーム中に受ける攻撃の50%以上を防げる。ただし、盾が1ターンに防げる<a href="Shields.html#Blocking" title="Shields">攻撃の回数には限りがある</a>ので、複数の敵と戦うときは効果が落ちる。</li>
+<li>一方、<a href="http://crawl.chaosforge.org/Double_sword" data-untr="1" title="Double sword">ダブルソード</a>から<a href="http://crawl.chaosforge.org/Triple_sword" data-untr="1" title="Triple sword">トリプルソード</a>に持ち替えると、基本ダメージがおよそ28%増える。</li></ul>
+<p>ぱっと見では、受ける攻撃が30%減るのと与えるダメージが30%増えるのとでは釣り合っているように思えるかもしれない。しかし <i>Crawl</i> では、たいてい素の防御のほうが価値が高い。防御は攻撃していないときにも働くし、窮地を生き延びる助けにもなる。だから、盾のスキルにつぎこむ経験値や、EV と攻撃速度へのペナルティを考えに入れても、盾は強い。とはいえ、両手持ちもそれなりに通用する。よい<a href="Artefact.html" title="Artefact">アーティファクト</a>を見つけた場合や、盾の適性が低い場合は特にそうだ。
+</p><p>ほかに知っておくとよいこと:
+</p>
+<ul><li>まだ盾を見つけていないなら、両手武器は最大の欠点がなくなる。「大型」の両手武器はほとんどが珍しく、多くのスキルを必要とするが、<a href="http://crawl.chaosforge.org/Dire_flail" data-untr="1" title="Dire flail">大型フレイル</a>や<a href="http://crawl.chaosforge.org/Halberd" data-untr="1" title="Halberd">ハルバード</a>のように序盤から使える両手武器もいくつかある。</li>
+<li>盾のスキルにかなりつぎこんでいるなら、片手武器と盾の組み合わせを続けよう。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> で射撃武器が<a href="Ranged_Weapons.html#History" title="Ranged Weapons">作り直され</a>、短剣・長剣・射撃武器のダメージが器用で伸びるようになった。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> で長剣の<a href="http://crawl.chaosforge.org/Riposte" data-untr="1" title="Riposte">反撃</a>が廃止された。高レベルのスキルに必要な経験値が減り、ゲームで最も大きな武器の基本ディレイも引き下げられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> で<a href="Shields.html" title="Shields">盾</a>を装備したときのペナルティが大きくなり、間接的にすべての片手武器に影響した。</li>
+<li><a href="http://crawl.chaosforge.org/0.24" data-untr="1" title="0.24">0.24</a> で投擲が作り直された。<a href="http://crawl.chaosforge.org/Tomahawk" data-untr="1" title="Tomahawk">トマホーク</a>と<a href="http://crawl.chaosforge.org/Blowgun" data-untr="1" title="Blowgun">吹き矢筒</a>/<a href="http://crawl.chaosforge.org/Needle" data-untr="1" title="Needle">吹き矢針</a>がブーメランとダーツに置き換わった。ジャベリンが生まれつき<a href="Penetration.html" title="Penetration">貫通</a>を持つようになった。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> で長剣に反撃が追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> で新しい射撃武器がいくつか追加された。大型スリング、ハンドクロスボウ、アーバレスト、トリプルクロスボウだ。</li>
+<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> で斧に<a href="Cleaving.html" title="Cleaving">薙ぎ払い</a>が追加された。0.12 より前は、持ち手の区分がさらに2つあった。片手半武器(hand-and-a-half)と両頭武器(double)だ。どちらも盾と一緒に装備するとさらにペナルティを受けたが、それ以外は片手武器として扱われた。</li>
+<li><a href="http://crawl.chaosforge.org/0.10" data-untr="1" title="0.10">0.10</a> で長柄武器が生まれつき<a href="Reaching.html" title="Reaching">間合い</a>を持つようになった。</li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Strategy_guides.html" title="Strategy guides">攻略ガイド</a>
+</th></tr>
+<tr>
+<th> 全般
+</th>
+<td> <a href="Walkthrough.html" title="Walkthrough">攻略の流れ</a> • <a href="Escaping_from_(and_avoiding)_trouble.html" title="Escaping from (and avoiding) trouble">危機への対処</a> •  <a href="Tips_and_tricks.html" title="Tips and tricks">小技と豆知識</a> • <a href="Identification.html" title="Identification">鑑定</a> • <a href="Frequently_Asked_Questions.html" title="Frequently Asked Questions">よくある質問</a><br /><a href="Vault.html#Vaults:5" class="mw-redirect" title="Vaults">宝物庫:5</a> • <a href="Zot_5.html" title="Zot:5">ゾットの領域:5</a> • <a href="http://crawl.chaosforge.org/Mega-Zig" data-untr="1" title="Mega-Zig">メガジグ(Mega-Zig)</a>
+</td></tr>
+<tr>
+<th> キャラクター育成
+</th>
+<td> <a href="Early_Game_Character_Building.html" title="Early Game Character Building">序盤</a> • <a href="http://crawl.chaosforge.org/Mid_Game_Character_Building" data-untr="1" title="Mid Game Character Building">中盤</a> • <a href="http://crawl.chaosforge.org/Late_Game_Character_Building" data-untr="1" title="Late Game Character Building">終盤</a>
+<p><a href="Background_and_race_combinations_for_beginners.html" title="Background and race combinations for beginners">初心者向けキャラクター</a> •  <a href="Choosing_a_god.html" title="Choosing a god">神の選び方</a> • <a href="Weapon_choice.html" class="mw-redirect" title="Weapon Choice">武器の選び方</a> • <a href="Specialization.html" title="Specialization">特化</a>
+</p>
+</td></tr>
+<tr>
+<th> コミュニティのガイド
+</th>
+<td> <a href="Character_guides.html" title="Character guides">キャラクター別ガイド</a>
+</td></tr></table>
+</center>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Weapon.html" title="Weapon">武器</a>
+</th></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>
+</th>
+<td> <a href="Battleaxe.html" title="Battleaxe">バトルアックス</a> • <a href="http://crawl.chaosforge.org/Broad_axe" data-untr="1" title="Broad axe">ブロードアックス</a> • <a href="http://crawl.chaosforge.org/Executioner%27s_axe" data-untr="1" title="Executioner&#39;s axe">処刑人の斧</a> • <a href="http://crawl.chaosforge.org/Hand_axe" data-untr="1" title="Hand axe">ハンドアックス</a> • <a href="http://crawl.chaosforge.org/War_axe" data-untr="1" title="War axe">ウォーアックス</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Club" data-untr="1" title="Club">棍棒</a> • <a href="http://crawl.chaosforge.org/Demon_whip" data-untr="1" title="Demon whip">悪魔の鞭</a> • <a href="http://crawl.chaosforge.org/Dire_flail" data-untr="1" title="Dire flail">大型フレイル</a> • <a href="http://crawl.chaosforge.org/Eveningstar" data-untr="1" title="Eveningstar">イブニングスター</a> • <a href="http://crawl.chaosforge.org/Flail" data-untr="1" title="Flail">フレイル</a> • <a href="http://crawl.chaosforge.org/Giant_club" data-untr="1" title="Giant club">巨大棍棒</a> • <a href="http://crawl.chaosforge.org/Giant_spiked_club" data-untr="1" title="Giant spiked club">釘つき巨大棍棒</a> • <a href="Great_mace.html" title="Great mace">大型メイス</a> • <a href="http://crawl.chaosforge.org/Mace" data-untr="1" title="Mace">メイス</a>(<a href="Hammer.html" title="Hammer">ハンマー</a>) • <a href="http://crawl.chaosforge.org/Morningstar" data-untr="1" title="Morningstar">モーニングスター</a> • <a href="http://crawl.chaosforge.org/Sacred_scourge" data-untr="1" title="Sacred scourge">聖なる鞭</a> • <a href="http://crawl.chaosforge.org/Whip" data-untr="1" title="Whip">鞭</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Demon_blade" data-untr="1" title="Demon blade">悪魔の刃</a> • <a href="http://crawl.chaosforge.org/Double_sword" data-untr="1" title="Double sword">ダブルソード</a> • <a href="http://crawl.chaosforge.org/Eudemon_blade" data-untr="1" title="Eudemon blade">悪魔祓いの刃</a> • <a href="http://crawl.chaosforge.org/Falchion" data-untr="1" title="Falchion">ファルシオン</a> • <a href="http://crawl.chaosforge.org/Great_sword" data-untr="1" title="Great sword">グレートソード</a> • <a href="http://crawl.chaosforge.org/Long_sword" data-untr="1" title="Long sword">ロングソード</a> • <a href="http://crawl.chaosforge.org/Scimitar" data-untr="1" title="Scimitar">シミター</a> • <a href="http://crawl.chaosforge.org/Triple_sword" data-untr="1" title="Triple sword">トリプルソード</a>
+</td></tr>
+<tr>
+<th> <a href="Polearms.html" title="Polearms">長柄武器</a>
+</th>
+<td> <a href="Bardiche.html" title="Bardiche">バルディッシュ</a> • <a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a> • <a href="http://crawl.chaosforge.org/Glaive" data-untr="1" title="Glaive">グレイブ</a> • <a href="http://crawl.chaosforge.org/Halberd" data-untr="1" title="Halberd">ハルバード</a>(<a href="http://crawl.chaosforge.org/Scythe" data-untr="1" title="Scythe">大鎌</a>) • <a href="Partisan.html" title="Partisan">パルチザン</a> • <a href="http://crawl.chaosforge.org/Spear" data-untr="1" title="Spear">スピア</a> • <a href="http://crawl.chaosforge.org/Trident" data-untr="1" title="Trident">トライデント</a> • <a href="http://crawl.chaosforge.org/Trishula" data-untr="1" title="Trishula">トリシューラ</a>
+</td></tr>
+<tr>
+<th> <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Arbalest" data-untr="1" title="Arbalest">アーバレスト</a> • <a href="http://crawl.chaosforge.org/Hand_cannon" data-untr="1" title="Hand cannon">ハンドキャノン</a> • <a href="http://crawl.chaosforge.org/Longbow" data-untr="1" title="Longbow">ロングボウ</a> • <a href="http://crawl.chaosforge.org/Orcbow" data-untr="1" title="Orcbow">オークの弓</a> • <a href="http://crawl.chaosforge.org/Shortbow" data-untr="1" title="Shortbow">ショートボウ</a> • <a href="Sling.html" title="Sling">スリング</a> • <a href="http://crawl.chaosforge.org/Triple_crossbow" data-untr="1" title="Triple crossbow">トリプルクロスボウ</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a> • <a href="Quick_blade.html" title="Quick blade">クイックブレード</a> • <a href="http://crawl.chaosforge.org/Rapier" data-untr="1" title="Rapier">レイピア</a> • <a href="http://crawl.chaosforge.org/Short_sword" data-untr="1" title="Short sword">ショートソード</a>
+</td></tr>
+<tr>
+<th> <a href="Staves.html" title="Staves">棒術</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Lajatang" data-untr="1" title="Lajatang">ラジャタン</a> • <a href="Magical_staff.html" title="Magical staff">魔法の杖</a> • <a href="http://crawl.chaosforge.org/Quarterstaff" data-untr="1" title="Quarterstaff">六尺棒</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Boomerang" data-untr="1" title="Boomerang">ブーメラン</a> • <a href="Dart.html" title="Dart">ダーツ</a> • <a href="http://crawl.chaosforge.org/Javelin" data-untr="1" title="Javelin">ジャベリン</a> • <a href="Large_rock.html" title="Large rock">大岩</a> • <a href="Stone.html" title="Stone">石</a> • <a href="http://crawl.chaosforge.org/Throwing_net" data-untr="1" title="Throwing net">投げ網</a>
+</td></tr></table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

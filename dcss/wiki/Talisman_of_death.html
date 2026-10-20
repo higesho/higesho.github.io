@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>死のタリスマン &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="死のタリスマン(Talisman of death)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>死のタリスマン <span class="en">Talisman of death</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Talisman_of_death">Talisman of death</a>」(0.33 向け、2026-09-20 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Talisman_of_death&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> おぞましい儀式によって闇の力を吹き込まれた、一本きりの指の骨だ。使用者を、生命そのものに対する不死の冒涜へと変える。
+<p>使用者の近接武器や手で打たれた敵は、弱体化し、減速し、生命力を吸い取られる。また使用者は、近くの敵に苦痛を与えて自らを癒すこともできる(こちらは変身術のスキルが高いほど効果が上がる)。さらに冷気への耐性を持ち、毒、瘴気、負のエネルギー、拷問を受けつけない。
+</p><p>また、使用者はアンデッドの体を持つことによる、より疑わしい「恩恵」もいくつか受ける。聖なるダメージとアンデッドの解呪に弱くなり、薬を飲めなくなる。
+</p>
+</td></tr></table>
+<p><a href="http://crawl.chaosforge.org/File:Talisman_of_death.png" data-untr="1" class="image"><img alt="Talisman of death.png" src="img/Talisman_of_death.png" width="32" height="32" /></a> <b>死のタリスマン</b>(<b>death talisman</b>)は、身につけると<b>死霊化</b>する<a href="Talisman.html" title="Talisman">タリスマン</a>だ。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>死のタリスマンを <b>P</b> で身につけると死霊化し、自分で変身を解くまでその姿が続く。変身には 4 ターン、変身を解くには 5 ターンかかる。
+</p><p>死霊化の効果は次のとおり。
+</p><p><b>戦闘面の強化</b>
+</p>
+<ul><li><b><a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a>:</b> 基本ダメージ 9。</li>
+<li>近接攻撃(武器での攻撃も含む)はすべて、3〜6 ターンの<a href="http://crawl.chaosforge.org/Drain" data-untr="1" class="mw-redirect" title="Drain">衰弱</a>、<a href="http://crawl.chaosforge.org/Slow" data-untr="1" title="Slow">減速</a>、<a href="http://crawl.chaosforge.org/Weak" data-untr="1" title="Weak">虚弱</a>を与える。<a href="http://crawl.chaosforge.org/Nonliving" data-untr="1" title="Nonliving">非生物</a>のモンスターにはまったく効かないが、<a href="Demon.html" title="Demon">悪魔</a>や<a href="http://crawl.chaosforge.org/Undead" data-untr="1" title="Undead">アンデッド</a>などは減速させたり虚弱にしたりできる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup></li>
+<li><b>精髄の吸収:</b> 発動する能力(MP 20)。2 マス以内にいる、効く相手すべてに<a href="http://crawl.chaosforge.org/Torment" data-untr="1" title="Torment">拷問</a>を与え、与えたダメージの 100% だけ自分の HP を回復する。回復量の上限は <code>(19 + 3 * Shapeshifting) / 2</code>(スキル最大で 50)。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup></li></ul>
+<p><b>耐性</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>+</li>
+<li><b><a href="http://crawl.chaosforge.org/Undead" data-untr="1" title="Undead">アンデッド</a></b>共通の耐性:
+<ul><li><a href="http://crawl.chaosforge.org/Cold_resistance" data-untr="1" class="mw-redirect" title="Cold resistance">rC+</a></li>
+<li><a href="Poison.html" title="Poison">毒</a>と<a href="http://crawl.chaosforge.org/Miasma" data-untr="1" class="mw-redirect" title="Miasma">瘴気</a>が効かない。</li>
+<li><a href="http://crawl.chaosforge.org/Life_protection" data-untr="1" class="mw-redirect" title="Life protection">rN+++</a>、<a href="http://crawl.chaosforge.org/Torment" data-untr="1" title="Torment">拷問</a>が効かない。</li>
+<li><a href="http://crawl.chaosforge.org/Mutate" data-untr="1" class="mw-redirect" title="Mutate">変異</a>しない。変異するはずのときは、代わりに<a href="http://crawl.chaosforge.org/Stat_drain" data-untr="1" class="mw-redirect" title="Stat drain">能力値の低下</a>を受ける。</li>
+<li><a href="http://crawl.chaosforge.org/Polymorph" data-untr="1" title="Polymorph">変化</a>させられない。</li>
+<li><a href="Holy.html" title="Holy">神聖</a>、<a href="Holy_wrath.html" title="Holy wrath">神罰</a>、<a href="Dispel_Undead.html" title="Dispel Undead">アンデッドの解呪</a>に弱い。</li></ul></li></ul>
+<p><b>制限</b>
+</p>
+<ul><li><b><a href="Transformation.html#Useful_Info" title="Transformation">融合する装備</a>:</b> なし。</li>
+<li><a href="Potion.html" title="Potion">薬</a>を飲めない。</li>
+<li>一部の<a href="Necromancy.html" title="Necromancy">死霊術</a>(<a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>、<a href="http://crawl.chaosforge.org/Borgnjor%27s_Revivification" data-untr="1" title="Borgnjor&#39;s Revivification">ボーグンジョルの究極治癒</a>、<a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>)が使えない。手にした武器の神罰のブランドも働かない。</li></ul>
+<p>死霊化しても<a href="Mutation.html" title="Mutation">変異</a>はほとんどそのまま残り、<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>も変わらない。HP や <a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> が生来のボーナスで増えることもない。
+</p><p>死霊化に必要な<a href="Shapeshifting.html" title="Shapeshifting">変身術</a>スキルは 26 で、これを下回ると <a href="Talisman.html#Skill" title="Talisman">HP にペナルティ</a>を受ける。スキルの上限は 27 で、これは変身術そのものの上限でもある。
+</p><p><a href="Josephina.html" title="Josephina">ジョセフィーナ</a>を倒すと、死のタリスマンを落とすことがある。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>死霊化がいちばん役に立つのは<a href="http://crawl.chaosforge.org/Extended_game" data-untr="1" title="Extended game">エクステンデッド</a>だ。薬が飲めないのは大きな痛手だが、その代わり<a href="http://crawl.chaosforge.org/Torment" data-untr="1" title="Torment">拷問</a>と<a href="Mutation.html" title="Mutation">変異</a>という、二つの大事なものが効かなくなる。エクステンデッド以外では、必要スキルが 26 もあるので、ほかの変身に比べて実用的ではない。
+</p>
+<table class="prettytable" style=" text-align: center">
+<tr>
+<th> 人型 </th>
+<th> アルマタウル </th>
+<th> ジンニー </th>
+<th> フェリッド </th>
+<th> ガーゴイル </th>
+<th> ナーガ </th>
+<th> オクトポード
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/File:Lichform.png" data-untr="1" class="image"><img alt="Lichform.png" src="img/Lichform.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Lichform_palentonga.png" data-untr="1" class="image"><img alt="Lichform palentonga.png" src="img/Lichform_palentonga.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Lichform_djinni.png" data-untr="1" class="image"><img alt="Lichform djinni.png" src="img/Lichform_djinni.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Lichform_felid.png" data-untr="1" class="image"><img alt="Lichform felid.png" src="img/Lichform_felid.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Lichform_gargoyle.png" data-untr="1" class="image"><img alt="Lichform gargoyle.png" src="img/Lichform_gargoyle.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Lichform_naga.png" data-untr="1" class="image"><img alt="Lichform naga.png" src="img/Lichform_naga.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Lichform_octopode.png" data-untr="1" class="image"><img alt="Lichform octopode.png" src="img/Lichform_octopode.png" width="32" height="32" /></a>
+</td></tr></table>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> より前は、ペナルティなしで死のタリスマンを使うのに必要な変身術スキルは 23 だった。</li>
+<li>死のタリスマンは、タリスマンそのものと同時に <a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> で追加された。これはレベル 8 の<a href="Necromancy.html" title="Necromancy">死霊術</a>/<a href="http://crawl.chaosforge.org/Transmutation" data-untr="1" class="mw-redirect" title="Transmutation">変成術</a>の呪文<a href="http://crawl.chaosforge.org/Necromutation" data-untr="1" title="Necromutation">死者の躯</a>(リッチ化)に代わるものだ。
+<ul><li>以前のリッチ化では、AC +6、<a href="http://crawl.chaosforge.org/Draining" data-untr="1" title="Draining">掠奪</a>のブランドつきで基本ダメージ 5 の徒手格闘、<a href="Necromancy.html" title="Necromancy">死霊術</a>の<a href="http://crawl.chaosforge.org/Spell_enhancer" data-untr="1" class="mw-redirect" title="Spell enhancer">呪文強化</a>が得られたが、攻撃した敵を虚弱にしたり減速させたりはできず、精髄の吸収の能力もなかった。</li>
+<li>初期の精髄の吸収は、アンデッドや悪魔のモンスターにも効いた。</li></ul></li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31-b1/crawl-ref/source/melee-attack.cc#L678">melee-attack.cc:678</a> (0.31-b1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31-b1/crawl-ref/source/ability.cc#L2497">ability.cc:2497</a> (0.31-b1)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th>
+</th>
+<th> <a href="Transformation.html" title="Transformation">変身</a>
+</th></tr>
+<tr>
+<th> <a href="Talisman.html" title="Talisman">タリスマン</a>
+</th>
+<td> <b>第1段階:</b> <a href="http://crawl.chaosforge.org/Quill_Form" data-untr="1" class="mw-redirect" title="Quill Form">針化</a> • <a href="http://crawl.chaosforge.org/Walking_Scroll_Form" data-untr="1" class="mw-redirect" title="Walking Scroll Form">巻物</a> <br /><b>第2段階:</b> <a href="http://crawl.chaosforge.org/Scarab_Form" data-untr="1" class="mw-redirect" title="Scarab Form">スカラベ</a> • <a href="http://crawl.chaosforge.org/Spore_Form" data-untr="1" class="mw-redirect" title="Spore Form">胞子</a> • <a href="http://crawl.chaosforge.org/Yak_Form" data-untr="1" class="mw-redirect" title="Yak Form">ヤク</a> • <a href="http://crawl.chaosforge.org/Medusa_Form" data-untr="1" class="mw-redirect" title="Medusa Form">メデューサ</a> <br /><b>第3段階:</b> <a href="http://crawl.chaosforge.org/Maw_Form" data-untr="1" class="mw-redirect" title="Maw Form">大口</a> • <a href="http://crawl.chaosforge.org/Eel_Form" data-untr="1" class="mw-redirect" title="Eel Form">鰻の手</a> • <a href="http://crawl.chaosforge.org/Fortress_Crab_Form" data-untr="1" class="mw-redirect" title="Fortress Crab Form">蟹</a> • <a href="http://crawl.chaosforge.org/Werewolf_Form" data-untr="1" class="mw-redirect" title="Werewolf Form">人狼</a> • <a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a> • <a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛</a> • <a href="http://crawl.chaosforge.org/Aqua_Form" data-untr="1" class="mw-redirect" title="Aqua Form">水化</a> <br /><b>第4段階:</b> <a href="http://crawl.chaosforge.org/Blade_Form" data-untr="1" class="mw-redirect" title="Blade Form">刃の手</a> • <a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a> • <a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a> • <a href="http://crawl.chaosforge.org/Hive_Form" data-untr="1" class="mw-redirect" title="Hive Form">巣</a> • <a href="http://crawl.chaosforge.org/Sphinx_Form" data-untr="1" class="mw-redirect" title="Sphinx Form">スフィンクス</a> • <a href="http://crawl.chaosforge.org/Vampire_Form" data-untr="1" class="mw-redirect" title="Vampire Form">吸血鬼</a>(<a href="http://crawl.chaosforge.org/Vampire_Bat_Form" data-untr="1" class="mw-redirect" title="Vampire Bat Form">コウモリ群</a>) <br /><b>第5段階:</b> <a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐化</a> • <a href="http://crawl.chaosforge.org/Death_Form" data-untr="1" class="mw-redirect" title="Death Form">死霊化</a>
+</td></tr>
+<tr>
+<th> <a href="Bauble.html" title="Bauble">ボーブル</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Flux_Form" data-untr="1" class="mw-redirect" title="Flux Form">流転</a>
+</td></tr>
+<tr>
+<th> <a href="Bad_Form.html" title="Bad Form">不利な変身</a>
+</th>
+<td> <a href="Bat_Form.html" title="Bat Form">コウモリ</a> • <a href="Fungus_Form.html" title="Fungus Form">茸化</a> • <a href="http://crawl.chaosforge.org/Pig_Form" data-untr="1" title="Pig Form">豚化</a> • <a href="Tree_Form.html" title="Tree Form">樹化</a> • <a href="http://crawl.chaosforge.org/Wisp_Form" data-untr="1" title="Wisp Form">霧化</a> • <a href="Jelly_Form.html" title="Jelly Form">ジェリー</a>
+</td></tr>
+<tr>
+<th> <a href="God.html" title="God">神の力</a>
+</th>
+<td> <a href="Makhleb.html#Infernal_Marks" title="Makhleb">殺戮</a>
+</td></tr>
+</center>
+</table>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

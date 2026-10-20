@@ -1,0 +1,1321 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>取り立て屋トロルのガイド TrFi^ウー・ジアン &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="取り立て屋トロルのガイド TrFi^ウー・ジアン(Repo Troll Guide, TrFi^Wu Jian)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>取り立て屋トロルのガイド TrFi^ウー・ジアン <span class="en">Repo Troll Guide, TrFi^Wu Jian</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Repo_Troll_Guide,_TrFi%5EWu_Jian">Repo Troll Guide, TrFi^Wu Jian</a>」(0.33 向け、2025-06-13 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Repo_Troll_Guide,_TrFi%5EWu_Jian&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれている。主観的だったり、古かったり、不正確だったり、あまり良くない助言だったりするかもしれない。</b> 参考にするかどうかは自分で判断し、自己責任で読んでほしい!</div>
+<p><br />
+<b>リポマン(RepoMan)による 15 ルーンのトロルの戦士ガイド</b>
+</p><p><a href="http://crawl.chaosforge.org/File:Troll.png" data-untr="1" class="image"><img alt="Troll.png" src="img/Troll.png" width="32" height="32" /></a> <i>「取り立て屋と取り立て屋トロルの違い、知ってるか?」</i>
+</p><p>並の回収業者ってのは、管轄だの手続きだのを気にしすぎる。ところがトロルは、払えない債務者を爪で引き裂くことの法的な是非なんて、まず考えない。
+</p><p>というわけで、仕事の話だ。ゾットが金を払わなかった。家に乗り込んでオーブを取り返してこい。簡単すぎる? かもしれない。ゾットも知恵を絞っている。害虫だらけの地下室のどこかにオーブを隠し、扉を魔法のルーンで封じ、手下の軍勢を雇い、罠もいくつか仕掛けた……まったく疑り深いやつだ。だが、こちらにはプランがある。大文字の P で始まる「プラン」が。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_Plan"><span class="tocnumber">1</span> <span class="toctext">プラン</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Skills"><span class="tocnumber">1.1</span> <span class="toctext">スキル</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Talismans"><span class="tocnumber">1.2</span> <span class="toctext">タリスマン</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Spells"><span class="tocnumber">1.3</span> <span class="toctext">呪文</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Options"><span class="tocnumber">1.4</span> <span class="toctext">オプション</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Attributes"><span class="tocnumber">1.5</span> <span class="toctext">能力値</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Equipment"><span class="tocnumber">1.6</span> <span class="toctext">装備</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Plan_B"><span class="tocnumber">2</span> <span class="toctext">プランB</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#General_Advice"><span class="tocnumber">3</span> <span class="toctext">全般的な助言</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Basic_Tactics"><span class="tocnumber">3.1</span> <span class="toctext">基本の戦術</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Consumables"><span class="tocnumber">3.2</span> <span class="toctext">消耗品</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Evocables"><span class="tocnumber">3.3</span> <span class="toctext">発動アイテム</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Throwing"><span class="tocnumber">3.4</span> <span class="toctext">投擲</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Selected_Threats"><span class="tocnumber">3.5</span> <span class="toctext">注意すべき脅威</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Martial_Arts_Training_Montage"><span class="tocnumber">4</span> <span class="toctext">武術修行のモンタージュ</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Time.2C_Actions_and_Delay"><span class="tocnumber">4.1</span> <span class="toctext">時間、行動、ディレイ</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#The_Wu_Jian_Council"><span class="tocnumber">4.2</span> <span class="toctext">ウー・ジアン評議会</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#The_Kung_Fu_Puzzle"><span class="tocnumber">4.3</span> <span class="toctext">カンフー・パズル</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Ancient_Martial_Combos"><span class="tocnumber">4.4</span> <span class="toctext">古の武術コンボ</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Force_Equals_Mass_Times_Acceleration"><span class="tocnumber">4.5</span> <span class="toctext">力は質量かける加速度</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Fight_Dirty"><span class="tocnumber">4.6</span> <span class="toctext">汚く戦え</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Branch_Order"><span class="tocnumber">5</span> <span class="toctext">分岐を回る順番</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Early_Game"><span class="tocnumber">6</span> <span class="toctext">序盤</span></a>
+<ul>
+<li class="toclevel-2 tocsection-24"><a href="#The_Dungeon"><span class="tocnumber">6.1</span> <span class="toctext">迷宮</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#The_Lair_of_Beasts"><span class="tocnumber">6.2</span> <span class="toctext">獣の棲み処</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#The_Orcish_Mines"><span class="tocnumber">6.3</span> <span class="toctext">オークの坑道</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="#Timed_Portals"><span class="tocnumber">7</span> <span class="toctext">時限ポータル</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="#Mid_Game"><span class="tocnumber">8</span> <span class="toctext">中盤</span></a>
+<ul>
+<li class="toclevel-2 tocsection-29"><a href="#The_Snake_Pit"><span class="tocnumber">8.1</span> <span class="toctext">蛇穴</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#The_Spider.27s_Nest"><span class="tocnumber">8.2</span> <span class="toctext">蜘蛛の穴ぐら</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#The_Swamp"><span class="tocnumber">8.3</span> <span class="toctext">沼</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#The_Shoals"><span class="tocnumber">8.4</span> <span class="toctext">浅瀬</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#The_Elven_Halls"><span class="tocnumber">8.5</span> <span class="toctext">エルフの大広間</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#The_Vaults"><span class="tocnumber">8.6</span> <span class="toctext">宝物庫</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-35"><a href="#Late_Game"><span class="tocnumber">9</span> <span class="toctext">終盤</span></a>
+<ul>
+<li class="toclevel-2 tocsection-36"><a href="#The_Crypt"><span class="tocnumber">9.1</span> <span class="toctext">地下墓地</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#The_Depths"><span class="tocnumber">9.2</span> <span class="toctext">深層</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#The_Slime_Pits"><span class="tocnumber">9.3</span> <span class="toctext">スライムの穴ぐら</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#The_Realm_of_Zot"><span class="tocnumber">9.4</span> <span class="toctext">ゾットの領域</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-40"><a href="#The_Orb_Run"><span class="tocnumber">10</span> <span class="toctext">オーブを持っての脱出</span></a></li>
+<li class="toclevel-1 tocsection-41"><a href="#Beyond_the_Plan"><span class="tocnumber">11</span> <span class="toctext">プランの先へ</span></a>
+<ul>
+<li class="toclevel-2 tocsection-42"><a href="#The_Way_of_the_Brute"><span class="tocnumber">11.1</span> <span class="toctext">荒くれ者の道</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="#The_Way_of_the_Warper"><span class="tocnumber">11.2</span> <span class="toctext">転位術師の道</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#The_Way_of_the_Lich"><span class="tocnumber">11.3</span> <span class="toctext">リッチの道</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#The_Way_of_the_Alchemist"><span class="tocnumber">11.4</span> <span class="toctext">錬金術師の道</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#The_Way_of_the_Mechanist"><span class="tocnumber">11.5</span> <span class="toctext">機工士の道</span></a></li>
+<li class="toclevel-2 tocsection-47"><a href="#The_Way_of_the_Librarian"><span class="tocnumber">11.6</span> <span class="toctext">司書の道</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-48"><a href="#Extended_Game"><span class="tocnumber">12</span> <span class="toctext">エクステンデッド</span></a>
+<ul>
+<li class="toclevel-2 tocsection-49"><a href="#Ziggurats"><span class="tocnumber">12.1</span> <span class="toctext">ジグラット</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#Pandemonium"><span class="tocnumber">12.2</span> <span class="toctext">パンデモニウム</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="#The_Abyss"><span class="tocnumber">12.3</span> <span class="toctext">アビス</span></a></li>
+<li class="toclevel-2 tocsection-52"><a href="#Hell"><span class="tocnumber">12.4</span> <span class="toctext">地獄</span></a></li>
+<li class="toclevel-2 tocsection-53"><a href="#The_Tomb_of_the_Ancients"><span class="tocnumber">12.5</span> <span class="toctext">太古の霊廟</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-54"><a href="#High_Scores"><span class="tocnumber">13</span> <span class="toctext">ハイスコア</span></a>
+<ul>
+<li class="toclevel-2 tocsection-55"><a href="#Low_Turncount"><span class="tocnumber">13.1</span> <span class="toctext">少ないターン数</span></a></li>
+<li class="toclevel-2 tocsection-56"><a href="#Gems"><span class="tocnumber">13.2</span> <span class="toctext">宝石</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-57"><a href="#FAQ"><span class="tocnumber">14</span> <span class="toctext">よくある質問</span></a></li>
+<li class="toclevel-1 tocsection-58"><a href="#Afterword"><span class="tocnumber">15</span> <span class="toctext">あとがき</span></a></li>
+<li class="toclevel-1 tocsection-59"><a href="#Credentials"><span class="tocnumber">16</span> <span class="toctext">実績</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="The_Plan">プラン</span></h2>
+<pre>ステップ1: 爪              (初期武器として選ぶ)
+ステップ2: 盾              (初期装備に入っている)
+ステップ3: ウー・ジアン評議会 (機会があり次第すぐ改宗する)
+ステップ4: 石像            (早く見つかるよう祈る)
+ステップ5: 死霊化          (任意)
+</pre>
+<p>いい知らせだ。もう半分は済んでいる! トロルの戦士を雇ったのはそのためだ。
+</p><p>戦略上の大きな決断はいらない。プランを守り、戦術に集中すればいい。初勝利がこれほど簡単だったことはない。ルーンを 3 つで済ませたくても 15 個集めたくても同じだ。もちろん「簡単」というのは相対的な話で、DCSS であることに変わりはない。
+</p><p>これを試したら、レディット(r/dcss)か<a rel="nofollow" class="external text" href="https://tavern.dcss.io/">公式フォーラム(Tavern)</a>に、またまた勝利報告(YAVP)か、またまた間抜けな死(YASD)を投稿してみてほしい。もらった感想をもとに、ときどきガイドを更新している。
+</p><p><b>おことわり</b><br />
+これは、たいていのゲームでやるような「最適なプレイ」や、乱数の気まぐれひとつひとつへの対応を語るものではない。取り立て屋トロルは、<a href="Granite_talisman.html" title="Granite talisman">花崗岩のタリスマン</a>を思いきり楽しむために組んだビルドだ。可能性は低いが、そのタリスマンが最後まで見つからないこともある。それでも勝てる。
+</p><p>オンラインで私の観戦をして、たまたまトロルの戦士(TrFi)を遊んでいるところに出くわしても、取り立て屋トロルのお手本のようなプレイは期待しないでほしい。自分のガイドを一字一句守ることもあれば、ふざけて新しいことを試すこともある。私の言うとおりにやれ。やるとおりにはやるな。
+</p>
+<h3><span class="mw-headline" id="Skills">スキル</span></h3>
+<p>どこかへ行く前に <code>m</code> を押し、まだなら <code>/</code> で訓練を手動に切り替えておく。この設定はゲームが覚えておいてくれるので、以後は手動訓練が標準になる。
+</p><p>スキル目標は、<code>=</code> を押してからスキルに対応する文字を押すと設定できる。目標に達したスキルは自動的に訓練が止まる。すべてのスキル目標に達するとスキル画面が開いて知らせてくれ、新しいスキルを選ぶまで閉じられない。
+</p><p>実際にどの経験レベルであるスキルレベルに届くかは、タリスマンや呪文をいつ見つけたか、<a href="Manual.html" title="Manual">虎の巻</a>を拾ったかどうかで変わる。
+</p><p><b>基本のスキル配分</b><br />
+徒手格闘に集中する(<code>b</code> を押す)。入ってくる経験値の配分とスキル目標は次のようにする。
+</p>
+<pre>スキル           訓練    目標
+----------------------------------
++ 戦闘       |  20%  |  16.6
+* 徒手格闘   |  40%  |    --
++ 躱し身     |  20%  |   9.9
++ 盾         |  20%  |  16.6
+</pre>
+<p>徒手格闘には目標を置かない。狙うのはヘビー級王者だ。ただし、エクステンデッドまで遊んで別の称号が欲しいなら話は別で、そのときは目標を 26.6 にして、ほかのスキルを先に最大まで上げてかまわない。<a href="Skill_titles.html" title="Skill titles">こちら</a>を参照。
+</p><p>徒手格闘はレベルが 1 上がるごとに基本ダメージが増え、しかも攻撃のディレイが縮む。素手の攻撃のディレイが最短になるのは 27 になってからだ。上げる価値は十分ある。できるものなら 27.7 を目指したいくらいだ。もちろん 7 がずっと続く循環小数で。
+</p><p>戦闘についてひとこと。このガイドの古い版を読んだ人は、戦闘のスキル目標を 16.6 から 19.9 に変え、また 16.6 に戻したことに気づいたかもしれない。これは私が勧める最低限にすぎない。低めにしておくのは、終盤の選択肢を早めに選べるようにするためで、その選択肢のひとつが戦闘をさらに上げることだ。
+</p><p>使う価値のある<a href="#Talismans">タリスマン</a>か<a href="#Spells">呪文</a>が見つかるまで、あるいはそれが見つからず<a href="#Options">オプション</a>のどれかを選ぶと決めるまで、このスキル配分には手を付けないこと。
+</p><p><b>ギアを切り替える</b><br />
+変身の詳しい話はあとでする。ここではスキルの訓練の話だ。<a href="#Talismans">タリスマン</a>ごとの細かい手順は次の小節に書いた。ここからの助言はどのタリスマンにも当てはまる。
+</p><p>タリスマンを見つけるまで変身術の訓練は始めないこと。
+</p><p>変身術の訓練を始めるときは、ほかのスキルをすべて止める。タリスマンの発動(<code>V</code> を押す)は失敗しないが、スキルが足りないと変身した姿の最大 HP が大きく削られる。所持品のタリスマンを調べてみよう。プレビューが出る。必要スキルの最低値に届く前から、そこそこ使えることも多い。目安として、私は最大 HP が 80% ほどになったところで変身することにしている。
+</p><p>変身した状態で最大 HP が満額になるまで、変身術だけを訓練し続ける。それから基本のスキルを再開し、全部を並行して訓練する。
+</p><p>実際に変身して使っているのでなければ、変身術とほかのスキルを同時に訓練しないこと。変身術は本当に姿を変えるまでまったく役に立たないが、先に上げた戦闘系のスキルは、変身できるようになるまで生き延びる助けになる。
+</p>
+<h3><span class="mw-headline" id="Talismans">タリスマン</span></h3>
+<p><b><a href="Granite_talisman.html" title="Granite talisman">花崗岩のタリスマン</a></b><br />
+花崗岩のタリスマンは軍用品で、残念ながら闇市場にいつも出回っているわけではない。誤解しないでほしいが、見つかることのほうが多い。ただ、毎回とはいかない。S系の分岐までに、せめて終盤までに、運よく手に入ることを祈ろう。石像はずっとこのビルドの核だった。まだ呪文で、トロルにはずっと扱いにくかった古い版のころからそうだ。乱数が許すなら、昔ながらの取り立て屋トロルは無理のない時期にさっさと石像になり、二度と変身を解かない。
+</p><p>ほかのタリスマンもこのガイドで扱うのは、花崗岩が品切れのときに道のりを楽にしてくれるものがあるからだ。それに、死霊化は便利すぎて無視できない。
+</p><p>花崗岩のタリスマンが見つかるまでは、どの階も隅々まで探索し、店はすべて覗くこと。店で見かけたのに金貨が足りないときは、<code>Shift</code> とタリスマンに割り当てられた文字を押して買い物リストに入れておく。買えるだけの金貨が貯まると、店に戻れるとゲームが知らせてくれる。文無しになってもいいので、できるだけ早く買うこと。普通の品かアーティファクトかは関係ない。
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> <a href="http://crawl.chaosforge.org/File:Troll.png" data-untr="1" class="image"><img alt="Troll.png" src="img/Troll.png" width="32" height="32" /></a> (著作権のある引用のため本文は省略)
+<p>
+</p>
+</td></tr></table>
+<p>石像には大きな欠点がふたつある。
+</p>
+<ul><li> あらゆる行動が 50% 遅くなる。移動も攻撃も呪文も、何もかもだ。</li>
+<li> 胴の防具が体に溶け込んで使えなくなる。</li></ul>
+<p>そのうえ回避が 20% 下がり、<a href="http://crawl.chaosforge.org/Lee%27s_Rapid_Deconstruction" data-untr="1" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>と<a href="Shatter.html" title="Shatter">粉砕</a>が効くようになる。幸い、これらの呪文を使う敵はめったにいない。<a href="Deep_elf_elementalist.html" title="Deep elf elementalist">闇エルフの精霊使い</a>、<a href="http://crawl.chaosforge.org/Deep_troll_earth_mage" data-untr="1" title="Deep troll earth mage">洞窟トロルの地術師</a>、<a href="http://crawl.chaosforge.org/Jorgrun" data-untr="1" title="Jorgrun">ジョーグルン</a>はリーの瞬間解体術を使えるが、普通はそれほど連発しない。私の知るかぎり、粉砕を知っている可能性があるのは<a href="Player_ghost.html" title="Player ghost">プレイヤーの幽霊</a>だけだ。高レベルの幽霊は、ヴォールトを開ける前によく調べておくこと。
+</p><p>怖そうに聞こえる? 実はそうでもない。山ほどのボーナスと耐性と免疫が手に入るからだ。
+</p>
+<ul><li> HP 130%</li>
+<li> AC が最大 +38</li>
+<li> 素手の基本ダメージが増え、爪のぶんと重なる</li>
+<li> 近接攻撃のダメージ 150%</li>
+<li> 毒への免疫</li>
+<li> rElec</li>
+<li> rN+</li>
+<li> 苦痛への耐性 50%</li>
+<li> <a href="Sleep.html" title="Sleep">睡眠</a>、<a href="http://crawl.chaosforge.org/Petrification" data-untr="1" class="mw-redirect" title="Petrification">石化</a>、<a href="http://crawl.chaosforge.org/Flayed" data-untr="1" title="Flayed">皮剥ぎ</a>、<a href="http://crawl.chaosforge.org/Cloud#Miasma" data-untr="1" title="Cloud">瘴気</a>への免疫</li>
+<li> <a href="http://crawl.chaosforge.org/Unbreathing" data-untr="1" title="Unbreathing">呼吸しない</a></li>
+<li> 血が流れていないので、<a href="Skyshark.html" title="Skyshark">スカイシャーク</a>や<a href="http://crawl.chaosforge.org/Vampire" data-untr="1" title="Vampire">吸血鬼</a>に味見されない</li></ul>
+<p>高い HP と AC、そこそこの EV、そして盾を使えることのおかげで、石像はゲーム中でいちばん打たれ強い変身だ。しかも HP の再生が遅くならない。行動 1 回あたりの回復量は増えるし、そもそもトロルは傷の治りが早い。
+</p>
+<ul><li> スキル目標: 変身術 25.0</li>
+<li> HP が満額になる: 変身術 17.0</li>
+<li> HP 80%: 変身術 約 13.3</li></ul>
+<p>HP 80% で石像になる価値は、AC と凶悪な石の爪だけで十分にある。経験値を稼ぐうちに HP はすぐに増える。100% 集中すれば、そこまで長くはかからない。適性 -1 はかなり優秀だ。
+</p><p>ごく早い時期に花崗岩のタリスマンを爪にできたなら、変身術の訓練は XL 12 前後になり、獣の棲み処に入る準備ができて、少なくとも単独の人食いヤクくらいは殴り倒せるようになるまで待つこと。
+</p><p>いったん石像になったら、変身を解く理由はほとんどない。
+</p>
+<ul><li> あとで死霊化に乗り換えたい。そのときは死のタリスマンを発動するだけでいい。</li>
+<li> 体に溶け込んだ防具を捨てたい。ずっと石像のままでいるなら、所持品の枠を空けておくのも手だ。<code>a</code> で能力のメニューを開く。</li></ul>
+<p>スピードの薬を飲むかフラックス・ボーブルを使わないかぎり、逃げるという選択肢は取りにくくなる。石像での一歩の踏み間違いは、普通の速さのキャラクターよりも危険になりうる。石像になるには 4 ターンかかる。変身を解くのは、解いている間も遅いままなので 7.5 ターンかかる。戦闘中に選べる手ではない。
+</p><p><b><a href="Talisman_of_death.html" title="Talisman of death">死のタリスマン</a></b><br />
+少なくとも終盤とエクステンデッドでは、花崗岩のタリスマンの代わりになるタリスマンがもうひとつある。<a href="Talisman_of_death.html" title="Talisman of death">死のタリスマン</a>だ。そう、こっちはもっと見つけにくい代物だ。それでも、<a href="Granite_talisman.html" title="Granite talisman">花崗岩</a>も<a href="Talisman_of_death.html" title="Talisman of death">死</a>もどちらも見つからないのは、よほど運の悪いゲームだ。両方あるのが理想だが、どちらかひとつで用は足りる。
+</p><p>死霊化にもいくつか欠点がある。
+</p>
+<ul><li> あなたは薬を飲めない。</li>
+<li> 聖なるダメージとアンデッドの解呪が効くようになる</li>
+<li> 悪性変異の代わりに HP の最大値が吸われる</li></ul>
+<p>そして利点はたくさんある。
+</p>
+<ul><li> 苦痛への免疫</li>
+<li> 毒への免疫</li>
+<li> 変異への免疫。ただし、すでに持っている変異のほとんどは抑えられない</li>
+<li> <a href="http://crawl.chaosforge.org/Polymorph" data-untr="1" title="Polymorph">変化</a>への免疫</li>
+<li> <a href="Sleep.html" title="Sleep">睡眠</a>、<a href="http://crawl.chaosforge.org/Flayed" data-untr="1" title="Flayed">皮剥ぎ</a>、<a href="http://crawl.chaosforge.org/Cloud#Miasma" data-untr="1" title="Cloud">瘴気</a>への免疫</li>
+<li> <a href="http://crawl.chaosforge.org/Unbreathing" data-untr="1" title="Unbreathing">呼吸しない</a></li>
+<li> 血が流れていないので、<a href="Skyshark.html" title="Skyshark">スカイシャーク</a>や<a href="http://crawl.chaosforge.org/Vampire" data-untr="1" title="Vampire">吸血鬼</a>に味見されない</li>
+<li> rN+++</li>
+<li> rC+</li>
+<li> Will+</li>
+<li> 素手の基本ダメージが増え、爪のぶんと重なる</li>
+<li> 近接攻撃でたいていのモンスターを衰弱させ、減速させ、非力にする</li>
+<li> 精髄の吸収の能力</li>
+<li> 装備が何ひとつ体に溶け込まない</li>
+<li> 死霊化の能力「精髄の吸収」は、2 マス以内の敵に苦痛を与え、与えたダメージの一部ぶん HP を回復する</li></ul>
+<p>死のタリスマンしか見つからなかった場合は、変身術の訓練を始めるのは S系の分岐を終えてからにするのがおすすめだ。しばらく経験値を全部変身術につぎ込んでも平気な、安定した状況でやりたい。
+</p>
+<ul><li> スキル目標: 変身術 26.0</li>
+<li> HP が満額になる: 変身術 26.0</li>
+<li> HP 80%: 変身術 約 24.0</li></ul>
+<p><b><a href="Quill_talisman.html" title="Quill talisman">羽根ペンのタリスマン</a></b><br />
+一見ぱっとしないが、針化すると締めつけに免疫になる。これはゲーム全体を通じてとても役に立ち、蛇穴では本当に流れを変える。針化では帽子とクロークが体に溶け込むが、欠点はそれだけだ。使い始めるのに必要なスキルはゼロ。ごく早い時期に見つかれば、反撃のダメージもありがたい。まさしく「ペンは剣よりも強し」だ。
+</p>
+<ul><li> スキル目標: 変身術 7.0</li>
+<li> HP が満額になる: 変身術 0.0</li></ul>
+<p><b><a href="Flux_bauble.html" title="Flux bauble">フラックス・ボーブル</a></b><br />
+ほかのタリスマンと違って、フラックス・ボーブルは消耗品だ。複数個が所持品の中でまとまり、1 個につき 1 回しか発動できない。流転は決まった回数だけ攻撃すると終わる。このビルドで流転になるのはおすすめしないが、特別な使い道がひとつある。
+</p><p>ほかのタリスマンは、発動に 4 ターン、変身を解くのに 5 ターンかかる。流転になるのは 1 ターンで済み、しかも変身を解かずに別の変身からすぐ抜け出せる。石像のときは流転になって普通の速さで逃げられる。死霊化のときは流転になって手早く薬を何本か飲める。(能力のメニューから)流転を終えると、それまでの変身に戻る。これも 1 ターンで済む。
+</p>
+<ul><li> スキル目標: 変身術 5.0</li>
+<li> HP が満額になる: 変身術 5.0</li>
+<li> HP 80%: 変身術 3.0</li></ul>
+<p><b><a href="Medusa_talisman.html" title="Medusa talisman">メデューサのタリスマン</a></b><br />
+獣の棲み処に入る準備ができたのに、花崗岩のタリスマンはまだなく、メデューサのタリスマンならある? ならそれを使おう!
+</p><p>メデューサになると rPois が付くうえ、毒のある触手が生える。攻撃するたびに、触手が 2 マス以内の最大 4 体を打つ。HP が 60% を切ると、毒を受けているモンスターを石化させる効果がある確率で発動し、あなたには「-石化毒」の状態が付く。この状態の間は効果が再発動せず、HP が 100% まで回復すると消える。
+</p>
+<ul><li> スキル目標: 変身術 14.0</li>
+<li> HP が満額になる: 変身術 8.0</li>
+<li> HP 80%: 変身術 約 6.0</li></ul>
+<p>メデューサでは帽子とクロークが体に溶け込むが、中盤のトロルにとってはたいてい小さな欠点だ。すごい帽子やクロークやスカーフを見つけていて、ほかに rPois の当てがあり、しかも胴の防具の AC がどのみちとても低い、という場合を除けば、メデューサのほうが大口より上だ。
+</p><p><b><a href="Maw_talisman.html" title="Maw talisman">大顎のタリスマン</a></b><br />
+大口は、爪で何かを攻撃するたびに一律 75% の確率で補助攻撃を出す。倒した相手から HP を回復することもあるが、死体を残すモンスターに限られる。AC の低さにだけは注意すること。大口は胴の防具を完全には溶け込ませないが、その AC を 75% 減らす。
+</p>
+<ul><li> スキル目標: 変身術 14.0</li>
+<li> HP が満額になる: 変身術 8.0</li>
+<li> HP 80%: 変身術 約 6.0</li></ul>
+<p>大口がいちばん活きるのは、手早く倒していけるとき、できれば 1 対 1 のときか、手強いモンスター 1 体と、つまみ食い用の雑魚が何匹かいるときだ。大口での壁蹴りはかなり効く。ただし、この姿で殴られ続けると HP はみるみる減る。
+</p><p><b><a href="Lupine_talisman.html" title="Lupine talisman">人狼のタリスマン</a></b><br />
+人狼になると、再生のボーナス、倒すたびに殺戮のボーナス(+12 まで重なる)、冷気耐性、器用と腕力の +3 が付く。遠吠えでモンスターを怯えさせ、怯えたモンスターに追加ダメージを与える跳びかかり攻撃も手に入る。うますぎる話? それは場合による。この変身は意志力も下げる。そしてトロルはもともと意志力がたいして高くない。装備で意志力を補えないかぎり、人狼はきわめて危険だ。突然麻痺させられるまでは楽しいお遊びで済むのだが。
+</p>
+<ul><li> スキル目標: 変身術 20.0</li>
+<li> HP が満額になる: 変身術 12.0</li>
+<li> HP 80%: 変身術 約 10.0</li></ul>
+<p>帽子とクロークは体に溶け込むが、胴の防具、盾、爪はそのまま使える。
+</p><p><b><a href="http://crawl.chaosforge.org/Dragon-blood_talisman" data-untr="1" class="mw-redirect" title="Dragon-blood talisman">竜のとぐろのタリスマン</a></b><br />
+竜化はウー・ジアンと組み合わせるととても楽しく、S系の分岐からゾットの領域まで連れていってくれる。得られるものは次のとおり。
+</p>
+<ul><li> HP 150% と、いくらかの AC</li>
+<li> 近接攻撃の基本ダメージが大幅に増える</li>
+<li> 腕力 +10</li>
+<li> 補助攻撃がふたつ(噛みつきと尻尾の一撃)</li>
+<li> rF+、rC+、rPois</li>
+<li> 飛行</li>
+<li> 強力なブレス攻撃(経験値で再充填)</li></ul>
+<p>スキルが高ければ、普通の速さで動くのに石像よりも強く殴れる。何者にも止められない気分になるだろうが、十分に気をつけること。無敵でいられるのは、たいていのモンスターを反撃される前に倒せている間だけだ。遠距離攻撃をしてくる敵の群れや苦痛にかかると、あっという間にやられる。それにたぶん、耐性もいくつか足りていない。HP がたっぷりあるので瞬間的な大ダメージはうまく吸収できるが、飛んでくる攻撃はほとんど当たるし、戦いが長引くと HP の減りが速すぎて再生では追いつかない。
+</p><p>竜化では盾も含めて防具がすべて体に溶け込み、AC はそこそこ、EV はひどく低い。物を投げることもできなくなる。HP が満額に届かないうちに竜になるのはおすすめしない。できるだけ早く、遅くともエクステンデッドに入る前には花崗岩に切り替えること。
+</p>
+<ul><li> スキル目標: 変身術 25.0</li>
+<li> HP が満額になる: 変身術 17.0</li></ul>
+<p><br />
+<b><a href="Storm_talisman.html" title="Storm talisman">嵐のタリスマン</a></b><br />
+おすすめしない。嵐化は強力だが、このビルドとは噛み合わず、使うのに死霊化と同じくらいのスキルが要る。爪を封じられたり盾が体に溶け込んだりするのは避けたい。旋風とヴィーの電撃突進があるなら、生まれつきの薙ぎ払いや雷霆の突進は必要ない。ターンあたりのダメージは嵐化のほうが上だが、石像もかなりの打撃力があり、守りはずっと固く、15 ルーンにも向いている。
+</p><p><b>その他のタリスマン</b><br />
+0.33 で新しいタリスマンがたくさん加わった。そのすべてについて、まだはっきりした意見はない。このビルドにとって使う価値のあるタリスマンが見つかれば、おいおいガイドに書き足していく。いずれにせよ、最終目標はいつでも花崗岩か死だ。迷ったら、そこまではトロルのままの姿で十分やっていける。
+</p>
+<h3><span class="mw-headline" id="Spells">呪文</span></h3>
+<p>近ごろの若いのは楽でいいねえ。分厚い本を分厚い頭蓋骨に何度も叩きつけて、ようやく気合ひとつで花崗岩になれるようになった初代の取り立て屋トロルとは大違いだ。昔の取り立て魔術師たちは秘術の奥義を掘り下げ、戦いの最中に強化系の杖を持ち替え、あれやこれやとやっていた。今はタリスマンを拾って、スイッチの入れ方を覚えるだけだ。
+</p><p>なんだって、字が読める? 冗談だろう。それなら手札を少し増やしておこう。転位術を少しかじっておくと大いに役立つ。どんな魔法書が見つかるか様子を見よう。タリスマンが早く見つかったら呪文の訓練はあとに回し、逆なら逆にする。
+</p><p>瞬間移動と引き寄せは、できるだけ早く唱えられるようにしておく。序盤でも大した投資ではない。ヴィーの電撃突進にはずっと多くの訓練が要る。S系の分岐を終えたあたりまで待ってもかまわない。最初は基本の戦闘スキルに絞るのがたいてい一番だ。手を広げるのはあとでいい。
+</p><p>原則は前と同じだ。実際に使っているものは並行して訓練する。新しく使えるようにしたいものは、経験値に余裕ができしだい、それだけを訓練して使える状態にする。呪文がなかなか見つからなくても気にしなくていい。変身術のほうが大事だ。転位術は有利になるので強くおすすめするが、魔法なしでもちゃんと勝てる。
+</p><p>それどころか、おすすめの呪文が全部唱えられる状態でこのビルドが楽勝すぎると感じたら、呪文なしで勝つことに挑戦してみるのもいい。基本の戦術、カンフー・パズル、消耗品の上手な使い方に、本当の意味で集中できる。
+</p><p>呪文のいちばん大事なコマンドを挙げておく。
+</p>
+<ul><li> <code>M</code> で呪文を覚えるための呪文一覧を開く。呪文を覚えると、関係する魔術系統がスキル画面(<code>m</code>)に出てくる。</li>
+<li> <code>I</code> で覚えている呪文と失敗率の一覧が出る。<code>!</code> で切り替えると呪文の威力と射程が見られる。</li>
+<li> <code>=s</code> で呪文に割り当てる文字を変える。</li>
+<li> <code>z</code> で呪文を唱える。</li></ul>
+<p>以下のスキル目標は目安だ。装備や、場合によっては変異が、呪文の成功率と威力の両方を大きく左右する。たいていは知力の増減か、胴の防具の重さによるものだ。魔術強化(Wizardry)は呪文の成功率を上げ、大賢者(Archmagi)は呪文の威力を上げる。
+</p><p>私はたいてい、失敗率が 20% まで下がるのを待ってから呪文を使い始め、呪文の失敗をどれだけ避けたいかに応じて 10% 以下を目指す。目標が足りないと感じたら、転位術をもう少し上げる。ヴィーの電撃突進なら風の魔術もだ。複数の系統にまたがる呪文の威力は、各系統の平均で決まる。呪文詠唱は成功率や威力にはあまり効かない。主に MP と呪文レベルの枠を増やすものだ。
+</p><p><b><a href="http://crawl.chaosforge.org/Apportation" data-untr="1" title="Apportation">収拾</a></b>
+</p>
+<pre>スキル目標: 呪文詠唱 1.1、転位術 3.3
+</pre>
+<p>収拾が戦闘で役立つことはめったにないが、ほかの方法では届かないアイテムをかすめ取れる。たとえば、絶対に関わりたくないモンスターのすぐ隣に瞬間移動の巻物が落ちているとき。たとえば、アイテムとの間に深い水脈や溶岩があるとき。たとえば、アビスで恐ろしいヴォールトの扉を開けたら、部屋の反対側にルーンが転がっていたとき。さっと引ったくってしまおう。
+</p><p><b><a href="Blink.html" title="Blink">瞬間移動</a></b>
+</p>
+<pre>スキル目標: 呪文詠唱 3.3、転位術 5.5
+</pre>
+<p>移動先のマスはランダムに決まり、呪文には再使用までの待ち時間もあるが、この小さな転位呪文は、旗色の悪くなった戦いから逃げ出したり、ぜひとも欲しい動ける空間を作ったりするのに何度も役立つ。瞬間移動は命綱になり、消耗品の使用も減らしてくれる。
+</p><p><b><a href="http://crawl.chaosforge.org/Lesser_Beckoning" data-untr="1" title="Lesser Beckoning">引き寄せ</a></b><br />
+</p>
+<pre>スキル目標: 呪文詠唱 3.3、転位術 5.5
+</pre>
+<p>どんな近接戦士にとっても優れた戦術の道具だ。自分が位置を変えるより、敵を引っぱり寄せたほうがいいことは多い。扉や角に立って、仲間から引き離すようにモンスターを引き寄せれば、群れ全体と一度に戦うよりずっと安全になる。相手が遠距離攻撃を持っているならなおさらだ。モンスターを雲の中へ引き込むのにもとても便利だ。射程は呪文の威力とともに伸びる。最初は短いが、ヴィーの電撃突進のための訓練をして知力が上がれば伸びていく。焦らなくていい。
+</p><p><b><a href="Passage_of_Golubria.html" title="Passage of Golubria">ゴルブリアの通り道</a></b><br />
+</p>
+<pre>スキル目標: 呪文詠唱 3.3、転位術 9.9
+</pre>
+<p>正直なところ、この呪文はめったに使わない。だが使い道は多く、ヴィーの電撃突進のための訓練をすれば、ほぼおまけで手に入る。準備する時間があれば、ゴルブリアの通り道は逃げ道になる。面倒が近づいてくるのが見えたら、前もってポータルを置いておく。溶岩や深い水脈を渡ったり、罠を迂回したりするのにも使える。<a href="http://crawl.chaosforge.org/Wall#Iron_Grate" data-untr="1" title="Wall">格子</a>の向こう側にポータルを置くこともでき、<a href="http://crawl.chaosforge.org/Wand_of_digging" data-untr="1" title="Wand of digging">掘削のワンド</a>の回数を節約できる。ハイスコアを狙うなら、ゴルブリアの通り道はターン数を減らす助けになる。
+</p><p><b><a href="Vhi's_Electric_Charge.html" title="Vhi&#39;s Electric Charge">ヴィーの電撃突進</a></b><br />
+</p>
+<pre>スキル目標: 呪文詠唱 4.4、転位術 11.1、風の魔術 4.4
+</pre>
+<p>引き寄せのちょうど逆のような呪文だ。呪文の威力がどれだけ低くても、射程は常に 4 になる。すぐ隣の敵には突進できない。突進すると、狙ったモンスターの真正面のマスに出る。そのマスにいたモンスターは押しのけられる。おまけに、ヴィーの電撃突進は電撃のダメージも少し与える。
+</p><p>ヴィーの電撃突進は、突進や壁蹴りでは届かないモンスターとの距離を詰めるのに使う。天の嵐の最中に、瞬間移動もできないほど完全に囲まれてしまったときに抜け出すのにも役立つ。手下の陰に隠れている召喚術師をさっさと仕留めたり、位置を変えたりするのにうってつけの呪文だ。ただ、未探索の場所へ突っ込むのは危険なこともあると覚えておくこと。引き寄せのほうが安全な選択であることが多い。
+</p>
+<h3><span class="mw-headline" id="Options">オプション</span></h3>
+<p>選択肢が欲しい、もっといじりたい? いいだろう、どうぞ。ただし、これは全部まったくの任意だと心得ておくこと。早すぎる時期に手を出さないこと、そして少なくとも終盤やエクステンデッドの前には全部を選ばないこと。とはいえ、タリスマンも転位術の呪文もなかなか見つからないなら、もう少し万能なトロルになっておいて損はない。
+</p>
+<ul><li> 発動をもう少し強化して、透明化のスカーフや +瞬間移動 のアーティファクトをうまく使う(どちらも失敗率 7%)。スキル目標: 発動 7.7。</li>
+<li> 投擲を少し速く正確にする。スキル目標: 投擲 7.7。</li>
+<li> <a href="http://crawl.chaosforge.org/Passwall" data-untr="1" title="Passwall">壁の透過</a>を使えば、掘らなくても岩の壁を抜けて近道できる。オーブを持っての脱出や、モンスターの不意を突くのに便利だ。壁の向こう側では必ずこちらが先に動ける。ただ、岩に溶け込む前に壁の厚さ + 1 ターンの瞑想が要ること、石像ではその全体に 1.5 倍の時間がかかることは覚えておくこと。瞑想中は AC が少し増えるが、モンスターは容赦なく攻撃してくる。スキル目標: 呪文詠唱 3.3、地の魔術 5.5。</li></ul>
+<h3><span class="mw-headline" id="Attributes">能力値</span></h3>
+<p>XL 3 に達すると、主な能力値のどれかひとつを上げるよう求められる。これは XL 9、15、21、27 でも起きる。
+</p><p><b>器用、知力、何でも</b><br />
+トロルは序盤からとても力が強く、腕力は勝手に上がっていく。
+</p><p>次のように選ぶのがおすすめだ。
+</p>
+<ul><li> XL 3: 器用</li>
+<li> XL 9: 器用</li>
+<li> XL 15: 知力</li>
+<li> XL 21: 知力</li>
+<li> XL 27: 何でも</li></ul>
+<p>器用は EV と SH を上げ、花崗岩の力を手に入れるまでの序盤と中盤を生き延びる助けになる。知力が上がると呪文が唱えやすくなる。器用や知力にマイナスの付いた強力なアーティファクトを装備したいときは、できるかぎり補うこと。終盤では、どの能力値も 8 を最低ラインにするのがおすすめだ。
+</p><p>能力値の低下は 0.33 で廃止されたが、悪い変異で能力値がゼロまで下がることはまだある。幸い、<a href="Stat_zero.html" title="Stat zero">能力値ゼロ</a>は昔ほど致命的ではない。今では動きが遅くなるだけだ。それでもかなりまずいので、早めにゼロより上に戻すべきだが、即死はしない。
+</p><p>とはいえ、器用に全振りして守りを最大にしても、知力に全部つぎ込んで呪文を強くしても、腕力を最大にしてダメージを最大にしてもいい。どれでもやっていける。
+</p><p>XL が上がるほど、レベルアップ時の選択より装備によるボーナスのほうが影響が大きくなりやすいことは覚えておこう。能力値のどれかに +10 が付いたアーティファクトが見つかることもある。レベルアップで選んだ能力値が間違いだったとわかっても、たいていは合った装備を身に着ければ解決する。<code>Ctrl-F</code> で必要なものを検索しよう。
+</p>
+<h3><span class="mw-headline" id="Equipment">装備</span></h3>
+<p><b>耐性</b><br />
+意志力、rElec、rPois はゲームのどの段階でもとても役に立つ。幸い、石像になればそのうちふたつが手に入る。ほかの耐性が付いた装身具は付け替え用に持っておく。もちろん多いほどいい。すべての耐性を同時にまかなえれば素晴らしい。無理なら分岐に合わせて調整する。ある分岐で勧める耐性をそろえられないなら、なんとか工夫する。分岐の順番を変えるのが一番いいこともあるし、物足りない耐性のまま押し通すしかないこともある。
+</p><p><b>防具</b><br />
+着られるのはローブ、トロル革の鎧、竜の鱗だけだ。序盤のいちばんの選択肢は次のとおり。
+</p>
+<ul><li> <a href="Quicksilver_dragon_scales.html" title="Quicksilver dragon scales">水銀ドラゴンの鱗一式</a>か意志力のローブ</li>
+<li> <a href="Resistance_(ego).html" title="Resistance (ego)">耐性</a>のローブ</li>
+<li> <a href="http://crawl.chaosforge.org/Troll_leather_armour" data-untr="1" title="Troll leather armour">トロル革の鎧</a></li></ul>
+<p>防具は近接攻撃を遅くしない。だから呪文を唱え始めるまでは、重めの竜の鱗を見つけてその耐性が必要なら、遠慮なく着てしまおう。それでも、EV をまともな水準に保つために軽い防具を使ったほうがいいこともある。甲冑を訓練するのは、花崗岩のタリスマンが見つからずに<a href="#Plan_B">プランB</a>に頼るしかないときか、エクステンデッドで死霊化を使っていて、いい中装か重装の防具を見つけたときだけにすること。
+</p><p><b>盾</b><br />
+タワーシールドを見つけたら、終盤かエクステンデッド用に覚えておくこと。タワーシールドを装備する前と後に <code>@</code> を押して、攻撃のディレイがどう変わるか確かめよう。ルーン 3 つで勝つならカイトシールドで十分だ。階層が目に見えて厳しくなってきたら、盾の強化を考えるといい。
+</p><p><b>補助防具</b><br />
+見つけたなかで最高の帽子と、クロークかスカーフを必ず身に着けること。あいにく、ブーツ、手袋、籠手、兜はあなたの体に合うサイズがない。
+</p><p><b>護符</b><br />
+たいていは再生が一番だ。だが反射の護符にも目を光らせておくこと。反射は SH 全体に適用されるので、盾との相性が抜群だ。ダーツ、矢、クロスボウの矢、破壊の爆裂球、水晶の槍……と、こちらを狙い撃ちしてくる敵にとてもよく効く。
+</p><p>護符の付け替えには 10 ターンかかるので、普通は戦闘中にはできない。
+</p><p><b>指輪</b><br />
+序盤は護りの指輪や躱し身の指輪がとてもありがたい。のちには耐性のほうが大事になる。指輪の付け替えは 1 ターンで済むので、モンスターに合わせてすばやく対応できる。たとえば<a href="Ice_beast.html" title="Ice beast">氷の獣</a>と戦う前には<a href="http://crawl.chaosforge.org/Ring_of_ice" data-untr="1" title="Ring of ice">氷の指輪</a>をはめる。ただし終わったら外すのを忘れないこと。さもないと、次に出てきた<a href="http://crawl.chaosforge.org/Orc_wizard" data-untr="1" title="Orc wizard">オークの魔術師</a>に火への弱さを突かれる。
+</p><p><b>武器</b><br />
+武器はすべて無視する。<a href="Wyrmbane.html" title="Wyrmbane">『ドラゴン殺し』</a>や<a href="http://crawl.chaosforge.org/Skullcrusher" data-untr="1" title="Skullcrusher">『頭蓋砕き』</a>が見つかってもだ。置いていけ。このビルドの主役は爪だ。徒手格闘は確実で速く、訓練しやすく、とてつもなく強い。爪は最後まで使う武器だ。武器のスキルに経験値を使えば、このビルドは弱くなる。盾を手放すのは論外だ。所持品の空きが足りなければ、魔力の武器の巻物や武器強化の巻物は捨ててしまおう。<a href="Treasure_trove.html" title="Treasure trove">宝の埋蔵庫</a>を開けるのに使うくらいしか用はない。自動で拾うアイテムは、自動拾いのメニュー(<code>\</code> を押す)で設定できる。
+</p><p><b>攻撃力</b><br />
+<a href="http://crawl.chaosforge.org/Slaying" data-untr="1" title="Slaying">殺戮</a>はいつでも役に立ち、特に序盤にありがたい。長い目で見れば腕力のほうが効果的だ。殺戮がマイナスでも、いいアーティファクトなら迷わず使おう。
+</p><p><b>さらなる攻撃力</b><br />
+<a href="http://crawl.chaosforge.org/Harm" data-untr="1" title="Harm">痛撃</a>は与えるダメージをすべて 30% 増やす。これは大きい! ただし受けるダメージもすべて 20% 増える。全体としては十分使える。大きなトロルなのだから、耐えられる。たいていは、トータルで受けるダメージのほうがむしろ減る。痛撃の上乗せで、手強いモンスターを一撃で倒せるか二撃かかるかが変わることはよくあるからだ。
+</p><p>一方で、思いがけない大ダメージを増幅して命取りになることもある。いつも以上に慎重になり、常に良い戦術を使うこと。痛撃は 2 段階まで重ねられる。やめておけ。
+</p>
+<h2><span class="mw-headline" id="Plan_B">プランB</span></h2>
+<p>XL が 20 台の前半になっても<a href="Granite_talisman.html" title="Granite talisman">花崗岩</a>も<a href="Talisman_of_death.html" title="Talisman of death">死</a>も手に入らなくても、心配はいらない。変身術はいつでもあとから覚えられる。ルーン 3 つの勝利には間に合わないかもしれないが。今のところは、守りを固めることを考えよう。
+</p>
+<ul><li> 重い竜の鱗を着る。</li>
+<li> 甲冑を訓練する。目標は 9.9。防具を着たままゲームを終えると確信できたら、あとでもっと上げる。</li>
+<li> カイトシールドをタワーシールドに替える。盾の目標を 21.1 にする。</li></ul>
+<p>呪文を唱え続けるには、関係する魔術系統にもっと経験値をつぎ込む必要があるかもしれない。たぶん大した量ではない。重い防具を着ていても、トロルの腕力のおかげで低レベルの呪文はかなり唱えやすい。
+</p><p>強化した<a href="http://crawl.chaosforge.org/Gold_dragon_scales" data-untr="1" class="mw-redirect" title="Gold dragon scales">ゴールドドラゴンの鱗一式</a>なら、石像と同じくらいの AC が得られる。殴る力はそこまで強くないが、それでもトロルの戦士であることに変わりはなく、爪は十分に効く。
+</p><p>この段階では工夫が必要だ。発動か投擲に経験値をつぎ込むと報われるかもしれない。目標は 16.6 がいい。進み続けよう。プランBについては、まだこれ以上詰められていない。ゾットに八つ当たりしよう、あいつのせいだ! プランを嗅ぎつけたに違いない。タリスマンを全部盗んでいったんだ! オーブを取り返せ。
+</p>
+<h2><span class="mw-headline" id="General_Advice">全般的な助言</span></h2>
+<p><b>ゲームのコマンド</b><br />
+<code>??</code> でコマンドの一覧が見られる。DCSS には役に立つコマンドが山ほどある。知っていればいるほど、プレイは快適になる。
+</p><p><b>o かタブか、それが問題だ</b><br />
+自動探索(<code>o</code> を押す)を使うか、手で歩き回るか。自動探索はときどき厄介事に巻き込んでくれるし、階を隅々まで探索するのにかかるターン数もたいてい多くなるが、モンスターが視界に入ればちゃんと止まる。手で探索すると、特に序盤の迷宮では、うっかり一歩二歩踏み外しやすい。手で探索するなら慎重にやること。<code>Shift</code> と方向キーを押すと「長歩き」になる。たとえば長い通路をまっすぐたどり、次の扉で自動的に止まるのに使える。
+</p><p>自動戦闘にも良し悪しがある。<code>Tab</code> を押すと、視界内のいちばん近いモンスターへ自動的に向かい、隣に来たら攻撃する。戦術的に最善の手であることはめったにない。とはいえ、実際にモンスターと戦っている最中なら、方向キーより <code>Tab</code> のほうがいいかもしれない。HP が 50% を切ると自動戦闘は止まるからだ(<a href="http://crawl.chaosforge.org/Crawl_options" data-untr="1" title="Crawl options">設定ファイル</a>の autofight_stop の初期値)。方向キーで攻撃を連打しすぎて、すでに死んだ敵の横を走り抜けたり、減っていく自分の HP バーに気づくのが遅れたりして、自滅するのはよくあることだ。一方、複数のモンスターと戦うときは、いちばんの脅威から片付けるよう気をつけること。
+</p><p>それに、ウー・ジアン評議会の弟子は、ほかの神々の信者に比べて、タブ連打や昔ながらの普通の攻撃を使う場面がずっと少ない。
+</p><p><b>敵を知れ</b><br />
+<code>x</code> を押す。気になるモンスターを <code>+</code> で選ぶか、カーソルを合わせる。何か武器を持っているなら、それを確認すること。棍棒を持ったコボルドは無害だ。<a href="Distortion.html" title="Distortion">歪曲</a>や<a href="Electrocution.html" title="Electrocution">電撃</a>のダガーを持ったコボルドは、あなたのゲームを終わらせるかもしれない。<code>v</code> で詳細が見られる。そのモンスターが与えうるダメージを確認し、自分の HP と<a href="Armour_class.html" title="Armour class">アーマークラス(AC)</a>と比べること。
+</p><p>敵を調べると、相手があなたの爪を躱す確率とその逆、相手が唱えられる呪文、その呪文があなたに効く確率もわかる。どのモンスターも <code>?/m</code> で調べられる。
+</p><p><b>注意対象</b><br />
+特定のモンスターを避けながら階の残りを探索しやすくするには、マップに注意対象(exclusion)を置く。<code>X</code> を押し、マスを選び、<code>e</code> を押す。自動探索と自動移動(<code>G?</code> を押す)は注意対象の範囲を避ける。ほかのモンスターが叫んだり、近くで戦って音を立てたりすると、注意対象にしたモンスターが目を覚ましてうろつき始めることがある。もう一度 <code>e</code> を押すと注意対象を 1 マスに縮められる。さらにもう一度 <code>e</code> を押すと消える。
+</p><p><b>あらゆる選択肢を検討せよ</b><br />
+DCSS で勝つための、ただひとつのいちばん大事な助言だ。ほかを全部忘れても、これだけは覚えておいてほしい。危機的な状況では時間をかけて考え、あらゆる選択肢を検討すること。休憩を取ろう。一晩寝て考えよう。本当に追い詰められたら、キャラクターのダンプを出して(<code>#</code> を押す)、レディット(r/dcss)やディスコード、公式フォーラム(Tavern)で助言をもらうのもいい。
+</p><p><b>慢心に気をつけろ</b><br />
+遅かれ早かれ、すべてがかみ合って、キャラクターがとても、とても強く感じられる時が来る。そこから先は順風満帆だ。だが順風満帆は慢心を生み、慢心は間抜けな死を生む。常に少し疑り深くプレイするのが一番だ。
+</p>
+<h3><span class="mw-headline" id="Basic_Tactics">基本の戦術</span></h3>
+<p><b>群がられるな</b><br />
+これは序盤では特に大事だ。モンスターを通路に誘い込み、できるかぎり 1 対 1 で爪で引き裂くこと。戦いのたびに探索済みの場所まで退き、<code>5</code> を押して休むこと。
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> <a href="http://crawl.chaosforge.org/File:Troll.png" data-untr="1" class="image"><img alt="Troll.png" src="img/Troll.png" width="32" height="32" /></a> 扉と曲がり角。仕留めるならそこだ。
+</td></tr></table>
+<p><b>遠距離攻撃をしてくる敵</b><br />
+離れたところから攻撃してくるモンスターが相手なら、たいていは角を曲がって相手の視界から外れ、それから近接戦に持ち込む。ほとんどの場合、向こうからやって来る。眠っているなら、ダーツか叫び声(<code>tt</code> を押す)で起こしてから物陰に隠れる。あるいは地形しだいで、一歩下がって別の方向から近づくのもいい。気づかれたのに物陰がないなら、すぐに駆け寄ること。たいていの相手は射撃武器を手放し、近接戦ではそれほど危険ではなくなる。<a href="http://crawl.chaosforge.org/Lesser_Beckoning" data-untr="1" title="Lesser Beckoning">引き寄せ</a>や<a href="Vhi's_Electric_Charge.html" title="Vhi&#39;s Electric Charge">ヴィーの電撃突進</a>で、できるだけ早く距離を詰めよう。
+</p><p><b>機会攻撃とランダムなエネルギー</b><br />
+あなたが離れた直後にモンスターが近接攻撃の届く距離へ戻ってくると、そのモンスターにはただちにあなたを攻撃する機会が生じる。突進か猛進のようなものだ。これは柱回り、つまり同じ速さのモンスターに追われながらぐるぐる回り続けて HP を回復する戦法を封じるために導入された。
+</p><p>機会攻撃を恐れることはない。戦術上、位置を変えるのが正しいならそうすればいい。攻撃されるかもしれないほうが、悪い位置に居続けるよりましだ。間を空けておき、そもそも近接距離に入らなければ、まだ柱回りも試せる。もっとも、その必要もないし、やりたくもないだろうが。
+</p><p>それから、追ってくるモンスターがわずかな確率で遅れたり追いついたりすることもある。「ランダムなエネルギー(random energy)」と呼ばれるものだ。
+</p><p>混乱した? 正直、私も細かい仕組みはよくわかっていない。大事なことではない。要するに、ただ歩き去るだけではモンスターから確実には離れられない、ということだ。腹をくくって戦うか、消耗品や呪文で逃げること。そのほうがどうせ楽しい。
+</p><p><b>戦う相手を選べ</b><br />
+一撃か二撃で殺されかねないモンスターや、危険な呪文をかけてくる確率の高いモンスターには手を出さないこと。眠っている<a href="http://crawl.chaosforge.org/Sigmund" data-untr="1" title="Sigmund">シグムンド</a>、<a href="http://crawl.chaosforge.org/Grinder" data-untr="1" title="Grinder">グラインダー</a>、<a href="http://crawl.chaosforge.org/Two-headed_ogre" data-untr="1" title="Two-headed ogre">双頭のオーガ</a>に初めて出会ったら、起こさないこと。気づかれたら、逃げるのが一番であることが多い。倒せるかもしれないだけの力はあるが、序盤では賭けになる。万一に備えて消耗品をいくつか持って、あとで戻ってこよう。
+</p><p>いわゆるヴォールトも同じだ。人の手で愛情をこめて設計された、マップの特別な部分のことで、たいていはランダムに生成された部分より危険だ。中にいるものから確実に逃げられるか、確実に倒せるのでなければ、<a href="http://crawl.chaosforge.org/Door#Runed_Door" data-untr="1" title="Door">ルーンで封印された扉</a>は開けないこと。<code>Ctrl-O</code> で迷宮の概要が見られる。どの階にどのユニークモンスターを残してきたか、どのルーンの扉を閉じたままにしてきたか、どの転送装置にまだ入っていないかのメモも載っている。
+</p><p><b>逃げろ</b><br />
+退くなら、わかっている上り階段から退くのがたいてい一番安全だ。だが、そのほうが都合がいいなら、下り階段や、一方通行の脱出ハッチを使うのもためらわなくていい。全体としては深く潜るほど階は厳しくなるが、すぐ次の階がたまたま今より安全なこともある。
+</p><p>戦いを先延ばしにするなら、階段を使う前にモンスターとの間に距離を作っておくこと。階段の隣にいないかぎり、モンスターは追ってこられない。危険な敵から逃げるのに使った階段には、1 マスの注意対象を置いておくといい。戻ってきたときも、たぶんまだそこにいる。
+</p><p><b>階段ダンス</b><br />
+モンスターが多すぎて手に負えないが、1 体ずつならそれほど危険でもないときは、何体かを連れて階段を上り下りする。そいつらを片付け、休み、また何体か連れてくる。階段の隣にいるモンスターは、階段を使っている間にも攻撃してくることを覚えておくこと。
+</p><p>危険なモンスター 1 体だけを上の階へ連れていくのが得策なこともある。片付いた階で 1 対 1 で戦え、うまくいかなければ安全にテレポートできる。
+</p><p><b>入口での待ち伏せ</b><br />
+分岐の唯一の入口のそばで多すぎるモンスターに待ち伏せされたら、階段ダンスよりテレポートを考えること。モンスターのほとんどが入口を固めているので、階のほかの場所はたぶん手薄だ。外周をぐるりと回って階段に近づき直し、群れから何体かをおびき出そう。
+</p><p>それも危険すぎるなら、下の階へ逃げて探索を続ける。分岐を片付けたあとの帰り道では、あなたはもっと強くなっている。
+</p><p>天の嵐も待ち伏せへの対処にはいい手だ。ただし動ける空間がなくならないように気をつけること。つまり、戦いの中心から抜け出し、そこから離れるように動き続けること。
+</p>
+<h3><span class="mw-headline" id="Consumables">消耗品</span></h3>
+<p>DCSS の戦闘には危険がつきものだ。<a href="http://crawl.chaosforge.org/Orc_warrior" data-untr="1" title="Orc warrior">オークの戦士</a>を爪のひと振りで片付けたのに、次のオークの戦士には 4 回当てないと倒せない、ということもありうる。その 2 体目の戦士は 4 回続けて外すかもしれないし、4 回続けて当ててくるかもしれない。その一撃はかすり傷かもしれないし、深手かもしれない。戦いはどちらにも転ぶ。賭けはするな。消耗品を使って、確実に勝つか逃げるかしろ。ドーピングではない。この商売はそういうものだ。
+</p><p><b>持ち物を鑑定しろ</b><br />
+巻物の読み鑑定は早めに始めること。同じ種類の巻物が 2 枚以上になったら、1 枚読む。よく使われるやり方はふたつある。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Scroll_of_revelation" data-untr="1" title="Scroll of revelation">啓示</a>だった場合に備えて、未探索の階の上り階段の上で読む。テレポートだったら、すぐに上の階へ戻る。新しい階に<a href="Portal.html" title="Portal">時限ポータル</a>があるときは、1 枚しかない巻物を読み鑑定するのが得になることもある。</li>
+<li> 新しい階へ下りる前に読む。下りたことがきっかけで<a href="Trap.html#Sourceless_Malevolence" title="Trap">出どころのない悪意</a>が発動した場合、前もって鑑定を済ませておいたほうがいいからだ。</li></ul>
+<p>どちらにせよ、消耗品を早めに鑑定しておくことが大事だ。<a href="http://crawl.chaosforge.org/Scroll_of_identify" data-untr="1" title="Scroll of identify">鑑定の巻物</a>がわかったら、薬と 1 枚しかない巻物に少しずつ使っていく。<a href="Potion_of_mutation.html" title="Potion of mutation">突然変異の薬</a>を鑑定するまでは、未鑑定の薬を飲んではいけない。本当に窮地にあって、それが生き残るいちばんの望みであるとき以外は。
+</p><p>悪い薬や巻物を安く売っている店に出くわしたら、鑑定のために買っておこう。
+</p><p>古い版を遊んだことがある人へ。モンスターはもう薬や巻物を使えないので、ほかの誰かが飲んだり読んだりするのを見て鑑定することはできなくなった。
+</p><p><b>持ち物を使え</b><br />
+消耗品は貴重だが、溜め込んではいけない。あとのために取っておいて今死ぬくらいなら、薬や巻物を無駄にするかもしれないほうがましだ。生きていれば新しい消耗品は見つかる。腕力強化のような戦闘の強化は、HP が残り 10 になってからではなく、戦いの前に使うこと。
+</p><p><b>命の保険になる巻物と、気付けの薬</b><br />
+</p>
+<ul><li> <a href="Scroll_of_blinking.html" title="Scroll of blinking">瞬間移動の巻物</a>: Sランクの命の保険。これを持ったまま死んだなら、たぶん防げた死だ。</li>
+<li> <a href="http://crawl.chaosforge.org/Scroll_of_summoning" data-untr="1" title="Scroll of summoning">召喚の巻物</a>: 何でも倒せる可能性がある。召喚した味方に援護させて逃げることもできる。</li>
+<li> <a href="http://crawl.chaosforge.org/Scroll_of_butterflies" data-untr="1" title="Scroll of butterflies">蝶の巻物</a>: これも優れた命の保険だ。蝶の群れはモンスターを押し返し、多くの遠距離攻撃の邪魔になる。味方と位置を入れ替えたときには機会攻撃は起きない。</li>
+<li> <a href="http://crawl.chaosforge.org/Scroll_of_fear" data-untr="1" title="Scroll of fear">恐慌の巻物</a>: 使う前に敵の意志力を確認すること。<code>Q*</code> で恐慌の巻物をセットし、<code>f</code> を押してモンスターを選ぶと、効く確率が正確にわかる。<a href="Hydra.html" title="Hydra">ヒドラ</a>のように意志力がそこそこ高いモンスターを怯えさせるなら、巻物を何枚も持っていくか、先に<a href="http://crawl.chaosforge.org/Scroll_of_vulnerability" data-untr="1" title="Scroll of vulnerability">脆弱の巻物</a>を読むこと。うっかり <code>p</code> を押して無駄にしないよう、使い終わったらセットを外すのを忘れずに。</li>
+<li> <a href="http://crawl.chaosforge.org/Scroll_of_teleport" data-untr="1" class="mw-redirect" title="Scroll of teleport">テレポートの巻物</a>: 一部しか探索していない階では危険なこともある。効くまでに 3〜5 ターンかかる。待機中のテレポートを取り消したければ、もう 1 枚テレポートの巻物を読めばいい。</li>
+<li> <a href="http://crawl.chaosforge.org/Potion_of_lignification" data-untr="1" title="Potion of lignification">樹木化の薬</a>: 使い方によっては危険だが、序盤ではとてつもなく強い。<a href="Hydra.html" title="Hydra">ヒドラ</a>を安全に倒すのに使おう。AC が大幅に上がるのでヒドラの噛みつきはほとんど無害なくすぐりになり、腕はヒドラを殴りつけるのにうってつけの枝に変わる。すぐに変身を解く必要が出たときのために、<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>を持っていくのが理想だ。樹化しているときは瞬間移動もテレポートもできない! 歩けない状態で透明なモンスターを殴るには、<code>Ctrl</code> を押しながら方向キーを押す。</li>
+<li> <a href="http://crawl.chaosforge.org/Potion_of_haste" data-untr="1" title="Potion of haste">スピードの薬</a>: 逃げ道にも戦闘の強化にもなる。</li>
+<li> <a href="http://crawl.chaosforge.org/Potion_of_invisibility" data-untr="1" title="Potion of invisibility">透明化の薬</a>: 透明を見通せないモンスターの命中率が 35% 下がる。数マス離れていれば、見失ってくれることもある。攻撃が弱めの急所攻撃扱いになるので、追加ダメージも入る。飛んでいないかぎり、水の中では透明化は効かない。</li></ul>
+<p>蝶の巻物と召喚の巻物は組になっていて、互いに排他的だ。同じゲームで両方が見つかることはない。
+</p>
+<h3><span class="mw-headline" id="Evocables">発動アイテム</span></h3>
+<p>発動アイテムは拾っておき、戦術的に使おう。発動のスキルがゼロでも、ワンドやほかの発動アイテムはとても役に立つ。アイテムは <code>V</code> で発動する。ワンドでモンスターを狙うと、効く確率や当たる確率が表示される。<a href="Scarf.html" title="Scarf">透明化のスカーフ</a>や発動できるランダムアーティファクトは、能力のメニュー(<code>a</code> を押す)から使う。
+</p><p>次の道具は使うと力を失うが、経験値を稼ぐと再び充填される。どれも 1 回のゲームで 1 つずつしか見つからない。凝結の風見と震動石は互いに排他的だ。獣の匣と蜘蛛の袋も同様。震動石の缶とゲルの重力タンバリンもそうだ。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Phial_of_floods" data-untr="1" title="Phial of floods">大水の小瓶</a>: 発動すると、呪文使いがしばらく魔法を使えなくなる。呼吸する必要のあるモンスターにしか効かない。呼吸しない者は水浸しになっても呪文を唱えられる。</li></ul>
+<ul><li> <a href="http://crawl.chaosforge.org/Lightning_rod" data-untr="1" title="Lightning rod">稲妻のロッド</a>: 4 回分の充填があり、決して外れない。危険なモンスターを離れたところから仕留めたり、モンスターの群れを弱らせたりするのに使う。発動のスキルがゼロでも、ヒドラを 3〜4 発で倒せる。単体が相手なら、狙いを動かさずに済むよう、相手がまっすぐこちらへ向かってくるようにすること。狙いを動かすと、1 マスあたりのダメージは少し減るが、より広い範囲を撃てる。稲妻はとてもうるさいので注意。</li></ul>
+<ul><li> <a href="Condenser_vane.html" title="Condenser vane">凝結の風見</a>: 当てにならないが、発動のスキルがゼロでもかなり役に立つ。スキルが低いうちは主に悪臭を出し、毒に耐性のないモンスターをある確率で混乱させる。雲はモンスターの隣や真上に出ることがある。<a href="http://crawl.chaosforge.org/Potion_of_attraction" data-untr="1" title="Potion of attraction">誘引の薬</a>や<a href="http://crawl.chaosforge.org/Lesser_Beckoning" data-untr="1" title="Lesser Beckoning">引き寄せ</a>でモンスターを雲の中へ引き込める。</li></ul>
+<ul><li> <a href="http://crawl.chaosforge.org/Tin_of_tremorstones" data-untr="1" title="Tin of tremorstones">震動石の缶</a>: 焼き討ちの巻物を読んだあと、大きなモンスターの群れに使うのが一番だ。AC が少なくとも 20 なく、火炎耐性もいくらかないなら、複数の爆発を同時に食らわないようにすること。</li></ul>
+<ul><li> <a href="Box_of_beasts.html" title="Box of beasts">獣の匣</a>: いちばん弱い獣でも、モンスターの気をそらすのに役立つ。所持品の空きが足りなければ匣は捨てていい。終盤かエクステンデッドで発動を高く上げるつもりなら、また拾ってもいいかもしれない。 </li></ul>
+<ul><li> <a href="http://crawl.chaosforge.org/Sack_of_spiders" data-untr="1" title="Sack of spiders">蜘蛛の袋</a>: ある確率でモンスターを蜘蛛の糸で動けなくする(<a href="http://crawl.chaosforge.org/Throwing_net" data-untr="1" title="Throwing net">投げ網</a>のように)。呼び出される弱めの蜘蛛類でも、序盤ではかなり役に立つ。 </li></ul>
+<ul><li> <a href="http://crawl.chaosforge.org/Phantom_mirror" data-untr="1" title="Phantom mirror">幻影の鏡</a>: ゲームで最高の発動アイテムだと言ってもいい。並外れて手強く、命にかかわるモンスターに使おう。鏡を発動する前に相手を傷つけてはいけない。スキルがゼロだと映し身は長く持たないが、それでも頼もしい味方になる。どんなモンスターにも効き、抵抗されない。</li></ul>
+<ul><li> <a href="Gell's_gravitambourine.html" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a>: 最近のお気に入りで、信じられないほど役に立つ。焼き討ちの巻物や、ほかの範囲攻撃と組み合わせると効果的だ。モンスターから離脱したり、締めつけから抜け出したりすることもできる。</li></ul>
+<ul><li> <a href="Figurine_of_a_ziggurat.html" title="Figurine of a ziggurat">ジグラットの模型</a>: ジグラットの最深部と太古の霊廟:3 でしか見つからない。この模型は新しいジグラットへのポータルを開く。使い捨ての緊急脱出用ポータルとして発動しよう。</li></ul>
+<h3><span class="mw-headline" id="Throwing">投擲</span></h3>
+<p>スキルなしの投擲は先へ進むほど効き目が落ちるが、序盤ではとても役に立つ。ダーツ、石、ジャベリン、ブーメラン、投げ網、大岩は何でも拾っておくこと。<a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒のダーツ</a>と<a href="http://crawl.chaosforge.org/Throwing_net" data-untr="1" title="Throwing net">投げ網</a>は、危険な相手に出会ったときのために取っておく。<code>Q</code> で投げる物の種類をセットし、<code>p</code> でいちばん近いモンスターに投げる。手で狙うなら <code>f</code>、もう一度 <code>f</code> で投げる。外れると、投げた物が標的の数マス後ろに落ちることがある。それを防ぐには、<code>ff</code> の代わりに <code>f.</code> で投げる。
+</p><p>眠っているモンスターには当てやすい。大岩なら、迷宮の上の階をうろつく生き物のほとんどを一撃で倒せる可能性がある。モンスターが距離を詰めてくる間に狙い撃ちしよう。あと一歩のところまで来たら、<code>.</code> を押して 1 ターン待つ。相手がこちらへ踏み込んでくるので、先に殴れる。まだ突進が使えないとしての話だ。
+</p><p><b>大岩</b><br />
+遠距離攻撃をしてくる敵に大岩を投げてはいけない! 特にセントールには。スキルなしでは大岩を投げるのに長い時間がかかり、そのセントールが生き残ったら、次の手番を何もできずに待っている間に矢の雨を浴びせられる。大岩の基本の攻撃のディレイは 2.0 だ(詳しくは<a href="#Time.2C_Actions_and_Delay">こちら</a>)。速く投げるには相当のスキルが要る。
+</p>
+<h3><span class="mw-headline" id="Selected_Threats">注意すべき脅威</span></h3>
+<p><b>毒</b><br />
+トロルの HP と再生のおかげで、<a href="Poison.html" title="Poison">毒</a>はたいていの種族ほどには危険でない。それでも毒は重なるので、時間とともに深刻なダメージになりうる。<a href="http://crawl.chaosforge.org/Potion_of_curing" data-untr="1" title="Potion of curing">治療の薬</a>を鑑定するか rPois の手段を見つけるまでは、毒を持つ生き物や毒を塗った武器に用心すること。毒耐性があっても毒を受けることはあるが、受けにくくなる。rPois は 1 段階しかない。毒耐性の指輪を 2 つはめても、片方は無駄になる。毒を受けたら <code>@</code> を押すと、回復に転じるまでに HP がどこまで下がるかの予測が見られる。治療の薬を飲めば毒はすぐに消える。
+</p><p><b>まとわりつく炎</b><br />
+モンスターの中には、あなたに火をつけてくるものがいる(たとえば<a href="Bombardier_beetle.html" title="Bombardier beetle">ミイデラゴミムシ</a>や一部の<a href="http://crawl.chaosforge.org/Smoke_demon" data-untr="1" title="Smoke demon">悪魔</a>)。動き続ければ振り払える。水に入ればすぐに火は消える。水の中に立っているか水の上を飛んでいるかぎり、火はつかない。
+</p><p><b>雲</b><br />
+あなたもモンスターも、すでに雲のあるマスには雲を作れない。たとえば、毒には耐性があるが rF がなく、<a href="http://crawl.chaosforge.org/Fire_crab" data-untr="1" title="Fire crab">火吹き蟹</a>と戦わなければならないとする。<a href="http://crawl.chaosforge.org/Scroll_of_poison" data-untr="1" title="Scroll of poison">毒の巻物</a>を読めば、安全に蟹へ近づける。あなたの毒の雲がすでにあるマスには、炎の雲は生じないからだ。蛇の鞭打ちで出る、すぐ消えるまったく無害なまばらな塵でさえ、ほかの雲を防ぐ。天の嵐の金色の雲も、ほかの雲があるマスには生じず、その逆も同じだ。
+</p><p><b>呪術</b><br />
+意志力の指輪を持っているなら、呪術を使う相手と戦う前にはめておくこと。指輪があるときとないときで、相手の呪文が効く確率を比べてみよう(<code>x</code> を押し、相手を選び、<code>v</code> を押す)。XL が上がるたびに生来の意志力も少し増えるが、大した量ではない。意志力はたいてい多いほど役に立つ。Will+++ ならそれなりに守られ、Will++++ あればゲーム中のほぼすべての呪術を確実に退けられる。魔法による弱体化のほとんどは、めったに見つからない<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>で消せる。
+</p><p><b>締めつけ</b><br />
+<a href="Constriction.html" title="Constriction">締めつけ</a>を受けると動けなくなり、回避が大きく下がり、締め上げるダメージを受ける。瞬間移動すれば確実に抜け出せる。あるいは、動こうとすれば振りほどける。1 回目と 2 回目は失敗するかもしれない。3 度目の正直だ。今にも死にそうな危険(HP が少ない、強打してくるモンスターに囲まれている)がないなら、締めつけているモンスターを殴り倒してしまうのが一番であることが多い。締めつけられていても爪には何のペナルティもない。<a href="Quill_talisman.html" title="Quill talisman">羽根ペンのタリスマン</a>で針化すれば、締めつけに免疫になる。
+</p><p><b>逆棘</b><br />
+<a href="Barbs.html" title="Barbs">逆棘</a>は、動くと痛み、動くとさらに深く食い込む(状態の持続時間が延びる)。取り除くには数ターンじっとしている必要がある。問題は、ウー・ジアンは動いてなんぼだということだ。逆棘が大したことにならないこともある。HP がたっぷり残っていれば、逆棘を刺したまま歩いてもいい。刺してきたモンスターが簡単に倒せて、仲間も連れていなければ、逆棘が抜けるまで休めばいい。だが、厄介なやつらの群れ全体を相手にしているときは、逆棘が死刑宣告になりうる。そもそも刺されないようにするのが一番だ。
+</p><p><b>歪曲と混沌</b><br />
+<a href="Distortion.html" title="Distortion">歪曲</a>や<a href="http://crawl.chaosforge.org/Chaos" data-untr="1" title="Chaos">混沌</a>の武器を持ったモンスターの攻撃には、決して当たらないようにすること。少なくとも XL 20 くらいまでは。深刻なダメージを受けかねないうえ、一撃でアビスへ送られることがあり、それには抵抗できない。歪曲なら 5%、混沌なら約 1% の確率だ。やむをえない場合以外は危険を冒さないこと。歪曲の武器を持ったモンスターは、使えるものを何でも使って、離れたところから倒すか武器を取り上げること。たとえば変化のワンドなら、意志の弱いモンスターを変身させて武器を落とさせられるかもしれない。
+</p><p><b>アビスへの追放</b><br />
+というわけで、どういうわけか迷宮から<a href="The_Abyss.html" title="The Abyss">アビス</a>へ放り込まれてしまった。まずい状況だ。混沌の次元を探索し、出口のポータルが見つかるのを祈ろう。出口は自然に現れる。弱い悪魔の 1 体や 2 体なら倒せるかもしれない。経験値を稼ぐと、出口が現れる確率が少し上がる。アビスの住人の強さはまちまちだ。基本的には逃げること。近づいてきたら早めにテレポートを読む。アビスではテレポートが大幅に遅れる。ときどきアビスそのものがあなたをあちこちへテレポートさせる。この分岐でのテレポートは、どれもさらに深く危険な階層へ引きずり込むおそれがある。
+</p><p>ほかにできることはあまりない。抜け出せたら、追放された場所と同じ地点に戻ってくる。たぶん追放してきた敵とまた向き合うことになる。次にアビスへ入ると、抜け出したときと同じ深さから始まる。アビスの浅い階層に戻る方法はない。
+</p><p><b>罠</b><br />
+<a href="Trap.html" title="Trap">罠</a>のほとんどは、自分で踏んでもモンスターが踏んでも、あなたに悪い効果をもたらす。罠が視界の外に来るように立ち位置を取るのはたいてい良い考えだ。視界の外でモンスターが罠を踏んでも何も起きない。ゾットの罠は何としても避けること。麻痺させられることがある。道化の罠もきわめて危険になりうる。モンスターの近接攻撃に混沌の効果を与えるのだ。テレポートの罠は、踏んだ者をテレポートさせる。自分で踏んでテレポートの巻物を節約してもいいし、モンスターを誘い込んで距離を作ってもいい。見えている縦穴をモンスターが踏むと、ある確率で 1〜3 階下へ落ちる。<code>&gt;</code> を押せば、下り階段を使うのと同じように自分から縦穴に飛び込める。
+</p><p><b>出どころのない悪意</b><br />
+遅かれ早かれ、<a href="Trap.html#Sourceless_Malevolence" title="Trap">出どころのない悪意</a>によって突然テレポートさせられたり、縦穴に落とされたりする。新しいマスを探索するときに発動する、避けられない効果だ。縦穴はモンスターから見えない場所に落とそうとはするが、最大 3 階層下まで落とされることがある。探索を進め、元いた場所まで戦いながら戻ろう。上り階段を探すことを最優先にすること。アイテムを拾うのはあとでいい。
+</p><p><b>魔術的汚染</b><br />
+呪文の失敗がひどくて<a href="Magic_contamination.html" title="Magic contamination">魔術的汚染</a>で光り始めたら、収まるまで休むこと。灰色の汚染は無害だ。黄色か赤に光るようなことがあれば、灰色に戻るまで<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>を飲むのがおすすめだ。魔術的汚染の度合いが高いと、悪性変異が起きることがある。
+</p><p><b>悪性変異</b><br />
+特定のモンスターに<a href="Malmutate.html" title="Malmutate">悪性変異</a>させられたとき、運よく有益な<a href="Mutation.html" title="Mutation">変異</a>を授かることもある。望み薄だが。どれくらいまずいかを確かめよう(<code>A</code> を押す)。本当にひどい変異は、勝手にテレポートしたりバーサークしたり、薬や巻物を使えなくしたりする。それ以外なら、しばらくは我慢できるかもしれない。本当にひどい変異や、多すぎる悪い変異を消すために、<a href="Potion_of_mutation.html" title="Potion of mutation">突然変異の薬</a>は賢く使うこと。ルーン 3〜4 個しか狙わないなら、もっと気前よく飲んでいい。エクステンデッドを遊ぶなら、突然変異の薬はほとんどパンデモニウムのために取っておくこと。
+</p>
+<h2><span class="mw-headline" id="Martial_Arts_Training_Montage">武術修行のモンタージュ</span></h2>
+<h3><span class="mw-headline" id="Time.2C_Actions_and_Delay">時間、行動、ディレイ</span></h3>
+<p>修行を始める前に、時間の仕組みについて瞑想する必要がある。私は DCSS の時間と行動の仕組みをわからないまま十年以上も遊んできた。といっても、それほど複雑ではない。そしてウー・ジアンの弟子にとっては特に大事だ。時間は aut(arbitrary units of time、任意の時間単位)で測る。10 aut = 1 decaAut = ゲームの 1 ターンだ。ゲーム画面右上の能力値の欄で「時間」と表示されているのがターンの計数だ。行動するとこの数字が増える。
+</p><p>標準的な行動は 10 aut かかるが、それより速い行動も遅い行動もある。ターンは小数点以下 1 桁まで表示される。ターン数のうしろの丸括弧内の数字は、直前の行動にかかった時間、つまり行動のディレイだ。たとえば普通の移動速度なら、一歩進むごとに 10 aut のディレイがあり、それが過ぎてから次の一歩を踏み出せる。自動探索や休憩などで複数の行動を続けて自動的に行ったときは、代わりにそのディレイの合計が表示される。
+</p><p><code>@</code> を押すと、移動のディレイが aut で、攻撃のディレイがターン(decaAut)で表示される。プレイヤーのキャラクターもモンスターも、ほとんどは移動のディレイが 10 だ。スピードの薬を飲むとこれが 7 に下がる。つまり 1 マス進むのに 0.7 ターン(7 aut)しかかからない。減速しているときは移動のディレイが 15 になり、たった一歩歩くのに 1.5 ターンかかる。どれほど遅い行動でも、途中で誰かに割り込まれることはない。
+</p><p><b>モンスターの行動</b><br />
+モンスターの行動の仕方は、あなたとは少し違う。モンスターはターンの計数を進めない。あなたの行動のディレイを使って動く。あなたが一歩歩けば、モンスターは 10 aut を使える。あなたが攻撃のディレイ 0.8 ターンで爪を振るえば、モンスターは 8 aut を受け取る。やろうとしている行動にそれより長くかかるなら、何もせず、使わなかった aut を溜めておく。機会攻撃はただで、0 aut しかかからない。
+</p>
+<h3><span class="mw-headline" id="The_Wu_Jian_Council"><a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン評議会</a></span></h3>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> <a href="http://crawl.chaosforge.org/File:Wu_jian_altar.png" data-untr="1" class="image"><img alt="Wu jian altar.png" src="img/Wu_jian_altar.png" width="32" height="32" /></a> 君には小さな一歩だが、相手には重い一撃、いや二撃だ。
+</td></tr></table>
+<p><b>突進</b><br />
+ウー・ジアン評議会に迎え入れられると、すぐに最初の武術の攻撃を身につける。これ以降、1 マス離れた敵へまっすぐ踏み出すたびに、自動的に突進して(普通の攻撃の)120% のダメージを与える。移動と攻撃を同時に行うので、1 ターン早く殴れる。それだけではない。1 回の突進で複数回攻撃することもある。
+</p><p><b>ウー・ジアンと攻撃のディレイ</b><br />
+移動のディレイが 10 aut、攻撃のディレイが 8 aut(0.8 ターン)だとしよう。突進すると、移動と攻撃が同時に行われる。どういう仕組みなのか? 8 &lt; 10 なので、1 回の攻撃は確定する。その攻撃のあと、移動のぶんが 2 aut 残る。これで、2 / 8 = 25% の確率でもう 1 回攻撃できる。
+</p><p>逆に、攻撃のディレイが移動のディレイより大きいと、まったく攻撃しないこともありうる。ウー・ジアンの武術の攻撃はすべてこの仕組みで動いている。ゲームは「攻撃に失敗した」「攻撃した」「繰り返し攻撃した」のいずれかを表示する。
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> <a href="http://crawl.chaosforge.org/File:Wu_jian_altar.png" data-untr="1" class="image"><img alt="Wu jian altar.png" src="img/Wu_jian_altar.png" width="32" height="32" /></a> 風のように動け。
+</td></tr></table>
+<p><b>旋風</b><br />
+迷宮の奥へと突進していくうちに、評議会はほどなく 2 つめの武術の動きを教えてくれる。旋風は、モンスターに隣接するマスから、同じモンスターに隣接する別のマスへ移動したときに、(普通の攻撃の)80% のダメージでそのモンスターを打つ。旋風は 1 回の移動で複数の敵を打つことができ、突進と同じように二度打ちもできる。
+</p><p>1 体のモンスターのまわりで旋風を続けると、平均すれば、その場に立って攻撃するのとまったく同じ回数の攻撃になる。ダメージが少ないだけだ。とはいえ、戦いながら位置を変えられるのはたいていとても役に立つ。
+</p><p>突進と旋風は同時に出せる。動き続けているかぎり、爪で薙ぎ払っているようなものだ。ただし気をつけること。移動には autofight_stop がない。ボタンを速く押しすぎて死ぬのは簡単だ。
+</p><p><b>ウー・ジアンと機会攻撃</b><br />
+モンスターのまわりをこれだけ動き回るのは不安? 心配はいらない。ウー・ジアンの武術の攻撃には機会攻撃が発生しない。モンスターに余計な攻撃をされる危険なしに安全に使える。これは評議会ではなく、動きのほうに結びついている。武術の攻撃をせずにモンスターから離れると、機会攻撃が発生する。
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> <a href="http://crawl.chaosforge.org/File:Wu_jian_altar.png" data-untr="1" class="image"><img alt="Wu jian altar.png" src="img/Wu_jian_altar.png" width="32" height="32" /></a> 飛び立って、軌道上から一帯ごと吹き飛ばせ。
+</td></tr></table>
+<p><b>壁蹴り</b><br />
+信仰心 ** になると、神聖なる評議会は 3 つめの古の武術の技を明かしてくれる。壁蹴りは諸刃の剣だ。強力で使う価値は十分にあるが、慎重に使うこと。能力のメニュー(<code>a</code> を押す)から出す。隣の壁を選んで、それを蹴る。木や彫像でもいい。跳躍で反対方向へ 2 マス進む。着地するマスは空いていなければならない。着地点に隣接しているモンスターは、2 回の移動ぶんの空中攻撃を受ける(ダメージのボーナスはない)。
+</p><p>2 回の移動をひとつにまとめたものだ(普通の速さなら 20 aut)。空中にいる間は割り込まれることも攻撃されることもない。欠点は、猛攻を生き延びた者も同じだけの時間を使ってやり返せることだ。向こうはあなたの着地を辛抱強く待つ。そして 20 aut を受け取る。攻撃のディレイが 1.0 = 10 aut だとすれば、あなたが割り込めないまま 2 回続けて殴られることになる。減速していると跳躍に 30 aut かかり、3 回続けて殴られる。相手がすでに死んでいれば話は別だが。減速しているからといってダメージが増えるわけではない。攻撃の速さも遅くなるからだ。
+</p><p>というわけで、壁蹴りがいちばん向いているのは次のような場面だ。
+</p>
+<ul><li> 傷ついた敵にとどめを刺す</li>
+<li> それほど危険でないモンスターの群れをまるごと消し飛ばす</li>
+<li> 打たれ弱いモンスターを、反応する前に圧倒する</li></ul>
+<p>壁蹴りはただで使え、静寂状態やバーサーク中でも使える。位置を変えるのにも便利だ。都合のいい壁があって着地点が空いていれば、罠や深い水脈、溶岩を跳び越えることさえできる。まずは弱いモンスターで壁蹴りを試そう。自信がついてきたら、もっと使っていけばいい。慢心には気をつけること。
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> <a href="http://crawl.chaosforge.org/File:Wu_jian_altar.png" data-untr="1" class="image"><img alt="Wu jian altar.png" src="img/Wu_jian_altar.png" width="32" height="32" /></a> 手加減はもう終わりだ。
+</td></tr></table>
+<p><b>蛇の鞭打ち</b><br />
+獣の棲み処に入るころには、評議会の神秘の師父たちが究極の能力を授けてくれているだろう。正確には最後から 2 番目だが、あまりに強力で楽しいので、私は究極と見なしている。速く動く時が来た。蛇を思い浮かべてほしい。ちっぽけなのに一撃が速く、だから同じくらいちっぽけなクワッカより強く打てる。ここで言っているのは、それよりずっと速い話だ。
+</p><p>蛇の鞭打ちは、先払いの少しの信仰心と、あとに来る疲労と引き換えに、即時の移動行動を 2 回与えてくれる。即時というのは、行動はするがディレイがないということだ。
+</p><p>こうした凄まじい勢いで武術の攻撃を出すと、40% 強く打てる。そのとき突進は、普通の攻撃と比べて 1.2 x 1.4 = 168% のダメージになる。旋風は 0.8 x 1.4 = 112% だ。蛇の鞭打ちで出した武術の攻撃は外れない。ただし攻撃の速さが移動の速さより遅いと、攻撃自体に失敗することはある。
+</p><p>即時の移動はすぐに使う必要も、続けて使う必要もない。たとえば、蛇の鞭打ちを使い、薬を飲み、あるモンスターに突進し、ワンドを発動し、動かずに何かを殴り、別のモンスターに突進する、ということもできる。どちらの突進も即時になる。
+</p><p>蛇の鞭打ちの 2 回分を消費するのは移動行動だけだ。壁蹴りは 1 回で 2 回分を使い切り、100% 安全な即時の壁蹴りになる。鞭打ちの攻撃 2 回の間に、瞬間移動やヴィーの電撃突進で位置を変えることもできる。
+</p><p>いざというとき、蛇の鞭打ちは優れた逃げ道になる。逃げるのに要る距離はたった 1 マスかもしれず、鞭打ちなら 2 マスくれる。ただし、階段を使うのは蛇の鞭打ちの移動に数えられない! 階段は常にいつもの速さで使うことになる。
+</p><p>蛇の鞭打ちは、静寂、バーサーク、そしてもちろん疲労状態のときには使えない。
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> <a href="http://crawl.chaosforge.org/File:Wu_jian_altar.png" data-untr="1" class="image"><img alt="Wu jian altar.png" src="img/Wu_jian_altar.png" width="32" height="32" /></a> 無限の力。
+</td></tr></table>
+<p><b>天の嵐</b><br />
+たぶん獣の棲み処の下層で、信仰心 ***** になると、ウー・ジアン評議会は天の嵐の秘密を明かしてくれる。嵐の代償は信仰心 20〜30。蛇の鞭打ちの 10 倍だ。だが地形と住人の数しだいで、1 回の天の嵐で 1 つの階をまるごと片付けられる。いくつもの階を片付けることさえある。
+</p><p>嵐が続いている間、あなたは 2 マスの光輪と、煙幕の巻物で出る雲のような不透明な金色の雲に囲まれる。これのおかげで、開けた場所で大勢の敵と戦うのがずっと現実的になる。遠距離攻撃をしてくる敵もあまり問題にならない。こちらから見えなければ、向こうからも見えない。見える距離まで近づいてきたら、こちらから攻撃できる。光輪は透明を打ち消し、モンスターにもあなた自身にも効く。
+</p><p>さらに、回避(EV)と殺戮にボーナスが付く。殺戮は命中とダメージの両方を上げる。嵐の持続時間は理論上は無限だ。最初は EV と殺戮が +5。2〜3 ターンごとにボーナスが 1 減る。だがウー・ジアンの武術の攻撃で標的を 1 体打つごとに 1 増え、最大で +15 になる。嵐を長引かせるのは突進、旋風、壁蹴りだけだ。ボーナスがゼロになるまで続く。動ける空間が足りないとき、たとえば宝物庫:5 の階段の真上などで嵐を使うのは、たいてい悪手だ。
+</p><p>天の嵐は戦いながらの撤退にぴったりだ。トロルの再生もそれを助けてくれる。群れの縁にいるようにしよう。ダメージを出す力が十分にあれば(たぶんあるだろう)、その場で踏みとどまることも、攻めに転じることもできる。
+</p><p>何よりいいのは、天の嵐が戦術の選択肢をたっぷり残してくれることだ(たとえば狂戦士の怒りとは違う)。特に、蛇の鞭打ちが使えるし、嵐が吹き荒れている間もどんなアイテムでも呪文でも使える。瞬間移動の巻物は、見えているマスにしか飛べないので少し使いにくくなる。とはいえ霧にはランダムな切れ間があるし、蛇の鞭打ちで外を覗くこともできる。
+</p><p>嵐はとてもうるさいが、それが悪いとは限らない。嵐を続ける助けになるからだ。
+</p><p><b>動けなくなったら</b><br />
+動ける空間がなければ武術の攻撃は出せない。完全に囲まれることだけは避けること。ウー・ジアンには、そういう状況で助けてくれる非常ボタンがない。耐え抜くか、呪文や消耗品に頼って空間を作り直すしかない。
+</p><p>幸い、瞬間移動とヴィーの電撃突進が使えれば、数の力で押しつぶされることはまずない。視界内に空いたマスが 1 つでもあれば瞬間移動できる。見えるマスがすべて埋まっていても、2 列目のどのモンスターにでも突進して、群れの縁へ 1 マス近づける。
+</p><p><b>パンチの重さと AC</b><br />
+純粋なパンチの重さは、カンフー・パズルのほんの一部にすぎない。だが AC がきわめて高いモンスター(たいてい鉄でできている)と戦うときは、速さより一撃の重さのほうが大事になる。そこで、すべての攻撃を 1 発あたりの重さで並べてみよう。
+</p>
+<ul><li> ダメージ 80% - 旋風</li>
+<li> ダメージ 100% - 昔ながらの普通の近接攻撃、壁蹴り</li>
+<li> ダメージ 112% - 蛇の鞭打ちでの旋風</li>
+<li> ダメージ 120% - 突進</li>
+<li> ダメージ 140% - 蛇の鞭打ちでの壁蹴り</li>
+<li> ダメージ 168% - 蛇の鞭打ちでの突進</li></ul>
+<p>1 発あたりのダメージで言えば、敵の AC が高くても低くても、突進が常に最善の選択だ。旋風を使っていて「あなたはとても固いモンスターを引っ掻いたが、ダメージを与えられなかった」という暗い灰色のメッセージが出るようなら、旋風はやめて狭い通路の入口まで行き、昔ながらのやり方で爪を振るい始めること。天の嵐が続いているなら、旋風と普通の攻撃を交互に使うのもいい。
+</p>
+<h3><span class="mw-headline" id="The_Kung_Fu_Puzzle">カンフー・パズル</span></h3>
+<p><a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>で勝つための鍵は、ちょっとした戦い以外はすべてパズルとして扱うことだ。大事なのは慎重な位置取りと、武術の動きを最大限に活かすことに尽きる。先を読もう。その動きのあと、自分はどこに立っているか? その動きで倒せそうな敵はどれか? 生き残りそうなのはどれか? そいつらは次に何をするか? 攻めるべきか、守るべきか? 強力だが動きの遅い石像になっているときは、これがなおさら大事になる。
+</p><p>たとえば、北にオークが 1 体いて、ほかの 4 体がこんなふうに両脇を固めているとしよう。
+</p>
+<pre>.......
+...o...
+..o.o..
+..o@o..
+.......
+</pre>
+<p>全員を打てる。1 歩で突進 1 回と旋風 4 回だ。オークたちに少なくとも 120% + 4 x 80% = 440% のダメージがばらまかれる。良い手かもしれない。とはいえ無謀になってはいけない。生き残ったオークはどれも、容赦なく殴り返してくる。全員が生き残れば、5 体のモンスターに囲まれることになる。そのオークたちがどれだけ危険かによっては、右下へ斜めに一歩踏み出して 1 体だけ打ち、ずっと安全な位置に移るのが最善かもしれない。
+</p><p>オークが特に危険な相手なら、蛇の鞭打ちを使うのがおすすめだ。突進し、誰がまだ生きているかを見て次の動きを決める。圧倒的な攻めこそ最大の守り、ということもある。
+</p><p>派手なカンフーの技を使おうが使うまいが、通路などの狭い場所を使って 1 対 1 で戦うのは変わらず良い戦術だ。
+</p>
+<pre>...#...
+..o####
+..o'@..
+..o####
+...#...
+</pre>
+<p>突進するな。一歩下がり、オークの 1 体が戸口に入ってくるのを待ってから突進しよう。
+</p><p><b>動き続けろ</b><br />
+開けた場所で群がられてしまったら、群れの縁から少しずつ削っていく。攻撃してこられるモンスターができるだけ少ないマスへ移るのは、たいてい良い選択だ。旋風を少なくとも 1 回出していれば、機会攻撃は受けない。
+</p>
+<pre>.......
+..YY...
+..Y@...
+..Y....
+.......
+</pre>
+<p>4 頭の人食いヤクの隣に立っているのは怖く見えるかもしれない。実際怖い。だが右上へ斜めに一歩踏み出せば、獣を 1 頭打ち、反撃してこられるのもその 1 頭だけになる。下へ一歩踏み出すと、2 頭の人食いヤクを打ち、その 2 頭ともに角で突かれうる。右下へ行けば、4 回同時の機会攻撃で死んでもおかしくない。
+</p><p>運よく文字どおり背中が壁についているなら、壁蹴りができるかもしれない。だが、できるのはそれだけだ。
+</p>
+<pre>##.....
+....o..
+##oooo.
+.oo@oo.
+.oo####
+
+</pre>
+<p>あの通路へ跳び込むのは安全か? 安全だ。少なくとも、今の場所にとどまるよりはずっといい。オークたちは跳躍のあとに攻撃してくるので、受けるのは最大 3 回だ。着地点のすぐ隣にいるオークから 2 回(生き残れば)、次のオークから、まず 1 マス歩いてくる必要があるので 1 回。長柄武器を持ったやつがいなければの話だ。
+</p><p>無謀な気分なら、まっすぐ上へ跳んで 4 体のオークを襲ってもいい。全員が生き残れば最大 8 回、全員が死んでも(2 列目の仲間から)最大 4 回殴られる。
+</p><p><b>環境を使え</b><br />
+あのエルフの召喚術師を、先に 2 級悪魔を倒さずに片付けられるだろうか? 転位術の呪文も消耗品も使わずに?
+</p>
+<pre>.#.....
+.######
+.'@2..e
+.######
+.#....
+</pre>
+<p>扉を閉め、エルフがもう一歩踏み出すのを祈る。それから壁蹴りだ。ちっぽけなエルフは死に、悪魔のことはもう気にしなくてよくなる見込みが高い。ただのこじつけの例だと思う? そのとおり。要点は伝わったと思う。
+</p>
+<h3><span class="mw-headline" id="Ancient_Martial_Combos">古の武術コンボ</span></h3>
+<p><b>三点爪爆裂ヒドラ拳</b><br />
+名前にだまされてはいけない。ヒドラに限らず、特に手強くて危険なモンスターなら何にでも使える技だ。名誉ある相手が 1 マス先にいるようにする。蛇の鞭打ちを使う。突進し、続けて旋風。たぶんこれで相手は死んでいる。死んでいない? 動きは即時だったので、まだあなたの手番だ。3 度目の爪を鮮やかに見舞って仕上げよう。100% のダメージの昔ながらの普通の一撃か、二度打ちの可能性がある 80% のダメージのもう一度の旋風だ。
+</p><p>徒手格闘のスキルが上がるにつれ、この技はむしろ一点拳に近づいていき、蛇の鞭打ちが 1 回分余ることが多くなる。なんともったいない。次のヒドラが友達を連れてくることを祈ろう。
+</p><p><b>シュレッダー</b><br />
+三点拳と同じだが、突進と旋風のあとに 1 回の攻撃ではなく、壁蹴りを続ける。ヒドラには使わないのが一番だ。
+</p>
+<pre>....#
+..o.#
+....#
+..@.#
+</pre>
+<pre>....#
+..o.#
+..@.#
+....#
+</pre>
+<pre>....#
+..o@#
+....#
+....#
+</pre>
+<pre>....#
+.@o.#
+....#
+....#
+
+</pre>
+<p>これで移動 4 ターン分、そしてたしか、そのオークがようやく反応できるまでに合計 4〜7 回の攻撃になる。攻撃のディレイがたとえば 0.8 ターンだとしての話だ。
+</p><p><b>引き戻し</b><br />
+凄まじい勢いで突進したのにダメージがほとんど、あるいはまったく入らなかったら、蛇の鞭打ちの 2 回目を使って一歩下がることを考えよう。蛇の鞭打ちは外れないが、ダメージの出目はばらつく。まだこの戦いに臨む準備ができていないのかもしれない。たまたまひどく悪い出目だっただけかもしれない。突進が相手に効かなかったなら、押し切るのが賢明とは限らない。
+</p><p><b>二段突進</b><br />
+狭い通路で注目すべき強敵と戦わなければならないときは? 旋風を出す空間はない。蛇の鞭打ちの 1 回目で突進する。一歩下がり、もう一度突進する。鞭打ちで強化されるのは最初の突進だけだ。2 回目の突進は外れることもあるし、今度はモンスターの手番になるが、それでも普通の攻撃よりはずっといい。
+</p><p><b>ダメージを射程と引き換える</b><br />
+肉体的には弱いが危険な能力を持ったモンスターが数マス先にいて、今すぐ攻撃したい、ということがある。蛇の鞭打ちを、ただ歩いて近づくためだけに使おう。それから突進するか壁蹴りを見舞う。こちらの攻撃が終わるまで、相手は動けない。
+</p><p>この輝く眼球なら、即時の 2 歩と普通の突進で今すぐ倒せる。
+</p>
+<pre>...G...
+.......
+.......
+.......
+...@...
+</pre>
+<p>このオカルティストなら、アビスへ追放される前に壁蹴りを見舞える。
+</p>
+<pre>..p...#
+......#
+......#
+......#
+.....@#
+</pre>
+<p>相手が手強いなら、少し歩いて近づき、2 マス離れたところから凄まじい勢いの突進を見舞うほうがいいかもしれない。あるいは転位術の呪文を使う。
+</p>
+<h3><span class="mw-headline" id="Force_Equals_Mass_Times_Acceleration">力は質量かける加速度</span></h3>
+<p>基本は身についた。ここからは花崗岩で強化された上級の修行が始まる。
+</p><p>石像になると全体が遅くなるのがまだ気がかり? 動きも攻撃も遅くなるが、戦い手として遅いとは限らない。なにしろウー・ジアン評議会から、移動と攻撃を同時に行うことを教わっているのだ。たとえば、今はモンスターへの突進に 15 aut(1.5 ターン)かかる。これは、攻撃のディレイが 0.5 ターンというかなり速い普通の速さのキャラクターが、一歩踏み出して(あるいはモンスターに一歩踏み出させて)1 回攻撃するのにかかる時間とちょうど同じだ。もちろんあなたのほうがずっと強く殴るので、ターンあたりのダメージは上回りうる。一撃で倒すこともよくある。休む必要も減る。
+</p><p><a href="http://crawl.chaosforge.org/Torpor_snail" data-untr="1" title="Torpor snail">無気力の蝸牛</a>や<a href="http://crawl.chaosforge.org/Death_scarab" data-untr="1" title="Death scarab">死の太陽虫</a>のようなモンスターには、さらに遅くされることがあるので覚えておくこと。移動のディレイは 22 aut(10 aut x 1.5 x 1.5)になる。突進するにも 1 マス歩くにも 2.2 ターンかかる。
+</p><p>だが蛇の鞭打ちは、どれほど遅くても常に即時の移動をくれる。凄まじい勢いで武術の攻撃を出すとき、石像は何の欠点もない、ただの追加ダメージになる。蛇の鞭打ちでの石像の突進は 1.5 x 1.4 x 1.2 = 252% のダメージだ。基本ダメージは高く、命中は完璧で、2 回攻撃する可能性まである。美しいと思わないか?
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> <a href="http://crawl.chaosforge.org/File:Troll.png" data-untr="1" class="image"><img alt="Troll.png" src="img/Troll.png" width="32" height="32" /></a> (著作権のある引用のため本文は省略)
+<p>
+</p><p>
+</p><p>
+</p>
+</td></tr></table>
+<p>取り立て屋トロルを極める鍵は、蛇の鞭打ちをいつ、どう使うかを身につけることだ。消耗品を節約し、使わない信仰心を無駄にしないために、鞭打ちは頻繁に使いたい。一方で、非常時に使えるよう取っておきたくもある。ありがたいことに、再使用までの待ち時間はかなり短い。私の経験では 12〜16 ターンほどだ。石像なら 8〜11 歩になる。
+</p>
+<h3><span class="mw-headline" id="Fight_Dirty">汚く戦え</span></h3>
+<p>時間の本質について瞑想した。基本と上級の武術の技を修行した。花崗岩と死で強化された、姿を変える巨獣になった。まだ学ぶべきことは、さらに強くなる道は残っているか? もちろんある。
+</p><p>汚く戦え。あなたはたいていの敵を、多かれ少なかれ正々堂々とした戦いで圧倒できる。中盤や終盤のユニークモンスターでも、たいていはそうだ。だが時おり、パンデモニウムや地獄の君主のような本物の怪物と向き合うことになる。でかすぎてスプライトが 1 マスに収まらない悪党どもだ。ただ突っ込んで運に任せるのはやめよう。手に入る有利はすべて手に入れること。
+</p><p>気づいていない敵や無力な敵への攻撃は<a href="Stabbing.html" title="Stabbing">急所攻撃</a>と呼ばれ、<a href="Stabbing.html#Stabbing_Damage" title="Stabbing">追加ダメージ</a>を与える。急所攻撃用の武器がなくても、急所攻撃は活用できるし、活用すべきだ。あなたの急所攻撃のダメージ倍率は大きくない(<a href="http://crawl.chaosforge.org/Hood_of_the_Assassin" data-untr="1" title="Hood of the Assassin">暗殺者の頭巾</a>をかぶっていなければ)が、すでに使っているほかのダメージ倍率すべてと重なる。しかも倍率がかかり続けるのは、ちゃちな小さいダガーではなく、あなたの巨大な石の爪なのだ。
+</p><p>徒手格闘 27、隠密ゼロとして:
+</p>
+<ul><li> 最良の急所攻撃(強めのもの)は、確実にダメージをおよそ 2 倍にする。モンスターが眠っているか、麻痺しているか、石化している必要がある。</li>
+<li> 弱めの急所攻撃では、ダメージが 27% ほど増える。器用によって 25〜30% の確率で決まる。モンスターがあなたを見られない(盲目か透明)か、網や蜘蛛の巣に絡まっているか、気をそらされているか、逃げている必要がある。</li></ul>
+<p><b>飛びかかれ</b><br />
+では、眠っているモンスターに文字どおり跳びかかるべきか? もちろんだ。あなたは特に隠密が得意ではないが、モンスターがぐっすり眠っていることもある。蛇の鞭打ちで位置について、目を覚ます暇も与えず打つこともできる。強めの急所攻撃をお膳立てする方法もある。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Wand_of_paralysis" data-untr="1" title="Wand of paralysis">金縛りのワンド</a>。必要なら<a href="http://crawl.chaosforge.org/Scroll_of_vulnerability" data-untr="1" title="Scroll of vulnerability">脆弱の巻物</a>で後押しする。</li>
+<li> 時間と安全な着替え部屋があるなら、盾を<a href="Guile.html" title="Guile">狡知</a>の<a href="Orb.html" title="Orb">オーブ</a>に持ち替えれば、ワンドが大幅に強化される。ただし十分に気をつけ、暗殺が済んだらすぐ盾に戻すこと。持ち替えには 10 ターン、石像では 15 ターンかかる。</li>
+<li> 獣の棲み処では、モンスターは<a href="http://crawl.chaosforge.org/Catoblepas" data-untr="1" title="Catoblepas">カトブレパス</a>の出す<a href="http://crawl.chaosforge.org/Petrifying_Cloud" data-untr="1" title="Petrifying Cloud">石化する雲</a>に平気で入ってくる。そうなったらしめたものだ。</li></ul>
+<p><b>不意打ちを食らわせろ</b><br />
+弱めの急所攻撃は大したことがないように聞こえる? そうかもしれないが、こちらのほうがお膳立てしやすいし、武術の技を使えば 1 体のモンスターを何度も続けて攻撃でき、複数のモンスターを同時に攻撃することもできる。1 発ごとに急所攻撃になる可能性がある。それに、弱めの急所攻撃を可能にする状態は、たいてい何ターンも続く。工夫して、相手の弱点を突こう。蛇の鞭打ちを最大限に活かすこと。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Ilsuiw" data-untr="1" title="Ilsuiw">イルスィウ</a>の一味や、ゾットの領域のドラコニアンの大群に手を焼いている? 透明化の薬を飲もう。たぶん薬が切れるころには、生き残りはいなくなっている。飛んでいないかぎり、水の中では透明化は効かないことを忘れずに。</li>
+<li> <a href="http://crawl.chaosforge.org/Throwing_net" data-untr="1" title="Throwing net">投げ網</a>と<a href="Wand_of_light.html" title="Wand of light">光のワンド</a>は、単体の相手、特にエクステンデッドでとても役に立つ。これらが効かないモンスターはごくわずかだ。セレボブのような図体ばかりでかい不器用なのろまは、うってつけの標的だ。</li>
+<li> 回避の高いモンスターは、先に<a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a>や<a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>を使ってから、盲目にするか網をかけよう。締めつけは急所攻撃を可能にはしないが、回避を大幅に下げる。</li>
+<li> 味方がモンスターを攻撃すると、ある確率でそのモンスターの気がそれる。タイル版では、モンスターが起きているのにあなたにまだ気づいていないときと同じように、小さな疑問符が出る。気をそらすには<a href="http://crawl.chaosforge.org/Phantom_mirror" data-untr="1" title="Phantom mirror">幻影の鏡</a>がとてもよく効く。</li>
+<li> 恐慌(<a href="http://crawl.chaosforge.org/Scroll_of_fear" data-untr="1" title="Scroll of fear">巻物</a>でも<a href="Fear.html" title="Fear">呪文</a>でも)を攻撃に使うことさえ、ときにはありだ。モンスターを一歩逃げさせてから、背中に突進の急所攻撃を見舞おう。</li></ul>
+<p><b>ヘビー級トロルが勝つまで試合は終わらない</b><br />
+戦いの流れが悪ければ、仕切り直してもう一度挑めばいい。相手のほうが強くても、それでも勝てる。3 回に 1 回しか勝てないとしても、テレポートの巻物 2 枚で相手は死ぬ。ただの仕事だ。個人的な恨みはない。
+</p><p><b>壁蹴りでの逃走</b><br />
+想像してみてほしい。間抜けなミスをやらかした。運も尽きた。本当に追い詰められ、疲労状態で、背中は壁だ。HP バーは真っ赤で、最後に残った緑はほとんど見えない。すぐ隣には<a href="http://crawl.chaosforge.org/Hell_Sentinel" data-untr="1" title="Hell Sentinel">地獄の番人</a>がいる。もう一度だけ逃げられるかもしれないという一縷の望みを託して、テレポートを読む。番人の鉄塊の矢は外れる。だが画面の端に<a href="http://crawl.chaosforge.org/Hellion" data-untr="1" title="Hellion">ヘリオン</a>が何体か現れる。もうおしまいだ。怪我の治療の薬を飲んでも足りない。テレポートが効く前に、次のターンの花火を回復量で上回れる見込みはない。避けられたはずだが、もう手遅れだ。本当にそうだろうか?
+</p><p><a href="Scroll_of_teleportation.html" title="Scroll of teleportation">テレポートの巻物</a>は、巻物を読む時間を含めて 3〜5 ターンで効く。石像での壁蹴りは 3 ターン、減速状態なら 4.4 ターンかかる。だから巻物を読んだ直後に跳べば、66.6% の確率で跳躍の直後にテレポートする。減速していて石像なら 100% だ!
+</p><p>誰にも逃走を妨げることはできない。
+</p>
+<ul><li> テレポートを読む。</li>
+<li> 跳んで攻撃し、いつもどおりモンスターにダメージを与える。</li>
+<li> テレポートが効く。</li>
+<li> 今度はモンスターの手番だが、あなたはもういない。</li></ul>
+<p>死霊化ではこれはあまり役に立たないし、石像でも確実に逃げられるわけではない。テレポートの行き先はマップのどこかランダムで、巻物を読んだまさにそのマスか、その近くに戻ってくることさえある。それでも、命が助かることのほうが多いだろう。
+</p><p>アビス、ゾットの領域、そしてゾットのオーブを持っている間は、テレポートが大幅に遅れることを忘れずに(アビスでは 8〜19 ターン)。
+</p>
+<h2><span class="mw-headline" id="Branch_Order">分岐を回る順番</span></h2>
+<p>この順番は絶対ではない。耐性によっては、ある分岐を飛ばしてあとで戻ってくることもあるだろう。
+</p>
+<ul><li> 迷宮:1〜12</li>
+<li> 獣の棲み処</li>
+<li> オークの坑道</li>
+<li> 迷宮:13〜15</li>
+<li> S系の分岐を両方</li>
+<li> エルフの大広間</li>
+<li> 宝物庫:1〜4</li>
+<li> 地下墓地</li>
+<li> 深層</li>
+<li> スライムの穴ぐら</li>
+<li> ゾットの領域:1〜4</li>
+<li> 宝物庫:5</li>
+<li> ジグラット:1〜7</li>
+<li> 太古の霊廟(たぶん)</li>
+<li> パンデモニウム</li>
+<li> アビス</li>
+<li> 太古の霊廟(たぶん)</li>
+<li> 地獄の入り口</li>
+<li> ディース</li>
+<li> タルタロス</li>
+<li> コキュートス</li>
+<li> ゲヘナ</li>
+<li> 太古の霊廟(たぶん)</li>
+<li> ゾットの領域:5</li></ul>
+<p>死霊化を使っているなら、太古の霊廟を地獄より前(11 個めのルーン)か、パンデモニウムより前(5 個めのルーン)にさえ試してみてほしい。太古の霊廟では元素耐性が要らないし、金貨とアーティファクト、そしてとても役立つ<a href="Figurine_of_a_ziggurat.html" title="Figurine of a ziggurat">ジグラットの模型</a>でいっぱいの大きな宝物部屋がある。太古の霊廟を最後に回すと、もうそれらは必要なくなる。危険すぎるわけでもない。石像だと少し手ごわくなるが、それでも何とかなる。このビルドは太古の霊廟でうまくやれる。ただし、一度も太古の霊廟に行ったことがないなら、最後に行くのが一番だ。
+</p><p>手早く勝ちたいなら、ルーンが 3 つそろいしだいゾットの領域:5 を片付けてオーブをかすめ取ろう。私のおすすめはルーン 4 つ、10 個、15 個のどれかだ。基本のゲームに勝てるなら、エクステンデッドにも勝てる。慣れればいいだけだ。
+</p>
+<h2><span class="mw-headline" id="Early_Game">序盤</span></h2>
+<h3><span class="mw-headline" id="The_Dungeon">迷宮</span></h3>
+<p>序盤の迷宮は厳しいことがある。トロルの戦士に挑もうとするちっぽけなゴブリンたちにとっては特に。とはいえ慢心には気をつけること。決して油断しないこと。ゲームの始めは選択肢が限られている。何にでも初見で対処できるようにはできていない。序盤の迷宮を生き延びる鍵は、脅威を見極めることだ。
+</p><p><b>諸宗派の寺院</b><br />
+早いうちに祭壇を見つけてウー・ジアン評議会に改宗していなければ、諸宗派の寺院を覗いてみよう。ウー・ジアンの祭壇がなければ、迷宮をさらに深く潜る。祭壇は迷宮:3 から迷宮:10 の間のどこかに必ずある。ウー・ジアン評議会以外の神を選んではいけない。ウー・ジアンの弟子になるまでは獣の棲み処に入ってはいけない。道を歩め。
+</p><p><b>コウモリへの対処</b><br />
+脅威ではないが、回避が高いことがある。こちらから近づくのではなく一歩下がると、たいてい向こうは隣で手番を終えるので、そこを爪で打てる。
+</p><p><b>ヘビへの対処</b><br />
+XL 1 では<a href="http://crawl.chaosforge.org/Adder" data-untr="1" title="Adder">マムシ</a>を避けるようにすること。安全な場所がすぐ近くにないかぎり、速すぎて逃げ切れない。マムシは扉を開けられない。部屋に閉じ込められるかもしれない。扉を閉めるには <code>C</code> を押す。扉に注意対象を置けば、階の残りを落ち着いて探索できる。XL 2 か XL 3 になれば、マムシもそれほど怖くない。それでも、運よくこちらの爪を思った以上に躱されることはある。<a href="http://crawl.chaosforge.org/Water_moccasin" data-untr="1" title="Water moccasin">沼マムシ</a>は、より大きく強いマムシだ。<a href="Ball_python.html" title="Ball python">ニシキヘビ</a>は無害だが、締めつけをほかのモンスターに利用されないよう、先に倒しておくこと。
+</p><p><b>オークの魔術師への対処</b><br />
+<a href="http://crawl.chaosforge.org/Orc_wizard" data-untr="1" title="Orc wizard">オークの魔術師</a>は単体ではそれほど危険ではないが、ときどき混乱させてくる。混乱が切れるまで、よろめきながら爪で打とうとしていればいい。無害なオークの仲間を連れてきていても、気にすることはない。誰かに当たりやすくなるだけだ。ただし、<a href="Orc_priest.html" title="Orc priest">オークの司祭</a>や<a href="http://crawl.chaosforge.org/Orc_warrior" data-untr="1" title="Orc warrior">戦士</a>が近くにいるなら、治療の薬を飲んで混乱をすぐに消したほうがいいかもしれない。オークの魔術師が透明になったら、最後に見かけたマスまで歩いていき、何もない空間を爪で打てばいい。いると思われる場所に空気の揺らぎが見えることもある。ちゃんと当たるし、すぐに経験を積んだ感じがして、倒したことがわかる。
+</p><p><b>オークの司祭への対処</b><br />
+<a href="Orc_priest.html" title="Orc priest">オークの司祭</a>は仲間のオークを回復させるが、何より厄介なのは、かなりのダメージの打擲を打ってくることだ。打擲は外れない遠距離攻撃で、あなたと司祭の間にほかのモンスターが立っていても当たる。打擲するには、こちらが見えている必要がある。扉を閉める、煙幕の巻物を読む、角を曲がる、はどれも打擲を避けるのに良い戦術だ。静寂の巻物を使えば、オークの司祭(そしてほかの司祭や、悪魔以外の呪文使いのほとんど)は無害になる。
+</p><p><b>蜘蛛類と虫への対処</b><br />
+ヘビと違って、蜘蛛類と虫のほとんどは毒が効く。<a href="http://crawl.chaosforge.org/Scorpion" data-untr="1" title="Scorpion">巨大サソリ</a>や<a href="Bombardier_beetle.html" title="Bombardier beetle">ミイデラゴミムシ</a>には毒のダーツがとてもよく効く(火は動けば振り払えるのを忘れずに)。ダーツがない、あるいは外してばかりでも、気にすることはない。爪で十分だ。序盤の<a href="http://crawl.chaosforge.org/Boulder_beetle" data-untr="1" title="Boulder beetle">岩石の甲虫</a>には気をつけること。打たれ強く強打してくるが、幸い EV がとても低いので、ダーツが簡単に当たる。
+</p><p><b>毒を持つ飛ぶ虫への対処</b><br />
+<a href="http://crawl.chaosforge.org/Killer_bee" data-untr="1" title="Killer bee">殺人蜂</a>を見かけたら、すぐに次の通路へ駆け込むこと。必ず群れでいる。<a href="http://crawl.chaosforge.org/Queen_bee" data-untr="1" title="Queen bee">女王蜂</a>を含む大群のこともある。殺人蜂には毒が効くが、ダーツは当てにくい。何匹かが一列に並んだら、いちばん遠いやつに投げよう。射線上のどの蜂にでも当たる可能性がある。1 対 1 で爪で打つか、発動アイテムを使おう。<a href="http://crawl.chaosforge.org/Hornet" data-untr="1" title="Hornet">巨大赤色蜂</a>は少し当てやすい(ほんの少しだが)が、減速させてくる厄介な毒を持っている。幸い、こちらは単独行動が多い。毒の巻物がとてもよく効く。
+</p><p><b>電気ウナギへの対処</b><br />
+<a href="http://crawl.chaosforge.org/Electric_eel" data-untr="1" title="Electric eel">電気ウナギ</a>は水の中に棲み、電撃の矢を撃ってくる。序盤の迷宮では rElec がなかなか手に入らないので、危険なこともある。幸い、電気ウナギは避けやすく、ワンドや毒のダーツで簡単に倒せる。射程の端にとどまり、必要に応じて物陰に隠れればいい。いちばん効くのは火炎のワンドだ。水の上に蒸気の雲を作り、ウナギを茹でると同時に視線もさえぎる。アトロパ毒のダーツなどで混乱させると、水から飛び出して窒息することがある。
+</p><p><b>マロウクーダへの対処</b><br />
+<a href="http://crawl.chaosforge.org/Marrowcuda" data-untr="1" title="Marrowcuda">マロウクーダ</a>は、噛みつくたびに別のマロウクーダを呼び出す。召喚されたのではない元の 1 匹を狙うこと。それを倒せば、残りの群れは消える。通路で戦うのが良い考えだ。
+</p><p><b>眠りキノコへの対処</b><br />
+<a href="http://crawl.chaosforge.org/Sleepcap" data-untr="1" title="Sleepcap">眠りキノコ</a>とは 1 対 1 で戦うようにすること。近接攻撃にはある確率でこちらを眠らせる効果があり、そうなると次に受ける攻撃が急所攻撃になる。<a href="http://crawl.chaosforge.org/Iguana" data-untr="1" title="Iguana">イグアナ</a>、<a href="http://crawl.chaosforge.org/Orc_warrior" data-untr="1" title="Orc warrior">オークの戦士</a>、<a href="http://crawl.chaosforge.org/Ogre" data-untr="1" title="Ogre">オーガ</a>のような強打してくるモンスターが近くにいると、特に危険だ。
+</p><p><b>オーガへの対処</b><br />
+<a href="http://crawl.chaosforge.org/Ogre" data-untr="1" title="Ogre">オーガ</a>はちょっとあなたに似ている。強く殴り、回避は低い。あなたの爪はやつらの巨大棍棒よりはるかに優れているが、何発か食らっても平気だと確信できないかぎり、オーガは離れたところから倒すようにすること。せめて大きく傷つけてから戦いに入ること。クラーレ毒のダーツは減速させるのにとてもよく効く。続けて毒のダーツを何本か。投げ網もとてもよく効く。
+</p><p><b>双頭のオーガへの対処</b><br />
+二刀流の<a href="http://crawl.chaosforge.org/Two-headed_ogre" data-untr="1" title="Two-headed ogre">双頭のオーガ</a>は、頭がひとつのほうよりずっと厄介だ。双頭のオーガに地面へ叩き込まれる隙を与える前に、よく考え、数字を確認すること。早い時期に出会うと、1 ターンで決着がつくこともある。
+</p><p><b>吸血オークのブロークラへの対処</b><br />
+序盤ではこの戦いは厳しいことがある。消耗品に余裕がなければ避けるのが一番だ。ブロークラは死ぬと何匹もの<a href="http://crawl.chaosforge.org/Vampire_bat" data-untr="1" title="Vampire bat">吸血コウモリ</a>に分裂し、そのすべてを倒さないと蘇る。
+</p><p><b>ジェレマイアへの対処</b><br />
+<a href="http://crawl.chaosforge.org/Jeremiah" data-untr="1" title="Jeremiah">ジェレマイア</a>との戦いは本当に厄介なことがある。近接戦では簡単に片付くが、蝶が邪魔をするし、本人は瞬間移動であちこち飛び回りながら打擲を打ってくる。<a href="http://crawl.chaosforge.org/Wand_of_digging" data-untr="1" title="Wand of digging">掘削のワンド</a>があれば、<a href="http://crawl.chaosforge.org/Kill_hole" data-untr="1" title="Kill hole">キルホール</a>を使って安全に対処できる。キルホールは迷宮に自然にできていることもある。ジェレマイアに手を焼くなら、逃げるかテレポートして、あとに回そう。
+</p><p><b>見えざる恐怖への対処</b><br />
+迷宮:10 あたりで、思いもよらない透明な何かに突然襲われることがある。<a href="http://crawl.chaosforge.org/Orc_wizard" data-untr="1" title="Orc wizard">オークの魔術師</a>より居場所をつかみにくい。それは<a href="http://crawl.chaosforge.org/Unseen_horror" data-untr="1" title="Unseen horror">見えざる恐怖</a>だ。とても速く、常に透明で、コウモリのような動き方をする生き物だ。毒の巻物で片が付く。浅い水脈や煙幕の巻物で位置がわかる。揺らぎを攻撃しよう。あるいは通路へ入り、どちら側にいるかがわかったら、そちら側を爪で打つ。通路に沿って稲妻のロッドを発動するのもとても効果的だ。経験を積んだ感じがすれば、倒したとわかる。
+</p><p>姿を見たい場合や、ほかに手がない場合は、上の階へ逃げて<a href="Orb.html" title="Orb">光のオーブ</a>を装備するのも手だ。見つけていればの話だが(<code>Ctrl-F</code> で検索できる)。恐怖を退治したら、盾を構え直すこと。霊視が付いたアイテムなら何でもいい。
+</p><p><b>エロルカへの対処</b><br />
+<a href="http://crawl.chaosforge.org/Erolcha" data-untr="1" title="Erolcha">エロルカ</a>は近接戦ではまるで歯が立たないが、あなたをアビスへ放り込めてしまう。意志力の付いたアイテムをいくつか見つけていれば別だが。召喚の巻物は良い対処法だ。たぶん彼女は味方を 1 体追放するのが精いっぱいで、残りに押しつぶされる。煙幕や蝶も、撤退を援護したり彼女に近づいたりするのに役立つ。あなたへの射線が通っている時間をできるだけ短くすること。迷ったら、何かで彼女を狙って確かめよう。静寂の巻物や大水の小瓶を持っているなら、取っておいたのはこの戦いのためだ。
+</p><p><b>迷宮からの一休み: 序盤の分岐</b><br />
+手始めに、迷宮は迷宮:11、深くても迷宮:12 より下へは行かないこと。気をつけて。迷宮:12 で<a href="Rupert.html" title="Rupert">ルパート</a>に出会ったり、ほかの深刻な問題に出くわしたりしたら、上の階へ退き、獣の棲み処とオークの坑道を終えるまで戻ってこないこと。獣の棲み処で手を焼くなら、先にオークの坑道をやってみよう。
+</p><p><b>迷宮の下層(迷宮:13〜15)</b><br />
+獣の棲み処とオークの坑道のあとなら、ここは比較的楽なはずだ。いつものように、慢心には気をつけること。
+</p><p><b>魔術師への対処</b><br />
+魔術師には 2 種類いる。<a href="Occultist.html" title="Occultist">オカルティスト</a>には目を光らせておくこと。さもないとアビスへ放り込まれる。特に意志力が Will+++ に届いていないなら、すばやく片付けること。<a href="Arcanist.html" title="Arcanist">秘術師</a>は好んでガラス化をかけてくる。ガラス化すると、しばらく受けるダメージがすべて 50% 増える。どちらの魔術師も厄介な元素の攻撃呪文を持っているが、透明を見通せず、静寂状態では無害だ。
+</p><p><b>醜きものへの対処</b><br />
+<a href="Ugly_thing.html" title="Ugly thing">醜きもの</a>はかなり強く殴ってくることがあり、装備しだいで耐えられたり耐えられなかったりする元素のダメージを与える。群れとは通路で戦うこと。変化のワンドを使えば色を変えさせられる。色は与えるダメージの種類に対応している。
+</p><p><b>スライムへの対処</b><br />
+何事にも例外はあり、<a href="http://crawl.chaosforge.org/Slime_creature" data-untr="1" title="Slime creature">スライム</a>はそのひとつだ。通路で戦ってはいけない。開けた場所で囲まれるようにすること。そうすれば、1 体の巨大な、あるいは超巨大なスライムに合体されにくくなる。超巨大なスライムは 110 ダメージで殴ってきて、HP は<a href="Juggernaut.html" title="Juggernaut">ジャガーノート</a>より多いこともある。スライムはできるだけばらけさせること。たとえば 3 体が一列に並んでいたら、真ん中のやつから倒す。合体するのは互いに隣接しているものだけだ。
+</p><p><b>迷宮はほんの始まりにすぎなかった</b><br />
+迷宮:15 の深層への入口は、たぶん何かの巨人かドラゴンが守っている。あなたに手に負えないものではない。獣の棲み処に戻って、最初の S系の分岐を選ぼう。
+</p>
+<h3><span class="mw-headline" id="The_Lair_of_Beasts">獣の棲み処</span></h3>
+<p>rPois があれば結構。なければ治療の薬に頼り、毒を持つ生き物には少し用心すること。獣の棲み処の獣のほとんどは、簡単に引き裂ける。知らないモンスターはすべて注意深く調べること。獣の棲み処では、恐慌の巻物と毒の巻物がたいていよく効く。
+</p><p>この分岐にはたいてい大きな洞窟がある。まず壁沿いに進み、大きく開けた場所は最後に探索すること。すべてをすばやく倒し、戦うたびに HP の大半を失うのでなければ、開けた場所で戦ってもかまわない。分岐全体を上から下まで一気に片付けられるはずだ。獣の棲み処で見つけたほかの分岐には、時限ポータルを除いて、まだ入らないこと。
+</p><p><b>ヒドラに備える</b><br />
+以下の助言はすべて、まだ花崗岩のタリスマンを使っていない前提だ。石像になっていれば、<a href="Hydra.html" title="Hydra">ヒドラ</a>はもう問題ではない。
+</p><p>できれば、XL 11 以上になるまでは最初のヒドラに手を出さないこと。HP は必ず満タンにしておく。近接戦でのヒドラ退治は、装備やヒドラの能力値(最大 HP はばらつく)によっては、特に獣の棲み処:1 に入ったばかりだと当てにならない。長い目で見れば、徒手格闘のスキルが上がることでこの問題は解決する。今のところは、命の保険を用意しておこう(<a href="#Consumables">「消耗品」</a>を参照)。逃げる算段なしにヒドラと戦わないこと。自分を強化するか、ヒドラを弱らせておけば、うまくいかない可能性は事実上なくせる。
+</p><p><b>ヒドラを弱らせる</b><br />
+吹雪のワンド、強酸のワンド、光のワンドが特によく効く。ダメージを与えるうえに、それぞれある確率でヒドラを減速させ、腐食させ、盲目にする。冷気は多くの爬虫類や両生類(rC のない冷血の生き物)を減速させる。遠くのヒドラに大岩を投げるのも役に立つが、外れることもある。投げるのは 1 個までにしておくのが一番だ。大岩は遅いことを忘れずに。投げたあと、ヒドラは何マスも進んでくる。突進に必要な 1 マスの距離は必ず残しておくこと。ヒドラは毒に耐性があるので、ダーツは役に立たない。投げ網はヒドラを動けなくするのにとてもよく効く。
+</p><p><b>ヒドラと水</b><br />
+獣の棲み処の水には気をつけること。ヒドラは泳ぐのがとても速い。水のマスを 1 つ進むのに 6 aut(0.6 ターン)しかかからない。加速しても、泳ぐヒドラからは逃げ切れない。陸上での移動速度は 10 だ。飛んでいないかぎり、水の中では透明化は効かない。
+</p><p>火炎のワンドは、泳いでいるヒドラを蒸気の雲で茹でて、深刻なダメージを与えられる。大きな湖に炎を何発か撃ち込めば、発動のスキルがゼロでもヒドラを倒せる。もっと小さな水場でも、弱らせるのには役立つかもしれない。
+</p><p><b>ヒドラを手早く倒す</b><br />
+トロルはヒドラと素手で戦うな、というのは定番の、そしてたいていは正しい助言だ。あなたの爪は首を引きちぎるのにうってつけで、ヒドラは首を 1 本失うたびに勝手に 2 本生やし、そのついでに HP も少し回復しがちだ。それはまずい。だが……もし、思いきり強く首を引きちぎったら? 蛇の鞭打ちがその差を生む。突進、旋風、そして HP がおよそ 80% を下回らないかぎり、続けて普通の攻撃を 2〜3 回。
+</p><p><b>運が良すぎるヒドラから逃げる</b><br />
+深追いはするな。合計 3〜5 発で死なないヒドラなら、もう無駄だ。突進、旋風、昔ながらの普通の攻撃を最大 3 回。それ以上はなし。HP が目に見えて減ったらもっと少なく。命の保険を使おう。このヒドラがどれだけのフェリッドを平らげてきたか、わかったものではない。もう予備の命を持っているかもしれない。あなたと違って。
+</p><p><b>ヒドラをじっくり倒す</b><br />
+火炎の刃物を使いたくなるかもしれない。おすすめはしない。武器のスキルがないと、ヒドラの首が減るより速くあなたの HP が減る。退屈でもかまわないなら、もちろん首を 1、2 本慎重に切り落とし、(消耗品か蛇の鞭打ちで)離脱し、休み、繰り返してもいい。だが武器のスキルに経験値を使ってはいけない。
+</p><p><b>ヒドラへのその他の対処法</b><br />
+ヒドラを安全に倒す方法のひとつが、樹木化の薬を飲むことだ。ほかがすべてだめだったときの最後の手段としていい。あるいは、加速して引き撃ちしながらワンドで倒すこともできるが、高くつくやり方だ。稲妻のロッドを 3〜4 発撃てば、発動のスキルがゼロでもヒドラは消し飛ぶはずだ。狙いを動かさずに済むよう、獣がまっすぐこちらへ向かってくるようにすること。幻影の鏡も試す価値がある。
+</p><p>工夫しよう。近くの意志の弱いモンスターに魅了のワンドを使うのはどうだろう? <code>ta</code> を押してヒドラを攻撃するよう命じればいい。ほかにも、さらに手の込んだ戦術はいくらでも考えられる。蝶の巻物と焼き討ちの巻物の話は今はしない。いや、それは君の責任だ。私は知らない。
+</p><p><b>ヒドラへのやってはいけない対処法</b><br />
+ヒドラに壁蹴りを使ってはいけない。跳躍中に何回も攻撃し、そのたびに新しい首が生える。ヒドラが生き残れば、あなたが再び動く前に、増えた首の数で二度打ちしてくる。
+</p><p><b>スカイシャークへの対処</b><br />
+<a href="Skyshark.html" title="Skyshark">スカイシャーク</a>はヒドラと同じくらい厄介なことがある。速すぎて逃げ切れないし、戦いが長引くほど危険になっていく。スカイシャークに対処する準備ができていないなら、見かけた時点でテレポートを読むこと。すばやく倒すこと。実のところ、ヒドラとまったく同じように扱えばいい。ただし、ヒドラにはない弱点がふたつある。毒を受け、クラーレで減速させられること、そして意志力が低いことだ。樹木化は、高くつくがスカイシャークへの優れた対処法だ。血の流れない木になれる。早めに飲めば、サメは血の味を感じられず、狂暴化しない。
+</p><p><b>ルパートへの対処</b><br />
+<a href="Rupert.html" title="Rupert">ルパート</a>は獣の棲み処でよく見かける。怒鳴り声で麻痺させたり混乱させたりしてから、バーサークして銘の入った両手武器で叩きのめしてくる危険な男だ。しばらくは避けておくのが一番かもしれない。
+</p><p>幸い、ルパートと戦いたい、あるいは戦わざるをえないときには、突ける弱点がある。クラーレで減速するし、投げ網に絡まるし、透明を見通せないし、泳げない。召喚の巻物も大いに役立つ。幻影の鏡を使おう。静寂の巻物で黙らせられるが、それでもバーサークはする。静寂を選ぶなら、自分も狂戦士の薬を飲むことを考えよう。
+</p>
+<h3><span class="mw-headline" id="The_Orcish_Mines">オークの坑道</span></h3>
+<p>獣の棲み処を片付けたあとなら、オークの坑道はたいした難関ではないはずだ。オークのほとんどはかなり打たれ弱い。ただ、意志力は前より大事になる。<a href="http://crawl.chaosforge.org/Orc_sorcerer" data-untr="1" title="Orc sorcerer">オークの魔道士</a>と<a href="http://crawl.chaosforge.org/Ogre_mage" data-untr="1" title="Ogre mage">オーガの魔術師</a>に気をつけること。麻痺を唱えてくる。あなたとやつらの間に、ほかのモンスターを挟むようにしよう。何かで狙ってみて確かめること。意志力が抵抗できるほど高くなければ、すばやく倒すこと。調べればわかる。今となっては、オーガや双頭のオーガはもう大した脅威ではない。それでも、一度に多くを相手にしないようにすること。
+</p><p>ユニークモンスター、<a href="http://crawl.chaosforge.org/Orc_warlord" data-untr="1" title="Orc warlord">オークの族長</a>、<a href="http://crawl.chaosforge.org/Stone_giant" data-untr="1" title="Stone giant">岩の巨人</a>のような手強い相手には蛇の鞭打ちを使おう。<a href="http://crawl.chaosforge.org/Ettin" data-untr="1" title="Ettin">エティン</a>には気をつけること。新たな双頭のオーガだ。<a href="http://crawl.chaosforge.org/Nessos" data-untr="1" title="Nessos">ネッソス</a>と<a href="http://crawl.chaosforge.org/Sonja" data-untr="1" title="Sonja">ソーニャ</a>には、金縛りのワンドや変化のワンドが効く。脆弱の巻物を読めばワンドの回数を節約できる。<a href="http://crawl.chaosforge.org/Saint_Roka" data-untr="1" title="Saint Roka">聖者ロカ</a>は透明を見通せない。
+</p><p>オークの坑道:2 で、クロスボウを持ったオークの戦士と<a href="http://crawl.chaosforge.org/Orc_high_priest" data-untr="1" title="Orc high priest">オークの大司祭</a>の大群や、大岩を投げてくる<a href="Cyclops.html" title="Cyclops">サイクロプス</a>の一団と向き合うことになったら、ためらわず天の嵐を使おう。オークの坑道:2 には店がいくつもあり、運がよければ花崗岩のタリスマンを売っているかもしれない。坑道のあとは、迷宮の下層へ向かう番だ。
+</p>
+<h2><span class="mw-headline" id="Timed_Portals">時限ポータル</span></h2>
+<p>いずれ、排水管のさびつく音や、流れる砂のさらさらいう音などが聞こえ、急いでポータルを見つけろとゲームがせかしてくるだろう。これらは任意で入れる小さな分岐だ。慎重に、試してみるのがおすすめだ。2、3 階下へ縦穴で落とされた直後でもなければ、迷宮で見つかるポータルのほとんどに挑めるだけの強さはある。<a href="http://crawl.chaosforge.org/Scroll_of_revelation" data-untr="1" title="Scroll of revelation">啓示の巻物</a>は、ポータルに間に合うようたどり着く助けになる。
+</p><p><b><a href="http://crawl.chaosforge.org/Volcano" data-untr="1" title="Volcano">火山</a></b><br />
+火炎耐性がなければ、火山は飛ばしたほうがいいかもしれない。入る前に、必要に応じて指輪などの装備を付け替えておくこと。
+</p><p><b><a href="Ice_cave.html" title="Ice cave">氷の洞穴</a></b><br />
+私は冷気耐性なしで氷の洞穴に入ることがよくある。たいていは入口の近くに rC+ の付いたアイテムが見つかる。<a href="Simulacrum_(monster).html" title="Simulacrum (monster)">幻像</a>は意志力がとても低い。簡単に魅了したり麻痺させたりできる。あるいは火炎のワンドで倒そう。とはいえ危険な相手だ。冷気耐性があっても、幻像を甘く見てはいけない。調べて数字を確認すること。
+</p><p>rC がないなら、氷の洞穴で石像を使ってはいけない。速い幻像に二度打ちされて死ぬ。高い AC も助けにならない。迷ったら洞穴から出ること。後半の氷の洞穴は氷河の裂け目と呼ばれ、極端に<a href="http://crawl.chaosforge.org/Out_of_depth" data-untr="1" title="Out of depth">本来の深さより浅い階に出てきた</a>モンスターがいることがある。<a href="Reaper.html" title="Reaper">切り裂きの悪魔</a>や<a href="http://crawl.chaosforge.org/Ice_fiend" data-untr="1" class="mw-redirect" title="Ice fiend">氷の魔神</a>を見かけて、どう対処すればいいかわからなければ、逃げること。
+</p><p><b><a href="Necropolis.html" title="Necropolis">死者の都</a></b><br />
+DCSS のキャラクターが死ぬと、<a href="Player_ghost.html" title="Player ghost">幽霊</a>となって戻ってきて新しいキャラクターと戦うことがある。古い版では、プレイヤーの幽霊は迷宮を自由にうろついていた。あるときから、各分岐に散らばった特別なヴォールトに閉じ込められるようになった。そして 0.33 では、それらのヴォールトはポータルの先の領域に移された。1 回のゲームで死者の都は最大 3 つ生成され、それぞれに幽霊のヴォールトがいくつもある。死者の都に入ること自体には危険はない。だが扉を開ける前に、幽霊のヴォールトとその住人をよくよく調べること。
+</p><p>幽霊はどれも実体がなく、根縛りや投げ網が効かない。能力値は大きくばらつく。まったくの弱虫もいれば、回避が極端に高くて倒しにくいものや、トラックのように殴ってくるものもいる。危険な呪文を知っているものもいる。
+</p><p><b><a href="Gauntlet.html" title="Gauntlet">試練場</a></b><br />
+試練場は面白い。安全に入って見て回ることができる。気になるアイテムをメモし、それを守っているモンスターを調べよう。<code>Crtl-F</code> を押して <code>.</code> を検索すると、今いる階で見つけたアイテムの一覧が出る。
+</p><p>どの部屋も、手持ちの道具で解けるかもしれないし解けないかもしれない戦術パズルだ。部屋どうしがポータルでどうつながっているかを見きわめよう。全部の部屋には入れない。試練場ではテレポートが効かない。最初のポータルに入ったら、もう引き返せない。
+</p><p>どの試練場でも、最後には<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>が待ち受けている。守っている戦利品の一部を拾って、あなたに対して使ってくる。この戦いの前には自分を強化しておくこと。ミノタウロスはジャベリンを持っていて、遠距離でも近接でもかなり危険だ。
+</p><p><b>その他のポータル</b><br />
+ゲームにはほかにもポータルがある。ここではそのすべては扱わない。たいていは入る価値がある。見たことのないモンスターは、どれもよくよく調べること。
+</p>
+<h2><span class="mw-headline" id="Mid_Game">中盤</span></h2>
+<p><b>毒と水: S系の分岐</b><br />
+どのゲームでも、<a href="http://crawl.chaosforge.org/Snake_Pit" data-untr="1" title="Snake Pit">蛇穴</a>か<a href="http://crawl.chaosforge.org/Spider%27s_Nest" data-untr="1" title="Spider&#39;s Nest">蜘蛛の穴ぐら</a>のどちらかと、<a href="http://crawl.chaosforge.org/The_Swamp" data-untr="1" title="The Swamp">沼</a>か<a href="The_Shoals.html" title="The Shoals">浅瀬</a>のどちらかが出る。毒が主題の分岐がひとつと、浅い水脈と深い水脈が目立つ分岐がひとつだ。治療の薬がすぐに尽きないよう、rPois なしで蛇穴や蜘蛛の穴ぐらに入ってはいけない。毒の杖や rPois の付いた武器を持つという手は使えない。沼が出たゲームなら、<a href="http://crawl.chaosforge.org/Swamp_dragon" data-untr="1" title="Swamp dragon">沼ドラゴン</a>を探して倒し、<a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">鱗</a>を手に入れよう。
+</p><p>沼と浅瀬では飛行があるととてもありがたいが、ウー・ジアン評議会のトロルは、飛行がなくてもたいていの者ほど不利にはならない。ほかの種族は浅い水脈に立っていると攻撃をしくじることがある(37.5% の確率)。あなたはしくじらない。体が大きいので、浅い水脈では移動も遅くならない。ところどころにある 1 マスの深い水脈は、壁蹴りで渡れる。
+</p><p><b>私には全部ヒドラに見える</b><br />
+S系の分岐に足を踏み入れると、たぶん少し打たれ弱く感じるだろう。実際、この時点ではそうだからだ。もちろん、すでに石像を使っていれば話は別だ。それは大いに助けになる。それでも、無謀になってはいけない。
+</p><p>トロルは序盤ではたいていの者より頑丈だ。中盤になると、ほとんどの種類の防具を着られないことと回避の低さが目立ってくる。モンスターはより強く殴ってくる。遠距離攻撃を受けることも増える。だからこそ先に器用を選んで EV と SH の両方を上げたのであり、変身術師ではなく戦士で始めたのだ。カイトシールドが間に合うよう見つかる保証はなかった。
+</p><p>とはいえ、ここで大きく変わることはない。投擲が減っただけで、序盤の迷宮にまた戻ったようなものだ。一手一手が大事になる。どちらの分岐を先にやるほうが楽かは、耐性しだいだ。S系の分岐には、タイミングのいい蛇の鞭打ちか天の嵐で片付かないものはない。それでも、どの分岐も戦術的な難関だ。分岐を知り尽くしているのでなければ、モンスターはすべて注意深く調べること。
+</p><p>両方の S系の分岐の上の 3 階を先に片付け、それからルーンのある最下層をやる、というのもいいかもしれない。とはいえ、分岐をひとつずつ終わらせていくのも何も悪くない。4 階目では激しい抵抗を覚悟し、常に逃げる算段を用意しておくこと。S系の分岐のどちらかで手を焼くなら、先にエルフの大広間:1〜2 か宝物庫:1〜4 をやるのも手だ。ルーンを 2 つ集めるまでは、エルフの大広間:3 はおすすめしない。
+</p><p><b>ニコラへの対処</b><br />
+<a href="http://crawl.chaosforge.org/Nikola" data-untr="1" title="Nikola">ニコラ</a>は、どの S系の分岐にも、それ以降にも出てくる。連勝を狙うプレイヤーに恐れられている、名の知れた敵のひとりだ。rElec がなければ、すぐに耐性の薬を飲むこと。すばやく倒すか、静寂状態にするか、視界から外れるかしないと、強烈な電撃を浴びせられる。rElec があってもまだ危険だ。連鎖する稲妻は一部しか抵抗できないし、本人は味方を巻き込むのを気にしない。ほかのモンスターを間に挟んでも助からない。幻影の鏡は使わないのが一番だ。
+</p>
+<h3><span class="mw-headline" id="The_Snake_Pit">蛇穴</span></h3>
+<p>rPois のほかに、rElec と、少なくとも rF+ をおすすめする。すでに石像になっていないなら、<a href="Quill_talisman.html" title="Quill talisman">針化</a>もおすすめだ。この分岐では、締めつけへの免疫が本当に命綱になることがある。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Naga_(monster)" data-untr="1" title="Naga (monster)">ナーガ</a>と<a href="http://crawl.chaosforge.org/Anaconda" data-untr="1" title="Anaconda">アナコンダ</a>は締めつけてくる。通路で戦うこと。締めつけられている間に囲まれないようにすること。</li>
+<li> <a href="http://crawl.chaosforge.org/Guardian_serpent" data-untr="1" title="Guardian serpent">守護の大蛇</a>には気をつけること。倒すのは簡単だが、近くの敵をあなたの隣へテレポートさせ、一瞬で囲ませてくる。</li>
+<li> 囲まれて締めつけられてしまったら、瞬間移動で抜け出すか、<a href="Gell's_gravitambourine.html" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a>を発動して隙間を作ること。壁蹴り(できれば蛇の鞭打ちで)も選択肢になるかもしれない。</li>
+<li> rElec がないと<a href="http://crawl.chaosforge.org/Shock_serpent" data-untr="1" title="Shock serpent">電撃の大蛇</a>は恐ろしい。水を必要としない、より速く高電圧な電気ウナギのようなもので、爪で打つと感電させてくる。甘く見てはいけない。幸い、毒に耐性がなく、透明を見通せず、<a href="Blood.html" title="Blood">冷血</a>で、意志力が低い。 </li>
+<li> <a href="http://crawl.chaosforge.org/Salamander" data-untr="1" title="Salamander">サラマンダー</a>と戦うときは rF があると助かる。サラマンダーはどれも溶岩の中を泳げる。電撃の大蛇と同じく冷血で毒に耐性がないので、クラーレでも吹雪でも減速させられる。</li>
+<li> <a href="http://crawl.chaosforge.org/Salamander_tyrant" data-untr="1" title="Salamander tyrant">サラマンダーの暴君</a>は、あなたの隣の地面から溶岩を噴き出させる。その溶岩からはすぐに離れること。暴君が見えているときは、溶岩の隣に立たないこと。</li>
+<li> 反射の護符と反発のスカーフがあれば、<a href="http://crawl.chaosforge.org/Naga_sharpshooter" data-untr="1" title="Naga sharpshooter">ナーガの達人射手</a>はずっと怖くなくなる。達人射手は魔法で矢を転移させてくる。召喚した味方もほかのモンスターも盾にならず、遮蔽になるのは壁だけだ。</li>
+<li> <a href="Vashnia.html" title="Vashnia">ヴァシュニア</a>とその一味に出会ったら、<a href="http://crawl.chaosforge.org/Kill_hole" data-untr="1" title="Kill hole">キルホール</a>を掘ることを考えよう。</li>
+<li> <a href="http://crawl.chaosforge.org/Nagaraja" data-untr="1" title="Nagaraja">ナーガの豪族</a>は、瞬間移動とテレポートを封じる呪文、次元の碇を唱えてくる。 </li>
+<li> 蛇穴:4 には<a href="Quicksilver_dragon.html" title="Quicksilver dragon">水銀ドラゴン</a>がいることがある。2 頭だ。かなり手強く、速すぎて逃げ切れない。解呪のブレスは強烈で、待機中のテレポートを含めて強化のほとんどをはがしてくる。幸い、石像は解呪されない。幻影の鏡と召喚の巻物は良い選択肢だ。</li></ul>
+<h3><span class="mw-headline" id="The_Spider.27s_Nest">蜘蛛の穴ぐら</span></h3>
+<p>rPois は欠かせないし、この分岐ではあらゆる耐性を少しずつ持っておくのが理想だ。霊視もあるといい。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Steelbarb_worm" data-untr="1" title="Steelbarb worm">鋼棘ワーム</a>は単体ではたいした脅威ではないが、逆棘を甘く見てはいけない。ほかの生き物がたくさんいるときに逆棘を刺されないこと。さもないとテレポートして運を天に任せるしかなくなるかもしれない。しかもテレポートが効くのが遅すぎるかもしれない。</li>
+<li> <a href="http://crawl.chaosforge.org/Meliai" data-untr="1" title="Meliai">メリアイ</a>は新たなオークの司祭だ。ただし速くて、飛んでいて、毒を持ち、常に群れでうろついている。打擲を打ってきて、ほかの者を回復させる。きわめて打たれ弱く、毒が効き、意志力がとても低い。魅了のワンドを試す価値はある。メリアイはメリアイを倒すのがとてもうまい。</li>
+<li> <a href="http://crawl.chaosforge.org/Moth_of_wrath" data-untr="1" title="Moth of wrath">憤怒せる蛾</a>は、まわりの生き物をバーサークさせる。あなたも含めてだ。たいていはあなたよりも向こうに不利に働く。怒り狂ったトロルは冗談では済まない。だが不都合なこともある。それに、怒り狂った蜘蛛が多すぎるのもまた冗談では済まない。蛾はすばやく倒し、できればほかのモンスターから引き離すこと。 </li>
+<li> <a href="http://crawl.chaosforge.org/Sun_moth" data-untr="1" title="Sun moth">太陽の蛾</a>は、抵抗できないエネルギーの光線を撃つのに忙しくないときは、近接攻撃であなたに火をつけてくる。これといった弱点はない。</li>
+<li> <a href="http://crawl.chaosforge.org/Pharaoh_ant" data-untr="1" title="Pharaoh ant">ファラオアリ</a>はアンデッドで、HP を吸ってくる。倒すと、視界内のほかのすべてのモンスターに魂の呪縛をかける。呪縛されたモンスターは倒されると<a href="Simulacrum_(monster).html" title="Simulacrum (monster)">幻像</a>として蘇る。rC なしで幻像と向き合うのはとても危険で、石像ならなおさらだ。</li>
+<li> <a href="Spark_wasp.html" title="Spark wasp">電光蜂</a>は電撃の大蛇と同じくらい厄介だ。rElec がないのにその群れと向き合ったら、すぐに耐性の薬を飲むこと。毒が効き、意志力は低い。</li>
+<li> <a href="Entropy_weaver.html" title="Entropy weaver">エントロピーの編み手</a>は大したことはないはずだ。rCorr の指輪があればはめておく。腐食がひどすぎれば無力化の薬を飲めばいいが、たいていはその必要もない。</li>
+<li> <a href="http://crawl.chaosforge.org/Radroach" data-untr="1" title="Radroach">放射能ゴキブリ</a>は、魔術的汚染であなたを被曝させてくる。離れたところから倒すか、すばやく倒すこと。戦いに入る前に弱らせておこう。クラーレで減速させられる。</li>
+<li> <a href="http://crawl.chaosforge.org/Jorogumo" data-untr="1" title="Jorogumo">女郎蜘蛛</a>は蜘蛛の糸で絡めとり、噛みつきで麻痺させてくる。蛇の鞭打ちを使う価値は間違いなくある。</li>
+<li> <a href="http://crawl.chaosforge.org/Tarantella" data-untr="1" title="Tarantella">巨大タランチュラ</a>に触れられると、抵抗できずに混乱する。それ以外は打たれ弱く、ほぼ無害だ。混乱を消すのに治療の薬を飲む必要があるかもしれない。巨大タランチュラはたいてい壁蹴りで倒せる。</li>
+<li> <a href="Broodmother.html" title="Broodmother">母蜘蛛</a>は手強く、ほかの蜘蛛を呼び出す。母を倒せば子は消える。幻影の鏡の良い標的だ。 </li>
+<li> 透明な<a href="Ghost_moth.html" title="Ghost moth">幽体蛾</a>は、霊視がないと危険なことがある。その凝視は MP を吸い取る。煙幕の巻物を読めば、向こうから近づいてきて居場所がばれる。天の嵐は透明を暴くことを思い出そう。今いる階が大きく開けた地形なら、どのみち嵐を使う価値があるかもしれない。実用的とは言いがたいが、<a href="http://crawl.chaosforge.org/Sun_moth" data-untr="1" title="Sun moth">太陽の蛾</a>の小さな光輪も幽体蛾を暴く。先に脆弱の巻物を読めば、太陽の蛾を魅了できるかもしれない。妙なことに、幽体蛾は透明を見通せない。</li></ul>
+<h3><span class="mw-headline" id="The_Swamp">沼</span></h3>
+<p>さらなるヒドラ。強打してくる動植物がわんさか。沼ではどの耐性も役に立つが、何より rPois だ。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Swamp_worm" data-untr="1" title="Swamp worm">沼ワーム</a>は銛の射撃であなたを隣まで引き寄せる。角を曲がって、向こうから来させよう。意志力はとても低い。</li>
+<li> <a href="http://crawl.chaosforge.org/Death_drake" data-untr="1" title="Death drake">デスドレイク</a>には気をつけること。瘴気の雲には必要以上に長く立たないこと。すでに使えるなら、石像は瘴気への免疫をくれる。</li>
+<li> <a href="http://crawl.chaosforge.org/Spriggan_druid" data-untr="1" title="Spriggan druid">スプリガンのドルイド</a>が木を目覚めさせるときに、木の隣にいないようにすること。</li>
+<li> それから、<a href="Eleionoma.html" title="Eleionoma">エレイオノマ</a>を殴るときは、すぐに回復されないよう、相手が木の隣に立っていないようにすること。</li>
+<li> <a href="http://crawl.chaosforge.org/Fenstrider_witch" data-untr="1" title="Fenstrider witch">沼渡りの魔女</a>は、沼でいちばん危険なモンスターと言っていい。調べて震え上がろう。投げつけてくる泥からはすぐに出ること。水じゃない。うえっ。</li>
+<li> <a href="http://crawl.chaosforge.org/The_Lernaean_hydra" data-untr="1" title="The Lernaean hydra">レルネーのヒドラ</a>には、ぜひ幻影の鏡を使おう。試す価値はある。それ以外なら、スピードの薬を飲んで離れたところから倒すか、せめて弱らせるのがいちばん安全だ。いつもの手順だ。レルネーの一撃は普通のヒドラより強いわけではないが、27 本の首が積み重なる。レルネーは文字どおり木をなぎ倒し、少しも速度を落とさずに木々の中を進んでくる。沼の最下層によっては、<a href="Zombie.html" title="Zombie">ゾンビ</a>や<a href="http://crawl.chaosforge.org/Skeleton_(monster)" data-untr="1" title="Skeleton (monster)">骸骨</a>版のレルネーがいることもある。こちらはずっと弱い。</li></ul>
+<h3><span class="mw-headline" id="The_Shoals">浅瀬</span></h3>
+<p>反射と反発のスカーフを強くおすすめする。rElec と、手に入るかぎりの意志力も、特に浅瀬:4 のために。
+</p>
+<ul><li> <a href="Merfolk_aquamancer.html" title="Merfolk aquamancer">水棲の民の水占術師</a>や、たまに出る<a href="http://crawl.chaosforge.org/Frost_giant" data-untr="1" title="Frost giant">霜の巨人</a>には rC があると助かる。</li>
+<li> <a href="http://crawl.chaosforge.org/Merfolk_(monster)" data-untr="1" title="Merfolk (monster)">水棲の民</a>は泳いでいると回避が上がるので、水の外で戦うようにすること。</li>
+<li> <a href="http://crawl.chaosforge.org/Merfolk_javelineer" data-untr="1" title="Merfolk javelineer">投槍兵</a>と<a href="http://crawl.chaosforge.org/Merfolk_impaler" data-untr="1" title="Merfolk impaler">刺殺者</a>は、普通の水棲の民よりずっと危険だ。</li>
+<li> 都合の悪いときに魅了されたり恐慌状態にされたりしたら、視線を切って呪文を終わらせるようにすること。たとえば角を曲がる、煙幕の巻物を読む、火炎のワンドで蒸気の雲を作る、などだ。 </li>
+<li> <a href="http://crawl.chaosforge.org/Water_nymph" data-untr="1" title="Water nymph">水のニンフ</a>を甘く見てはいけない。遠距離から強烈なダメージを与えてくるうえ、階段を水浸しにして一時的に使えなくする。火炎のワンドがとてもよく効く。</li>
+<li> <a href="Elemental_wellspring.html" title="Elemental wellspring">精霊の源泉</a>を見かけたら、慎重に動くこと。水のニンフの姉貴分で、浅瀬にしては明らかに<a href="http://crawl.chaosforge.org/Out_of_depth" data-untr="1" title="Out of depth">本来の深さより浅い階に出てきた</a>相手だ。透明を見通せない。飛んでいないかぎり、水の中では透明化は効かないことを覚えておくこと。</li>
+<li> <a href="Sphinx_marauder.html" title="Sphinx marauder">スフィンクスの略奪者</a>相手には危険を冒さないこと。意志力が低いなら避けるか、静寂の巻物を使うこと。苛立ち状態にされるのは、麻痺させられるのと同じくらいまずいことがある。</li></ul>
+<h3><span class="mw-headline" id="The_Elven_Halls">エルフの大広間</span></h3>
+<p>rElec、少なくとも rF+、それに Will+++ があれば大丈夫なはずだ。反射、反発、rC、霊視があるとありがたい。エルフのほとんどは簡単にずたずたにできるが、魔法には気をつけること。
+</p><p><b>刃の広間</b><br />
+エルフの大広間:2 には刃の広間がある。ルーンで封印された扉で階のほかの部分から隔てられた区画で、住人は主に宙を舞う武器だ。入るも入らないも自由だ。多くのキャラクターは特定の武器を探しにそこへ入る。あなたにとっては経験値でしかない。歪曲の宙を舞う武器には気をつけること。<a href="http://crawl.chaosforge.org/Deep_elf_blademaster" data-untr="1" title="Deep elf blademaster">闇エルフの剣豪</a>は、たいていのエルフより少し手強い。エルフの大広間:2 でテレポートすると、刃の広間に出る確率が高い。
+</p><p><b>エルフの大広間:3</b><br />
+ここからが面白い。Will+++ に届いていないなら、<a href="http://crawl.chaosforge.org/Deep_elf_demonologist" data-untr="1" title="Deep elf demonologist">闇エルフの悪魔術師</a>に追放されないよう、十分に気をつけること。まずマップの岩壁の部分を片付ける。石壁の部屋は最後に取っておく。私は少しずつおびき出して、角の向こうへ誘い込むのが好きだ。叫んで(<code>tt</code> を押す)騒ぎを起こそう。声が聞こえれば、エルフはその呼びかけに応えてやって来る。ためらわずに<a href="http://crawl.chaosforge.org/Kill_hole" data-untr="1" title="Kill hole">キルホール</a>を掘ろう。もっとも、<a href="Deep_elf_elementalist.html" title="Deep elf elementalist">闇エルフの精霊使い</a>がたぶんどこかで壁を壊して開けてしまうだろうが。中にはエルフがたくさんいる。<a href="http://crawl.chaosforge.org/Deep_elf_master_archer" data-untr="1" title="Deep elf master archer">闇エルフの達人射手</a>には気をつけること。物陰から遠く離れないようにしよう。もうエルフが出てこないと確信できたら、部屋に入る。それでも、戦利品を守る取り残しが何体かいるはずだ。
+</p><p>あるいは、天の嵐の中でエルフの砦を片付けることもできる。地形によって向き不向きがある。長く狭い通路の外側の端から内側の端へ戦いの場を移そうとしている間に、嵐が切れてしまうかもしれない。それに、強力な呪文使いを一度に多く相手にするのは、嵐の目の中にいても危険なことがある。次の行き先は宝物庫だ。
+</p>
+<h3><span class="mw-headline" id="The_Vaults">宝物庫</span></h3>
+<p><b>宝物庫:1〜4</b><br />
+エルフの大広間を経験した者なら、ここは問題ないはずだ。そろそろ耐性もいい具合にそろっているといいのだが。いちばん大事なのは意志力、rElec、それにいくらかの rC だ。全体として、S系の分岐より楽に感じるはずだ。すでに石像を使っていれば、なおのことだ。慢心には気をつけること。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Ironbound_frostheart" data-untr="1" title="Ironbound frostheart">鉄縛の凍心者</a>に見られているときは、壁の隣に立たないこと。</li>
+<li> <a href="http://crawl.chaosforge.org/Ironbound_convoker" data-untr="1" title="Ironbound convoker">鉄縛の招集者</a>は、招集の宣言を唱え終える前に倒すか中断させること。<a href="http://crawl.chaosforge.org/Phial_of_floods" data-untr="1" title="Phial of floods">大水の小瓶</a>や<a href="http://crawl.chaosforge.org/Wand_of_quicksilver" data-untr="1" title="Wand of quicksilver">水銀のワンド</a>がとてもよく効く。</li>
+<li> rElec がないなら、<a href="http://crawl.chaosforge.org/Ironbound_thunderhulk" data-untr="1" title="Ironbound thunderhulk">鉄縛の雷巨人</a>にはすばやく近づくか、視界の外にいること。落雷を呼べるのは、あなたが 2 マスより遠くにいるときだけだ。瞬間移動であちこち飛び回るが、意志力は低い。</li>
+<li> <a href="http://crawl.chaosforge.org/Sentinel%27s_Mark" data-untr="1" title="Sentinel&#39;s Mark">番兵の標的</a>を付けられたら、上の階か、片付け済みの場所へ退くこと。たいていは何も大したことは起きない。</li>
+<li> 雲行きが怪しくなったらテレポートすること。</li>
+<li> <a href="Guardian_sphinx.html" title="Guardian sphinx">守護のスフィンクス</a>相手には危険を冒さないこと。意志力が低いなら避けるか、静寂の巻物を使うこと。麻痺はしばしばその場で死刑宣告になる。</li></ul>
+<p><b>宝物庫:5</b><br />
+ゾットの領域:1〜4 を片付けるまで、宝物庫:5 に入ってはいけない。入ると、上下左右へ延びる 4 本の広い通路があるマップの真ん中に出る。<a href="http://crawl.chaosforge.org/Vault_guard" data-untr="1" title="Vault guard">宝物庫の番人</a>の軍勢に囲まれ、もっと厄介なモンスターがすでに後ろに控えている。階段ダンスは当てにできない。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Vault_warden" data-untr="1" title="Vault warden">宝物庫の監視者</a>は階段を封じる。</li>
+<li> <a href="http://crawl.chaosforge.org/Tentacled_monstrosity" data-untr="1" title="Tentacled monstrosity">触手の怪物</a>は締めつけてくる。</li>
+<li> ドラゴンはあなたを階段から押しのける。</li></ul>
+<p>スピードの薬、蛇の鞭打ち、瞬間移動の巻物のどれかを使って、いちばん近い通路の入口へできるだけ早く入るのがおすすめだ。追ってくる番人たちのぎっしり詰まった群れに、焼き討ちの巻物と、連鎖反応のきっかけになる手段(震動石、吹雪、根縛り)を遠慮なく使おう。天の嵐を使い、じわじわと戦いながら退いていく。通路のおおむね真ん中で踏みとどまり、そこで押し寄せる波を次々に倒せるはずだ。来なくなったら、外壁に沿って戦いながら進み、階をひと回りすればいい。あるいは中央へ戻り、もうしばらく嵐を続けてみるのもいい。最後に、4 つの大きな四角い宝物部屋を探索して略奪する。ルーンはそのどれかに隠されている。
+</p><p>あるいは、階段を下りる前にテレポートを読むか、一方通行の脱出ハッチを使って宝物庫:5 に入る手もある。これは危険で、悪い場所に出てしまい、テレポートの巻物や瞬間移動の巻物をさらに無駄にすることになりかねない。
+</p>
+<h2><span class="mw-headline" id="Late_Game">終盤</span></h2>
+<h3><span class="mw-headline" id="The_Crypt">地下墓地</span></h3>
+<p>ここで何より大事なのは意志力と rN だ。Will+++ ならそれなりに守られ、Will++++ ならなお良い。地下墓地には死霊化がぴったりだが、石像もよくやれる。そろそろどちらかのタリスマンを使っていてほしいところだ。使っていれば、地下墓地は楽なはずだ。普通のモンスターはポップコーンみたいにぽろぽろ倒れていくだろう。慢心には気をつけること。地下墓地で手を焼くなら、先に深層をやってみよう。
+</p>
+<ul><li> <a href="Curse_toe.html" title="Curse toe">呪いの足指</a>や<a href="Curse_skull.html" title="Curse skull">呪いの頭蓋骨</a>の苦痛に対処しなければならない最初の分岐は、たぶんここだ。石像の部分的な苦痛への耐性は助けになるが、呪われた部品どもに苦痛を連発されると、それでも HP をごっそり持っていかれる。テレポートし、休み、もう一度挑もう。</li>
+<li> <a href="http://crawl.chaosforge.org/Dread_lich" data-untr="1" title="Dread lich">恐怖のリッチ</a>や<a href="Curse_skull.html" title="Curse skull">呪いの頭蓋骨</a>には蛇の鞭打ちを使おう。援軍を呼び始める前に倒すこと。召喚者を片付ければ、呼び出されたものはすべて即座に消える。</li>
+<li> 石像でも死霊化でも皮剥ぎに免疫になるので、<a href="http://crawl.chaosforge.org/Flayed_ghost" data-untr="1" title="Flayed ghost">皮剥げ幽霊</a>はまったく無害になる。</li>
+<li> 死霊化を使っているなら<a href="Revenant.html" title="Revenant">レヴナント</a>に気をつけること。遠距離のアンデッドの解呪が痛い。</li></ul>
+<p><b>グルンへの対処</b><br />
+迷宮か獣の棲み処で<a href="http://crawl.chaosforge.org/Grum" data-untr="1" title="Grum">狩人グルム</a>に出会っただろうか? それなら結構。彼の別の時間軸の姿である<a href="http://crawl.chaosforge.org/Grunn" data-untr="1" title="Grunn">罰せられしグルン</a>と向き合わずに済む。そううまくはいかなかった? よろしい、打てる手はこうだ。グルン本人は弱虫ではないが、何とかなる。彼の連れた<a href="http://crawl.chaosforge.org/Doom_hound" data-untr="1" class="mw-redirect" title="Doom hound">忘却の猟犬</a>は、エクステンデッドでないゲームで出会うモンスターの群れのなかで、いちばん危険かもしれない。地下墓地、深層、ゾットの領域に現れることがある。
+</p>
+<ul><li> 忘却の猟犬は遠吠の状態を付けてくる。これはタルタロスから直接、厄介なモンスターを呼び寄せる。幸い、0.30 からは抵抗できるようになった。抵抗できなかったら、無力化の薬で遠吠を消せるし、消すべきだ。できれば猟犬を倒したあとで。変身術の変身を除いて、かかっている強化もすべて消えることを覚えておくこと。</li>
+<li> 静寂でも遠吠は防げない。</li>
+<li> 忘却の猟犬の弱点は意志力の低さだ。恐慌の巻物で簡単に追い払えるし、ワンドで呪術もかけられる。グルンの意志力は高い。</li>
+<li> 群れはすばやく倒すようにすること。自分に有利な条件で戦いを始めること。自分を強化すること。持てるものすべてで圧倒すること。召喚の巻物を 1、2 枚読むのもいい。</li>
+<li> 階段ダンスでグルンと猟犬を引き離すか、群れを分断すること。</li>
+<li> <a href="http://crawl.chaosforge.org/Kill_hole" data-untr="1" title="Kill hole">キルホール</a>を掘ることを考えよう。</li></ul>
+<h3><span class="mw-headline" id="The_Depths">深層</span></h3>
+<p>元素の攻撃をたくさん受ける。ここでは rF、rC、rElec が大事だ。とはいえ、あなたを脅かせるほど長く生き延びるものはあまりいないはずだ。そろそろ石の爪で巨人やドラゴンを片っ端から一撃で倒しているころだろう。
+</p>
+<ul><li> 意志力が低いなら<a href="http://crawl.chaosforge.org/Sphinx" data-untr="1" title="Sphinx">スフィンクス</a>に気をつけること。</li>
+<li> <a href="http://crawl.chaosforge.org/Glass_eye" data-untr="1" title="Glass eye">ガラスの眼球</a>に出会うことがある。その視界にいる時間はできるだけ短くすること。射線は要らない。ほかのモンスターも凝視をさえぎらない。どうしても必要なら、脆弱の状態は無力化の薬で消せることを思い出そう。</li>
+<li> 深層で近接戦の 1 対 1 であなたと渡り合えるモンスターは、<a href="Juggernaut.html" title="Juggernaut">ジャガーノート</a>くらいかもしれない。速く動き、強く殴るが、一撃ごとに 2 ターンほど休む。クラーレで減速させよう。HP が少ないときは、近寄らないこと。</li></ul>
+<p>地下墓地と深層を片付けたら、スライムの穴ぐらへ飛び込もう。スライムが嫌いなら、好きな別のルーンを取りに行けばいい。
+</p>
+<h3><span class="mw-headline" id="The_Slime_Pits">スライムの穴ぐら</span></h3>
+<p>3 つめのルーンと山のような戦利品を手早く楽しく手に入れられる場所だ。rCorr は絶対に要る。持っていなければ、<code>Ctrl-F</code> を押して「rCorr」を検索しよう。Will+++ と、いくらかの rC もおすすめする。焼き討ちの巻物を安全に使うために、いくらかの rF もあるといい。死霊化には変異への免疫、Will+、rC+ が付き、スライムたちには衰弱と精髄の吸収が効く。この分岐にはうってつけだ。石像は多少腐食しても AC は十分残る。ただ、少し<a href="#Selected_Threats">悪性変異</a>させられそうではある。世界の終わりではない。
+</p><p>スライムの穴ぐらの壁は、一時的にあなたを腐食させる。壁が多いほど腐食も増える。モンスターがいなければ、壁沿いを歩いても安全だ。壁から離れれば、壁による腐食はすぐに消える。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Golden_eye" data-untr="1" title="Golden eye">黄金の眼球</a>は HP がとても少なく、吹雪のワンドや震動石の缶で簡単に倒せる。混乱させる凝視は意志力で判定される。</li>
+<li> ここでは<a href="http://crawl.chaosforge.org/Glass_eye" data-untr="1" title="Glass eye">ガラスの眼球</a>も見かけることがある。</li>
+<li> <a href="Dissolution.html" title="Dissolution">溶解者</a>と戦うなら用心すること。ありとあらゆる厄介な眼球を呼び出してくる。</li>
+<li> <a href="Acid_blob.html" title="Acid blob">酸のブロブ</a>は危険だ。rCorr があっても、容赦なく吐きかけてくる酸でいずれ腐食させられる。腐食を重ねすぎないこと。上の階へ退き、消えるのを待とう。</li>
+<li> 何より気をつけるべきは<a href="Shining_eye.html" title="Shining eye">輝く眼球</a>だ。できるだけ早く倒すこと。すぐに届かないなら、効果の届く線を切ること。光のワンドで盲目にする、煙幕を読む、召喚したもので遮る、ほかのモンスターを間に挟む(何かで狙って確かめよう)。死霊化していても HP の最大値を吸われるので、あまり長く凝視させたくはない。</li></ul>
+<p>スライムの穴ぐら:1〜4 を全部片付ける必要はない。これらの階には酸の壁とモンスターしかなく、アイテムはない。階段近くのモンスターだけを倒しながら潜っていこう。スライムの穴ぐら:1〜4 でのテレポートは危険なことがある。地形はたいてい互いにつながっていない部屋でできていて、上り階段のない部屋もあるからだ。
+</p><p><b>ロイヤルジェリーへの対処</b><br />
+スライムの穴ぐら:5 にはいくつかの地形がある。啓示の巻物を読み、それに合わせて計画を立てよう。マップに広く開けた場所があり、石像を使っているなら、天の嵐で乗り込んで系統立ててマップを片付け始めるのがおすすめだ。たぶん大して悪性変異はさせられない。遅かれ早かれ<a href="The_Royal_Jelly.html" title="The Royal Jelly">ロイヤルジェリー</a>が乱戦に加わる。一度に旋風を 1 発ずつ当て、援軍を削り、それを繰り返すのがおすすめだ。
+</p><p>あるいは、あまり音を立てないようにし、マップを片付けるまではロイヤルジェリーと戦わない。3 つの階段がすべて安全であることを確かめておく。殴られるたびに生まれるジェリーに押しつぶされないよう、ロイヤルジェリーとは狭い場所で戦うこと。腐食がひどくなったら、テレポートして上の階へ逃げること。
+</p><p>すぐにジェリーに囲まれてもかまわないなら、蛇の鞭打ちでロイヤルジェリーを吹き飛ばすこともできる。そうしたジェリーの大群を片付けるには、焼き討ちの巻物がとてもよく効く。あるいはテレポートして、ジェリーが散らばるのを待とう。
+</p><p>地形が窮屈なら、そもそも天の嵐を使うにしても、ロイヤルジェリーを見つけるまでは控えておくこと。わかっている上り階段への逃げ道は、必ず空けておくこと。ロイヤルジェリーは速いが、ほかのモンスターと違って上の階までは追ってこない。
+</p>
+<h3><span class="mw-headline" id="The_Realm_of_Zot">ゾットの領域</span></h3>
+<p>締めくくりの時だ。すべての耐性を少なくとも 1 段階ずつと、霊視も持っていくようにしよう。いちばん大事なのは意志力、rElec、rF だ。rF++ 以上がおすすめだ。手持ちのもので何とかしよう。アイテムの引きが良すぎるキャラクターは破滅する、と信じる人もいる。勝つキャラクターは、ろくでもない装備しか見つけないものだ。それでも勝つ。
+</p>
+<ul><li> <a href="Wyrmhole.html" title="Wyrmhole">竜穴</a>はとても手強く、これといった弱点がない。さらに悪いことに、近接攻撃はあなたをあちこちへ瞬間移動させ、ボルト攻撃はあなたをテレポートさせる。たぶん悪い場所に出ることになる。そのテレポートはテレポートの巻物を読むか無力化の薬を飲んで取り消せるし、取り消すべきだ。</li>
+<li> <a href="Quicksilver_dragon.html" title="Quicksilver dragon">水銀ドラゴン</a>と<a href="http://crawl.chaosforge.org/Purple_draconian" data-untr="1" title="Purple draconian">紫ドラコニアン</a>は厄介なことがある。解呪のエネルギーのボルトを吐いてきて、待機中のテレポートを含めた強化を取り消してくる。幸い、変身術の変身や天の嵐は解呪できない。</li>
+<li> ドラコニアンは透明を見通せず、白い鱗を持っているか rC の付いたアイテムを使っているのでなければ、冷気で減速する。</li>
+<li> この領域には<a href="Ghost_moth.html" title="Ghost moth">幽体蛾</a>も棲んでいて、いつものように MP を吸い取りたくてうずうずしている。</li>
+<li> <a href="http://crawl.chaosforge.org/Death_cob" data-untr="1" title="Death cob">殺人トウモロコシ</a>の近接攻撃を受けると、抵抗できずに減速させられる。これは石像の鈍足と重なり、移動のディレイは 22 aut になる。スピードの薬で打ち消せるが、たいていは切れるのを待てば済む。殺人トウモロコシは透明を見通せない。</li>
+<li> <a href="http://crawl.chaosforge.org/Moth_of_wrath" data-untr="1" title="Moth of wrath">憤怒せる蛾</a>には目を光らせておくこと。死霊化していれば、あなたをバーサークさせることはできない。だが、たとえ単独でも、バーサークしたドラコニアン、ドラゴン、触手の怪物、オーブの守護者を甘く見てはいけない。</li>
+<li> <a href="Orb_of_fire.html" title="Orb of fire">炎の球体</a>は強烈な火炎のダメージを与え、悪性変異させてくる。その効果の届く線上には必要以上に長くとどまらないこと。あいにく、ゾットの領域でいちばん手強いモンスターでもある。蛇の鞭打ちを使う価値は文句なしにある。全力でかかること。凄まじい勢いの、花崗岩で強化された 1 回の壁蹴りで、複数の炎の球体を倒そうとしろとは言わない。だが、できなくはない。</li></ul>
+<p>ゾットの領域:1〜4 を片付ける。ルーンを 3 つより多く集めるつもりなら、ゾットの領域:5 はあとに回すこと。たいてい下にはもっと炎の球体がいて、悪い変異のコレクションをさらに増やしてくれるかもしれない。
+</p><p><b>ゾットの領域:5</b><br />
+啓示の巻物を読む。オーブの部屋と、その両脇にある、異様に固い壁でできた 2 つの「肺」が見えるはずだ。まず、階段のあるマップの部分を片付ける。肺から何体かモンスターをおびき出してみよう。肺への入口は 2 つとも罠でふさがれていることがある。ここは 2 つの悪のうちましなほうを選ぶか、転位術の呪文で罠を迂回しよう。肺に入ったら、天の嵐が思い浮かぶ。肺は罠と、それを踏むモンスターでいっぱいだ。モンスターが罠を踏むと、あなたが被害を受ける。だが、見えていない罠はあなたに影響しない。
+</p><p>肺に嵐で攻め込む代わりに、控えの間で警報の罠を作動させ、そこで迎え撃つ手もある。とはいえ私の経験では、たいていは肺に嵐で攻め込むほうが安全だ。
+</p>
+<h2><span class="mw-headline" id="The_Orb_Run">オーブを持っての脱出</span></h2>
+<p>これを始める前に、ゾットの領域:5 のすべてを倒しておくのがいちばん安全だ。ゲームを終わらせたいときだけオーブを拾うこと。
+</p><p>オーブをつかむ。都合のいいテレポートの罠に踏み込む。階段の近くに出ることを祈る。テレポートの巻物がたくさんあるなら、罠に踏み込む前に 1 枚読んでおく。出た場所が気に入ったら(もう 1 枚テレポートの巻物を読んで)テレポートを取り消す。そうでなければ、待機中のテレポートが効くのを待つか、別のテレポートの罠に踏み込む。あるいは、ただ歩く。
+</p><p>誰かが止めようとしてきても、次の上り階段への道をふさいでいるか、無視すると危険な場合だけ戦うこと。<a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a>は厄介なことがある。強さはまちまちだ。注意深く調べること。倒すほうが速いか安全な場合を除いて、モンスターはすべて避けること。やつらはあなたの報酬を奪いたいだけだ。
+</p><p>オーブを持っているとテレポートの巻物が遅れるので、早めに読むこと。消耗品がまだたくさんあるなら、もう出し惜しみはしないこと。ただ速く走るためにスピードの薬を飲む。近道するために掘削を発動する。まだ十何枚もあるなら、数ターン節約するためだけに瞬間移動を読む。非常用に 2〜3 枚は取っておくこと。巻物や薬が余っていても、報酬は上がらない。
+</p><p>代わりに迷宮:0 まで自動移動して、必要に応じて対応するほうがいいかもしれない。それでもかまわない。
+</p><p>迷宮から出る最後の階段を上ると何が起きるのか? オーブの何がそんなに特別なのか? ゾットは逃げおおせたのか? 知ったことか。仕事は済んだ。
+</p>
+<h2><span class="mw-headline" id="Beyond_the_Plan">プランの先へ</span></h2>
+<p>あなたはプランを守ってルーンを 4 つ集めたが、オーブはまだ拾っていない。ちょっとした手数料を稼ぐ方法を思いついたんだろう? 魔法のルーンは闇市場で引く手あまただそうだ。全能なる乱数に、どうにも消せない悪い変異を山ほど呪いのように押しつけられたり、耐性がひどく足りなかったりしないかぎり、あなたはエクステンデッドにうってつけだ。
+</p><p>ここでは、プランの先へ腕を磨く方法について、いくつかのアイデアを書き出してみる。荒くれ者の道がいちばん効率がいい。ほかの道は主にお楽しみで、戦術の選択肢を増やしてくれる。何がいちばん合うかは、本当にプレイスタイルしだいだ。好きなものを選んでほしい。勝つために必要なものはひとつもない。
+</p><p>8 レベルや 9 レベルの呪文は、たぶん訓練する価値がない。昔の取り立て屋トロルは、石像を手に入れるために魔法に大きく投資しなければならなかったので、もう少し訓練を足すのは自然な流れだった。それでも楽ではなかった。変身に変身術のスキルが必要な今では、粉砕を使えるようにするだけの経験値をかき集めるのは、15 ルーンのゲームでも難しい。
+</p><p>プランのスキル目標に届いたら、追加の呪文の道を進めるだけの強さはある。先に戦闘をもう少し上げてもかまわないが、その必要は特にない。高レベルの呪文は早く使えるようになるほど、エクステンデッドは楽しくなる。
+</p><p>必要な魔術系統は、それだけを訓練するか、肉体系のスキルが望む水準に届くまで後回しにするのが一番だということを忘れずに。魔術系統を訓練すると、呪文の威力と成功率が上がる。複数の系統を使う呪文の威力は、各系統の平均で決まる。だから低いほうの魔術系統を上げるのが、たいていは呪文の威力を上げるいちばん速くて安い方法だ。知力を増やすか、呪文の威力を上げる道具を手に入れることを除けばだが。呪文詠唱は主に MP を増やすために訓練する。とはいえエクステンデッドでは、適性 -5 でも、1 桁のスキルレベルは安く上がる。
+</p><p>攻撃呪文はおすすめしない。効率のいい攻撃呪文の魔術師になれるほどの呪文の威力が、どうにも足りない。
+</p>
+<h3><span class="mw-headline" id="The_Way_of_the_Brute">荒くれ者の道</span></h3>
+<p>あなたはこの部屋でいちばんでかいトロルだ。これ以上呪文は要らない。
+</p>
+<ul><li> 戦闘を上げれば、HP と近接攻撃のダメージがさらに増える。27 まで上げよう。</li>
+<li> タワーシールドに切り替える。盾の目標を少なくとも 21.1 にする。</li>
+<li> 死霊化を使っていて、いい中装か重装の竜の鱗を見つけたなら、甲冑を訓練する。AC が上がり、防具を着たまま呪文を唱えるのも楽になる。</li>
+<li> 投擲はスキルが高いととてつもなく効く。ジャベリンは静寂に影響されない確実で強力な遠距離攻撃で、一列に並んだ複数のモンスターを貫通する。目標は少なくとも 16.6 くらいにしよう。大岩はたいていの両手武器より強く当たる。スキル 26 で最短の所要時間に達する。石像は投げるのが遅く、ダメージのボーナスも近接攻撃だけなので、投擲には死霊化のほうが向いている。</li>
+<li> 発動は、スキルひとつで多くの使い道をくれる。たとえ使うのが幻影の鏡だけでも、少なくとも 16.6 を目標にする価値はある。</li></ul>
+<h3><span class="mw-headline" id="The_Way_of_the_Warper">転位術師の道</span></h3>
+<p><b><a href="Manifold_Assault.html" title="Manifold Assault">多重攻撃</a></b><br />
+多重攻撃を失敗率 1% で唱えられるまで転位術を訓練する。かなりの投資だ。たぶんスキル 21.1 あたりが必要になる。これで離れたところから近接攻撃ができる。MP をみるみる消費し、徒手格闘では 1 回の詠唱で最大 6 体にしか当たらない(手の柔らかい武器使いなら、その弱さを補うために最大 12 体だ)。だがそれは呪文の威力が高い場合の話で、とてつもない量の知力をさらに見つけ、おまけに<a href="http://crawl.chaosforge.org/Archmagi_(ego)" data-untr="1" title="Archmagi (ego)">大賢者</a>でもない限り、あなたにはまず届かない。たぶん当たるのは 2〜3 体だけだ。というわけで、素手のトロルにとって多重攻撃はもう画面を一掃する呪文ではないが、それでも良い戦術の選択肢だ。たとえば、視界の端にいる拷問の悪魔、ヘリオン、ネクオゼクを手早く片付けるのに使える。打擲型なので、<a href="http://crawl.chaosforge.org/Wall#Iron_Grate" data-untr="1" title="Wall">格子</a>の向こうのモンスターも攻撃できる。
+</p><p><b><a href="http://crawl.chaosforge.org/Dispersal" data-untr="1" title="Dispersal">転送</a></b><br />
+この呪文は隣接するモンスターすべてをテレポートさせようとし、それに失敗しても、意志力が無限のモンスターでさえ瞬間移動で飛ばす。階段の上が混みすぎることって、あるだろう?
+</p>
+<h3><span class="mw-headline" id="The_Way_of_the_Lich">リッチの道</span></h3>
+<p><b><a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a></b><br />
+ゾンビの手が一列に並んだモンスターを締めつけ、回避を下げて、爪がほぼ確実に当たるようにしてくれる。回避の高いモンスターに使うのはもちろん、弱いモンスターを離れたところから倒すのにも使える。投擲との相性がいい。ボーグンジョルの忌まわしき掌握は、炎の球体のような実体のない生き物には効かない。
+</p><p><b><a href="http://crawl.chaosforge.org/Death_Channel" data-untr="1" title="Death Channel">死の霊媒術</a></b><br />
+死の霊媒術は、短命な亡霊の軍勢を与えてくれる。パンデモニウムの君主を倒せるほど大きく強力になることもある。天の嵐との相性がいい。蛇の鞭打ちの凄まじい勢いの最中でも、亡霊の味方と位置を入れ替えられる。死の霊媒術は悪魔には効くが、アンデッドには効かない。
+</p>
+<h3><span class="mw-headline" id="The_Way_of_the_Alchemist">錬金術師の道</span></h3>
+<p><b><a href="Irradiate.html" title="Irradiate">放射の光</a></b><br />
+放射の光は、呪文の威力がそこそこでも、隣接するものすべてに抵抗できない強烈なダメージを与える。影響を受けたモンスターの<a href="http://crawl.chaosforge.org/Hit_dice" data-untr="1" title="Hit dice">HD</a>をある確率で下げ、AC、命中、意志力、呪文の威力を落とすこともある。天の嵐の目の中が混み合ってきたときに、放射の光は光り輝く(ドゥン、チャッ)。
+</p><p>欠点は、魔術的汚染がひどいことだ。2〜3 回続けて唱えるのは、たいてい安全だ。それ以上だと黄色か、赤にまで光る。そうなったら、無力化の薬を飲むか、光が消えるまで死霊化したままでいること。この呪文を最大限に活かすために、妖術を少し訓練するのもためらわなくていい。
+</p><p><b><a href="http://crawl.chaosforge.org/Yara%27s_Violent_Unravelling" data-untr="1" title="Yara&#39;s Violent Unravelling">ヤーラの強制魔法解除術</a></b><br />
+ヤーラの強制魔法解除術は、厄介な召喚されたモンスターを打擲型の爆発で即座に始末する。敵にかかった強化を、HD の低下と抵抗できないダメージに変えることもできる。放射の光に似ているが、離れたところから使えるのだ! ただ、自分が爆発に巻き込まれないように。体に悪い。
+</p><p><b><a href="Detonation_Catalyst.html" title="Detonation Catalyst">爆発の触媒</a></b><br />
+錬金術師の道を選ぶいちばんの理由がこの呪文だ。爆発の触媒は名前のとおり楽しく、爪で爆発を起こせるようになる。爆発はモンスターにだけダメージを与え、強く殴るほどダメージが大きくなる。爆発の触媒は旋風との相性が抜群で、太古の霊廟とコキュートスでとてもよく効く。この強化はモンスターを爪で打ち続けているかぎり続き、戦いをやめるとすぐに終わる。
+</p><p><b><a href="Eringya's_Noxious_Bog.html" title="Eringya&#39;s Noxious Bog">エリンギャの毒沼</a></b><br />
+沼がいちばんダメージを与えるのは、毒に完全な免疫がなく、飛んでもいないモンスターだ。火に免疫がなければ、続けて<a href="Ignite_Poison.html" title="Ignite Poison">毒の燃焼</a>を使おう。残念ながら、エクステンデッドのモンスターの多くは飛んでいて、毒か火か、その両方に免疫がある。目立つ例外は<a href="http://crawl.chaosforge.org/Antaeus" data-untr="1" title="Antaeus">アンテウス</a>と<a href="http://crawl.chaosforge.org/Ereshkigal" data-untr="1" title="Ereshkigal">エレシュキガル</a>だ。とはいえ、あなたの呪文の威力はたぶん大したことがないので、別の効果のほうが興味深いかもしれない。沼は罠を覆うのだ。階段も覆ってしまうことは覚えておくこと。
+</p>
+<h3><span class="mw-headline" id="The_Way_of_the_Mechanist">機工士の道</span></h3>
+<p><b><a href="Forge_Phalanx_Beetle.html" title="Forge Phalanx Beetle">ファランクス甲虫の鍛造</a></b><br />
+カサカサ動く相棒を与えてくれ、ふたつの面で打たれ強さを上げてくれる。甲虫が生きているかぎり AC が上がり、甲虫は常にあなたのそばにいて、攻撃を引き受けたりモンスターに噛みついたりする。あなたほどの頑丈さには遠く及ばないが、かなりよくやってくれる。戦術的に位置を入れ替えることもできる。たとえば甲虫をモンスターとの間に入れて、突進するための空間を作る、などだ。甲虫の上へは壁蹴りできないが、それ以外は動きの邪魔にまったくならない。
+</p><p><b><a href="Fortress_Blast.html" title="Fortress Blast">要塞の爆風</a></b><br />
+要塞の爆風の面白いところは、ダメージが呪文の威力ではなく純粋に AC で決まることだ。石像になり、ファランクス甲虫を連れ、帽子、ケープ、盾、装身具からいくらか AC を足せば、AC 50 以上には簡単に届く。そうなればこの呪文は、特に回避が極端に高いモンスターにとてもよく効く。
+</p>
+<h3><span class="mw-headline" id="The_Way_of_the_Librarian">司書の道</span></h3>
+<p><b><a href="Silence.html" title="Silence">静寂</a></b><br />
+すでに持っている風の魔術に呪術を少し足せば、静寂はかなり手ごろになる。私はこの呪文をあまり使わない。巻物を読むのが好きだし、蛇の鞭打ちが大好きだからだ。エクステンデッドの悪魔たちには、どのみち静寂は効かない。だが、ユニークモンスターやアンデッドを黙らせるのには便利なことがある。いざというときは、無力化の薬で静寂を消せる(静寂を放っているのが自分の場合だけで、モンスターのは消せない)。
+</p><p><b><a href="Enfeeble.html" title="Enfeeble">衰弱</a></b><br />
+本当の狙いはこっちだ。かなりの投資だが、系統はひとつだけ。これでついに、閲覧室でいつもしゃべっているあの鼻持ちならない悪魔どもを黙らせられる。確実に眩暈や盲目にできるわけではないが、そうなればうれしいし、魔力阻害は詠唱を完全に防ぐわけではないものの、危険な魔法の使い手にはとてもよく効く。
+</p>
+<h2><span class="mw-headline" id="Extended_Game">エクステンデッド</span></h2>
+<h3><span class="mw-headline" id="Ziggurats"><a href="http://crawl.chaosforge.org/Ziggurat" data-untr="1" title="Ziggurat">ジグラット</a></span></h3>
+<p>ジグラットはまったくの任意だが、戦利品が山ほどある。まだ大事なものが足りないと感じるなら、パンデモニウムや地獄に飛び込む前にジグラットの上の階を片付けておく価値はたいていある。たとえば特定の耐性の付いたアイテムや、突然変異の薬だ。経験の薬が 1、2 本や、瞬間移動の巻物の追加も見つかるかもしれない。
+</p><p>十分に気をつけること。7 階より、深くても 10 階より下へは行かないのがおすすめだ。天の嵐ならジグラットをまるごと片付けられるが、危険だ。それに意味がない。<a href="http://crawl.chaosforge.org/Mega-Zig" data-untr="1" title="Mega-Zig">メガジグ</a>は、すでにゲームに勝ったあとでスコアを下げたがる攻撃呪文の魔術師のやることだ。あなたはそんなことのために金をもらっているのではない。
+</p>
+<h3><span class="mw-headline" id="Pandemonium"><a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a></span></h3>
+<p>パンデモニウムは地獄よりずっと楽で、アビスほど面倒でもない。だから 5 つめのルーンを取りに行くならここだ。パンデモニウムの階にはいろいろな悪魔が住んでいるので、たぶん耐性を頻繁に付け替えることになる。何でも少しずつ持っていこう。
+</p><p>今いる階でルーンが手に入るときは、ゲームが教えてくれる。ルーンのないパンデモニウムの階を隅々まで探索する必要はない。その階が気に入って経験値を稼ぎたいのでなければ、最初に見つけたポータルに入ればいい。パンデモニウムのルーンを 5 つすべて集めるまでは、アビスに入らないこと。固有のパンデモニウムの君主の領域を、ルーンを取らずに離れると、そのルーンは永遠に失われる。その階には二度と行けない。パンデモニウムの君主を倒さずにルーンを盗むこともできる。とはいえ危険だ。倒すまで、どこへ行っても追いかけてくる。
+</p><p>領域の順番はランダムだ。新しい領域に入ったときのマップ上の位置もランダムだ。安全な場所から始まることもあれば、ルーンが見える場所、それを守るパンデモニウムの君主のすぐ隣に出ることもある。パンデモニウムの君主と戦う前に、階の残りを片付けておくのがおすすめだ。戦いがうまくいかなければ、テレポートし、回復して、もう一度挑めばいい。パンデモニウムの君主はどれも幻影の鏡の良い標的だ。
+</p><p><b>パンデモニウムでの変身の選び方</b><br />
+パンデモニウムのほとんどの階では、正解も不正解もない。石像なら、苦痛のダメージと悪性変異を最小限にするために、視線を慎重に管理して戦術的に戦う必要がある。死霊化なら、<a href="http://crawl.chaosforge.org/Dispel_Undead_Range" data-untr="1" title="Dispel Undead Range">アンデッドの解呪</a>と HP の最大値の吸収を避けるために、視線を慎重に管理して戦術的に戦う必要がある。<a href="Pandemonium.html#The_Shining_One.27s_Fortress" title="Pandemonium">聖なるパンデモニウム</a>には石像を、<a href="Pandemonium.html#The_Glowing_Rune:_Mnoleg.27s_Realm" title="Pandemonium">ムノレグの領域</a>には死霊化をおすすめする。だが逆でもやれる。いつも以上に気をつければいいだけだ。
+</p><p><b>悪魔のルーン</b><br />
+<a href="http://crawl.chaosforge.org/Seraph" data-untr="1" title="Seraph">セラフ</a>か、<a href="Pandemonium_lord.html" title="Pandemonium lord">ランダムなパンデモニウムの君主</a>が守っている。後者は簡単に片付く相手かもしれないし、これまでに出会ったなかで最も危険な敵かもしれない。用心し、臨機応変にやること。調べて能力を確かめよう。
+</p><p><b>炎のルーン、守り手はセレボブ</b><br />
+rF+++ をおすすめする。天の嵐を使わないなら、<a href="http://crawl.chaosforge.org/Cerebov" data-untr="1" title="Cerebov">セレボブ</a>とは、炎の嵐の効き目が落ちる狭い通路か小さな部屋で戦うようにすること。セレボブに殴られると、火への弱さが 1 段階付く。これは避けられないし、耐性の薬でも防げない。最優先は、召喚された魔神に苦痛をかけられる前に倒すことだ。セレボブは回避が低いが、かなりの数の攻撃に耐える。
+</p><p><b>魔法のルーン、守り手はロム・ロボン</b><br />
+rC+++ と rElec+ をおすすめする。<a href="http://crawl.chaosforge.org/Lom_Lobon" data-untr="1" title="Lom Lobon">ロム・ロボン</a>はパンデモニウムの君主にしては打たれ弱いが、好んで瞬間移動で飛び回る。すばやく倒せないと、回復し続ける。竜巻は狭い場所では効き目が落ちる。
+</p><p><b>光るルーン、守り手はムノレグ</b><br />
+突然変異の薬を全部パンデモニウムのために取っておいたのは、このためだ。<a href="http://crawl.chaosforge.org/Mnoleg" data-untr="1" title="Mnoleg">ムノレグ</a>はあなたを悪性変異させ、その領域には悪性変異させてくる悪魔がうようよしている。<a href="Neqoxec.html" title="Neqoxec">ネクオゼク</a>と<a href="Cacodemon.html" title="Cacodemon">混沌の悪鬼</a>がここでは群れでうろついている。やつらの視界にいる時間はできるだけ短くすること。ムノレグは眼球やおぞましいものを呼び出す。群れを制するには、焼き討ちの巻物が何枚かあると助かる。
+</p><p><b>闇のルーン、守り手はグロオルクス・ヴロック</b><br />
+<a href="http://crawl.chaosforge.org/Gloorx_Vloq" data-untr="1" title="Gloorx Vloq">グロオルクス・ヴロック</a>のいちばん危険なところは、苦痛の紋章と<a href="http://crawl.chaosforge.org/Dispel_Undead_Range" data-untr="1" title="Dispel Undead Range">アンデッドの解呪(遠隔)</a>の両方を唱えられることだ。どちらにしても、無理は禁物だ。HP を失いすぎたら、テレポートし、休み、もう一度挑むこと。樹木化はおすすめしない。武術の攻撃には動く必要があるし、樹化は毒素の矢や瘴気のブレスには弱い。
+</p>
+<h3><span class="mw-headline" id="The_Abyss"><a href="The_Abyss.html" title="The Abyss">アビス</a></span></h3>
+<p>5 つめ、4 つめ、あるいは 3 つめのルーンのためにアビスへ飛び込む人もいる。私はアビスがあまり好きではない。良いところは、パンデモニウムから出るのに使えることだ。だから、パンデモニウムからの帰り道にアビスのルーンを取れば、それで十分早い。アビスのルーンのヴォールトには、まだ危険なものもある。アビス:3 かアビス:4 まで下り、ルーンの気配を感じるまでひたすら一方向へ歩き、それをかすめ取って次の出口のポータルに入るのがおすすめだ。パンデモニウムを経験した者なら難しくはないはずなので、慢心には気をつけること。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Wretched_star" data-untr="1" title="Wretched star">哀れなる星</a>は一時的に悪性変異させてくる。モンスターを倒し続けて(経験値を稼いで)、その一時的な変異を消そう。</li>
+<li> <a href="http://crawl.chaosforge.org/Starcursed_mass" data-untr="1" title="Starcursed mass">呪われし群れ</a>は、好んで分裂したり固まったりする。5 体以上がそろって金切り声を上げると、抵抗できずに麻痺させられる。そうなる前に倒すこと。</li>
+<li> 事態が手に負えなくなり始めたら、早めにテレポートすること。アビスではテレポートが遅れる。</li>
+<li> アビスでは、アンブロシアの薬と少しの追加の再生+がとても役に立つ。モンスターが果てしなく湧いてくるので、たいてい戦いの合間に長くは休ませてくれない。</li>
+<li> 雲はほかの雲を防ぐことを思い出そう。<a href="http://crawl.chaosforge.org/Apocalypse_crab" data-untr="1" title="Apocalypse crab">黙示録の蟹</a>と戦わなければならないときは、毒の巻物か煙幕の巻物を読もう。混沌の雲はほとんど無害で、有益ですらあるのだが、突然麻痺させられて殺されるまでの話だ。</li></ul>
+<h3><span class="mw-headline" id="Hell">地獄</span></h3>
+<p><a href="http://crawl.chaosforge.org/The_Vestibule_of_Hell" data-untr="1" title="The Vestibule of Hell">地獄の入り口</a>では大して苦労しないはずだ。どの耐性も役に立つ。群れの相手には天の嵐を使うのがおすすめだ。この階のものはすべて倒すこと。
+</p><p><b>地獄への階段</b><br />
+地獄の各分岐は 7 階まである。上の 6 階は普通より狭く、下り階段は 1 つしかない。階段を下りると HP を吸われたり、ほかの悪い効果を受けたりすることがある。すべてのモンスターを倒す必要はないが、衰弱していたら、次に下りたときにさらに吸われないよう、モンスターを倒して回復しておくのが良い考えだ。
+</p><p>階段のまわりが空いていることを確かめること。囲まれているときや石像のときは、階段を使わないようにすること。上り階段はどれも、入り口へ直接戻る。最後の 7 階目はパンデモニウムに少し似ている。ルーンはそれぞれ固有の地獄の君主が守っている。
+</p>
+<ul><li> 1 回の天の嵐で複数の階を片付けられるかもしれない。嵐を使ったら、最下層まで途切れさせないようにしよう。</li>
+<li> 地獄の階の多くには、<a href="http://crawl.chaosforge.org/Kill_hole" data-untr="1" title="Kill hole">キルホール</a>を掘るのに使える岩の壁がある。</li></ul>
+<p>地獄の 4 つの分岐は、それぞれ特定の耐性を必要とし、そこにいるかぎりあなたの生活を惨めにする、避けられない地獄の効果がある。どの地獄でもいちばん危険なのは苦痛と天罰だ。
+</p>
+<ul><li> <a href="Tormentor.html" title="Tormentor">拷問の悪魔</a>や<a href="http://crawl.chaosforge.org/Hellion" data-untr="1" title="Hellion">ヘリオン</a>の視界に入らないようにするか、すばやく倒すこと。どちらもとても打たれ弱い。</li>
+<li> 拷問の悪魔もヘリオンも透明を見通せない。透明になれば呪文を唱える頻度は下がるが、止められはしない。 </li>
+<li> 残念ながら、<a href="http://crawl.chaosforge.org/Hell_Sentinel" data-untr="1" title="Hell Sentinel">地獄の番人</a>はずっと手強く、透明を見通せる。</li></ul>
+<p><b>天罰への対処</b><br />
+天罰を投げつけてくるモンスターがいる。投げつけるには視線が通っている必要がある。天罰を呼び下ろしてくるものもいる。呼び下ろすほうは打擲型だ。迷ったら、地獄の住人をよく調べること。いずれにせよ、やつらは味方を巻き込むのを避けがちだ。天罰に免疫のないモンスターの隣に立っていれば、地獄の番人やヘリオンが手を控えることがよくある。
+</p><p><b>地獄での変身の選び方</b><br />
+地獄の 4 つの分岐すべてに石像をおすすめする。だが、ここに正解も不正解もない。苦痛を避けるのに苦労しているときや、突然変異の薬を使い果たしたときは、死霊化を使えばいい。もっとも、地獄にはパンデモニウムほど混沌の悪鬼がいないが。
+</p><p><b><a href="http://crawl.chaosforge.org/The_Iron_City_of_Dis" data-untr="1" title="The Iron City of Dis">鉄の都ディース</a></b><br />
+</p>
+<pre>地獄の効果: 腐食(AC と殺戮が -8)
+</pre>
+<p>楽な地獄の分岐はないが、ディースはあなたにとって何とかなるほうだ。少なくとも、ここでは消耗品をすべて使える。鉄の都でいちばん大事なのは AC、SH、rCorr+、そして高いダメージだが、少なくとも rF+ と rC+ も持っていくこと。痛撃や、追加の腕力を身に着けると助けになるかもしれない。ディースのモンスターの多くは重装甲だ。幸い、トラックのように殴るのが、そういう敵へのいちばんの対処法だ。ディースには石像を強くおすすめする。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Caustic_shrike" data-untr="1" title="Caustic shrike">焼酸の百舌</a>には気をつけること。地獄の効果の上にさらに腐食を重ねたくはない。焼酸の百舌には蛇の鞭打ちを使う価値がある。それに、毒に耐性がなく、透明を見通せない。</li>
+<li> <a href="http://crawl.chaosforge.org/Iron_giant" data-untr="1" title="Iron giant">鉄の巨人</a>は、ほかのモンスターをあなたに投げつけてくるのが好きだ。混み合いすぎないよう気をつけること。できれば角の向こうへおびき出したり、引き寄せで引っぱり寄せたりしよう。そうすれば仲間は歩いてこなければならない。</li>
+<li> <a href="Dispater.html" title="Dispater">ディスペータ</a>は AC が山ほどあり、水晶の槍を撃ってくる。HP が少なくなる前に離脱すること。この戦いには反射があるとありがたい。ディスペータは幻影の鏡の格好の標的だ。</li></ul>
+<p><b><a href="http://crawl.chaosforge.org/Tartarus" data-untr="1" title="Tartarus">タルタロス</a></b><br />
+</p>
+<pre>地獄の効果: 意志力が半分になる。
+</pre>
+<p>意志力は、半分になる「前に」Will+++++ で頭打ちになる。だから、タルタロスでは Will++ より上にはなれない。手に入るかぎりの rN と、いくらかの rC を持っていこう。霊視もとても役に立つ。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Ancient_lich" data-untr="1" title="Ancient lich">太古のリッチ</a>が危険なのは、主にレフディブの水晶槍のせいだ。幸い、石像は石化への免疫をくれる。</li>
+<li> 恐怖のリッチには気をつけること。麻痺に抵抗できるとは思わないこと。視線を細心の注意で管理すること。</li>
+<li> 静寂に包まれた場所があれば、近くに<a href="http://crawl.chaosforge.org/Silent_spectre" data-untr="1" title="Silent spectre">静寂の亡霊</a>がいる。できればリッチを静寂の範囲におびき込もう。静寂の亡霊を離れたところから片付けるには、ジャベリンを投げるのがとてもよく効く。</li>
+<li> <a href="http://crawl.chaosforge.org/Doom_hound" data-untr="1" class="mw-redirect" title="Doom hound">忘却の猟犬</a>は、吠える前に倒すようにすること。さもないと苦痛を連発するツィツィミトルに囲まれる。遠吠の状態は無力化の薬で消せる。</li>
+<li> <a href="http://crawl.chaosforge.org/Tzitzimitl" data-untr="1" title="Tzitzimitl">ツィツィミトル</a>は、石像でも死霊化でも同じくらい危険だ。苦痛の紋章とアンデッドの解呪(遠隔)の両方を唱えてくる。</li>
+<li> <a href="http://crawl.chaosforge.org/Ereshkigal" data-untr="1" title="Ereshkigal">エレシュキガル</a>は、ツィツィミトルの仲間を引き連れているので厄介なことがある。彼女を孤立させ、1 対 1 で戦うようにすること。回避は高いが打たれ弱い。石像なら、薬で加速と腕力強化をしておこう。蛇の鞭打ちで一撃で倒せるかもしれない。倒せることを祈ろう。彼女は苦痛を与え、静寂状態にし、麻痺させ、さらに自分を回復させることもできるからだ。ツィツィミトルをすでに片付けたなら、死霊化は良い選択だ。召喚した味方は、あなたが麻痺している間も戦い続けてくれるし、あなたの代わりに麻痺させられることで助けにもなる。  </li></ul>
+<p><b><a href="http://crawl.chaosforge.org/Cocytus" data-untr="1" title="Cocytus">コキュートス</a></b><br />
+</p>
+<pre>地獄の効果: 薬を飲めない。
+</pre>
+<p>rC+++ と飛行を強くおすすめする。再生+ はいつも以上に価値がある。回復する唯一の手段だからだ。コキュートスには深い水脈がたくさんある。それ以外は、かなり素直な分岐だ。死霊化はここでは良い選択になりうる。rC+ が付くし、どのみち薬は飲めないからだ。
+</p>
+<ul><li> 死霊化を使っているなら、<a href="http://crawl.chaosforge.org/Nargun" data-untr="1" title="Nargun">ナーガン</a>のまわりでは十分に気をつけること。近接攻撃で意志力をはぎ取ってくるし、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化</a>を唱えてくる。</li>
+<li> 石像を使っているなら、<a href="http://crawl.chaosforge.org/Ice_Fiend" data-untr="1" title="Ice Fiend">氷の魔神</a>に気をつけること。</li>
+<li> <a href="http://crawl.chaosforge.org/Shard_shrike" data-untr="1" title="Shard shrike">破片の百舌</a>はディースの<a href="http://crawl.chaosforge.org/Caustic_shrike" data-untr="1" title="Caustic shrike">焼酸の百舌</a>ほど厄介ではないが、群れになると危険だ。反射が役に立つ。前もって脆弱の巻物を読むか、発動のスキルが高ければ、魅了できる。</li>
+<li> <a href="Elemental_wellspring.html" title="Elemental wellspring">精霊の源泉</a>を甘く見てはいけない。かなりのダメージを与えてくるし、階段を水浸しにする。</li>
+<li> 回復の薬を飲めないことは常に頭に入れておくこと。雲行きが怪しくなったらすぐに、HP の減りを最小限にするために<a href="http://crawl.chaosforge.org/Kill_hole" data-untr="1" title="Kill hole">キルホール</a>を掘ること。</li>
+<li> <a href="http://crawl.chaosforge.org/Antaeus" data-untr="1" title="Antaeus">アンテウス</a>は毒に耐性がない。クラーレ毒のダーツで減速させよう。彼と戦うときは rElec が必須だ。</li></ul>
+<p><b><a href="Gehenna.html" title="Gehenna">ゲヘナ</a></b><br />
+</p>
+<pre>地獄の効果: 巻物を読めない。
+</pre>
+<p>rF+++ を強くおすすめする。ゲヘナは地獄の分岐のなかで最も危険だと言っていい。ここまで、巻物は命の保険の要だった。ゲヘナの階は比較的楽だが、ときどきひどく厄介な待ち伏せの階に当たる。だからゲヘナは私の回る順番で最後の地獄で、ここで縦穴に落とされるとたいてい喜んでいる。飛ばせる階は多いほどいい。だが慌てることはない。
+</p>
+<ul><li> 突然ゲヘナ版の宝物庫:5 にいることに気づいたら、すぐに天の嵐を使い、スピードの薬を飲み、動けなくならないようにすること。あるいは呪文で抜け出すこと。石像なら、拷問の悪魔を先に倒すこと。</li>
+<li> <a href="Oni_incarcerator.html" title="Oni incarcerator">鬼の看守</a>には気をつけること。動けなくするボーラを投げてくるし、多重攻撃で強く殴ってくる。迷ったら、天の嵐を使ってその両方を避けよう。</li>
+<li> <a href="http://crawl.chaosforge.org/Asmodeus" data-untr="1" title="Asmodeus">アスモデウス</a>は取り立て屋トロルの敵ではない。だが、一緒にいるのが好きな<a href="http://crawl.chaosforge.org/Brimstone_fiend" data-untr="1" class="mw-redirect" title="Brimstone fiend">硫黄の魔神</a>には気をつけること。テレポートで逃げることはできないので、戦いの前に自分を強化しておくこと。仕切り直す必要があれば、ゴルブリアの通り道が救いになるかもしれない。すでに太古の霊廟をやっていれば、<a href="Figurine_of_a_ziggurat.html" title="Figurine of a ziggurat">ジグラットの模型</a>もある。</li></ul>
+<h3><span class="mw-headline" id="The_Tomb_of_the_Ancients">太古の霊廟</span></h3>
+<p><a href="http://crawl.chaosforge.org/The_Tomb" data-untr="1" title="The Tomb">太古の霊廟</a>は死の罠として作られている。ここの階段はすべて一方通行だ。啓示の巻物を 2〜3 枚と、手に入るかぎりの rN と再生+ を持っていくこと。少なくとも太古の霊廟:1 のために、Will++++ もおすすめする。啓示の巻物が 1 枚しかないなら、太古の霊廟:3 のために取っておくこと。煙幕の巻物があるとありがたい。
+</p><p>太古の霊廟でいちばん危険なのは次のものだ。
+</p>
+<ul><li> 苦痛</li>
+<li> 打擲</li>
+<li> 上の階へ逃げるのを妨げる転送の罠</li>
+<li> (召喚されたものに)群がられること</li></ul>
+<p>恐れることはない。そのすべてに確実に対処できる。
+</p><p><b>太古の霊廟を生き延びる</b><br />
+太古の霊廟:1 で<a href="http://crawl.chaosforge.org/Mummy_priest" data-untr="1" title="Mummy priest">司祭のミイラ</a>や<a href="http://crawl.chaosforge.org/Royal_mummy" data-untr="1" title="Royal mummy">王族のミイラ</a>の数体と戦うのは、それほどひどくない。だが太古の霊廟:2 と太古の霊廟:3 では、やつらの軍勢まるごとと向き合うことになる。死霊化と天の嵐の組み合わせなら、そうした大きな戦いもほとんど楽になる。石像でも何とかなるが、より危険だ。死の呪いを大量に食らうのは避けられないので、部分的な苦痛への耐性があっても HP はみるみる減る。落ち着くこと。苦痛は HP が少ないほど与えるダメージが少ないことを思い出そう。あいにく、そうなると今度は打擲が危険になる。金色の嵐の雲がこちらを見られるミイラの数を劇的に減らしてくれていても、だ。
+</p>
+<ul><li> 石像なら、<a href="http://crawl.chaosforge.org/Death_scarab" data-untr="1" title="Death scarab">死の太陽虫</a>やミイラの死の呪いによる鈍足を、スピードの薬で打ち消そう。</li>
+<li> 死霊化は、太陽虫やミイラを含めたアンデッドのモンスターに減速を与える。自分の薬の味を思い知らせてやれ!</li>
+<li> 群がられたら、転位術の呪文か焼き討ちの巻物で空間を取り戻そう。太古の霊廟のモンスターのほとんどは、火にまったく耐性がない。</li>
+<li> 再生+ を追加で持っていなければ、どこかで上の階へ逃げるか、回復の薬を気前よく飲む必要があるかもしれない。</li>
+<li> 悪魔と違って、ミイラには静寂が効く。これは太古の霊廟:1 で数体ずつ相手にするときに限ってすすめる。大きな戦いではおすすめしない。静寂は蛇の鞭打ちを封じてしまうからだ。死霊化なら、どのみち苦痛を使う相手を静寂状態にする必要はない。</li>
+<li> 死霊化を使っているなら、<a href="Bennu.html" title="Bennu">ベンヌ</a>と<a href="http://crawl.chaosforge.org/Ushabti" data-untr="1" title="Ushabti">ウシャブティ</a>を優先して倒すこと。前者は神聖の近接攻撃を持つ。後者はアンデッドの解呪(遠隔)を唱える。呪文の威力は大したことがないが、避けられないダメージで、すぐに積み重なる。</li></ul>
+<p><b>太古の霊廟:1</b><br />
+この階でテレポートを読んではいけない。啓示の巻物を読むと、中央の部屋を囲む分厚い石の壁が、実はつながっていない回廊で、そこにさらに 2 つの一方通行の下り階段があることがわかる。馬蹄形の部分には王族のミイラがうじゃうじゃいる。
+</p><p>マップの外壁に沿って回ろう。内庭への道は<a href="http://crawl.chaosforge.org/Sphinx" data-untr="1" title="Sphinx">スフィンクス</a>の大群が守っている。太古の霊廟で意志力が要るモンスターは、これらだけだ。内側の部屋への門を開ける。中を片付ける前に、ミイラを何体か慎重におびき出すこと。危険だが、これはただの準備運動だ。まだ天の嵐を使う必要はないはずだ。入れる一方通行の下り階段は 1 つしか見つからない。
+</p><p><b>太古の霊廟:2</b><br />
+すぐに啓示を読むこと。2 階目は、中央の開けた空間と、小部屋が並ぶ外側の環でできている。外側の環のつながっていない区画に、太古の霊廟:3 への下り階段が 2 つある。
+</p><p>あなたは中央のどこかに出る。ここで選べる手はいくつかある。
+</p>
+<ul><li> 中央の区画の上り階段は、すでに片付けた太古の霊廟:1 の部分へ戻る。</li>
+<li> 外側の小部屋のどこかに、太古の霊廟:1 の未探索の区画へ通じる上り階段がある。</li></ul>
+<p>馬蹄形の部分を戦いながら抜け、もう一度下りる。今度は太古の霊廟:2 のもう一方の部分へ。そこから階段で太古の霊廟:3 へ下りる。あるいは、太古の霊廟:1 に戻らずに、太古の霊廟:3 へ行ける区画に出ることを祈ってテレポートする。
+</p><p><b>太古の霊廟:3</b><br />
+これが最後の戦いだ。この階を生き延びれば、15 ルーンの勝利はほぼ手中にある。もちろん、地獄を回る前にここへ来たのでなければの話だ。太古の霊廟:3 へ下りる前に自分を強化すること。死霊化を使っているなら、変身を解き、スピードの薬を飲み、それからタリスマンをもう一度発動する。フラックス・ボーブルを使えば数ターン節約できる。
+</p><p>太古の霊廟:3 では、必ず広い回廊の端、2 つの扉が見える場所から始まる。啓示を読む。左右にある楕円形の宝物部屋に注目すること。どちらかの中へできるだけ早く入ること。できれば、上り階段の近くに転送の罠がないほうを選ぶ。回廊で戦い始めてはいけない。瞬間移動、スピード、蛇の鞭打ち、何でも必要なものを使って中に入ること。
+</p><p>天の嵐を使う。ミイラが部屋へ途切れなく流れ込んでくるのが収まるまで、しばらくかかる。
+</p>
+<ul><li> 戦いの流れが悪く、上の階へも逃げられないなら、テレポートして、少し回復するか、もうひとつの階段にたどり着けるだけの小休止を祈ること。</li>
+<li> どこかのモンスターが警報の罠を踏んで、標的状態にされるのは時間の問題だ。わざわざ状態を消さなくていい。</li>
+<li> <a href="Figurine_of_a_ziggurat.html" title="Figurine of a ziggurat">ジグラットの模型</a>から目を離さないこと。宝物部屋のどちらかに必ずあり、発動すれば、比較的安全なジグラット:1 への使い捨ての脱出用ポータルを作れる。使うときは、転送の罠が視界にないことを確かめること。</li></ul>
+<p><b>黄金のルーン</b><br />
+黄金のルーンはたいてい、マップの上側中央という見るからにそれらしい場所にある。ただ、いくつもある小さな石の柱のどれかの中に隠されている地形が少なくとも 1 つある。大きな戦いをせずに盗みたくなるかもしれない。少なくとも抵抗勢力のかなりの部分は片付けておくのがおすすめだ。残っているミイラが少ないほど、太古の霊廟:3 から出るのも楽になる。瞬間移動の巻物が有り余っているなら別だが。
+</p><p>何にせよ、そろそろ遊びはやめて仕事を片付けるころだ。ゾットとオーブのことを覚えているか?
+</p>
+<h2><span class="mw-headline" id="High_Scores">ハイスコア</span></h2>
+<p>このガイドは、エクステンデッドの部分も含めて初心者向けだ。だが、ここまで全部読んで勝ったなら、もう初心者ではない。もう 2、3 歩先へ進むにはどうすればいいか気になる人のために。ここから先は新人の領分を出る。あなたは 15 ルーンで勝った。次は何をする?
+</p><p>取り立て屋トロルでハイスコアを狙うための助言をいくつか。いつものプランで、また 15 ルーン、ただしターン数を減らす。トロル、石像、ウー・ジアンは、少ないターン数でのプレイにとても向いている。ターン数が少ないほどスコアは高くなる。
+</p><p><b>学んだことはすべて忘れろ</b><br />
+いや、本当に忘れなくていい。だが大きなスコアを出すには、安全のための決まりをあちこちで曲げたり破ったりしなければならない。それに、さっき時間とターン数について話したとき、本当のことを全部は言っていなかった。
+</p><p><b>時間とターン数</b><br />
+DCSS にはターンの計数が 2 種類ある。能力値の欄で「時間」と表示されているもの。そしてスコア計算に使われる、隠れた計数だ。<code>E</code> を押すと見られる。
+</p><p>違いは単純だ。「時間」はターンの端数を使い、あなたとモンスターがどれだけ速く動くかを測る。スコア用のターン数は、行動がどれだけ速いか遅いかに関係なく、あなたの行動の回数を数える。いくつか例を挙げよう。
+</p>
+<ul><li> 攻撃のディレイ 0.7 ターンで何かを殴る: 時間は 0.7 増え、ターン数は 1 増える。</li>
+<li> 攻撃のディレイ 1.2 ターンで何かを殴る: 時間は 1.2 増え、ターン数は 1 増える。</li>
+<li> 普通の移動のディレイで一歩進む: 時間は 1.0 増え、ターン数は 1 増える。</li>
+<li> 石像で一歩進む: 時間は 1.5 増え、ターン数は 1 増える。</li>
+<li> 石像で壁蹴りをする: 時間は 3.0 増え、ターン数は 1 増える。</li>
+<li> 蛇の鞭打ちを使い、突進か旋風を 2 回出す: 時間は 0 増え、ターン数は 0 増える。</li></ul>
+<p>すごいだろう? スコア用のターン数で見れば、石像で歩き回るのは、変身していないときに歩き回るのとまったく同じ速さだ。しかも一歩ごとに 1.5 ターン分の HP が再生する。壁蹴りはさらにいい。2 マス移動し、複数の敵を倒せる可能性があり、3 ターン分の HP を再生して、それがすべてスコア上はたった 1 ターンで済む。蛇の鞭打ちは真に一瞬だ。ターンをまったく消費しない。
+</p>
+<h3><span class="mw-headline" id="Low_Turncount">少ないターン数</span></h3>
+<p>慎重にプレイしているかぎり危険ではない、ターン数を減らすためにできることがいくつかある。順不同で挙げる。
+</p>
+<ul><li> 手で探索する。自動探索は効率が悪い。</li>
+<li> 来た道を戻らない。できることなら、探索済みの場所を再び通らない。本当は要らない戦利品や経験値のために、S系の分岐のあとで迷宮へ戻って幽霊を倒したりしない。あちこちに荷物置き場を作るのではなく、必要なものは常に全部持ち歩くようにする、などなど。</li>
+<li> 死霊化より石像を選ぶ。ただし太古の霊廟は別で、そこでは苦痛の連発のせいで石像のほうが休む必要が増えるかもしれない。</li>
+<li> 効率よく戦う。雑魚にタブを連打しない。カンフー・パズルで解いて、より速く倒し、傷を減らし、休む時間を減らす。</li>
+<li> 徒手格闘のスキルが高く、相手の AC が低いなら、旋風のほうが昔ながらの普通の攻撃よりターンあたりのダメージが大きい。aut あたりのダメージは少ないが、大きな数の 80% はやはり大きい。だから、行きたい方向と逆へ進むことになるのでなければ、単体のモンスターにも旋風をもっと使おう。</li>
+<li> 使わない信仰心を溜め込まない。蛇の鞭打ちは非常時専用ではない。手強い戦いに早く勝つための力の上乗せとして使おう。</li>
+<li> 壁蹴りを頻繁に使う。退屈でもかまわないなら、移動にさえ使う。</li>
+<li> 退屈でもかまわないなら、ゴルブリアの通り道を使って歩くターンを減らす。</li></ul>
+<p>これを全部やれば、スコアはかなり上がる。だが本気で少ないターン数を狙うなら、危険を冒す必要がある。
+</p>
+<ul><li> 戦いのたびに休まない。探索したり弱いモンスターと戦ったりしながら回復するようにする。</li>
+<li> すべての階を隅々まで探索しない。</li>
+<li> 探索しながら階を行き来する。歩くより階段を使うほうが、たいてい新しいマスを多く見られる。</li>
+<li> 大きく開けた場所を重点的に回る。マップの端の狭い通路は避ける。一歩あたりに見えるマスが増える。</li>
+<li> 来た道を戻るのが最小になるよう、分岐を回る順番を変える。</li>
+<li> 任意の(ルーンのない)分岐は丸ごと飛ばす。</li></ul>
+<p>ターン数を少なくするための最適な分岐の順番は、そんなものがあるとして、まだ見つけられていない。だがたとえば、迷宮の下層を終える前に S系の分岐をやったり、ゾットの領域に入る前にパンデモニウムへ行ったりはできる。
+</p><p>快適さのために、ときどきは自動探索を使いたいかもしれない。初期設定では、自動探索は探索を再開する前に休む。この挙動は<a href="http://crawl.chaosforge.org/Crawl_options" data-untr="1" title="Crawl options">設定ファイル</a>で変えられる。
+</p>
+<pre>explore_auto_rest = false
+</pre>
+<p><b>ターンが減れば選択肢も減る</b><br />
+戦いのたびに休まないのは明らかに危険だが、トロルの再生と石像のおかげで、それなりに何とかなる。もっと大きな難題がある。探索が少ないほど、見つかるアイテムも少なくなる。消耗品が減る。耐性の付いた装備が減る。店で使う金貨が減る。探索しなかった迷宮:2 のちょっとした隅に、花崗岩のタリスマンが隠れていたのを見逃すことさえあるかもしれない。
+</p><p>得られる経験値も減るが、そちらはそれほど深刻ではない。この wiki でいくつかのモンスターの経験値を調べてみよう。<a href="http://crawl.chaosforge.org/Death_yak" data-untr="1" title="Death yak">人食いヤク</a> 1 頭は、<a href="http://crawl.chaosforge.org/Goblin" data-untr="1" title="Goblin">ゴブリン</a> 872 匹とまったく同じ量の経験値になる。<a href="http://crawl.chaosforge.org/Sigmund" data-untr="1" title="Sigmund">シグムンド</a>のほぼ 4 倍だ。序盤の迷宮を片付けても、経験値はほとんど入らない。
+</p><p>レベルが足りないと感じたら、獣の棲み処:5 は S系の分岐に備えて経験値を蓄えるのにいい場所だ。モンスターがぎっしりいて、エクステンデッドと比べても経験値の効率がいい。<a href="http://crawl.chaosforge.org/Yak" data-untr="1" title="Yak">ヤク</a> 10 頭で<a href="http://crawl.chaosforge.org/Brimstone_fiend" data-untr="1" class="mw-redirect" title="Brimstone fiend">硫黄の魔神</a> 1 体分、<a href="http://crawl.chaosforge.org/Death_yak" data-untr="1" title="Death yak">人食いヤク</a> 1 頭で<a href="Balrug.html" title="Balrug">バルログ</a>のおよそ半分、そして<a href="Black_mamba.html" title="Black mamba">ブラックマンバ</a>は<a href="Tormentor.html" title="Tormentor">拷問の悪魔</a>や<a href="http://crawl.chaosforge.org/Hellion" data-untr="1" title="Hellion">ヘリオン</a>より価値がある。
+</p><p>全体としては、何かを見つける必要がある階にいちばん時間をかけること。主なものは次のとおり。
+</p>
+<ul><li> 諸宗派の寺院は迷宮:4 から迷宮:7 の間にある。</li>
+<li> S系の分岐の入口は獣の棲み処:2 から獣の棲み処:3 の間にある。</li>
+<li> 分岐の最下層には、より多くのモンスター(経験値)、戦利品、<a href="http://crawl.chaosforge.org/Gem" data-untr="1" title="Gem">宝石</a>、ルーンがある。</li></ul>
+<p>花崗岩のタリスマンが見つかるまでは、もう少し念入りに探索するのがおすすめだ。石像が使えるようになったら、もっと積極的に潜っていこう。一方で、花崗岩のタリスマンがいちばん出やすいのは分岐の最下層だ。
+</p><p><b>ガラスの大砲の道</b><br />
+昔ながらのプランのスキルの助言は、ほとんどの階を隅々まで片付ける普通のプレイ向けだ。野心的に少ないターン数を狙うなら、ガラスの大砲に振り切りたいかもしれない。どの階でもかなりの部分を飛ばすと、攻撃と守りの両方を同時に訓練できるだけの経験値はとても稼げない。だから攻撃が先、守りはあと。徒手格闘だけを 21.1 くらいまで訓練する。これで本当に一歩先を行け、普通ならキャラクターのレベルに対して手強すぎるモンスターも倒せるようになる。ただし HP、EV、SH は減るので、ミスや不運で死にやすくもなる。
+</p><p><b>始め方、そして運とスキル</b><br />
+少ないターン数を極限まで突き詰めると、運が支配的な要素になる。スキルだけで世界記録は出せない。だが、乱数が必要なものすべてを道の真ん前に置いてくれなくても、それなりのハイスコアならかなり安定して出せる。
+</p><p>少ないターン数への最初の挑戦で、全力を出す必要はない。私もそうしなかった。まずは戦いのあとに休まないが、探索は全部する、から始めてもいい。あるいは階を一部だけ探索するが、戦いのあとは休む、でもいい。少しずつ慣らしていこう。苦戦しているときはペースを落とす。慢心が顔を出したらアクセルを踏み込む。要は計算されたリスクだ。どんな犠牲を払ってでも(自己)新記録を出すつもりでなければ、少ないターン数のプレイで勝率を落とす必要はない。いつでも手を止め、引き返して経験値とアイテムを増やし、昔ながらの 15 ルーンの勝利を手にして、また別の日に挑めばいい。
+</p><p>スコアを最大にする代わりに、ルーン 3 つで少ないターン数を狙い、できるだけ少ないターンで勝つのもいい。あるいは宝石集めの商売に手を出すのもいい。
+</p>
+<h3><span class="mw-headline" id="Gems">宝石</span></h3>
+<p>0.31 で<a href="http://crawl.chaosforge.org/Gem" data-untr="1" title="Gem">宝石</a>が導入された。時間内に拾ってそのゲームに勝つと、宝石 1 個につき 100,000 点がスコアに加わる。宝石は取っておくのがおすすめだ。どのみち分岐を潜っているなら、追加の手間はかからない。
+</p><p>とはいえ、エルフの大広間を飛ばしたほうが、全体としてはスコアが高くなるかもしれない。15 ルーンで勝つのに行かなくていい宝石の分岐はここだけだ。宝石を探して持ち出すのにかかるターンが、その価値を上回るかもしれない。一方で、まだ花崗岩のタリスマンが見つかっていないなら、エルフの大広間は戦利品だけでも襲撃する価値が十分にある。宝石はうれしい埋め合わせだ。エルフの大広間のどこかに<a href="http://crawl.chaosforge.org/Roxanne" data-untr="1" title="Roxanne">ロクサーヌ</a>がたむろしている可能性もある。
+</p><p>宝石は 1 回のゲームに 11 個ある。<code>}!</code> を押すと一覧が見られる。
+</p><p>宝石の情報は任意だ。表示するには、<a href="http://crawl.chaosforge.org/Crawl_options" data-untr="1" title="Crawl options">設定ファイル</a>に次の 2 行を加える。
+</p>
+<pre>always_show_gems = true
+more_gem_info = true
+</pre>
+<p>宝石の分岐にはそれぞれ専用の時計があり、その分岐の中にいる間だけ進む。分岐から出れば時計は止まる。宝石を拾ったあとも時計は進み続ける。ゼロになると宝石は砕ける。それは心配しなくていい。スコアのボーナスはそれでももらえる。だがもちろん、宝石をひとつも砕かずに済ませれば全体のターン数はかなり少なくなるし、宝石をすべて無傷で持ち帰るとトーナメントのバナーがもらえる。
+</p><p><b>速くやるか、先にオーブを取れ</b><br />
+少ないターン数と宝石集めには、大きな違いがひとつある。石像は宝石には向かない。宝石の時計はスコア用のターンではなく「時間」で進む。石像で一歩進むと、宝石の時計を 1.5 ターン使う。小数点以下は表示されないが、移動のディレイが 1.5 ターンで 2 マス歩くと、宝石の時計は 3 減る。
+</p><p>それでも石像で全部の宝石にたどり着く時間は十分にあり、ハイスコアが主な目的ならそのほうが望ましい。時間に余裕を残して拾っても追加の点はもらえないし、砕けた宝石も無傷の宝石とまったく同じ 100,000 点になる。だが完璧な宝石コレクションが欲しいなら、宝石の分岐は変身せずに、あるいは死霊化で潜ることを考えよう。
+</p><p>スライムの穴ぐらは宝石の時計が特に短い。苦労するようなら、この分岐は最後に回してもいいかもしれない。オーブを持っての脱出のときに、でもいい。
+</p><p>ゾットのオーブを拾うと、宝石の時計はすべて永久に止まる。すでに集めた宝石はもう砕けない。まだ集めていない宝石はそのまま残り、オーブを持っての脱出を面倒にする、ちょっとした寄り道で拾われるのを辛抱強く待っている。パンデモニウムと地獄の固有の君主たちをすでに打ち倒しているなら、手に負えないことではない。
+</p>
+<h2><span class="mw-headline" id="FAQ">よくある質問</span></h2>
+<p><b>スキル目標のあの小数点以下は何なの?</b><br />
+面白いし、見た目に美しいと思うからだ。リーロイ・ジェンキンスに影響されたのかもしれない。何か計算したように見える。していない。だが信じてほしい、あの数字でうまくいく。気に入らなければ、切り上げるなり切り捨てるなりしてほしい。タリスマンは小数点以下のない厳密なスキルの上限を使うので、しぶしぶそれを目標にしている。さらに上を行って、経験値を少し無駄にしてでも常にいちばんふさわしい小数点以下にそろえるなら、敬礼を送ろう。
+</p>
+<h2><span class="mw-headline" id="Afterword">あとがき</span></h2>
+<p>あなたはこのビルドを極めた。何もかもやり遂げた。ルーン 3 つ、15 個。ハイスコアと宝石。まだ成し遂げることは残っているか? たくさんある。
+</p><p>連勝を狙ったり、年 2 回の<a href="http://crawl.chaosforge.org/Tournament" data-untr="1" title="Tournament">DCSS トーナメント</a>の数多くの部門のどれかで競ったりしてもいい。トロルの戦士は簡単な組み合わせだ。ウー・ジアン評議会は、数ある面白い神のひとつにすぎない。
+</p><p>遊ばれるのを待っているビルドは何百とある。そのほとんどはこれより難しい。もちろん、無敵のフェリッドの召喚術師という注目すべき例外はあるが。<a href="Onei's_Velvet-Pawed_Path_to_Immortality_Walkthrough_-_FeSu^Kikubaaqudgha_Jiyva.html" title="Onei&#39;s Velvet-Pawed Path to Immortality Walkthrough - FeSu^Kikubaaqudgha/Jiyva">Onei のもふもふの祭壇</a>で祈ろう。肉球で歩む道を行けば、このゲームが新しい目で見えてくる。
+</p><p>この時点で、ついに防具や武器を、すべてのアイテムを使ってみたいという強い衝動も感じているはずだ。それにすべてのスキルも! 心配はいらない、ごくノールマルなことだ。<a href="http://crawl.chaosforge.org/Git_Gud_Gnoll_Guide" data-untr="1" title="Git Gud Gnoll Guide">腕を磨け! ノールのガイド</a>の見習いノールになろう。所持品管理の技を極めれば、どんな組み合わせでも極められるようになる。
+</p><p>開発チームが版ごとに新しい要素を加え続けているので、DCSS には楽しくて新しい発見がいつもある。自分だけのビルドを考えて、wiki にガイドを書いてみてほしい。必ず読ませてもらう。
+</p><p>幸運を、そして楽しいクロールを。
+</p>
+<h2><span class="mw-headline" id="Credentials">実績</span></h2>
+<p><b>トロルの戦士の勝率</b><br />
+74% (26/35) <a rel="nofollow" class="external text" href="https://dcss-stats.vercel.app/players/RepoMan">(DCSS の統計)</a>
+</p><p><b>トロルと戦士のトーナメントでのハイスコア</b>
+</p>
+<ul><li> 0.30 トーナメント: 31,913,153 <a rel="nofollow" class="external text" href="https://crawl.develz.org/tournament/0.30/combo-scoreboard.html">(スコアボード)</a> <a rel="nofollow" class="external text" href="https://underhound.eu/crawl/morgue/RepoMan/morgue-RepoMan-20230507-174244.txt">(モルグファイル)</a></li>
+<li> 0.31 トーナメント: 44,309,516 <a rel="nofollow" class="external text" href="https://crawl.develz.org/tournament/0.31/combo-scoreboard.html">(スコアボード)</a> <a rel="nofollow" class="external text" href="https://underhound.eu/crawl/morgue/RepoMan/morgue-RepoMan-20240123-213953.txt">(モルグファイル)</a></li>
+<li> 0.32 トーナメント: 52,678,567 <a rel="nofollow" class="external text" href="https://crawl.develz.org/tournament/0.32/combo-scoreboard.html">(スコアボード)</a> <a rel="nofollow" class="external text" href="https://underhound.eu/crawl/morgue/RepoMan/morgue-RepoMan-20240902-151319.txt">(モルグファイル)</a></li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

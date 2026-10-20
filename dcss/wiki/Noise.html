@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>騒音 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="騒音(Noise)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>騒音 <span class="en">Noise</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Noise">Noise</a>」(0.33 向け、2025-05-05 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Noise&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p>ダンジョンの<b>騒音</b>は、<a href="Sleep.html" title="Sleep">眠っている</a>モンスターを起こしてしまう。音を聞きつけたモンスターは、たいていその方向へ寄ってくる。戦いを始めると、何の騒ぎかとあちこちからモンスターが集まってきて、囲まれてしまうこともある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Noise_meter"><span class="tocnumber">1</span> <span class="toctext">騒音メーター</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Noise_propagation"><span class="tocnumber">2</span> <span class="toctext">騒音の伝わり方</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Ambient_noise"><span class="tocnumber">3</span> <span class="toctext">環境音</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Sources_of_noise"><span class="tocnumber">4</span> <span class="toctext">騒音の発生源</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Melee_combat"><span class="tocnumber">4.1</span> <span class="toctext">近接戦闘</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Ranged_combat"><span class="tocnumber">4.2</span> <span class="toctext">遠距離戦闘</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Spell_noise"><span class="tocnumber">4.3</span> <span class="toctext">呪文の騒音</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Player_shouts"><span class="tocnumber">4.4</span> <span class="toctext">プレイヤーの叫び声</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Other_sources"><span class="tocnumber">4.5</span> <span class="toctext">その他の発生源</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Noise_meter">騒音メーター</span></h2>
+<p>初期設定では、画面右上の情報パネルに騒音メーターが表示される。バーの色と長さは、そのターンにプレイヤーのいるマスで聞こえた騒音の、いちばん大きな音量を表している。そのため、プレイヤー自身が立てた音はたいてい最大の音量のままメーターに出るが、数マス離れたところで鳴った音は、その効果の最大音量ではなく、プレイヤーに届いた音量で表示される。
+</p><p>メーターの色と音量の対応は次のとおり。
+</p>
+<ul><li><b>白: 0〜6</b>: この音量の騒音は、プレイヤーの<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外まではあまり届かない。近接攻撃や遠距離攻撃のほとんどと、低レベルの呪文がここに入る。</li>
+<li><b>黄: 7〜13</b>: この音量の騒音は、プレイヤーの<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外からもモンスターを呼び寄せる。ダメージの大きい近接攻撃や遠距離攻撃、叫び声、中レベルの呪文の多くがここに入る。</li>
+<li><b>赤: 14〜29</b>: 大きな音で、今いる階のかなりの範囲のモンスターを起こして呼び寄せる。爆発する効果はたいていここに入る。</li>
+<li><b>マゼンタ: 30以上</b>: ダンジョンで最もやかましい音で、その階のほぼすべてを起こしてしまう。ここに入るのは<a href="Shatter.html" title="Shatter">粉砕</a>、<a href="Alarm_trap.html" title="Alarm trap">警報の罠</a>など、とりわけ音の大きいごく一部の効果だけだ。</li></ul>
+<h2><span class="mw-headline" id="Noise_propagation">騒音の伝わり方</span></h2>
+<p>ある地点で音の出る行動が起きると、騒音はとなりのマスすべてに伝わっていく。1マス進むたびに音の強さは減衰する。強さが1を下回ると、その騒音は聞こえなくなり、それ以上は伝わらない。
+</p><p>減衰の大きさは次の要素で決まる。
+</p>
+<ul><li> マスの種類:</li></ul>
+<table class="prettytable" style=" text-align:left">
+<tr>
+<th> マスの種類 </th>
+<th> 減衰
+</th></tr>
+<tr>
+<td> 何もないマス </td>
+<td> -0.85
+</td></tr>
+<tr>
+<td> 彫像・偶像 </td>
+<td> -1.70
+</td></tr>
+<tr>
+<td> 樹木・マングローブ </td>
+<td> -2.55
+</td></tr>
+<tr>
+<td> 閉ざされた扉 </td>
+<td> -6.80
+</td></tr>
+<tr>
+<td> 壁 </td>
+<td> -10.20
+</td></tr>
+<tr>
+<td> 壊せない壁 </td>
+<td> -無限大
+</td></tr></table>
+<p>つまり、開けた場所では騒音が届く範囲の半径は「音量/0.85 = 音量×1.176」になる。
+</p>
+<h2><span class="mw-headline" id="Ambient_noise">環境音</span></h2>
+<p>周りが騒がしいと、音は聞こえにくくなる。ゲームではこれを、分岐ごとに決まった値を<i>音量</i>に足したり引いたりすることで表している。実際の音量は次のとおり。
+</p>
+<pre>effective_loudness = loudness - sgn(ambient_noise)×{3d(abs(ambient_noise))/3 - 1}
+</pre>
+<p><a href="http://crawl.chaosforge.org/Swamp" data-untr="1" class="mw-redirect" title="Swamp">沼</a>、<a href="http://crawl.chaosforge.org/Shoals" data-untr="1" class="mw-redirect" title="Shoals">浅瀬</a>、<a href="http://crawl.chaosforge.org/Desolation_of_Salt" data-untr="1" title="Desolation of Salt">塩の荒野</a>は騒がしく、環境音は +6。<a href="http://crawl.chaosforge.org/Crypt" data-untr="1" class="mw-redirect" title="Crypt">地下墓地</a>、<a href="http://crawl.chaosforge.org/Tomb_of_the_Ancients" data-untr="1" class="mw-redirect" title="Tomb of the Ancients">太古の霊廟</a>、<a href="http://crawl.chaosforge.org/Slime_Pits" data-untr="1" class="mw-redirect" title="Slime Pits">スライムの穴ぐら</a>は静かで、環境音は -6。それ以外の分岐の環境音は 0 だ。
+</p><p>この効果はそれなりに大きいが、劇的というほどではない。騒がしい分岐では叫び声もあまり遠くまで届かない。逆に静かな分岐では、攻撃のようなふだんは小さな音でも、モンスターを引き寄せてしまうことがある。
+</p>
+<h2><span class="mw-headline" id="Sources_of_noise">騒音の発生源</span></h2>
+<h3><span class="mw-headline" id="Melee_combat">近接戦闘</span></h3>
+<p>急所攻撃が決まったときは、いつも無音だ。それ以外の場合、音量は与えたダメージの4分の1(端数切り捨て)になる。ただし最小は1、最大は12(プレイヤーのふつうの叫び声の音量)だ。
+</p>
+<h3><span class="mw-headline" id="Ranged_combat">遠距離戦闘</span></h3>
+<p>矢弾を撃ったり投げたりすると、射撃武器と矢弾の2か所から音が出る。射撃武器を使う者や投げる者の位置では音量5の音が出る。ただし<a href="http://crawl.chaosforge.org/Hand_cannon" data-untr="1" title="Hand cannon">ハンドキャノン</a>だけは音量10だ。矢弾の音量は与えたダメージの4分の1で、常に矢弾が最後に止まった位置で鳴る。最小1、最大12なのは近接戦闘と同じだ。
+</p>
+<h3><span class="mw-headline" id="Spell_noise">呪文の騒音</span></h3>
+<p><a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>を参照。
+</p>
+<h3><span class="mw-headline" id="Player_shouts">プレイヤーの叫び声</span></h3>
+<p><a href="http://crawl.chaosforge.org/Form" data-untr="1" class="mw-redirect" title="Form">変身</a>によって叫び声の音量が変わる。
+</p>
+<ul><li><a href="Bat_Form.html" title="Bat Form">コウモリ</a>、<a href="http://crawl.chaosforge.org/Vampire_Form" data-untr="1" class="mw-redirect" title="Vampire Form">コウモリ群</a>、<a href="Fungus_Form.html" title="Fungus Form">茸化</a>、<a href="http://crawl.chaosforge.org/Wisp_Form" data-untr="1" title="Wisp Form">霧化</a>に変身中の叫び声は音量4</li>
+<li><a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛</a>、<a href="http://crawl.chaosforge.org/Scarab_Form" data-untr="1" class="mw-redirect" title="Scarab Form">スカラベ</a>に変身中の叫び声は音量8</li>
+<li><a href="http://crawl.chaosforge.org/Walking_Scroll_Form" data-untr="1" class="mw-redirect" title="Walking Scroll Form">巻物</a>、<a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a>に変身中の叫び声は音量10</li>
+<li><a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>中の叫び声は音量18</li>
+<li>どの種族でも、ほかの変身中でも、叫び声は音量12。</li></ul>
+<p>さらに、<a href="http://crawl.chaosforge.org/Scream" data-untr="1" title="Scream">叫び</a>の変異が1段階あるごとに音量が2増える。
+</p>
+<h3><span class="mw-headline" id="Other_sources">その他の発生源</span></h3>
+<ul><li>信仰心が ****** の<a href="http://crawl.chaosforge.org/Qazlal" data-untr="1" class="mw-redirect" title="Qazlal">クァズラル</a>の信者: 16</li>
+<li><a href="http://crawl.chaosforge.org/Scroll_of_noise" data-untr="1" title="Scroll of noise">騒音の巻物</a>: 25</li>
+<li><a href="http://crawl.chaosforge.org/Singing_Sword" data-untr="1" title="Singing Sword">謳う剣</a>: <a href="http://crawl.chaosforge.org/Tension" data-untr="1" title="Tension">緊張度</a>に応じて 0〜35</li>
+<li><a href="http://crawl.chaosforge.org/Shield_of_the_Gong" data-untr="1" class="mw-redirect" title="Shield of the Gong">銅鑼の盾</a>で攻撃を防いだとき: 40</li>
+<li>モンスターの叫び声</li>
+<li><a href="http://crawl.chaosforge.org/Spell_slot_flag" data-untr="1" title="Spell slot flag">騒音フラグ</a>の付いたモンスターの呪文</li>
+<li>軋む扉: 10(確率は 1/<code>8 + 4 * <a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">Stealth</a> / 3</code>。「扉はやかましく軋みながら開いた!」/「閉まった!」)</li>
+<li><a href="Alarm_trap.html" title="Alarm trap">警報の罠</a>: 40</li>
+<li><a href="http://crawl.chaosforge.org/Horn_of_Geryon" data-untr="1" title="Horn of Geryon">ゲリュオンの角笛</a>を使ったとき: 15</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> より前は、騒音メーターの代わりにプレイヤーの<a href="Gold.html" title="Gold">金貨</a>が表示されていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、分岐ごとの環境音がもっと込み入っていた。獣の棲み処の環境音は4、オークの坑道は3だった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、地下墓地の環境音は -20 だった。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

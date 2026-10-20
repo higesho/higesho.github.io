@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>回避 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="回避(Evasion)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>回避 <span class="en">Evasion</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Evasion">Evasion</a>」(0.33 向け、2026-09-29 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Evasion&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><i>このページはキャラクターの能力値についての記事だ。ブランドについては<a href="http://crawl.chaosforge.org/Evasion_(brand)" data-untr="1" title="Evasion (brand)">回避(ブランド)</a>の記事を参照。</i>
+</p><p><b>回避</b>(よく <b>EV</b> と略される)は、キャラクターや<a href="Monster.html" title="Monster">モンスター</a>が近接攻撃、射撃、魔法のビームをかわす能力を表す数値だ。攻撃の当たり外れを決めるときは、対象のその時点の EV でダイスを振り、攻撃側の<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>のダイスと比べる。このとき、状況による補正があればそれも加味する。命中のダイスが EV のダイスと同じか上回ったときだけ、攻撃は当たる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Player_EV"><span class="tocnumber">1</span> <span class="toctext">プレイヤーの EV</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Base_EV"><span class="tocnumber">1.1</span> <span class="toctext">基本の EV</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Disabled"><span class="tocnumber">1.2</span> <span class="toctext">身動きできないとき</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Dodging"><span class="tocnumber">1.3</span> <span class="toctext">躱し身</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Armour_and_shield_EV_penalties"><span class="tocnumber">1.4</span> <span class="toctext">防具と盾による EV の減少</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Modifiers"><span class="tocnumber">1.5</span> <span class="toctext">補正</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Final_situational_modifiers"><span class="tocnumber">1.6</span> <span class="toctext">最後にかかる状況による補正</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Monster_EV"><span class="tocnumber">2</span> <span class="toctext">モンスターの EV</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#To-hit_versus_EV"><span class="tocnumber">3</span> <span class="toctext">命中と EV</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Player_EV">プレイヤーの EV</span></h2>
+<p>キャラクターの EV の合計を求める計算は込み入っていて、さまざまなスキルや能力値が関わってくる。
+</p>
+<h3><span class="mw-headline" id="Base_EV">基本の EV</span></h3>
+<p>プレイヤーの基本の EV は次のように計算する。
+</p>
+<pre> 10 + size_factor
+</pre>
+<p>「体格の係数」(size_factor)は<a href="Species.html" title="Species">種族</a>の<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>で決まる。中くらいの体格で 0 になり、そこから体格が 1 段階小さくなるごとに 2 ずつ増える。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<table class="prettytable">
+<tr>
+<th> 体格 </th>
+<th> 種族 </th>
+<th> 体格の係数
+</th></tr>
+<tr>
+<td> とても小さい </td>
+<td> <a href="Spriggan.html" title="Spriggan">スプリガン</a>、<a href="Felid.html" title="Felid">フェリッド</a> </td>
+<td> +4
+</td></tr>
+<tr>
+<td> 小さい </td>
+<td> <a href="Kobold.html" title="Kobold">コボルド</a> </td>
+<td> +2
+</td></tr>
+<tr>
+<td> 中くらい </td>
+<td> ほかのすべての種族 </td>
+<td> 0
+</td></tr>
+<tr>
+<td> 大きい<br />大きい(胴体は通常の大きさ) </td>
+<td> <a href="Troll.html" title="Troll">トロル</a>、<a href="Oni.html" title="Oni">鬼</a><br /><a href="Armataur.html" title="Armataur">アルマタウル</a>、<a href="Naga.html" title="Naga">ナーガ</a> </td>
+<td> -2
+</td></tr></table>
+<p>一部の変身は、種族による体格の係数を上書きする。
+</p>
+<table class="prettytable">
+<tr>
+<th> 体格 </th>
+<th> 変身 </th>
+<th> 体格の係数
+</th></tr>
+<tr>
+<td> 極小 </td>
+<td> <a href="Bat_Form.html" title="Bat Form">コウモリ</a>、<a href="http://crawl.chaosforge.org/Wisp_Form" data-untr="1" title="Wisp Form">霧化</a>、<a href="Fungus_Form.html" title="Fungus Form">茸化</a> </td>
+<td> +6
+</td></tr>
+<tr>
+<td> 小さい </td>
+<td> <a href="http://crawl.chaosforge.org/Pig_Form" data-untr="1" title="Pig Form">豚化</a> </td>
+<td> +2
+</td></tr>
+<tr>
+<td> 大きい </td>
+<td> <a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a> </td>
+<td> -2
+</td></tr>
+<tr>
+<td> 巨大 </td>
+<td> <a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a> </td>
+<td> -4
+</td></tr>
+</table>
+<h3><span class="mw-headline" id="Disabled">身動きできないとき</span></h3>
+<p>麻痺しているとき、石化しているとき、<a href="Tree_Form.html" class="mw-redirect" title="Tree form">樹化</a>しているときは、EV が次の値まで下がる。
+</p>
+<pre> 2 + size_factor/2 (最低 1 EV)
+</pre>
+<p>ほかの要素は一切かからない。ただし、通常の EV のほうがこの値より低いときは、低いほうが使われる。
+</p>
+<h3><span class="mw-headline" id="Dodging">躱し身</span></h3>
+<p><a href="Dodging.html" title="Dodging">躱し身</a>のスキルは、EV に次のボーナスを与える。
+</p>
+<pre>dodge_bonus = (8 + Dodging × Dex × 0.8) / (20 - size)
+armor_penalty = unadjusted_armor_encumbrance - 3
+if armor_penalty &lt; 0:
+    modifier = 1
+if armor_penalty &gt; 0:
+    if armor_penalty &gt;= Str:
+        modifier = Str / (armor_penalty * 2)
+    if armor_penalty &lt; Str:
+        modifier = 1 - armor_penalty / (Str * 2)
+final_dodge_bonus = dodge_bonus * modifier
+</pre>
+<h3><span class="mw-headline" id="Armour_and_shield_EV_penalties">防具と盾による EV の減少</span></h3>
+<p>基本の EV と躱し身のボーナスを足したあと、防具と盾による EV の直接の減少を差し引く。下に挙げる防具にはそれぞれ「重さの値」(encumbrance rating)があり、これを EV の減少に換算する(換算の式は種類ごとに違う)。
+</p>
+<ul><li><a href="Barding.html" title="Barding">馬甲</a>: -2 EV</li>
+<li><a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>: <code>-1/225 * encumbrance^2 * (90 - 2 × armour_skill) / (str + 3)</code></li>
+<li><a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>: <code>-2/5 * encumbrance^2 / (str + 5) * ((27 - shield_skill) / 27)</code></li></ul>
+<h3><span class="mw-headline" id="Modifiers">補正</span></h3>
+<p>EV はさまざまな効果で増減する。これらは上の計算を終えたあとの EV の合計に直接加わり、次の順番で計算される。
+</p><p>「永続的な」効果:
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Ring_of_evasion" data-untr="1" title="Ring of evasion">躱し身の指輪</a>は、その値どおりのボーナスかペナルティ(ふつうは +5)を EV に与える。躱し身の指輪を基にした<a href="Randart.html" title="Randart">ランダムアーティファクト</a>も同じだ。</li>
+<li>一部の<a href="List_of_unrands.html" title="List of unrands">固定アーティファクト</a>は、EV にボーナスかペナルティを与える。</li>
+<li><a href="http://crawl.chaosforge.org/Repulsion_Field" data-untr="1" title="Repulsion Field">斥力場</a>と<a href="http://crawl.chaosforge.org/Gelatinous_Body" data-untr="1" title="Gelatinous Body">ゼラチン状の体</a>は、そのレベルに応じたボーナスを与える。</li>
+<li><a href="Ru.html" title="Ru">ルー</a>の信者で、EV を下げる健常の犠牲を捧げた者は、犠牲 1 つにつき -5 のペナルティを受ける。</li>
+<li><a href="Tengu.html" title="Tengu">天狗</a>はレベル 7 になると EV に +4 のボーナスを得る。</li></ul>
+<p>倍率:<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>に変身中: -20% EV</li>
+<li><a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">絡めとられている</a>か<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化中</a>: -50% EV(重ねがけにはならない)</li>
+<li>水のマスの中か上にいる<a href="Merfolk.html" title="Merfolk">水棲の民</a>: +25% EV(最低でも +2)</li></ul>
+<p>状態:
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Vertigo" data-untr="1" title="Vertigo">酩酊</a>: -5 EV</li>
+<li><a href="Constriction.html" title="Constriction">締めつけ</a>(<a href="http://crawl.chaosforge.org/Grasping_Roots" data-untr="1" title="Grasping Roots">絡まる木の根</a>によるものを含む): -10 EV</li>
+<li><a href="http://crawl.chaosforge.org/Agility" data-untr="1" title="Agility">器用強化</a>: +5 EV</li>
+<li><a href="http://crawl.chaosforge.org/Repulsion" data-untr="1" class="mw-redirect" title="Repulsion">反発</a>: 飛び道具に対して +15 EV</li>
+<li><a href="http://crawl.chaosforge.org/Acrobat" data-untr="1" class="mw-redirect" title="Acrobat">軽業</a>の特性: 直前の行動が移動か待機なら +15 EV</li></ul>
+<h3><span class="mw-headline" id="Final_situational_modifiers">最後にかかる状況による補正</span></h3>
+<p>近接攻撃に対して:
+</p>
+<ul><li>攻撃してくる相手が見えないとき(つまり相手が<a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>で、あなたに<a href="http://crawl.chaosforge.org/See_invisible" data-untr="1" title="See invisible">霊視</a>がないとき)は、その相手に対して EV に -10 のペナルティを受ける。</li>
+<li><a href="http://crawl.chaosforge.org/Stairs" data-untr="1" title="Stairs">階段</a>を下りようとしているところを攻撃されると、EV に -5 のペナルティを受ける。</li></ul>
+<h2><span class="mw-headline" id="Monster_EV">モンスターの EV</span></h2>
+<p>モンスターの基本の EV は、モンスターの種類ごとに決まった固定の値だ。この値は防具や装身具、さまざまな状態によって変わる。
+</p>
+<h2><span class="mw-headline" id="To-hit_versus_EV">命中と EV</span></h2>
+<p>攻撃の<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>値が 1500(マジックナンバー AUTOMATIC_HIT)以上なら(<a href="http://crawl.chaosforge.org/Magic_Dart" data-untr="1" title="Magic Dart">魔法の矢</a>など)、攻撃は必ず当たる。
+</p><p>それ以外のときは、次の手順で判定する。
+</p>
+<ul><li>2.5% の確率で、攻撃の命中値や防御側の EV に関係なく攻撃は外れる。</li>
+<li>2.5% の確率で、攻撃の命中値や防御側の EV に関係なく攻撃は当たる。</li>
+<li>0 から命中値まで(両端を含む)の一様乱数を 1 つ作る。</li>
+<li>0 から ((2 * (対象の EV)) - 1) まで(両端を含む)の一様乱数を 2 つ作り、その平均をとる。</li>
+<li>命中のダイスが EV のダイス以上なら攻撃は当たり、そうでなければ外れる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.32.html" title="0.32">0.32</a> より前は、プレイヤーの EV にかかる倍率は一時的な補正のあとに適用されていた。また、麻痺や不器用のような効果で、「身動きできないとき」の EV のほうが今の EV より高ければ、かえって EV が上がることがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、30 を超える EV に逓減がかかっていた。<code>adj_EV = 10 + 20 * log(1 + (EV-10)/20log2)</code>。躱し身のボーナスを計算するときの<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>にも逓減がかかっていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、<a href="http://crawl.chaosforge.org/Potion_of_agility" data-untr="1" title="Potion of agility">器用さの薬</a>で手軽に EV を上げられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、一部の射撃武器に<a href="http://crawl.chaosforge.org/Evasion_(brand)" data-untr="1" title="Evasion (brand)">回避</a>のブランドがつくことがあり、EV に +5 のボーナスを与えた。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、飛んでいる天狗と泳いでいる水棲の民の EV のボーナスは +9 が上限だった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/player.cc#L1999">player.cc:1999</a> (0.31.0)<br />体格は <a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/size-type.h#L4">size-type.h:4</a> (0.31.0) で小さい順に並んでいる。</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.33.0/crawl-ref/source/player.cc#L1924">player.cc:1924</a> (0.33.0)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

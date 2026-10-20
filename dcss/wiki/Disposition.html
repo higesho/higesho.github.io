@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>態度 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="態度(Disposition)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>態度 <span class="en">Disposition</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Disposition">Disposition</a>」(0.33 向け、2025-11-17 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Disposition&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p>Crawl のモンスターは、プレイヤーに対して4種類の<b>態度</b>(disposition。<b>attitude</b> とも言う)のどれかをとる。
+</p>
+<ul><li>敵対(<a href="http://crawl.chaosforge.org/Source_code" data-untr="1" title="Source code">ソースコード</a>では <code>ATT_HOSTILE</code>)</li>
+<li>中立(<code>ATT_NEUTRAL</code>)</li>
+<li>平和的(<code>ATT_GOOD_NEUTRAL</code>)</li>
+<li>味方(<code>ATT_FRIENDLY</code>)</li></ul>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Hostile"><span class="tocnumber">1</span> <span class="toctext">敵対</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Neutral"><span class="tocnumber">2</span> <span class="toctext">中立</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Frenzied"><span class="tocnumber">2.1</span> <span class="toctext">狂乱</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Peaceful"><span class="tocnumber">3</span> <span class="toctext">平和的</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Allied"><span class="tocnumber">4</span> <span class="toctext">味方</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Limitations"><span class="tocnumber">4.1</span> <span class="toctext">制約</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Fellow_Slime"><span class="tocnumber">4.2</span> <span class="toctext">同胞のスライム</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Hostile">敵対</span></h2>
+<p>敵対的なモンスターはプレイヤーを積極的に追いかけ、呪文でも能力でも近接攻撃でも射撃武器でも、とにかく持っている手段で殺しにくる。敵対的なモンスター同士はふつう攻撃し合わない。ただし、プレイヤーのところへたどり着こうとして植物を壊すことはあるし、複数の相手を巻き込む呪文を見境なく使うモンスターもいる。
+</p><p>ゲームに出てくるモンスターは、もともとすべて敵対的だ。これを変える手段はいくつかある。<a href="http://crawl.chaosforge.org/Plant" data-untr="1" title="Plant">植物</a>のように、プレイヤーを傷つける手段をまったく持たないモンスターでも「敵対」として扱われる。
+</p>
+<h2><span class="mw-headline" id="Neutral">中立</span></h2>
+<p>中立の(無関心な)モンスターは、とくにプレイヤーを殺そうとはしない。追いかけてこないし、遠隔攻撃も使わない。それでも、行く手をふさぐものがあれば、プレイヤーでもほかのモンスターでも植物でも、何であれ近接攻撃する。こうしたモンスターを攻撃するには専用の攻撃コマンド(<b>Ctrl-方向キー</b>か <b>v</b>)を使う必要がある。<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>になることもあるが、相手は確実に敵対的になる。
+</p><p><a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の力でおとなしくなったモンスターは中立になり、いちばん近い階段を探してその階から去ろうとする。<a href="http://crawl.chaosforge.org/Lugonu" data-untr="1" title="Lugonu">ルゴヌ</a>の能力「階層の崩壊」で出てくるモンスターも中立だ。また、中立のモンスターがいる既製の<a href="Vault.html" title="Vault">ヴォールト</a>もいくつかある(かなり珍しいが)。
+</p>
+<h3><span class="mw-headline" id="Frenzied">狂乱</span></h3>
+<p>狂乱は、<a href="http://crawl.chaosforge.org/Frenzy" data-untr="1" title="Frenzy">凶暴化</a>の状態によって起こる。狂乱したモンスターは、敵味方を問わず、見えるうちでいちばん近いものを積極的に襲う。
+</p>
+<h2><span class="mw-headline" id="Peaceful">平和的</span></h2>
+<p>平和的なモンスターはプレイヤーに好意的だが、仲間ではない。プレイヤーを攻撃することはなく、そのマスへ移動しようとすると単に場所を入れ替わる。あちこち歩き回って敵対的なモンスターを倒そうとし、そのためには持っている能力を何でも使う。特定のモンスターを攻撃するよう命令することはできず、プレイヤーについてくることもない。
+</p><p>平和的な態度はかなり珍しい。<a href="http://crawl.chaosforge.org/Fedhas" data-untr="1" class="mw-redirect" title="Fedhas">フェダス</a>はすべての植物を平和的にする。<a href="Kirke.html" title="Kirke">キルケー</a>を倒すと、彼女の豚たちは平和的な人間に戻る。ヴォールトで平和的なモンスターが出てくることもある。
+</p>
+<h2><span class="mw-headline" id="Allied">味方</span></h2>
+<p>味方のモンスターは、ほかのローグライクでいう「ペット」にいちばん近い。プレイヤーについてきて、自分の身の安全はあまり気にせず、プレイヤーの敵を勝手に攻撃する。簡単な命令をいくつか出せる。「この場所を守れ」(近くにとどまり、届く範囲の敵を攻撃する)、「ついてこい」、「退却!」、「(特定の相手を)攻撃!」、「攻撃やめ」だ。仲間1体だけに命令することはできず、<a href="http://crawl.chaosforge.org/LOS" data-untr="1" class="mw-redirect" title="LOS">視界</a>にいる仲間全員に出すか、誰にも出さないかのどちらかになる。
+</p><p>ずっと一緒にいる仲間はとても少なく、神から授かるものに限られる(<a href="Beogh.html" title="Beogh">ベオ</a>のオーク、<a href="Hepliaklqana.html" title="Hepliaklqana">ヘプリアクルカナ</a>の祖霊、<a href="Yredelemnul.html" title="Yredelemnul">イレデレンヌル</a>の呪縛された魂など)。一方、一時的な仲間はかなりよく見かける。呪文、とくに<a href="http://crawl.chaosforge.org/Summonings" data-untr="1" title="Summonings">召喚術</a>、<a href="Necromancy.html" title="Necromancy">死霊術</a>、<a href="Forgecraft.html" title="Forgecraft">鍛造術</a>の系統の呪文や、多くの神の能力で作り出せる。<a href="http://crawl.chaosforge.org/Wand_of_charming" data-untr="1" title="Wand of charming">魅了のワンド</a>を使えば、1体を一時的に味方へ引き込める。
+</p><p>味方のモンスターが敵を倒すと、自分で倒したときと同じく、経験値を100%得られる。
+</p>
+<h3><span class="mw-headline" id="Limitations">制約</span></h3>
+<p>味方のモンスターの多くには(すべてではないが)次の制約がある。
+</p>
+<ul><li>あなたの<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外にいるモンスターは攻撃できない。また、仲間自身があなたの視界の外にいるときも攻撃できない。</li>
+<li><a href="http://crawl.chaosforge.org/Stair" data-untr="1" class="mw-redirect" title="Stair">階段</a>を通ってついてくることはできない。</li></ul>
+<p><a href="http://crawl.chaosforge.org/Charm" data-untr="1" class="mw-redirect" title="Charm">魅了された</a>モンスターと<a href="http://crawl.chaosforge.org/Gozag#Given_Abilities" data-untr="1" class="mw-redirect" title="Gozag">買収した</a>モンスターには、どちらの制約もない。ただし、買収したモンスターは自分のいた分岐から出られない。
+</p><p>ずっと一緒にいる仲間(ベオのオーク、ヘプリアクルカナの祖霊、イレデレンヌルの呪縛された魂)は階段を通ってついてこられるが、視界の外からは攻撃できない。
+</p>
+<h3><span class="mw-headline" id="Fellow_Slime">同胞のスライム</span></h3>
+<p><a href="Jiyva.html" title="Jiyva">ジーヴァ</a>の信者には、すべてのスライムが友好的になる。厳密には、これは別の態度(<code>ATT_FELLOW_SLIME</code>)で、AI にも少し違いがある。味方のモンスターと違ってあなたについてこず、命令もできない。平和的なモンスターと違って自分から敵を狩りには行かず、あなたを攻撃してくる敵を探して向かっていく。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li> <a href="0.32.html" title="0.32">0.32</a>より前は、<a href="Beogh.html" title="Beogh">ベオ</a>のオーク(ほかの仲間は対象外)が経験値の一部を横取りしていた。</li>
+<li> <a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a>より前は、味方のモンスターが与えたダメージに応じて経験値の一部を横取りしていた(仲間がダメージをすべて与えたときは最大で経験値の50%)。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

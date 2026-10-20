@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>獲得 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="獲得(Acquirement)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>獲得 <span class="en">Acquirement</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Acquirement">Acquirement</a>」(0.32 向け、2024-09-06 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Acquirement&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>に対応して<b>いない可能性がある</b>。</i></div>
+<p><i>巻物については<a href="http://crawl.chaosforge.org/Scroll_of_acquirement" data-untr="1" title="Scroll of acquirement">獲得の巻物</a>を参照。</i>
+</p><p><b>獲得</b>は <i>Crawl</i> のアイテム生成の方法の 1 つで、ふつうのアイテム生成とは違い、キャラクターの能力や持ち物に大きく基づいて決まる。使えるか装備できるものであることが保証されている。キャラクターにとって良くて役に立つアイテムが出やすいよう偏らせてあるが、それでも運に左右されることはある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Sources"><span class="tocnumber">1</span> <span class="toctext">獲得の手段</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#General_Mechanics"><span class="tocnumber">2</span> <span class="toctext">全般的な仕組み</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Possible_acquirements"><span class="tocnumber">3</span> <span class="toctext">獲得できるもの</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Sources">獲得の手段</span></h2>
+<p>獲得の手段はほんのいくつかしかない。ほとんどはかなり珍しく、比較的よくある手段はそれほど質が良くない傾向がある。手段は次のとおり。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Scroll_of_acquirement" data-untr="1" title="Scroll of acquirement">獲得の巻物</a>を読むと、アイテムの種類を選んで獲得できる。かなり珍しく、価値のある巻物だ。</li>
+<li>3 柱の神が獲得をもたらす。
+<ul><li><a href="Okawaru.html" title="Okawaru">オカワル</a>は信仰心 6* で 2 回の獲得をくれる。武器の中から 1 つと、防具の中から 1 つを選べる。どちらのアイテムも獲得の巻物と同じ質だ。</li>
+<li><a href="Trog.html" title="Trog">トログ</a>は、信仰心が上がるにつれてランダムに武器をくれる。たいていは<a href="Antimagic.html" title="Antimagic">反魔法</a>のブランド付きだ。オカワルや獲得の巻物よりは質が落ちるが、敵を倒していればひっきりなしに贈り物がもらえる。</li>
+<li><a href="Xom.html" title="Xom">ゾム</a>は、投げてよこすほかのがらくたに混じって、ときどき獲得をくれることがある。</li></ul></li>
+<li><a href="Vault.html" title="Vault">ヴォールト</a>にあるアイテムは、獲得のコードで作られることがある。いちばん目立つ例は<a href="Treasure_trove.html" title="Treasure trove">宝の埋蔵庫</a>のアイテムだ。これらのアイテムは埋蔵庫ができたときに置かれるので、当然プレイヤーは種類を選べないが、たいていはよく使っているスキルに合わせて偏っている。ただし、ヴォールトで見つかる優れたアイテムがすべて獲得によるものとは限らない。</li></ul>
+<h2><span class="mw-headline" id="General_Mechanics">全般的な仕組み</span></h2>
+<p>獲得はいくつもの要素の影響を受ける。
+</p>
+<ul><li>スキルに合ったアイテムが出やすい。たとえば<a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>にたくさんスキルを注ぎ込んだキャラクターは、その種類の武器をかなりの確率で受け取る。<a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>のスキルが高い妖術師なら、炎の呪文の多い魔法書が見つかりやすいだろう。</li>
+<li>すでに見たことのあるアイテムは出にくい。見たことがあるなら、たぶんもう使っているか、役に立たないと判断したはずだ、という理屈だ。たいていは店のアイテムも含まれるが、今のキャラクターには高すぎて買えないものは「見た」ことにならない。</li>
+<li>アイテムは使えることが保証されている。つまり装備できるし、使っても今の神から<a href="http://crawl.chaosforge.org/Penance" data-untr="1" class="mw-redirect" title="Penance">懺悔</a>を課されることはない。この保証はかなり最低限のものだということに注意。<a href="Armour.html" title="Armour">甲冑</a>スキルを軸にした<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>が、獲得でローブを受け取ることも十分ありうる(ただし甲冑スキルにスキルを注ぎ込んでいれば、そうなりにくいよう偏る)。</li></ul>
+<p>獲得は、今いる深さや場所の影響を直接は<i>受けない</i>ことに注意。とはいえ、すでに見たアイテムが出にくいので、あとの獲得ほど珍しいアイテムが出やすくなる。ありふれたものはもう見てしまっているからだ。そのため、あとで使ったほうが良い獲得になることが多い。ただ、どれだけ良くなるかは選ぶアイテムの種類しだいだし、獲得を取っておくと、使う機会が来る前に装備が貧弱なせいで死んでしまう危険もある。
+</p>
+<h2><span class="mw-headline" id="Possible_acquirements">獲得できるもの</span></h2>
+<ul><li><a href="Weapon.html" title="Weapon">武器</a></li>
+<li><a href="Armour.html" title="Armour">防具</a></li>
+<li><a href="Jewellery.html" title="Jewellery">装身具</a></li>
+<li>本(<a href="http://crawl.chaosforge.org/Spellbook" data-untr="1" class="mw-redirect" title="Spellbook">魔法書</a>か<a href="Manual.html" title="Manual">虎の巻</a>)</li>
+<li><a href="Magical_staff.html" title="Magical staff">魔法の杖</a>(ふつうの 2/3 の確率)</li>
+<li><a href="Talisman.html" title="Talisman">タリスマン</a>(ふつうの 1/3 の確率)</li></ul>
+<p>獲得の巻物は、初めて読んだときに 5 つの分類のうち 3 つからアイテムを決めて表示し、さらに 200〜1400 の<a href="Gold.html" title="Gold">金貨</a>という選択肢も示す。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>この 4 つから 1 つを選べる。巻物はいつでも、なくさずに取りやめることができる。巻物のほうが神よりも「役に立つ」もの(上等な武器など)をくれやすい。
+</p><p><a href="http://crawl.chaosforge.org/Trove" data-untr="1" class="mw-redirect" title="Trove">宝の埋蔵庫</a>は、どの<a href="Vault.html" title="Vault">ヴォールト</a>が選ばれたかによって、1 種類か数種類の装備(たとえば「武器の埋蔵庫」「防具の埋蔵庫」)から選ぶ。そのうえで、獲得のコードを使っておよそ 16 個のアイテムをくれる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.32.html" title="0.32">0.32</a> より前は、<a href="Talisman.html" title="Talisman">タリスマン</a>は獲得できなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、獲得の巻物の働きが違った。あらかじめ決まった 3 つの選択肢ではなく、8 つの分類(武器、防具、装身具、本、杖、発動アイテム、食料、金貨)から 1 つを選んで獲得し、そこからランダムな獲得が生成された。</li>
+<li><a href="http://crawl.chaosforge.org/0.24" data-untr="1" title="0.24">0.24</a> より前は、<a href="http://crawl.chaosforge.org/Vampires" data-untr="1" class="mw-redirect" title="Vampires">吸血鬼</a>は食料として<a href="http://crawl.chaosforge.org/Potions_of_blood" data-untr="1" class="mw-redirect" title="Potions of blood">血の薬</a>を 8〜12 本獲得できた。</li>
+<li><a href="http://crawl.chaosforge.org/0.21" data-untr="1" title="0.21">0.21</a> より前は、フェダスの信者は果物を受け取り、ほかの種族は携帯食のほかにロイヤルジェリーも受け取れた。食料が携帯食にまとめられたときに、これはなくなった。</li>
+<li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> で、ワンドとその他の道具の獲得が発動アイテムにまとめられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> で矢弾の獲得がなくなり、ランダムアーティファクトの装身具が以前の 2 倍の頻度で出るようになった。<a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、ロッドは [g] その他の発動アイテムではなく、[e] 杖の獲得で手に入った。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/acquire.cc#L1258">acquire.cc:1258</a> (0.32.0)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

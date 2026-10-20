@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>急所攻撃 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="急所攻撃(Stabbing)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>急所攻撃 <span class="en">Stabbing</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Stabbing">Stabbing</a>」(0.33 向け、2026-05-26 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Stabbing&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><i>この記事は急所攻撃について説明している。廃止された<a href="Potion.html" title="Potion">薬</a>については<a href="http://crawl.chaosforge.org/Potion_of_stabbing" data-untr="1" title="Potion of stabbing">急所攻撃の薬</a>を参照。</i>
+</p><p><b>急所攻撃</b>は、気をそらしている敵や眠っている敵など、まともに身を守れない状態の敵に近接攻撃を加えたときに起こる。与えるダメージがぐっと大きくなり、<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> と <a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> も無視する。急所攻撃に特化したキャラクターなら、一撃で戦闘を終わらせてしまうこともある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Stab_Tiers"><span class="tocnumber">1</span> <span class="toctext">急所攻撃の段階</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Stabbing_Odds"><span class="tocnumber">2</span> <span class="toctext">急所攻撃の確率</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Stabbing_Damage"><span class="tocnumber">3</span> <span class="toctext">急所攻撃のダメージ</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Formula"><span class="tocnumber">3.1</span> <span class="toctext">計算式</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#1._.22Good_Stab.22_bonus"><span class="tocnumber">3.1.1</span> <span class="toctext">1. 「急所攻撃向き」のボーナス</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#2._Multiplier"><span class="tocnumber">3.1.2</span> <span class="toctext">2. 倍率</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#3._Extra_flat_damage"><span class="tocnumber">3.1.3</span> <span class="toctext">3. 追加の固定ダメージ</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Strategy"><span class="tocnumber">4</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Gallery"><span class="tocnumber">5</span> <span class="toctext">ギャラリー</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#History"><span class="tocnumber">6</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Stab_Tiers">急所攻撃の段階</span></h2>
+<p>急所攻撃ができる状態は 2 種類に分かれる。
+</p><p><b>上位の急所攻撃になる状態</b>
+</p>
+<ul><li><a href="Sleep.html" title="Sleep">睡眠</a></li>
+<li><a href="Paralysis.html" title="Paralysis">麻痺</a></li>
+<li><a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化状態</a></li></ul>
+<p><b>下位の急所攻撃になる状態</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化中</a></li>
+<li><a href="http://crawl.chaosforge.org/Throwing_net" data-untr="1" title="Throwing net">投げ網</a>や<a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">蜘蛛の巣</a>に捕まっている</li>
+<li><a href="Blind.html" title="Blind">盲目</a>(または、プレイヤーが<a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>で相手に見えていない)</li>
+<li><a href="Fear.html" title="Fear">逃走中</a></li>
+<li><a href="http://crawl.chaosforge.org/Charm" data-untr="1" class="mw-redirect" title="Charm">魅了</a>されている、またはそれ以外の理由で友好的</li>
+<li><a href="http://crawl.chaosforge.org/Confusion" data-untr="1" title="Confusion">混乱</a></li>
+<li>目を覚ましているが、まだこちらに気づいていない</li>
+<li>気をそらしている(プレイヤー以外からダメージを受けた、<a href="Dithmenos.html" title="Dithmenos">ディスメノス</a>の祈祷「影抜け」を使った、<a href="http://crawl.chaosforge.org/Gozag" data-untr="1" class="mw-redirect" title="Gozag">ゴザーグ</a>の金貨のオーラに気を取られた、のいずれでもよい)</li></ul>
+<h2><span class="mw-headline" id="Stabbing_Odds">急所攻撃の確率</span></h2>
+<p>急所攻撃になる確率は、段階によって違う。
+</p>
+<ul><li>上位の急所攻撃は、キャラクターが急所攻撃を行える状況でさえあれば必ず成立する。</li>
+<li>下位の急所攻撃が成立する確率は <code>1 + <a href="http://crawl.chaosforge.org/Dex" data-untr="1" class="mw-redirect" title="Dex">dex</a> + (<a href="http://crawl.chaosforge.org/Stealth_(Skill)" data-untr="1" class="mw-redirect" title="Stealth (Skill)">Stealth_skill</a> + Wpn_skill)/2</code>&#160;% だ。</li></ul>
+<p><a href="http://crawl.chaosforge.org/Spriggan%27s_Knife" data-untr="1" title="Spriggan&#39;s Knife">スプリガンのナイフ</a>で急所攻撃を試みると、その 50% は相手が眠っているものとして扱われる。
+</p><p>次のときは急所攻撃ができない。
+</p>
+<ul><li>自分が<a href="http://crawl.chaosforge.org/Confused" data-untr="1" class="mw-redirect" title="Confused">混乱</a>している</li>
+<li>相手が<a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>で、自分に<a href="http://crawl.chaosforge.org/See_invisible" data-untr="1" title="See invisible">霊視</a>がない</li>
+<li><a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>を信仰している(この神は急所攻撃を卑怯なふるまいとみなす)</li>
+<li><a href="Manifold_Assault.html" title="Manifold Assault">多重攻撃</a>で攻撃している</li></ul>
+<p>さらに、<a href="Vhi's_Electric_Charge.html" title="Vhi&#39;s Electric Charge">ヴィーの電撃突進</a>で攻撃したときや、<a href="http://crawl.chaosforge.org/Seven-league_boots" data-untr="1" title="Seven-league boots">七里靴</a>で<a href="Rampaging.html" title="Rampaging">猛進</a>したときは、眠っている相手に急所攻撃ができない(石化状態や麻痺している相手には<i>できる</i>)。
+</p><p>モンスターは急所攻撃をしない。急所攻撃に似た効果はいくつかあり、<a href="Sleep.html" title="Sleep">眠っている</a>生き物はモンスターの近接攻撃から追加のダメージを受けるし、<a href="http://crawl.chaosforge.org/Shadow" data-untr="1" class="mw-redirect" title="Shadow">シャドウ</a>は透明なとき(かつ相手に霊視がないとき)に追加のダメージを与える。ただ、これらは急所攻撃の仕組みとはまったくの別物だ。
+</p>
+<h2><span class="mw-headline" id="Stabbing_Damage">急所攻撃のダメージ</span></h2>
+<p>急所攻撃で増えるダメージは、相手の状態、攻撃に使う武器、その武器のスキル、隠密スキルで変わる。中でも影響が大きいのは急所攻撃の段階と武器だ。
+</p><p><a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>は急所攻撃にとりわけ向いていて、「急所攻撃向き」のボーナスを得る。<a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a>ならボーナスはさらに大きい。<a href="Felid.html" title="Felid">フェリッド</a>の爪による攻撃、<a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛</a>に変身しているときの攻撃、<a href="http://crawl.chaosforge.org/Hood_of_the_Assassin" data-untr="1" title="Hood of the Assassin">暗殺者の頭巾</a>をかぶっているときのあらゆる近接攻撃も、同等のボーナスを得る。それ以外の武器や近接攻撃はどれも同じ扱いだ。
+</p>
+<h3><span class="mw-headline" id="Formula">計算式</span></h3>
+<p>ダメージの増える要素は 3 つあり、計算される順に並べると次のとおり。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>やほかの「急所攻撃向き」のものは、もともと固定値のダメージを得る。<a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a>はさらに上乗せされる。</li>
+<li>どの武器もダメージに倍率がかかる。倍率は急所攻撃の段階とスキルで決まり、短剣を使うと大きくなる。この倍率は敵の <a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> を考慮しないが、<a href="http://crawl.chaosforge.org/Slaying" data-untr="1" title="Slaying">殺戮</a>、<a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a>スキル、<a href="Brand.html" title="Brand">ブランド</a>などは考慮する。</li>
+<li>どの武器も、さらに固定値のボーナスダメージを得る。こちらは急所攻撃の段階だけで変わる。</li></ul>
+<h4><span class="mw-headline" id="1._.22Good_Stab.22_bonus">1. 「急所攻撃向き」のボーナス</span></h4>
+<ul><li>短剣かそれと同等のものを使っているなら、基本値を <code>DEX/10 × (1 + (weapon_skill + stealth_skill)/2)</code> とする。ダガーならこれが 2 倍になる。</li>
+<li>(ダガーのボーナスを含めた)基本値が 10 を超えるなら、<code>10 * log2(1 + base/10)</code> に置き換える。ただし最終的な値は 30 が上限だ。</li>
+<li>次に、この値に上位の急所攻撃なら <code>1 + (weapon_skill + stealth_skill)/20</code> を、下位なら <code>1 + (weapon_skill + stealth_skill)/80</code> を掛ける。こうして出た数がダメージに足される。</li></ul>
+<p>基本値は、ダガーなら 35、ほかの短剣なら 70 で頭打ちになる。そこから先もスキルが上がれば倍率は伸びるが、伸び方は小さくなる。
+</p>
+<h4><span class="mw-headline" id="2._Multiplier">2. 倍率</span></h4>
+<p>急所攻撃のボーナスは、AC を適用する前のダメージにかかる倍率だ。スキル、段階、武器の種類ごとのダメージの倍率を下の表にまとめる。
+</p>
+<table class="prettytable">
+
+<tr>
+<th rowspan="2"> 隠密と武器スキルの平均
+</th>
+<th colspan="2"> 短剣
+</th>
+<th colspan="2"> その他
+</th></tr>
+<tr>
+<th> 上位
+</th>
+<th> 下位
+</th>
+<th> 上位
+</th>
+<th> 下位
+</th></tr>
+<tr>
+<td> 1
+</td>
+<td> +19.2%
+</td>
+<td> +4.6%
+</td>
+<td> +8.3%
+</td>
+<td> +2.1%
+</td></tr>
+<tr>
+<td> 2
+</td>
+<td> +40.0%
+</td>
+<td> +9.4%
+</td>
+<td> +16.7%
+</td>
+<td> +4.2%
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> +62.5%
+</td>
+<td> +14.2%
+</td>
+<td> +25.0%
+</td>
+<td> +6.2%
+</td></tr>
+<tr>
+<td> 4
+</td>
+<td> +86.7%
+</td>
+<td> +19.2%
+</td>
+<td> +33.3%
+</td>
+<td> +8.3%
+</td></tr>
+<tr>
+<td> 5
+</td>
+<td> +112.5%
+</td>
+<td> +24.2%
+</td>
+<td> +41.7%
+</td>
+<td> +10.4%
+</td></tr>
+<tr>
+<td> 6
+</td>
+<td> +140.0%
+</td>
+<td> +29.4%
+</td>
+<td> +50.0%
+</td>
+<td> +12.5%
+</td></tr>
+<tr>
+<td> 7
+</td>
+<td> +169.2%
+</td>
+<td> +34.6%
+</td>
+<td> +58.3%
+</td>
+<td> +14.6%
+</td></tr>
+<tr>
+<td> 8
+</td>
+<td> +200.0%
+</td>
+<td> +40.0%
+</td>
+<td> +66.7%
+</td>
+<td> +16.7%
+</td></tr>
+<tr>
+<td> 9
+</td>
+<td> +232.5%
+</td>
+<td> +45.5%
+</td>
+<td> +75.0%
+</td>
+<td> +18.8%
+</td></tr>
+<tr>
+<td> 10
+</td>
+<td> +266.7%
+</td>
+<td> +51.0%
+</td>
+<td> +83.3%
+</td>
+<td> +20.8%
+</td></tr>
+<tr>
+<td> 11
+</td>
+<td> +302.5%
+</td>
+<td> +56.7%
+</td>
+<td> +91.7%
+</td>
+<td> +22.9%
+</td></tr>
+<tr>
+<td> 12
+</td>
+<td> +340.0%
+</td>
+<td> +62.5%
+</td>
+<td> +100.0%
+</td>
+<td> +25.0%
+</td></tr>
+<tr>
+<td> 13
+</td>
+<td> +379.2%
+</td>
+<td> +68.4%
+</td>
+<td> +108.3%
+</td>
+<td> +27.1%
+</td></tr>
+<tr>
+<td> 14
+</td>
+<td> +420.0%
+</td>
+<td> +74.4%
+</td>
+<td> +116.7%
+</td>
+<td> +29.2%
+</td></tr>
+<tr>
+<td> 15
+</td>
+<td> +462.5%
+</td>
+<td> +80.5%
+</td>
+<td> +125.0%
+</td>
+<td> +31.2%
+</td></tr>
+<tr>
+<td> 16
+</td>
+<td> +506.7%
+</td>
+<td> +86.7%
+</td>
+<td> +133.3%
+</td>
+<td> +33.3%
+</td></tr>
+<tr>
+<td> 17
+</td>
+<td> +552.5%
+</td>
+<td> +93.0%
+</td>
+<td> +141.7%
+</td>
+<td> +35.4%
+</td></tr>
+<tr>
+<td> 18
+</td>
+<td> +600.0%
+</td>
+<td> +99.4%
+</td>
+<td> +150.0%
+</td>
+<td> +37.5%
+</td></tr>
+<tr>
+<td> 19
+</td>
+<td> +649.2%
+</td>
+<td> +105.9%
+</td>
+<td> +158.3%
+</td>
+<td> +39.6%
+</td></tr>
+<tr>
+<td> 20
+</td>
+<td> +700.0%
+</td>
+<td> +112.5%
+</td>
+<td> +166.7%
+</td>
+<td> +41.7%
+</td></tr>
+<tr>
+<td> 21
+</td>
+<td> +752.5%
+</td>
+<td> +119.2%
+</td>
+<td> +175.0%
+</td>
+<td> +43.8%
+</td></tr>
+<tr>
+<td> 22
+</td>
+<td> +806.7%
+</td>
+<td> +126.0%
+</td>
+<td> +183.3%
+</td>
+<td> +45.8%
+</td></tr>
+<tr>
+<td> 23
+</td>
+<td> +862.5%
+</td>
+<td> +133.0%
+</td>
+<td> +191.7%
+</td>
+<td> +47.9%
+</td></tr>
+<tr>
+<td> 24
+</td>
+<td> +920.0%
+</td>
+<td> +140.0%
+</td>
+<td> +200.0%
+</td>
+<td> +50.0%
+</td></tr>
+<tr>
+<td> 25
+</td>
+<td> +979.2%
+</td>
+<td> +147.1%
+</td>
+<td> +208.3%
+</td>
+<td> +52.1%
+</td></tr>
+<tr>
+<td> 26
+</td>
+<td> +1040.0%
+</td>
+<td> +154.4%
+</td>
+<td> +216.7%
+</td>
+<td> +54.2%
+</td></tr>
+<tr>
+<td> 27
+</td>
+<td> +1102.5%
+</td>
+<td> +161.7%
+</td>
+<td> +225.0%
+</td>
+<td> +56.2%
+</td></tr>
+</table>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="3._Extra_flat_damage">3. 追加の固定ダメージ</span></h4>
+<p>どの武器も、上位の急所攻撃なら <code>1d&lt;(weapon_skill + stealth_skill)/2&gt;</code>、下位なら <code>1d&lt;(weapon_skill + stealth_skill)/8&gt;</code> の追加ダメージを得る。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>「純粋な」<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>頼みの戦い方は、ほかの攻撃スキルほど実用的ではない。敵はいつでも目を覚ます可能性があるし……短剣と隠密しか鍛えていないと、起きてしまった敵に何も手が打てない。そのうえ敵は群れで湧くことが多く、1 体に見つかれば全員が起きてしまう。
+</p><p>そのため、典型的な急所突きの使い手は、魔法で敵を無力化することが多い。<a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>の呪文(<a href="Ensorcelled_Hibernation.html" title="Ensorcelled Hibernation">魔法の眠り</a>、<a href="http://crawl.chaosforge.org/Confusing_Touch" data-untr="1" title="Confusing Touch">混乱の一撃</a>など)や、ほかの系統の一部の呪文(<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化</a>など)を使えば、急所攻撃の機会が作れる。<a href="http://crawl.chaosforge.org/Uskayaw" data-untr="1" title="Uskayaw">ウスカヤー</a>のように、同じような働きをしてくれる神もいる。<a href="http://crawl.chaosforge.org/Wand_of_paralysis" data-untr="1" title="Wand of paralysis">金縛りのワンド</a>は回数に限りがあるものの、敵を無力化する強力な手段だ。また、<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">味方</a>を連れる手段があれば何であれ、気をそらした敵への急所攻撃をちょくちょく狙える。
+</p>
+<h2><span class="mw-headline" id="Gallery">ギャラリー</span></h2>
+<ul class="gallery mw-gallery-nolines left">
+		<li class="gallerybox" style="width: 405px"><div style="width: 405px">
+			<div class="thumb" style="width: 400px"><div><a href="http://crawl.chaosforge.org/File:Stab_status.png" data-untr="1" class="image"><img alt="" src="img/Stab_status.png" width="400" height="356" /></a></div></div>
+			<div class="gallerytext">
+<p>タイル版では、モンスターに急所攻撃ができるかどうかが次のように表示される。<br />? は下位の急所攻撃ができることを示す<br />zzz は上位の急所攻撃ができることを示す
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> より前は、<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>が 0 以下だと急所攻撃ができなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、急所攻撃は<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>と武器のスキルに応じて相手の AC の一部を無視していた。これは急所攻撃のダメージへの固定値のボーナスに置き換えられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> より前は、悪魔でもアンデッドでもない知性のある敵に急所攻撃をすると、輝けるものから<a href="http://crawl.chaosforge.org/Penance" data-untr="1" class="mw-redirect" title="Penance">懺悔</a>を課された。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> で、4 段階あった急所攻撃が 2 段階になった。気をそらした相手と石化状態の相手への急所攻撃は強化され、それぞれダメージが +50%、+100% になった。石化中の相手と網に捕まった相手への急所攻撃はダメージが -50% になり、透明による急所攻撃は発生率が下がった。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、長剣はほかのたいていの武器よりわずかに急所攻撃に向いていた。また、<a href="http://crawl.chaosforge.org/Club" data-untr="1" title="Club">棍棒</a>と<a href="http://crawl.chaosforge.org/Rod" data-untr="1" title="Rod">ロッド</a>は急所攻撃で特別な効果を起こせた。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、急所攻撃は隠密と武器のスキルの平均ではなく、独立したスキルだった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/attack.cc#L1476">attack.cc:1476</a> (0.32.1)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

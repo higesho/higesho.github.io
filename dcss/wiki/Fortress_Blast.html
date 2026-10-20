@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>要塞の爆風 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="要塞の爆風(Fortress Blast)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>要塞の爆風 <span class="en">Fortress Blast</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Fortress_Blast">Fortress Blast</a>」(0.33 向け、2026-02-20 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Fortress_Blast&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Fortress_blast.png" data-untr="1" class="image"><img alt="Fortress blast.png" src="img/Fortress_blast.png" width="32" height="32" /></a>&#8195;要塞の爆風
+</th></tr>
+<tr>
+<th align="left"> レベル
+</th>
+<td> 6
+</td></tr>
+<tr>
+<th align="left"> 系統<sup>1</sup>
+</th>
+<td> <a href="Forgecraft.html" title="Forgecraft">鍛造術</a>
+</td></tr>
+
+<tr>
+<th align="left"> 入手元
+</th>
+<td><a href="Book_of_the_Fortress.html" title="Book of the Fortress">城塞の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Power" data-untr="1" title="Book of Power">力の魔法書</a>
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 6
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 20
+</td></tr>
+
+<tr>
+<th align="left"> 威力の上限
+</th>
+<td> 75
+</td></tr>
+
+<tr>
+<th align="left"> 射程
+</th>
+<td> 3
+</td></tr>
+
+<tr>
+<th align="left"> フラグ
+</th>
+<td> 範囲(Area)、破壊(Destructive)
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 術者自身の肉体の堅固さを引き出して運動エネルギーの衝撃波を生み出し、広い範囲の敵にダメージを与える。衝撃波ができ始めるまでの数ターンの間、術者はその場に固定され、その間に位置をずらされると呪文は取り消される。ただし、それ以外の行動は自由にとれる。
+<p>呪文の威力が高いほど呪文が早く完成するが、ダメージは完全に術者のACで決まる。
+</p>
+</td></tr></table>
+<p><b>要塞の爆風</b>はレベル 6 の<a href="Forgecraft.html" title="Forgecraft">鍛造術</a>の呪文だ。唱えると数ターンその場から動けなくなり、そのあと 5x5 の爆発が起こる。ダメージは<a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> だけで決まる。術者本人とその仲間はダメージを受けない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>唱えてから <code>70 - 10*power/25</code> <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> の間、自分の足で動くこと(蛙跳びのような体を使う能力も含む)ができなくなる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>その時間が過ぎると、術者を中心に 5x5 の爆発が起こる。待っている間でも、体を動かさない行動なら<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>や<a href="Blink.html" title="Blink">瞬間移動</a>も含めて自由にとれる。力をためている間に何かに位置をずらされると(たとえば<a href="http://crawl.chaosforge.org/Elephant" data-untr="1" title="Elephant">象</a>に<a href="http://crawl.chaosforge.org/Trample" data-untr="1" title="Trample">踏みつけ</a>られるなど)、要塞の爆風は何も起こさずに消えてしまう。
+</p><p>爆発は <code>6d(4 + 3*[AC^1.343]/17)</code> の物理ダメージを与える(AC 70 で最大 6d39)。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>注目したいのは、AC とダメージの関係が比例ではない点だ。AC が 1 上がるごとに、ひとつ前の 1 よりも<i>大きく</i>ダメージが伸びる。
+</p><p>自分と仲間は(鍛造術で作ったものでなくても)この呪文で傷つかない。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p><i>Crawl</i> では退却できないのはかなり危ないので、この呪文は軽い気持ちで使わないほうがいい。まずは敵を、勝手のわかっている片付いた場所におびき寄せよう。そうしておけば、この呪文のやかましい音の害も抑えられる。
+</p><p>この呪文と特に相性のいいものがいくつかある。
+</p>
+<ul><li>AC を上げるものなら何でも、この呪文のダメージを増やしてくれる。<a href="Forge_Phalanx_Beetle.html" title="Forge Phalanx Beetle">ファランクス甲虫の鍛造</a>や<a href="http://crawl.chaosforge.org/Ozocubu%27s_Armour" data-untr="1" title="Ozocubu&#39;s Armour">オゾクブの鎧</a>は、唱える前に AC を手軽に上げられる。<a href="Talisman.html" title="Talisman">タリスマン</a>による変身も役立つことがあり、とりわけ<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>がよい。
+<ul><li>レベルが上がるにつれて AC が増える<a href="Species.html" title="Species">種族</a>、たとえば<a href="Gargoyle.html" title="Gargoyle">ガーゴイル</a>や<a href="Naga.html" title="Naga">ナーガ</a>にとっては、この呪文は特に強い。<a href="http://crawl.chaosforge.org/Mountain_Dwarves" data-untr="1" class="mw-redirect" title="Mountain Dwarves">山ドワーフ</a>や再燃中の<a href="Revenant.html" title="Revenant">レヴナント</a>のように重い鎧を着ていても呪文を唱えやすい種族も、要塞の爆風の高いダメージ域に届くかもしれない。</li></ul></li>
+<li>この呪文は味方を巻き込まないので、近接攻撃から身を守る<a href="Splinterfrost_Shell.html" title="Splinterfrost Shell">砕氷の砲弾</a>のような、ほかの鍛造術の呪文と組み合わせられる。<a href="Awaken_Armour.html" title="Awaken Armour">鎧の覚醒</a>も AC に頼るしくみなので相性がいい。</li></ul>
+<p>目安として、要塞の爆風を役立てるには、3ルーンで終盤に入るころまでに AC を 50 以上(ファランクス甲虫の鍛造やオゾクブの鎧で上げたあとの値でもよい)にしておきたい。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li>この呪文は <a href="0.33.html" title="0.33">0.33</a> で追加された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.33.1/crawl-ref/source/spl-damage.cc#L5322">spl-damage.cc:5322</a> (0.33.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.33.1/crawl-ref/source/spl-damage.cc#L5368">spl-damage.cc:5368</a> (0.33.1)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.33.1/crawl-ref/source/zap-data.h#L2626">zap-data.h:2626</a> (0.33.1)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>テレポート &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="テレポート(Teleportation)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>テレポート <span class="en">Teleportation</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Teleportation">Teleportation</a>」(0.33 向け、2026-01-11 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Teleportation&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><b>テレポート</b>とは、ある場所から別の場所へ一瞬で移ることだ。テレポートと<a href="Blink.html" title="Blink">瞬間移動</a>には大きな違いが2つある。テレポートではその階の行ける場所ならどこへでも飛ばされるが、瞬間移動で行けるのは<a href="http://crawl.chaosforge.org/LOS" data-untr="1" class="mw-redirect" title="LOS">見えている</a>場所だけだ。また、瞬間移動はすぐに起きるが、テレポートの多くは効き始めるまでに少し時間がかかる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Sources"><span class="tocnumber">1</span> <span class="toctext">テレポートする方法</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Useful_Info"><span class="tocnumber">2</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Tele_Status"><span class="tocnumber">2.1</span> <span class="toctext">転位準備の状態</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Location"><span class="tocnumber">2.2</span> <span class="toctext">飛ばされる先</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Preventing_Teleport"><span class="tocnumber">3</span> <span class="toctext">テレポートを止める</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Strategy"><span class="tocnumber">4</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Non-hostile_teleport"><span class="tocnumber">4.1</span> <span class="toctext">害のないテレポート</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Hostile_teleport"><span class="tocnumber">4.2</span> <span class="toctext">害のあるテレポート</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Sources">テレポートする方法</span></h2>
+<p><i>Crawl</i> でテレポートする方法はいくつかある。
+</p>
+<ul><li><a href="Scroll_of_teleportation.html" title="Scroll of teleportation">テレポートの巻物</a>を読む。</li>
+<li><a href="http://crawl.chaosforge.org/Teleport_trap" data-untr="1" title="Teleport trap">テレポートの罠</a>を踏む。</li>
+<li><a href="The_Abyss.html" title="The Abyss">アビス</a>をうろついていると、ときどきテレポートする。</li></ul>
+<p>モンスターのすぐそばへテレポートさせようとするものもいくつかある。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Sourceless_malevolence" data-untr="1" class="mw-redirect" title="Sourceless malevolence">出どころのない悪意</a>によるテレポートの効果(探索すると発動するテレポートの罠のようなもの)。</li>
+<li><a href="Bad_mutations.html#Teleportitis" title="Bad mutations">不随意瞬間移動</a>の変異で、ランダムにテレポートさせられる。</li>
+<li><a href="Wyrmhole.html" title="Wyrmhole">竜穴</a>の<a href="http://crawl.chaosforge.org/Sojourning_Bolt" data-untr="1" title="Sojourning Bolt">放浪の矢</a>。</li>
+<li><a href="Distortion.html" title="Distortion">歪曲</a>の<a href="Brand.html" title="Brand">銘</a>が付いた武器を手から外す。</li></ul>
+<p>反対にモンスターをテレポートさせるには、<a href="http://crawl.chaosforge.org/Teleport_Other" data-untr="1" title="Teleport Other">他者のテレポート</a>か<a href="http://crawl.chaosforge.org/Dispersal" data-untr="1" title="Dispersal">転送</a>の呪文を唱える。
+</p>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<h3><span class="mw-headline" id="Tele_Status">転位準備の状態</span></h3>
+<p>テレポートの巻物と他者のテレポートを受けると、<span class="nhsym">転位準備</span>の状態になる。この状態では、テレポートするまでに次の時間がかかる。
+</p>
+<table class="prettytable">
+<tr>
+<th> 状況 </th>
+<th> 時間
+</th></tr>
+<tr>
+<td> 通常 </td>
+<td> 3〜5ターン
+</td></tr>
+<tr>
+<td> <a href="The_Realm_of_Zot.html" title="The Realm of Zot">ゾットの領域</a>にいるか、<a href="Orb_of_Zot.html" title="Orb of Zot">オーブ</a>を持っているとき </td>
+<td> 8〜14ターン
+</td></tr>
+<tr>
+<td> <a href="The_Abyss.html" title="The Abyss">アビス</a>にいるとき(オーブを持っていても同じ) </td>
+<td> 8〜19ターン
+</td></tr></table>
+<p>放浪の矢を受けると<span class="nhsym">！転移！</span>の状態になる。働きは転位準備とほとんど同じだが、モンスターの近くへテレポートさせられる点が違う。
+</p><p>ほかのテレポートはすべて即座に起きるが、プレイヤーが思いどおりに使える余地はあまりない。
+</p>
+<h3><span class="mw-headline" id="Location">飛ばされる先</span></h3>
+<p>テレポートでは、その階のランダムな場所へ飛ばされる。ただし次の条件がある。
+</p>
+<ul><li>そのマスに足を踏み入れられなければならない。たとえば、(一時的かどうかにかかわらず)<a href="http://crawl.chaosforge.org/Flight" data-untr="1" class="mw-redirect" title="Flight">飛行</a>していなければ<a href="http://crawl.chaosforge.org/Lava" data-untr="1" title="Lava">溶岩</a>の上には飛ばされない。何かがいるマスや、通れないマスにも飛ばされない。</li>
+<li>危険な<a href="http://crawl.chaosforge.org/Cloud" data-untr="1" title="Cloud">雲烟</a>の中には飛ばされない。</li>
+<li>「テレポートで入れない」フラグの付いた<a href="Vault.html" title="Vault">ヴォールト</a>の中には飛ばされない。<a href="http://crawl.chaosforge.org/Door#Runed_Door" data-untr="1" title="Door">ルーンで封印された扉</a>や<a href="http://crawl.chaosforge.org/Transporter" data-untr="1" title="Transporter">転送装置</a>のある<a href="Vault.html" title="Vault">ヴォールト</a>の一部(すべてではない)がこれにあたる。注目すべきことに、<a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>:2 の<a href="Elven_Halls.html#Elf:2_-_The_Hall_of_Blades" title="Elven Halls">刃の広間</a>には、テレポートで中に入れる。 </li></ul>
+<p>こうした制限を除けば、元いたマスも含めて<i>どの</i>マスにでもランダムに飛ばされる(元のマスなら「周囲の風景が一瞬ちらついた。」と表示される)。
+</p><p><a href="Blink.html" title="Blink">瞬間移動</a>と同じく、テレポートしたあとには転位のエネルギーの雲が残る。この雲には何の効果もない(そのマスにほかの<a href="http://crawl.chaosforge.org/Clouds" data-untr="1" class="mw-redirect" title="Clouds">雲烟</a>が出られなくなるだけだ)。
+</p>
+<h2><span class="mw-headline" id="Preventing_Teleport">テレポートを止める</span></h2>
+<p><span class="nhsym">転位準備</span>か<span class="nhsym">！転移！</span>の状態になったプレイヤーは、<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>を飲むか、もう1枚<a href="http://crawl.chaosforge.org/Scroll_of_teleport" data-untr="1" class="mw-redirect" title="Scroll of teleport">テレポートの巻物</a>を読めば、その状態を終わらせられる。<a href="http://crawl.chaosforge.org/Quicksilver_Bolt" data-untr="1" title="Quicksilver Bolt">水銀の矢</a>(<a href="http://crawl.chaosforge.org/Wand_of_quicksilver" data-untr="1" title="Wand of quicksilver">水銀のワンド</a>によるものも含む)でも転位準備の状態は終わる。
+</p><p><span class="nhsym">転位阻害</span>(<a href="http://crawl.chaosforge.org/Dimension_Anchor" data-untr="1" title="Dimension Anchor">次元の碇</a>による)と<span class="nhsym">固定</span>(Stuck。転位術の<a href="Miscast_effect.html" title="Miscast effect">呪文の失敗</a>による)の状態は、どちらもテレポートを防ぐ。これらの状態は<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>を飲めば消せる。-Tele は一部の<a href="Artefact.html" title="Artefact">アーティファクト</a>や、<a href="Formicid.html" title="Formicid">フォーミシッド</a>でプレイすることでも得られるが、これらがあってもアビスでの景色の移り変わりは止まらない。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<h3><span class="mw-headline" id="Non-hostile_teleport">害のないテレポート</span></h3>
+<p>テレポートの巻物は逃げるのに便利な道具だ。たいていは今いる場所から遠くへ飛ばされる。戦いの中では、いくつかの理由から、たいてい早めにテレポートしたほうがいい。
+</p>
+<ul><li>巻物が効き始めるまでに数ターンかかる。</li>
+<li>安全な場所へ飛ばされる保証はない。別の危険な場所のど真ん中に飛ばされることもあるし、今いるマスにそのままテレポートすることもある。</li>
+<li>テレポートが起きるのは、そのときの行動を終えたあと、モンスターが動く前だ。そのため、テレポート先にいるモンスターは、あなたが反応する前に1ターン分攻撃してくる。HP が少ないときのテレポートがいっそう危ないのはこのためだ。理屈の上ではこれで<a href="http://crawl.chaosforge.org/Instant_death" data-untr="1" class="mw-redirect" title="Instant death">即死</a>することもありうるが、HP が満タンならその確率はごくわずかだ。</li></ul>
+<p>また、大きく危険な<a href="Vault.html" title="Vault">ヴォールト</a>のある階(<a href="Elven_Halls.html#Elf:2_-_The_Hall_of_Blades" title="Elven Halls">エルフの大広間:2</a> や <a href="Zot_5.html" title="Zot:5">ゾットの領域:5</a> など)では、テレポートでその中に入ってしまいやすい。同じ理由で、<a href="Hell.html" title="Hell">地獄</a>のような小さな階でもテレポートはあまり役に立たない。
+</p><p>テレポートの罠も巻物と同じように使えるが、罠はずっと使いにくい場所にあり、待ち時間もない。モンスターに罠を踏ませることもできる。
+</p>
+<h3><span class="mw-headline" id="Hostile_teleport">害のあるテレポート</span></h3>
+<p>一方、害のあるテレポート(出どころのない悪意、不随意瞬間移動、竜穴)はきわめて危険で、逃げにくい状況に放りこまれることが多い。この場合も、あなたが反応する前にモンスターが動いてくる。出どころのない悪意を防ぐには -Tele のアイテムを身につけるしかないが、不随意瞬間移動は<a href="http://crawl.chaosforge.org/Potions_of_mutation" data-untr="1" class="mw-redirect" title="Potions of mutation">突然変異の薬</a>で治せるし、竜穴による状態はテレポートの巻物を読めば消せる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、モンスターが<a href="http://crawl.chaosforge.org/Teleport_Self" data-untr="1" title="Teleport Self">自己テレポート</a>を唱えられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、<a href="Player_ghost.html" title="Player ghost">プレイヤーの幽霊</a>以外のモンスターも<a href="http://crawl.chaosforge.org/Teleport_Other" data-untr="1" title="Teleport Other">他者のテレポート</a>を唱えられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、<a href="http://crawl.chaosforge.org/Ring_of_teleportation" data-untr="1" title="Ring of teleportation">テレポートの指輪</a>から *Tele の性質を得られ、不随意瞬間移動と同じように働いた。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、<a href="Miscast_effect.html#Translocation" title="Miscast effect">転位術の呪文の失敗</a>の効果を受けたり、歪曲の武器で攻撃されたりすると、プレイヤーがテレポートすることがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、<a href="http://crawl.chaosforge.org/Teleport_control" data-untr="1" title="Teleport control">テレポート制御</a>でテレポート先を選べた。また、アビスでのテレポートの20%は、待ち時間が3〜5ターンしかなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、テレポート制御の<a href="http://crawl.chaosforge.org/Status_effect" data-untr="1" class="mw-redirect" title="Status effect">状態</a>があってもテレポートは遅れなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.9" data-untr="1" class="mw-redirect" title="0.9">0.9</a> より前は、プレイヤーも自己テレポートを使えた。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

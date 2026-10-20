@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鍛造術 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="鍛造術(Forgecraft)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>鍛造術 <span class="en">Forgecraft</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Forgecraft">Forgecraft</a>」(0.33 向け、2026-02-08 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Forgecraft&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><b>鍛造術</b>は、魔力から手で触れられる物体を形作る術だ。鍛造術の呪文では、術者と肩を並べて戦う機械仕掛けのクリーチャーをさまざまに作り出せる。ほかにも罠やバリケードを築いたり、果ては身につけた防具の物理的な頑丈さを武器に変えたりもできる。 
+</p><p>鍛造術の全体を通したテーマは「プレイヤーが自分の構造物のそばで戦うよう仕向け、そうすることで最大の恩恵が得られるようにする」ことだ。たとえば<a href="Launch_Clockwork_Bee.html" title="Launch Clockwork Bee">ぜんまい仕掛けの蜂の射出</a>で出した蜂は、そのマスへ移動しようとすると修理できる。また<a href="Alistair's_Walking_Alembic.html" title="Alistair&#39;s Walking Alembic">アリステイアの歩く蒸留器</a>や<a href="Platinum_Paragon.html" title="Platinum Paragon">白金の傑作</a>のような呪文は、効果範囲の中にいるプレイヤーにしか強化を与えない。
+</p><p>鍛造術のスキルを上げると、この系統の呪文の成功率と呪文の威力が上がる。複数の系統にまたがる呪文も多く、その場合の成功率と威力は、それらの系統のスキルの平均で決まる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Aptitudes"><span class="tocnumber">1</span> <span class="toctext">適性</span></a></li>
+<li class="toclevel-1"><a href="#Spells"><span class="tocnumber">2</span> <span class="toctext">呪文</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Level_1"><span class="tocnumber">2.1</span> <span class="toctext">レベル 1</span></a></li>
+<li class="toclevel-2"><a href="#Level_2"><span class="tocnumber">2.2</span> <span class="toctext">レベル 2</span></a></li>
+<li class="toclevel-2"><a href="#Level_3"><span class="tocnumber">2.3</span> <span class="toctext">レベル 3</span></a></li>
+<li class="toclevel-2"><a href="#Level_4"><span class="tocnumber">2.4</span> <span class="toctext">レベル 4</span></a></li>
+<li class="toclevel-2"><a href="#Level_5"><span class="tocnumber">2.5</span> <span class="toctext">レベル 5</span></a></li>
+<li class="toclevel-2"><a href="#Level_6"><span class="tocnumber">2.6</span> <span class="toctext">レベル 6</span></a></li>
+<li class="toclevel-2"><a href="#Level_7"><span class="tocnumber">2.7</span> <span class="toctext">レベル 7</span></a></li>
+<li class="toclevel-2"><a href="#Level_9"><span class="tocnumber">2.8</span> <span class="toctext">レベル 9</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-1"><a href="#Sources"><span class="tocnumber">3</span> <span class="toctext">入手元</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#See_Also"><span class="tocnumber">4</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Aptitudes">適性</span></h2>
+<table class="wikitable">
+
+<tr>
+<td><b><a href="Armataur.html" title="Armataur">At</a></b>
+</td>
+<td><b><a href="Barachi.html" title="Barachi">Ba</a></b>
+</td>
+<td><b><a href="Coglin.html" title="Coglin">Co</a></b>
+</td>
+<td><b><a href="Deep_Elf.html" title="Deep Elf">DE</a></b>
+</td>
+<td><b><a href="Demigod.html" title="Demigod">Dg</a></b>
+</td>
+<td><b><a href="Demonspawn.html" title="Demonspawn">Ds</a></b>
+</td>
+<td><b><a href="Djinni.html" title="Djinni">Dj</a></b>
+</td>
+<td><b><a href="Draconian.html" title="Draconian">Dr</a></b>
+</td>
+<td><b><a href="Felid.html" title="Felid">Fe</a></b>
+</td>
+<td><b><a href="Formicid.html" title="Formicid">Fo</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Gale_Centaur" data-untr="1" title="Gale Centaur">GC</a></b>
+</td>
+<td><b><a href="Gargoyle.html" title="Gargoyle">Gr</a></b>
+</td>
+<td><b><a href="Gnoll.html" title="Gnoll">Gn</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Human" data-untr="1" title="Human">Hu</a></b>
+</td>
+<td><b><a href="Kobold.html" title="Kobold">Ko</a></b>
+</td>
+<td><b><a href="Merfolk.html" title="Merfolk">Mf</a></b>
+</td>
+<td><b><a href="Minotaur.html" title="Minotaur">Mi</a></b>
+</td>
+<td><b><a href="Mountain_Dwarf.html" title="Mountain Dwarf">MD</a></b>
+</td>
+<td><b><a href="Mummy.html" title="Mummy">Mu</a></b>
+</td>
+<td><b><a href="Naga.html" title="Naga">Na</a></b>
+</td>
+<td><b><a href="Octopode.html" title="Octopode">Op</a></b>
+</td>
+<td><b><a href="Oni.html" title="Oni">On</a></b>
+</td>
+<td><b><a href="Poltergeist.html" title="Poltergeist">Po</a></b>
+</td>
+<td><b><a href="Revenant.html" title="Revenant">Re</a></b>
+</td>
+<td><b><a href="Spriggan.html" title="Spriggan">Sp</a></b>
+</td>
+<td><b><a href="Tengu.html" title="Tengu">Te</a></b>
+</td>
+<td><b><a href="Troll.html" title="Troll">Tr</a></b>
+</td>
+<td><b><a href="Vine_Stalker.html" title="Vine Stalker">VS</a></b>
+</td></tr>
+<tr>
+<td> -2
+</td>
+<td> 1
+</td>
+<td> 2
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> 11
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> -2
+</td>
+<td> -1
+</td>
+<td> 6
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -2
+</td>
+<td> 2
+</td>
+<td> -2
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> -2
+</td>
+<td> -2
+</td>
+<td> -2
+</td>
+<td> -3
+</td>
+<td> 0
+</td></tr></table>
+<ul><li> <a href="Draconian.html#Yellow" title="Draconian">黄色ドラコニアン</a>は 2。</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Spells">呪文</span></h2>
+<table class="prettytable">
+<tr>
+<th>アイコン
+</th>
+<th>名前
+</th>
+<th>系統
+</th>
+<th>レベル
+</th>
+<th>威力の<br />上限
+</th>
+<th>射程
+</th>
+<th>騒音
+</th>
+<th>フラグ
+</th>
+<th>魔法書
+</th></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_1">レベル 1</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Kinetic_grapnel.png" data-untr="1" class="image"><img alt="Kinetic grapnel.png" src="img/Kinetic_grapnel.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Kinetic_Grapnel" data-untr="1" title="Kinetic Grapnel">動力式鉤縄</a>
+</td>
+<td>鍛造術
+</td>
+<td>1
+</td>
+<td>25
+</td>
+<td>4
+</td>
+<td>1
+</td>
+<td>破壊(Destructive)、方向・対象指定(Dir or target)、射線の確認が必要(Needs tracer)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Cantrips" data-untr="1" title="Book of Cantrips">悪戯の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_2">レベル 2</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Construct_spike_launcher.png" data-untr="1" class="image"><img alt="Construct spike launcher.png" src="img/Construct_spike_launcher.png" width="32" height="32" /></a>
+</td>
+<td><a href="Construct_Spike_Launcher.html" title="Construct Spike Launcher">棘射出機の建造</a>
+</td>
+<td>鍛造術
+</td>
+<td>2
+</td>
+<td>50
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Handbook_of_Applied_Construction" data-untr="1" title="Handbook of Applied Construction">応用建築の手引書</a><br /><a href="Treatise_on_Traps.html" title="Treatise on Traps">罠の論考</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_3">レベル 3</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Launch_clockwork_bee.png" data-untr="1" class="image"><img alt="Launch clockwork bee.png" src="img/Launch_clockwork_bee.png" width="32" height="32" /></a>
+</td>
+<td><a href="Launch_Clockwork_Bee.html" title="Launch Clockwork Bee">ぜんまい仕掛けの蜂の射出</a>
+</td>
+<td>鍛造術
+</td>
+<td>3
+</td>
+<td>100
+</td>
+<td>LOS
+</td>
+<td>3
+</td>
+<td>自分は対象外(Not self)、対象指定(Target)
+</td>
+<td><a href="http://crawl.chaosforge.org/Handbook_of_Applied_Construction" data-untr="1" title="Handbook of Applied Construction">応用建築の手引書</a><br /><a href="http://crawl.chaosforge.org/My_Sojourn_through_Swampland" data-untr="1" title="My Sojourn through Swampland">我が沼地滞在記</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_4">レベル 4</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Awaken_armour.png" data-untr="1" class="image"><img alt="Awaken armour.png" src="img/Awaken_armour.png" width="32" height="32" /></a>
+</td>
+<td><a href="Awaken_Armour.html" title="Awaken Armour">鎧の覚醒</a>
+</td>
+<td><a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>/鍛造術
+</td>
+<td>4
+</td>
+<td>50
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>
+</td>
+<td><a href="Book_of_the_Fortress.html" title="Book of the Fortress">城塞の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Iron" data-untr="1" title="Book of Iron">鉄の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Forge_blazeheart_golem.png" data-untr="1" class="image"><img alt="Forge blazeheart golem.png" src="img/Forge_blazeheart_golem.png" width="32" height="32" /></a>
+</td>
+<td><a href="Forge_Blazeheart_Golem.html" title="Forge Blazeheart Golem">灼心のゴーレムの鍛造</a>
+</td>
+<td><a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>/鍛造術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Dangerous_Friends" data-untr="1" title="Book of Dangerous Friends">危険な友の魔法書</a><br /><a href="http://crawl.chaosforge.org/Handbook_of_Applied_Construction" data-untr="1" title="Handbook of Applied Construction">応用建築の手引書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Forge_lightning_spire.png" data-untr="1" class="image"><img alt="Forge lightning spire.png" src="img/Forge_lightning_spire.png" width="32" height="32" /></a>
+</td>
+<td><a href="Forge_Lightning_Spire.html" title="Forge Lightning Spire">稲妻の渦巻の鍛造</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Air_Magic" data-untr="1" title="Air Magic">風の魔術</a>/鍛造術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>
+</td>
+<td><a href="Codex_of_Conductivity.html" title="Codex of Conductivity">伝導の写本</a><br /><a href="http://crawl.chaosforge.org/Book_of_Storms" data-untr="1" title="Book of Storms">嵐の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Iskenderun%27s_battlesphere.png" data-untr="1" class="image"><img alt="Iskenderun&#39;s battlesphere.png" src="img/Iskenderun's_battlesphere.png" width="32" height="32" /></a>
+</td>
+<td><a href="Iskenderun's_Battlesphere.html" title="Iskenderun&#39;s Battlesphere">イスケンデルンの戦闘球</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>/鍛造術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>補助(Utility)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Power" data-untr="1" title="Book of Power">力の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_the_Spheres" data-untr="1" title="Book of the Spheres">天球の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Rending_blade.png" data-untr="1" class="image"><img alt="Rending blade.png" src="img/Rending_blade.png" width="32" height="32" /></a>
+</td>
+<td><a href="Rending_Blade.html" title="Rending Blade">引き裂く刃</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>/鍛造術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>補助(Utility)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Armaments" data-untr="1" title="Book of Armaments">武装の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Weapons" data-untr="1" title="Book of Weapons">武器の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_5">レベル 5</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Alistair%27s_walking_alembic.png" data-untr="1" class="image"><img alt="Alistair&#39;s walking alembic.png" src="img/Alistair's_walking_alembic.png" width="32" height="32" /></a>
+</td>
+<td><a href="Alistair's_Walking_Alembic.html" title="Alistair&#39;s Walking Alembic">アリステイアの歩く蒸留器</a>
+</td>
+<td><a href="Alchemy.html" title="Alchemy">錬金術</a>/鍛造術
+</td>
+<td>5
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Contraptions" data-untr="1" title="Book of Contraptions">からくりの魔法書</a><br /><a href="Book_of_Metalworking.html" title="Book of Metalworking">金属細工の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Hoarfrost_cannonade.png" data-untr="1" class="image"><img alt="Hoarfrost cannonade.png" src="img/Hoarfrost_cannonade.png" width="32" height="32" /></a>
+</td>
+<td><a href="Hoarfrost_Cannonade.html" title="Hoarfrost Cannonade">霧氷の砲撃</a>
+</td>
+<td>鍛造術/<a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a>
+</td>
+<td>5
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>
+</td>
+<td><a href="Compendium_of_Siegecraft.html" title="Compendium of Siegecraft">攻城術大全</a><br /><a href="Book_of_Cryoformation.html" title="Book of Cryoformation">氷造形の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Nazja%27s_percussive_tempering.png" data-untr="1" class="image"><img alt="Nazja&#39;s percussive tempering.png" src="img/Nazja's_percussive_tempering.png" width="32" height="32" /></a>
+</td>
+<td><a href="Nazja's_Percussive_Tempering.html" title="Nazja&#39;s Percussive Tempering">ナジャの打撃式焼き入れ</a>
+</td>
+<td>鍛造術
+</td>
+<td>5
+</td>
+<td>200
+</td>
+<td>LOS
+</td>
+<td>5
+</td>
+<td>破壊(Destructive)、有益(Helpful)、自分は対象外(Not self)、対象指定(Target)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Duality" data-untr="1" title="Book of Duality">二元の魔法書</a><br /><a href="Book_of_Metalworking.html" title="Book of Metalworking">金属細工の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_6">レベル 6</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Forge_monarch_bomb.png" data-untr="1" class="image"><img alt="Forge monarch bomb.png" src="img/Forge_monarch_bomb.png" width="32" height="32" /></a>
+</td>
+<td><a href="Forge_Monarch_Bomb.html" title="Forge Monarch Bomb">君主爆弾の鍛造</a>
+</td>
+<td><a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>/鍛造術
+</td>
+<td>6
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>6
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Blasting" data-untr="1" title="Book of Blasting">爆破の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Contraptions" data-untr="1" title="Book of Contraptions">からくりの魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Forge_phalanx_beetle.png" data-untr="1" class="image"><img alt="Forge phalanx beetle.png" src="img/Forge_phalanx_beetle.png" width="32" height="32" /></a>
+</td>
+<td><a href="Forge_Phalanx_Beetle.html" title="Forge Phalanx Beetle">ファランクス甲虫の鍛造</a>
+</td>
+<td>鍛造術
+</td>
+<td>6
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>6
+</td>
+<td>
+</td>
+<td><a href="Book_of_the_Fortress.html" title="Book of the Fortress">城塞の魔法書</a><br /><a href="Book_of_Metalworking.html" title="Book of Metalworking">金属細工の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Fortress_blast.png" data-untr="1" class="image"><img alt="Fortress blast.png" src="img/Fortress_blast.png" width="32" height="32" /></a>
+</td>
+<td><a href="Fortress_Blast.html" title="Fortress Blast">要塞の爆風</a>
+</td>
+<td>鍛造術
+</td>
+<td>6
+</td>
+<td>75
+</td>
+<td>3
+</td>
+<td>20
+</td>
+<td>範囲(Area)、破壊(Destructive)
+</td>
+<td><a href="Book_of_the_Fortress.html" title="Book of the Fortress">城塞の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Power" data-untr="1" title="Book of Power">力の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_7">レベル 7</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Diamond_sawblades.png" data-untr="1" class="image"><img alt="Diamond sawblades.png" src="img/Diamond_sawblades.png" width="32" height="32" /></a>
+</td>
+<td><a href="Diamond_Sawblades.html" title="Diamond Sawblades">ダイヤモンドの丸鋸</a>
+</td>
+<td>鍛造術
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>7
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Contraptions" data-untr="1" title="Book of Contraptions">からくりの魔法書</a><br /><a href="Treatise_on_Traps.html" title="Treatise on Traps">罠の論考</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Hellfire_mortar.png" data-untr="1" class="image"><img alt="Hellfire mortar.png" src="img/Hellfire_mortar.png" width="32" height="32" /></a>
+</td>
+<td><a href="Hellfire_Mortar.html" title="Hellfire Mortar">業火の迫撃砲</a>
+</td>
+<td><a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>/<a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>/鍛造術
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>LOS
+</td>
+<td>20
+</td>
+<td>破壊(Destructive)、方向・対象指定(Dir or target)
+</td>
+<td><a href="Compendium_of_Siegecraft.html" title="Compendium of Siegecraft">攻城術大全</a><br /><a href="http://crawl.chaosforge.org/Trismegistus_Codex" data-untr="1" title="Trismegistus Codex">トリスメギストス写本</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Spellspark_servitor.png" data-untr="1" class="image"><img alt="Spellspark servitor.png" src="img/Spellspark_servitor.png" width="32" height="32" /></a>
+</td>
+<td><a href="Spellspark_Servitor.html" title="Spellspark Servitor">魔火花の従者</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>/鍛造術
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>7
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Dangerous_Friends" data-untr="1" title="Book of Dangerous Friends">危険な友の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Power" data-untr="1" title="Book of Power">力の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Splinterfrost_shell.png" data-untr="1" class="image"><img alt="Splinterfrost shell.png" src="img/Splinterfrost_shell.png" width="32" height="32" /></a>
+</td>
+<td><a href="Splinterfrost_Shell.html" title="Splinterfrost Shell">砕氷の砲弾</a>
+</td>
+<td>鍛造術/<a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a>
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>1
+</td>
+<td>7
+</td>
+<td>自分は対象外(Not self)、対象指定(Target)
+</td>
+<td><a href="Book_of_Cryoformation.html" title="Book of Cryoformation">氷造形の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Duality" data-untr="1" title="Book of Duality">二元の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_9">レベル 9</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Platinum_paragon.png" data-untr="1" class="image"><img alt="Platinum paragon.png" src="img/Platinum_paragon.png" width="32" height="32" /></a>
+</td>
+<td><a href="Platinum_Paragon.html" title="Platinum Paragon">白金の傑作</a>
+</td>
+<td>鍛造術
+</td>
+<td>9
+</td>
+<td>200
+</td>
+<td>3
+</td>
+<td>15
+</td>
+<td>自分は対象外(Not self)、対象指定(Target)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Weapons" data-untr="1" title="Book of Weapons">武器の魔法書</a>
+</td></tr>
+</table>
+<h2><span class="mw-headline" id="Sources">入手元</span></h2>
+<dl><dt>主な魔法書</dt>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Contraptions" data-untr="1" title="Book of Contraptions">からくりの魔法書</a></b>: <a href="Alistair's_Walking_Alembic.html" title="Alistair&#39;s Walking Alembic">アリステイアの歩く蒸留器</a>, <a href="Forge_Monarch_Bomb.html" title="Forge Monarch Bomb">君主爆弾の鍛造</a>, <a href="Diamond_Sawblades.html" title="Diamond Sawblades">ダイヤモンドの丸鋸</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Handbook_of_Applied_Construction" data-untr="1" title="Handbook of Applied Construction">応用建築の手引書</a></b>: <a href="Construct_Spike_Launcher.html" title="Construct Spike Launcher">棘射出機の建造</a>, <a href="Launch_Clockwork_Bee.html" title="Launch Clockwork Bee">ぜんまい仕掛けの蜂の射出</a>, <a href="Forge_Blazeheart_Golem.html" title="Forge Blazeheart Golem">灼心のゴーレムの鍛造</a></dd>
+<dd><b><a href="Book_of_Metalworking.html" title="Book of Metalworking">金属細工の魔法書</a></b>: <a href="Nazja's_Percussive_Tempering.html" title="Nazja&#39;s Percussive Tempering">ナジャの打撃式焼き入れ</a>, <a href="Alistair's_Walking_Alembic.html" title="Alistair&#39;s Walking Alembic">アリステイアの歩く蒸留器</a>, <a href="Forge_Phalanx_Beetle.html" title="Forge Phalanx Beetle">ファランクス甲虫の鍛造</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Power" data-untr="1" title="Book of Power">力の魔法書</a></b>: <a href="Iskenderun's_Battlesphere.html" title="Iskenderun&#39;s Battlesphere">イスケンデルンの戦闘球</a>, <a href="Fortress_Blast.html" title="Fortress Blast">要塞の爆風</a>, <a href="Spellspark_Servitor.html" title="Spellspark Servitor">魔火花の従者</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Weapons" data-untr="1" title="Book of Weapons">武器の魔法書</a></b>: <a href="Rending_Blade.html" title="Rending Blade">引き裂く刃</a>, <a href="Platinum_Paragon.html" title="Platinum Paragon">白金の傑作</a></dd>
+<dt>その他の魔法書</dt>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Armaments" data-untr="1" title="Book of Armaments">武装の魔法書</a></b>: <a href="Rending_Blade.html" title="Rending Blade">引き裂く刃</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Blasting" data-untr="1" title="Book of Blasting">爆破の魔法書</a></b>: <a href="Forge_Monarch_Bomb.html" title="Forge Monarch Bomb">君主爆弾の鍛造</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Cantrips" data-untr="1" title="Book of Cantrips">悪戯の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Kinetic_Grapnel" data-untr="1" title="Kinetic Grapnel">動力式鉤縄</a></dd>
+<dd><b><a href="Codex_of_Conductivity.html" title="Codex of Conductivity">伝導の写本</a></b>: <a href="Forge_Lightning_Spire.html" title="Forge Lightning Spire">稲妻の渦巻の鍛造</a></dd>
+<dd><b><a href="Compendium_of_Siegecraft.html" title="Compendium of Siegecraft">攻城術大全</a></b>: <a href="Hoarfrost_Cannonade.html" title="Hoarfrost Cannonade">霧氷の砲撃</a>, <a href="Hellfire_Mortar.html" title="Hellfire Mortar">業火の迫撃砲</a></dd>
+<dd><b><a href="Book_of_Cryoformation.html" title="Book of Cryoformation">氷造形の魔法書</a></b>: <a href="Hoarfrost_Cannonade.html" title="Hoarfrost Cannonade">霧氷の砲撃</a>, <a href="Splinterfrost_Shell.html" title="Splinterfrost Shell">砕氷の砲弾</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Dangerous_Friends" data-untr="1" title="Book of Dangerous Friends">危険な友の魔法書</a></b>: <a href="Forge_Blazeheart_Golem.html" title="Forge Blazeheart Golem">灼心のゴーレムの鍛造</a>, <a href="Spellspark_Servitor.html" title="Spellspark Servitor">魔火花の従者</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Duality" data-untr="1" title="Book of Duality">二元の魔法書</a></b>: <a href="Nazja's_Percussive_Tempering.html" title="Nazja&#39;s Percussive Tempering">ナジャの打撃式焼き入れ</a>, <a href="Splinterfrost_Shell.html" title="Splinterfrost Shell">砕氷の砲弾</a></dd>
+<dd><b><a href="Book_of_the_Fortress.html" title="Book of the Fortress">城塞の魔法書</a></b>: <a href="Awaken_Armour.html" title="Awaken Armour">鎧の覚醒</a>, <a href="Forge_Phalanx_Beetle.html" title="Forge Phalanx Beetle">ファランクス甲虫の鍛造</a>, <a href="Fortress_Blast.html" title="Fortress Blast">要塞の爆風</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Iron" data-untr="1" title="Book of Iron">鉄の魔法書</a></b>: <a href="Awaken_Armour.html" title="Awaken Armour">鎧の覚醒</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/My_Sojourn_through_Swampland" data-untr="1" title="My Sojourn through Swampland">我が沼地滞在記</a></b>: <a href="Launch_Clockwork_Bee.html" title="Launch Clockwork Bee">ぜんまい仕掛けの蜂の射出</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_the_Spheres" data-untr="1" title="Book of the Spheres">天球の魔法書</a></b>: <a href="Iskenderun's_Battlesphere.html" title="Iskenderun&#39;s Battlesphere">イスケンデルンの戦闘球</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Storms" data-untr="1" title="Book of Storms">嵐の魔法書</a></b>: <a href="Forge_Lightning_Spire.html" title="Forge Lightning Spire">稲妻の渦巻の鍛造</a></dd>
+<dd><b><a href="Treatise_on_Traps.html" title="Treatise on Traps">罠の論考</a></b>: <a href="Construct_Spike_Launcher.html" title="Construct Spike Launcher">棘射出機の建造</a>, <a href="Diamond_Sawblades.html" title="Diamond Sawblades">ダイヤモンドの丸鋸</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Trismegistus_Codex" data-untr="1" title="Trismegistus Codex">トリスメギストス写本</a></b>: <a href="Hellfire_Mortar.html" title="Hellfire Mortar">業火の迫撃砲</a></dd></dl>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="Forgewright.html" title="Forgewright">鍛冶師</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li>鍛造術は <a href="0.33.html" title="0.33">0.33</a> で追加された。</li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Skill.html" title="Skill">スキル</a>
+</th></tr>
+<tr>
+<th> <a href="Weapon.html" class="mw-redirect" title="Weapons">武器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a> • <a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a> • <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+<p><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a> • <a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a> • <a href="Polearms.html" title="Polearms">長柄武器</a> • <a href="Staves.html" title="Staves">棒術</a> • <a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a> • <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</p>
+</td></tr>
+<tr>
+<th> 身体
+</th>
+<td> <a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a> • <a href="Armour_(skill).html" title="Armour (skill)">甲冑</a> • <a href="Dodging.html" title="Dodging">躱し身</a> • <a href="http://crawl.chaosforge.org/Stealth_(skill)" data-untr="1" title="Stealth (skill)">隠密</a> • <a href="Shields_(skill).html" title="Shields (skill)">盾</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Magic" data-untr="1" title="Magic">魔法</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a> • <a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a> • <a href="Evocations.html" title="Evocations">発動</a> • <a href="Shapeshifting.html" title="Shapeshifting">変身術</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/List_of_spells_by_school" data-untr="1" title="List of spells by school">呪文の系統</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Air" data-untr="1" class="mw-redirect" title="Air">風の魔術</a> • <a href="Alchemy.html" title="Alchemy">錬金術</a> • <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> • <a href="http://crawl.chaosforge.org/Earth" data-untr="1" class="mw-redirect" title="Earth">地の魔術</a> • <a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a> • <a class="mw-selflink selflink">鍛造術</a> • <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> • <a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a> • <a href="Necromancy.html" title="Necromancy">死霊術</a> • <a href="http://crawl.chaosforge.org/Summoning" data-untr="1" class="mw-redirect" title="Summoning">召喚術</a> • <a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a>
+</td></tr>
+</table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

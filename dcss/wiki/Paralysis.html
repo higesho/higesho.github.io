@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麻痺 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="麻痺(Paralysis)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>麻痺 <span class="en">Paralysis</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Paralysis">Paralysis</a>」(0.33 向け、2026-02-18 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Paralysis&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<dl><dd><i>このページは<a href="http://crawl.chaosforge.org/Status_effect" data-untr="1" class="mw-redirect" title="Status effect">状態異常</a>についての記事だ。モンスターの呪文については<a href="http://crawl.chaosforge.org/Paralyse" data-untr="1" title="Paralyse">麻痺</a>を参照。</i></dd></dl>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> あなたは麻痺しており、まったく行動できない。
+</td></tr></table>
+<p><b>麻痺</b>は、プレイヤーやモンスターがしばらくの間、移動も行動もできなくなる状態異常だ。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Effect"><span class="tocnumber">1</span> <span class="toctext">効果</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Sources"><span class="tocnumber">2</span> <span class="toctext">原因</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Tips_.26_Tricks"><span class="tocnumber">3.1</span> <span class="toctext">小技</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Effect">効果</span></h2>
+<p>麻痺している間は次のようになる。
+</p>
+<ul><li>何も行動できない。</li>
+<li><a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> がほぼ 0 になる。プレイヤーは <code>2 + <a href="Evasion.html#Base_EV" title="Evasion">size_factor</a></code>、モンスターは EV 0 になる。</li>
+<li><a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> が 0 になる。</li>
+<li>モンスターは上位の<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>を受けやすくなる。</li></ul>
+<p>麻痺が解けると、プレイヤーは 1〜3 ターンの間<a href="Stun_immunity.html" title="Stun immunity">朦朧への耐性</a>を得て、麻痺とほかのいくつかの状態異常を受けなくなる。<a href="http://crawl.chaosforge.org/Petrification" data-untr="1" class="mw-redirect" title="Petrification">石化</a>と違って、ダメージが軽減される特別な効果はない。
+</p><p><a href="Formicid.html" title="Formicid">フォーミシッド</a>は<a href="Stasis.html" title="Stasis">停滞</a>の性質のおかげで麻痺しない。また、完全に<a href="http://crawl.chaosforge.org/Petrified" data-untr="1" class="mw-redirect" title="Petrified">石化</a>したプレイヤーも麻痺しない。
+</p>
+<h2><span class="mw-headline" id="Sources">原因</span></h2>
+<p>麻痺の原因はいくつかある。抵抗できるものもあれば、できないものもある。
+</p><p>100% 防ぎきることもできる麻痺の原因:
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Paralyse" data-untr="1" title="Paralyse">麻痺</a>の呪文(<a href="http://crawl.chaosforge.org/Wand_of_paralysis" data-untr="1" title="Wand of paralysis">金縛りのワンド</a>も含む)。プレイヤーなら 2〜5 ターン。対象の<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>を上回る必要がある。</li>
+<li><a href="http://crawl.chaosforge.org/Hornet" data-untr="1" title="Hornet">巨大赤色蜂</a>や<a href="http://crawl.chaosforge.org/Jorogumo" data-untr="1" title="Jorogumo">女郎蜘蛛</a>の近接攻撃(1〜3 ターン。<a href="http://crawl.chaosforge.org/Poison_resistance" data-untr="1" class="mw-redirect" title="Poison resistance">毒耐性</a>があれば 2/3 の確率で防げ、毒が効かなければ麻痺しない)。</li>
+<li><a href="Formless_jellyfish.html" title="Formless jellyfish">形なきクラゲ</a>の近接攻撃(1 ターン。<a href="http://crawl.chaosforge.org/Poison_resistance" data-untr="1" class="mw-redirect" title="Poison resistance">毒耐性</a>があれば 2/3 の確率で防げ、毒が効かなければ麻痺しない)。</li></ul>
+<p>それ以外の原因は、フォーミシッドでなければ抵抗できない。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Stunning_Burst" data-untr="1" title="Stunning Burst">気絶の炸裂</a>(1 ターン。電撃耐性があれば 50% の確率で抵抗できる)</li>
+<li>5 体以上が視界にいるときの<a href="http://crawl.chaosforge.org/Starcursed_mass" data-untr="1" title="Starcursed mass">呪われし群れ</a>の金切り声(1〜2 ターン)</li>
+<li><a href="http://crawl.chaosforge.org/Zot_trap" data-untr="1" title="Zot trap">ゾットの罠</a>(2〜5 ターン)</li>
+<li><a href="http://crawl.chaosforge.org/Uskayaw" data-untr="1" title="Uskayaw">ウスカヤー</a>や<a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a>の怒り(2〜5 ターン)</li>
+<li><a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>を<a href="http://crawl.chaosforge.org/Borgnjor%27s_Revivification" data-untr="1" title="Borgnjor&#39;s Revivification">ボーグンジョルの究極治癒</a>で打ち消したとき(2〜5 ターン)</li></ul>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>モンスターによる麻痺が 1 ターンより長く続くことがあるなら、それは<i><b><a href="http://crawl.chaosforge.org/Instant_death" data-untr="1" class="mw-redirect" title="Instant death">即死</a></b></i>だと考えるべきだ。たいていのモンスターは、4〜5 ターンもただで殴らせてもらえばあなたを殺せる。相手が何体もいれば、4〜5 ターンあれば<i>確実に</i>殺される。1 ターンだけでも、大きなダメージをまとめて受けることがある。<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> と <a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> が 0 になるのはおまけのようなもので、<a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> が高いプレイヤーにとっても麻痺は厄介だ。
+</p><p>基本的には、麻痺はできる限り避けるべきだ。連勝を狙うプレイなら、即死の確率が 1% 未満でも高すぎる。
+</p>
+<h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
+<p>麻痺の原因の多くは、何かしらの方法で対処できる。
+</p>
+<ul><li><b><a href="http://crawl.chaosforge.org/Paralyse" data-untr="1" title="Paralyse">麻痺</a>の呪文</b>は射線が通っていないと使えない。モンスターが<a href="Silence.html" title="Silence">静寂</a>状態や<a href="http://crawl.chaosforge.org/Waterlog" data-untr="1" class="mw-redirect" title="Waterlog">浸水</a>状態なら、呪文は唱えられない。<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>でも防げるが、成功率を 0% にするには高い意志力が必要だ。麻痺の確率を 0% にしたいなら、<a href="http://crawl.chaosforge.org/Willpower#Player_resistance" data-untr="1" title="Willpower">種族の意志力</a>が重要になる。</li></ul>
+<ul><li><b><a href="http://crawl.chaosforge.org/Hornet" data-untr="1" title="Hornet">巨大赤色蜂</a></b>は速い敵で、近接攻撃で麻痺させてくる。毒耐性があれば麻痺に抵抗できることがあるが、確実に防げるのは毒が効かない場合だけだ。発動を少し鍛えておけば、<a href="Wand.html" title="Wand">ワンド</a>で巨大赤色蜂を倒したり<a href="http://crawl.chaosforge.org/Wand_of_polymorph" data-untr="1" title="Wand of polymorph">変化</a>させたりできることが多い。<a href="http://crawl.chaosforge.org/Lignification" data-untr="1" class="mw-redirect" title="Lignification">樹木化</a>すれば、<a href="Tree_Form.html" title="Tree Form">樹化</a>の rPois と上がった AC のおかげで、巨大赤色蜂1匹に殺されることはまずなくなる。</li></ul>
+<ul><li><b><a href="http://crawl.chaosforge.org/Jorogumo" data-untr="1" title="Jorogumo">女郎蜘蛛</a></b>も、近接攻撃で麻痺させてくる速い敵だ。近接攻撃のしくみは巨大赤色蜂と同じだが、女郎蜘蛛は防御も意志力もずっと高く、そのうえ危険な遠距離攻撃の呪文もいくつか持っている。</li></ul>
+<ul><li><b><a href="Air_elemental.html" title="Air elemental">大気の精霊</a></b>の麻痺は 1 ターンだけだが、危険な敵が何体も攻撃してくる場所では命取りになりうる。回避は高いが比較的打たれ弱いので、強力で決して外れない攻撃で狙うとよい(たとえば<a href="http://crawl.chaosforge.org/Lee%27s_Rapid_Deconstruction" data-untr="1" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>、<a href="Airstrike.html" title="Airstrike">旋風の一撃</a>、発動のスキルが高いときの<a href="http://crawl.chaosforge.org/Wand_of_iceblast" data-untr="1" title="Wand of iceblast">吹雪のワンド</a>など。<a href="http://crawl.chaosforge.org/Tin_of_tremorstones" data-untr="1" title="Tin of tremorstones">震動石の缶</a>は外れることもあるが、命中率はとても高い)。 </li></ul>
+<ul><li><b><a href="http://crawl.chaosforge.org/Zot_trap" data-untr="1" title="Zot trap">ゾットの罠</a></b>は、あなたかモンスターが踏まないと作動せず、しかも罠があなたの<a href="http://crawl.chaosforge.org/LOS" data-untr="1" class="mw-redirect" title="LOS">視界</a>に入っていないと働かない。ゾットの罠にはほかにも厄介な効果がいくつもあるので、できる限り避けるべきだ。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> より前は、麻痺のあとに得られるのは<a href="Stun_immunity.html" title="Stun immunity">朦朧への耐性</a>ではなく、麻痺への耐性だけだった。また、<a href="Stat_zero.html" title="Stat zero">能力値が 0</a> になると麻痺した。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、麻痺の呪文と神の怒りによる麻痺は 2〜7 ターン続いた。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、<a href="Berserk.html" title="Berserk">バーサーク</a>が切れたあとにプレイヤーが麻痺することがあり、<a href="Trog.html" title="Trog">トログ</a>と<a href="Bad_mutations.html#Berserk" title="Bad mutations">発作的バーサーク</a>はどちらもそれを防いでいた。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、<a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>のひどい<a href="Miscast_effect.html" title="Miscast effect">呪文失敗の効果</a>でプレイヤーが麻痺することがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.24" data-untr="1" title="0.24">0.24</a> より前は、麻痺の<a href="http://crawl.chaosforge.org/Needle" data-untr="1" title="Needle">吹き矢針</a>があった。</li>
+<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> より前は、<a href="http://crawl.chaosforge.org/Amulet_of_stasis" data-untr="1" title="Amulet of stasis">停滞の護符</a>で麻痺を防げた。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

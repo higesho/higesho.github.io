@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>睡眠 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="睡眠(Sleep)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>睡眠 <span class="en">Sleep</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Sleep">Sleep</a>」(0.33 向け、2026-06-25 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Sleep&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><b>睡眠</b>は状態異常であり、モンスター専用の呪文でもある。眠った対象は、目を覚ますまで移動も攻撃もできない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Effect"><span class="tocnumber">1</span> <span class="toctext">効果</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Sleepwalking"><span class="tocnumber">1.1</span> <span class="toctext">夢遊</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Immunity"><span class="tocnumber">1.2</span> <span class="toctext">耐性</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Sources"><span class="tocnumber">2</span> <span class="toctext">原因</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Monster_Spell"><span class="tocnumber">3</span> <span class="toctext">モンスターの呪文</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Effect">効果</span></h2>
+<p>眠っている間は次のようになる。
+</p>
+<ul><li>目を覚ますまで何もできない。</li>
+<li><a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> がほぼ0になる。プレイヤーは <code>2 + <a href="Evasion.html#Base_EV" title="Evasion">size_factor</a></code>、モンスターは EV 0 になる。</li>
+<li><a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> が0になる。</li>
+<li>プレイヤーは近接攻撃で 2.5 倍のダメージを受ける。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup></li>
+<li>モンスターはプレイヤーから強力な<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>を受けるようになり、ほかのモンスターの近接攻撃からは 2.5 倍のダメージを受ける。</li></ul>
+<p>プレイヤーもモンスターも、ダメージを少しでも受ければ目を覚ます。
+</p><p>もとから眠っているモンスターは、こちらの<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>判定が失敗したときや、<a href="Noise.html" title="Noise">騒音</a>を聞いたときに目を覚ますことがある。何かの効果で眠らされたモンスターには一定の持続時間があり、その間はダメージを受けない限り目を覚まさない。
+</p>
+<h3><span class="mw-headline" id="Sleepwalking">夢遊</span></h3>
+<p>眠っていて、同時に<a href="http://crawl.chaosforge.org/Confuse" data-untr="1" title="Confuse">混乱</a>もしているモンスターは<b>夢遊</b>状態になる。強力な急所攻撃を受ける状態のまま、混乱しているときのようにうろつき回る。通常の睡眠と同じように目を覚ますことはあるが、目を覚ましても混乱は解けない。
+</p><p>混乱させる手段のほとんどはモンスターを起こしてしまうので、ふつうは先に混乱させてから眠らせる必要がある。ただし、<a href="http://crawl.chaosforge.org/Alistair%27s_Intoxication" data-untr="1" title="Alistair&#39;s Intoxication">アリステイアの酩酊</a>なら眠っているモンスターを混乱させられる。
+</p>
+<h3><span class="mw-headline" id="Immunity">耐性</span></h3>
+<p>プレイヤーは眠りから覚めると3〜5ターンの間<a href="Stun_immunity.html" title="Stun immunity">朦朧への耐性</a>を得て、その間は眠らなくなる。朦朧への耐性は、ほかのいくつかの状態のあとにも得られる。モンスターも、目を覚ましたあとしばらくは眠らなくなる。
+</p><p><a href="http://crawl.chaosforge.org/Undead" data-untr="1" title="Undead">アンデッド</a>、<a href="http://crawl.chaosforge.org/Nonliving" data-untr="1" title="Nonliving">非生物</a>、<a href="http://crawl.chaosforge.org/Plant" data-untr="1" title="Plant">植物</a>は眠らせることができない。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> プレイヤーの種族では、<a href="Revenant.html" title="Revenant">レヴナント</a>、<a href="Poltergeist.html" title="Poltergeist">ポルターガイスト</a>、<a href="Mummy.html" title="Mummy">ミイラ</a>、<a href="Gargoyle.html" title="Gargoyle">ガーゴイル</a>、<a href="Djinni.html" title="Djinni">ジンニー</a>が睡眠にかからない。また、<a href="http://crawl.chaosforge.org/Vampire_Form" data-untr="1" class="mw-redirect" title="Vampire Form">吸血鬼</a>、<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>、<a href="Tree_Form.html" title="Tree Form">樹化</a>のように、アンデッド・非生物・植物になる変身をしている間も睡眠にかからない。注: これらの種類のモンスターでも「休眠」状態で生成されることはあり、実質的には睡眠と同じだ。
+</p><p><a href="Clarity.html" title="Clarity">明晰</a>を持つプレイヤーと、<a href="Berserk.html" title="Berserk">バーサーク</a>中のあらゆる生き物も睡眠にかからない。
+</p>
+<h2><span class="mw-headline" id="Sources">原因</span></h2>
+<p>睡眠の呪文のほかに、次のものでも睡眠状態になる。
+</p>
+<ul><li><a href="Ensorcelled_Hibernation.html" title="Ensorcelled Hibernation">魔法の眠り</a>の呪文(<a href="http://crawl.chaosforge.org/Cold_resistance" data-untr="1" class="mw-redirect" title="Cold resistance">冷気耐性</a>があれば効かない)。</li>
+<li><a href="http://crawl.chaosforge.org/Sleepcap" data-untr="1" title="Sleepcap">眠りキノコ</a>の<a href="Attack_flavour.html" title="Attack flavour">攻撃の追加効果</a>である<i>睡眠</i>。</li>
+<li><a href="Dream_sheep.html" title="Dream sheep">眠りの羊</a>の能力、<a href="Dream_Dust.html" title="Dream Dust">眠りの霧</a>。</li></ul>
+<p>モンスターはたいてい、生成された時点で眠っている(眠ることができないものは「休眠」している)。
+</p>
+<h2><span class="mw-headline" id="Monster_Spell">モンスターの呪文</span></h2>
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Sleep.png" data-untr="1" class="image"><img alt="Sleep.png" src="img/Sleep.png" width="32" height="32" /></a>&#8195;睡眠
+</th></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 5
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 0
+</td></tr>
+
+<tr>
+<th align="left"> 射程
+</th>
+<td> 視界(LOS)
+</td></tr>
+
+<tr>
+<th align="left"> フラグ
+</th>
+<td> 意志力判定(Will check)、方向・対象指定(Dir or target)、モンスター専用(Monster)、射線の確認が必要(Needs tracer)
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 指定したモンスターを眠らせる。ダメージを受けると対象はたいてい目を覚まし、大きな音でも目を覚ますことがある。
+</td></tr></table>
+<p>睡眠の呪文は対象を眠らせようとする。射線が通っている必要があり、<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>で抵抗できる。
+</p><p>睡眠を唱える敵は次のとおり。
+</p>
+<ul><li> <span class="nhsym clr-brightmagenta">S</span> <a href="http://crawl.chaosforge.org/File:Aizul.png" data-untr="1" class="image"><img alt="Aizul.png" src="img/Aizul.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Aizul" data-untr="1" title="Aizul">アイズル</a></b></li>
+<li> <span class="nhsym clr-brightgreen">c</span> <a href="http://crawl.chaosforge.org/File:Satyr.png" data-untr="1" class="image"><img alt="Satyr.png" src="img/Satyr.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Satyr" data-untr="1" title="Satyr">サテュロス</a></b></li></ul>
+<p>呪文セットによっては睡眠を唱えることがある敵は次のとおり。
+</p>
+<ul><li> <span class="nhsym clr-lightgray">&amp;</span> <a href="http://crawl.chaosforge.org/File:Pandemonium_lord.png" data-untr="1" class="image"><img alt="Pandemonium lord.png" src="img/Pandemonium_lord.png" width="32" height="48" /></a> <b><a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a></b>(確率 3.4%)</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> より前は、<a href="Tree_Form.html" title="Tree Form">樹化</a>と<a href="Fungus_Form.html" title="Fungus Form">茸化</a>の変身で睡眠への耐性は得られなかった。また、眠らされたモンスターも隠密判定や騒音で目を覚ますことがあった。目覚めたときに<a href="Stun_immunity.html" title="Stun immunity">朦朧への耐性</a>は得られず、もう一度眠らされなくなるだけだった。</li>
+<li><a href="http://crawl.chaosforge.org/0.24" data-untr="1" title="0.24">0.24</a> より前は、睡眠の<a href="http://crawl.chaosforge.org/Needle" data-untr="1" title="Needle">吹き矢針</a>があった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、最後にプレイヤーに出会ってから十分に時間がたったモンスターは眠りに落ちやすかった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/melee-attack.cc#L4273">melee-attack.cc:4273</a> (0.32.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/actor.cc#L162">actor.cc:162</a> (0.32.0)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

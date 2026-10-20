@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>補助攻撃 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="補助攻撃(Auxiliary attack)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>補助攻撃 <span class="en">Auxiliary attack</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Auxiliary_attack">Auxiliary attack</a>」(0.32 向け、2025-05-31 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Auxiliary_attack&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>に対応して<b>いない可能性がある</b>。</i></div>
+<p><b>補助攻撃</b>(<b>aux attacks</b>)は、近接戦で追加で繰り出せる攻撃だ。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Chance_to_Trigger"><span class="tocnumber">1.1</span> <span class="toctext">発生する確率</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#List_of_Auxiliary_Attacks"><span class="tocnumber">2</span> <span class="toctext">補助攻撃の一覧</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>近接攻撃をするたびに、一定の確率で補助攻撃が出る。補助攻撃に時間はかからない。キャラクターが使える補助攻撃を複数持っていれば、それぞれ別々に発生の判定がある。
+</p><p>補助攻撃の基本のダメージは、補助攻撃の種類と、それに関わる<a href="Mutation.html" title="Mutation">変異</a>で決まる。たとえば<a href="http://crawl.chaosforge.org/Talons" data-untr="1" title="Talons">足爪</a>の段階が高いほど蹴りのダメージが増える。<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>、<a href="http://crawl.chaosforge.org/Slaying" data-untr="1" title="Slaying">殺戮</a>、<a href="Might.html" title="Might">腕力強化</a>の効果はふつうどおりにかかる。<a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a>スキルも補助攻撃に効くが、効き目は弱まる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>武器のダメージには左右されない(ただし武器を速く振れば、そのぶん補助攻撃の回数は増える)。「副手のパンチ」やそれに相当するもの以外では、<a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a>スキルは補助攻撃に影響しない。
+</p><p><a href="Reaching.html" title="Reaching">間合い</a>の武器で離れた位置から攻撃したときは、補助攻撃は出ない。<a href="Cleaving.html" title="Cleaving">薙ぎ払い</a>のときは、主な目標にだけ補助攻撃が出る。<a href="Quick_blade.html" title="Quick blade">クイックブレード</a>は 1 回の行動で補助攻撃が 2 回ぶん出て、<a href="Gyre_and_Gimble.html" title="Gyre and Gimble">『ジャイル』と『ギンブル』</a>なら 4 回ぶん出る。
+</p>
+<h3><span class="mw-headline" id="Chance_to_Trigger">発生する確率</span></h3>
+<p>補助攻撃を出すには、2 つの別々の判定に<i>同時に</i>成功しなければならない。
+</p>
+<dl><dd><b>1.</b> <a href="http://crawl.chaosforge.org/XL" data-untr="1" class="mw-redirect" title="XL">XL</a> に基づく確率、<code>(30 + XL) / 59</code>。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>XL 1 で 52.5%、XL 27 で 96.6% になる。いくつかの攻撃はこの判定を無視する。
+<ul><li>締めつけ、悪魔の接触、大口の噛みつきは、この判定を完全に無視する。</li>
+<li>副手のパンチでは、この確率が <code>(3 + <a href="http://crawl.chaosforge.org/UC" data-untr="1" class="mw-redirect" title="UC">UC</a>_skill) / 60 </code> に置き換わる。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>スキル 0 で 5%、スキル 27 で 50% だ。</li></ul></dd>
+<dd><b>2.</b> 補助攻撃そのものに決まった確率(%)。たとえば噛みつきは、上の XL に基づく判定に成功したときだけ、40% の確率で成功する。攻撃の一覧とそれぞれの成功率は下を参照。</dd></dl>
+<p>さらに、その攻撃に使う体の部位が空いていなければならない。副手のパンチには武器を持っていないことが必要だし、<a href="http://crawl.chaosforge.org/Boots" data-untr="1" title="Boots">ブーツ</a>を履いていると<a href="http://crawl.chaosforge.org/Talons" data-untr="1" title="Talons">足爪</a>で蹴ることはできない、といった具合だ。
+</p>
+<h2><span class="mw-headline" id="List_of_Auxiliary_Attacks">補助攻撃の一覧</span></h2>
+<table class="prettytable">
+<tr>
+<th> 条件 </th>
+<th> ダメージ </th>
+<th> 確率 </th>
+<th>特徴
+</th></tr>
+<tr>
+<td> <b>副手のパンチ</b> </td>
+<td> 5 + UC/2 </td>
+<td> 100% </td>
+<td> 盾や武器を持っているか、<a href="http://crawl.chaosforge.org/Flux_Form" data-untr="1" class="mw-redirect" title="Flux Form">流転</a>/<a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a>に変身していると出ない
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a>ありの副手のパンチ </td>
+<td> {5 + UC/2} + 1d3 × (爪の段階) </td>
+<td> 100% </td>
+<td>刃の手や、<a href="Gloves.html" title="Gloves">手袋</a>をはめていても出ない
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Blade_Hands" data-untr="1" class="mw-redirect" title="Blade Hands">刃の手</a>ありの副手のパンチ </td>
+<td> {5 + UC/2} + 6 </td>
+<td> 100% </td>
+<td> 爪の効果を打ち消す
+</td></tr>
+<tr>
+<td> <b>頭突き</b> </td>
+<td> 5 + 3 × (角の段階) </td>
+<td> 66% </td>
+<td><a href="Minotaur.html" title="Minotaur">ミノタウロス</a>は、敵の攻撃が外れたときにときどきこれで反撃する
+</td></tr>
+<tr>
+<td> <b>つつき</b> </td>
+<td> 6 </td>
+<td> 66% </td>
+<td> -
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Hooves" data-untr="1" title="Hooves">蹄</a>での<b>蹴り</b> </td>
+<td> 5 + (5/3) × (蹄の段階) </td>
+<td> 100% </td>
+<td> -
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Talons" data-untr="1" title="Talons">足爪</a>での<b>蹴り</b> </td>
+<td> 6 + (足爪の段階) </td>
+<td> 100% </td>
+<td> ブーツを履いていると出ない
+</td></tr>
+<tr>
+<td> <b>尻尾の一撃</b> </td>
+<td> 6 </td>
+<td> 50% </td>
+<td> 灰色ドラコニアンは、深い水脈の中にいると敵を押し返せる
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Armoured_Tail" data-untr="1" title="Armoured Tail">装甲の尾</a>ありの尻尾の一撃 </td>
+<td> 10 </td>
+<td> 50% </td>
+<td> -
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Stinger" data-untr="1" title="Stinger">棘の尻尾</a>ありの尻尾の一撃 </td>
+<td> {6 or 10} + (2 * 棘の尻尾の段階) - 1 </td>
+<td> 50% </td>
+<td> <a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>。基本のダメージは 6、装甲の尾があれば 10
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Fangs" data-untr="1" title="Fangs">牙</a>での<b>噛みつき</b> </td>
+<td> 2 × (牙の段階) + 1 </td>
+<td> 40% </td>
+<td> 血の乾いた<a href="http://crawl.chaosforge.org/Vampire" data-untr="1" title="Vampire">吸血鬼</a>の噛みつきは<a href="Vampiric.html" title="Vampiric">吸血</a>になる
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Acidic_Bite" data-untr="1" title="Acidic Bite">酸の牙</a>ありの噛みつき </td>
+<td> {2 × (牙の段階) + 1} + 4 + 2d4 の酸の飛沫 </td>
+<td> 40% </td>
+<td> <a href="http://crawl.chaosforge.org/Corrosion" data-untr="1" class="mw-redirect" title="Corrosion">腐食</a>
+</td></tr>
+<tr>
+<td> <a href="Antimagic.html" title="Antimagic">反魔法</a>の牙ありの噛みつき </td>
+<td> {2 × (牙の段階) + 1} + XL/3</td>
+<td> 100% </td>
+<td> <a href="Antimagic.html" title="Antimagic">魔力阻害</a>。<a href="Vine_Stalker.html" title="Vine Stalker">歩き蔓</a>のみ
+</td></tr>
+<tr>
+<td> <b><a href="http://crawl.chaosforge.org/Pseudopods" data-untr="1" title="Pseudopods">仮足</a></b> </td>
+<td> 4 × (仮足の段階) </td>
+<td> 66% </td>
+<td> -
+</td></tr>
+<tr>
+<td> <b>棘付き触手</b> </td>
+<td> 5 + (棘付き触手の段階) </td>
+<td> 100% </td>
+<td> -
+</td></tr>
+<tr>
+<td> <b>触手の一撃</b> </td>
+<td> 5 + UC/2 </td>
+<td> 100% </td>
+<td> オクトポードにとっての副手のパンチ <small>(武器を構えていなければ、副手がふさがっていても出せる)</small>
+</td></tr>
+<tr>
+<td> <b>触手(締めつけ)</b> </td>
+<td> 12 </td>
+<td> 66% </td>
+<td> -
+</td></tr>
+<tr>
+<td> <b>締めつけ</b> </td>
+<td> 0 </td>
+<td> 100% </td>
+<td> <a href="Constriction.html" title="Constriction">締めつけ</a>
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Demonspawn_mutations#Demonic_Touch" data-untr="1" title="Demonspawn mutations">悪魔の接触</a>での<b>接触</b> </td>
+<td> 6 + 4 × (悪魔の接触の段階) </td>
+<td> 40% </td>
+<td> 盾か両手武器を持っていると出ない。段階 3 では<a href="http://crawl.chaosforge.org/Vulnerability_(status_effect)" data-untr="1" title="Vulnerability (status effect)">脆弱化</a>を与える。最低でも 6 のダメージを与え、腕力、殺戮、スキル、強化効果の恩恵はいっさい受けない。AC を無視する。<small>(副手のパンチと違い、利き手に武器を構えていても出る。)</small>
+</td></tr></table>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.32.html" title="0.32">0.32</a> より前は、副手が空いていれば、片手武器を持っていても副手のパンチが出た。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、副手のパンチ以外の補助攻撃には、まず <code>1 + str + dex &gt; 1d50</code> の判定に通ることが必要だった。副手のパンチは <code>UC &gt;= 1d20</code>、<code>2 &gt;= 1dAdjusted Body Armour Penalty</code>、33% の確率の 3 つすべてに通る必要があった。オクトポードには、副手での触手の一撃を出す別の判定もあった。また、噛みつきには、腕力が 10 を超える 5 ごとに +1 のダメージがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、頭突きには相手を気絶させる確率があり、蹄は AC を一部無視し、爪は<a href="http://crawl.chaosforge.org/Bleeding" data-untr="1" title="Bleeding">出血</a>を起こした。</li>
+<li><i>Crawl</i> の初期の版では、徒手格闘スキルが高いほどすべての補助攻撃が強くなったので、近接戦向けのキャラクターなら誰にとっても価値のあるスキルだった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text">補助攻撃では、戦闘スキルがダメージに <code>1 + uniform(Fighting)/40</code> を掛ける。ここで <code>uniform(x) = 1d(x+1)-1</code>、つまり 0 から x まで(x を含む)の値を振る。<a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/fight.cc#L1587">fight.cc:1587</a> (0.32.0) を参照。</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/melee-attack.cc#L1425">melee-attack.cc:1425</a> (0.32.0)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/melee-attack.cc#L1619">melee-attack.cc:1619</a> (0.32.0)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

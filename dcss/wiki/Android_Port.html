@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Android 版 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="Android 版(Android Port)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>Android 版 <span class="en">Android Port</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Android_Port">Android Port</a>」(0.32 向け、2024-12-10 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Android_Port&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><i>Dungeon Crawl Stone Soup</i> を Android で遊べるようにするプロジェクトは、これまでにいくつもあった。これらの移植版は、たいていのスマートフォンやタブレットを含む幅広い Android 端末で動く。このゲームはキーボードで遊ぶように作られているので、移植版はシステムの仮想キーボードを使うか、独自のキーボードを用意している。画面の小さいスマートフォンでは、表示できる範囲が狭いので遊びにくいことがある。
+</p><p>Android の移植版は、デスクトップ版の Dungeon Crawl と同じ設定ファイルで設定を変えられる。設定ファイルはアプリごとのディレクトリ <i>Android/data/&lt;APP_ID&gt;/files</i> に置かれる。なお、<a rel="nofollow" class="external text" href="https://www.reddit.com/r/Android/comments/j3zgmm/managing_files_in_the_androiddata_folder_on/">Android 11</a> 以降は、標準のファイルマネージャーからこのパスに簡単には入れない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#org.develz.crawl_.28current.29"><span class="tocnumber">1</span> <span class="toctext">org.develz.crawl(現行版)</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#org.develz.crawl_.28legacy.29"><span class="tocnumber">2</span> <span class="toctext">org.develz.crawl(旧版)</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#com.crawlmb"><span class="tocnumber">3</span> <span class="toctext">com.crawlmb</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#com.newtzgames.dcssonline"><span class="tocnumber">4</span> <span class="toctext">com.newtzgames.dcssonline</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="org.develz.crawl_.28current.29">org.develz.crawl(現行版)</span></h2>
+<p>Android 版の開発は、バージョン <a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> から Félix Medrano が引き継いで再開した。旧版の移植と土台のコードはほとんど同じだが、保守しやすいように、ほかのビルドにより近い作りになっている。Dungeon Crawl の本家のリポジトリにはまだ取り込まれていないが、取り込みの要望が進行中だ。
+</p><p>この移植版は、以前の移植版のアイデアをいくつか取り入れており、小さい画面向けに手直ししたタイル版のインターフェース(設定すればどの端末でも使える)と独自の仮想キーボードを備えている。操作はいくつかのタッチジェスチャーで補われ、ハードウェアキーボードや Android のボタンにも対応している。
+</p><p>この移植版はまだ開発中で、<a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.develz.crawl">Google Play</a>、<a rel="nofollow" class="external text" href="https://f-droid.org/en/packages/org.develz.crawl/">F-Droid</a>、<a rel="nofollow" class="external text" href="https://m.apkpure.com/dungeon-crawl-stone-soup/org.develz.crawl">そのほかのストア</a>からインストールできる。派生版の <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.develz.bloatcrawl2">Bloatcrawl 2</a> 用もある。
+</p>
+<h2><span class="mw-headline" id="org.develz.crawl_.28legacy.29">org.develz.crawl(旧版)</span></h2>
+<p><i>Dungeon Crawl Stone Soup</i> の最初の公式な Android 版は Chris West(別名 Frog Botherer)が開発し、Dungeon Crawl のバージョン <a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> で本体に取り込まれた。タイル版を移植したもので、操作はデスクトップ版によく似ているが、マウスの代わりに端末のタッチスクリーンを使う。左上隅のキーボードボタンを押すと端末の標準のタッチキーボードが出てきて、キーボードのコマンドや文字の入力ができる。
+</p><p>この移植版は Android 用の SDL マルチメディアライブラリを使っている。アプリを起動したら、SDL のスプラッシュ画面で「Device configuration」を選ぶと、画面上の十字キーのタッチ操作などの追加の操作機能を有効にしたり、キーボードの大きさや透明度、マウスクリックの模倣といった設定を変えたりできる。
+</p><p>このアプリは Dungeon Crawl <a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> 以降は保守されておらず、最近の端末で動かすのは手こずるだろう。Android のストアには無いが、<a rel="nofollow" class="external text" href="https://crawl.develz.org/release/0.16/">crawl.develz.org</a> から APK をダウンロードできる。
+</p>
+<h2><span class="mw-headline" id="com.crawlmb">com.crawlmb</span></h2>
+<p>開発者の Michael Barlow は別のやり方を取った。この移植版は、<i>Angband</i> や <i>Nethack</i> といったほかのローグライクの Android 版と同じように、<i>Dungeon Crawl Stone Soup</i> のコンソール版を動かす。
+</p><p>このプロジェクトは独自の Android アプリで、Dungeon Crawl の本家のリポジトリをサブモジュールとして組み込んでいる。タイル版のスプラッシュ画面、タッチジェスチャーで大きさを変えられるインターフェース、細かく設定できるインターフェース、独自のキーボードとタッチでの方向操作を備えている。
+</p><p>Dungeon Crawl <a href="http://crawl.chaosforge.org/0.10" data-untr="1" title="0.10">0.10</a> から <a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> まで、長年にわたって多くの版が公開されたが、今は保守されていない。
+</p><p>コードは <a rel="nofollow" class="external text" href="https://github.com/michaelbarlow7/dungeon-crawl-android">GitHub</a> で公開されており、アプリは <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=com.crawlmb">Google Play</a>、<a rel="nofollow" class="external text" href="https://f-droid.org/en/packages/com.crawlmb/">F-Droid</a>、<a rel="nofollow" class="external text" href="https://m.apkpure.com/dungeon-crawl-ss-ascii/com.crawlmb">そのほかのストア</a>からインストールできる。
+</p>
+<h2><span class="mw-headline" id="com.newtzgames.dcssonline">com.newtzgames.dcssonline</span></h2>
+<p>Brian Newtz が作ったこの非公式アプリは、ゲームの移植版ではなく、WebTiles 版で遊ぶための WebView だ。Dungeon Crawl の本家のプロジェクトのコードはまったく含まれていない。
+</p><p>サーバーの一覧を表示し、入力にはシステムのキーボードを使う。WebTiles 版の入力の扱い方のせいで、Android 端末で遊ぶにはこれしか手がなかった。Dungeon Crawl <a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> で、どのモバイルブラウザでも WebTiles で遊べるようにする変更がいくつか入ったが、使い勝手はいまだにこのアプリがいちばんよい。
+</p><p>残念ながら、このアプリはもう保守されておらず、新しい端末では入力がうまく動かない。Google Play からは取り下げられたが、<a rel="nofollow" class="external text" href="https://m.apkpure.com/dcss-online/com.newtzgames.dcssonline">そのほかのストア</a>からならまだインストールできる。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

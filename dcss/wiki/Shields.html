@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>盾 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="盾(Shields)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>盾 <span class="en">Shields</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Shields">Shields</a>」(0.33 向け、2026-02-06 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Shields&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><i>スキルについては<a href="Shields_(skill).html" title="Shields (skill)">盾 (スキル)</a>を参照。かつて単に盾と呼ばれていたアイテムについては<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>を参照。</i>
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 「戦場で己の勇気を誇りたい者は誇るがよい。<br />
+<p>わたしは盾にほとんど身の安全を見いだせぬ。<br />
+われらが従うべきは名誉の掟ではなく、自然の掟。<br />
+それゆえわたしは役立たずの盾を投げ捨て、<br />
+抜け目なく賢明に逃げることで、<br />
+勇気では墓から救えなかった命を救ったのだ。<br />
+もっと良い小盾はすぐにまた手に入る。<br />
+だが、命をもう一つ手に入れられる者がいようか?」<br />
+-アルキロコス(紀元前7世紀)。英訳:ウィリアム・H・グッドウィン、1878年。
+</p>
+</td></tr></table>
+<p><a class="mw-selflink selflink">盾</a>は片手に着ける防具の一種で、着けている間は両手武器を使えなくなる。<a href="http://crawl.chaosforge.org/Shields_skill" data-untr="1" class="mw-redirect" title="Shields skill">盾スキル</a>の影響を受ける。ほかの防具と違い、盾はキャラクターの <a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> を上げ、物理攻撃(と一部の魔法攻撃)を完全に防ぐ機会を与えてくれる。盾には 3 種類あり、小さいものから順に次のとおりだ:
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a></li>
+<li><a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a></li>
+<li><a href="Tower_shield.html" title="Tower shield">タワーシールド</a></li></ul>
+<p><a href="Orb.html" title="Orb">オーブ</a>も盾の枠を使うが、身を守る効果はなく、代わりに固有のエゴによってさまざまな魔法の効果をもたらす。
+</p><p>魔法の効果の中にも SH の値を上げるものがある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Shield_Penalties"><span class="tocnumber">1</span> <span class="toctext">盾のペナルティ</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#EV_Penalty"><span class="tocnumber">1.1</span> <span class="toctext">EV のペナルティ</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Attack_Penalty"><span class="tocnumber">1.2</span> <span class="toctext">攻撃のペナルティ</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Spell_Penalty"><span class="tocnumber">1.3</span> <span class="toctext">呪文のペナルティ</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Egos"><span class="tocnumber">2</span> <span class="toctext">エゴ</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Blocking"><span class="tocnumber">3</span> <span class="toctext">受け止め</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Blockable_attacks"><span class="tocnumber">3.1</span> <span class="toctext">受け止められる攻撃</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Max_Blocks"><span class="tocnumber">3.2</span> <span class="toctext">最大受け止め回数</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#SH_calculation"><span class="tocnumber">3.3</span> <span class="toctext">SH の計算</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Chance_to_block"><span class="tocnumber">3.4</span> <span class="toctext">受け止める確率</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Shield_Penalties">盾のペナルティ</span></h2>
+<p>盾を着けると、攻撃速度、EV、呪文の詠唱にペナルティがかかる。バックラーのペナルティはほとんど無視できるほどだが、タワーシールドは攻撃をかなり遅くし、呪文の詠唱を当てにならないものにしかねない。
+</p>
+<h3><span class="mw-headline" id="EV_Penalty">EV のペナルティ</span></h3>
+<p>盾による EV のペナルティは次のとおり:<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p><a href="http://crawl.chaosforge.org/File:Shield_encumbrance_ev.png" data-untr="1" class="image"><img alt="2/5 * encumbrance^2 / (5 + str) * (27 - shield_skill) / 27" src="img/Shield_encumbrance_ev.png" width="642" height="112" /></a>
+</p><p><a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力の高い</a>キャラクターほど盾の重さに邪魔されにくい。また、盾スキルを最大まで上げれば誰でも盾のペナルティをなくせる。
+</p>
+<table class="prettytable">
+
+<tr align="center">
+<th> 盾の種類 </th>
+<th> 重さ
+</th></tr>
+<tr>
+<td>バックラー </td>
+<td> 5
+</td></tr>
+<tr>
+<td>カイトシールド </td>
+<td> 10
+</td></tr>
+<tr>
+<td>タワーシールド </td>
+<td> 15
+</td></tr></table>
+<p>EV のペナルティは回避の値からそのまま引かれる。丸める前の EV のペナルティは、ほかのペナルティの計算にも使われる。
+</p>
+<h3><span class="mw-headline" id="Attack_Penalty">攻撃のペナルティ</span></h3>
+<p>このペナルティは近接攻撃(素手の攻撃を含む)、射撃武器、投擲武器にかかる。
+</p><p>EV 単位の盾のペナルティが、<a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> 単位の攻撃の遅れに換算される。盾を着けて攻撃すると、<code>EV_penalty</code> から <code>EV_penalty + 0.05</code> aut だけ長くかかる。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> ペナルティが整数でないときは、重み付きで丸められる。
+</p><p>単位は aut であって、<a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">decaAut</a> や「<a href="http://crawl.chaosforge.org/Turn" data-untr="1" title="Turn">ターン</a>」ではないことに注意。目安として、EV のペナルティ 1 で 1 aut = 0.1 ターン遅くなる。
+</p>
+<h3><span class="mw-headline" id="Spell_Penalty">呪文のペナルティ</span></h3>
+<p>呪文の詠唱へのペナルティはずっと複雑だ。盾は「SpellFailure」という変数に加算される。これは実際の失敗率(%)とは別物なので混同しないこと:
+</p><p><code>SpellFailure = 19 * ev_penalty </code>
+</p><p>目安として、SpellFailure 12 のペナルティは、(<a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a>を除く)すべての呪文の系統が 1 レベルずつ下がるのに相当する。SpellFailure 15 なら、<a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a>も含めたすべての系統が 1 レベルずつ下がるのに相当する。
+</p><p>この数値は、さらに<a href="Spell_Success.html" class="mw-redirect" title="Spell success">呪文の成功率</a>のページで説明しているさまざまな関数で補正される。
+</p>
+<h2><span class="mw-headline" id="Egos"><a href="Ego.html" title="Ego">エゴ</a></span></h2>
+<p><a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>、<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>には、次のエゴが付いて生成されることがある<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>:
+</p>
+<ul><li>~3%、<a href="Resistance_(ego).html" title="Resistance (ego)">耐性</a></li>
+<li>10%、<a href="http://crawl.chaosforge.org/Fire_resistance" data-untr="1" class="mw-redirect" title="Fire resistance">火炎耐性</a></li>
+<li>10%、<a href="http://crawl.chaosforge.org/Cold_resistance" data-untr="1" class="mw-redirect" title="Cold resistance">冷気耐性</a></li>
+<li>10%、<a href="http://crawl.chaosforge.org/Poison_resistance" data-untr="1" class="mw-redirect" title="Poison resistance">毒耐性</a></li>
+<li>10%、<a href="http://crawl.chaosforge.org/Positive_energy" data-untr="1" class="mw-redirect" title="Positive energy">正の力</a></li>
+<li>19%、<a href="http://crawl.chaosforge.org/Reflection" data-untr="1" title="Reflection">反射</a></li>
+<li>39%、<a href="http://crawl.chaosforge.org/Protection" data-untr="1" title="Protection">護り</a></li></ul>
+<p><a href="http://crawl.chaosforge.org/Cold_resistance" data-untr="1" class="mw-redirect" title="Cold resistance">冷気耐性</a>の盾は<a href="Ice_cave.html" title="Ice cave">氷の洞穴</a>で、<a href="http://crawl.chaosforge.org/Fire_resistance" data-untr="1" class="mw-redirect" title="Fire resistance">火炎耐性</a>の盾は<a href="http://crawl.chaosforge.org/Volcano" data-untr="1" title="Volcano">火山</a>で見つかることもある。
+</p><p><a href="Orb.html" title="Orb">オーブ</a>にはそれぞれ固有のエゴがある。詳しくは<a href="Orb.html" title="Orb">オーブ</a>のページを参照。
+</p>
+<h2><span class="mw-headline" id="Blocking">受け止め</span></h2>
+<p><a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> が 0 より大きければ、近接攻撃と遠隔の「飛び道具」による攻撃を受け止められる。受け止められるかどうかは <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> には左右されない。盾による受け止めは、<a href="Evasion.html" title="Evasion">回避</a>や <a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> の判定よりも先に行われる。
+</p><p>受け止められる攻撃を受け止めようとするとき、攻撃する側は貫通値を、守る側は受け止め値を振る。攻撃する側の値のほうが低ければ、(詳しくは下を参照)。ただし、プレイヤーの 1 ターンに受け止められる攻撃の数には絶対的な上限がある。
+</p>
+<h3><span class="mw-headline" id="Blockable_attacks">受け止められる攻撃</span></h3>
+<p><b>受け止め<i>られる</i>もの</b>
+</p>
+<ul><li>近接攻撃、<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>、貫通しない<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>武器。</li>
+<li>単体を狙う飛び道具を放つ呪文。<a href="http://crawl.chaosforge.org/Iron_Shot" data-untr="1" title="Iron Shot">鉄塊の矢</a>、<a href="http://crawl.chaosforge.org/Poison_Arrow" data-untr="1" title="Poison Arrow">毒素の矢</a>、<a href="http://crawl.chaosforge.org/Orb_of_Destruction" data-untr="1" title="Orb of Destruction">破壊の爆裂球</a>、<a href="http://crawl.chaosforge.org/Sandblast" data-untr="1" title="Sandblast">砂の突風</a>など。</li></ul>
+<p><b>ふつうは受け止め<i>られない</i>もの</b>
+</p>
+<ul><li>貫通する攻撃: <a href="http://crawl.chaosforge.org/Javelin" data-untr="1" title="Javelin">ジャベリン</a>、<a href="http://crawl.chaosforge.org/Bolt_spells" data-untr="1" title="Bolt spells">ボルト系の呪文</a>、<a href="http://crawl.chaosforge.org/Starburst" data-untr="1" title="Starburst">星の炸裂</a>など。</li>
+<li>必中の攻撃: <a href="http://crawl.chaosforge.org/Magic_Dart" data-untr="1" title="Magic Dart">魔法の矢</a>、<a href="http://crawl.chaosforge.org/Smiting" data-untr="1" title="Smiting">打擲の一撃</a>、<a href="Chain_Lightning.html" title="Chain Lightning">連鎖する稲妻</a>、爆発(<a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>、<a href="Damnation.html" title="Damnation">天罰</a>)、<a href="Shatter.html" title="Shatter">粉砕</a>など。
+<ul><li><a href="http://crawl.chaosforge.org/Orb_of_Destruction" data-untr="1" title="Orb of Destruction">破壊の爆裂球</a>は、EV を無視しながら受け止めはできる唯一の呪文だ。</li></ul></li>
+<li>状態をかける呪文: <a href="http://crawl.chaosforge.org/Agony" data-untr="1" title="Agony">苦悶</a>、<a href="http://crawl.chaosforge.org/Pain" data-untr="1" title="Pain">苦痛</a>、<a href="http://crawl.chaosforge.org/Confuse" data-untr="1" title="Confuse">混乱</a>など、<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>で判定するものすべて。</li></ul>
+<p><a href="Warlock's_mirror.html" title="Warlock&#39;s mirror">魔法使いの鏡</a>は、貫通する攻撃、光線の通り道であなたを狙う範囲攻撃でない必中の攻撃(魔法の矢など)、状態をかける呪文も受け止められる。貫通する攻撃にはふつうの SH の式が使われ、必中の攻撃と状態をかける呪文には専用の式が使われる。
+</p>
+<h3><span class="mw-headline" id="Max_Blocks">最大受け止め回数</span></h3>
+<p>盾の種類(または盾なし)ごとに、プレイヤーの 1 ターンに受け止められる攻撃の数が決まっている:
+</p>
+<table class="prettytable">
+
+<tr align="center">
+<th> 盾の種類 </th>
+<th> 最大受け止め回数
+</th></tr>
+<tr>
+<td>なし </td>
+<td> 1
+</td></tr>
+<tr>
+<td>バックラー </td>
+<td> 2
+</td></tr>
+<tr>
+<td>カイトシールド </td>
+<td> 3
+</td></tr>
+<tr>
+<td>タワーシールド </td>
+<td> 4
+</td></tr></table>
+<p><a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>の神気の盾で攻撃を受け止める場合は、この上限を無視する。神気の盾による受け止めは、ふつうの SH の式が使われる前に消費される。
+</p>
+<h3><span class="mw-headline" id="SH_calculation">SH の計算</span></h3>
+<p>物理的な盾を装備しているとき、その SH は次のように決まる:<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+</p>
+<ul><li><b>基本 SH</b> は盾の種類で決まる。<a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>は 3、<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>は 8、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>は 13。</li>
+<li><b><a href="Shields_(skill).html" title="Shields (skill)">スキルボーナス</a></b>として <code>(base_SH/40 + 0.19) * skill</code> を足す。</li>
+<li><b><a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">能力値ボーナス</a></b>として <code>DEX * 38 * (base_SH + 13) / 5200</code> を足す。</li>
+<li><b><a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化値</a></b>を足す。強化値 +1 = SH +1。</li>
+<li>SH 0.57 を足す。</li></ul>
+<p>ほかの SH の源(<a href="http://crawl.chaosforge.org/Qazlal" data-untr="1" class="mw-redirect" title="Qazlal">クァズラル</a>の盾、<a href="http://crawl.chaosforge.org/Amulet_of_reflection" data-untr="1" title="Amulet of reflection">反射の護符</a>など)はどれも固定のボーナスで、物理的な盾によるボーナスの上に足される。最終的な値は最も近い整数に丸められ、プレイヤーの SH の値として表示される。
+</p><p><a href="http://crawl.chaosforge.org/Paralysed" data-untr="1" class="mw-redirect" title="Paralysed">麻痺</a>、<a href="http://crawl.chaosforge.org/Petrified" data-untr="1" class="mw-redirect" title="Petrified">石化</a>、<a href="Sleep.html" title="Sleep">睡眠</a>のいずれかの状態にあると、ほかの要素にかかわらず SH は 0 になる。
+</p>
+<h3><span class="mw-headline" id="Chance_to_block">受け止める確率</span></h3>
+<p>ゲームは、攻撃する側の「貫通値」と守る側の「受け止め値」を比べる。
+</p><p>攻撃する側の貫通値は、その<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>(正確さ)と攻撃の種類で決まる:
+</p>
+<ul><li><b>近接攻撃:</b> <code>1d(15 + to_hit/2)</code></li>
+<li><b>遠隔攻撃:</b>  <code>1d(1.3×to hit)</code></li></ul>
+<p>守る側の受け止め値は次のとおり:<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<ul><li><b>すべての攻撃:</b> <code>2d(4×SH)/6 - 1</code></li>
+<li><a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>な相手からの近接攻撃に対しては 3 で割る。</li></ul>
+<p>受け止め値が攻撃する側の貫通値以上なら、攻撃は受け止められる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、盾で受け止められる攻撃の数に絶対的な上限はなかった。その代わり、攻撃を受け止めるたびに、その後の受け止めが成功しにくくなった(攻撃する側の貫通値は、近接なら <code>1d(15 + to_hit/2 +5 × past_blocks^2)</code> で、遠隔も同様だった)。また、標準で SH 0.57 を得る代わりに、最初の 3 レベルでレベルごとに SH +0.19 が追加され、標準で得られるのは SH 0.25 だけだった。</li>
+<li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> より前は、種族の<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>が盾の重さと SH の値に影響していた。体の大きい種族は盾に邪魔されにくいが、カイトシールドから得る SH がやや少なかった。体の小さい種族はその逆で、バックラーやカイトシールドから得る SH は多いが、重さの影響を受けやすかった。腕力は盾のペナルティに影響しなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> で、盾の位置に持つ装備の新しい分類として、魔法の<a href="Orb.html" title="Orb">オーブ</a>が追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、盾の EV のペナルティの式が異なり、<code>EV_penalty - skill / (5 + <a href="Evasion.html#Base_EV" title="Evasion">size_factor</a>)</code> だった(バックラー = 0.8 EV、カイトシールド = 3、タワーシールド = 5)。スキル 0 で盾を使うと今より重かったが、一定のスキル(ふつうの<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>の種族なら、バックラーで 4、カイトシールドで 15、タワーシールドで 25)に達するとペナルティが完全になくなった。<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>へのペナルティもあった。さらに、大きいほうの 2 種類の盾では、追加の SH を決めるのに(<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>と並んで)<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>も使われていた。 </li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、盾による<a href="http://crawl.chaosforge.org/Attack_delay" data-untr="1" class="mw-redirect" title="Attack delay">攻撃の所要時間</a>へのペナルティが今より小さく、ばらつきがあった(以前は <code>smaller of {1d(20 * EV)/20, 1d(20 * EV)/20}</code> を切り捨て)。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>は単に「盾」と呼ばれ、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>は「ラージシールド」と呼ばれていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、盾を装備していると<a href="http://crawl.chaosforge.org/Unarmed" data-untr="1" class="mw-redirect" title="Unarmed">素手</a>の攻撃に速度のペナルティがかかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、盾を着けるペナルティをなくすのに必要なスキルの量がもっと複雑だった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/player.cc#L5739">player.cc:5739</a> (0.30.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/player-act.cc#L348">player-act.cc:348</a> (0.30.0)<br />関数 random_var は (20 * EV_penalty) から (20 * EV_penalty + 1) までの数を振り、それを 20 で割って重み付きで丸めている。(<a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/random-var.cc#L11">random-var.cc:11</a> (0.30.1) を参照)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.29.1/crawl-ref/source/makeitem.cc#L741">makeitem.cc:741</a> (0.29.1)</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/player.cc#L2300">player.cc:2300</a> (0.32.1)<br />これらの値は、後の関数で 200 で割られる。</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/player.cc#L6078">player.cc:6078</a> (0.32.1)<br />「player_shield_class」は表示される SH の半分であることに注意。</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 65%">
+
+<tr>
+<th colspan="2"> <a href="Armour.html" title="Armour">防具</a>
+</th></tr>
+<tr>
+<th> 胴体の鎧
+</th>
+<td>  <a href="Leather_armour.html" title="Leather armour">レザーアーマー</a> • <a href="http://crawl.chaosforge.org/Ring_mail" data-untr="1" title="Ring mail">リングメイル</a> • <a href="Scale_mail.html" title="Scale mail">スケイルメイル</a> • <a href="Chain_mail.html" title="Chain mail">鎖かたびら</a> • <a href="http://crawl.chaosforge.org/Plate_armour" data-untr="1" title="Plate armour">プレートアーマー</a> • <a href="Crystal_plate_armour.html" title="Crystal plate armour">水晶の鎧</a>
+<p><a href="Robe.html" title="Robe">ローブ</a> • <a href="Animal_skin.html" title="Animal skin">獣の皮</a> • <a href="http://crawl.chaosforge.org/Troll_leather_armour" data-untr="1" title="Troll leather armour">トロル革の鎧</a> • <a href="http://crawl.chaosforge.org/Steam_dragon_scales" data-untr="1" title="Steam dragon scales">スチームドラゴンの鱗一式</a> • <a href="Acid_dragon_scales.html" title="Acid dragon scales">アシッドドラゴンの鱗一式</a> •<br /><a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">沼ドラゴンの鱗一式</a> • <a href="Quicksilver_dragon_scales.html" title="Quicksilver dragon scales">水銀ドラゴンの鱗一式</a> • <a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a> • <a href="Ice_dragon_scales.html" title="Ice dragon scales">アイスドラゴンの鱗一式</a><br /><a href="Pearl_dragon_scales.html" title="Pearl dragon scales">パールドラゴンの鱗一式</a> • <a href="http://crawl.chaosforge.org/Shadow_dragon_scales" data-untr="1" title="Shadow dragon scales">シャドウドラゴンの鱗一式</a> • <a href="http://crawl.chaosforge.org/Storm_dragon_scales" data-untr="1" title="Storm dragon scales">ストームドラゴンの鱗一式</a> • <a href="Golden_dragon_scales.html" title="Golden dragon scales">ゴールドドラゴンの鱗一式</a>
+</p>
+</td></tr>
+<tr>
+<th> その他
+</th>
+<td> <a href="Hat.html" title="Hat">帽子</a> • <a href="http://crawl.chaosforge.org/Helmet" data-untr="1" title="Helmet">兜</a> • <a href="Cloak.html" title="Cloak">クローク</a> • <a href="Scarf.html" title="Scarf">スカーフ</a> • <a href="Gloves.html" title="Gloves">手袋</a> • <a href="http://crawl.chaosforge.org/Boots" data-untr="1" title="Boots">ブーツ</a> • <a href="Barding.html" title="Barding">馬甲</a>
+</td></tr>
+<tr>
+<th> <a class="mw-selflink selflink">盾</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a> • <a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a> • <a href="Tower_shield.html" title="Tower shield">タワーシールド</a> • <a href="Orb.html" title="Orb">オーブ</a>
+</td></tr></table>
+</center>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

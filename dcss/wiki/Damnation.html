@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>天罰 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="天罰(Damnation)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>天罰 <span class="en">Damnation</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Damnation">Damnation</a>」(0.32 向け、2026-05-24 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Damnation&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><i>この記事はダメージの種類としての天罰について説明する。同じ名前のアーティファクトのクロスボウについては<a href="Damnation_(unrand).html" title="Damnation (unrand)">地獄の鉄槌(固定アーティファクト)</a>を、<a href="http://crawl.chaosforge.org/Demonspawn_mutation" data-untr="1" class="mw-redirect" title="Demonspawn mutation">悪魔の血族の変異</a>については<a href="http://crawl.chaosforge.org/Hurl_Damnation_(mutation)" data-untr="1" title="Hurl Damnation (mutation)">地獄の鉄槌(変異)</a>を参照。</i>
+</p><p><b>天罰</b>は、まず防ぎようのない、とてつもなく危険なダメージの種類だ。必ず3×3マスの爆発として飛んできて、決して外れない。<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>や<a href="Hell.html" title="Hell">地獄</a>の各分岐での大きな脅威の一つになっている。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Monster_spells"><span class="tocnumber">1</span> <span class="toctext">モンスターの呪文</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Hurl_Damnation"><span class="tocnumber">1.1</span> <span class="toctext">天罰</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Call_Down_Damnation"><span class="tocnumber">1.2</span> <span class="toctext">天罰の招来</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Damnation_Sources_for_the_Player"><span class="tocnumber">2</span> <span class="toctext">プレイヤーが天罰を使う手段</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Damnation_Resistance"><span class="tocnumber">3</span> <span class="toctext">天罰への耐性</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_Also"><span class="tocnumber">5</span> <span class="toctext">関連項目</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Monster_spells">モンスターの呪文</span></h2>
+<h3><span class="mw-headline" id="Hurl_Damnation">天罰</span></h3>
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Hurl_damnation.png" data-untr="1" class="image"><img alt="Hurl damnation.png" src="img/Hurl_damnation.png" width="32" height="32" /></a>&#8195;天罰
+</th></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 9
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 0
+</td></tr>
+
+<tr>
+<th align="left"> 射程
+</th>
+<td> 6
+</td></tr>
+
+<tr>
+<th align="left"> フラグ
+</th>
+<td> 方向・対象指定(Dir or target)、射線の確認が必要(Needs tracer)、不浄(Unholy)
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 指定した敵に天罰を浴びせる。この不浄な力は対象とその隣にいる者すべてを傷つけ、鎧や耐性などのいかなる防御手段の影響も受けない。ただし、一部のモンスター、主に自らも天罰を呼び起こせる者たちは、天罰を受けてもまったく傷つかない。
+</td></tr></table>
+<p>この呪文は射程7で、対象が視界に入っている必要があり、避けられない3×3の爆発を起こす。各マスへのダメージは天罰による3d20だ。
+次の敵が天罰を唱える:
+</p>
+<ul><li> <span class="nhsym">&amp;</span> <a href="http://crawl.chaosforge.org/File:Asmodeus.png" data-untr="1" class="image"><img alt="Asmodeus.png" src="img/Asmodeus.png" width="32" height="48" /></a> <b><a href="http://crawl.chaosforge.org/Asmodeus" data-untr="1" title="Asmodeus">アスモデウス</a></b>(3d20 ダメージ)</li>
+<li> <span class="nhsym">R</span> <a href="http://crawl.chaosforge.org/File:Azrael.png" data-untr="1" class="image"><img alt="Azrael.png" src="img/Azrael.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Azrael" data-untr="1" title="Azrael">アズラエル</a></b>(3d20 ダメージ)</li>
+<li> <span class="nhsym">1</span> <a href="http://crawl.chaosforge.org/File:Brimstone_Fiend.png" data-untr="1" class="image"><img alt="Brimstone Fiend.png" src="img/Brimstone_Fiend.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Brimstone_Fiend" data-untr="1" title="Brimstone Fiend">硫黄の魔神</a></b>(3d20 ダメージ)</li>
+<li> <span class="nhsym clr-brightmagenta">e</span> <a href="http://crawl.chaosforge.org/File:Deep_elf_sorcerer.png" data-untr="1" class="image"><img alt="Deep elf sorcerer.png" src="img/Deep_elf_sorcerer.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Deep_elf_sorcerer" data-untr="1" title="Deep elf sorcerer">闇エルフの魔道士</a></b>(3d20 ダメージ)</li>
+<li> <span class="nhsym clr-magenta">&amp;</span> <a href="http://crawl.chaosforge.org/File:Dispater.png" data-untr="1" class="image"><img alt="Dispater.png" src="img/Dispater.png" width="32" height="48" /></a> <b><a href="Dispater.html" title="Dispater">ディスペータ</a></b>(3d20 ダメージ)</li>
+<li> <span class="nhsym">q</span> <a href="http://crawl.chaosforge.org/File:Draconian_scorcher.png" data-untr="1" class="image"><img alt="Draconian scorcher.png" src="img/Draconian_scorcher.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Draconian_scorcher" data-untr="1" title="Draconian scorcher">ドラコニアンの焼却者</a></b>(3d20 ダメージ)</li>
+<li> <span class="nhsym clr-brown">1</span> <a href="http://crawl.chaosforge.org/File:Hell_Sentinel.png" data-untr="1" class="image"><img alt="Hell Sentinel.png" src="img/Hell_Sentinel.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Hell_Sentinel" data-untr="1" title="Hell Sentinel">地獄の番人</a></b>(3d20 ダメージ)</li>
+<li> <span class="nhsym">@</span> <a href="http://crawl.chaosforge.org/File:Hellbinder.png" data-untr="1" class="image"><img alt="Hellbinder.png" src="img/Hellbinder.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Hellbinder" data-untr="1" class="mw-redirect" title="Hellbinder">地獄を束ねしもの</a></b>(3d20 ダメージ)</li></ul>
+<h3><span class="mw-headline" id="Call_Down_Damnation">天罰の招来</span></h3>
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Call_down_damnation.png" data-untr="1" class="image"><img alt="Call down damnation.png" src="img/Call_down_damnation.png" width="32" height="32" /></a>&#8195;天罰の招来
+</th></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 9
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 0
+</td></tr>
+
+<tr>
+<th align="left"> 射程
+</th>
+<td> 視界(LOS)
+</td></tr>
+
+<tr>
+<th align="left"> フラグ
+</th>
+<td> モンスター専用(Monster)、射線の確認が必要(Needs tracer)、対象指定(Target)、不浄(Unholy)
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 指定した敵に天罰を浴びせる。直接の射線を必要としない。この不浄な力は対象とその隣にいる者すべてを傷つけ、鎧や耐性などのいかなる防御手段の影響も受けない。ただし、一部のモンスター、主に自らも天罰を呼び起こせる者たちは、天罰を受けてもまったく傷つかない。
+</td></tr></table>
+<p>こちらは<a href="http://crawl.chaosforge.org/Smite-targeting" data-untr="1" class="mw-redirect" title="Smite-targeting">打擲型</a>の狙い方で、視界内の対象に3×3の天罰の爆発を叩きこむ。ダメージは3d15。
+次の敵が天罰の招来を唱える:
+</p>
+<ul><li> <span class="nhsym">R</span> <a href="http://crawl.chaosforge.org/File:Azrael.png" data-untr="1" class="image"><img alt="Azrael.png" src="img/Azrael.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Azrael" data-untr="1" title="Azrael">アズラエル</a></b>(3d15 ダメージ)</li>
+<li> <span class="nhsym clr-brightgreen">e</span> <a href="http://crawl.chaosforge.org/File:Deep_elf_high_priest.png" data-untr="1" class="image"><img alt="Deep elf high priest.png" src="img/Deep_elf_high_priest.png" width="32" height="32" /></a> <b><a href="Deep_elf_high_priest.html" title="Deep elf high priest">闇エルフの大司祭</a></b>(3d15 ダメージ)</li>
+<li> <span class="nhsym">q</span> <a href="http://crawl.chaosforge.org/File:Draconian_scorcher.png" data-untr="1" class="image"><img alt="Draconian scorcher.png" src="img/Draconian_scorcher.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Draconian_scorcher" data-untr="1" title="Draconian scorcher">ドラコニアンの焼却者</a></b>(3d15 ダメージ)</li>
+<li> <span class="nhsym">2</span> <a href="http://crawl.chaosforge.org/File:Hellion.png" data-untr="1" class="image"><img alt="Hellion.png" src="img/Hellion.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Hellion" data-untr="1" title="Hellion">ヘリオン</a></b>(3d15 ダメージ)</li></ul>
+<p>次の敵は、持っている呪文の組み合わせによっては天罰の招来を唱えることがある:
+</p>
+<ul><li> <span class="nhsym clr-lightgray">&amp;</span> <a href="http://crawl.chaosforge.org/File:Pandemonium_lord.png" data-untr="1" class="image"><img alt="Pandemonium lord.png" src="img/Pandemonium_lord.png" width="32" height="48" /></a> <b><a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a></b>(5.2% の確率)</li></ul>
+<h2><span class="mw-headline" id="Damnation_Sources_for_the_Player">プレイヤーが天罰を使う手段</span></h2>
+<p>プレイヤーが天罰の呪文を使えるようになる方法はわずかしかない。どれもゲームの終盤に見つかるもので、たいていは使うのに重い代償を払う(天罰の招来のほうは、プレイヤーにはどうやっても使えない)。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Orb_of_Dispater.png" data-untr="1" class="image"><img alt="Orb of Dispater.png" src="img/Orb_of_Dispater.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Orb_of_Dispater" data-untr="1" title="Orb of Dispater">ディスペータのオーブ</a>を発動すると、確実に天罰を放てる(<code><a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">威力</a> = <a href="Evocations.html" title="Evocations">発動</a> * 8</code>、最大ダメージ 3d42)。ただし最大 HP の 10% と 4 MP を消費する。</li>
+<li><a href="http://crawl.chaosforge.org/File:Urand_damnation.png" data-untr="1" class="image"><img alt="Urand damnation.png" src="img/Urand_damnation.png" width="32" height="32" /></a> <a href="Damnation_(unrand).html" title="Damnation (unrand)">アーバレスト『地獄の鉄槌』</a>で放った矢は天罰のダメージを与える。</li>
+<li><a href="http://crawl.chaosforge.org/Demonspawn_mutation" data-untr="1" class="mw-redirect" title="Demonspawn mutation">悪魔の血族の変異</a>の<a href="http://crawl.chaosforge.org/Hurl_Damnation_(mutation)" data-untr="1" title="Hurl Damnation (mutation)">地獄の鉄槌</a>は、ランク3で天罰を唱えられるようにする(ダメージは <a href="http://crawl.chaosforge.org/XL" data-untr="1" class="mw-redirect" title="XL">XL</a> で決まり、レベル27で最大 3d42)。ただし使うたびに最大 HP の 15% を消費する。</li></ul>
+<p>プレイヤーが放つ天罰は、どれも対象が視界に入っている必要があり、避けられない3×3の爆発を起こす。
+</p>
+<h2><span class="mw-headline" id="Damnation_Resistance">天罰への耐性</span></h2>
+<p>一部のモンスター(主に<a href="Demon.html" title="Demon">悪魔</a>)は<a href="http://crawl.chaosforge.org/Category:Damnation_resistance" data-untr="1" title="Category:Damnation resistance">天罰への耐性</a>を持ち、天罰のダメージをまったく受けない。プレイヤーが天罰への耐性を得る方法はない。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> より前は、天罰は地獄の業火(hellfire)と呼ばれ、防げないうえに<a href="http://crawl.chaosforge.org/Fire" data-untr="1" title="Fire">炎</a>のダメージとしても扱われていた。呪文の地獄の業火の炸裂(Hellfire Burst)は天罰の招来に、地獄の業火(Hellfire)は天罰に名前が変わった。</li></ul>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<p><a href="http://crawl.chaosforge.org/Category:Damnation_resistance" data-untr="1" title="Category:Damnation resistance">天罰への耐性を持つモンスターの一覧</a>
+</p>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>マクスウェルの容量結合 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="マクスウェルの容量結合(Maxwell&#x27;s Capacitive Coupling)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>マクスウェルの容量結合 <span class="en">Maxwell&#x27;s Capacitive Coupling</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Maxwell's_Capacitive_Coupling">Maxwell&#x27;s Capacitive Coupling</a>」(0.33 向け、2026-02-10 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Maxwell's_Capacitive_Coupling&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Maxwell%27s_capacitive_coupling.png" data-untr="1" class="image"><img alt="Maxwell&#39;s capacitive coupling.png" src="img/Maxwell's_capacitive_coupling.png" width="32" height="32" /></a>&#8195;マクスウェルの容量結合
+</th></tr>
+<tr>
+<th align="left"> レベル
+</th>
+<td> 8
+</td></tr>
+<tr>
+<th align="left"> 系統<sup>1</sup>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Air_Magic" data-untr="1" title="Air Magic">風の魔術</a>
+</td></tr>
+
+<tr>
+<th align="left"> 入手元
+</th>
+<td><a href="Codex_of_Conductivity.html" title="Codex of Conductivity">伝導の写本</a><br /><a href="http://crawl.chaosforge.org/Maxwell%27s_Memoranda" data-untr="1" title="Maxwell&#39;s Memoranda">マクスウェルの覚書</a>
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 8
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 25
+</td></tr>
+
+<tr>
+<th align="left"> 威力の上限
+</th>
+<td> 200
+</td></tr>
+
+<tr>
+<th align="left"> 射程
+</th>
+<td> 視界(LOS)
+</td></tr>
+
+<tr>
+<th align="left"> フラグ
+</th>
+<td> 破壊(Destructive)、幽霊に引き継がれない(No ghost)
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 術者が集中を保っている(その場で待機し、他の行動をとらない)限り、術者の体に少しずつ電荷を蓄えていく。電荷が限界に達すると最も近い敵と結合し、その敵をたちまち蒸発させる。呪文の威力が高いほど、術者はより速く電荷を蓄えられる。電荷を蓄え始めるには視界内に対象が必要だが、電荷を放つときには別の敵を狙ってもよい。
+</td></tr></table>
+<p><b>マクスウェルの容量結合</b>(<b>MCC</b>)はレベル8の<a href="http://crawl.chaosforge.org/Air_Magic" data-untr="1" title="Air Magic">風の魔術</a>の呪文だ。数ターン後に、いちばん近くにいる敵を、残りの体力や耐性や守りに関係なく必ず殺す。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Tips_.26_Tricks"><span class="tocnumber">2.1</span> <span class="toctext">小技</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>MCC は数ターンかけて電荷を蓄え、その間は<a href="http://crawl.chaosforge.org/Wait" data-untr="1" title="Wait">待機</a>していなければならない。蓄え終わると、いちばん近くにいる敵を殺す。対象の周りに、害のない透明な<a href="http://crawl.chaosforge.org/Cloud" data-untr="1" title="Cloud">雲</a>ができることもある。この呪文が効かないモンスターはいない。いちばん近い敵が2体以上いるときは、対象はランダムに選ばれる。
+</p><p>電荷を蓄える時間は <code>30 + (1d(200 - spellpower) - 1) / 50</code> <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a>(つまり通常速度で3〜7ターン)だ。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> 待機以外の行動をとったり、<a href="Silence.html" title="Silence">静寂</a>状態になったりすると呪文は中断される。この呪文は、<a href="http://crawl.chaosforge.org/LOS" data-untr="1" class="mw-redirect" title="LOS">視界</a>に敵がいるときしか唱えられない。
+</p><p>電荷を蓄えている間は、状態表示の <span class="nhsym">Charge-</span> が反時計回りに巡る。ただし、巡り始めと終わりの位置はランダムなので、いつ蓄え終わるかを見分けることはできない。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>マクスウェルの容量結合はとてつもなく強力な呪文で、<i>どんな</i>敵でも3〜7ターンで即死させられる。比べてみると、<a href="Lehudib's_Crystal_Spear.html" title="Lehudib&#39;s Crystal Spear">レフディブの水晶槍</a>なら手ごわい敵を3回の詠唱で倒せるかもしれない。それなら3ターンで済むが、MP は8ではなく24かかるし、水晶槍は外れることもある。敵の耐性を無視するので、風の魔術を専門にするキャラクターには最高の呪文だ。
+</p><p>この呪文の欠点は、狙いを定められないことだ。<a href="http://crawl.chaosforge.org/Summon" data-untr="1" title="Summon">召喚</a>を使う敵に周りを囲まれると、紛らわしい標的のせいで電荷を無駄撃ちしてしまう。手ごわい召喚役とは通路や<a href="http://crawl.chaosforge.org/Kill_hole" data-untr="1" title="Kill hole">キルホール</a>で戦えば、狙いが外れる可能性を減らせる。
+</p><p>それに、この呪文はとてつもなくうるさい。これは<a href="http://crawl.chaosforge.org/Stair_dancing" data-untr="1" class="mw-redirect" title="Stair dancing">階段ダンス</a>をするなら好都合だ。上り階段の上で MCC を唱え、その騒音でおびき寄せた敵にまた MCC を唱え、手に負えなくなるまで繰り返せばよい。敵をキルホールにおびき寄せるときにも役に立つ。ただし、<a href="http://crawl.chaosforge.org/Shaft" data-untr="1" title="Shaft">縦穴</a>に落ちたり<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>したりして見知らぬ場所にいるときや、ほかの理由で退けないときは気をつけること。
+</p>
+<h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
+<ul><li>自動戦闘(autofight)でこの呪文の電荷を自動で蓄えられる(MCC で電荷を蓄えている最中なら、自動戦闘が代わりに待機のコマンドを入力してくれる)。</li>
+<li>この効果は味方をすり抜けて相手に届く。召喚した味方の陰に隠れ、彼らに戦わせながら電荷を蓄えるとよい。</li>
+<li>敵が<a href="http://crawl.chaosforge.org/LOS" data-untr="1" class="mw-redirect" title="LOS">視界</a>から出ても電荷は蓄え続けられるが、唱えるときと放つときには視界に敵がいる必要がある。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> より前は、電荷を蓄え始めるのに見える対象は必要なかったので、敵が視界に入る前から唱えておけた。</li>
+<li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、マクスウェルの容量結合が発動しても害のない<a href="http://crawl.chaosforge.org/Cloud" data-untr="1" title="Cloud">雲</a>はできなかった。</li>
+<li>マクスウェルの容量結合は <a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> で<a href="http://crawl.chaosforge.org/Absolute_Zero" data-untr="1" title="Absolute Zero">絶対零度</a>に代わって追加された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/spl-damage.cc#L4338">spl-damage.cc:4338</a> (0.30.0)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

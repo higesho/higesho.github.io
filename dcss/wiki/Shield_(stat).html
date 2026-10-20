@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>盾 (能力値) &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="盾 (能力値)(Shield (stat))の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>盾 (能力値) <span class="en">Shield (stat)</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Shield_(stat)">Shield (stat)</a>」(0.33 向け、2025-11-14 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Shield_(stat)&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><i>このページは盾(SH)の<a href="http://crawl.chaosforge.org/Stat" data-untr="1" class="mw-redirect" title="Stat">能力値</a>についての記事だ。盾全般については<a href="Shields.html" title="Shields">盾</a>を、プレイヤーの<a href="Skill.html" title="Skill">スキル</a>については<a href="Shields_(skill).html" title="Shields (skill)">盾 (スキル)</a>を参照。</i>
+</p><p><b>SH</b> は、<a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a>、<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> と並ぶ 3 つの物理的な防御の一つだ。物理攻撃(近接と遠隔の両方)と一部の魔法攻撃を完全に無効にできる。AC や EV と違い、生まれつきの SH の値はない。物理的な盾を装備して得られる SH は<a href="Shields_(skill).html" title="Shields (skill)">盾</a>スキルの影響を受ける。魔法による盾はこのスキルの影響を受けない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Sources"><span class="tocnumber">1</span> <span class="toctext">SH を得る手段</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Blocking"><span class="tocnumber">2</span> <span class="toctext">受け止め</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Max_Blocks"><span class="tocnumber">2.1</span> <span class="toctext">最大受け止め回数</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Calculation"><span class="tocnumber">2.2</span> <span class="toctext">計算</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#To-hit_vs_SH"><span class="tocnumber">2.3</span> <span class="toctext">命中と SH</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#1_EV_vs_1_SH"><span class="tocnumber">4.1</span> <span class="toctext">EV 1 と SH 1 の比較</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Sources">SH を得る手段</span></h2>
+<p>次のアイテムや能力で SH が上がる:
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>を装備する。<a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>、<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>の順に効果が高く、扱いにくくなる</li>
+<li><a href="http://crawl.chaosforge.org/Amulet_of_reflection" data-untr="1" title="Amulet of reflection">反射の護符</a>、<a href="http://crawl.chaosforge.org/Brooch_of_Shielding" data-untr="1" title="Brooch of Shielding">防護のブローチ</a>、<a href="http://crawl.chaosforge.org/Ring_of_the_Octopus_King" data-untr="1" title="Ring of the Octopus King">蛸の王の指輪</a>を身につける</li>
+<li><a href="http://crawl.chaosforge.org/Large_Bone_Plates" data-untr="1" title="Large Bone Plates">大きな骨甲</a>の<a href="Mutation.html" title="Mutation">変異</a>を持つ</li>
+<li><a href="http://crawl.chaosforge.org/Qazlal" data-untr="1" class="mw-redirect" title="Qazlal">クァズラル</a>の常時発動の能力、嵐の盾</li></ul>
+<h2><span class="mw-headline" id="Blocking">受け止め</span></h2>
+<p>近接攻撃(<a href="Reaching.html" title="Reaching">間合い</a>のある攻撃を含む)と、貫通しない「飛び道具」を受け止められる。飛び道具には<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>や、<a href="http://crawl.chaosforge.org/Iron_Shot" data-untr="1" title="Iron Shot">鉄塊の矢</a>、<a href="http://crawl.chaosforge.org/Poison_Arrow" data-untr="1" title="Poison Arrow">毒素の矢</a>といった一部の呪文が含まれる。
+</p><p>SH で受け止められないもの:
+</p>
+<ul><li><a href="Penetration.html" title="Penetration">貫通</a>する攻撃: <a href="http://crawl.chaosforge.org/Javelin" data-untr="1" title="Javelin">ジャベリン</a>、<a href="http://crawl.chaosforge.org/Bolt_spell" data-untr="1" class="mw-redirect" title="Bolt spell">ボルト系の呪文</a>、<a href="http://crawl.chaosforge.org/Starburst" data-untr="1" title="Starburst">星の炸裂</a>など</li>
+<li><a href="http://crawl.chaosforge.org/Accuracy" data-untr="1" class="mw-redirect" title="Accuracy">必中</a>の攻撃のほぼすべて: <a href="http://crawl.chaosforge.org/Magic_Dart" data-untr="1" title="Magic Dart">魔法の矢</a>、<a href="http://crawl.chaosforge.org/Smiting" data-untr="1" title="Smiting">打擲の一撃</a>、<a href="Chain_Lightning.html" title="Chain Lightning">連鎖する稲妻</a>、爆発(<a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>、<a href="Damnation.html" title="Damnation">天罰</a>)、<a href="Shatter.html" title="Shatter">粉砕</a>など
+<ul><li><a href="http://crawl.chaosforge.org/Orb_of_Destruction" data-untr="1" title="Orb of Destruction">破壊の爆裂球</a>は、EV を無視しながら受け止めはできる唯一の呪文だ</li></ul></li>
+<li>状態をかける呪文: <a href="http://crawl.chaosforge.org/Agony" data-untr="1" title="Agony">苦悶</a>、<a href="http://crawl.chaosforge.org/Pain" data-untr="1" title="Pain">苦痛</a>、<a href="http://crawl.chaosforge.org/Confuse" data-untr="1" title="Confuse">混乱</a>など、<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>で判定するものすべて</li></ul>
+<h3><span class="mw-headline" id="Max_Blocks">最大受け止め回数</span></h3>
+<p>盾の種類(または盾なし)ごとに、プレイヤーの 1 ターンに受け止められる攻撃の数が決まっている:
+</p>
+<table class="prettytable">
+
+<tr align="center">
+<th> 盾の種類 </th>
+<th> 最大受け止め回数
+</th></tr>
+<tr>
+<td>なし </td>
+<td> 1
+</td></tr>
+<tr>
+<td>バックラー </td>
+<td> 2
+</td></tr>
+<tr>
+<td>カイトシールド </td>
+<td> 3
+</td></tr>
+<tr>
+<td>タワーシールド </td>
+<td> 4
+</td></tr></table>
+<h3><span class="mw-headline" id="Calculation">計算</span></h3>
+<p>物理的な盾を装備しているとき、その SH は次のように決まる:<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<ul><li><b>基本 SH</b> は盾の種類で決まる。<a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>は 3、<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>は 8、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>は 13。</li>
+<li><b><a href="Shields_(skill).html" title="Shields (skill)">スキルボーナス</a></b>として <code>(base_SH/40 + 0.19) * skill</code> を足す。</li>
+<li><b><a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">能力値ボーナス</a></b>として <code>DEX * 38 * (base_SH + 13) / 5200</code> を足す。</li>
+<li><b><a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化値</a></b>を足す。強化値 +1 = SH +1。</li>
+<li>SH 0.57 を足す。</li></ul>
+<p>ほかの SH の源(<a href="http://crawl.chaosforge.org/Qazlal" data-untr="1" class="mw-redirect" title="Qazlal">クァズラル</a>の盾、<a href="http://crawl.chaosforge.org/Amulet_of_reflection" data-untr="1" title="Amulet of reflection">反射の護符</a>など)はどれも固定のボーナスで、物理的な盾によるボーナスの上に足される。最終的な値は最も近い整数に丸められ、プレイヤーの SH の値として表示される。
+</p><p><a href="http://crawl.chaosforge.org/Paralysed" data-untr="1" class="mw-redirect" title="Paralysed">麻痺</a>や<a href="http://crawl.chaosforge.org/Petrified" data-untr="1" class="mw-redirect" title="Petrified">石化</a>の状態にあるか、<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>が 0 なら、ほかの要素にかかわらず SH は 0 になる。
+</p>
+<h3><span class="mw-headline" id="To-hit_vs_SH">命中と SH</span></h3>
+<p>ゲームは、攻撃する側の「貫通値」と守る側の「受け止め値」を比べる。
+</p><p>攻撃する側の貫通値は、その<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>(正確さ)と攻撃の種類で決まる:
+</p>
+<ul><li><b>近接攻撃:</b> <code>1d(15 + to_hit/2)</code></li>
+<li><b>遠隔攻撃:</b>  <code>1d(1.3×to_hit)</code></li></ul>
+<p>守る側の受け止め値は次のとおり:<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<ul><li><b>すべての攻撃:</b> <code>2d(4×SH)/6 - 1</code></li>
+<li><a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>な相手からの近接攻撃に対しては 3 で割る。</li></ul>
+<p>受け止め値が攻撃する側の貫通値以上で、最大受け止め回数を超えていなければ、攻撃は受け止められる。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>一般に、SH 1 ポイントは EV 1 ポイントより効果が低い。
+</p>
+<ul><li>ほとんどの場合、EV +1 のほうが SH +1 より良い防御になる。式は<a href="#1_EV_vs_1_SH">下を参照</a>。</li>
+<li>避けられる攻撃の数に上限はない。受け止められる攻撃の数には、1 ターンあたりの上限が<i>ある</i>。</li>
+<li>EV は貫通する攻撃も防ぐが、SH は防げない。</li></ul>
+<p>とはいえ、盾は今ある AC や EV に加えて大量の SH をもたらしてくれる。盾を着けて得られる SH は、まず間違いなく、着けて失う EV より多い。また、受け止めは<a href="http://crawl.chaosforge.org/Armour_encumbrance" data-untr="1" class="mw-redirect" title="Armour encumbrance">防具の重さ</a>の影響を受けない。
+</p><p>盾を着ける主な代償は、<a href="http://crawl.chaosforge.org/Hand" data-untr="1" class="mw-redirect" title="Hand">両手持ち</a>の武器が使えなくなることと、盾の<a href="Shields.html#Penalty" title="Shields">ペナルティ</a>(<a href="http://crawl.chaosforge.org/Shields_skill" data-untr="1" class="mw-redirect" title="Shields skill">盾スキル</a>で軽くでき、いずれはなくせる)だ。
+</p>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/player.cc#L2300">player.cc:2300</a> (0.32.1)<br />これらの値は、後の関数で 200 で割られる。</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/player.cc#L6078">player.cc:6078</a> (0.32.1)<br />「player_shield_class」は表示される SH の半分であることに注意。</span>
+</li>
+</ol></div>
+<h3><span class="mw-headline" id="1_EV_vs_1_SH">EV 1 と SH 1 の比較</span></h3>
+<p>近接戦闘では、敵は<a href="Fighter_flag.html" title="Fighter flag">戦士フラグ</a>を持っていないかぎり、<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>が <code>1.5 * HD + 18</code> になる。近接攻撃については:
+</p>
+<ul><li>EV で避けられるのは <code>2d(2EV - 1) / 2 &gt; 1d(to_hit + 1) - 1 </code> のとき。 </li>
+<li>SH で受け止められるのは <code>2d(4SH - 1) / 6 &gt;= 1d(15 + to_hit/2)</code> のとき。 </li></ul>
+<p>敵の命中が高くなるほど、SH が相対的に有利になる。ゲーム中の敵の HD の最大は 30 なので、例として命中 = (1.5 * 30 + 18) = 63 とする。ここで EV 30、SH 30 だとしよう。
+</p>
+<ul><li>EV 30: <code>2d(59) / 2 &gt; 1d(64) - 1</code> で、避ける確率は 46.48%。</li>
+<li>SH 30: <code>2d(119) / 6 &gt;= 1d(46.5)</code> で、受け止める確率は 42.12%。</li></ul>
+<p>極端な例として、SH よりずっと EV が高い場合は、EV 1 より SH +1 のほうが強いこともありうる。これは近接攻撃に対してだけ当てはまる。敵の命中が 36 なら:
+</p>
+<ul><li>EV 60、SH 20:
+<ul><li><code>2d(119) / 2 &gt; 1d(37) - 1</code> なら避ける。避ける確率は 93.36%。</li>
+<li><code>2d(79) / 6 &gt;= 1d(33)</code> なら受け止める。受け止める確率は 39.14%。</li>
+<li>受け止めるか避けるかのどちらかになる確率は 95.96%。</li></ul></li>
+<li>EV 50、SH 30:
+<ul><li><code>2d(99) / 2 &gt; 1d(37) - 1</code> なら避ける。避ける確率は 90.88%。</li>
+<li><code>2d(119) / 6 &gt;= 1d(33)</code> なら受け止める。受け止める確率は 59.01%。</li>
+<li>受け止めるか避けるかのどちらかになる確率は 96.26%。</li></ul></li></ul>
+<p>この場合、<i>理屈の上では</i> SH +10 のほうが EV +10 より防御力が高い。とはいえ 1 ターンに受け止められる攻撃の数は限られているので、やはり同じ量なら SH より EV を選ぶべきだ。
+</p><p>遠隔攻撃に対しては、どんな場合でも EV 1 のほうが SH 1 より明らかに優れている。
+</p><p>まとめると、EV +1 と SH +1 のどちらかを選べるなら EV を取ろう。ただ、実際にはこの選択を迫られることはめったにない。盾スキルがそこそこあれば盾の EV のペナルティは小さいので、EV と SH の両方を高く保てることが多い。
+</p>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
