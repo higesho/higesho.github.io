@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>経験値 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="経験値(Experience)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>経験値 <span class="en">Experience</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Experience">Experience</a>」(0.33 向け、2025-12-28 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Experience&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><i>このページはキャラクターの経験値についての記事だ。廃止されたカードについては<a href="http://crawl.chaosforge.org/Experience_card" data-untr="1" title="Experience card">経験</a>の記事を、薬については<a href="http://crawl.chaosforge.org/Potion_of_experience" data-untr="1" title="Potion of experience">経験の薬</a>の記事を参照。</i>
+</p><p><b>経験値</b>(<b>XP</b>)はモンスターを倒すと手に入り、強いモンスターほど多くもらえる。XP が増えると<a href="#Expereince_Level">経験レベル</a>が上がり、<a href="Skill.html" title="Skill">スキル</a>のレベルも伸びる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Uses"><span class="tocnumber">1</span> <span class="toctext">用途</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Experience_Level"><span class="tocnumber">2</span> <span class="toctext">経験レベル</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Experience_Required"><span class="tocnumber">2.1</span> <span class="toctext">必要な経験値</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Maturity"><span class="tocnumber">2.2</span> <span class="toctext">成長</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Skill_Experience"><span class="tocnumber">3</span> <span class="toctext">スキルの経験値</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Uses">用途</span></h2>
+<p>XP には次の働きがある。
+</p>
+<ul><li>経験レベルが上がる。</li>
+<li><a href="Skill.html" title="Skill">スキル</a>のレベルが上がる。</li>
+<li><a href="http://crawl.chaosforge.org/Drain" data-untr="1" class="mw-redirect" title="Drain">衰弱</a>が軽くなり、一時的な<a href="Mutation.html" title="Mutation">変異</a>が治る。</li>
+<li><a href="http://crawl.chaosforge.org/Miscellaneous_evocable" data-untr="1" class="mw-redirect" title="Miscellaneous evocable">道具類の発動アイテム</a>や、一部の能力の再使用待ちが短くなる。</li></ul>
+<p>衰弱や一時的な変異が治ったり、アイテムの再使用待ちが減ったりしても、そのぶん得られる XP が<i>減るわけではない</i>。衰弱などがどれだけあっても、上がる経験レベルとスキルのレベルは変わらない。
+</p>
+<h2><span class="mw-headline" id="Experience_Level">経験レベル</span></h2>
+<p>XP が十分にたまると、キャラクターの経験レベルが一つ上がり、次のものが伸びる。
+</p>
+<ul><li>最大<a href="http://crawl.chaosforge.org/Hit_points" data-untr="1" title="Hit points">HP</a>。</li>
+<li>最大<a href="Magic_points.html" title="Magic points">MP</a>。</li>
+<li>覚えておける<a href="Spell.html" title="Spell">呪文</a>の数。</li>
+<li>習得できる呪文のレベルの上限(自分の経験レベルより高いレベルの呪文は誰も覚えられない)。</li>
+<li>能力値。レベル3と、そこから6レベルごとに、ほとんどのキャラクターは<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>・<a href="http://crawl.chaosforge.org/Intelligence" data-untr="1" title="Intelligence">知力</a>・<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>のどれか好きなものに2ポイントを足せる。<a href="http://crawl.chaosforge.org/Demigod" data-untr="1" title="Demigod">神々の末裔</a>は3レベルごとに4ポイントもらえる。さらに、ほとんどのキャラクターは数レベルごとに能力値のボーナスも得る(どの能力値がどれくらいの間隔で上がるかは<a href="Species.html" title="Species">種族</a>で決まる)。</li>
+<li><a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>。レベルが上がるたびに意志力が増える。増える量は種族による。</li>
+<li>一部の種族は特別な能力を得る(下の「成長」を参照)。</li></ul>
+<p>どのキャラクターも経験レベル1、XP 0 から始まる。迷宮のことを何一つ知らない状態というわけだ。最大レベルは27だが、そこまで達したキャラクターも、XP で<a href="http://crawl.chaosforge.org/Score" data-untr="1" title="Score">最終スコア</a>を伸ばしたりスキルを上げたりできる。
+</p><p>経験レベルを上げるのに必要な経験値は種族によって割合で多くも少なくもなる。ゲーム内の資料に載っている値は次のとおり。
+</p>
+<table class="wikitable">
+
+<tr>
+<td><b><a href="http://crawl.chaosforge.org/Armataur" data-untr="1" title="Armataur">At</a></b>
+</td>
+<td><b><a href="Barachi.html" title="Barachi">Ba</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Coglin" data-untr="1" title="Coglin">Co</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Deep_Elf" data-untr="1" title="Deep Elf">DE</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Demigod" data-untr="1" title="Demigod">Dg</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Demonspawn" data-untr="1" title="Demonspawn">Ds</a></b>
+</td>
+<td><b><a href="Djinni.html" title="Djinni">Dj</a></b>
+</td>
+<td><b><a href="Draconian.html" title="Draconian">Dr</a></b>
+</td>
+<td><b><a href="Felid.html" title="Felid">Fe</a></b>
+</td>
+<td><b><a href="Formicid.html" title="Formicid">Fo</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Gale_Centaur" data-untr="1" title="Gale Centaur">GC</a></b>
+</td>
+<td><b><a href="Gargoyle.html" title="Gargoyle">Gr</a></b>
+</td>
+<td><b><a href="Gnoll.html" title="Gnoll">Gn</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Human" data-untr="1" title="Human">Hu</a></b>
+</td>
+<td><b><a href="Kobold.html" title="Kobold">Ko</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Merfolk" data-untr="1" title="Merfolk">Mf</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Minotaur" data-untr="1" title="Minotaur">Mi</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Mountain_Dwarf" data-untr="1" title="Mountain Dwarf">MD</a></b>
+</td>
+<td><b><a href="Mummy.html" title="Mummy">Mu</a></b>
+</td>
+<td><b><a href="Naga.html" title="Naga">Na</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Octopode" data-untr="1" title="Octopode">Op</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Oni" data-untr="1" title="Oni">On</a></b>
+</td>
+<td><b><a href="Poltergeist.html" title="Poltergeist">Po</a></b>
+</td>
+<td><b><a href="Revenant.html" title="Revenant">Re</a></b>
+</td>
+<td><b><a href="Spriggan.html" title="Spriggan">Sp</a></b>
+</td>
+<td><b><a href="Tengu.html" title="Tengu">Te</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Troll" data-untr="1" title="Troll">Tr</a></b>
+</td>
+<td><b><a href="Vine_Stalker.html" title="Vine Stalker">VS</a></b>
+</td></tr>
+<tr>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> -2
+</td>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> 0
+</td></tr></table>
+<p>値が大きいほどレベルが早く上がる。もっとも早いのは<a href="Djinni.html" title="Djinni">ジンニー</a>、<a href="Formicid.html" title="Formicid">フォーミシッド</a>、<a href="Kobold.html" title="Kobold">コボルド</a>(経験値の適性が1)で、もっとも遅いのは<a href="http://crawl.chaosforge.org/Demigod" data-untr="1" title="Demigod">神々の末裔</a>(経験値の適性が-2)だ。
+</p>
+<h3><span class="mw-headline" id="Experience_Required">必要な経験値</span></h3>
+<p>次の表は経験値の適性が0の場合だ。
+</p>
+<table class="prettytable">
+<tr>
+<th scope="col" width="15%"> レベル
+</th>
+<th scope="col" width="25%"> XP
+</th>
+<th scope="col" width="25%"> 差分
+</th>
+<th scope="col" width="35%"> 差分の増加
+</th></tr>
+<tr>
+<td> 1     </td>
+<td>      0   </td>
+<td>     0   </td>
+<td>    0
+</td></tr>
+<tr>
+<td> 2     </td>
+<td>     10   </td>
+<td>    10   </td>
+<td>   10
+</td></tr>
+<tr>
+<td> 3     </td>
+<td>     30   </td>
+<td>    20   </td>
+<td>   10
+</td></tr>
+<tr>
+<td> 4     </td>
+<td>     70   </td>
+<td>    40   </td>
+<td>   20
+</td></tr>
+<tr>
+<td> 5     </td>
+<td>    140   </td>
+<td>    70   </td>
+<td>   30
+</td></tr>
+<tr>
+<td> 6     </td>
+<td>    270   </td>
+<td>   130   </td>
+<td>   60
+</td></tr>
+<tr>
+<td> 7     </td>
+<td>    520   </td>
+<td>   250   </td>
+<td>  120
+</td></tr>
+<tr>
+<td> 8     </td>
+<td>   1010   </td>
+<td>   490   </td>
+<td>  240
+</td></tr>
+<tr>
+<td> 9     </td>
+<td>   1980   </td>
+<td>   970   </td>
+<td>  480
+</td></tr>
+<tr>
+<td> 10    </td>
+<td>   3910   </td>
+<td>  1930   </td>
+<td>  960
+</td></tr>
+<tr>
+<td> 11    </td>
+<td>   7760   </td>
+<td>  3850   </td>
+<td> 1920
+</td></tr>
+<tr>
+<td> 12    </td>
+<td>  15450   </td>
+<td>  7690   </td>
+<td> 3840
+</td></tr>
+<tr>
+<td> 13    </td>
+<td>  29000   </td>
+<td> 13550   </td>
+<td> 5860
+</td></tr>
+<tr>
+<td> 14    </td>
+<td>  48500   </td>
+<td> 19500   </td>
+<td> 5950
+</td></tr>
+<tr>
+<td> 15    </td>
+<td>  74000   </td>
+<td> 25500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 16    </td>
+<td> 105500   </td>
+<td> 31500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 17    </td>
+<td> 143000   </td>
+<td> 37500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 18    </td>
+<td> 186500   </td>
+<td> 43500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 19    </td>
+<td> 236000   </td>
+<td> 49500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 20    </td>
+<td> 291500   </td>
+<td> 55500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 21    </td>
+<td> 353000   </td>
+<td> 61500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 22    </td>
+<td> 420500   </td>
+<td> 67500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 23    </td>
+<td> 494000   </td>
+<td> 73500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 24    </td>
+<td> 573500   </td>
+<td> 79500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 25    </td>
+<td> 659000   </td>
+<td> 85500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 26    </td>
+<td> 750500   </td>
+<td> 91500   </td>
+<td> 6000
+</td></tr>
+<tr>
+<td> 27    </td>
+<td> 848000   </td>
+<td> 97500   </td>
+<td> 6000
+</td></tr></table>
+<h3><span class="mw-headline" id="Maturity">成長</span></h3>
+<p>一部の種族は経験を積むにつれて「成長」し、特別なボーナスや能力を得る。
+</p>
+<ul><li><a href="Naga.html" title="Naga">ナーガ</a>、<a href="Draconian.html" title="Draconian">ドラコニアン</a>、<a href="Gargoyle.html" title="Gargoyle">ガーゴイル</a>は AC が増える。
+<ul><li><a href="Draconian.html" title="Draconian">ドラコニアン</a>はレベル7で成体になり、体色が決まる。色によってはレベル14でさらに恩恵がある。</li>
+<li><a href="Naga.html" title="Naga">ナーガ</a>はレベル13で敵を<a href="http://crawl.chaosforge.org/Constrict" data-untr="1" class="mw-redirect" title="Constrict">締めつけ</a>られるようになる。</li>
+<li><a href="Gargoyle.html" title="Gargoyle">ガーゴイル</a>はレベル14で飛べるようになる。</li></ul></li>
+<li><a href="Felid.html" title="Felid">フェリッド</a>は XL が2上がるごとに予備の命を得る。また、レベル6と12で毛皮が厚くなって AC が上がり、レベル12では冷気への耐性(rC+)も得る。</li>
+<li><a href="http://crawl.chaosforge.org/Demonspawn" data-untr="1" title="Demonspawn">悪魔の血族</a>はレベルが上がるにつれて、<a href="http://crawl.chaosforge.org/Demonspawn_mutations" data-untr="1" title="Demonspawn mutations">悪魔の血</a>をさらに色濃く表すようになる。これは<a href="Mutation.html" title="Mutation">変異</a>の形で現れ、悪魔の血族はほかの種族では得られない特別な変異も得られる。</li>
+<li><a href="http://crawl.chaosforge.org/Djinn" data-untr="1" class="mw-redirect" title="Djinn">ジンニー</a>は2レベルごとに呪文を得る。</li>
+<li><a href="Tengu.html" title="Tengu">天狗</a>はレベル7で飛べるようになり、EV にボーナスを得る。</li>
+<li><a href="Mummy.html" class="mw-redirect" title="Mummies">ミイラ</a>はレベル13で、<a href="http://crawl.chaosforge.org/Necromancy" data-untr="1" title="Necromancy">死霊術</a>の<a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">呪文の威力</a>への2段階目のボーナスを得る。</li>
+<li><a href="Vine_Stalker.html" title="Vine Stalker">歩き蔓</a>はレベル8で<a href="Good_mutations.html#Fangs" title="Good mutations">牙</a>2が牙3になる。</li>
+<li><a href="http://crawl.chaosforge.org/Barachim" data-untr="1" class="mw-redirect" title="Barachim">バラチ</a>はレベル13で<a href="Good_mutations.html#Strong_Legs" title="Good mutations">強靭な脚</a>1が強靭な脚2になる。</li>
+<li><a href="http://crawl.chaosforge.org/Coglin" data-untr="1" title="Coglin">コグリン</a>はレベル14で<a href="http://crawl.chaosforge.org/Coglin#Invent_Gizmo" data-untr="1" title="Coglin">ギズモ</a>を発明できる。</li>
+<li><a href="Revenant.html" title="Revenant">レヴナント</a>はレベル3で再燃の能力を得る。また、XP を得ると記憶が戻ってくる。</li>
+<li><a href="Poltergeist.html" title="Poltergeist">ポルターガイスト</a>はレベル13で騒音の能力を得る。この能力は XP を得ると再び使えるようになる。</li></ul>
+<h2><span class="mw-headline" id="Skill_Experience">スキルの経験値</span></h2>
+<p><i>関連項目: <a href="http://crawl.chaosforge.org/Skill_point" data-untr="1" title="Skill point">スキルポイント</a></i>
+</p><p>手に入れた XP は、キャラクターのレベルを上げるだけでなく、<a href="Skill.html" title="Skill">スキル</a>のレベルにも回される。配分の決め方は自動と手動の2通りある。自動選択モードでは、経験値を得るたびに、最近使ったスキルすべてに分配され、よく使ったものほど多くの割合を受け取る。そのうえで、スキルごとに「無効」(XP が入らない)、「有効」(変化なし)、「集中」(練習で得るぶんに加えて、一定の割合の XP が必ず回される)を設定できる。
+</p><p>もう一つは手動選択モードだ。こちらでは、XP がすべてのスキルに均等に分けられる。ここでも、スキルを無効にして伸ばさないようにしたり、集中にして通常の2倍の速さで伸ばしたりできる。
+</p><p>どのスキルも最大レベルは27だが、多くのスキルは上げるほど効果の伸びが鈍るので、最大まで上げる価値があるとは限らない。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.32" data-untr="1" title="0.32">0.32</a>より前は、<a href="http://crawl.chaosforge.org/Beogh" data-untr="1" title="Beogh">ベオ</a>のオークが、モンスターに与えたダメージとプレイヤーが与えたダメージの割合に応じて、プレイヤーの XP を最大50%まで横取りすることがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a>より前は、すべての仲間が XP の分け前を持っていった。能力値は3レベルごとに1ポイントずつ増えた。プレイヤーが<a href="http://crawl.chaosforge.org/Frenzied" data-untr="1" class="mw-redirect" title="Frenzied">狂乱</a>させたモンスターも XP をくれなかった。また、高いレベルのスキルに必要な経験値が今より多かった。終盤のモンスターがくれる XP も多かった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a>より前は、<a href="http://crawl.chaosforge.org/Draining" data-untr="1" title="Draining">衰弱</a>するとプレイヤーの経験レベルが下がった。また、高レベルのモンスターの多くは、倒したときにくれる経験値が今よりずっと多かった。</li>
+<li>バージョン<a href="http://crawl.chaosforge.org/0.9" data-untr="1" class="mw-redirect" title="0.9">0.9</a>では、新しいスキル(レベル1に届く前のもの)は、実際に使わないと(呪文を唱える、何かを殴る、など)経験値が入り始めなかった。スキルが1.0に達すると、それ以降は手動で無効にしたり集中させたりできた。</li>
+<li>バージョン<a href="http://crawl.chaosforge.org/0.8" data-untr="1" class="mw-redirect" title="0.8">0.8</a>以前は、スキルの経験値はいったん「経験値プール」にためられ、スキルに割り当てられるまでそこに残っていた。割り当ては、そのスキルに関わる行動を繰り返すことで少しずつ行われた。そのため、戦闘のあとに「勝利の舞い」をして、狙ったスキルに確実に XP を回す習慣が生まれた。スキルを「無効」にすると、伸びが通常の25%に落ちた。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

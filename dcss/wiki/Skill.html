@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スキル &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="スキル(Skill)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>スキル <span class="en">Skill</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Skill">Skill</a>」(0.33 向け、2025-09-11 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Skill&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><b>スキル</b>は、攻撃・防御・魔法の各分野でキャラクターがどれだけ腕が立つかを表す。最初のスキルレベルはキャラクターの<a href="Species.html" title="Species">種族</a>と<a href="Background.html" title="Background">職業</a>で決まる。キャラクターが<a href="Experience.html" title="Experience">経験値</a>を得ると、その経験値はスキル画面(<b>m</b>)で指定した配分に従って各スキルに振り分けられる。種族の<a href="http://crawl.chaosforge.org/Aptitudes" data-untr="1" class="mw-redirect" title="Aptitudes">スキル適性</a>によって、上げやすいスキルと上げにくいスキルがある。スキルレベルの上限は <a href="http://crawl.chaosforge.org/27" data-untr="1" title="27">27</a> だ。
+</p><p>どの種族にも、スキルごとに -5 から +11 までの適性値が決まっていて、値が高いほどスキルが早く伸びる。適性の低いスキルも訓練はできるが、伸びはかなり遅い。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Skill_Types"><span class="tocnumber">1</span> <span class="toctext">スキルの種類</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Offense"><span class="tocnumber">1.1</span> <span class="toctext">攻撃</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Defense"><span class="tocnumber">1.2</span> <span class="toctext">防御</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Magic"><span class="tocnumber">1.3</span> <span class="toctext">魔法</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Miscellaneous"><span class="tocnumber">1.4</span> <span class="toctext">その他</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#The_Skill_Screen"><span class="tocnumber">2</span> <span class="toctext">スキル画面</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Skill_Micromanagement"><span class="tocnumber">3.1</span> <span class="toctext">スキルの細かな管理</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Example"><span class="tocnumber">3.2</span> <span class="toctext">例</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Experience_Required"><span class="tocnumber">4</span> <span class="toctext">必要な経験値</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#See_Also"><span class="tocnumber">6</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Skill_Types">スキルの種類</span></h2>
+<p>スキルは3つの分類に分けられる。
+</p>
+<h3><span class="mw-headline" id="Offense">攻撃</span></h3>
+<ul><li><b><a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a>:</b> 近接攻撃のダメージと命中率、最大 <a href="http://crawl.chaosforge.org/HP" data-untr="1" class="mw-redirect" title="HP">HP</a> を上げる。</li>
+<li><b>武器スキル:</b> その系統の武器でのダメージ、命中率、攻撃速度を上げる。武器スキルを訓練すると、そのスキルと<a href="http://crawl.chaosforge.org/Cross-train" data-untr="1" title="Cross-train">相互訓練</a>の関係にあるスキルにもボーナスが入る。
+<ul><li><b>腕力依存:</b> ダメージが<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>で伸びる。
+<ul><li><b><a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>:</b> メイス、フレイル、鞭。いちばん癖のない武器だ。<i>(<a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>・<a href="http://crawl.chaosforge.org/Staves" data-untr="1" title="Staves">棒術</a>と相互訓練)</i></li>
+<li><b><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>:</b> 斧。<a href="http://crawl.chaosforge.org/Cleave" data-untr="1" class="mw-redirect" title="Cleave">薙ぎ払い</a>ができる。<i>(<a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>・<a href="http://crawl.chaosforge.org/Polearms" data-untr="1" title="Polearms">長柄武器</a>と相互訓練)</i></li>
+<li><b><a href="http://crawl.chaosforge.org/Polearms" data-untr="1" title="Polearms">長柄武器</a>:</b> スピア、トライデントなど。<a href="http://crawl.chaosforge.org/Reach" data-untr="1" class="mw-redirect" title="Reach">リーチ</a>がある。<i>(<a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>・<a href="http://crawl.chaosforge.org/Staves" data-untr="1" title="Staves">棒術</a>と相互訓練)</i></li>
+<li><b><a href="http://crawl.chaosforge.org/Staves" data-untr="1" title="Staves">棒術</a>:</b> 六尺棒、ラジャタン、魔法の杖。<i>(<a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>・<a href="http://crawl.chaosforge.org/Polearms" data-untr="1" title="Polearms">長柄武器</a>と相互訓練)</i></li>
+<li><b><a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a>:</b> 武器を持たずに戦う。<a href="http://crawl.chaosforge.org/Auxiliary_attacks" data-untr="1" class="mw-redirect" title="Auxiliary attacks">補助攻撃</a>のほとんどは強化<i>されない</i>。</li>
+<li><b><a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>:</b>  <a href="Stone.html" title="Stone">石</a>、<a href="http://crawl.chaosforge.org/Dart" data-untr="1" title="Dart">ダーツ</a>、<a href="http://crawl.chaosforge.org/Boomerang" data-untr="1" title="Boomerang">ブーメラン</a>、<a href="http://crawl.chaosforge.org/Javelin" data-untr="1" title="Javelin">ジャベリン</a>、<a href="http://crawl.chaosforge.org/Large_rock" data-untr="1" title="Large rock">大岩</a>。<a href="http://crawl.chaosforge.org/Atropa" data-untr="1" title="Atropa">アトロパ毒</a>と<a href="http://crawl.chaosforge.org/Datura" data-untr="1" title="Datura">ダチュラ毒</a>のダーツが効く確率も上がる。</li></ul></li>
+<li><b>器用依存:</b> ダメージが<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>で伸びる。
+<ul><li><b><a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>:</b> ダガー、ショートソード、レイピアなど。<i>(<a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a>と相互訓練)</i></li>
+<li><b><a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a>:</b> 剣。<i>(<a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>と相互訓練)</i></li>
+<li><b><a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a></b>: 弓、クロスボウ、スリング。</li></ul></li></ul></li></ul>
+<h3><span class="mw-headline" id="Defense">防御</span></h3>
+<ul><li><b><a href="Armour_(skill).html" title="Armour (skill)">甲冑</a>:</b> 着ている防具から得る <a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> のボーナスを上げる(重い防具ほど効果が大きい)。防具の<a href="http://crawl.chaosforge.org/Encumbrance" data-untr="1" class="mw-redirect" title="Encumbrance">重さ</a>によるペナルティもいくらか和らげる。</li>
+<li><b><a href="Dodging.html" title="Dodging">躱し身</a>:</b> <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> を上げる。<a href="Armour.html" title="Armour">防具</a>が軽く、<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>が高いほど効果が大きい。</li>
+<li><b><a href="http://crawl.chaosforge.org/Shields_(skill)" data-untr="1" title="Shields (skill)">盾</a>:</b> 構えた<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>から得る <a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> のボーナスを上げる。盾による <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> と<a href="Spell_Success.html" class="mw-redirect" title="Spell success">呪文の成功率</a>へのペナルティを減らし、最後には無くす。</li>
+<li><b><a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>:</b> こちらに気づいていないモンスターに見つかりにくくなり、視界の外にいるモンスターがこちらを見失いやすくなる。<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>のダメージも上がる。<a href="Armour.html" title="Armour">防具</a>が軽く、<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>が高いほど効果が大きい。</li></ul>
+<h3><span class="mw-headline" id="Magic">魔法</span></h3>
+<ul><li><b><a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a>:</b> 唱えるすべての呪文の<a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">威力</a>と<a href="Spell_Success.html" class="mw-redirect" title="Spell success">成功率</a>を少し上げ、最大 <a href="http://crawl.chaosforge.org/MP" data-untr="1" class="mw-redirect" title="MP">MP</a> を増やす。呪文レベルの空きも増えるので、より多くの呪文を覚えられる。</li></ul>
+<ul><li><b><a href="http://crawl.chaosforge.org/Spell_school" data-untr="1" title="Spell school">呪文の系統</a>のスキル:</b> その系統に属するすべての呪文の<a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">威力</a>と<a href="Spell_Success.html" class="mw-redirect" title="Spell success">成功率</a>を上げる。複数のスキルに関わる呪文も多い。
+<ul><li><b><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>:</b> 直接攻撃する魔法。</li>
+<li><b><a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>:</b> 敵を弱らせる魔法。</li>
+<li><b><a href="http://crawl.chaosforge.org/Summonings" data-untr="1" title="Summonings">召喚術</a>:</b> 別の世界から一時的に味方を呼び出す呪文。</li>
+<li><b><a href="http://crawl.chaosforge.org/Necromancy" data-untr="1" title="Necromancy">死霊術</a>:</b> 生命、<a href="http://crawl.chaosforge.org/Negative_energy" data-untr="1" title="Negative energy">負のエネルギー</a>、<a href="http://crawl.chaosforge.org/Undead" data-untr="1" title="Undead">アンデッド</a>を操る呪文。</li>
+<li><b><a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a>:</b> 一時的な味方を鍛え上げる呪文。</li>
+<li><b><a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a>:</b> 自分や敵、物を移動させる。</li>
+<li><b><a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a>:</b> 物質を変化させたり、<a href="Poison.html" title="Poison">毒</a>を与えたりする呪文。</li>
+<li><b><a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>:</b> <a href="http://crawl.chaosforge.org/Fire" data-untr="1" title="Fire">火炎</a>や爆発の呪文。</li>
+<li><b><a href="http://crawl.chaosforge.org/Air_Magic" data-untr="1" title="Air Magic">風の魔術</a>:</b> 風、<a href="http://crawl.chaosforge.org/Cloud" data-untr="1" title="Cloud">雲</a>、<a href="http://crawl.chaosforge.org/Electricity" data-untr="1" title="Electricity">電撃</a>を中心とした呪文。</li>
+<li><b><a href="http://crawl.chaosforge.org/Ice_Magic" data-untr="1" title="Ice Magic">氷の魔術</a>:</b> <a href="http://crawl.chaosforge.org/Cold" data-untr="1" title="Cold">冷気</a>や氷の呪文。</li>
+<li><b><a href="http://crawl.chaosforge.org/Earth_Magic" data-untr="1" title="Earth Magic">地の魔術</a>:</b> 物理的なダメージや、大地を操る呪文。</li></ul></li></ul>
+<h3><span class="mw-headline" id="Miscellaneous">その他</span></h3>
+<ul><li><b><a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a>:</b> 信仰する<a href="God.html" title="God">神</a>から授かった力の効果を高め、最大 <a href="http://crawl.chaosforge.org/MP" data-untr="1" class="mw-redirect" title="MP">MP</a> を増やす。このスキルの訓練がいらない神もいる。</li>
+<li><b><a href="Evocations.html" title="Evocations">発動</a>:</b> <a href="Wand.html" title="Wand">ワンド</a>や<a href="http://crawl.chaosforge.org/Evocable" data-untr="1" class="mw-redirect" title="Evocable">発動アイテム</a>の効果を高める。</li>
+<li><b><a href="http://crawl.chaosforge.org/Shapeshifting" data-untr="1" title="Shapeshifting">変身術</a>:</b> <a href="Talisman.html" title="Talisman">タリスマン</a>を使ったときの効果を高め、最大 <a href="http://crawl.chaosforge.org/HP" data-untr="1" class="mw-redirect" title="HP">HP</a> へのペナルティを減らし、最後には無くす。</li></ul>
+<p>スキルによる MP のボーナスは、<a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a>のスキルと<a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a>のスキルの半分のうち、高いほうで決まる。
+</p>
+<h2><span class="mw-headline" id="The_Skill_Screen">スキル画面</span></h2>
+<p><b>m</b> を押すとスキル画面が開き、現在のスキルレベルと、その種族のスキル<a href="http://crawl.chaosforge.org/Aptitude" data-untr="1" title="Aptitude">適性</a>が表示される。どのスキルをどれだけ訓練するかもここで変えられる。
+</p><p>スキルに入る経験値は、訓練中のスキルのあいだで分けられる。あるスキルに経験値を多く注ぐほど、ほかのスキルの取り分は減る。訓練するスキルは、名前をクリックするか、対応するキーを押して選ぶ。実際の配分は訓練のモードによって変わる。モードは自動と手動の2つで、<b>/</b> キーで切り替えられる。
+</p><p><b>自動選択モード:</b> ゲーム中によく使ったスキルほど、多くの経験値を受け取る。スキルを選ぶたびに3つの状態が順に切り替わる。
+</p>
+<ul><li>通常(名前が灰色、スキルの横に +): ふつうに訓練される。</li>
+<li>集中(名前が白、スキルの横に *): 一度も使っていなくても、選んだスキルにより多くの経験値が入る。</li>
+<li>無効(名前が暗い灰色、スキルの横に -): いくら使っても経験値が入らない。</li></ul>
+<p><b>手動選択モード:</b> 訓練するスキルを自分で直接選ぶ。集中にしたスキルがないかぎり、経験値は選んだスキルすべてに均等に配られる。
+</p>
+<ul><li>通常: ふつうに訓練される。</li>
+<li>集中: 2倍の取り分の経験値が入る。</li>
+<li>無効: 経験値が入らない。</li></ul>
+<p>さらに、スキルメニューで <b>=</b> を押し、目標を決めたいスキルの文字を押してから値を入力すると、スキル目標を設定できる。スキルが目標に達すると、そのスキルは無効になる。これで各スキルに注ぐ経験値を正確に管理できる。
+</p><p><b>!</b> を押すと3つの表示が切り替わる。「割り振り」では各スキルに経験値がどれだけ回っているか、「コスト」ではそのスキルを1レベル上げるのに必要な経験値を、適性0のレベル0のスキルと比べた値が、「目標」では今のスキル目標が表示される。
+</p><p>ゲームの開始直後から、どのスキルでも訓練できることに注意してほしい。すぐには役に立たないスキルを訓練してしまわないよう気をつけよう。初期状態では使えるスキルだけが表示される。すべてのスキルの一覧を見るには <b>*</b> を押す。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>スキルの管理は戦略面での要だ。経験値の配分を<a href="http://crawl.chaosforge.org/Aptitudes" data-untr="1" class="mw-redirect" title="Aptitudes">スキル適性</a>、手持ちの<a href="Item.html" title="Item">装備</a>、プレイスタイルに合わせられるかどうかで、キャラクターの命運が決まる。
+</p><p>自動より手動の訓練のほうがいい。自動訓練では、役に立たないスキルにまで経験値がばらまかれる。たとえば、敵に一度気づかれなかったというだけで、どたばた騒がしい近接攻撃一辺倒の脳筋キャラクターが<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>を訓練しはじめたりする。とはいえ、スキルの訓練を何から何まで管理しなければならないわけではない。4つのスキルを「手動」で選んでゲームの最後まで均等に訓練させるだけでも、たいていはなんとかなる。
+</p>
+<h3><span class="mw-headline" id="Skill_Micromanagement">スキルの細かな管理</span></h3>
+<p>理屈の上では、一度に訓練するスキルは1つだけにして、状況に応じて絶えず切り替えるのが最善だ。たとえばスキル目標を使って、戦闘を 0 -&gt; 1、次に甲冑を 0 -&gt; 1、次に戦闘を 1 - &gt; 2、というふうに訓練していく。
+</p><p>おもな理由は、スキルのコストがレベルの整数部分が上がるごとにしか増えないことで、ここに損得の分かれ目が生まれる。上の例で言えば、戦闘の 0 -&gt; 1 は甲冑の 0 -&gt; 1 より割がいいかもしれないが、戦闘の 1 -&gt; 2 は甲冑の 0 -&gt; 1 より割が悪い。ただし、これを実際にやるのは現実的でないことが多い。手間と時間がかかるだけでなく、スキル1レベルぶんの効果を見積もるのが簡単ではないからだ。
+</p><p>また、多くのスキルには少なくとも1つ節目があり、そこまでは1つのスキルに絞って訓練する価値がある。
+</p>
+<ul><li>武器スキル: 武器には<a href="http://crawl.chaosforge.org/Minimum_delay" data-untr="1" class="mw-redirect" title="Minimum delay">最小ディレイ</a>があり、最小ディレイに達したあとは攻撃速度が上がらなくなるので、訓練の効果は落ちる。また、攻撃のディレイが(<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>を使っているならその分も含めて)1.0 に達するのも節目と言える。これで速度 100% の敵に2回続けて攻撃されなくなる。</li>
+<li>呪文の系統: 呪文使いにとって何より大事なのは、呪文が「安心して」唱えられるようになるスキルレベルだ。どこで安心できるかはプレイヤーとキャラクターによって違う。たとえば失敗率 10% なら安心できるという人なら、<a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>の失敗率を 10% まで下げれば、使える呪文がまるごと1つ増えることになる。</li>
+<li>戦闘、呪文詠唱、祈祷: HP、MP、呪文レベルの空きに端数はない。たとえば MP は呪文詠唱 1.0 ごと、または祈祷 2.0 ごとに 1 増える(多くなるほうが使われる)。</li>
+<li>変身術: タリスマンにはスキルの最小値と最大値が決まっている。最小値を下回るとその変身中は HP が減り、最大値を超えてもそれ以上の効果は得られない。</li></ul>
+<p>とはいえ、このようにスキルを(細かく)管理しても、ゲームの進み具合への影響は比較的小さい。戦闘や消耗品を使うタイミングなどに時間と気力を注いだほうが実りは大きい。たとえ気にするとしても、終盤まで来れば、スキルを精密に訓練するかどうかはほとんど関係なくなる。
+</p>
+<h3><span class="mw-headline" id="Example">例</span></h3>
+<p>次のスキルがほしいとしよう。
+</p>
+<ul><li>風の魔術 2(空電放射を唱えるため)</li>
+<li>妖術 2(焼灼の光線を唱えるため)</li></ul>
+<p>ここでの数値はゲームの実際の値とは違う。また、1つの階でスキルが2レベルぶん上がり、スキルレベルが上がってもコストは増えず、どちらのスキルも適性は同じだとする。
+</p><p>両方のスキルを同時に訓練すると、次のようになる。
+</p>
+<pre>1階の終わり - 風の魔術 1、妖術 1
+2階の終わり - 風の魔術 2(空電放射が使える)、妖術 2(焼灼の光線が使える)
+</pre>
+<p>1つずつ訓練すると、次のようになる。
+</p>
+<pre>1階の終わり - 妖術 2(焼灼の光線が使える)
+2階の終わり - 妖術 2(焼灼の光線が使える)、風の魔術 2(空電放射が使える)
+</pre>
+<p>最終的な結果は同じだが、1階では妖術だけを訓練したので、両方のスキルに「役に立たない」レベルを抱える代わりに、焼灼の光線を1階ぶん早く使えるようになる。
+</p>
+<h2><span class="mw-headline" id="Experience_Required">必要な経験値</span></h2>
+<p>下の表は、スキルを 0 から各レベルに上げるまでに、合計で何<a href="http://crawl.chaosforge.org/Skill_point" data-untr="1" title="Skill point">スキルポイント</a>を割り振る必要があるかを示している。割合の列は、0 からそのレベルまでに必要な経験値が、レベル27までに必要な経験値の何パーセントにあたるかを示す。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<table class="wikitable">
+<tr>
+<th> レベル </th>
+<th> 累計スキルポイント</th>
+<th> 割合 </th>
+<th> </th>
+<th> レベル </th>
+<th> 累計スキルポイント </th>
+<th> 割合 </th>
+<th> </th>
+<th> レベル </th>
+<th> 累計スキルポイント </th>
+<th> 割合
+</th></tr>
+<tr>
+<td> 1 </td>
+<td> 50 </td>
+<td> 0.2% </td>
+<td> </td>
+<td> 10 </td>
+<td> 2,775 </td>
+<td> 11.4% </td>
+<td> </td>
+<td> 19 </td>
+<td> 10,900 </td>
+<td> 44.8%
+</td></tr>
+<tr>
+<td> 2 </td>
+<td> 150 </td>
+<td> 0.6% </td>
+<td> </td>
+<td> 11 </td>
+<td> 3,375 </td>
+<td> 13.9% </td>
+<td> </td>
+<td> 20 </td>
+<td> 12,225 </td>
+<td> 50.3%
+</td></tr>
+<tr>
+<td> 3 </td>
+<td> 300 </td>
+<td> 1.2% </td>
+<td> </td>
+<td> 12 </td>
+<td> 4,050 </td>
+<td> 16.6% </td>
+<td> </td>
+<td> 21 </td>
+<td> 13,650 </td>
+<td> 56.1%
+</td></tr>
+<tr>
+<td> 4 </td>
+<td> 500 </td>
+<td> 2.1% </td>
+<td> </td>
+<td> 13 </td>
+<td> 4,800 </td>
+<td> 19.7% </td>
+<td> </td>
+<td> 22 </td>
+<td> 15,175 </td>
+<td> 62.4%
+</td></tr>
+<tr>
+<td> 5 </td>
+<td> 750 </td>
+<td> 3.1% </td>
+<td> </td>
+<td> 14 </td>
+<td> 5,625 </td>
+<td> 23.1% </td>
+<td> </td>
+<td> 23 </td>
+<td> 16,800 </td>
+<td> 69.1%
+</td></tr>
+<tr>
+<td> 6 </td>
+<td> 1,050 </td>
+<td> 4.3% </td>
+<td> </td>
+<td> 15 </td>
+<td> 6,525 </td>
+<td> 26.8% </td>
+<td> </td>
+<td> 24 </td>
+<td> 18,525 </td>
+<td> 76.2%
+</td></tr>
+<tr>
+<td> 7 </td>
+<td> 1,400 </td>
+<td> 5.8% </td>
+<td> </td>
+<td> 16 </td>
+<td> 7,500 </td>
+<td> 30.8% </td>
+<td> </td>
+<td> 25 </td>
+<td> 20,350 </td>
+<td> 83.7%
+</td></tr>
+<tr>
+<td> 8 </td>
+<td> 1,800 </td>
+<td> 7.4% </td>
+<td> </td>
+<td> 17 </td>
+<td> 8,550 </td>
+<td> 35.1% </td>
+<td> </td>
+<td> 26 </td>
+<td> 22,275 </td>
+<td> 91.6%
+</td></tr>
+<tr>
+<td> 9 </td>
+<td> 2,250 </td>
+<td> 9.2% </td>
+<td> </td>
+<td> 18 </td>
+<td> 9,675 </td>
+<td> 39.8% </td>
+<td> </td>
+<td> 27 </td>
+<td> 24,325 </td>
+<td> 100%
+</td></tr></table>
+<p>この量は、キャラクターのスキル適性によって調整される。適性が <b>n</b> なら、そのスキルを上げるのに必要な経験値は、適性0のキャラクターの 2^(-n/4) 倍になる。その倍率を下の表にまとめた。
+</p>
+<table class="wikitable">
+<tr>
+<th> 適性
+</th>
+<td> +11 </td>
+<td> +10 </td>
+<td> +9 </td>
+<td> +8 </td>
+<td> +7 </td>
+<td> +6 </td>
+<td> +5 </td>
+<td> +4 </td>
+<td> +3 </td>
+<td> +2 </td>
+<td> +1 </td>
+<td> +0 </td>
+<td> -1 </td>
+<td> -2 </td>
+<td> -3 </td>
+<td> -4 </td>
+<td> -5
+</td></tr>
+<tr>
+<th> 経験値の倍率
+</th>
+<td> 6.73 </td>
+<td> 5.66 </td>
+<td> 4.76 </td>
+<td> 4.0 </td>
+<td> 3.36 </td>
+<td> 2.83 </td>
+<td> 2.38 </td>
+<td> 2.0 </td>
+<td> 1.68 </td>
+<td> 1.41 </td>
+<td> 1.19 </td>
+<td> 1.0 </td>
+<td> 0.84 </td>
+<td> 0.71 </td>
+<td> 0.59 </td>
+<td> 0.5 </td>
+<td> 0.42
+</td></tr></table>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、スキルを高いレベルまで上げるのにより多くの経験値が必要だった(レベル14を超えると必要な経験値が増えた)。</li>
+<li><a href="http://crawl.chaosforge.org/0.21" data-untr="1" title="0.21">0.21</a> でスキル目標が加わった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は<b>逆訓練</b>(anti-training)があった。対立する呪文の系統(炎と氷、風と地)を訓練すると、反対側のスキルの適性にペナルティがついた。また相互訓練は、スキルの経験値を直接増やすのではなく、相互訓練の対象になるスキルの適性を上げるものだった。</li>
+<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> より前は、スキルによって必要な経験値が多かったり少なかったりした。<a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a>は 130%、<a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a>、<a href="Evocations.html" title="Evocations">発動</a>、<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>はどれも 80% の経験値で上がった。0.12 では、この変更を埋め合わせるために全種族の適性が調整された。</li>
+<li><a href="http://crawl.chaosforge.org/0.10" data-untr="1" title="0.10">0.10</a> より前は、スキルレベルの小数部分は意味を持たなかった。装備がスキルから受ける影響も、レベル 0〜27 の範囲で統一されていなかった。また<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>のコストの倍率は 50% だった。</li>
+<li><a href="http://crawl.chaosforge.org/0.9" data-untr="1" class="mw-redirect" title="0.9">0.9</a> より前は、スキルの仕組みがまったく違っていた。自動・手動のモードはなく、<a href="http://crawl.chaosforge.org/XP" data-untr="1" class="mw-redirect" title="XP">経験値</a>を得るとプールにたまっていった。スキルを使うと、そのスキルに経験値が流れ込む。特定のスキルに経験値を回したければ、意味のない行動を繰り返す必要があった(たとえば<a href="http://crawl.chaosforge.org/Air_Magic" data-untr="1" title="Air Magic">風の魔術</a>を上げるために、何もないところへ<a href="http://crawl.chaosforge.org/Shock" data-untr="1" title="Shock">電撃</a>を唱える)。これは<a href="http://crawl.chaosforge.org/Victory_dancing" data-untr="1" class="mw-redirect" title="Victory dancing">勝利の舞い</a>と呼ばれていた。</li></ul>
+<p><b>追加されたスキル</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> - <a href="http://crawl.chaosforge.org/Shapeshifting" data-untr="1" title="Shapeshifting">変身術</a>、<a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a></li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> - <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a></li>
+<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> - <a href="http://crawl.chaosforge.org/Traps_(skill)" data-untr="1" title="Traps (skill)">罠</a></li></ul>
+<p><b>削除されたスキル</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> - <a href="http://crawl.chaosforge.org/Transmutations" data-untr="1" title="Transmutations">変成</a>、<a href="http://crawl.chaosforge.org/Poison_Magic" data-untr="1" title="Poison Magic">毒の魔術</a>(変身術と錬金術に変更)</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> - <a href="http://crawl.chaosforge.org/Bows_(skill)" data-untr="1" title="Bows (skill)">弓</a>、<a href="http://crawl.chaosforge.org/Crossbows_(skill)" data-untr="1" title="Crossbows (skill)">クロスボウ</a>、<a href="http://crawl.chaosforge.org/Slings_(skill)" data-untr="1" title="Slings (skill)">スリング</a>(射撃武器に統合)</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> - <a href="http://crawl.chaosforge.org/Charms" data-untr="1" title="Charms">加護</a></li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> - <a href="http://crawl.chaosforge.org/Stabbing" data-untr="1" title="Stabbing">急所攻撃</a>、<a href="http://crawl.chaosforge.org/Traps_(skill)" data-untr="1" title="Traps (skill)">罠</a></li>
+<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> - <a href="http://crawl.chaosforge.org/Traps_%26_Doors" data-untr="1" title="Traps &amp; Doors">罠と扉</a>(罠に改名)</li>
+<li><a href="http://crawl.chaosforge.org/0.6" data-untr="1" class="mw-redirect" title="0.6">0.6</a> - <a href="http://crawl.chaosforge.org/Divinations" data-untr="1" title="Divinations">予見術</a></li></ul>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Skill_titles" data-untr="1" title="Skill titles">スキルの称号</a></li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/skills.cc#L2312">skills.cc:2312</a> (0.32.0)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a class="mw-selflink selflink">スキル</a>
+</th></tr>
+<tr>
+<th> <a href="Weapon.html" class="mw-redirect" title="Weapons">武器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a> • <a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a> • <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+<p><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a> • <a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a> • <a href="http://crawl.chaosforge.org/Polearms" data-untr="1" title="Polearms">長柄武器</a> • <a href="http://crawl.chaosforge.org/Staves" data-untr="1" title="Staves">棒術</a> • <a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a> • <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</p>
+</td></tr>
+<tr>
+<th> 身体
+</th>
+<td> <a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a> • <a href="Armour_(skill).html" title="Armour (skill)">甲冑</a> • <a href="Dodging.html" title="Dodging">躱し身</a> • <a href="http://crawl.chaosforge.org/Stealth_(skill)" data-untr="1" title="Stealth (skill)">隠密</a> • <a href="http://crawl.chaosforge.org/Shields_(skill)" data-untr="1" title="Shields (skill)">盾</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Magic" data-untr="1" title="Magic">魔法</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a> • <a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a> • <a href="Evocations.html" title="Evocations">発動</a> • <a href="http://crawl.chaosforge.org/Shapeshifting" data-untr="1" title="Shapeshifting">変身術</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/List_of_spells_by_school" data-untr="1" title="List of spells by school">呪文の系統</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Air" data-untr="1" class="mw-redirect" title="Air">風の魔術</a> • <a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a> • <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> • <a href="http://crawl.chaosforge.org/Earth" data-untr="1" class="mw-redirect" title="Earth">地の魔術</a> • <a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a> • <a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a> • <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> • <a href="http://crawl.chaosforge.org/Ice_Magic" data-untr="1" title="Ice Magic">氷の魔術</a> • <a href="http://crawl.chaosforge.org/Necromancy" data-untr="1" title="Necromancy">死霊術</a> • <a href="http://crawl.chaosforge.org/Summoning" data-untr="1" class="mw-redirect" title="Summoning">召喚術</a> • <a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a>
+</td></tr>
+</table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

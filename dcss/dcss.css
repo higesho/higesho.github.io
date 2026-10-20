@@ -207,6 +207,8 @@ h1 .en{font-family:var(--mono);font-size:15px;color:var(--faint);letter-spacing:
 .wiki a[data-untr]::after,.untr-mark{content:"(英)";font-size:11px;color:var(--faint);
   margin-left:2px}
 .wiki.main{max-width:none}
+.wiki.main table{display:table;width:100%;background:none;border:0}
+.wiki.main td,.wiki.main th{border:0;padding:4px 12px 4px 0}
 .wlist{columns:2;column-gap:28px;padding-left:1.2em}
 .wlist li{break-inside:avoid;line-height:2}
 pre.license{font-family:var(--mono);font-size:12.5px;white-space:pre-wrap;color:var(--dim);

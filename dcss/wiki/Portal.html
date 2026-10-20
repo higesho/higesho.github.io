@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ポータル &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ポータル(Portal)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ポータル <span class="en">Portal</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Portal">Portal</a>」(0.33 向け、2025-05-07 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Portal&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><i>このページはダンジョンの地形について説明する。廃止されたカードと呪文については、それぞれ<a href="http://crawl.chaosforge.org/Portal_card" data-untr="1" title="Portal card">ポータル(カード)</a>と<a href="http://crawl.chaosforge.org/Portal_(spell)" data-untr="1" title="Portal (spell)">ポータル(呪文)</a>を参照。</i>
+</p><p><b>ポータル</b>は、特別な階へ通じる(たいていは一時的な)入口だ。それぞれの階には地形や住人にいくつもの型があるが、決まったテーマには必ず沿っている。どのゲームでもいくつかにはまず出会うが、1 回のプレイですべてを見つけることはめったにない。コンソール版の <i>Crawl</i> では、ポータルは <span class="nhsym clr-white">∩</span> の記号で表される。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Timed_portals"><span class="tocnumber">1.1</span> <span class="toctext">時限ポータル</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Silent_portals"><span class="tocnumber">1.2</span> <span class="toctext">予告のないポータル</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Portals"><span class="tocnumber">2</span> <span class="toctext">ポータルの一覧</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Throughout_the_game"><span class="tocnumber">2.1</span> <span class="toctext">ゲーム全体</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Early_Game"><span class="tocnumber">2.2</span> <span class="toctext">序盤</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Mid_Game"><span class="tocnumber">2.3</span> <span class="toctext">中盤</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Late_Game"><span class="tocnumber">2.4</span> <span class="toctext">終盤</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Peaceful"><span class="tocnumber">2.5</span> <span class="toctext">戦いのない場所</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>ポータルには、時間制限があって出現が知らされるものと、予告がなく消えないものの 2 種類がある。ポータルの階の大半は出現が知らされる。
+</p><p>予告の有無にかかわらず、ポータルに入れるのは一度だけだ。出てくるとポータルは永久に閉じる。所持品がいっぱいなら、余分なアイテムは外に置いていくとよい。そうすれば中に置き去りにせずに済む。<a href="http://crawl.chaosforge.org/Ziggurat" data-untr="1" title="Ziggurat">ジグラット</a>以外のポータルには入口のすぐそばに必ず出口があるので、ひとまず入ってみてから挑むかどうか決めても、たいていは安全だ。
+</p>
+<h3><span class="mw-headline" id="Timed_portals">時限ポータル</span></h3>
+<p>出現が知らされるポータルには時間制限があり、その階に初めて入ったときに警告が出る。たどり着くのが遅すぎると、いずれ閉じてしまう。別の階にいるあいだも残り時間は減り続ける。500 aut ごと(残りが 900 aut を切ると 250 aut ごと)にポータルが「音」を立て、ポータルまでのおおよその距離(壁は無視する)を知らせてくれる<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>。
+</p>
+<table class="wikitable">
+<tr>
+<th> 距離の語 </th>
+<th> 距離(マス)
+</th></tr>
+<tr>
+<td> – </td>
+<td> 0–6
+</td></tr>
+<tr>
+<td> すぐ近く </td>
+<td> 7–13
+</td></tr>
+<tr>
+<td> 近く </td>
+<td> 14–20
+</td></tr>
+<tr>
+<td> 遠く </td>
+<td> 21–27
+</td></tr>
+<tr>
+<td> かなり遠く </td>
+<td> 28+
+</td></tr>
+</table>
+<p>音は残り時間も下の表のように知らせる。たいていのポータルは、最初に 6000–8000 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> の時間を持っている。試練場は 4000–6000 と短く、死者の都は 9000-12000 と長い。バザールは深い階ほど長くなる。最後のメッセージは必ず表示されるので、ポータルの入口で休んでいれば、最後にもう一度入る機会がある。出現が知らされたポータルが視界の外で時間切れになると、「壁と床が一瞬奇妙に振動した。」というメッセージが出る。
+</p>
+<table class="wikitable">
+<tr>
+<th rowspan="2"> ポータル </th>
+<th rowspan="2"> 音の種類 </th>
+<th colspan="6"> 残り時間(aut)
+</th></tr>
+<tr>
+<th> 5001+ </th>
+<th> 4001–5000 </th>
+<th> 2501–4000 </th>
+<th> 1501–2500 </th>
+<th> 101–1500 </th>
+<th> 最後のメッセージ(1–100)
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Sewer" data-untr="1" class="mw-redirect" title="Sewer">下水道</a> </td>
+<td> 排水溝の錆びついていく音 </td>
+<td> ゆっくりと </td>
+<td> – </td>
+<td> 小気味よく </td>
+<td> せわしなく </td>
+<td> 激しく </td>
+<td> あなたは排水口がばらばらに壊れる音を聞いた。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Ossuary" data-untr="1" title="Ossuary">納骨堂</a> </td>
+<td> 砂の雪崩のサラサラと流れる音 </td>
+<td> ゆっくりと </td>
+<td> – </td>
+<td> 小気味よく </td>
+<td> せわしなく </td>
+<td> 激しく </td>
+<td> 砂の流れる音はもうほとんど聞こえない。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Bailey" data-untr="1" title="Bailey">濠城</a> </td>
+<td> 吊るし門のきしむ音 </td>
+<td> かすかに </td>
+<td> – </td>
+<td> 規則正しく </td>
+<td> せわしなく </td>
+<td> 大きく </td>
+<td> 吊るし門が地面すれすれまで下げられた。
+</td></tr>
+<tr>
+<td> <a href="Gauntlet.html" title="Gauntlet">試練場</a> </td>
+<td> 太鼓の打ち鳴らされる音 </td>
+<td> かすかに </td>
+<td> – </td>
+<td> 大きく </td>
+<td> せわしなく </td>
+<td> 雷鳴のように </td>
+<td> 雷鳴のような一打を最後に、太鼓の音が止んだ。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Volcano" data-untr="1" title="Volcano">火山</a> </td>
+<td> 岩の雪崩の崩れ落ちる轟音 </td>
+<td> ゆっくりと </td>
+<td> – </td>
+<td> 小気味よく </td>
+<td> せわしなく </td>
+<td> 激しく </td>
+<td> 岩の落ちる音が急に収まり始めた。
+</td></tr>
+<tr>
+<td> <a href="Ice_cave.html" class="mw-redirect" title="Ice Cave">氷の洞穴</a> </td>
+<td> 溶けゆくアーチのピキピキと鳴る音 </td>
+<td> かすかに </td>
+<td> – </td>
+<td> 規則正しく </td>
+<td> せわしなく </td>
+<td> 大きく </td>
+<td> 溶ける氷のピキピキという音が急速に収まっていく。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Bazaar" data-untr="1" title="Bazaar">バザール</a> </td>
+<td> 鐘の鳴り響く音 </td>
+<td> 厳かに </td>
+<td> – </td>
+<td> 小気味よく </td>
+<td> 急き立てるように </td>
+<td> 狂ったように </td>
+<td> あなたは鐘の最後の音が消えていくのを聞いた。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Desolation" data-untr="1" class="mw-redirect" title="Desolation">塩の荒野</a> </td>
+<td> 風のヒュウヒュウと鳴る音 </td>
+<td> かすかに </td>
+<td> 静かに </td>
+<td> – </td>
+<td> 大きく </td>
+<td> 耳をつんざくように </td>
+<td> 風の音が急速に静まっていく。
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Wizlab" data-untr="1" class="mw-redirect" title="Wizlab">魔術師の研究所</a> </td>
+<td> 魔法のポータルのパチパチと鳴る音 </td>
+<td> 厳かに </td>
+<td> – </td>
+<td> 小気味よく </td>
+<td> 急き立てるように </td>
+<td> 狂ったように </td>
+<td> 魔法のポータルの爆ぜる音はもうほとんど聞こえない。
+</td></tr>
+<tr>
+<th rowspan="2"> ポータル </th>
+<th rowspan="2"> 音の種類 </th>
+<th colspan="6"> 残り時間(aut)
+</th></tr>
+<tr>
+<th> 7500+ </th>
+<th> 6000–7500 </th>
+<th> 3251–6000 </th>
+<th> 2251–3250 </th>
+<th> 101–2250 </th>
+<th> 最後のメッセージ(1–100)
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Necropolis" data-untr="1" title="Necropolis">死者の都</a> </td>
+<td> 葬送の詠唱の…… </td>
+<td> ひとりきりの嘆きの声 </td>
+<td> 小さな合唱 </td>
+<td> 集まりつつある合唱 </td>
+<td> 高まりゆく群衆の声 </td>
+<td> 大合唱 </td>
+<td> 葬礼が最高潮に達した！
+</td></tr></table>
+<h3><span class="mw-headline" id="Silent_portals">予告のないポータル</span></h3>
+<p><a href="Treasure_trove.html" title="Treasure trove">宝の埋蔵庫</a>と<a href="http://crawl.chaosforge.org/Ziggurat" data-untr="1" title="Ziggurat">ジグラット</a>は、予告なしに現れて消えないポータルだ。時間切れにはならず、その階を離れても入るまで残り続ける。
+</p>
+<h2><span class="mw-headline" id="Portals">ポータルの一覧</span></h2>
+<p>以下がポータルの階のすべてだ。ゲーム内での地形の名前と、簡単な説明を添える。
+</p>
+<h3><span class="mw-headline" id="Throughout_the_game">ゲーム全体</span></h3>
+<dl><dt> <a href="http://crawl.chaosforge.org/Necropolis" data-untr="1" title="Necropolis">死者の都</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Necropolis_portal.png" data-untr="1" class="image"><img alt="Necropolis portal.png" src="img/Necropolis_portal.png" width="32" height="32" /></a> <i><b>幻の通路</b></i></dd>
+<dd> <a href="Player_ghost.html" title="Player ghost">プレイヤーの幽霊</a>が出る<a href="Vault.html" title="Vault">ヴォールト</a>を寄せ集めた場所。</dd></dl>
+<h3><span class="mw-headline" id="Early_Game">序盤</span></h3>
+<dl><dt> <a href="http://crawl.chaosforge.org/Ossuary" data-untr="1" title="Ossuary">納骨堂</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Ossuary_portal.png" data-untr="1" class="image"><img alt="Ossuary portal.png" src="img/Ossuary_portal.png" width="32" height="32" /></a> <i><b>砂に覆われた階段</b></i></dd>
+<dd> <a href="http://crawl.chaosforge.org/Zombie" data-untr="1" title="Zombie">ゾンビ</a>に<a href="http://crawl.chaosforge.org/Mummy_(monster)" data-untr="1" title="Mummy (monster)">ミイラ</a>に<a href="Trap.html" title="Trap">罠</a>、なんてこった!</dd>
+<dt> <a href="http://crawl.chaosforge.org/The_Sewers" data-untr="1" title="The Sewers">下水道</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Sewer_portal.png" data-untr="1" class="image"><img alt="Sewer portal.png" src="img/Sewer_portal.png" width="32" height="32" /></a> <i><b>輝く排水口</b></i></dd>
+<dd> ネズミとヘビがうようよする水の中をかき分けて進む。<a href="http://crawl.chaosforge.org/Kobold_(monster)" data-untr="1" title="Kobold (monster)">コボルド</a>に気をつけよう。</dd></dl>
+<h3><span class="mw-headline" id="Mid_Game">中盤</span></h3>
+<dl><dt><a href="http://crawl.chaosforge.org/Bailey" data-untr="1" title="Bailey">濠城</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Bailey_portal.png" data-untr="1" class="image"><img alt="Bailey portal.png" src="img/Bailey_portal.png" width="32" height="32" /></a> <i><b>旗の立てられたポータル</b></i></dd>
+<dd> <a href="http://crawl.chaosforge.org/List_of_orcs" data-untr="1" title="List of orcs">オーク</a>や<a href="http://crawl.chaosforge.org/List_of_gnolls" data-untr="1" title="List of gnolls">ノール</a>、<a href="http://crawl.chaosforge.org/Goblin" data-untr="1" title="Goblin">ゴブリン</a>を相手にした撃ち合いか殴り合い、あるいはその両方(ときには<a href="http://crawl.chaosforge.org/List_of_deep_elves" data-untr="1" title="List of deep elves">エルフ</a>まで出てくる)。</dd>
+<dt> <a href="Gauntlet.html" title="Gauntlet">試練場</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Gauntlet_portal.png" data-untr="1" class="image"><img alt="Gauntlet portal.png" src="img/Gauntlet_portal.png" width="32" height="32" /></a> <i><b>試練場の入口</b></i></dd>
+<dd> 腕に覚えがあるなら、闘技場をひと組選ぼう。賞品はもらえるが、<a href="http://crawl.chaosforge.org/Minotaur_(monster)" data-untr="1" title="Minotaur (monster)">ミノタウロス</a>の相手もしなければならない!</dd>
+<dt> <a href="Ice_cave.html" class="mw-redirect" title="Ice Cave">氷の洞穴</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Ice_cave_portal.png" data-untr="1" class="image"><img alt="Ice cave portal.png" src="img/Ice_cave_portal.png" width="32" height="32" /></a> <i><b>凍てついたアーチ</b></i></dd>
+<dd> 冷気をまとったさまざまなモンスターと<a href="http://crawl.chaosforge.org/Ice_statue" data-untr="1" title="Ice statue">氷の像</a>がひしめいている。冷気耐性を用意していこう。</dd>
+<dt> <a href="http://crawl.chaosforge.org/Volcano" data-untr="1" title="Volcano">火山</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Volcano_portal.png" data-untr="1" class="image"><img alt="Volcano portal.png" src="img/Volcano_portal.png" width="32" height="32" /></a> <i><b>薄暗い隧道</b></i></dd>
+<dd> 何もかもが燃えている。火炎耐性を忘れたら、あなたも燃える。</dd></dl>
+<h3><span class="mw-headline" id="Late_Game">終盤</span></h3>
+<dl><dt> <a href="http://crawl.chaosforge.org/Desolation_of_Salt" data-untr="1" title="Desolation of Salt">塩の荒野</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Desolation_portal.png" data-untr="1" class="image"><img alt="Desolation portal.png" src="img/Desolation_portal.png" width="32" height="32" /></a> <i><b>崩れかけた門</b></i></dd>
+<dd> 塩の広がる開けた土地。厳重に守られた財宝がある。</dd>
+<dt> <a href="http://crawl.chaosforge.org/Wizard_Laboratory" data-untr="1" title="Wizard Laboratory">魔術師の研究所</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Wizlab_portal.png" data-untr="1" class="image"><img alt="Wizlab portal.png" src="img/Wizlab_portal.png" width="32" height="32" /></a> <i><b>魔法のポータル</b></i></dd>
+<dd> 何人かいる風変わりな人物のうち、誰か一人の私的な研究所。</dd>
+<dt> <a href="http://crawl.chaosforge.org/Ziggurat" data-untr="1" title="Ziggurat">ジグラット</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Ziggurat_portal.png" data-untr="1" class="image"><img alt="Ziggurat portal.png" src="img/Ziggurat_portal.png" width="32" height="32" /></a> <i><b>ジグラットへの門</b></i></dd>
+<dd>  究極の試練。狂気が増していく <a href="http://crawl.chaosforge.org/27" data-untr="1" title="27">27</a> 階を勝ち抜く。最後まで生き延びれば、もう一度挑める。ただし<i>もっと難しく</i>なる。時間制限はない。</dd></dl>
+<h3><span class="mw-headline" id="Peaceful">戦いのない場所</span></h3>
+<dl><dt> <a href="http://crawl.chaosforge.org/Bazaar" data-untr="1" title="Bazaar">バザール</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Bazaar_portal.png" data-untr="1" class="image"><img alt="Bazaar portal.png" src="img/Bazaar_portal.png" width="32" height="32" /></a> <i><b>バザールへと続く門</b></i></dd>
+<dd> 買い物の時間だ! 金貨を貯めてあるといいのだが。</dd>
+<dt> <a href="Treasure_trove.html" title="Treasure trove">宝の埋蔵庫</a></dt>
+<dd> <a href="http://crawl.chaosforge.org/File:Treasure_trove_portal.png" data-untr="1" class="image"><img alt="Treasure trove portal.png" src="img/Treasure_trove_portal.png" width="32" height="32" /></a> <i><b>秘密の埋蔵庫へのポータル</b></i></dd>
+<dd> あなたのキャラクターに合わせて選ばれた財宝の山……ただし、一風変わった決まった代価が要る。時間制限はない。</dd></dl>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Necropolis" data-untr="1" title="Necropolis">死者の都</a>は <a href="0.33.html" title="0.33">0.33</a> で追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.32" data-untr="1" title="0.32">0.32</a> より前は、バザールがまれに消えないポータルになることがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、ポータルの階が<a href="http://crawl.chaosforge.org/Mimic" data-untr="1" title="Mimic">擬態</a>のこともあった。出現は同じように知らされるが、単に入れなかった。また、<a href="http://crawl.chaosforge.org/Malign_Gateway" data-untr="1" title="Malign Gateway">邪悪なる通り道</a>のポータルにも、触手がまだ出ていなければ入ることができた。入ると<a href="http://crawl.chaosforge.org/Blink" data-untr="1" title="Blink">瞬間移動</a>させられ、少しダメージを受けた。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、ポータルの距離を知らせる音は 3 段階しかなかった。</li>
+<li><a href="http://crawl.chaosforge.org/Labyrinth" data-untr="1" title="Labyrinth">ラビリンス</a>は <a href="http://crawl.chaosforge.org/0.23" data-untr="1" title="0.23">0.23</a> で試練場に置き換えられた。</li>
+<li>塩の荒野は <a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> で追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、時限ポータルを初めて目にした時点で、さらに短い時間制限が始まった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、時限ポータルの多くは出現が知らされなかった。</li>
+<li><a href="http://crawl.chaosforge.org/The_Spider%27s_Nest" data-untr="1" class="mw-redirect" title="The Spider&#39;s Nest">蜘蛛の穴ぐら</a>は <a href="http://crawl.chaosforge.org/0.11" data-untr="1" title="0.11">0.11</a> でポータルの階から正式な分岐に格上げされた。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.33.0/crawl-ref/source/dat/dlua/lm_tmsg.lua#L47">dat/dlua/lm_tmsg.lua:47</a> (0.33.0)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

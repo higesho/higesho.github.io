@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H&#x27;s Minotaur Fighter Guide &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="H&#x27;s Minotaur Fighter Guide(H&#x27;s Minotaur Fighter Guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>H&#x27;s Minotaur Fighter Guide</h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/H's_Minotaur_Fighter_Guide">H&#x27;s Minotaur Fighter Guide</a>」(0.33 向け、2026-05-10 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=H's_Minotaur_Fighter_Guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p>Dungeon Crawl Stone Soup で初めての勝利を目指しているなら、このガイドはまさにあなたのためのものだ。扱うのは初心者向けの名コンビ、<a href="http://crawl.chaosforge.org/Minotaur" data-untr="1" title="Minotaur">ミノタウロス</a>の<a href="http://crawl.chaosforge.org/Fighter" data-untr="1" title="Fighter">戦士</a>(MiFi)である。必ずしも最適な攻略ではないし、ガイドの中にはいつでも従うべきとは限らない内容もある。それでも、単純な組み合わせで、単純かつ安定した勝ち筋をたどれるよう案内していくつもりだ。
+</p><p><b>このガイドは <a href="0.33.html" title="0.33">0.33</a>(2025年11月)に合わせて更新してある。</b> もともとは古い版(<a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a>)向けに書いたものなので、ところどころ不正確な点が残っているかもしれない。
+</p><p>ゲームのごく基本的なことは知っている前提で進める。知らなければ、ゲーム内でも wiki でもいいので<a href="http://crawl.chaosforge.org/Tutorial" data-untr="1" title="Tutorial">チュートリアル</a>を見てほしい。ざっと説明すると、小文字の i で所持品を見る(すぐにたくさん集まる)。テンキーかクリックで移動する。モンスターに向かって移動すれば攻撃になる。あとは死なないことを祈ろう。ショートカットはたくさんあり、使うものも使わないものもある。<b>?</b> を押してもう一度 <b>?</b> を押すと、全コマンドの一覧が見られる。ゲーム内のコマンドはすべて大文字と小文字を区別する。このガイドの各節へは右の目次から飛べる。
+</p>
+<table>
+<tr>
+<td> <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Main_Menu"><span class="tocnumber">1</span> <span class="toctext">メインメニュー</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Specs"><span class="tocnumber">2</span> <span class="toctext">キャラクターの構成</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Dungeon:1"><span class="tocnumber">3</span> <span class="toctext">迷宮:1</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Dungeon:1_.28for_real.29"><span class="tocnumber">3.1</span> <span class="toctext">迷宮:1(今度こそ本番)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Notable_Threats"><span class="tocnumber">3.1.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Tactics"><span class="tocnumber">3.2</span> <span class="toctext">戦術</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#Attacks_of_opportunity"><span class="tocnumber">3.2.1</span> <span class="toctext">機会攻撃</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Random_Energy"><span class="tocnumber">3.2.2</span> <span class="toctext">エネルギーのランダム化</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Note_on_Learning"><span class="tocnumber">3.2.3</span> <span class="toctext">学び方について</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="#Dungeon:2"><span class="tocnumber">3.3</span> <span class="toctext">迷宮:2</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Notable_Threats_2"><span class="tocnumber">3.3.1</span> <span class="toctext">要注意の敵</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Stat_Points"><span class="tocnumber">3.3.2</span> <span class="toctext">能力値のポイント</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="#Identification"><span class="tocnumber">3.4</span> <span class="toctext">鑑定</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Dungeon:3"><span class="tocnumber">3.5</span> <span class="toctext">迷宮:3</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="#Notable_Threats_3"><span class="tocnumber">3.5.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Items_and_Gear"><span class="tocnumber">3.6</span> <span class="toctext">アイテムと装備</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#Equipment"><span class="tocnumber">3.6.1</span> <span class="toctext">装備品</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Artefacts"><span class="tocnumber">3.6.2</span> <span class="toctext">アーティファクト</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="#Useables"><span class="tocnumber">3.6.3</span> <span class="toctext">使うアイテム</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-20"><a href="#Dungeon:4_.28.26_the_Temple.29"><span class="tocnumber">3.7</span> <span class="toctext">迷宮:4(と寺院)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="#Notable_Threats_4"><span class="tocnumber">3.7.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-22"><a href="#Temple.2C_Gods.2C_and_Okawaru"><span class="tocnumber">3.8</span> <span class="toctext">寺院、神々、オカワル</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Dungeon:5_-_Dungeon:7"><span class="tocnumber">3.9</span> <span class="toctext">迷宮:5〜迷宮:7</span></a>
+<ul>
+<li class="toclevel-3 tocsection-24"><a href="#Notable_Threats_5"><span class="tocnumber">3.9.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-25"><a href="#Heroism"><span class="tocnumber">3.10</span> <span class="toctext">英雄化</span></a>
+<ul>
+<li class="toclevel-3 tocsection-26"><a href="#Skill_Training"><span class="tocnumber">3.10.1</span> <span class="toctext">スキルの訓練</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-27"><a href="#Dungeon:8_-_Dungeon:11"><span class="tocnumber">3.11</span> <span class="toctext">迷宮:8〜迷宮:11</span></a>
+<ul>
+<li class="toclevel-3 tocsection-28"><a href="#Notable_Threats_6"><span class="tocnumber">3.11.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-29"><a href="#Finesse"><span class="tocnumber">3.12</span> <span class="toctext">早業の技巧</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Why_You_Go_to_The_Lair"><span class="tocnumber">3.13</span> <span class="toctext">獣の棲み処に行く理由</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Lair_of_Beasts"><span class="tocnumber">3.14</span> <span class="toctext">獣の棲み処</span></a>
+<ul>
+<li class="toclevel-3 tocsection-32"><a href="#Notable_Threats_7"><span class="tocnumber">3.14.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-33"><a href="#Duel"><span class="tocnumber">3.15</span> <span class="toctext">決闘</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-34"><a href="#Midgame_Lull"><span class="tocnumber">4</span> <span class="toctext">中盤の中だるみ</span></a>
+<ul>
+<li class="toclevel-2 tocsection-35"><a href="#Late_Dungeon"><span class="tocnumber">4.1</span> <span class="toctext">迷宮の下層</span></a>
+<ul>
+<li class="toclevel-3 tocsection-36"><a href="#Notable_Threats_8"><span class="tocnumber">4.1.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-37"><a href="#Orcish_Mines"><span class="tocnumber">4.2</span> <span class="toctext">オークの坑道</span></a>
+<ul>
+<li class="toclevel-3 tocsection-38"><a href="#Notable_Threats_9"><span class="tocnumber">4.2.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-39"><a href="#Rune_Branch_Prep"><span class="tocnumber">4.3</span> <span class="toctext">ルーンのある分岐への準備</span></a>
+<ul>
+<li class="toclevel-3 tocsection-40"><a href="#Shopping_Trip"><span class="tocnumber">4.3.1</span> <span class="toctext">買い物</span></a></li>
+<li class="toclevel-3 tocsection-41"><a href="#Skill_Training_2"><span class="tocnumber">4.3.2</span> <span class="toctext">スキルの訓練</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-42"><a href="#Evocables"><span class="tocnumber">4.4</span> <span class="toctext">発動アイテム</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="#6.2A_Weapon_.2F_Armour_Gift"><span class="tocnumber">4.5</span> <span class="toctext">信仰心6*での武器/防具の贈り物</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-44"><a href="#S-Branches"><span class="tocnumber">5</span> <span class="toctext">S系の分岐</span></a>
+<ul>
+<li class="toclevel-2 tocsection-45"><a href="#Notes"><span class="tocnumber">5.1</span> <span class="toctext">注</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#Snake"><span class="tocnumber">5.2</span> <span class="toctext">蛇穴</span></a>
+<ul>
+<li class="toclevel-3 tocsection-47"><a href="#Notable_Threats_10"><span class="tocnumber">5.2.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-48"><a href="#Spider"><span class="tocnumber">5.3</span> <span class="toctext">蜘蛛の穴ぐら</span></a>
+<ul>
+<li class="toclevel-3 tocsection-49"><a href="#Notable_Threats_11"><span class="tocnumber">5.3.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-50"><a href="#Swamp"><span class="tocnumber">5.4</span> <span class="toctext">沼</span></a>
+<ul>
+<li class="toclevel-3 tocsection-51"><a href="#Notable_Threats_12"><span class="tocnumber">5.4.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-52"><a href="#Shoals"><span class="tocnumber">5.5</span> <span class="toctext">浅瀬</span></a>
+<ul>
+<li class="toclevel-3 tocsection-53"><a href="#Notable_Threats_13"><span class="tocnumber">5.5.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-54"><a href="#The_Lategame"><span class="tocnumber">6</span> <span class="toctext">終盤</span></a>
+<ul>
+<li class="toclevel-2 tocsection-55"><a href="#Vaults:_1-4"><span class="tocnumber">6.1</span> <span class="toctext">宝物庫:1〜4</span></a>
+<ul>
+<li class="toclevel-3 tocsection-56"><a href="#Notable_Threats_14"><span class="tocnumber">6.1.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-57"><a href="#Depths"><span class="tocnumber">6.2</span> <span class="toctext">深層</span></a>
+<ul>
+<li class="toclevel-3 tocsection-58"><a href="#Notable_Threats_15"><span class="tocnumber">6.2.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-59"><a href="#Third_.28and_Fourth.3F.29_Rune"><span class="tocnumber">6.3</span> <span class="toctext">3つ目(と4つ目?)のルーン</span></a></li>
+<li class="toclevel-2 tocsection-60"><a href="#Slime:1-4"><span class="tocnumber">6.4</span> <span class="toctext">スライムの穴ぐら:1〜4</span></a>
+<ul>
+<li class="toclevel-3 tocsection-61"><a href="#Notable_Threats_16"><span class="tocnumber">6.4.1</span> <span class="toctext">要注意の敵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-62"><a href="#Slime:5"><span class="tocnumber">6.5</span> <span class="toctext">スライムの穴ぐら:5</span></a>
+<ul>
+<li class="toclevel-3 tocsection-63"><a href="#Notable_Threat"><span class="tocnumber">6.5.1</span> <span class="toctext">要注意の敵</span></a></li>
+<li class="toclevel-3 tocsection-64"><a href="#Immolation_Torment_Javelins"><span class="tocnumber">6.5.2</span> <span class="toctext">焼き討ち、拷問、ジャベリン</span></a></li>
+<li class="toclevel-3 tocsection-65"><a href="#Corridor_fighting"><span class="tocnumber">6.5.3</span> <span class="toctext">通路での戦い</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-66"><a href="#Vaults:5"><span class="tocnumber">6.6</span> <span class="toctext">宝物庫:5</span></a>
+<ul>
+<li class="toclevel-3 tocsection-67"><a href="#Notable_Threats_17"><span class="tocnumber">6.6.1</span> <span class="toctext">要注意の敵</span></a></li>
+<li class="toclevel-3 tocsection-68"><a href="#The_Strategy"><span class="tocnumber">6.6.2</span> <span class="toctext">作戦</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-69"><a href="#The_Final_Stretch:_Zot_.26_the_Orb_Run"><span class="tocnumber">7</span> <span class="toctext">最後の追い込み: ゾットの領域とオーブを持っての脱出</span></a>
+<ul>
+<li class="toclevel-2 tocsection-70"><a href="#Notable_Threats_18"><span class="tocnumber">7.1</span> <span class="toctext">要注意の敵</span></a></li>
+<li class="toclevel-2 tocsection-71"><a href="#Zot:5"><span class="tocnumber">7.2</span> <span class="toctext">ゾットの領域:5</span></a>
+<ul>
+<li class="toclevel-3 tocsection-72"><a href="#Notable_Threats_19"><span class="tocnumber">7.2.1</span> <span class="toctext">要注意の敵</span></a></li>
+<li class="toclevel-3 tocsection-73"><a href="#What_to_do_if_teleported_inside_the_lungs"><span class="tocnumber">7.2.2</span> <span class="toctext">肺の中にテレポートしてしまったら</span></a></li>
+<li class="toclevel-3 tocsection-74"><a href="#What_to_do_if_the_lungs_are_trapped"><span class="tocnumber">7.2.3</span> <span class="toctext">肺が閉じ込められていたら</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-75"><a href="#Orb_Run"><span class="tocnumber">7.3</span> <span class="toctext">オーブを持っての脱出</span></a></li>
+<li class="toclevel-2 tocsection-76"><a href="#Conclusion"><span class="tocnumber">7.4</span> <span class="toctext">おわりに</span></a>
+<ul>
+<li class="toclevel-3 tocsection-77"><a href="#Scope_of_the_guide"><span class="tocnumber">7.4.1</span> <span class="toctext">このガイドの範囲</span></a></li>
+<li class="toclevel-3 tocsection-78"><a href="#MiFi_vs_MiBe"><span class="tocnumber">7.4.2</span> <span class="toctext">ミノ戦士とミノ狂戦士</span></a></li>
+<li class="toclevel-3 tocsection-79"><a href="#Playing_Non-Minotaurs"><span class="tocnumber">7.4.3</span> <span class="toctext">ミノタウロス以外で遊ぶなら</span></a></li>
+<li class="toclevel-3 tocsection-80"><a href="#Other_Gods"><span class="tocnumber">7.4.4</span> <span class="toctext">ほかの神</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</td></tr></table>
+<h3><span class="mw-headline" id="Main_Menu">メインメニュー</span></h3>
+<p>最初に目にするのはキャラクター選択の画面だ。これはミノタウロスの戦士のガイドなので、ミノタウロスを選び、続いて戦士をクリックする。どちらも選択画面のほぼ先頭にあるはずだ。次にウォーアックスを選ぶ。最後に、オフラインで遊んでいるなら名前を決められる。これらの選択(名前以外)については次の節で説明する。さっさと迷宮に潜りたいなら読み飛ばしてかまわない。
+</p>
+<h2><span class="mw-headline" id="Specs">キャラクターの構成</span></h2>
+<ul><li> <a href="http://crawl.chaosforge.org/File:Minotaur_(monster).png" data-untr="1" class="image"><img alt="Minotaur (monster).png" src="img/Minotaur_(monster).png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Minotaur" data-untr="1" title="Minotaur">ミノタウロス</a>: ミノタウロスは「怪物度」で言えば10段階の7で、これを上回るのはトロルと、ときどき現れる悪魔の血族くらいしかないという由緒ある分類だ。実際そのとおりで、肉弾戦にかけてはまさに怪物、魔法にかけてはどうしようもないおバカである。HP が高く、鈍器っぽいものなら何でも見事に使いこなし、スキル適性はゲーム全体で最高クラスだ。</li></ul>
+<dl><dd> 怪物とはいえ、ミノタウロスは**そこまで**特殊な種族ではなく、<a href="http://crawl.chaosforge.org/Octopode" data-untr="1" title="Octopode">オクトポード</a>のような奇抜な種族とは違う。いちばんの売りは……角だ。この角は強力で、(古い版では)<i>頭突きだけで</i><a rel="nofollow" class="external text" href="https://old.reddit.com/r/dcss/comments/lsjet8/is_it_possible_to_win_the_game_by_repeatedly"><i>ゲームを丸ごと</i></a>クリアできたほどだ。角で<i>反撃</i>できるのはミノタウロスだけである。ほかの種族も変異で角が生えれば攻撃のときに頭突きをするが、反撃はミノタウロスにしかできない。反撃の確率は20%から始まり、レベルが上がるにつれて増える。この効果は本当に強い。</dd></dl>
+<dl><dd> 角があると、一部の頭の防具が着けられない。10年前にはこれが大きな議論の的になった。<a href="http://crawl.chaosforge.org/Mountain_Dwarf" data-untr="1" title="Mountain Dwarf">山ドワーフ</a>が惜しくも削除され、その後釜に兜をかぶれないミノタウロスが収まったからだ。とはいえミノは帽子ならかぶれるし、帽子のほうがエンチャントの幅が広い。ただし(<a href="Mutation.html" title="Mutation">変異</a>で)角がさらに大きくなると、帽子すらかぶれなくなるので注意。特徴らしい特徴はこれくらいで、角と能力値がすべてだ。</dd></dl>
+<ul><li> <a href="http://crawl.chaosforge.org/File:Buckler_1.png" data-untr="1" class="image"><img alt="Buckler 1.png" src="img/Buckler_1.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Fighter" data-untr="1" title="Fighter">戦士</a>: 戦士はごく一般的な職業で、いわゆる「ウォリアー」(あるいは NetHack の<a rel="nofollow" class="external text" href="https://nethackwiki.com/wiki/Valkyrie">ヴァルキリー</a>)に近い。メニューの最初に並んでいる職業で、それも当然だ。戦士は「良い」武器(ここでは<a href="http://crawl.chaosforge.org/War_axe" data-untr="1" title="War axe">ウォーアックス</a>を選ぶ。理由はすぐ後で)と、鎧の<a href="Scale_mail.html" title="Scale mail">スケイルメイル</a>(初期装備の中では断トツで重いが、10階も潜らないうちにゴミになる)、そして<a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>(実はかなり良いが、いずれはもっと重い盾がほしくなる)を持って始まる。</li></ul>
+<dl><dd>いちばんの売りはやはりバックラーだ。盾はどれもそうだが、バックラーを持つと両手武器が使えなくなる。小型の盾なので、武器の速度はわずかしか落ちない。そして SH は、実はあなたの防御のかなりの部分を担っている。「実は」と言ったが、開発者もそれに気づいて二度続けて弱体化した……それでも盾は良い選択だ。戦士なら戦闘能力で一歩先んじて始められ、ローブとハンドアックスでしばらく苦労させられることもない。</dd></dl>
+<dl><dd> 戦士は<a href="http://crawl.chaosforge.org/Potion_of_might" data-untr="1" title="Potion of might">怪力の薬</a>も持って始まる。この使い切りのアイテムは、かなり長いが限りのある間、近接攻撃1回ごとのダメージを 1d10 増やす(角の攻撃にも乗る！)。手強い敵に使おう。手強い敵には早めに使おう。</dd></dl>
+<ul><li> <a href="http://crawl.chaosforge.org/File:War_axe1.png" data-untr="1" class="image"><img alt="War axe1.png" src="img/War_axe1.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>: 「斧がおすすめだ(斧は楽しい)」(Linley Herzell、<i>quickstart.md</i>)</li></ul>
+<dl><dd> 斧には<a href="http://crawl.chaosforge.org/Cleave" data-untr="1" class="mw-redirect" title="Cleave">薙ぎ払い</a>という固有の能力がある。振るたびに、隣接する敵すべてに70%のダメージを与える(主な目標には満額)。薙ぎ払いが登場して8年、なぜこれが一度も手を入れられていないのかは、私にはさっぱりわからない。これまでにあった弱体化は、<a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/commit/2393aa775744b497af0f2cf47ec8ddc002a0511e">ある1本の斧に対する1回きりで、それも次の更新で元に戻された</a>。一番の理由はたぶん、そもそも複数の敵と同時に戦うべきではないということだろう！ 状況を完全に掌握しているプレイヤーは、斧があろうとなかろうと敵を1体ずつ相手にする。とはいえ、肝心なのは「完全に掌握している」という点だ。テレポートの罠や縦穴の罠でいきなりどこかへ放り出されたり、<a href="http://crawl.chaosforge.org/Guardian_serpent" data-untr="1" title="Guardian serpent">守護の大蛇</a>が仲間4体を一瞬で周りにテレポートさせてきたりすることは何度もある。斧はそういう状況への保険だ。要するに、周りを囲む4体と同時に戦うのは最善ではないが、そうせざるを得ないときに斧は頼りになる。</dd></dl>
+<dl><dd> 補足: 斧は透明な敵にも強い。<b>Ctrl+方向キー</b>で攻撃すれば、厄介な<a href="http://crawl.chaosforge.org/Unseen_horror" data-untr="1" title="Unseen horror">見えざる恐怖</a>も殴れる。斧は<a href="http://crawl.chaosforge.org/Hydra" data-untr="1" title="Hydra">ヒドラ</a>の首も切り落とせる。ヒドラは後でこのガイドが対策を立てる、ある1体の敵だ。</dd></dl>
+<p>こうした特徴から、MiFi^斧は DCSS のコミュニティでちょっとしたネタになっている。これを上回るのは MiBe(<a href="http://crawl.chaosforge.org/Minotaur" data-untr="1" title="Minotaur">ミノタウロス</a>の<a href="http://crawl.chaosforge.org/Berserker" data-untr="1" title="Berserker">狂戦士</a>)くらいのものだ。なぜミノ狂戦士にしないのか？ 私がそう決めたからだ。ミノ狂戦士のほうが安定していて、序盤は<i>ずっと</i>強い。だがミノ戦士なら信仰する神を選べるので、中盤から終盤を落ち着いて進められる。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

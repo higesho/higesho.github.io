@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>発動アイテム &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="発動アイテム(Evocable items)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>発動アイテム <span class="en">Evocable items</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Evocable_items">Evocable items</a>」(0.33 向け、2025-11-20 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Evocable_items&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><b>発動アイテム</b>は、<b>V</b> キーで<a href="http://crawl.chaosforge.org/Evoke" data-untr="1" class="mw-redirect" title="Evoke">発動</a>させて力を引き出す魔法のアイテムだ。効果の強さはたいてい<a href="Evocations.html" title="Evocations">発動</a>スキルで決まる。
+</p><p>発動アイテムの多くは呪文に似た働きをし、呪文とほぼ同じ効果を持つものもある。呪文と違って失敗率がなく(ただし効果が出るかどうか<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>で判定するものはある)、<a href="Silence.html" title="Silence">静寂</a>の中でも使え、たいてい MP もかからず、<a href="http://crawl.chaosforge.org/Trog" data-untr="1" title="Trog">トログ</a>にも禁じられていない。その反面、ほとんどの発動アイテムは使える回数に限りがある。使い切ったあとにもう一度使うには、経験値を稼ぐか、床に落ちている追加の充填を拾わなければならない。そのため発動は主な攻撃手段にはせず、とくに役立つ場面に取っておく「奥の手」として控えめに使われることが多い。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Staves"><span class="tocnumber">1</span> <span class="toctext">杖</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Artefacts"><span class="tocnumber">1.1</span> <span class="toctext">アーティファクト</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Wands"><span class="tocnumber">2</span> <span class="toctext">ワンド</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Miscellaneous_Evokers"><span class="tocnumber">3</span> <span class="toctext">その他の発動アイテム</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Always_possible_to_generate"><span class="tocnumber">3.1</span> <span class="toctext">いつでも出るもの</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Mutually_exclusive_pairs"><span class="tocnumber">3.2</span> <span class="toctext">どちらか一方しか出ない組</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Other_Items"><span class="tocnumber">4</span> <span class="toctext">その他のアイテム</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Added_Evocables"><span class="tocnumber">5.1</span> <span class="toctext">追加された発動アイテム</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Removed_Evocables"><span class="tocnumber">5.2</span> <span class="toctext">削除された発動アイテム</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Removed_Evocations_Scaling"><span class="tocnumber">5.3</span> <span class="toctext">発動スキルの影響がなくなったもの</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Staves">杖</span></h2>
+<p>魔法の杖は近接攻撃に属性の追加ダメージを乗せる。このダメージは、杖ごとの呪文の系統のスキルと<a href="Evocations.html" title="Evocations">発動</a>スキルの両方で伸びる。杖は本来の意味での発動アイテムではないので、いくつかの決まりにあてはまらない。杖は<i>魔法の品</i>なのでトログに禁じられているし、充填もない。アーティファクトの杖には直接発動できる能力を持つものもあるが、手に持っていなければならず、使うには MP などの代償がかかる。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Magic_staff_1.png" data-untr="1" class="image"><img alt="Magic staff 1.png" src="img/Magic_staff_1.png" width="32" height="32" /></a> <a href="Magical_staff.html" title="Magical staff">魔法の杖の一覧</a></li>
+<li><a href="http://crawl.chaosforge.org/File:Elemental_staff.png" data-untr="1" class="image"><img alt="Elemental staff.png" src="img/Elemental_staff.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Elemental_Staff" data-untr="1" title="Elemental Staff">元素の杖</a>は発動スキルで強くなる。ほかの魔法の杖に似ているが、別物だ。</li></ul>
+<h3><span class="mw-headline" id="Artefacts">アーティファクト</span></h3>
+<p>2つの<a href="http://crawl.chaosforge.org/Unrandart" data-untr="1" class="mw-redirect" title="Unrandart">固定アーティファクト</a>は、<a href="http://crawl.chaosforge.org/A" data-untr="1" title="A">能力</a>メニューから使える能力を持っている。その強さは<a href="Evocations.html" title="Evocations">発動</a>スキルで伸びる。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Staff_of_olgreb.png" data-untr="1" class="image"><img alt="Staff of olgreb.png" src="img/Staff_of_olgreb.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Staff_of_Olgreb" data-untr="1" title="Staff of Olgreb">オルグレブの杖</a>: <a href="http://crawl.chaosforge.org/Olgreb%27s_Toxic_Radiance" data-untr="1" title="Olgreb&#39;s Toxic Radiance">オルグレブの毒気の光輪</a>を唱えられる。<a href="http://crawl.chaosforge.org/Staff_of_poison" data-untr="1" class="mw-redirect" title="Staff of poison">錬金術の杖</a>をいくらか強くしたものとしても働く。</li>
+<li><a href="http://crawl.chaosforge.org/File:Orb_of_Dispater.png" data-untr="1" class="image"><img alt="Orb of Dispater.png" src="img/Orb_of_Dispater.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Orb_of_Dispater" data-untr="1" title="Orb of Dispater">ディスペータのオーブ</a>: <a href="http://crawl.chaosforge.org/Damnation" data-untr="1" title="Damnation">地獄の鉄槌</a>を放つが、HP の 10% を失う。</li></ul>
+<h2><span class="mw-headline" id="Wands">ワンド</span></h2>
+<div><i>詳しくは: <a href="Wand.html" class="mw-redirect" title="Wands">ワンド</a></i></div>
+<p>ワンドは、決まった呪文が何回分か込められた魔法の道具だ。使うのに手に持つ必要はない。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Wand_wood.png" data-untr="1" class="image"><img alt="Wand wood.png" src="img/Wand_wood.png" width="32" height="32" /></a> <a href="Wand.html#List_of_wands" class="mw-redirect" title="Wands">ワンドの一覧</a></li></ul>
+<h2><span class="mw-headline" id="Miscellaneous_Evokers">その他の発動アイテム</span></h2>
+<p>これらのアイテムは発動させて効果を起こす。使い手の<a href="Evocations.html" title="Evocations">発動</a>スキルが高いほど効果も強くなる。
+</p><p>充填の数は決まっていて、経験値を稼ぐと回復する。同じ発動アイテムを複数手に入れるとひとつにまとまり、<a href="http://crawl.chaosforge.org/Enchantment" data-untr="1" class="mw-redirect" title="Enchantment">強化値</a>が上がる(最大 +5)。強化値が上がると、充填の回復に必要な経験値が減る。充填の回復に必要な経験値は、<a href="Evocations.html" title="Evocations">発動</a>スキルと<a href="http://crawl.chaosforge.org/Gadgeteer" data-untr="1" title="Gadgeteer">発明家の手袋</a>によっても減る。
+</p>
+<h3><span class="mw-headline" id="Always_possible_to_generate">いつでも出るもの</span></h3>
+<ul><li><a href="http://crawl.chaosforge.org/File:Lightning_rod.png" data-untr="1" class="image"><img alt="Lightning rod.png" src="img/Lightning_rod.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Lightning_rod" data-untr="1" title="Lightning rod">稲妻のロッド</a>: 電撃の光線を放つ。続けて何ターンも発動すると光線が強くなり、あたりをなぎ払える。</li>
+<li><a href="http://crawl.chaosforge.org/File:Phantom_mirror.png" data-untr="1" class="image"><img alt="Phantom mirror.png" src="img/Phantom_mirror.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Phantom_mirror" data-untr="1" title="Phantom mirror">幻影の鏡</a>: モンスター1体の写し身を短いあいだだけ作り出す。</li>
+<li><a href="http://crawl.chaosforge.org/File:Horn_of_geryon.png" data-untr="1" class="image"><img alt="Horn of geryon.png" src="img/Horn_of_geryon.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Horn_of_Geryon" data-untr="1" title="Horn of Geryon">ゲリュオンの角笛</a>: <a href="http://crawl.chaosforge.org/Sin_beast" data-untr="1" title="Sin beast">罪の獣</a>を何体か呼び出すが、敵対するものが混じることもある。<a href="http://crawl.chaosforge.org/Geryon" data-untr="1" title="Geryon">ゲリュオン</a>が必ず落とす。</li></ul>
+<h3><span class="mw-headline" id="Mutually_exclusive_pairs">どちらか一方しか出ない組</span></h3>
+<p>各<a href="http://crawl.chaosforge.org/Item_set" data-untr="1" class="mw-redirect" title="Item set">アイテムセット</a>からは、1回のゲームで1つしか出ない。
+</p><p><b>元素・範囲攻撃のセット</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Tin_of_tremorstones.png" data-untr="1" class="image"><img alt="Tin of tremorstones.png" src="img/Tin_of_tremorstones.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Tin_of_tremorstones" data-untr="1" title="Tin of tremorstones">震動石の缶</a>: プレイヤーの近くで破片の爆発を何度も起こす。自分も巻き込まれるおそれが常にあるが、ダメージは防具で大きく減らせる。</li>
+<li><a href="http://crawl.chaosforge.org/File:Condenser_vane.png" data-untr="1" class="image"><img alt="Condenser vane.png" src="img/Condenser_vane.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Condenser_vane" data-untr="1" title="Condenser vane">凝結の風見</a>: 見えている敵すべてのまわりに有害な<a href="http://crawl.chaosforge.org/Cloud" data-untr="1" title="Cloud">雲</a>を作る。</li></ul>
+<p><b>召喚のセット</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Box_of_beasts.png" data-untr="1" class="image"><img alt="Box of beasts.png" src="img/Box_of_beasts.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Box_of_beasts" data-untr="1" title="Box of beasts">獣の匣</a>: ランダムに作られた<a href="http://crawl.chaosforge.org/Mutant_beast" data-untr="1" class="mw-redirect" title="Mutant beast">異形の怪物</a>を呼び出す。</li>
+<li><a href="http://crawl.chaosforge.org/File:Sack_of_spiders.png" data-untr="1" class="image"><img alt="Sack of spiders.png" src="img/Sack_of_spiders.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Sack_of_spiders" data-untr="1" title="Sack of spiders">蜘蛛の袋</a>: 蜘蛛を何匹も呼び出し、近くのモンスターを<a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">蜘蛛の巣</a>で絡めとることもある。</li></ul>
+<p><b>制御のセット</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Phial_of_floods.png" data-untr="1" class="image"><img alt="Phial of floods.png" src="img/Phial_of_floods.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Phial_of_floods" data-untr="1" title="Phial of floods">大水の小瓶</a>: ダメージを与える水の波を放ち、浅い水たまりを作る。波に呑まれた相手は水浸しになる。</li>
+<li><a href="http://crawl.chaosforge.org/File:Gell%27s_gravitambourine.png" data-untr="1" class="image"><img alt="Gell&#39;s gravitambourine.png" src="img/Gell's_gravitambourine.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Gell%27s_gravitambourine" data-untr="1" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a>: 選んだ範囲にモンスターを引き寄せてその場に留め、衝突のダメージを与える。</li></ul>
+<h2><span class="mw-headline" id="Other_Items">その他のアイテム</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/File:Figurine_of_a_ziggurat.png" data-untr="1" class="image"><img alt="Figurine of a ziggurat.png" src="img/Figurine_of_a_ziggurat.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Figurine_of_a_ziggurat" data-untr="1" title="Figurine of a ziggurat">ジグラットの模型</a>: <a href="http://crawl.chaosforge.org/Ziggurat" data-untr="1" title="Ziggurat">ジグラット</a>への入口を作る。</li>
+<li><a href="Artefact.html" title="Artefact">アーティファクト</a>には、発動して<a href="http://crawl.chaosforge.org/Blink" data-untr="1" title="Blink">瞬間移動</a>できるものがある。</li>
+<li><a href="http://crawl.chaosforge.org/File:Scarf2a.png" data-untr="1" class="image"><img alt="Scarf2a.png" src="img/Scarf2a.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/Invisibility_(ego)" data-untr="1" title="Invisibility (ego)">透明化</a>の<a href="http://crawl.chaosforge.org/Scarves" data-untr="1" class="mw-redirect" title="Scarves">スカーフ</a>や<a href="Artefact.html" title="Artefact">アーティファクト</a>は、発動すると<a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>になれる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> より前は、その他の発動アイテムは1回のゲームで各1つずつしか出ず、<a href="Jiyva.html" title="Jiyva">ジーヴァ</a>のスライムにも食べられず、強化値の仕組みもなかった。経験値による充填の回復の式も違っていて、発動スキルの影響がもっと大きかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> より前は、その他の発動アイテムは1点ものではなく、1回のゲームで同じものがいくつも見つかることがあり、<a href="Jiyva.html" title="Jiyva">ジーヴァ</a>のスライムに食べられることもあった。また<a href="http://crawl.chaosforge.org/Condenser_vane" data-untr="1" title="Condenser vane">凝結の風見</a>と<a href="http://crawl.chaosforge.org/Tin_of_tremorstones" data-untr="1" title="Tin of tremorstones">震動石の缶</a>は、<a href="http://crawl.chaosforge.org/Item_set" data-untr="1" class="mw-redirect" title="Item set">どちらか一方しか出ない</a>組ではなかった。</li></ul>
+<h3><span class="mw-headline" id="Added_Evocables">追加された発動アイテム</span></h3>
+<ul><li><a href="http://crawl.chaosforge.org/0.32" data-untr="1" title="0.32">0.32</a> - <a href="http://crawl.chaosforge.org/Gell%27s_gravitambourine" data-untr="1" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a></li>
+<li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> - <a href="http://crawl.chaosforge.org/Sack_of_spiders" data-untr="1" title="Sack of spiders">蜘蛛の袋</a></li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> - <a href="http://crawl.chaosforge.org/Piece_from_Xom%27s_chessboard" data-untr="1" title="Piece from Xom&#39;s chessboard">ゾムのチェス盤の駒</a></li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> - <a href="http://crawl.chaosforge.org/Condenser_vane" data-untr="1" title="Condenser vane">凝結の風見</a></li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> - <a href="http://crawl.chaosforge.org/Tin_of_tremorstones" data-untr="1" title="Tin of tremorstones">震動石の缶</a></li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> - <a href="http://crawl.chaosforge.org/Phantom_mirror" data-untr="1" title="Phantom mirror">幻影の鏡</a></li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> - <a href="http://crawl.chaosforge.org/Phial_of_floods" data-untr="1" title="Phial of floods">大水の小瓶</a></li>
+<li><a href="http://crawl.chaosforge.org/0.11" data-untr="1" title="0.11">0.11</a> - <a href="http://crawl.chaosforge.org/Lightning_rod" data-untr="1" title="Lightning rod">稲妻のロッド</a></li></ul>
+<h3><span class="mw-headline" id="Removed_Evocables">削除された発動アイテム</span></h3>
+<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> - <a href="http://crawl.chaosforge.org/Piece_from_Xom%27s_chessboard" data-untr="1" title="Piece from Xom&#39;s chessboard">ゾムのチェス盤の駒</a></li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> - <a href="http://crawl.chaosforge.org/Crystal_ball_of_energy" data-untr="1" title="Crystal ball of energy">活力の水晶玉</a>、<a href="http://crawl.chaosforge.org/Fan_of_gales" data-untr="1" title="Fan of gales">疾風の扇</a>、<a href="http://crawl.chaosforge.org/Lamp_of_fire" data-untr="1" title="Lamp of fire">炎のランプ</a>、<a href="http://crawl.chaosforge.org/Sack_of_spiders" data-untr="1" title="Sack of spiders">蜘蛛の袋</a></li>
+<li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> - <a href="http://crawl.chaosforge.org/Disc_of_storms" data-untr="1" title="Disc of storms">嵐の円盤</a>、<a href="http://crawl.chaosforge.org/Rod" data-untr="1" title="Rod">ロッド</a></li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> - <a href="http://crawl.chaosforge.org/Stone_of_tremors" data-untr="1" title="Stone of tremors">震動の石</a></li>
+<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> - <a href="http://crawl.chaosforge.org/Lantern_of_shadows" data-untr="1" title="Lantern of shadows">影のランタン</a></li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> - <a href="http://crawl.chaosforge.org/Tome_of_destruction" data-untr="1" class="mw-redirect" title="Tome of destruction">破壊の書</a></li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> - <a href="http://crawl.chaosforge.org/Bottled_efreet" data-untr="1" title="Bottled efreet">瓶詰めのイフリート</a></li>
+<li><a href="http://crawl.chaosforge.org/0.10" data-untr="1" title="0.10">0.10</a> - <a href="http://crawl.chaosforge.org/Crystal_ball_of_seeing" data-untr="1" title="Crystal ball of seeing">透視の水晶玉</a></li>
+<li><a href="http://crawl.chaosforge.org/0.8" data-untr="1" class="mw-redirect" title="0.8">0.8</a> - <a href="http://crawl.chaosforge.org/Crystal_ball_of_fixation" data-untr="1" title="Crystal ball of fixation">凝視の水晶玉</a></li></ul>
+<h3><span class="mw-headline" id="Removed_Evocations_Scaling">発動スキルの影響がなくなったもの</span></h3>
+<p>これらのアイテムはゲームに残っているが、発動スキルで強くなる要素はなくなった。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> - <a href="Sceptre_of_Asmodeus.html" title="Sceptre of Asmodeus">アスモデウスの王笏</a>、<a href="Energy.html" title="Energy">活力のオーブ</a></li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> - <a href="http://crawl.chaosforge.org/Deck" data-untr="1" class="mw-redirect" title="Deck">デッキ</a></li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 65%">
+
+<tr>
+<th>その他の<a href="http://crawl.chaosforge.org/Evocable" data-untr="1" class="mw-redirect" title="Evocable">発動アイテム</a>
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Figurine_of_a_ziggurat" data-untr="1" title="Figurine of a ziggurat">ジグラットの模型</a> • <a href="http://crawl.chaosforge.org/Horn_of_Geryon" data-untr="1" title="Horn of Geryon">ゲリュオンの角笛</a> • <a href="http://crawl.chaosforge.org/Lightning_rod" data-untr="1" title="Lightning rod">稲妻のロッド</a> • <a href="http://crawl.chaosforge.org/Phantom_mirror" data-untr="1" title="Phantom mirror">幻影の鏡</a><br /><a href="http://crawl.chaosforge.org/Phial_of_floods" data-untr="1" title="Phial of floods">大水の小瓶</a> / <a href="http://crawl.chaosforge.org/Gell%27s_gravitambourine" data-untr="1" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a> • <a href="http://crawl.chaosforge.org/Condenser_vane" data-untr="1" title="Condenser vane">凝結の風見</a> / <a href="http://crawl.chaosforge.org/Tin_of_tremorstones" data-untr="1" title="Tin of tremorstones">震動石の缶</a> • <a href="http://crawl.chaosforge.org/Box_of_beasts" data-untr="1" title="Box of beasts">獣の匣</a> / <a href="http://crawl.chaosforge.org/Sack_of_spiders" data-untr="1" title="Sack of spiders">蜘蛛の袋</a>
+</td></tr></table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

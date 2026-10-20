@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>危機からの脱出(と回避) &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="危機からの脱出(と回避)(Escaping from (and avoiding) trouble)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>危機からの脱出(と回避) <span class="en">Escaping from (and avoiding) trouble</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Escaping_from_(and_avoiding)_trouble">Escaping from (and avoiding) trouble</a>」(0.30 向け、2025-02-23 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Escaping_from_(and_avoiding)_trouble&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>には対応して<b>いないかもしれない</b>。</i></div>
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p>勝てない戦いもあるし、逃げるのが最善という場面もある。命の危険から、いつ、どうやって逃げ出すかを見きわめるのは、<i>Crawl</i> を遊ぶうえで欠かせない技術だ。
+Crawl には逃げる手段がいくつもあるほか、回復の手段、モンスターを無力化する手段など、命を救ってくれるかもしれないものがたくさんある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Avoiding_Trouble"><span class="tocnumber">1</span> <span class="toctext">危機を避ける</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Options_when_in_immediate_danger"><span class="tocnumber">2</span> <span class="toctext">差し迫った危険への手立て</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Potions_.28q.29"><span class="tocnumber">2.1</span> <span class="toctext">薬(<b>q</b>)</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Scrolls_.28r.29"><span class="tocnumber">2.2</span> <span class="toctext">巻物(<b>r</b>)</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Quiver_.28Q.29"><span class="tocnumber">2.3</span> <span class="toctext">セット(<b>Q</b>)</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Gods_.28a.29"><span class="tocnumber">2.4</span> <span class="toctext">神(<b>a</b>)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Escape_Spells_.28z.29"><span class="tocnumber">2.5</span> <span class="toctext">脱出の呪文(<b>z</b>)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="#Translocations"><span class="tocnumber">2.5.1</span> <span class="toctext">転位術</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#Other_Movement_Spells"><span class="tocnumber">2.5.2</span> <span class="toctext">その他の移動の呪文</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Disabling_Tactics"><span class="tocnumber">2.5.3</span> <span class="toctext">敵を無力化する</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Other"><span class="tocnumber">2.5.4</span> <span class="toctext">その他</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Escaping_Trouble"><span class="tocnumber">3</span> <span class="toctext">危機から逃れる</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Avoiding_Trouble">危機を避ける</span></h2>
+<p>厄介な窮地を生き延びる一番の方法は、そもそも危機に陥らないことだ。では見ていこう……
+</p>
+<ul><li><b>自分から敵に近づかない。</b>未知の場所には<i>何が</i>いてもおかしくない。<a href="http://crawl.chaosforge.org/Orc" data-untr="1" title="Orc">オーク</a>が 1 匹だけなら楽な獲物だろうが、暗がりで<a href="http://crawl.chaosforge.org/Orc_priest" data-untr="1" title="Orc priest">オークの司祭</a>が待ち構えているかもしれない。<i>今回は</i>オーク 1 匹だけだったとしても、司祭が 2 体いる危険はいつだってある。それに<a href="http://crawl.chaosforge.org/Ijyb" data-untr="1" title="Ijyb">イジェィブ</a>との戦いだけでもきついのに、そこへ<a href="http://crawl.chaosforge.org/Sigmund" data-untr="1" title="Sigmund">シグムンド</a>が加わることだってありうる。</li></ul>
+<dl><dd> そのぶんのターンは、位置を立て直したり、探索済みの場所へ下がったり、遠隔攻撃で敵を弱らせたりするのに使おう。投擲スキルが 0 でも、<a href="Stone.html" title="Stone">石</a>や<a href="http://crawl.chaosforge.org/Boomerang" data-untr="1" title="Boomerang">ブーメラン</a>、毒を塗った<a href="http://crawl.chaosforge.org/Dart" data-untr="1" title="Dart">ダーツ</a>ならそこそこダメージを与えられる。</dd></dl>
+<ul><li><b>退くときは探索済みの場所へ向かう。</b>敵からまっすぐ離れて「暗闇の中へ」逃げたくなりがちだ。だが先に書いたとおり、その先は行き止まりかもしれないし、具合の悪いところにモンスターがいるかもしれない。1、2 発余計に殴られることになっても、知っている場所へ向かって退こう。そして、その道筋が本当に安全かも確かめておくこと。逃げた先でもっと強い敵に出くわしたのでは目も当てられない。</li></ul>
+<ul><li><b>探索は HP と MP が満タンのときだけにする。</b>HP が 100% でも危険なモンスターは、HP が 75% ならなおさら危険だ。<b>5</b> キーを押せば、HP と MP が満タンになるまで待てる。たくさんの<a href="http://crawl.chaosforge.org/Turn" data-untr="1" title="Turn">ターン</a>を使うが、気にしなくていい。<a href="http://crawl.chaosforge.org/High_score" data-untr="1" class="mw-redirect" title="High score">ハイスコア</a>を狙っているか、時間制限のある<a href="Portal.html" title="Portal">ポータル</a>にどうしても入りたいのでもない限り、時間を節約しても得るものはない。</li></ul>
+<ul><li><b>地形を戦術に活かす。</b>ダンジョンの地形は味方につけられる。たとえば敵を通路へ誘い込めば、1 体ずつ相手にできる。こうすれば 8 方向から一斉に殴られずに済む! 屈強な<a href="http://crawl.chaosforge.org/Axe" data-untr="1" class="mw-redirect" title="Axe">斧</a>使いであっても、囲まれるのは危ない状況だ。
+<ul><li><b>視界の管理:</b> 敵は、<i>あなたの</i><a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外にいるあいだは、あなたを狙って呪文や攻撃を撃てない。遠隔攻撃をしてくる敵にはこれを利用しよう。曲がり角を例にとる。<a href="http://crawl.chaosforge.org/Centaur_(monster)" data-untr="1" title="Centaur (monster)">セントール</a>にまっすぐ突っ込めば、相手に何ターンも撃たせることになる。それよりも、2 ターンかけて角の陰に隠れ、向こうが近づいてくるのを待ってから、一歩踏み出して接近戦に持ち込むほうがいい。</li></ul></li></ul>
+<ul><li><b>音に気をつける。</b>敵は<a href="http://crawl.chaosforge.org/Noise" data-untr="1" title="Noise">騒音</a>を聞きつけると、その場所へやってくる。音にはいつも気を配るようにしよう。立てる音が少ないほど、戦闘の最中にモンスターを呼び寄せてしまう恐れも減る。</li></ul>
+<dl><dd>とても有利な位置にいるときは、音が役に立つこともある。音で敵をおびき寄せられるからだ。群れを通路へ誘い込んだり、モンスターを呼んで<a href="http://crawl.chaosforge.org/Stair_dance" data-untr="1" class="mw-redirect" title="Stair dance">階段ダンス</a>をしたりできる。</dd></dl>
+<ul><li><b>その階を飛ばすのも手だ。</b><i>Crawl</i> では、何もかも倒す必要はない。たいていは各階を片づけるのがよいが、そうでないときもある。たとえば<a href="http://crawl.chaosforge.org/Sigmund" data-untr="1" title="Sigmund">シグムンド</a>や<a href="http://crawl.chaosforge.org/Orc_priest" data-untr="1" title="Orc priest">オークの司祭</a>の群れがいるなら、D:2 や D:3 を飛ばす十分な理由になる。対処できるだけのアイテムと経験がそろってから、いつでも戻ってこられる。</li></ul>
+<ul><li><b>手を広げる前に<a href="Specialization.html" title="Specialization">特化</a>する。</b>ほかのスキルに経験値をつぎ込む前に、選んだスキルでちゃんと敵を倒せるようにしておこう。厄介な状況の多くは、ふつうの敵と戦うための「殺傷力」が足りないことから生まれる。<a href="http://crawl.chaosforge.org/Cane_toad" data-untr="1" title="Cane toad">オオヒキガエル</a>を見かけるたびに<a href="http://crawl.chaosforge.org/Potion" data-untr="1" title="Potion">薬</a>を 1 本使わなければならないようでは、消耗品がすぐに尽きてしまう。十分な力がついたら、敵を倒す以外のスキルを上げるのも忘れないように(たとえば呪文使いなら、呪文の失敗率を低くしてから、戦闘、躱し身、隠密を鍛える)。</li></ul>
+<ul><li><b>三つの階段をすべて使う。</b>本格的に探索を始める前に、その階に三つある階段すべてから入っておくやり方だ。危機に陥ったとき、近くに逃げ込める階段が見つかるかもしれない。
+<ul><li>ただし、この戦略にも危険はある。未知の階段を下りるたびに、その場で即ゲームオーバー(<a href="http://crawl.chaosforge.org/Sigmund" data-untr="1" title="Sigmund">シグムンド</a>や<a href="http://crawl.chaosforge.org/Grinder" data-untr="1" title="Grinder">グラインダー</a>の隣に出る、など)になったり、きわめて危険な状況に放り込まれたりする恐れがある。なので、隠密の高いキャラクターや足の速いキャラクターで使うのが一番だ。</li></ul></li></ul>
+<h2><span class="mw-headline" id="Options_when_in_immediate_danger">差し迫った危険への手立て</span></h2>
+<p>危険は未然に防ぐのが一番だが、どうしても避けられないこともある。<a href="http://crawl.chaosforge.org/Shaft" data-untr="1" title="Shaft">縦穴</a>に落とされたとき、その階層にいるはずのない強いモンスターを見つけたとき、戦いを終えた直後に危険な群れが現れたときなどは、さまざまな逃げる手段が助けになる。
+</p><p>ここに挙げるのは、すぐに使える便利な手段のほんの一部にすぎない。命の危険を切り抜けられるアイテムはほかにもたくさんある。たとえば<a href="http://crawl.chaosforge.org/Potion_of_might" data-untr="1" title="Potion of might">怪力の薬</a>を飲めば、危険な敵を倒すのに必要なダメージが出せるかもしれない。とはいえ、HP が減っているときには、腕力強化の状態はあまり助けにならないだろう(最後の手段としてなら別だが)。
+</p>
+<h3><span class="mw-headline" id="Potions_.28q.29">薬(<b>q</b>)</span></h3>
+<ul><li> <a href="http://crawl.chaosforge.org/Potion_of_berserk_rage" data-untr="1" title="Potion of berserk rage">狂戦士の薬</a>: 加速して(力も増して)、一時的に HP が +50% される……が、効果が切れると逆に<i>減速</i>し、しばらくは再びバーサークできなくなる! 主な使い道は敵を倒すこと(そうすれば、そもそも逃げる必要がなくなる)か、数マス(2、3 マス)先の階段まで駆け込むことだ。バーサークを俊足の代わりに使っては<i>いけない</i>! バーサークが続く時間よりずっと長く減速してしまう。</li>
+<li> <a href="http://crawl.chaosforge.org/Potion_of_ambrosia" data-untr="1" title="Potion of ambrosia">アンブロシアの薬</a>: 混乱してしまうが、混乱が続くあいだ HP と MP の両方が回復する。次のモンスターが来るまで何ターンか余裕があるときや、MP を手早く回復したいときに役立つ。</li>
+<li> <a href="http://crawl.chaosforge.org/Potion_of_curing" data-untr="1" title="Potion of curing">治療の薬</a>: HP を少し回復し、<a href="Poison.html" title="Poison">毒</a>と<a href="http://crawl.chaosforge.org/Confusion" data-untr="1" title="Confusion">混乱</a>を治す。これらを消すことが命運を分ける場合もある。</li>
+<li> <a href="http://crawl.chaosforge.org/Potion_of_haste" data-untr="1" title="Potion of haste">スピードの薬</a>: 走って逃げられるようになる。ただし視界から外れるか階を離れるまでは、遠隔攻撃を浴びる恐れがある。速さが増すので<a href="http://crawl.chaosforge.org/Scroll_of_fog" data-untr="1" title="Scroll of fog">煙幕の巻物</a>との相性がよく、素早く視界を遮れる。引き撃ちにも使える。</li>
+<li> <a href="http://crawl.chaosforge.org/Potion_of_heal_wounds" data-untr="1" title="Potion of heal wounds">怪我の治療の薬</a>: HP をおよそ 25(最低 10)回復する。序盤には大きな助けになるが、ゲームが進むにつれて少しずつ効き目が薄れていく。</li></ul>
+<h3><span class="mw-headline" id="Scrolls_.28r.29">巻物(<b>r</b>)</span></h3>
+<ul><li><a href="http://crawl.chaosforge.org/Scroll_of_fog" data-untr="1" title="Scroll of fog">煙幕の巻物</a>: 遠くから攻撃してくるモンスターとのあいだの<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>を遮れるかもしれない。使いどころは、<a href="http://crawl.chaosforge.org/Centaur_(monster)" data-untr="1" title="Centaur (monster)">セントール</a>を接近戦の間合いまで引き寄せることから、<a href="http://crawl.chaosforge.org/Orb_run" data-untr="1" class="mw-redirect" title="Orb run">オーブを持っての脱出</a>のさなかに<a href="http://crawl.chaosforge.org/Ice_Fiend" data-untr="1" title="Ice Fiend">氷の魔神</a>に拷問を浴びせられないようにすることまで幅広い。</li>
+<li><a href="http://crawl.chaosforge.org/Scroll_of_fear" data-untr="1" title="Scroll of fear">恐慌の巻物</a>: 群れや脅威を追い払うのに役立つ。<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>の判定があるので、すべてのモンスターに効くとは限らないが、逃げるだけの余裕は稼げるかもしれない。アンデッドや非生物には効かない。</li>
+<li> <a href="http://crawl.chaosforge.org/Scroll_of_silence" data-untr="1" title="Scroll of silence">静寂の巻物</a>: 敵が(そして自分も!)呪文も神の能力も使えなくなる。相手を調べて(<b>xv</b>)、本当に静寂が効く相手かどうか確かめておくこと! かなり危なっかしいが、多くの脅威(<a href="http://crawl.chaosforge.org/Nikola" data-untr="1" title="Nikola">ニコラ</a>や<a href="http://crawl.chaosforge.org/List_of_deep_elves" data-untr="1" title="List of deep elves">闇エルフ</a>など)が楽になる。</li>
+<li> <a href="Scroll_of_teleportation.html" title="Scroll of teleportation">テレポートの巻物</a>: 数ターンの短い待ち時間のあと、同じ階の立てる場所のどこかへランダムに転位する。ほかの逃げる手段と組み合わせて、テレポートが発動するまで回復していることもできる。テレポートは早めに使おう。待ち時間を生き延びるためでなくても、飛んだ先がまた危険な場所(あるいは元いた場所のすぐ隣!)だったときに生き延びるためだ。未探索の階や、危険な<a href="Vault.html" title="Vault">ヴォールト</a>がある場所(<a href="http://crawl.chaosforge.org/Elf" data-untr="1" title="Elf">エルフ</a>:3 や、ルーンのある分岐の最下層など)でのテレポートには気をつけること。</li>
+<li><a href="http://crawl.chaosforge.org/Scroll_of_butterflies" data-untr="1" title="Scroll of butterflies">蝶の巻物</a>: 敵を押し戻し、蝶の大群を呼び出す。敵があなたを攻撃するには、蝶を倒すか、蝶にどいてもらうしかない。召喚の巻物が生成されるゲームではこの巻物は生成されず、その逆も同じだ。</li>
+<li> <a href="Scroll_of_blinking.html" title="Scroll of blinking">瞬間移動の巻物</a>: 見えている好きなマスへ一瞬で転位できる(透明な壁はふさがっているものとして扱われる)。とても強力で、窮地から抜け出す最高の「切り札」だが、万能ではない。効かない場合については、この巻物のページを見てほしい。</li></ul>
+<h3><span class="mw-headline" id="Quiver_.28Q.29">セット(<b>Q</b>)</span></h3>
+<p>ワンド(<b>V</b>)と投擲武器(<b>F</b>)が含まれる(ほかの手段もたいていはセットできる)。
+</p>
+<ul><li> 行き先を選べない<a href="http://crawl.chaosforge.org/Blink" data-untr="1" title="Blink">瞬間移動</a>: <a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の中の、瞬間移動で行けるマスのどこかへ一瞬でランダムに転位する。状況をかえって悪くしやすい。オークの群れの端から真ん中へ飛んでしまうところを想像してみよう。だが逆に、群れの真ん中から端へ飛べることもある。視界の管理が肝心だ。たとえば<a href="http://crawl.chaosforge.org/Scroll_of_fog" data-untr="1" title="Scroll of fog">煙幕の巻物</a>と一緒に使えば、敵の近くのマスが<i>見えなく</i>なる。廊下に一歩入るだけでも見込みは上がる。基本的には、どこに着地しても無事でいられるときだけ使おう。</li>
+<li> <a href="http://crawl.chaosforge.org/Paralysis" data-untr="1" title="Paralysis">麻痺</a>/<a href="http://crawl.chaosforge.org/Wand_of_polymorph" data-untr="1" title="Wand of polymorph">変化</a>/<a href="http://crawl.chaosforge.org/Slow" data-untr="1" title="Slow">減速</a>: 抵抗できる敵が少ない序盤には非常によく効く。序盤を過ぎたら、あるいは<a href="Formicid.html" title="Formicid">フォーミシッド</a>が相手なら、早めに使う(か、自分を強化する)のが一番だ。手に入れる手段は<a href="Wand.html" title="Wand">ワンド</a>、<a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>を塗った<a href="http://crawl.chaosforge.org/Dart" data-untr="1" title="Dart">ダーツ</a>、そして<a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>の系統の呪文だ。</li>
+<li> <a href="http://crawl.chaosforge.org/Wand_of_iceblast" data-untr="1" title="Wand of iceblast">吹雪のワンド</a>、<a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a>、<a href="http://crawl.chaosforge.org/Lightning_Rod" data-untr="1" class="mw-redirect" title="Lightning Rod">稲妻のロッド</a>など: 外れることも、耐えられることも、封じられることもない攻撃だ。ダメージの出目が低い恐れはあるが、HP の低い敵ならまず倒せる。</li>
+<li><a href="http://crawl.chaosforge.org/Throwing_net" data-untr="1" title="Throwing net">投げ網</a>: 敵を網で捕らえ、抜け出すのにターンを無駄にさせる。呪文使いは網にかかっていても呪文を唱えられるが、唱えないことが多い。モンスターは呪文を使うより「動こう」とする傾向があるからだ。</li></ul>
+<h3><span class="mw-headline" id="Gods_.28a.29"><a href="God.html" title="God">神</a>(<b>a</b>)</span></h3>
+<p>言うまでもないが、その神を信仰していなければ、その神の能力は使えない。
+</p>
+<ul><li> <a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a>の聖域: ほぼすべての攻撃から身を守り、モンスターを怯えさせて追い払う。ほかの逃げる手段や回復と組み合わせるか、階段の近くで使おう。</li>
+<li> <a href="http://crawl.chaosforge.org/Lugonu" data-untr="1" title="Lugonu">ルゴヌ</a>のアビスへの退避: どんな状況からでもすぐに抜け出せ、追ってくるモンスターをすべて置き去りにできる。ただし HP を消費し、MP はすべて失う。そのあとはアビスにいることになるので、それでも「命拾い」とはいかないかもしれない点は覚えておこう。</li>
+<li> <a href="http://crawl.chaosforge.org/Elyvilon" data-untr="1" title="Elyvilon">エリヴィロン</a>の治癒の力: 怪我の治療の薬より強力だが、信仰心による制限がある。</li>
+<li> <a href="http://crawl.chaosforge.org/Cheibriados" data-untr="1" title="Cheibriados">ケイブリアドス</a>の時間からの離脱: どこでもない場所へ移り、時間を経過させる。そのあいだにモンスターはうろうろとどこかへ行き、あなたのことを忘れてしまうことさえある。</li>
+<li> <a href="Dithmenos.html" title="Dithmenos">ディスメノス</a>の影化: あなたを<a href="http://crawl.chaosforge.org/Shadow_Form" data-untr="1" title="Shadow Form">影</a>に変える。受けるダメージが半分になり、透明になり、いくつかの耐性も得られる。</li>
+<li> <a href="http://crawl.chaosforge.org/Nemelex" data-untr="1" class="mw-redirect" title="Nemelex">ネメレクス</a>の信者は、脱出のデッキからカードを引ける。<a href="http://crawl.chaosforge.org/Tomb_card" data-untr="1" title="Tomb card">玄室</a>のカードは、まだ近くに来ていない敵をすべて締め出せる。<a href="http://crawl.chaosforge.org/Cloud_card" data-untr="1" title="Cloud card">雲烟</a>のカードは煙幕の巻物のように使え、<a href="http://crawl.chaosforge.org/Elixir_card" data-untr="1" title="Elixir card">霊薬</a>のカードは回復してくれる。うまくいく見込みを最大にするには、トリプル・ドローやドロー・フォーと組み合わせよう。</li>
+<li> <a href="http://crawl.chaosforge.org/Ru" data-untr="1" title="Ru">ルー</a>: どの能力も危なっかしい状況で使える。わかりやすいのは二つ(力の解放は回復、力強き跳躍は間合いを開ける)。黙示録はとてもうるさいが、すさまじいダメージを与え、生き残った相手には状態異常を与える。</li></ul>
+<p>攻撃に使える能力を持つ神も多く、厳しい戦いの助けになる。<a href="Scroll_of_blinking.html" title="Scroll of blinking">瞬間移動の巻物</a>を使うより、<a href="http://crawl.chaosforge.org/Okawaru" data-untr="1" title="Okawaru">オカワル</a>の早業の技巧を早めに使うほうがいい!
+</p>
+<h3><span class="mw-headline" id="Escape_Spells_.28z.29">脱出の呪文(<b>z</b>)</span></h3>
+<h4><span class="mw-headline" id="Translocations"><a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a></span></h4>
+<p>転位術は移動を操るための系統だ。たいていの呪文は危なっかしい状況を切り抜けるのに使えるが、得手不得手はある。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Blink" data-untr="1" title="Blink">瞬間移動</a>: テレポートのための時間稼ぎにも使える。瞬間移動して、テレポートを発動させてから走って逃げるのだ。モンスターがあなたより速くても、こちらが走っているなら 1 ターンに 1 マスしか差を詰められないので、テレポートが発動するまでの時間を稼げる。威力が最大でない限り、再使用待ちがある。</li>
+<li><a href="http://crawl.chaosforge.org/Passage_of_Golubria" data-untr="1" title="Passage of Golubria">ゴルブリアの通り道</a>: 狙った場所と自分のすぐ隣に、ポータルを一つずつ作る。十分に開けた場所でしか使えず、呪文の威力が低いうちは遠くまで届かない。それでも、たった 1 マスの隙間があれば、モンスターから確実に離れて階段を上がれる。ポータルはそこそこ長く残るので、通り道を唱え、走るかテレポートするかで離れ、もう一度唱えて、もともとの行き先にたどり着くこともできる。この呪文はモンスターを転位させることもできる。モンスターが自分からポータルに入ってくれれば、の話だが。</li>
+<li><a href="http://crawl.chaosforge.org/Iskenderun%27s_Mystic_Blast" data-untr="1" title="Iskenderun&#39;s Mystic Blast">イスケンデルンの爆破の秘術</a> / <a href="http://crawl.chaosforge.org/Dispersal" data-untr="1" title="Dispersal">転送</a>: どちらも敵を遠ざける呪文だ。爆破の秘術はダメージを与え、呪文レベルもずっと手ごろだが、<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>によっては失敗することがある。一方の転送は、<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>の判定に勝てば相手を完全に<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>させ、そうでなくても必ず何マスかは引き離せる。</li></ul>
+<h4><span class="mw-headline" id="Other_Movement_Spells">その他の移動の呪文</span></h4>
+<ul><li><a href="http://crawl.chaosforge.org/Swiftness" data-untr="1" title="Swiftness">俊足</a>: 短いあいだ移動にかかる時間が減り、そのあと減速する。たいていは階段にたどり着くには十分だ。</li>
+<li><a href="http://crawl.chaosforge.org/Passwall" data-untr="1" title="Passwall">壁の透過</a>: みんなが過小評価しがちな呪文だ(何ターンも待つのは常に危ないので、無理もないが)。危機に早めに気づき、マップの地形を把握していれば、わずか 2、3 ターンで大きく距離を稼げる。</li></ul>
+<h4><span class="mw-headline" id="Disabling_Tactics">敵を無力化する</span></h4>
+<ul><li><a href="http://crawl.chaosforge.org/Cigotuvi%27s_Dreadful_Rot" data-untr="1" title="Cigotuvi&#39;s Dreadful Rot">シゴツヴィの恐るべき腐敗</a>: 使いどころをかなり選ぶ呪文だ。自分のいるマスに毒の瘴気の雲を作るが、最大 HP が一時的に<a href="http://crawl.chaosforge.org/Drain" data-untr="1" class="mw-redirect" title="Drain">衰弱</a>する。序盤のモンスターはたいてい雲に入ってこないので、通路をふさぐのに使える。<a href="http://crawl.chaosforge.org/Potion_of_attraction" data-untr="1" title="Potion of attraction">誘引の薬</a>で敵を瘴気の中へ引き込み、大きな毒ダメージと<a href="http://crawl.chaosforge.org/Slow" data-untr="1" title="Slow">減速</a>の状態を与えるという手もある。<a href="http://crawl.chaosforge.org/Undead" data-untr="1" title="Undead">アンデッド</a>と<a href="http://crawl.chaosforge.org/Nonliving" data-untr="1" title="Nonliving">非生物</a>には瘴気が効かないので注意。</li>
+<li><a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>: <a href="http://crawl.chaosforge.org/Slow" data-untr="1" title="Slow">減速</a>、<a href="Ensorcelled_Hibernation.html" title="Ensorcelled Hibernation">魔法の眠り</a>、<a href="http://crawl.chaosforge.org/Confusing_Touch" data-untr="1" title="Confusing Touch">混乱の一撃</a>といった呪術の呪文は、使うターンと MP に見合うようにするには、スキルにかなりの経験値をつぎ込む必要がある。ふだんから敵を倒すのにこれらの呪文を使っている<a href="Enchanter.html" title="Enchanter">呪術師</a>にはよい選択肢だ。ほとんどの呪文で、すんなり逃げることも、すんなり<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>することもできる。</li>
+<li><a href="http://crawl.chaosforge.org/Mephitic_Cloud" data-untr="1" title="Mephitic Cloud">悪臭の雲</a>: 敵を混乱させる。効けばとても強力だ。毒耐性のある相手には効かず、HP が 100 以上のモンスターもよく抵抗する。効かない相手でなければ、たいていの場合は隣の敵にも使える(* の位置を狙う):</li></ul>
+<pre>.........  .........
+...###...  ....###..
+...#*#...  ....#*#..
+...##Y...  ....Y##..
+....@....  ....@....
+.........  .........
+</pre>
+<p>自分まで<a href="http://crawl.chaosforge.org/Confusion" data-untr="1" title="Confusion">混乱</a>する危険を冒すだけの価値がある場合もある。最悪の事態になっても、<a href="http://crawl.chaosforge.org/Potion_of_curing" data-untr="1" title="Potion of curing">治療の薬</a>を飲めばいい(どのみち飲みたかったかもしれない)。たいていの敵には同じことができないし、人型の敵でも薬を 2 本以上持っていることはまずない。
+</p>
+<h4><span class="mw-headline" id="Other">その他</span></h4>
+<ul><li> 召喚: 攻撃には役に立たなくても、守りには大いに役立つ召喚の呪文がいくつもある。あなたは味方と自動で場所を入れ替えられるが、敵はあなたのところまで来るには味方を倒すか回り込むしかない。つまり、ちっぽけなネズミ 1 匹でも、階段から逃げるための大事な 1 マスの隙間を作ってくれるというわけだ!</li>
+<li> <a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>と<a href="http://crawl.chaosforge.org/Borgnjor%27s_Revivification" data-untr="1" title="Borgnjor&#39;s Revivification">ボーグンジョルの究極治癒</a>: 高レベルの、緊急用の死霊術の呪文だ。死のとば口は短いあいだ無敵になるが、終わると HP がごくわずかしか残らない。ボーグンジョルの究極治癒は HP を最大まで回復するが、引き換えに最大 HP が永久に減る。どうしても必要なときに、死霊術に余力があるなら使おう。</li></ul>
+<h2><span class="mw-headline" id="Escaping_Trouble">危機から逃れる</span></h2>
+<ul><li><b>早めに備える。</b>ある種類のモンスターや群れが危険だとわかったら、危険なものとして扱おう。接近される前に逃げる、消耗品や神の能力をすぐ使えるようにしておく、などだ。</li></ul>
+<ul><li><b>階段ダンス。</b>「階段ダンス」は、モンスターを分断するための戦術だ。階段を上るとき追ってくるのは隣にいるモンスターだけなので、階段を使えばモンスターの集団をばらばらにできる。</li></ul>
+<dl><dd>「<a href="http://crawl.chaosforge.org/Orc" data-untr="1" title="Orc">オーク</a> 2 匹と戦って、休んでから、オーク 3 匹と戦う」のと「オーク 5 匹といっぺんに戦う」のとでは、天と地ほどの差がある。また、厄介なモンスターと戦うのも、未知の階より「片づけ済みの」階でのほうがずっと楽だ。片づけ済みの階なら、戦いの最中に新手のモンスターに出くわす恐れはずっと小さいし、逃げる手段としての<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>もはるかに頼れるものになる(未知の階でテレポートすると、ひどい目にあうことがある!)。</dd>
+<dd>階段を上るには 2.5 ターンかかる点は覚えておこう。つまり、隣にいるモンスターから 2 回、あるいは 3 回攻撃されることになる。上り階段の周りの地形によっては、よい位置を取るために余計に攻撃を受けなければならないこともある。</dd>
+<dd><a href="http://crawl.chaosforge.org/Blink" data-untr="1" title="Blink">瞬間移動</a>を使う敵は(めったにいないが)、ほとんど手間をかけずに上の階へ置き去りにできる。上の階へ連れていって、瞬間移動させてから、また下りればいい。念のため 2 階ぶん上に置いてこよう。</dd></dl>
+<ul><li><b>手持ちの能力を使う。</b>緊急事態に直面したら、ペースを落とそう。手を止めて、使えるアイテムと能力をひとつ残らず考えてみること。プレイヤーは、ここぞというときに限って呪文や神の能力、さらには消耗品を使い忘れがちだ。ゲームをセーブして、ほかのプレイヤーに助言を求めてから戻ってくることだってできる!</li></ul>
+<ul><li><b>地味な道具で大きな効果を上げる。</b><a href="http://crawl.chaosforge.org/Scroll_of_noise" data-untr="1" title="Scroll of noise">騒音の巻物</a>や<a href="http://crawl.chaosforge.org/Scroll_of_immolation" data-untr="1" title="Scroll of immolation">焼き討ちの巻物</a>のようなアイテムはよく馬鹿にされるが、命を救ってくれることもあるし、少なくとももっとよい消耗品を使わずに済ませてくれる。その<a href="http://crawl.chaosforge.org/Wand_of_paralysis" data-untr="1" title="Wand of paralysis">金縛りのワンド</a>を早めに使えば、<a href="http://crawl.chaosforge.org/Potion_of_heal_wounds" data-untr="1" title="Potion of heal wounds">怪我の治療の薬</a>や<a href="Scroll_of_blinking.html" title="Scroll of blinking">瞬間移動の巻物</a>などを別の場面のためにとっておけるかもしれない。順風満帆になるまでは捨てないこと……いや、ずっと捨てなくてもいい!</li></ul>
+<ul><li><b>速いモンスターには一歩下がって迎え撃つ。</b>速いモンスターは、こちらの 1 ターンのあいだに 2 ターン動ける。じっと待っていると、敵にただで 1 発殴られてしまうことがある(移動 -&gt; 攻撃)。一歩下がれば、敵はこちらに近づくのに 2 ターンとも使わなければならない。<a href="http://crawl.chaosforge.org/Bat" data-untr="1" title="Bat">コウモリ</a>の場合は、こちらから離れる隙を与えずに済む。</li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Strategy_guides.html" title="Strategy guides">攻略ガイド</a>
+</th></tr>
+<tr>
+<th> 全般
+</th>
+<td> <a href="Walkthrough.html" title="Walkthrough">攻略の流れ</a> • <a class="mw-selflink selflink">危機への対処</a> •  <a href="Tips_and_tricks.html" title="Tips and tricks">小技と豆知識</a> • <a href="Identification.html" title="Identification">鑑定</a> • <a href="http://crawl.chaosforge.org/Frequently_Asked_Questions" data-untr="1" title="Frequently Asked Questions">よくある質問</a><br /><a href="Vault.html#Vaults:5" class="mw-redirect" title="Vaults">宝物庫:5</a> • <a href="Zot_5.html" title="Zot:5">ゾットの領域:5</a> • <a href="http://crawl.chaosforge.org/Mega-Zig" data-untr="1" title="Mega-Zig">メガジグ</a>
+</td></tr>
+<tr>
+<th> キャラクター育成
+</th>
+<td> <a href="Early_Game_Character_Building.html" title="Early Game Character Building">序盤</a> • <a href="http://crawl.chaosforge.org/Mid_Game_Character_Building" data-untr="1" title="Mid Game Character Building">中盤</a> • <a href="http://crawl.chaosforge.org/Late_Game_Character_Building" data-untr="1" title="Late Game Character Building">終盤</a>
+<p><a href="Background_and_race_combinations_for_beginners.html" title="Background and race combinations for beginners">初心者向けキャラクター</a> •  <a href="Choosing_a_god.html" title="Choosing a god">神の選び方</a> • <a href="http://crawl.chaosforge.org/Weapon_Choice" data-untr="1" class="mw-redirect" title="Weapon Choice">武器の選び方</a> • <a href="Specialization.html" title="Specialization">特化</a>
+</p>
+</td></tr>
+<tr>
+<th> コミュニティのガイド
+</th>
+<td> <a href="Character_guides.html" title="Character guides">キャラクター別ガイド</a>
+</td></tr></table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

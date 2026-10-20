@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>躱し身 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="躱し身(Dodging)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>躱し身 <span class="en">Dodging</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Dodging">Dodging</a>」(0.33 向け、2026-01-22 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Dodging&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 躱し身スキルは、近接攻撃、遠距離攻撃、魔法攻撃のいずれであっても、攻撃を回避する確率に影響する。ただし、(抵抗するしかない)呪術や爆発といった、ある種の攻撃は回避できない。
+</td></tr></table>
+<p><a class="mw-selflink selflink">躱し身</a>スキルは、モンスターの打撃やビーム、飛び道具をキャラクターがどれだけうまく避けられるかを決める。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Aptitudes"><span class="tocnumber">1</span> <span class="toctext">スキル適性</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">2</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Encumbrance"><span class="tocnumber">2.1</span> <span class="toctext">重さ</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Aptitudes">スキル適性</span></h2>
+<table class="wikitable">
+
+<tr>
+<td><b><a href="http://crawl.chaosforge.org/Armataur" data-untr="1" title="Armataur">At</a></b>
+</td>
+<td><b><a href="Barachi.html" title="Barachi">Ba</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Coglin" data-untr="1" title="Coglin">Co</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Deep_Elf" data-untr="1" title="Deep Elf">DE</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Demigod" data-untr="1" title="Demigod">Dg</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Demonspawn" data-untr="1" title="Demonspawn">Ds</a></b>
+</td>
+<td><b><a href="Djinni.html" title="Djinni">Dj</a></b>
+</td>
+<td><b><a href="Draconian.html" title="Draconian">Dr</a></b>
+</td>
+<td><b><a href="Felid.html" title="Felid">Fe</a></b>
+</td>
+<td><b><a href="Formicid.html" title="Formicid">Fo</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Gale_Centaur" data-untr="1" title="Gale Centaur">GC</a></b>
+</td>
+<td><b><a href="Gargoyle.html" title="Gargoyle">Gr</a></b>
+</td>
+<td><b><a href="Gnoll.html" title="Gnoll">Gn</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Human" data-untr="1" title="Human">Hu</a></b>
+</td>
+<td><b><a href="Kobold.html" title="Kobold">Ko</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Merfolk" data-untr="1" title="Merfolk">Mf</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Minotaur" data-untr="1" title="Minotaur">Mi</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Mountain_Dwarf" data-untr="1" title="Mountain Dwarf">MD</a></b>
+</td>
+<td><b><a href="Mummy.html" title="Mummy">Mu</a></b>
+</td>
+<td><b><a href="Naga.html" title="Naga">Na</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Octopode" data-untr="1" title="Octopode">Op</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Oni" data-untr="1" title="Oni">On</a></b>
+</td>
+<td><b><a href="Poltergeist.html" title="Poltergeist">Po</a></b>
+</td>
+<td><b><a href="Revenant.html" title="Revenant">Re</a></b>
+</td>
+<td><b><a href="Spriggan.html" title="Spriggan">Sp</a></b>
+</td>
+<td><b><a href="Tengu.html" title="Tengu">Te</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Troll" data-untr="1" title="Troll">Tr</a></b>
+</td>
+<td><b><a href="Vine_Stalker.html" title="Vine Stalker">VS</a></b>
+</td></tr>
+<tr>
+<td> -3
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> 2
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> 3
+</td>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -2
+</td>
+<td> 8
+</td>
+<td> 0
+</td>
+<td> 2
+</td>
+<td> 3
+</td>
+<td> 1
+</td>
+<td> -3
+</td>
+<td> -2
+</td>
+<td> -2
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> 3
+</td>
+<td> 1
+</td>
+<td> -2
+</td>
+<td> -2
+</td></tr></table>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>躱し身スキルは <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> にボーナスを与える。その値は次のとおり。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<pre>(8 + 0.8 × Dodging × <a href="http://crawl.chaosforge.org/Dex" data-untr="1" class="mw-redirect" title="Dex">Dex</a>) / (20 - size)
+</pre>
+<p>Dodging は躱し身スキル、Dex は器用、size は種族の<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>で決まる値だ。<a href="http://crawl.chaosforge.org/Human" data-untr="1" title="Human">人間</a>は0、<a href="Spriggan.html" title="Spriggan">スプリガン</a>は+4、<a href="http://crawl.chaosforge.org/Troll" data-untr="1" title="Troll">トロル</a>は-2 になる。(全種族の一覧は<a href="http://crawl.chaosforge.org/Evasion" data-untr="1" title="Evasion">回避</a>を参照。)
+</p><p>このボーナスは、重さがあればそのぶん減る。
+</p>
+<h3><span class="mw-headline" id="Encumbrance">重さ</span></h3>
+<p><a href="http://crawl.chaosforge.org/Armour_encumbrance" data-untr="1" class="mw-redirect" title="Armour encumbrance">防具の重さ</a>は、躱し身によるボーナスを直接下げる。この影響は<a href="http://crawl.chaosforge.org/Armour_skill" data-untr="1" class="mw-redirect" title="Armour skill">甲冑スキル</a>では減らないが、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>で減らせる。
+</p>
+<ul><li> <b>(重さ - 3) ≥ 腕力 の場合:</b></li></ul>
+<dl><dd> 補正 = <code> 0.5 * Str / (encumbrance - 3)</code></dd></dl>
+<ul><li> <b>(重さ - 3) &lt; 腕力 の場合:</b></li></ul>
+<dl><dd> 補正 = <code> 1 - ((encumbrance - 3) / (2 * Str))</code></dd></dl>
+<p>どちらの場合も、この補正を躱し身のボーナスに直接掛けたものが、最終的な EV のボーナスになる。
+</p><p><a href="http://crawl.chaosforge.org/Paralyse" data-untr="1" title="Paralyse">麻痺</a>していたり、<a href="http://crawl.chaosforge.org/Petrified" data-untr="1" class="mw-redirect" title="Petrified">石化</a>していたり、<a href="http://crawl.chaosforge.org/Asleep" data-untr="1" class="mw-redirect" title="Asleep">眠って</a>いたりすると、躱し身スキルはまったく効かない。この場合 EV に関わるのは体格だけだ。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p><i>Crawl</i> での<a href="Early_Game_Character_Building.html" title="Early Game Character Building">スキルの定番の助言</a>は「まず敵を倒すためのスキルを使い物になるまで上げ、それから守りのスキルを上げる」だ。攻撃を一回多く躱せても、ほかの戦いのたびに消耗品を使わないと勝てないのでは意味がない。最初は躱し身を切っておき、敵を倒す力が十分ついたと感じてから入れ直すのは、まったく理にかなったやり方だ。
+</p><p>躱し身は<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>が高く、軽い鎧を着ているほど効果が大きい。とはいえ、<a href="http://crawl.chaosforge.org/Crystal_plate_armour" data-untr="1" title="Crystal plate armour">水晶の鎧</a>を着込んだ荒くれ者でも、いずれは躱し身を何レベルか上げたくなるはずだ。スキルの最初のほうのレベルは安く上がるからだ。
+</p>
+<h2><span class="mw-headline" id="See_also">関連項目</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Evasion" data-untr="1" title="Evasion">回避</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.32" data-untr="1" title="0.32">0.32</a>より前は、EV は小数点以下2桁まで記録されておらず、EV は整数の部分だけが意味を持っていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a>より前は、器用に逓減がかかっていた。dex &gt;= 24 のとき <code>adj_dex = 14 + 10 * log2(1 + (dex - 14)/10)</code> となり、器用が高いときの効果が小さくなっていた。また、EV &gt;= 30 のときにも別の逓減があった。これについては<a href="http://crawl.chaosforge.org/Evasion#History" data-untr="1" title="Evasion">回避</a>の記事に書いてある。</li>
+<li><a href="http://crawl.chaosforge.org/0.6" data-untr="1" class="mw-redirect" title="0.6">0.6</a>より前は、躱し身は<a href="http://crawl.chaosforge.org/Light_armour" data-untr="1" class="mw-redirect" title="Light armour">軽い鎧</a>を着ているときしか上げられず、<a href="Armour_(skill).html" title="Armour (skill)">甲冑</a>は<a href="http://crawl.chaosforge.org/Heavy_armour" data-untr="1" class="mw-redirect" title="Heavy armour">重い鎧</a>を着ているときしか上がらなかった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/player.cc#L2076">player.cc:2076</a> (0.30.0)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Skill.html" title="Skill">スキル</a>
+</th></tr>
+<tr>
+<th> <a href="Weapon.html" class="mw-redirect" title="Weapons">武器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a> • <a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a> • <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+<p><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a> • <a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a> • <a href="http://crawl.chaosforge.org/Polearms" data-untr="1" title="Polearms">長柄武器</a> • <a href="http://crawl.chaosforge.org/Staves" data-untr="1" title="Staves">棒術</a> • <a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a> • <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</p>
+</td></tr>
+<tr>
+<th> 身体
+</th>
+<td> <a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a> • <a href="Armour_(skill).html" title="Armour (skill)">甲冑</a> • <a class="mw-selflink selflink">躱し身</a> • <a href="http://crawl.chaosforge.org/Stealth_(skill)" data-untr="1" title="Stealth (skill)">隠密</a> • <a href="http://crawl.chaosforge.org/Shields_(skill)" data-untr="1" title="Shields (skill)">盾</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Magic" data-untr="1" title="Magic">魔法</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a> • <a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a> • <a href="Evocations.html" title="Evocations">発動</a> • <a href="http://crawl.chaosforge.org/Shapeshifting" data-untr="1" title="Shapeshifting">変身術</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/List_of_spells_by_school" data-untr="1" title="List of spells by school">呪文の系統</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Air" data-untr="1" class="mw-redirect" title="Air">風の魔術</a> • <a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a> • <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> • <a href="http://crawl.chaosforge.org/Earth" data-untr="1" class="mw-redirect" title="Earth">地の魔術</a> • <a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a> • <a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a> • <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> • <a href="http://crawl.chaosforge.org/Ice_Magic" data-untr="1" title="Ice Magic">氷の魔術</a> • <a href="http://crawl.chaosforge.org/Necromancy" data-untr="1" title="Necromancy">死霊術</a> • <a href="http://crawl.chaosforge.org/Summoning" data-untr="1" class="mw-redirect" title="Summoning">召喚術</a> • <a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a>
+</td></tr>
+</table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>炎の魔術 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="炎の魔術(Fire Magic)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>炎の魔術 <span class="en">Fire Magic</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Fire_Magic">Fire Magic</a>」(0.33 向け、2025-10-27 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Fire_Magic&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><b>炎の魔術</b>の系統は、炎をどれだけたやすく操れるかを決める。
+</p><p>炎の魔術は、敵に直接ダメージを与えることに大きく重きを置いている。もっとも、いくつかの呪文はもう少しひねった使い方ができる。相手が一体でも大きな群れでも、使い手が火力不足に悩むことはまず無いだろう。炎の魔術によるダメージは、たいてい<a href="http://crawl.chaosforge.org/Fire_resistance" data-untr="1" class="mw-redirect" title="Fire resistance">火炎耐性</a>で軽減される。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Aptitudes"><span class="tocnumber">1</span> <span class="toctext">スキル適性</span></a></li>
+<li class="toclevel-1"><a href="#Spells"><span class="tocnumber">2</span> <span class="toctext">呪文</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Level_1"><span class="tocnumber">2.1</span> <span class="toctext">レベル 1</span></a></li>
+<li class="toclevel-2"><a href="#Level_2"><span class="tocnumber">2.2</span> <span class="toctext">レベル 2</span></a></li>
+<li class="toclevel-2"><a href="#Level_3"><span class="tocnumber">2.3</span> <span class="toctext">レベル 3</span></a></li>
+<li class="toclevel-2"><a href="#Level_4"><span class="tocnumber">2.4</span> <span class="toctext">レベル 4</span></a></li>
+<li class="toclevel-2"><a href="#Level_5"><span class="tocnumber">2.5</span> <span class="toctext">レベル 5</span></a></li>
+<li class="toclevel-2"><a href="#Level_6"><span class="tocnumber">2.6</span> <span class="toctext">レベル 6</span></a></li>
+<li class="toclevel-2"><a href="#Level_7"><span class="tocnumber">2.7</span> <span class="toctext">レベル 7</span></a></li>
+<li class="toclevel-2"><a href="#Level_8"><span class="tocnumber">2.8</span> <span class="toctext">レベル 8</span></a></li>
+<li class="toclevel-2"><a href="#Level_9"><span class="tocnumber">2.9</span> <span class="toctext">レベル 9</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-1"><a href="#Sources"><span class="tocnumber">3</span> <span class="toctext">入手先</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Tips_.26_Tricks"><span class="tocnumber">4</span> <span class="toctext">小技</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_Also"><span class="tocnumber">5</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">6</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Aptitudes">スキル適性</span></h2>
+<table class="wikitable">
+
+<tr>
+<td><b><a href="http://crawl.chaosforge.org/Armataur" data-untr="1" title="Armataur">At</a></b>
+</td>
+<td><b><a href="Barachi.html" title="Barachi">Ba</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Coglin" data-untr="1" title="Coglin">Co</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Deep_Elf" data-untr="1" title="Deep Elf">DE</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Demigod" data-untr="1" title="Demigod">Dg</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Demonspawn" data-untr="1" title="Demonspawn">Ds</a></b>
+</td>
+<td><b><a href="Djinni.html" title="Djinni">Dj</a></b>
+</td>
+<td><b><a href="Draconian.html" title="Draconian">Dr</a></b>
+</td>
+<td><b><a href="Felid.html" title="Felid">Fe</a></b>
+</td>
+<td><b><a href="Formicid.html" title="Formicid">Fo</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Gale_Centaur" data-untr="1" title="Gale Centaur">GC</a></b>
+</td>
+<td><b><a href="Gargoyle.html" title="Gargoyle">Gr</a></b>
+</td>
+<td><b><a href="Gnoll.html" title="Gnoll">Gn</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Human" data-untr="1" title="Human">Hu</a></b>
+</td>
+<td><b><a href="Kobold.html" title="Kobold">Ko</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Merfolk" data-untr="1" title="Merfolk">Mf</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Minotaur" data-untr="1" title="Minotaur">Mi</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Mountain_Dwarf" data-untr="1" title="Mountain Dwarf">MD</a></b>
+</td>
+<td><b><a href="Mummy.html" title="Mummy">Mu</a></b>
+</td>
+<td><b><a href="Naga.html" title="Naga">Na</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Octopode" data-untr="1" title="Octopode">Op</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Oni" data-untr="1" title="Oni">On</a></b>
+</td>
+<td><b><a href="Poltergeist.html" title="Poltergeist">Po</a></b>
+</td>
+<td><b><a href="Revenant.html" title="Revenant">Re</a></b>
+</td>
+<td><b><a href="Spriggan.html" title="Spriggan">Sp</a></b>
+</td>
+<td><b><a href="Tengu.html" title="Tengu">Te</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Troll" data-untr="1" title="Troll">Tr</a></b>
+</td>
+<td><b><a href="Vine_Stalker.html" title="Vine Stalker">VS</a></b>
+</td></tr>
+<tr>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> 11
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> 6
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -3
+</td>
+<td> -3
+</td>
+<td> 2
+</td>
+<td> -2
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> -2
+</td>
+<td> -2
+</td>
+<td> 1
+</td>
+<td> -3
+</td>
+<td> 0
+</td></tr></table>
+<ul><li> <a href="Draconian.html#Red" title="Draconian">赤色ドラコニアン</a>は 2。</li>
+<li> <a href="Draconian.html#White" title="Draconian">白色ドラコニアン</a>は -2。</li>
+<li> <a href="Draconian.html#Pale" title="Draconian">蒼白ドラコニアン</a>は 1。</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Spells">呪文</span></h2>
+<table class="prettytable">
+<tr>
+<th>アイコン
+</th>
+<th>名前
+</th>
+<th>系統
+</th>
+<th>レベル
+</th>
+<th>威力の<br />上限
+</th>
+<th>射程
+</th>
+<th>騒音
+</th>
+<th>フラグ
+</th>
+<th>魔法書
+</th></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_1">レベル 1</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Foxfire.png" data-untr="1" class="image"><img alt="Foxfire.png" src="img/Foxfire.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Foxfire" data-untr="1" title="Foxfire">狐火</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>/炎の魔術
+</td>
+<td>1
+</td>
+<td>25
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Fire" data-untr="1" title="Book of Fire">猛火の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_2">レベル 2</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Scorch.png" data-untr="1" class="image"><img alt="Scorch.png" src="img/Scorch.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Scorch" data-untr="1" title="Scorch">焦熱</a>
+</td>
+<td>炎の魔術
+</td>
+<td>2
+</td>
+<td>50
+</td>
+<td>3
+</td>
+<td>8
+</td>
+<td>破壊(Destructive)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Scorching" data-untr="1" title="Book of Scorching">灼熱の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_3">レベル 3</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Inner_flame.png" data-untr="1" class="image"><img alt="Inner flame.png" src="img/Inner_flame.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Inner_Flame" data-untr="1" title="Inner Flame">内なる炎</a>
+</td>
+<td>炎の魔術/<a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>
+</td>
+<td>3
+</td>
+<td>100
+</td>
+<td>LOS
+</td>
+<td>3
+</td>
+<td>意志力判定(Will check)、破壊(Destructive)、自分は対象外(Not self)、対象指定(Target)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Flames" data-untr="1" title="Book of Flames">炎の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Spontaneous_Combustion" data-untr="1" title="Book of Spontaneous Combustion">自然発火の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Volatile_blastmotes.png" data-untr="1" class="image"><img alt="Volatile blastmotes.png" src="img/Volatile_blastmotes.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Volatile_Blastmotes" data-untr="1" title="Volatile Blastmotes">不安定な爆発塵</a>
+</td>
+<td>炎の魔術/<a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a>
+</td>
+<td>3
+</td>
+<td>50
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>破壊(Destructive)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Blasting" data-untr="1" title="Book of Blasting">爆破の魔法書</a><br /><a href="Book_of_Movement.html" title="Book of Movement">移動の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_4">レベル 4</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Flame_wave.png" data-untr="1" class="image"><img alt="Flame wave.png" src="img/Flame_wave.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Flame_Wave" data-untr="1" title="Flame Wave">炎の波</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>/炎の魔術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>3
+</td>
+<td>12
+</td>
+<td>範囲(Area)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Flames" data-untr="1" title="Book of Flames">炎の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Scorching" data-untr="1" title="Book of Scorching">灼熱の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Forge_blazeheart_golem.png" data-untr="1" class="image"><img alt="Forge blazeheart golem.png" src="img/Forge_blazeheart_golem.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Forge_Blazeheart_Golem" data-untr="1" title="Forge Blazeheart Golem">灼心のゴーレムの鍛造</a>
+</td>
+<td>炎の魔術/<a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a>
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Dangerous_Friends" data-untr="1" title="Book of Dangerous Friends">危険な友の魔法書</a><br /><a href="http://crawl.chaosforge.org/Handbook_of_Applied_Construction" data-untr="1" title="Handbook of Applied Construction">応用建築の手引書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Ignite_poison.png" data-untr="1" class="image"><img alt="Ignite poison.png" src="img/Ignite_poison.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Ignite_Poison" data-untr="1" title="Ignite Poison">毒の燃焼</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a>/炎の魔術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>範囲(Area)、破壊(Destructive)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Blood" data-untr="1" title="Book of Blood">血の魔法書</a><br /><a href="http://crawl.chaosforge.org/Everburning_Encyclopedia" data-untr="1" title="Everburning Encyclopedia">燃え尽きぬ百科事典</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Sticky_flame.png" data-untr="1" class="image"><img alt="Sticky flame.png" src="img/Sticky_flame.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Sticky_Flame" data-untr="1" title="Sticky Flame">焼夷の炎</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a>/炎の魔術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>1
+</td>
+<td>4
+</td>
+<td>破壊(Destructive)、方向・対象指定(Dir or target)、射線の確認が必要(Needs tracer)
+</td>
+<td><a href="http://crawl.chaosforge.org/Everburning_Encyclopedia" data-untr="1" title="Everburning Encyclopedia">燃え尽きぬ百科事典</a><br /><a href="http://crawl.chaosforge.org/Book_of_Flames" data-untr="1" title="Book of Flames">炎の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_5">レベル 5</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Detonation_catalyst.png" data-untr="1" class="image"><img alt="Detonation catalyst.png" src="img/Detonation_catalyst.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Detonation_Catalyst" data-untr="1" title="Detonation Catalyst">爆発の触媒</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a>/炎の魔術
+</td>
+<td>5
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>15
+</td>
+<td>自己強化(Selfench)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Battle" data-untr="1" title="Book of Battle">戦いの魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Spontaneous_Combustion" data-untr="1" title="Book of Spontaneous Combustion">自然発火の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Fireball.png" data-untr="1" class="image"><img alt="Fireball.png" src="img/Fireball.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>/炎の魔術
+</td>
+<td>5
+</td>
+<td>200
+</td>
+<td>5
+</td>
+<td>15
+</td>
+<td>方向・対象指定(Dir or target)、射線の確認が必要(Needs tracer)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_the_Dragon" data-untr="1" title="Book of the Dragon">ドラゴンの魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_the_Spheres" data-untr="1" title="Book of the Spheres">天球の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_6">レベル 6</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Forge_monarch_bomb.png" data-untr="1" class="image"><img alt="Forge monarch bomb.png" src="img/Forge_monarch_bomb.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Forge_Monarch_Bomb" data-untr="1" title="Forge Monarch Bomb">君主爆弾の鍛造</a>
+</td>
+<td>炎の魔術/<a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a>
+</td>
+<td>6
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>6
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Blasting" data-untr="1" title="Book of Blasting">爆破の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Contraptions" data-untr="1" title="Book of Contraptions">からくりの魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Plasma_beam.png" data-untr="1" class="image"><img alt="Plasma beam.png" src="img/Plasma_beam.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Plasma_Beam" data-untr="1" title="Plasma Beam">プラズマ光線</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Air_Magic" data-untr="1" title="Air Magic">風の魔術</a>/炎の魔術
+</td>
+<td>6
+</td>
+<td>200
+</td>
+<td>LOS
+</td>
+<td>20
+</td>
+<td>破壊(Destructive)、騒音(Noisy)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Fire" data-untr="1" title="Book of Fire">猛火の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Lightning" data-untr="1" title="Book of Lightning">稲妻の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Starburst.png" data-untr="1" class="image"><img alt="Starburst.png" src="img/Starburst.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Starburst" data-untr="1" title="Starburst">星の炸裂</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>/炎の魔術
+</td>
+<td>6
+</td>
+<td>200
+</td>
+<td>5
+</td>
+<td>6
+</td>
+<td>範囲(Area)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Fire" data-untr="1" title="Book of Fire">猛火の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Spectacle" data-untr="1" title="Book of Spectacle">見世物の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_7">レベル 7</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Hellfire_mortar.png" data-untr="1" class="image"><img alt="Hellfire mortar.png" src="img/Hellfire_mortar.png" width="32" height="32" /></a>
+</td>
+<td><a href="Hellfire_Mortar.html" title="Hellfire Mortar">業火の迫撃砲</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Earth_Magic" data-untr="1" title="Earth Magic">地の魔術</a>/炎の魔術/<a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a>
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>LOS
+</td>
+<td>20
+</td>
+<td>破壊(Destructive)、方向・対象指定(Dir or target)
+</td>
+<td><a href="Compendium_of_Siegecraft.html" title="Compendium of Siegecraft">攻城術大全</a><br /><a href="http://crawl.chaosforge.org/Trismegistus_Codex" data-untr="1" title="Trismegistus Codex">トリスメギストス写本</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_8">レベル 8</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Ignition.png" data-untr="1" class="image"><img alt="Ignition.png" src="img/Ignition.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Ignition" data-untr="1" title="Ignition">点火</a>
+</td>
+<td>炎の魔術
+</td>
+<td>8
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>15
+</td>
+<td>範囲(Area)、破壊(Destructive)
+</td>
+<td><a href="http://crawl.chaosforge.org/Everburning_Encyclopedia" data-untr="1" title="Everburning Encyclopedia">燃え尽きぬ百科事典</a><br /><a href="http://crawl.chaosforge.org/Book_of_Spontaneous_Combustion" data-untr="1" title="Book of Spontaneous Combustion">自然発火の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_9">レベル 9</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Fire_storm.png" data-untr="1" class="image"><img alt="Fire storm.png" src="img/Fire_storm.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Fire_Storm" data-untr="1" title="Fire Storm">炎の嵐</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>/炎の魔術
+</td>
+<td>9
+</td>
+<td>200
+</td>
+<td>5
+</td>
+<td>25
+</td>
+<td>範囲(Area)、射線の確認が必要(Needs tracer)、対象指定(Target)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Annihilations" data-untr="1" title="Book of Annihilations">殲滅の魔法書</a>
+</td></tr>
+</table>
+<h2><span class="mw-headline" id="Sources">入手先</span></h2>
+<dl><dt>主な魔法書</dt>
+<dd><b><a href="http://crawl.chaosforge.org/Everburning_Encyclopedia" data-untr="1" title="Everburning Encyclopedia">燃え尽きぬ百科事典</a></b>: <a href="http://crawl.chaosforge.org/Ignite_Poison" data-untr="1" title="Ignite Poison">毒の燃焼</a>、<a href="http://crawl.chaosforge.org/Sticky_Flame" data-untr="1" title="Sticky Flame">焼夷の炎</a>、<a href="http://crawl.chaosforge.org/Ignition" data-untr="1" title="Ignition">点火</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Fire" data-untr="1" title="Book of Fire">猛火の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Foxfire" data-untr="1" title="Foxfire">狐火</a>、<a href="http://crawl.chaosforge.org/Plasma_Beam" data-untr="1" title="Plasma Beam">プラズマ光線</a>、<a href="http://crawl.chaosforge.org/Starburst" data-untr="1" title="Starburst">星の炸裂</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Flames" data-untr="1" title="Book of Flames">炎の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Inner_Flame" data-untr="1" title="Inner Flame">内なる炎</a>、<a href="http://crawl.chaosforge.org/Sticky_Flame" data-untr="1" title="Sticky Flame">焼夷の炎</a>、<a href="http://crawl.chaosforge.org/Flame_Wave" data-untr="1" title="Flame Wave">炎の波</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Scorching" data-untr="1" title="Book of Scorching">灼熱の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Scorch" data-untr="1" title="Scorch">焦熱</a>、<a href="http://crawl.chaosforge.org/Flame_Wave" data-untr="1" title="Flame Wave">炎の波</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Spontaneous_Combustion" data-untr="1" title="Book of Spontaneous Combustion">自然発火の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Inner_Flame" data-untr="1" title="Inner Flame">内なる炎</a>、<a href="http://crawl.chaosforge.org/Detonation_Catalyst" data-untr="1" title="Detonation Catalyst">爆発の触媒</a>、<a href="http://crawl.chaosforge.org/Ignition" data-untr="1" title="Ignition">点火</a></dd>
+<dt>その他の魔法書</dt>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Annihilations" data-untr="1" title="Book of Annihilations">殲滅の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Fire_Storm" data-untr="1" title="Fire Storm">炎の嵐</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Battle" data-untr="1" title="Book of Battle">戦いの魔法書</a></b>: <a href="http://crawl.chaosforge.org/Detonation_Catalyst" data-untr="1" title="Detonation Catalyst">爆発の触媒</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Blasting" data-untr="1" title="Book of Blasting">爆破の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Volatile_Blastmotes" data-untr="1" title="Volatile Blastmotes">不安定な爆発塵</a>、<a href="http://crawl.chaosforge.org/Forge_Monarch_Bomb" data-untr="1" title="Forge Monarch Bomb">君主爆弾の鍛造</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Blood" data-untr="1" title="Book of Blood">血の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Ignite_Poison" data-untr="1" title="Ignite Poison">毒の燃焼</a></dd>
+<dd><b><a href="Compendium_of_Siegecraft.html" title="Compendium of Siegecraft">攻城術大全</a></b>: <a href="Hellfire_Mortar.html" title="Hellfire Mortar">業火の迫撃砲</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Contraptions" data-untr="1" title="Book of Contraptions">からくりの魔法書</a></b>: <a href="http://crawl.chaosforge.org/Forge_Monarch_Bomb" data-untr="1" title="Forge Monarch Bomb">君主爆弾の鍛造</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Dangerous_Friends" data-untr="1" title="Book of Dangerous Friends">危険な友の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Forge_Blazeheart_Golem" data-untr="1" title="Forge Blazeheart Golem">灼心のゴーレムの鍛造</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_the_Dragon" data-untr="1" title="Book of the Dragon">ドラゴンの魔法書</a></b>: <a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Handbook_of_Applied_Construction" data-untr="1" title="Handbook of Applied Construction">応用建築の手引書</a></b>: <a href="http://crawl.chaosforge.org/Forge_Blazeheart_Golem" data-untr="1" title="Forge Blazeheart Golem">灼心のゴーレムの鍛造</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Lightning" data-untr="1" title="Book of Lightning">稲妻の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Plasma_Beam" data-untr="1" title="Plasma Beam">プラズマ光線</a></dd>
+<dd><b><a href="Book_of_Movement.html" title="Book of Movement">移動の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Volatile_Blastmotes" data-untr="1" title="Volatile Blastmotes">不安定な爆発塵</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Spectacle" data-untr="1" title="Book of Spectacle">見世物の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Starburst" data-untr="1" title="Starburst">星の炸裂</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_the_Spheres" data-untr="1" title="Book of the Spheres">天球の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Trismegistus_Codex" data-untr="1" title="Trismegistus Codex">トリスメギストス写本</a></b>: <a href="Hellfire_Mortar.html" title="Hellfire Mortar">業火の迫撃砲</a></dd></dl>
+<h2><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h2>
+<ul><li>炎の呪文の大半は、<a href="http://crawl.chaosforge.org/Water" data-untr="1" title="Water">水</a>の中に立つ敵に対して弱まるどころか、むしろ強くなる。炎の光線が水の上を通ると<a href="http://crawl.chaosforge.org/Steam" data-untr="1" title="Steam">蒸気</a>の雲が生まれ、追加のダメージを与えるのだ。蒸気は<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>を遮るのにも使える。(例外は<a href="http://crawl.chaosforge.org/Sticky_Flame" data-untr="1" title="Sticky Flame">焼夷の炎</a>で、こちらは水で消えてしまう。)</li></ul>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Fire_Elementalist" data-untr="1" title="Fire Elementalist">火の精霊使い</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> で<a href="http://crawl.chaosforge.org/Detonation_Catalyst" data-untr="1" title="Detonation Catalyst">爆発の触媒</a>が追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.32" data-untr="1" title="0.32">0.32</a> で<a href="http://crawl.chaosforge.org/Dazzling_Flash" data-untr="1" class="mw-redirect" title="Dazzling Flash">目くらましの閃光</a>と<a href="Hellfire_Mortar.html" title="Hellfire Mortar">業火の迫撃砲</a>が追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> で<a href="http://crawl.chaosforge.org/Plasma_Beam" data-untr="1" title="Plasma Beam">プラズマ光線</a>と<a href="http://crawl.chaosforge.org/Volatile_Blastmotes" data-untr="1" title="Volatile Blastmotes">不安定な爆発塵</a>が追加され、<a href="http://crawl.chaosforge.org/Conjure_Flame" data-untr="1" title="Conjure Flame">火柱の幻出</a>が削除された。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> で<a href="http://crawl.chaosforge.org/Scorch" data-untr="1" title="Scorch">焦熱</a>と<a href="http://crawl.chaosforge.org/Flame_Wave" data-untr="1" title="Flame Wave">炎の波</a>が追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> で<a href="http://crawl.chaosforge.org/Ring_of_Flames" data-untr="1" title="Ring of Flames">炎の円環</a>が削除された。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> の呪文の見直しで<a href="http://crawl.chaosforge.org/Flame_Tongue" data-untr="1" title="Flame Tongue">炎の舌先</a>、<a href="http://crawl.chaosforge.org/Throw_Flame" data-untr="1" title="Throw Flame">火炎の投射</a>、<a href="http://crawl.chaosforge.org/Bolt_of_Fire" data-untr="1" title="Bolt of Fire">猛火の矢</a>が削除され、代わりに<a href="http://crawl.chaosforge.org/Foxfire" data-untr="1" title="Foxfire">狐火</a>と<a href="http://crawl.chaosforge.org/Starburst" data-untr="1" title="Starburst">星の炸裂</a>が追加された。</li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Skill.html" title="Skill">スキル</a>
+</th></tr>
+<tr>
+<th> <a href="Weapon.html" class="mw-redirect" title="Weapons">武器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a> • <a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a> • <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+<p><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a> • <a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a> • <a href="http://crawl.chaosforge.org/Polearms" data-untr="1" title="Polearms">長柄武器</a> • <a href="http://crawl.chaosforge.org/Staves" data-untr="1" title="Staves">棒術</a> • <a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a> • <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</p>
+</td></tr>
+<tr>
+<th> 身体
+</th>
+<td> <a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a> • <a href="Armour_(skill).html" title="Armour (skill)">甲冑</a> • <a href="Dodging.html" title="Dodging">躱し身</a> • <a href="http://crawl.chaosforge.org/Stealth_(skill)" data-untr="1" title="Stealth (skill)">隠密</a> • <a href="http://crawl.chaosforge.org/Shields_(skill)" data-untr="1" title="Shields (skill)">盾</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Magic" data-untr="1" title="Magic">魔法</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a> • <a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a> • <a href="Evocations.html" title="Evocations">発動</a> • <a href="http://crawl.chaosforge.org/Shapeshifting" data-untr="1" title="Shapeshifting">変身術</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/List_of_spells_by_school" data-untr="1" title="List of spells by school">呪文の系統</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Air" data-untr="1" class="mw-redirect" title="Air">風の魔術</a> • <a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a> • <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> • <a href="http://crawl.chaosforge.org/Earth" data-untr="1" class="mw-redirect" title="Earth">地の魔術</a> • <a class="mw-selflink selflink">炎の魔術</a> • <a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a> • <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> • <a href="http://crawl.chaosforge.org/Ice_Magic" data-untr="1" title="Ice Magic">氷の魔術</a> • <a href="http://crawl.chaosforge.org/Necromancy" data-untr="1" title="Necromancy">死霊術</a> • <a href="http://crawl.chaosforge.org/Summoning" data-untr="1" class="mw-redirect" title="Summoning">召喚術</a> • <a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a>
+</td></tr>
+</table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
