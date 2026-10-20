@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fedhas&#x27; Mad Dash &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="Fedhas&#x27; Mad Dash(Fedhas&#x27; Mad Dash)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>Fedhas&#x27; Mad Dash</h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Fedhas'_Mad_Dash">Fedhas&#x27; Mad Dash</a>」(対象の版の記載なし、2022-01-02 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Fedhas'_Mad_Dash&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><b>Fedhas' Mad Dash</b> は、最初からあった 4 つの<a href="Dungeon_Sprint.html" title="Dungeon Sprint">ダンジョンスプリント</a>のモジュールの一つだ。
+</p><p>さらに詳しい助言は<a href="Sprint_guide.html" title="Sprint guide">スプリントのガイド</a>を参照。
+</p>
+<h2><span class="mw-headline" id="Layout">マップ</span></h2>
+<pre>
+
+NAME:   dungeon_sprint_fedhas
+TAGS:   sprint no_item_gen no_trap_gen no_monster_gen no_pool_fixup no_rotate no_hmirror no_vmirror
+DESC:   Sprint IV: "Fedhas' Mad Dash"
+ORIENT: encompass
+SUBVAULT: o&#160;: temple
+KMONS:  A = fungus
+KMONS:  B = spriggan hd:3
+KMONS:  C = oklob sapling hp:7
+KMONS:  D = oklob sapling hp:15 name:wizard n_suf spells:magic_dart;.;cantrip;magic_dart actual_spells
+KMONS:  E = scorpion
+KMONS:  F = wandering mushroom
+KMONS:  G = burning bush
+KMONS:  H = killer bee
+KMONS:  I = queen bee
+KMONS:  L = oklob plant
+KMONS:  J = spriggan druid
+KMONS:  M = oklob plant hp:30 name:conjurer n_suf spells:stone_arrow;.;.;.;iskenderun's_mystic_blast actual_spells
+KMONS:  N = giant spore
+KMONS:  O = oklob plant hp:30 name:summoner n_suf spells:call_imp;.;.;summon_swarm actual_spells
+KMONS:  P = oklob plant hp:30 name:shifter n_suf spells:blink_other;blink_other actual_spells
+KMONS:  Q = demonic crawler
+KMONS:  R = spriggan rider
+KMONS:  T = spriggan
+KMONS:  U = spriggan berserker
+KMONS:  V = Agnes
+KMONS:  W = spriggan defender
+KMONS:  X = spriggan rider&#160;; bow unrand:storm_bow . arrow
+KMONS:  Y = bush
+KMONS:  a = yellow wasp
+KMONS:  b = ghost moth
+KMONS:  d = oklob plant name:meteorologist n_suf spells:sunray;.;.;airstrike actual_spells
+KMONS:  e = oklob plant name:demonologist n_suf spells:summon_demon;.;.;summon_demon;.;malign_gateway actual_spells
+KMONS:  f = oklob plant name:annihilator n_suf spells:poison_arrow;orb_of_destruction;.;.;bolt_of_cold actual_spells
+KMONS:  g = the Enchantress
+KMONS:  h = moth of wrath
+KMONS:  m = green rat
+KMONS:  n = worker ant
+KMONS:  u = grey rat
+KITEM:  j = piece of ambrosia q:3
+KITEM:  k = honeycomb q:3
+KITEM:  n = ring of invisibility ident:type
+KITEM:  M = any book
+KITEM:  # = Orb of Zot
+KFEAT:  Z = any shop
+
+MAP
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xcccccccccccccccccccccccccccccccccccccccccccccccccccccx
+xc{[(Ac....uc.$$$$coooooooooooooc.*+$BBc.E..ccZcc|ccccx
+xcAA..+.%...+.c%%.+ooooooooooooo+.Dc$E$c.F.G+*|cc+ccccx
+xcAAAAc...m.cCcn..coooooooooooooc..ccc+cc.**ccZc$$ccccx
+xccccccccccccccc+ccoooooooooooooc.*ccZZ$+..Fccccc..R.cx
+xcHH.t........+...coooooooooooooccccccccccccccccc...Zcx
+xckI....t.....c$C$ccccccccccccccccccc..L.%*ccc....Tt.cx
+xcHH...t..t..ccccccttttt..t*ccc.+.*+.....*%+Q+..Tt..Zcx
+xcc+cccc+ccccccC|+......t..tccM.c.Nc.A....Pcccccccccccx
+xc*.c$$$$+......Fct..ttt.tJ.ccc.cc+cc.A.O..cccccccccccx
+xcL*cG|cccG...L..c.tt.*t.$$t+..$ct.tccccccccccccccccccx
+xcccccccccccccccccccccccccccccccc.....ccccccccccccccccx
+xckj....................ccccccc..t..t....cccccccccccccx
+xcZa..N...............Y.ccccc.U.t......t...tccccccccccx
+xcZQ..........T......XY..........t.V...Z.Z..W|ccccccccx
+xcZb..................Y...ccccccccccccccccccccccccccccx
+xccccccccccc+cccccccccccccccccccccccccccccccccccccccccx
+xccccccP.........ccccc..ccccc..AZZccc...e|ccccccccccccx
+xcccccc.......A.dccc.R..+......O.%cc...Y.U+nccccccccccx
+xcccccccc.A....cccccaQa.cccccY....+.....f|ccccccccccccx
+xcccccccccc...cccccc$$$$ccccccccccccccccccccccccccccccx
+xcccccccccc....cccc$$$$$cccccZZZcL.L.L.L.L.L.cccccccccx
+xcccccccccc........$$$$$+$$$$Z$Z+............+.......cx
+xcccccccccc........$$$$$cccccZZZc.L.L.L.L.L.Lccccccc.cx
+xccccccccccccccccccccccccccccccccccccccccccccccccccc.cx
+xcc........t.Wt..t..t.Rt..t.Ut..t..t..t..t.Wt..t..t..cx
+xcc.g..........................J.......J.............cx
+xcc........t.Jt..t..t.Rt..t.Ut..t..t..t..t.Wt..t..t..cx
+xccc++++ccccccccccccccccccccccccccccccccccccccccccccccx
+xcc......cccccccccccccc.....ccccc....cccccc...h..cccccx
+xcc......ccccccccc.......h........b................Wtcx
+xccc.......e...............I...............ccccccc..#cx
+xccc.Q..........a........R........U................Wtcx
+xccc..............cccccc.....cccc....cccccc...h..cccccx
+xccc.......f......ccccccccccccccccccccccccccccccccccccx
+xcccccccccccccccccccccccccccccccccccccccccccccccccccccx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ENDMAP
+
+NAME:   sprint_temple
+TAGS:   temple no_rotate no_hmirror no_vmirror
+KFEAT:  A = altar_cheibriados
+KFEAT:  B = altar_zin
+KFEAT:  C = altar_elyvilon
+KFEAT:  D = altar_the_shining_one
+KFEAT:  E = altar_okawaru
+KFEAT:  F = altar_yredelemnul
+KFEAT:  G = altar_kikubaaqudgha
+KFEAT:  H = altar_trog
+KFEAT:  I = altar_lugonu
+KFEAT:  J = altar_nemelex_xobeh
+KFEAT:  K = altar_xom
+KFEAT:  L = altar_beogh
+KFEAT:  M = altar_jiyva
+KFEAT:  N = altar_vehumet
+KFEAT:  O = altar_sif_muna
+KFEAT:  P = altar_makhleb
+KMONS:  X = oklob sapling name:priest n_suf spells:cantrip;.;cantrip;smiting priest_spells
+
+MAP
+.T.........T.
+.A.B.C.D.E.F.
+..M.NXO.P.T..
+.G.H.I.J.K.L.
+.T.........T.
+ENDMAP
+
+</pre>
+<dl><dd><i>このページは<b><a href="http://crawl.chaosforge.org/Category:Stubs" data-untr="1" title="Category:Stubs">書きかけ</a></b>の記事だ。よければ<a rel="nofollow" class="external text" href="http://crawl.chaosforge.org/index.php?title=Fedhas%27_Mad_Dash&amp;action=edit">加筆</a>してほしい。</i></dd></dl>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

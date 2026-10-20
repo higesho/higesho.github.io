@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>滋養の指輪 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="滋養の指輪(Ring of sustenance)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>滋養の指輪 <span class="en">Ring of sustenance</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Ring_of_sustenance">Ring of sustenance</a>」(対象の版の記載なし、2014-08-29 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Ring_of_sustenance&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>廃止</b>: この記事は、ゲームから削除された要素について書いている。過去の記録として残しているだけだ。</i></div>
+<div>
+<table class="prettytable" style=" width:18em">
+
+<tr>
+<th align="left"> 種類
+</th>
+<td> 装身具
+</td></tr>
+<tr>
+<th align="left"> 名前
+</th>
+<td> 滋養の指輪
+</td></tr>
+<tr>
+<th align="left"> アイコン
+</th>
+<td> <a href="http://crawl.chaosforge.org/File:Ring_of_sustenance.png" data-untr="1" class="image"><img alt="Ring of sustenance.png" src="img/Ring_of_sustenance.png" width="32" height="32" /></a>
+</td></tr></table>
+</div>
+<p><i><a href="Ring_of_sustain_attributes.html" class="mw-redirect" title="Ring of sustain abilities">能力値維持の指輪</a>と混同しないこと。</i>
+</p><p><b>滋養の指輪</b>は、行動で消費する<a href="Comestibles_and_satiation.html" class="mw-redirect" title="Satiation">満腹度</a>を合計で 40% 減らす。重ねて着けられるが、指輪を増やすほど効果は小さくなる(2つ目でさらに 24%、3つ目でさらに 15%)。結果の空腹の進み方は常に切り捨てになる。そのため、1ターンに満腹度を 3 消費するたいていの種族なら、滋養の指輪1つで消費が1ターンに 1 まで下がる。
+</p>
+<pre>new_hunger_rate = old_hunger_rate × (6/10)^(#_of_rings_of_sustenance)
+</pre>
+<p>滋養の指輪でも、満腹度の消費を1ターンに 1 より下げることはできない。2% の確率で<a href="Cursed.html" title="Cursed">呪われて</a>いる。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>この指輪をけなすプレイヤーは多い。食料の消費を減らす以外に何の役にも立たないし、ふつうは<a href="Rune_of_Zot.html" class="mw-redirect" title="Rune">ルーン</a>15個を持っての<a href="Orb_of_Zot.html" class="mw-redirect" title="Ascension">脱出</a>でさえ食料は足りるからだ。とはいえ、実はいくつかの使い道がある:
+</p>
+<ul><li>腕力の低い種族には役に立つ。持ち歩く食料の量が減るからだ。特に、<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>や<a href="The_Abyss.html" title="The Abyss">アビス</a>のような死体の出ない分岐で、腕力の低いプレイヤーがもっと役に立つアイテム(<a href="Potion_of_heal_wounds.html" class="mw-redirect" title="Potions of heal wounds">怪我の治療の薬</a>や、攻撃用の<a href="Wand.html" class="mw-redirect" title="Wands">ワンド</a>を何本かなど)を持ち歩けるようになる。</li>
+<li>空腹の進みが遅くなるので、全体として食料の消費が減り、ふだんなら空腹のコストのせいで唱えられない時期から呪文を唱えられるようになる。</li>
+<li>犠牲を受け取る神の信者には、まさに天の恵み(しゃれではない)になりうる。<a href="Trog.html" title="Trog">トログ</a>、<a href="Okawaru.html" title="Okawaru">オカワル</a>、<a href="Makhleb.html" title="Makhleb">マクレブ</a>、そしてそれほどではないが<a href="Nemelex_Xobeh.html" class="mw-redirect" title="Nemelex">ネメレクス</a>と<a href="Fedhas_Madash.html" class="mw-redirect" title="Fedhas">フェダス</a>がそうだ。出くわした死体の半分を食料用に切り分けずに済むので、信仰心がかなり早く溜まる。</li>
+<li><a href="Troll.html" title="Troll">トロル</a>のように空腹になりやすい種族には、全般にとても役に立つ。</li>
+<li>何もない階や分岐を長いあいだ移動するときだけ一時的に着けるのは、保存食を節約するとりわけつましいやり方だ。 </li></ul>
+<h3><span class="mw-headline" id="As_compared_to_an_amulet_of_the_gourmand">美食家の護符との比較</span></h3>
+<p><a href="Amulet_of_the_gourmand.html" title="Amulet of the gourmand">美食家の護符</a>は滋養の指輪と同じような役目の多くを果たし、こちらのほうがいいアイテムだと言うプレイヤーも多い。滋養の指輪と比べると、はっきりした長所と短所がある。
+</p><p>長所:
+</p>
+<ul><li>死体の多い分岐では、たいていこちらが上だ。通りすがりのセントールを片っ端から腹に詰め込めるほうが、空腹の進みが 2/3 に減るだけよりたいてい有利だ。特に、近くに生き物がいる限り、呪文による空腹を和らげるにはこちらのほうがいい。</li>
+<li>うまく使えば、美食家の護符のほうが滋養の指輪よりもさらに早く、血を好む神の信仰心を稼げるはずだ。</li></ul>
+<p>とはいえ、滋養の指輪のほうが優れている点もある:
+</p>
+<ul><li>美食家の護符は(死体を食べるという)行動をしないと何の得にもならないが、滋養の指輪の効果は完全に受け身だ。少なくとも護符のほうが使うのが面倒だし、多くのプレイヤーにとっては、結局得られるものが少なくなりかねない。</li>
+<li>死体の出ない分岐では、護符は何の役にも立たない。</li>
+<li>場面によっては護符のスロットのほうが貴重なこともある。たとえば<a href="The_Slime_Pits.html" class="mw-redirect" title="Slime Pits">スライムの穴ぐら</a>を探索するあいだは、<a href="Amulet_of_resist_mutation.html" title="Amulet of resist mutation">変異耐性の護符</a>がとても役に立つ。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<p>滋養の指輪は <a href="0.15.html" title="0.15">0.15</a> で廃止された。
+</p><p>古いバージョンでは、滋養の指輪は食料の消費を1ターンに 2 減らす(最低 1)だけだった。そのため、代謝の速いキャラクターには役に立ちにくかった。食料の消費が割合としてはずっと少ししか減らなかったからだ。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
