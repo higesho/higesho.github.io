@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>間合い &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="間合い(Reaching)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>間合い <span class="en">Reaching</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Reaching">Reaching</a>」(0.34 向け、2026-06-08 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Reaching&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><b>間合い</b>は<a href="http://crawl.chaosforge.org/Polearm" data-untr="1" class="mw-redirect" title="Polearm">長柄武器</a>が生まれつき持っている性質だ。間合いのある武器は、ふつうより 1 マス遠い 2 マス先の敵を攻撃できる。モンスター越しに攻撃することもできるが、いつも成功するとは限らない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Reach_Attack_Failure"><span class="tocnumber">1.1</span> <span class="toctext">リーチ攻撃の失敗</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Special"><span class="tocnumber">1.2</span> <span class="toctext">特殊なもの</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Reaching_Attacks_by_Monsters"><span class="tocnumber">3</span> <span class="toctext">モンスターのリーチ攻撃</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p><a href="http://crawl.chaosforge.org/Tab" data-untr="1" title="Tab">Tab</a> で自動攻撃していれば、リーチ攻撃が使える場面では自動でリーチ攻撃をする。手動でリーチ攻撃をするには <b>v</b> コマンドを使う。
+</p><p>届く距離が長いことを除けば、リーチ攻撃はほかの近接攻撃とほとんど変わらない。離れたところから攻撃するときは<a href="http://crawl.chaosforge.org/Auxiliary_attack" data-untr="1" title="Auxiliary attack">補助攻撃</a>が出ず、<a href="http://crawl.chaosforge.org/Spiny" data-untr="1" title="Spiny">棘</a>のあるモンスターを攻撃しても傷を負わない。これは離れたところから攻撃するときに<i>だけ</i>当てはまる話で、隣の敵を長柄武器で攻撃すれば、補助攻撃も棘もふだんどおりに働く。
+</p><p>自分と狙った相手との間にモンスターや障害物があると、リーチ攻撃が失敗することがある。詳しくは下を見てほしい。
+</p>
+<h3><span class="mw-headline" id="Reach_Attack_Failure">リーチ攻撃の失敗</span></h3>
+<p>間にモンスターがいると、リーチ攻撃は失敗することがある。狙ったマスへの攻撃の通り道が 2 つあるとき(つまりチェスのナイトの動き<a rel="nofollow" class="external autonumber" href="http://en.wikipedia.org/wiki/Knight_%28chess%29">[1]</a>のような位置関係で、間に壁が無いとき)は、どちらを通るかがランダムに決まる。そのうえで通り道にモンスターがいれば、50% の確率でリーチ攻撃が失敗する。失敗したとき、間にいるモンスターが<a href="http://crawl.chaosforge.org/Neutral" data-untr="1" class="mw-redirect" title="Neutral">中立</a>か敵対していればそちらに攻撃が当たり、<a href="http://crawl.chaosforge.org/Friendly" data-untr="1" class="mw-redirect" title="Friendly">味方</a>ならただ空振りに終わる。下の例を見てほしい。
+</p>
+<pre> モンスター M へのリーチ攻撃:
+ 例 1:                           例 2:                         例 3:
+ .......  .......  .......       .......                       .......
+ ..@....  ..@AM..  ..@A...       ..@A...                       ..@A...
+ ...A...  .......  ####M..       ...BM..                       ....M..
+ ....M..  .......  ####...       .......                       .......
+ 間に A がいる。                 間に A と B がいる。          間に A がいて、さらに
+                                                               空いた通り道が 1 つある。
+</pre>
+<ul><li>例 1: M への攻撃は 50% の確率で失敗する。A が味方なら攻撃はそのまま失敗し、A が敵なら攻撃は A に向かう。</li>
+<li>例 2: M への攻撃は 50% の確率で失敗し、代わりに間にいる A か B(ランダムに選ばれる)に向かう。そのモンスターが味方なら攻撃はそのまま失敗し、敵ならそのモンスターに当たる。</li>
+<li>例 3: M への攻撃は 25% の確率で失敗する。A が味方なら攻撃はそのまま失敗し、A が敵なら攻撃は A に向かう。</li></ul>
+<p>味方のモンスターに邪魔されて攻撃が失敗したときに出るメッセージは、あまり親切ではない。
+</p>
+<blockquote>「あなたは十分遠くまで届かなかった!」</blockquote>
+<p><a href="http://crawl.chaosforge.org/Bush" data-untr="1" title="Bush">藪</a>や<a href="http://crawl.chaosforge.org/Toadstool" data-untr="1" title="Toadstool">からかさキノコ</a>のような動かないモンスターや中立のモンスターも、攻撃を遮るかどうかの判定では、動き回る敵対モンスターと同じに扱われる。無生物の<a href="http://crawl.chaosforge.org/Statue" data-untr="1" title="Statue">彫像</a>越しには、何の不利もなくリーチ攻撃が<i>できる</i>。一方、<a href="http://crawl.chaosforge.org/Iron_grate" data-untr="1" class="mw-redirect" title="Iron grate">鉄格子</a>越しのリーチ攻撃は<i>できない</i>。
+</p><p><a href="http://crawl.chaosforge.org/Fedhas" data-untr="1" class="mw-redirect" title="Fedhas">フェダス</a>の植物や<a href="Hepliaklqana.html" title="Hepliaklqana">ヘプリアクルカナ</a>の祖霊のように、飛び道具がすり抜けられる味方のモンスターは、リーチ攻撃では空いたマスとして扱われる。
+</p>
+<h3><span class="mw-headline" id="Special">特殊なもの</span></h3>
+<ul><li><a href="http://crawl.chaosforge.org/Unrand" data-untr="1" class="mw-redirect" title="Unrand">固定アーティファクト</a>の<a href="http://crawl.chaosforge.org/Rift" data-untr="1" title="Rift">リフト</a>は届く距離が 1 マス長く(3 マス)、間にいるモンスターを完全に無視する。また、効果の通り道(line of effect)を遮らないものであれば、格子のような邪魔な地形も無視できる。</li>
+<li>固定アーティファクトの<a href="http://crawl.chaosforge.org/Lochaber_axe" data-untr="1" title="Lochaber axe">ロッホアバーアックス</a>は、2 マス以内のすべての敵に当たる。ゾムの薙払いの状態になっていれば、どの長柄武器でも届く範囲の敵をまとめて薙ぎ払える。</li>
+<li><a href="http://crawl.chaosforge.org/Aqua_Form" data-untr="1" class="mw-redirect" title="Aqua Form">水の形態</a>のあいだは、どの近接攻撃も届く距離が 2 マス伸び、長柄武器の間合いとも重なる。また、長柄武器の間合いを使っていなければ、離れた敵にも<a href="http://crawl.chaosforge.org/Auxiliary_attack" data-untr="1" title="Auxiliary attack">補助攻撃</a>が出る。ただし薙ぎ払いが当たる範囲はふつうのままで、リーチ攻撃ではどれも<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>ができない。</li></ul>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<ul><li>味方越しの攻撃が 50% の確率で失敗することを考えに入れても、召喚した仲間や常にいる仲間を持つキャラクターにとって、リーチ攻撃はとても役に立つ。<a href="http://crawl.chaosforge.org/Banish" data-untr="1" class="mw-redirect" title="Banish">アビスへの追放</a>や<a href="http://crawl.chaosforge.org/Malmutate" data-untr="1" title="Malmutate">悪性変異</a>のような危ない妨害呪文を使うモンスターが相手なら、召喚した仲間に敵の射線をふさがせて、自分は後ろから突っつくのは立派な戦略だ。</li>
+<li>移動も攻撃も敵の移動より速ければ、近接攻撃しかしてこない相手をリーチ攻撃で<a href="http://crawl.chaosforge.org/Kite" data-untr="1" class="mw-redirect" title="Kite">引き撃ち</a>できる。2 マス離れるまで敵から逃げ、敵が距離を詰めてくるまで突き続ける。これを敵が死ぬまで繰り返せばいい。</li></ul>
+<h2><span class="mw-headline" id="Reaching_Attacks_by_Monsters">モンスターのリーチ攻撃</span></h2>
+<p>長柄武器を持ったモンスターは、プレイヤーと同じようにリーチ攻撃をしてくる。ほかに、<i>生まれつき</i>リーチ攻撃を持つモンスターもいる。
+</p>
+<ul><li><span class="nhsym">4</span> <a href="http://crawl.chaosforge.org/File:Orange_demon.png" data-untr="1" class="image"><img alt="Orange demon.png" src="img/Orange_demon.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Orange_demon" data-untr="1" title="Orange demon">オレンジデーモン</a></b></li>
+<li><span class="nhsym clr-green">t</span> <a href="http://crawl.chaosforge.org/File:Snapping_turtle.png" data-untr="1" class="image"><img alt="Snapping turtle.png" src="img/Snapping_turtle.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Snapping_turtle" data-untr="1" title="Snapping turtle">カミツキガメ</a></b></li>
+<li><span class="nhsym clr-brightgreen">t</span> <a href="http://crawl.chaosforge.org/File:Alligator_snapping_turtle.png" data-untr="1" class="image"><img alt="Alligator snapping turtle.png" src="img/Alligator_snapping_turtle.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Alligator_snapping_turtle" data-untr="1" title="Alligator snapping turtle">ワニガメ</a></b></li>
+<li><span class="nhsym clr-magenta">X</span> <a href="http://crawl.chaosforge.org/File:Cigotuvis_monster.png" data-untr="1" class="image"><img alt="Cigotuvis monster.png" src="img/Cigotuvis_monster.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Cigotuvi%27s_Monster" data-untr="1" class="mw-redirect" title="Cigotuvi&#39;s Monster">シゴトゥヴィの怪物</a></b></li>
+<li><span class="nhsym clr-green">&amp;</span> <a href="http://crawl.chaosforge.org/File:Geryon.png" data-untr="1" class="image"><img alt="Geryon.png" src="img/Geryon.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Geryon" data-untr="1" title="Geryon">ゲリュオン</a></b></li>
+<li><span class="nhsym clr-cyan">D</span> <a href="http://crawl.chaosforge.org/File:Serpent_of_Hell_(Dis).png" data-untr="1" class="image"><img alt="Serpent of Hell (Dis).png" src="img/Serpent_of_Hell_(Dis).png" width="32" height="48" /></a> <b><a href="Serpent_of_Hell_(Dis).html" title="Serpent of Hell (Dis)">地獄のサーペント(ディース)</a></b></li>
+<li><span class="nhsym clr-brightmagenta">P</span> <a href="http://crawl.chaosforge.org/File:Starflower.png" data-untr="1" class="image"><img alt="Starflower.png" src="img/Starflower.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Starflower" data-untr="1" title="Starflower">星の花</a></b></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a>より前は、間合いは<a href="Brand.html" title="Brand">ブランド</a>としても存在し、<a href="http://crawl.chaosforge.org/Whip" data-untr="1" title="Whip">鞭</a>や<a href="http://crawl.chaosforge.org/Demon_whip" data-untr="1" title="Demon whip">悪魔の鞭</a>について生成されることがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.10" data-untr="1" title="0.10">0.10</a>より前は、長柄武器は生まれつきの間合いを持っていなかった。間合いのブランドがついていなければ、リーチ攻撃はできなかった。</li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 70%">
+
+<tr>
+<th colspan="3"> <a href="Brand.html" title="Brand">ブランド</a>
+</th></tr>
+<tr>
+<th rowspan="3"> 近接武器
+</th>
+<th> 汎用
+</th>
+<td> <a href="http://crawl.chaosforge.org/Antimagic" data-untr="1" title="Antimagic">反魔法</a> • <a href="http://crawl.chaosforge.org/Chaos" data-untr="1" title="Chaos">混沌</a> • <a href="Distortion.html" title="Distortion">歪曲</a>  • <a href="http://crawl.chaosforge.org/Draining_(brand)" data-untr="1" title="Draining (brand)">掠奪</a> • <a href="Electrocution.html" title="Electrocution">電撃</a> • <a href="http://crawl.chaosforge.org/Flaming" data-untr="1" title="Flaming">火炎</a> • <a href="http://crawl.chaosforge.org/Freezing" data-untr="1" title="Freezing">冷気</a> • <a href="http://crawl.chaosforge.org/Heavy" data-untr="1" title="Heavy">重撃</a> • <a href="Holy_wrath.html" title="Holy wrath">神罰</a> • <a href="http://crawl.chaosforge.org/Pain_(brand)" data-untr="1" title="Pain (brand)">苦痛</a> • <a href="http://crawl.chaosforge.org/Protection" data-untr="1" title="Protection">護り</a> • <a class="mw-selflink selflink">間合い</a> • <a href="http://crawl.chaosforge.org/Spectral_(brand)" data-untr="1" title="Spectral (brand)">霊体化</a> • <a href="http://crawl.chaosforge.org/Speed_(brand)" data-untr="1" title="Speed (brand)">早業</a> • <a href="http://crawl.chaosforge.org/Vampiric" data-untr="1" title="Vampiric">吸血</a> • <a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>
+</td></tr>
+<tr>
+<th> 武器種専用
+</th>
+<td><a href="Devious.html" title="Devious">狡猾</a> • <a href="Valour.html" title="Valour">武勇</a> • <a href="Concussion.html" title="Concussion">衝撃</a> • <a href="Sundering.html" title="Sundering">断裂</a> • <a href="Entangling.html" title="Entangling">絡みつき</a> • <a href="Rebuke.html" title="Rebuke">叱責</a>
+</td></tr>
+<tr>
+<th> アーティファクト
+</th>
+<td> <a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a> • <a href="http://crawl.chaosforge.org/Deathbane" data-untr="1" title="Deathbane">死者殺し</a> • <a href="Dragon_slaying.html" title="Dragon slaying">竜殺し</a> • <a href="Reaping.html" title="Reaping">刈り取り</a> • <a href="Silver.html" title="Silver">銀</a>
+</td></tr>
+<tr>
+<th colspan="2"> 射撃武器
+</th>
+<td> <a href="http://crawl.chaosforge.org/Antimagic" data-untr="1" title="Antimagic">反魔法</a> • <a href="http://crawl.chaosforge.org/Draining_(brand)" data-untr="1" title="Draining (brand)">掠奪</a> • <a href="Electrocution.html" title="Electrocution">電撃</a> • <a href="http://crawl.chaosforge.org/Flaming" data-untr="1" title="Flaming">火炎</a> • <a href="http://crawl.chaosforge.org/Freezing" data-untr="1" title="Freezing">冷気</a> • <a href="http://crawl.chaosforge.org/Heavy" data-untr="1" title="Heavy">重撃</a> • <a href="Penetration.html" title="Penetration">貫通</a> • <a href="http://crawl.chaosforge.org/Speed_(brand)" data-untr="1" title="Speed (brand)">早業</a>
+</td></tr>
+<tr>
+<th colspan="2"> 投擲武器
+</th>
+<td> <a href="http://crawl.chaosforge.org/Atropa" data-untr="1" title="Atropa">アトロパ毒</a> • <a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a> • <a href="http://crawl.chaosforge.org/Datura" data-untr="1" title="Datura">ダチュラ毒</a> • <a href="http://crawl.chaosforge.org/Disjunction_(brand)" data-untr="1" title="Disjunction (brand)">分解</a> • <a href="http://crawl.chaosforge.org/Poisoned" data-untr="1" title="Poisoned">毒</a> • <a href="Silver.html" title="Silver">銀</a>
+</td></tr></table>
+</center>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

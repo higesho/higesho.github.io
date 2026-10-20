@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>チャネリング &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="チャネリング(Channeling)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>チャネリング <span class="en">Channeling</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Channeling">Channeling</a>」(0.34 向け、2026-02-17 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Channeling&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><i><a href="http://crawl.chaosforge.org/Searing_Ray" data-untr="1" title="Searing Ray">焼灼の光線</a>のように、効果を出すのに何ターンも集中し続ける必要がある呪文については、<a href="http://crawl.chaosforge.org/Channeling_spell" data-untr="1" title="Channeling spell">詠唱を続ける呪文</a>を参照。</i>
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 使用者の魔力の回復速度を劇的に高める。効果の持続時間は祈祷のスキルに応じて延びる。
+</td></tr></table>
+<p><b>チャネリング(Channeling)</b>は、キャラクターの MP を受け身で回復させることを指す。<a href="http://crawl.chaosforge.org/Sublimation_of_Blood" data-untr="1" title="Sublimation of Blood">血の昇華</a>の呪文のように 1 ターンの行動で MP を回復する方法とは区別される。種類は二つあり、発動する能力を使う必要がある能動的なチャネリングと、装備品から生じてプレイヤーが何もしなくても起こる受動的なチャネリングがある。
+</p><p><a href="http://crawl.chaosforge.org/Djinn" data-untr="1" class="mw-redirect" title="Djinn">ジンニー</a>は MP を使わないので、どの種類のチャネリングも利用できない。
+</p>
+<h2><span class="mw-headline" id="Active_Channeling">能動的なチャネリング</span></h2>
+<p><b>魔力回復強化</b>は、<a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a>の信者が <a href="http://crawl.chaosforge.org/MP" data-untr="1" class="mw-redirect" title="MP">MP</a> をずっと速く回復できるようになる<a href="http://crawl.chaosforge.org/Ability" data-untr="1" title="Ability">能力</a>だ。<a href="Piety.html" title="Piety">信仰心</a>が 1* になると授かる。
+</p>
+<blockquote>
+<p><b>成功率:</b> (60 + 4*<a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a>)/100 + <a href="Piety.html" title="Piety">信仰心</a>/25<br />
+<b>回復する MP:</b> 1 ターンに 3〜5 を (3 + 2d(2/3 * 祈祷)/2) ターンのあいだ。平均で (3 + 祈祷/3) ターン
+</p>
+</blockquote>
+<h2><span class="mw-headline" id="Passive_Channeling">受動的なチャネリング</span></h2>
+<p><a href="Energy.html" title="Energy">活力</a>の<a href="Orb.html" title="Orb">オーブ</a>は、受け身で MP を回復させることがある。呪文の詠唱に成功したときは <code>15 * 30*Evocations/27</code> の確率で MP が戻り、詠唱に失敗したときは確率 100% で戻る。ただし、<i>素の</i><a href="http://crawl.chaosforge.org/Spell_failure" data-untr="1" class="mw-redirect" title="Spell failure">呪文の失敗率</a>が +10% される。
+</p><p>これは実際の呪文の失敗率がそのまま +10% されるという意味ではない。素の失敗率は関数を通して補正されるからだ。詳しくは<a href="Spell_Success.html#Final_Step" title="Spell Success">呪文の成功率</a>の記事を参照。たとえば:
+</p>
+<ul><li>失敗率 6% の呪文は、活力のオーブを着けると実際の失敗率が 17% になる。</li>
+<li>失敗率 2% の呪文は、活力のオーブを着けると実際の失敗率が 8% になる。</li>
+<li>失敗率 1% の呪文はまちまちだ。スキルの高さによって、実際の失敗率が 2% になることも 9% になることもある。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.34.html" title="0.34">0.34</a> より前は、受動的なチャネリングは発動のスキルに左右されなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> で受動的なチャネリングが作り直された。それまでは <code>Sources * Evocations / 108</code>(活力のオーブは 2 源&#160;; <a href="http://crawl.chaosforge.org/Staff_of_Wucad_Mu" data-untr="1" title="Staff of Wucad Mu">ウカド・ムーの杖</a>は 3 源)の確率で成功した。成功すると <code>1 / (Evocations - MP cost)</code> の確率で裏目に出て、知力を 1〜5 吸い取られるか、<a href="http://crawl.chaosforge.org/Confusion" data-untr="1" title="Confusion">混乱</a>させられた。今ではウカド・ムーはオーブになっているので、チャネリングを重ねることは物理的にできない。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> で、受動的なチャネリングの源を複数重ねられるようになり、<a href="Energy.html" title="Energy">活力</a>の<a href="Orb.html" title="Orb">オーブ</a>も追加された。源 1 つあたりの成功率は下がったが、どのアイテムも複数の源として数えられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、ウカド・ムーの杖の成功率は <code> Evocations / 81</code> で(のちに <code> Evocations / 54</code> に強化)、裏目に出たときは MP が戻らなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、<a href="http://crawl.chaosforge.org/Staff_of_energy" data-untr="1" title="Staff of energy">活力の杖</a>を発動(<b>v</b>)して能動的に魔力をチャネリングできた。ほかの能動的なチャネリングのアイテムと比べて回復する MP は少なかったが、裏目に出ることはなかった。ウカド・ムーの杖も同じやり方で魔力をチャネリングできた。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、<a href="http://crawl.chaosforge.org/Crystal_ball_of_energy" data-untr="1" title="Crystal ball of energy">活力の水晶玉</a>を使って、ウカド・ムーの杖と同じくリスクの高い方法で MP を回復できた。</li>
+<li><a href="http://crawl.chaosforge.org/0.24" data-untr="1" title="0.24">0.24</a> より前は、魔力回復強化はシフ・ムーナの *** の能力だった。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、シフ・ムーナは代わりに<b>魔力回復</b>を授けていた。これは持続する効果ではなく、何度でも使える能力だった。使うたびに少しの MP(祈祷のスキルによる)を回復し、<a href="http://crawl.chaosforge.org/Hunger" data-untr="1" class="mw-redirect" title="Hunger">空腹</a>を消費したが、信仰心は消費しなかった。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

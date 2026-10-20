@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>薙ぎ払い &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="薙ぎ払い(Cleaving)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>薙ぎ払い <span class="en">Cleaving</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Cleaving">Cleaving</a>」(0.34 向け、2026-02-10 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Cleaving&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><b>薙ぎ払い</b>は主に<a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a>についている効果で、隣にいる敵すべてを一度に攻撃できる。斧か<a href="http://crawl.chaosforge.org/Lochaber_axe" data-untr="1" title="Lochaber axe">ロッホアバーアックス</a>で近接攻撃をするとき、<a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐の形態</a>のとき、<a href="http://crawl.chaosforge.org/Xom" data-untr="1" title="Xom">ゾム</a>による<b>薙払い</b>状態のときに、攻撃のたびに薙ぎ払いが起こる。強力な単体の敵を倒すには斧は最適な武器とはいえないが、敵の群れを相手にするなら、ほかのどの武器にも勝る。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Reach-cleave"><span class="tocnumber">1.1</span> <span class="toctext">リーチの薙ぎ払い</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Tips_.26_Tricks"><span class="tocnumber">2.1</span> <span class="toctext">小技</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>敵を攻撃するたびに、自分に隣接するすべてのマスにも、ダメージ0.7倍で攻撃が及ぶ。
+</p>
+<pre>.....
+.sPs.
+.s@s.
+.sss.
+.....<br /><br />@ = あなた
+P = 主目標(ダメージ100%)
+s = 副目標(ダメージ70%、補助攻撃なし)
+. = 攻撃の及ばないマス
+</pre>
+<p>また、<a href="http://crawl.chaosforge.org/Auxiliary_attack" data-untr="1" title="Auxiliary attack">補助攻撃</a>は「主目標」にしか出ない。ダメージはモンスターごとに別々に計算されるので、当たる相手と外れる相手が出ることもあるし、運しだいで副目標のほうに大きなダメージが入ることもある。
+</p><p>この効果は味方を巻き込まない。<a href="http://crawl.chaosforge.org/Confuse" data-untr="1" title="Confuse">混乱</a>しているときも同じだ。ただし、混乱して味方を主目標として殴ってしまうことはある。薙ぎ払いは壁などの<a href="http://crawl.chaosforge.org/Dungeon_features" data-untr="1" class="mw-redirect" title="Dungeon features">迷宮の地形</a>をまったく気にせず、隣接するマスには必ず攻撃が届く。
+</p>
+<h3><span class="mw-headline" id="Reach-cleave">リーチの薙ぎ払い</span></h3>
+<p><a href="Sundering.html" title="Sundering">断裂</a>のブランドで7回続けて攻撃したとき、ゾムの薙払い状態で<a href="http://crawl.chaosforge.org/Reach" data-untr="1" class="mw-redirect" title="Reach">リーチ</a>攻撃をしたとき、<a href="http://crawl.chaosforge.org/Lochaber_axe" data-untr="1" title="Lochaber axe">ロッホアバーアックス</a>で攻撃したときは、2マス以内のすべての敵に薙ぎ払いが当たる。
+</p>
+<pre>.......
+.ssPss.
+.sssss.
+.ss@ss.
+.sssss.
+.sssss.
+.......<br /><br />
+P = 主目標(ダメージ100%)
+s = 副目標(ダメージ70%)
+</pre>
+<p><a href="http://crawl.chaosforge.org/Aqua_Form" data-untr="1" class="mw-redirect" title="Aqua Form">水の形態</a>では薙ぎ払いの範囲は広がらない(主目標と、普段の薙ぎ払いで当たる相手を攻撃する。ほかにリーチの手段がなければ最大9体まで)。同じように、薙払い状態で<a href="http://crawl.chaosforge.org/Rift" data-untr="1" title="Rift">リフト</a>を使っても、当たるのは主目標と2マス以内のモンスターだけだ。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>薙ぎ払いがあっても、<b>囲まれるより、1対1か通路で戦うほうがよい</b>。
+</p>
+<ul><li>隣接するモンスターが1体なら、こちらが与えるダメージは100%、モンスターから受けるダメージも100%だ。</li>
+<li>隣接するモンスターが2体なら、こちらは170%のダメージを与えるが、モンスターからは200%のダメージを受ける。</li></ul>
+<p>隣のモンスターが多いほど、この差は開いていく。とはいえ、どうしても囲まれてしまうことはある。足の速い敵に群がられたり、近くに通路のない場所で群れに出くわしたりした場合だ。複数の敵と隣り合うのが<i>避けられない</i>とき、薙ぎ払いは実に頼もしい。
+</p>
+<h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
+<ul><li>薙ぎ払いが活きるのは、複数の敵を相手にするときだ。そのため、打たれ強い肉弾戦のキャラクターがいちばん恩恵を受ける。守り(HP、AC、EV)をおろそかにしないこと。
+<ul><li>薙ぎ払いは<a href="http://crawl.chaosforge.org/Vampiric" data-untr="1" title="Vampiric">吸血</a>のブランドや、敵を倒すと回復する神(召喚されたもの以外のすべての敵に対する<a href="Makhleb.html" title="Makhleb">マクレブ</a>、邪悪な敵に対する<a href="http://crawl.chaosforge.org/TSO" data-untr="1" class="mw-redirect" title="TSO">輝けるもの</a>)と相性がよい。</li></ul></li>
+<li>敵の一団をまとめて相手にするのが危険そうなら、階段ダンスや通路を使って、一度に1体ずつ戦うようにすることをためらわないこと。</li>
+<li>モンスターを<a href="http://crawl.chaosforge.org/Tab" data-untr="1" title="Tab">Tab</a>で次々に斬っていくのはいかにもそれらしいが、自分で狙いを決めたほうがよい。自動戦闘の攻撃の選び方は、最善であることがまれだ。</li>
+<li>薙ぎ払いは<a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>なモンスターにも役立つ。モンスターの正確な位置がわからないときは、<b>v</b> か <b>Ctrl + 方向</b>で武器を振ろう。見えない敵をどこに攻撃するか当て推量する必要がなくなる。</li>
+<li><a href="http://crawl.chaosforge.org/Fedhas" data-untr="1" class="mw-redirect" title="Fedhas">フェダス</a>を信仰していない限り、周りの<a href="http://crawl.chaosforge.org/Plant" data-untr="1" title="Plant">植物</a>や<a href="http://crawl.chaosforge.org/Fungi" data-untr="1" class="mw-redirect" title="Fungi">キノコ類</a>も攻撃してしまう。遮蔽物として長くはもたないと思っておくこと。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、混乱中には薙ぎ払いが働かなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、薙ぎ払いは壁を越えられなかった。主目標から左右両方向に(半周まで)回りながら途中の壁を調べ、壁があればその先の敵には当たらなかった。副目標へのダメージも70%ではなく75%だった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、主目標の真後ろのマスには薙ぎ払いが及ばなかった。</li>
+<li>薙ぎ払いは <a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> で実装された。同時に、最も強力な3種類の斧の基本ダメージが引き下げられた。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

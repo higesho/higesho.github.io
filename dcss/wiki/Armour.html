@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>防具 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="防具(Armour)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>防具 <span class="en">Armour</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Armour">Armour</a>」(0.33 向け、2026-05-16 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Armour&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><i>スキルについては<a href="Armour_(skill).html" title="Armour (skill)">甲冑(スキル)</a>を参照。</i>
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 「人の子をこれほど歪めるものはない、<br />甲冑の鉄の締め金ほどには。」
+<p>――ウィリアム・ブレイク「無垢の予兆」99-100行(1803年)
+</p>
+</td></tr></table>
+<p><b>防具</b>は、攻撃から身を守るために身につける装備すべてを指す。防具は<a href="Armour_class.html" title="Armour class">アーマークラス</a>(AC)を上げ、AC は近接攻撃、遠隔攻撃、そしてたいていの魔法攻撃を防ぐ。防具には<a href="http://crawl.chaosforge.org/Ego" data-untr="1" title="Ego">エゴ</a>が付くこともあり、さらに恩恵が得られる。
+</p><p>ただし<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>には<a href="http://crawl.chaosforge.org/Encumbrance" data-untr="1" class="mw-redirect" title="Encumbrance">重さ</a>がある。重い胴鎧を着るほど <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> と<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>が下がり、<a href="http://crawl.chaosforge.org/Spell_failure" data-untr="1" class="mw-redirect" title="Spell failure">呪文の失敗率</a>が上がり、<a href="http://crawl.chaosforge.org/Ranged_Weapons" data-untr="1" title="Ranged Weapons">射撃武器</a>での攻撃が遅くなる。これらのペナルティは<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>と<a href="http://crawl.chaosforge.org/Armour_skill" data-untr="1" class="mw-redirect" title="Armour skill">甲冑スキル</a>で軽くなるが、なくなりはしない。重さによるペナルティがあるのは胴鎧と<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>だけで、ほかの防具は何の代償もなく身につけられる。
+</p><p><a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>は AC ではなく <a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> を上げるが、ふつうはこれも「防具」のひとつとして扱われる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Armour_Locations"><span class="tocnumber">1</span> <span class="toctext">防具の部位</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Encumbrance_Rating"><span class="tocnumber">2</span> <span class="toctext">重さ</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Calculating_AC_Value"><span class="tocnumber">3</span> <span class="toctext">AC の計算</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Base_AC"><span class="tocnumber">3.1</span> <span class="toctext">基本 AC</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Multipliers"><span class="tocnumber">3.2</span> <span class="toctext">倍率</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Armour_skill"><span class="tocnumber">3.3</span> <span class="toctext">甲冑スキル</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Bonuses"><span class="tocnumber">3.4</span> <span class="toctext">加算されるボーナス</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Tables_of_Armours"><span class="tocnumber">4</span> <span class="toctext">防具の一覧</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Body_Armour"><span class="tocnumber">4.1</span> <span class="toctext">胴鎧</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Shields"><span class="tocnumber">4.2</span> <span class="toctext">盾</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Headgear"><span class="tocnumber">4.3</span> <span class="toctext">頭の防具</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Miscellaneous"><span class="tocnumber">4.4</span> <span class="toctext">その他</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Egos"><span class="tocnumber">5</span> <span class="toctext">エゴ</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Restrictions_and_Mutations"><span class="tocnumber">6</span> <span class="toctext">制限と変異</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#History"><span class="tocnumber">7</span> <span class="toctext">変更履歴</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Changes_to_armour_types"><span class="tocnumber">7.1</span> <span class="toctext">防具の種類の変更</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Armour_Locations">防具の部位</span></h2>
+<p><i>Crawl</i> には防具を身につける部位が 6 つあり、<b>防具スロット</b>とも呼ばれる。<a href="http://crawl.chaosforge.org/Species" data-untr="1" title="Species">種族</a>によっては着られる防具の種類に制限があり、多くの<a href="http://crawl.chaosforge.org/Transformation" data-untr="1" title="Transformation">変身</a>でも一部の防具が使えなくなる。
+</p>
+<ul><li><b><a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a></b>は胴体に着る、AC のおもな源だ。<a href="http://crawl.chaosforge.org/Deformed" data-untr="1" title="Deformed">奇形の体</a>の変異があると、胴鎧による AC が減る。重い胴鎧ほどペナルティも大きい。</li>
+<li><b><a href="http://crawl.chaosforge.org/Gloves" data-untr="1" title="Gloves">手袋</a></b>は手にはめる。<a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a>の変異がランク 3 だと使えない。</li>
+<li><b><a href="http://crawl.chaosforge.org/Boots" data-untr="1" title="Boots">ブーツ</a></b>は足に履く。<a href="http://crawl.chaosforge.org/Talons" data-untr="1" title="Talons">足爪</a>か<a href="http://crawl.chaosforge.org/Hooves" data-untr="1" title="Hooves">蹄</a>の変異がランク 3 だと使えない。
+<ul><li><a href="http://crawl.chaosforge.org/Armataur" data-untr="1" title="Armataur">アルマタウル</a>と<a href="Naga.html" title="Naga">ナーガ</a>は、ブーツの代わりに体の後ろ半分に<b><a href="http://crawl.chaosforge.org/Barding" data-untr="1" title="Barding">馬甲</a></b>を着けられる。馬甲は AC が高く、強化値の上限も高いが、<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> が少し下がる。</li></ul></li>
+<li><b><a href="http://crawl.chaosforge.org/Helmet" data-untr="1" title="Helmet">兜</a></b>と<b><a href="http://crawl.chaosforge.org/Hat" data-untr="1" title="Hat">帽子</a></b>は頭にかぶる。<a href="http://crawl.chaosforge.org/Beak" data-untr="1" title="Beak">嘴</a>、<a href="http://crawl.chaosforge.org/Antennae" data-untr="1" title="Antennae">触角</a>、<a href="http://crawl.chaosforge.org/Horns" data-untr="1" title="Horns">角</a>の変異があると、かぶれる物が限られる。</li>
+<li><b><a href="http://crawl.chaosforge.org/Cloak" data-untr="1" title="Cloak">クローク</a></b>と<b><a href="http://crawl.chaosforge.org/Scarf" data-untr="1" title="Scarf">スカーフ</a></b>は肩に掛ける。悪魔の血族の<a href="http://crawl.chaosforge.org/Weakening_Stinger" data-untr="1" title="Weakening Stinger">弱体化の毒針</a>があると使えない。</li>
+<li><b><a href="http://crawl.chaosforge.org/Shields" data-untr="1" title="Shields">盾</a></b>と<b><a href="Orb.html" title="Orb">オーブ</a></b>は腕に持つ。持っていると<a href="http://crawl.chaosforge.org/Handedness" data-untr="1" title="Handedness">両手持ち</a>の武器は使えない。盾は <a href="http://crawl.chaosforge.org/SH" data-untr="1" class="mw-redirect" title="SH">SH</a> をもたらすが、スキルが足りないと呪文詠唱と EV の妨げになる。</li></ul>
+<p>盾も含め、防具はどれも脱ぐのに 5 ターン、着るのに 5 ターンかかる。防具を別のものに着替えると合わせて 10 ターンだ。防具の着脱中にダメージを受けると、着脱をやめるかどうか聞かれる。
+</p>
+<h2><span class="mw-headline" id="Encumbrance_Rating">重さ</span></h2>
+<p>たいていの<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>は、AC に見合った<a href="http://crawl.chaosforge.org/Encumbrance_rating" data-untr="1" title="Encumbrance rating">重さ</a>を持つ。<a href="http://crawl.chaosforge.org/Robe" data-untr="1" title="Robe">ローブ</a>や<a href="http://crawl.chaosforge.org/Leather_armour" data-untr="1" title="Leather armour">レザーアーマー</a>は軽いので EV のペナルティはほとんど、あるいはまったくない。反対の端にあるのが<a href="http://crawl.chaosforge.org/Plate_armour" data-untr="1" title="Plate armour">プレートアーマー</a>や<a href="http://crawl.chaosforge.org/Crystal_plate_armour" data-untr="1" title="Crystal plate armour">水晶の鎧</a>で、動きにくいがとてつもなく堅い。
+</p><p><a href="http://crawl.chaosforge.org/Encumbrance_rating" data-untr="1" title="Encumbrance rating">重さ</a>が大きいほど、次のようになる。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Ev" data-untr="1" class="mw-redirect" title="Ev">回避</a>が下がる</li>
+<li><a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>性が下がる</li>
+<li>呪文の成功率が下がる</li>
+<li><a href="http://crawl.chaosforge.org/Ranged_Weapons" data-untr="1" title="Ranged Weapons">射撃武器</a>での攻撃が遅くなる(<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>武器は含まない)</li></ul>
+<p>甲冑スキルを上げると重さの影響が減り(1 レベルごとに -2.2%、甲冑 27 で -60%)、防具から得られる AC の合計も増える。<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>が高くても助けになる。隠密へのペナルティだけは常に変わらない。詳しくは<a href="http://crawl.chaosforge.org/Encumbrance_rating" data-untr="1" title="Encumbrance rating">重さ</a>のページを参照。
+</p><p><a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>にも重さがあるが、胴鎧とはしくみが違う。詳しくは<a href="http://crawl.chaosforge.org/Shields" data-untr="1" title="Shields">盾</a>を参照。
+</p><p>重さがあるのは胴鎧と盾だけだ。<a href="http://crawl.chaosforge.org/Barding" data-untr="1" title="Barding">馬甲</a>にも EV のペナルティがあるが、これは重さ(ER)とは関係ない。
+</p>
+<h2><span class="mw-headline" id="Calculating_AC_Value">AC の計算</span></h2>
+<p>計算の順に並べる。
+</p>
+<h3><span class="mw-headline" id="Base_AC">基本 AC</span></h3>
+<p>「基本 AC」の合計は、身につけている防具すべての基本 AC の<i>和</i>だ。防具の<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化値</a>はここには含まない。
+</p>
+<h3><span class="mw-headline" id="Multipliers">倍率</span></h3>
+<p>以下の倍率は、胴鎧の基本 AC にだけかかる。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Deformed" data-untr="1" title="Deformed">奇形の体</a>か<a href="http://crawl.chaosforge.org/Pseudopods" data-untr="1" title="Pseudopods">仮足</a>の変異があると、胴鎧の AC が 50% 減る。この 2 つの変異は重ならない。</li>
+<li>一部の<a href="http://crawl.chaosforge.org/Form" data-untr="1" class="mw-redirect" title="Form">変身</a>は胴鎧の基本 AC に倍率をかける。
+<ul><li><a href="http://crawl.chaosforge.org/Maw_Form" data-untr="1" class="mw-redirect" title="Maw Form">大口</a>: 胴鎧の AC -75%</li>
+<li><a href="http://crawl.chaosforge.org/Blade_Form" data-untr="1" class="mw-redirect" title="Blade Form">刃の手</a>: スキル 12 で胴鎧の AC -60%、スキル 20 で -0% まで小さくなる</li>
+<li><a href="http://crawl.chaosforge.org/Fortress_Crab_Form" data-untr="1" class="mw-redirect" title="Fortress Crab Form">蟹の形態</a>: スキル 12 で胴鎧の AC +75%、スキル 20 で +130% まで大きくなる</li></ul></li></ul>
+<p>これらの補正は掛け算で重なる(胴鎧の基本 AC は最大で -100% まで下がる)。
+</p>
+<h3><span class="mw-headline" id="Armour_skill">甲冑スキル</span></h3>
+<p><a href="http://crawl.chaosforge.org/Armour_skill" data-untr="1" class="mw-redirect" title="Armour skill">甲冑スキル</a>は、上の倍率をかけたあとの AC にボーナスを与える。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<pre>  (基本 AC) * (1 + 甲冑スキル / 22)
+</pre>
+<p>甲冑スキル 1 レベルごとに基本 AC がおよそ +4.5% される計算だ。このボーナスは胴鎧だけでなく、すべての防具にかかる。
+</p><p>内部では AC は小数第 2 位まで計算されている。たいていの画面では AC は小数点以下を切り捨てた整数で表示される。アイテムの説明では、AC が小数第 1 位まで丸めて表示され、そのアイテムを着けたり外したりしたときの AC の変化も示される。
+</p>
+<h3><span class="mw-headline" id="Bonuses">加算されるボーナス</span></h3>
+<p>そのほかの AC の源はすべて AC にそのまま足される固定のボーナスで、防具や甲冑スキルの影響を受けない。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<ul><li>防具の<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化値</a>、<a href="http://crawl.chaosforge.org/Rings_of_protection" data-untr="1" class="mw-redirect" title="Rings of protection">護りの指輪</a>、<a href="http://crawl.chaosforge.org/Artefact" data-untr="1" title="Artefact">アーティファクト</a>のボーナスによる値</li>
+<li><a href="http://crawl.chaosforge.org/Ozocubu%27s_Armour" data-untr="1" title="Ozocubu&#39;s Armour">オゾクブの鎧</a></li>
+<li><a href="http://crawl.chaosforge.org/Protection" data-untr="1" title="Protection">護り</a>のエゴ</li>
+<li><a href="http://crawl.chaosforge.org/Mutation" data-untr="1" title="Mutation">変異</a></li>
+<li><a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>や<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>のような<a href="http://crawl.chaosforge.org/Transformation" data-untr="1" title="Transformation">変身</a>そのものが持つ AC</li></ul>
+<h2><span class="mw-headline" id="Tables_of_Armours">防具の一覧</span></h2>
+<h3><span class="mw-headline" id="Body_Armour">胴鎧</span></h3>
+<table class="wikitable sortable">
+<tr>
+<th scope="col"> 防具
+</th>
+<th scope="col"> 基本 AC
+</th>
+<th scope="col"> 重さ
+</th>
+<th scope="col"> 着用できる体格
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Robe" data-untr="1" title="Robe">ローブ</a>
+</td>
+<td align="right"> 2
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Leather_armour" data-untr="1" title="Leather armour">レザーアーマー</a>
+</td>
+<td align="right"> 3
+</td>
+<td align="right"> 4
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Ring_mail" data-untr="1" title="Ring mail">リングメイル</a>
+</td>
+<td align="right"> 5
+</td>
+<td align="right"> 7
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="Scale_mail.html" title="Scale mail">スケイルメイル</a>
+</td>
+<td align="right"> 6
+</td>
+<td align="right"> 10
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Chain_mail" data-untr="1" title="Chain mail">鎖かたびら</a>
+</td>
+<td align="right"> 8
+</td>
+<td align="right"> 14
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Plate_armour" data-untr="1" title="Plate armour">プレートアーマー</a>
+</td>
+<td align="right"> 10
+</td>
+<td align="right"> 18
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Crystal_plate_armour" data-untr="1" title="Crystal plate armour">水晶の鎧</a>
+</td>
+<td align="right"> 14
+</td>
+<td align="right"> 23
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Animal_skin" data-untr="1" title="Animal skin">獣の皮</a>
+</td>
+<td align="right"> 2
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Troll_leather_armour" data-untr="1" title="Troll leather armour">トロル革の鎧</a>
+</td>
+<td align="right"> 3
+</td>
+<td align="right"> 4
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Steam_dragon_scales" data-untr="1" title="Steam dragon scales">スチームドラゴンの鱗一式</a>
+</td>
+<td align="right"> 5
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Acid_dragon_scales" data-untr="1" title="Acid dragon scales">アシッドドラゴンの鱗一式</a>
+</td>
+<td align="right"> 6
+</td>
+<td align="right"> 5
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>
+</td>
+<td align="right"> 7
+</td>
+<td align="right"> 7
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Quicksilver_dragon_scales" data-untr="1" title="Quicksilver dragon scales">水銀ドラゴンの鱗一式</a>
+</td>
+<td align="right"> 9
+</td>
+<td align="right"> 7
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>
+</td>
+<td align="right"> 8
+</td>
+<td align="right"> 9
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="Ice_dragon_scales.html" title="Ice dragon scales">アイスドラゴンの鱗一式</a>
+</td>
+<td align="right"> 9
+</td>
+<td align="right"> 11
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="Pearl_dragon_scales.html" title="Pearl dragon scales">パールドラゴンの鱗一式</a>
+</td>
+<td align="right"> 10
+</td>
+<td align="right"> 11
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Storm_dragon_scales" data-untr="1" title="Storm dragon scales">ストームドラゴンの鱗一式</a>
+</td>
+<td align="right"> 10
+</td>
+<td align="right"> 15
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Shadow_dragon_scales" data-untr="1" title="Shadow dragon scales">シャドウドラゴンの鱗一式</a>
+</td>
+<td align="right"> 11
+</td>
+<td align="right"> 15
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Golden_dragon_scales" data-untr="1" title="Golden dragon scales">ゴールドドラゴンの鱗一式</a>
+</td>
+<td align="right"> 12
+</td>
+<td align="right"> 23
+</td>
+<td align="right"> すべて
+</td></tr></table>
+<h3><span class="mw-headline" id="Shields">盾</span></h3>
+<table class="wikitable">
+<tr>
+<th scope="col"> 盾
+</th>
+<th scope="col"> SH
+</th>
+<th scope="col"> 重さ
+</th>
+<th scope="col"> 着用できる体格
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>
+</td>
+<td align="right"> 3
+</td>
+<td align="right"> 5
+</td>
+<td align="right"> とても小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>
+</td>
+<td align="right"> 8
+</td>
+<td align="right"> 10
+</td>
+<td align="right"> 小さい〜大きい
+</td></tr>
+<tr>
+<td><a href="Orb.html" title="Orb">オーブ</a>
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="Tower_shield.html" title="Tower shield">タワーシールド</a>
+</td>
+<td align="right"> 13
+</td>
+<td align="right"> 15
+</td>
+<td align="right"> 中くらい〜巨大
+</td></tr></table>
+<h3><span class="mw-headline" id="Headgear">頭の防具</span></h3>
+<table class="wikitable">
+<tr>
+<th scope="col"> 頭の防具
+</th>
+<th scope="col"> AC
+</th>
+<th scope="col"> 重さ
+</th>
+<th scope="col"> 着用できる体格
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Helmet" data-untr="1" title="Helmet">兜</a>
+</td>
+<td align="right"> 1
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Hat" data-untr="1" title="Hat">帽子</a>
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> すべて
+</td></tr></table>
+<h3><span class="mw-headline" id="Miscellaneous">その他</span></h3>
+<table class="wikitable sortable">
+<tr>
+<th scope="col"> 防具
+</th>
+<th scope="col"> AC
+</th>
+<th scope="col"> 重さ
+</th>
+<th scope="col"> 着用できる体格
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Boots" data-untr="1" title="Boots">ブーツ</a>
+</td>
+<td align="right"> 1
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Cloak" data-untr="1" title="Cloak">クローク</a>
+</td>
+<td align="right"> 1
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Scarf" data-untr="1" title="Scarf">スカーフ</a>
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> すべて
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Gloves" data-untr="1" title="Gloves">手袋</a>
+</td>
+<td align="right"> 1
+</td>
+<td align="right"> 0
+</td>
+<td align="right"> 小さい〜中くらい
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Barding" data-untr="1" title="Barding">馬甲</a>
+</td>
+<td align="right"> 4
+</td>
+<td align="right"> -6
+</td>
+<td align="right"> ナーガ/アルマタウル
+</td></tr></table>
+<h2><span class="mw-headline" id="Egos">エゴ</span></h2>
+<p>強化された防具には<a href="http://crawl.chaosforge.org/Ego" data-untr="1" title="Ego">エゴ</a>が付いていることがあり、追加の性質をもたらす。
+</p>
+<h2><span class="mw-headline" id="Restrictions_and_Mutations">制限と変異</span></h2>
+<ul><li>嘴、角、触角があると兜はかぶれない。帽子ならかぶれる。
+<ul><li>ただし角 3 と触角 3 では、頭の防具はどれもかぶれない。</li></ul></li>
+<li>蹄 3 と足爪 3 ではブーツを履けない。</li>
+<li>爪 3 では手袋をはめられない。</li>
+<li>弱体化の毒針があるとクロークを着られない。</li></ul>
+<p><a href="http://crawl.chaosforge.org/Transformation" data-untr="1" title="Transformation">変身</a>によっても、身につけられるアイテムが変わる。詳しくはそのページを参照。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a> より前は、甲冑スキルのボーナスは胴鎧の基本 AC にかかる倍率を無視していた。</li>
+<li><a href="http://crawl.chaosforge.org/0.32" data-untr="1" title="0.32">0.32</a> より前は、AC は常に整数に切り捨てられていた。そのため AC はなめらかには増えず、甲冑スキルが特定の値に達したときに上がっていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、胴鎧の重さで<a href="http://crawl.chaosforge.org/Ranged_Weapons" data-untr="1" title="Ranged Weapons">射撃武器</a>が遅くなることは<i>なかった</i>。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、防具と盾で<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>が下がった。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、<a href="http://crawl.chaosforge.org/GDR" data-untr="1" class="mw-redirect" title="GDR">GDR</a> は <a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> の合計ではなく胴鎧をもとに決まっていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、重い防具を着ると<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>と<a href="http://crawl.chaosforge.org/Unarmed_combat" data-untr="1" class="mw-redirect" title="Unarmed combat">徒手格闘</a>の攻撃が遅くなった。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、軽い防具には呪文の成功率への小さなペナルティがなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、防具の着脱には一律の 5 ターンではなく <code>AC + 1</code> ターンかかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は<a href="http://crawl.chaosforge.org/Racial_equipment" data-untr="1" title="Racial equipment">種族ごとの防具</a>があった。エルフの防具は呪文詠唱の妨げが少なく、ドワーフの防具は AC が高いぶん詠唱の妨げも大きく、オークの防具は<a href="http://crawl.chaosforge.org/Hill_Orc" data-untr="1" title="Hill Orc">丘オーク</a>が着たときだけ性能が上がった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> で回避のペナルティのしくみが変わった。「基本回避ペナルティ」(Base Evasion Penalty、BEVP)が<a href="http://crawl.chaosforge.org/Encumbrance_rating" data-untr="1" title="Encumbrance rating">重さ</a>に置き換わり、すべての防具で数値が付け直された(<a rel="nofollow" class="external text" href="https://crawl.develz.org/wiki/doku.php?id=dcss:brainstorm:mutation:stats&amp;#effect_of_strength_on_armour_evp">開発者 wiki</a> を参照)。</li>
+<li><a href="http://crawl.chaosforge.org/0.11" data-untr="1" title="0.11">0.11</a> より前は、EV のペナルティが -1 以上ある装備を着ているときしか甲冑スキルを鍛えられなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.6" data-untr="1" class="mw-redirect" title="0.6">0.6</a> より前は、胴鎧が「軽装鎧」と「重装鎧」に分かれていた。軽装鎧を着ると躱し身が、重装鎧を着ると甲冑が鍛えられた。</li></ul>
+<h3><span class="mw-headline" id="Changes_to_armour_types">防具の種類の変更</span></h3>
+<ul><li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> で<a href="http://crawl.chaosforge.org/Chain_mail" data-untr="1" title="Chain mail">鎖かたびら</a>の重さが減った(15 -&gt; 14)。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> で<a href="http://crawl.chaosforge.org/Shadow_dragon_scales" data-untr="1" title="Shadow dragon scales">シャドウドラゴンの鱗一式</a>の AC が上がった(10 -&gt; 11)。</li>
+<li>オーブは <a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> で追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、馬甲が<a href="http://crawl.chaosforge.org/Naga_barding" data-untr="1" title="Naga barding">ナーガの馬甲</a>と<a href="http://crawl.chaosforge.org/Centaur_barding" data-untr="1" title="Centaur barding">セントールの馬甲</a>に分かれていた。</li>
+<li>スカーフは <a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> で追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、竜の鱗一式は「ドラゴンの鎧」という名前だった。また、トロルやドラゴンが落とすのは皮だけで、鎧にするにはその皮に<a href="http://crawl.chaosforge.org/Scroll_of_enchant_armour" data-untr="1" title="Scroll of enchant armour">防具強化の巻物</a>を使う必要があった。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> で<a href="Scale_mail.html" title="Scale mail">スケイルメイル</a>の重さが減った(11 -&gt; 10)。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> で、ゴールドドラゴンの鎧、水晶の鎧、プレートアーマーの重さが減った(それぞれ 27 -&gt; 25、24 -&gt; 23、19 -&gt; 18)。まだらドラゴンの鎧は重さが 4 から 5 に増えた。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> で<a href="http://crawl.chaosforge.org/Splint_mail" data-untr="1" title="Splint mail">スプリントメイル</a>が削除された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/player.cc#L5691">player.cc:5691</a> (0.28.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/player.cc#L5914">player.cc:5914</a> (0.28.0)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/Skill" data-untr="1" title="Skill">スキル</a>
+</th></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Weapons" data-untr="1" class="mw-redirect" title="Weapons">武器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a> • <a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a> • <a href="http://crawl.chaosforge.org/Ranged_Weapons" data-untr="1" title="Ranged Weapons">射撃武器</a>
+<p><a href="http://crawl.chaosforge.org/Axes" data-untr="1" title="Axes">斧</a> • <a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a> • <a href="http://crawl.chaosforge.org/Polearms" data-untr="1" title="Polearms">長柄武器</a> • <a href="http://crawl.chaosforge.org/Staves" data-untr="1" title="Staves">棒術</a> • <a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a> • <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</p>
+</td></tr>
+<tr>
+<th> 身体
+</th>
+<td> <a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a> • <a href="Armour_(skill).html" title="Armour (skill)">甲冑</a> • <a href="http://crawl.chaosforge.org/Dodging" data-untr="1" title="Dodging">躱し身</a> • <a href="http://crawl.chaosforge.org/Stealth_(skill)" data-untr="1" title="Stealth (skill)">隠密</a> • <a href="http://crawl.chaosforge.org/Shields_(skill)" data-untr="1" title="Shields (skill)">盾</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Magic" data-untr="1" title="Magic">魔法</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a> • <a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a> • <a href="Evocations.html" title="Evocations">発動</a> • <a href="http://crawl.chaosforge.org/Shapeshifting" data-untr="1" title="Shapeshifting">変身術</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/List_of_spells_by_school" data-untr="1" title="List of spells by school">呪文の系統</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Air" data-untr="1" class="mw-redirect" title="Air">風の魔術</a> • <a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a> • <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> • <a href="http://crawl.chaosforge.org/Earth" data-untr="1" class="mw-redirect" title="Earth">地の魔術</a> • <a href="http://crawl.chaosforge.org/Fire_Magic" data-untr="1" title="Fire Magic">炎の魔術</a> • <a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a> • <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> • <a href="http://crawl.chaosforge.org/Ice_Magic" data-untr="1" title="Ice Magic">氷の魔術</a> • <a href="http://crawl.chaosforge.org/Necromancy" data-untr="1" title="Necromancy">死霊術</a> • <a href="http://crawl.chaosforge.org/Summoning" data-untr="1" class="mw-redirect" title="Summoning">召喚術</a> • <a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a>
+</td></tr>
+</table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

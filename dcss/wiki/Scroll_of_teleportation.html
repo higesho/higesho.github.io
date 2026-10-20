@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>テレポートの巻物 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="テレポートの巻物(Scroll of teleportation)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>テレポートの巻物 <span class="en">Scroll of teleportation</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Scroll_of_teleportation">Scroll of teleportation</a>」(0.34 向け、2026-02-05 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Scroll_of_teleportation&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<div>
+<table class="prettytable" style=" width:18em">
+
+<tr>
+<th align="left"> 種類
+</th>
+<td> 巻物
+</td></tr>
+<tr>
+<th align="left"> 名前
+</th>
+<td> テレポートの巻物
+</td></tr>
+<tr>
+<th align="left"> アイコン
+</th>
+<td> <a href="http://crawl.chaosforge.org/File:Scroll_of_teleportation.png" data-untr="1" class="image"><img alt="Scroll of teleportation.png" src="img/Scroll_of_teleportation.png" width="32" height="32" /></a>
+</td></tr></table>
+</div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 少し時間が経った後、読んだ者を無作為な地点へと転移させる巻物だ。
+</td></tr></table>
+<p><b>テレポートの巻物</b>を読むと、数ターン後にプレイヤーはランダムな場所へ<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>する。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Duration"><span class="tocnumber">1.1</span> <span class="toctext">待ち時間</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Order_of_Events"><span class="tocnumber">1.2</span> <span class="toctext">処理の順番</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Tips_.26_Tricks"><span class="tocnumber">2.1</span> <span class="toctext">小技</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>読むと、まだかかっていなければ <span class="nhsym">転位準備</span> の状態になる(または同等の <span class="nhsym">！転移！</span> の状態)。
+</p>
+<blockquote>あなたは奇妙な落ち着かない感じがした。</blockquote>
+<p>決まった時間が経つと、テレポートする。テレポート先はその階のランダムな場所で、1. 移動できる、2. 危険な<a href="http://crawl.chaosforge.org/Cloud" data-untr="1" title="Cloud">雲</a>がない、3. 特定の「テレポート禁止」の<a href="http://crawl.chaosforge.org/Vault" data-untr="1" title="Vault">ヴォールト</a>の外にある、という条件を満たすマスから選ばれる。今いるマスも候補に入る。
+</p><p>すでに <span class="nhsym">転位準備</span> か <span class="nhsym">！転移！</span> の状態のときにもう一枚読むと、その状態が取り消される。
+</p>
+<blockquote>あなたは奇妙な安定感を覚えた。</blockquote>
+<h3><span class="mw-headline" id="Duration">待ち時間</span></h3>
+<p>待ち時間(<a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">decaAut</a> 単位、つまり「ターン」)は、今いる場所と<b>「オーブ」</b>状態かどうかで決まる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<table class="prettytable">
+<tr>
+<th> 状況 </th>
+<th> 待ち時間
+</th></tr>
+<tr>
+<td> 通常 </td>
+<td> 3〜5 ターン
+</td></tr>
+<tr>
+<td> <a href="The_Realm_of_Zot.html" title="The Realm of Zot">ゾットの領域</a>にいるとき、または<a href="Orb_of_Zot.html" title="Orb of Zot">オーブ</a>を持っているとき </td>
+<td> 8〜14 ターン
+</td></tr>
+<tr>
+<td> <a href="The_Abyss.html" title="The Abyss">アビス</a>にいるとき(オーブを持っていても) </td>
+<td> 8〜19 ターン
+</td></tr></table>
+<p>待ち時間は必ずターンの整数倍になる。巻物を読むのにかかった時間も、待ち時間に含まれることに注意。例を挙げる。
+</p>
+<table class="prettytable">
+<tr>
+<th>行動 </th>
+<th> 経過時間の合計 </th>
+<th> テレポートしうるか
+</th></tr>
+<tr>
+<td>テレポートの巻物を読む(1.0 ターン) </td>
+<td> 1.0 ターン </td>
+<td> いいえ
+</td></tr>
+<tr>
+<td>待機(1.0 ターン) </td>
+<td> 2.0 ターン </td>
+<td> いいえ
+</td></tr>
+<tr>
+<td>待機(1.0 ターン) </td>
+<td> 3.0 ターン </td>
+<td> <b>はい</b>
+</td></tr>
+<tr>
+<td>待機(1.0 ターン) </td>
+<td> 4.0 ターン </td>
+<td> <b>はい</b>
+</td></tr>
+<tr>
+<td>待機(1.0 ターン) </td>
+<td> 5.0 ターン </td>
+<td> <b>はい</b>(必ずテレポート)
+</td></tr></table>
+<h3><span class="mw-headline" id="Order_of_Events">処理の順番</span></h3>
+<p>テレポートするターンには、次のことが順番に起きる。
+</p>
+<ol><li> そのターンにした行動の効果がすべて出る。</li>
+<li> 新しい行き先へ一瞬でテレポートする。</li>
+<li> その行動にかかった時間ぶん、事実上<a href="http://crawl.chaosforge.org/Wait" data-untr="1" title="Wait">待機</a>する。</li></ol>
+<p>たとえば、転位準備の状態で<a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>を唱えたとする。テレポートが起きるなら、まずファイアボールの効果が出て、次にテレポートし、テレポート先で 1.0 ターン待機することになる。
+</p><p>簡単に言えば、テレポートしたあとは、テレポート先にいるモンスターのほうが先に動けるということだ。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>テレポートの巻物は強力で、そこそこよく見つかる脱出手段だ。わずか数ターンで、元の場所から何十マスも離れたところへ飛べる。ただし、行き先は完全にランダムなので、いつも「裏目に出る」危険がある。数マスしか離れられないこともあれば、まったく新しい厄介ごとのど真ん中に放り込まれることもある! だから、テレポートは遅すぎるよりは早めに始めるようにしよう。
+</p>
+<h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
+<ul><li>テレポートの巻物を読めば転位準備の状態を消せることを覚えておこう。<a href="Wyrmhole.html" title="Wyrmhole">竜穴</a>による転位準備も消せる。</li>
+<li><a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>でもテレポートを取り消せる(ほかにかかっている効果もまとめて消える)。
+<ul><li><a href="http://crawl.chaosforge.org/Quicksilver_Bolt" data-untr="1" title="Quicksilver Bolt">水銀の矢</a>を使うモンスターや<a href="http://crawl.chaosforge.org/Wand_of_quicksilver" data-untr="1" title="Wand of quicksilver">水銀のワンド</a>を持ったモンスターも、こちらの望みにかかわらずテレポートを取り消してくることがある。</li></ul></li>
+<li>敵を片づけた階なら、テレポートの巻物を「<a href="Identification.html" title="Identification">未鑑定のまま読んで</a>」も安全だ。
+<ul><li>敵を片づけた階へ続く<a href="http://crawl.chaosforge.org/Stairs" data-untr="1" title="Stairs">上り階段</a>の上にいるときも、未鑑定のまま読んで安全だ。テレポートの巻物を読んで、すぐ次の行動で階段を上り始めれば、テレポートは必ず行き先の階で起きる。</li></ul></li>
+<li><a href="http://crawl.chaosforge.org/Runed_door" data-untr="1" class="mw-redirect" title="Runed door">ルーンで封印された扉</a>や<a href="http://crawl.chaosforge.org/Transporter" data-untr="1" title="Transporter">転送装置</a>で閉ざされた<a href="http://crawl.chaosforge.org/Vault" data-untr="1" title="Vault">ヴォールト</a>に注意しよう。「封印された」ヴォールトの多くは(すべてではないが)テレポートで中に入れてしまう。実際に入ってしまう確率は低いが、その危険は頭に入れておくこと。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、<a href="The_Realm_of_Zot.html" title="The Realm of Zot">ゾットの領域</a>でも、ゾットのオーブを拾うまではテレポートの巻物がふつうに働いた。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、<a href="http://crawl.chaosforge.org/Controlled_teleport" data-untr="1" class="mw-redirect" title="Controlled teleport">行き先を指定してテレポートする</a>ことができた。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、20% の確率で、アビスでもテレポートの待ち時間が延びなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、行き先を指定したテレポートでも待ち時間は延びなかった。さらに古いバージョンでは、オーブを持っていても待ち時間は延びなかった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/spl-transloc.cc#L837">spl-transloc.cc:837</a> (0.30.1)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 65%">
+
+<tr>
+<th><a href="http://crawl.chaosforge.org/Scroll" data-untr="1" title="Scroll">巻物</a>
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Scroll_of_acquirement" data-untr="1" title="Scroll of acquirement">獲得</a> • <a href="http://crawl.chaosforge.org/Scroll_of_amnesia" data-untr="1" title="Scroll of amnesia">忘却</a> • <a href="http://crawl.chaosforge.org/Scroll_of_butterflies" data-untr="1" title="Scroll of butterflies">蝶</a> • <a href="Scroll_of_blinking.html" title="Scroll of blinking">瞬間移動</a> • <a href="Scroll_of_brand_weapon.html" title="Scroll of brand weapon">魔力の武器</a> • <a href="http://crawl.chaosforge.org/Scroll_of_enchant_armour" data-untr="1" title="Scroll of enchant armour">防具強化</a> • <a href="http://crawl.chaosforge.org/Scroll_of_enchant_weapon" data-untr="1" title="Scroll of enchant weapon">武器強化</a> • <a href="http://crawl.chaosforge.org/Scroll_of_fear" data-untr="1" title="Scroll of fear">恐慌</a> • <a href="http://crawl.chaosforge.org/Scroll_of_fog" data-untr="1" title="Scroll of fog">煙幕</a> • <a href="http://crawl.chaosforge.org/Scroll_of_identify" data-untr="1" title="Scroll of identify">鑑定</a> • <a href="http://crawl.chaosforge.org/Scroll_of_immolation" data-untr="1" title="Scroll of immolation">焼き討ち</a> • <a href="http://crawl.chaosforge.org/Scroll_of_noise" data-untr="1" title="Scroll of noise">騒音</a> • <a href="http://crawl.chaosforge.org/Scroll_of_poison" data-untr="1" title="Scroll of poison">毒</a> • <a href="http://crawl.chaosforge.org/Scroll_of_revelation" data-untr="1" title="Scroll of revelation">啓示</a> • <a href="http://crawl.chaosforge.org/Scroll_of_silence" data-untr="1" title="Scroll of silence">静寂</a> • <a href="http://crawl.chaosforge.org/Scroll_of_summoning" data-untr="1" title="Scroll of summoning">召喚</a> • <a class="mw-selflink selflink">テレポート</a> • <a href="http://crawl.chaosforge.org/Scroll_of_torment" data-untr="1" title="Scroll of torment">拷問</a> • <a href="http://crawl.chaosforge.org/Scroll_of_vulnerability" data-untr="1" title="Scroll of vulnerability">脆弱</a>
+</td></tr></table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

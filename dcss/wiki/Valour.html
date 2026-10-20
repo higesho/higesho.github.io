@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>武勇 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="武勇(Valour)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>武勇 <span class="en">Valour</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Valour">Valour</a>」(0.34 向け、2026-02-12 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Valour&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 使い手の体力が最大値の80%以上残っている間、敵に攻撃が命中するたびにエネルギーの光線を放つ。装備を外すと、使い手は短時間虚弱になる。
+</td></tr></table>
+<p><b>武勇</b>は<a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a>専用の<a href="Brand.html" title="Brand">ブランド</a>で、効果は次のとおり。
+</p>
+<ul><li>HP が 80% 以上あるときに敵に攻撃を当てると、射程 4 の貫通する光線を放つ。この光線は外れることもある。ダメージは <code>4d(2*base_damage/3)</code>。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> </li>
+<li>装備を外すと、使い手は 10 ターンのあいだ<a href="http://crawl.chaosforge.org/Weak" data-untr="1" title="Weak">虚弱</a>になる。</li></ul>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Sources"><span class="tocnumber">1</span> <span class="toctext">入手方法</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Sources">入手方法</span></h2>
+<p>武勇は<a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a>にしか付かず、ほかの武器には存在しない。ランダムに生成されるほか、<a href="Scroll_of_brand_weapon.html" title="Scroll of brand weapon">魔力の武器の巻物</a>でも付けられる。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>武勇の光線は<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>にも<a href="http://crawl.chaosforge.org/Skill" data-untr="1" title="Skill">スキル</a>にも左右されないので、序盤ほど相対的に強い。
+</p><p>HP の条件さえ満たしていれば、<a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> や <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> を考えに入れても、ダメージは<a href="Electrocution.html" title="Electrocution">電撃</a>よりはっきり上だ。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li>武勇は、ほかの武器種専用ブランドとともに<a href="0.34.html" title="0.34">0.34</a>で追加された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.34.0/crawl-ref/source/melee-attack.cc#L4829">melee-attack.cc:4829</a> (0.34.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.34.0/crawl-ref/source/zap-data.h#L2736">zap-data.h:2736</a> (0.34.0)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 70%">
+
+<tr>
+<th colspan="3"> <a href="Brand.html" title="Brand">ブランド</a>
+</th></tr>
+<tr>
+<th rowspan="3"> 近接武器
+</th>
+<th> 汎用
+</th>
+<td> <a href="http://crawl.chaosforge.org/Antimagic" data-untr="1" title="Antimagic">反魔法</a> • <a href="http://crawl.chaosforge.org/Chaos" data-untr="1" title="Chaos">混沌</a> • <a href="Distortion.html" title="Distortion">歪曲</a>  • <a href="http://crawl.chaosforge.org/Draining_(brand)" data-untr="1" title="Draining (brand)">掠奪</a> • <a href="Electrocution.html" title="Electrocution">電撃</a> • <a href="http://crawl.chaosforge.org/Flaming" data-untr="1" title="Flaming">火炎</a> • <a href="http://crawl.chaosforge.org/Freezing" data-untr="1" title="Freezing">冷気</a> • <a href="http://crawl.chaosforge.org/Heavy" data-untr="1" title="Heavy">重撃</a> • <a href="Holy_wrath.html" title="Holy wrath">神罰</a> • <a href="http://crawl.chaosforge.org/Pain_(brand)" data-untr="1" title="Pain (brand)">苦痛</a> • <a href="http://crawl.chaosforge.org/Protection" data-untr="1" title="Protection">護り</a> • <a href="Reaching.html" title="Reaching">間合い</a> • <a href="http://crawl.chaosforge.org/Spectral_(brand)" data-untr="1" title="Spectral (brand)">霊体化</a> • <a href="http://crawl.chaosforge.org/Speed_(brand)" data-untr="1" title="Speed (brand)">早業</a> • <a href="http://crawl.chaosforge.org/Vampiric" data-untr="1" title="Vampiric">吸血</a> • <a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>
+</td></tr>
+<tr>
+<th> 武器種専用
+</th>
+<td><a href="Devious.html" title="Devious">狡猾</a> • <a class="mw-selflink selflink">武勇</a> • <a href="Concussion.html" title="Concussion">衝撃</a> • <a href="Sundering.html" title="Sundering">断裂</a> • <a href="Entangling.html" title="Entangling">絡みつき</a> • <a href="Rebuke.html" title="Rebuke">叱責</a>
+</td></tr>
+<tr>
+<th> アーティファクト
+</th>
+<td> <a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a> • <a href="http://crawl.chaosforge.org/Deathbane" data-untr="1" title="Deathbane">死者殺し</a> • <a href="Dragon_slaying.html" title="Dragon slaying">竜殺し</a> • <a href="Reaping.html" title="Reaping">刈り取り</a> • <a href="Silver.html" title="Silver">銀</a>
+</td></tr>
+<tr>
+<th colspan="2"> 射撃武器
+</th>
+<td> <a href="http://crawl.chaosforge.org/Antimagic" data-untr="1" title="Antimagic">反魔法</a> • <a href="http://crawl.chaosforge.org/Draining_(brand)" data-untr="1" title="Draining (brand)">掠奪</a> • <a href="Electrocution.html" title="Electrocution">電撃</a> • <a href="http://crawl.chaosforge.org/Flaming" data-untr="1" title="Flaming">火炎</a> • <a href="http://crawl.chaosforge.org/Freezing" data-untr="1" title="Freezing">冷気</a> • <a href="http://crawl.chaosforge.org/Heavy" data-untr="1" title="Heavy">重撃</a> • <a href="Penetration.html" title="Penetration">貫通</a> • <a href="http://crawl.chaosforge.org/Speed_(brand)" data-untr="1" title="Speed (brand)">早業</a>
+</td></tr>
+<tr>
+<th colspan="2"> 投擲武器
+</th>
+<td> <a href="http://crawl.chaosforge.org/Atropa" data-untr="1" title="Atropa">アトロパ毒</a> • <a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a> • <a href="http://crawl.chaosforge.org/Datura" data-untr="1" title="Datura">ダチュラ毒</a> • <a href="http://crawl.chaosforge.org/Disjunction_(brand)" data-untr="1" title="Disjunction (brand)">分解</a> • <a href="http://crawl.chaosforge.org/Poisoned" data-untr="1" title="Poisoned">毒</a> • <a href="Silver.html" title="Silver">銀</a>
+</td></tr></table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

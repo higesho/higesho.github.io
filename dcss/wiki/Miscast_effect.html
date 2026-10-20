@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>呪文失敗の効果 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="呪文失敗の効果(Miscast effect)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>呪文失敗の効果 <span class="en">Miscast effect</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Miscast_effect">Miscast effect</a>」(0.34 向け、2026-07-08 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Miscast_effect&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><a class="mw-selflink selflink">呪文失敗の効果</a>は、プレイヤーが呪文の詠唱に失敗したときに起きる。まったく無害なものから、大きなダメージと<a href="Magic_contamination.html" title="Magic contamination">魔力汚染</a>をもたらすものまで、呪文の系統、呪文のレベル、失敗の度合いによって重さはさまざまだ。呪文の失敗から身を守りたいなら、<a href="Spell_Success.html" class="mw-redirect" title="Spell success">呪文の成功率</a>を上げることに力を注ぐといい。そうすれば失敗の頻度も激しさも下がる。また、系統によっては呪文の失敗で属性つきのダメージを受けるので、耐性で軽減できる。
+</p><p>ゲーム内で呪文の失敗率に付く色は、最大 <a href="http://crawl.chaosforge.org/HP" data-untr="1" class="mw-redirect" title="HP">HP</a> に対して受けうる最大ダメージの割合を表している。この計算は、ダメージに耐性が効かないものとして行われる。失敗の効果に耐性が効く系統や、直接ダメージを与えない系統でも同じだ。
+</p>
+<table class="prettytable">
+<tr>
+<th> 色 </th>
+<th> 失いうる <br />HP </th>
+<th> 警告の <br />説明
+</th></tr>
+<tr>
+<td> <span class="nhsym clr-lightgray">灰色</span> </td>
+<td> なし  </td>
+<td> 安全
+</td></tr>
+<tr>
+<td> <span class="nhsym clr-white">白</span> </td>
+<td> 0% - 10% </td>
+<td> やや危険
+</td></tr>
+<tr>
+<td> <span class="nhsym clr-yellow">黄</span> </td>
+<td> 10% - 30% </td>
+<td> 危険
+</td></tr>
+<tr>
+<td> <span class="nhsym">明るい赤</span> </td>
+<td> 30% - 50% </td>
+<td> かなり危険
+</td></tr>
+<tr>
+<td> <span class="nhsym">赤</span> </td>
+<td> 50% - 70% </td>
+<td> 極めて危険
+</td></tr>
+<tr>
+<td> <span class="nhsym clr-magenta">紫</span> </td>
+<td> 70% - 100% </td>
+<td> 途方もなく危険
+</td></tr>
+</table>
+<p>呪文の説明には、起こりうる失敗の効果が、最大ダメージやダメージの種類も含めてすべて表示される。
+</p>
+<h2><span class="mw-headline" id="Effects">効果</span></h2>
+<p>どの系統の呪文でも、失敗すると呪文のレベルと失敗の度合いに応じて<a href="http://crawl.chaosforge.org/Contamination" data-untr="1" class="mw-redirect" title="Contamination">魔力汚染</a>が起きる(失敗の度合いは、ほぼ唱えられない呪文なら 1〜99 の範囲になる。成功率が高いほど上限が下がる)。
+</p>
+<blockquote><b>魔力汚染</b>: 2 × (呪文レベル × 呪文レベル × 失敗の度合い + 250) / 5 </blockquote>
+<p>これで魔力汚染が 800 ポイントを超えると、呪文の系統に応じた追加の効果が起きる。呪文が複数の系統に属するなら、そのうち一つがランダムに選ばれる。効果の強さは、呪文のレベルと<a href="Spell_Success.html#The_final_step" title="Spell Success">素の失敗率</a>(1〜99 の内部の値で、呪文一覧に表示される失敗率<i>ではない</i>)をもとにダイスで決まる。
+</p>
+<blockquote><b>強さ</b>: (呪文レベル)d(呪文レベル + 素の失敗率) / 9</blockquote>
+<p>ダメージを与える効果では、これがダメージ量になる。状態異常の効果(減速と移動×)では、これが持続ターン数になる。そのほかの効果は表のとおり。
+</p>
+<table class="prettytable">
+<tr>
+<th> 系統</th>
+<th> 効果
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Air_Magic" data-untr="1" title="Air Magic">風の魔術</a> </td>
+<td> <a href="http://crawl.chaosforge.org/Electricity" data-untr="1" title="Electricity">電撃</a>ダメージ
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> </td>
+<td> 耐性の効かないダメージ
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Earth_Magic" data-untr="1" title="Earth Magic">地の魔術</a> </td>
+<td> 破片によるダメージ <br />(AC で 3 回軽減される)
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> </td>
+<td> <a href="http://crawl.chaosforge.org/Slow" data-untr="1" title="Slow">減速</a>させる
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Fire_Magic" data-untr="1" title="Fire Magic">炎の魔術</a> </td>
+<td> <a href="http://crawl.chaosforge.org/Fire" data-untr="1" title="Fire">火炎</a>ダメージ
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Ice_Magic" data-untr="1" title="Ice Magic">氷の魔術</a> </td>
+<td> <a href="http://crawl.chaosforge.org/Cold" data-untr="1" title="Cold">冷気</a>ダメージ
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Necromancy" data-untr="1" title="Necromancy">死霊術</a> </td>
+<td> <a href="http://crawl.chaosforge.org/Drain" data-untr="1" class="mw-redirect" title="Drain">衰弱</a>ダメージ
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a> </td>
+<td> <a href="Poison.html" title="Poison">毒</a>ダメージ
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Summonings" data-untr="1" title="Summonings">召喚術</a> </td>
+<td> 長続きする召喚の<a href="http://crawl.chaosforge.org/Nameless_horror" data-untr="1" title="Nameless horror">名状しがたき恐怖</a><br /><a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">HD</a> = 2 × 強さ / 3
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a> </td>
+<td> 移動と、自分からの<a href="http://crawl.chaosforge.org/Blink" data-untr="1" title="Blink">瞬間移動</a>や<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>ができなくなる(移動× 転位阻害)
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Forgecraft" data-untr="1" title="Forgecraft">鍛造術</a> </td>
+<td> <code>4 + Intensity/4</code> 段階の<a href="http://crawl.chaosforge.org/Corrosion" data-untr="1" class="mw-redirect" title="Corrosion">腐食</a>
+</td></tr></table>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="Magic_contamination.html" title="Magic contamination">魔力汚染</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、<a href="http://crawl.chaosforge.org/Transmutations" data-untr="1" title="Transmutations">変成</a>と<a href="http://crawl.chaosforge.org/Poison_Magic" data-untr="1" title="Poison Magic">毒の魔術</a>という呪文の系統があり、それぞれ独自の失敗の効果を持っていた。変成の失敗では魔力汚染が余分に増え(今の魔力汚染の 2 倍に、<code>9 × Miscast Intensity / 1000</code> を足した量)、毒の魔術の失敗では毒を受けた。</li>
+<li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> だけは、転位術の失敗の効果が「Stuck」という名前だった。新しい移動×の状態は瞬間移動やテレポートを妨げず、移動だけを止める。現在は転位術の呪文に失敗すると移動×と転位阻害がかかり、以前とまったく同じように働く。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、呪術の失敗の効果で、減速がかかる前に使用者の<a href="Potion_of_cancellation.html" title="Potion of cancellation">強化が解除</a>された。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、呪文失敗の効果が<a href="Hell.html" title="Hell">地獄</a>の神秘の力にも使われていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、転位術の失敗で、移動×の代わりに<a href="http://crawl.chaosforge.org/Dimension_Anchor" data-untr="1" title="Dimension Anchor">次元の碇</a>がかかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、呪文失敗の効果の仕組みがかなり複雑で、系統ごとに失敗の重さに応じた 3 種類の効果があった。<a href="Divine_retribution.html" title="Divine retribution">神罰</a>など、ほかの多くの仕組みも呪文失敗の効果を使っていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> で、多くの呪文失敗の効果が大きく作り直された。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、地獄の神秘の力でプレイヤーが麻痺することがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、<a href="http://crawl.chaosforge.org/Zot_trap" data-untr="1" title="Zot trap">ゾットの罠</a>は決まった効果の一覧を持つ代わりに、重さ 3 のランダムな呪文失敗の効果を起こした。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

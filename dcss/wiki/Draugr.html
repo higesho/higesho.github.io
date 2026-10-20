@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ドラウグル &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ドラウグル(Draugr)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ドラウグル <span class="en">Draugr</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Draugr">Draugr</a>」(0.34 向け、2026-10-01 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Draugr&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<div>
+<table class="prettytable" style=" text-align:left">
+<tr>
+<th colspan="2">ドラウグル&#8195;<span class="nhsym clr-lightgray">Z</span>&#8195;<a href="http://crawl.chaosforge.org/File:Draugr.png" data-untr="1" class="image"><img alt="Draugr.png" src="img/Draugr.png" width="32" height="32" /></a>
+</th></tr>
+<tr>
+<th style="width:80px"> <a href="http://crawl.chaosforge.org/Hit_points" data-untr="1" title="Hit points">HP</a>
+</th>
+<td style="width:150px"> 平均 <code>5.5 * HD</code>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Hit_dice" data-untr="1" title="Hit dice">HD</a>
+</th>
+<td> <code>Original</code>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/XP" data-untr="1" class="mw-redirect" title="XP">XP</a>
+</th>
+<td> <code>Original / 4</code>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Monster_speed" data-untr="1" title="Monster speed">速度</a>
+</th>
+<td> <code>Original</code>
+</td></tr>
+<tr>
+<th> <a href="Armour_class.html" title="Armour class">AC</a>
+</th>
+<td> <code>Original + 10</code>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Evasion" data-untr="1" title="Evasion">EV</a>
+</th>
+<td> <code>Original - 7</code>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>
+</th>
+<td> <code>6.66 * HD</code>
+</td></tr>
+<tr>
+<th> 攻撃<sup>1</sup>
+</th>
+<td> <code>(5 + 4 * HD / 3) * 0.8</code> <a href="http://crawl.chaosforge.org/Attack_type" data-untr="1" title="Attack type">打撃</a>:<a href="Attack_flavour.html" title="Attack flavour">破滅</a>
+</td></tr>
+<tr>
+<th> 攻撃<sup>2</sup>
+</th>
+<td> 元のモンスターのほかの攻撃(0.8倍)…
+<p><br />
+</p>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Resistance" data-untr="1" title="Resistance">耐性</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Cold" data-untr="1" title="Cold">rC++</a><br /><a href="Poison.html" title="Poison">rPois+++</a><br /><a href="http://crawl.chaosforge.org/Asphyxiation" data-untr="1" title="Asphyxiation">rDrown</a><br /><a href="http://crawl.chaosforge.org/Miasma" data-untr="1" class="mw-redirect" title="Miasma">rMiasma</a><br /><a href="http://crawl.chaosforge.org/Negative_energy" data-untr="1" title="Negative energy">rN+++</a><br /><a href="http://crawl.chaosforge.org/Torment" data-untr="1" title="Torment">rTorm</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Vulnerability" data-untr="1" title="Vulnerability">弱点</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Holy" data-untr="1" title="Holy">神聖</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Habitat" data-untr="1" title="Habitat">生息地</a>
+</th>
+<td> 陸上
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Monster_intelligence" data-untr="1" title="Monster intelligence">知能</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Category:Brainless_intelligence" data-untr="1" title="Category:Brainless intelligence">無知性</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Item_usage" data-untr="1" title="Item usage">使用</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Item_usage" data-untr="1" title="Item usage">初期装備</a><br /><a href="http://crawl.chaosforge.org/Category:Open_doors" data-untr="1" title="Category:Open doors">扉を開ける</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Holiness" data-untr="1" title="Holiness">分類</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Category:Undead_holiness" data-untr="1" title="Category:Undead holiness">アンデッド</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Category:Small_monsters" data-untr="1" title="Category:Small monsters">小さい</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Type" data-untr="1" title="Type">種類</a>
+</th>
+<td> ドラウグル、ドラウグル
+</td></tr>
+<tr>
+<th> フラグ
+</th>
+<td> <a href="http://crawl.chaosforge.org/No_regenerate" data-untr="1" title="No regenerate">再生しない</a><br /><a href="Evil.html" title="Evil">邪悪</a><br /><a href="http://crawl.chaosforge.org/Unbreathing" data-untr="1" title="Unbreathing">呼吸しない</a>
+</td></tr></table>
+</div>
+<p><a href="http://crawl.chaosforge.org/Template:Monster" data-untr="1" title="Template:Monster">template:monster</a> の写しで、<a rel="nofollow" class="external text" href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki%7CSemantic">MediaWiki</a> のプロパティは指定していない。
+&lt;/noinclude&gt;
+</p>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 流木と砕けた骨でできた、縄張り意識の強い節くれ立った塊だ。生者への恨みが長い時をかけてその亡骸をねじ曲げ、武器を振るい恐ろしい呪いを撒き散らすことのできる怪物の姿に変えた。
+</td></tr></table>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p><b>ドラウグル</b>は骨だけになった<a href="http://crawl.chaosforge.org/Derived_undead" data-untr="1" title="Derived undead">派生アンデッド</a>で、節くれ立った木の手足が生えており、それで武器を持てる。生前の姿と比べると、生きていたころの攻撃に加えて<a href="http://crawl.chaosforge.org/Doom" data-untr="1" class="mw-redirect" title="Doom">破滅</a>をもたらす攻撃を持つ。
+</p>
+<ul><li><b>破滅をもたらす攻撃のダメージ:</b> 5 + 4*HD / 3 で、そこからさらに20%減らされる。HD が高いほど与える破滅も大きい。</li></ul>
+<p>ドラウグルはおもに<a href="http://crawl.chaosforge.org/The_Crypt" data-untr="1" title="The Crypt">地下墓地</a>と<a href="http://crawl.chaosforge.org/The_Tomb" data-untr="1" title="The Tomb">太古の霊廟</a>で、<a href="Death_knight.html" class="mw-redirect" title="Death Knight">死の騎士</a>の群れに加わってうろついている。アンデッドを題材にした<a href="http://crawl.chaosforge.org/Vault" data-untr="1" title="Vault">ヴォールト</a>の一部としてなら、迷宮の中ほどから出てくることもある。HP は自然回復せず、階段を移動できず、呪文や能力はすべて失っている。<a href="http://crawl.chaosforge.org/Lee%27s_Rapid_Deconstruction" data-untr="1" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>がよく効く。
+</p>
+<h2><span class="mw-headline" id="Identifying_Draugr">ドラウグルの見分け方</span></h2>
+<p>元になったモンスターが違えば能力値も違うドラウグルになるが、<i>Crawl</i> はそれらをひとまとめに扱いがちなので、ひと目で見分けるのは難しい。コンソール版では大きさに応じて <b>z</b> か <b>Z</b> で表示される。タイル版ではドラウグルの種類ごとにいくつか別のタイルが用意されているが、それでもひとつのタイルに多くのモンスターがまとめられている。いずれにしても、戦う相手が何なのか正確に知りたければ、<b>x</b> を押してそのドラウグルにカーソルを合わせればよい。
+</p><p>タイル版でのドラウグルの区分は次のとおり。
+</p>
+<table class="wikitable">
+<tr>
+<th> タイル
+</th>
+<th> 種類
+</th>
+<th> タイル
+</th>
+<th> 種類
+</th></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr bat.png" src="img/Draugr_bat.png" width="64" height="64" /></a>
+</td>
+<td> コウモリのドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr bird.png" src="img/Draugr_bird.png" width="64" height="64" /></a>
+</td>
+<td> 鳥のドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr centaur.png" src="img/Draugr_centaur.png" width="64" height="64" /></a>
+</td>
+<td> セントールのドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr draconian.png" src="img/Draugr_draconian.png" width="64" height="64" /></a>
+</td>
+<td> ドラコニアンのドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr dragon.png" src="img/Draugr_dragon.png" width="64" height="64" /></a>
+</td>
+<td> ドラゴンのドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr drake.png" src="img/Draugr_drake.png" width="64" height="64" /></a>
+</td>
+<td> ドレイクのドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr fish.png" src="img/Draugr_fish.png" width="64" height="64" /></a>
+</td>
+<td> 魚のドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr frog.png" src="img/Draugr_frog.png" width="64" height="64" /></a>
+</td>
+<td> 蛙のドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr humanoid medium.png" src="img/Draugr_humanoid_medium.png" width="64" height="64" /></a>
+</td>
+<td> 人型のドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr hydra1.png" src="img/Draugr_hydra1.png" width="64" height="64" /></a>
+</td>
+<td> ヒドラのドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr juggernaut.png" src="img/Draugr_juggernaut.png" width="64" height="64" /></a>
+</td>
+<td> ジャガーノートのドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr lizard.png" src="img/Draugr_lizard.png" width="64" height="64" /></a>
+</td>
+<td> トカゲのドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr naga.png" src="img/Draugr_naga.png" width="64" height="64" /></a>
+</td>
+<td> ナーガのドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr quadruped large.png" src="img/Draugr_quadruped_large.png" width="64" height="64" /></a>
+</td>
+<td> 四足獣のドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr quadruped winged.png" src="img/Draugr_quadruped_winged.png" width="64" height="64" /></a>
+</td>
+<td> 翼のある四足獣のドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr snake.png" src="img/Draugr_snake.png" width="64" height="64" /></a>
+</td>
+<td> ヘビのドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr troll.png" src="img/Draugr_troll.png" width="64" height="64" /></a>
+</td>
+<td> トロルのドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr turtle.png" src="img/Draugr_turtle.png" width="64" height="64" /></a>
+</td>
+<td> 亀のドラウグル
+</td></tr>
+<tr>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr ugly thing.png" src="img/Draugr_ugly_thing.png" width="64" height="64" /></a>
+</td>
+<td> 醜きもののドラウグル
+</td>
+<td> <a href="Draugr.html" title="Draugr"><img alt="Draugr x.png" src="img/Draugr_x.png" width="64" height="64" /></a>
+</td>
+<td> X のドラウグル
+</td></tr></table>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.34.html" title="0.34">0.34</a> より前は、ドラウグルは<a href="http://crawl.chaosforge.org/Skeleton_(monster)" data-untr="1" title="Skeleton (monster)">骸骨(モンスター)</a>だった。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

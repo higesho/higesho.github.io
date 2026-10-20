@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>毒 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="毒(Poison)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>毒 <span class="en">Poison</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Poison">Poison</a>」(0.34 向け、2026-09-21 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Poison&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><i>このページは効果としての毒の記事だ。削除された呪文の系統とスキルについては<a href="http://crawl.chaosforge.org/Poison_Magic" data-untr="1" title="Poison Magic">毒の魔術</a>を参照。</i>
+</p><p><b>毒</b>は、<a href="http://crawl.chaosforge.org/Dungeon" data-untr="1" class="mw-redirect" title="Dungeon">迷宮</a>を探索していて最もよく出くわす属性の力の一つだ。たいていは毒を持つモンスターに刺されたり噛まれたりして受けるが、呪文や毒液で与えられることもある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Sources"><span class="tocnumber">2</span> <span class="toctext">毒を与える手段</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Poison_Types"><span class="tocnumber">2.1</span> <span class="toctext">毒の種類</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Poison_Resistance"><span class="tocnumber">3</span> <span class="toctext">毒耐性</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Poison_Vulnerability"><span class="tocnumber">3.1</span> <span class="toctext">毒への脆弱性</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Sources_of_resistance"><span class="tocnumber">3.2</span> <span class="toctext">耐性の入手元</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Curing_Poison"><span class="tocnumber">4</span> <span class="toctext">毒の治し方</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Poisoned_Condition"><span class="tocnumber">5</span> <span class="toctext">毒の状態</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Player_Formula"><span class="tocnumber">5.1</span> <span class="toctext">プレイヤーの場合の式</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Monster_Formula"><span class="tocnumber">5.2</span> <span class="toctext">モンスターの場合の式</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#History"><span class="tocnumber">6</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">出典</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_Also"><span class="tocnumber">8</span> <span class="toctext">関連項目</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>毒を受けるというのは、ふつうは毒の<a href="http://crawl.chaosforge.org/Status_effect" data-untr="1" class="mw-redirect" title="Status effect">状態異常</a>になることを指す。持続時間と1ターンあたりのダメージは毒の重さで決まる。毒は重ねがけでき、何度も毒を受けるほど重くなる。プレイヤーの場合、重さは「毒」の文字の色で表される(黄 → 明るい赤 → 赤)。モンスターの場合は、<b>x</b> で調べれば重さがわかる。タイル版では、モンスターの毒は緑のしずくで表される(「極めて重い毒に冒されている」= しずく3つ = 最大)。
+</p><p>また、<a href="http://crawl.chaosforge.org/Mercury_Arrow" data-untr="1" title="Mercury Arrow">水銀の鏃</a>、<a href="http://crawl.chaosforge.org/Poisonous_Vapours" data-untr="1" title="Poisonous Vapours">有毒の蒸気</a>、<a href="http://crawl.chaosforge.org/Poison_Arrow" data-untr="1" title="Poison Arrow">毒素の矢</a>などの呪文は、毒の<i>直撃</i>ダメージを与える。これはふつうのダメージと同じだが、毒耐性で軽減される。
+</p><p>軽い毒なら低レベルのキャラクターでもまず耐えられるが、重い毒は時間とともにとてつもないダメージになることがある。どちらにしても、毒が抜けるまでは戦闘を避けて休むのがほぼ常に最善だ。徘徊するモンスターを避けるなら、敵を片づけた階で休むとよい。
+</p><p>毒は<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外にいるモンスターにもダメージを与え続ける。ただし、別の階にいるモンスターには何も起こらない。
+</p>
+<h2><span class="mw-headline" id="Sources">毒を与える手段</span></h2>
+<p>プレイヤーは(そしてモンスターも)次の方法で毒を与えられる。
+</p>
+<ul><li>一部の<a href="http://crawl.chaosforge.org/Alchemy" data-untr="1" title="Alchemy">錬金術</a>の呪文</li>
+<li><a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>のブランドがついた近接武器</li>
+<li><a href="http://crawl.chaosforge.org/Staff_of_alchemy" data-untr="1" title="Staff of alchemy">錬金術の杖</a>や<a href="http://crawl.chaosforge.org/Staff_of_Olgreb" data-untr="1" title="Staff of Olgreb">オルグレブの杖</a></li>
+<li><a href="http://crawl.chaosforge.org/Poisoned" data-untr="1" title="Poisoned">毒</a>や<a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>を塗った<a href="http://crawl.chaosforge.org/Dart" data-untr="1" title="Dart">ダーツ</a></li>
+<li><a href="Naga.html" title="Naga">ナーガ</a>は生まれつき<a href="http://crawl.chaosforge.org/Spit_Poison" data-untr="1" title="Spit Poison">毒の唾液</a>の能力を持っている。</li></ul>
+<h3><span class="mw-headline" id="Poison_Types">毒の種類</span></h3>
+<p><a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>のブランドの武器のほかに、生まれつき毒の攻撃を持つモンスターもいる。毒には通常の毒と強い毒の2種類があり、どちらも攻撃が当たるたびに1/3の確率で発動する。
+</p>
+<ul><li>通常の毒は、モンスターの <a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">HD</a> の2〜4倍のランダムな量だけプレイヤーを毒に冒す。</li>
+<li>強い毒の場合は、モンスターの HD の3.67〜6.5倍になる。</li></ul>
+<p>毒液のブランドの武器は仕組みが違う。モンスターがプレイヤーを攻撃したときは、75%の確率で6〜13の毒ダメージに、与えた物理ダメージの0〜1.5倍のランダムな量を足した毒が加わる。プレイヤーがモンスターを攻撃したときは、<code>1 + (4 + 1d8 + 1d&lt;1.5 * dam&gt;)/7</code> 「スタック」の毒を敵に与える。
+</p>
+<h2><span class="mw-headline" id="Poison_Resistance">毒耐性</span></h2>
+<p>プレイヤーもモンスターも、1段階の毒耐性(rPois+)か、完全な免疫(rPois∞。コードの中では rPois+++ と表される)を持てる。rPois+ は重ならないので、<a href="http://crawl.chaosforge.org/Octopode" data-untr="1" title="Octopode">オクトポード</a>が指輪を3つはめても免疫にはならない。
+</p><p>毒耐性には次の効果がある。
+</p>
+<ul><li>ほとんどの毒の状態異常を66%(2/3)の確率で防ぐ。</li>
+<li><a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>による減速、<a href="http://crawl.chaosforge.org/Hornet" data-untr="1" title="Hornet">巨大赤色蜂</a>と<a href="http://crawl.chaosforge.org/Jorogumo" data-untr="1" title="Jorogumo">女郎蜘蛛</a>による減速・麻痺、<a href="http://crawl.chaosforge.org/Formless_jellyfish" data-untr="1" title="Formless jellyfish">形なきクラゲ</a>による麻痺、敵の<a href="http://crawl.chaosforge.org/Alistair%27s_Intoxication" data-untr="1" title="Alistair&#39;s Intoxication">アリステイアの酩酊</a>を66%の確率で防ぐ。</li>
+<li>毒の直撃ダメージが66%減る。</li>
+<li><a href="http://crawl.chaosforge.org/Clouds#Poison" data-untr="1" class="mw-redirect" title="Clouds">毒ガスの雲</a>、<a href="http://crawl.chaosforge.org/Mercury_Vapours" data-untr="1" class="mw-redirect" title="Mercury Vapours">水銀の蒸気</a>の毒、<a href="http://crawl.chaosforge.org/Mephitic_Cloud" data-untr="1" title="Mephitic Cloud">悪臭の雲</a>が完全に効かなくなる。</li></ul>
+<p>さらに、rPois を持つモンスターには(プレイヤーは別だが)<a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a>がまったく効かない。ほとんどの効果について、毒耐性は受ける毒の量そのものは減らさ<i>ない</i>。減るのは毒を受ける確率だけだ。
+</p><p>毒に免疫のある生き物は、毒に冒されず、毒の直撃ダメージも受けない。
+</p><p>ただし、<a href="http://crawl.chaosforge.org/Mercury_Arrow" data-untr="1" title="Mercury Arrow">水銀の鏃</a>と<a href="Eringya's_Noxious_Bog.html" title="Eringya&#39;s Noxious Bog">エリンギャの毒沼</a>のダメージは70%が毒の直撃、30%が物理なので、毒に免疫のある生き物でもこれらの呪文からは多少のダメージを受ける。毒耐性を持つ生き物は、これらの呪文から合計53%のダメージを受ける。
+</p>
+<h3><span class="mw-headline" id="Poison_Vulnerability">毒への脆弱性</span></h3>
+<p>一部のモンスター(特に昆虫と蜘蛛)は毒に弱く、毒の攻撃から2倍のダメージを受け、受ける毒の量も2倍になる。<a href="http://crawl.chaosforge.org/Virulence" data-untr="1" title="Virulence">免疫の低下</a>の呪文によって脆弱になることもある。
+</p><p>rPois+ が1段階でもあれば脆弱性は打ち消され、毒からはふつうのダメージを受ける。毒に免疫があれば、もちろん脆弱性は何の意味もない。
+</p>
+<h3><span class="mw-headline" id="Sources_of_resistance">耐性の入手元</span></h3>
+<p>毒耐性はいろいろな手段で手に入る。
+</p>
+<ul><li><a href="Good_mutations.html#Poison_Resistance" title="Good mutations">毒耐性</a>の<a href="http://crawl.chaosforge.org/Mutation" data-untr="1" title="Mutation">変異</a></li>
+<li><a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">沼ドラゴンの鱗一式</a></li>
+<li><a href="http://crawl.chaosforge.org/Gold_dragon_scales" data-untr="1" class="mw-redirect" title="Gold dragon scales">ゴールドドラゴンの鱗一式</a></li>
+<li><a href="http://crawl.chaosforge.org/Ego" data-untr="1" title="Ego">毒耐性</a>のエゴがついた防具</li>
+<li><a href="http://crawl.chaosforge.org/Staff_of_alchemy" data-untr="1" title="Staff of alchemy">錬金術の杖</a></li>
+<li><a href="http://crawl.chaosforge.org/Ring_of_poison_resistance" data-untr="1" title="Ring of poison resistance">耐毒の指輪</a></li>
+<li><a href="http://crawl.chaosforge.org/Tiamat" data-untr="1" title="Tiamat">ティアマト</a>の<a href="http://crawl.chaosforge.org/Dragonskin_cloak" data-untr="1" title="Dragonskin cloak">竜の皮のクローク</a>(攻撃ごとに50%の確率)</li>
+<li><a href="Randart.html" title="Randart">ランダムアーティファクト</a></li>
+<li><a href="http://crawl.chaosforge.org/Potion_of_resistance" data-untr="1" title="Potion of resistance">耐性の薬</a></li>
+<li><a href="http://crawl.chaosforge.org/Potion_of_lignification" data-untr="1" title="Potion of lignification">樹木化の薬</a>による<a href="Tree_Form.html" class="mw-redirect" title="Tree form">樹木の形態</a></li>
+<li><a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a></li>
+<li><a href="Naga.html" title="Naga">ナーガ</a>や緑色<a href="http://crawl.chaosforge.org/Draconian" data-untr="1" title="Draconian">ドラコニアン</a>であること</li></ul>
+<p>このほか、完全な免疫を得る手段もいくつかある。
+</p>
+<ul><li>アンデッドの種族(<a href="Mummy.html" title="Mummy">ミイラ</a>、<a href="Poltergeist.html" title="Poltergeist">ポルターガイスト</a>、<a href="Revenant.html" title="Revenant">レヴナント</a>)、<a href="Gargoyle.html" title="Gargoyle">ガーゴイル</a>、<a href="http://crawl.chaosforge.org/Djinni" data-untr="1" title="Djinni">ジンニー</a>であること</li>
+<li><a href="http://crawl.chaosforge.org/Death_Form" data-untr="1" class="mw-redirect" title="Death Form">死の形態</a>、<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像の形態</a>、<a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐の形態</a>のプレイヤーは、その形態でいるあいだ毒が効かない。ただし変身中は毒の残りが減っていかないので、毒に冒されたまま変身すると、変身が終わったときにまったく同じだけ毒が残っている。</li>
+<li><a href="http://crawl.chaosforge.org/Staff_of_Olgreb" data-untr="1" title="Staff of Olgreb">オルグレブの杖</a>を構えること。上の変身と違って、構えているあいだも毒の状態は(害なく)減っていく。</li>
+<li><a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a>の生命の活性化の能力。毒は害なく減っていく。</li></ul>
+<p>耐性以外にも、毒に対して役立つものはある。
+</p>
+<ul><li>ほかの手段で<a href="http://crawl.chaosforge.org/Healing" data-untr="1" title="Healing">回復</a>しても毒の状態は治ら<i>ない</i>が、毒が抜けるまで持ちこたえるだけの HP は稼げるかもしれない。</li></ul>
+<h2><span class="mw-headline" id="Curing_Poison">毒の治し方</span></h2>
+<p>毒耐性のないキャラクターでも、毒が抜けきる前に治してしまえば最悪の事態は避けられる。手段は次のとおり。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Potion_of_curing" data-untr="1" title="Potion of curing">治療の薬</a>を<a href="http://crawl.chaosforge.org/Quaff" data-untr="1" title="Quaff">飲む</a>。</li>
+<li><a href="http://crawl.chaosforge.org/Elyvilon" data-untr="1" title="Elyvilon">エリヴィロン</a>の聖杯の清めの能力</li></ul>
+<h2><span class="mw-headline" id="Poisoned_Condition">毒の状態</span></h2>
+<p>毒の攻撃を受けたモンスターやプレイヤーは、たいてい「毒」の<a href="http://crawl.chaosforge.org/Condition" data-untr="1" class="mw-redirect" title="Condition">状態</a>になる。毒に冒されているあいだは、毒の重さに比例したダメージを受ける。毒を受けるたびに前の毒に「重なって」、最終的なダメージが増えていく。ダメージの式はプレイヤーとモンスターで異なる。
+</p>
+<h3><span class="mw-headline" id="Player_Formula">プレイヤーの場合の式</span></h3>
+<ul><li>プレイヤーの場合、毒の総ダメージはあらかじめ決まっていて、毎ターンその一部を受ける。毒が重いほど、1ターンあたりのダメージは大きく、持続時間も長くなる。最終的に受けるダメージの合計は、HP バーの黄色く強調された部分で表示される。</li></ul>
+<ul><li>&#160;% キーを押すと、毒がどれだけ残っているかがわかる。たとえば 16 -&gt; -16 なら、<a href="http://crawl.chaosforge.org/Regeneration" data-untr="1" class="mw-redirect" title="Regeneration">再生</a>と耐性を考慮したうえで、今の毒で HP が16から-16まで減るという意味だ。毒のダメージは少しずつ、10 aut ごとに残りの毒のおよそ1/5ずつ与えられる。たとえば再生がなければ、16 -&gt; -16 は最初の1回でおよそ6.4のダメージ、続いて 5.1 → 4.1 … となる。再生がある場合、表示される量はその間に回復する分をすでに差し引いているので、実際の毒のダメージは表示上の32より大きく、その32のダメージのうち毎ターン受ける割合は最初のほうに偏る(再生のアイテム1つなら 9 → 7.2 → 5.8 といった具合)。</li></ul>
+<ul><li><a href="http://crawl.chaosforge.org/Cheibriados" data-untr="1" title="Cheibriados">ケイブリアドス</a>を信仰していると(信仰心は問わない。贖罪中は除く)、毒の <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> あたりのダメージは2/3になるが、持続時間は1.5倍になる。つまりダメージが長い時間に分散されるので、そのぶん HP を回復する時間が稼げる。</li></ul>
+<h3><span class="mw-headline" id="Monster_Formula">モンスターの場合の式</span></h3>
+<p>モンスターの毒は、受けた毒の「スタック」の数で表される。毒を与える手段はそれぞれ1つ以上のスタックを与える。スタックは最大4つで、<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>そこまで達したモンスターは「この上ないほどに毒に冒された」状態になる。
+</p><p>1ターンあたりのダメージは、モンスターが受けている毒のスタックの数で決まる。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<ul><li>スタックが4つなら基本ダメージは1。それ以外なら0。</li>
+<li>50%の確率で、さらに <code>1d(stacks + 1)</code> のダメージ。</li>
+<li>モンスターが毒に弱いなら、さらに <code>2d(stacks) - 1</code> のダメージ。</li></ul>
+<p>このダメージは、そのあと毒への脆弱性で補正される(耐性による補正はない)。
+</p>
+<table class="wikitable" style="text-align: center">
+<caption> 1.0ターンあたりの毒ダメージ(モンスター)
+</caption>
+<tr>
+<th rowspan="2"> スタック数
+</th>
+<th width="100pt" colspan="2"> 通常
+</th>
+<th>
+</th>
+<th width="100pt" colspan="2"> 脆弱
+</th>
+<th rowspan="2"> 表示
+</th></tr>
+<tr>
+<th>ダメージ</th>
+<th>平均</th>
+<th> </th>
+<th>ダメージ</th>
+<th>平均
+</th></tr>
+<tr>
+<td>1
+</td>
+<td> 0-2 </td>
+<td> 0.75
+</td>
+<th>
+</th>
+<td> 1-3 </td>
+<td> 1.75
+</td>
+<td> 毒に冒されている
+</td></tr>
+<tr>
+<td>2
+</td>
+<td> 0-3 </td>
+<td> 1
+</td>
+<th>
+</th>
+<td> 1-6 </td>
+<td> 3
+</td>
+<td> 重い毒に冒されている
+</td></tr>
+<tr>
+<td> 3
+</td>
+<td> 0-4 </td>
+<td> 1.25
+</td>
+<th>
+</th>
+<td> 1-9 </td>
+<td> 4.25
+</td>
+<td> 重い毒に冒されている
+</td></tr>
+<tr>
+<td>4
+</td>
+<td> 1-6 </td>
+<td> 2.5
+</td>
+<th>
+</th>
+<td> 2-13 </td>
+<td> 6.5
+</td>
+<td> 極めて重い毒に冒されている
+</td></tr></table>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、毒がプレイヤーに与えるダメージはずっとゆっくりだった。総ダメージは同じだったが、1ターンあたりのダメージは小さかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> より前は、毒耐性を持つモンスターは、<a href="http://crawl.chaosforge.org/Staff_of_poison" data-untr="1" class="mw-redirect" title="Staff of poison">毒の杖</a>と<a href="http://crawl.chaosforge.org/Poison_Arrow" data-untr="1" title="Poison Arrow">毒素の矢</a>によるものを除いて、毒の状態異常にならなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、毒耐性があれば毒のある<a href="http://crawl.chaosforge.org/Chunk" data-untr="1" class="mw-redirect" title="Chunk">肉</a>を食べられた。毒のある肉は、今では食べられない肉に置き換えられている。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、毒の時間あたりのダメージは固定値ではなくランダムだった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像の形態</a>で得られる毒耐性は1段階だけだった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/mon-ench.h#L8">mon-ench.h:8</a> (0.31.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/mon-ench.cc#L1549">mon-ench.cc:1549</a> (0.31.0)</span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<p><a href="http://crawl.chaosforge.org/Category:Poison_resistance" data-untr="1" title="Category:Poison resistance">毒耐性を持つモンスターの一覧</a>
+</p><p><a href="http://crawl.chaosforge.org/Category:Poison_vulnerability" data-untr="1" title="Category:Poison vulnerability">毒に弱いモンスターの一覧</a>
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

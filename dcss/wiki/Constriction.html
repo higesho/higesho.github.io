@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>締めつけ &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="締めつけ(Constriction)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>締めつけ <span class="en">Constriction</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Constriction">Constriction</a>」(0.34 向け、2026-07-04 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Constriction&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><b>締めつけ</b>とは、相手をつかんでその場から逃げられないようにし、何ターンもかけて締め殺そうとすることだ。締めつけられた相手は<a href="http://crawl.chaosforge.org/Ev" data-untr="1" class="mw-redirect" title="Ev">EV</a>が下がり、離れることもできなくなる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#List_of_constrictors"><span class="tocnumber">1</span> <span class="toctext">締めつけてくるものの一覧</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Monsters"><span class="tocnumber">1.1</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Playable_species"><span class="tocnumber">1.2</span> <span class="toctext">プレイヤーの種族</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Forms"><span class="tocnumber">1.3</span> <span class="toctext">変身</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Other_Constriction_Effects"><span class="tocnumber">1.4</span> <span class="toctext">そのほかの締めつけの効果</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Initiating_Constriction"><span class="tocnumber">2</span> <span class="toctext">締めつけの始まり</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Melee_Constriction"><span class="tocnumber">2.1</span> <span class="toctext">近接攻撃での締めつけ</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Spell_Constriction"><span class="tocnumber">2.2</span> <span class="toctext">呪文での締めつけ</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Entangling"><span class="tocnumber">2.3</span> <span class="toctext">絡みつき</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Constriction_Immunity"><span class="tocnumber">2.4</span> <span class="toctext">締めつけが効かないもの</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Maintaining_Constriction"><span class="tocnumber">3</span> <span class="toctext">締めつけの継続</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Damage_Calculations"><span class="tocnumber">3.1</span> <span class="toctext">ダメージの計算</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Escaping_Constriction"><span class="tocnumber">4</span> <span class="toctext">締めつけから逃れるには</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="List_of_constrictors">締めつけてくるものの一覧</span></h2>
+<h3><span class="mw-headline" id="Monsters">モンスター</span></h3>
+<ul><li><span class="nhsym clr-green">N</span> <a href="http://crawl.chaosforge.org/File:Naga.png" data-untr="1" class="image"><img alt="Naga.png" src="img/Naga.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Naga_(monster)" data-untr="1" title="Naga (monster)">ナーガ</a></b></li>
+<li><span class="nhsym clr-magenta">N</span> <a href="http://crawl.chaosforge.org/File:Naga_mage.png" data-untr="1" class="image"><img alt="Naga mage.png" src="img/Naga_mage.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Naga_mage" data-untr="1" title="Naga mage">ナーガの魔術師</a></b></li>
+<li><span class="nhsym clr-lightgray">N</span> <a href="http://crawl.chaosforge.org/File:Naga_sharpshooter.png" data-untr="1" class="image"><img alt="Naga sharpshooter.png" src="img/Naga_sharpshooter.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Naga_sharpshooter" data-untr="1" title="Naga sharpshooter">ナーガの達人射手</a></b></li>
+<li><span class="nhsym clr-brown">N</span> <a href="http://crawl.chaosforge.org/File:Naga_ritualist.png" data-untr="1" class="image"><img alt="Naga ritualist.png" src="img/Naga_ritualist.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Naga_ritualist" data-untr="1" title="Naga ritualist">ナーガの儀式者</a></b></li>
+<li><span class="nhsym">N</span> <a href="http://crawl.chaosforge.org/File:Naga_warrior.png" data-untr="1" class="image"><img alt="Naga warrior.png" src="img/Naga_warrior.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Naga_warrior" data-untr="1" title="Naga warrior">ナーガの戦士</a></b></li>
+<li><span class="nhsym clr-brightmagenta">N</span> <a href="http://crawl.chaosforge.org/File:Nagaraja.png" data-untr="1" class="image"><img alt="Nagaraja.png" src="img/Nagaraja.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Nagaraja" data-untr="1" title="Nagaraja">ナーガの豪族</a></b></li>
+<li><span class="nhsym clr-brightgreen">w</span> <a href="http://crawl.chaosforge.org/File:Snaplasher_vine.png" data-untr="1" class="image"><img alt="Snaplasher vine.png" src="img/Snaplasher_vine.png" width="96" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Snaplasher_vine" data-untr="1" title="Snaplasher vine">鞭打蔦</a></b></li>
+<li><span class="nhsym clr-green">S</span> <a href="http://crawl.chaosforge.org/File:Ball_python.png" data-untr="1" class="image"><img alt="Ball python.png" src="img/Ball_python.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Ball_python" data-untr="1" title="Ball python">ニシキヘビ</a></b></li>
+<li><span class="nhsym clr-lightgray">S</span> <a href="http://crawl.chaosforge.org/File:Anaconda.png" data-untr="1" class="image"><img alt="Anaconda.png" src="img/Anaconda.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Anaconda" data-untr="1" title="Anaconda">アナコンダ</a></b></li>
+<li><span class="nhsym clr-green">X</span> <a href="http://crawl.chaosforge.org/File:Tentacled_monstrosity.png" data-untr="1" class="image"><img alt="Tentacled monstrosity.png" src="img/Tentacled_monstrosity.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Tentacled_monstrosity" data-untr="1" title="Tentacled monstrosity">触手の怪物</a></b></li>
+<li><span class="nhsym clr-brightcyan">w</span> <a href="http://crawl.chaosforge.org/File:Starspawn_tentacle.png" data-untr="1" class="image"><img alt="Starspawn tentacle.png" src="img/Starspawn_tentacle.png" width="96" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Starspawn_tentacle" data-untr="1" class="mw-redirect" title="Starspawn tentacle">触手</a></b></li>
+<li><span class="nhsym clr-white">J</span> <a href="http://crawl.chaosforge.org/File:Formless_jellyfish.png" data-untr="1" class="image"><img alt="Formless jellyfish.png" src="img/Formless_jellyfish.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Formless_jellyfish" data-untr="1" title="Formless jellyfish">形なきクラゲ</a></b></li>
+<li><span class="nhsym clr-brightcyan">x</span> <a href="http://crawl.chaosforge.org/File:Octopode.png" data-untr="1" class="image"><img alt="Octopode.png" src="img/Octopode.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Octopode_(monster)" data-untr="1" title="Octopode (monster)">オクトポード</a></b></li>
+<li><span class="nhsym clr-brightcyan">N</span> <a href="http://crawl.chaosforge.org/File:Vashnia.png" data-untr="1" class="image"><img alt="Vashnia.png" src="img/Vashnia.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Vashnia" data-untr="1" title="Vashnia">ヴァシュニア</a></b></li>
+<li><span class="nhsym clr-brightmagenta">x</span> <a href="http://crawl.chaosforge.org/File:Erica.png" data-untr="1" class="image"><img alt="Erica.png" src="img/Erica.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Erica" data-untr="1" title="Erica">エリカ</a></b></li>
+<li><b><a href="http://crawl.chaosforge.org/Grasping_Roots" data-untr="1" title="Grasping Roots">絡まる木の根</a></b>
+<ul><li><span class="nhsym clr-brightmagenta">g</span> <a href="http://crawl.chaosforge.org/File:Jorgrun.png" data-untr="1" class="image"><img alt="Jorgrun.png" src="img/Jorgrun.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Jorgrun" data-untr="1" title="Jorgrun">ジョーグルン</a></b></li>
+<li><span class="nhsym">f</span> <a href="http://crawl.chaosforge.org/File:Shambling_mangrove.png" data-untr="1" class="image"><img alt="Shambling mangrove.png" src="img/Shambling_mangrove.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Shambling_mangrove" data-untr="1" title="Shambling mangrove">よろめき歩くマングローブ</a></b></li></ul></li></ul>
+<h3><span class="mw-headline" id="Playable_species">プレイヤーの種族</span></h3>
+<ul><li><b><a href="http://crawl.chaosforge.org/Octopode" data-untr="1" title="Octopode">オクトポード</a></b> </li>
+<li><b><a href="Naga.html" title="Naga">ナーガ</a></b>: <a href="http://crawl.chaosforge.org/Experience_level" data-untr="1" class="mw-redirect" title="Experience level">経験レベル</a>13でこの能力を得る。</li></ul>
+<h3><span class="mw-headline" id="Forms">変身</span></h3>
+<ul><li><b><a href="Serpent_talisman.html" title="Serpent talisman">大蛇のタリスマン</a></b></li></ul>
+<h3><span class="mw-headline" id="Other_Constriction_Effects">そのほかの締めつけの効果</span></h3>
+<ul><li><a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a></li>
+<li><a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a></li>
+<li><a href="Entangling.html" title="Entangling">絡みつき</a>のブランド</li></ul>
+<h2><span class="mw-headline" id="Initiating_Constriction">締めつけの始まり</span></h2>
+<h3><span class="mw-headline" id="Melee_Constriction">近接攻撃での締めつけ</span></h3>
+<p>締めつけのできるキャラクターやモンスターが近接攻撃をすると(<a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a>でなくてもよい)、締めつけが起こることがある。条件は次のすべてを満たすことだ。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<ul><li>攻撃する側がほかの相手を締めつけていないこと。ただしオクトポードは別で、最大8体まで同時に締めつけていられる。もっとも、普通の手がふさがるごとにこの数は2ずつ減る(片手武器や副手のアイテム1つにつき -2、両手武器1つにつき -4)。</li>
+<li>守る側がほかの相手に締めつけられたり、包み込まれたりしていないこと。</li>
+<li>攻撃する側が相手を見えていること。</li>
+<li>攻撃する側が混乱していないこと。</li>
+<li>攻撃する側の体格が、守る側と同じかそれより大きいこと。</li>
+<li>守る側が締めつけの攻撃を無効にしないこと(下を参照)。</li>
+<li>守る側が攻撃する側の隣にいること(リーチのある武器でも、離れた相手は締めつけられない)。</li></ul>
+<p>以上の条件をすべて満たすと、攻撃する側の命中値(to_hit)と守る側の EV/SH で判定が行われる。プレイヤーの場合、これは普通の<a href="http://crawl.chaosforge.org/Auxiliary_attack" data-untr="1" title="Auxiliary attack">補助攻撃</a>の命中値で、次のように計算される。
+</p>
+<pre>to_hit = 13 + 0.75 * 器用 + 0.3 * 戦闘スキル + 殺戮のボーナス + その他のボーナス<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</pre>
+<p>モンスターの場合はこうなる。
+</p>
+<pre>to_hit = 18 + 1.5 * HD + その他のボーナス(モンスターが<a href="http://crawl.chaosforge.org/Category:Fighter" data-untr="1" title="Category:Fighter">戦士型</a>、たとえばナーガの戦士なら 1.5 を 2.5 に置き換える)
+</pre>
+<p>攻撃が当たれば締めつけが始まる。ただし、モンスターが近接攻撃で締めつけを始められる確率は2/3だ。
+</p>
+<h3><span class="mw-headline" id="Spell_Constriction">呪文での締めつけ</span></h3>
+<p><a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>、<a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a>、<a href="http://crawl.chaosforge.org/Grasping_Roots" data-untr="1" title="Grasping Roots">絡まる木の根</a>では、条件は次のとおりだ。
+</p>
+<ul><li>守る側がほかの相手に締めつけられたり、包み込まれたりしていないこと。</li>
+<li>守る側が締めつけの攻撃を無効にしないこと。</li>
+<li>守る側が<a href="http://crawl.chaosforge.org/Deep_water" data-untr="1" title="Deep water">深い水脈</a>や<a href="http://crawl.chaosforge.org/Lava" data-untr="1" title="Lava">溶岩</a>の上にいないこと。</li></ul>
+<p>これらの締めつけは必ず命中する。
+</p>
+<h3><span class="mw-headline" id="Entangling">絡みつき</span></h3>
+<p><a href="Entangling.html" title="Entangling">絡みつき</a>のブランドは、攻撃が当たるたびに50%の確率で敵を締めつける。ただし、締めつけが効かない敵や、すでに締めつけられたり包み込まれたりしている敵には効かない。一度に締めつけられるのは1体だけだ。
+</p>
+<h3><span class="mw-headline" id="Constriction_Immunity">締めつけが効かないもの</span></h3>
+<p>次のものには締めつけが効かない。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+</p>
+<ul><li><a href="Amorphous.html" title="Amorphous">不定形</a>: <a href="List_of_jellies.html" title="List of jellies">ジェリーやスライム</a>のほか、<a href="http://crawl.chaosforge.org/Water_elemental" data-untr="1" title="Water elemental">水の精霊</a>や<a href="http://crawl.chaosforge.org/Aqua_Form" data-untr="1" class="mw-redirect" title="Aqua Form">水の形態</a>のプレイヤーも含む。</li>
+<li><a href="Insubstantial.html" title="Insubstantial">実体なし</a>: <a href="Poltergeist.html" title="Poltergeist">ポルターガイスト</a>、<a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐の形態</a>、<a href="http://crawl.chaosforge.org/Wisp_Form" data-untr="1" title="Wisp Form">霧の形態</a></li>
+<li><a href="http://crawl.chaosforge.org/Spiny" data-untr="1" title="Spiny">棘</a>: <a href="http://crawl.chaosforge.org/Quill_Form" data-untr="1" class="mw-redirect" title="Quill Form">針の形態</a>と、<a href="http://crawl.chaosforge.org/Demonspawn" data-untr="1" title="Demonspawn">悪魔の血族</a>だけが得る<a href="http://crawl.chaosforge.org/Spiny_(mutation)" data-untr="1" title="Spiny (mutation)">棘</a>の変異</li>
+<li>固定アーティファクトの<a href="Slick_slippers.html" title="Slick slippers">つるつるのスリッパ</a>。</li></ul>
+<h2><span class="mw-headline" id="Maintaining_Constriction">締めつけの継続</span></h2>
+<p>締めつけられている間、相手は毎ターンダメージを受け、どの方向にも動けず、<a href="http://crawl.chaosforge.org/Ev" data-untr="1" class="mw-redirect" title="Ev">EV</a>に -10 の補正がかかる。離れようと動くと抜け出そうとしたことになり、プレイヤーの場合、1回目の成功率は40%だ。2回目は75%、3回目は100%に上がる。
+</p>
+<h3><span class="mw-headline" id="Damage_Calculations">ダメージの計算</span></h3>
+<p>10 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> ごとに与えるダメージは次のとおり。
+</p>
+<pre> (基本ダメージ) * (0.33 + 0.67 * (XL / 27))
+</pre>
+<ul><li><b>基本ダメージ</b>: プレイヤーが近接攻撃で締めつける場合は <code>2d[(110 + (25 * XL)) / 81]</code> になる。<a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>や<a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a>の場合は、そのときの<a href="http://crawl.chaosforge.org/Spellpower" data-untr="1" class="mw-redirect" title="Spellpower">威力</a>で決まる。モンスターの場合は、その攻撃の基本ダメージになる。</li>
+<li><b>経験レベルによる補正</b>: 式の後ろの項によって、ダメージは<a href="http://crawl.chaosforge.org/Experience_level" data-untr="1" class="mw-redirect" title="Experience level">経験レベル</a>に比例して増える。レベル27のキャラクターは、レベル1のときの3倍のダメージを与える。</li></ul>
+<p>このダメージに、さらに次の補正がかかる。
+</p>
+<ul><li><b>AC による軽減</b>: ほとんどの近接攻撃とは違って、締めつけのダメージは0から<a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a>までの乱数では軽減されない。軽減量は0から <code>1 + AC / 2</code> までの乱数になる。つまり、締めつけは AC の半分を無視する。</li>
+<li><b>時間による換算</b>: 上の式で求まるのは 10 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> あたりのダメージだ。これを、そのターンに使った aut に合わせて換算する必要がある。たとえば<a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a>を最小ディレイ(5 aut)で振っているなら、上のダメージに(AC による軽減のあとで)<code>5/10</code> がかけられる。</li></ul>
+<h2><span class="mw-headline" id="Escaping_Constriction">締めつけから逃れるには</span></h2>
+<p>抜け出そうとして成功するほかにも、振りほどく方法はいくつもある。
+</p>
+<ul><li>締めつけている相手を倒す。</li>
+<li>締めつけている相手が今のマスから動くと、近接攻撃による締めつけは終わる(移動先が締めつけられている相手の隣でも同じ)。
+<ul><li><a href="Entangling.html" title="Entangling">絡みつき</a>による締めつけは移動したあとも続くが、相手が武器の届く範囲から出ると終わる。</li>
+<li><a href="http://crawl.chaosforge.org/Teleport_Other" data-untr="1" title="Teleport Other">他者のテレポート</a>、<a href="http://crawl.chaosforge.org/Dispersal" data-untr="1" title="Dispersal">転送</a>、<a href="http://crawl.chaosforge.org/Disjunction" data-untr="1" title="Disjunction">空間分離</a>、<a href="http://crawl.chaosforge.org/Iskenderun%27s_Mystic_Blast" data-untr="1" title="Iskenderun&#39;s Mystic Blast">イスケンデルンの爆破の秘術</a>のような<a href="http://crawl.chaosforge.org/Translocations" data-untr="1" title="Translocations">転位術</a>の魔法でもこの状況を作れる。<a href="http://crawl.chaosforge.org/Dispersal_(brand)" data-untr="1" title="Dispersal (brand)">離散のダーツ</a>、<a href="Distortion.html" title="Distortion">歪曲</a>のブランドの武器、<a href="http://crawl.chaosforge.org/Gell%27s_gravitambourine" data-untr="1" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a>といったアイテムも同じだ。</li></ul></li>
+<li>締めつけている相手を<a href="http://crawl.chaosforge.org/Confusion" data-untr="1" title="Confusion">混乱</a>、<a href="http://crawl.chaosforge.org/Paralyze" data-untr="1" class="mw-redirect" title="Paralyze">麻痺</a>、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化</a>、<a href="http://crawl.chaosforge.org/Fear" data-untr="1" title="Fear">恐慌</a>、<a href="http://crawl.chaosforge.org/Sleep" data-untr="1" title="Sleep">昏睡</a>、<a href="http://crawl.chaosforge.org/Polymorph" data-untr="1" title="Polymorph">変化</a>で無力化すると、締めつけはすぐに解ける。</li>
+<li><a href="http://crawl.chaosforge.org/Wand_of_charming" data-untr="1" title="Wand of charming">魅了</a>するか、<a href="http://crawl.chaosforge.org/Elyvilon" data-untr="1" title="Elyvilon">エリヴィロン</a>の力で鎮めれば、締めつけはすぐに止まる。</li>
+<li>締めつけが効かない状態になれば、すぐに締めつけ状態が終わる。
+<ul><li><a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐の形態</a>、<a href="http://crawl.chaosforge.org/Aqua_Form" data-untr="1" class="mw-redirect" title="Aqua Form">水の形態</a>、<a href="http://crawl.chaosforge.org/Quill_Form" data-untr="1" class="mw-redirect" title="Quill Form">針の形態</a>には締めつけが効かない。</li>
+<li><a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>すると体格が「巨大」になるので、締めつけてこられるのは触手の怪物だけになる。</li></ul></li>
+<li><a href="http://crawl.chaosforge.org/Blink" data-untr="1" title="Blink">瞬間移動</a>や<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>なら、手段を問わず抜け出せる。</li>
+<li><a href="Barachi.html" title="Barachi">バラチ</a>は蛙跳びで飛び離れれば、必ず締めつけから逃れられる。</li>
+<li><a href="http://crawl.chaosforge.org/Formicid" data-untr="1" title="Formicid">フォーミシッド</a>の縦穴を掘る能力を使えば、必ず締めつけから逃れられる。</li>
+<li><a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a>の聖域の能力で締めつけは解ける。</li>
+<li><a href="http://crawl.chaosforge.org/Ru" data-untr="1" title="Ru">ルー</a>の力の解放と力強き跳躍を使えば、必ず締めつけから逃れられる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.32" data-untr="1" title="0.32">0.32</a> で締めつけが作り直された。それより前は次のようだった。
+<ul><li>プレイヤーによる締めつけはどれも基本ダメージが低かったが、モンスターは締めつけが長引くほど大きなダメージを受けた(プレイヤーからの締めつけに限らない)。</li>
+<li>プレイヤーが抜け出せる確率はもっと複雑な式で決まり、瞬間移動などの効果でも確実には逃れられなかった。</li>
+<li>モンスターが抜け出せる確率は HD に関係なかった。</li>
+<li>締めつけられたプレイヤーは EV に -3 の補正を受け、モンスターは体格に応じて EV が割られた。</li>
+<li>プレイヤーの近接攻撃による締めつけには腕力が関係した。</li></ul></li>
+<li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、呪文やワンドによる締めつけは、使う側が相手を見えていないとかけられなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> 以降、命中は<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>だけで決まる。</li>
+<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> より前は、ダメージに対する継続時間の補正がプレイヤーにもかかっていた。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/actor.cc#L740">actor.cc:740</a> (0.32.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/fight.cc#L73">fight.cc:73</a> (0.32.1)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/monster.cc#L3920">monster.cc:3920</a> (0.32.1)</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/player.cc#L6974">player.cc:6974</a> (0.32.1)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

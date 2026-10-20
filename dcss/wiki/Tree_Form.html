@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>樹化 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="樹化(Tree Form)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>樹化 <span class="en">Tree Form</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Tree_Form">Tree Form</a>」(0.34 向け、2026-09-27 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Tree_Form&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> あなたは樹木に変身して地面に根を張っており、移動もテレポートもできない。回避は最小限だが、体力と天然の防御力が増しており、毒への耐性を持ち、苦痛を無効化する。
+<p>装備している外套、兜、手袋、靴、胴鎧はすべて体と融合する。
+</p>
+</td></tr></table>
+<p><b>樹木の形態</b>は<a href="Bad_Form.html" class="mw-redirect" title="Bad form">不利な変身</a>の一つで、移動とテレポートができなくなる代わりに、高い天然の AC といくつかの耐性が得られる。<a href="http://crawl.chaosforge.org/Wand_of_polymorph" data-untr="1" title="Wand of polymorph">変化のワンド</a>や<a href="http://crawl.chaosforge.org/Polymorph" data-untr="1" title="Polymorph">変化</a>の呪文で無理やりこの姿にされることもあるが、<a href="http://crawl.chaosforge.org/Potion_of_lignification" data-untr="1" title="Potion of lignification">樹木化の薬</a>を飲めば自分からなることもできる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Tips_.26_Tricks"><span class="tocnumber">2.1</span> <span class="toctext">小技</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>樹木に変身している間、プレイヤーは次の性質を得る。
+</p><p><b>戦闘:</b>
+</p>
+<ul><li><b>HP ボーナス:</b> HP が 150% になる。</li>
+<li><b>生来の AC:</b> <code>20 + <a href="http://crawl.chaosforge.org/XL" data-untr="1" class="mw-redirect" title="XL">XL</a>/2</code>(AC 20〜33)。</li>
+<li><b>徒手格闘:</b> ダメージ 12。</li>
+<li><a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> はほぼゼロになり、<code>2 + <a href="http://crawl.chaosforge.org/Evasion#Base_EV" data-untr="1" title="Evasion">size_factor</a>/2</code> に固定される。</li></ul>
+<p><b>耐性:</b>
+</p>
+<ul><li><a href="Poison.html" title="Poison">rPois</a></li>
+<li><a href="http://crawl.chaosforge.org/Torment" data-untr="1" title="Torment">拷問</a>が効かない</li>
+<li><a href="http://crawl.chaosforge.org/Unbreathing" data-untr="1" title="Unbreathing">呼吸しない</a>うえ、<a href="http://crawl.chaosforge.org/Blood" data-untr="1" title="Blood">血</a>が通っていない</li>
+<li><a href="http://crawl.chaosforge.org/Sleep" data-untr="1" title="Sleep">睡眠</a>が効かない</li></ul>
+<p><b>制限</b>
+</p>
+<ul><li> <b><a href="http://crawl.chaosforge.org/Transformation#Useful_Info" data-untr="1" title="Transformation">融合する装備</a>:</b> 盾以外の防具すべて。</li>
+<li>自分で動くことも、動かされることもない。</li>
+<li><a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>も<a href="http://crawl.chaosforge.org/Blink" data-untr="1" title="Blink">瞬間移動</a>もできない(<a href="http://crawl.chaosforge.org/Uskayaw" data-untr="1" title="Uskayaw">ウスカヤー</a>のグランド・フィナーレのように、使える神の能力もある)。</li></ul>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>樹木の形態は不利な変身の中では文句なしに戦闘向きで、HP も AC も高く、枝で殴る素手の攻撃は序盤なら多くの武器より強い(徒手格闘のスキルが 0 でもだ!)。ただし、樹木は動けずテレポートで逃げることもできないので、いちばん危ない形態の一つでもある。
+</p><p>樹木の形態はゲームのいろいろな場面で役に立つ。
+</p>
+<ul><li>序盤では、<a href="http://crawl.chaosforge.org/Killer_bee" data-untr="1" title="Killer bee">殺人蜂</a>や<a href="http://crawl.chaosforge.org/Black_mamba" data-untr="1" title="Black mamba">ブラックマンバ</a>のような素早くて毒を持つ敵と戦うのにうってつけだ。ごく序盤なら、樹木の形態の高い能力であらゆる手ごわいモンスターを倒せる。</li>
+<li>ゲームの後半では、<a href="http://crawl.chaosforge.org/Torment" data-untr="1" title="Torment">拷問</a>が効かなくなるのが役に立つ。特に<a href="http://crawl.chaosforge.org/The_Tomb" data-untr="1" title="The Tomb">太古の霊廟</a>では便利で、<a href="http://crawl.chaosforge.org/Dispersal_trap" data-untr="1" title="Dispersal trap">転送の罠</a>や多くの<a href="http://crawl.chaosforge.org/Death_curse" data-untr="1" title="Death curse">死の呪い</a>を受けなくなる。<a href="http://crawl.chaosforge.org/Miasma" data-untr="1" class="mw-redirect" title="Miasma">瘴気</a>にだけは気をつけよう。</li>
+<li>防具に制限のある種族(<a href="http://crawl.chaosforge.org/Felid" data-untr="1" title="Felid">フェリッド</a>、<a href="http://crawl.chaosforge.org/Octopode" data-untr="1" title="Octopode">オクトポード</a>、<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>が並外れた種族)は、ゲームを通して AC が増えるのをありがたく感じるだろう。中でも<a href="http://crawl.chaosforge.org/Troll" data-untr="1" title="Troll">トロル</a>には樹木の形態ならではの使い道がある。高い AC と、強化されたうえに首を切り落とさない素手の攻撃は、<a href="http://crawl.chaosforge.org/Hydra" data-untr="1" title="Hydra">ヒドラ</a>を倒すのにぴったりだ。</li></ul>
+<p>大きな欠点は動けないことだ。手に負えない状況になったら、ひどく追い詰められる。<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>を飲めば早めに変身を解けるが、この薬は珍しいうえ、飲むのに貴重な1ターンを使ってしまう。
+</p><p>また、遠隔攻撃の手段をしっかり持っていないなら、遠隔攻撃や<a href="Reaching.html" title="Reaching">リーチ攻撃</a>に注意しよう。一方的に殴られることになる。<a href="http://crawl.chaosforge.org/Kill_hole" data-untr="1" title="Kill hole">キルホール</a>などの地形をうまく使うといい。必要なら<a href="http://crawl.chaosforge.org/Potion_of_attraction" data-untr="1" title="Potion of attraction">誘引の薬</a>でモンスターを無理やり引き寄せられる。
+</p>
+<h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
+<ul><li>動けないので、こちらを押しのけてくる敵(<a href="http://crawl.chaosforge.org/Wind_drake" data-untr="1" title="Wind drake">風ドレイク</a>、<a href="http://crawl.chaosforge.org/Swamp_worm" data-untr="1" title="Swamp worm">沼ワーム</a>、<a href="http://crawl.chaosforge.org/Force_Lance" data-untr="1" title="Force Lance">力場の槍</a>を使うモンスター、<a href="http://crawl.chaosforge.org/Roxanne" data-untr="1" title="Roxanne">ロクサーヌ</a>…)の影響も受けない。</li>
+<li>樹木の形態なら、<a href="http://crawl.chaosforge.org/Shallow_water" data-untr="1" title="Shallow water">浅い水脈</a>に立っているときの攻撃のペナルティがなくなる。</li>
+<li>樹木の形態になると元の種族が生まれつき持つ能力が抑えられ、思わぬ結果になることがあるので気をつけよう。たとえば<a href="http://crawl.chaosforge.org/Formicid" data-untr="1" title="Formicid">フォーミシッド</a>が透明な敵と戦うために薬を飲むと、透明なものを見る力をくれていた<a href="Good_mutations.html#Antennae" title="Good mutations">触角</a>を失うので、かえって逆効果になりかねない。</li>
+<li><a href="http://crawl.chaosforge.org/Ushabti" data-untr="1" title="Ushabti">ウシャブティ</a>のように雲で攻撃してくる敵には、<a href="http://crawl.chaosforge.org/Scroll_of_fog" data-untr="1" title="Scroll of fog">煙幕の巻物</a>で対抗できる。一つのマスには雲が一つしか出ないので、霧の雲を置いておけば、もっと危険な雲を自分のマスに置かれずにすむ。</li>
+<li>樹木の形態には<a href="http://crawl.chaosforge.org/Blood" data-untr="1" title="Blood">血</a>が通っていないので、<a href="http://crawl.chaosforge.org/Skyshark" data-untr="1" title="Skyshark">スカイシャーク</a>は攻撃の追加効果の血の狂乱を発動できない。</li></ul>
+<table class="prettytable" style=" text-align: center">
+<tr>
+<th> 樹木の形態
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/File:Tree_form.png" data-untr="1" class="image"><img alt="Tree form.png" src="img/Tree_form.png" width="32" height="32" /></a>
+</td></tr></table>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.35" data-untr="1" class="mw-redirect" title="0.35">0.35</a> では、樹木の形態は生物になるが、拷問への耐性と rN+++ はそのまま残る予定だ。</li>
+<li><a href="0.33.html" title="0.33">0.33</a> より前は、樹木の形態でも<a href="http://crawl.chaosforge.org/Sleep" data-untr="1" title="Sleep">睡眠</a>が効いた。}}</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、樹木の形態では<a href="http://crawl.chaosforge.org/Negative_energy" data-untr="1" title="Negative energy">負のエネルギー</a>が効かなかった(rN+++)。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、樹木の形態の <a href="http://crawl.chaosforge.org/GDR" data-untr="1" class="mw-redirect" title="GDR">GDR</a> は 48% に固定されていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、樹木の形態でプレイヤーの<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>の補正が大きく上がった。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、樹木の形態で<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>も +10 された。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、樹木の形態では食べることも飲むこともできなかったが、空腹にもならなかった。また、プレイヤーの<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>が大きく上がった。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、<a href="http://crawl.chaosforge.org/Potion_of_lignification" data-untr="1" title="Potion of lignification">樹木化の薬</a>は存在しなかった。樹木の形態は経験レベルに応じて 50%〜0% だけプレイヤーを<a href="http://crawl.chaosforge.org/Slow" data-untr="1" title="Slow">減速</a>させ、叫ぶこともできなかった。また、<a href="http://crawl.chaosforge.org/Fedhas_Madash" data-untr="1" title="Fedhas Madash">フェダス・マダシュ</a>の信者は rF+ と rC+ を得た。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、火に弱くなり、AC のボーナスと速度のペナルティは XL によらなかった。</li>
+<li>ほかの多くの不利な変身と同じく、樹木の形態は <a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> で追加された。</li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th>
+</th>
+<th> <a href="http://crawl.chaosforge.org/Transformation" data-untr="1" title="Transformation">変身</a>
+</th></tr>
+<tr>
+<th> <a href="Talisman.html" title="Talisman">タリスマン</a>
+</th>
+<td> <b>第1段階:</b> <a href="http://crawl.chaosforge.org/Quill_Form" data-untr="1" class="mw-redirect" title="Quill Form">針の形態</a> • <a href="http://crawl.chaosforge.org/Walking_Scroll_Form" data-untr="1" class="mw-redirect" title="Walking Scroll Form">巻物の形態</a> <br /><b>第2段階:</b> <a href="http://crawl.chaosforge.org/Scarab_Form" data-untr="1" class="mw-redirect" title="Scarab Form">スカラベの形態</a> • <a href="http://crawl.chaosforge.org/Spore_Form" data-untr="1" class="mw-redirect" title="Spore Form">胞子の形態</a> • <a href="http://crawl.chaosforge.org/Yak_Form" data-untr="1" class="mw-redirect" title="Yak Form">ヤクの形態</a> • <a href="http://crawl.chaosforge.org/Medusa_Form" data-untr="1" class="mw-redirect" title="Medusa Form">メデューサの形態</a> <br /><b>第3段階:</b> <a href="http://crawl.chaosforge.org/Maw_Form" data-untr="1" class="mw-redirect" title="Maw Form">大口の形態</a> • <a href="http://crawl.chaosforge.org/Eel_Form" data-untr="1" class="mw-redirect" title="Eel Form">鰻の形態</a> • <a href="http://crawl.chaosforge.org/Fortress_Crab_Form" data-untr="1" class="mw-redirect" title="Fortress Crab Form">蟹の形態</a> • <a href="http://crawl.chaosforge.org/Werewolf_Form" data-untr="1" class="mw-redirect" title="Werewolf Form">人狼の形態</a> • <a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇の形態</a> • <a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛の形態</a> • <a href="http://crawl.chaosforge.org/Aqua_Form" data-untr="1" class="mw-redirect" title="Aqua Form">水の形態</a> <br /><b>第4段階:</b> <a href="http://crawl.chaosforge.org/Blade_Form" data-untr="1" class="mw-redirect" title="Blade Form">刃の手の形態</a> • <a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a> • <a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像の形態</a> • <a href="http://crawl.chaosforge.org/Hive_Form" data-untr="1" class="mw-redirect" title="Hive Form">巣の形態</a> • <a href="http://crawl.chaosforge.org/Sphinx_Form" data-untr="1" class="mw-redirect" title="Sphinx Form">スフィンクスの形態</a> • <a href="http://crawl.chaosforge.org/Vampire_Form" data-untr="1" class="mw-redirect" title="Vampire Form">吸血鬼の形態</a>(<a href="http://crawl.chaosforge.org/Vampire_Bat_Form" data-untr="1" class="mw-redirect" title="Vampire Bat Form">コウモリ群の形態</a>) <br /><b>第5段階:</b> <a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐の形態</a> • <a href="http://crawl.chaosforge.org/Death_Form" data-untr="1" class="mw-redirect" title="Death Form">死の形態</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Bauble" data-untr="1" title="Bauble">ボーブル</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Flux_Form" data-untr="1" class="mw-redirect" title="Flux Form">流転の形態</a>
+</td></tr>
+<tr>
+<th> <a href="Bad_Form.html" title="Bad Form">不利な変身</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Bat_Form" data-untr="1" title="Bat Form">コウモリの形態</a> • <a href="http://crawl.chaosforge.org/Fungus_Form" data-untr="1" title="Fungus Form">茸の形態</a> • <a href="http://crawl.chaosforge.org/Pig_Form" data-untr="1" title="Pig Form">豚の形態</a> • <a class="mw-selflink selflink">樹木の形態</a> • <a href="http://crawl.chaosforge.org/Wisp_Form" data-untr="1" title="Wisp Form">霧の形態</a> • <a href="Jelly_Form.html" title="Jelly Form">ジェリーの形態</a>
+</td></tr>
+<tr>
+<th> <a href="God.html" title="God">神の力</a>
+</th>
+<td> <a href="Makhleb.html#Infernal_Marks" title="Makhleb">殺戮の形態</a>
+</td></tr>
+</center>
+</table>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

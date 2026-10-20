@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ウィザードモード &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ウィザードモード(Wizard mode)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ウィザードモード <span class="en">Wizard mode</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Wizard_mode">Wizard mode</a>」(0.34 向け、2026-08-06 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Wizard_mode&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><b>ウィザードモード</b>(<b>wizmode</b>)は<i>Crawl</i>のデバッグモードだ。キャラクターを作って自由に書き換えたり、<a href="http://crawl.chaosforge.org/Death" data-untr="1" title="Death">死</a>を避けたりしながら、あらゆる状況を試せる。
+</p><p>ウィザードモードは、<a href="http://crawl.chaosforge.org/Item" data-untr="1" title="Item">アイテム</a>、<a href="http://crawl.chaosforge.org/Monsters" data-untr="1" class="mw-redirect" title="Monsters">モンスター</a>、<a href="http://crawl.chaosforge.org/Species" data-untr="1" title="Species">種族</a>、<a href="Background.html" title="Background">職業</a>、<a href="God.html" title="God">神</a>、<a href="http://crawl.chaosforge.org/Branch" data-untr="1" class="mw-redirect" title="Branch">分岐</a>、<a href="http://crawl.chaosforge.org/Vault" data-untr="1" title="Vault">ヴォールト</a>、そしてゲームの<a href="http://crawl.chaosforge.org/Category:Game_mechanics" data-untr="1" title="Category:Game mechanics">仕組み</a>全般を調べるのにとても役立つ。ウィザードモードで実験するのは、<a href="http://crawl.chaosforge.org/Crawl_Wiki" data-untr="1" title="Crawl Wiki">この wiki</a> に貢献するとてもよい方法だ。わかったことは、ぜひページに書き足してほしい。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Entering_Wizmode"><span class="tocnumber">1</span> <span class="toctext">ウィザードモードに入る</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Command_list"><span class="tocnumber">2</span> <span class="toctext">コマンドの一覧</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Player_stats"><span class="tocnumber">2.1</span> <span class="toctext">プレイヤーの能力</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Create_dungeon_features"><span class="tocnumber">2.2</span> <span class="toctext">ダンジョンの地形を作る</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Other_level_related_commands"><span class="tocnumber">2.3</span> <span class="toctext">その他の階層関連コマンド</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Other_player_related_effects"><span class="tocnumber">2.4</span> <span class="toctext">その他のプレイヤーへの効果</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Monster_related_commands"><span class="tocnumber">2.5</span> <span class="toctext">モンスター関連コマンド</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Item_related_commands"><span class="tocnumber">2.6</span> <span class="toctext">アイテム関連コマンド</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Debugging_commands"><span class="tocnumber">2.7</span> <span class="toctext">デバッグ用コマンド</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Other_wizard_commands"><span class="tocnumber">2.8</span> <span class="toctext">その他のウィザードコマンド</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Wizard_targeting_commands"><span class="tocnumber">2.8.1</span> <span class="toctext">照準モードのウィザードコマンド</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Wizard_.28map-mode.29_commands"><span class="tocnumber">2.8.2</span> <span class="toctext">マップモードのウィザードコマンド</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Entering_Wizmode">ウィザードモードに入る</span></h2>
+<p>キャラクターを作ったあと '&amp;' を押すと、ウィザードモードに入れる。入ろうとすると、ゲームが次のように警告してくる。
+</p>
+<pre><b>警告: ウィザードモードに入ろうとしています！</b>
+<b>続行した場合、スコア一覧には載りません！</b>
+本当にウィザードモードに移行しますか？
+</pre>
+<p>確認には 'wiz' と入力する。
+</p><p><a href="http://crawl.chaosforge.org/Playing_online" data-untr="1" title="Playing online">オンラインのサーバー</a>ではウィザードモードは使えない。<a href="http://crawl.chaosforge.org/Cheating" data-untr="1" title="Cheating">ズル</a>ができてしまうからというだけでなく、サーバーを簡単にクラッシュさせられてしまうからだ。ウィザードモードを使いたければ、Crawl のオフライン版をダウンロードしよう。
+</p>
+<h2><span class="mw-headline" id="Command_list">コマンドの一覧</span></h2>
+<p>コマンドの一覧を見るには、<b>&amp;</b> を押してから <b>?</b> を押す。
+</p><p>コマンドを実行するには、<b>&amp;</b> を押してから、下の一覧にあるそれぞれのコマンドのキーを押す。
+</p>
+<h3><span class="mw-headline" id="Player_stats">プレイヤーの能力</span></h3>
+<pre><b>A</b>&#160;: 全スキルを指定レベルにする
+<b>Ctrl-D</b>&#160;: 持続効果を変更する
+<b>g</b>&#160;: スキルを鍛える
+<b>k</b>&#160;: 経験レベルとスキルを変更する
+<b>l</b>&#160;: 経験レベルを変更する
+<b>Ctrl-P</b>&#160;: プロパティを列挙する
+<b>r</b>&#160;: 種族を変更する
+<b>s</b>&#160;: スキルを指定レベルにする
+<b>x</b>&#160;: 経験レベルを1上げる
+<b>$</b>&#160;: 所持金を指定した値にする
+<b>]</b>&#160;: 名前か種類を指定して変異を得る
+<b>_</b>&#160;: 神を信仰する
+<b>^</b>&#160;: 信仰値を変更する
+<b>@</b>&#160;: 腕力/知力/器用さを変更する
+<b>#</b>&#160;: ダンプからキャラクターを読み込む
+<b>&amp;</b>&#160;: 神の従者をすべて列挙する
+<b>=</b>&#160;: スキルポイントの情報を表示する
+<b>n</b>&#160;: ゾットの時計を変更する
+<b>N</b>&#160;: 現在の<a href="http://crawl.chaosforge.org/Tension" data-untr="1" title="Tension">緊張度</a>を表示する
+</pre>
+<h3><span class="mw-headline" id="Create_dungeon_features">ダンジョンの地形を作る</span></h3>
+<pre><b>L</b>&#160;: 名前を指定してヴォールトを置く
+<b>,</b> / <b>.</b>&#160;: 上り/下り階段を作る
+<b>(</b>&#160;: このマスを別の地形に変える(今はこれで罠も置ける)
+<b>\</b>&#160;: 店を作る
+<b>Ctrl-K</b>&#160;: 全ヴォールトを未使用扱いにする
+</pre>
+<h3><span class="mw-headline" id="Other_level_related_commands">その他の階層関連コマンド</span></h3>
+<pre><b>Ctrl-A</b>&#160;: 新しいアビスの領域を作る
+<b>b</b>&#160;: 行き先を指定して瞬間移動する
+<b>B</b>&#160;: 行き先を指定してテレポートする
+<b>Ctrl-B</b>&#160;: 自らをアビスに追放する
+<b>R</b> / <b>ctrl-R</b>&#160;: 現在の階層を作り直す
+<b>Ctrl-S</b>&#160;: アビスの変容速度を変更する
+<b>u</b> / <b>d</b>&#160;: 1階上/下へ移動する
+<b>~</b>&#160;: 指定した分岐と階層へ移動する
+<b>:</b>&#160;: 分岐と寺院外の祭壇の場所を表示する
+<b>;</b>&#160;: 既知の階層とカウンターを表示する
+<b>{</b>&#160;: 魔法の地図の効果
+<b>}</b>&#160;: 階層の罠をすべて感知する
+<b>Ctrl-W</b>&#160;: 浅瀬の潮の速度を変更する
+<b>Ctrl-E</b>&#160;: 階層生成の情報を出力する
+<b>P</b>&#160;: ヴォールトをもとに階層を作る
+</pre>
+<h3><span class="mw-headline" id="Other_player_related_effects">その他のプレイヤーへの効果</span></h3>
+<pre><b>c</b>&#160;: カードを引く効果
+<b>h</b> / <b>H</b>&#160;: 回復する(Hは完全回復)
+<b>X</b>&#160;: ゾムに何かをさせる
+<b>z</b>&#160;: 番号/名前で呪文を唱える
+<b>!</b>&#160;: 呪文を覚える
+<b>W</b>&#160;: 神の怒りを落とす
+<b>w</b>&#160;: 神の怒りをなだめる
+<b>p</b>&#160;: 変身する
+<b>V</b>&#160;: 壁透視の切り替え
+<b>E</b>&#160;: 時間を停止/再開する
+</pre>
+<h3><span class="mw-headline" id="Monster_related_commands">モンスター関連コマンド</span></h3>
+<pre><b>m</b> / <b>M</b>&#160;: 番号/名前で指定したモンスターを作る
+<b>D</b>&#160;: 全モンスターを感知する
+<b>G</b>&#160;: 全モンスターを消す
+<b>"</b>&#160;: モンスターを列挙する
+</pre>
+<h3><span class="mw-headline" id="Item_related_commands">アイテム関連コマンド</span></h3>
+<pre><b>a</b>&#160;: 獲得の効果
+<b>i</b> / <b>I</b>&#160;: 所持品を鑑定/未鑑定にする
+<b>y</b> / <b>Y</b>&#160;: アイテムの種類と性質を鑑定/未鑑定にする
+<b>o</b> / <b>%</b>&#160;: アイテムを作る
+<b>t</b>&#160;: アイテムの設定値を変更する
+<b>v</b>&#160;: 経験値で充填する道具を全て充填
+<b>Ctrl-V</b>&#160;: アイテムの価格を表示する
+<b>-</b>&#160;: 神の授かり物を得る
+<b>|</b>&#160;: 全ての<a href="http://crawl.chaosforge.org/Unrand" data-untr="1" class="mw-redirect" title="Unrand">固定アーティファクト</a>を作る
+<b>Ctrl-\</b>&#160;: 全ての<a href="http://crawl.chaosforge.org/Unrand" data-untr="1" class="mw-redirect" title="Unrand">固定アーティファクト</a>/代替品を作る
+<b>+</b>&#160;: アイテムをランダムアーティファクトにする
+<b>'</b>&#160;: アイテムを列挙する(今いる階)
+<b>J</b>&#160;: 別の階層の品をジーヴァに捧げる
+<b>Z</b>&#160;: ルーンとゾットのオーブを失う
+</pre>
+<h3><span class="mw-headline" id="Debugging_commands">デバッグ用コマンド</span></h3>
+<pre><b>f</b>&#160;: 簡易戦闘シミュレーション(fsim)
+<b>F</b>&#160;: fsim(シングルスケール)
+<b>Ctrl-F</b>&#160;: fsim(ダブルスケール)
+<b>Ctrl-I</b>&#160;: アイテム生成の統計
+<b>O</b>&#160;: 探索ターンを計測する
+<b>Ctrl-T</b>&#160;: ゲーム内のダンジョン(D)Luaインタプリタに入る
+<b>Ctrl-U</b>&#160;: ゲーム内のクライアント(C)Luaインタプリタに入る
+<b>Ctrl-Y</b>&#160;: 一時的にウィザードモードを解除
+<b>Ctrl-X</b>&#160;: ゾムの効果の状態
+<b>Ctrl-C</b>&#160;: 強制的にクラッシュさせる
+<b> ' </b>&#160;: 未割り当てのコマンドキーを列挙
+</pre>
+<h3><span class="mw-headline" id="Other_wizard_commands">その他のウィザードコマンド</span></h3>
+<p>(頭に <b>&amp;</b> を付けない)
+</p>
+<pre><b>x?</b>&#160;: 照準コマンドを列挙する
+<b>X?</b>&#160;: マップモードのコマンドを列挙する
+</pre>
+<h4><span class="mw-headline" id="Wizard_targeting_commands">照準モードのウィザードコマンド</span></h4>
+<p><b>x</b> を押したあとで使う。
+</p>
+<pre><b>Ctrl-C</b>&#160;: ビームの通り道を順に切り替える
+<b>D</b>&#160;: モンスターのデバッグ情報を見る
+<b>o</b>&#160;: モンスターにアイテムを持たせる
+<b>F</b>&#160;: モンスターを味方/平和的/中立/敵対の順に切り替える
+<b>G</b>&#160;: モンスターに経験値を得させる
+<b>Ctrl-H</b>&#160;: モンスターの HP を全快させる
+<b>P</b>&#160;: モンスターに神の祝福を与える
+<b>m</b>&#160;: モンスターかプレイヤーを移動させる
+<b>M</b>&#160;: モンスターかプレイヤーに呪文の失敗を起こさせる
+<b>s</b>&#160;: モンスターに叫ばせる/しゃべらせる
+<b>S</b>&#160;: モンスターを召喚されたモンスターにする
+<b>w</b>&#160;: マップ上の任意の地点までの最短経路を計算する
+<b>"</b>&#160;: ポータルのデバッグ情報を見る
+<b>~</b>&#160;: モンスターを指定した種類に変化させる
+<b>,</b>&#160;: モンスターの HP を 1 にする
+<b>(</b>&#160;: ミミックを置く
+<b>Ctrl-B</b>&#160;: モンスターを追放する
+<b>Ctrl-K</b>&#160;: モンスターを殺す
+</pre>
+<h4><span class="mw-headline" id="Wizard_.28map-mode.29_commands">マップモードのウィザードコマンド</span></h4>
+<p><b>X</b> を押したあとで使う。
+</p>
+<pre><b>T</b>&#160;: カーソルの位置へテレポートする。
+</pre>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>ゲームを<a href="http://crawl.chaosforge.org/Scoring" data-untr="1" class="mw-redirect" title="Scoring">スコア</a>に残したいなら、当然ウィザードモードには入れない。とはいえ<i>Crawl</i>はオフラインのゲームなので、何をしようと自由だ。たとえば<a href="http://crawl.chaosforge.org/Axe_of_Woe" data-untr="1" title="Axe of Woe">悲痛の斧</a>を作り出し、<a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>の持続時間を無限にして、ゲームを蹂躙したって誰にも止められない。
+</p><p>ウィザードモードでは、ふつうのゲームで役に立つことをいろいろ試せる。たとえば次のようなものがあるが、これに限らない。
+</p>
+<ul><li><b>f/F</b> には戦闘シミュレーターがあり、どんなモンスターを相手にしても、自分の武器の DPS や受けるダメージを試せる(敵は <b>M</b> で出せる)。</li>
+<li>呪文を唱えるのに必要なスキルや知力の水準。<b>A</b> と <b>s</b> でスキルを好きな値にし、<b>@</b> で腕力/知力/器用さを決め、<b>o</b> で好きな防具を作ればいい。</li>
+<li><a href="http://crawl.chaosforge.org/Vault" data-untr="1" title="Vault">ヴォールト</a>を作って、ゲーム内でどう見えるか確かめる。</li>
+<li>ある仕組みが細かいところでどう働くか。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

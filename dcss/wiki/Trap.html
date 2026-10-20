@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>罠 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="罠(Trap)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>罠 <span class="en">Trap</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Trap">Trap</a>」(0.34 向け、2026-06-02 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Trap&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<p><b>罠</b>(<b><a href="http://crawl.chaosforge.org/%5E" data-untr="1" title="^">^</a></b> で表される)は、踏んだプレイヤーや<a href="http://crawl.chaosforge.org/Monster" data-untr="1" title="Monster">モンスター</a>に害を与える<a href="http://crawl.chaosforge.org/Dungeon_features" data-untr="1" class="mw-redirect" title="Dungeon features">ダンジョンの地形</a>だ。罠には二つの種類がある。プレイヤーには常に見えている物理的な罠と、探索中にランダムで発動する<a href="#Malevolent_Force">悪意ある力</a>だ。ほとんどの罠は魔法の力によるものである。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Physical_traps"><span class="tocnumber">1</span> <span class="toctext">物理的な罠</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Malevolent_Force"><span class="tocnumber">2</span> <span class="toctext">悪意ある力</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Chance_to_trigger"><span class="tocnumber">2.1</span> <span class="toctext">発動する確率</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Obsolete_Traps"><span class="tocnumber">3</span> <span class="toctext">廃止された罠</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Physical_traps">物理的な罠</span></h2>
+<p>物理的な罠はプレイヤーには常に見えている(モンスターに見えているとは限らない)。罠を作動させるのはプレイヤーか、プレイヤーの<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>内にいるモンスターだけだ。飛んでいる者も、飛んでいない者と同じように罠を作動させる。
+</p><p><a href="http://crawl.chaosforge.org/Dungeon" data-untr="1" class="mw-redirect" title="Dungeon">迷宮</a>とその分岐のあちこちにランダムで生成される物理的な罠は、次の種類がある。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Temporary_teleport_trap.png" data-untr="1" class="image"><img alt="Temporary teleport trap.png" src="img/Temporary_teleport_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Teleport_trap" data-untr="1" title="Teleport trap">テレポートの罠</a></b>: プレイヤーの視界内でこの罠を踏んだものを、同じ階の別の場所へテレポートさせる。作動すると壊れる。</li>
+<li><a href="http://crawl.chaosforge.org/File:Alarm_trap.png" data-untr="1" class="image"><img alt="Alarm trap.png" src="img/Alarm_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Alarm_trap" data-untr="1" title="Alarm trap">警報の罠</a></b>: プレイヤーかモンスターが踏むと、とてつもなく大きな音を立て、プレイヤーに<a href="http://crawl.chaosforge.org/Sentinel%27s_Mark" data-untr="1" title="Sentinel&#39;s Mark">番兵の標的</a>をつける。作動すると壊れる。</li>
+<li><a href="http://crawl.chaosforge.org/File:Shaft.png" data-untr="1" class="image"><img alt="Shaft.png" src="img/Shaft.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Shaft" data-untr="1" title="Shaft">縦穴</a></b>: モンスターが踏んだとき、知力とヒットダイスで決まる判定に失敗すると、同じ分岐の 1〜3 階下へ落ちる。プレイヤーは踏んでも平気で、落ちたければ <b>&gt;</b> を押せば縦穴から下へ落ちられる。作動すると壊れる。</li>
+<li><a href="http://crawl.chaosforge.org/File:Dispersal_trap.png" data-untr="1" class="image"><img alt="Dispersal trap.png" src="img/Dispersal_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Dispersal_trap" data-untr="1" title="Dispersal trap">転送の罠</a></b>: プレイヤーかモンスターが踏むと、プレイヤーと、罠から見える範囲にいるモンスター全員を瞬間移動させる。この罠は消えない。</li>
+<li><a href="http://crawl.chaosforge.org/File:Zot_trap.png" data-untr="1" class="image"><img alt="Zot trap.png" src="img/Zot_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Zot_trap" data-untr="1" title="Zot trap">ゾットの罠</a></b>: プレイヤーか、プレイヤーの視界内にいるモンスターが踏むと、プレイヤーにランダムで有害な効果が起きる。テレポートさせられる、危険なモンスターが召喚される(時間で消えないこともある)、爆発でダメージを受ける、危ないほどの<a href="http://crawl.chaosforge.org/Magical_contamination" data-untr="1" class="mw-redirect" title="Magical contamination">魔力汚染</a>を受ける、などだ。モンスターが踏んだ場合は、プレイヤーに効果が及ぶかどうかは確率次第で、及んだときは「ゾットの力があなたに向けて発動した！」と表示される。この罠は消えない。</li>
+<li><a href="http://crawl.chaosforge.org/File:Web.png" data-untr="1" class="image"><img alt="Web.png" src="img/Web.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">蜘蛛の巣</a></b>: 主に<a href="http://crawl.chaosforge.org/Spider%27s_Nest" data-untr="1" title="Spider&#39;s Nest">蜘蛛の穴ぐら</a>で見かける。プレイヤーや<a href="http://crawl.chaosforge.org/List_of_arachnids" data-untr="1" class="mw-redirect" title="List of arachnids">蜘蛛</a>以外のモンスターが引っかかると「拘束中」の状態になり、<a href="http://crawl.chaosforge.org/Evasion" data-untr="1" title="Evasion">回避</a>が半分になって、近接攻撃も遠隔攻撃もできなくなる。床にもとからある巣は消えないが、<a href="http://crawl.chaosforge.org/Ensnare" data-untr="1" title="Ensnare">絡めとり</a>や<a href="http://crawl.chaosforge.org/Jumping_spider" data-untr="1" title="Jumping spider">飛びつき蜘蛛</a>が作った巣は、プレイヤーが破るか瞬間移動で抜け出すと消える。</li>
+<li><a href="http://crawl.chaosforge.org/File:Archmage_trap.png" data-untr="1" class="image"><img alt="Archmage trap.png" src="img/Archmage_trap.png" width="32" height="32" /></a> <b><a href="Archmage's_trap.html" title="Archmage&#39;s trap">大魔術師の罠</a></b>: プレイヤーの MP を 1/3 吸い取り、近くで<a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">いちばん強い</a>モンスター 2〜3 体の呪文を 20〜28 ターンのあいだ<a href="http://crawl.chaosforge.org/Brilliance" data-untr="1" class="mw-redirect" title="Brilliance">強化</a>する。</li>
+<li><a href="http://crawl.chaosforge.org/File:Devourer_trap.png" data-untr="1" class="image"><img alt="Devourer trap.png" src="img/Devourer_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Devourer%27s_trap" data-untr="1" title="Devourer&#39;s trap">貪食者の罠</a></b>: 3/4 の確率で、プレイヤーに<a href="http://crawl.chaosforge.org/Corrosion" data-untr="1" class="mw-redirect" title="Corrosion">腐食</a>を 6 段階かける(rCorr があれば 3 段階)。</li>
+<li><a href="http://crawl.chaosforge.org/File:Harlequin_trap.png" data-untr="1" class="image"><img alt="Harlequin trap.png" src="img/Harlequin_trap.png" width="32" height="32" /></a> <b><a href="Harlequin's_trap.html" title="Harlequin&#39;s trap">道化の罠</a></b>: 近くにいる聖なる者以外でいちばん強いモンスター 2〜3 体の近接攻撃に、20〜28 ターンのあいだ<a href="http://crawl.chaosforge.org/Chaos" data-untr="1" title="Chaos">混沌</a>の<a href="Attack_flavour.html" title="Attack flavour">追加効果</a>をつける。</li>
+<li><a href="http://crawl.chaosforge.org/File:Tyrant_trap.png" data-untr="1" class="image"><img alt="Tyrant trap.png" src="img/Tyrant_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Tyrant%27s_trap" data-untr="1" title="Tyrant&#39;s trap">暴君の罠</a></b>: プレイヤーを 10〜14 ターン(最大 50 ターン)<a href="http://crawl.chaosforge.org/Weak" data-untr="1" title="Weak">虚弱</a>にし、近くでいちばん強いモンスター 2〜3 体に 20〜28 ターンの<a href="http://crawl.chaosforge.org/Might" data-untr="1" title="Might">腕力強化</a>を与える。</li></ul>
+<p>このほか、<a href="http://crawl.chaosforge.org/Vault" data-untr="1" title="Vault">ヴォールト</a>でしか生成されない物理的な罠が三種類ある。目立つのは <a href="Zot_5.html" title="Zot:5">Zot:5</a> の<a href="http://crawl.chaosforge.org/Hall_of_Zot" data-untr="1" class="mw-redirect" title="Hall of Zot">ゾットの大広間</a>と<a href="http://crawl.chaosforge.org/Tomb" data-untr="1" class="mw-redirect" title="Tomb">太古の霊廟</a>だ。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/File:Teleport_trap.png" data-untr="1" class="image"><img alt="Teleport trap.png" src="img/Teleport_trap.png" width="32" height="32" /></a> <b>テレポートの永続罠</b>: 効果は普通のテレポートの罠と同じだが、作動しても壊れない。</li>
+<li><a href="http://crawl.chaosforge.org/File:Net_trap.png" data-untr="1" class="image"><img alt="Net trap.png" src="img/Net_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Net_trap" data-untr="1" title="Net trap">網の罠</a></b>: プレイヤーか、プレイヤーの視界内にいる<a href="http://crawl.chaosforge.org/Monster_intelligence" data-untr="1" title="Monster intelligence">知性のある</a>モンスターが踏むと、プレイヤーに<a href="http://crawl.chaosforge.org/Throwing_net" data-untr="1" title="Throwing net">投げ網</a>を放つ。<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>は罠のある階の絶対的な深さで決まる。モンスターが踏んだときに作動するのは 1/3 の確率だ。作動しても壊れない。</li>
+<li><a href="http://crawl.chaosforge.org/File:Pressure_plate.png" data-untr="1" class="image"><img alt="Pressure plate.png" src="img/Pressure_plate.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Pressure_plate" data-untr="1" title="Pressure plate">足踏みスイッチ</a></b>: プレイヤーの視界内で何かが踏むと、たいていはモンスターが放たれてプレイヤーを取り囲む。出てくるモンスターは分岐で違い、ほとんどの分岐では<a href="http://crawl.chaosforge.org/Redback" data-untr="1" title="Redback">背赤蜘蛛</a>が 8 匹だ。<a href="http://crawl.chaosforge.org/Snake_Pit" data-untr="1" title="Snake Pit">蛇穴</a>ではこれが<a href="http://crawl.chaosforge.org/Black_mamba" data-untr="1" title="Black mamba">ブラックマンバ</a>と<a href="http://crawl.chaosforge.org/Mana_viper" data-untr="1" title="Mana viper">マナバイパー</a>8 匹に、<a href="http://crawl.chaosforge.org/Realm_of_Zot" data-untr="1" class="mw-redirect" title="Realm of Zot">ゾットの領域</a>では「ピエロカー」になり、<a href="http://crawl.chaosforge.org/Killer_Klown" data-untr="1" title="Killer Klown">殺人ピエロ</a>が 3〜8 体出てくる。ヴォールトによっては、別の効果を起こす足踏みスイッチもある。どれも作動すると必ず壊れる。</li></ul>
+<h2><span class="mw-headline" id="Malevolent_Force">悪意ある力</span></h2>
+<p>まだ見たことのないマスを探索すると、深さに応じた確率で、プレイヤーは三つの<b>悪意ある力</b>の効果のどれかを発動させてしまう。
+</p>
+<ul><li><b>警報の罠の効果</b>: 警報の罠を踏んだのと同じで、とてつもなく大きな音が鳴り、プレイヤーに<a href="http://crawl.chaosforge.org/Sentinel%27s_Mark" data-untr="1" title="Sentinel&#39;s Mark">標的</a>がつく。D:1-3 では起きない。</li>
+<li><b>縦穴の効果</b>: 物理的な縦穴に自分から飛び込んだのと同じで、同じ分岐の 1〜3 階下へ落ち、すぐには上の階へ戻れない。どんなときに起きる・起きないかは<b><a href="http://crawl.chaosforge.org/Shaft#Exploration_Shafts" data-untr="1" title="Shaft">探索中の縦穴</a></b>を参照。</li>
+<li><b>テレポートの効果</b>: <a href="http://crawl.chaosforge.org/Teleportitis" data-untr="1" title="Teleportitis">不随意瞬間移動</a>の変異と同じように、同じ階のモンスターのそばのランダムな場所へテレポートさせられる。そういう場所が同じ階に見つからないときは発動しない。</li></ul>
+<p>縦穴やテレポートの効果の直後に見えたマスでは、続けて罠の効果は起きない。罠のあとに少しだけ息をつけるわけだ。
+</p><p><a href="http://crawl.chaosforge.org/Ashenzari" data-untr="1" title="Ashenzari">アシェンザリ</a>の信徒は、信仰心が ★4 以上あればこれらの効果をまったく受けない。
+</p>
+<h3><span class="mw-headline" id="Chance_to_trigger">発動する確率</span></h3>
+<p>悪意ある力が発動すると、起こりうる効果の中から等しい確率で一つが選ばれる。
+</p><p>あるターンに悪意ある力の効果が発動する確率は次のとおり。
+</p>
+<pre>(number of floor tiles revealed on this turn / number of floor tiles on current level) * (1 + absdepth of current level/10) / 9
+</pre>
+<p>したがって、ある階で悪意ある力が一回以上発動する確率は、単純に <code>(1 + absdepth/10) / 9</code> になる。
+各階でゲームが探索の罠を一回以上発動させようとする確率は、次の表のとおりだ。
+</p>
+<table class="prettytable">
+<tr>
+<th> 分岐 </th>
+<th> 1 階あたりの確率
+</th></tr>
+<tr>
+<td> D:1-9 </td>
+<td> 1/9
+</td></tr>
+<tr>
+<td> D:10-15<br />獣の棲み処<br />オークの坑道<br />エルフの大広間<br />沼 / 浅瀬<br />蛇穴 / 蜘蛛の穴ぐら<br />スライムの穴ぐら 1-2 階  </td>
+<td> 2/9
+</td></tr>
+<tr>
+<td> スライムの穴ぐら 3-5 階<br />宝物庫<br />地下墓地<br />太古の霊廟<br />深層<br />パンデモニウム<br />地獄の入り口<br />地獄の各分岐の 1 階<br />ゾットの領域 1-2 階 </td>
+<td> 3/9
+</td></tr>
+<tr>
+<td> 地獄の各分岐の 2-7 階<br />ゾットの領域 3-5 階 </td>
+<td> 4/9
+</td></tr></table>
+<p>上の確率は、ゲームがプレイヤーを罠にかけようと試みる確率だ。縦穴やテレポートの効果は失敗する場面が多いので、ある階で実際に罠にかかる確率をそのまま表しているわけではない。ある罠の効果が失敗しても、そのことは表示されない。
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Obsolete_Traps">廃止された罠</span></h2>
+<p>長年のあいだに、さまざまな理由で多くの罠がゲームから取り除かれてきた。
+</p>
+<ul><li><b>機械仕掛けの罠</b>は <a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> ですべて削除された。
+<ul><li><a href="http://crawl.chaosforge.org/File:Arrow_trap.png" data-untr="1" class="image"><img alt="Arrow trap.png" src="img/Arrow_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Arrow_trap" data-untr="1" title="Arrow trap">矢の罠</a></b>。</li>
+<li><a href="http://crawl.chaosforge.org/File:Blade_trap.png" data-untr="1" class="image"><img alt="Blade trap.png" src="img/Blade_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Blade_trap" data-untr="1" title="Blade trap">刃の罠</a></b>。</li>
+<li><a href="http://crawl.chaosforge.org/File:Bolt_trap.png" data-untr="1" class="image"><img alt="Bolt trap.png" src="img/Bolt_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Bolt_trap" data-untr="1" title="Bolt trap">クロスボウの罠</a></b>。</li>
+<li><a href="http://crawl.chaosforge.org/File:Dart_trap.png" data-untr="1" class="image"><img alt="Dart trap.png" src="img/Dart_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Dart_trap" data-untr="1" title="Dart trap">ダーツの罠</a></b>。</li>
+<li><a href="http://crawl.chaosforge.org/File:Spear_trap.png" data-untr="1" class="image"><img alt="Spear trap.png" src="img/Spear_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Spear_trap" data-untr="1" title="Spear trap">槍の罠</a></b>。</li>
+<li><a href="http://crawl.chaosforge.org/File:Needle_trap.png" data-untr="1" class="image"><img alt="Needle trap.png" src="img/Needle_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Needle_trap" data-untr="1" title="Needle trap">吹き矢針の罠</a></b>は <a href="http://crawl.chaosforge.org/0.24" data-untr="1" title="0.24">0.24</a> でダーツの罠に置き換えられた。</li>
+<li><a href="http://crawl.chaosforge.org/File:Axe_trap.png" data-untr="1" class="image"><img alt="Axe trap.png" src="img/Axe_trap.png" width="32" height="32" /></a><b> <a href="http://crawl.chaosforge.org/Axe_trap" data-untr="1" title="Axe trap">斧の罠</a></b>は <a href="http://crawl.chaosforge.org/0.11" data-untr="1" title="0.11">0.11</a> で削除された。</li></ul></li>
+<li><a href="http://crawl.chaosforge.org/File:Shadow_trap.png" data-untr="1" class="image"><img alt="Shadow trap.png" src="img/Shadow_trap.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Shadow_trap" data-untr="1" title="Shadow trap">影の怪物の罠</a></b>は <a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> で追加され、<a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> で削除された。</li>
+<li><a href="http://crawl.chaosforge.org/File:Gas_trap.png" data-untr="1" class="image"><img alt="Gas trap.png" src="img/Gas_trap.png" width="32" height="32" /></a> <b> <a href="http://crawl.chaosforge.org/Gas_trap" data-untr="1" title="Gas trap">ガスの罠</a></b>は <a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> で削除された。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="Archmage's_trap.html" title="Archmage&#39;s trap">大魔術師の罠</a>、<a href="http://crawl.chaosforge.org/Devourer%27s_trap" data-untr="1" title="Devourer&#39;s trap">貪食者の罠</a>、<a href="Harlequin's_trap.html" title="Harlequin&#39;s trap">道化の罠</a>、<a href="http://crawl.chaosforge.org/Tyrant%27s_trap" data-untr="1" title="Tyrant&#39;s trap">暴君の罠</a>は <a href="0.33.html" title="0.33">0.33</a> で追加された。</li>
+<li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、悪意ある力は「出所のない悪意」と呼ばれていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、迷宮で探索中の<a href="http://crawl.chaosforge.org/Shaft" data-untr="1" title="Shaft">縦穴</a>の罠に落ちても、モンスターのいない場所に落とそうとはしなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、出所のない悪意の効果は「探索の罠」と呼ばれていて、探索中の縦穴の罠は分岐ごとに一回という制限がなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、罠の上にモンスターが現れることはなかった。そのため、<a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">蜘蛛の巣</a>のあるマスの<a href="http://crawl.chaosforge.org/Corpse" data-untr="1" title="Corpse">死体</a>には<a href="Animate_Dead.html" title="Animate Dead">死霊の蘇生</a>が効かなかった。また、<a href="http://crawl.chaosforge.org/Magic_mapping" data-untr="1" class="mw-redirect" title="Magic mapping">魔法の地図</a>の巻物では罠がわからなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.24" data-untr="1" title="0.24">0.24</a> で、探索の罠の効果は、その場で起こりうる効果の中からだけ選ばれるようになった。</li>
+<li><a href="http://crawl.chaosforge.org/0.23" data-untr="1" title="0.23">0.23</a> で罠が作り直された。それより前は次のとおりだった。
+<ul><li>探索の罠はなかった。そのかわり、物理的な罠がプレイヤーから隠されていることが多く、XL に応じた確率で見つかった。<a href="http://crawl.chaosforge.org/Ashenzari" data-untr="1" title="Ashenzari">アシェンザリ</a>は罠を見つける確率を上げた。</li>
+<li><a href="http://crawl.chaosforge.org/Dispersal_trap" data-untr="1" title="Dispersal trap">転送の罠</a>が登場した。</li>
+<li>警報の罠と網の罠は、モンスターが踏んでもプレイヤーには影響しなかった。</li>
+<li>モンスターは、プレイヤーの<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外にいても物理的な罠を作動させた。</li>
+<li><a href="Zot_5.html" title="Zot:5">Zot:5</a> の<a href="http://crawl.chaosforge.org/Hall_of_Zot" data-untr="1" class="mw-redirect" title="Hall of Zot">ゾットの大広間</a>や<a href="http://crawl.chaosforge.org/Tomb" data-untr="1" class="mw-redirect" title="Tomb">太古の霊廟</a>などの罠の配置は、今とはかなり違っていた。</li></ul></li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、飛んでいるプレイヤーやモンスターは罠の作動を避けられた。このバージョンで影の怪物の罠が追加され、罠の解除がなくなった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、機械仕掛けの罠は矢弾を落とし、テレポートの罠はすべて永続だった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、機械仕掛けの罠はどの分岐にもランダムに配置されていた。罠の発見は<a href="http://crawl.chaosforge.org/Traps_(skill)" data-untr="1" title="Traps (skill)">罠</a>スキルで決まった。</li>
+<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> より前は、探索(コマンド <b>s</b>)で罠を見つけられた。</li>
+<li><a href="http://crawl.chaosforge.org/0.11" data-untr="1" title="0.11">0.11</a> より前は、罠のダメージは階の深さに応じて大きくなった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

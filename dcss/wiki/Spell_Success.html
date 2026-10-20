@@ -47,13 +47,13 @@
 </div>
 
 </td></tr></table>
-<p><b>呪文の成功率(spell success)</b>とは、<a href="http://crawl.chaosforge.org/Spell" title="Spell">呪文</a>を唱えたときに成功が見込める割合のことだ。
+<p><b>呪文の成功率(spell success)</b>とは、<a href="http://crawl.chaosforge.org/Spell" data-untr="1" title="Spell">呪文</a>を唱えたときに成功が見込める割合のことだ。
 成功率は次の要素が複雑に組み合わさって決まる。
 </p>
 <ol><li> 呪文のレベル</li>
-<li> 呪文に関わるスキルと<a href="http://crawl.chaosforge.org/Intelligence" title="Intelligence">知力</a></li>
-<li> <a href="http://crawl.chaosforge.org/Body_armour" class="mw-redirect" title="Body armour">胴鎧</a>と<a href="http://crawl.chaosforge.org/Shields" title="Shields">盾</a>によるペナルティ(<a href="Armour_(skill).html" title="Armour (skill)">甲冑スキル</a>/<a href="http://crawl.chaosforge.org/Shields_(skill)" title="Shields (skill)">盾スキル</a>で軽くなる)</li>
-<li> <a href="http://crawl.chaosforge.org/Wizardry" title="Wizardry">魔術強化</a>や<a href="http://crawl.chaosforge.org/Good_mutations#Wild_Magic" title="Good mutations">暴走する魔力</a>などの補正</li></ol>
+<li> 呪文に関わるスキルと<a href="http://crawl.chaosforge.org/Intelligence" data-untr="1" title="Intelligence">知力</a></li>
+<li> <a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>と<a href="http://crawl.chaosforge.org/Shields" data-untr="1" title="Shields">盾</a>によるペナルティ(<a href="Armour_(skill).html" title="Armour (skill)">甲冑スキル</a>/<a href="http://crawl.chaosforge.org/Shields_(skill)" data-untr="1" title="Shields (skill)">盾スキル</a>で軽くなる)</li>
+<li> <a href="Wizardry.html" title="Wizardry">魔術強化</a>や<a href="Good_mutations.html#Wild_Magic" title="Good mutations">暴走する魔力</a>などの補正</li></ol>
 <h2><span class="mw-headline" id="Base_Chance">基本の失敗値</span></h2>
 <p>ソースコードは成功ではなく<i>失敗</i>の確率で計算している。だから spellFailure はできるだけ低いほうがいい。実のところ、失敗率を0%にするには失敗値を<b>マイナス</b>まで下げる必要がある。これについては後で詳しく述べる。
 </p><p><i>あらゆる</i>補正をかける前の基本の失敗値は次のとおり。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
@@ -65,12 +65,12 @@
               + Encumbrance penalties
 </pre>
 <ul><li>60 は基準として決められた失敗値で、特に根拠はない。</li>
-<li>知力と呪文スキル(その呪文の系統のスキル<i>と</i><a href="http://crawl.chaosforge.org/Spellcasting" title="Spellcasting">呪文詠唱</a>)を上げると失敗値は下がる。</li>
+<li>知力と呪文スキル(その呪文の系統のスキル<i>と</i><a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a>)を上げると失敗値は下がる。</li>
 <li>レベルの高い呪文ほど難しく、防具や盾を着けるとさらに難しくなる。</li></ul>
 <p>この時点で spellFailure の上限は 210 だ。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
 </p>
 <h3><span class="mw-headline" id="Spell_skills">呪文スキル</span></h3>
-<p>"Spell_skills" には呪文詠唱と、その呪文の系統のスキルの平均が入る(たとえば妖術/炎の系統の呪文なら、<a href="http://crawl.chaosforge.org/Conjurations" title="Conjurations">妖術</a>スキルと<a href="http://crawl.chaosforge.org/Fire_Magic" title="Fire Magic">炎の魔術</a>スキルの平均)。式は次のとおり。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+<p>"Spell_skills" には呪文詠唱と、その呪文の系統のスキルの平均が入る(たとえば妖術/炎の系統の呪文なら、<a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>スキルと<a href="http://crawl.chaosforge.org/Fire_Magic" data-untr="1" title="Fire Magic">炎の魔術</a>スキルの平均)。式は次のとおり。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
 <sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
 </p>
 <pre> spell_skills = [Spellcasting / 2] + [Average(Skill_level) * 2]
@@ -89,15 +89,15 @@
                    340 (レベル9)   (+80)
 </pre>
 <h3><span class="mw-headline" id="Encumbrance_penalties">重さによるペナルティ</span></h3>
-<p>鎧と盾による呪文のペナルティは、どちらもそれぞれの<a href="http://crawl.chaosforge.org/EV" class="mw-redirect" title="EV">EV</a>ペナルティから求める。まず EV ペナルティを出し、そこから呪文のペナルティを計算する。鎧と盾は互いに影響しない。<a href="http://crawl.chaosforge.org/Mountain_Dwarf" title="Mountain Dwarf">山ドワーフ</a>は鎧の重さを本来の半分として扱う。
+<p>鎧と盾による呪文のペナルティは、どちらもそれぞれの<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a>ペナルティから求める。まず EV ペナルティを出し、そこから呪文のペナルティを計算する。鎧と盾は互いに影響しない。<a href="http://crawl.chaosforge.org/Mountain_Dwarf" data-untr="1" title="Mountain Dwarf">山ドワーフ</a>は鎧の重さを本来の半分として扱う。
 </p><p><b>鎧</b><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
 </p>
-<pre> ev penalty = 1/225 * <a href="http://crawl.chaosforge.org/Encumbrance" class="mw-redirect" title="Encumbrance">encumbrance</a>^2 * (90 - 2 * <a href="Armour_(skill).html" title="Armour (skill)">armour_skill</a>) / (<a href="http://crawl.chaosforge.org/Str" class="mw-redirect" title="Str">str</a> + 3)
+<pre> ev penalty = 1/225 * <a href="http://crawl.chaosforge.org/Encumbrance" data-untr="1" class="mw-redirect" title="Encumbrance">encumbrance</a>^2 * (90 - 2 * <a href="Armour_(skill).html" title="Armour (skill)">armour_skill</a>) / (<a href="http://crawl.chaosforge.org/Str" data-untr="1" class="mw-redirect" title="Str">str</a> + 3)
  spell penalty = 19 * ev penalty
 </pre>
 <p><b>盾</b><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
 </p>
-<pre> ev penalty = 2/5 * <a href="http://crawl.chaosforge.org/Shields#EV_Penalty" title="Shields">encumbrance</a>^2 / (5 + str) * (27 - <a href="http://crawl.chaosforge.org/Shields_(skill)" title="Shields (skill)">shield_skill</a>) / 27
+<pre> ev penalty = 2/5 * <a href="http://crawl.chaosforge.org/Shields#EV_Penalty" data-untr="1" title="Shields">encumbrance</a>^2 / (5 + str) * (27 - <a href="http://crawl.chaosforge.org/Shields_(skill)" data-untr="1" title="Shields (skill)">shield_skill</a>) / 27
  spell penalty = 19 * ev penalty
 </pre>
 <h2><span class="mw-headline" id="Step_down">逓減</span></h2>
@@ -107,7 +107,7 @@
 </pre>
 <p>これは次のような逓減曲線になる。
 </p>
-<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:592px"><a href="http://crawl.chaosforge.org/File:Spell_success_stepdown.png" class="image"><img alt="" src="img/Spell_success_stepdown.png" width="590" height="372" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="http://crawl.chaosforge.org/File:Spell_success_stepdown.png" class="internal" title="Enlarge"></a></div>x軸 = spellFailure、y軸 = 生の失敗率</div></div></div></div>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:592px"><a href="http://crawl.chaosforge.org/File:Spell_success_stepdown.png" data-untr="1" class="image"><img alt="" src="img/Spell_success_stepdown.png" width="590" height="372" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="http://crawl.chaosforge.org/File:Spell_success_stepdown.png" data-untr="1" class="internal" title="Enlarge"></a></div>x軸 = spellFailure、y軸 = 生の失敗率</div></div></div></div>
 <p>曲線上のおもな点は次のとおり。
 </p>
 <table class="prettytable" style="text-align: center">
@@ -150,26 +150,26 @@
 </p><p>足し引きする補正が先にかかり、そのあとで掛け算の補正(ヴェフメットや魔術強化など)がかかる。<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
 </p><p><b>加算(失敗率が上がる):</b>
 </p>
-<ul><li><a href="http://crawl.chaosforge.org/Wild_Magic_(mutation)" title="Wild Magic (mutation)">暴走する魔力</a>: 1レベルにつき +4%</li>
-<li>魔法阻害(-Wiz)の<a href="http://crawl.chaosforge.org/Ru" title="Ru">犠牲</a>: 1レベルにつき +4%</li>
-<li><a href="http://crawl.chaosforge.org/Orb" title="Orb">オーブ</a>(<a href="http://crawl.chaosforge.org/Energy" title="Energy">活力</a>): +10%</li>
-<li><a href="http://crawl.chaosforge.org/Vertigo" title="Vertigo">酩酊</a>: +7%</li></ul>
+<ul><li><a href="http://crawl.chaosforge.org/Wild_Magic_(mutation)" data-untr="1" title="Wild Magic (mutation)">暴走する魔力</a>: 1レベルにつき +4%</li>
+<li>魔法阻害(-Wiz)の<a href="http://crawl.chaosforge.org/Ru" data-untr="1" title="Ru">犠牲</a>: 1レベルにつき +4%</li>
+<li><a href="Orb.html" title="Orb">オーブ</a>(<a href="Energy.html" title="Energy">活力</a>): +10%</li>
+<li><a href="http://crawl.chaosforge.org/Vertigo" data-untr="1" title="Vertigo">酩酊</a>: +7%</li></ul>
 <p><b>減算(失敗率が下がる):</b>
 </p>
-<ul><li><a href="http://crawl.chaosforge.org/Subdued_Magic" title="Subdued Magic">抑制された魔力</a>: 1レベルにつき -2%</li></ul>
+<ul><li><a href="http://crawl.chaosforge.org/Subdued_Magic" data-untr="1" title="Subdued Magic">抑制された魔力</a>: 1レベルにつき -2%</li></ul>
 <p><b>乗算:</b>
 </p>
-<ul><li><a href="http://crawl.chaosforge.org/Wizardry" title="Wizardry">魔術強化</a>: すべての呪文に ×<code>6 / (7 + sources)</code>%。魔術強化が1つ以上ある場合の値だ(魔術強化 x1 なら ×75%、x2 なら ×66.6%、以下同様)。</li>
-<li><a href="Vehumet.html" title="Vehumet">ヴェフメット</a>: <a href="http://crawl.chaosforge.org/Destructive_spell" class="mw-redirect" title="Destructive spell">破壊の呪文</a>に ×66.6%。<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></li>
-<li><a href="http://crawl.chaosforge.org/Transformation" title="Transformation">変身</a>:
-<ul><li><a href="http://crawl.chaosforge.org/Yak_Form" class="mw-redirect" title="Yak Form">ヤクの形態</a>: 氷の魔術に ×66.6%</li>
-<li><a href="http://crawl.chaosforge.org/Scarab_Form" class="mw-redirect" title="Scarab Form">スカラベの形態</a>: 炎の魔術に ×66.6%</li>
-<li><a href="http://crawl.chaosforge.org/Sphinx_Form" class="mw-redirect" title="Sphinx Form">スフィンクスの形態</a>: 呪術に ×66.6%</li></ul></li>
-<li>防具の<a href="http://crawl.chaosforge.org/Ego" title="Ego">エゴ</a>:
-<ul><li><a href="http://crawl.chaosforge.org/Command" title="Command">統率</a>: 召喚術に ×<code>18/(18+Armour)</code></li>
-<li><a href="http://crawl.chaosforge.org/Death_(ego)" title="Death (ego)">死</a>: 死霊術に ×50%</li>
-<li><a href="http://crawl.chaosforge.org/Resonance" title="Resonance">共鳴</a>: 鍛造術に ×66.6%</li></ul></li></ul>
-<p><a href="http://crawl.chaosforge.org/Revenant" title="Revenant">レヴナント</a>の再燃による補正は <code>raw_failure * 0.75 - 5</code> で、ほかの生の失敗率の要素がすべてかかった後に適用される。
+<ul><li><a href="Wizardry.html" title="Wizardry">魔術強化</a>: すべての呪文に ×<code>6 / (7 + sources)</code>%。魔術強化が1つ以上ある場合の値だ(魔術強化 x1 なら ×75%、x2 なら ×66.6%、以下同様)。</li>
+<li><a href="Vehumet.html" title="Vehumet">ヴェフメット</a>: <a href="http://crawl.chaosforge.org/Destructive_spell" data-untr="1" class="mw-redirect" title="Destructive spell">破壊の呪文</a>に ×66.6%。<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></li>
+<li><a href="http://crawl.chaosforge.org/Transformation" data-untr="1" title="Transformation">変身</a>:
+<ul><li><a href="http://crawl.chaosforge.org/Yak_Form" data-untr="1" class="mw-redirect" title="Yak Form">ヤクの形態</a>: 氷の魔術に ×66.6%</li>
+<li><a href="http://crawl.chaosforge.org/Scarab_Form" data-untr="1" class="mw-redirect" title="Scarab Form">スカラベの形態</a>: 炎の魔術に ×66.6%</li>
+<li><a href="http://crawl.chaosforge.org/Sphinx_Form" data-untr="1" class="mw-redirect" title="Sphinx Form">スフィンクスの形態</a>: 呪術に ×66.6%</li></ul></li>
+<li>防具の<a href="http://crawl.chaosforge.org/Ego" data-untr="1" title="Ego">エゴ</a>:
+<ul><li><a href="Command.html" title="Command">統率</a>: 召喚術に ×<code>18/(18+Armour)</code></li>
+<li><a href="Death_(ego).html" title="Death (ego)">死</a>: 死霊術に ×50%</li>
+<li><a href="Resonance.html" title="Resonance">共鳴</a>: 鍛造術に ×66.6%</li></ul></li></ul>
+<p><a href="Revenant.html" title="Revenant">レヴナント</a>の再燃による補正は <code>raw_failure * 0.75 - 5</code> で、ほかの生の失敗率の要素がすべてかかった後に適用される。
 </p><p>補正がすべてかかると、最終的な<i>生の失敗率</i>が出る。これを次の関数で実際の成功率に変換する。
 </p>
 <h2><span class="mw-headline" id="Final_Step">最後の段階</span></h2>
@@ -178,7 +178,7 @@
 <pre>(1d101 + 1d101 + 1d100 - 3)/3 &lt; fail chance
 </pre>
 <p>これは失敗率に次の変換をかけるのと同じだ(x軸は生の失敗率、y軸は実際の失敗&#160;%)。
-</p><p><a href="http://crawl.chaosforge.org/File:Spell_success_transformation.png" class="image"><img alt="Spell success transformation.png" src="img/Spell_success_transformation.png" width="640" height="480" /></a>
+</p><p><a href="http://crawl.chaosforge.org/File:Spell_success_transformation.png" data-untr="1" class="image"><img alt="Spell success transformation.png" src="img/Spell_success_transformation.png" width="640" height="480" /></a>
 </p><p>このシグモイド関数のせいで、失敗率が高いときと低いときはなかなか下がらないが、真ん中あたりではぐんぐん下がる。生の失敗率が33%未満なら、次の式で求められる。
 </p>
 <pre> N                 = (raw_failure_rate) * 3
@@ -249,20 +249,20 @@
 <td>0.8%
 </td></tr>
 </table>
-<p>*それぞれの生の失敗率に届くのに必要な SpellFailure。<i><a href="http://crawl.chaosforge.org/Wizardry" title="Wizardry">魔術強化</a>のような掛け算の補正が無い場合の値だ</i>。たとえば魔術強化 x1 があれば、SpellFailure 1 は生の失敗率 (28% * 0.75) = 21% になる。
+<p>*それぞれの生の失敗率に届くのに必要な SpellFailure。<i><a href="Wizardry.html" title="Wizardry">魔術強化</a>のような掛け算の補正が無い場合の値だ</i>。たとえば魔術強化 x1 があれば、SpellFailure 1 は生の失敗率 (28% * 0.75) = 21% になる。
 </p>
 <h2><span class="mw-headline" id="Strategy">戦略</span></h2>
 <p>これらの式がゲーム中に実際に役立つかは怪しい。スキルを上げつつときどき失敗率を確認し、満足できる値になったら止める。たいていはそれで足りる。
 </p><p>とはいえ、戦略面から知っておくと便利なこともある。
 </p>
 <ul><li>高レベルの呪文は鍛えるのにとんでもない量の経験値が要るので、あと何レベル必要かを前もって知っておけるのは便利だ。</li>
-<li>防具の<a href="http://crawl.chaosforge.org/Encumbrance" class="mw-redirect" title="Encumbrance">重さ</a>を数値で表せる。たとえば術者が「<a href="http://crawl.chaosforge.org/Fire_dragon_scales" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>の呪文ペナルティは、各系統のスキル6レベル分に相当する」と言えるようになる。そうすれば、それを着る価値があるかを短期的にも(「これを着て<i>いま</i>呪文を唱えられるか」)長期的にも(「<i>ゾットの領域に着くころ</i>、これを着て呪文を唱えられるか」)判断できる。</li>
-<li>スキルの相対的な価値を計算できる。たとえば &lt;呪文の系統&gt; のスキル1レベルが甲冑スキル1レベルより役に立つのはいつか、<a href="http://crawl.chaosforge.org/Strength" title="Strength">腕力</a>1点が<a href="http://crawl.chaosforge.org/Intelligence" title="Intelligence">知力</a>1点より価値を持つのはいつか、がわかる。</li></ul>
+<li>防具の<a href="http://crawl.chaosforge.org/Encumbrance" data-untr="1" class="mw-redirect" title="Encumbrance">重さ</a>を数値で表せる。たとえば術者が「<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>の呪文ペナルティは、各系統のスキル6レベル分に相当する」と言えるようになる。そうすれば、それを着る価値があるかを短期的にも(「これを着て<i>いま</i>呪文を唱えられるか」)長期的にも(「<i>ゾットの領域に着くころ</i>、これを着て呪文を唱えられるか」)判断できる。</li>
+<li>スキルの相対的な価値を計算できる。たとえば &lt;呪文の系統&gt; のスキル1レベルが甲冑スキル1レベルより役に立つのはいつか、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>1点が<a href="http://crawl.chaosforge.org/Intelligence" data-untr="1" title="Intelligence">知力</a>1点より価値を持つのはいつか、がわかる。</li></ul>
 <p>もちろん、こんな計算をしなくても困らない。こうした情報のほとんど(あるいは全部)は、ゲーム中に失敗率を確かめるだけでわかる。防具を着てみて失敗率が許せないほど高ければ、着なければいい。計算はいらない! スキルを少し鍛えたら、着たい防具をもう一度着てみて、ましになったか確かめればいい。
 </p>
 <h2><span class="mw-headline" id="Analysis">分析</span></h2>
 <h3><span class="mw-headline" id="Skill_Req.27d_to_Cast_L9_Spells">レベル9の呪文を唱えるのに必要なスキル</span></h3>
-<p>たとえば<a href="http://crawl.chaosforge.org/Fire_Storm" title="Fire Storm">炎の嵐</a>を安定して唱えたいとする。例として失敗率10%を目標にしよう。それには上の表を見ればいい。
+<p>たとえば<a href="http://crawl.chaosforge.org/Fire_Storm" data-untr="1" title="Fire Storm">炎の嵐</a>を安定して唱えたいとする。例として失敗率10%を目標にしよう。それには上の表を見ればいい。
 </p>
 <ul><li>「実際の」失敗率を10%にするには、生の失敗率を28%にする必要がある。</li>
 <li>魔術強化を考えずに生の失敗率を28%にするには、SpellFailure を 1 にする必要がある。</li></ul>
@@ -282,28 +282,28 @@
 <li><b>魔術強化 x1</b>: {呪文詠唱 14、avg_skill 22.49}、{呪文詠唱 20.7、avg_skill 20.7}</li>
 <li><b>魔術強化 x2</b> / <b>ヴェフメット</b>: {呪文詠唱 14、avg_skill 21.5}、{呪文詠唱 20、avg_skill 20}</li>
 <li><b>ヴェフメット + 魔術強化 x1</b>: {呪文詠唱 14、avg_skill 20.2}、{呪文詠唱 18.9、avg_skill 18.9}</li></ul>
-<p>この数字は炎の嵐に限らず、ゲーム中のどのレベル9の呪文にも当てはまる。ただし<i>知力 30、重さ 0 の場合の話だ</i>。たとえば<a href="http://crawl.chaosforge.org/Swamp_dragon_scales" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>と<a href="http://crawl.chaosforge.org/Kite_shield" title="Kite shield">カイトシールド</a>を着けているなら、唱えるのにもっとスキルが要る。呪文のレベル、知力、重さの値は状況に合わせて変えてほしい。
+<p>この数字は炎の嵐に限らず、ゲーム中のどのレベル9の呪文にも当てはまる。ただし<i>知力 30、重さ 0 の場合の話だ</i>。たとえば<a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>と<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>を着けているなら、唱えるのにもっとスキルが要る。呪文のレベル、知力、重さの値は状況に合わせて変えてほしい。
 </p>
 <h3><span class="mw-headline" id="Measuring_Encumbrance">重さを測る</span></h3>
 <p>重さが実際の失敗&#160;%に与える影響は線形ではない。ただ、「埋め合わせるのに必要な呪文の系統のスキルのレベル」という形で測ることはできる。
 </p><p><b>鎧</b>
 </p><p>胴鎧は SpellFailure を <code>19/225 * encumbrance^2 * (90 - 2 * Armour) / (str + 3)</code> 増やす。呪文詠唱を除くすべての呪文の系統のスキルが1レベルずつ上がると、SpellFailure は 12 下がる。よって鎧の重さは [SpellFailure の増加分] / 12 という式で、スキルのレベルに換算できる。
-</p><p>例: 腕力 6 で<a href="http://crawl.chaosforge.org/Troll_leather_armour" title="Troll leather armour">トロル革の鎧</a>(重さ = 4)を着ていて、甲冑スキルが 0 だとする。SpellFailure は <code>19/225 * 4^2 * (90 - 0) / (6 + 3)</code> = 13.51、各スキル1.13レベル分になる。大局的に見れば大した量ではない。トロル革の鎧を手に入れるころには、1レベル程度のペナルティは帳消しにできる。
+</p><p>例: 腕力 6 で<a href="http://crawl.chaosforge.org/Troll_leather_armour" data-untr="1" title="Troll leather armour">トロル革の鎧</a>(重さ = 4)を着ていて、甲冑スキルが 0 だとする。SpellFailure は <code>19/225 * 4^2 * (90 - 0) / (6 + 3)</code> = 13.51、各スキル1.13レベル分になる。大局的に見れば大した量ではない。トロル革の鎧を手に入れるころには、1レベル程度のペナルティは帳消しにできる。
 </p><p>参考までに:
 </p>
-<ul><li>腕力 10、<a href="http://crawl.chaosforge.org/Leather_armour" title="Leather armour">レザーアーマー</a>、甲冑スキル 0: 各スキル -0.78 レベル</li>
-<li>腕力 10、<a href="http://crawl.chaosforge.org/Ring_mail" title="Ring mail">リングメイル</a>または<a href="http://crawl.chaosforge.org/Swamp_dragon_scales" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>、甲冑スキル 5: 各スキル -2.12 レベル</li>
-<li>腕力 10、<a href="http://crawl.chaosforge.org/Fire_dragon_scales" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>、甲冑スキル 5: 各スキル -5.24 レベル</li></ul>
+<ul><li>腕力 10、<a href="http://crawl.chaosforge.org/Leather_armour" data-untr="1" title="Leather armour">レザーアーマー</a>、甲冑スキル 0: 各スキル -0.78 レベル</li>
+<li>腕力 10、<a href="http://crawl.chaosforge.org/Ring_mail" data-untr="1" title="Ring mail">リングメイル</a>または<a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>、甲冑スキル 5: 各スキル -2.12 レベル</li>
+<li>腕力 10、<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>、甲冑スキル 5: 各スキル -5.24 レベル</li></ul>
 <p>腕力とスキルによって値が変わる点に注意。甲冑スキルを鍛えればペナルティを減らせることも覚えておこう(詳しくは<a href="#Armour_skill_vs_Spell_skill">甲冑スキルと呪文スキル</a>を参照)。
 </p><p><b>盾</b>
 </p><p>盾は SpellFailure を <code>38/5 * encumbrance^2 / (str + 5) * (27 - Shields)/27</code> 増やす。上の胴鎧と同じ方法で、盾の重さも数値にできる。鎧と比べると、腕力の影響はやや小さく、盾スキルの影響は大きい。
-</p><p>腕力 6 で<a href="http://crawl.chaosforge.org/Buckler" title="Buckler">バックラー</a>(重さ = 5)を持ち、盾スキルが 0 なら、SpellFailure は <code>38/5 * 5^2 / (6 + 5) * 27/27</code> = 17.27、各スキル1.44レベル分になる。<a href="http://crawl.chaosforge.org/Kite_shield" title="Kite shield">カイトシールド</a>ならその4倍、<a href="http://crawl.chaosforge.org/Tower_shield" title="Tower shield">タワーシールド</a>なら9倍だ。
+</p><p>腕力 6 で<a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>(重さ = 5)を持ち、盾スキルが 0 なら、SpellFailure は <code>38/5 * 5^2 / (6 + 5) * 27/27</code> = 17.27、各スキル1.44レベル分になる。<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>ならその4倍、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>なら9倍だ。
 </p>
 <h3><span class="mw-headline" id="Armour_skill_vs_Spell_skill">甲冑スキルと呪文スキル</span></h3>
 <ul><li>甲冑スキルは SpellFailure を <code>-Armour * 38/225 * encumbrance^2 / (str + 3)</code> 減らす。</li>
 <li>呪文詠唱を除くすべての呪文の系統のスキルが1ずつ上がると、SpellFailure は 12 下がる。必要なら系統の数で割る。</li>
 <li>したがって甲冑スキル1レベルは、各系統のスキル <code>19/1350 * encumbrance^2 / (str + 3)</code> レベル分、ざっと <code>1/71 * encumbrance^2 / (str + 3)</code> レベル分に相当する。</li></ul>
-<p>たとえば腕力 11 で<a href="http://crawl.chaosforge.org/Fire_dragon_scales" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>を着ているなら、式は <code>1/71 * 11^2 / 14</code> = 0.122 で、甲冑 8.21 : 各系統 1 の比になる。<a href="http://crawl.chaosforge.org/Fireball" title="Fireball">ファイアボール</a>のように2系統の呪文なら、甲冑スキル 4.1 が地の魔術 1 「または」妖術 1 に相当し、甲冑 8.21 が地の魔術と妖術の「両方」1 に相当する。
+<p>たとえば腕力 11 で<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>を着ているなら、式は <code>1/71 * 11^2 / 14</code> = 0.122 で、甲冑 8.21 : 各系統 1 の比になる。<a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>のように2系統の呪文なら、甲冑スキル 4.1 が地の魔術 1 「または」妖術 1 に相当し、甲冑 8.21 が地の魔術と妖術の「両方」1 に相当する。
 </p><p>もちろん、これは失敗率<b>だけ</b>を見た話だ。甲冑スキルを鍛えれば守りが固くなり、呪文の系統を鍛えれば威力が上がる。
 </p>
 <h3><span class="mw-headline" id="Strength_vs_Intelligence">腕力と知力</span></h3>
@@ -312,17 +312,17 @@
 <li>盾: <code>(1/&lt;str+5&gt; - 1/&lt;str+x+5&gt;) * 38/5 * encumbrance^2 * (27 - Shields)/27</code></li></ul></li>
 <li>知力は1点につき SpellFailure を 2 下げる。</li></ul>
 <p>腕力 11、ファイアドラゴンの鱗一式、甲冑スキル 0 だとする。レベルアップで腕力+2か知力+2を選べるとき、腕力+2の効果は <code>(1/14 - 1/16) * 19/225 * 11^2 * (90 - 0)</code> = SpellFailure 8.21 で、知力による 2*2 = SpellFailure 4 より大きい。
-</p><p>この腕力 11 のキャラクターがさらに<a href="http://crawl.chaosforge.org/Kite_shield" title="Kite shield">カイトシールド</a>を持ち、盾スキルが 9 なら、腕力+2でさらに <code>(1/16 - 1/18) * 38/5 * 10^2 * 18/27</code> = SpellFailure 3.52 下がる。
-</p><p>もちろん、知力は<a href="http://crawl.chaosforge.org/Spell_power" class="mw-redirect" title="Spell power">呪文の威力</a>も上げるし、腕力は<a href="http://crawl.chaosforge.org/EV" class="mw-redirect" title="EV">EV</a>のペナルティも減らす。
+</p><p>この腕力 11 のキャラクターがさらに<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>を持ち、盾スキルが 9 なら、腕力+2でさらに <code>(1/16 - 1/18) * 38/5 * 10^2 * 18/27</code> = SpellFailure 3.52 下がる。
+</p><p>もちろん、知力は<a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">呪文の威力</a>も上げるし、腕力は<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a>のペナルティも減らす。
 </p>
 <h2><span class="mw-headline" id="See_also">関連項目</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/Spell_power" class="mw-redirect" title="Spell power">呪文の威力</a></li>
-<li><a href="http://crawl.chaosforge.org/Miscast_effect" title="Miscast effect">呪文失敗の効果</a></li></ul>
+<ul><li><a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">呪文の威力</a></li>
+<li><a href="Miscast_effect.html" title="Miscast effect">呪文失敗の効果</a></li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/0.31" title="0.31">0.31</a> より前は、魔術強化とヴェフメットによる生の失敗率の倍率は 50% が下限だった。そのため魔術強化は最大5つまで、ヴェフメットのボーナスと合わせるなら1つまでしか効かなかった。また、一部の<a href="http://crawl.chaosforge.org/Transmutations" title="Transmutations">変成</a>の呪文は失敗率を上げていた。<a href="http://crawl.chaosforge.org/Spider_Form" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(+10%)と<a href="http://crawl.chaosforge.org/Blade_Hands_(spell)" title="Blade Hands (spell)">刃の手</a>(+20%)だ。</li>
-<li><a href="http://crawl.chaosforge.org/0.26" title="0.26">0.26</a> より前は、spellFailure に上限が無かった。</li>
-<li><a href="http://crawl.chaosforge.org/0.22" title="0.22">0.22</a> より前は、spell_schools が <code>50 * log2(1 + spell_schools/50)</code> で逓減されていたため、<code>(Spellcasting/2) + (2* AvgSpellSchool) &gt; 50</code> になると術者が損をした。その代わり、レベル9の呪文の spellFailure は 340 ではなく 330 だった。</li>
-<li><a href="http://crawl.chaosforge.org/0.20" title="0.20">0.20</a> より前は、<a href="#Step_down">逓減</a>の関数が違っていて、多項式ではなく区切り点で計算していた。失敗率の計算のほかの部分にも区切り点がもっとあった。</li></ul>
+<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、魔術強化とヴェフメットによる生の失敗率の倍率は 50% が下限だった。そのため魔術強化は最大5つまで、ヴェフメットのボーナスと合わせるなら1つまでしか効かなかった。また、一部の<a href="http://crawl.chaosforge.org/Transmutations" data-untr="1" title="Transmutations">変成</a>の呪文は失敗率を上げていた。<a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(+10%)と<a href="http://crawl.chaosforge.org/Blade_Hands_(spell)" data-untr="1" title="Blade Hands (spell)">刃の手</a>(+20%)だ。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、spellFailure に上限が無かった。</li>
+<li><a href="http://crawl.chaosforge.org/0.22" data-untr="1" title="0.22">0.22</a> より前は、spell_schools が <code>50 * log2(1 + spell_schools/50)</code> で逓減されていたため、<code>(Spellcasting/2) + (2* AvgSpellSchool) &gt; 50</code> になると術者が損をした。その代わり、レベル9の呪文の spellFailure は 340 ではなく 330 だった。</li>
+<li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> より前は、<a href="#Step_down">逓減</a>の関数が違っていて、多項式ではなく区切り点で計算していた。失敗率の計算のほかの部分にも区切り点がもっとあった。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap mw-references-columns"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/spl-cast.cc#L401">spl-cast.cc:401</a> (0.32.1)</span>

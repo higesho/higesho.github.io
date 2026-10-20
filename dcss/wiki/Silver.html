@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>銀 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="銀(Silver)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>銀 <span class="en">Silver</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Silver">Silver</a>」(0.34 向け、2026-02-08 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Silver&amp;action=history">編集履歴</a>をご覧ください。</p>
+<div class="wiki">
+</i>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 通常の矢弾より大きなダメージを与え、混沌の存在や魔法で変身した存在にはさらに大きなダメージを与える。変異した存在にも、その変異の程度に応じて追加のダメージを与える。
+</td></tr></table>
+<p><b>銀</b>は次の効果を持つ<a href="Brand.html" title="Brand">ブランド</a>だ。
+</p>
+<ul><li>どんな生き物に対しても、属性のないダメージを平均 +16.6%(100%〜133%)与える。</li>
+<li><a href="http://crawl.chaosforge.org/Shapeshifter" data-untr="1" title="Shapeshifter">変身</a>している生き物、<a href="http://crawl.chaosforge.org/Mutation" data-untr="1" title="Mutation">変異</a>した生き物、<a href="http://crawl.chaosforge.org/Chaotic" data-untr="1" title="Chaotic">混沌</a>の生き物には、属性のないダメージを最大 +75% 与える。プレイヤーも対象に含まれる。プレイヤーに対しては、変異の多さに応じてダメージが増える。詳しくは後述する。</li></ul>
+<p>銀の飛び道具を受けたとき、あなたがとくに銀に弱い状態なら、次のメッセージが出る。
+</p>
+<blockquote>銀があなたの体を灼いた！</blockquote>
+<p>銀は<a href="http://crawl.chaosforge.org/Javelin" data-untr="1" title="Javelin">ジャベリン</a>と、<a href="http://crawl.chaosforge.org/Unrand" data-untr="1" class="mw-redirect" title="Unrand">固定アーティファクト</a>の<a href="http://crawl.chaosforge.org/Lajatang_of_Order" data-untr="1" title="Lajatang of Order">秩序のラジャタン</a>に現れる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Silver_Damage_Calculation"><span class="tocnumber">1</span> <span class="toctext">銀のダメージの計算</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Chaotic_monsters_and_shapeshifted_characters"><span class="tocnumber">1.1</span> <span class="toctext">混沌のモンスターと変身中のキャラクター</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Mutated_Players"><span class="tocnumber">1.2</span> <span class="toctext">変異したプレイヤー</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Final_Calculation"><span class="tocnumber">1.3</span> <span class="toctext">最終的な計算</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#See_Also"><span class="tocnumber">2</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Silver_Damage_Calculation">銀のダメージの計算</span></h2>
+<h3><span class="mw-headline" id="Chaotic_monsters_and_shapeshifted_characters">混沌のモンスターと変身中のキャラクター</span></h3>
+<p>対象が混沌の存在か変身中なら、ダメージは次のとおり。
+</p>
+<pre>(normal_damage * 7) / 4  [rounded down]
+</pre>
+<p>つまりおよそ 175% のダメージになる。ほかのたいていのブランドと違い、ランダムな要素はない。プレイヤーが混沌の存在になることはないが、何らかの<a href="http://crawl.chaosforge.org/Transformation" data-untr="1" title="Transformation">変身</a>をしているあいだは変身中として扱われる。
+</p>
+<h3><span class="mw-headline" id="Mutated_Players">変異したプレイヤー</span></h3>
+<p>変身しておらず<a href="http://crawl.chaosforge.org/Mutation" data-untr="1" title="Mutation">変異</a>を持つプレイヤーに対しては、変異の多さによってダメージが変わる。外から受けた変異はすべて数えられ、<a href="http://crawl.chaosforge.org/Demonspawn" data-untr="1" title="Demonspawn">悪魔の血族</a>なら<a href="http://crawl.chaosforge.org/Demonspawn_mutation" data-untr="1" class="mw-redirect" title="Demonspawn mutation">悪魔の血族の変異</a>もすべて数えられる。それ以外の、種族が生まれつき持つ変異(オクトポードの触手など)は数えない。変異の数を合計し、次の式でダメージに換算する(変異は 15 個まで)。
+</p>
+<pre>normal_damage * ( 5 * mutations + 100 ) / 100  [rounded down]
+</pre>
+<p>したがって銀のダメージは、変異が 1 個なら 105%、15 個以上なら 175% と、その間で変わる。変異したモンスターはすべて混沌の存在として扱われるので、銀から常に最大のダメージを受ける。
+</p>
+<h3><span class="mw-headline" id="Final_Calculation">最終的な計算</span></h3>
+<p>銀による追加ダメージは、最後に 100%〜133% の<a href="http://crawl.chaosforge.org/Vorpal" data-untr="1" title="Vorpal">ランダムな倍率</a>と比べられ、高いほうが適用される。
+</p>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<p><a href="http://crawl.chaosforge.org/Category:Silver_vulnerability" data-untr="1" title="Category:Silver vulnerability">銀に弱いモンスターの一覧</a>
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、<a href="http://crawl.chaosforge.org/Boomerang" data-untr="1" title="Boomerang">ブーメラン</a>にも銀がついていることがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.24" data-untr="1" title="0.24">0.24</a> より前は、銀は混沌の生き物と変異した生き物にだけ追加ダメージを与え、すべてのモンスターに追加ダメージを与えるのは<a href="http://crawl.chaosforge.org/Steel" data-untr="1" title="Steel">鋼</a>のほうだった。</li>
+<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> より前は、<a href="http://crawl.chaosforge.org/Sling_bullet" data-untr="1" title="Sling bullet">スリングの弾</a>や<a href="http://crawl.chaosforge.org/Bolt" data-untr="1" title="Bolt">クロスボウの矢</a>にもブランドがつくことがあり、そのひとつが銀だった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、銀の<a href="http://crawl.chaosforge.org/Dart" data-untr="1" title="Dart">ダーツ</a>が見つかることがあった。また、銀の矢弾は通常の矢弾の 2 倍の重さがあった。</li>
+<li><a href="http://crawl.chaosforge.org/Lajatang_of_Order" data-untr="1" title="Lajatang of Order">秩序のラジャタン</a>は <a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> で登場した。</li>
+<li><a href="http://crawl.chaosforge.org/0.9" data-untr="1" class="mw-redirect" title="0.9">0.9</a> より前は、このブランドは実体のあるアンデッドのモンスターに対するダメージも高めた。</li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 70%">
+
+<tr>
+<th colspan="3"> <a href="Brand.html" title="Brand">ブランド</a>
+</th></tr>
+<tr>
+<th rowspan="3"> 近接武器
+</th>
+<th> 一般
+</th>
+<td> <a href="http://crawl.chaosforge.org/Antimagic" data-untr="1" title="Antimagic">反魔法</a> • <a href="http://crawl.chaosforge.org/Chaos" data-untr="1" title="Chaos">混沌</a> • <a href="Distortion.html" title="Distortion">歪曲</a>  • <a href="http://crawl.chaosforge.org/Draining_(brand)" data-untr="1" title="Draining (brand)">掠奪</a> • <a href="Electrocution.html" title="Electrocution">電撃</a> • <a href="http://crawl.chaosforge.org/Flaming" data-untr="1" title="Flaming">火炎</a> • <a href="http://crawl.chaosforge.org/Freezing" data-untr="1" title="Freezing">冷気</a> • <a href="http://crawl.chaosforge.org/Heavy" data-untr="1" title="Heavy">重撃</a> • <a href="Holy_wrath.html" title="Holy wrath">神罰</a> • <a href="http://crawl.chaosforge.org/Pain_(brand)" data-untr="1" title="Pain (brand)">苦痛</a> • <a href="http://crawl.chaosforge.org/Protection" data-untr="1" title="Protection">護り</a> • <a href="Reaching.html" title="Reaching">間合い</a> • <a href="http://crawl.chaosforge.org/Spectral_(brand)" data-untr="1" title="Spectral (brand)">霊体化</a> • <a href="http://crawl.chaosforge.org/Speed_(brand)" data-untr="1" title="Speed (brand)">早業</a> • <a href="http://crawl.chaosforge.org/Vampiric" data-untr="1" title="Vampiric">吸血</a> • <a href="http://crawl.chaosforge.org/Venom" data-untr="1" title="Venom">毒液</a>
+</td></tr>
+<tr>
+<th> 武器の種類
+</th>
+<td><a href="Devious.html" title="Devious">狡猾</a> • <a href="Valour.html" title="Valour">武勇</a> • <a href="Concussion.html" title="Concussion">衝撃</a> • <a href="Sundering.html" title="Sundering">断裂</a> • <a href="Entangling.html" title="Entangling">絡みつき</a> • <a href="Rebuke.html" title="Rebuke">叱責</a>
+</td></tr>
+<tr>
+<th> アーティファクト
+</th>
+<td> <a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a> • <a href="http://crawl.chaosforge.org/Deathbane" data-untr="1" title="Deathbane">死者殺し</a> • <a href="Dragon_slaying.html" title="Dragon slaying">竜殺し</a> • <a href="Reaping.html" title="Reaping">刈り取り</a> • <a class="mw-selflink selflink">銀</a>
+</td></tr>
+<tr>
+<th colspan="2"> 射撃武器
+</th>
+<td> <a href="http://crawl.chaosforge.org/Antimagic" data-untr="1" title="Antimagic">反魔法</a> • <a href="http://crawl.chaosforge.org/Draining_(brand)" data-untr="1" title="Draining (brand)">掠奪</a> • <a href="Electrocution.html" title="Electrocution">電撃</a> • <a href="http://crawl.chaosforge.org/Flaming" data-untr="1" title="Flaming">火炎</a> • <a href="http://crawl.chaosforge.org/Freezing" data-untr="1" title="Freezing">冷気</a> • <a href="http://crawl.chaosforge.org/Heavy" data-untr="1" title="Heavy">重撃</a> • <a href="Penetration.html" title="Penetration">貫通</a> • <a href="http://crawl.chaosforge.org/Speed_(brand)" data-untr="1" title="Speed (brand)">早業</a>
+</td></tr>
+<tr>
+<th colspan="2"> 投擲武器
+</th>
+<td> <a href="http://crawl.chaosforge.org/Atropa" data-untr="1" title="Atropa">アトロパ毒</a> • <a href="http://crawl.chaosforge.org/Curare" data-untr="1" title="Curare">クラーレ毒</a> • <a href="http://crawl.chaosforge.org/Datura" data-untr="1" title="Datura">ダチュラ毒</a> • <a href="http://crawl.chaosforge.org/Disjunction_(brand)" data-untr="1" title="Disjunction (brand)">分解</a> • <a href="http://crawl.chaosforge.org/Poisoned" data-untr="1" title="Poisoned">毒</a> • <a class="mw-selflink selflink">銀</a>
+</td></tr></table>
+</center>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
