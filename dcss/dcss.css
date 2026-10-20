@@ -174,6 +174,40 @@ table.apt td.neg{color:#ff8a80}
 table.apt td.na{color:var(--faint)}
 table.apt tbody tr:hover td,table.apt tbody tr:hover th{background:#182031}
 
+/* wiki 翻訳 */
+.wnote{font-size:13.5px;color:var(--dim);background:var(--stone);
+  border-left:2px solid var(--torch-dim);padding:8px 13px;margin:0 0 1.6em}
+.wiki{max-width:52em}
+.wiki h2{font-size:21px}
+.wiki h3{font-family:var(--serif);font-size:18px;font-weight:400;margin:1.6em 0 .5em}
+.wiki h4{font-size:15.5px;margin:1.3em 0 .4em}
+.wiki p,.wiki li{line-height:1.95}
+.wiki ul,.wiki ol{padding-left:1.4em;margin:0 0 1.1em}
+.wiki dl{margin:0 0 1.1em}
+.wiki dt{font-weight:600}
+.wiki dd{margin:0 0 .5em 1.4em}
+.wiki img{display:inline-block;vertical-align:middle;image-rendering:pixelated}
+.wiki table{border-collapse:collapse;margin:0 0 1.3em;background:var(--stone);
+  font-size:14px;display:inline-block;vertical-align:top;overflow-x:auto;max-width:100%}
+h1 .en{font-family:var(--mono);font-size:15px;color:var(--faint);letter-spacing:.02em;
+  margin-left:8px}
+.wiki th,.wiki td{border:1px solid var(--rule);padding:4px 9px;vertical-align:top}
+.wiki th{color:var(--dim);font-weight:600;text-align:left}
+.wiki .toc{background:var(--stone);border:1px solid var(--rule-soft);
+  padding:10px 18px;margin:0 0 1.6em;display:inline-block}
+.wiki .toc h2{font-size:15px;border:0;margin:0 0 .3em;padding:0}
+.wiki .toc ul{list-style:none;padding-left:1em;margin:0}
+.wiki .toc .tocnumber{color:var(--faint);margin-right:6px}
+.wiki .toc a{text-decoration:none}
+.wiki pre,.wiki code{font-family:var(--mono)}
+.wiki pre{background:var(--stone);padding:10px 13px;overflow-x:auto}
+.wiki sup.reference{font-size:11px}
+.wiki .references{font-size:13px;color:var(--dim)}
+.wlist{columns:2;column-gap:28px;padding-left:1.2em}
+.wlist li{break-inside:avoid;line-height:2}
+pre.license{font-family:var(--mono);font-size:12.5px;white-space:pre-wrap;color:var(--dim);
+  background:var(--stone);padding:14px 16px}
+
 /* 早見表 */
 details.quick{margin:0 0 1em}
 details.quick summary{cursor:pointer;color:var(--torch);font-size:14.5px;margin-bottom:.5em}
