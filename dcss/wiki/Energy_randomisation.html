@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>エネルギーのランダム化 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="エネルギーのランダム化(Energy randomisation)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>エネルギーのランダム化 <span class="en">Energy randomisation</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Energy_randomisation">Energy randomisation</a>」(0.31 向け、2024-01-15 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Energy_randomisation&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>エネルギーのランダム化</b>(<b>ランダムなエネルギー</b>、<b>速度のランダム化</b>とも呼ばれる)は、モンスターの動きを読みにくくするゲームの仕組みだ。モンスターの行動はほとんどの場合、決まったとおりに進む。たとえば<a href="http://crawl.chaosforge.org/Monster_speed" data-untr="1" title="Monster speed">速度</a> 100% のモンスターは、1.0 <a href="http://crawl.chaosforge.org/Turn" data-untr="1" title="Turn">ターン</a>に 1 回行動する。移動のときには、これがずれることがある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Concept_of_Energy"><span class="tocnumber">1.1</span> <span class="toctext">エネルギーという考え方</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Name"><span class="tocnumber">2</span> <span class="toctext">名前</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p><a href="0.31.html" title="0.31">0.31</a> では、エネルギーのランダム化が働くのは、敵対的なモンスターが、離れていくプレイヤーに向かって移動するときだけだ。
+</p><p>このとき、モンスターの移動は 1/3 ずつの確率で、0.1 ターン速くなるか、0.1 ターン遅くなるか、普通の速さになる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p>モンスターが<a href="http://crawl.chaosforge.org/Attack_of_opportunity" data-untr="1" class="mw-redirect" title="Attack of opportunity">機会攻撃</a>をするときは、エネルギーのランダム化は起きない。そのかわり、1/2 の確率で 0.1 ターン遅くなるか、普通に動くかのどちらかになる。「負のランダムなエネルギー」と考えればわかりやすい。機会攻撃ができる状況でも、実際には攻撃しなかったモンスターには、通常どおりエネルギーのランダム化がかかる。
+</p>
+<h3><span class="mw-headline" id="Concept_of_Energy">エネルギーという考え方</span></h3>
+<p>もう少し詳しく言うと、モンスターの行動は「エネルギー」で計られている。エネルギーはモンスターの速度に応じてたまっていく。<a href="http://crawl.chaosforge.org/Monster_speed" data-untr="1" title="Monster speed">速度</a> 100% の普通のモンスターは 1.0 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>あたり 10 エネルギー、速度 200% のモンスターは 1.0 ターンあたり 20 エネルギーを得る。「ランダムなエネルギー」は、1 マス移動するごとにエネルギーを ±1 する。
+</p><p>普通は、1 回の行動に 10 エネルギーかかる。モンスターは毎回、エネルギーが足りているときだけ行動し、余りは持ち越す。
+</p>
+<ul><li>速度 10 のモンスターが、エネルギーを 9 余らせているとしよう。このモンスターは 1 ターンに 10 エネルギーを得る。ここでランダムなエネルギーで +1 されると合計 20 になり、一度に 2 回移動できる。</li>
+<li>これでこのモンスターのエネルギーは 0 になる。次のターンに移動してランダムなエネルギーで -1 されると、エネルギーは -1 になる。その次のターンには 9 しかたまらないので、1 回分遅れることになる。</li></ul>
+<p>ものすごく運のいいモンスターなら、10 ラウンドごとに 1 回余分に動ける。ただ、上のように「2 回動いて、そのあと遅れる」という形になることのほうがずっと多い。
+</p>
+<h2><span class="mw-headline" id="Name">名前</span></h2>
+<p>上に書いたとおり、「エネルギーのランダム化」という名前は、コードの中でモンスターの行動が「エネルギー」で計られていることから来ている。移動にかかるエネルギーはほかの行動と同じ DEFAULT_ENERGY なので、このエネルギーにランダムさを持ち込むのがエネルギーのランダム化、というわけだ。
+</p><p>「速度のランダム化」と呼ばれることもあるが、この呼び方だと、移動だけでなくすべての行動がランダム化されるように誤解されるおそれがある。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> で、<a href="Attacks_of_opportunity.html" title="Attacks of opportunity">機会攻撃</a>の厳しさをやわらげるために、エネルギーのランダム化が復活した。以前の版と違い、離れていくプレイヤーをモンスターが<i>追いかける</i>ときにしか起きない。以前は、プレイヤーが待機していても攻撃していても、モンスターが 2 回動くことがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> でエネルギーのランダム化は削除された。柱回りを防ぐという役目は、ずっと厳しい機会攻撃に引き継がれた。</li>
+<li><a href="http://crawl.chaosforge.org/0.7" data-untr="1" class="mw-redirect" title="0.7">0.7</a> で、敵がランダムなエネルギーで得た行動を使って 2 回攻撃することはできなくなった。</li>
+<li>エネルギーのランダム化は <a href="http://crawl.chaosforge.org/0.6" data-untr="1" class="mw-redirect" title="0.6">0.6</a> で初めて導入された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/monster.cc#L5570">monster.cc:5570</a> (0.28.0)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

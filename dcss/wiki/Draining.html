@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>衰弱 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="衰弱(Draining)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>衰弱 <span class="en">Draining</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Draining">Draining</a>」(0.31 向け、2024-06-14 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Draining&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>衰弱</b>は、受けた者を萎えさせて力を削ぐ効果だ。具体的な効果は、対象がモンスターかプレイヤーキャラクターかで変わる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Effect"><span class="tocnumber">1</span> <span class="toctext">効果</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Player"><span class="tocnumber">1.1</span> <span class="toctext">プレイヤー</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Monster"><span class="tocnumber">1.2</span> <span class="toctext">モンスター</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Sources"><span class="tocnumber">2</span> <span class="toctext">原因</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Resistance"><span class="tocnumber">3</span> <span class="toctext">耐性</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Tips_.26_Tricks"><span class="tocnumber">4</span> <span class="toctext">小技</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Effect">効果</span></h2>
+<h3><span class="mw-headline" id="Player">プレイヤー</span></h3>
+<p>衰弱状態になると、プレイヤーの最大 <a href="http://crawl.chaosforge.org/HP" data-untr="1" class="mw-redirect" title="HP">HP</a> が衰弱の量に応じて一時的に下がる。最大 HP が 1 になるまで重なっていく。時間がたっても治らないが、<a href="http://crawl.chaosforge.org/XP" data-untr="1" class="mw-redirect" title="XP">XP</a> を得るにつれて回復していく。衰弱していても、得られる XP の量は減らない。
+</p><p><a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の聖杯の清めを使えば、衰弱はすべて治る。
+</p>
+<h3><span class="mw-headline" id="Monster">モンスター</span></h3>
+<p>モンスターが衰弱状態になると、<a href="http://crawl.chaosforge.org/Hit_dice" data-untr="1" title="Hit dice">ヒットダイス</a>が一時的に下がり、それにともなって<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>、近接攻撃の<a href="http://crawl.chaosforge.org/Accuracy" data-untr="1" class="mw-redirect" title="Accuracy">命中</a>、<a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>などいくつかの値が下がる。この効果は重なる。モンスターの場合、衰弱は時間がたつと治る。
+</p>
+<h2><span class="mw-headline" id="Sources">原因</span></h2>
+<p>次のものは負のエネルギーによる衰弱なので、<a href="http://crawl.chaosforge.org/Life_Protection" data-untr="1" class="mw-redirect" title="Life Protection">生命の守り</a>(rNeg)で防げる。
+</p>
+<ul><li>その名もずばりの<a href="http://crawl.chaosforge.org/Draining_(brand)" data-untr="1" title="Draining (brand)">掠奪の武器のブランド</a>。</li>
+<li><a href="Necrophage.html" title="Necrophage">屍肉喰らい</a>や<a href="http://crawl.chaosforge.org/Wight" data-untr="1" title="Wight">ワイト</a>などのモンスターの<a href="http://crawl.chaosforge.org/Category:Drain_experience_flavour" data-untr="1" title="Category:Drain experience flavour">近接攻撃</a>。</li>
+<li>ある種の<a href="http://crawl.chaosforge.org/Negative_energy" data-untr="1" title="Negative energy">負のエネルギー</a>のダメージ。<a href="http://crawl.chaosforge.org/Bolt_of_Draining" data-untr="1" title="Bolt of Draining">衰弱の矢</a>や、<a href="Necromancy.html" title="Necromancy">死霊術</a>の呪文の失敗など。</li>
+<li><a href="http://crawl.chaosforge.org/List_of_mummies" data-untr="1" class="mw-redirect" title="List of mummies">ミイラ</a>の<a href="Death_curse.html" title="Death curse">死の呪い</a>。</li>
+<li><a href="Kikubaaqudgha.html" title="Kikubaaqudgha">キクバークッグァ</a>の怒り。</li></ul>
+<p>次のものは負のエネルギーとは関係がない。
+</p>
+<ul><li>^Drain の性質を持つ<a href="Artefact.html" title="Artefact">アーティファクト</a>を外す。</li>
+<li>一時的な<a href="http://crawl.chaosforge.org/Flight" data-untr="1" class="mw-redirect" title="Flight">飛行</a>が切れたあとも、落ちたら死ぬ地形の上に浮かんだままでいる。</li>
+<li><a href="http://crawl.chaosforge.org/Invisibility_(ego)" data-untr="1" title="Invisibility (ego)">透明化</a>のエゴを持つアイテムを発動する(成功したかどうかにかかわらない)。</li>
+<li><a href="http://crawl.chaosforge.org/Cigotuvi%27s_Dreadful_Rot" data-untr="1" title="Cigotuvi&#39;s Dreadful Rot">シゴツヴィの恐るべき腐敗</a>を唱える。</li>
+<li><a href="Formicid.html" title="Formicid">フォーミシッド</a>の穴掘りの能力を使う。</li>
+<li><a href="Ru.html" title="Ru">ルー</a>の神の能力。</li>
+<li><a href="http://crawl.chaosforge.org/Hell%27s_mystical_force" data-untr="1" class="mw-redirect" title="Hell&#39;s mystical force">地獄の神秘の力</a>。</li></ul>
+<h2><span class="mw-headline" id="Resistance">耐性</span></h2>
+<p><a href="http://crawl.chaosforge.org/Negative_energy" data-untr="1" title="Negative energy">負のエネルギー</a>による衰弱は、負のエネルギーへの耐性で防げる。<a href="http://crawl.chaosforge.org/Demonic" data-untr="1" class="mw-redirect" title="Demonic">悪魔</a>、<a href="http://crawl.chaosforge.org/Undead" data-untr="1" title="Undead">アンデッド</a>、<a href="http://crawl.chaosforge.org/Nonliving" data-untr="1" title="Nonliving">非生物</a>のモンスターや、rN+ を 1 段階持つモンスターには負のエネルギーが効かないので、プレイヤーが与えられる衰弱はどれも効かない。プレイヤーの場合、rN+ が 1 / 2 / 3 段階あれば、衰弱はそれぞれ 50% / 75% / 100% 減る。
+</p><p>負のエネルギーと関係のない衰弱は、どうやっても防げない。ただし、<a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の聖杯の清めならやはり治せる。
+</p>
+<h2><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h2>
+<ul><li>終盤のキャラクターが運悪くひどく衰弱したなら、比較的危なくない脇の分岐(<a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>など)へ行って HP をいくらか取り戻すのも手だ。もちろん、手ごわい分岐で多くの経験値を稼いだほうが、衰弱は早く抜けやすい。</li>
+<li>モンスター相手なら、衰弱は効果的な弱体化になる。掠奪の武器で何度も攻撃すれば衰弱が重なり、敵を大きく弱らせられる。ただし、悪魔・アンデッド・非生物の敵には掠奪の武器は効かない。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> より前は、<a href="http://crawl.chaosforge.org/Zot_clock" data-untr="1" title="Zot clock">ゾットの時計</a>は最大 HP を永久に下げるのではなく、衰弱を与えていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、ゾットの時計で衰弱することはなく、衰弱が時計に関わることもなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、植物に分類されるモンスターは生まれつき負のエネルギーが効かなかった(したがって衰弱も効かなかった)。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、衰弱で一時的に下がるのはプレイヤーの最大 HP ではなく<a href="Skill.html" class="mw-redirect" title="Skills">スキル</a>だった。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、負のエネルギーへの耐性が上がるにつれて、衰弱と負のエネルギーのダメージが 33/66/100% 減っていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、モンスターを衰弱させるとその <a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">HD</a> が永久に下がった。モンスターは少し弱くなり、得られる <a href="http://crawl.chaosforge.org/XP" data-untr="1" class="mw-redirect" title="XP">XP</a> も減り、HD が 0 になるとその場で死んだ。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、衰弱するとキャラクターの経験値が減り、レベルが下がることもあった。これは永久的な効果で、XP が 0 を下回るとその場で死んだが、経験値をさらに稼げば取り戻せた。この頃の衰弱はスキルには影響しなかった。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

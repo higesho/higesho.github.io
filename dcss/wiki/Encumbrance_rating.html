@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>重さの値 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="重さの値(Encumbrance rating)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>重さの値 <span class="en">Encumbrance rating</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Encumbrance_rating">Encumbrance rating</a>」(0.31 向け、2025-12-15 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Encumbrance_rating&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><i>盾の重さについては<a href="Shields.html" title="Shields">盾</a>を参照。所持品の<a href="http://crawl.chaosforge.org/Aum" data-untr="1" class="mw-redirect" title="Aum">重量</a>による<a href="http://crawl.chaosforge.org/Encumbered" data-untr="1" title="Encumbered">重量超過(encumbered)</a>は別物で、今はもう無い仕組みだ。</i>
+</p><p><b>重さの値</b>(encumbrance rating)は<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>に付いているペナルティだ。重い鎧ほど重さの値は大きい。重さが大きいほど、<a href="http://crawl.chaosforge.org/Ev" data-untr="1" class="mw-redirect" title="Ev">回避</a>、<a href="http://crawl.chaosforge.org/Spell_failure" data-untr="1" class="mw-redirect" title="Spell failure">呪文の詠唱</a>、<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>へのペナルティも大きくなる。重さは<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>と<a href="http://crawl.chaosforge.org/Armour_skill" data-untr="1" class="mw-redirect" title="Armour skill">甲冑スキル</a>で軽くできるが、なくすことはできない。
+</p><p>このページで扱うのは胴鎧だけだ。ほかにも動きを「重く」する防具はあるが、仕組みが違う。
+</p>
+<ul><li><a href="Barding.html" title="Barding">馬甲</a>には <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> -2 のペナルティがある。呪文の詠唱や隠密などには響かず、腕力や甲冑スキルで減らすこともできない。</li>
+<li><a href="Shields.html" title="Shields">盾</a>にも重さの値があるが、扱いはまったく別だ。詳しくは<a href="Shields.html#Shield_Penalties" title="Shields">盾</a>を参照。</li></ul>
+<p>重さの値を持つアイテムの数値は<a href="Armour.html#Tables_of_Armours" title="Armour">防具の表</a>にまとめてある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Base_Penalty"><span class="tocnumber">1</span> <span class="toctext">基本のペナルティ</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Evasion"><span class="tocnumber">2</span> <span class="toctext">回避</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#EV_Penalty"><span class="tocnumber">2.1</span> <span class="toctext">EV のペナルティ</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Dodging_Penalty"><span class="tocnumber">2.2</span> <span class="toctext">躱し身のペナルティ</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Spellcasting_Penalty"><span class="tocnumber">3</span> <span class="toctext">呪文の詠唱へのペナルティ</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Stealth_Penalty"><span class="tocnumber">4</span> <span class="toctext">隠密へのペナルティ</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Ranged_Weapon_Penalty"><span class="tocnumber">5</span> <span class="toctext">射撃武器へのペナルティ</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Analysis"><span class="tocnumber">6</span> <span class="toctext">分析</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#On_Evasion"><span class="tocnumber">6.1</span> <span class="toctext">回避について</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#On_Spellcasting"><span class="tocnumber">6.2</span> <span class="toctext">呪文の詠唱について</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="#Armour_skill_vs_Spell_skill"><span class="tocnumber">6.2.1</span> <span class="toctext">甲冑スキルと呪文のスキル</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Strength_vs_Intelligence"><span class="tocnumber">6.2.2</span> <span class="toctext">腕力と知力</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Spreadsheet"><span class="tocnumber">7</span> <span class="toctext">スプレッドシート</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#History"><span class="tocnumber">8</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Base_Penalty">基本のペナルティ</span></h2>
+<p>胴鎧の「基本」のペナルティは次の式で求まる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p><a href="http://crawl.chaosforge.org/File:Base_AEVP.png" data-untr="1" class="image"><img alt="Base AEVP.png" src="img/716px-Base_AEVP.png" width="716" height="124" /></a>
+</p><p>ここで、
+</p>
+<ul><li>「S」はスケール。実質的には 1(100/100)で、最終的な結果には影響しない。重さの計算の精度を上げるために使われている。</li>
+<li>「armour」は<a href="http://crawl.chaosforge.org/Armour_skill" data-untr="1" class="mw-redirect" title="Armour skill">甲冑スキル</a>、「str」は<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>。</li></ul>
+<p>この式は次の形にまとめられる。
+</p><p><a href="http://crawl.chaosforge.org/File:Simplified_AEVP_base.png" data-untr="1" class="image"><img alt="Simplified AEVP base.png" src="img/600px-Simplified_AEVP_base.png" width="600" height="120" /></a>
+</p><p>この式そのものは使われないが、ほかのペナルティのほとんどはこれをもとに決まる。
+</p>
+<h2><span class="mw-headline" id="Evasion">回避</span></h2>
+<p>重さの値は <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> に<i>二つ</i>の形で響く。
+</p>
+<ol><li> 重さの分だけ回避が直接下がる。これは甲冑スキルと腕力で減らせる。</li>
+<li> <a href="Dodging.html" title="Dodging">躱し身</a>スキルによる回避の上昇分が小さくなる。こちらは腕力でしか減らせない。</li></ol>
+<h3><span class="mw-headline" id="EV_Penalty">EV のペナルティ</span></h3>
+<p>重さによる EV の低下は次のとおり。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p><a href="http://crawl.chaosforge.org/File:Simplified_AEVP_EV.png" data-untr="1" class="image"><img alt="Simplified AEVP EV.png" src="img/771px-Simplified_AEVP_EV.png" width="771" height="113" /></a>
+</p><p>この値がそのまま EV から引かれる。
+</p>
+<h3><span class="mw-headline" id="Dodging_Penalty">躱し身のペナルティ</span></h3>
+<p>重さは、躱し身スキルと器用で得られる EV も減らす。
+</p><p><b>躱し身のボーナス</b>は <code>(8 + 0.8 × Dodging × Dex) / (20 - size_factor)</code> で求まる。詳しくは<a href="Evasion.html" title="Evasion">回避</a>を参照。
+</p><p>この躱し身のボーナスに、次の係数が掛かる。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p><p><a href="http://crawl.chaosforge.org/File:Dodging_pen1.png" data-untr="1" class="image"><img alt="Dodging pen1.png" src="img/350px-Dodging_pen1.png" width="350" height="189" /></a>
+</p><p>e は重さ。(e-3) が 0 以下なら、躱し身にペナルティは掛からない。
+</p>
+<h2><span class="mw-headline" id="Spellcasting_Penalty">呪文の詠唱へのペナルティ</span></h2>
+<p>重さは「spellFailure」を増やす。これは実際に呪文を失敗する確率とは別の値なので注意。<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p><p><a href="http://crawl.chaosforge.org/File:Simplified_AEVP_spell.png" data-untr="1" class="image"><img alt="Simplified AEVP spell.png" src="img/660px-Simplified_AEVP_spell.png" width="660" height="117" /></a>
+</p><p>目安として、
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Intelligence" data-untr="1" title="Intelligence">知力</a> 1 = spellFailure -2</li>
+<li><a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a>スキル 1 = spellFailure -3</li>
+<li>(呪文の系統の)スキル 1 = spellFailure -12。ただしその呪文の系統の数で割る</li></ul>
+<p>「spellFailure」は何段階かの変換を経て、実際の失敗率になる。詳しくは<a href="Spell_Success.html" class="mw-redirect" title="Spell success">呪文の成功率</a>を参照。
+</p>
+<h2><span class="mw-headline" id="Stealth_Penalty">隠密へのペナルティ</span></h2>
+<p>重さは<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>の値を下げる。<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+</p><p><a href="http://crawl.chaosforge.org/File:StealthPenalty.gif" data-untr="1" class="image"><img alt="StealthPenalty.gif" src="img/StealthPenalty.gif" width="44" height="77" /></a>
+</p><p>これは甲冑スキルや腕力とは関係がない。下がるのは<a href="http://crawl.chaosforge.org/Stealth_(skill)" data-untr="1" title="Stealth (skill)">隠密スキル</a>ではないので、<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>の威力にも、<a href="Atropa.html" title="Atropa">アトロパ毒</a>や<a href="http://crawl.chaosforge.org/Datura" data-untr="1" title="Datura">ダチュラ毒</a>のダーツの効き目にも影響しない。
+</p>
+<h2><span class="mw-headline" id="Ranged_Weapon_Penalty">射撃武器へのペナルティ</span></h2>
+<p>重さは<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>を遅くする(<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>武器は遅くならない)。射撃武器の<a href="http://crawl.chaosforge.org/Attack_delay" data-untr="1" class="mw-redirect" title="Attack delay">攻撃の所要時間</a>が、<a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>(decaAut、10 aut)単位で次の分だけ増える。<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</p><p><a href="http://crawl.chaosforge.org/File:AdjustedRangedPenalty.png" data-untr="1" class="image"><img alt="AdjustedRangedPenalty.png" src="img/610px-AdjustedRangedPenalty.png" width="610" height="121" /></a>
+</p><p>このペナルティは確率的に小数点以下第一位に丸められ、<a href="http://crawl.chaosforge.org/Attack_delay" data-untr="1" class="mw-redirect" title="Attack delay">攻撃の所要時間</a>に加わる。単位がターン(decaAut)なので、式は 10 で割ってある。ふつうの <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> で知りたければ 10 を掛ければいい。
+</p>
+<h2><span class="mw-headline" id="Analysis">分析</span></h2>
+<p>全体として、
+</p>
+<ul><li>甲冑スキルは重さを直線的に減らす。甲冑スキル 1 ごとに重さが 2.2% ずつ減る。</li>
+<li>腕力は重さを対数的に減らす。つまり上げるほど効き目が薄れていく。躱し身のペナルティ以外では、腕力を 7 から 17 に上げたときの減り具合(%)は、2 から 7 に上げたときと同じで、17 から 37 に上げたときとも同じだ。</li></ul>
+<h3><span class="mw-headline" id="On_Evasion">回避について</span></h3>
+<p>上で述べたとおり、重さ全体に対しては腕力を上げるほど効き目が薄れていく。ただし、はっきりした境目が一つある。<code>e - 3 = str</code> のところで、<a href="#Dodging_Penalty">躱し身のペナルティ</a>の式が切り替わるのだ。ここを越えると、腕力によるペナルティの減り方は急に鈍くなる。この境目が関係するのは躱し身<i>だけ</i>で、呪文の詠唱やふつうの EV のペナルティには関係しない。
+</p><p>「腕力は少なくとも重さと同じ数にしておけ」という目安があるのはこのためだ。とはいえ絶対の決まりではない。それ以上に腕力を上げても、目に見える効果がある場合は多い。それに、躱し身スキルをまったく上げていないなら、str = (e-3) という境目にはほとんど意味がない。
+</p><p>例として、<a href="#Dodging_Penalty">躱し身のボーナス</a>が何 % 残るかを次の表にまとめる。
+</p>
+<table class="wikitable">
+<tr>
+<th colspan="3"> <a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>(e=11) </th>
+<th> </th>
+<th colspan="3"> <a href="Plate_armour.html" title="Plate armour">プレートアーマー</a>(e=18)
+</th></tr>
+<tr>
+<th> 腕力 </th>
+<th> 躱し身の % </th>
+<th> 増分
+</th>
+<th>
+</th>
+<th> 腕力 </th>
+<th> 躱し身の % </th>
+<th> 増分
+</th></tr>
+<tr>
+<td>5 </td>
+<td> 31.25% </td>
+<td>
+</td>
+<th>
+</th>
+<td>12 </td>
+<td> 40.0% </td>
+<td>
+</td></tr>
+<tr>
+<td>6 </td>
+<td> 37.5% </td>
+<td> +6.25%
+</td>
+<th>
+</th>
+<td>13 </td>
+<td> 43.3% </td>
+<td> +3.3%
+</td></tr>
+<tr>
+<td>7 </td>
+<td> 43.75% </td>
+<td> +6.25%
+</td>
+<th>
+</th>
+<td>14 </td>
+<td> 46.6% </td>
+<td> +3.3%
+</td></tr>
+<tr>
+<td><b>8</b> </td>
+<td> 50% </td>
+<td> +6.25%
+</td>
+<th>
+</th>
+<td><b>15</b> </td>
+<td> 50% </td>
+<td> +3.3%
+</td></tr>
+<tr>
+<td>9 </td>
+<td> 55.5% </td>
+<td> +5.5%
+</td>
+<th>
+</th>
+<td>16 </td>
+<td> 53.1% </td>
+<td> +3.1%
+</td></tr>
+<tr>
+<td>10 </td>
+<td> 60% </td>
+<td> +4.5%
+</td>
+<th>
+</th>
+<td>17 </td>
+<td> 55.9% </td>
+<td> +2.8%
+</td></tr>
+<tr>
+<td>11 </td>
+<td> 63.6% </td>
+<td> +3.6%
+</td>
+<th>
+</th>
+<td>18 </td>
+<td> 58.3% </td>
+<td> +2.4%
+</td></tr></table>
+<p>繰り返しになるが、これは<b>躱し身のボーナスへの影響だけ</b>で、ふつうの EV のペナルティはこれとは別に掛かる。全体で見ると、腕力は 1 上げるごとに、前の 1 よりも得られる EV が少なくなっていく(もちろん、重い鎧を着るつもりなら腕力は高くしておくべきだ)。
+</p>
+<h3><span class="mw-headline" id="On_Spellcasting">呪文の詠唱について</span></h3>
+<p>AC や EV、呪文の威力が上がる利点は考えず、呪文の失敗率だけを見た場合の話。
+</p>
+<h4><span class="mw-headline" id="Armour_skill_vs_Spell_skill">甲冑スキルと呪文のスキル</span></h4>
+<ul><li>重さによる spellFailure の増加は <code>19/225 * encumbrance^2 * (90 - 2armour) / (str+3)</code>。甲冑スキルの項だけを取り出すと <code>-armour * 38/225 * encumbrance^2 / (str+3)</code> になる。</li>
+<li>呪文の系統のスキル(呪文詠唱を除く)をすべて 1 ずつ上げると、spellFailure は 12 下がる。</li>
+<li>したがって、甲冑スキル 1 は、それぞれの呪文の系統のスキル <code>19/1350 * encumbrance^2 / (str+3)</code>、つまりおよそ <code>1/71 * encumbrance^2 / (str+3)</code> に相当する。</li></ul>
+<p>たとえば腕力 11 で<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>を着ているなら、甲冑スキル 1 = <code>1/71 * 11^2 / 14</code> = 呪文の系統のスキルそれぞれ 0.122 だ。比にすると、甲冑スキル 8.21 に対して各系統 1 になる。<a href="Iron_Shot.html" title="Iron Shot">鉄塊の矢</a>のような二系統の呪文なら、甲冑スキル 4.1 が地の魔術 1 か妖術 1 のどちらか一方に、甲冑スキル 8.21 が地の魔術と妖術の両方 1 ずつに相当する。
+</p>
+<h4><span class="mw-headline" id="Strength_vs_Intelligence">腕力と知力</span></h4>
+<ul><li>腕力を 'x' だけ上げたとき、spellFailure は <code>(1/&lt;str+3&gt; - 1/&lt;str+x+3&gt;) * 19/225 * encumbrance^2 * (90 - 2armour)</code> 下がる。</li>
+<li>知力は 1 につき spellFailure を 2 下げる。</li></ul>
+<p>たとえば腕力 11 でファイアドラゴンの鱗一式を着ていて、甲冑スキルが 0 だとする。レベルアップで腕力 +2 か知力 +2 かを選ぶとき、腕力 +2 の効果は <code>(1/14 - 1/16) * 19/225 * 11^2 * 90</code> = spellFailure 8.21 で、知力による 2*2 = 4 より大きい。
+</p>
+<h2><span class="mw-headline" id="Spreadsheet">スプレッドシート</span></h2>
+<p>防具のペナルティの計算には、このスプレッドシートを使うといい(コピーを作っても構わない): <a rel="nofollow" class="external text" href="https://docs.google.com/spreadsheets/d/1SgY-b12lecR1EHb7uopTqFP0E3FDr5_MsTHrwA0Z5MY/edit#gid=1843292358">計算機</a>(0.27 の時点で古くなっている)
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> で射撃武器へのペナルティが加わった。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> で防具による命中率のペナルティがなくなった。それまでの式は次のとおり。</li></ul>
+<p><a href="http://crawl.chaosforge.org/File:ToHitPenalty.gif" data-untr="1" class="image"><img alt="ToHitPenalty.gif" src="img/ToHitPenalty.gif" width="626" height="43" /></a>
+</p>
+<ul><li>防具で素手の近接攻撃が遅くなることはなくなった。また 0.13 から 0.17 にかけて、計算式の一部が変わっている。</li>
+<li>重さの値は <a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> で導入され、それまでの EV ペナルティの仕組みに取って代わった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/player.cc#L5892">player.cc:5892</a> (0.31.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/player.cc#L5887">player.cc:5887</a> (0.31.0)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/player.cc#L2122">player.cc:2122</a> (0.31.0)</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/player.cc#L2166">player.cc:2166</a> (0.31.0)</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/spl-cast.cc#L410">spl-cast.cc:410</a> (0.31.0)</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/player.cc#L3112">player.cc:3112</a> (0.31.0)</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/player-act.cc#L360">player-act.cc:360</a> (0.31.0)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

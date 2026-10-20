@@ -153,7 +153,7 @@
 <ul><li><a href="http://crawl.chaosforge.org/Wild_Magic_(mutation)" data-untr="1" title="Wild Magic (mutation)">暴走する魔力</a>: 1レベルにつき +4%</li>
 <li>魔法阻害(-Wiz)の<a href="Ru.html" title="Ru">犠牲</a>: 1レベルにつき +4%</li>
 <li><a href="Orb.html" title="Orb">オーブ</a>(<a href="Energy.html" title="Energy">活力</a>): +10%</li>
-<li><a href="http://crawl.chaosforge.org/Vertigo" data-untr="1" title="Vertigo">酩酊</a>: +7%</li></ul>
+<li><a href="Vertigo.html" title="Vertigo">酩酊</a>: +7%</li></ul>
 <p><b>減算(失敗率が下がる):</b>
 </p>
 <ul><li><a href="http://crawl.chaosforge.org/Subdued_Magic" data-untr="1" title="Subdued Magic">抑制された魔力</a>: 1レベルにつき -2%</li></ul>
@@ -282,7 +282,7 @@
 <li><b>魔術強化 x1</b>: {呪文詠唱 14、avg_skill 22.49}、{呪文詠唱 20.7、avg_skill 20.7}</li>
 <li><b>魔術強化 x2</b> / <b>ヴェフメット</b>: {呪文詠唱 14、avg_skill 21.5}、{呪文詠唱 20、avg_skill 20}</li>
 <li><b>ヴェフメット + 魔術強化 x1</b>: {呪文詠唱 14、avg_skill 20.2}、{呪文詠唱 18.9、avg_skill 18.9}</li></ul>
-<p>この数字は炎の嵐に限らず、ゲーム中のどのレベル9の呪文にも当てはまる。ただし<i>知力 30、重さ 0 の場合の話だ</i>。たとえば<a href="Swamp_dragon_scales.html" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>と<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>を着けているなら、唱えるのにもっとスキルが要る。呪文のレベル、知力、重さの値は状況に合わせて変えてほしい。
+<p>この数字は炎の嵐に限らず、ゲーム中のどのレベル9の呪文にも当てはまる。ただし<i>知力 30、重さ 0 の場合の話だ</i>。たとえば<a href="Swamp_dragon_scales.html" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>と<a href="Kite_shield.html" title="Kite shield">カイトシールド</a>を着けているなら、唱えるのにもっとスキルが要る。呪文のレベル、知力、重さの値は状況に合わせて変えてほしい。
 </p>
 <h3><span class="mw-headline" id="Measuring_Encumbrance">重さを測る</span></h3>
 <p>重さが実際の失敗&#160;%に与える影響は線形ではない。ただ、「埋め合わせるのに必要な呪文の系統のスキルのレベル」という形で測ることはできる。
@@ -297,7 +297,7 @@
 <p>腕力とスキルによって値が変わる点に注意。甲冑スキルを鍛えればペナルティを減らせることも覚えておこう(詳しくは<a href="#Armour_skill_vs_Spell_skill">甲冑スキルと呪文スキル</a>を参照)。
 </p><p><b>盾</b>
 </p><p>盾は SpellFailure を <code>38/5 * encumbrance^2 / (str + 5) * (27 - Shields)/27</code> 増やす。上の胴鎧と同じ方法で、盾の重さも数値にできる。鎧と比べると、腕力の影響はやや小さく、盾スキルの影響は大きい。
-</p><p>腕力 6 で<a href="Buckler.html" title="Buckler">バックラー</a>(重さ = 5)を持ち、盾スキルが 0 なら、SpellFailure は <code>38/5 * 5^2 / (6 + 5) * 27/27</code> = 17.27、各スキル1.44レベル分になる。<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>ならその4倍、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>なら9倍だ。
+</p><p>腕力 6 で<a href="Buckler.html" title="Buckler">バックラー</a>(重さ = 5)を持ち、盾スキルが 0 なら、SpellFailure は <code>38/5 * 5^2 / (6 + 5) * 27/27</code> = 17.27、各スキル1.44レベル分になる。<a href="Kite_shield.html" title="Kite shield">カイトシールド</a>ならその4倍、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>なら9倍だ。
 </p>
 <h3><span class="mw-headline" id="Armour_skill_vs_Spell_skill">甲冑スキルと呪文スキル</span></h3>
 <ul><li>甲冑スキルは SpellFailure を <code>-Armour * 38/225 * encumbrance^2 / (str + 3)</code> 減らす。</li>
@@ -312,7 +312,7 @@
 <li>盾: <code>(1/&lt;str+5&gt; - 1/&lt;str+x+5&gt;) * 38/5 * encumbrance^2 * (27 - Shields)/27</code></li></ul></li>
 <li>知力は1点につき SpellFailure を 2 下げる。</li></ul>
 <p>腕力 11、ファイアドラゴンの鱗一式、甲冑スキル 0 だとする。レベルアップで腕力+2か知力+2を選べるとき、腕力+2の効果は <code>(1/14 - 1/16) * 19/225 * 11^2 * (90 - 0)</code> = SpellFailure 8.21 で、知力による 2*2 = SpellFailure 4 より大きい。
-</p><p>この腕力 11 のキャラクターがさらに<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>を持ち、盾スキルが 9 なら、腕力+2でさらに <code>(1/16 - 1/18) * 38/5 * 10^2 * 18/27</code> = SpellFailure 3.52 下がる。
+</p><p>この腕力 11 のキャラクターがさらに<a href="Kite_shield.html" title="Kite shield">カイトシールド</a>を持ち、盾スキルが 9 なら、腕力+2でさらに <code>(1/16 - 1/18) * 38/5 * 10^2 * 18/27</code> = SpellFailure 3.52 下がる。
 </p><p>もちろん、知力は<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>も上げるし、腕力は<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a>のペナルティも減らす。
 </p>
 <h2><span class="mw-headline" id="See_also">関連項目</span></h2>

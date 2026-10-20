@@ -65,7 +65,7 @@
 <li><span class="nhsym clr-brightcyan">x</span> <a href="http://crawl.chaosforge.org/File:Octopode.png" data-untr="1" class="image"><img alt="Octopode.png" src="img/Octopode.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Octopode_(monster)" data-untr="1" title="Octopode (monster)">オクトポード</a></b></li>
 <li><span class="nhsym clr-brightcyan">N</span> <a href="http://crawl.chaosforge.org/File:Vashnia.png" data-untr="1" class="image"><img alt="Vashnia.png" src="img/Vashnia.png" width="32" height="32" /></a> <b><a href="Vashnia.html" title="Vashnia">ヴァシュニア</a></b></li>
 <li><span class="nhsym clr-brightmagenta">x</span> <a href="http://crawl.chaosforge.org/File:Erica.png" data-untr="1" class="image"><img alt="Erica.png" src="img/Erica.png" width="32" height="32" /></a> <b><a href="Erica.html" title="Erica">エリカ</a></b></li>
-<li><b><a href="http://crawl.chaosforge.org/Grasping_Roots" data-untr="1" title="Grasping Roots">絡まる木の根</a></b>
+<li><b><a href="Grasping_Roots.html" title="Grasping Roots">絡まる木の根</a></b>
 <ul><li><span class="nhsym clr-brightmagenta">g</span> <a href="http://crawl.chaosforge.org/File:Jorgrun.png" data-untr="1" class="image"><img alt="Jorgrun.png" src="img/Jorgrun.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Jorgrun" data-untr="1" title="Jorgrun">ジョーグルン</a></b></li>
 <li><span class="nhsym">f</span> <a href="http://crawl.chaosforge.org/File:Shambling_mangrove.png" data-untr="1" class="image"><img alt="Shambling mangrove.png" src="img/Shambling_mangrove.png" width="32" height="32" /></a> <b><a href="Shambling_mangrove.html" title="Shambling mangrove">よろめき歩くマングローブ</a></b></li></ul></li></ul>
 <h3><span class="mw-headline" id="Playable_species">プレイヤーの種族</span></h3>
@@ -75,7 +75,7 @@
 <ul><li><b><a href="Serpent_talisman.html" title="Serpent talisman">大蛇のタリスマン</a></b></li></ul>
 <h3><span class="mw-headline" id="Other_Constriction_Effects">そのほかの締めつけの効果</span></h3>
 <ul><li><a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a></li>
-<li><a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a></li>
+<li><a href="Wand_of_roots.html" title="Wand of roots">根縛りのワンド</a></li>
 <li><a href="Entangling.html" title="Entangling">絡みつき</a>のブランド</li></ul>
 <h2><span class="mw-headline" id="Initiating_Constriction">締めつけの始まり</span></h2>
 <h3><span class="mw-headline" id="Melee_Constriction">近接攻撃での締めつけ</span></h3>
@@ -99,7 +99,7 @@
 <p>攻撃が当たれば締めつけが始まる。ただし、モンスターが近接攻撃で締めつけを始められる確率は2/3だ。
 </p>
 <h3><span class="mw-headline" id="Spell_Constriction">呪文での締めつけ</span></h3>
-<p><a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>、<a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a>、<a href="http://crawl.chaosforge.org/Grasping_Roots" data-untr="1" title="Grasping Roots">絡まる木の根</a>では、条件は次のとおりだ。
+<p><a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>、<a href="Wand_of_roots.html" title="Wand of roots">根縛りのワンド</a>、<a href="Grasping_Roots.html" title="Grasping Roots">絡まる木の根</a>では、条件は次のとおりだ。
 </p>
 <ul><li>守る側がほかの相手に締めつけられたり、包み込まれたりしていないこと。</li>
 <li>守る側が締めつけの攻撃を無効にしないこと。</li>
@@ -124,12 +124,12 @@
 </p>
 <pre> (基本ダメージ) * (0.33 + 0.67 * (XL / 27))
 </pre>
-<ul><li><b>基本ダメージ</b>: プレイヤーが近接攻撃で締めつける場合は <code>2d[(110 + (25 * XL)) / 81]</code> になる。<a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>や<a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a>の場合は、そのときの<a href="http://crawl.chaosforge.org/Spellpower" data-untr="1" class="mw-redirect" title="Spellpower">威力</a>で決まる。モンスターの場合は、その攻撃の基本ダメージになる。</li>
+<ul><li><b>基本ダメージ</b>: プレイヤーが近接攻撃で締めつける場合は <code>2d[(110 + (25 * XL)) / 81]</code> になる。<a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>や<a href="Wand_of_roots.html" title="Wand of roots">根縛りのワンド</a>の場合は、そのときの<a href="http://crawl.chaosforge.org/Spellpower" data-untr="1" class="mw-redirect" title="Spellpower">威力</a>で決まる。モンスターの場合は、その攻撃の基本ダメージになる。</li>
 <li><b>経験レベルによる補正</b>: 式の後ろの項によって、ダメージは<a href="http://crawl.chaosforge.org/Experience_level" data-untr="1" class="mw-redirect" title="Experience level">経験レベル</a>に比例して増える。レベル27のキャラクターは、レベル1のときの3倍のダメージを与える。</li></ul>
 <p>このダメージに、さらに次の補正がかかる。
 </p>
 <ul><li><b>AC による軽減</b>: ほとんどの近接攻撃とは違って、締めつけのダメージは0から<a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a>までの乱数では軽減されない。軽減量は0から <code>1 + AC / 2</code> までの乱数になる。つまり、締めつけは AC の半分を無視する。</li>
-<li><b>時間による換算</b>: 上の式で求まるのは 10 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> あたりのダメージだ。これを、そのターンに使った aut に合わせて換算する必要がある。たとえば<a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a>を最小ディレイ(5 aut)で振っているなら、上のダメージに(AC による軽減のあとで)<code>5/10</code> がかけられる。</li></ul>
+<li><b>時間による換算</b>: 上の式で求まるのは 10 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> あたりのダメージだ。これを、そのターンに使った aut に合わせて換算する必要がある。たとえば<a href="Dagger.html" title="Dagger">ダガー</a>を最小ディレイ(5 aut)で振っているなら、上のダメージに(AC による軽減のあとで)<code>5/10</code> がかけられる。</li></ul>
 <h2><span class="mw-headline" id="Escaping_Constriction">締めつけから逃れるには</span></h2>
 <p>抜け出そうとして成功するほかにも、振りほどく方法はいくつもある。
 </p>
@@ -137,7 +137,7 @@
 <li>締めつけている相手が今のマスから動くと、近接攻撃による締めつけは終わる(移動先が締めつけられている相手の隣でも同じ)。
 <ul><li><a href="Entangling.html" title="Entangling">絡みつき</a>による締めつけは移動したあとも続くが、相手が武器の届く範囲から出ると終わる。</li>
 <li><a href="Teleport_Other.html" title="Teleport Other">他者のテレポート</a>、<a href="http://crawl.chaosforge.org/Dispersal" data-untr="1" title="Dispersal">転送</a>、<a href="http://crawl.chaosforge.org/Disjunction" data-untr="1" title="Disjunction">空間分離</a>、<a href="http://crawl.chaosforge.org/Iskenderun%27s_Mystic_Blast" data-untr="1" title="Iskenderun&#39;s Mystic Blast">イスケンデルンの爆破の秘術</a>のような<a href="Translocations.html" title="Translocations">転位術</a>の魔法でもこの状況を作れる。<a href="http://crawl.chaosforge.org/Dispersal_(brand)" data-untr="1" title="Dispersal (brand)">離散のダーツ</a>、<a href="Distortion.html" title="Distortion">歪曲</a>のブランドの武器、<a href="Gell's_gravitambourine.html" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a>といったアイテムも同じだ。</li></ul></li>
-<li>締めつけている相手を<a href="http://crawl.chaosforge.org/Confusion" data-untr="1" title="Confusion">混乱</a>、<a href="http://crawl.chaosforge.org/Paralyze" data-untr="1" class="mw-redirect" title="Paralyze">麻痺</a>、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化</a>、<a href="Fear.html" title="Fear">恐慌</a>、<a href="Sleep.html" title="Sleep">昏睡</a>、<a href="http://crawl.chaosforge.org/Polymorph" data-untr="1" title="Polymorph">変化</a>で無力化すると、締めつけはすぐに解ける。</li>
+<li>締めつけている相手を<a href="Confusion.html" title="Confusion">混乱</a>、<a href="http://crawl.chaosforge.org/Paralyze" data-untr="1" class="mw-redirect" title="Paralyze">麻痺</a>、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化</a>、<a href="Fear.html" title="Fear">恐慌</a>、<a href="Sleep.html" title="Sleep">昏睡</a>、<a href="http://crawl.chaosforge.org/Polymorph" data-untr="1" title="Polymorph">変化</a>で無力化すると、締めつけはすぐに解ける。</li>
 <li><a href="http://crawl.chaosforge.org/Wand_of_charming" data-untr="1" title="Wand of charming">魅了</a>するか、<a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の力で鎮めれば、締めつけはすぐに止まる。</li>
 <li>締めつけが効かない状態になれば、すぐに締めつけ状態が終わる。
 <ul><li><a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐の形態</a>、<a href="http://crawl.chaosforge.org/Aqua_Form" data-untr="1" class="mw-redirect" title="Aqua Form">水の形態</a>、<a href="http://crawl.chaosforge.org/Quill_Form" data-untr="1" class="mw-redirect" title="Quill Form">針の形態</a>には締めつけが効かない。</li>
