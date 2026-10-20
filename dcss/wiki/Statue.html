@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>像 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="像(Statue)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>像 <span class="en">Statue</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Statue">Statue</a>」(0.26 向け、2022-02-09 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Statue&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.26 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.26.html" title="0.26">0.26</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 「古き国から来た旅人に会った。<br />
+<p>その者は言った――胴のない巨大な石の脚が二本、<br />
+砂漠に立っている。そのそばの砂の上には<br />
+半ば埋もれて、砕けた顔が横たわる。その眉根の皺と<br />
+歪んだ唇、冷たく命じる者の嘲りは、<br />
+彫り手がその情念をよく読み取っていたことを物語る。<br />
+情念はなお生きながらえ、命なきものに刻まれている、<br />
+それを嘲り写した手も、それを養った心も滅びたのちに。<br />
+そして台座にはこう記されている。<br />
+『わが名はオジマンディアス、王の中の王。<br />
+わが業を見よ、汝ら強き者よ、そして絶望せよ!』<br />
+ほかには何も残っていない。その巨大な残骸の<br />
+朽ちたまわりには、果てしなく、むき出しのまま、<br />
+寂しく平らな砂が遠くまで広がっている。」
+</p><p>――パーシー・ビッシュ・シェリー「オジマンディアス」(1818年)
+</p>
+</td></tr></table>
+<p><b>像</b>は<a href="The_Dungeon.html" class="mw-redirect" title="Dungeon">迷宮</a>のいたるところにある。ほとんどは無害だが、なかには危険な罠を仕込んだものや、積極的にこちらを殺しにかかってくるものもある。像の種類ごとにふるまいは違うが、大きく分けると、動かない像(<a href="Dungeon_feature.html" class="mw-redirect" title="Dungeon features">ダンジョンの地形</a>として扱われる)と、動く像のモンスター(攻撃してきて、「倒す」こともできる)の 2 つになる。動くかどうかにかかわらず、像はどれもまったく<a href="Stationary.html" title="Stationary">移動しない</a>。攻撃してくる像があると、うっかり危険に踏み込まないよう、ゲームがその<a href="Line_of_sight.html" class="mw-redirect" title="LOS">視界</a>に入るマスをすべて自動で注意対象にする。
+</p><p>像はどれも透明な壁とほぼ同じように働く。射撃や呪文などの遠隔攻撃はさえぎるが、視線はさえぎらない。ただし透明な壁と違って、<a href="Reaching.html" title="Reaching">間合い</a>の攻撃や<a href="Smiting.html" class="mw-redirect" title="Smite">打擲型</a>の攻撃はさえぎら<i>ない</i>。像は移動しないので、いったん退くはめになっても、傷を癒やしてから戻ってきてもう一度壊しにいけることを覚えておこう。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inanimate_Statues"><span class="tocnumber">1</span> <span class="toctext">動かない像</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Monster_Statues"><span class="tocnumber">2</span> <span class="toctext">モンスターの像</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Unique_Statues"><span class="tocnumber">2.1</span> <span class="toctext">固有の像</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Retired_Statues"><span class="tocnumber">3</span> <span class="toctext">削除された像</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Other_immobile_monsters"><span class="tocnumber">4</span> <span class="toctext">その他の動かないモンスター</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inanimate_Statues">動かない像</span></h2>
+<p>動かない像は物理攻撃を受けつけないが、<a href="http://crawl.chaosforge.org/Wands_of_digging" data-untr="1" class="mw-redirect" title="Wands of digging">掘削のワンド</a>と<a href="Shatter.html" title="Shatter">粉砕</a>には弱い。
+</p>
+<ul><li><b>花崗岩の像</b>の形はさまざまで、危険なモンスターに似たものも多いが、害はない。せいぜい<a href="Shop.html" title="Shop">店</a>や財宝の山への道をふさぐくらいだ。</li></ul>
+<blockquote>細部がとうの昔にすり減ってしまった石像。</blockquote>
+<table class="prettytable" style=" text-align: center">
+<tr>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_ancient_evil.png" data-untr="1" class="image"><img alt="Statue ancient evil.png" src="img/Statue_ancient_evil.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_ancient_hero.png" data-untr="1" class="image"><img alt="Statue ancient hero.png" src="img/Statue_ancient_hero.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_angel.png" data-untr="1" class="image"><img alt="Statue angel.png" src="img/Statue_angel.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_archer.png" data-untr="1" class="image"><img alt="Statue archer.png" src="img/Statue_archer.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_axe.png" data-untr="1" class="image"><img alt="Statue axe.png" src="img/Statue_axe.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_cat.png" data-untr="1" class="image"><img alt="Statue cat.png" src="img/Statue_cat.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_centaur.png" data-untr="1" class="image"><img alt="Statue centaur.png" src="img/Statue_centaur.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_cerebov.png" data-untr="1" class="image"><img alt="Statue cerebov.png" src="img/Statue_cerebov.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_demonic_bust.png" data-untr="1" class="image"><img alt="Statue demonic bust.png" src="img/Statue_demonic_bust.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_dragon.png" data-untr="1" class="image"><img alt="Statue dragon.png" src="img/Statue_dragon.png" width="32" height="32" /></a>
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_dwarf.png" data-untr="1" class="image"><img alt="Statue dwarf.png" src="img/Statue_dwarf.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_elephant.png" data-untr="1" class="image"><img alt="Statue elephant.png" src="img/Statue_elephant.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_hydra.png" data-untr="1" class="image"><img alt="Statue hydra.png" src="img/Statue_hydra.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_imp.png" data-untr="1" class="image"><img alt="Statue imp.png" src="img/Statue_imp.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_maw.png" data-untr="1" class="image"><img alt="Statue maw.png" src="img/Statue_maw.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_mermaid.png" data-untr="1" class="image"><img alt="Statue mermaid.png" src="img/Statue_mermaid.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_naga.png" data-untr="1" class="image"><img alt="Statue naga.png" src="img/Statue_naga.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_orb.png" data-untr="1" class="image"><img alt="Statue orb.png" src="img/Statue_orb.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_orb_guardian.png" data-untr="1" class="image"><img alt="Statue orb guardian.png" src="img/Statue_orb_guardian.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_polearm.png" data-untr="1" class="image"><img alt="Statue polearm.png" src="img/Statue_polearm.png" width="32" height="32" /></a>
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_princess.png" data-untr="1" class="image"><img alt="Statue princess.png" src="img/Statue_princess.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_sigmund.png" data-untr="1" class="image"><img alt="Statue sigmund.png" src="img/Statue_sigmund.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_snail.png" data-untr="1" class="image"><img alt="Statue snail.png" src="img/Statue_snail.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_sword.png" data-untr="1" class="image"><img alt="Statue sword.png" src="img/Statue_sword.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_tengu.png" data-untr="1" class="image"><img alt="Statue tengu.png" src="img/Statue_tengu.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_tentacles.png" data-untr="1" class="image"><img alt="Statue tentacles.png" src="img/Statue_tentacles.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_triangle.png" data-untr="1" class="image"><img alt="Statue triangle.png" src="img/Statue_triangle.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_twins.png" data-untr="1" class="image"><img alt="Statue twins.png" src="img/Statue_twins.png" width="32" height="32" /></a> </td>
+<td> <a href="http://crawl.chaosforge.org/File:Statue_wraith.png" data-untr="1" class="image"><img alt="Statue wraith.png" src="img/Statue_wraith.png" width="32" height="32" /></a>
+</td></tr></table>
+<ul><li><a href="http://crawl.chaosforge.org/File:Gravestone.png" data-untr="1" class="image"><img alt="Gravestone.png" src="img/Gravestone.png" width="33" height="32" /></a> <b>墓石</b>は、たいてい特別なヴォールトや<a href="Portal.html" title="Portal">ポータル</a>の先の階(<a href="Zonguldrok's_Shrine.html" title="Zonguldrok&#39;s Shrine">ゾングルドルックの神殿</a>など)にある。メインのダンジョンに墓石があれば、その階を<a href="Undead.html" title="Undead">アンデッド</a>がうろついている確かなしるしだ。</li></ul>
+<blockquote>名もなき墓。</blockquote>
+<ul><li><a href="http://crawl.chaosforge.org/File:Orcish_idol.png" data-untr="1" class="image"><img alt="Orcish idol.png" src="img/Orcish_idol.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Orcish_idol" data-untr="1" title="Orcish idol">オークの像</a></b>は花崗岩の像と同じようなものだが、<a href="Orc.html" title="Orc">オーク</a>の神<a href="Beogh.html" title="Beogh">ベオ</a>に捧げられている。</li></ul>
+<blockquote>オークの神ベオの像。</blockquote>
+<ul><li><a href="http://crawl.chaosforge.org/File:Broken_pillar_1.png" data-untr="1" class="image"><img alt="Broken pillar 1.png" src="img/Broken_pillar_1.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Broken_pillar_2.png" data-untr="1" class="image"><img alt="Broken pillar 2.png" src="img/Broken_pillar_2.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Broken_pillar_3.png" data-untr="1" class="image"><img alt="Broken pillar 3.png" src="img/Broken_pillar_3.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Broken_pillar_4.png" data-untr="1" class="image"><img alt="Broken pillar 4.png" src="img/Broken_pillar_4.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Broken_pillar_5.png" data-untr="1" class="image"><img alt="Broken pillar 5.png" src="img/Broken_pillar_5.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Broken_pillar_6.png" data-untr="1" class="image"><img alt="Broken pillar 6.png" src="img/Broken_pillar_6.png" width="32" height="32" /></a> <b>崩れた柱</b>は飾りだが、ふつうの像と何も変わらない。</li></ul>
+<blockquote>崩れ落ちた石の柱の残骸。</blockquote>
+<ul><li><a href="http://crawl.chaosforge.org/File:Golden_statue.png" data-untr="1" class="image"><img alt="Golden statue.png" src="img/Golden_statue.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Golden_statue_2.png" data-untr="1" class="image"><img alt="Golden statue 2.png" src="img/Golden_statue_2.png" width="32" height="32" /></a> <b>黄金の像</b>は一部のヴォールトにあり、<a href="Gozag_Ym_Sagoz.html" title="Gozag Ym Sagoz">ゴザーグ・イム・サゴーズ</a>の<a href="Altar.html" title="Altar">祭壇</a>があるヴォールトでいちばんよく見かける。それ以外は花崗岩の像と見分けがつかない。</li></ul>
+<blockquote>聖人をかたどった純金の像。</blockquote>
+<ul><li><a href="http://crawl.chaosforge.org/File:Sarcophagus.png" data-untr="1" class="image"><img alt="Sarcophagus.png" src="img/Sarcophagus.png" width="32" height="32" /></a> <b>石棺</b>は<a href="The_Tomb.html" title="The Tomb">太古の霊廟</a>、<a href="The_Crypt.html" title="The Crypt">地下墓地</a>、それにいくつかの特別な階にある。ふだんは花崗岩の像と同じようにふるまう。ただ、地下墓地の入口のヴォールトのひとつ <b>grunt_crypt_arrival_guarded_gate</b> には、モンスターを放つ石棺があり、油断しているプレイヤーに群がってくる。</li></ul>
+<blockquote>古代の石棺。<br />空のようだ。または 固く封印されている。</blockquote>
+<ul><li><a href="http://crawl.chaosforge.org/File:Elephant_statue.png" data-untr="1" class="image"><img alt="Elephant statue.png" src="img/Elephant_statue.png" width="32" height="32" /></a> <b>象の形の像</b>は動かない石の塊で、<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>の最下層にある神殿でときどき見かける。神殿の奥にいる<a href="http://crawl.chaosforge.org/Anaconda" data-untr="1" title="Anaconda">アナコンダ</a>を倒すまでは何もしないが、倒すとそのうちのいくつかが<a href="http://crawl.chaosforge.org/Dire_elephant" data-untr="1" title="Dire elephant">凶暴化した象</a>として動き出し、襲ってくる。探索するときは後ろの<a href="Door.html" title="Door">扉</a>を忘れずに閉めておこう。そうすれば、一度に数頭ずつ相手にするだけですむ。</li></ul>
+<blockquote>見張りに立つ象をかたどった、すり減った花崗岩の像。</blockquote>
+<ul><li><b>崩れ去った偶像</b>は、<a href="Desolation_of_Salt.html" title="Desolation of Salt">塩の荒野</a>にわずかに残る建物のまわりに散らばっている。それ以外は花崗岩の像とまったく同じだ。</li></ul>
+<blockquote>死んだ神の栄光をたたえる記念碑。像は念入りに削り汚されており、見分けのつく特徴はひとつも残っていない。</blockquote>
+<ul><li><a href="http://crawl.chaosforge.org/File:Iron_statue.png" data-untr="1" class="image"><img alt="Iron statue.png" src="img/Iron_statue.png" width="32" height="32" /></a> <b>鉄の像</b>は<a href="http://crawl.chaosforge.org/Iron_City_of_Dis" data-untr="1" class="mw-redirect" title="Iron City of Dis">鉄の都ディース</a>にしかないが、ほかの像と何も変わらない。</li></ul>
+<blockquote>倒した犠牲者からの戦利品で飾り立てられた、古代の戦士の像。兜の面頬の隙間から何か黒っぽいものがにじみ出ている。きっと油に違いない……よね?</blockquote>
+<ul><li><a href="http://crawl.chaosforge.org/File:Disco_ball.png" data-untr="1" class="image"><img alt="Disco ball.png" src="img/Disco_ball.png" width="32" height="32" /></a> 壊せない<b>奇妙に輝く球体</b>が、ディスコ風の<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>のヴォールトにある。</li></ul>
+<blockquote>揺らめく光を放ちながら宙に浮かぶ球。</blockquote>
+<h2><span class="mw-headline" id="Monster_Statues">モンスターの像</span></h2>
+<p>敵対的な像はめずらしく、たいていは<a href="Vault.html" title="Vault">ヴォールト</a>の一部として置かれている。動く像の多くは、属性への耐性や完全耐性をかなり持ち、魔法の効果もまったく受けつけない。どれも武器による物理ダメージや、<a href="Iron_Shot.html" title="Iron Shot">鉄塊の矢</a>や<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>のような呪文で少しずつ削れる。もろい素材でできているので、<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>と<a href="Shatter.html" title="Shatter">粉砕</a>が特によく効く。
+</p><p><span class="nhsym clr-white">I</span> <a href="http://crawl.chaosforge.org/File:Pillar_of_salt.png" data-untr="1" class="image"><img alt="Pillar of salt.png" src="img/Pillar_of_salt.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Pillar_of_salt" data-untr="1" title="Pillar of salt">塩の柱</a></b>- <a href="Zin.html" title="Zin">ジン</a>の怒りを買った不運な悪魔やアンデッドの、清められた亡骸。すぐに崩れて消える。
+</p><p><span class="nhsym">I</span> <a href="http://crawl.chaosforge.org/File:Block_of_ice.png" data-untr="1" class="image"><img alt="Block of ice.png" src="img/Block_of_ice.png" width="32" height="32" /></a> <b><a href="Block_of_ice.html" title="Block of ice">氷の塊</a></b>- <a href="Glaciate.html" title="Glaciate">凍てつく嵐</a>や<a href="http://crawl.chaosforge.org/Absolute_Zero" data-untr="1" title="Absolute Zero">絶対零度</a>の呪文に巻き込まれた哀れな生き物の、なれの果て。じきに溶けてなくなる。
+</p><p><span class="nhsym clr-lightgray">I</span> <a href="http://crawl.chaosforge.org/File:Training_dummy.png" data-untr="1" class="image"><img alt="Training dummy.png" src="img/Training_dummy.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Training_dummy" data-untr="1" title="Training dummy">訓練用ダミー</a></b>- 弱くてもろい像。<a href="Tutorial.html" title="Tutorial">チュートリアル</a>といくつかのヴォールトにしかない。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Charred_statue.png" data-untr="1" class="image"><img alt="Charred statue.png" src="img/Charred_statue.png" width="32" height="32" /></a> <b><a href="Charred_statue.html" title="Charred statue">黒焦げの像</a></b>- <a href="Vehumet.html" title="Vehumet">ヴェフメット</a>の祭壇を守る像。<a href="Throw_Flame.html" title="Throw Flame">火炎の投射</a>を唱える。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Frost-covered_statue.png" data-untr="1" class="image"><img alt="Frost-covered statue.png" src="img/Frost-covered_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Frost-covered_statue" data-untr="1" title="Frost-covered statue">霜に覆われた像</a></b>- ヴェフメットの祭壇を守る像。<a href="http://crawl.chaosforge.org/Throw_Frost" data-untr="1" title="Throw Frost">冷気の投射</a>を唱える。
+</p><p><span class="nhsym clr-brightcyan">I</span> <a href="http://crawl.chaosforge.org/File:Lightning_spire.png" data-untr="1" class="image"><img alt="Lightning spire.png" src="img/Lightning_spire.png" width="32" height="32" /></a> <b><a href="Lightning_spire.html" title="Lightning spire">稲妻の渦巻</a></b>- 通りかかる者に稲妻の矢を放つ魔法の構造物。<a href="http://crawl.chaosforge.org/Summon_Lightning_Spire" data-untr="1" class="mw-redirect" title="Summon Lightning Spire">稲妻の渦巻の召喚</a>で呼び出せる。
+</p><p><span class="nhsym">I</span> <a href="http://crawl.chaosforge.org/File:Ice_statue.png" data-untr="1" class="image"><img alt="Ice statue.png" src="img/Ice_statue.png" width="32" height="32" /></a> <b><a href="Ice_statue.html" title="Ice statue">氷の像</a></b>- <a href="Ice_cave.html" class="mw-redirect" title="Ice Cave">氷の洞穴</a>でよく見かける凍った彫刻。<a href="Ice_beast.html" title="Ice beast">氷の獣</a>を呼び出し、強烈な氷の弾を放つ。火に弱い。
+</p><p><span class="nhsym">I</span> <a href="http://crawl.chaosforge.org/File:Orange_crystal_statue.png" data-untr="1" class="image"><img alt="Orange crystal statue.png" src="img/Orange_crystal_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Orange_crystal_statue" data-untr="1" title="Orange crystal statue">橙水晶の像</a></b>- 危険な像で、精神攻撃を続けながら<a href="Shadow_Creatures.html" title="Shadow Creatures">さまざまな生き物を呼び出す</a>。
+</p><p><span class="nhsym clr-magenta">I</span> <a href="http://crawl.chaosforge.org/File:Obsidian_statue.png" data-untr="1" class="image"><img alt="Obsidian statue.png" src="img/Obsidian_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Obsidian_statue" data-untr="1" title="Obsidian statue">黒曜石の像</a></b>- 不運な旅人を<a href="http://crawl.chaosforge.org/Mesmerize" data-untr="1" class="mw-redirect" title="Mesmerize">魅了</a>しながら、下位から中位の悪魔を呼び出す。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Warrior_statue.png" data-untr="1" class="image"><img alt="Warrior statue.png" src="img/Warrior_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Warrior_statue" data-untr="1" title="Warrior statue">戦士の像</a></b>- 近接武器を持った像。作り手は、侵入者がどうしてもそばを通らなければならない場所にこれを置いた。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Lasher_statue.png" data-untr="1" class="image"><img alt="Lasher statue.png" src="img/Lasher_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Lasher_statue" data-untr="1" title="Lasher statue">鞭打ちの像</a></b>- <a href="Whip.html" title="Whip">鞭</a>を持った像で、狭い通路にいる。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Archer_statue.png" data-untr="1" class="image"><img alt="Archer statue.png" src="img/Archer_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Archer_statue" data-untr="1" title="Archer statue">射手の像</a></b>- <a href="http://crawl.chaosforge.org/Bow" data-untr="1" class="mw-redirect" title="Bow">弓</a>か<a href="Longbow.html" title="Longbow">ロングボウ</a>と、たっぷりの矢を持った像。<a href="Bush.html" title="Bush">藪</a>の陰にいることが多い。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Conjurer_statue.png" data-untr="1" class="image"><img alt="Conjurer statue.png" src="img/Conjurer_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Conjurer_statue" data-untr="1" title="Conjurer statue">妖術師の像</a></b>- <a href="http://crawl.chaosforge.org/Orbs_of_Destruction" data-untr="1" class="mw-redirect" title="Orbs of Destruction">破壊の爆裂球</a>を放つ、魔法の守護像。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Wizard_statue.png" data-untr="1" class="image"><img alt="Wizard statue.png" src="img/Wizard_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Wizard_statue" data-untr="1" title="Wizard statue">魔術師の像</a></b>- いろいろな強力な呪文を唱える魔法の像。
+</p><p><span class="nhsym clr-magenta">8</span> <a href="http://crawl.chaosforge.org/File:Zot_statue.png" data-untr="1" class="image"><img alt="Zot statue.png" src="img/Zot_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Zot_statue" data-untr="1" title="Zot statue">ゾットの像</a></b>- <a href="Dungeon_Sprint.html" title="Dungeon Sprint">ダンジョンスプリント</a>にしかいない凶悪な像。最悪中の最悪といえる生き物を呼び出してくる。
+</p><p><span class="nhsym clr-white">I</span> <a href="http://crawl.chaosforge.org/File:Diamond_obelisk.png" data-untr="1" class="image"><img alt="Diamond obelisk.png" src="img/Diamond_obelisk.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Diamond_obelisk" data-untr="1" title="Diamond obelisk">金剛石の方尖塔</a></b>- いつも<a href="http://crawl.chaosforge.org/Tornado" data-untr="1" title="Tornado">荒れ狂う嵐</a>をまとった金剛石の塊で、まず壊せない。
+</p>
+<h3><span class="mw-headline" id="Unique_Statues">固有の像</span></h3>
+<p><span class="nhsym">I</span> <a href="http://crawl.chaosforge.org/File:Roxanne.png" data-untr="1" class="image"><img alt="Roxanne.png" src="img/Roxanne.png" width="32" height="32" /></a> <b><a href="Roxanne.html" title="Roxanne">ロクサーヌ</a></b>- うっかり自分を像に変えてしまった<a href="Earth_Elementalist.html" title="Earth Elementalist">地の精霊使い</a>。相手を強力な呪文の<a href="http://crawl.chaosforge.org/Blink_Other_Close" data-untr="1" title="Blink Other Close">射程内へ瞬間移動</a>させてくる。
+</p><p><span class="nhsym">8</span> <a href="http://crawl.chaosforge.org/File:Wucad_mu_statue.png" data-untr="1" class="image"><img alt="Wucad mu statue.png" src="img/Wucad_mu_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Wucad_Mu%27s_Monastery#Statue_of_Wucad_Mu" data-untr="1" title="Wucad Mu&#39;s Monastery">ウカド・ムーの像</a></b> - 名高い修行僧の姿を彫った<a href="http://crawl.chaosforge.org/Orange_crystal_statue" data-untr="1" title="Orange crystal statue">橙水晶の像</a>で、彼の修道院の中央に置かれている。これを壊すと、押し寄せてくる修行僧の亡霊の流れが止まる。
+</p><p><span class="nhsym clr-brightmagenta">8</span> <a href="http://crawl.chaosforge.org/File:Zot_statue.png" data-untr="1" class="image"><img alt="Zot statue.png" src="img/Zot_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Lehudib%27s_Moon_Base#Subguardians" data-untr="1" title="Lehudib&#39;s Moon Base">月の像</a></b> - レフディブの月面基地で、めずらしく強力なアイテムを守っている像。橙水晶の像に似ているが、<a href="Lehudib's_Crystal_Spear.html" title="Lehudib&#39;s Crystal Spear">レフディブの水晶槍</a>も持っていて、呪文を唱える頻度もずっと高い。
+</p>
+<h2><span class="mw-headline" id="Retired_Statues">削除された像</span></h2>
+<p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Firespitter_statue.png" data-untr="1" class="image"><img alt="Firespitter statue.png" src="img/Firespitter_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Firespitter_statue" data-untr="1" title="Firespitter statue">火吹きの像</a></b>- <a href="Volcano.html" title="Volcano">火山</a>で宝物庫のヴォールトを守っていた、火を吐く像。<a href="0.19.html" title="0.19">0.19</a> で削除された。
+</p><p><span class="nhsym clr-white">8</span> <a href="http://crawl.chaosforge.org/File:Silver_statue.png" data-untr="1" class="image"><img alt="Silver statue.png" src="img/Silver_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Silver_statue" data-untr="1" title="Silver statue">銀の像</a></b>- さまざまな<a href="Demon.html" title="Demon">悪魔</a>を呼び出していた像。<a href="0.16.html" title="0.16">0.16</a> で<a href="http://crawl.chaosforge.org/Obsidian_statue" data-untr="1" title="Obsidian statue">黒曜石の像</a>に置き換えられた。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Snail_statue.png" data-untr="1" class="image"><img alt="Snail statue.png" src="img/Snail_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Snail_statue" data-untr="1" title="Snail statue">カタツムリの像</a></b>- <a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>の像で、<a href="Leda's_Liquefaction.html" title="Leda&#39;s Liquefaction">レダの流動術</a>を何度も唱えていた。<a href="0.13.html" title="0.13">0.13</a> で削除された。
+</p><p><span class="nhsym clr-lightgray">8</span> <a href="http://crawl.chaosforge.org/File:Spooky_statue.png" data-untr="1" class="image"><img alt="Spooky statue.png" src="img/Spooky_statue.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Spooky_statue" data-untr="1" title="Spooky statue">不気味な像</a></b> - <a href="The_Crypt.html" title="The Crypt">地下墓地</a>の一部のヴォールトを守っていた気味の悪い像。そばにいると<a href="Haunt.html" title="Haunt">幽霊が呼び出され</a>、侵入者に襲いかかった。<a href="0.13.html" title="0.13">0.13</a> で削除された。
+</p>
+<h2><span class="mw-headline" id="Other_immobile_monsters">その他の動かないモンスター</span></h2>
+<p>ある種の植物も動かず、見つけると移動の注意対象の範囲を作ることがある。ただし像と違って<a href="Nonliving.html" title="Nonliving">非生物</a>ではない。詳しくは<a href="List_of_plants.html" title="List of plants">植物の一覧</a>を参照。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.26.html" title="0.26">0.26</a> より前は、像は <a href="Hit_points.html" class="mw-redirect" title="HP">HP</a> が回復しなかった。</li>
+<li><a href="0.22.html" title="0.22">0.22</a> より前は、<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>でふつうの像を壊せた。</li>
+<li><a href="0.20.html" title="0.20">0.20</a> より前は、<a href="http://crawl.chaosforge.org/Wand_of_disintegration" data-untr="1" class="mw-redirect" title="Wand of disintegration">分解のワンド</a>と<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>でふつうの像を壊せた。<a href="Wand_of_digging.html" title="Wand of digging">掘削のワンド</a>は効かなかった。</li>
+<li><a href="0.19.html" title="0.19">0.19</a> より前は、像に急所攻撃ができなかった。黒曜石の像と橙水晶の像は sInv を持っていなかった。また、オークの像を壊すと、ベオの天罰を受けることがあった。</li>
+<li><a href="0.15.html" title="0.15">0.15</a> より前は、一部の敵対的な像は分解のワンドで一瞬で壊せた。</li></ul>
+<p>以前の版には「焼け焦げた花崗岩の像」があった。これは炎の<a href="Cloud.html" title="Cloud">雲</a>をいつまでも生み出す場所に置かれた像だった。その像のあるヴォールトは今も残っているが、像そのものはもうほかの像と見分けがつかない。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

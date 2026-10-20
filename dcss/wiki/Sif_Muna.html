@@ -105,7 +105,7 @@
 <ul><li>30%: 知力が一時的に最大20%下がる</li>
 <li>30%: 5-7ターンのあいだ混乱する</li>
 <li>20%: MP がすべて吸い取られる</li>
-<li>10%: 自分にかかっている魔法の効果すべての残り時間が 0 か 10 <a href="Action.html" class="mw-redirect" title="Aut">aut</a>(<a href="http://crawl.chaosforge.org/Flight" data-untr="1" class="mw-redirect" title="Flight">飛行</a>は 11)まで減る。<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>の効果とまったく同じだ。</li></ul>
+<li>10%: 自分にかかっている魔法の効果すべての残り時間が 0 か 10 <a href="Action.html" class="mw-redirect" title="Aut">aut</a>(<a href="Fly.html" class="mw-redirect" title="Flight">飛行</a>は 11)まで減る。<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>の効果とまったく同じだ。</li></ul>
 <p>また、呪文を唱えるたびに5%の確率で、失敗率がそのときの懺悔の値と同じだけ(パーセントで)上がる。これは通常の懲罰とは別に起こり、懺悔の値も減らない。
 </p>
 <h2><span class="mw-headline" id="Strategy">戦略</span></h2>
@@ -132,9 +132,9 @@
 <ul><li><a href="Trunk.html" class="mw-redirect" title="0.35">0.35</a> で、シフ・ムーナの能力は<a href="Invocations.html" title="Invocations">祈祷</a>ではなく<a href="Spellcasting.html" title="Spellcasting">呪文詠唱</a>に依存するようになる予定だ<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>。また、贈られる呪文はこれまでよりランダム寄りになる(プレイヤーの今のスキルにあまり左右されなくなる)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup></li>
 <li><a href="0.31.html" title="0.31">0.31</a> より前は、魔法書の贈り物は 6* では今より少なく、5* では今より多かった。<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup></li>
 <li><a href="0.27.html" title="0.27">0.27</a> で、シフ・ムーナが贈り物をくれるペースが全体的に遅くなった。以前の贈り物のタイムアウトは <code>39 + (2d19)/2</code> だったが、今は贈られた呪文の数で決まる。さらに、タイムアウトが 0 になったあとに贈り物を受け取る確率も下がった。シフ・ムーナの信徒の<a href="Piety.html" title="Piety">信仰心</a>を上がりやすくするための変更だ(贈り物があると信仰心の上がり方が鈍るため)。魔法書そのものも調整され、シフ・ムーナのランダムアーティファクト魔法書の大きさは変わらなかったが、通常の魔法書は小さくなった。</li>
-<li><a href="0.27.html" title="0.27">0.27</a> より前は、シフ・ムーナは<a href="Book_of_Annihilations.html" title="Book of Annihilations">殲滅の魔法書</a>、<a href="http://crawl.chaosforge.org/Grand_Grimoire" data-untr="1" title="Grand Grimoire">グラン・グリモア</a>、<a href="Necronomicon.html" title="Necronomicon">ネクロノミコン</a>を贈らなかった。</li>
+<li><a href="0.27.html" title="0.27">0.27</a> より前は、シフ・ムーナは<a href="Book_of_Annihilations.html" title="Book of Annihilations">殲滅の魔法書</a>、<a href="Grand_Grimoire.html" title="Grand Grimoire">グラン・グリモア</a>、<a href="Necronomicon.html" title="Necronomicon">ネクロノミコン</a>を贈らなかった。</li>
 <li><a href="0.24.html" title="0.24">0.24</a> より前は、魔力回復(Channel Energy)は 3* の能力だった。神聖なる魔力(Divine Energy)という 1* の能力があり、一時的に「魔法×」状態になる代わりに、MP が足りなくても呪文を唱えられた。シフ・ムーナは呪文失敗の効果から守ってくれる代わりに、殺害で得られる信仰心は少なめで、魔法スキルを鍛えることでも信仰心が上がった。</li>
-<li><a href="0.20.html" title="0.20">0.20</a> より前は、シフ・ムーナの怒りに<a href="Divinations.html" title="Divinations">予見術</a>の<a href="Miscast_effect.html" class="mw-redirect" title="Miscast effects">呪文失敗の効果</a>がそのまま使われていた。その中身は、すでにある怒りの効果と同じものだった。</li>
+<li><a href="0.20.html" title="0.20">0.20</a> より前は、シフ・ムーナの怒りに<a href="Divinations.html" title="Divinations">占術</a>の<a href="Miscast_effect.html" class="mw-redirect" title="Miscast effects">呪文失敗の効果</a>がそのまま使われていた。その中身は、すでにある怒りの効果と同じものだった。</li>
 <li><a href="0.19.html" title="0.19">0.19</a> より前は、神聖なる魔力は存在しなかった。魔力回復は 1* の能力で、<code>0 - piety/20 - floor(2 * Invocations)</code> の失敗率で即座に <code>1d(2+[Invocations/4])</code> の MP を得られ、100-200 の<a href="http://crawl.chaosforge.org/Hunger" data-untr="1" class="mw-redirect" title="Hunger">満腹度</a>を消費した。魔法書の贈り物は 6* からだった。信徒は魔法スキルを鍛えることでしか信仰心を得られず、シフ・ムーナは<a href="Spell_book.html" class="mw-redirect" title="Spellbook">魔法書</a>を破壊されるのを嫌った。シフ・ムーナの懺悔を受ける方法は、これしかなかった。</li>
 <li><a href="0.15.html" title="0.15">0.15</a> より前は、シフ・ムーナの怒りによって呪文を強制的に忘れさせられることがあった。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>

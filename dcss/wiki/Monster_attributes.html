@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>モンスターの特性 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="モンスターの特性(Monster attributes)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>モンスターの特性 <span class="en">Monster attributes</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Monster_attributes">Monster attributes</a>」(0.26 向け、2021-05-12 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Monster_attributes&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.26 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.26.html" title="0.26">0.26</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p>モンスターはそれぞれ異なる<b>特性</b>(attribute)を持っている。モンスターの振る舞い、戦闘でのしぶとさ、特殊能力、耐性と弱点、全般的な能力値など、ゲーム内でのモンスターの働きは、すべてこの特性で決まる。
+</p><p>個々のモンスターの特性の大部分は、<i>Crawl</i> の<a href="Source_code.html" title="Source code">ソースコード</a>の <a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/stone_soup-0.26/crawl-ref/source/mon-data.h">mon-data.h</a> というファイルに、次の形式で収められている。
+</p>
+<pre>1 行目: モンスターの ID、表示する文字、表示する色、名前
+2 行目: モンスターのフラグ
+3 行目: モンスターの耐性フラグ
+4 行目: 経験値の補正、属(genus)、種(species)、分類、意志力
+5 行目: 4 つの攻撃それぞれのダメージ
+6 行目: HD、HP
+7 行目: AC、EV、呪文、死体、叫び声
+8 行目: 知能、生息地、速度、energy_usage
+9 行目: gmon_use の区分、体格、体形
+10 行目: タイル、死体
+</pre>
+<p>ほかにも多くのモンスターの性質が、ソースのあちこちに直接書き込まれている。たとえば<a href="Negative_energy.html" class="mw-redirect" title="Negative energy resistance">負のエネルギーへの耐性</a>は mon-data の「耐性フラグ」には含まれておらず、<a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/stone_soup-0.26/crawl-ref/source/monster.cc">monster.cc</a> にある。
+</p>
+<pre>int monster::res_negative_energy(bool intrinsic_only) const
+{
+    // If you change this, also change get_mons_resists.
+    if (!(holiness() &amp; MH_NATURAL))
+        return 3;
+    [耐性を与えるアイテムなどの追加の判定]
+}
+</pre>
+<p>これは「モンスターが<a href="Category_Natural_holiness.html" class="mw-redirect" title="Natural">生物</a>でなければ、負のエネルギーへの耐性を 3 段階持つ」という意味だ。
+</p><p>いろいろな特性の説明や、特定の特性を持つモンスターの一覧は、<a href="http://crawl.chaosforge.org/Category:Monster_attributes" data-untr="1" title="Category:Monster attributes">モンスターの特性のカテゴリ</a>を参照。
+</p>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
