@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>手に持つ &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="手に持つ(Wield)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>手に持つ <span class="en">Wield</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Wield">Wield</a>」(0.25 向け、2020-12-02 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Wield&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.25 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.25.html" title="0.25">0.25</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>手に持つ</b>(wield)とは、<a href="Item.html" title="Item">アイテム</a>を手に握る行動のことで、<b>w</b> キーで行う。
+</p><p>手に持ったアイテムは、キャラクターが<a href="Melee_combat.html" title="Melee combat">近接戦闘</a>に使う。なので、手に持つおもな目的は<a href="Weapon.html" title="Weapon">武器</a>を構えることだ。<a href="Ranged_Weapons.html" class="mw-redirect" title="Ranged weapon">射撃武器</a>も、使う前に手に持っておく必要がある。
+</p><p>一部の<a href="Evocable_items.html#Artefact_staves" title="Evocable items">アーティファクトの杖</a>も、その力を<a href="Evocations.html" class="mw-redirect" title="Evocation">発動</a>するには手に持たなければならない。
+</p><p>近接戦闘に向かない武器で戦おうとすると、ゲームが警告してくれる。よくある間違いだからだ。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Wielding_nothing"><span class="tocnumber">1</span> <span class="toctext">何も持たない</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Switching_between_weapons"><span class="tocnumber">2</span> <span class="toctext">武器の持ち替え</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Wielding_failure"><span class="tocnumber">3</span> <span class="toctext">手に持てない場合</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Exceptions_to_wielding"><span class="tocnumber">4</span> <span class="toctext">手に持たなくてよいもの</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Wielding_cursed_weapons"><span class="tocnumber">5</span> <span class="toctext">呪われた武器を持つ</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Wielding_distortion_weapons"><span class="tocnumber">6</span> <span class="toctext">歪曲の武器を持つ</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#History"><span class="tocnumber">7</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Wielding_nothing">何も持たない</span></h2>
+<p>アイテムを選ぶよう求められたときに <b>-</b>(マイナスキー)を押せば、何も持たずに素手になれる。<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>で戦うつもりのキャラクターは、たいてい何も持たない。
+</p>
+<h2><span class="mw-headline" id="Switching_between_weapons">武器の持ち替え</span></h2>
+<p>'(アポストロフィキー)を押すと、所持品の特別なスロット「a」と「b」の中身を手に持ち、両者を持ち替えようとする。お気に入りの武器をこの 2 つのスロットに入れるには、<b>=</b> キーを押してから <b>i</b>(アイテム)を選ぶ。
+</p><p>なお、これらのスロットのアイテムが手に持つのに向かないもの(ワンドや防具など)なら、それを持つことはなく、単に素手になる。これは徒手格闘を専門にするキャラクターに便利で、「a」か「b」のスロットに武器でないアイテムを入れておけば、簡単に素手に戻れる。
+</p>
+<h2><span class="mw-headline" id="Wielding_failure">手に持てない場合</span></h2>
+<p>次の場合は手に持てない。
+</p>
+<ul><li>持とうとしたアイテムが、そのキャラクターには大きすぎる</li>
+<li>すでに<a href="Cursed.html" title="Cursed">呪われた</a>武器を持っている</li>
+<li>すでに持っているアイテムを持とうとした</li>
+<li>両手で持つアイテムなのに、盾を着けている</li></ul>
+<h2><span class="mw-headline" id="Exceptions_to_wielding">手に持たなくてよいもの</span></h2>
+<p>手に持たなくても使えるアイテムがいくつかある。<a href="Wand.html" title="Wand">ワンド</a>は所持品から直接<a href="http://crawl.chaosforge.org/Zap" data-untr="1" class="mw-redirect" title="Zap">振れる</a>し、<a href="Throwing.html" title="Throwing">投擲</a>武器も所持品から直接投げられる。ほかの発動アイテムも同じように使える。ただし、こうしたアイテムの中には親指がないと使えないものもあるので、親指のないキャラクター(<a href="Felid.html" title="Felid">フェリッド</a>や、特定の変身中のキャラクターなど)はやはり使えない。
+</p>
+<h2><span class="mw-headline" id="Wielding_cursed_weapons">呪われた武器を持つ</span></h2>
+<p><a href="Cursed.html" title="Cursed">呪われた</a>武器は、手に持つと手に張りついてしまい、手放すことも<a href="http://crawl.chaosforge.org/Drop" data-untr="1" class="mw-redirect" title="Drop">置く</a>こともできなくなる。
+</p>
+<h2><span class="mw-headline" id="Wielding_distortion_weapons">歪曲の武器を持つ</span></h2>
+<p><a href="Distortion.html" title="Distortion">歪曲</a>のブランドが付いた武器を手放すと、<a href="Magic_contamination.html" class="mw-redirect" title="Magical contamination">魔力汚染</a>を受けたり、その階のランダムなモンスターのそばへ<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>させられたり、<a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a>へ<a href="Banishment.html" class="mw-redirect" title="Banish">追放</a>されたりすることさえある。そのため、レベルの低いプレイヤーは、歪曲だとわかっている武器や歪曲かもしれない武器を手に持つときは慎重になるべきだ。危険を避けたいなら、怪しい武器は手に持つ前に<a href="Identify.html" title="Identify">鑑定</a>しておくといい。鑑定済みの歪曲の武器は、手に持つ前に必ず確認を求めてくる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.24.html" title="0.24">0.24</a> より前は、<a href="Vampiric.html" title="Vampiric">吸血</a>の武器を装備するには<a href="Comestibles_and_satiation.html#Satiation" title="Comestibles and satiation">満腹</a>以上である必要があった。</li>
+<li><a href="0.20.html" title="0.20">0.20</a> より前は、<a href="Sandblast.html" title="Sandblast">砂の突風</a>のダメージを上げるには<a href="Stone.html" title="Stone">石</a>か<a href="Large_rock.html" title="Large rock">大岩</a>を手に持つ必要があった。また、<a href="Berserk.html" title="Berserk">バーサーク</a>中は物を持ったり手放したりできなかった。</li>
+<li><a href="0.17.html" title="0.17">0.17</a> より前は、<a href="Sticks_to_Snakes.html" title="Sticks to Snakes">棒切れの蛇</a>を唱えるには<a href="Javelin.html" title="Javelin">ジャベリン</a>か<a href="Arrow.html" title="Arrow">矢</a>を手に持つ必要があった。</li>
+<li><a href="0.12.html" title="0.12">0.12</a> より前は、呪われた鈍器を手に持っていると死体を解体できなかった。</li>
+<li><a href="0.9.0.html" class="mw-redirect" title="0.9">0.9</a> より前は、<a href="Corpse.html" class="mw-redirect" title="Butchering">解体</a>には刃のある武器を手に持つ必要があった。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

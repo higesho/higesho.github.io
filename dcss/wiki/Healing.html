@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>回復 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="回復(Healing)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>回復 <span class="en">Healing</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Healing">Healing</a>」(0.18 向け、2020-07-01 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Healing&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.18 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.18.html" title="0.18">0.18</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>回復</b>とは、失った <a href="Hit_points.html" class="mw-redirect" title="HP">HP</a> を取り戻すことだ。戦闘で消耗すればどのキャラクターも回復が必要になり、できれば急いで回復したいところだが、どの回復手段もすべてのキャラクターに向いているわけではない。HP を回復する手段を以下にすべて挙げる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Healing_Naturally"><span class="tocnumber">1</span> <span class="toctext">自然回復</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Healing_Through_Spells"><span class="tocnumber">2</span> <span class="toctext">呪文による回復</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Divine_Healing"><span class="tocnumber">3</span> <span class="toctext">神による回復</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Healing_Through_Items"><span class="tocnumber">4</span> <span class="toctext">アイテムによる回復</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Species-specific_Healing"><span class="tocnumber">5</span> <span class="toctext">種族ごとの回復</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Amulet_of_Guardian_Spirit"><span class="tocnumber">6</span> <span class="toctext">守護霊の護符</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Healing_Naturally">自然回復</span></h2>
+<ul><li>傷ついたキャラクターは時間とともに HP を回復するので、戦闘のあとはただじっとしていれば回復できる。<b>.</b> を押せば 1 ターン、<b>5</b> を押せば最大 100 ターン待てる。回復する量はキャラクターの<a href="Regeneration_rate.html" title="Regeneration rate">回復速度</a>で決まる。
+<ul><li><a href="Troll.html" title="Troll">トロル</a>、満腹の<a href="Vampire.html" title="Vampire">吸血鬼</a>、<a href="Vine_Stalker.html" class="mw-redirect" title="Vine stalker">歩き蔓</a>はこの方法で人より速く HP を回復する。いっぽう<a href="http://crawl.chaosforge.org/Deep_dwarves" data-untr="1" class="mw-redirect" title="Deep dwarves">闇ドワーフ</a>と血の通っていない吸血鬼は、休んでもまったく HP が回復しない。</li>
+<li><a href="Amulet_of_regeneration.html" title="Amulet of regeneration">再生の護符</a>、<a href="Troll_leather_armour.html" title="Troll leather armour">トロル革の鎧</a>、再生の特性を持つ<a href="Artefact.html" title="Artefact">アーティファクト</a>を身につけるか、<a href="Good_mutations.html#Regeneration" title="Good mutations">再生</a>の<a href="Mutation.html" title="Mutation">変異</a>を持っていると、回復速度が上がる。</li>
+<li>反対に、<a href="http://crawl.chaosforge.org/Slow_Healing" data-untr="1" class="mw-redirect" title="Slow Healing">治癒の遅延</a>の変異があると、モンスターが近くにいるあいだ回復速度が下がる。</li></ul></li></ul>
+<h2><span class="mw-headline" id="Healing_Through_Spells">呪文による回復</span></h2>
+<ul><li><a href="Regeneration_rate.html" class="mw-redirect" title="Regeneration">再生</a>の呪文は、一時的に回復速度を大きく引き上げ、すばやく回復させてくれる。</li>
+<li><a href="Vampiric_Draining.html" title="Vampiric Draining">ヴァンパイアの吸血</a>の呪文は、隣にいる生きた敵から HP を奪う。</li>
+<li><a href="Borgnjor's_Revivification.html" title="Borgnjor&#39;s Revivification">ボーグンジョルの究極治癒</a>の呪文は HP をすぐに全快させるが、唱えるたびに最大 HP が少しずつ永久に減る。</li></ul>
+<h2><span class="mw-headline" id="Divine_Healing">神による回復</span></h2>
+<ul><li><a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の能力で、自分や他者を直接癒せる。</li>
+<li><a href="Gozag_Ym_Sagoz.html" class="mw-redirect" title="Gozag">ゴザーグ</a>の水薬の陳情では、回復の薬を買える機会が得られることがある。</li>
+<li><a href="Makhleb.html" title="Makhleb">マクレブ</a>の信者は、モンスターを倒すたびに HP を回復することがある。</li>
+<li><a href="Ru.html" title="Ru">ルー</a>の力の解放は、<a href="Draining.html" class="mw-redirect" title="Drain">衰弱</a>と引き換えに HP をいくらか回復する。</li>
+<li><a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>の信者は、悪魔やアンデッドのモンスターを倒すたびに HP と MP を回復することがある。</li>
+<li><a href="Trog.html" title="Trog">トログ</a>のトログの御手は、ほかの効果とあわせて一時的に回復速度を上げる。</li>
+<li><a href="Xom.html" title="Xom">ゾム</a>は、<a href="Tension.html" title="Tension">緊張度</a>が高いときに気まぐれで回復してくれることがある。</li>
+<li><a href="Yredelemnul.html" title="Yredelemnul">イレデレンヌル</a>の生命の簒奪は、周りの生きたモンスターすべてを傷つけ、与えたダメージの半分だけ自分を回復する。</li></ul>
+<h2><span class="mw-headline" id="Healing_Through_Items">アイテムによる回復</span></h2>
+<ul><li><a href="Vampiric.html" title="Vampiric">吸血</a>の武器で適した敵を攻撃すると、与えたダメージの半分だけ持ち主が回復することがある。</li>
+<li><a href="Potion.html" class="mw-redirect" title="Potions">薬</a>
+<ul><li><a href="Potion_of_curing.html" title="Potion of curing">治療の薬</a>を<a href="Quaff.html" title="Quaff">飲む</a>と、ほかの効果とあわせて HP が 1d7+4 回復する。</li>
+<li><a href="Potion_of_heal_wounds.html" title="Potion of heal wounds">怪我の治療の薬</a>を飲むと、HP が 3d28/3+9 回復する。</li>
+<li><a href="Potion_of_ambrosia.html" title="Potion of ambrosia">アンブロシアの薬</a>を飲むと、数ターンのあいだ HP と MP の再生が速くなるが、再生しているあいだは<a href="Confusion.html" title="Confusion">混乱</a>する。
+<ul><li>血の通っていない<a href="Vampire.html" title="Vampire">吸血鬼</a>と<a href="Ghoul.html" title="Ghoul">グール</a>は、モンスターが見えているあいだは再生できない。<a href="Mummy.html" class="mw-redirect" title="Mummies">ミイラ</a>は薬を飲めない。<a href="Vine_Stalker.html" title="Vine Stalker">歩き蔓</a>は薬で HP を回復できない。</li></ul></li></ul></li>
+<li><a href="Decks.html" title="Decks">デッキ</a>
+<ul><li><a href="Deck_of_changes.html" title="Deck of changes">変化のデッキ</a>、<a href="Deck_of_war.html" title="Deck of war">戦争のデッキ</a>、<a href="Deck_of_defence.html" title="Deck of defence">防御のデッキ</a>から<a href="Potion_card.html" title="Potion card">薬のカード</a>を引くと、治療の薬か怪我の治療の薬を飲んだときのように回復することがある。</li>
+<li>変化、戦争、防御、<a href="Deck_of_escape.html" title="Deck of escape">脱出</a>のデッキから<a href="Elixir_card.html" title="Elixir card">霊薬のカード</a>を引くと、数ターンのあいだ再生が大きく速まる。</li>
+<li>変化、防御、脱出、<a href="http://crawl.chaosforge.org/Deck_of_wonders" data-untr="1" title="Deck of wonders">不思議</a>のデッキから<a href="Alchemist_card.html" title="Alchemist card">錬金術師のカード</a>を引くと、<a href="Gold.html" title="Gold">金貨</a>をいくらか失う代わりに HP が回復する。</li></ul></li>
+<li><a href="Wand.html" class="mw-redirect" title="Wands">ワンド</a>
+<ul><li><a href="Wand_of_heal_wounds.html" title="Wand of heal wounds">怪我の治療のワンド</a>を自分に向けて振ると、HP が 3d28/3+9 回復する。
+<ul><li><a href="Vine_Stalker.html" title="Vine Stalker">歩き蔓</a>と、<a href="Robe_of_Vines.html" title="Robe of Vines">蔓のローブ</a>を着ているキャラクターは、ワンドで回復できない。</li></ul></li></ul></li></ul>
+<h2><span class="mw-headline" id="Species-specific_Healing">種族ごとの回復</span></h2>
+<ul><li><a href="Demonspawn_mutations.html#Powered_by_Death" title="Demonspawn mutations">死よりの力</a>の<a href="Mutation.html" title="Mutation">変異</a>を持つ<a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a>は、新しい死体の近くにいると回復速度が上がる。</li>
+<li><a href="Ghoul.html" title="Ghoul">グール</a>は<a href="Comestibles_and_satiation.html" class="mw-redirect" title="Chunk">肉</a>を食べると、現在の HP と最大 HP を回復できる。</li>
+<li>空腹の吸血鬼は、生きた敵への<a href="Stabbing.html" title="Stabbing">急所攻撃</a>に成功するたびに、HP と<a href="Comestibles_and_satiation.html" class="mw-redirect" title="Satiation">満腹度</a>をいくらか回復する。</li></ul>
+<h2><span class="mw-headline" id="Amulet_of_Guardian_Spirit">守護霊の護符</span></h2>
+<ul><li><a href="Spirit_shield.html" class="mw-redirect" title="Guardian spirit">守護霊</a>があると、受けたダメージは MP が 0 になるまで HP と <a href="Magic_points.html" class="mw-redirect" title="MP">MP</a> に振り分けられる。ふだん MP を使わないキャラクターにとっては HP が増えたのと同じで、HP と MP が別々に再生するので回復速度にもおまけがつく。
+<ul><li><a href="Potion_of_magic.html" class="mw-redirect" title="Potions of magic">魔力の薬</a>を飲んだり、<a href="Channeling.html" title="Channeling">チャネリング</a>を使ったりするのが(ミイラや<a href="Necromutation.html" class="mw-redirect" title="Lichform">リッチ化</a>したキャラクターにはうってつけだ)、この護符をつけたキャラクターを「回復」させる効果的な手段になる。</li>
+<li>闇ドワーフはこの護符を装備すると MP の再生速度が 0 になるので、うまく活かしにくい。それでも、上に挙げた MP を回復する手段はどれも使える。</li></ul></li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

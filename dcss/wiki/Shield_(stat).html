@@ -42,9 +42,9 @@
 <p>次のアイテムや能力で SH が上がる:
 </p>
 <ul><li><a href="Shields.html" class="mw-redirect" title="Shield">盾</a>を装備する。<a href="Buckler.html" title="Buckler">バックラー</a>、<a href="Kite_shield.html" title="Kite shield">カイトシールド</a>、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>の順に効果が高く、扱いにくくなる</li>
-<li><a href="Amulet_of_reflection.html" title="Amulet of reflection">反射の護符</a>、<a href="http://crawl.chaosforge.org/Brooch_of_Shielding" data-untr="1" title="Brooch of Shielding">防護のブローチ</a>、<a href="Ring_of_the_Octopus_King.html" title="Ring of the Octopus King">蛸の王の指輪</a>を身につける</li>
+<li><a href="Amulet_of_reflection.html" title="Amulet of reflection">反射の護符</a>、<a href="Brooch_of_Shielding.html" title="Brooch of Shielding">防護のブローチ</a>、<a href="Ring_of_the_Octopus_King.html" title="Ring of the Octopus King">蛸の王の指輪</a>を身につける</li>
 <li><a href="http://crawl.chaosforge.org/Large_Bone_Plates" data-untr="1" title="Large Bone Plates">大きな骨甲</a>の<a href="Mutation.html" title="Mutation">変異</a>を持つ</li>
-<li><a href="http://crawl.chaosforge.org/Qazlal" data-untr="1" class="mw-redirect" title="Qazlal">クァズラル</a>の常時発動の能力、嵐の盾</li></ul>
+<li><a href="Qazlal_Stormbringer.html" class="mw-redirect" title="Qazlal">クァズラル</a>の常時発動の能力、嵐の盾</li></ul>
 <h2><span class="mw-headline" id="Blocking">受け止め</span></h2>
 <p>近接攻撃(<a href="Reaching.html" title="Reaching">間合い</a>のある攻撃を含む)と、貫通しない「飛び道具」を受け止められる。飛び道具には<a href="Ranged_Weapons.html" class="mw-redirect" title="Ranged weapon">射撃武器</a>や、<a href="Iron_Shot.html" title="Iron Shot">鉄塊の矢</a>、<a href="Poison_Arrow.html" title="Poison Arrow">毒素の矢</a>といった一部の呪文が含まれる。
 </p><p>SH で受け止められないもの:
@@ -86,8 +86,8 @@
 <li><b><a href="Dexterity.html" title="Dexterity">能力値ボーナス</a></b>として <code>DEX * 38 * (base_SH + 13) / 5200</code> を足す。</li>
 <li><b><a href="Enchant.html" title="Enchant">強化値</a></b>を足す。強化値 +1 = SH +1。</li>
 <li>SH 0.57 を足す。</li></ul>
-<p>ほかの SH の源(<a href="http://crawl.chaosforge.org/Qazlal" data-untr="1" class="mw-redirect" title="Qazlal">クァズラル</a>の盾、<a href="Amulet_of_reflection.html" title="Amulet of reflection">反射の護符</a>など)はどれも固定のボーナスで、物理的な盾によるボーナスの上に足される。最終的な値は最も近い整数に丸められ、プレイヤーの SH の値として表示される。
-</p><p><a href="http://crawl.chaosforge.org/Paralysed" data-untr="1" class="mw-redirect" title="Paralysed">麻痺</a>や<a href="http://crawl.chaosforge.org/Petrified" data-untr="1" class="mw-redirect" title="Petrified">石化</a>の状態にあるか、<a href="Dexterity.html" title="Dexterity">器用</a>が 0 なら、ほかの要素にかかわらず SH は 0 になる。
+<p>ほかの SH の源(<a href="Qazlal_Stormbringer.html" class="mw-redirect" title="Qazlal">クァズラル</a>の盾、<a href="Amulet_of_reflection.html" title="Amulet of reflection">反射の護符</a>など)はどれも固定のボーナスで、物理的な盾によるボーナスの上に足される。最終的な値は最も近い整数に丸められ、プレイヤーの SH の値として表示される。
+</p><p><a href="Paralysis.html" class="mw-redirect" title="Paralysed">麻痺</a>や<a href="Petrify.html" class="mw-redirect" title="Petrified">石化</a>の状態にあるか、<a href="Dexterity.html" title="Dexterity">器用</a>が 0 なら、ほかの要素にかかわらず SH は 0 になる。
 </p>
 <h3><span class="mw-headline" id="To-hit_vs_SH">命中と SH</span></h3>
 <p>ゲームは、攻撃する側の「貫通値」と守る側の「受け止め値」を比べる。
@@ -107,8 +107,8 @@
 <ul><li>ほとんどの場合、EV +1 のほうが SH +1 より良い防御になる。式は<a href="#1_EV_vs_1_SH">下を参照</a>。</li>
 <li>避けられる攻撃の数に上限はない。受け止められる攻撃の数には、1 ターンあたりの上限が<i>ある</i>。</li>
 <li>EV は貫通する攻撃も防ぐが、SH は防げない。</li></ul>
-<p>とはいえ、盾は今ある AC や EV に加えて大量の SH をもたらしてくれる。盾を着けて得られる SH は、まず間違いなく、着けて失う EV より多い。また、受け止めは<a href="http://crawl.chaosforge.org/Armour_encumbrance" data-untr="1" class="mw-redirect" title="Armour encumbrance">防具の重さ</a>の影響を受けない。
-</p><p>盾を着ける主な代償は、<a href="Handedness.html" class="mw-redirect" title="Hand">両手持ち</a>の武器が使えなくなることと、盾の<a href="Shields.html#Penalty" title="Shields">ペナルティ</a>(<a href="http://crawl.chaosforge.org/Shields_skill" data-untr="1" class="mw-redirect" title="Shields skill">盾スキル</a>で軽くでき、いずれはなくせる)だ。
+<p>とはいえ、盾は今ある AC や EV に加えて大量の SH をもたらしてくれる。盾を着けて得られる SH は、まず間違いなく、着けて失う EV より多い。また、受け止めは<a href="Encumbrance_rating.html" class="mw-redirect" title="Armour encumbrance">防具の重さ</a>の影響を受けない。
+</p><p>盾を着ける主な代償は、<a href="Handedness.html" class="mw-redirect" title="Hand">両手持ち</a>の武器が使えなくなることと、盾の<a href="Shields.html#Penalty" title="Shields">ペナルティ</a>(<a href="Shields_(skill).html" class="mw-redirect" title="Shields skill">盾スキル</a>で軽くでき、いずれはなくせる)だ。
 </p>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">

@@ -71,7 +71,7 @@
 <h2><span class="mw-headline" id="Properties">性質</span></h2>
 <h3><span class="mw-headline" id="Damage_per_turn">ターンあたりのダメージ</span></h3>
 <p>ターンあたりのダメージは、単純に <code>average damage / weapon delay</code>(平均ダメージ ÷ 武器のディレイ)に等しい。
-</p><p><b>ダメージ:</b> 武器のダメージの評価値(おおよその最大ダメージを切り上げたもの)は、<b><a href="http://crawl.chaosforge.org/I" data-untr="1" title="I">i</a></b> キーの所持品画面で見られる。武器を調べる(<b>? / i</b>)ことでも確認できる。計算方法について詳しくは<a href="Weapon_damage.html" title="Weapon damage">武器のダメージ</a>を参照。ダメージの式は乱数を使い、端数を切り捨てるので、攻撃の弱い武器は評価値から思うより少し弱いことに注意。
+</p><p><b>ダメージ:</b> 武器のダメージの評価値(おおよその最大ダメージを切り上げたもの)は、<b><a href="I.html" title="I">i</a></b> キーの所持品画面で見られる。武器を調べる(<b>? / i</b>)ことでも確認できる。計算方法について詳しくは<a href="Weapon_damage.html" title="Weapon damage">武器のダメージ</a>を参照。ダメージの式は乱数を使い、端数を切り捨てるので、攻撃の弱い武器は評価値から思うより少し弱いことに注意。
 </p><p><b>武器のディレイ:</b> 武器のディレイとは、武器を振るのにかかる時間のことだ。ディレイが大きいほど振るのが遅い。次の式で求められる:
 </p>
 <pre>   Delay = base delay − weapon skill/2
@@ -116,7 +116,7 @@
 </p>
 <ul><li><a href="Maces_&_Flails.html" title="Maces &amp; Flails">鈍器</a>には特別な性質はないが、数値が平均より上だ。</li>
 <li><a href="Axes.html" title="Axes">斧</a>には<a href="Cleaving.html" title="Cleaving">薙ぎ払い</a>がある。攻撃すると、隣にいるほかの敵全員にも70%のダメージで当たる。</li>
-<li><a href="Polearms.html" title="Polearms">長柄武器</a>には<a href="Reaching.html" title="Reaching">間合い</a>がある。2マス離れたところから攻撃でき、<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">仲間</a>の後ろからでも攻撃できる。</li>
+<li><a href="Polearms.html" title="Polearms">長柄武器</a>には<a href="Reaching.html" title="Reaching">間合い</a>がある。2マス離れたところから攻撃でき、<a href="Disposition.html" class="mw-redirect" title="Allies">仲間</a>の後ろからでも攻撃できる。</li>
 <li><a href="Staves.html" title="Staves">棒術</a>:
 <ul><li>魔法でない杖には特別な性質はないが、ダメージの割に基本ディレイが小さい。</li>
 <li>魔法の杖は弱いが、<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>を高め、近接攻撃で特殊な攻撃が出る。</li></ul></li>
@@ -137,7 +137,7 @@
 </p>
 <ul><li><a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>のダメージにボーナスがある。<a href="Dagger.html" title="Dagger">ダガー</a>はさらに上乗せされる。</li>
 <li>ゲームで最も速く、最も命中の高い武器。
-<ul><li>固定量のダメージ(<a href="http://crawl.chaosforge.org/Slay" data-untr="1" class="mw-redirect" title="Slay">殺戮</a>、<a href="Might.html" title="Might">腕力強化</a>の状態、<a href="Electrocution.html" title="Electrocution">電撃</a>、<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>など)とそれなりに相性がよい。</li>
+<ul><li>固定量のダメージ(<a href="Slaying.html" class="mw-redirect" title="Slay">殺戮</a>、<a href="Might.html" title="Might">腕力強化</a>の状態、<a href="Electrocution.html" title="Electrocution">電撃</a>、<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>など)とそれなりに相性がよい。</li>
 <li>ディレイ 1.0 に届くのに必要なスキルが少ない。</li></ul></li>
 <li>同じく器用を使う長剣と相互訓練される。</li></ul>
 <p><b>短所</b>
@@ -194,7 +194,7 @@
 <li>ヒドラの首を切り落としてしまう。</li></ul>
 <h3><span class="mw-headline" id="Polearms"><a href="Polearms.html" title="Polearms">長柄武器</a></span></h3>
 <p>適性が最も高い種族: +4(<a href="Merfolk.html" title="Merfolk">水棲の民</a>)、+2(<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>)
-</p><p>長柄武器には<a href="Reaching.html" title="Reaching">間合い</a>がある。1マスではなく2マス離れたところから攻撃できる。自分の<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">仲間</a>の後ろからも攻撃できるが、50%の確率で失敗する。ほとんどの敵に対して、これで「おまけ」の一撃を入れられる。
+</p><p>長柄武器には<a href="Reaching.html" title="Reaching">間合い</a>がある。1マスではなく2マス離れたところから攻撃できる。自分の<a href="Disposition.html" class="mw-redirect" title="Allies">仲間</a>の後ろからも攻撃できるが、50%の確率で失敗する。ほとんどの敵に対して、これで「おまけ」の一撃を入れられる。
 </p><p><a href="Spear.html" title="Spear">スピア</a>は(<a href="Aptitude.html" title="Aptitude">適性</a>を考えに入れなければ)「素直な」初期武器の中で最もよい。ターンあたりの素のダメージはやや劣るが、間合いがそれを補って余りある。しかもスピアは初期スキルだけでディレイ 1.0 以下で攻撃でき、命中の高さも頼りになる。
 </p><p><b>最強の武器</b>
 </p>
@@ -204,7 +204,7 @@
 </p>
 <ul><li>間合い:
 <ul><li>多くの場面で、近接戦闘でおまけの一撃を入れられる。</li>
-<li><a href="Summon.html" title="Summon">召喚物</a>、<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">仲間</a>、<a href="Deep_water.html" title="Deep water">深い水脈</a>などと相性がよい。その向こうから攻撃できる。</li></ul></li>
+<li><a href="Summon.html" title="Summon">召喚物</a>、<a href="Disposition.html" class="mw-redirect" title="Allies">仲間</a>、<a href="Deep_water.html" title="Deep water">深い水脈</a>などと相性がよい。その向こうから攻撃できる。</li></ul></li>
 <li>斧・鈍器と相互訓練される。</li></ul>
 <p><b>短所</b>
 </p>
@@ -273,7 +273,7 @@
 <p><b>短所</b>
 </p>
 <ul><li>ほとんどの射撃武器は<a href="Handedness.html" class="mw-redirect" title="Hand">両手</a>持ちだ。</li>
-<li>胴鎧の<a href="http://crawl.chaosforge.org/Armour_encumbrance" data-untr="1" class="mw-redirect" title="Armour encumbrance">防具の重さ</a>でかなり遅くなる。</li>
+<li>胴鎧の<a href="Encumbrance_rating.html" class="mw-redirect" title="Armour encumbrance">防具の重さ</a>でかなり遅くなる。</li>
 <li>同程度の近接武器よりダメージが低い。</li>
 <li>アーバレスト、ハンドキャノン、トリプルクロスボウは、どれも最小ディレイが 1.0 だ。</li></ul>
 <h2><span class="mw-headline" id="An_Ingame_Approach">ゲーム中での考え方</span></h2>
@@ -291,7 +291,7 @@
 <ul><li>大きな節目は<b>武器のディレイが 1.0 に届いたとき</b>だ。ディレイが 1.0 より上だと、通常速度のモンスターは、あなたが武器を1回振るたびに2回行動できることがある(つまり 1.1 は実質的に 2 に切り上がることがある)。ここまで来ると、武器の種類を乗り換えるコストがぐっと大きくなる。特に相互訓練があれば乗り換えられなくはないが、乗り換えるうまみは薄れる。</li></ul>
 <ul><li>まったく鍛えていなくても、射撃武器を一つ持っておくとよい。近接攻撃の敵が相手なら、射撃武器に持ち替えて何発か撃ちこみ、それから主武器に戻せる。鍛えていない武器は撃つのが遅いので、遠距離攻撃の敵とはこのやり方で戦わないこと。</li></ul>
 <h3><span class="mw-headline" id="Mid.2FLate_Game">中盤・終盤</span></h3>
-<p>武器使いとして<a href="http://crawl.chaosforge.org/Lair_of_Beasts" data-untr="1" class="mw-redirect" title="Lair of Beasts">獣の棲み処</a>を踏破したなら、たぶん「主力」の武器の種類が決まっているはずだ。特によいものが見つからない限り、それを使い続けよう。
+<p>武器使いとして<a href="The_Lair.html" class="mw-redirect" title="Lair of Beasts">獣の棲み処</a>を踏破したなら、たぶん「主力」の武器の種類が決まっているはずだ。特によいものが見つからない限り、それを使い続けよう。
 </p>
 <ul><li>武器のスキルに十分につぎこむと、そのスキルでゲームに勝てる段階が来る。もっと数値のよい別の武器が見つかるかもしれないが……乗り換えれば貴重な経験値を使うことになる。<a href="Wyrmbane.html" title="Wyrmbane">ドラゴン殺し</a>のようなものでも見つからない限り、乗り換える価値はおそらくない。この段階はスキル14〜16あたり(片手武器なら最小ディレイ、両手武器ならディレイ 1.0)で来ることが多いが、キャラクターによって早くも遅くもなる。</li></ul>
 <ul><li>この頃にはたいてい<a href="Scroll_of_brand_weapon.html" class="mw-redirect" title="Scrolls of brand weapon">魔力の武器の巻物</a>と<a href="Scroll_of_enchant_weapon.html" class="mw-redirect" title="Scrolls of enchant weapon">武器強化の巻物</a>を持っているので、ブランドと強化値はあまり問題にならない。上で述べたとおり、最も大事なのはすでにスキルにつぎこんだ量だ。その次が、手に入る武器と手に入る<a href="Artefact.html" title="Artefact">アーティファクト</a>になる。</li></ul>

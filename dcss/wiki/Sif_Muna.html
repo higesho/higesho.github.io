@@ -70,7 +70,7 @@
 <ul><li><b>呪文の忘却</b>: <a href="Scroll_of_amnesia.html" title="Scroll of amnesia">忘却の巻物</a>と同じように働く。(信仰心 8-12)</li></ul>
 <p><b><a href="Piety.html" title="Piety">信仰心 ****</a></b>: 『魔法学者』
 </p>
-<ul><li><b>神聖なる釈義</b>: 呪文ライブラリにあるどの呪文でも唱えられる。このときの<a href="http://crawl.chaosforge.org/Spellpower" data-untr="1" class="mw-redirect" title="Spellpower">呪文威力</a>は、ふだんどおり呪文のスキルや強化品などで決まるが、それに加えて「<a href="Invocations.html" title="Invocations">祈祷</a>がその呪文の唯一の系統だとした場合の呪文威力」の1.5倍のボーナスがつく。(信仰心 12-18)
+<ul><li><b>神聖なる釈義</b>: 呪文ライブラリにあるどの呪文でも唱えられる。このときの<a href="Spell_Power.html" class="mw-redirect" title="Spellpower">呪文威力</a>は、ふだんどおり呪文のスキルや強化品などで決まるが、それに加えて「<a href="Invocations.html" title="Invocations">祈祷</a>がその呪文の唯一の系統だとした場合の呪文威力」の1.5倍のボーナスがつく。(信仰心 12-18)
 <ul><li>釈義そのものは MP を使わないが、選んだ呪文を唱えるのに足りるだけの MP は必要なので注意。</li></ul></li></ul>
 <p><b><a href="Piety.html" title="Piety">信仰心 *****</a></b>: 『賢者』
 </p>
@@ -88,7 +88,7 @@
 <li>テーマ型のランダムアーティファクト魔法書には、ある共通のテーマ(呪文系統とはかぎらない)に沿った呪文がいくつか載っている。 </li>
 <li>レベル型のランダムアーティファクト魔法書には、ある一つのレベル(XL が上限)の呪文がいくつか載っている。呪文詠唱スキルが高いほど、良いアーティファクト魔法書がもらえる。 </li></ul>
 <p>シフ・ムーナのランダムアーティファクト魔法書(テーマ型もレベル型も)は、ダンジョンで見つかるものより大きく、6個前後の呪文が載っている。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
-</p><p>魔法書と魔法書のあいだのシフ・ムーナの<a href="http://crawl.chaosforge.org/Gift_timeout" data-untr="1" class="mw-redirect" title="Gift timeout">贈り物のタイムアウト</a>は、その本に載っている呪文の数で決まる。タイムアウトは信仰心にして <code> 9 + (spell_count * 6) + (2d19)/2</code> で、<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>信仰心が上がるとそのぶん減っていく。シフ・ムーナの贈り物のタイムアウトが残っているあいだは、贈り物以外のあらゆる目的での信仰心の上がり方が鈍ることに注意。
+</p><p>魔法書と魔法書のあいだのシフ・ムーナの<a href="Gift.html" class="mw-redirect" title="Gift timeout">贈り物のタイムアウト</a>は、その本に載っている呪文の数で決まる。タイムアウトは信仰心にして <code> 9 + (spell_count * 6) + (2d19)/2</code> で、<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>信仰心が上がるとそのぶん減っていく。シフ・ムーナの贈り物のタイムアウトが残っているあいだは、贈り物以外のあらゆる目的での信仰心の上がり方が鈍ることに注意。
 </p>
 <h2><span class="mw-headline" id="Punishments">懲罰</span></h2>
 <table style=" width:auto; text-align:left">
@@ -135,7 +135,7 @@
 <li><a href="0.27.html" title="0.27">0.27</a> より前は、シフ・ムーナは<a href="Book_of_Annihilations.html" title="Book of Annihilations">殲滅の魔法書</a>、<a href="Grand_Grimoire.html" title="Grand Grimoire">グラン・グリモア</a>、<a href="Necronomicon.html" title="Necronomicon">ネクロノミコン</a>を贈らなかった。</li>
 <li><a href="0.24.html" title="0.24">0.24</a> より前は、魔力回復(Channel Energy)は 3* の能力だった。神聖なる魔力(Divine Energy)という 1* の能力があり、一時的に「魔法×」状態になる代わりに、MP が足りなくても呪文を唱えられた。シフ・ムーナは呪文失敗の効果から守ってくれる代わりに、殺害で得られる信仰心は少なめで、魔法スキルを鍛えることでも信仰心が上がった。</li>
 <li><a href="0.20.html" title="0.20">0.20</a> より前は、シフ・ムーナの怒りに<a href="Divinations.html" title="Divinations">占術</a>の<a href="Miscast_effect.html" class="mw-redirect" title="Miscast effects">呪文失敗の効果</a>がそのまま使われていた。その中身は、すでにある怒りの効果と同じものだった。</li>
-<li><a href="0.19.html" title="0.19">0.19</a> より前は、神聖なる魔力は存在しなかった。魔力回復は 1* の能力で、<code>0 - piety/20 - floor(2 * Invocations)</code> の失敗率で即座に <code>1d(2+[Invocations/4])</code> の MP を得られ、100-200 の<a href="http://crawl.chaosforge.org/Hunger" data-untr="1" class="mw-redirect" title="Hunger">満腹度</a>を消費した。魔法書の贈り物は 6* からだった。信徒は魔法スキルを鍛えることでしか信仰心を得られず、シフ・ムーナは<a href="Spell_book.html" class="mw-redirect" title="Spellbook">魔法書</a>を破壊されるのを嫌った。シフ・ムーナの懺悔を受ける方法は、これしかなかった。</li>
+<li><a href="0.19.html" title="0.19">0.19</a> より前は、神聖なる魔力は存在しなかった。魔力回復は 1* の能力で、<code>0 - piety/20 - floor(2 * Invocations)</code> の失敗率で即座に <code>1d(2+[Invocations/4])</code> の MP を得られ、100-200 の<a href="Comestibles_and_satiation.html" class="mw-redirect" title="Hunger">満腹度</a>を消費した。魔法書の贈り物は 6* からだった。信徒は魔法スキルを鍛えることでしか信仰心を得られず、シフ・ムーナは<a href="Spell_book.html" class="mw-redirect" title="Spellbook">魔法書</a>を破壊されるのを嫌った。シフ・ムーナの懺悔を受ける方法は、これしかなかった。</li>
 <li><a href="0.15.html" title="0.15">0.15</a> より前は、シフ・ムーナの怒りによって呪文を強制的に忘れさせられることがあった。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">

@@ -92,7 +92,7 @@
 <p>鎧と盾による呪文のペナルティは、どちらもそれぞれの<a href="Evasion.html" class="mw-redirect" title="EV">EV</a>ペナルティから求める。まず EV ペナルティを出し、そこから呪文のペナルティを計算する。鎧と盾は互いに影響しない。<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>は鎧の重さを本来の半分として扱う。
 </p><p><b>鎧</b><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
 </p>
-<pre> ev penalty = 1/225 * <a href="Encumbrance_rating.html" class="mw-redirect" title="Encumbrance">encumbrance</a>^2 * (90 - 2 * <a href="Armour_(skill).html" title="Armour (skill)">armour_skill</a>) / (<a href="http://crawl.chaosforge.org/Str" data-untr="1" class="mw-redirect" title="Str">str</a> + 3)
+<pre> ev penalty = 1/225 * <a href="Encumbrance_rating.html" class="mw-redirect" title="Encumbrance">encumbrance</a>^2 * (90 - 2 * <a href="Armour_(skill).html" title="Armour (skill)">armour_skill</a>) / (<a href="Strength.html" class="mw-redirect" title="Str">str</a> + 3)
  spell penalty = 19 * ev penalty
 </pre>
 <p><b>盾</b><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
@@ -160,7 +160,7 @@
 <p><b>乗算:</b>
 </p>
 <ul><li><a href="Wizardry.html" title="Wizardry">魔術強化</a>: すべての呪文に ×<code>6 / (7 + sources)</code>%。魔術強化が1つ以上ある場合の値だ(魔術強化 x1 なら ×75%、x2 なら ×66.6%、以下同様)。</li>
-<li><a href="Vehumet.html" title="Vehumet">ヴェフメット</a>: <a href="http://crawl.chaosforge.org/Destructive_spell" data-untr="1" class="mw-redirect" title="Destructive spell">破壊の呪文</a>に ×66.6%。<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></li>
+<li><a href="Vehumet.html" title="Vehumet">ヴェフメット</a>: <a href="Vehumet.html" class="mw-redirect" title="Destructive spell">破壊の呪文</a>に ×66.6%。<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></li>
 <li><a href="Transformation.html" title="Transformation">変身</a>:
 <ul><li><a href="Rimehorn_talisman.html" class="mw-redirect" title="Yak Form">ヤク</a>: 氷の魔術に ×66.6%</li>
 <li><a href="Scarab_talisman.html" class="mw-redirect" title="Scarab Form">スカラベ</a>: 炎の魔術に ×66.6%</li>
@@ -319,7 +319,7 @@
 <ul><li><a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a></li>
 <li><a href="Miscast_effect.html" title="Miscast effect">呪文失敗の効果</a></li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、魔術強化とヴェフメットによる生の失敗率の倍率は 50% が下限だった。そのため魔術強化は最大5つまで、ヴェフメットのボーナスと合わせるなら1つまでしか効かなかった。また、一部の<a href="Transmutations.html" title="Transmutations">変成術</a>の呪文は失敗率を上げていた。<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(+10%)と<a href="http://crawl.chaosforge.org/Blade_Hands_(spell)" data-untr="1" title="Blade Hands (spell)">刃の手</a>(+20%)だ。</li>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、魔術強化とヴェフメットによる生の失敗率の倍率は 50% が下限だった。そのため魔術強化は最大5つまで、ヴェフメットのボーナスと合わせるなら1つまでしか効かなかった。また、一部の<a href="Transmutations.html" title="Transmutations">変成術</a>の呪文は失敗率を上げていた。<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(+10%)と<a href="Blade_Hands_(spell).html" title="Blade Hands (spell)">刃の手</a>(+20%)だ。</li>
 <li><a href="0.26.html" title="0.26">0.26</a> より前は、spellFailure に上限が無かった。</li>
 <li><a href="0.22.html" title="0.22">0.22</a> より前は、spell_schools が <code>50 * log2(1 + spell_schools/50)</code> で逓減されていたため、<code>(Spellcasting/2) + (2* AvgSpellSchool) &gt; 50</code> になると術者が損をした。その代わり、レベル9の呪文の spellFailure は 340 ではなく 330 だった。</li>
 <li><a href="0.20.html" title="0.20">0.20</a> より前は、<a href="#Step_down">逓減</a>の関数が違っていて、多項式ではなく区切り点で計算していた。失敗率の計算のほかの部分にも区切り点がもっとあった。</li></ul>

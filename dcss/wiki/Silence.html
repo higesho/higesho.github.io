@@ -106,9 +106,9 @@
 <ul><li>巻物を読む</li>
 <li>呪文を唱える(プレイヤーはすべての呪文)</li>
 <li><a href="God.html" title="God">神</a>の能力を使う</li>
-<li><a href="http://crawl.chaosforge.org/T" data-untr="1" title="T">叫ぶ</a></li></ul>
-<p>モンスターの呪文には独特の決まりがある。言葉を口にする必要がある呪文や能力、つまり<i>魔術</i>、<i>発声</i>、<i>神官</i>のいずれかの<a href="http://crawl.chaosforge.org/Spell_slot_flags" data-untr="1" class="mw-redirect" title="Spell slot flags">呪文スロットフラグ</a>を持つものは、静寂で止められる(ゲーム内でモンスターを調べると「静寂の影響を受ける」と表示される)。たとえばほとんどの<a href="Demon.html" title="Demon">悪魔</a>には静寂が効かない。悪魔の呪文には<i>魔法</i>フラグがついていて、<a href="Spell_book.html" class="mw-redirect" title="Spellbook">魔法書</a>の文句を唱えるのではなく、生まれ持った魔力で呪文を使うからだ。<a href="Fire_Storm.html" title="Fire Storm">炎の嵐</a>のようなプレイヤーの呪文でも、魔法フラグがついていれば静寂の中で唱えられる。
-</p><p>静寂の呪文で作るオーラの持続時間と半径は<a href="http://crawl.chaosforge.org/Spellpower" data-untr="1" class="mw-redirect" title="Spellpower">呪文威力</a>で決まるが、少しばらつきがある。<a href="Scroll_of_silence.html" title="Scroll of silence">静寂の巻物</a>を読むと、威力30で同じような効果が生まれ、平均すると半径4-5のオーラになる。
+<li><a href="T.html" title="T">叫ぶ</a></li></ul>
+<p>モンスターの呪文には独特の決まりがある。言葉を口にする必要がある呪文や能力、つまり<i>魔術</i>、<i>発声</i>、<i>神官</i>のいずれかの<a href="Spell_slot_flag.html" class="mw-redirect" title="Spell slot flags">呪文スロットフラグ</a>を持つものは、静寂で止められる(ゲーム内でモンスターを調べると「静寂の影響を受ける」と表示される)。たとえばほとんどの<a href="Demon.html" title="Demon">悪魔</a>には静寂が効かない。悪魔の呪文には<i>魔法</i>フラグがついていて、<a href="Spell_book.html" class="mw-redirect" title="Spellbook">魔法書</a>の文句を唱えるのではなく、生まれ持った魔力で呪文を使うからだ。<a href="Fire_Storm.html" title="Fire Storm">炎の嵐</a>のようなプレイヤーの呪文でも、魔法フラグがついていれば静寂の中で唱えられる。
+</p><p>静寂の呪文で作るオーラの持続時間と半径は<a href="Spell_Power.html" class="mw-redirect" title="Spellpower">呪文威力</a>で決まるが、少しばらつきがある。<a href="Scroll_of_silence.html" title="Scroll of silence">静寂の巻物</a>を読むと、威力30で同じような効果が生まれ、平均すると半径4-5のオーラになる。
 </p>
 <h3><span class="mw-headline" id="Radius">半径</span></h3>
 <p>残り43ターンになると半径が縮み始め、最後の6ターンは中心のマス(つまりあなた)だけが静寂に包まれる。2乗した半径が 37 = 6*6+1 から直線的に減っていくので、半径は <code>sqrt(duration)</code> のように縮む。半径が大きいうちはゆっくりで、終わり近くになるほど速い。
@@ -119,16 +119,16 @@
 <ul><li>この呪文と<a href="Scroll_of_silence.html" title="Scroll of silence">巻物</a></li>
 <li><a href="Throw_Klown_Pie.html" title="Throw Klown Pie">ピエロのパイの投擲</a>の効果の1つ(半径2)。</li>
 <li><a href="Silent_spectre.html" title="Silent spectre">静寂の亡霊</a>が生まれつき放つオーラ。</li>
-<li><a href="http://crawl.chaosforge.org/Demonspawn_mutation" data-untr="1" class="mw-redirect" title="Demonspawn mutation">悪魔の血族の変異</a>の<a href="http://crawl.chaosforge.org/Black_Mark_(mutation)" data-untr="1" title="Black Mark (mutation)">黒の紋様</a>3(半径1で永続。自分のマスは含まない)</li></ul>
+<li><a href="Demonspawn_mutations.html" class="mw-redirect" title="Demonspawn mutation">悪魔の血族の変異</a>の<a href="Black_Mark_(mutation).html" title="Black Mark (mutation)">黒の紋様</a>3(半径1で永続。自分のマスは含まない)</li></ul>
 <h2><span class="mw-headline" id="Strategy">戦略</span></h2>
 <h3><span class="mw-headline" id="Player_silence">プレイヤーが使う静寂</span></h3>
 <p>静寂は、ある種の敵をぴたりと黙らせる。呪文に頼らずにダメージを与えられるなら、多くの<a href="Unique_monster.html" class="mw-redirect" title="Unique">ユニーク</a>や恐ろしい呪文使いを、殴り合うしかない哀れな相手に変えてしまえる。ただし静寂が切れる前に倒しきること。静寂があなた一人しか覆っていない終わり際は、とりわけ危ない。<a href="http://crawl.chaosforge.org/Scrolls_of_silence" data-untr="1" class="mw-redirect" title="Scrolls of silence">静寂の巻物</a>でも呪文と同じ効果が得られるが、巻物は珍しく、持続時間も短い。
-</p><p>相手に静寂が効くかどうかは、<b><a href="http://crawl.chaosforge.org/X" data-untr="1" title="X">x</a></b> のあと <b><a href="V.html" title="V">v</a></b>(Tiles 版なら右クリック)で必ず確かめよう。静寂が<i>効く</i>敵には、あらゆる種類の<a href="List_of_deep_elves.html" title="List of deep elves">闇エルフ</a>、<a href="Lich.html" title="Lich">リッチ</a>、<a href="Mummy_priest.html" title="Mummy priest">司祭のミイラ</a>などがいる。静寂が<i>効かない</i>敵には、<a href="http://crawl.chaosforge.org/Dragon" data-untr="1" class="mw-redirect" title="Dragon">ドラゴン</a>、<a href="http://crawl.chaosforge.org/Eyeball" data-untr="1" class="mw-redirect" title="Eyeball">眼球</a>のモンスター、そしてあらゆる種類の<a href="Demon.html" title="Demon">悪魔</a>(<a href="Azrael.html" title="Azrael">アズラエル</a>、<a href="Mara.html" title="Mara">マーラ</a>、すべての<a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a>など)がいる。ただし<a href="List_of_demonspawn.html" title="List of demonspawn">職業つきの悪魔の血族</a>は別だ。
-</p><p><a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>を飲めば、自分の静寂のオーラを早めに終わらせられる。かかっている強化もすべて消えてしまうが、神の能力や<a href="http://crawl.chaosforge.org/Scrolls_of_blinking" data-untr="1" class="mw-redirect" title="Scrolls of blinking">瞬間移動の巻物</a>のような逃げる手段を使うためなら、静寂を終わらせる価値はある。
+</p><p>相手に静寂が効くかどうかは、<b><a href="X.html" title="X">x</a></b> のあと <b><a href="V.html" title="V">v</a></b>(Tiles 版なら右クリック)で必ず確かめよう。静寂が<i>効く</i>敵には、あらゆる種類の<a href="List_of_deep_elves.html" title="List of deep elves">闇エルフ</a>、<a href="Lich.html" title="Lich">リッチ</a>、<a href="Mummy_priest.html" title="Mummy priest">司祭のミイラ</a>などがいる。静寂が<i>効かない</i>敵には、<a href="List_of_dragons.html" class="mw-redirect" title="Dragon">ドラゴン</a>、<a href="http://crawl.chaosforge.org/Eyeball" data-untr="1" class="mw-redirect" title="Eyeball">眼球</a>のモンスター、そしてあらゆる種類の<a href="Demon.html" title="Demon">悪魔</a>(<a href="Azrael.html" title="Azrael">アズラエル</a>、<a href="Mara.html" title="Mara">マーラ</a>、すべての<a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a>など)がいる。ただし<a href="List_of_demonspawn.html" title="List of demonspawn">職業つきの悪魔の血族</a>は別だ。
+</p><p><a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>を飲めば、自分の静寂のオーラを早めに終わらせられる。かかっている強化もすべて消えてしまうが、神の能力や<a href="Scroll_of_blinking.html" class="mw-redirect" title="Scrolls of blinking">瞬間移動の巻物</a>のような逃げる手段を使うためなら、静寂を終わらせる価値はある。
 </p>
 <h3><span class="mw-headline" id="Player_spell">プレイヤーの呪文として</span></h3>
 <p>静寂の呪文は使いどころが難しい。レベル5の2系統の呪文を唱えられるだけの経験値をつぎ込んだあげく、その静寂のせいで呪文がまったく唱えられなくなるのだから、別の戦闘スキル(近接武器でも、射撃武器でも、発動アイテムでもいい)にも投資せざるをえない。そのうえ、巻物や神の能力が使えなくなること自体も危険だ。終盤になれば、静寂に経験値をつぎ込み、<i>しかも</i>静寂の中で戦える状態になっているかもしれないが、終盤は静寂をまったく気にしないモンスターだらけだ。とはいえ、<a href="Felid.html" title="Felid">フェリッド</a>や<a href="Poltergeist.html" title="Poltergeist">ポルターガイスト</a>のように呪術の適性が高い種族なら、無理のない時期に手が届くかもしれない。
-</p><p>静寂を使っても、<a href="Alarm_trap.html" title="Alarm trap">警報の罠</a>であなたに<a href="http://crawl.chaosforge.org/Mark" data-untr="1" class="mw-redirect" title="Mark">標的</a>の印がつくのは止められない。ただ、とんでもなく大きな警報の音が鳴るのは防げる。
+</p><p>静寂を使っても、<a href="Alarm_trap.html" title="Alarm trap">警報の罠</a>であなたに<a href="Sentinel's_Mark.html" class="mw-redirect" title="Mark">標的</a>の印がつくのは止められない。ただ、とんでもなく大きな警報の音が鳴るのは防げる。
 </p>
 <h3><span class="mw-headline" id="Monster_silence">モンスターが使う静寂</span></h3>
 <p>逆に、モンスターに静寂をかけられると、近接戦闘のキャラクターでもとても危ない。逃げる手段を失うのは命取りになるからだ。静寂から逃れるには歩いて離れるしかない。ところが、静寂をよく使ってくるモンスター(メナス、エレシュキガル、静寂を使う多くのパンデモニウムの君主)は足が速いので、まず逃げきれない。<a href="Wand_of_quicksilver.html" title="Wand of quicksilver">水銀のワンド</a>ならモンスターの静寂を終わらせられるが、狙いが不正確だ。
@@ -143,7 +143,7 @@
 <ul><li> <span class="nhsym clr-lightgray">&amp;</span> <a href="http://crawl.chaosforge.org/File:Pandemonium_lord.png" data-untr="1" class="image"><img alt="Pandemonium lord.png" src="img/Pandemonium_lord.png" width="32" height="48" /></a> <b><a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a></b>(確率7.5%)</li></ul>
 <p>生まれつき静寂を放っている敵は次のとおり。
 </p>
-<ul><li><span class="nhsym clr-cyan">W</span> <a href="http://crawl.chaosforge.org/File:Silent_spectre.png" data-untr="1" class="image"><img alt="Silent spectre.png" src="img/Silent_spectre.png" width="32" height="32" /></a> <b><a href="Silent_spectre.html" title="Silent spectre">静寂の亡霊</a></b>(半径12マスの永続する<a href="Aura.html" title="Aura">オーラ</a>。起きていても<a href="http://crawl.chaosforge.org/Dormant" data-untr="1" class="mw-redirect" title="Dormant">休眠</a>していても放っている)</li></ul>
+<ul><li><span class="nhsym clr-cyan">W</span> <a href="http://crawl.chaosforge.org/File:Silent_spectre.png" data-untr="1" class="image"><img alt="Silent spectre.png" src="img/Silent_spectre.png" width="32" height="32" /></a> <b><a href="Silent_spectre.html" title="Silent spectre">静寂の亡霊</a></b>(半径12マスの永続する<a href="Aura.html" title="Aura">オーラ</a>。起きていても<a href="Sleep.html" class="mw-redirect" title="Dormant">休眠</a>していても放っている)</li></ul>
 <p>短いあいだあなたを静寂状態にしてくることがある敵は次のとおり。
 </p>
 <ul><li><span class="nhsym">p</span> <a href="http://crawl.chaosforge.org/File:Killer_Klown.png" data-untr="1" class="image"><img alt="Killer Klown.png" src="img/Killer_Klown.png" width="32" height="32" /></a> <b><a href="Killer_Klown.html" title="Killer Klown">殺人ピエロ</a></b></li></ul>
@@ -154,7 +154,7 @@
 <ul><li><a href="0.34.html" title="0.34">0.34</a>より前は、自分が静寂の発生源になると<a href="Stealth.html" title="Stealth">隠密</a>に -50(目盛り1つ分)のペナルティがついた。</li>
 <li><a href="0.30.html" title="0.30">0.30</a>より前は、静寂の持続時間は <code>9 + power/4 + 1d(power/2)</code> で、呪文威力が低いときは今より短かった。</li>
 <li><a href="0.9.0.html" class="mw-redirect" title="0.9">0.9</a>より前は、静寂は<a href="Charms.html" title="Charms">加護</a>/<a href="Air_Magic.html" class="mw-redirect" title="Air magic">風の魔術</a>の呪文だった。</li>
-<li><a href="0.8.0.html" class="mw-redirect" title="0.8">0.8</a>で魔法の系統「Enchantments」がゲームから削除されるまでは、静寂は<a href="http://crawl.chaosforge.org/Enchantments" data-untr="1" title="Enchantments">付呪術</a>/<a href="Air_Magic.html" title="Air Magic">風の魔術</a>の呪文だった。また、持続時間のばらつきが大きく、あてにしにくい呪文だった。</li></ul>
+<li><a href="0.8.0.html" class="mw-redirect" title="0.8">0.8</a>で魔法の系統「Enchantments」がゲームから削除されるまでは、静寂は<a href="Enchantments.html" title="Enchantments">付呪術</a>/<a href="Air_Magic.html" title="Air Magic">風の魔術</a>の呪文だった。また、持続時間のばらつきが大きく、あてにしにくい呪文だった。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/spl-selfench.cc#L208">spl-selfench.cc:208</a> (0.30.0)</span>

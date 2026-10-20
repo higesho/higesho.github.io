@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>延長 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="延長(Extension)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>延長 <span class="en">Extension</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Extension">Extension</a>」(対象の版の記載なし、2023-07-28 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Extension&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>廃止</b>: この記事は、ゲームから削除された要素について書いている。過去の記録として残しているだけだ。</i></div>
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> 延長
+</th></tr>
+<tr>
+<th align="left"> レベル
+</th>
+<td> 5
+</td></tr>
+<tr>
+<th align="left"> 系統<sup>1</sup>
+</th>
+<td> <a href="Enchantments.html" title="Enchantments">付呪術</a>
+</td></tr>
+<tr>
+<th align="left"> 系統<sup>2</sup>
+</th>
+<td>
+</td></tr>
+<tr>
+<th align="left"> 系統<sup>3</sup>
+</th>
+<td>
+</td></tr>
+<tr>
+<th align="left"> 入手元
+</th>
+<td><div>
+<ul><li><a href="Book_of_Enchantments.html" title="Book of Enchantments">付呪の魔法書</a></li></ul>
+</div>
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 0
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 0
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 術者にかかっている有益な付呪の多くについて、効果時間を延ばす呪文。
+</td></tr></table>
+<p><b>延長</b>(Extension)はレベル 5 の<a href="Enchantments.html" title="Enchantments">付呪術</a>の呪文で、術者にかかっている一部の付呪の効果時間を延ばす。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Changing_init.txt"><span class="tocnumber">2.1</span> <span class="toctext">init.txt の書き換え</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Extending_Haste"><span class="tocnumber">2.2</span> <span class="toctext">加速の延長</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>延長は付呪系の呪文の効果を引き延ばす。その付呪を延長の<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>でかけ直したのと同じ扱いになる(例外は<a href="Ring_of_Flames.html" title="Ring of Flames">炎の円環</a>と<a href="Condensation_Shield.html" title="Condensation Shield">凝結の盾</a>)。延ばせるのは対応する呪文がある付呪だけで、しかもその呪文を覚えていなければならない。延長に成功する確率は <code>50% + spell_success_rate</code> なので、成功率が「Poor」(低い)以下の呪文は延ばしそこねることがある。
+</p><p>延長を唱えるたびに、50% の確率で 1000 ポイントの<a href="Magic_contamination.html" title="Magic contamination">魔力汚染</a>がたまる。<a href="Haste.html" title="Haste">加速</a>や<a href="Invisibility.html" title="Invisibility">透明化</a>を延ばしたときは、さらに必ず 1000 ポイントずつ汚染が加わる(両方なら重なる)。
+</p><p>どれだけ延びるかは呪文によって違う:
+</p><p><b>最大 100 ターン:</b>
+</p>
+<div style=" width:500px">
+<ul><li><a href="Bat_Form.html" title="Bat Form">コウモリ化</a>(吸血鬼以外。最小 0)</li>
+<li><a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>(最小 0)</li>
+<li><a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>(最小 15)</li>
+<li><a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>(最小 0)</li>
+<li><a href="Flight_(spell).html" title="Flight (spell)">飛行</a>(最小 25、効果時間 2 倍)</li>
+<li><a href="Ice_Form.html" title="Ice Form">氷の躯</a>(最小 0)</li>
+<li><a href="Insulation.html" title="Insulation">絶縁化</a>(最小 10)</li>
+<li><a href="Invisibility.html" title="Invisibility">透明化</a>(最小 0)</li>
+<li><a href="Levitation.html" title="Levitation">浮遊</a>(最小 25)</li>
+<li><a href="Necromutation.html" title="Necromutation">死者の躯</a>(最小 0)</li>
+<li><a href="Regeneration_rate.html" class="mw-redirect" title="Regeneration">再生</a>(最小 5、効果時間 2/3)</li>
+<li><a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>(最小 8、効果時間 2 倍)</li>
+<li><a href="Resist_Poison.html" title="Resist Poison">毒への耐性</a>(最小 10)</li>
+<li><a href="See_invisible.html" class="mw-redirect" title="See Invisible">霊視</a>(最小 10、効果時間 1/2)</li>
+<li><a href="Slow.html" title="Slow">減速</a></li>
+<li><a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(最小 0)</li>
+<li><a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像の躯</a>(最小 0)</li>
+<li><a href="http://crawl.chaosforge.org/Stonemail" data-untr="1" title="Stonemail">石の鎧</a>(Stonemail。最小 20、効果時間 2 倍)</li>
+<li><a href="Swiftness.html" title="Swiftness">俊足</a>(最小 20)</div></li></ul>
+<p><b>最大 80 ターン:</b>
+</p>
+<ul><li><a href="Haste.html" title="Haste">加速</a>(最小 40。減速耐性の護符を着けていれば最大 100 ターン)</li></ul>
+<p><b>最大 50 ターン:</b>
+</p>
+<ul><li><a href="Control_Teleport.html" title="Control Teleport">精密テレポート</a>(最小 10)</li>
+<li><a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a>(最小 20、延びる量は 2 倍)</li>
+<li><a href="Stoneskin.html" title="Stoneskin">石の皮膚</a>(最小 10、延びる量は 2 倍)</li></ul>
+<p><b>最大 30 ターン:</b>
+</p>
+<ul><li><a href="Phase_Shift.html" title="Phase Shift">位相変移</a>(最小 5)</li></ul>
+<p><b>数ターンしか延びないもの:</b>
+</p>
+<ul><li><a href="Condensation_Shield.html" title="Condensation Shield">凝結の盾</a>(最大 30)</li>
+<li><a href="Ring_of_Flames.html" title="Ring of Flames">炎の円環</a>。数ターンしか延びず、延びる量は最大で威力/20 のランダム。ふつうは 5 前後、多くても 20 にとどまる(最大 50)</li>
+<li>いまかかっている、一時的な<a href="Brand.html" title="Brand">武器のブランド</a>を付ける呪文すべて</li></ul>
+<p><a href="Xom.html" title="Xom">ゾム</a>がかけてくれた付呪も延長で保てる。ゾム専用の<a href="http://crawl.chaosforge.org/Stonemail" data-untr="1" title="Stonemail">石の鎧</a>も例外ではない。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>「手間を省く」ための呪文。探索中に補助呪文をかけ直し続けるという理想的な動きがぐっと楽になる。複数の付呪を切らさずに保ちたいなら、延長で時間も MP も節約できる。
+</p><p>たとえば、次の呪文をすべて覚えていれば、これだけの組み合わせをいつまでも保ち続けられる:
+</p>
+<div style=" width:500px">
+<ul><li><a href="Stoneskin.html" title="Stoneskin">石の皮膚</a></li>
+<li><a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a></li>
+<li><a href="Insulation.html" title="Insulation">絶縁化</a></li>
+<li><a href="Resist_Poison.html" title="Resist Poison">毒への耐性</a></li>
+<li><a href="Control_Teleport.html" title="Control Teleport">精密テレポート</a></li>
+<li><a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a></li>
+<li><a href="Regeneration_rate.html" class="mw-redirect" title="Regeneration">再生</a></li>
+<li><a href="Flight_(spell).html" title="Flight (spell)">飛行</a></li>
+<li><a href="Swiftness.html" title="Swiftness">俊足</a></div></li></ul>
+<p>死者の躯を加えると毒への耐性は要らなくなり、そのかわり石の皮膚と再生が使えなくなる:
+</p>
+<div style=" width:500px">
+<ul><li><a href="Necromutation.html" title="Necromutation">死者の躯</a></li>
+<li><a href="Insulation.html" title="Insulation">絶縁化</a></li>
+<li><a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a></li>
+<li><a href="Control_Teleport.html" title="Control Teleport">精密テレポート</a></li>
+<li><a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a></li>
+<li><a href="Flight_(spell).html" title="Flight (spell)">飛行</a></li>
+<li><a href="Swiftness.html" title="Swiftness">俊足</a></div></li></ul>
+<p><a href="Phase_Shift.html" title="Phase Shift">位相変移</a>を延ばすのはたいてい厄介だ。上限が 30 ターンで、切れる警告は残り 5〜6 ターンほどで出る。延長でたまる汚染は平均 500 で、これは 20 ターンごとに抜けていく。威力 100 の延長だと、位相変移の残りターンは平均 25 ほどになる。つまり警告が出てから数ターン待たないと延長を唱えられず、それでも変異をもたらす輝きに達してしまうことが多い。
+</p>
+<h3><span class="mw-headline" id="Changing_init.txt">init.txt の書き換え</span></h3>
+<p>延長を使いこなすには、かけ直しが必要になったときに知らせてくれるよう、ゲームの設定を変えておくとよい。
+</p><p>init.txt に次の行を足す。呪文の効果が切れかけたときに、ゲームが止まるようになる。
+</p>
+<pre>
+travel_stop_message = duration:
+force_more_message = duration:
+
+travel_stop_message = You are starting to lose your buoyancy
+force_more_message = You are starting to lose your buoyancy
+
+travel_stop_message = You have a feeling this form
+force_more_message = You have a feeling this form
+message_colour = lightred:You have a feeling this form
+
+travel_stop_message = Your transformation
+force_more_message = Your transformation
+message_colour = lightred:Your transformation
+
+travel_stop_message = You feel uncertain
+force_more_message = You feel uncertain
+
+travel_stop_message = Your deflect missiles
+force_more_message = Your deflect missiles
+</pre>
+<p>あとは延長を好きな文字に割り当てる(たとえば 'z' にして 'zz' と打つ)か、マクロを作っておく。
+</p><p>こうしておけば、効果時間のメッセージが出るたびに --More-- を閉じて延長を唱えればよい。
+</p><p>ときどき数ターン、ひどいときは 1 ターンしか延びないことがある。延長を唱えた直後に何かが切れるというメッセージが出たら、もう一度唱えよう。
+</p><p>移動中や戦闘以外のことをしているあいだは、呪術の杖を構えておくとよい。延長の効果が長持ちする。
+</p>
+<h3><span class="mw-headline" id="Extending_Haste">加速の延長</span></h3>
+<p>加速と延長を両方使うこともできる。ただし加速がかかっている最中に延長を唱えてはいけない。すぐに変異を起こすほどの魔力汚染がたまってしまう。
+</p><p>両方を安全に組み合わせるには、まず呪術の杖を構えて延長を唱える。できれば何度か唱えて、付呪の残りを加速の上限である 80 ターンより長くしておく。それから加速を唱える(効果は 40〜80 ターン続く)。影のランタンを構えて、加速の効果時間が 50 ターン未満になる確率を上げておくのもよい。そうすれば、オゾクブの鎧や精密テレポートより先に加速が切れる。
+</p><p>もっと簡単なのは、加速より先に切れた呪文を個別にかけ直すやり方だ。加速が切れたあとなら、すでにひどく汚染されていない限り、また延長を唱えても大丈夫だ。
+</p><p>うっかり加速を延ばして体が光りはじめたら、二度と延ばさないこと。<a href="Amulet_of_resist_mutation.html" title="Amulet of resist mutation">変異耐性の護符</a>があれば 90% の確率で変異を防げる。アンデッドでプレイしている場合(あるいは死者の躯の状態なら)、変異するかわりに腐敗する。腐敗は<a href="Rot.html" title="Rot">腐敗</a>のページに書いてある方法で治せる。
+</p><p>透明になりたいなら、透明化の指輪か暗闇のクロークを使おう。要らなくなったら外せば元に戻れる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li>延長は <a href="0.8.0.html" class="mw-redirect" title="0.8">0.8</a> で削除された。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

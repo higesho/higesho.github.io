@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>緊張度 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="緊張度(Tension)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>緊張度 <span class="en">Tension</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Tension">Tension</a>」(0.28 向け、2022-07-28 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Tension&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.28 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.28.html" title="0.28">0.28</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>緊張度</b>(tension)とは、ざっくり言えば、いまの状況がどれだけ危険かをゲームが判断した値だ。敵の数、敵の強さ、プレイヤーの現在の状態など、いくつもの要素から自動で計算される。
+</p>
+<h2><span class="mw-headline" id="Effects">効果</span></h2>
+<p>ゲームのいくつかの仕組みは、緊張度をもとに動いている。
+</p>
+<ul><li> <a href="Xom.html" title="Xom">ゾム</a>は、緊張度が高いほど行動を起こしやすく、良い行動をとりやすい。緊張度が高いほど、戦闘に関わる行動が多くなる。</li>
+<li> <a href="Vault_warden.html" title="Vault warden">宝物庫の監視者</a>が扉を封じるとき、ある扉を閉めると緊張度が下がりすぎる場合(たとえば、その扉の向こうにいる危険なモンスターの一団からあなたを切り離してしまう場合)は、その扉は開いたままになる。監視者が扉を封じるときに扉の上に誰かが立っていれば、その者は緊張度が高くなるほうの側へ押し出される。</li>
+<li> <a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>の怒りは、緊張度が高いほど危険な効果になる(そのぶん早く減っていく)。</li>
+<li> <a href="Singing_Sword.html" title="Singing Sword">謳う剣</a>は、緊張度が高いほど大きな音を立てる。緊張度が高くなると名前が「叫ぶ剣」に変わり、視界内のすべてのモンスターに耐性で防げないダメージを与える。</li></ul>
+<h2><span class="mw-headline" id="Mechanics">仕組み</span></h2>
+<p>緊張度は、周りのモンスターとプレイヤーの現在の状況を見て決まる。視界内のモンスターそれぞれについて経験値の値を求め、それを次の要素で補正する。これらの補正はすべて重ねてかかる。
+</p>
+<ul><li> 見えていても、プレイヤーを傷つけられないモンスターは緊張度に何も加えない。
+<ul><li> <a href="Disposition.html" class="mw-redirect" title="Neutral">中立</a>や<a href="http://crawl.chaosforge.org/Peaceful" data-untr="1" class="mw-redirect" title="Peaceful">平和的</a>なモンスターは緊張度に何も加えない。</li>
+<li> <a href="Paralysis.html" title="Paralysis">麻痺</a>しているモンスター、<a href="Sleep.html" title="Sleep">眠っている</a>モンスター、<a href="http://crawl.chaosforge.org/Flee" data-untr="1" class="mw-redirect" title="Flee">逃げている</a>モンスターは緊張度に加わらない。</li></ul></li>
+<li> HP が満タンでないモンスターは、緊張度への寄与がそのぶん減る。HP が半分のモンスターなら、緊張度に足す(または引く)量も半分になる。</li>
+<li> 神に関わる効果のために緊張度を求めるときは、怒った神が呼び出した敵対モンスターは緊張度に加わらない。神は自分が送り込んだ手下のことまでは気にかけない、という理屈だ。</li>
+<li> 友好的なモンスターは、緊張度に加わるのではなく、緊張度を減らす。
+<ul><li> 神が呼び出した友好的なモンスターは、神の効果を判定するときには 2 倍の量だけ緊張度を減らす(神がすでにあなたを助けているのだから)。</li></ul></li>
+<li> あなたから見えない敵対モンスターは、寄与が 2 倍になる。</li>
+<li> あなたが見えていない敵対モンスターは、寄与が 1/2 倍になる。</li>
+<li> <a href="Confusion.html" title="Confusion">混乱</a>しているモンスターや、(<a href="Throwing_net.html" class="mw-redirect" title="Net">網</a>や<a href="Web.html" title="Web">蜘蛛の巣</a>に)捕らわれているモンスターは、緊張度が 1/2 倍になる。</li>
+<li> <a href="Slow.html" title="Slow">減速</a>しているモンスターは、緊張度への寄与が 2/3 倍になる。</li>
+<li> <a href="Haste.html" title="Haste">加速</a>しているモンスターは、緊張度への寄与が 3/2 倍になる。</li>
+<li> <a href="Might.html" title="Might">腕力強化</a>されたモンスターは、緊張度への寄与が 5/4 倍になる。</li>
+<li> <a href="Berserk.html" title="Berserk">バーサーク</a>しているモンスターは、緊張度への寄与が 3/2 倍になる。この増加は腕力強化と加速による増加とは別に、さらに上乗せされる。</li></ul>
+<p>こうして求めた寄与を、プレイヤーの範囲内にいるすべてのモンスター(つまり視界内のすべてのモンスター。見えているかどうかは問わない)について合計する。そのうえで、プレイヤーの状態によって次のように補正する。
+</p>
+<ul><li> 近くにモンスターがいなければ 0 になる。</li>
+<li> どれだけ傷を負っているかに応じて増える。具体的には 2*Max_HP/(Current_HP + Max_HP) 倍になるので、死にかけていると緊張度はおよそ 2 倍になる。</li>
+<li> 経験レベルに応じて小さくなる。具体的には 1 + sqrt(Player's XP Points/30) で割られる。XL1 なら 1 で割られるが、XL27 ではおよそ 200 で割られる。XL27 になってからも経験値はたまり続けるが、それで緊張度がさらに下がることはない。それ以上プレイヤーが実際に強くなるわけではないからだ。</li>
+<li> <a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a>では 3/2 倍になる。</li>
+<li> プレイヤーが行動できない(何らかの手段で麻痺させられているなど)ときは 10 倍になる。</li>
+<li> プレイヤーが混乱しているときは 2 倍になる。</li>
+<li> プレイヤーが捕らわれているときは 2 倍になる。</li>
+<li> プレイヤーが減速しているときは 3/2 倍になる。</li>
+<li> プレイヤーが加速しているときは 2/3 倍になる。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

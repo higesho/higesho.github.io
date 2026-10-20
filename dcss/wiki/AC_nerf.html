@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AC の弱体化 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="AC の弱体化(AC nerf)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>AC の弱体化 <span class="en">AC nerf</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/AC_nerf">AC nerf</a>」(対象の版の記載なし、2023-10-11 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=AC_nerf&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>廃止</b>: この記事は、ゲームから削除された要素について書いている。過去の記録として残しているだけだ。</i></div>
+<table style=" width: 100%">
+
+<tr>
+<td>
+<p>このページで扱っている AC の弱体化は、0.8 以降の版でほぼ元に戻された。仕組みそのものは変わっていないが、<a href="Guaranteed_damage_reduction.html" class="mw-redirect" title="GDR">GDR</a> が大きく引き上げられ、重い鎧はより高く強化できるようになった。そのため、このページの内容はもう古い。
+</p>
+</td></tr></table>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#AC.2FEV_changes"><span class="tocnumber">1</span> <span class="toctext">AC と EV の変更点</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#New_total_AC"><span class="tocnumber">1.1</span> <span class="toctext">新しい AC の合計</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#New_total_EV"><span class="tocnumber">1.2</span> <span class="toctext">新しい EV の合計</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#New_spellcasting_penalty"><span class="tocnumber">1.3</span> <span class="toctext">新しい呪文詠唱のペナルティ</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#New_combat_penalties"><span class="tocnumber">1.4</span> <span class="toctext">新しい戦闘のペナルティ</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#What_does_this_all_mean.3F"><span class="tocnumber">2</span> <span class="toctext">結局どういうことか</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="AC.2FEV_changes">AC と EV の変更点</span></h2>
+<p>AC と EV の変更の第一弾で、内容は <a rel="nofollow" class="external free" href="http://crawl.develz.org/wiki/doku.php?id=dcss:brainstorm:misc:ac">http://crawl.develz.org/wiki/doku.php?id=dcss:brainstorm:misc:ac</a> に書かれているとおり。
+</p><p>AC と EV の計算そのものからは「重い鎧」と「軽い鎧」の区別がなくなったが、スキルの訓練ではこの区別がまだ残っている。今回の変更で、スキルの訓練のされ方は何も変わっていない。
+</p><p>以下に変更の詳細を示す。Armour は甲冑スキル、Dodge は躱し身スキルを表す:
+</p>
+<h3><span class="mw-headline" id="New_total_AC">新しい AC の合計</span></h3>
+<pre> = base_AC * (23 + effective_armour_skill) / 23
+   + enchantments
+   + modifiers
+</pre>
+<p>ここで:
+</p>
+<pre>    - effective_armour_skill = 甲冑スキル + 種族による甲冑スキルの補正
+    - enchantments = 防具の強化値
+    - modifiers = 変身や変異など、AC に影響するもの
+</pre>
+<p>新しい保証ダメージ軽減:
+</p>
+<pre> = body_base_AC*(13+Armour)/17 * max_dam/100
+</pre>
+<h3><span class="mw-headline" id="New_total_EV">新しい EV の合計</span></h3>
+<pre> = 10 + size + (7 * Dodge * Dex) / (20 * AEVP - size) - AEVP - ASP + bonuses
+   ここで size = 2 * (medium - body_size)
+             body_size は次のどれか:
+                 tiny = 0 | little = 1 | small  = 2 | medium = 3 | large  = 4 | big    = 5 | giant  = 6 | huge   = 7
+             参考: ハーフリング = small、人間 = medium、オーガ = large、ドラゴン = huge
+</pre>
+<pre>         AEVP(防具による回避ペナルティの補正値):
+             = body_AEVP + piece_EVP
+</pre>
+<pre>               ここで body_AEVP は胴鎧のぶんで、次のように計算する:
+                       = (EVP + MAX(0, 3*EVP - Str)) * (45 - Armour) /45
+                         EVP は鎧の基本の回避ペナルティ
+                     piece_EVP は、身に着けている胴鎧以外の防具(盾を除く)の
+                     基本の回避ペナルティの合計。今のところ、これが当てはまるのは
+                     馬甲(EVP 2)だけ。
+</pre>
+<pre>         ASP(盾による回避ペナルティの補正値):
+             = SP - (1 + Shields) / (2 * (5 + size))
+               SP はバックラーなら 1、盾なら 3、大盾なら 5
+</pre>
+<h3><span class="mw-headline" id="New_spellcasting_penalty">新しい呪文詠唱のペナルティ</span></h3>
+<pre> = 25 * (body_AEVP + ASP) - 20 - race_mod
+   race_mod はエルフ系なら 25、ドワーフ系なら -15、
+         種族専用の鎧を着た種族なら +15
+</pre>
+<h3><span class="mw-headline" id="New_combat_penalties">新しい戦闘のペナルティ</span></h3>
+<pre> - 命中ペナルティ = 1d(body_AEVP) + 1d(ASP)
+ - 片手半武器の命中ペナルティ = 1d(body_AEVP) + 2d(ASP)
+ - 片手半武器のダメージペナルティ = 1d(ASP)
+</pre>
+<pre> - body_AEVP が 0 なら base_delay は変わらない。そうでなければ:
+   - base_delay             = max(base_delay, 1d10 + 1d(body_AEVP))
+   - 素手の base_delay      = max(base_delay, 1d10 + 2d(body_AEVP))
+   - final_delay              += min(1d(body_AEVP), 1d(body_AEVP))
+   - 片手半武器の final_delay += min(1d(body_AEVP) + 1dASP,
+</pre>
+<pre>                                     1d(body_AEVP) + 1dASP)
+</pre>
+<h2><span class="mw-headline" id="What_does_this_all_mean.3F">結局どういうことか</span></h2>
+<ul><li>甲冑スキルを上げても、以前ほど AC が増えなくなった。0.5.2 では基本の AC を 2 倍にするのにスキルが 15 あればよかったが、0.6 では 23 要る。</li>
+<li><a href="Guaranteed_damage_reduction.html" class="mw-redirect" title="GDR">GDR</a> が弱体化された。0.5 では甲冑スキル 1 レベルと胴鎧の基本 AC 1 ポイントごとに GDR が 2% 増えたので、上限の 50% にもたいした苦労なく届いた。いまでは、甲冑スキル 27 で水晶の鎧を着たキャラクターでも軽減は 30% 程度で、重い鎧を着る者のほとんどは 20〜25% ほどにとどまる。</li>
+<li>重い鎧の訓練がしにくくなった。0.5 では <code>EV penalty &gt; 1/3 * armour</code> を満たしていれば、確実に重い鎧の側を訓練できた。魔法戦士ならリングメイルを手に取って甲冑を 6 まで上げ、スケイルメイルに替えて 9 まで上げ……という具合に進められた。いまは甲冑と躱し身が同時に訓練される。中くらいの重さの鎧では躱し身のほうが<i>ずっと</i>上がりやすいので、経験値はどうしても躱し身に流れ込む(スキルを切っていても同じ)。重めの鎧を着ていても低い躱し身が役に立つなら悪くないのだが、実際には役に立たない。</li>
+<li>重い鎧を着たまま呪文を唱えにくくなった。腕力に使い道を持たせるため、腕力が鎧の回避ペナルティの 3 倍に満たないと詠唱にペナルティがつくようになった。そのため、重い鎧の魔法使いは呪文を唱えられるように腕力に能力値を振らなければならない。たしかに腕力は「役に立つ」ようになったが、結果として重い鎧の魔法使いは弱くなった。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

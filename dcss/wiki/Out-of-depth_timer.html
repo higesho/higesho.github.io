@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OOD タイマー &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="OOD タイマー(Out-of-depth timer)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>OOD タイマー <span class="en">Out-of-depth timer</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Out-of-depth_timer">Out-of-depth timer</a>」(対象の版の記載なし、2023-12-28 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Out-of-depth_timer&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>廃止</b>: この記事は、ゲームから削除された要素について書いている。過去の記録として残しているだけだ。</i></div>
+<p>Crawl はプレイヤーを油断させないよう、ときどき並外れて手ごわい<b>本来より浅い階に出てくる</b>(out of depth、略して OOD)モンスターを<a href="Monster_generation.html" title="Monster generation">湧かせる</a>。その階で過ごす時間が長いほど、OOD のモンスターが出る見込みは高くなる(ただし、その階で 3,000 ターンを過ぎると全体の湧く頻度はだんだん下がり、15,000 ターンで完全に止まる)。
+</p>
+<h2><span class="mw-headline" id="Mechanics">仕組み</span></h2>
+<p>OOD のモンスターには「中程度(moderate)」と「超(super)」の 2 種類があり、それぞれ違う頻度で湧く。
+</p>
+<ul><li>中程度の OOD は、最大で 5 階ぶん深い階のモンスターになる(差が小さいほど出やすい)。ほとんどの階では、モンスター 1 体ごとに一律 14% の確率で中程度の OOD のぶれが加わる。中程度の OOD の確率はしだいに上がっていき、7800 ターンで 100% に達する。</li>
+<li>超 OOD は、<code>(2 * floor_level) + 4</code> 階ぶん、または <code>floor_level + 2d(27)/2 - 1</code> 階ぶん深い階のモンスターになる。<code>1400 - (117 * depth)</code> ターンに達すると起こりうるようになる。最初の確率は 0.02% だ。3000 ターンを過ぎると確率が上がっていき、12000 ターンで 100% になる。</li></ul>
+<p>OOD タイマーは、<a href="Portal.html" title="Portal">ポータル</a>のヴォールト、1 階しかない分岐、<a href="The_Realm_of_Zot.html" class="mw-redirect" title="Zot">ゾットの領域</a>、<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>、<a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a>、それに<a href="Hell.html" title="Hell">地獄</a>のどの階でも働かない。また、迷宮:1 では最初の 700 ターンは OOD が出ず、迷宮:2 では 584 ターンのあいだ OOD が出にくい。
+</p><p>なお、<a href="Vault.html" title="Vault">ヴォールト</a>によっては、階の生成時に OOD を置くものもある。ランダムな OOD を置くものもあれば、決まったモンスターを置くものもある(たとえば迷宮:8 の<a href="Death_yak.html" title="Death yak">人食いヤク</a>)。
+</p>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="Monster_generation.html" title="Monster generation">モンスターの発生</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.21.html" title="0.21">0.21</a> で、時間の経過によってモンスターが湧くことはなくなった。そのため、OOD タイマーも意味を失った。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

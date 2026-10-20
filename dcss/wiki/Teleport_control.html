@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>テレポート制御 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="テレポート制御(Teleport control)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>テレポート制御 <span class="en">Teleport control</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Teleport_control">Teleport control</a>」(対象の版の記載なし、2023-07-06 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Teleport_control&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>廃止</b>: この記事は、ゲームから削除された要素について書いている。過去の記録として残しているだけだ。</i></div>
+<p><b>テレポート制御</b>(<b>cTele</b>)の状態にあると、<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>するときにおおよその行き先を選べるようになる。そのかわり、発動までの時間が長くなる。また、制御なしの<a href="Blink.html" title="Blink">瞬間移動</a>がある程度まで制御できるようになる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Teleport"><span class="tocnumber">1.1</span> <span class="toctext">テレポート</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Blink"><span class="tocnumber">1.2</span> <span class="toctext">瞬間移動</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#-cTele"><span class="tocnumber">2</span> <span class="toctext">-cTele</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>テレポート制御は一時的な状態だ。手に入れる方法は3つある。<a href="Ring_of_teleport_control.html" title="Ring of teleport control">テレポート制御の指輪</a>を発動する、レベル4の呪文<a href="Control_Teleport.html" title="Control Teleport">精密テレポート</a>を唱える、<a href="Portal.html" title="Portal">ポータル</a>のカードを引く(ときどき得られる)の3つだ。テレポートか瞬間移動をするとすぐに切れるが、時間がたって切れることもある。
+</p><p><a href="Berserk.html" title="Berserk">バーサーク</a>中は cTele の恩恵を受けられないが、テレポートが遅れるのは変わらない。<a href="#-cTele">一部の階</a>では cTele がまったく働かず、その場合はテレポートが遅れることもない。
+</p>
+<h3><span class="mw-headline" id="Teleport">テレポート</span></h3>
+<p>テレポート制御の状態でテレポートすると、着地する場所を指定できる。そのかわりテレポートは <code>1d3</code> ターン遅れる。テレポートが発動すると、指定した場所から2マス以内のどこかに飛ばされる。着地点が壁やモンスターと重なる場合は、ふつうのランダムなテレポートになる。
+</p><p>すでにテレポートの発動を待っている間にテレポート制御を発動した場合も、行き先のマスを選べる。この場合も遅れは生じる。
+</p><p>くわしく言うと、制御したテレポートでは、選んだマスか、その周りの8マスのどれかに飛ばされる。そのあと 25% の確率で、そこからさらに1マスずれる。どのマスにも着地できるとすると、それぞれのマスに着地する確率は下の表のとおりになる(表の中央が狙ったマス)。
+</p>
+<table>
+<tr>
+<td> 0.3% </td>
+<td> 0.6% </td>
+<td> 0.9% </td>
+<td> 0.6% </td>
+<td> 0.3%
+</td></tr>
+<tr>
+<td> 0.6% </td>
+<td> 9.6% </td>
+<td> 10% </td>
+<td> 9.6% </td>
+<td> 0.6%
+</td></tr>
+<tr>
+<td>  0.9% </td>
+<td> 10% </td>
+<td> 11% </td>
+<td> 10% </td>
+<td> 0.9%
+</td></tr>
+<tr>
+<td> 0.6% </td>
+<td> 9.6% </td>
+<td> 10% </td>
+<td> 9.6% </td>
+<td> 0.6%
+</td></tr>
+<tr>
+<td> 0.3% </td>
+<td> 0.6% </td>
+<td> 0.9% </td>
+<td> 0.6% </td>
+<td> 0.3%
+</td></tr></table>
+<h3><span class="mw-headline" id="Blink">瞬間移動</span></h3>
+<p>テレポート制御の状態で制御なしの<a href="Blink.html" title="Blink">瞬間移動</a>をすると、方向を選べる。その方向へ2〜7マス、遅れなしで飛ぶが、いくらか<a href="Magic_contamination.html" title="Magic contamination">魔力汚染</a>を受ける。困ったことにならないよう、続けて使うのは2回までにしておこう。
+</p><p>なお、呪文を唱えたあとで考え直し、制御した瞬間移動を取りやめた場合でも、1ターンを消費する。
+</p>
+<h2><span class="mw-headline" id="-cTele">-cTele</span></h2>
+<p>一部の階では、ある条件を満たすまでテレポート制御が使えない。そうした階に着くとすぐに「あなたは空間を歪める強大な魔力を感じた。」というメッセージが出て、状態表示に「-cTele」が表示される。それでもテレポートしようとすると、ふつうのランダムなテレポートになる。
+</p><p>制御したテレポートが常に使えない場所:
+</p>
+<ul><li> <a href="Labyrinth.html" title="Labyrinth">ラビリンス</a></li>
+<li> <a href="The_Abyss.html" title="The Abyss">アビス</a></li>
+<li> <a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>:3</li>
+<li> <a href="The_Realm_of_Zot.html" class="mw-redirect" title="Zot">ゾットの領域</a>:5</li></ul>
+<p>条件によって制御したテレポートが使えない場所:
+</p>
+<ul><li> <a href="The_Slime_Pits.html" class="mw-redirect" title="Slime Pits">スライムの穴ぐら</a>:6 では、<a href="The_Royal_Jelly.html" title="The Royal Jelly">ロイヤルジェリー</a>を倒すまで使えない。この階の財宝とルーンにたどり着くにはテレポート制御(か<a href="Dig.html" title="Dig">掘削</a>の手段)が必要になることに注意。</li>
+<li> <a href="The_Iron_City_of_Dis.html" class="mw-redirect" title="Dis">ディース</a>:7、<a href="Tartarus.html" title="Tartarus">タルタロス</a>:7、<a href="Gehenna.html" title="Gehenna">ゲヘナ</a>:7、<a href="Cocytus.html" title="Cocytus">コキュートス</a>:7 では、その分岐のルーンを手に入れるまで使えない。</li>
+<li> <a href="The_Tomb.html" class="mw-redirect" title="Tomb">太古の霊廟</a>では、その分岐のルーンを手に入れるまで使えない。</li>
+<li> <a href="Ziggurat.html" title="Ziggurat">ジグラット</a>では、25〜27階では常に使えない。7〜24階でも使えない可能性がある。</li></ul>
+<p><a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を手に入れたあとは、ゲームが終わるまで制御したテレポートは使えない。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li> テレポート制御と、階の -cTele フラグは <a href="0.17.html" title="0.17">0.17</a> で削除された。</li>
+<li> <a href="0.13.html" title="0.13">0.13</a> より前は、cTele の状態は使うたびに消えることはなく、制御したテレポートの遅れもふつうと同じだった。また、永続的なテレポート制御を与える変異があり、テレポート制御の指輪は身につけているだけでこの能力を与えた。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
