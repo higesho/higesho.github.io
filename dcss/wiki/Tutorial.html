@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>チュートリアル &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="チュートリアル(Tutorial)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>チュートリアル <span class="en">Tutorial</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Tutorial">Tutorial</a>」(0.32 向け、2025-01-19 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Tutorial&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>に対応して<b>いない可能性がある</b>。</i></div>
+<p><b>チュートリアル</b>は、<a href="http://crawl.chaosforge.org/Dungeon_Crawl_Stone_Soup" data-untr="1" class="mw-redirect" title="Dungeon Crawl Stone Soup">Dungeon Crawl Stone Soup</a> を初めて遊ぶ人のための親切な入門だ。オフライン版にもオンライン版にも入っていて、説明を読みながら実際に遊ぶ形で、操作とゲームの基本を教えてくれる。キャラクターは<a href="http://crawl.chaosforge.org/Human" data-untr="1" title="Human">人間</a>の<a href="Fighter.html" title="Fighter">戦士</a>で、<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>が自動で選ばれる。部屋の形、置かれたアイテム、こなす課題はレッスンごとに決まっている。チュートリアルを終えたら、<a href="Hints_mode.html" title="Hints mode">解説付きモード</a>に進むといい。こちらは案内付きだがマップなどはランダムで、難しさも本来の <i>Dungeon Crawl</i> と変わらない。
+</p><p>チュートリアルのレッスンは 5 つある。
+</p>
+<ul><li><a href="Movement.html" title="Movement">移動</a>とダンジョンの探索</li>
+<li><a href="Monster.html" class="mw-redirect" title="Monsters">モンスター</a>との遭遇と戦闘</li>
+<li><a href="Item.html" title="Item">アイテム</a>とその一覧</li>
+<li><a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">魔法</a>と呪文詠唱</li>
+<li><a href="God.html" class="mw-redirect" title="Gods">神</a>と信仰による恩恵</li></ul>
+<p>見返しやすいように、各レッスンの要点を下にまとめておく。コマンドは大文字と小文字を区別するので注意。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Movement_and_Exploration"><span class="tocnumber">1</span> <span class="toctext">移動とダンジョンの探索</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Monsters_and_Combat"><span class="tocnumber">2</span> <span class="toctext">モンスターとの遭遇と戦闘</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Items_and_Inventory"><span class="tocnumber">3</span> <span class="toctext">アイテムとその一覧</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Magic_and_Spellcasting"><span class="tocnumber">4</span> <span class="toctext">魔法と呪文詠唱</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Gods_and_Divine_Abilities"><span class="tocnumber">5</span> <span class="toctext">神と信仰による恩恵</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">6</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Movement_and_Exploration">移動とダンジョンの探索</span></h2>
+<ul><li>移動にはテンキー(NumLock のオンとオフを両方試してみよう)、vi キー、マウスのクリックが使える。矢印キーでも動けるが、斜めには進めない。<b>Shift</b> を押しながら方向を入れると、何かが見えるかぶつかるまでその方向に進み続ける。</li>
+<li><b>&gt;</b> で階段を下り、<b>&lt;</b> で階段を上る。</li>
+<li>扉は歩いて入れば開き、<b>C</b> で閉じられる。</li>
+<li><b>o</b> を押すと<a href="http://crawl.chaosforge.org/Autoexplore" data-untr="1" title="Autoexplore">自動探索</a>ができる。</li>
+<li>最近のメッセージは <b>Ctrl-p</b> で見返せる。</li></ul>
+<h2><span class="mw-headline" id="Monsters_and_Combat">モンスターとの遭遇と戦闘</span></h2>
+<ul><li>アイテムは <b>,</b> か <b>g</b> で拾える。</li>
+<li><a href="Weapon.html" title="Weapon">武器</a>は <b>w</b> で構える。武器ごとに性能が違う。
+<ul><li>(<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>で戦うこともできるが、訓練していないうちはあまり強くない。)</li></ul></li>
+<li>モンスターのいる方向へ歩くと近接攻撃になる(<b>Ctrl-方向</b>でも攻撃できる)。</li>
+<li><b>.</b> か <b>s</b> で、何もせずにターンを送れる。モンスターを通路までおびき寄せたいときなどに使う。</li>
+<li><b>5</b> で休憩すると、HP が全快するか何か目立ったことが起こるまで待つ。</li>
+<li>モンスターを調べるには、マウスを重ねて右クリックするか、<b>x</b> を押してから対象のモンスターで <b>v</b> を押す。赤い枠で囲まれたモンスターは、今の経験レベル(XL)から見て「危険」な相手だ。</li>
+<li><b>Q</b> で行動(たいていは遠距離攻撃)をセットしておくと、あとで使い回せる。</li>
+<li>射撃武器は <b>f</b> で手動で撃てるほか、<b>p</b> か <b>Shift-Tab</b> でセットしたものを自動で狙って撃てる。<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>武器はそのまま投げられるが、射撃武器(<a href="http://crawl.chaosforge.org/Bows" data-untr="1" class="mw-redirect" title="Bows">弓</a>など)は先に構えておく必要がある。</li></ul>
+<h2><span class="mw-headline" id="Items_and_Inventory">アイテムとその一覧</span></h2>
+<ul><li><b>i</b> で所持品を見られる。アイテムに関するたいていのコマンドは、このメニューからも実行できる。</li>
+<li><a href="Armour.html" title="Armour">防具</a>は <b>W</b> で身に着ける。防具は <a href="http://crawl.chaosforge.org/AC" data-untr="1" class="mw-redirect" title="AC">AC</a> を上げてくれるが、重い<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>は <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> を下げる。</li>
+<li>自動探索は、危険がなければ<a href="Potion.html" class="mw-redirect" title="Potions">薬</a>や<a href="Scroll.html" title="Scroll">巻物</a>のような役に立つアイテムを自動で拾ってくれる。</li>
+<li>巻物は <b>r</b> で読み、薬は <b>q</b> で飲む(quaff)。</li>
+<li>装備品には特別な性質を持つ<a href="Brand.html" title="Brand">ブランド</a>が付いていることがある。ブランド付きの装備品は、未鑑定のうちは青く表示される。</li>
+<li>装備品が<a href="Artefact.html" title="Artefact">アーティファクト</a>のこともある。たいていは独特の性質を持ち、手を加えることはできない。白い文字で表示される。</li>
+<li><a href="Wand.html" title="Wand">ワンド</a>は <b>V</b> で発動する。</li>
+<li><a href="Jewellery.html" title="Jewellery">装身具</a>は <b>P</b> で着け、<b>R</b> で外す。</li>
+<li><a href="Gold.html" title="Gold">金貨</a>は店で使う。店には <b>&gt;</b> か <b>&lt;</b> で入れる。</li></ul>
+<h2><span class="mw-headline" id="Magic_and_Spellcasting">魔法と呪文詠唱</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Spellbook" data-untr="1" class="mw-redirect" title="Spellbook">魔法書</a>を見つけたら、<b>M</b> で<a href="Spell.html" title="Spell">呪文</a>を覚えられる。</li>
+<li>呪文を覚えるには、<a href="http://crawl.chaosforge.org/XL" data-untr="1" class="mw-redirect" title="XL">XL</a> がその呪文のレベル以上でなければならない。加えて、魔法のスキルを訓練しておく必要もある(失敗率を下げるため)。</li>
+<li>呪文を唱えるには、<b>z</b> を押してから呪文に割り当てられた文字を押す。呪文を <b>Q</b> でセットしておけば、射撃武器と同じように(Shift-Tab で)使うこともできる。</li>
+<li>覚えている呪文は <b>I</b>(<b>大文字の i</b>)か <b>z</b> で確認できる。</li>
+<li>HP と同じく、MP も休憩(<b>5</b>)で回復する。</li>
+<li>多くの呪文は、立ち位置を工夫したり、ほかの呪文と組み合わせたりすると、もっとうまく使える。</li>
+<li>重い<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>や<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>は呪文詠唱の妨げになる。</li></ul>
+<h2><span class="mw-headline" id="Gods_and_Divine_Abilities">神と信仰による恩恵</span></h2>
+<ul><li><a href="God.html" title="God">神</a>の<a href="Altar.html" title="Altar">祭壇</a>で(<b>&gt;</b> か <b>&lt;</b> を押して)祈ると、その神の概要を見られる。祈ったあとに <b>Enter</b> を押すと、その神の信者になる。</li>
+<li>神にはそれぞれ独自の特徴がある。チュートリアルの神である<a href="Trog.html" title="Trog">トログ</a>は怒りと流血の神で、そのため呪文詠唱を嫌う。</li>
+<li>神によって好むことと嫌うことは違う。たいていの神は、(トログのように)敵を倒すこと、あるいは(<a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>のように)新しい場所を探索することを好み、そうすると<a href="Piety.html" title="Piety">信仰心</a>(神の覚え)をくれる。</li>
+<li>神の力はたいていとても強いので、使い方を覚え、どんどん頼りにしていこう。トログの<a href="Berserk.html" title="Berserk">バーサーク</a>は、体力を 1.5 倍、速度を 1.5 倍(当てはまる行動すべて)にし、ダメージも大きく上げる。ただし、バーサーク中は移動と近接攻撃以外のほとんどの行動ができず、攻撃していないとすぐに切れてしまう。また、バーサークが終わると減速状態になり、しばらくは再びバーサークできない。
+<ul><li>なお、神の力のほとんどは使うと信仰心を消費する。それでもこの力は安上がりで、効果は絶大なので、出し惜しみしないこと!</li></ul></li>
+<li><b>^</b> を押すと、今信仰している神、使える力、信仰心を確認できる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> より前は、人間ではなく<a href="http://crawl.chaosforge.org/High_Elf" data-untr="1" title="High Elf">ハイエルフ</a>で始まった。</li>
+<li><a href="http://crawl.chaosforge.org/0.7" data-untr="1" class="mw-redirect" title="0.7">0.7</a> で、決まった地形で遊ぶ形のチュートリアルが初めて導入された。このころはレッスンが 5 つに分かれておらず、1 枚のマップで多くの話題を扱っていた。最後に<a href="http://crawl.chaosforge.org/Sigmund" data-untr="1" title="Sigmund">シグムンド</a>と戦い、そのあと<a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a>に殺されるという流れで、もし生き延びられたら、その先の迷宮は普段どおりに生成された。5 つのレッスンに分かれた形は次の版で導入され、それ以来ずっと続いている。</li>
+<li><a href="http://crawl.chaosforge.org/0.7" data-untr="1" class="mw-redirect" title="0.7">0.7</a> より前は、<a href="Hints_mode.html" title="Hints mode">解説付きモード</a>がチュートリアルと呼ばれ、その役目を果たしていた。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

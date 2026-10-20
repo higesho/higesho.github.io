@@ -18,7 +18,7 @@
 <div class="wiki">
 <div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>に対応して<b>いない可能性がある</b>。</i></div>
 <p><i>この情報を表にまとめたものは<a href="http://crawl.chaosforge.org/Weapon_Speed" data-untr="1" class="mw-redirect" title="Weapon Speed">武器の速度</a>を参照。</i>
-</p><p><b>攻撃速度</b>(attack speed)は、プレイヤーが<a href="http://crawl.chaosforge.org/Melee_weapon" data-untr="1" title="Melee weapon">近接武器</a>、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>、<a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a>でどれだけ速く攻撃できるかを表す。
+</p><p><b>攻撃速度</b>(attack speed)は、プレイヤーが<a href="http://crawl.chaosforge.org/Melee_weapon" data-untr="1" title="Melee weapon">近接武器</a>、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>、<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>でどれだけ速く攻撃できるかを表す。
 </p><p>攻撃速度はふつう「<b>攻撃の所要時間</b>」(attack delay)の形で表す。通常の行動にかかる時間は 1.0 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>、つまり 10 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> だ。かかる aut が多いほど行動は遅くなる。つまり攻撃の所要時間が短いほど、速く攻撃できる。
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
@@ -60,7 +60,7 @@
 <h3><span class="mw-headline" id="Skill">スキル</span></h3>
 <p>対応する武器の<a href="Skill.html" title="Skill">スキル</a>が2レベル上がるごとに、攻撃の所要時間が 0.1 ターン短くなる。ただし限度があり、どの武器にも<b>最短の所要時間</b>(minimum delay)があって、そこから先はスキルを上げても攻撃は速くならない。
 </p><p>武器の最短の所要時間は、たいてい <code>base delay / 2</code> と 0.7 ターンのうち<i>小さいほう</i>だ。たとえば<a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a>の基本の所要時間は 1.0 なので、最短の所要時間は 0.5 になる。<a href="Large_rock.html" title="Large rock">大岩</a>の基本の所要時間は 2.0 だが、最短の所要時間はやはり 0.7 ターンだ。この決まりには<a href="http://crawl.chaosforge.org/Rapier" data-untr="1" title="Rapier">レイピア</a>や<a href="http://crawl.chaosforge.org/Triple_crossbow" data-untr="1" title="Triple crossbow">トリプルクロスボウ</a>など、いくつか例外がある。
-</p><p>徒手格闘は仕組みが違う。<a href="http://crawl.chaosforge.org/Unarmed_Combat" data-untr="1" title="Unarmed Combat">徒手格闘</a>スキル 5.4 ごとに、攻撃の所要時間が 0.1 ターン短くなる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>それ以外は武器とほぼ同じだ。
+</p><p>徒手格闘は仕組みが違う。<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>スキル 5.4 ごとに、攻撃の所要時間が 0.1 ターン短くなる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>それ以外は武器とほぼ同じだ。
 </p>
 <h3><span class="mw-headline" id="Brands">ブランド</span></h3>
 <p>武器の<a href="Brand.html" title="Brand">ブランド</a>で速度が変わることもある。これはスキルを計算に入れたあとに適用される。
@@ -80,7 +80,7 @@
 <h3><span class="mw-headline" id="Statuses">状態</span></h3>
 <ul><li><a href="Haste.html" title="Haste">加速</a>(<a href="Berserk.html" title="Berserk">バーサーク</a>によるものも含む)は、すべての行動の所要時間を 2/3 倍にする。</li>
 <li><a href="Okawaru.html" title="Okawaru">オカワル</a>の早業の技巧の能力は、武器の所要時間を半分にする。これは加速とは<i>重ならない</i>。</li>
-<li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化中</a>、<a href="http://crawl.chaosforge.org/Slow" data-untr="1" title="Slow">減速</a>は、すべての所要時間を 3/2 倍にする。これらは加速とも、互いにも重なる。</li></ul>
+<li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化中</a>、<a href="Slow.html" title="Slow">減速</a>は、すべての所要時間を 3/2 倍にする。これらは加速とも、互いにも重なる。</li></ul>
 <p>最後に、0.1 ターンという絶対の下限があり、即時と定められた行動(<a href="Wu_Jian.html" title="Wu Jian">蛇の鞭打ち</a>の移動など)でないかぎり、これより短い時間で行動することはできない。
 </p>
 <h2><span class="mw-headline" id="Spells">呪文</span></h2>
@@ -112,7 +112,7 @@
 <p>そのため、端数の所要時間を平均しただけで考えるより、攻撃の所要時間の幅は広くなりうる。
 </p>
 <h3><span class="mw-headline" id="Example">例</span></h3>
-<p>ショートソードとバックラーを持った人間で考えてみよう。この人間の<a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>スキルは 7.5、<a href="Shields_(skill).html" title="Shields (skill)">盾</a>スキルは 5.4、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>は 15 だ。<a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>の重さは 5 とする。
+<p>ショートソードとバックラーを持った人間で考えてみよう。この人間の<a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>スキルは 7.5、<a href="Shields_(skill).html" title="Shields (skill)">盾</a>スキルは 5.4、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>は 15 だ。<a href="Buckler.html" title="Buckler">バックラー</a>の重さは 5 とする。
 </p>
 <ul><li>ショートソードの基本の所要時間は 11 aut で、スキルによって 7.25 aut まで短くなる。-&gt; (75%で 7 aut、25%で 8 aut)</li>
 <li>盾の不利は 1d(0.40) -&gt; (40%の確率で +1、60%で +0)。</li></ul>
@@ -153,7 +153,7 @@
 <p>平均の所要時間 = 7.6 aut。平均だけを見ると、7 aut (40%) か 8 aut (60%) でしか振れないように思えるかもしれない。だが上のとおり、実際には 7、8、9 aut の3通りの所要時間がありうる。
 </p>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、攻撃の所要時間に 0.2 ターンという絶対の下限があった。</li>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、攻撃の所要時間に 0.2 ターンという絶対の下限があった。</li>
 <li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、胴鎧で<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>の攻撃が遅くなることはなかった。</li>
 <li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>の不利の式が違っていた。一定のスキル(バックラーは 4、カイトシールドは 15、タワーシールドは 25)に達すると不利がなくなった。</li>
 <li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、盾による攻撃の不利が小さかった({1d(EV_penalty), 1d(EV_penalty)} のうち小さいほうと同じ)。</li>

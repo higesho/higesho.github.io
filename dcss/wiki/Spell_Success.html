@@ -282,22 +282,22 @@
 <li><b>魔術強化 x1</b>: {呪文詠唱 14、avg_skill 22.49}、{呪文詠唱 20.7、avg_skill 20.7}</li>
 <li><b>魔術強化 x2</b> / <b>ヴェフメット</b>: {呪文詠唱 14、avg_skill 21.5}、{呪文詠唱 20、avg_skill 20}</li>
 <li><b>ヴェフメット + 魔術強化 x1</b>: {呪文詠唱 14、avg_skill 20.2}、{呪文詠唱 18.9、avg_skill 18.9}</li></ul>
-<p>この数字は炎の嵐に限らず、ゲーム中のどのレベル9の呪文にも当てはまる。ただし<i>知力 30、重さ 0 の場合の話だ</i>。たとえば<a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>と<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>を着けているなら、唱えるのにもっとスキルが要る。呪文のレベル、知力、重さの値は状況に合わせて変えてほしい。
+<p>この数字は炎の嵐に限らず、ゲーム中のどのレベル9の呪文にも当てはまる。ただし<i>知力 30、重さ 0 の場合の話だ</i>。たとえば<a href="Swamp_dragon_scales.html" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>と<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>を着けているなら、唱えるのにもっとスキルが要る。呪文のレベル、知力、重さの値は状況に合わせて変えてほしい。
 </p>
 <h3><span class="mw-headline" id="Measuring_Encumbrance">重さを測る</span></h3>
 <p>重さが実際の失敗&#160;%に与える影響は線形ではない。ただ、「埋め合わせるのに必要な呪文の系統のスキルのレベル」という形で測ることはできる。
 </p><p><b>鎧</b>
 </p><p>胴鎧は SpellFailure を <code>19/225 * encumbrance^2 * (90 - 2 * Armour) / (str + 3)</code> 増やす。呪文詠唱を除くすべての呪文の系統のスキルが1レベルずつ上がると、SpellFailure は 12 下がる。よって鎧の重さは [SpellFailure の増加分] / 12 という式で、スキルのレベルに換算できる。
-</p><p>例: 腕力 6 で<a href="http://crawl.chaosforge.org/Troll_leather_armour" data-untr="1" title="Troll leather armour">トロル革の鎧</a>(重さ = 4)を着ていて、甲冑スキルが 0 だとする。SpellFailure は <code>19/225 * 4^2 * (90 - 0) / (6 + 3)</code> = 13.51、各スキル1.13レベル分になる。大局的に見れば大した量ではない。トロル革の鎧を手に入れるころには、1レベル程度のペナルティは帳消しにできる。
+</p><p>例: 腕力 6 で<a href="Troll_leather_armour.html" title="Troll leather armour">トロル革の鎧</a>(重さ = 4)を着ていて、甲冑スキルが 0 だとする。SpellFailure は <code>19/225 * 4^2 * (90 - 0) / (6 + 3)</code> = 13.51、各スキル1.13レベル分になる。大局的に見れば大した量ではない。トロル革の鎧を手に入れるころには、1レベル程度のペナルティは帳消しにできる。
 </p><p>参考までに:
 </p>
 <ul><li>腕力 10、<a href="Leather_armour.html" title="Leather armour">レザーアーマー</a>、甲冑スキル 0: 各スキル -0.78 レベル</li>
-<li>腕力 10、<a href="http://crawl.chaosforge.org/Ring_mail" data-untr="1" title="Ring mail">リングメイル</a>または<a href="http://crawl.chaosforge.org/Swamp_dragon_scales" data-untr="1" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>、甲冑スキル 5: 各スキル -2.12 レベル</li>
+<li>腕力 10、<a href="Ring_mail.html" title="Ring mail">リングメイル</a>または<a href="Swamp_dragon_scales.html" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>、甲冑スキル 5: 各スキル -2.12 レベル</li>
 <li>腕力 10、<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>、甲冑スキル 5: 各スキル -5.24 レベル</li></ul>
 <p>腕力とスキルによって値が変わる点に注意。甲冑スキルを鍛えればペナルティを減らせることも覚えておこう(詳しくは<a href="#Armour_skill_vs_Spell_skill">甲冑スキルと呪文スキル</a>を参照)。
 </p><p><b>盾</b>
 </p><p>盾は SpellFailure を <code>38/5 * encumbrance^2 / (str + 5) * (27 - Shields)/27</code> 増やす。上の胴鎧と同じ方法で、盾の重さも数値にできる。鎧と比べると、腕力の影響はやや小さく、盾スキルの影響は大きい。
-</p><p>腕力 6 で<a href="http://crawl.chaosforge.org/Buckler" data-untr="1" title="Buckler">バックラー</a>(重さ = 5)を持ち、盾スキルが 0 なら、SpellFailure は <code>38/5 * 5^2 / (6 + 5) * 27/27</code> = 17.27、各スキル1.44レベル分になる。<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>ならその4倍、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>なら9倍だ。
+</p><p>腕力 6 で<a href="Buckler.html" title="Buckler">バックラー</a>(重さ = 5)を持ち、盾スキルが 0 なら、SpellFailure は <code>38/5 * 5^2 / (6 + 5) * 27/27</code> = 17.27、各スキル1.44レベル分になる。<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>ならその4倍、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>なら9倍だ。
 </p>
 <h3><span class="mw-headline" id="Armour_skill_vs_Spell_skill">甲冑スキルと呪文スキル</span></h3>
 <ul><li>甲冑スキルは SpellFailure を <code>-Armour * 38/225 * encumbrance^2 / (str + 3)</code> 減らす。</li>
@@ -313,13 +313,13 @@
 <li>知力は1点につき SpellFailure を 2 下げる。</li></ul>
 <p>腕力 11、ファイアドラゴンの鱗一式、甲冑スキル 0 だとする。レベルアップで腕力+2か知力+2を選べるとき、腕力+2の効果は <code>(1/14 - 1/16) * 19/225 * 11^2 * (90 - 0)</code> = SpellFailure 8.21 で、知力による 2*2 = SpellFailure 4 より大きい。
 </p><p>この腕力 11 のキャラクターがさらに<a href="http://crawl.chaosforge.org/Kite_shield" data-untr="1" title="Kite shield">カイトシールド</a>を持ち、盾スキルが 9 なら、腕力+2でさらに <code>(1/16 - 1/18) * 38/5 * 10^2 * 18/27</code> = SpellFailure 3.52 下がる。
-</p><p>もちろん、知力は<a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">呪文の威力</a>も上げるし、腕力は<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a>のペナルティも減らす。
+</p><p>もちろん、知力は<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>も上げるし、腕力は<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a>のペナルティも減らす。
 </p>
 <h2><span class="mw-headline" id="See_also">関連項目</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/Spell_power" data-untr="1" class="mw-redirect" title="Spell power">呪文の威力</a></li>
+<ul><li><a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a></li>
 <li><a href="Miscast_effect.html" title="Miscast effect">呪文失敗の効果</a></li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> より前は、魔術強化とヴェフメットによる生の失敗率の倍率は 50% が下限だった。そのため魔術強化は最大5つまで、ヴェフメットのボーナスと合わせるなら1つまでしか効かなかった。また、一部の<a href="http://crawl.chaosforge.org/Transmutations" data-untr="1" title="Transmutations">変成</a>の呪文は失敗率を上げていた。<a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(+10%)と<a href="http://crawl.chaosforge.org/Blade_Hands_(spell)" data-untr="1" title="Blade Hands (spell)">刃の手</a>(+20%)だ。</li>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、魔術強化とヴェフメットによる生の失敗率の倍率は 50% が下限だった。そのため魔術強化は最大5つまで、ヴェフメットのボーナスと合わせるなら1つまでしか効かなかった。また、一部の<a href="http://crawl.chaosforge.org/Transmutations" data-untr="1" title="Transmutations">変成</a>の呪文は失敗率を上げていた。<a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(+10%)と<a href="http://crawl.chaosforge.org/Blade_Hands_(spell)" data-untr="1" title="Blade Hands (spell)">刃の手</a>(+20%)だ。</li>
 <li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、spellFailure に上限が無かった。</li>
 <li><a href="http://crawl.chaosforge.org/0.22" data-untr="1" title="0.22">0.22</a> より前は、spell_schools が <code>50 * log2(1 + spell_schools/50)</code> で逓減されていたため、<code>(Spellcasting/2) + (2* AvgSpellSchool) &gt; 50</code> になると術者が損をした。その代わり、レベル9の呪文の spellFailure は 340 ではなく 330 だった。</li>
 <li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> より前は、<a href="#Step_down">逓減</a>の関数が違っていて、多項式ではなく区切り点で計算していた。失敗率の計算のほかの部分にも区切り点がもっとあった。</li></ul>

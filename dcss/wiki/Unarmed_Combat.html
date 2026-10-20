@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>徒手格闘 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="徒手格闘(Unarmed Combat)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>徒手格闘 <span class="en">Unarmed Combat</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Unarmed_Combat">Unarmed Combat</a>」(0.32 向け、2026-01-21 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Unarmed_Combat&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>徒手格闘</b>(<b>UC</b>)スキルは、キャラクターの拳、<a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a>、<a href="Octopode.html" title="Octopode">触手</a>など、前肢で繰り出す攻撃すべての効き目を左右する。素手の攻撃のダメージ、<a href="http://crawl.chaosforge.org/Accuracy" data-untr="1" class="mw-redirect" title="Accuracy">命中</a>、<a href="Attack_speed.html" title="Attack speed">速さ</a>が上がる。<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>は強くならないが、盾を持っていないときに出る副手のパンチだけは例外だ。
+</p><p>拳にはふつう武器の<a href="Brand.html" title="Brand">ブランド</a>が乗らないし、<a href="Artefact.html" title="Artefact">アーティファクト</a>の特性も当然ない。そのかわり、徒手格闘を鍛えると基本ダメージに特別なボーナスが付き、<a href="Talisman.html" title="Talisman">タリスマン</a>による変身の恩恵も受けられる。
+</p>
+<h2><span class="mw-headline" id="Aptitudes">スキル適性</span></h2>
+<table class="wikitable">
+
+<tr>
+<td><b><a href="Armataur.html" title="Armataur">At</a></b>
+</td>
+<td><b><a href="Barachi.html" title="Barachi">Ba</a></b>
+</td>
+<td><b><a href="Coglin.html" title="Coglin">Co</a></b>
+</td>
+<td><b><a href="Deep_Elf.html" title="Deep Elf">DE</a></b>
+</td>
+<td><b><a href="Demigod.html" title="Demigod">Dg</a></b>
+</td>
+<td><b><a href="Demonspawn.html" title="Demonspawn">Ds</a></b>
+</td>
+<td><b><a href="Djinni.html" title="Djinni">Dj</a></b>
+</td>
+<td><b><a href="Draconian.html" title="Draconian">Dr</a></b>
+</td>
+<td><b><a href="Felid.html" title="Felid">Fe</a></b>
+</td>
+<td><b><a href="Formicid.html" title="Formicid">Fo</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Gale_Centaur" data-untr="1" title="Gale Centaur">GC</a></b>
+</td>
+<td><b><a href="Gargoyle.html" title="Gargoyle">Gr</a></b>
+</td>
+<td><b><a href="Gnoll.html" title="Gnoll">Gn</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Human" data-untr="1" title="Human">Hu</a></b>
+</td>
+<td><b><a href="Kobold.html" title="Kobold">Ko</a></b>
+</td>
+<td><b><a href="Merfolk.html" title="Merfolk">Mf</a></b>
+</td>
+<td><b><a href="Minotaur.html" title="Minotaur">Mi</a></b>
+</td>
+<td><b><a href="Mountain_Dwarf.html" title="Mountain Dwarf">MD</a></b>
+</td>
+<td><b><a href="Mummy.html" title="Mummy">Mu</a></b>
+</td>
+<td><b><a href="Naga.html" title="Naga">Na</a></b>
+</td>
+<td><b><a href="Octopode.html" title="Octopode">Op</a></b>
+</td>
+<td><b><a href="Oni.html" title="Oni">On</a></b>
+</td>
+<td><b><a href="Poltergeist.html" title="Poltergeist">Po</a></b>
+</td>
+<td><b><a href="Revenant.html" title="Revenant">Re</a></b>
+</td>
+<td><b><a href="Spriggan.html" title="Spriggan">Sp</a></b>
+</td>
+<td><b><a href="Tengu.html" title="Tengu">Te</a></b>
+</td>
+<td><b><a href="Troll.html" title="Troll">Tr</a></b>
+</td>
+<td><b><a href="Vine_Stalker.html" title="Vine Stalker">VS</a></b>
+</td></tr>
+<tr>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> -2
+</td>
+<td> -1
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 8
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 1
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> -2
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> -3
+</td>
+<td> 1
+</td>
+<td> -2
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 0
+</td></tr></table>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<h3><span class="mw-headline" id="Base_stats">基本性能</span></h3>
+<p>何もなければ、徒手格闘の基本ダメージは 3、<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>は +6、<a href="http://crawl.chaosforge.org/Attack_delay" data-untr="1" class="mw-redirect" title="Attack delay">基本ディレイ</a>は 1.0ターン(1.0 decaAut)、<a href="http://crawl.chaosforge.org/Mindelay" data-untr="1" class="mw-redirect" title="Mindelay">最小ディレイ</a>は 0.5ターン(スキル 27 で到達)だ。徒手格闘そのものはほかの<a href="http://crawl.chaosforge.org/Melee_weapon" data-untr="1" title="Melee weapon">近接武器</a>と同じように働くが、拳はふつうのやり方では<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化</a>もできないし<a href="Brand.html" title="Brand">ブランド</a>も付けられない。
+</p><p>徒手格闘で戦っているときは、<a href="Manifold_Assault.html" title="Manifold Assault">多重攻撃</a>で攻撃できる相手の数が半分になり、<a href="Detonation_Catalyst.html" title="Detonation Catalyst">爆発の触媒</a>のダメージの式も変わる。
+</p>
+<h3><span class="mw-headline" id="Skill_bonuses">スキルによるボーナス</span></h3>
+<p>徒手格闘のスキルレベルが上がったときの効果は、ほかの武器スキルとは違う。
+</p>
+<ul><li> <b>ダメージ:</b> ふつうの武器スキルはレベルごとに +2% だが、徒手格闘はレベルごとに基本ダメージが +1 され、それに<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>と<a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a>スキルの倍率がかかる。</li>
+<li> <b>攻撃速度:</b> 素手のディレイは 1.0 から始まり、スキル 27 で<a href="http://crawl.chaosforge.org/Mindelay" data-untr="1" class="mw-redirect" title="Mindelay">最小ディレイ</a>の 0.5 に届く。つまり徒手格闘が 5.4 レベル上がるごとに攻撃のディレイが 0.1ターン縮み、1 レベルあたりでは約 0.0185ターン縮む計算だ。これはふつうの武器より効きが悪い。ほかの武器と同じく、この値は重み付きのやり方で小数第 1 位に丸められる。</li>
+<li> <a href="#Offhand_punch">副手のパンチ</a>のダメージと、それが出る確率が上がる。</li>
+<li><a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>の上がり方はほかの武器スキルと同じ(1 レベルにつき命中 +0.5)。</li></ul>
+<h3><span class="mw-headline" id="Offhand_punch">副手のパンチ</span></h3>
+<p>副手のパンチは<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>の一種だ。ほとんどの種族は副手が空いていないとこのパンチを出せない。つまり<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>を持たず、<a href="http://crawl.chaosforge.org/Handedness" data-untr="1" title="Handedness">両手武器</a>も構えていない状態でなければならない。また、<a href="http://crawl.chaosforge.org/Flux_Form" data-untr="1" class="mw-redirect" title="Flux Form">流転</a>や<a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a>に変身しているあいだもパンチは出ない。<a href="Octopode.html" title="Octopode">オクトポード</a>は副手のパンチのかわりに触手の一撃を繰り出し、こちらは副手がふさがっていても出ることがある。
+</p><p>副手のパンチ(または触手の一撃)が使えるなら、徒手格闘スキルを上げるほど出やすくなる。スキル 0 では攻撃ごとに 5% の確率でパンチが出て、スキル 27 では 50% になる。上がり方は直線的で、スキルが 1 レベル上がるごとにパンチの出る確率が 1.67% ずつ増える。
+</p><p>副手のパンチのダメージは次のとおり。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<pre>5 + (UC / 2)
++ 1d3 × <a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a>の段階
++ 6(<a href="http://crawl.chaosforge.org/Blade_Form" data-untr="1" class="mw-redirect" title="Blade Form">刃の手</a>に変身中)
+</pre>
+<h2><span class="mw-headline" id="Damage_Modifiers">ダメージの補正</span></h2>
+<p>徒手格闘の基本ダメージは、ほとんどの<a href="Transformation.html" class="mw-redirect" title="Transformations">変身</a>と、<a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a>の変異で変わる。さらに、多くの変身にはそれ以外の特殊な効果もある。
+</p><p><b>一般的な補正</b>
+</p>
+<table class="prettytable" style=" text-align: center">
+<tr>
+<th> 条件 </th>
+<th> ダメージ </th>
+<th> 特殊効果
+</th></tr>
+<tr>
+<td> 基本ダメージ </td>
+<td> 3 </td>
+<td> なし
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a> </td>
+<td> +2 × 段階 </td>
+<td> <a href="Gloves.html" title="Gloves">手袋</a>を着けていると無効<br /><a href="Revenant.html" title="Revenant">レヴナント</a>: 爪 1、<a href="Troll.html" title="Troll">トロル</a>: 爪 3
+</td></tr>
+<tr>
+<td> <a href="Felid.html" title="Felid">フェリッド</a> </td>
+<td> 5 </td>
+<td> <a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>に向く
+</td></tr></table>
+<p><br />
+<b><a href="Talisman.html" title="Talisman">タリスマン</a>による変身:</b>
+</p>
+<table class="prettytable" style=" text-align: center">
+<tr>
+<th> 変身 </th>
+<th> ダメージ </th>
+<th> スキルの範囲 </th>
+<th> 特殊効果
+</th></tr>
+<tr>
+<td>基本(変身なし)
+</td>
+<td>3
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Maw_Form" data-untr="1" class="mw-redirect" title="Maw Form">大口</a>
+</td>
+<td>5
+</td>
+<td>
+</td>
+<td>噛みつきの<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Yak_Form" data-untr="1" class="mw-redirect" title="Yak Form">ヤク</a>
+</td>
+<td>7
+</td>
+<td>
+</td>
+<td>壁の近くで攻撃すると冷気のダメージを与える
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Blade_Form" data-untr="1" class="mw-redirect" title="Blade Form">刃の手</a>
+</td>
+<td>15-23
+</td>
+<td>12-20
+</td>
+<td>副手のパンチが強くなる
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Fortress_Crab_Form" data-untr="1" class="mw-redirect" title="Fortress Crab Form">蟹</a>
+</td>
+<td>8-13
+</td>
+<td>12-20
+</td>
+<td>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛</a>
+</td>
+<td>3
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>に向く
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a>
+</td>
+<td>10
+</td>
+<td>
+</td>
+<td><a href="Constriction.html" title="Constriction">締めつけ</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>
+</td>
+<td>17-27
+</td>
+<td>17-25
+</td>
+<td>表のダメージは爪の分を含む。腕力 +5。補助攻撃あり
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>
+</td>
+<td>8
+</td>
+<td>
+</td>
+<td>近接攻撃のダメージがすべて +50%、速さは 50% 遅くなる。腕力 +7
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐化</a>
+</td>
+<td>24-30
+</td>
+<td>23-27
+</td>
+<td><a href="http://crawl.chaosforge.org/Elec" data-untr="1" class="mw-redirect" title="Elec">電撃</a>、<a href="Cleaving.html" title="Cleaving">薙ぎ払い</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Death_Form" data-untr="1" class="mw-redirect" title="Death Form">死霊化</a>
+</td>
+<td>9
+</td>
+<td>
+</td>
+<td>近接攻撃のすべてで状態異常を与えうる
+</td></tr></table>
+<p><i>スキルで強さが変わる変身では、表のダメージの範囲はそれぞれスキルの下限と上限のときの値だ。スキルが下限に届いていなければ、そのぶんダメージが下がる。</i>
+</p><p><b><a href="Bad_Form.html" title="Bad Form">その他の変身</a></b>
+</p>
+<table class="prettytable" style=" text-align: center">
+<tr>
+<th> 変身 </th>
+<th> ダメージ </th>
+<th> 特殊効果
+</th></tr>
+<tr>
+<td> <a href="Bat_Form.html" title="Bat Form">コウモリ</a> </td>
+<td> 1 </td>
+<td> なし
+</td></tr>
+<tr>
+<td> <a href="Fungus_Form.html" title="Fungus Form">茸化</a> </td>
+<td> 12 </td>
+<td> <a href="http://crawl.chaosforge.org/Confusion" data-untr="1" title="Confusion">混乱</a>
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Pig_Form" data-untr="1" title="Pig Form">豚化</a> </td>
+<td> 1 </td>
+<td> ダメージに対するスキルの効き目が 1/5
+</td></tr>
+<tr>
+<td> <a href="Tree_Form.html" title="Tree Form">樹化</a> </td>
+<td> 12 </td>
+<td> なし
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Wisp_Form" data-untr="1" title="Wisp Form">霧化</a> </td>
+<td> 5 </td>
+<td> ダメージの計算に徒手格闘スキルのかわりに (XL/2) を使う
+</td></tr></table>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>徒手格闘には主な長所が三つある。武器を探さなくていいので、ダンジョンの乱数に泣かされることがない。スキルを上げたときの伸びがよく、スキル 27 の素手はゲームでも指折りの強さになる。そして、さまざまな<a href="Talisman.html" title="Talisman">タリスマン</a>による変身でさらに強くできる。短所は、すでに触れたように拳を強化したりブランドを付けたりできないことと、スキルが低いうちは性能が貧弱なことだ。
+</p><p>スキルによる伸びがどれほどのものかは、比べてみるとよくわかる。スキル 16 の時点では、
+</p>
+<ul><li>徒手格闘の基本ダメージは 19 で、攻撃のディレイは 0.7 より少し遅い。</li>
+<li>ブランドなしの +0 の<a href="Morningstar.html" title="Morningstar">モーニングスター</a>は(鈍器スキルを込みで)ダメージ 17、ディレイ 0.7 で攻撃できる。そのうえモーニングスターは<a href="http://crawl.chaosforge.org/Enchant" data-untr="1" title="Enchant">強化</a>できるし<a href="Brand.html" title="Brand">ブランド</a>も付く。このスキルレベルなら、+0 のモーニングスターにどんなブランドでもひとつ付いていれば徒手格闘を上回る。</li></ul>
+<p>スキルが十分に高ければ、徒手格闘は(変身を考えなくても)最強クラスの両手武器と肩を並べる。だがゲームのかなり長いあいだ、武器を持った相手より弱いか、同じくらいか、せいぜい少し強い程度にとどまる。
+</p><p>基本ダメージの高い変身が多いので、変身をうまく使うだけなら徒手格闘スキルを<i>そこまで</i>鍛えなくてもいい。たとえば<a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>は、スキルが下限でも基本ダメージ 17 から始まる。敵を叩きつぶすのに、徒手格闘スキルそのものはさほど要らないわけだ。もちろん、攻撃の命中と速さを上げるために、多少はスキルを鍛えておくべきだ。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.31.html" title="0.31">0.31</a>より前は、徒手格闘の基本の命中は +2 しかなかった。ただし<a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a>を持っているときや、ほとんどの<a href="Transformation.html" title="Transformation">変身</a>中には、隠れた命中のボーナスが付いていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a>より前は、一部の変身(<a href="http://crawl.chaosforge.org/Blade_Hands" data-untr="1" class="mw-redirect" title="Blade Hands">刃の手</a>、<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>、<a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>)では素手のダメージが<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>によって変わった。</li>
+<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a>より前は、<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>を着ていると徒手格闘の攻撃のディレイにペナルティがあった。また、トロルの爪は、今はなくなった<a href="http://crawl.chaosforge.org/Bleeding" data-untr="1" title="Bleeding">出血</a>の状態を引き起こすことがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.11" data-untr="1" title="0.11">0.11</a>より前は、<a href="http://crawl.chaosforge.org/Hooves" data-untr="1" title="Hooves">蹄</a>や<a href="http://crawl.chaosforge.org/Horns" data-untr="1" title="Horns">角</a>を持っていなくても、徒手格闘によって蹴りや頭突きの<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>が出ることがあった。副手のパンチは少し弱かった(<code>5 + UC/3</code>)。</li>
+<li><a href="http://crawl.chaosforge.org/0.7" data-untr="1" class="mw-redirect" title="0.7">0.7</a>より前は、徒手格闘でパンチ以外の補助攻撃も強くなったので、近接戦闘をするキャラクターなら誰でも鍛える理由があった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/melee-attack.cc#L1019">melee-attack.cc:1019</a> (0.30.0)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Skill.html" title="Skill">スキル</a>
+</th></tr>
+<tr>
+<th> <a href="Weapon.html" class="mw-redirect" title="Weapons">武器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a> • <a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a> • <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+<p><a href="Axes.html" title="Axes">斧</a> • <a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a> • <a href="Polearms.html" title="Polearms">長柄武器</a> • <a href="Staves.html" title="Staves">棒術</a> • <a class="mw-selflink selflink">徒手格闘</a> • <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</p>
+</td></tr>
+<tr>
+<th> 身体
+</th>
+<td> <a href="http://crawl.chaosforge.org/Fighting" data-untr="1" title="Fighting">戦闘</a> • <a href="Armour_(skill).html" title="Armour (skill)">甲冑</a> • <a href="Dodging.html" title="Dodging">躱し身</a> • <a href="http://crawl.chaosforge.org/Stealth_(skill)" data-untr="1" title="Stealth (skill)">隠密</a> • <a href="Shields_(skill).html" title="Shields (skill)">盾</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Magic" data-untr="1" title="Magic">魔法</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a> • <a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a> • <a href="Evocations.html" title="Evocations">発動</a> • <a href="Shapeshifting.html" title="Shapeshifting">変身術</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/List_of_spells_by_school" data-untr="1" title="List of spells by school">呪文の系統</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Air" data-untr="1" class="mw-redirect" title="Air">風の魔術</a> • <a href="Alchemy.html" title="Alchemy">錬金術</a> • <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> • <a href="http://crawl.chaosforge.org/Earth" data-untr="1" class="mw-redirect" title="Earth">地の魔術</a> • <a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a> • <a href="Forgecraft.html" title="Forgecraft">鍛造術</a> • <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> • <a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a> • <a href="Necromancy.html" title="Necromancy">死霊術</a> • <a href="http://crawl.chaosforge.org/Summoning" data-untr="1" class="mw-redirect" title="Summoning">召喚術</a> • <a href="Translocations.html" title="Translocations">転位術</a>
+</td></tr>
+</table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

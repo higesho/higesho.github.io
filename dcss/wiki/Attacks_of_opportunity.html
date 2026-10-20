@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attacks of opportunity &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="Attacks of opportunity(Attacks of opportunity)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>Attacks of opportunity</h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Attacks_of_opportunity">Attacks of opportunity</a>」(0.31 向け、2026-07-07 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Attacks_of_opportunity&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<blockquote>敵から離れるように動くと、敵はその隙を突いてただで攻撃してくることがある。確率は低い(1/3)。位置を変えたり退いたりするのはたいてい今でも良い手だが、このおまけの攻撃には気を配っておこう。</blockquote>
+<p><b>機会攻撃</b>(<b>AOO</b>、<b>AOOp</b>)は、近接戦闘中の敵から離れるように動いたときに起こりうる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Avoiding"><span class="tocnumber">1.1</span> <span class="toctext">避けるには</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>敵の近接攻撃の届く範囲から出るように動いたとき、そのモンスターが追ってくるつもりなら、33% の確率で機会攻撃が起こる。これでモンスターは移動と攻撃を同時に行える。機会攻撃が起こるのは、モンスターが追ってくることを選んだときだけだ。<a href="Reaching.html" title="Reaching">間合い</a>の長い攻撃を持つ敵は、2 マス離れたところからでも機会攻撃をしてくる。
+</p><p>移動と攻撃の両方にかかる時間はモンスターの 1 ターン分だが、50% の確率でさらに 1 ターンの 10% を余分に失う。移動より攻撃が遅いモンスターや、攻撃より移動が遅いモンスターは、遅いほうの行動と同じだけの時間を使う。
+</p><p>なお、機会攻撃が起きたときには<a href="http://crawl.chaosforge.org/Random_energy" data-untr="1" class="mw-redirect" title="Random energy">エネルギーのランダム化</a>は働かない。ただし、モンスターに機会攻撃の資格があっても実際には攻撃しなかった場合は、エネルギーのランダム化が働く。
+</p>
+<h3><span class="mw-headline" id="Avoiding">避けるには</span></h3>
+<p>次の条件のどれかを満たせば、機会攻撃はまったく起こらない。
+</p>
+<ul><li>移動も近接攻撃もしないことを選ぶモンスターは、機会攻撃をしてこない。たとえば<a href="http://crawl.chaosforge.org/Centaur_(monster)" data-untr="1" title="Centaur (monster)">セントール</a>は、弱い近接攻撃よりも弓を使いたがる。 </li>
+<li>移動も近接攻撃もできないモンスターは機会攻撃をしないので、次の状態にあれば完全に防げる。
+<ul><li>行動不能: <a href="http://crawl.chaosforge.org/Asleep" data-untr="1" class="mw-redirect" title="Asleep">睡眠中</a>、<a href="http://crawl.chaosforge.org/Paralysed" data-untr="1" class="mw-redirect" title="Paralysed">麻痺中</a>、<a href="http://crawl.chaosforge.org/Petrified" data-untr="1" class="mw-redirect" title="Petrified">石化状態</a>、<a href="http://crawl.chaosforge.org/Confused" data-untr="1" class="mw-redirect" title="Confused">混乱中</a></li>
+<li>移動できない: <a href="http://crawl.chaosforge.org/Constrict" data-untr="1" class="mw-redirect" title="Constrict">拘束中</a>、<a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">蜘蛛の巣</a>や<a href="http://crawl.chaosforge.org/Net" data-untr="1" class="mw-redirect" title="Net">網</a>に捕まっている</li>
+<li>攻撃できない: <a href="Fear.html" title="Fear">逃走中</a></li></ul></li>
+<li>敵からあなたが見えないとき、つまり攻撃してくる相手にとってあなたが<a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>だったり、相手が<a href="Blind.html" title="Blind">盲目状態</a>だったりすれば、機会攻撃は受けない。</li>
+<li><a href="http://crawl.chaosforge.org/Ally" data-untr="1" class="mw-redirect" title="Ally">味方</a>と位置を入れ替えて、味方がモンスターの行く手をふさぐ形になれば、その機会攻撃は受けない。ただし、入れ替えたターンのうちに味方が倒され、別のモンスターがその場所に踏み込んで機会攻撃できる状況なら、攻撃されることがある。</li>
+<li><a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a>の聖域はあらゆる攻撃を防ぐ。この守りはさかのぼって効く。それまで聖域の外にいて中へ移動してきた場合でも、聖域はあなたを守ってくれる。</li>
+<li><a href="Wu_Jian.html" title="Wu Jian">武術の攻撃</a>、<a href="Rampaging.html" title="Rampaging">猛進</a>、蛇の鞭打ちを行っている間は、機会攻撃を受けない。</li>
+<li><a href="http://crawl.chaosforge.org/Translocation" data-untr="1" class="mw-redirect" title="Translocation">転位術</a>は移動に数えられないので、安心して使える。</li></ul>
+<p>モンスターより速ければ近接型のモンスターから逃げやすくなるが、それでも機会攻撃は起こりうる。たとえば速度 100% のモンスターが相手なら、<a href="Haste.html" title="Haste">加速中</a>のプレイヤーは近接攻撃の届く範囲から抜け出すまでに、最大で 2 回の機会攻撃を受ける。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>要注意! 退却するとき、機会攻撃のある速度 100% の敵は、機会攻撃がなかったころの<a href="http://crawl.chaosforge.org/Adder" data-untr="1" title="Adder">マムシ</a>よりも多く攻撃してくる。敵の隣に来る<i>前に</i>、位置取り(たとえば<a href="http://crawl.chaosforge.org/Stair_dancing" data-untr="1" class="mw-redirect" title="Stair dancing">上り階段</a>のそば)を済ませておこう。近接型の敵の隣に来てしまったら、ちゃんとした理由がない限り動くべきではない。
+</p><p>分の悪い戦いから退く必要があっても、打てる手は限られている。よく使われる逃げ方は次のとおり。
+</p>
+<ul><li><a href="Summon.html" title="Summon">召喚物</a>やほかの<a href="http://crawl.chaosforge.org/Ally" data-untr="1" class="mw-redirect" title="Ally">味方</a>と位置を入れ替える</li>
+<li>モンスターを動けなくする: <a href="Throwing_net.html" title="Throwing net">投げ網</a>、<a href="Grave_Claw.html" title="Grave Claw">墓場の鉤爪</a>、<a href="http://crawl.chaosforge.org/BVC" data-untr="1" class="mw-redirect" title="BVC">ボーグンジョルの忌まわしき掌握</a>、<a href="http://crawl.chaosforge.org/Wand_of_roots" data-untr="1" title="Wand of roots">根縛りのワンド</a></li>
+<li>自分を転位させて離れる: <a href="http://crawl.chaosforge.org/Translocation" data-untr="1" class="mw-redirect" title="Translocation">転位術</a>の魔法、<a href="http://crawl.chaosforge.org/Scroll_of_teleport" data-untr="1" class="mw-redirect" title="Scroll of teleport">テレポートの巻物</a>、<a href="Scroll_of_blinking.html" title="Scroll of blinking">瞬間移動の巻物</a></li>
+<li>モンスターを遠ざける: <a href="http://crawl.chaosforge.org/Iskenderun%27s_Mystic_Blast" data-untr="1" title="Iskenderun&#39;s Mystic Blast">イスケンデルンの爆破の秘術</a>、<a href="http://crawl.chaosforge.org/Dispersal" data-untr="1" title="Dispersal">転送</a>(<a href="http://crawl.chaosforge.org/Dispersal" data-untr="1" title="Dispersal">呪文</a>と<a href="http://crawl.chaosforge.org/Dispersal_(brand)" data-untr="1" title="Dispersal (brand)">ダーツ</a>)、<a href="http://crawl.chaosforge.org/Scroll_of_butterflies" data-untr="1" title="Scroll of butterflies">蝶の巻物</a>、<a href="http://crawl.chaosforge.org/Scroll_of_fear" data-untr="1" title="Scroll of fear">恐慌の巻物</a>、<a href="http://crawl.chaosforge.org/Phial_of_floods" data-untr="1" title="Phial of floods">大水の小瓶</a>/<a href="Gell's_gravitambourine.html" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a></li>
+<li>敵に状態異常をかける(確実性は落ちる): <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>、<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> で機会攻撃が作り直された。それより前は次のとおりだった。
+<ul><li>モンスターは機会攻撃をしたあと、50% の確率で 0.1 ターンを失うことはなかった。</li>
+<li>モンスターが機会攻撃をするのは、あなたが<i>近接攻撃の届く範囲</i>ではなく<i>隣</i>にいるときだけだった。そのため、<a href="Reaching.html" title="Reaching">間合い</a>の長い攻撃を持つモンスターは機会攻撃ができなかった。そうしたモンスターの AI は、あなたが 2 マス離れるまで追いかけてこなかったので、機会攻撃は起こりようがなかった。</li>
+<li>モンスターより速く動いていれば、機会攻撃を受けなかった。</li>
+<li><a href="http://crawl.chaosforge.org/Engulf" data-untr="1" title="Engulf">包み込み</a>や<a href="http://crawl.chaosforge.org/Constrict" data-untr="1" class="mw-redirect" title="Constrict">締めつけ</a>、プレイヤーやモンスターを動かす効果など、一部の<a href="Attack_flavour.html" title="Attack flavour">攻撃の追加効果</a>は、機会攻撃では働かなかった。</li></ul></li></ul>
+<dl><dd>また、このバージョンで<a href="http://crawl.chaosforge.org/Random_energy" data-untr="1" class="mw-redirect" title="Random energy">エネルギーのランダム化</a>が復活した。</dd></dl>
+<ul><li>機会攻撃は <a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> で、<a href="http://crawl.chaosforge.org/Energy_randomisation" data-untr="1" title="Energy randomisation">エネルギーのランダム化</a>に代わるものとして導入された。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蜘蛛の袋 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="蜘蛛の袋(Sack of spiders)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>蜘蛛の袋 <span class="en">Sack of spiders</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Sack_of_spiders">Sack of spiders</a>」(0.32 向け、2025-03-29 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Sack_of_spiders&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<div>
+<table class="prettytable" style=" width:18em">
+
+<tr>
+<th align="left"> 種類
+</th>
+<td> 道具
+</td></tr>
+<tr>
+<th align="left"> 名前
+</th>
+<td> 蜘蛛の袋
+</td></tr>
+<tr>
+<th align="left"> アイコン
+</th>
+<td> <a href="http://crawl.chaosforge.org/File:Sack_of_spiders.png" data-untr="1" class="image"><img alt="Sack of spiders.png" src="img/Sack_of_spiders.png" width="32" height="32" /></a>
+</td></tr></table>
+</div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 絹で織られた袋だ。開けると、辺り一面を蜘蛛の巣と蜘蛛と、その他の這い回るもので覆い尽くす。発動のスキルに応じて、蜘蛛の質と数、蜘蛛の巣の量が増す。
+</td></tr></table>
+<p><b>蜘蛛の袋</b>は発動アイテムで、<a href="http://crawl.chaosforge.org/Spider%27s_Nest" data-untr="1" title="Spider&#39;s Nest">蜘蛛の穴ぐら</a>にちなんだ味方を呼び出し、<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>内の敵対モンスターに<a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">蜘蛛の巣</a>をかけることがある。1 回使うと、経験値で充填されるまで使えない。<a href="Evocations.html" title="Evocations">発動</a>のスキルは、味方の強さ、敵に蜘蛛の巣をかける確率、蜘蛛の数に影響する。
+</p><p>このアイテムは<a href="Box_of_beasts.html" title="Box of beasts">獣の匣</a>と<a href="Alternate_items.html" title="Alternate items">相互排他</a>の関係にある。ほかのその他の発動アイテムと同じく、1 回のゲームで出てくる蜘蛛の袋(または獣の匣)は 1 つだけだ。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Old_Monster_List"><span class="tocnumber">3.1</span> <span class="toctext">旧版のモンスター一覧</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>使うと、2 に (<code>2 * Evocations/27</code> 〜 <code>4 * Evocations / 27</code>) を足した数の蜘蛛を呼び出す(端数はランダムに丸める)。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p><p>呼び出されるモンスターは次のとおり(弱い順):<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<table class="wikitable" style="text-align: center">
+<tr>
+<td>モンスター</td>
+<td>最小スキル</td>
+<td>最大スキル
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-yellow">s</span> <a href="http://crawl.chaosforge.org/File:Scorpion.png" data-untr="1" class="image"><img alt="Scorpion.png" src="img/Scorpion.png" width="32" height="32" /></a> <b><a href="Scorpion.html" title="Scorpion">巨大サソリ</a></b></td>
+<td>0</td>
+<td>13
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">s</span> <a href="http://crawl.chaosforge.org/File:Redback.png" data-untr="1" class="image"><img alt="Redback.png" src="img/Redback.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Redback" data-untr="1" title="Redback">背赤蜘蛛</a></b></td>
+<td>0</td>
+<td>18
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brown">s</span> <a href="http://crawl.chaosforge.org/File:Culicivora.png" data-untr="1" class="image"><img alt="Culicivora.png" src="img/Culicivora.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Culicivora" data-untr="1" title="Culicivora">クリシボラ</a></b></td>
+<td>0</td>
+<td>18
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">s</span> <a href="http://crawl.chaosforge.org/File:Jumping_spider.png" data-untr="1" class="image"><img alt="Jumping spider.png" src="img/Jumping_spider.png" width="32" height="32" /></a> <b><a href="Jumping_spider.html" title="Jumping spider">飛びつき蜘蛛</a></b></td>
+<td>6</td>
+<td>27
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightmagenta">s</span> <a href="http://crawl.chaosforge.org/File:Tarantella.png" data-untr="1" class="image"><img alt="Tarantella.png" src="img/Tarantella.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Tarantella" data-untr="1" title="Tarantella">巨大タランチュラ</a></b></td>
+<td>6</td>
+<td>27
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-white">s</span> <a href="http://crawl.chaosforge.org/File:Wolf_spider.png" data-untr="1" class="image"><img alt="Wolf spider.png" src="img/Wolf_spider.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Wolf_spider" data-untr="1" title="Wolf spider">大喰い蜘蛛</a></b></td>
+<td>13</td>
+<td>27
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-lightgray">w</span> <a href="http://crawl.chaosforge.org/File:Steelbarb_worm.png" data-untr="1" class="image"><img alt="Steelbarb worm.png" src="img/Steelbarb_worm.png" width="32" height="32" /></a> <b><a href="Steelbarb_worm.html" title="Steelbarb worm">鋼棘ワーム</a></b></td>
+<td>13</td>
+<td>27
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightgreen">s</span> <a href="http://crawl.chaosforge.org/File:Demonic_crawler.png" data-untr="1" class="image"><img alt="Demonic crawler.png" src="img/Demonic_crawler.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Demonic_crawler" data-untr="1" title="Demonic crawler">ムカデの悪魔</a></b></td>
+<td>18</td>
+<td>27
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightcyan">s</span> <a href="http://crawl.chaosforge.org/File:Broodmother.png" data-untr="1" class="image"><img alt="Broodmother.png" src="img/Broodmother.png" width="32" height="32" /></a> <b><a href="Broodmother.html" title="Broodmother">母蜘蛛</a></b></td>
+<td>21</td>
+<td>27
+</td></tr></table>
+<p>信仰する<a href="God.html" title="God">神</a>が嫌うモンスターは、別のモンスターに置き換わる。
+</p><p>呼び出したモンスターがとどまる時間は 27〜171 ターンで、発動のスキルには左右されない。
+</p><p>まだ拘束されていない敵対モンスターに、<code>36 + 2 * Evocations</code>&#160;% の確率で蜘蛛の巣をかける。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>発動のスキルが低いうちは、蜘蛛の袋から出てくるのはたいてい弱い味方だ……とはいえ肉の盾としては役に立つし、序盤なら<a href="http://crawl.chaosforge.org/Redback" data-untr="1" title="Redback">背赤蜘蛛</a>が 1、2 匹いるだけでもずいぶん助かる。発動のスキルが高くなれば、強力な味方を呼び出せるうえ、敵にほぼ確実に蜘蛛の巣をかける(つまり<a href="http://crawl.chaosforge.org/Net" data-untr="1" class="mw-redirect" title="Net">網</a>で捕らえる)ことができる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> で、蜘蛛の袋は作り直されて復活した。それより前は次のようだった。
+<ul><li>消耗品で、1 回のゲームで何個も見つかった。使うたびに 33% の確率で袋がなくなった。</li>
+<li>何も出てこないことがあった。発動のスキルを上げるとその確率は下がった。</li>
+<li>出てくるモンスターの顔ぶれがかなり違っていた。</li></ul></li>
+<li>蜘蛛の袋は <a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> で削除された。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、蜘蛛の袋はまとめて持てなかった。その代わり、袋 1 つに 5〜15 回分の使用回数があった。</li>
+<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> より前は、発動のスキルが低いと<a href="http://crawl.chaosforge.org/Giant_mite" data-untr="1" title="Giant mite">巨大ダニ</a>、<a href="http://crawl.chaosforge.org/Spider" data-untr="1" title="Spider">巨大蜘蛛</a>、<a href="http://crawl.chaosforge.org/Trapdoor_spider" data-untr="1" title="Trapdoor spider">トタテグモ</a>を呼び出すことがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、蜘蛛の巣は敵を狙わずにランダムな場所に張られた。</li>
+<li>蜘蛛の袋は <a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> で追加された。</li></ul>
+<h3><span class="mw-headline" id="Old_Monster_List">旧版のモンスター一覧</span></h3>
+<table class="wikitable" style="text-align: center">
+<tr>
+<td>モンスター</td>
+<td>最小スキル</td>
+<td>最大スキル</td>
+<td>
+</td>
+<td>スキル 0</td>
+<td>スキル 3</td>
+<td>スキル 6</td>
+<td>スキル 9</td>
+<td>スキル 12
+</td>
+<td>スキル 15</td>
+<td>スキル 18</td>
+<td>スキル 21</td>
+<td>スキル 24</td>
+<td>スキル 27
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">B</span> <a href="http://crawl.chaosforge.org/File:Worker_ant.png" data-untr="1" class="image"><img alt="Worker ant.png" src="img/Worker_ant.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Worker_ant" data-untr="1" title="Worker ant">巨大アリ</a></b></td>
+<td>0</td>
+<td>13
+</td>
+<td></td>
+<td>16.67%</td>
+<td>15.18%</td>
+<td>7.66%</td>
+<td>1.79%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-white">B</span> <a href="http://crawl.chaosforge.org/File:Soldier_ant.png" data-untr="1" class="image"><img alt="Soldier ant.png" src="img/Soldier_ant.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Soldier_ant" data-untr="1" title="Soldier ant">兵隊アリ</a></b></td>
+<td>0</td>
+<td>13
+</td>
+<td></td>
+<td>83.33%</td>
+<td>84.82%</td>
+<td>52.68%</td>
+<td>21.54%</td>
+<td>7.53%</td>
+<td>1.48%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">s</span> <a href="http://crawl.chaosforge.org/File:Redback.png" data-untr="1" class="image"><img alt="Redback.png" src="img/Redback.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Redback" data-untr="1" title="Redback">背赤蜘蛛</a></b></td>
+<td>6</td>
+<td>19
+</td>
+<td></td>
+<td>0%</td>
+<td>0%</td>
+<td>39.66%</td>
+<td>57.92%</td>
+<td>56.7%</td>
+<td>33.41%</td>
+<td>12.25%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">s</span> <a href="http://crawl.chaosforge.org/File:Redback.png" data-untr="1" class="image"><img alt="Redback.png" src="img/Redback.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Redback" data-untr="1" title="Redback">背赤蜘蛛</a></b></td>
+<td>8</td>
+<td>27
+</td>
+<td></td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>18.75%</td>
+<td>28.69%</td>
+<td>36.07%</td>
+<td>33.04%</td>
+<td>18.21%</td>
+<td>12.53%</td>
+<td>11.76%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">s</span> <a href="http://crawl.chaosforge.org/File:Jumping_spider.png" data-untr="1" class="image"><img alt="Jumping spider.png" src="img/Jumping_spider.png" width="32" height="32" /></a> <b><a href="Jumping_spider.html" title="Jumping spider">飛びつき蜘蛛</a></b></td>
+<td>10</td>
+<td>27
+</td>
+<td></td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>7.09%</td>
+<td>22.28%</td>
+<td>28.57%</td>
+<td>22.49%</td>
+<td>15.48%</td>
+<td>14.53%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">s</span> <a href="http://crawl.chaosforge.org/File:Orb_spider.png" data-untr="1" class="image"><img alt="Orb spider.png" src="img/Orb_spider.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Orb_spider" data-untr="1" title="Orb spider">球体の蜘蛛</a></b></td>
+<td>12</td>
+<td>29
+</td>
+<td></td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>6.76%</td>
+<td>19.83%</td>
+<td>27.31%</td>
+<td>18.8%</td>
+<td>17.64%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightmagenta">s</span> <a href="http://crawl.chaosforge.org/File:Tarantella.png" data-untr="1" class="image"><img alt="Tarantella.png" src="img/Tarantella.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Tarantella" data-untr="1" title="Tarantella">巨大タランチュラ</a></b></td>
+<td>13</td>
+<td>29
+</td>
+<td></td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>6.31%</td>
+<td>19.86%</td>
+<td>23.93%</td>
+<td>22.45%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-white">s</span> <a href="http://crawl.chaosforge.org/File:Wolf_spider.png" data-untr="1" class="image"><img alt="Wolf spider.png" src="img/Wolf_spider.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Wolf_spider" data-untr="1" title="Wolf spider">大喰い蜘蛛</a></b></td>
+<td>15</td>
+<td>29
+</td>
+<td></td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>12.14%</td>
+<td>29.25%</td>
+<td>27.44%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">y</span> <a href="http://crawl.chaosforge.org/File:Ghost_moth.png" data-untr="1" class="image"><img alt="Ghost moth.png" src="img/Ghost_moth.png" width="32" height="32" /></a> <b><a href="Ghost_moth.html" title="Ghost moth">幽体蛾</a></b></td>
+<td>21</td>
+<td>27
+</td>
+<td></td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>0%</td>
+<td>6.17%
+</td></tr></table>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/evoke.cc#L378">evoke.cc:378</a> (0.32.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/evoke.cc#L346">evoke.cc:346</a> (0.32.1)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/evoke.cc#L314">evoke.cc:314</a> (0.32.1)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

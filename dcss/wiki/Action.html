@@ -18,7 +18,7 @@
 <div class="wiki">
 <p><i><a href="http://crawl.chaosforge.org/Dungeon_Crawl" data-untr="1" title="Dungeon Crawl">ダンジョンクロウル</a></i>はターン制のゲームだ。キャラクターが<b>行動</b>するたびに<b>ターンのカウンター</b>が 1 つ進み、行動と行動のあいだはゲームが止まっている。とはいえ、キャラクターやモンスターの動きが単純なターン数では測れないことには、すぐに気づくだろう。
 </p><p>キャラクターの行動にはそれぞれ<b>ディレイ</b>(delay)があり、<b>aut</b>(<b>a</b>rbitrary <b>u</b>nits of <b>t</b>ime、任意の時間単位)で測られる。そのターンのあいだにどれだけ時間が流れ、モンスターがどれだけ行動できるかは、このディレイで決まる。そのターンに行動しなかったモンスターも、次の行動に向けて時間を溜めている。
-</p><p>1 ターンにかかる標準の時間は 10 aut、つまり 1 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">decaAut</a> だ。実際にかかる時間は行動の種類によって違うが、<a href="Haste.html" title="Haste">加速</a>や<a href="http://crawl.chaosforge.org/Slow" data-untr="1" title="Slow">減速</a>、武器の<a href="Skill.html" title="Skill">スキル</a>などでも変わる。ほとんどの<a href="Species.html" title="Species">種族</a>と<a href="Monster.html" title="Monster">モンスター</a>は 1 decaAut で移動し、アイテムを使うのにかかる通常の時間も 1 decaAut だ。ただし、これよりずっと速い(または遅い)モンスターもいるので気をつけたい。
+</p><p>1 ターンにかかる標準の時間は 10 aut、つまり 1 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">decaAut</a> だ。実際にかかる時間は行動の種類によって違うが、<a href="Haste.html" title="Haste">加速</a>や<a href="Slow.html" title="Slow">減速</a>、武器の<a href="Skill.html" title="Skill">スキル</a>などでも変わる。ほとんどの<a href="Species.html" title="Species">種族</a>と<a href="Monster.html" title="Monster">モンスター</a>は 1 decaAut で移動し、アイテムを使うのにかかる通常の時間も 1 decaAut だ。ただし、これよりずっと速い(または遅い)モンスターもいるので気をつけたい。
 </p>
 <h2><span class="mw-headline" id="Players_get_their_turn_before_monsters">プレイヤーはモンスターより先に動く</span></h2>
 <p>プレイヤーは、モンスターの番が来る前に必ず行動をひとつ最後まで終える。たとえば武器を振るのに 2.0 decaAut かかるなら、まずプレイヤーが 2.0 ターンをまるごと使い、そのあとモンスターがまるまる 2.0 decaAut ぶん反撃してくる(武器の一振りでモンスターを倒せば、そのモンスターは動けない)。
@@ -30,7 +30,7 @@
 <p>ゲームは 1 aut より細かい時間を扱わない。ディレイに小数が出るモンスターは、重みつきで切り上げか切り捨てになる。計算上のディレイが 0.54 decaAut(5.4 aut)のモンスターは、40% の確率で 5 aut、60% の確率で 6 aut を行動に使う。自分の<a href="http://crawl.chaosforge.org/Weapon_speed" data-untr="1" title="Weapon speed">武器の速度</a>のように、ほかの半端なディレイにも同じ丸めがかかる。
 </p>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/0.31" data-untr="1" title="0.31">0.31</a> で<a href="http://crawl.chaosforge.org/Energy_randomisation" data-untr="1" title="Energy randomisation">エネルギーのランダム化</a>が復活したが、敵から離れる方向に移動するときだけに適用される。</li>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> で<a href="http://crawl.chaosforge.org/Energy_randomisation" data-untr="1" title="Energy randomisation">エネルギーのランダム化</a>が復活したが、敵から離れる方向に移動するときだけに適用される。</li>
 <li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、敵対するモンスターすべてに<a href="http://crawl.chaosforge.org/Energy_randomisation" data-untr="1" title="Energy randomisation">エネルギーのランダム化</a>がかかっていた。移動するとき、33% の確率で 1 aut の時間を得し、33% の確率で 1 aut 損した。</li></ul>
 </div>
 </main>

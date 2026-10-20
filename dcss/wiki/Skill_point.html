@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スキルポイント &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="スキルポイント(Skill point)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>スキルポイント <span class="en">Skill point</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Skill_point">Skill point</a>」(0.32 向け、2024-09-12 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Skill_point&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>スキルポイント</b>は<a href="Skill.html" title="Skill">スキル</a>のレベルを上げるのに使われる値で、<a href="http://crawl.chaosforge.org/XP" data-untr="1" class="mw-redirect" title="XP">XP</a> がそのまま使われるわけではない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#General_mechanics"><span class="tocnumber">1</span> <span class="toctext">全般的な仕組み</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Skill_costs"><span class="tocnumber">2</span> <span class="toctext">スキルのコスト</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="General_mechanics">全般的な仕組み</span></h2>
+<p>XP を得ると、それに見合った量のスキルポイントも得られ、訓練中のスキルに振り分けられる。XP に対するスキルポイントの比率は、そのキャラクターがこれまでに得た XP の合計(言い換えればスキルポイントの合計)によって変わる。ゲームの開始時にはおよそ 1:10 だが、少しずつ下がっていき、最終的に上限の 265:10 に達する。この上限にはほぼ必ず XL27 までに届く。この効果がとくに目立つのは<a href="Potion_of_experience.html" title="Potion of experience">経験の薬</a>を飲んだときで、序盤に飲むほうがスキルのレベルがずっと多く上がる。
+</p><p>どのスキルをどこまで上げるかが決まっていれば、上げる順番に関係なく、必要な XP の合計は変わらない。戦闘を 15、斧を 27 まで上げるつもりなら、
+</p>
+<ul><li>まず両方を 15 まで上げる、</li>
+<li>まず斧を 27 まで上げる、</li>
+<li>まず戦闘を 15 まで上げる、</li></ul>
+<p>のどれでも、かかる XP そのものは同じだ。最初のスキルは少ない XP で済むように思えるかもしれないが、序盤は<i>手に入る XP 自体が少ない</i>ことも忘れてはいけない。XP の比率が変わる仕組みがあるのはそのためだ。
+</p>
+<h2><span class="mw-headline" id="Skill_costs">スキルのコスト</span></h2>
+<p>下の表は、スキルを 0 から各レベルまで上げるのに、そのスキルへ振り分けなければならない<b>スキルポイント</b>の合計を示している。割合の列は、0 からそのレベルまで上げるのに必要な経験値が、レベル 27 まで上げるのに必要な経験値の何パーセントにあたるかを示す。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> <b>m</b> を押してスキルの画面を開くと、自分の各スキルの相対的なコストを確認できる。これは「基準コスト」の何倍かで表示される。基準コストとは、適性 +0 のスキルをレベル 0 から 1 に上げるのにかかるコストのことだ。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<table class="wikitable">
+<tr>
+<th> レベル </th>
+<th> 累計スキルポイント</th>
+<th> 割合 </th>
+<th> </th>
+<th> レベル </th>
+<th> 累計スキルポイント </th>
+<th> 割合 </th>
+<th> </th>
+<th> レベル </th>
+<th> 累計スキルポイント </th>
+<th> 割合
+</th></tr>
+<tr>
+<td> 1 </td>
+<td> 50 </td>
+<td> 0.2% </td>
+<td> </td>
+<td> 10 </td>
+<td> 2,775 </td>
+<td> 11.4% </td>
+<td> </td>
+<td> 19 </td>
+<td> 10,900 </td>
+<td> 44.8%
+</td></tr>
+<tr>
+<td> 2 </td>
+<td> 150 </td>
+<td> 0.6% </td>
+<td> </td>
+<td> 11 </td>
+<td> 3,375 </td>
+<td> 13.9% </td>
+<td> </td>
+<td> 20 </td>
+<td> 12,225 </td>
+<td> 50.3%
+</td></tr>
+<tr>
+<td> 3 </td>
+<td> 300 </td>
+<td> 1.2% </td>
+<td> </td>
+<td> 12 </td>
+<td> 4,050 </td>
+<td> 16.6% </td>
+<td> </td>
+<td> 21 </td>
+<td> 13,650 </td>
+<td> 56.1%
+</td></tr>
+<tr>
+<td> 4 </td>
+<td> 500 </td>
+<td> 2.1% </td>
+<td> </td>
+<td> 13 </td>
+<td> 4,800 </td>
+<td> 19.7% </td>
+<td> </td>
+<td> 22 </td>
+<td> 15,175 </td>
+<td> 62.4%
+</td></tr>
+<tr>
+<td> 5 </td>
+<td> 750 </td>
+<td> 3.1% </td>
+<td> </td>
+<td> 14 </td>
+<td> 5,625 </td>
+<td> 23.1% </td>
+<td> </td>
+<td> 23 </td>
+<td> 16,800 </td>
+<td> 69.1%
+</td></tr>
+<tr>
+<td> 6 </td>
+<td> 1,050 </td>
+<td> 4.3% </td>
+<td> </td>
+<td> 15 </td>
+<td> 6,525 </td>
+<td> 26.8% </td>
+<td> </td>
+<td> 24 </td>
+<td> 18,525 </td>
+<td> 76.2%
+</td></tr>
+<tr>
+<td> 7 </td>
+<td> 1,400 </td>
+<td> 5.8% </td>
+<td> </td>
+<td> 16 </td>
+<td> 7,500 </td>
+<td> 30.8% </td>
+<td> </td>
+<td> 25 </td>
+<td> 20,350 </td>
+<td> 83.7%
+</td></tr>
+<tr>
+<td> 8 </td>
+<td> 1,800 </td>
+<td> 7.4% </td>
+<td> </td>
+<td> 17 </td>
+<td> 8,550 </td>
+<td> 35.1% </td>
+<td> </td>
+<td> 26 </td>
+<td> 22,275 </td>
+<td> 91.6%
+</td></tr>
+<tr>
+<td> 9 </td>
+<td> 2,250 </td>
+<td> 9.2% </td>
+<td> </td>
+<td> 18 </td>
+<td> 9,675 </td>
+<td> 39.8% </td>
+<td> </td>
+<td> 27 </td>
+<td> 24,325 </td>
+<td> 100%
+</td></tr></table>
+<p>この値は、さらにキャラクターの適性によって調整される。適性が <b>n</b> なら、そのスキルの適性が 0 のキャラクターに比べて 2^(-n/4) 倍の XP で上がる。この倍率をまとめたのが下の表だ。
+</p>
+<table class="wikitable">
+<tr>
+<th> 適性
+</th>
+<td> +11 </td>
+<td> +10 </td>
+<td> +9 </td>
+<td> +8 </td>
+<td> +7 </td>
+<td> +6 </td>
+<td> +5 </td>
+<td> +4 </td>
+<td> +3 </td>
+<td> +2 </td>
+<td> +1 </td>
+<td> +0 </td>
+<td> -1 </td>
+<td> -2 </td>
+<td> -3 </td>
+<td> -4 </td>
+<td> -5
+</td></tr>
+<tr>
+<th> XP の倍率
+</th>
+<td> 6.73 </td>
+<td> 5.66 </td>
+<td> 4.76 </td>
+<td> 4.0 </td>
+<td> 3.36 </td>
+<td> 2.83 </td>
+<td> 2.38 </td>
+<td> 2.0 </td>
+<td> 1.68 </td>
+<td> 1.41 </td>
+<td> 1.19 </td>
+<td> 1.0 </td>
+<td> 0.84 </td>
+<td> 0.71 </td>
+<td> 0.59 </td>
+<td> 0.5 </td>
+<td> 0.42
+</td></tr></table>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>まったく無い。以前の learndb のスキルポイントの項目には「これが何なのかを知る必要があるのも、気にする必要があるのも galehar [開発者] だけだ」と書かれていた。あまり参考になる説明ではないが、言っていることは正しい。スキルポイントはプレイヤーが操作できるものではなく、自分に有利になるように使うこともできない。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、スキルのレベルが高いほど必要なスキルポイントも多かった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/skills.cc#L2312">skills.cc:2312</a> (0.32.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.0/crawl-ref/source/skills.cc#L185">skills.cc:185</a> (0.32.0)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

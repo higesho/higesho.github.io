@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>投げ網 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="投げ網(Throwing net)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>投げ網 <span class="en">Throwing net</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Throwing_net">Throwing net</a>」(0.32 向け、2025-03-28 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Throwing_net&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>に対応して<b>いない可能性がある</b>。</i></div>
+<div>
+<table class="prettytable">
+
+<tr>
+<th align="left"> 名前
+</th>
+<td> 投げ網
+</td></tr>
+<tr>
+<th align="left"> 射撃武器
+</th>
+<td> <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</td></tr>
+<tr>
+<th align="left"> 基本ダメージ
+</th>
+<td> 0
+</td></tr>
+<tr>
+<th align="left"> <a href="http://crawl.chaosforge.org/Weapon_speed" data-untr="1" title="Weapon speed">基本ディレイ</a>(%)
+</th>
+<td> 10(100%)
+</td></tr>
+<tr>
+<th align="left"> <a href="http://crawl.chaosforge.org/Minimum_delay" data-untr="1" class="mw-redirect" title="Minimum delay">最小ディレイ</a>
+</th>
+<td> スキル 6 で 7
+</td></tr></table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 縁に重りをつけて縄を編み合わせた網。もとは狩人が獲物を絡め取り、捕らえるために使っていたが、やがて戦場や剣闘士の闘技場でも使われるようになったのは当然の成り行きだ。もがく犠牲者は、生き延びられれば、いずれ網を壊して抜け出せる。
+<hr />
+<p>「おびえたものの顔つき、<br />網の中に座りこんで!」
+</p><p>――エドナ・セント・ヴィンセント・ミレイ「年が老いるとき」(1917年)
+</p>
+</td></tr></table>
+<p><b>投げ網</b>は<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>用の道具で、直接のダメージは与えないが、敵を<a href="Constriction.html" title="Constriction">絡めとって</a>その<a href="http://crawl.chaosforge.org/Ev" data-untr="1" class="mw-redirect" title="Ev">回避</a>を下げ、<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>を可能にする。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Mulching"><span class="tocnumber">1.1</span> <span class="toctext">網が壊れる仕組み</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Sources"><span class="tocnumber">2</span> <span class="toctext">入手元</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>網は敵を絡めとるのに使える。網が当たると、次の効果がある。
+</p>
+<ul><li>対象の <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> が下がる。
+<ul><li>プレイヤーの EV は 2 で割られる。</li>
+<li>モンスターの EV は <code>2 + <a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a></code> で割られる(極小が 1、小さいが 2、という具合)。</li></ul></li>
+<li>体を使った移動(<a href="Barachi.html" title="Barachi">跳躍</a>のような能力も含む)、近接攻撃、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>の使用ができなくなる。</li>
+<li>モンスターは下位の<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>を受けるようになる。</li></ul>
+<p><a href="Insubstantial.html" title="Insubstantial">実体のない</a>生き物と<a href="Amorphous.html" title="Amorphous">不定形</a>の生き物には網が効かない。<a href="http://crawl.chaosforge.org/Unrandart" data-untr="1" class="mw-redirect" title="Unrandart">固定アーティファクト</a>の<a href="Slick_slippers.html" title="Slick slippers">つるつるのスリッパ</a>を履いたプレイヤーにも効かない。
+</p><p>網にかかった生き物はもがいて抜け出そうとし、そのうち網を壊す。<a href="Blink.html" title="Blink">瞬間移動</a>や<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>、一部の能力(<a href="Ru.html" title="Ru">ルー</a>の「力の解放」や<a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a>の「聖域」など)でも網から逃れられる。
+</p><p>ほかの<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>用の道具と違い、モンスターの投げ網は無限には出てこない。
+</p>
+<h3><span class="mw-headline" id="Mulching">網が壊れる仕組み</span></h3>
+<p>網にかかった者は、移動や近接攻撃をしようとするともがく。そのうち網が壊れて自由になる。
+</p><p>もがくたびに、網に <code>1d4</code> の「ダメージ」が入る。合計 8 以上のダメージを受けると網は壊れる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> 網にかかった者が死んだり、ほかの手段(テレポートなど)で逃れたりした場合は、<code>damage in 9</code> の確率で網が壊れる。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p><p><a href="http://crawl.chaosforge.org/Apportation" data-untr="1" title="Apportation">収拾</a>の呪文を使えば、モンスターにかかったままの網でも回収できる。このとき、モンスターが死んだり逃れたりしたときと同じように網が壊れることがある。自分にかかっている網は収拾できない。
+</p>
+<h2><span class="mw-headline" id="Sources">入手元</span></h2>
+<p><a href="http://crawl.chaosforge.org/Gladiator" data-untr="1" title="Gladiator">闘士</a>は投げ網をひと山持って始まる。迷宮のあちこちにランダムな拾い物としても落ちている。<a href="Gnoll_(monster).html" title="Gnoll (monster)">ノール</a>や<a href="http://crawl.chaosforge.org/List_of_merfolk" data-untr="1" title="List of merfolk">水棲の民</a>も持っているが、たいていはまずあなたに投げつけてくる。
+</p><p><a href="http://crawl.chaosforge.org/Net_trap" data-untr="1" title="Net trap">網の罠</a>は主に<a href="http://crawl.chaosforge.org/Zot" data-untr="1" class="mw-redirect" title="Zot">ゾットの領域</a>:5 と<a href="The_Tomb.html" title="The Tomb">太古の霊廟</a>にあり、あなたの上に網を落としてくることがあるが、この網は回収できない。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>網は、モンスターから逃げるとき、敵に急所攻撃をするとき、危ない戦いで優位に立ちたいときに使える。かなり珍しいので、使いどころはよく考えよう。網も外れることがあるのを忘れずに。
+</p><p>網が効かないモンスターはほとんどいない。<a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウム</a>や<a href="Demon.html#Archdemons" title="Demon">地獄</a>の君主のような「ボス」でさえ網にかけられる。
+</p><p>敵の網にも気をつけよう。迷宮:2 に入るとすぐに、網を持った<a href="Gnoll_(monster).html" title="Gnoll (monster)">ノール</a>が出てくるようになる。網は敵の手にあっても、こちらが使うときと同じくらい厄介だ。ただでさえまずい状況が、網ひとつでさらに危なくなる。
+</p>
+<table class="prettytable" style=" text-align: center">
+<tr>
+<th> 投げ網
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/File:Throwing_net.png" data-untr="1" class="image"><img alt="Throwing net.png" src="img/Throwing_net.png" width="32" height="32" /></a>
+</td></tr></table>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、体格が<a href="http://crawl.chaosforge.org/Size#Giant" data-untr="1" title="Size">巨大</a>な生き物には網が効かなかったが、ジェリーには効いた。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、<a href="http://crawl.chaosforge.org/Net_trap" data-untr="1" title="Net trap">網の罠</a>が落とした網を回収できた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、網から逃れる仕組みがもっと複雑だった。網にかかった生き物は、網を引き裂くか、網からすり抜けるかして逃れた。体格が<a href="http://crawl.chaosforge.org/Size#Small" data-untr="1" title="Size">小さく</a>、<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">回避</a>が高く、(プレイヤーなら)<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>が高いほど、すり抜けやすかった。逆に、体格が<a href="http://crawl.chaosforge.org/Size#Big" data-untr="1" title="Size">大きく</a>、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力の高い</a>生き物や<a href="Berserk.html" title="Berserk">バーサーク中</a>の生き物ほど、網を引き裂きやすかった。プレイヤーの場合、近くにいる生き物が緊張感を加え、網から逃れるのも網を壊すのも速くなった。刃物の武器、特に<a href="http://crawl.chaosforge.org/Flaming" data-untr="1" title="Flaming">火炎</a>や<a href="http://crawl.chaosforge.org/Vorpal" data-untr="1" title="Vorpal">ヴォーパル</a>の武器や、<a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a>は網を切り裂くのに向いていた。また、混乱した生き物は(プレイヤーも含めて)網の中でもがいても何も起こらないことがあった。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、飛行している生き物は、ふつうの外れる確率とは別に、投げつけられた網を 66.6% の確率でかわした。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、飛行している相手には投げ網がまったく効かなかった。また、投げ網はすぐに壊れるのではなく、凝った劣化の過程を経てから最後にばらばらになった。さらに、投げ網を使えるのは体格が中くらい以上のキャラクターだけだった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/traps.cc#L884">traps.cc:884</a> (0.30.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/traps.h#L17">traps.h:17</a> (0.30.0)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/traps.cc#L949">traps.cc:949</a> (0.30.0)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Weapon.html" title="Weapon">武器</a>
+</th></tr>
+<tr>
+<th> <a href="Axes.html" title="Axes">斧</a>
+</th>
+<td> <a href="Battleaxe.html" title="Battleaxe">バトルアックス</a> • <a href="http://crawl.chaosforge.org/Broad_axe" data-untr="1" title="Broad axe">ブロードアックス</a> • <a href="http://crawl.chaosforge.org/Executioner%27s_axe" data-untr="1" title="Executioner&#39;s axe">処刑人の斧</a> • <a href="http://crawl.chaosforge.org/Hand_axe" data-untr="1" title="Hand axe">ハンドアックス</a> • <a href="War_axe.html" title="War axe">ウォーアックス</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Maces_%26_Flails" data-untr="1" title="Maces &amp; Flails">鈍器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Club" data-untr="1" title="Club">棍棒</a> • <a href="http://crawl.chaosforge.org/Demon_whip" data-untr="1" title="Demon whip">悪魔の鞭</a> • <a href="http://crawl.chaosforge.org/Dire_flail" data-untr="1" title="Dire flail">大型フレイル</a> • <a href="http://crawl.chaosforge.org/Eveningstar" data-untr="1" title="Eveningstar">イブニングスター</a> • <a href="http://crawl.chaosforge.org/Flail" data-untr="1" title="Flail">フレイル</a> • <a href="http://crawl.chaosforge.org/Giant_club" data-untr="1" title="Giant club">巨大棍棒</a> • <a href="http://crawl.chaosforge.org/Giant_spiked_club" data-untr="1" title="Giant spiked club">釘つき巨大棍棒</a> • <a href="Great_mace.html" title="Great mace">大型メイス</a> • <a href="http://crawl.chaosforge.org/Mace" data-untr="1" title="Mace">メイス</a>(<a href="Hammer.html" title="Hammer">ハンマー</a>) • <a href="Morningstar.html" title="Morningstar">モーニングスター</a> • <a href="http://crawl.chaosforge.org/Sacred_scourge" data-untr="1" title="Sacred scourge">聖なる鞭</a> • <a href="http://crawl.chaosforge.org/Whip" data-untr="1" title="Whip">鞭</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Long_Blades" data-untr="1" title="Long Blades">長剣</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Demon_blade" data-untr="1" title="Demon blade">悪魔の刃</a> • <a href="http://crawl.chaosforge.org/Double_sword" data-untr="1" title="Double sword">ダブルソード</a> • <a href="http://crawl.chaosforge.org/Eudemon_blade" data-untr="1" title="Eudemon blade">悪魔祓いの刃</a> • <a href="http://crawl.chaosforge.org/Falchion" data-untr="1" title="Falchion">ファルシオン</a> • <a href="http://crawl.chaosforge.org/Great_sword" data-untr="1" title="Great sword">グレートソード</a> • <a href="http://crawl.chaosforge.org/Long_sword" data-untr="1" title="Long sword">ロングソード</a> • <a href="http://crawl.chaosforge.org/Scimitar" data-untr="1" title="Scimitar">シミター</a> • <a href="http://crawl.chaosforge.org/Triple_sword" data-untr="1" title="Triple sword">トリプルソード</a>
+</td></tr>
+<tr>
+<th> <a href="Polearms.html" title="Polearms">長柄武器</a>
+</th>
+<td> <a href="Bardiche.html" title="Bardiche">バルディッシュ</a> • <a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a> • <a href="http://crawl.chaosforge.org/Glaive" data-untr="1" title="Glaive">グレイブ</a> • <a href="http://crawl.chaosforge.org/Halberd" data-untr="1" title="Halberd">ハルバード</a>(<a href="http://crawl.chaosforge.org/Scythe" data-untr="1" title="Scythe">大鎌</a>) • <a href="Partisan.html" title="Partisan">パルチザン</a> • <a href="Spear.html" title="Spear">スピア</a> • <a href="http://crawl.chaosforge.org/Trident" data-untr="1" title="Trident">トライデント</a> • <a href="http://crawl.chaosforge.org/Trishula" data-untr="1" title="Trishula">トリシューラ</a>
+</td></tr>
+<tr>
+<th> <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Arbalest" data-untr="1" title="Arbalest">アーバレスト</a> • <a href="Hand_cannon.html" title="Hand cannon">ハンドキャノン</a> • <a href="http://crawl.chaosforge.org/Longbow" data-untr="1" title="Longbow">ロングボウ</a> • <a href="http://crawl.chaosforge.org/Orcbow" data-untr="1" title="Orcbow">オークの弓</a> • <a href="http://crawl.chaosforge.org/Shortbow" data-untr="1" title="Shortbow">ショートボウ</a> • <a href="Sling.html" title="Sling">スリング</a> • <a href="http://crawl.chaosforge.org/Triple_crossbow" data-untr="1" title="Triple crossbow">トリプルクロスボウ</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Dagger" data-untr="1" title="Dagger">ダガー</a> • <a href="Quick_blade.html" title="Quick blade">クイックブレード</a> • <a href="http://crawl.chaosforge.org/Rapier" data-untr="1" title="Rapier">レイピア</a> • <a href="http://crawl.chaosforge.org/Short_sword" data-untr="1" title="Short sword">ショートソード</a>
+</td></tr>
+<tr>
+<th> <a href="Staves.html" title="Staves">棒術</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Lajatang" data-untr="1" title="Lajatang">ラジャタン</a> • <a href="Magical_staff.html" title="Magical staff">魔法の杖</a> • <a href="http://crawl.chaosforge.org/Quarterstaff" data-untr="1" title="Quarterstaff">六尺棒</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Boomerang" data-untr="1" title="Boomerang">ブーメラン</a> • <a href="Dart.html" title="Dart">ダーツ</a> • <a href="http://crawl.chaosforge.org/Javelin" data-untr="1" title="Javelin">ジャベリン</a> • <a href="Large_rock.html" title="Large rock">大岩</a> • <a href="Stone.html" title="Stone">石</a> • <a class="mw-selflink selflink">投げ網</a>
+</td></tr></table>
+</center>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

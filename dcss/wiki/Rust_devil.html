@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>錆の悪魔 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="錆の悪魔(Rust devil)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>錆の悪魔 <span class="en">Rust devil</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Rust_devil">Rust devil</a>」(0.32 向け、2024-11-20 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Rust_devil&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<div>
+<table class="prettytable" style=" text-align:left">
+<tr>
+<th colspan="2">錆の悪魔&#8195;<span class="nhsym clr-brown">4</span>&#8195;<a href="http://crawl.chaosforge.org/File:Rust_devil.png" data-untr="1" class="image"><img alt="Rust devil.png" src="img/Rust_devil.png" width="32" height="32" /></a>
+</th></tr>
+<tr>
+<th style="width:80px"> <a href="Hit_points.html" title="Hit points">HP</a>
+</th>
+<td style="width:150px"> 29-59
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Hit_dice" data-untr="1" title="Hit dice">HD</a>
+</th>
+<td> 8
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/XP" data-untr="1" class="mw-redirect" title="XP">XP</a>
+</th>
+<td> 455
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Monster_speed" data-untr="1" title="Monster speed">速度</a>
+</th>
+<td> 10
+</td></tr>
+<tr>
+<th> <a href="Armour_class.html" title="Armour class">AC</a>
+</th>
+<td> 10
+</td></tr>
+<tr>
+<th> <a href="Evasion.html" title="Evasion">EV</a>
+</th>
+<td> 8
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Willpower" data-untr="1" title="Willpower">意志力</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Category:Will%2B%2B_monsters" data-untr="1" title="Category:Will++ monsters">60</a>
+</td></tr>
+<tr>
+<th> 攻撃<sup>1</sup>
+</th>
+<td> 12(<a href="http://crawl.chaosforge.org/Attack_type" data-untr="1" title="Attack type">打撃</a>: <a href="Attack_flavour.html" title="Attack flavour">腐食</a>)
+<p><br />
+</p>
+</td></tr>
+<tr>
+<th> <a href="Resistance.html" title="Resistance">耐性</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Fire" data-untr="1" title="Fire">rF+++</a><br /><a href="http://crawl.chaosforge.org/Cold" data-untr="1" title="Cold">rC+</a><br /><a href="http://crawl.chaosforge.org/Electricity" data-untr="1" title="Electricity">rElec</a><br /><a href="Poison.html" title="Poison">rPois+</a><br /><a href="http://crawl.chaosforge.org/Miasma" data-untr="1" class="mw-redirect" title="Miasma">rMiasma</a><br /><a href="http://crawl.chaosforge.org/Negative_energy" data-untr="1" title="Negative energy">rN+++</a><br /><a href="http://crawl.chaosforge.org/Torment" data-untr="1" title="Torment">rTorm</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Vulnerability" data-untr="1" title="Vulnerability">弱点</a>
+</th>
+<td> <a href="Holy.html" title="Holy">神聖</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Habitat" data-untr="1" title="Habitat">生息地</a>
+</th>
+<td> 陸上
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Monster_intelligence" data-untr="1" title="Monster intelligence">知能</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Category:Human_intelligence" data-untr="1" title="Category:Human intelligence">人間並み</a>
+</td></tr>
+<tr>
+<th> <a href="Item_usage.html" title="Item usage">使用</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Category:Open_doors" data-untr="1" title="Category:Open doors">扉を開ける</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Holiness" data-untr="1" title="Holiness">分類</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Category:Demonic_holiness" data-untr="1" title="Category:Demonic holiness">悪魔</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Category:Medium_monsters" data-untr="1" title="Category:Medium monsters">中くらい</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Type" data-untr="1" title="Type">種類</a>
+</th>
+<td> 錆の悪魔、錆の悪魔
+</td></tr>
+<tr>
+<th> フラグ
+</th>
+<td> <a href="Evil.html" title="Evil">邪悪</a>
+</td></tr></table>
+</div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 錆の浮いた金属の肌を持つ、おぞましい人型の姿をしたもので、触れるものすべてに腐食と朽ちをもたらす。
+</td></tr></table>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p><b>錆の悪魔</b>は<a href="http://crawl.chaosforge.org/Tier-4_demon" data-untr="1" class="mw-redirect" title="Tier-4 demon">4級</a>の<a href="Demon.html" title="Demon">悪魔</a>で、いくつもの耐性を持ち、物理攻撃もそこそこ強い。たいていの悪魔ほどの威圧感はないが、本当に怖いのは攻撃で<a href="http://crawl.chaosforge.org/Corrosion" data-untr="1" class="mw-redirect" title="Corrosion">腐食</a>させてくるところだ。武器の効き目が大きく落ち、防具も弱くなってしまう。<a href="http://crawl.chaosforge.org/Vestibule_of_Hell" data-untr="1" class="mw-redirect" title="Vestibule of Hell">地獄の入り口</a>と<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>ではよく見かけ、それより前の場所でもまれに出てくる。
+</p>
+<h2><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Corrosion_resistance" data-untr="1" class="mw-redirect" title="Corrosion resistance">腐食への耐性</a>があれば、受ける腐食の重なりが半分になる。</li>
+<li>早い段階で出会った場合、級のわりに AC も EV もそこそこ高いので、守りを貫ける攻撃を使おう。ただし<a href="http://crawl.chaosforge.org/Fire" data-untr="1" title="Fire">火炎</a>はまったく効かず、<a href="http://crawl.chaosforge.org/Cold" data-untr="1" title="Cold">冷気</a>と<a href="http://crawl.chaosforge.org/Electricity" data-untr="1" title="Electricity">電撃</a>のダメージにも耐性がある点には気をつけること。
+<ul><li>ゲームの後半で出会ったなら十分に弱いので、しっかり準備のできたキャラクターなら、たいてい腐食の一撃を受ける前に倒せる。ただ、ほかの敵の相手で手一杯のときに取りつかれないよう用心しよう。<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>は、ひどく腐食した状態でいたい場所ではない。</li>
+<li>錆の悪魔自身は酸のダメージにも腐食にも耐性がないので、<a href="http://crawl.chaosforge.org/Wand_of_acid" data-untr="1" title="Wand of acid">強酸のワンド</a>で相手をするのがとても有効だ。</li></ul></li>
+<li>攻撃に追加の酸ダメージはない。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<p>錆の悪魔は <a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> で、<a href="http://crawl.chaosforge.org/Iron_devil" data-untr="1" title="Iron devil">鉄の悪魔</a>に代わって追加された。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
