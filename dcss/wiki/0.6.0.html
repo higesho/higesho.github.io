@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.6.0 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.6.0(0.6.0)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.6.0 <span class="en">0.6.0</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.6.0">0.6.0</a>」(対象の版の記載なし、2012-12-21 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.6.0&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="http://crawl.chaosforge.org/Crawl" data-untr="1" class="mw-redirect" title="Crawl">Crawl</a> の過去のリリースについてのものだ。最新版を含むほかのバージョンについては、<a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を参照。</i></div>
+<p><b>0.6.0</b> は <i>Dungeon Crawl Stone Soup</i> の古いバージョンで、2010年3月27日にリリースされた。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Release_notes"><span class="tocnumber">1</span> <span class="toctext">リリースノート</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#0.6_Highlights"><span class="tocnumber">1.1</span> <span class="toctext">0.6 の主な変更</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Gods"><span class="tocnumber">1.2</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Levels"><span class="tocnumber">1.3</span> <span class="toctext">階層</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Ranged_combat"><span class="tocnumber">1.4</span> <span class="toctext">遠隔戦闘</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Items"><span class="tocnumber">1.5</span> <span class="toctext">アイテム</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Monsters"><span class="tocnumber">1.6</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Characters"><span class="tocnumber">1.7</span> <span class="toctext">キャラクター</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Interface:_Dungeon_exploration"><span class="tocnumber">1.8</span> <span class="toctext">インターフェース: 迷宮の探索</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Interface:_Other"><span class="tocnumber">1.9</span> <span class="toctext">インターフェース: そのほか</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Spells"><span class="tocnumber">1.10</span> <span class="toctext">呪文</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Tiles"><span class="tocnumber">1.11</span> <span class="toctext">タイル版</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Options"><span class="tocnumber">1.12</span> <span class="toctext">オプション</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Major_bug_fixes"><span class="tocnumber">1.13</span> <span class="toctext">主なバグ修正</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Technical_improvements"><span class="tocnumber">1.14</span> <span class="toctext">技術的な改善</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">2</span> <span class="toctext">外部リンク</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Release_notes">リリースノート</span></h2>
+<p>Stone Soup 0.6 (20100326)
+</p><p>おことわり: ここに挙げるのは主な変更だけで、すべての変更を網羅したものではない。
+</p><p>0.5 のセーブデータとは互換性がない。
+</p><p>重要: バグトラッカーは <a rel="nofollow" class="external free" href="http://crawl.develz.org/mantis/">http://crawl.develz.org/mantis/</a> に移った。バグの報告や意見はすべてそちらへ。よろしく!
+</p><p>公式サイトは <a rel="nofollow" class="external free" href="http://crawl.develz.org/wordpress/">http://crawl.develz.org/wordpress/</a> に移った。お知らせや開発の変更点はそちらに載せる。
+</p><p>ソースコードは今も SourceForge に置いているが、バージョン管理には git を使うようになった。詳しくは docs/develop/git/quickstart.txt を参照。
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="0.6_Highlights">0.6 の主な変更</span></h3>
+<ul><li> 呪文の系統から<a href="Divinations.html" title="Divinations">占術</a>を削除した。</li>
+<li> 新しい神が3柱: <a href="Jiyva.html" title="Jiyva">ジーヴァ</a>、<a href="Fedhas_Madash.html" class="mw-redirect" title="Fedhas">フェダス</a>、<a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>。</li>
+<li> 迷宮の神の祭壇が、寺院ではなく迷宮:2〜9 に現れることがあるようになった。</li>
+<li> 水辺の新しい分岐: <a href="The_Shoals.html" title="The Shoals">浅瀬</a>。沼か蛇穴の代わりに現れることがある。</li>
+<li> AC/EV の仕組みを作り直した。特に、器用が EV に与える効果に上限がなくなった。(<i><a href="http://crawl.chaosforge.org/AC_nerf" data-untr="1" title="AC nerf">AC の弱体化</a>を参照</i>)</li>
+<li> 腕力が持てる重さに与える影響が、ずっと大きくなった。</li>
+<li> <a href="Slime_creature.html" title="Slime creature">スライム</a>と<a href="Ugly_thing.html" title="Ugly thing">醜きもの</a>が、より面白く、より危険になった。</li>
+<li> かっこいい新しいモンスター、ポータルヴォールト、矢弾のブランドがたくさん加わった。</li></ul>
+<h3><span class="mw-headline" id="Gods">神</span></h3>
+<ul><li> 新しい神: スライムの神ジーヴァ。</li>
+<li> 新しい神: 植物と菌類の神フェダス。</li>
+<li> 新しい神: 緩慢の神ケイブリアドス。</li>
+<li> 諸宗派の寺院の祭壇の数が、ランダムに6〜14になった。</li>
+<li> 諸宗派の寺院に祭壇のない迷宮の神は、迷宮:2〜9 に必ず祭壇が置かれる。</li>
+<li> 死体を捧げるのに、祈ってから切り分ける('pc')必要はなくなり、祈る('p')だけでよくなった。</li>
+<li> エリヴィロンは、祈りの最中に死体を解体しても気にしなくなった。</li>
+<li> ルゴヌの「階層の崩壊」は、1つの階で1回しか使えなくなった。</li>
+<li> キクバークッグァが苦痛への耐性を授け、死体と苦痛のブランドを与えるようになった。</li>
+<li> ルゴヌの「階層の崩壊」で出てくるモンスターは、すべて中立になった。</li>
+<li> シフ・ムーナは、呪文を1つも覚えていない者を信者として受け入れなくなった。</li>
+<li> 輝けるものの怒りによるダメージがずっと小さくなった。</li>
+<li> 輝けるものの光輪のせいで、プレイヤーが攻撃を受けやすくなることはなくなった。</li>
+<li> ヴェフメットが破壊呪文の MP コストを下げ、射程を延ばすようになった。</li>
+<li> 経験値の少ない信者に対しては、ゾムがアビスへの追放や敵対モンスターを手加減するようになった。</li>
+<li> ゾムが、死んだプレイヤーをまれに生き返らせることがある。</li>
+<li> イレデレンヌルから授かったしもべは、ゾンビの後ろにいても階段をついてくるようになった。</li>
+<li> ジンがプレイヤーを病気、腐敗、瘴気から守るようになった。</li>
+<li> ジンの「説法の朗読」は満腹度を消費しなくなり、モンスターをバーサークさせることもなくなった。</li></ul>
+<h3><span class="mw-headline" id="Levels">階層</span></h3>
+<ul><li> 新しい分岐: 浅瀬。ギリシャ神話を下敷きにしていて、水棲の民、潮の満ち引き、カメが登場する。ゲームごとに、浅瀬、蛇穴、沼のうち2つが選ばれて現れるようになった。</li>
+<li> 獣の棲み処を8階に縮めた。</li>
+<li> 獣の棲み処と沼の階の構造を、より面白くした。</li>
+<li> 新しいポータルヴォールト: 濠城、宝の埋蔵庫、火山、魔術師の研究所。</li>
+<li> 脱出ハッチの一部を、(1回きりの)縦穴に置き換えた。</li>
+<li> 新しい壁の種類「樹木」。2本並ぶと視線をさえぎる。</li>
+<li> プレイヤーがオーブを拾ったときに封じるのを、地獄の入り口ではなく地獄へのポータルにした。</li>
+<li> ユニークが出られる分岐の制限をゆるめた。</li>
+<li> スライムの穴ぐらには、機械仕掛けの罠を置かないようにした。</li>
+<li> 警報の罠は1〜3回しか作動しないようにした。</li>
+<li> HP が罠の最大ダメージより少ないときは、罠を解除する前に確認を求めるようにした。</li>
+<li> 地獄、巣、沼、宝物庫の最下層に、新しい別のバージョンを加えた。</li>
+<li> パンデモニウムの君主の階では、特別な告知が出るようになった。</li>
+<li> すべてのポータルヴォールトと、パンデモニウムの君主の階にマイルストーンを加えた。</li>
+<li> 新しいヴォールトが多数。</li></ul>
+<h3><span class="mw-headline" id="Ranged_combat">遠隔戦闘</span></h3>
+<ul><li> ハンドクロスボウとダーツのスキルを削除した。吹き矢筒は投擲スキルを使うようになった。</li>
+<li> 新しい職業: 秘術の射手。聖戦士、転位術師、狩人を組み合わせたものだ。</li>
+<li> 新しい矢弾の素材: 銀、鋼。</li>
+<li> 新しい矢弾のブランド: 離散、電撃、爆発、貫通、刈り取り。</li>
+<li> 新しい吹き矢針のブランド: 睡眠、減速、麻痺、混乱、凶暴化、病気。</li>
+<li> ブランドや強化値のついた矢弾は「ルーンが刻まれた」と表示される。</li>
+<li> ブランドをつける呪文が、射撃武器にも効くようになった。</li>
+<li> 射撃武器の護りのブランドは、EV+5 を与える回避のブランドに置き換えた。</li>
+<li> ネッソスを除き、火炎の射撃武器では毒の矢弾を使えなくなった。</li>
+<li> 毒の矢弾の呪文を削除し、毒の武器と一時的なブランドに任せることにした。</li>
+<li> 矢弾がまとまりやすくなった。</li>
+<li> ブランドのついた矢弾が壊れる確率を下げた。</li>
+<li> 毒の矢弾の効き目が強くなった。</li>
+<li> 殺戮の指輪が射撃武器にも効くようになった。</li>
+<li> 狩人の初期の矢弾は +1 になった。スリングを持って始める狩人は、バックラーも持っている。</li>
+<li> スリングは片手持ちになり、盾で攻撃が遅くならなくなった。</li>
+<li> 石の重さが3倍になった。</li></ul>
+<h3><span class="mw-headline" id="Items">アイテム</span></h3>
+<ul><li> 減速耐性の護符を削除した。</li>
+<li> 軽い防具と重い防具の区別をなくした。</li>
+<li> 静寂の巻物を加えた。</li>
+<li> 知性の薬と敏捷の薬を加えた。</li>
+<li> 反射の盾を加えた。</li>
+<li> 新しい護符: 守護霊、信仰、停滞。</li>
+<li> 明晰の護符が、意図しないバーサークを防ぐようになった。</li>
+<li> ゴールドドラゴンの鎧の AC を下げた。</li>
+<li> ランダムアーティファクトの武器には、必ずブランドがつくようになった。</li>
+<li> 早業のブランドがランダムにつくのは、アーティファクト、短剣、棒術の武器だけになった。</li>
+<li> ヴォーパルのブランドのダメージボーナスを、半分の12.5%にした。</li>
+<li> 防具の獲得で、胴以外の部位の防具が出やすくなった。</li>
+<li> 神によらない獲得は、すでに見たことのある防具や武器を避けるようになった。</li>
+<li> 呪文を専門とするキャラクターには、本の獲得で虎の巻が出なくなった。</li>
+<li> 獲得の選択肢にワンドを加えた。</li>
+<li> 耐性の薬の効果が長く続くようになった。</li>
+<li> 神罰の武器は呪われなくなった。</li>
+<li> 鞭と悪魔の鞭を改良した。悪魔の鞭は輝けるものに祝福してもらえる。</li>
+<li> 能力値の特性を1つしか持たないアーティファクトが出にくくなった。</li>
+<li> 電撃の武器は、水の中では放電するようになった。</li>
+<li> アーティファクトから、発動できる特性の一部(地図作成・テレポート)を削除した。</li>
+<li> +Lev のアイテムを外すと浮遊が解けるようになり、水の上では外せなくなった。</li>
+<li> 棍棒とスピアに、急所攻撃のほどほどのボーナスがつく。</li>
+<li> 棍棒で急所攻撃に成功すると、相手を気絶させることがある。</li>
+<li> 吸血の武器は満腹のときにしか構えられず、構えていると空腹になる。</li>
+<li> ミイラとグールは、吸血の武器で回復しない。</li>
+<li> 盾は +3 まで強化できる。</li>
+<li> ロッドは構えると鑑定され、鈍器スキルを使うようになった。</li>
+<li> ロッドの再充填は、プレイヤーの MP や、所持品に入っているかどうかに左右されなくなった。</li>
+<li> ロッドを強化すると、再充填が速くなる。</li>
+<li> 同じ種類の肉は、古さが近ければまとまるようにした。</li>
+<li> 深い水脈はアイテムを壊さなくなった。溶岩が壊すのは燃えるものだけになった。</li>
+<li> 一時的に歪曲のブランドがついた武器は、外してもダメージを受けたりアビスへ追放されたりしない。</li>
+<li> ルーン、ゾットのオーブ、使っていないゲリュオンの角笛は捧げられないようにした。</li>
+<li> 呪われていたアイテムには、自動で {was cursed} の銘を刻む。</li></ul>
+<h3><span class="mw-headline" id="Monsters">モンスター</span></h3>
+<ul><li> 浅瀬の新しいモンスター: 水棲の民・人魚、セイレーン、ハーピー、クラーケン、カメ、サメ。</li>
+<li> 新しいモンスター: 放出菌糸。巨大胞子から生まれ、巨大胞子を生み出す。</li>
+<li> そのほかの新しいモンスター: からかさキノコ、シクスファルハイ、黄金の眼球、大ヒル。</li>
+<li> 新しい植物: 藪。射撃は通り抜けるが、2つ以上並ぶと視線をさえぎる。</li>
+<li> (甚だしく)醜きものは、色によって耐性と攻撃の追加効果が決まるようになった。</li>
+<li> スライムは通路で合体し、より大きく強くなる。</li>
+<li> 幽体はすべて、また階段を使えるようになった。</li>
+<li> モンスターの説明に、魔法(あるいは「敵対的な魔法」)への耐性を表示するようにした。</li>
+<li> モンスターの経験値を、強さに見合ったまともな値にした。</li>
+<li> OOD(その深さには場違いな)モンスターは、その階で長いターンを過ごすまで群れで出てこなくなった。</li>
+<li> 1つの階で過ごす時間が長くなると、OOD のモンスターが急に出やすくなる。</li>
+<li> 地獄とゾットの領域を除く迷宮の主な分岐では、どの階でも、その階で過ごす時間が長くなるほどモンスターが湧きにくくなり、最後にはまったく湧かなくなる。</li>
+<li> オーブを持っての脱出の最中に湧く悪魔は、自分からプレイヤーを探しに来る。</li>
+<li> ヒドラは、攻撃中の相手が死ぬと、残りの攻撃を新しい相手に向ける。</li>
+<li> プレイヤーがテレポートで逃げると、モンスターはプレイヤーの位置を忘れるようにした。</li>
+<li> プレイヤーがしばらくその階を離れていると、モンスターは眠りやすくなる。</li>
+<li> モンスターの呪文「瞬間退避」と「瞬間接敵」を作り、使わせるようにした。</li>
+<li> 見つかってはいてもまだ開けられていない隠し扉は、頭の悪いモンスターには知られないままになる。</li>
+<li> モンスターが怪力の薬と狂戦士の薬を飲むことがある。</li>
+<li> 熊はバーサークする。心を持たないモンスターはバーサークできない。</li>
+<li> 混乱したモンスターは、でたらめな方向にワンドを振る。</li>
+<li> 巨大トカゲはクロコダイルという名前になり、水陸両生になった。</li>
+<li> 水に潜れるモンスターの数を大きく減らした。</li>
+<li> 潜っているモンスターは、狙うことも、光線を当てることもできなくなった。</li>
+<li> 潜っているモンスターは、攻撃できるときは必ず浮かび上がる。</li>
+<li> 水陸両生の生き物は、水の中で攻撃にボーナスを得なくなった。</li>
+<li> モンスターの透明感知は、透明なモンスターにはよく効き、透明なプレイヤーにはあまり効かなくなった。</li>
+<li> 飢えた幽霊が死体を食べる。</li>
+<li> 混乱したモンスターは、でたらめな方向にワンドを振る。</li>
+<li> 植物や菌類を殴っても、戦闘と徒手格闘はレベル1までしか上がらない。</li>
+<li> かっこいい新しいユニークがいくつか。</li>
+<li> ユニークのせりふがずっと多彩で面白くなった。</li>
+<li> いくつかのモンスターの記号を変えた。052_monster_glyphs.txt を参照。</li></ul>
+<h3><span class="mw-headline" id="Characters">キャラクター</span></h3>
+<ul><li> AC/EV の仕組みを作り直した。</li>
+<li> 甲冑・躱し身・隠密のスキルの上がり方は、装備の重さで決まる。</li>
+<li> 腕力が持てる重さに与える影響が、大きく増えた。</li>
+<li> 持てる重さの基本の値は、プレイヤーの種族の体重で決まる。</li>
+<li> 放浪者を作り直し、ずっと強くした。</li>
+<li> ミイラの初期の能力値を上げた。</li>
+<li> 初期の能力値と装備は、ランダムに決まらなくなった。</li>
+<li> レベルアップで増える HP と MP は、ランダムでなくなった。</li>
+<li> 多くの状態異常や効果の持続時間を、ターン数ではなく経過時間で数えるようにした。</li>
+<li> スキル適性をすべて10の倍数に丸めた。</li>
+<li> プレイヤーの属性耐性によるダメージ軽減を弱めた。</li>
+<li> 気をそらしている相手への急所攻撃が起きやすくなったが、そのダメージボーナスは下がった。</li>
+<li> 戦うと、与えたダメージ、武器の種類、ブランドに応じた騒音が出る。</li>
+<li> 瘴気への耐性を、負のエネルギーへの耐性から切り離した。腐敗への耐性があれば、病気と瘴気の両方にも耐性がある。</li>
+<li> 再生で空腹が進むのは、実際に回復している間だけになった。</li>
+<li> 盾の値 SH が、そのまま防御の確率を表すようになった。</li>
+<li> 地獄の業火は AC を無視するようになり、そのぶんダメージを抑えた。</li>
+<li> 魔法の地図作成の変異を、常に働くものに変えた。</li>
+<li> 焼夷の炎は透明化を打ち消す。</li>
+<li> 吸血鬼は、(c) の解体ではなく、(a) の特殊能力で血を瓶に詰めるようになった。</li>
+<li> バーサークすると、0.5 より前と同じく HP が150%になる。</li>
+<li> 時間の値があふれて一周するのを防ぐため、約2億ターンの時間制限を加えた。</li></ul>
+<h3><span class="mw-headline" id="Interface:_Dungeon_exploration">インターフェース: 迷宮の探索</span></h3>
+<ul><li> アビスで、視界の中のマスへ 'x' やマウスのクリックで自動移動できるようにした。</li>
+<li> 自動移動は角を斜めに突っ切らず、待ち伏せを避けようとする。</li>
+<li> 注意対象を、視界に基づくものに切り替えた。</li>
+<li> 視界の中の注意対象は 'xe' で設定・解除できる。</li>
+<li> 注意対象を概要画面('Ctrl-O' コマンド)に表示する。</li>
+<li> Ctrl-O で、まだ見つけていない分岐の入口がありうる範囲を一覧にする。</li>
+<li> 概要画面('Ctrl-O')に、すべての分岐の探索済みの深さを表示する。</li>
+<li> 自動で設定された注意対象は、もとになったモンスターがいなくなれば解除される。</li>
+<li> 迷宮そのものが出す危険な雲(「霧発生装置」)は、プレイヤーが見ると自動で注意対象になる。</li>
+<li> 隣にいないミミックは、休息や自動移動では安全なものとして扱う。</li>
+<li> 'X' の階のマップで '[' と ']' を押すと、ほかの階のマップを見られるようにした。</li>
+<li> 'X' のマップに、階の地形(階段、門、祭壇など)を一覧で表示する。</li>
+<li> 飢餓状態のときは、自動探索と休息をできないようにした。</li>
+<li> ラビリンスでは自動探索を使えなくした。</li></ul>
+<h3><span class="mw-headline" id="Interface:_Other">インターフェース: そのほか</span></h3>
+<ul><li> 仲間に向けてワンドを使っても確認が出なかったのを直した。</li>
+<li> 買い物リスト('$')を加えた。リストに入れたアイテムを買えるだけのお金がたまると知らせてくれる。</li>
+<li> 呪文の記憶の新しい画面では、持っている魔法書に載っている呪文がすべて一覧になる。</li>
+<li> 照らし出された透明なモンスターを倒すと、自動拾いがまたオンになる。</li>
+<li> 特に狙いをつけるときに、メッセージが大量に出るのを大きく減らした。</li>
+<li> &#160;!a の銘を加えた。このアイテムを構えて攻撃するときに確認を求める。</li>
+<li> 新しい Lua ファイル autofight.lua。いちばん近い敵を自動で攻撃できる。</li>
+<li> -TELE のときのテレポートの試みの一部を、ターンを失わずに取りやめるようにした。</li>
+<li> 食べ物が自動で 'e' の枠に、薬が 'q' や 'y' の枠に割り当てられることはなくなった。</li>
+<li> 蒸発の呪文を覚えていると、薬の説明に、その薬から出せる雲を表示する。</li>
+<li> 未鑑定のアーティファクトも「Ctrl-F artefact」で探せるようになった。</li>
+<li> 解体するときは、手袋を外すより解体用の道具に持ち替えるほうを優先する。</li>
+<li> Mac 版で、端末が対応していれば8色より多くの色を使えるようにした。</li>
+<li> Dvorak 配列用の vi キーの割り当てを用意した。dvorak_command_keys.txt を参照。</li>
+<li> vi キーを「Unknown command」で上書きできるようにした。no_vi_command_keys.txt を参照。</li>
+<li> 経験値プールの表示に、たまり具合に応じて色をつけた。</li>
+<li> docs/ ディレクトリに HTML 版の FAQ を加えた。</li></ul>
+<h3><span class="mw-headline" id="Spells">呪文</span></h3>
+<ul><li> 占術の系統を削除した。</li>
+<li> 新しい呪文: 破壊の爆裂球。目標を追いかけて爆発する。</li>
+<li> 静寂の範囲は、時間がたつにつれて狭くなる。</li>
+<li> 有益でない呪文を自分に向けて唱えようとすると、必ず確認を求める。</li>
+<li> 小動物の召喚で呼べるのは、1回につき最大2匹にした。</li>
+<li> 小動物の召喚で、緑ネズミやオレンジネズミは出なくなった。</li>
+<li> 毒素の矢のダメージのうち、耐性で防げない部分を60%から30%に減らした。</li>
+<li> 行き先をある程度指定できる瞬間移動を使うと、発光するようになった。</li>
+<li> 豊潤なる蒸留の結果は死体の種類だけで決まるようになり、乱数や腐り具合の影響はなくなった。死体が1つしかないときは確認も出ない。</li>
+<li> ツキマーの舞踏で動かす武器の強さは、呪文の威力と武器の重さで決まる。</li>
+<li> レイスの召喚を、打擲型の召喚呪文である招霊に置き換えた。</li>
+<li> 方向を指定する呪文のうち付与系でないものは、何かに当たると騒音を出す。</li>
+<li> 呪文を唱えると騒音が出る。</li>
+<li> 呪文の失敗の効果と地獄の効果も騒音を出す。</li>
+<li> 犬族のしもべの召喚で呼ぶ犬は、必ず味方になる。</li>
+<li> 凝結の盾の効果が上がった。</li>
+<li> 壁の透過の操作を改良した。</li>
+<li> ミイラもおぞましきものの召喚を唱えられるようにした。</li>
+<li> 氷の躯なら深い水脈を泳げる。溺れないよう気をつけて!</li>
+<li> 分解はほんとうに派手に散らかる。</li>
+<li> 呪文の説明に、今の威力、射程、満腹度のコストを表示する。</li>
+<li> 呪文のメニューで、役に立たない呪文や禁じられた呪文に色をつける。</li></ul>
+<h3><span class="mw-headline" id="Tiles">タイル版</span></h3>
+<ul><li> 所持品と、クリックで使える呪文の表示を切り替えるタブを加えた。</li>
+<li> ミニマップを Shift-Left-Click すると自動探索を始める。</li>
+<li> プレイヤーのタイルの編集画面('-' コマンド)を復活させた。</li>
+<li> データベースの検索(?/)を含め、ずっと多くのメニューでタイルを表示する。</li>
+<li> モンスターやプレイヤーを左クリックするときの、新しい修飾キー:
+<ul><li> Shift-Left-Click: セットした矢弾をモンスターに撃つ。</li>
+<li> Ctrl-Left-Click: 目標(モンスターかプレイヤー)に呪文を唱える。</li>
+<li> Alt-L-Click/Ctrl-Shift-L-Click: 目標(モンスターかプレイヤー)にワンドを振る。</li>
+<li> 使える場合は、リーチの届く範囲のモンスターを左クリックすると攻撃する。</li></ul></li>
+<li> プレイヤーのタイルに HP と MP のバーを加えた。</li>
+<li> バーサークしているモンスターを示すアイコンを加えた。</li>
+<li> 肉や死体を食べたときの効果を示すアイコンを加えた。</li>
+<li> 防具のエゴのアイコンを加えた。</li>
+<li> 正体のわかったミミックには、宙を舞う武器のアイコンを使い回す。</li>
+<li> モンスターや地形のタイルを多数、追加・改良した。</li>
+<li> 画面を描き直すときのアニメーションをいくつか加えた。</li>
+<li> ヴォールトで、地形やモンスターに独自のタイルを指定できる。</li>
+<li> コンパイルのときに、タイルの色を動的に変えられる。</li>
+<li> 同じ組のタイルの変種に、出やすさの重みをつけられる。</li>
+<li> 入力を待っているときは、マウスを重ねたときの説明をメッセージ欄に出さない。</li>
+<li> マップとデータベースを読み込む前に起動画面を描き、読み込みの進み具合を表示する。</li>
+<li> タイルの依存関係を正しく扱い、必要に応じてタイルシートを作り直す。</li>
+<li> 浅瀬の分岐は、なめらかな階の見た目を試す場にしている。</li></ul>
+<h3><span class="mw-headline" id="Options">オプション</span></h3>
+<ul><li> 変更: clear_messages = false。(以前は delay_message_clear = false。)</li>
+<li> 新規: explore_delay = -1 オプション。自動探索の遅延を、自動移動の遅延と別にする。</li>
+<li> 新規: autoinscribe_cursed = true。呪われていたアイテム用。</li>
+<li> 新規: msg_condense_short = true。短いメッセージを1行にまとめる。</li>
+<li> 新規: show_more = true。clear_messages と組み合わせると、メッセージ欄がいっぱいのときに -More- を出す。</li>
+<li> 新規: small_more = false。true にすると、メッセージ欄が1行増える。</li>
+<li> 新規: msg_min_height = 7。メッセージ欄の最小の大きさを決める。</li>
+<li> 新規: messages_at_top = false。メッセージをメインのマップの上に表示する。</li>
+<li> 新規: explore_stop_pickup_ignore。正規表現に合うアイテムは、拾っても自動移動を止めずに続ける。</li>
+<li> 新規、ASCII 版のみ: use_fake_player_cursor = false。プレイヤーの記号を強調する。</li>
+<li> 新規、タイル版のみ: tile_show_minihealthbar = true。プレイヤーのタイルに HP のバーを描く。</li>
+<li> 新規、タイル版のみ: tile_show_minimagicbar = true。プレイヤーのタイルに MP のバーを描く。</li>
+<li> 新規、タイル版のみ: tile_show_demon_tier = true。悪魔の等級のアイコンを表示する。</li>
+<li> 新規、タイル版のみ: tile_better_transparency = false。水のマスクをきれいにする。</li>
+<li> 新規、タイル版のみ: tile_peaceful_col = lightred。友好的なモンスターの色。</li>
+<li> 新規、タイル版のみ: tile_force_overlay = false。メッセージを重ねて表示する。</li>
+<li> 新規、タイル版のみ: tile_runrest_rate = 100。休息中の画面の更新頻度。</li>
+<li> explore_stop の新しい選択肢: greedy_pickup_smart、greedy_pickup_thrown。</li>
+<li> 名前の変更: unix の 'background' オプションを 'background_colour' にした。</li>
+<li> 名前の変更: キャラクターの 'job' オプションを 'background' にした。</li>
+<li> 削除: target_los_first、target_oos、target_wrap、target_zero_exp。</li></ul>
+<h3><span class="mw-headline" id="Major_bug_fixes">主なバグ修正</span></h3>
+<ul><li> 分岐の最下層が、まれにルーンなしで作られるのを直した。</li>
+<li> 能力値を変える装備のせいで、能力値がときどき永久に減ったり増えたりするのを直した。</li>
+<li> 視界が対称になり、さまざまなバグが直った。</li>
+<li> ルーンやオーブを拾ったあと、テレポート制御がときどき有効にならないのを直した。</li></ul>
+<h3><span class="mw-headline" id="Technical_improvements">技術的な改善</span></h3>
+<ul><li> 視界のコードを作り直して改良した。少しだけ見通しのよい、新しい視界のモデルも入っている。</li>
+<li> 狙いをつけるコードを作り直して改良した。</li>
+<li> メッセージ欄とメッセージ履歴のコードを書き直した。</li>
+<li> Lua で書いた自動テストをいくつか加えた。</li>
+<li> makefile を新しくして改良し、xcode と msvc のプロジェクトを更新した。</li>
+<li> 大きな .cc と .des のファイルをいくつか、小さなファイルに分けた。</li>
+<li> マップ作りなどで Lua をずっと強力に使えるよう、Lua のラッパーを多数加えた。</li>
+<li> ウィザードモード用の Lua REPL。</li>
+<li> ユニークを置くコードを Lua に移し、uniques.des で制御するようにした。</li>
+<li> モンスターにプロパティのハッシュを加え、いろいろなモンスターでふんだんに使っている。</li>
+<li> 説明書の aptitudes.txt を、スキル適性のコードから自動で作るようにした。</li>
+<li> インクルードするヘッダファイルを整理し、コンパイル時間を大きく減らした。</li>
+<li> 固定アーティファクトと特殊アーティファクトが、同じすっきりしたコードの構造を共有するようになった。</li></ul>
+<h2><span class="mw-headline" id="External_links">外部リンク</span></h2>
+<ul><li>Windows: <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/crawl-ref/files/Stone%20Soup/0.6.0/stone_soup-0.6.0-tiles-win32.zip/download">タイル版</a> / <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/crawl-ref/files/Stone%20Soup/0.6.0/stone_soup-0.6.0-win32.zip/download">ASCII 版</a></li>
+<li>Mac OS X: <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/crawl-ref/files/Stone%20Soup/0.6.0/stone_soup-0.6.0-tiles-macosx-universal.zip/download">タイル版</a> / <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/crawl-ref/files/Stone%20Soup/0.6.0/stone_soup-0.6.0-macosx-universal.zip/download">ASCII 版</a></li>
+<li>ソースコード: <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/crawl-ref/files/Stone%20Soup/0.6.0/stone_soup-0.6.0-nodeps.tar.bz2/download">tarball</a>、<a rel="nofollow" class="external text" href="http://sourceforge.net/projects/crawl-ref/files/Stone%20Soup/0.6.0/stone_soup-0.6.0.tar.bz2/download">依存ライブラリ込みの tarball</a>、<a rel="nofollow" class="external text" href="http://sourceforge.net/projects/crawl-ref/files/Stone%20Soup/0.6.0/stone_soup-0.6.0.zip/download">zip アーカイブ</a></li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

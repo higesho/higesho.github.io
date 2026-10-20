@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.4.0 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.4.0(0.4.0)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.4.0 <span class="en">0.4.0</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.4.0">0.4.0</a>」(対象の版の記載なし、2012-12-21 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.4.0&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="http://crawl.chaosforge.org/Crawl" data-untr="1" class="mw-redirect" title="Crawl">Crawl</a> の過去のリリースについてのものだ。最新版を含むほかのバージョンについては、<a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を参照。</i></div>
+<p><b>0.4.0</b> は <i>Dungeon Crawl Stone Soup</i> の古いバージョンで、2008年7月14日にリリースされた。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Released_notes"><span class="tocnumber">1</span> <span class="toctext">リリースノート</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#0.4_Highlights"><span class="tocnumber">1.1</span> <span class="toctext">0.4 の主な変更</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Interface"><span class="tocnumber">1.2</span> <span class="toctext">インターフェース</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Gods"><span class="tocnumber">1.3</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Characters"><span class="tocnumber">1.4</span> <span class="toctext">キャラクター</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Items"><span class="tocnumber">1.5</span> <span class="toctext">アイテム</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Monsters"><span class="tocnumber">1.6</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Levels"><span class="tocnumber">1.7</span> <span class="toctext">階</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Tiles"><span class="tocnumber">1.8</span> <span class="toctext">タイル版</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Miscellaneous"><span class="tocnumber">1.9</span> <span class="toctext">その他</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Released_notes">リリースノート</span></h2>
+<p>Stone Soup 0.4.0 (20080714)
+</p><p>おことわり: ここに挙げたのは主な変更だけで、すべての変更点を網羅したものではない。
+</p><p>セーブデータとボーンズファイルの互換性はない。
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="0.4_Highlights">0.4 の主な変更</span></h3>
+<ul><li> インターフェースをいろいろと改良した。</li>
+<li> タイル版を大幅に改良した。</li>
+<li> 理にかなった種族と職業の組み合わせは、すべて選べるようにした。</li>
+<li> 種族「吸血鬼」を追加。</li>
+<li> 善神を見直した。</li>
+<li> モンスターが賢くなった。</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Interface">インターフェース</span></h3>
+<ul><li> いくつものコマンドのキー割り当てを見直した。 </li></ul>
+<pre> (settings/034_commands.txt を見るか、プレイ中に&#160;?v を押すこと。)
+</pre>
+<ul><li> 視界にいるモンスターの一覧を追加(ASCII 版のみ)。</li>
+<li> 信仰、スキル、能力の画面を改良(コマンドは ^!、m?、a!)。</li>
+<li> 射撃((f)ire)の操作を見直した。投擲((t)hrow)のコマンドを廃止し、セット中の矢弾をステータス欄に出すようにした。</li>
+<li> 解体の操作を改良。</li>
+<li> '%' の概要画面から装備スロットを選べるようにした。</li>
+<li> HP と MP のバーを色つきにした。</li>
+<li> チュートリアルの説明が出るきっかけを多数追加。</li>
+<li> アイテム、モンスター、呪文などの説明を検索できるようにした('?/' コマンド)。</li>
+<li> 呪文のために手に持つ必要がある武器以外の品にも、持ち替え(' コマンド)ができるようにした。</li>
+<li> 武器の持ち替えで {!w} が無視されていた不具合を修正。</li>
+<li> マクロの定義('~')の別のキーとして Ctrl-D を追加。</li>
+<li> コマンドを繰り返すためのコマンドを追加('`' と '0')。</li>
+<li> 階に注記を書きこむコマンドを追加('!' コマンド)。</li>
+<li> 混乱しているとき以外は、溶岩や深い水脈に踏みこめなくなった。</li>
+<li> 危険な雲や罠に踏みこむ前に確認を求めるようにした。</li>
+<li> キャラクターに効かない雲の中なら、自動移動で通り抜けられるようにした。</li>
+<li> 味方越しに撃つときや、輝けるものに罰せられる遠隔攻撃をするときに確認を求めるようにした。</li>
+<li> 解体のときに、歪曲の武器を考慮するようにした。</li>
+<li> 着る((W)ear)と付ける((P)ut on)のメニューから、装備中のアイテムを外せるようにした。</li>
+<li> 階段で着いたときに自動拾いが働き、そのマスのアイテムを表示するようにした。</li>
+<li> 腐肉食でないキャラクターは、腐った肉を食べなくなった。</li>
+<li> 肉の説明に、有害な効果(毒など)を書くようにした。</li>
+<li> 蒸発は、薬や方向を選んでいる途中で取りやめられるようになった。</li>
+<li> ポータル射撃(Portaled Projectile)で、使う矢弾を選べるようになった。</li>
+<li> アイテムの記録が死体や肉の腐り具合を追うようになり、いずれは記録から消すようになった。</li>
+<li> greedy_explore の初期値を true にした。</li></ul>
+<h3><span class="mw-headline" id="Gods">神</span></h3>
+<ul><li> 善神を見直した。ジンと輝けるものはまったく新しくなり、エリヴィロンも面白みが増した。</li>
+<li> ベオとネメレクスを大きく改良し、ゾムをもっと面白くした。</li>
+<li> ヴェフメットは邪悪な神ではなくなり、すべての強化が祈らなくても働くようになった。</li>
+<li> ルゴヌの自分をアビスに追放する能力と、アビスから出る能力のコストを入れ替えた。</li>
+<li> 自動祈りと、祈りを止めるオプションを削除。</li>
+<li> アイテムを捧げる仕組みは、ネメレクス、輝けるもの、ジン以外の神ではなくなった。</li>
+<li> 捧げ物に失敗したとき、受け取ってもらえるアイテムの種類を教えるようにした。</li>
+<li> 神が送った配下は、懺悔のあいだは去っていき、棄教すると敵になる。</li></ul>
+<h3><span class="mw-headline" id="Characters">キャラクター</span></h3>
+<ul><li> 種族「吸血鬼」を追加。</li>
+<li> 理にかなった種族と職業の組み合わせは、すべて選べるようにした。</li>
+<li> 初期スキルと初期装備を見直した。</li>
+<li> 幻惑(Glamour)を削除。</li>
+<li> 赤色ドラコニアンと白色ドラコニアンは、XL 18 ではなく XL 14 で火炎耐性と冷気耐性を得るようになった。</li>
+<li> 変異: 物忘れを削除。毛皮、叫び、MP 増加と MP 減少を追加。</li>
+<li> オークとドワーフが自分の種族の装備を投げると、ダメージに +1 のボーナスがつくようにした。</li>
+<li> アンデッドが打擲の一撃を使えなかった不具合を修正。</li>
+<li> 死者の躯で、ふたたび苦痛への耐性が得られるようになった。</li>
+<li> 変身するときは、変身中に着られない防具だけを外すようにした。</li></ul>
+<h3><span class="mw-headline" id="Items">アイテム</span></h3>
+<ul><li> 崩壊の武器を削除し、神罰の武器を強化した。</li>
+<li> 新しい武器のブランド「竜殺し」。長柄武器にしかつかない。</li>
+<li> 炎と氷のダーツがちゃんと働くように修正し、同じブランドのジャベリンを追加した。</li>
+<li> 能力値の低下で死ぬおそれがあると分かっているアイテムは、装備も解除もできないようにした。</li>
+<li> 歪曲は、構えを解いたときにだけ効果が出るようにした。</li>
+<li> 間合いの武器の自動照準を改良。</li>
+<li> オーク殺しの武器はランダムには生成されないようにした(ランダムアーティファクトでは出る)。</li>
+<li> キャップの獲得がおかしくなる不具合を修正。</li>
+<li> 新しい巻物: 聖なる御言葉、煙幕。</li>
+<li> 忘却の巻物を削除。</li>
+<li> 血液の薬と凝固した血液の薬を追加。</li>
+<li> 充填の巻物と防具強化の巻物は、使うときに対象のアイテムを尋ねるようになった。</li>
+<li> 能力回復の薬で、ブレスの待ち時間も消えるようになった。</li>
+<li> 同じ種類の魔法の杖とロッドを見分けられるようになった。</li>
+<li> 対応する系統のスキルが 4 以上あれば、魔法の杖は自動で識別される。</li>
+<li> 虎の巻は見た目で魔法書と区別できるようになり、読むときに確認を求められなくなった。</li>
+<li> アーティファクトに自動でつく銘を改良。</li>
+<li> 固定アーティファクトをいくつか追加。</li>
+<li> 帰還の武器が戻ってこなかったときのメッセージを追加。</li>
+<li> 装備中のランダムアーティファクトで、ちゃんとバーサークが起きるようになった。</li>
+<li> 毒の薬を投げつけても、モンスターが毒を受けなくなった。</li>
+<li> 種族の装備の特性は、それにふさわしい一部の種類のアイテムにだけ働くようにした。</li>
+<li> 大事なアイテムを捧げようとしたときに確認を求めるようにした。</li>
+<li> 店の魔法書が、何度も識別したと記録される不具合を修正。</li></ul>
+<h3><span class="mw-headline" id="Monsters">モンスター</span></h3>
+<ul><li> 多くのモンスターの記号と色を新しくした。</li></ul>
+<pre> (settings/034_monster_glyphs.txt を参照。)
+</pre>
+<ul><li> 悪魔の王を強化。</li>
+<li> XL 7 以上のドラコニアンの幽霊は、シャドウドラゴンのブレス攻撃を使うようになった。</li>
+<li> 幽霊がアンデッドの解呪や凍気の雲などを使うようになった。</li>
+<li> ミイラの呪いで腐る薬は、一山のうちランダムな数だけになった。</li>
+<li> スノーグがバーサークするようにした。</li>
+<li> 天使とデーヴァが、アビスにランダムに出るようになった。</li>
+<li> プレイヤーが善神を信仰していると、聖なるモンスターが中立になることがある。</li>
+<li> 正体のわかっていないミミックは、いつでもアイテムと同じに扱われるようになった。</li>
+<li> モンスターの耐性を、プレイヤーと同じく段階のあるものにした。</li>
+<li> いくつかのモンスターから電撃耐性をなくした。</li>
+<li> デーヴァが負のエネルギーに耐性を持つようになった。</li>
+<li> オクロブ草が混乱してしまう不具合を修正。</li>
+<li> リーの瞬間解体術が骸骨ドラゴンに効くようになった。</li>
+<li> いくつかのモンスターの、邪悪・聖性・知能などのフラグを変更。</li>
+<li> 知能のあるモンスターの罠の扱いを改良。</li>
+<li> 味方のモンスターを操りやすくした。</li>
+<li> アイテムの拾い方を賢くした。</li>
+<li> 巡回と、モンスターの経路探索を実装。</li>
+<li> 味方がうっかりプレイヤーを撃ってしまう不具合を修正。</li>
+<li> モンスターが壁越しに撃ったり、間合いの攻撃をしたりする不具合を修正。</li>
+<li> 召喚されたモンスターがプレイヤーと同じマスにいる不具合を修正。</li>
+<li> モンスターは、害になる瘴気には入らなくなった。</li>
+<li> モンスターが使うアンデッドの解呪を実装。</li>
+<li> ナーガとセントールが馬甲つきで生成されない不具合を修正。</li>
+<li> モンスターが分解のワンドや他者変化のワンド(プレイヤーに使うと変異させる)を使うことがある。</li>
+<li> 麻痺したモンスターに急所攻撃ができるようにした。</li>
+<li> 視界の外でモンスターを倒したときもメッセージを出すようにした。</li>
+<li> 召喚されたモンスターを倒しても経験値は入らない。</li>
+<li> 隷属させたモンスターが死んだときは、経験値が半分入る。</li>
+<li> モンスターの瞬間移動は、(ほぼ)自分の視界の中に限られるようになった。</li>
+<li> 魚のゾンビを導入。</li>
+<li> いくつかの呪文や祈祷の攻撃で、モンスターが目を覚まさなかった不具合を修正。</li>
+<li> モンスターの盾を改良。</li>
+<li> モンスターの台詞をもっと細かく作りこんだ(docs/monster_speech.txt を参照)。</li></ul>
+<h3><span class="mw-headline" id="Levels">階</span></h3>
+<ul><li> 透明な壁の種類を追加。</li>
+<li> スライムの穴ぐらの最深部を作り変え、ルーンが必ずあるようにした。</li>
+<li> 新しいヴォールトをいくつか追加。</li>
+<li> 階段の数が正しくない階がある不具合を修正。</li>
+<li> 溶岩などの上にあるヴォールトがおかしくなる不具合を修正。</li>
+<li> 隣り合った扉は一つの(大きな)門として扱い、まとめて開け閉めするようにした。</li>
+<li> プレイヤーのミノタウロスは、ラビリンスの地図を描けるようになった。</li>
+<li> 健忘の罠を削除。</li>
+<li> 縦穴を導入。</li>
+<li> 血しぶきを追加。</li></ul>
+<h3><span class="mw-headline" id="Tiles">タイル版</span></h3>
+<ul><li> タイル版を Crawl 本体のコードに統合。</li>
+<li> タイル版と非タイル版のセーブデータに互換性を持たせた。</li>
+<li> 新しいタイルを大量に追加し、表示がおかしかったものを直した。</li>
+<li> wininit.txt が無ければ自動で作るようにした。</li>
+<li> チュートリアルをタイル版に対応させた。</li>
+<li> マウスのクリックによる持ち物とダンジョンの操作を改良。</li>
+<li> 自動移動の注意対象を、タイルのマップとミニマップに表示するようにした。</li>
+<li> 生物感知(Detect creatures)で、モンスターの種類まで正確にわかってしまう不具合を修正。</li>
+<li> 自動で拾うアイテムに化けたミミックにも、そのしるしがつくようになった。</li>
+<li> アイテムをクリックしたときも、警告の銘が効くようになった。</li>
+<li> 全般的な改良。</li></ul>
+<h3><span class="mw-headline" id="Miscellaneous">その他</span></h3>
+<ul><li> スコアの計算方法を新しくした。</li>
+<li> 眠っているモンスターのそばを忍び歩くと隠密スキルが上がる。</li>
+<li> 罠を作動させると罠と扉のスキルが上がる。</li>
+<li> アビスへの追放の呪文で自分を追放することはできなくなった。</li>
+<li> 新しい呪文: 醜きものの召喚。</li>
+<li> 麻痺の呪文を、新しい呪文「石化」に置き換えた。</li>
+<li> 罠の感知(Detect Traps)の結果がわかりやすくなった。</li>
+<li> morgue.txt では、死んだときの持ち物を識別済みとして書き出す。</li>
+<li> ダンプのコマンドで、階のマップもダンプするようにした。</li>
+<li> init.txt や .crawlrc から、外部のオプションやマクロのファイルを読みこめるようにした。</li>
+<li> 能力値の表示を、コンパクトで見やすくした。</li>
+<li> 幽霊のデータ構造を見直した。</li>
+<li> ドキュメントを見直して改良した。</li>
+<li> 多くの文章をデータベースのファイルに移した。</li>
+<li> そのほかにも多くのバグをつぶした。</li>
+<li> コード全体を整理した。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

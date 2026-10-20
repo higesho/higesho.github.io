@@ -22,7 +22,7 @@
 <li>常に切り捨て: 数値を切り捨て、小数点以下を無視する。C++ はもともと数値を切り捨てるので、コードにほかの指定がなければ切り捨てになる。</li>
 <li>四捨五入: 0.5 以上なら切り上げ、そうでなければ切り捨てる。範囲など、ランダムにするのが難しい数値に使われることがある。</li>
 <li>重みつきの丸め(<i>重みつきで丸める</i>): 数値をふつうは小数第2位まで持っておき、小数部分をパーセントにした値を切り上げになる確率にする。はっきりした境目ができるのを避けるためによく使われていて、たとえば呪文のダメージ、盾による動きにくさ、行動にかかる時間、<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a>/<a href="Evasion.html" class="mw-redirect" title="EV">EV</a> はどれも重みつきの丸めを使う。
-<ul><li>たとえば、移動に 4.30 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> かかるはずのときは、30% の確率で 5 aut、(100% - 30% =)70% の確率で 4 aut かかる。</li>
+<ul><li>たとえば、移動に 4.30 <a href="Action.html" class="mw-redirect" title="Aut">aut</a> かかるはずのときは、30% の確率で 5 aut、(100% - 30% =)70% の確率で 4 aut かかる。</li>
 <li><a href="Armour_class.html" class="mw-redirect" title="AC">AC</a> が 35.5 なら、攻撃を受けるたびに、50% の確率で AC 35、50% の確率で AC 36 として扱われる。</li></ul></li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
 <p>おおむね、バージョンが進むにつれてランダムな丸めを使うものがどんどん増えてきた。たとえば <a href="Armour_class.html" class="mw-redirect" title="AC">AC</a> と <a href="Evasion.html" class="mw-redirect" title="EV">EV</a> は、<a href="0.32.html" title="0.32">0.32</a> まではランダムに丸められていなかった。

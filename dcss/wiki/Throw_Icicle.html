@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>氷柱の投射 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="氷柱の投射(Throw Icicle)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>氷柱の投射 <span class="en">Throw Icicle</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Throw_Icicle">Throw Icicle</a>」(0.30 向け、2026-07-16 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Throw_Icicle&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Throw_icicle.png" data-untr="1" class="image"><img alt="Throw icicle.png" src="img/Throw_icicle.png" width="32" height="32" /></a>&#8195;氷柱の投射
+</th></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 4
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 0
+</td></tr>
+
+<tr>
+<th align="left"> 射程
+</th>
+<td> 5
+</td></tr>
+
+<tr>
+<th align="left"> フラグ
+</th>
+<td> 方向・対象指定(Dir or target)、モンスター専用(Monster)、射線の確認が必要(Needs tracer)
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 氷の破片を放つ。強い衝撃と鋭い刃のため、ダメージの半分は冷気への耐性を無視する。
+</td></tr></table>
+<p><b>氷柱の投射</b>はモンスター専用の呪文で、5 マス以内にいる 1 体の標的に氷の破片を投げつける。<a href="Cold.html" class="mw-redirect" title="Cold resistance">冷気耐性</a>で減らせるのはダメージの 50% だけなので、<a href="Cold.html" title="Cold">冷気</a>のダメージにしっかり備えたプレイヤーにもよく効く。
+</p><p>氷柱の投射は実体のある飛び道具なので、炎の<a href="Cloud.html" title="Cloud">雲</a>を通り抜けても雲を消さない。
+</p><p>氷柱の投射を使う敵は次のとおり。
+</p>
+<ul><li> <span class="nhsym">e</span> <a href="http://crawl.chaosforge.org/File:Deep_elf_knight.png" data-untr="1" class="image"><img alt="Deep elf knight.png" src="img/Deep_elf_knight.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Deep_elf_knight" data-untr="1" title="Deep elf knight">闇エルフの騎士</a></b>(3d20 ダメージ)</li>
+<li> <span class="nhsym">e</span> <a href="http://crawl.chaosforge.org/File:Dowan_(enraged).png" data-untr="1" class="image"><img alt="Dowan (enraged).png" src="img/Dowan_(enraged).png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Dowan_(enraged)" data-untr="1" class="mw-redirect" title="Dowan (enraged)">ドウェン(激昂)</a></b>(3d11 ダメージ)</li>
+<li> <span class="nhsym">q</span> <a href="http://crawl.chaosforge.org/File:Draconian_knight.png" data-untr="1" class="image"><img alt="Draconian knight.png" src="img/Draconian_knight.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Draconian_knight" data-untr="1" title="Draconian knight">ドラコニアンの騎士</a></b>(3d25 ダメージ)</li>
+<li> <span class="nhsym clr-yellow">@</span> <a href="http://crawl.chaosforge.org/File:Frances.png" data-untr="1" class="image"><img alt="Frances.png" src="img/Frances.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Frances" data-untr="1" title="Frances">フランセス</a></b>(3d23 ダメージ)</li>
+<li> <span class="nhsym">I</span> <a href="http://crawl.chaosforge.org/File:Ice_statue.png" data-untr="1" class="image"><img alt="Ice statue.png" src="img/Ice_statue.png" width="32" height="32" /></a> <b><a href="Ice_statue.html" title="Ice statue">氷の像</a></b>(3d16 ダメージ)</li>
+<li> <span class="nhsym clr-brightgreen">m</span> <a href="http://crawl.chaosforge.org/File:Ilsuiw.png" data-untr="1" class="image"><img alt="Ilsuiw.png" src="img/Ilsuiw.png" width="32" height="32" /></a> <b><a href="Ilsuiw.html" title="Ilsuiw">イルスィウ</a></b>(3d25 ダメージ)</li>
+<li> <span class="nhsym clr-green">m</span> <a href="http://crawl.chaosforge.org/File:Merfolk_aquamancer.png" data-untr="1" class="image"><img alt="Merfolk aquamancer.png" src="img/Merfolk_aquamancer.png" width="32" height="32" /></a> <b><a href="Merfolk_aquamancer.html" title="Merfolk aquamancer">水棲の民の水占術師</a></b>(3d23 ダメージ)</li>
+<li> <span class="nhsym">b</span> <a href="http://crawl.chaosforge.org/File:Shard_shrike.png" data-untr="1" class="image"><img alt="Shard shrike.png" src="img/Shard_shrike.png" width="32" height="32" /></a> <b><a href="Shard_shrike.html" title="Shard shrike">破片の百舌</a></b>(3d30 ダメージ)</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Throw_icicle.png" data-untr="1" class="image"><img alt="Throw icicle.png" src="img/Throw_icicle.png" width="32" height="32" /></a>&#8195;氷柱の投射
+</th></tr>
+<tr>
+<th align="left"> レベル
+</th>
+<td> 4
+</td></tr>
+<tr>
+<th align="left"> 系統<sup>1</sup>
+</th>
+<td> <a href="Conjurations.html" title="Conjurations">妖術</a>
+</td></tr>
+
+<tr>
+<th align="left"> 系統<sup>2</sup>
+</th>
+<td> <a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a>
+</td></tr>
+
+<tr>
+<th align="left"> 入手元
+</th>
+<td><div>
+<ul><li><a href="http://crawl.chaosforge.org/Book_of_Frost" data-untr="1" title="Book of Frost">冷気の魔法書</a> </li></ul>
+</div>
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 4
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 4
+</td></tr>
+
+</table></div>
+<div>
+<table class="prettytable" style=" width:20em">
+<tr>
+<th colspan="2"> 呪文の詳細
+</th></tr>
+<tr>
+<th align="left"> ダメージの式
+</th>
+<td> 3d(3.33+Power/6) <a href="Cold.html" title="Cold">冷気</a>
+</td></tr>
+<tr>
+<th align="left"> 最大ダメージ
+</th>
+<td> 3d20
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_Power.html" class="mw-redirect" title="Spell power"> 最大威力</a>
+</th>
+<td> 100
+</td></tr>
+<tr>
+<th align="left"> 射程
+</th>
+<td> 6
+</td></tr>
+<tr>
+<th align="left"> 狙い方
+</th>
+<td>ビーム
+</td></tr>
+<tr>
+<th align="left"> 命中
+</th>
+<td>9+Power/12
+</td></tr>
+<tr>
+<th align="left"> 特殊
+</th>
+<td> 一部は耐性で防げない
+</td></tr></table></div>
+<ul><li><a href="0.30.html" title="0.30">0.30</a> より前は、氷柱の投射のダメージは 40% が耐性で防げた。</li>
+<li><a href="0.25.html" title="0.25">0.25</a> で、氷柱の投射はプレイヤーの使える呪文から外され、かわりに<a href="Hailstorm.html" title="Hailstorm">雹の嵐</a>が入った。</li>
+<li><i>Crawl</i> の初期の版では、氷柱の投射は <b>Ice Bolt</b> という名前だった。ほかの<a href="Bolt_spells.html" title="Bolt spells">ボルト系の呪文</a>とまぎらわしいので改名された。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

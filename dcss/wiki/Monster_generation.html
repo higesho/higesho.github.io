@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>モンスターの発生 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="モンスターの発生(Monster generation)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>モンスターの発生 <span class="en">Monster generation</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Monster_generation">Monster generation</a>」(0.30 向け、2023-12-28 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Monster_generation&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>モンスターの発生</b>(monster generation)は、ほとんどの状況では起こらない。一部の分岐にいるときと、<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持っているときだけ、時間の経過とともにモンスターが湧いてくる。
+</p>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>特定の場所には、モンスターの発生率(MGR)が決まっている。5 ターンごとに <code>5 / MGR</code> の確率で、その階のどこかにモンスターが 1 体湧く。つまり値が大きいほど湧きにくい。湧くモンスターはふつう、その分岐にふさわしいものになる。状況によっては、プレイヤーの近くに湧くよう強制されることもある。
+</p><p>こうした場所以外では、モンスターの発生は止まっている。ただしこれには<a href="Summon.html" title="Summon">召喚</a>や<a href="http://crawl.chaosforge.org/Doom_hound" data-untr="1" class="mw-redirect" title="Doom hound">忘却の猟犬</a>などの効果は含まない。
+</p>
+<h2><span class="mw-headline" id="Where_Monsters_Spawn">モンスターが湧く場所</span></h2>
+<ul><li><a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>: 50 から始まる。3000 ターンを過ぎると少しずつ上がり、(15000 ターンで)300 に達する。</li></ul>
+<ul><li><a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a>: 5 に固定されているので、5 ターンごとに必ずモンスターが湧く。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+<ul><li>アビス:1〜5 では、<code>階/5</code> の確率で 2 体同時に湧く。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>アビス:6 では必ず 3 体、アビス:7 では必ず 4 体湧く。また、アビス:6〜7 ではあなたの近くに湧くよう強制されることがある。</li></ul></li></ul>
+<ul><li><a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持っているとき: 18 になる。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>モンスターはあなたの近くに、専用の顔ぶれで湧く(<a href="Orb_of_Zot.html#Monster_Spawns" title="Orb of Zot">ゾットのオーブ#湧いてくるモンスター</a>を参照)。 </li></ul>
+<p><a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>の信者は、アビスにいるときと<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持っているときの MGR が 2 倍になる(湧く頻度は半分になる)。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.23.html" title="0.23">0.23</a> より前は、オーブを持っての脱出で湧くモンスターは弱いものが出やすかったが、そのぶん湧く頻度が高かった。</li>
+<li><a href="0.21.html" title="0.21">0.21</a> より前は、<a href="The_Dungeon.html" class="mw-redirect" title="Dungeon">迷宮</a>の常設の分岐のほとんどで、時間の経過とともにモンスターが自然に湧いていた。おもに <a href="http://crawl.chaosforge.org/Out-of-depth_timer" data-untr="1" title="Out-of-depth timer">3000 ターンを過ぎると</a>、湧くモンスターが<a href="Out_of_depth.html" title="Out of depth">本来もっと深い階にいる</a>ものになっていった。15000 ターンを過ぎるとモンスターは湧かなくなった。</li>
+<li><a href="0.13.html" title="0.13">0.13</a> で、オーブを持っての脱出で湧くモンスターが変わった。目立つ追加は<a href="Orb_Guardian.html" title="Orb Guardian">オーブの守護者</a>と<a href="List_of_eyeballs.html" title="List of eyeballs">眼球の怪物</a>だ。</li>
+<li><a href="0.6.0.html" class="mw-redirect" title="0.6">0.6</a> より前は、ひとつの場所にとどまっていても<a href="http://crawl.chaosforge.org/Out-of-depth_timer" data-untr="1" title="Out-of-depth timer">深い階のモンスターを湧かせる特別な仕組み</a>はなかった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/mon-place.cc#L284">mon-place.cc:284</a> (0.30.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/timed-effects.cc#L293">timed-effects.cc:293</a> (0.30.1)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/mon-place.cc#L287">mon-place.cc:287</a> (0.30.1)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

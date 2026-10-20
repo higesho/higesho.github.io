@@ -16,7 +16,7 @@
 <h1>スキル適性 <span class="en">Aptitude</span></h1>
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Aptitude">Aptitude</a>」(0.33 向け、2026-02-13 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Aptitude&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
 <div class="wiki">
-<p><b>スキル適性</b>(aptitude)は、ある<a href="Skill.html" title="Skill">スキル</a>をどれだけ速く伸ばせるかを表す値だ。適性が高いほど、そのスキルを早く覚えられる。適性は<a href="Species.html" title="Species">種族</a>で決まり、種族ごとにスキルひとつひとつの適性が別々に定められている。そのため、種族によって向いているスキルと向いていないスキルがある。たとえば<a href="http://crawl.chaosforge.org/Deep_Elves" data-untr="1" class="mw-redirect" title="Deep Elves">闇エルフ</a>は魔法を覚えやすく、<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>は近接戦闘を覚えやすい。種族の適性をうまく活かすことが、ゲームに勝つための鍵になる。
+<p><b>スキル適性</b>(aptitude)は、ある<a href="Skill.html" title="Skill">スキル</a>をどれだけ速く伸ばせるかを表す値だ。適性が高いほど、そのスキルを早く覚えられる。適性は<a href="Species.html" title="Species">種族</a>で決まり、種族ごとにスキルひとつひとつの適性が別々に定められている。そのため、種族によって向いているスキルと向いていないスキルがある。たとえば<a href="Deep_Elf.html" class="mw-redirect" title="Deep Elves">闇エルフ</a>は魔法を覚えやすく、<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>は近接戦闘を覚えやすい。種族の適性をうまく活かすことが、ゲームに勝つための鍵になる。
 </p><p>自分の種族の適性は、スキルメニュー(<b>m</b>)を開けばいつでも確かめられる。ゲーム中で <b>?&#160;%</b> を押せば種族と適性の大きな表が見られるし、wiki の各<a href="Species.html" title="Species">種族</a>のページでも確認できる。
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
@@ -124,11 +124,11 @@
 </td></tr>
 </table>
 <p>たとえば適性 -5 の種族は、適性 0 の種族の <code>238/100</code> = 2.38 倍の経験値を必要とする。
-</p><p>適性が「NA」となっているのは、その種族がそのスキルをまったく習得できないという意味だ。たとえば<a href="Felid.html" title="Felid">フェリッド</a>は<a href="Armour.html" title="Armour">防具</a>を着られないので、<a href="http://crawl.chaosforge.org/Armour_skill" data-untr="1" class="mw-redirect" title="Armour skill">甲冑スキル</a>のレベルは少しも上がらない。
+</p><p>適性が「NA」となっているのは、その種族がそのスキルをまったく習得できないという意味だ。たとえば<a href="Felid.html" title="Felid">フェリッド</a>は<a href="Armour.html" title="Armour">防具</a>を着られないので、<a href="Armour_(skill).html" class="mw-redirect" title="Armour skill">甲冑スキル</a>のレベルは少しも上がらない。
 </p>
 <h3><span class="mw-headline" id="Formula">計算式</span></h3>
 <p>ある種族の適性が <font size="3"><code>n</code></font> なら、そのスキルのレベルをひとつ上げるのに必要な経験値は、適性 0 の種族の <font size="3"><code>2^(-n/4)</code></font> 倍になる。言い換えると、適性が +4 上がるごとに、1レベルあたりの経験値のコストが半分になる。
-</p><p>例: <a href="Poltergeist.html" title="Poltergeist">ポルターガイスト</a>の<a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>の適性は +4、<a href="Human.html" title="Human">人間</a>は 0 だ。人間がレベルをひとつ上げるのに 100 の経験値が要るとすると、ポルターガイストが同じレベルを上げるのに要るのは <code>100 * 2^(-4/4)</code>、つまり 50 の経験値になる。
+</p><p>例: <a href="Poltergeist.html" title="Poltergeist">ポルターガイスト</a>の<a href="Hexes.html" title="Hexes">呪術</a>の適性は +4、<a href="Human.html" title="Human">人間</a>は 0 だ。人間がレベルをひとつ上げるのに 100 の経験値が要るとすると、ポルターガイストが同じレベルを上げるのに要るのは <code>100 * 2^(-4/4)</code>、つまり 50 の経験値になる。
 </p><p>ただし、経験値のコストが半分になってもレベルが2倍になるわけではない。スキルのレベルが上がるごとに必要な経験値も増えていくからだ。人間が呪術のレベル 10 なら、ポルターガイストは 20 ではなく、実際には 14 になる。
 </p>
 <h2><span class="mw-headline" id="Strategy">戦略</span></h2>
@@ -203,7 +203,7 @@
 <td align="right">0.148</td>
 <td><a href="Armour.html" title="Armour">甲冑</a></td>
 <td align="right">-0.478</td>
-<td><a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a></td>
+<td><a href="Spellcasting.html" title="Spellcasting">呪文詠唱</a></td>
 <td align="right">-0.846
 </td></tr>
 <tr>
@@ -219,7 +219,7 @@
 <td align="right">-0.654</td>
 <td><a href="Shields_(skill).html" title="Shields (skill)">盾</a></td>
 <td align="right">-0.385</td>
-<td><a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a></td>
+<td><a href="Conjurations.html" title="Conjurations">妖術</a></td>
 <td align="right">-0.731
 </td></tr>
 <tr>
@@ -227,7 +227,7 @@
 <td align="right">-0.692</td>
 <td><a href="Stealth_(skill).html" title="Stealth (skill)">隠密</a></td>
 <td align="right">1.296</td>
-<td><a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a></td>
+<td><a href="Hexes.html" title="Hexes">呪術</a></td>
 <td align="right">-0.192
 </td></tr>
 <tr>
@@ -303,7 +303,7 @@
 <td align="right">-0.462
 </td></tr></table>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/0.7.0" data-untr="1" title="0.7.0">0.7.0</a> より前は、上の<i>スキルコスト</i>の表のように、適性は 100(平均)より小さいか大きいかの数値で表されていた。</li></ul>
+<ul><li><a href="0.7.0.html" title="0.7.0">0.7.0</a> より前は、上の<i>スキルコスト</i>の表のように、適性は 100(平均)より小さいか大きいかの数値で表されていた。</li></ul>
 
 </div>
 </main>

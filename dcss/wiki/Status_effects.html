@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>状態 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="状態(Status effects)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>状態 <span class="en">Status effects</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Status_effects">Status effects</a>」(0.28 向け、2026-05-25 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Status_effects&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.28 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.28.html" title="0.28">0.28</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>状態</b>(status effect)とは一時的な強化や不調のことで、あなたも<a href="The_Dungeon.html" title="The Dungeon">迷宮</a>の住人も、その恩恵を受けたり害をこうむったりする。<a href="Mutation.html" title="Mutation">変異</a>と違い、十分な時間がたつか、原因から逃れれば終わる。多くの状態はさまざまな方法で治したり防いだりできるので、詳しくはそれぞれのページを見てほしい。ゲーム内でも状態の説明を読める(<b>?</b>、<b>/</b>、sTatus の <b>t</b> の順に押し、表示されている文字を入力する)。
+</p><p>ほとんどの状態は、続いている間、キャラクター情報の欄に色つきの(たいていは略した)語で表示される。持続時間に限りがある状態は、終わりが近づくと暗い色に変わることが多い。一方、効果が重くなるほど暗い色で示す状態もある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Beneficial_Status_Effects"><span class="tocnumber">1</span> <span class="toctext">有益な状態</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Agile"><span class="tocnumber">1.1</span> <span class="toctext">器用強化</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Alive"><span class="tocnumber">1.2</span> <span class="toctext">血が通っている状態</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Augmentation"><span class="tocnumber">1.3</span> <span class="toctext">増強</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Berserk"><span class="tocnumber">1.4</span> <span class="toctext">バーサーク</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Black_Mark"><span class="tocnumber">1.5</span> <span class="toctext">黒の紋様</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Bloodless"><span class="tocnumber">1.6</span> <span class="toctext">血が通っていない状態</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Brilliant"><span class="tocnumber">1.7</span> <span class="toctext">知力強化</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Charging"><span class="tocnumber">1.8</span> <span class="toctext">充電</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Confusing_Touch"><span class="tocnumber">1.9</span> <span class="toctext">混乱の手</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Death_Channel"><span class="tocnumber">1.10</span> <span class="toctext">霊媒状態</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Death.27s_Door"><span class="tocnumber">1.11</span> <span class="toctext">死のとば口</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Disjunction"><span class="tocnumber">1.12</span> <span class="toctext">解散</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Divine_Protection"><span class="tocnumber">1.13</span> <span class="toctext">神の守り</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Divine_Shield"><span class="tocnumber">1.14</span> <span class="toctext">神の盾</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Finesse"><span class="tocnumber">1.15</span> <span class="toctext">早業</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Flight"><span class="tocnumber">1.16</span> <span class="toctext">飛行中</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Haste"><span class="tocnumber">1.17</span> <span class="toctext">加速中</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Heavenly_Storm"><span class="tocnumber">1.18</span> <span class="toctext">天上の嵐</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Heroism"><span class="tocnumber">1.19</span> <span class="toctext">英雄状態</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Invisibility"><span class="tocnumber">1.20</span> <span class="toctext">透明化中</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Leda.27s_Liquefaction"><span class="tocnumber">1.21</span> <span class="toctext">レダの流動術</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Might"><span class="tocnumber">1.22</span> <span class="toctext">腕力強化</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Olgreb.27s_Toxic_Radiance"><span class="tocnumber">1.23</span> <span class="toctext">オルグレブの毒気の光輪</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Ozocubu.27s_Armour"><span class="tocnumber">1.24</span> <span class="toctext">オゾクブの鎧</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#Powered_by_Death"><span class="tocnumber">1.25</span> <span class="toctext">死よりの力</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#Quad_Damage"><span class="tocnumber">1.26</span> <span class="toctext">四重ダメージ</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Recall"><span class="tocnumber">1.27</span> <span class="toctext">招来</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Repel_Missiles"><span class="tocnumber">1.28</span> <span class="toctext">飛び道具反発</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Resistance"><span class="tocnumber">1.29</span> <span class="toctext">元素耐性</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Ring_of_Flames"><span class="tocnumber">1.30</span> <span class="toctext">炎の円環</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Searing_Ray"><span class="tocnumber">1.31</span> <span class="toctext">焼灼の光線</span></a>
+<ul>
+<li class="toclevel-3 tocsection-33"><a href="#Flame_Wave"><span class="tocnumber">1.31.1</span> <span class="toctext">炎の波</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-34"><a href="#Serpent.27s_Lash"><span class="tocnumber">1.32</span> <span class="toctext">蛇の鞭打ち</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#Silence"><span class="tocnumber">1.33</span> <span class="toctext">静寂</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#Slimify"><span class="tocnumber">1.34</span> <span class="toctext">スライム化</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#Swiftness"><span class="tocnumber">1.35</span> <span class="toctext">俊足</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#Teleport"><span class="tocnumber">1.36</span> <span class="toctext">転位準備</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Transmutations"><span class="tocnumber">1.37</span> <span class="toctext">変身</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#Vitalisation"><span class="tocnumber">1.38</span> <span class="toctext">生命の活性化</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#Polar_Vortex"><span class="tocnumber">1.39</span> <span class="toctext">極渦</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-42"><a href="#Detrimental_Status_Effects"><span class="tocnumber">2</span> <span class="toctext">有害な状態</span></a>
+<ul>
+<li class="toclevel-2 tocsection-43"><a href="#Antimagic"><span class="tocnumber">2.1</span> <span class="toctext">反魔法</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#Bad_Forms"><span class="tocnumber">2.2</span> <span class="toctext">ありがたくない変身</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#Blind"><span class="tocnumber">2.3</span> <span class="toctext">盲目</span></a></li>
+<li class="toclevel-2 tocsection-46"><a href="#Charm"><span class="tocnumber">2.4</span> <span class="toctext">魅了</span></a></li>
+<li class="toclevel-2 tocsection-47"><a href="#Confusion"><span class="tocnumber">2.5</span> <span class="toctext">混乱</span></a></li>
+<li class="toclevel-2 tocsection-48"><a href="#Constriction"><span class="tocnumber">2.6</span> <span class="toctext">締めつけ</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="#Cooldowns"><span class="tocnumber">2.7</span> <span class="toctext">再使用待ち</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#Corona"><span class="tocnumber">2.8</span> <span class="toctext">照明</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="#Corrosion"><span class="tocnumber">2.9</span> <span class="toctext">腐食</span></a></li>
+<li class="toclevel-2 tocsection-52"><a href="#Dazed"><span class="tocnumber">2.10</span> <span class="toctext">眩暈</span></a></li>
+<li class="toclevel-2 tocsection-53"><a href="#Diminished_Spells"><span class="tocnumber">2.11</span> <span class="toctext">呪文弱化</span></a></li>
+<li class="toclevel-2 tocsection-54"><a href="#Doom_Howl"><span class="tocnumber">2.12</span> <span class="toctext">遠吠</span></a></li>
+<li class="toclevel-2 tocsection-55"><a href="#Drain"><span class="tocnumber">2.13</span> <span class="toctext">衰弱</span></a></li>
+<li class="toclevel-2 tocsection-56"><a href="#Fast.2BSlow"><span class="tocnumber">2.14</span> <span class="toctext">加減速中</span></a></li>
+<li class="toclevel-2 tocsection-57"><a href="#Fear"><span class="tocnumber">2.15</span> <span class="toctext">恐慌</span></a></li>
+<li class="toclevel-2 tocsection-58"><a href="#Fire_Vulnerable"><span class="tocnumber">2.16</span> <span class="toctext">火炎耐性低下</span></a></li>
+<li class="toclevel-2 tocsection-59"><a href="#Flayed"><span class="tocnumber">2.17</span> <span class="toctext">皮剥</span></a></li>
+<li class="toclevel-2 tocsection-60"><a href="#Flooded"><span class="tocnumber">2.18</span> <span class="toctext">浸水</span></a></li>
+<li class="toclevel-2 tocsection-61"><a href="#Frozen"><span class="tocnumber">2.19</span> <span class="toctext">凍結</span></a></li>
+<li class="toclevel-2 tocsection-62"><a href="#Held"><span class="tocnumber">2.20</span> <span class="toctext">拘束</span></a></li>
+<li class="toclevel-2 tocsection-63"><a href="#Horrified"><span class="tocnumber">2.21</span> <span class="toctext">恐怖</span></a></li>
+<li class="toclevel-2 tocsection-64"><a href="#Inner_Flame"><span class="tocnumber">2.22</span> <span class="toctext">内なる炎</span></a></li>
+<li class="toclevel-2 tocsection-65"><a href="#Lava"><span class="tocnumber">2.23</span> <span class="toctext">溶岩</span></a></li>
+<li class="toclevel-2 tocsection-66"><a href="#Leda.27s_Liquefaction_2"><span class="tocnumber">2.24</span> <span class="toctext">レダの流動術</span></a></li>
+<li class="toclevel-2 tocsection-67"><a href="#Magic_Contamination"><span class="tocnumber">2.25</span> <span class="toctext">魔力汚染</span></a></li>
+<li class="toclevel-2 tocsection-68"><a href="#Mark"><span class="tocnumber">2.26</span> <span class="toctext">標的</span></a></li>
+<li class="toclevel-2 tocsection-69"><a href="#Mesmerised"><span class="tocnumber">2.27</span> <span class="toctext">魅了されている</span></a></li>
+<li class="toclevel-2 tocsection-70"><a href="#No_Move"><span class="tocnumber">2.28</span> <span class="toctext">移動不可</span></a></li>
+<li class="toclevel-2 tocsection-71"><a href="#No_Potions"><span class="tocnumber">2.29</span> <span class="toctext">薬不可</span></a></li>
+<li class="toclevel-2 tocsection-72"><a href="#No_Scrolls"><span class="tocnumber">2.30</span> <span class="toctext">巻物不可</span></a></li>
+<li class="toclevel-2 tocsection-73"><a href="#Orb"><span class="tocnumber">2.31</span> <span class="toctext">オーブ</span></a></li>
+<li class="toclevel-2 tocsection-74"><a href="#Paralysis"><span class="tocnumber">2.32</span> <span class="toctext">麻痺</span></a></li>
+<li class="toclevel-2 tocsection-75"><a href="#Petrifying.2FPetrified"><span class="tocnumber">2.33</span> <span class="toctext">石化中/石化状態</span></a></li>
+<li class="toclevel-2 tocsection-76"><a href="#Poison"><span class="tocnumber">2.34</span> <span class="toctext">毒</span></a></li>
+<li class="toclevel-2 tocsection-77"><a href="#Sapped_Magic"><span class="tocnumber">2.35</span> <span class="toctext">魔力流出</span></a></li>
+<li class="toclevel-2 tocsection-78"><a href="#Sickness"><span class="tocnumber">2.36</span> <span class="toctext">病気</span></a></li>
+<li class="toclevel-2 tocsection-79"><a href="#Silence_2"><span class="tocnumber">2.37</span> <span class="toctext">静寂</span></a></li>
+<li class="toclevel-2 tocsection-80"><a href="#Sleep"><span class="tocnumber">2.38</span> <span class="toctext">睡眠中</span></a></li>
+<li class="toclevel-2 tocsection-81"><a href="#Slow"><span class="tocnumber">2.39</span> <span class="toctext">減速</span></a></li>
+<li class="toclevel-2 tocsection-82"><a href="#Sluggish"><span class="tocnumber">2.40</span> <span class="toctext">鈍足</span></a></li>
+<li class="toclevel-2 tocsection-83"><a href="#Stat_Zero"><span class="tocnumber">2.41</span> <span class="toctext">能力値ゼロ</span></a></li>
+<li class="toclevel-2 tocsection-84"><a href="#Sticky_Flame"><span class="tocnumber">2.42</span> <span class="toctext">炎上中</span></a></li>
+<li class="toclevel-2 tocsection-85"><a href="#Still_Winds"><span class="tocnumber">2.43</span> <span class="toctext">無風の大気</span></a></li>
+<li class="toclevel-2 tocsection-86"><a href="#Teleport_Prevention"><span class="tocnumber">2.44</span> <span class="toctext">転位不可</span></a></li>
+<li class="toclevel-2 tocsection-87"><a href="#Umbra"><span class="tocnumber">2.45</span> <span class="toctext">影の帳</span></a></li>
+<li class="toclevel-2 tocsection-88"><a href="#Vulnerable"><span class="tocnumber">2.46</span> <span class="toctext">意志力低下</span></a></li>
+<li class="toclevel-2 tocsection-89"><a href="#Water"><span class="tocnumber">2.47</span> <span class="toctext">水場</span></a></li>
+<li class="toclevel-2 tocsection-90"><a href="#Weak"><span class="tocnumber">2.48</span> <span class="toctext">虚弱</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-91"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Beneficial_Status_Effects">有益な状態</span></h2>
+<h3><span class="mw-headline" id="Agile">器用強化</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">器用＋</span>
+</p><p><a href="http://crawl.chaosforge.org/Powered_by_Pain" data-untr="1" class="mw-redirect" title="Powered by Pain">苦痛よりの力</a>を持つ<a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a>は、機敏さを得ることがある。<a href="Dexterity.html" title="Dexterity">器用</a>、<a href="Stealth.html" title="Stealth">隠密</a>、<a href="Evasion.html" title="Evasion">回避</a>が上がる。
+</p>
+<h3><span class="mw-headline" id="Alive">血が通っている状態</span></h3>
+<p><span class="nhsym clr-green" style="white-space: nowrap">生者</span>
+</p><p>血が通っている<a href="Vampire.html" title="Vampire">吸血鬼</a>は<a href="Regeneration_rate.html" title="Regeneration rate">回復速度</a>が速く、<a href="Transformation.html" title="Transformation">変身</a>でき、<a href="Berserk.html" title="Berserk">バーサーク</a>もできる。
+</p>
+<h3><span class="mw-headline" id="Augmentation">増強</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">増強</span> <span class="nhsym" style="white-space: nowrap">増強</span> <span class="nhsym clr-white" style="white-space: nowrap">増強</span>
+</p><p><a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a>のうち、攻撃力の増大の<a href="http://crawl.chaosforge.org/Demonspawn_mutation" data-untr="1" class="mw-redirect" title="Demonspawn mutation">悪魔の血族の変異</a>を持つ者は、HP が多いほど<a href="Slaying.html" title="Slaying">殺戮</a>と<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>にボーナスを得る。表示の色が明るいほどボーナスは大きい。
+</p>
+<h3><span class="mw-headline" id="Berserk">バーサーク</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">バーサーク</span>
+</p><p><a href="Berserk.html" title="Berserk">バーサーク</a>状態になり、<a href="Hit_points.html" class="mw-redirect" title="HP">HP</a>、<a href="Might.html" title="Might">近接攻撃のダメージ</a>、<a href="Haste.html" title="Haste">速さ</a>が大きく上がっている。切れたあとの反動には気をつけること。
+</p>
+<h3><span class="mw-headline" id="Black_Mark">黒の紋様</span></h3>
+<p><a href="Black_Mark.html" class="mw-redirect" title="Black mark">黒の紋様</a>の状態を持つ生き物は、近接攻撃を当てた相手に<a href="Draining.html" title="Draining">衰弱</a>、<a href="Slow.html" title="Slow">減速</a>、<a href="Antimagic.html" title="Antimagic">反魔法</a>のいずれかを与える。<a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a>の<a href="http://crawl.chaosforge.org/Black_Mark_(mutation)" data-untr="1" title="Black Mark (mutation)">変異</a>によるプレイヤー版は、命中の 20% でしか発動しない。
+</p>
+<h3><span class="mw-headline" id="Bloodless">血が通っていない状態</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">血枯れ</span>
+</p><p>血が通っていない<a href="Vampire.html" title="Vampire">吸血鬼</a>は最大 HP が減り、モンスターが見えている間は HP が回復しない。その代わり<a href="Stealth.html" title="Stealth">隠密</a>が上がり、噛みつきに<a href="Vampiric.html" title="Vampiric">吸血</a>の効果がつき、<a href="Undead.html" title="Undead">アンデッド</a>としての耐性がひととおりそろい、コウモリに変身する能力を得る。
+</p>
+<h3><span class="mw-headline" id="Brilliant">知力強化</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">知力＋</span>
+</p><p><a href="Potion_of_brilliance.html" title="Potion of brilliance">知性の薬</a>を飲むと、<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>にボーナスがつき、呪文の消費 MP が半分になる。
+</p>
+<h3><span class="mw-headline" id="Charging">充電</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">充電-</span>
+</p><p><a href="Maxwell's_Capacitive_Coupling.html" title="Maxwell&#39;s Capacitive Coupling">マクスウェルの容量結合</a>を詠唱している最中だ。<b>.</b> を押せば詠唱を続けられる。- の部分は (-, /, |, \) と反時計回りに切り替わる。どこから始まるかはランダム。
+</p>
+<h3><span class="mw-headline" id="Confusing_Touch">混乱の手</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">混乱の手</span>
+</p><p><a href="Confusing_Touch.html" title="Confusing Touch">混乱の一撃</a>を唱えると、手に奇妙なエネルギーが宿り、近接攻撃で敵を<a href="Confusion.html" title="Confusion">混乱</a>させるようになる。
+</p>
+<h3><span class="mw-headline" id="Death_Channel">霊媒状態</span></h3>
+<p><span class="nhsym clr-brightmagenta" style="white-space: nowrap">霊媒</span>
+</p><p><a href="Death_Channel.html" title="Death Channel">死の霊媒術</a>の効果中に生き物を倒すと、それが<a href="Spectral_thing.html" title="Spectral thing">幽体</a>としてよみがえり、あなたに仕える。
+</p>
+<h3><span class="mw-headline" id="Death.27s_Door">死のとば口</span></h3>
+<p><span class="nhsym clr-white" style="white-space: nowrap">とば口</span>
+</p><p><a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>を唱えると、一時的に不死身になる。ただし <a href="Hit_points.html" class="mw-redirect" title="HP">HP</a> はほとんど 0 まで減り、しばらくは再び唱えられない。
+</p>
+<h3><span class="mw-headline" id="Disjunction">解散</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">解散</span>
+</p><p><a href="Disjunction.html" title="Disjunction">空間分離</a>を唱えると、周りの敵がみな<a href="Blink.html" title="Blink">瞬間移動</a>で飛ばされる。敵が近づくほど成功しやすい。
+</p>
+<h3><span class="mw-headline" id="Divine_Protection">神の守り</span></h3>
+<p><span class="nhsym clr-white" style="white-space: nowrap">守護</span>
+</p><p><a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の神の守りの能力を使うと、本来なら死ぬはずの攻撃を受けても死ななくなる。ただし発動するたびに<a href="Piety.html" title="Piety">信仰心</a>を大きく失う。
+</p>
+<h3><span class="mw-headline" id="Divine_Shield">神の盾</span></h3>
+<p><a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>があなたを攻撃から守っていて、短い間、<a href="Shield_(stat).html" title="Shield (stat)">盾による防御</a>が上がっている。
+</p>
+<h3><span class="mw-headline" id="Finesse">早業</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">早業</span>
+</p><p><a href="Okawaru.html" title="Okawaru">オカワル</a>の早業の技巧の能力を使うと、物理攻撃の速さがすべて 2 倍になる。
+</p>
+<h3><span class="mw-headline" id="Flight">飛行中</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">飛行中</span>
+</p><p>空を飛んでいる。ふつうは通れない地形の上も移動でき、<a href="Shatter.html" title="Shatter">粉砕</a>のダメージが減り、<a href="Airstrike.html" title="Airstrike">旋風の一撃</a>のダメージが増える。
+</p><p><span class="nhsym" style="white-space: nowrap">飛行中</span>
+</p><p>飛行がもうすぐ終わる。しっかりした地面に降りるか、<a href="Potion_of_enlightenment.html" class="mw-redirect" title="Potion of flight">飛行の薬</a>をもう一本飲んで飛び続けること。
+</p><p><span class="nhsym" style="white-space: nowrap">飛行中</span>
+</p><p>本当なら飛行は終わっているはずだが、終わると深い液体に落ちて死んでしまう状況だ。浮かび続ける負担で、陸に着くまで<a href="Draining.html" title="Draining">衰弱</a>し続けるので、大急ぎで陸に向かうこと。
+</p><p><span class="nhsym clr-white" style="white-space: nowrap">飛行中</span>
+</p><p>飛行に時間の制限がない。好きなときにやめられる。
+</p>
+<h3><span class="mw-headline" id="Haste">加速中</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">加速中</span>
+</p><p><a href="Haste.html" title="Haste">加速</a>した生き物は、どの行動も通常の 66% の時間で終わる。
+</p>
+<h3><span class="mw-headline" id="Heavenly_Storm">天上の嵐</span></h3>
+<p><span class="nhsym clr-white" style="white-space: nowrap">天の嵐(X)</span>
+</p><p><a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>の天の嵐の能力を使うと、大きな<a href="Slaying.html" title="Slaying">殺戮</a>ボーナス(X の数字)を得て、周りに視界を遮る<a href="Cloud.html" title="Cloud">雲</a>が絶えず生まれる。武術の攻撃をするとボーナスが増え、それ以外の行動をすると減っていく。0 になると嵐は消える。
+</p>
+<h3><span class="mw-headline" id="Heroism">英雄状態</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">英雄</span>
+</p><p><a href="Okawaru.html" title="Okawaru">オカワル</a>の英雄化の能力を使うと、魔法以外のすべてのスキルに +5 のボーナスがつく。
+</p>
+<h3><span class="mw-headline" id="Invisibility">透明化中</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">透明化中</span>
+</p><p><a href="Invisible.html" title="Invisible">透明</a>なキャラクターは、<a href="See_invisible.html" title="See invisible">霊視</a>を持たないモンスターと戦うとき、戦闘で有利になる。透明なモンスターは見つけにくく、あなたを攻撃するときに同じように有利になる。
+</p><p><span class="nhsym clr-brightmagenta" style="white-space: nowrap">透明化中</span>
+</p><p>魔法の装備を使って透明になった。この装備は何度でも使えるが、使うたびに<a href="Draining.html" class="mw-redirect" title="Drain">衰弱</a>する。
+</p><p><span class="nhsym clr-darkgray" style="white-space: nowrap">透明化中</span>
+</p><p>一応まだ透明だが、<a href="http://crawl.chaosforge.org/Glowing" data-untr="1" class="mw-redirect" title="Glowing">発光</a>しているか、<a href="Shallow_water.html" title="Shallow water">浅い水脈</a>や<a href="Cloud.html" title="Cloud">雲</a>の中に立っているせいで、モンスターからは見えている。
+</p>
+<h3><span class="mw-headline" id="Leda.27s_Liquefaction">レダの流動術</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">沼化</span>
+</p><p><a href="Leda's_Liquefaction.html" title="Leda&#39;s Liquefaction">レダの流動術</a>を唱えると、周りの地面がどろどろのぬかるみになる。はまったもの(あなたも含む!)は移動が遅くなり、近接攻撃が当たりにくくなる。
+</p>
+<h3><span class="mw-headline" id="Might">腕力強化</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">腕力＋</span>
+</p><p><a href="Potion_of_might.html" title="Potion of might">怪力の薬</a>を飲むと、近接攻撃のダメージに 1d10 のボーナスがつく。
+</p>
+<h3><span class="mw-headline" id="Olgreb.27s_Toxic_Radiance">オルグレブの毒気の光輪</span></h3>
+<p><span class="nhsym clr-brightmagenta" style="white-space: nowrap">毒光</span>
+</p><p><a href="Olgreb's_Toxic_Radiance.html" title="Olgreb&#39;s Toxic Radiance">オルグレブの毒気の光輪</a>を唱えると、数ターンの間、毎ターン<a href="Line_of_sight.html" class="mw-redirect" title="LOS">視界</a>内のすべてを<a href="Poison.html" title="Poison">毒</a>に冒す。
+</p>
+<h3><span class="mw-headline" id="Ozocubu.27s_Armour">オゾクブの鎧</span></h3>
+<p><a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a>を唱えると、身を守る氷の膜に覆われ、<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a> が上がる。ただし動くと割れる。
+</p>
+<h3><span class="mw-headline" id="Powered_by_Death">死よりの力</span></h3>
+<p><span class="nhsym clr-brightmagenta" style="white-space: nowrap">再生(X)</span>
+</p><p><a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a>のうち、死よりの力の<a href="http://crawl.chaosforge.org/Demonspawn_mutation" data-untr="1" class="mw-redirect" title="Demonspawn mutation">悪魔の血族の変異</a>を持つ者は、モンスターを倒したあと <a href="Hit_points.html" class="mw-redirect" title="HP">HP</a> の回復が速くなる。数字(X の部分)は回復がどれだけ速くなっているかを示す。
+</p>
+<h3><span class="mw-headline" id="Quad_Damage">四重ダメージ</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">ダメージx4</span>
+</p><p><a href="http://crawl.chaosforge.org/Quad_damage" data-untr="1" class="mw-redirect" title="Quad damage">四重ダメージ</a>を使うと、与えるダメージが 4 倍になる。<a href="Dungeon_Sprint.html" title="Dungeon Sprint">ダンジョンスプリント</a>にしか出てこない。
+</p>
+<h3><span class="mw-headline" id="Recall">招来</span></h3>
+<p><span class="nhsym clr-white" style="white-space: nowrap">招来</span>
+</p><p><a href="http://crawl.chaosforge.org/Recall" data-untr="1" title="Recall">招来</a>の能力を使うと、仲間が少しずつあなたのところへ<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>してくる。
+</p>
+<h3><span class="mw-headline" id="Repel_Missiles">飛び道具反発</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">反発</span>
+</p><p><a href="Repel_Missiles.html" class="mw-redirect" title="Repel missiles">飛び道具反発</a>の状態にある生き物には、遠隔攻撃が当たりにくい。プレイヤーにはこの一時的な状態はもう表示されないが、モンスターは今でもこの状態になる。
+</p><p><span class="nhsym clr-white" style="white-space: nowrap">反発</span>
+</p><p>この効果は永続している。たいていは反発の<a href="Scarf.html" title="Scarf">スカーフ</a>を着けているか、<a href="http://crawl.chaosforge.org/Qazlal" data-untr="1" class="mw-redirect" title="Qazlal">クァズラル</a>を信仰しているためだ。
+</p>
+<h3><span class="mw-headline" id="Resistance">元素耐性</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">元素耐性</span>
+</p><p><a href="Potion_of_resistance.html" title="Potion of resistance">耐性の薬</a>を飲むと、短い間、<a href="Fire.html" title="Fire">火炎</a>、<a href="Cold.html" title="Cold">冷気</a>、<a href="Electricity.html" title="Electricity">電撃</a>、<a href="Poison.html" title="Poison">毒</a>、<a href="Acid.html" title="Acid">酸</a>への耐性を得る。
+</p>
+<h3><span class="mw-headline" id="Ring_of_Flames">炎の円環</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">炎環</span>
+</p><p><a href="Salamander_hide_armour.html" title="Salamander hide armour">火蜥蜴の皮鎧</a>を着ると、周りに<a href="Fire.html" title="Fire">炎</a>の<a href="Cloud.html" title="Cloud">雲</a>が生まれ、火炎耐性が上がり、<a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>の<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>が増す。その代わり<a href="Cold.html" title="Cold">冷気</a>にとても弱くなる。
+</p>
+<h3><span class="mw-headline" id="Searing_Ray">焼灼の光線</span></h3>
+<p><span class="nhsym clr-white" style="white-space: nowrap">光線</span> <span class="nhsym clr-white" style="white-space: nowrap">光線＋</span> <span class="nhsym clr-white" style="white-space: nowrap">光線＋＋</span>
+</p><p><a href="http://crawl.chaosforge.org/Searing_Ray" data-untr="1" title="Searing Ray">焼灼の光線</a>を詠唱していて、まだ何ターンか光線を撃ち続けられる。<b>.</b> を押せば撃ち続ける。
+</p>
+<h4><span class="mw-headline" id="Flame_Wave">炎の波</span></h4>
+<p><span class="nhsym clr-white" style="white-space: nowrap">波動</span> <span class="nhsym clr-white" style="white-space: nowrap">波動＋</span> <span class="nhsym clr-white" style="white-space: nowrap">波動＋＋</span>
+<a href="Flame_Wave.html" title="Flame Wave">炎の波</a>も焼灼の光線と同じ詠唱のしくみを使う。
+</p>
+<h3><span class="mw-headline" id="Serpent.27s_Lash">蛇の鞭打ち</span></h3>
+<p><span class="nhsym clr-white" style="white-space: nowrap">蛇の鞭打ち(X)</span>
+</p><p><a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>の蛇の鞭打ちの能力を使うと、2 ターンぶん自由に移動できる(X は残りのターン数)。その間は武術の攻撃がずっと強くなるが、能力が切れると<a href="Exhausted.html" title="Exhausted">疲労状態</a>になる。
+</p>
+<h3><span class="mw-headline" id="Silence">静寂</span></h3>
+<p>あなたが<a href="Silence.html" title="Silence">静寂</a>の<a href="Aura.html" title="Aura">オーラ</a>を放っている間、その範囲にいるたいていの生き物(あなたも含む)は呪文を唱えられず、<a href="Scroll.html" title="Scroll">巻物</a>を読めず、神の能力も使えない。静寂で封じられない能力もあり、<a href="Demon.html" title="Demon">悪魔</a>は静寂の影響を受けない。
+</p>
+<h3><span class="mw-headline" id="Slimify">スライム化</span></h3>
+<p><span class="nhsym clr-brightgreen" style="white-space: nowrap">スライム</span>
+</p><p><a href="Jiyva.html" title="Jiyva">ジーヴァ</a>のスライム化の能力を使うと、次に命中した近接攻撃で相手が<a href="List_of_jellies.html" title="List of jellies">ジェリー</a>に変わる。
+</p>
+<h3><span class="mw-headline" id="Swiftness">俊足</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">俊足</span>
+</p><p><a href="Swiftness.html" title="Swiftness">俊足</a>の呪文は、しばらく移動速度を上げるが、そのあとしばらく<a href="#Sluggish">鈍足</a>になる。
+</p><p><span class="nhsym" style="white-space: nowrap">俊足</span>
+</p><p>速さの効果がもうすぐ切れ、まもなく移動が遅くなる。
+</p><p><span class="nhsym clr-darkgray" style="white-space: nowrap">俊足</span>
+</p><p>膝まで水につかっていて、ふつうに水の中を歩く速さまで落ちている。
+</p>
+<h3><span class="mw-headline" id="Teleport">転位準備</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">転位準備</span>
+</p><p>数ターン以内に<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>する。発動する前にもう一度テレポートを起こせば打ち消せる。テレポートをすべて封じるアーティファクトを身に着ける手もある。
+</p>
+<h3><span class="mw-headline" id="Transmutations">変身</span></h3>
+<p>便利な変身はいくつもあり、その多くは<a href="Transmutations.html" title="Transmutations">変成術</a>の呪文によるものだ。
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">半獣</span>
+</p><p><a href="http://crawl.chaosforge.org/Beastly_Appendage" data-untr="1" title="Beastly Appendage">半獣の躰</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">刃の手</span>
+</p><p><a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">蜘蛛</span>
+</p><p><a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">氷</span>
+</p><p><a href="Ice_Form.html" title="Ice Form">氷の躯</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">石像</span>
+</p><p><a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>
+</p><p><span class="nhsym" style="white-space: nowrap">嵐化</span>
+</p><p><a href="Storm_talisman.html" class="mw-redirect" title="Storm Form">嵐化</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">竜化</span>
+</p><p><a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">リッチ</span>
+</p><p><a href="Necromutation.html" title="Necromutation">死者の躯</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">コウモリ</span>
+</p><p><a href="Bat_Form.html" title="Bat Form">コウモリ</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">樹化</span>
+</p><p><a href="Tree_Form.html" title="Tree Form">樹化</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">影化</span>
+</p><p><a href="Shadow_Form.html" title="Shadow Form">影化</a>
+</p>
+<h3><span class="mw-headline" id="Vitalisation">生命の活性化</span></h3>
+<p><span class="nhsym clr-white" style="white-space: nowrap">活性化</span>
+</p><p><a href="Zin.html" title="Zin">ジン</a>があなたを神の活力で満たしている。<a href="Stats.html" class="mw-redirect" title="Stat">能力値</a>が上がり、<a href="Stats.html" class="mw-redirect" title="Stat">能力値</a>へのダメージや多くの悪い状態から守られる。
+</p>
+<h3><span class="mw-headline" id="Polar_Vortex">極渦</span></h3>
+<p><span class="nhsym clr-white" style="white-space: nowrap">渦</span>
+</p><p><a href="Polar_Vortex.html" title="Polar Vortex">極渦</a>を唱えると、周りに荒れ狂う嵐が巻き起こる。<a href="http://crawl.chaosforge.org/Flight" data-untr="1" class="mw-redirect" title="Flight">飛行</a>できるようになり、範囲内のものを手当たりしだいに痛めつけ、ダメージを与えて吹き飛ばす。
+</p>
+<h2><span class="mw-headline" id="Detrimental_Status_Effects">有害な状態</span></h2>
+<h3><span class="mw-headline" id="Antimagic">反魔法</span></h3>
+<p><a href="Antimagic.html" title="Antimagic">反魔法</a>の武器で攻撃されたモンスターは、呪文の詠唱に失敗しやすくなる。プレイヤーの場合は単に MP を失う。
+</p>
+<h3><span class="mw-headline" id="Bad_Forms">ありがたくない変身</span></h3>
+<p>敵の<a href="Polymorph.html" title="Polymorph">変化</a>の呪文を受けると、一時的に、あまりありがたくない姿のどれかに変えられてしまう。
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">豚化</span>
+</p><p><a href="http://crawl.chaosforge.org/Pig_Form" data-untr="1" title="Pig Form">豚化</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">茸化</span>
+</p><p><a href="Fungus_Form.html" title="Fungus Form">茸化</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">豪猪</span>
+</p><p><a href="http://crawl.chaosforge.org/Porcupine_Form" data-untr="1" title="Porcupine Form">豪猪</a>
+</p><p><span class="nhsym clr-brightgreen" style="white-space: nowrap">霧化</span>
+</p><p><a href="Wisp_Form.html" title="Wisp Form">霧化</a>
+</p>
+<h3><span class="mw-headline" id="Blind">盲目</span></h3>
+<p><a href="Blind.html" title="Blind">盲目</a>のモンスターは、あなたが<a href="Invisible.html" title="Invisible">透明</a>であるかのようにふるまう。<a href="See_invisible.html" title="See invisible">霊視</a>を持っていても役に立たない。
+</p>
+<h3><span class="mw-headline" id="Charm">魅了</span></h3>
+<p><a href="http://crawl.chaosforge.org/Charm" data-untr="1" class="mw-redirect" title="Charm">魅了</a>されたモンスターは、あなたの味方になって一緒に戦う……しばらくの間は。
+</p>
+<h3><span class="mw-headline" id="Confusion">混乱</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">混乱</span>
+</p><p><a href="Confusion.html" title="Confusion">混乱</a>した生き物は、移動や攻撃の方向を選べず、多くの行動ができなくなる。
+</p>
+<h3><span class="mw-headline" id="Constriction">締めつけ</span></h3>
+<p><span class="nhsym clr-yellow" style="white-space: nowrap">拘束中</span>
+</p><p><a href="http://crawl.chaosforge.org/Constricted" data-untr="1" class="mw-redirect" title="Constricted">締めつけ</a>られているときは、敵に毎ターン締め上げられてダメージを受け、<a href="Evasion.html" title="Evasion">回避</a>が下がり、移動もできない。相手を倒すか、離れようと移動を試みて振りほどくこと。
+</p>
+<h3><span class="mw-headline" id="Cooldowns">再使用待ち</span></h3>
+<p>いくつかの能力は、使った直後にはまた使えない。たいていは時間がたてば解ける。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">バーサーク×</span>
+</p><p>疲れていて、今は<a href="Berserk.html" title="Berserk">バーサーク</a>できない。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">ブリンク×</span>
+</p><p>まだ不安定で、<a href="Blink.html" title="Blink">瞬間移動</a>できない。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">ブレス</span>
+</p><p>しばらくの間、<a href="Draconian_breath_attacks.html" title="Draconian breath attacks">ドラコニアンのブレス攻撃</a>も<a href="Spit_Poison.html" title="Spit Poison">ナーガの毒の唾</a>も使えない。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">とば口</span>
+</p><p>疲れていて、今は<a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>を唱えられない。くれぐれも気をつけること。HP はおそらくまだ非常に低いままだ。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">疲労</span>
+</p><p>疲れていて、今は<a href="Ru.html" title="Ru">ルー</a>の能力も<a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>の蛇の鞭打ちも使えない。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">跳躍×</span>
+</p><p>疲れていて、今はもう一度<a href="Barachi.html" title="Barachi">蛙跳び</a>できない。しばらく動かずにいれば回復する。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">朗読×</span>
+</p><p>今は<a href="Zin.html" title="Zin">ジン</a>の説法の朗読の能力を使えない。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">渦×</span>
+</p><p>今は新たに<a href="Polar_Vortex.html" title="Polar Vortex">極渦</a>を起こせない。
+</p>
+<h3><span class="mw-headline" id="Corona">照明</span></h3>
+<p><span class="nhsym clr-yellow" style="white-space: nowrap">照明</span>
+</p><p><a href="Corona.html" title="Corona">照明</a>の呪文を受けた相手は、ずっと攻撃が当たりやすくなる。<a href="Evasion.html" title="Evasion">回避</a>が下がり、<a href="Invisibility.html" title="Invisibility">透明化</a>も効かなくなる。
+</p>
+<h3><span class="mw-headline" id="Corrosion">腐食</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">腐食(-X)</span>
+</p><p><a href="Acid.html" class="mw-redirect" title="Corrosion">腐食</a>は一時的な状態で、続いている間、<a href="Slaying.html" title="Slaying">殺戮</a>と <a href="Armour_class.html" class="mw-redirect" title="AC">AC</a> に -4 ずつ重ねてかかる(X の数字がどれだけ下がっているかを示す)。十分なターンがたてば腐食は直る。腐食したモンスターは単に AC が一時的に -8 される。
+</p>
+<h3><span class="mw-headline" id="Dazed">眩暈</span></h3>
+<p><a href="Zin.html" title="Zin">ジン</a>の言葉を朗読して聞かせると、モンスターが<a href="Dazed.html" title="Dazed">眩暈</a>を起こすことがある。正気に戻るまで、ターンを無駄にする。
+</p>
+<h3><span class="mw-headline" id="Diminished_Spells">呪文弱化</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">呪文弱化</span>
+</p><p>呪文の威力が一時的に弱まっている。
+</p>
+<h3><span class="mw-headline" id="Doom_Howl">遠吠</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">遠吠</span>
+</p><p><a href="http://crawl.chaosforge.org/Doom_hound" data-untr="1" class="mw-redirect" title="Doom hound">忘却の猟犬</a>の<a href="http://crawl.chaosforge.org/Doom_Howl" data-untr="1" class="mw-redirect" title="Doom Howl">遠吠</a>が、悪夢のような生き物を呼び寄せてあなたを狩らせている。遠吠が消えるまで、数ターンごとに危険な敵が近くに現れる。
+</p>
+<h3><span class="mw-headline" id="Drain">衰弱</span></h3>
+<p><span class="nhsym clr-lightgray">衰弱</span> <span class="nhsym clr-yellow" style="white-space: nowrap">衰弱</span> <span class="nhsym" style="white-space: nowrap">衰弱</span> <span class="nhsym" style="white-space: nowrap">衰弱</span>
+</p><p><a href="Negative_energy.html" title="Negative energy">負のエネルギー</a>に<a href="Draining.html" title="Draining">衰弱</a>させられ、最大 <a href="Hit_points.html" class="mw-redirect" title="HP">HP</a> が減っている。色が暗いほど効果は重い。経験値を得ると少しずつ回復する。衰弱したモンスターは代わりに <a href="Hit_dice.html" class="mw-redirect" title="HD">HD</a> が下がり、強さと<a href="Willpower.html" title="Willpower">意志力</a>が落ちる。
+</p><p><span class="nhsym clr-darkgray" style="white-space: nowrap">包み込み</span>
+</p><p>包み込まれているが、<a href="http://crawl.chaosforge.org/Unbreathing" data-untr="1" title="Unbreathing">呼吸しない</a>ので何の影響もない。
+</p>
+<h3><span class="mw-headline" id="Fast.2BSlow">加減速中</span></h3>
+<p><span class="nhsym clr-magenta" style="white-space: nowrap">加減速中</span>
+</p><p>魔法で<a href="Slow.html" title="Slow">減速</a>と<a href="Haste.html" title="Haste">加速</a>の両方がかかっていて、差し引きふつうの速さで行動する。
+</p>
+<h3><span class="mw-headline" id="Fear">恐慌</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">恐慌</span>
+</p><p><a href="Fear.html" title="Fear">恐慌</a>に陥ったキャラクターは、恐れの元に向かって移動できず(攻撃はできるが、近接攻撃ではすくんで身を引くことがある)、<a href="Berserk.html" title="Berserk">バーサーク</a>もできない。恐慌状態のモンスターは、行き止まりに突き当たるか、あなたに攻撃されるか、十分な時間がたつまで、あなたから逃げ続ける。
+</p>
+<h3><span class="mw-headline" id="Fire_Vulnerable">火炎耐性低下</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">耐火－</span>
+</p><p><a href="Fire.html" class="mw-redirect" title="Fire resistance">火炎耐性</a>が 1 段階下がっている。火炎ダメージを受けるものに気をつけること。
+</p>
+<h3><span class="mw-headline" id="Flayed">皮剥</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">皮剥</span>
+</p><p><a href="Flayed_ghost.html" title="Flayed ghost">皮剥げ幽霊</a>が与える幻の傷に苦しんでいる。HP が 0 になれば死ぬことに変わりはないが、幽霊を倒すか、しばらく<a href="Line_of_sight.html" title="Line of sight">視界</a>の外へ逃れれば HP が戻る。
+</p>
+<div id="frozen"></div>
+<h3><span class="mw-headline" id="Flooded">浸水</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">浸水</span>
+</p><p><a href="Water_elemental.html" title="Water elemental">水の精霊</a>などのモンスターに水を浴びせられ、息ができない。状態が切れるまで<a href="Asphyxiation.html" title="Asphyxiation">窒息</a>のダメージを受け続け、実質的に<a href="Silence.html" title="Silence">静寂</a>状態にもなる。
+</p>
+<h3><span class="mw-headline" id="Frozen">凍結</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">凍結</span>
+</p><p><a href="Frozen.html" title="Frozen">凍結</a>したキャラクターは体の一部を氷に閉じ込められ、効果の間、<a href="http://crawl.chaosforge.org/Movement_delay" data-untr="1" class="mw-redirect" title="Movement delay">移動ディレイ</a>が 4 <a href="Action.html" class="mw-redirect" title="Actions">aut</a> 増える。
+</p>
+<h3><span class="mw-headline" id="Held">拘束</span></h3>
+<p><span class="nhsym clr-yellow" style="white-space: nowrap">拘束中</span>
+</p><p>締めつけと似ているが、<a href="http://crawl.chaosforge.org/Held" data-untr="1" title="Held">拘束</a>された生き物は移動できなくなるだけで、ダメージは受けない。移動するか<a href="Blink.html" title="Blink">瞬間移動</a>を試みれば抜け出せる。
+</p><p><span class="nhsym" style="white-space: nowrap">拘束中</span>
+</p><p><a href="Web.html" title="Web">蜘蛛の巣</a>や<a href="Throwing_net.html" title="Throwing net">投げ網</a>に捕まった生き物は、移動も攻撃もできず、急所攻撃を受けやすい。呪文は唱えられる。
+</p>
+<h3><span class="mw-headline" id="Horrified">恐怖</span></h3>
+<p><span class="nhsym clr-yellow" style="white-space: nowrap">恐怖(-X)</span> <span class="nhsym" style="white-space: nowrap">恐怖(-X)</span>
+</p><p>勇気を犠牲にした<a href="Ru.html" title="Ru">ルー</a>の信者は、危険な敵がいると命中、ダメージ、呪文の威力にペナルティを受ける。
+</p>
+<h3><span class="mw-headline" id="Inner_Flame">内なる炎</span></h3>
+<p>敵に<a href="Inner_Flame.html" title="Inner Flame">内なる炎</a>を唱えると、その敵は死んだときに激しく爆発する。
+</p>
+<h3><span class="mw-headline" id="Lava">溶岩</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">溶岩</span>
+</p><p><a href="Lava.html" title="Lava">溶岩</a>の上を飛んでいる。落ちないように。
+</p>
+<h3><span class="mw-headline" id="Leda.27s_Liquefaction_2">レダの流動術</span></h3>
+<p><span class="nhsym clr-brown" style="white-space: nowrap">ぬかるみ</span>
+</p><p><a href="Leda's_Liquefaction.html" title="Leda&#39;s Liquefaction">レダの流動術</a>でどろどろになった地面にはまった生き物は、動きが遅くなり、近接攻撃が当たりにくくなる。
+</p>
+<h3><span class="mw-headline" id="Magic_Contamination">魔力汚染</span></h3>
+<p><span class="nhsym clr-darkgray" style="white-space: nowrap">魔力汚染</span> <span class="nhsym clr-lightgray">魔力汚染</span> <span class="nhsym clr-yellow" style="white-space: nowrap">魔力汚染</span> <span class="nhsym" style="white-space: nowrap">魔力汚染</span> <span class="nhsym" style="white-space: nowrap">魔力汚染</span>
+</p><p>ある種の有益な状態を使ったり、呪文の詠唱に失敗したり、<a href="Cloud.html" title="Cloud">変異性の霧</a>の中に立ったり、<a href="Zot_trap.html" title="Zot trap">ゾットの罠</a>を踏んだりすると、<a href="Magic_contamination.html" title="Magic contamination">魔力汚染</a>を受けることがある。量が少ない(暗い灰色か明るい灰色の)うちは無害だが、多くなると<a href="http://crawl.chaosforge.org/Glow" data-untr="1" class="mw-redirect" title="Glow">発光</a>し、危険な<a href="Miscast_effect.html" title="Miscast effect">呪文失敗の効果</a>や<a href="Bad_mutations.html" title="Bad mutations">悪い変異</a>をこうむることがある。詳しくは<a href="Magic_contamination.html" title="Magic contamination">魔力汚染</a>のページを参照。
+</p>
+<h3><span class="mw-headline" id="Mark">標的</span></h3>
+<p><span class="nhsym clr-brightmagenta" style="white-space: nowrap">標的</span>
+</p><p><a href="Sentinel's_Mark.html" title="Sentinel&#39;s Mark">標的</a>の効果が切れるまで、その階にいる意識のあるモンスターはすべてあなたの居場所を知り、たどり着きやすくなる。未探索の階や、強力なボスのいる階ではとても危険だ。<a href="Alarm_trap.html" title="Alarm trap">警報の罠</a>や<a href="Vault_sentinel.html" title="Vault sentinel">宝物庫の警告者</a>からこの効果を受ける。
+</p>
+<h3><span class="mw-headline" id="Mesmerised">魅了されている</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">魅了</span>
+</p><p><a href="Mesmerise.html" title="Mesmerise">魅了</a>されると、魅了してきた相手を倒すか、見失うか、ほかの方法で効果を破るまで、その相手から離れる方向へ移動できない。
+</p>
+<h3><span class="mw-headline" id="No_Move">移動不可</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">移動×</span>
+</p><p>数ターンの間、移動できない。<a href="Grave_Claw.html" title="Grave Claw">墓場の鉤爪</a>や<a href="Throw_Bolas.html" title="Throw Bolas">ボーラの投擲</a>などの呪文で攻撃されたとき、<a href="Yredelemnul.html" title="Yredelemnul">イレデレンヌル</a>の罰を受けたとき、<a href="Bane_of_Electrospasm.html" title="Bane of Electrospasm">電撃痙攣の災厄</a>を負った状態で電撃を受けたとき、<a href="Momentum_Strike.html" title="Momentum Strike">慣性の一撃</a>を唱えたあとに、この状態になる。
+</p>
+<h3><span class="mw-headline" id="No_Potions">薬不可</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">薬×</span>
+</p><p>効果の間、薬を飲めない。<a href="Ru.html" title="Ru">ルー</a>への犠牲、<a href="Cocytus.html" title="Cocytus">コキュートス</a>にいること、<a href="Killer_Klown.html" title="Killer Klown">殺人ピエロ</a>の<a href="Throw_Klown_Pie.html" title="Throw Klown Pie">パイ</a>、<a href="Ozocubu's_Refrigeration.html" title="Ozocubu&#39;s Refrigeration">オゾクブの瞬間凍結</a>の詠唱によってかかる。
+</p>
+<h3><span class="mw-headline" id="No_Scrolls">巻物不可</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">巻物×</span>
+</p><p>数ターンの間、巻物を使えない。この状態はたいてい<a href="Mutation.html" title="Mutation">変異</a>によるもので、大きなダメージを受けたときや、HP が低いときに傷を負ったときに起こる。<a href="Gehenna.html" title="Gehenna">ゲヘナ</a>の煙でも巻物×になる。
+</p>
+<h3><span class="mw-headline" id="Orb">オーブ</span></h3>
+<p><span class="nhsym clr-brightmagenta" style="white-space: nowrap">オーブ</span>
+</p><p><a href="The_Realm_of_Zot.html" class="mw-redirect" title="Realm of Zot">ゾットの領域</a>にいるか、ひょっとすると<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>そのものを持っている。<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>は遅れて発動し、<a href="Passage_of_Golubria.html" title="Passage of Golubria">ゴルブリアの通り道</a>はでたらめに働く。
+</p>
+<h3><span class="mw-headline" id="Paralysis">麻痺</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">麻痺</span>
+</p><p><a href="Paralysis.html" title="Paralysis">麻痺</a>したものは数ターンの間行動できず、攻撃を<a href="Evasion.html" title="Evasion">かわす</a>力をほぼすべて失い、<a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>を受けやすくなる。
+</p>
+<h3><span class="mw-headline" id="Petrifying.2FPetrified">石化中/石化状態</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">石化</span> <span class="nhsym" style="white-space: nowrap">石化</span>
+</p><p><a href="Petrify.html" class="mw-redirect" title="Petrification">石化</a>は 2 段階の状態だ。石化しつつある間は<a href="Slow.html" title="Slow">減速</a>する。完全に石化すると、数ターンの間、行動も攻撃を<a href="Evasion.html" title="Evasion">かわす</a>こともできなくなり、<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a> と <a href="Guaranteed_damage_reduction.html" class="mw-redirect" title="GDR">GDR</a> に大きなボーナスを得て、<a href="Fly.html" title="Fly">飛行</a>できなくなり、<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>と<a href="Stabbing.html" title="Stabbing">急所攻撃</a>に弱くなる。
+</p>
+<h3><span class="mw-headline" id="Poison">毒</span></h3>
+<p><span class="nhsym clr-yellow" style="white-space: nowrap">毒</span> <span class="nhsym" style="white-space: nowrap">毒</span> <span class="nhsym" style="white-space: nowrap">毒</span>
+</p><p><a href="Poison.html" title="Poison">毒</a>を受けると、時間がたつにつれてダメージを受ける。色が暗いほど、ダメージを受ける速さも総量も大きい。
+</p><p><span class="nhsym clr-darkgray" style="white-space: nowrap">毒</span>
+</p><p>毒を受けたまま<a href="Necromutation.html" title="Necromutation">リッチ化</a>や<a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>に変身したキャラクターや、<a href="#Starving">血が通っていない状態</a>になった<a href="Vampire.html" title="Vampire">吸血鬼</a>は、変身が終わるまで毒の進行が止まる。
+</p>
+<h3><span class="mw-headline" id="Sapped_Magic">魔力流出</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">失率上昇</span>
+</p><p><a href="http://crawl.chaosforge.org/Warmonger" data-untr="1" class="mw-redirect" title="Warmonger">戦争屋</a>に魔力をかき乱された。呪文を唱えようとするたびに、呪文の失敗率が上がることがある。
+</p><p><span class="nhsym clr-yellow" style="white-space: nowrap">魔術－</span> <span class="nhsym" style="white-space: nowrap">魔術－</span> <span class="nhsym" style="white-space: nowrap">魔術－</span>
+</p><p>呪文が唱えにくくなっている。
+</p>
+<h3><span class="mw-headline" id="Sickness">病気</span></h3>
+<p><span class="nhsym clr-yellow" style="white-space: nowrap">病気</span> <span class="nhsym" style="white-space: nowrap">病気</span> <span class="nhsym" style="white-space: nowrap">病気</span>
+</p><p>病気になると <a href="Hit_points.html" class="mw-redirect" title="HP">HP</a> が回復しなくなる。
+</p>
+<h3><span class="mw-headline" id="Silence_2">静寂</span></h3>
+<p><span class="nhsym clr-brightmagenta" style="white-space: nowrap">静寂</span>
+</p><p>敵の<a href="Silence.html" title="Silence">静寂</a>の<a href="Aura.html" title="Aura">オーラ</a>の中にいると、呪文を唱えられず、<a href="Scroll.html" class="mw-redirect" title="Scrolls">巻物</a>を読めず、神の能力も使えない。
+</p>
+<h3><span class="mw-headline" id="Sleep">睡眠中</span></h3>
+<p><a href="Sleep.html" title="Sleep">眠っている</a>生き物は行動できず、攻撃をほとんど<a href="Evasion.html" title="Evasion">かわせ</a>ず、<a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>を受けやすい。ただし、いずれひとりでに目を覚ますし、大きな<a href="Noise.html" title="Noise">騒音</a>を聞いたり傷を負ったりすると早めに起きることもある。<a href="Stealth.html" title="Stealth">隠密</a>が高いほど、眠っているモンスターを起こしにくい。
+</p>
+<h3><span class="mw-headline" id="Slow">減速</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">減速</span>
+</p><p>減速した生き物は、行動に通常の 150% の時間がかかる。
+</p>
+<h3><span class="mw-headline" id="Sluggish">鈍足</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">鈍足</span>
+</p><p><a href="Swiftness.html" title="Swiftness">俊足</a>の効果が切れ、しばらくの間、ふつうより遅くしか移動できない。
+</p>
+<h3><span class="mw-headline" id="Stat_Zero">能力値ゼロ</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">虚脱</span> <span class="nhsym" style="white-space: nowrap">不器用</span> <span class="nhsym" style="white-space: nowrap">無知性</span>
+</p><p><a href="Stats.html" title="Stats">能力値</a>の少なくとも一つが<a href="Stat_zero.html" title="Stat zero">ゼロ</a>以下になった。その瞬間に 2〜5 ターン<a href="Paralysis.html" title="Paralysis">麻痺</a>し、どの能力値かに応じてさまざまな悪影響を受ける。できるだけ早くゼロより上に戻すこと。
+</p>
+<h3><span class="mw-headline" id="Sticky_Flame">炎上中</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">焼夷</span>
+</p><p><a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>を唱えると、相手をナパームで覆い、毎ターン<a href="Fire.html" title="Fire">火炎</a>ダメージを与え、<a href="http://crawl.chaosforge.org/Glow" data-untr="1" class="mw-redirect" title="Glow">発光</a>させる。<a href="Shallow_water.html" title="Shallow water">浅い水脈</a>に立てば火を消せる。
+</p>
+<h3><span class="mw-headline" id="Still_Winds">無風の大気</span></h3>
+<p><span class="nhsym clr-brown" style="white-space: nowrap">雲×</span>
+</p><p><a href="Servant_of_whispers.html" title="Servant of whispers">囁くものの従者</a>が<a href="Still_Winds.html" title="Still Winds">呪文</a>を唱え、効果の間、<a href="Cloud.html" title="Cloud">雲</a>が発生しなくなっている。
+</p>
+<h3><span class="mw-headline" id="Teleport_Prevention">転位不可</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">転位阻害</span>
+</p><p>一部のモンスターは<a href="Dimension_Anchor.html" title="Dimension Anchor">次元の碇</a>を唱えることができ、数ターンの間、あなたは<a href="Blink.html" title="Blink">瞬間移動</a>も<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>もできなくなる。まれに、この効果を持つ<a href="Artefact.html" title="Artefact">アーティファクト</a>の武器もある。高レベルの<a href="Translocations.html" class="mw-redirect" title="Translocation">転位術</a>の呪文失敗でも起こる。
+</p>
+<h3><span class="mw-headline" id="Umbra">影の帳</span></h3>
+<p><a href="Profane_servitor.html" title="Profane servitor">涜神の従者</a>、<a href="Dithmenos.html" title="Dithmenos">ディスメノス</a>の信者、<a href="Ring_of_Shadows.html" title="Ring of Shadows">影の指輪</a>は<a href="Aura.html#Umbra" title="Aura">影の帳</a>を放つ。影の帳は隠密を高め、悪魔、アンデッド、ディスメノスや<a href="Yredelemnul.html" title="Yredelemnul">イレデレンヌル</a>の信者以外からの攻撃の命中率をすべて下げる。
+</p>
+<h3><span class="mw-headline" id="Vulnerable">意志力低下</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">意志半減</span>
+</p><p><a href="Scroll_of_vulnerability.html" title="Scroll of vulnerability">脆弱の巻物</a>を読むと、<a href="Line_of_sight.html" title="Line of sight">視界</a>内のすべて(あなたも含む)の<a href="Willpower.html" title="Willpower">意志力</a>が半分になる。<a href="Phantasmal_warrior.html" title="Phantasmal warrior">幻想の戦士</a>は攻撃で相手をこの状態にすることがある。
+</p>
+<h3><span class="mw-headline" id="Water">水場</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">水場</span> <span class="nhsym" style="white-space: nowrap">水場</span>
+</p><p><a href="Shallow_water.html" title="Shallow water">浅い水脈</a>か<a href="Deep_water.html" title="Deep water">深い水脈</a>の中に立っているか、その上を飛んでいる。
+</p>
+<h3><span class="mw-headline" id="Weak">虚弱</span></h3>
+<p><span class="nhsym" style="white-space: nowrap">虚弱</span>
+</p><p>体が弱っていると、近接攻撃のダメージが 25%(モンスターなら 33%)減る。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="Yredelemnul.html" class="mw-redirect" title="Yred">イレデレンヌル</a>の苦痛の鏡は <a href="0.28.html" title="0.28">0.28</a> で削除された。</li>
+<li><a href="0.27.html" title="0.27">0.27</a> で、<a href="Ashenzari.html" title="Ashenzari">アシェンザリ</a>の能動的な透視が削除され、<a href="Maxwell's_Capacitive_Coupling.html" title="Maxwell&#39;s Capacitive Coupling">マクスウェルの容量結合</a>用の詠唱中の状態が新たに加わり、<a href="http://crawl.chaosforge.org/Tornado" data-untr="1" title="Tornado">荒れ狂う嵐</a> / -Tornado が<a href="Polar_Vortex.html" title="Polar Vortex">極渦</a>に置き換えられた。</li>
+<li><a href="0.26.html" title="0.26">0.26</a> より前は、いくつかの<a href="Charms.html" title="Charms">加護</a>の呪文で状態がついた。<a href="http://crawl.chaosforge.org/Darkness" data-untr="1" title="Darkness">暗闇の喚起</a>、<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>(DMsl)、<a href="Regeneration_rate.html" class="mw-redirect" title="Regeneration">再生</a>、<a href="http://crawl.chaosforge.org/Shroud_of_Golubria" data-untr="1" title="Shroud of Golubria">ゴルブリアの帷子</a>である。<a href="Comestibles_and_satiation.html" class="mw-redirect" title="Food">食料</a>のシステムがあったころは、空腹の段階もいくつか状態欄に表示されていた。</li>
+<li><a href="0.20.html" title="0.20">0.20</a> より前は、<a href="http://crawl.chaosforge.org/Delayed_Fireball" data-untr="1" title="Delayed Fireball">遅延式ファイアボール</a>を唱えると遅延式ファイアボールの状態になった。</li>
+<li><a href="0.19.html" title="0.19">0.19</a> より前は、<a href="http://crawl.chaosforge.org/Dowsing_card" data-untr="1" title="Dowsing card">探知のカード</a>によるテレパシー(Telepathy)の状態と、高レベルの<a href="http://crawl.chaosforge.org/Shadow_card" data-untr="1" title="Shadow card">影のカード</a>による隠密状態(Stealthy)があった。<a href="Jiyva.html" title="Jiyva">ジーヴァ</a>の信者は祈祷(Pray)の状態になって、ジェリーがアイテムを食べるのを止めることができた。</li>
+<li><a href="0.18.html" title="0.18">0.18</a> で、?/ に状態(s(T)atus)の検索が加わった。0.18 より前には、<a href="http://crawl.chaosforge.org/Stoneskin" data-untr="1" title="Stoneskin">石の皮膚</a>、<a href="http://crawl.chaosforge.org/Condensation_Shield" data-untr="1" title="Condensation Shield">凝結の盾</a>、<a href="http://crawl.chaosforge.org/Phase_Shift" data-untr="1" title="Phase Shift">位相変移</a>もあった。</li>
+<li><a href="0.17.html" title="0.17">0.17</a> より前は<a href="http://crawl.chaosforge.org/Teleport_control" data-untr="1" title="Teleport control">テレポート制御</a>の状態があり、<a href="http://crawl.chaosforge.org/Control_Teleport" data-untr="1" title="Control Teleport">呪文</a>か<a href="http://crawl.chaosforge.org/Ring_of_teleport_control" data-untr="1" title="Ring of teleport control">指輪</a>で得られた。行き先を指定したテレポートを妨げる区域もあった。ほかに、<a href="http://crawl.chaosforge.org/Sure_Blade" data-untr="1" title="Sure Blade">確かなる刃</a>の呪文による確かなる刃の状態と、<a href="Claws.html" title="Claws">爪</a>で攻撃すると与える、HP を削る<a href="http://crawl.chaosforge.org/Bleeding" data-untr="1" title="Bleeding">出血</a>の状態もあった。</li>
+<li><a href="Acid.html" class="mw-redirect" title="Corrosion">腐食</a>は <a href="0.15.html" title="0.15">0.15</a> で加わった。</li>
+<li><a href="0.12.html" title="0.12">0.12</a> より前は腐敗(Rot)の状態があり、最大 HP が減り続けた。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ダンジョンの地形 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ダンジョンの地形(Dungeon feature)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ダンジョンの地形 <span class="en">Dungeon feature</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Dungeon_feature">Dungeon feature</a>」(対象の版の記載なし、2025-10-20 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Dungeon_feature&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン不明</b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>に対応して<b>いない可能性がある</b>。</i></div>
+<p>迷宮とその分岐には、さまざまな種類の独特な地形がある。どれが脅威になり、どう対処すればよいかを知っておけば、オーブを持ち帰るのにあと一歩足りないところを補えるかもしれない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Terrain"><span class="tocnumber">1</span> <span class="toctext">地形</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Shallow_water"><span class="tocnumber">1.1</span> <span class="toctext">浅い水脈</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Deep_water"><span class="tocnumber">1.2</span> <span class="toctext">深い水脈</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Lava"><span class="tocnumber">1.3</span> <span class="toctext">溶岩</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Walls"><span class="tocnumber">2</span> <span class="toctext">壁</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Rock_wall"><span class="tocnumber">2.1</span> <span class="toctext">岩の壁</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Translucent_rock_wall"><span class="tocnumber">2.2</span> <span class="toctext">半透明の岩の壁</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Green_crystal_wall"><span class="tocnumber">2.3</span> <span class="toctext">緑の水晶の壁</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Stone_wall"><span class="tocnumber">2.4</span> <span class="toctext">石の壁</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Translucent_stone_wall"><span class="tocnumber">2.5</span> <span class="toctext">半透明の石の壁</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Metal_wall"><span class="tocnumber">2.6</span> <span class="toctext">金属の壁</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#.22Unnaturally_hard.22_wall"><span class="tocnumber">2.7</span> <span class="toctext">「異常に硬い」壁</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Florae"><span class="tocnumber">3</span> <span class="toctext">植物</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Bush"><span class="tocnumber">3.1</span> <span class="toctext">藪</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Fungus"><span class="tocnumber">3.2</span> <span class="toctext">お化けキノコ</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Plant"><span class="tocnumber">3.3</span> <span class="toctext">迷宮草</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Trees"><span class="tocnumber">3.4</span> <span class="toctext">樹木</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Portals"><span class="tocnumber">4</span> <span class="toctext">ポータル</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Vaults"><span class="tocnumber">5</span> <span class="toctext">ヴォールト</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Terrain">地形</span></h2>
+<p>いちばん普通の地形はただの床だ。分岐によって色は変わるが、いつでも安全に歩ける……<a href="Trap.html" title="Trap">罠</a>が隠れていなければの話だが。
+</p><p>ほかの地形は次のとおり。
+</p>
+<h3><span class="mw-headline" id="Shallow_water"><a href="Shallow_water.html" title="Shallow water">浅い水脈</a></span></h3>
+<p>浅い水脈は通り抜けられる地形だが、<a href="Swamp_worm.html" title="Swamp worm">沼ワーム</a>や<a href="Electric_eel.html" class="mw-redirect" title="Electrical eel">電気ウナギ</a>のような水棲の生き物が潜んでいることがある。水面が乱れていたら、モンスターが待ち伏せしているしるしだ。浅い水の中を歩くのは遅く、戦闘での命中ボーナスが下がるなど、いくつかの不利がつく。<a href="Merfolk.html" title="Merfolk">水棲の民</a>なら話は別だ。
+</p>
+<h3><span class="mw-headline" id="Deep_water"><a href="Deep_water.html" title="Deep water">深い水脈</a></span></h3>
+<p>深い水脈は通り抜けられない地形で、水棲の生き物が潜んでいることがある(浅い水脈と同じだが、水面の乱れは見えない)。<a href="http://crawl.chaosforge.org/Levitation" data-untr="1" title="Levitation">浮遊</a>するか<a href="Fly.html" title="Fly">飛行</a>すれば渡れる。<a href="Merfolk.html" title="Merfolk">水棲の民</a>や<a href="Octopode.html" title="Octopode">オクトポード</a>なら泳げるし、<a href="Ice_Form.html" title="Ice Form">氷の躯</a>になっても渡れる。浮遊や飛行が切れたり、<a href="Confusion.html" class="mw-redirect" title="Confused">混乱</a>したりして深い水に落ちると、命取りになりかねない。運よく<a href="Scramble.html" title="Scramble">這い上がれれば</a>助かる。安全に渡れないときは、ゲームが深い水への移動をさせてくれない。混乱した状態で深い水の隣にいるときも、移動しようとすれば(そして落ちるかもしれないときは)少なくとも警告が出る。モンスターも混乱すると落ちることがあるが、0.9 では賢いモンスターはその場にとどまって落ちないようにする。
+</p>
+<h3><span class="mw-headline" id="Lava"><a href="Lava.html" title="Lava">溶岩</a></span></h3>
+<p>溶岩は通り抜けられない地形で、炎の飛び道具を放ち、たいてい火炎耐性を持つ生き物が潜んでいることがある。<a href="http://crawl.chaosforge.org/Levitation" data-untr="1" title="Levitation">浮遊</a>か<a href="Fly.html" title="Fly">飛行</a>なしでは溶岩のマスに踏み込めない。溶岩に落ちると命取りになりかねない。運よく<a href="Scramble.html" title="Scramble">這い上がれれば</a>助かるが、深い水から這い上がるときよりはるかに大きなダメージを受ける。深い水と同じく、ゲームはうっかり溶岩に踏み込まないよう守ってくれる。一方、知能の低いモンスターは<a href="Confusion.html" class="mw-redirect" title="Confused">混乱</a>させると落ちることがある。
+</p><p>溶岩の床からは黒い煙も出る。黒い煙が 2 マス続くと視線が通らなくなる。
+</p>
+<h2><span class="mw-headline" id="Walls"><a href="Wall.html" title="Wall">壁</a></span></h2>
+<p>壁は境界を作り、迷宮の形を決めている。
+</p>
+<h3><span class="mw-headline" id="Rock_wall">岩の壁</span></h3>
+<p>迷宮を掘り抜いている、ごく普通の岩。<a href="Wand_of_digging.html" title="Wand of digging">掘削のワンド</a>で取り除けるほか、<a href="Dig.html" title="Dig">掘削</a>や<a href="Shatter.html" title="Shatter">粉砕</a>など、いくつかの呪文や祈祷でも消せる。<a href="Passwall.html" title="Passwall">壁の透過</a>の呪文で通り抜けることもできる。稲妻や火花はこの壁で跳ね返る。
+</p>
+<h3><span class="mw-headline" id="Translucent_rock_wall">半透明の岩の壁</span></h3>
+<p>半透明の岩の壁は向こうが透けて見えるが、通れないのは岩の壁と同じだ。岩の壁と同じ手段で取り除ける。半透明の岩の壁で囲まれたヴォールトの中に、レベルの高いモンスターや貴重なアイテムが入っていることがある。開けるなら自己責任で。稲妻や火花はこの壁で跳ね返る。半透明の岩の壁越しに瞬間移動する<a rel="nofollow" class="external autonumber" href="http://crawl-ref.git.sourceforge.net/git/gitweb.cgi?p=crawl-ref/crawl-ref;a=blob;f=crawl-ref/source/spells1.cc;h=3bcbc6e2756623bd59dfb4149bcc1c9733ba3b79;hb=e240f6d8e578c4eb0b39dcc66efd4b553c0fd298#l148">[1]</a>ことも、アイテムを<a href="Apportation.html" title="Apportation">収拾</a>する<a rel="nofollow" class="external autonumber" href="http://crawl-ref.git.sourceforge.net/git/gitweb.cgi?p=crawl-ref/crawl-ref;a=blob;f=crawl-ref/source/spells4.cc;h=7074551310e294277a01618d04b48e7ebfb47e06;hb=e240f6d8e578c4eb0b39dcc66efd4b553c0fd298#l1865">[2]</a>こともできない。
+</p>
+<h3><span class="mw-headline" id="Green_crystal_wall">緑の水晶の壁</span></h3>
+<p>普通の壁が稲妻を跳ね返すように、この壁は冷気と炎を跳ね返す。掘削や分解は効かないが、リーの瞬間解体術や粉砕では岩の壁よりもさらに壊しやすい。リーの瞬間解体術で壊すと、ほかのどの壁よりもずっと大きな爆発が起きるので、十分に離れて立つこと。緑の水晶はふつう、一部の特別な場所を除けば、普通の迷宮ではなくヴォールトの中に現れる。
+</p>
+<h3><span class="mw-headline" id="Stone_wall">石の壁</span></h3>
+<p>岩より硬く、高い威力の<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>か<a href="Shatter.html" title="Shatter">粉砕</a>でしか壊せない。石でできたヴォールトは迷宮のどこにでもよくある。<a href="Vault.html" title="Vault">決まった形の特別な構造物</a>の多くも石でできていて、オークやノールが堀と跳ね橋まで備えた石の砦を築いていることもある! 稲妻や火花はこの壁で跳ね返る。
+</p>
+<h3><span class="mw-headline" id="Translucent_stone_wall">半透明の石の壁</span></h3>
+<p>石の壁の半透明版。取り除くのは石の壁と同じくらい難しいが、向こう側がそのまま見通せる。
+</p>
+<h3><span class="mw-headline" id="Metal_wall">金属の壁</span></h3>
+<p>石よりもさらに頑丈で、金属の壁はほとんど壊せない。手を出す方法は、すぐそばの空間そのものを崩壊させる(無形の『<a href="Lugonu.html" title="Lugonu">ルゴヌ</a>』の信者だけが持つ能力だ)か、ほぼ最大の威力のリーの瞬間解体術や粉砕を使うかしかない。稲妻や火花は跳ね返らず、この壁に吸い込まれる。
+</p>
+<h3><span class="mw-headline" id=".22Unnaturally_hard.22_wall">「異常に硬い」壁</span></h3>
+<p>どんな手段でもまったく壊せない壁。ルゴヌの階層の崩壊も、最大威力のリーの瞬間解体術や粉砕も、掘削のワンドも、穴掘りの甲虫のようなモンスターも……何をしてもなくならない。ゾットの領域:5 やマップの端など、迷宮の構造が大事な場所に使われていることが多い。
+</p>
+<h2><span class="mw-headline" id="Florae">植物</span></h2>
+<p>迷宮の中でさえ、植物は<a href="Fedhas_Madash.html" title="Fedhas Madash">フェダス・マダシュ</a>の導きのもとで生い茂る。フェダス・マダシュの信者でないかぎり、植物はどれも行く手をふさぐ。一部の植物は矢弾も通さない。<a href="Fighting.html" title="Fighting">戦闘</a>やある近接武器のスキルをまだ覚えていない<i>なら</i>、植物を攻撃すればその新しいスキルに経験値を少し回せる。本物のモンスター退治に戻れば、いずれそのスキルを覚えられる(0.9 より前は、植物を叩くだけで戦闘や武器のスキルをレベル 1 まで上げられた)。ここに挙げたものはどれも受け身で、プレイヤーを攻撃してくることは一切ない。
+</p>
+<h3><span class="mw-headline" id="Bush"><a href="Bush.html" title="Bush">藪</a></span></h3>
+<p>藪は AC がとても高いが、火に弱い。2 つ並んでいないかぎり視線をさえぎらず、矢弾も通すので、遠くからモンスターを撃つための遮蔽物にぴったりだ。
+</p>
+<h3><span class="mw-headline" id="Fungus"><a href="http://crawl.chaosforge.org/Fungus" data-untr="1" title="Fungus">お化けキノコ</a></span></h3>
+<p>ごく普通のお化けキノコは動かず、身を守るすべも攻撃する手段もない。いつもどおりの方法で攻撃できる。視線については藪と同じだが、矢弾はさえぎる(そして矢弾でダメージを受ける)。寿命の短い仲間として、死体から生える<a href="Toadstool.html" title="Toadstool">からかさキノコ</a>がある。見た目は似ているが、はるかに危険になりうる<a href="Ballistomycete.html" title="Ballistomycete">放出菌糸</a>も参照。
+</p>
+<h3><span class="mw-headline" id="Plant"><a href="Plant.html" title="Plant">迷宮草</a></span></h3>
+<p>どの点でもお化けキノコと同じだが、ずっと頑丈だ。
+</p>
+<h3><span class="mw-headline" id="Trees"><a href="Wall.html#Trees" title="Wall">樹木</a></span></h3>
+<p>藪やお化けキノコと違って、樹木は事実上、壁の一種だ。呪文などで火をつけることはできる(山火事には気をつけよう)が、武器で攻撃することはゲームが許してくれない。「あなたは空振りした」となる。妙なことに、半透明の岩の壁と同じように瞬間移動をさえぎる。いつか瞬間移動の巻物で試してみるといい。
+</p>
+<h2><span class="mw-headline" id="Portals">ポータル</span></h2>
+<p>ポータルは、特別な迷宮の分岐へ通じる一時的な門だ。詳しくは<a href="Portal.html" class="mw-redirect" title="Portals">ポータル</a>のページを参照。
+</p>
+<h2><span class="mw-headline" id="Vaults">ヴォールト</span></h2>
+<p>ヴォールトは、あらかじめ作られた大きな構造物で、モンスターやアイテム、罠など、さまざまな脅威や報酬が入っていることがある。詳しくは<a href="Vault.html" title="Vault">ヴォールト</a>のページを参照。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

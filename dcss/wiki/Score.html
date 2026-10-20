@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スコア &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="スコア(Score)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>スコア <span class="en">Score</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Score">Score</a>」(0.31 向け、2024-01-16 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Score&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>スコア</b>は、勝っても負けてもゲームの終わりに決まる。決まったスコアはハイスコア表に(<a href="Species.html" title="Species">種族</a>、<a href="Background.html" title="Background">職業</a>、キャラクターのレベル、<a href="The_Dungeon.html" class="mw-redirect" title="Dungeon">迷宮</a>の階、死因とともに)後世まで記録される。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Score_Calculation"><span class="tocnumber">1</span> <span class="toctext">スコアの計算</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Experience_Score"><span class="tocnumber">2</span> <span class="toctext">経験値によるスコア</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Runes_and_Turns"><span class="tocnumber">3</span> <span class="toctext">ルーンとターン数</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Gems"><span class="tocnumber">4</span> <span class="toctext">宝石</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Highest_scores_online"><span class="tocnumber">5</span> <span class="toctext">オンラインの最高スコア</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Dungeon_Sprint"><span class="tocnumber">6</span> <span class="toctext">ダンジョンスプリント</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#See_Also"><span class="tocnumber">7</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#History"><span class="tocnumber">8</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Score_Calculation">スコアの計算</span></h2>
+<p>最終的なスコアは次の四つの要素で決まる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<ul><li>得た<a href="Experience.html" title="Experience">経験値</a>の合計。</li>
+<li>集めた<a href="Rune_of_Zot.html" class="mw-redirect" title="Rune">ルーン</a>の数。</li>
+<li>集めた<a href="Gem.html" title="Gem">宝石</a>の数(あとで壊れたものも含む)。</li>
+<li><a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持って脱出した場合は、ゲームにかかった<a href="Turn.html" title="Turn">ターン</a>数。</li></ul>
+<p>オーブを持って脱出したとすると、影響の大きさはルーン &gt; ターン数 &gt; 宝石 &gt; 経験値の順になる。
+</p>
+<h2><span class="mw-headline" id="Experience_Score">経験値によるスコア</span></h2>
+<p>経験値によって加わる点数に上限はないが、得られる割合はだんだん下がり、経験値が 300 万を超えると 10% しか入らなくなる。
+</p>
+<ul><li> 最初の 250,000 点の経験値までは <code>0.7 * experience points</code></li>
+<li> その次の 750,000 点(1,000,000 まで)は <code>0.4 * experience points</code></li>
+<li> その次の 2,000,000 点(3,000,000 まで)は <code>0.2 * experience points</code></li>
+<li> それ以降は <code>0.1 * experience points</code></li></ul>
+<p>経験値と経験レベルの関係については <a href="Experience.html" class="mw-redirect" title="XL">XL</a> の記事を参照。
+</p><p>レベル 27 に達したあとも、経験値はおよそ 900 万まで増え続ける。勝利したゲームでは、経験値の分はスコア全体のごく一部で、たいていは 10% に満たない。いっぽう勝利していないゲームでは、たいていスコアの大半を占める。
+</p>
+<h2><span class="mw-headline" id="Runes_and_Turns">ルーンとターン数</span></h2>
+<p>まず、勝ったかどうかにかかわらず <code>12,000 * number of runes + 1,000 * (number of runes)^2</code> 点が入る。
+</p><p>これに加えて、<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持って脱出すれば、オーブの分として 254,000 点、さらにルーン 1 個につき 2,000 点が入る。
+</p><p>オーブを持って脱出した場合は、そのうえで <code> 6,250,000,000 * number of runes^2 / turns</code> のボーナスが入る。点数の大部分はここから来る。したがって、スコアを最大にしたいなら、できるだけ多くのルーンを集めて、できるだけ早くゲームを終えるのがいちばんだ。
+</p><p>ルーンを 15 個すべて集めたとすると、次のようになる。
+</p>
+<table class="wikitable">
+<tr>
+<th style="width:5em"> ターン数
+</th>
+<th style="width:10em"> スコア
+</th></tr>
+<tr>
+<td> 20k </td>
+<td style="text-align:right"> 70,312,500
+</td></tr>
+<tr>
+<td> 25k </td>
+<td style="text-align:right"> 56,250,000
+</td></tr>
+<tr>
+<td> 50k </td>
+<td style="text-align:right"> 28,125,000
+</td></tr>
+<tr>
+<td> 75k </td>
+<td style="text-align:right"> 18,175,000
+</td></tr>
+<tr>
+<td> 100k </td>
+<td style="text-align:right"> 14,062,500
+</td></tr>
+<tr>
+<td> 125k </td>
+<td style="text-align:right"> 11,250,000
+</td></tr>
+<tr>
+<td> 150k </td>
+<td style="text-align:right"> 9,375,000
+</td></tr>
+<tr>
+<td> 200k </td>
+<td style="text-align:right"> 7,031,250
+</td></tr>
+<tr>
+<td> 250k </td>
+<td style="text-align:right"> 5,625,000
+</td></tr>
+<tr>
+<td> 300k </td>
+<td style="text-align:right"> 4,687,500
+</td></tr>
+</table>
+<h2><span class="mw-headline" id="Gems">宝石</span></h2>
+<p>拾った<a href="Gem.html" title="Gem">宝石</a>1 個につき、
+</p>
+<ul><li>ゲームに勝たなかった場合は 10,000 点が入る。</li>
+<li>ゲームに勝った場合は 100,000 点が入る。</li></ul>
+<p>宝石を見つけた<i>あとで</i>宝石のタイマーが切れても関係ない。いったん拾った宝石の点数は、何があっても失われない。
+</p><p>宝石はターン数が少ないうちしか手に入らない。とはいえハイスコアを狙うプレイではどのみちターン数を切り詰めるので、途中で見つけた宝石は拾っておけばいい。拾うのに使った時間は、たいていスコアのボーナスで取り返せる。
+</p>
+<h2><span class="mw-headline" id="Highest_scores_online">オンラインの最高スコア</span></h2>
+<p>ハイスコアの一覧は<a rel="nofollow" class="external text" href="http://crawl.akrasiac.org/scoring/top-N.html">こちら</a>にある。
+</p><p>現在の最高スコアは Sapher の<a rel="nofollow" class="external text" href="https://crawl.xtahua.com/crawl/morgue/Sapher/morgue-Sapher-20240103-085508.txt">201,606,281 点</a>だ。<a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>を信仰する<a href="Meteoran.html" title="Meteoran">メテオラン</a>の<a href="Earth_Elementalist.html" title="Earth Elementalist">地の精霊使い</a>で、<a href="0.29.html" title="0.29">0.29</a>.1 においてルーン 15 個を集め、7022 ターンで勝利した。このゲームは 2023 年 12 月 20 日から 2024 年 1 月 3 日にかけてプレイされた。それまでの世界記録だった <a rel="nofollow" class="external text" href="http://crawl.xtahua.com/crawl/morgue/enPassant/morgue-enPassant-20230913-190203.txt">enPassant のケイブリアドス信仰の MeEE</a> より、1449 ターン(!)も短い。
+</p>
+<ul><li>メテオランにはターン数の厳しい制約があるが、それを補う特性をたくさん持っている。スキル適性がすばらしく、マスを探索するたびにものすごい速さで回復する。ハイスコアを狙うプレイではどのみちターン数を切り詰めるので、ターンを節約できる特性を、ほとんど欠点なしにすべて活かせる。</li>
+<li>地の魔術には<a href="Passwall.html" title="Passwall">壁の透過</a>、<a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像の躯</a>、<a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>など、便利な呪文がたくさんある。また、<a href="Shatter.html" title="Shatter">粉砕</a>を使えるようになることが重要で、壁を壊したり、画面全体に範囲ダメージを与えたりできる。</li></ul>
+<p>今のところ、ハイスコアを狙うゲームで人気の神は<a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>と<a href="Kikubaaqudgha.html" title="Kikubaaqudgha">キクバークッグァ</a>だ。
+</p>
+<ul><li>ケイブリアドスは 1 歩あたりにかかる時間を長くするが、1 歩あたりのターン数は増やさない。そのため、1 歩ごとに回復する HP と MP が多くなる。</li>
+<li>キクバークッグァは<a href="Necromancy.html" title="Necromancy">死霊術</a>の呪文と、アンデッドの軍団を作る手段を授けてくれる。敵はすべてこの軍団に任せられる。</li></ul>
+<p>オフラインのゲームはハイスコアの対象に含まれない。<a href="Explore_mode.html" title="Explore mode">探索モード</a>や<a href="Wizard_mode.html" title="Wizard mode">ウィザードモード</a>のゲームにはスコアがつかないが、それだけでは不正を防ぎきれない。オフラインのゲームでは<a href="http://crawl.chaosforge.org/Seed" data-untr="1" title="Seed">シード</a>が表示されるので、別のゲームで先回りして迷宮全体の地形を見ておくことができてしまう。それに、ゲームの仕組みや採点方法を変えるためにソースコードやモルグに手が加えられていないことを保証する手段もない。
+</p><p>オンラインでプレイされたゲームの本当の最高スコアは edsrzf の 1,859,332,704 点だが、これはバグのせいでスプリントの採点方式で計算されたものだ。
+</p>
+<h2><span class="mw-headline" id="Dungeon_Sprint">ダンジョンスプリント</span></h2>
+<p><a href="Dungeon_Sprint.html" title="Dungeon Sprint">ダンジョンスプリント</a>は、とくに指定がなければふつうのゲームと同じ式を使う。ゲームがずっと短くなりがちなので、(集めたルーンの数のわりに)スコアは高くなりやすい。ただし、スプリントごとに独自の採点方法があることもある。たとえば<a href="http://crawl.chaosforge.org/Meatsprint" data-untr="1" class="mw-redirect" title="Meatsprint">ミートスプリント</a>ではターン数でスコアを計算し、<code>turns * 100000</code> で、勝てばその 2 倍になる。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p>スプリント以外では届きようがないが、スコアには 2,147,483,647 点、つまり 32 ビット符号付き整数の上限という絶対的な上限がある。
+</p>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Speed_running" data-untr="1" title="Speed running">スピードラン</a> - ハイスコアと似ているが、競うのは時間。ターン数を少なくするプレイ全般のコツも載っている。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> で、スコアを増やすアイテムとして<a href="Gem.html" title="Gem">宝石</a>が加わった。</li>
+<li><a href="0.16.html" title="0.16">0.16</a> より前は、ハイスコアの上限が 99,999,999 点だった(当時はまだ誰も届いていなかった)。</li>
+<li><a href="0.15.html" title="0.15">0.15</a> より前は、スコアに<a href="Gold.html" title="Gold">金貨</a>が影響した。金貨 1 枚につき 1 点だった(上限は 1,000,000 点)。</li>
+<li><a href="0.9.0.html" class="mw-redirect" title="0.9">0.9</a> より前は、持ち物のアイテムもスコアに加算された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/hiscores.cc#L1634">hiscores.cc:1634</a> (0.30.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/dat/des/sprint/meat.des#L303">dat/des/sprint/meat.des:303</a> (0.30.1)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

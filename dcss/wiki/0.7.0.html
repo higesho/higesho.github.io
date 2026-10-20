@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.7.0 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.7.0(0.7.0)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.7.0 <span class="en">0.7.0</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.7.0">0.7.0</a>」(対象の版の記載なし、2012-12-21 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.7.0&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="http://crawl.chaosforge.org/Crawl" data-untr="1" class="mw-redirect" title="Crawl">Crawl</a> の過去のリリースについてのものだ。最新版を含むほかのバージョンについては、<a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を参照。</i></div>
+<p><b>0.7.0</b> は <i>Dungeon Crawl Stone Soup</i> の古いバージョンで、2010年7月24日にリリースされた。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Release_notes"><span class="tocnumber">1</span> <span class="toctext">リリースノート</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Balance_fixes"><span class="tocnumber">1.1</span> <span class="toctext">バランスの調整</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Unsorted"><span class="tocnumber">1.2</span> <span class="toctext">未分類</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Interface"><span class="tocnumber">1.3</span> <span class="toctext">インターフェース</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Game"><span class="tocnumber">1.4</span> <span class="toctext">ゲーム</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Gods"><span class="tocnumber">1.5</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Items"><span class="tocnumber">1.6</span> <span class="toctext">アイテム</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Backgrounds"><span class="tocnumber">1.7</span> <span class="toctext">職業</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Monsters"><span class="tocnumber">1.8</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Spells"><span class="tocnumber">1.9</span> <span class="toctext">呪文</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Technical"><span class="tocnumber">1.10</span> <span class="toctext">技術面</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#External_links"><span class="tocnumber">2</span> <span class="toctext">外部リンク</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Release_notes">リリースノート</span></h2>
+<p>Stone Soup 0.7 (20100724)
+</p>
+<h3><span class="mw-headline" id="Balance_fixes">バランスの調整</span></h3>
+<ul><li> エネルギーのランダム化でモンスターが 2 回続けて行動するときは、必ずそのうち 1 回が移動になる。</li>
+<li> スキルに比べて防具が重いときは、甲冑スキルの伸びを大きく速めた。</li>
+<li> 重い防具の保証ダメージ軽減の割合は、甲冑スキルに左右されなくなった。</li>
+<li> 重い防具は武器の速さに影響しなくなった。</li>
+<li> 盾は攻撃の速さを落とす。</li>
+<li> ナーガとケイブリアドスの信者は、それほど腹が減らなくなった。</li></ul>
+<h3><span class="mw-headline" id="Unsorted">未分類</span></h3>
+<ul><li> 新しいミニゲーム、ダンジョンスプリント。</li>
+<li> 新しいチュートリアル。これまでのチュートリアルは解説付きモードになった。</li>
+<li> スキル適性が +5 から -5 の尺度になった。</li>
+<li> 死亡時のメッセージのために、毒の出どころを記録するようにした。</li>
+<li> 魔法の地図と、ルゴヌの自らアビスへ向かう能力が、パンデモニウムでも使えるようになった。</li>
+<li> グールは飢え死にしなくなった。代わりに腐るのが速くなるだけだ。</li></ul>
+<h3><span class="mw-headline" id="Interface">インターフェース</span></h3>
+<ul><li> 開始時のメニューを新しくした。タイル版ではマウスで操作できる。</li>
+<li> タイル版にモンスターの一覧のタブを新設した。</li>
+<li> 水と「何かの気配」の記号('~' と '{')を入れ替えた。</li>
+<li> '@' のキャラクター情報に、実際の武器の速さを表示するようにした。</li>
+<li> "A" の画面で、プレイヤーの体格を説明するようにした。</li></ul>
+<h3><span class="mw-headline" id="Game">ゲーム</span></h3>
+<ul><li> スライムの穴ぐらの壁は酸を帯びている。</li>
+<li> 分岐ごとの店の分布を変えた。</li>
+<li> 能力値による即死をなくした。</li>
+<li> モンスターも静寂を使うようになった。</li>
+<li> モンスターも光輪をまとうようになった。</li>
+<li> 悪魔の血族の新しい変異。</li>
+<li> 浅瀬のモンスターは陸の上に生成されるようにした。</li>
+<li> 矢弾の強化値が、壊れる確率に与える影響を小さくした。</li>
+<li> 新しい地図。</li>
+<li> これまでのプレイヤーの幽霊の台詞を直し、幽霊に合った台詞を追加した。</li>
+<li> モンスターの装備も酸で腐食するようになった。</li>
+<li> 失った能力値は 1 ポイントずつ回復するようになった。</li>
+<li> 魔力汚染の効果が 2 倍以上厳しくなった。</li>
+<li> アビスに人の手で作った構造物が現れることがある。</li></ul>
+<h3><span class="mw-headline" id="Gods">神</span></h3>
+<ul><li> ジンは知性のない仲間が死んでも気にしなくなり、不浄なモンスターや混沌のモンスターの巻き添えでの死も功績として認めるようになった。</li>
+<li> ジンに新しい力: 収監。</li>
+<li> エリヴィロンの神秘の活力が、威力に応じてより良く強まるようになった。</li>
+<li> イレデレンヌルは吸血鬼に贈り物を授けなくなった。</li>
+<li> シフ・ムーナの信仰心が、スキルの得意な種族に不利でなくなった。</li>
+<li> ネメレクスは金貨の捧げ物を受け取らなくなった。</li>
+<li> フェダスが放出菌糸を過活動の放出菌糸に進化させられるようになった。</li>
+<li> ジーヴァはプレイヤーに保存とスライムにまつわる独自の変異を与えるようになった。また、ロイヤルジェリーの効果で生まれるスライムは、ずっと残る中立のものではなく、一時的な友好的なものになった。</li></ul>
+<h3><span class="mw-headline" id="Items">アイテム</span></h3>
+<ul><li> 聖なる御言葉の巻物が、効く相手に与えるダメージを増やした。</li>
+<li> 吹き矢筒はダメージを与えないので、ダメージを表示しなくなった。それに合わせて、武器強化の巻物 II も効かなくなった。</li>
+<li> 火炎と冷気のブランドのダーツが必ず壊れることはなくなった。また、投擲武器に鋼のブランドが正しくつくようになった。</li>
+<li> 悪魔の三叉戟を輝けるものに祝福してもらえるようになった。</li></ul>
+<h3><span class="mw-headline" id="Backgrounds">職業</span></h3>
+<ul><li> 盗賊と死の騎士はなくなった。</li>
+<li> 転位術師は転送のダーツを受け取る。</li></ul>
+<h3><span class="mw-headline" id="Monsters">モンスター</span></h3>
+<ul><li> アナコンダは水陸両生になった。</li>
+<li> スケルトンドラゴンは骸骨ドラゴンに名前が変わった。</li>
+<li> マーネスは鉄インプになり、能力値も調整した。</li>
+<li> インプは霊視を失い、代わりに影のインプが霊視を得た。白インプは毒に耐性を持つが、火に弱い。</li>
+<li> 醜きもの(と甚だしく醜きもの)は水陸両生でなくなった。</li>
+<li> ムカデの悪魔の記号を変えた。</li>
+<li> オレンジデーモンの毒は、どの能力値でも吸い取れるようになった。</li>
+<li> ヘルハウンド、地獄の豚、ムカデの悪魔は死体を残すようになった。</li>
+<li> 地獄の騎士の HP を増やし、与えるダメージも上げた。</li>
+<li> またたきガエルが位相変移を持つ。</li>
+<li> 新しいモンスター: 象、凶暴化した象、地獄の象、スプリガン、スプリガンのドルイド、スプリガンのホタル騎手。</li>
+<li> 新しいユニーク: 影のインプのグラインダー。</li>
+<li> ウェインが盛大にぶちのめしてくるようになった。</li>
+<li> 彫像に射手の種類を追加した。</li></ul>
+<h3><span class="mw-headline" id="Spells">呪文</span></h3>
+<ul><li> インプの召喚はレベル 2 になり、呪文の威力が効くようになって、鉄インプも呼べるようになった。</li>
+<li> 招集の魔法書では精霊の召喚の代わりに犬族のしもべの召喚が入り、召喚術の魔法書からは犬族のしもべの召喚が外れた。</li>
+<li> 醜きものの召喚は、威力が高いときに甚だしく醜きものを呼ぶことが少なくなった。</li>
+<li> 発光しているモンスターには透明化が効かなくなった。</li>
+<li> 延長は、覚えている呪文の効果だけを延ばす。</li>
+<li> 死のとば口が妨げるのは回復だけになった。麻痺するのは究極治癒のときだけだ。</li>
+<li> 醜きものの召喚はレベル 6、招霊はレベル 7 になった。</li></ul>
+<h3><span class="mw-headline" id="Technical">技術面</span></h3>
+<ul><li> 視界や範囲は、必要になったときに計算し直すようにした。</li>
+<li> アサートを既定で有効にした。</li>
+<li> タイル版のコードを SDL と OpenGL から切り離して抽象化した。</li>
+<li> ゲームを選ぶ部分のコードを整理した。</li></ul>
+<h2><span class="mw-headline" id="External_links">外部リンク</span></h2>
+<p><a rel="nofollow" class="external free" href="https://crawl.develz.org/wordpress/downloads">https://crawl.develz.org/wordpress/downloads</a>
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

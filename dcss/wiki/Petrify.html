@@ -113,7 +113,7 @@
 <li><a href="Evasion.html" class="mw-redirect" title="EV">EV</a> が 50% 下がる。</li>
 <li>モンスターは下位の<a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>を受けるようになる。</li>
 <li><a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>と<a href="Shatter.html" title="Shatter">粉砕</a>の対象になる。</li>
-<li>プレイヤーは 2 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>、モンスターは 3 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>たつと石化状態になる。 </li></ul>
+<li>プレイヤーは 2 <a href="Decaaut.html" class="mw-redirect" title="DecaAut">ターン</a>、モンスターは 3 <a href="Decaaut.html" class="mw-redirect" title="DecaAut">ターン</a>たつと石化状態になる。 </li></ul>
 <p><i>石化状態</i>になると数ターンのあいだ移動も行動もできなくなり、さらに次の効果がある。
 </p>
 <ul><li><a href="Evasion.html" class="mw-redirect" title="EV">EV</a> と <a href="Shield_(stat).html" class="mw-redirect" title="SH">SH</a> がほぼ 0 まで下がる。プレイヤーは EV 2・SH 0、モンスターは EV 0・SH 0 になる。</li>
@@ -129,33 +129,33 @@
 <h3><span class="mw-headline" id="Duration">持続時間</span></h3>
 <p>プレイヤーが石化の呪文を受けた場合:
 </p>
-<ul><li><b>石化中</b>: 石化中の状態は 2 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>続く。</li>
+<ul><li><b>石化中</b>: 石化中の状態は 2 <a href="Decaaut.html" class="mw-redirect" title="DecaAut">ターン</a>続く。</li>
 <li><b>石化状態</b>: コード上は 5〜9 ターン続く。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> ただし、石化状態はプレイヤーの行動の終わりに処理されるので、モンスターは最後に取った行動の時間ぶんだけ余計に動ける。たとえば最後の行動に 1.5 ターンかかっていたなら、モンスターは実際には 6.5〜10.5 ターンぶん行動できる(こう考えるとわかりやすい。あなたが行動し、モンスターが動き、それからあなたが 9 ターン石化するので、モンスターは 10.5 回続けて行動できる)。</li></ul>
 <p>モンスターが石化の呪文を受けた場合(プレイヤーからでもモンスターからでも):
 </p>
-<ul><li><b>石化中</b>: 石化中の状態は 3 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>続く。</li>
-<li><b>石化状態</b>: 石化状態は <code>150 / &lt;(<a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">HD</a> + 5) * (100%/<a href="Movement.html#Monster_Speed" title="Movement">speed</a>%) + 1&gt;</code> ターン続く(速度はゲーム内に表示される&#160;% の値を使う)。最低でも 8 ターンは続く。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup></li></ul>
+<ul><li><b>石化中</b>: 石化中の状態は 3 <a href="Decaaut.html" class="mw-redirect" title="DecaAut">ターン</a>続く。</li>
+<li><b>石化状態</b>: 石化状態は <code>150 / &lt;(<a href="Hit_dice.html" class="mw-redirect" title="HD">HD</a> + 5) * (100%/<a href="Movement.html#Monster_Speed" title="Movement">speed</a>%) + 1&gt;</code> ターン続く(速度はゲーム内に表示される&#160;% の値を使う)。最低でも 8 ターンは続く。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup></li></ul>
 <h2><span class="mw-headline" id="Restrictions_and_Curing">効かない相手と治し方</span></h2>
-<p>rPetrify を持つ生き物には効かない。モンスターでは、もともと石でできたもの(<a href="http://crawl.chaosforge.org/Earth_elemental" data-untr="1" title="Earth elemental">大地の精霊</a>、<a href="http://crawl.chaosforge.org/Gargoyle_(monster)" data-untr="1" title="Gargoyle (monster)">ガーゴイル</a>、<a href="http://crawl.chaosforge.org/Statue" data-untr="1" title="Statue">彫像</a>)と<a href="http://crawl.chaosforge.org/Catoblepae" data-untr="1" class="mw-redirect" title="Catoblepae">カトブレパス</a>がこれにあたる。プレイヤーは、<a href="Gargoyle.html" title="Gargoyle">ガーゴイル</a>であるか、<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>に変身しているか、<a href="Zin.html" title="Zin">ジン</a>の生命の活性化を受けていれば rPetrify を得る。
-</p><p><a href="Insubstantial.html" title="Insubstantial">実体のない</a>生き物にも効かない。プレイヤーの変身でも、実体のない変身(<a href="Wisp_Form.html" title="Wisp Form">霧化</a>、<a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐化</a>、<a href="http://crawl.chaosforge.org/Shadow_Form" data-untr="1" title="Shadow Form">影化</a>)なら効かない。
-</p><p>プレイヤーは<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>、<a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の聖杯の清め、<a href="Ru.html" title="Ru">ルー</a>の力の解放で<i>石化中</i>の状態を治せる。<a href="Yara's_Violent_Unravelling.html" title="Yara&#39;s Violent Unravelling">ヤーラの強制魔法解除術</a>と<a href="http://crawl.chaosforge.org/Quicksilver_Bolt" data-untr="1" title="Quicksilver Bolt">水銀の矢</a>でも石化中を治せるが、こちらは危険が大きく、敵を巻き込んだときに石化状態も解ける。残念ながら、完全に石化してしまえば何もできない。そうなったら、状態が切れるまで生き延びられるよう祈るしかない。
+<p>rPetrify を持つ生き物には効かない。モンスターでは、もともと石でできたもの(<a href="Earth_elemental.html" title="Earth elemental">大地の精霊</a>、<a href="http://crawl.chaosforge.org/Gargoyle_(monster)" data-untr="1" title="Gargoyle (monster)">ガーゴイル</a>、<a href="http://crawl.chaosforge.org/Statue" data-untr="1" title="Statue">彫像</a>)と<a href="Catoblepas.html" class="mw-redirect" title="Catoblepae">カトブレパス</a>がこれにあたる。プレイヤーは、<a href="Gargoyle.html" title="Gargoyle">ガーゴイル</a>であるか、<a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>に変身しているか、<a href="Zin.html" title="Zin">ジン</a>の生命の活性化を受けていれば rPetrify を得る。
+</p><p><a href="Insubstantial.html" title="Insubstantial">実体のない</a>生き物にも効かない。プレイヤーの変身でも、実体のない変身(<a href="Wisp_Form.html" title="Wisp Form">霧化</a>、<a href="Storm_talisman.html" class="mw-redirect" title="Storm Form">嵐化</a>、<a href="Shadow_Form.html" title="Shadow Form">影化</a>)なら効かない。
+</p><p>プレイヤーは<a href="Potion_of_cancellation.html" title="Potion of cancellation">無力化の薬</a>、<a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の聖杯の清め、<a href="Ru.html" title="Ru">ルー</a>の力の解放で<i>石化中</i>の状態を治せる。<a href="Yara's_Violent_Unravelling.html" title="Yara&#39;s Violent Unravelling">ヤーラの強制魔法解除術</a>と<a href="Quicksilver_Bolt.html" title="Quicksilver Bolt">水銀の矢</a>でも石化中を治せるが、こちらは危険が大きく、敵を巻き込んだときに石化状態も解ける。残念ながら、完全に石化してしまえば何もできない。そうなったら、状態が切れるまで生き延びられるよう祈るしかない。
 </p>
 <h2><span class="mw-headline" id="Sources">石化の原因</span></h2>
-<p>石化の呪文のほかに、<a href="Cloud.html#Calcifying_dust" class="mw-redirect" title="Clouds">石化する雲</a>(<a href="http://crawl.chaosforge.org/Petrifying_Cloud" data-untr="1" title="Petrifying Cloud">石化の雲</a>の呪文などで出る)と<a href="Chaos.html" title="Chaos">混沌</a>の効果でも、石化中の状態になることがある。
+<p>石化の呪文のほかに、<a href="Cloud.html#Calcifying_dust" class="mw-redirect" title="Clouds">石化する雲</a>(<a href="Petrifying_Cloud.html" title="Petrifying Cloud">石化の雲</a>の呪文などで出る)と<a href="Chaos.html" title="Chaos">混沌</a>の効果でも、石化中の状態になることがある。
 </p>
 <h2><span class="mw-headline" id="Strategy">戦略</span></h2>
-<p>石化は、実質的には<a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>の系統に属さない呪術の呪文だ。数ターンたつと、石化状態のモンスターは何もできなくなり、EV をすべて失い、上位の<a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>を受けるようになる。使い道はいくつかある。
+<p>石化は、実質的には<a href="Hexes.html" title="Hexes">呪術</a>の系統に属さない呪術の呪文だ。数ターンたつと、石化状態のモンスターは何もできなくなり、EV をすべて失い、上位の<a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>を受けるようになる。使い道はいくつかある。
 </p>
 <ul><li>戦いの勝敗を最初に決めてしまえる。石化が効けば、相手が1体だけで、あなたの急所攻撃が十分に強いなら、そのモンスターはほぼ死んだも同然だ。何度か試して効かなければ、戦いから逃げて(モンスターが近接攻撃の間合いに来る前に上り階段へ退くなど)やり直せばいい。つまり、石化があれば危険なモンスターに HP を一切減らさずに「勝てる」。</li>
 <li>逃げやすくなる。追っ手を固めているあいだに、安全な場所まで走って回復できる。たとえばモンスターを石化させて通路をふさぐこともできる。石化は<a href="Confusing_Touch.html" title="Confusing Touch">混乱の一撃</a>のような呪文より長く続く。</li>
-<li><a href="http://crawl.chaosforge.org/Hornet" data-untr="1" title="Hornet">巨大赤色蜂</a>や<a href="Two-headed_ogre.html" title="Two-headed ogre">双頭のオーガ</a>のように、手ごわいが<a href="Willpower.html" title="Willpower">意志力</a>の低い相手によく効く。</li></ul>
+<li><a href="Hornet.html" title="Hornet">巨大赤色蜂</a>や<a href="Two-headed_ogre.html" title="Two-headed ogre">双頭のオーガ</a>のように、手ごわいが<a href="Willpower.html" title="Willpower">意志力</a>の低い相手によく効く。</li></ul>
 <p>石化状態の相手は受けるダメージがすべて 50% 減るので、石化させた相手に<a href="Stone_Arrow.html" title="Stone Arrow">石錐の矢</a>を撃ってもかなり効率が悪い。石化を使いこなすには、急所攻撃(<a href="Short_Blades.html" title="Short Blades">短剣</a>と<a href="Stealth.html" title="Stealth">隠密</a>)にスキルを注ぎ込もう。上位の急所攻撃のボーナスはそれだけ大きい。
 </p>
 <h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
 <p>石化状態の相手は<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>と<a href="Shatter.html" title="Shatter">粉砕</a>の対象になる。
 </p>
 <ul><li>モンスター相手なら、ふつうは石化させたモンスターに LRD をかけるより、(石化なしで)壁に LRD をかけたほうがダメージは大きい。ただ、手ごろな壁がないときは、石化を使って LRD の的を作れる。 </li>
-<li>石化と LRD の両方を使ってくる<a href="http://crawl.chaosforge.org/Jorgrun" data-untr="1" title="Jorgrun">ジョーグルン</a>には気をつけよう。</li></ul>
+<li>石化と LRD の両方を使ってくる<a href="Jorgrun.html" title="Jorgrun">ジョーグルン</a>には気をつけよう。</li></ul>
 <p>同じ相手に何度もかけると、石化が早く進む。2回成功すれば、たいていの相手はその場で石になる。
 群れから逃げるときは、通路や狭い場所にいる近くの弱い相手を石化させて、群れの残りの進路をふさぐと便利だ。
 </p>
@@ -164,20 +164,20 @@
 </p><p>次の敵は石化を唱える。
 </p>
 <ul><li> <span class="nhsym clr-white">L</span> <a href="http://crawl.chaosforge.org/File:Ancient_lich.png" data-untr="1" class="image"><img alt="Ancient lich.png" src="img/Ancient_lich.png" width="32" height="32" /></a> <b><a href="Ancient_lich.html" title="Ancient lich">太古のリッチ</a></b></li>
-<li> <span class="nhsym clr-magenta">l</span> <a href="http://crawl.chaosforge.org/File:Basilisk.png" data-untr="1" class="image"><img alt="Basilisk.png" src="img/Basilisk.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Basilisk" data-untr="1" title="Basilisk">バジリスク</a></b></li>
-<li> <span class="nhsym clr-brightmagenta">g</span> <a href="http://crawl.chaosforge.org/File:Jorgrun.png" data-untr="1" class="image"><img alt="Jorgrun.png" src="img/Jorgrun.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Jorgrun" data-untr="1" title="Jorgrun">ジョーグルン</a></b></li>
+<li> <span class="nhsym clr-magenta">l</span> <a href="http://crawl.chaosforge.org/File:Basilisk.png" data-untr="1" class="image"><img alt="Basilisk.png" src="img/Basilisk.png" width="32" height="32" /></a> <b><a href="Basilisk.html" title="Basilisk">バジリスク</a></b></li>
+<li> <span class="nhsym clr-brightmagenta">g</span> <a href="http://crawl.chaosforge.org/File:Jorgrun.png" data-untr="1" class="image"><img alt="Jorgrun.png" src="img/Jorgrun.png" width="32" height="32" /></a> <b><a href="Jorgrun.html" title="Jorgrun">ジョーグルン</a></b></li>
 <li> <span class="nhsym">9</span> <a href="http://crawl.chaosforge.org/File:Nargun.png" data-untr="1" class="image"><img alt="Nargun.png" src="img/Nargun.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Nargun" data-untr="1" title="Nargun">ナーガン</a></b></li></ul>
 <p>次の敵は、持っている呪文の組み合わせによっては石化を唱えることがある。
 </p>
 <ul><li> <span class="nhsym clr-lightgray">&amp;</span> <a href="http://crawl.chaosforge.org/File:Pandemonium_lord.png" data-untr="1" class="image"><img alt="Pandemonium lord.png" src="img/Pandemonium_lord.png" width="32" height="48" /></a> <b><a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a></b>(3.4% の確率)</li></ul>
 <p>このほか、石化を引き起こす別の能力を持つモンスターもいる。
 </p>
-<ul><li><span class="nhsym clr-magenta">Y</span> <a href="http://crawl.chaosforge.org/File:Catoblepas.png" data-untr="1" class="image"><img alt="Catoblepas.png" src="img/Catoblepas.png" width="32" height="32" /></a> <b><a href="Catoblepas.html" title="Catoblepas">カトブレパス</a></b>(<a href="http://crawl.chaosforge.org/Petrifying_Cloud" data-untr="1" title="Petrifying Cloud">石化の雲</a>)</li>
+<ul><li><span class="nhsym clr-magenta">Y</span> <a href="http://crawl.chaosforge.org/File:Catoblepas.png" data-untr="1" class="image"><img alt="Catoblepas.png" src="img/Catoblepas.png" width="32" height="32" /></a> <b><a href="Catoblepas.html" title="Catoblepas">カトブレパス</a></b>(<a href="Petrifying_Cloud.html" title="Petrifying Cloud">石化の雲</a>)</li>
 <li><a href="Chaos.html" title="Chaos">混沌</a>の銘の攻撃や武器を持つすべての生き物</li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、石化は術者に隣接する相手には効かなかったが、射程は<a href="http://crawl.chaosforge.org/LOS" data-untr="1" class="mw-redirect" title="LOS">視界</a>全体だった。系統もレベル4の地の魔術/<a href="http://crawl.chaosforge.org/Transmutations" data-untr="1" title="Transmutations">変成</a>だった。</li>
-<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、石化中の生き物は <a href="Shield_(stat).html" class="mw-redirect" title="SH">SH</a> を使えず、石化中のモンスターは遠隔攻撃ができなかった(呪文と近接攻撃はふつうに使えた)。また、石化状態になっても階段の昇り降りは中断されず、石化したあとで階段の移動が完了していた。</li>
-<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> より前は、翼で飛ぶモンスター(<a href="http://crawl.chaosforge.org/Harpy" data-untr="1" title="Harpy">ハーピー</a>、<a href="Hippogriff.html" title="Hippogriff">ヒポグリフ</a>など)を石化させると地面に落ちた。深い水脈や溶岩の上でこうした敵を石化させると即死した。</li></ul>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、石化は術者に隣接する相手には効かなかったが、射程は<a href="Line_of_sight.html" class="mw-redirect" title="LOS">視界</a>全体だった。系統もレベル4の地の魔術/<a href="Transmutations.html" title="Transmutations">変成</a>だった。</li>
+<li><a href="0.28.html" title="0.28">0.28</a> より前は、石化中の生き物は <a href="Shield_(stat).html" class="mw-redirect" title="SH">SH</a> を使えず、石化中のモンスターは遠隔攻撃ができなかった(呪文と近接攻撃はふつうに使えた)。また、石化状態になっても階段の昇り降りは中断されず、石化したあとで階段の移動が完了していた。</li>
+<li><a href="0.12.html" title="0.12">0.12</a> より前は、翼で飛ぶモンスター(<a href="http://crawl.chaosforge.org/Harpy" data-untr="1" title="Harpy">ハーピー</a>、<a href="Hippogriff.html" title="Hippogriff">ヒポグリフ</a>など)を石化させると地面に落ちた。深い水脈や溶岩の上でこうした敵を石化させると即死した。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/monster.cc#L4199">monster.cc:4199</a> (0.30.0) - モンスター<br /><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/ouch.cc#L882">ouch.cc:882</a> (0.30.0) - プレイヤー</span>

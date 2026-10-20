@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>壁 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="壁(Wall)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>壁 <span class="en">Wall</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Wall">Wall</a>」(0.30 向け、2025-03-30 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Wall&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 「法が正しいのか<br />それとも法が誤っているのか、わたしは知らない。<br />牢獄に横たわるわれらが知るのはただ、<br />壁が頑丈だということ、<br />そして一日が一年のようだということ、<br />日々の長い一年のようだということだけ。」<br />――オスカー・ワイルド「レディング牢獄の唄」
+</td></tr></table>
+<p><b>壁</b>は迷宮でもっとも目立つ地形で、移動を阻み、たいていは<a href="Line_of_sight.html" title="Line of sight">視界</a>もさえぎる。壊したりすり抜けたりするには、ふつうは限られた手段のどれかが要る。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Wall_Varieties"><span class="tocnumber">1</span> <span class="toctext">壁の種類</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Rock"><span class="tocnumber">1.1</span> <span class="toctext">岩</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Translucent_Rock"><span class="tocnumber">1.2</span> <span class="toctext">半透明の岩</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Stone"><span class="tocnumber">1.3</span> <span class="toctext">石</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Translucent_Stone"><span class="tocnumber">1.4</span> <span class="toctext">半透明の石</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Metal"><span class="tocnumber">1.5</span> <span class="toctext">金属</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Crystal"><span class="tocnumber">1.6</span> <span class="toctext">水晶</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Trees"><span class="tocnumber">1.7</span> <span class="toctext">樹木</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Demonic_Trees"><span class="tocnumber">1.8</span> <span class="toctext">悪魔の樹</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Petrified_Trees"><span class="tocnumber">1.9</span> <span class="toctext">石化した樹木</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Mangroves"><span class="tocnumber">1.10</span> <span class="toctext">マングローブ</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Slime_Covered_Rock"><span class="tocnumber">1.11</span> <span class="toctext">スライムに覆われた岩</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Rune-Carved_Stone"><span class="tocnumber">1.12</span> <span class="toctext">ルーンの刻まれた石</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Rune-Carved_Clear_Stone"><span class="tocnumber">1.13</span> <span class="toctext">ルーンの刻まれた透明な石</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Iron_Grate"><span class="tocnumber">1.14</span> <span class="toctext">鉄格子</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Large_Window"><span class="tocnumber">1.15</span> <span class="toctext">大きな窓</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Unnaturally_Hard_Wall"><span class="tocnumber">1.16</span> <span class="toctext">異常に硬い壁</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Translucent_Unnaturally_Hard_Wall"><span class="tocnumber">1.17</span> <span class="toctext">異常に硬い半透明の壁</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Map_boundaries"><span class="tocnumber">2</span> <span class="toctext">マップの境界</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#Open_Sea"><span class="tocnumber">2.1</span> <span class="toctext">広大な海</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Endless_Lava"><span class="tocnumber">2.2</span> <span class="toctext">終わりなき溶岩沼</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Endless_Salt"><span class="tocnumber">2.3</span> <span class="toctext">終わりなき塩の平原</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Dimension.27s_Edge"><span class="tocnumber">2.4</span> <span class="toctext">次元の果て</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Wall_Varieties">壁の種類</span></h2>
+<h3><span class="mw-headline" id="Rock">岩</span></h3>
+<blockquote>ただの岩でできた壁。</blockquote>
+<p>加工されていない石でできた、ごくありふれた壁。視界はさえぎるが、比較的たやすく取り除ける。<a href="Passwall.html" title="Passwall">壁の透過</a>の呪文ですり抜けられるのは、岩の壁だけだ。壊す手段:
+</p>
+<ul><li><a href="Formicid.html" title="Formicid">フォーミシッド</a>の掘削能力</li>
+<li><a href="Dig.html" title="Dig">掘削</a>(または<a href="Wand_of_digging.html" title="Wand of digging">掘削のワンド</a>)</li>
+<li><a href="Shatter.html" title="Shatter">粉砕</a></li>
+<li><a href="Fedhas_Madash.html" class="mw-redirect" title="Fedhas">フェダス</a>の繁茂</li>
+<li><a href="Lugonu.html" title="Lugonu">ルゴヌ</a>の階層の崩壊</li>
+<li><a href="Dissolution.html" title="Dissolution">溶解者</a></li></ul>
+<h3><span class="mw-headline" id="Translucent_Rock">半透明の岩</span></h3>
+<blockquote>この岩は、上質なガラスのように透き通った鉱物でできている。自然のものなのか魔法によるものなのかは分からない。</blockquote>
+<p>視界をさえぎらないことのほかは、岩の壁と同じ。
+</p><p>攻撃などの能力にとっては、半透明の壁もふつうの壁として扱われる。貫通する攻撃や<a href="Smite-targeted.html" title="Smite-targeted">打擲型</a>の攻撃でも、この壁の向こうを攻撃することはできず、瞬間移動で越えることもできない。
+</p>
+<h3><span class="mw-headline" id="Stone">石</span></h3>
+<blockquote>岩の壁よりも硬い障害物。石の壁を砕けるのは最も強力な魔法だけだ。</blockquote>
+<p>岩の壁より頑丈で、取り除くにはもっと強い魔法が要る。壊す手段:
+</p>
+<ul><li>粉砕</li>
+<li>繁茂</li>
+<li>階層の崩壊</li></ul>
+<h3><span class="mw-headline" id="Translucent_Stone">半透明の石</span></h3>
+<blockquote>神秘の魔力が込められており、半透明になっている。</blockquote>
+<p>半透明の岩の、石の壁版。
+</p>
+<h3><span class="mw-headline" id="Metal">金属</span></h3>
+<blockquote>青みがかった灰色の金属の壁。ダンジョンの電気技師なら誰でも知っているとおり、魔法の稲妻でさえも接地させて逃がしてしまう。</blockquote>
+<p>金属の壁は石の壁とほぼ同じだ。金属の壁では<a href="Shock.html" title="Shock">電撃</a>や<a href="Lightning_Bolt.html" title="Lightning Bolt">稲妻の矢</a>が跳ね返らない。<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>は、金属の壁に使うと威力が上がる。壊す手段:
+</p>
+<ul><li>粉砕</li>
+<li>繁茂</li>
+<li>階層の崩壊</li></ul>
+<h3><span class="mw-headline" id="Crystal">水晶</span></h3>
+<blockquote>磨き上げられた水晶でできた、神秘の魔力が込められた壁。その魔力によって容易には破壊できず、熱や冷気を反射する。</blockquote>
+<p>水晶の壁も石の壁とほぼ同じだ。石の壁が<a href="Shock.html" title="Shock">電撃</a>を跳ね返すのと同じように、<a href="Fire.html" title="Fire">火炎</a>と<a href="Cold.html" title="Cold">冷気</a>を跳ね返す。<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>は、水晶の壁に使うと威力が上がる。壊す手段:
+</p>
+<ul><li>粉砕</li>
+<li>繁茂</li>
+<li>階層の崩壊</li></ul>
+<h3><span class="mw-headline" id="Trees">樹木</span></h3>
+<p><a href="http://crawl.chaosforge.org/File:Tree1.png" data-untr="1" class="image"><img alt="Tree1.png" src="img/Tree1.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree2.png" data-untr="1" class="image"><img alt="Tree2.png" src="img/Tree2.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree3.png" data-untr="1" class="image"><img alt="Tree3.png" src="img/Tree3.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree4.png" data-untr="1" class="image"><img alt="Tree4.png" src="img/Tree4.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree5.png" data-untr="1" class="image"><img alt="Tree5.png" src="img/Tree5.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree6.png" data-untr="1" class="image"><img alt="Tree6.png" src="img/Tree6.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree7.png" data-untr="1" class="image"><img alt="Tree7.png" src="img/Tree7.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree8.png" data-untr="1" class="image"><img alt="Tree8.png" src="img/Tree8.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree9.png" data-untr="1" class="image"><img alt="Tree9.png" src="img/Tree9.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree10.png" data-untr="1" class="image"><img alt="Tree10.png" src="img/Tree10.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree11.png" data-untr="1" class="image"><img alt="Tree11.png" src="img/Tree11.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree12.png" data-untr="1" class="image"><img alt="Tree12.png" src="img/Tree12.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree13.png" data-untr="1" class="image"><img alt="Tree13.png" src="img/Tree13.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree14.png" data-untr="1" class="image"><img alt="Tree14.png" src="img/Tree14.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree15.png" data-untr="1" class="image"><img alt="Tree15.png" src="img/Tree15.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree16.png" data-untr="1" class="image"><img alt="Tree16.png" src="img/Tree16.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree1Dead.png" data-untr="1" class="image"><img alt="Tree1Dead.png" src="img/Tree1Dead.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree1LightRed.png" data-untr="1" class="image"><img alt="Tree1LightRed.png" src="img/Tree1LightRed.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree2Dead.png" data-untr="1" class="image"><img alt="Tree2Dead.png" src="img/Tree2Dead.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree2LightRed.png" data-untr="1" class="image"><img alt="Tree2LightRed.png" src="img/Tree2LightRed.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree2Yellow.png" data-untr="1" class="image"><img alt="Tree2Yellow.png" src="img/Tree2Yellow.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree6Yellow.png" data-untr="1" class="image"><img alt="Tree6Yellow.png" src="img/Tree6Yellow.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree7Red.png" data-untr="1" class="image"><img alt="Tree7Red.png" src="img/Tree7Red.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree10Red.png" data-untr="1" class="image"><img alt="Tree10Red.png" src="img/Tree10Red.png" width="32" height="32" /></a>
+</p>
+<blockquote>迷宮は魔法の薄明かりに満ちているが、たいていの場所では大きな植物を育むほど明るくはない。とはいえ明るさにはむらがあり、フェダスの恩寵によって、地上にあるのと同じくらい大きな木が地下で育つ場所もある。<br /><br />
+「森林火災を防げるのは、君だけだ!」<br />――スモーキー・ベア</blockquote>
+<p>働きは壁と同じで、移動と視界をさえぎる。<a href="Fedhas_Madash.html" title="Fedhas Madash">フェダス・マダシュ</a>の信徒は<a href="Plant.html" title="Plant">植物</a>をすり抜けられるが、樹木は通り抜けられない。火がつくと森林火災になり、周りのマス(とほかの樹木)に火が広がっていく。壁と違って、<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>や<a href="Frozen_Ramparts.html" title="Frozen Ramparts">凍てつく城壁</a>の影響を受けない。壊す手段:
+</p>
+<ul><li>プレイヤーが唱えられる火の呪文:
+<ul><li><a href="Inner_Flame.html" title="Inner Flame">内なる炎</a>の爆発(<a href="Scroll_of_immolation.html" title="Scroll of immolation">焼き討ちの巻物</a>によるものも含む)</li>
+<li><a href="Flame_Wave.html" title="Flame Wave">炎の波</a></li>
+<li><a href="Fireball.html" title="Fireball">ファイアボール</a></li>
+<li><a href="Starburst.html" title="Starburst">星の炸裂</a></li>
+<li><a href="Ignition.html" title="Ignition">点火</a></li>
+<li><a href="Fire_Storm.html" title="Fire Storm">炎の嵐</a></li></ul></li>
+<li>モンスターだけが使う火の呪文:
+<ul><li><a href="Bolt_of_Magma.html" title="Bolt of Magma">溶岩の矢</a></li>
+<li><a href="Bolt_of_Fire.html" title="Bolt of Fire">猛火の矢</a></li>
+<li><a href="Lightning_Bolt.html" title="Lightning Bolt">稲妻の矢</a></li></ul></li>
+<li>近くの<a href="Cloud.html#Spreading_flames" title="Cloud">燃え広がる炎</a></li>
+<li><a href="Polar_Vortex.html" title="Polar Vortex">極渦</a></li>
+<li><a href="The_Lernaean_hydra.html" title="The Lernaean hydra">レルネーのヒドラ</a></li>
+<li>粉砕</li>
+<li>繁茂</li>
+<li>階層の崩壊</li></ul>
+<p>フェダスを信仰していると、自分の呪文では樹木をまったく壊せない(フェダスが積極的に守っている)。ただし繁茂は使える。<a href="Summon_Forest.html" title="Summon Forest">ドライアドの召喚</a>で生えた樹木はそう簡単には壊せず、効くのは粉砕、繁茂、階層の崩壊だけだ。
+</p>
+<h3><span class="mw-headline" id="Demonic_Trees">悪魔の樹</span></h3>
+<p><a href="http://crawl.chaosforge.org/File:Tree_demonic1.png" data-untr="1" class="image"><img alt="Tree demonic1.png" src="img/Tree_demonic1.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic2.png" data-untr="1" class="image"><img alt="Tree demonic2.png" src="img/Tree_demonic2.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic3.png" data-untr="1" class="image"><img alt="Tree demonic3.png" src="img/Tree_demonic3.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic4.png" data-untr="1" class="image"><img alt="Tree demonic4.png" src="img/Tree_demonic4.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic5.png" data-untr="1" class="image"><img alt="Tree demonic5.png" src="img/Tree_demonic5.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic6.png" data-untr="1" class="image"><img alt="Tree demonic6.png" src="img/Tree_demonic6.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic7.png" data-untr="1" class="image"><img alt="Tree demonic7.png" src="img/Tree_demonic7.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic8.png" data-untr="1" class="image"><img alt="Tree demonic8.png" src="img/Tree_demonic8.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic9.png" data-untr="1" class="image"><img alt="Tree demonic9.png" src="img/Tree_demonic9.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic10.png" data-untr="1" class="image"><img alt="Tree demonic10.png" src="img/Tree_demonic10.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic11.png" data-untr="1" class="image"><img alt="Tree demonic11.png" src="img/Tree_demonic11.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic12.png" data-untr="1" class="image"><img alt="Tree demonic12.png" src="img/Tree_demonic12.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic13.png" data-untr="1" class="image"><img alt="Tree demonic13.png" src="img/Tree_demonic13.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic14.png" data-untr="1" class="image"><img alt="Tree demonic14.png" src="img/Tree_demonic14.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic15.png" data-untr="1" class="image"><img alt="Tree demonic15.png" src="img/Tree_demonic15.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_demonic16.png" data-untr="1" class="image"><img alt="Tree demonic16.png" src="img/Tree_demonic16.png" width="32" height="32" /></a>
+</p>
+<blockquote>悪魔的な混沌の力によっておぞましく歪められた木。奇怪な見た目で、時おり不気味に動くものの、害はないようだ。</blockquote>
+<p>悪魔の樹を燃やすと、火ではなく<a href="Cloud.html#Seething_chaos" title="Cloud">渦巻く混沌の雲</a>が出る。
+</p>
+<h3><span class="mw-headline" id="Petrified_Trees">石化した樹木</span></h3>
+<p><a href="http://crawl.chaosforge.org/File:Tree_petrified1.png" data-untr="1" class="image"><img alt="Tree petrified1.png" src="img/Tree_petrified1.png" width="31" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_petrified2.png" data-untr="1" class="image"><img alt="Tree petrified2.png" src="img/Tree_petrified2.png" width="31" height="32" /></a><a href="http://crawl.chaosforge.org/File:Tree_petrified3.png" data-untr="1" class="image"><img alt="Tree petrified3.png" src="img/Tree_petrified3.png" width="30" height="32" /></a>
+</p>
+<blockquote>はるか昔に生物から鉱物へと移り変わった古木。物質としてはもはや木ではないが、樹木としての霊的な性質は保っている。</blockquote>
+<p>ほかの樹木と違い、石化した樹木は<a href="Wand_of_digging.html" title="Wand of digging">掘って</a>通り抜けられる。
+</p>
+<h3><span class="mw-headline" id="Mangroves">マングローブ</span></h3>
+<p><a href="http://crawl.chaosforge.org/File:Mangrove1.png" data-untr="1" class="image"><img alt="Mangrove1.png" src="img/Mangrove1.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Mangrove2.png" data-untr="1" class="image"><img alt="Mangrove2.png" src="img/Mangrove2.png" width="32" height="32" /></a><a href="http://crawl.chaosforge.org/File:Mangrove3.png" data-untr="1" class="image"><img alt="Mangrove3.png" src="img/Mangrove3.png" width="32" height="32" /></a>
+</p>
+<blockquote>沼地での生育に特に適応した木。蔓が密に生い茂っていて、向こう側を見通すことはできない。</blockquote>
+<p><a href="Shallow_water.html" title="Shallow water">浅い水脈</a>に生えていることのほかは、樹木とまったく同じ働きをする。
+</p>
+<h3><span class="mw-headline" id="Slime_Covered_Rock">スライムに覆われた岩</span></h3>
+<blockquote>鮮やかな緑色のスライムが分厚くこびりついた壁。うぇえええ。</blockquote>
+<p><a href="The_Slime_Pits.html" title="The Slime Pits">スライムの穴ぐら</a>にしかない壁で、隣にいる冒険者を<a href="Acid.html" class="mw-redirect" title="Corrosion">腐食</a>させる。隣接しているスライムの壁1枚ごとに腐食が1段階(ダメージと<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a>が-4)かかる。それ以外は岩の壁と同じだ。
+</p><p><a href="Jiyva.html" title="Jiyva">ジーヴァ</a>の信徒はスライムの壁の影響を受けず、信仰心が★3になると、壁を一時的にスライムに変えられるようになる。ジーヴァが作った壁は、隣にいるすべての敵に<a href="Acid.html" title="Acid">酸</a>のダメージを与える。
+</p><p>壊す手段:
+</p>
+<ul><li>フォーミシッドの掘削能力</li>
+<li>掘削</li>
+<li>粉砕</li>
+<li>繁茂</li>
+<li>階層の崩壊</li>
+<li>溶解者</li></ul>
+<h3><span class="mw-headline" id="Rune-Carved_Stone">ルーンの刻まれた石</span></h3>
+<blockquote>奇妙なことにスライムがまったく付いていない壁。数えきれないほどの守りのルーンが一面に刻まれている。何度も繰り返し刻まれたひと続きのルーンは、「ロイヤルジェリー」のことを指しているようだ。</blockquote>
+<p><a href="The_Slime_Pits.html" class="mw-redirect" title="Slime Pits">スライムの穴ぐら</a>の最下層で、中央の部屋の外側を形づくっている壁。それ以外は石の壁と同じだ。壊す手段:
+</p>
+<ul><li>粉砕</li>
+<li>繁茂</li>
+<li>階層の崩壊</li></ul>
+<h3><span class="mw-headline" id="Rune-Carved_Clear_Stone">ルーンの刻まれた透明な石</span></h3>
+<blockquote>奇妙なことにスライムがまったく付いていない石の壁。その澄んだ内部では不思議な光がまたたいている。表面には神秘のルーンが散りばめられており、「ロイヤルジェリー」について述べているようだ。</blockquote>
+<p>スライムの穴ぐら:5 の中央の部屋の内側を形づくっている透明な壁。<a href="The_Royal_Jelly.html" title="The Royal Jelly">ロイヤルジェリー</a>が死ぬと(または<a href="Jiyva.html" title="Jiyva">ジーヴァ</a>への<a href="Piety.html" title="Piety">信仰心</a>が高いと)この壁は消え、ぬめりの<a href="Rune_of_Zot.html" title="Rune of Zot">ルーン</a>をたやすく取れるようになる。そうでなければ、この壁を壊す手段は次のものしかない:
+</p>
+<ul><li>粉砕</li>
+<li>繁茂</li>
+<li>階層の崩壊</li></ul>
+<h3><span class="mw-headline" id="Iron_Grate">鉄格子</span></h3>
+<blockquote>錆びた鉄格子。もろくなっているので、呪文やワンドでたやすく壊すことができる。ただし、素手で壊せるほど弱くはない。</blockquote>
+<p>移動と射線はさえぎるが、<a href="Line_of_sight.html" class="mw-redirect" title="LOS">視界</a>や効果の通り道はさえぎらないので、<a href="Smite-targeted.html" title="Smite-targeted">打擲型</a>の攻撃は通る。たいていは特別なヴォールトにあり、打擲型の攻撃を持つモンスターを閉じ込めていることが多い。壊す手段:
+</p>
+<ul><li>フォーミシッドの掘削能力</li>
+<li>掘削</li>
+<li>粉砕</li>
+<li>繁茂</li>
+<li>階層の崩壊</li>
+<li>溶解者</li></ul>
+<p>鉄格子の内と外を行き来するには、<a href="Blink.html" title="Blink">瞬間移動</a>、<a href="Passage_of_Golubria.html" title="Passage of Golubria">ゴルブリアの通り道</a>、<a href="Dispersal_trap.html" title="Dispersal trap">転送の罠</a>が使える。<a href="Dispersal.html" title="Dispersal">転送</a>や<a href="Disjunction.html" title="Disjunction">空間分離</a>で、敵を鉄格子の外へ出すこともできる。
+</p>
+<h3><span class="mw-headline" id="Large_Window">大きな窓</span></h3>
+<blockquote>巨大な金属の管の側面にはめ込まれた窓。中を流れる水を観察することができる。</blockquote>
+<p>大きな窓は一部の<a href="http://crawl.chaosforge.org/Sewers" data-untr="1" class="mw-redirect" title="Sewers">下水道</a>のマップにあり、半透明の岩の壁とまったく同じ働きをする。
+</p>
+<h3><span class="mw-headline" id="Unnaturally_Hard_Wall">異常に硬い壁</span></h3>
+<blockquote>この壁には、どんな手段でも手出しできない。</blockquote>
+<p>「異常に硬い」と説明される壁は、まったく壊せない。越えるには回り道するしかない。
+</p>
+<h3><span class="mw-headline" id="Translucent_Unnaturally_Hard_Wall">異常に硬い半透明の壁</span></h3>
+<blockquote>魔力が込められ、破壊できないだけでなく、ガラスのように半透明にもなっている壁。</blockquote>
+<p>半透明の岩の、壊せない版。
+</p>
+<h2><span class="mw-headline" id="Map_boundaries">マップの境界</span></h2>
+<p>次の「壁」は、一部の階の端にある。
+</p>
+<h3><span class="mw-headline" id="Open_Sea">広大な海</span></h3>
+<blockquote>果てしない風と波のほかには何もなく、灯台ひとつ見えない。たちまち絶望的に迷ってしまうだろう。危ない橋は渡らないほうがいい。<br />荒れ狂う潮風と高波があなたの行く手を妨げている。</blockquote>
+<p>ふつうの意味での壁ではないが、通り抜けられないマスで、<a href="The_Shoals.html" class="mw-redirect" title="Shoals">浅瀬</a>や一部の<a href="http://crawl.chaosforge.org/Sewers" data-untr="1" class="mw-redirect" title="Sewers">下水道</a>の外周を区切っている。
+</p>
+<h3><span class="mw-headline" id="Endless_Lava">終わりなき溶岩沼</span></h3>
+<blockquote>見渡す限りの炎と硫黄の海。もっとも、煙が濃いのでたいして遠くまでは見渡せない。<br />
+小さな溶岩だまりなら飛行や浮遊で少しは渡れるかもしれないが、この業火の上を漂おうものなら、とめどない対流熱でたちまち焼き上がってしまう。<br />溶岩の海はあなたにとってよい場所ではない。</blockquote>
+<p>広大な海の、火の版。溶岩だまりの向こうで階の外周を区切っている。
+</p>
+<h3><span class="mw-headline" id="Endless_Salt">終わりなき塩の平原</span></h3>
+<blockquote>目もくらむような塩の嵐が吹き荒れる、果てしなく続くかに見える平原。ここを渡ろうとする者は、たちまち絶望的に迷ってしまうだろう。</blockquote>
+<p>広大な海や終わりなき溶岩沼と同じように、<a href="Desolation_of_Salt.html" title="Desolation of Salt">塩の荒野</a>の外周を区切っている。
+</p>
+<h3><span class="mw-headline" id="Dimension.27s_Edge">次元の果て</span></h3>
+<blockquote>この小さく孤立した次元の果て。ここでは空間そのものが忘却の中へと溶けている。この漆黒の虚空に入ったり、影響を及ぼしたりすることはできない。</blockquote>
+<p>これも越えられない階の境界で、こちらは<a href="http://crawl.chaosforge.org/Roulette_of_Golubria" data-untr="1" title="Roulette of Golubria">ゴルブリアのルーレット</a>の外周にある。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.33.html" title="0.33">0.33</a>で悲嘆の木が追加される予定。新しいポータルの<a href="Necropolis.html" title="Necropolis">死者の都</a>に現れる。</li>
+<li><a href="0.32.html" title="0.32">0.32</a>で、装飾用の新しい壁が追加された。</li>
+<li><a href="0.30.html" title="0.30">0.30</a>より前は、スライムに覆われた壁はプレイヤーとモンスターに酸のダメージを与えていた。</li>
+<li><a href="0.27.html" title="0.27">0.27</a>で、悪魔の樹と石化した樹木が追加された。当初は、悪魔の樹を燃やすと混沌の雲に加えて、持続的に召喚された悪魔も出てきたが、これはリリース前に取り除かれた。</li>
+<li><a href="0.22.html" title="0.22">0.22</a>より前は、<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>で壁、扉、鉄格子、彫像を壊せた。</li>
+<li><a href="0.20.html" title="0.20">0.20</a>より前は、<a href="http://crawl.chaosforge.org/Wand_of_disintegration" data-untr="1" class="mw-redirect" title="Wand of disintegration">分解のワンド</a>で岩の壁や、迷宮のほかのいくつかの障害物(<a href="Door.html" title="Door">扉</a>、<a href="http://crawl.chaosforge.org/Iron_grate" data-untr="1" class="mw-redirect" title="Iron grate">鉄格子</a>、<a href="http://crawl.chaosforge.org/Tree" data-untr="1" class="mw-redirect" title="Tree">樹木</a>、オークの像、たいていの種類の<a href="http://crawl.chaosforge.org/Statue" data-untr="1" title="Statue">彫像</a>)を壊せた。また、<a href="Eye_of_devastation.html" title="Eye of devastation">破滅の眼球</a>は<a href="http://crawl.chaosforge.org/Energy_Bolt" data-untr="1" class="mw-redirect" title="Energy Bolt">エネルギーの矢</a>の呪文で岩の壁を分解できた。</li>
+<li><a href="0.17.html" title="0.17">0.17</a>より前は、岩の壁を掘り進める<a href="List_of_arthropods.html" title="List of arthropods">節足動物</a>、<a href="http://crawl.chaosforge.org/Boring_beetle" data-untr="1" title="Boring beetle">穴掘りの甲虫</a>がいた。</li>
+<li><a href="0.11.html" title="0.11">0.11</a>より前は、<b>固い蝋の壁</b>があった:</li></ul>
+<blockquote>蜂が築いた壁。ダンジョンの設計者が、美的な理由から蜂を操って蝋の壁を作らせることがときどきある(設計者の美意識であって、蜂のではない)。火に弱く、十分な熱を受けると溶けて燃える。</blockquote>
+<dl><dd>蝋の壁は<a href="Killer_bee.html" title="Killer bee">殺人蜂</a>の<a href="Vault.html" title="Vault">ヴォールト</a>によくあったが、<a href="Xom.html" title="Xom">ゾム</a>の<a href="Altar.html" title="Altar">祭壇</a>の近くや<a href="The_Abyss.html" title="The Abyss">アビス</a>に現れることもあった。中にはよく財宝、とくにロイヤルジェリーや蜂の巣が隠されていた。</dd></dl>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

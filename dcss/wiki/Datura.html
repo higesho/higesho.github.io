@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ダチュラ毒 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ダチュラ毒(Datura)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ダチュラ毒 <span class="en">Datura</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Datura">Datura</a>」(0.30 向け、2023-06-23 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Datura&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 先端に、命中した相手を我を忘れた狂乱状態に陥らせ、敵味方の区別なく襲いかからせる物質が塗られている。
+</td></tr></table>
+<p><b>ダチュラ毒</b>は<a href="Dart.html" title="Dart">ダーツ</a>にだけつく<a href="Brand.html" title="Brand">ブランド</a>だ。ダチュラ毒のダーツが当たった相手は<a href="Frenzy.html" title="Frenzy">凶暴化</a>する。中立になり、<a href="Haste.html" title="Haste">加速</a>と<a href="Might.html" title="Might">怪力</a>の状態になって、味方かどうかにかかわらず近くの生き物に襲いかかる。<a href="Undead.html" title="Undead">アンデッド</a>と<a href="http://crawl.chaosforge.org/Nonliving" data-untr="1" title="Nonliving">非生物</a>のモンスターには効かない。
+</p><p>たいていのブランドと違い、ダチュラ毒の効きやすさはプレイヤーの<a href="Throwing.html" title="Throwing">投擲</a>と<a href="Stealth.html" title="Stealth">隠密</a>のスキルで決まり、相手の<a href="Hit_dice.html" title="Hit dice">HD</a> によって抵抗される。
+</p>
+<ul><li><a href="Hit_dice.html" class="mw-redirect" title="HD">HD</a> が 15 未満のモンスターには、まず 3% の確率で無条件に効く。</li>
+<li>それ以外の場合、確率は <code>100 - 100 * (HD - 2) / (4 + pow)</code> で、<code>pow = (Throwing + Stealth) * 2 / 3</code> だ<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>。</li></ul>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Strategy"><span class="tocnumber">1</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Trivia"><span class="tocnumber">2</span> <span class="toctext">こぼれ話</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>凶暴化は群れの真ん中にいるモンスターにかけると効果的だ。しばらく群れの一部が互いに殺し合ってくれることが多く、そのすきに数を減らしたり、ほかの遠距離攻撃を使ったり、逃げ出したりできる。
+</p><p>ダチュラ毒がどんな相手にもよく効くのはゲームの序盤だ。この時期は、抵抗できるほど HD の高いモンスターが少ない。<a href="Orc_warrior.html" title="Orc warrior">オークの戦士</a>くらいなら簡単に仲間と戦わせられるし、<a href="Ogre.html" title="Ogre">オーガ</a>や<a href="Ice_beast.html" title="Ice beast">氷の獣</a>にも効くかもしれない。ただ、投擲や隠密を鍛えていなければ、<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>あたりまで来るころには、モンスターにはまず効かなくなっているだろう。
+</p><p>プレイヤーに対して使われた場合は、ふつうのバーサークの効果だけがかかる。これは良いことかもしれないし、悪いことかもしれない。バーサークの手段として自分自身を狙ってダーツを使うこともできるが、成功させるには自分の守りを上回る必要があることに注意しよう。
+</p>
+<h2><span class="mw-headline" id="Trivia">こぼれ話</span></h2>
+<p><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Datura">ダチュラ</a>は有毒植物の属(チョウセンアサガオ属)の名前だ。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.28.html" title="0.28">0.28</a> より前は、<a href="Holy.html" title="Holy">神聖</a>なモンスターと<a href="http://crawl.chaosforge.org/Demonic" data-untr="1" class="mw-redirect" title="Demonic">悪魔</a>のモンスターは加速もバーサークもしなかった。</li>
+<li>ダチュラ毒は <a href="0.24.html" title="0.24">0.24</a> で追加され、<a href="Needle.html" title="Needle">吹き矢針</a>についていた古い<a href="Frenzy.html" title="Frenzy">凶暴化</a>のブランドと入れ替わった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/throw.cc#L254">throw.cc:254</a> (0.30.0)</span>
+</li>
+</ol></div>
+<center>
+<table class="prettytable" style="text-align: center; width: 70%">
+
+<tr>
+<th colspan="3"> <a href="Brand.html" title="Brand">ブランド</a>
+</th></tr>
+<tr>
+<th rowspan="3"> 近接武器
+</th>
+<th> 汎用
+</th>
+<td> <a href="Antimagic.html" title="Antimagic">反魔法</a> • <a href="Chaos.html" title="Chaos">混沌</a> • <a href="Distortion.html" title="Distortion">歪曲</a>  • <a href="Draining_(brand).html" title="Draining (brand)">掠奪</a> • <a href="Electrocution.html" title="Electrocution">電撃</a> • <a href="Flaming.html" title="Flaming">火炎</a> • <a href="Freezing.html" title="Freezing">冷気</a> • <a href="Heavy.html" title="Heavy">重撃</a> • <a href="Holy_wrath.html" title="Holy wrath">神罰</a> • <a href="Pain_(brand).html" title="Pain (brand)">苦痛</a> • <a href="Protection.html" title="Protection">護り</a> • <a href="Reaching.html" title="Reaching">間合い</a> • <a href="Spectral_(brand).html" title="Spectral (brand)">霊体化</a> • <a href="Speed_(brand).html" title="Speed (brand)">早業</a> • <a href="Vampiric.html" title="Vampiric">吸血</a> • <a href="Venom.html" title="Venom">毒液</a>
+</td></tr>
+<tr>
+<th> 武器種専用
+</th>
+<td><a href="Devious.html" title="Devious">狡猾</a> • <a href="Valour.html" title="Valour">武勇</a> • <a href="Concussion.html" title="Concussion">衝撃</a> • <a href="Sundering.html" title="Sundering">断裂</a> • <a href="Entangling.html" title="Entangling">絡みつき</a> • <a href="Rebuke.html" title="Rebuke">叱責</a>
+</td></tr>
+<tr>
+<th> アーティファクト
+</th>
+<td> <a href="Curare.html" title="Curare">クラーレ毒</a> • <a href="Deathbane.html" title="Deathbane">死者殺し</a> • <a href="Dragon_slaying.html" title="Dragon slaying">竜殺し</a> • <a href="Reaping.html" title="Reaping">刈り取り</a> • <a href="Silver.html" title="Silver">銀</a>
+</td></tr>
+<tr>
+<th colspan="2"> 射撃武器
+</th>
+<td> <a href="Antimagic.html" title="Antimagic">反魔法</a> • <a href="Draining_(brand).html" title="Draining (brand)">掠奪</a> • <a href="Electrocution.html" title="Electrocution">電撃</a> • <a href="Flaming.html" title="Flaming">火炎</a> • <a href="Freezing.html" title="Freezing">冷気</a> • <a href="Heavy.html" title="Heavy">重撃</a> • <a href="Penetration.html" title="Penetration">貫通</a> • <a href="Speed_(brand).html" title="Speed (brand)">早業</a>
+</td></tr>
+<tr>
+<th colspan="2"> 投擲武器
+</th>
+<td> <a href="Atropa.html" title="Atropa">アトロパ毒</a> • <a href="Curare.html" title="Curare">クラーレ毒</a> • <a class="mw-selflink selflink">ダチュラ毒</a> • <a href="Disjunction_(brand).html" title="Disjunction (brand)">分解</a> • <a href="Poisoned.html" title="Poisoned">毒</a> • <a href="Silver.html" title="Silver">銀</a>
+</td></tr></table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ローグライク &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ローグライク(Roguelike)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ローグライク <span class="en">Roguelike</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Roguelike">Roguelike</a>」(対象の版の記載なし、2024-01-16 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Roguelike&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<p><b>ローグライク</b>ゲームとは、このジャンルの原型となった <a href="http://en.wikipedia.org/wiki/Rogue_(video_game)" class="extiw" title="wikipedia:Rogue (video game)"><i>Rogue</i></a> にちなんで名づけられた、ロールプレイングゲームの一種だ。どのローグライクにも共通する特徴として、奥深さ、死んだら終わりであること、内容がランダムに作られることが挙げられる。要するに、戦術や戦略の選択肢がたくさんあると思っておけばいい。もっとも <i>Crawl</i> は、ほかのいくつかの作品よりも凝縮された作りになっている。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#What_is_a_Roguelike.3F"><span class="tocnumber">1</span> <span class="toctext">ローグライクとは?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Permadeath"><span class="tocnumber">1.1</span> <span class="toctext">死んだら終わり</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#No_Meta_Progression"><span class="tocnumber">1.2</span> <span class="toctext">次のゲームに持ち越すものはない</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Relevant_Random_Content"><span class="tocnumber">1.3</span> <span class="toctext">意味のあるランダム性</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Grand_Tradition_of_Roguelikes"><span class="tocnumber">2</span> <span class="toctext">ローグライクの偉大な伝統</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Characters"><span class="tocnumber">2.1</span> <span class="toctext">キャラクター</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Non-existent_plot"><span class="tocnumber">2.2</span> <span class="toctext">ないも同然の筋書き</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Dungeon_Crawl_compared_to_other_roguelikes"><span class="tocnumber">3</span> <span class="toctext">ほかのローグライクとくらべた Dungeon Crawl</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Post-Spoiler_Era"><span class="tocnumber">3.1</span> <span class="toctext">ネタバレ頼みの時代のあとで</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Crusade_against_Tedium"><span class="tocnumber">3.2</span> <span class="toctext">退屈との戦い</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Difference_in_Character_Building"><span class="tocnumber">3.3</span> <span class="toctext">キャラクター育成の違い</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#See_Also"><span class="tocnumber">4</span> <span class="toctext">関連項目</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="What_is_a_Roguelike.3F">ローグライクとは?</span></h2>
+<p>ローグライクの核にあるのは、死んだら終わりであることと、内容がランダムに生成されることだ。
+</p>
+<h3><span class="mw-headline" id="Permadeath">死んだら終わり</span></h3>
+<p><i>Crawl</i> はひんぱんに自動でセーブする。だから<a href="Explore_mode.html" title="Explore mode">探索モード</a>のようなずるいオプションを使わないかぎり、死んだらそれまでだ。セーブファイルは消される。そのため、どんなものもある程度は本物の脅威であり、ゲームが進んでもそれはほんの少ししか和らがない。気をつけていなければ、ふだんなら危ないとも思わないものにさえ殺される。そう、ひどくて、でたらめで、理不尽な死に方をしょっちゅうすることになる。最初からやり直すのを楽しんでほしい。ローグライクは甘くない。
+</p>
+<h3><span class="mw-headline" id="No_Meta_Progression">次のゲームに持ち越すものはない</span></h3>
+<p><i>Crawl</i> の死は「本物の」死だ。ゲームからゲームへ持ち越せる形あるものは何もない。新しいキャラクターやアイテムや特典が解放されることはないし、前のゲームのことが次のゲームに影響することも一切ない*。上達するのは<i>あなた</i>、つまりプレイヤー自身と、あとはたぶん少しばかりの運だ。
+</p>
+<dl><dd><ul><li>* <a href="Player_ghost.html" title="Player ghost">プレイヤーの幽霊</a>は以前のゲームをもとにしているが、幽霊が以前のゲームの戦利品を運んでくるわけではなく、ただ手ごわい相手として出てくるだけだ。それにオンラインのサーバーでは、ほかのプレイヤーの幽霊に出会うことも同じくらいある。オフラインで新しくインストールしたばかりでも、大量の幽霊が用意されている(Stone Soup <a href="0.22.html" title="0.22">0.22</a> 以降)。</li></ul></dd></dl>
+<h3><span class="mw-headline" id="Relevant_Random_Content">意味のあるランダム性</span></h3>
+<p>同じ種類のモンスターに似たような場所で出会うことは多いだろうが、どこで、いつ、そもそも出会うかどうかは、とても大きな違いを生む。D:3 の<a href="Ogre_(monster).html" title="Ogre (monster)">オーガ</a>は、2階あとで出会う同じオーガよりずっと恐ろしい。どんなアイテムが手に入るか、序盤にどの<a href="God.html" title="God">神</a>が見つかるか、どの<a href="Dungeon_branches.html" class="mw-redirect" title="Branch">分岐</a>が現れるかさえもランダムだ。迷宮の構造はほとんどがランダムに生成され、ランダムでない手作りの<a href="Vault.html" title="Vault">ヴォールト</a>でさえ、どれを選んでどこに置くかはランダムに決まる。これが、ローグライクを繰り返しや退屈ではなく、病みつきになるものにしてくれる(はずだ)。
+</p>
+<h2><span class="mw-headline" id="Grand_Tradition_of_Roguelikes">ローグライクの偉大な伝統</span></h2>
+<p>厳密な条件ではないが、<i>Crawl</i> は見下ろし型で、タイル単位で、ターン制の……ダンジョン探索ゲームという、ローグライクの偉大な伝統に従っている。これは <i>Rogue</i> が作られたころのコンピューターに扱えたものだ。現代のローグライクの多く(昔から<i>ローグライト</i>と呼ばれるもの)がさまざまなジャンルの遊び方を取りこんでいるのとは、くっきりと対照的だ。制約は工夫を生む。だからこの形式には欠点もある(<a href="Pillar_dancing.html" title="Pillar dancing">柱回り</a>や、敵のおびき寄せなどを参照)ものの、ASCII で遊ぶ一連のゲームの流れは今でもわくわくさせてくれる。
+</p>
+<h3><span class="mw-headline" id="Characters">キャラクター</span></h3>
+<p>ほとんどの CRPG は、ローグライクの大半も含めて、D&amp;D 流のキャラクター作成にルーツを持つ。<i>Crawl</i> のキャラクターにも <a href="Armour_class.html" class="mw-redirect" title="AC">AC</a>、つまりアーマークラスがあり(ただしダメージを減らすだけで、攻撃そのものを止めるのは <a href="Evasion.html" class="mw-redirect" title="EV">EV</a>/回避と <a href="Shield_(stat).html" class="mw-redirect" title="SH">SH</a>/盾だ)、3つの<a href="Stats.html" class="mw-redirect" title="Attributes">能力値</a>(<a href="Strength.html" class="mw-redirect" title="STR">STR</a>、<a href="Intelligence.html" class="mw-redirect" title="INT">INT</a>、<a href="Dexterity.html" class="mw-redirect" title="DEX">DEX</a>)があり、ハイファンタジーらしい<a href="Weapon.html" title="Weapon">武器</a>や<a href="Spell.html" title="Spell">呪文</a>がたくさんある。<i>Crawl</i> はもっと遠い親戚だが、それでも似たところは残っている。
+</p><p><i>Crawl</i> には遊べる<a href="Species.html" title="Species">種族</a>が <a href="27.html" title="27">27</a> もあり、何度も遊びたくなる大きな理由になっている。<a href="Human.html" title="Human">人間</a>ならまったく癖のない遊び心地だが、種族はじつにさまざまだ。<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>や<a href="Troll.html" title="Troll">トロル</a>から、腕が8本あって<a href="Ring.html" title="Ring">指輪</a>を8つはめられるのに、ほとんどの<a href="Armour.html" title="Armour">防具</a>は体に合わない<a href="Octopode.html" title="Octopode">オクトポード</a>のような変わり種まである。種族によって得意なアイテムはあるだろうが、乱数がいつ計画外のものに味方するかはわからない。
+</p>
+<h3><span class="mw-headline" id="Non-existent_plot">ないも同然の筋書き</span></h3>
+<p>いくつかの例外(<a href="http://en.wikipedia.org/wiki/ADOM" class="extiw" title="wikipedia:ADOM"><i>ADOM</i></a> など)を除けば、古典的なローグライクの筋書きはこうだ。ランダムに生成されたダンジョンを下り、最後の階にたどり着き、ボスを倒すか、もっとよくあるのはアイテムを手に入れて脱出する。なぜそんなことをするのか? <a href="http://en.wikipedia.org/wiki/NetHack" class="extiw" title="wikipedia:NetHack"><i>NetHack</i></a> なら、自分の神のために魔除けを手に入れたいからだ。<i>Crawl</i> では、<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>が欲しい。理由はまったく決まっていない。<a href="Xom.html" title="Xom">ゾム</a>なら教えてくれるかもしれないが、そうしたらあなたを殺さないといけなくなる。<a href="Rune_of_Zot.html" class="mw-redirect" title="Rune">ルーン</a>とオーブを手に入れることと、<a href="Treasure_trove.html" class="mw-redirect" title="Trove">宝の埋蔵庫</a>を開けることのほかに、クエストはない。<a href="Shop.html" title="Shop">店</a>(要するにちょっと立派なメニュー)のほかに、専用の NPC もいない。
+</p>
+<h2><span class="mw-headline" id="Dungeon_Crawl_compared_to_other_roguelikes">ほかのローグライクとくらべた Dungeon Crawl</span></h2>
+<p><i>Crawl</i>(とりわけ <i>Stone Soup</i>)は、はっきりした<a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/master/crawl-ref/docs/crawl_manual.rst#n-philosophy-pas-de-faq">設計の哲学</a>によって、同時代のほかの作品と一線を画している。
+</p>
+<h3><span class="mw-headline" id="Post-Spoiler_Era">ネタバレ頼みの時代のあとで</span></h3>
+<p><i>Crawl</i> は一見やさしそうに見えるが、そんなことはない。ただ、親切ではある。少なくとも DCSS には、本当の意味での<a href="Instadeath.html" title="Instadeath">即死</a>はない。何かに殺されるとしたら、それはたぶん少なくとも半分は予想できたものだ。たまたま身につけた首飾りが絞殺の護符だった、というのではなく、序盤の階に<a href="Out_of_depth.html" class="mw-redirect" title="Out-of-depth">階層に不相応な強さの</a>モンスターがいた、といった具合だ。<a href="0.30.html" title="0.30">0.30</a> からは、死ぬ方法は HP が尽きることだけになった。
+</p><p><i>Stone Soup</i> には<a href="Tutorial.html" title="Tutorial">チュートリアル</a>と詳しい説明書があるだけでなく、出会うモンスターやアイテムなど、あらゆるものについて詳しい情報が見られる。タイルを右クリックするか(キーボードなら <b>x</b> のあと <b>v</b>)、<b>? /</b> に続けて調べたいものを入力すれば、どれでも見られる。目指しているのは、昔のローグライクと違って、攻略ガイドや wiki の助けがなくても <i>Stone Soup</i> を遊べるようにすることだ。
+</p>
+<h3><span class="mw-headline" id="Crusade_against_Tedium">退屈との戦い</span></h3>
+<p><i>Stone Soup</i> の開発チームは、「退屈な」仕組みをゲームから取り除くことを目指している。ゲームのネタバレを知っているプレイヤーにとって、仕組みによっては時間と気力を浪費させるだけのものになる。たとえば <i>NetHack</i>(3.4.3)では、8通りの決まった構造を持つパズルの分岐であるソコバンを、毎回のゲームで攻略することが強く勧められる。解き方はゲームの外で簡単に手に入るのに、この分岐の報酬は大きい。ゲームの最後まで持つほどの食料と、最奥で必ず手に入る役に立つ戦利品だ。<i>Stone Soup</i> は、自分のところの(完全にランダムな)パズルの分岐である<a href="Labyrinth.html" title="Labyrinth">ラビリンス</a>を <a href="0.23.html" title="0.23">0.23</a> で削除した。一方、<a href="Comestibles_and_satiation.html" class="mw-redirect" title="Food">食料</a>も開発者に繰り返し狙われ、何度も単純化されたすえに、ついには削除された。ラビリンスは携帯食がいくつかあれば攻略できたし、食料そのものも、数分おきにメニューを開かせる時計とほとんど変わらなかった。
+</p><p>同じ流れで、DCSS は「考えるまでもない」選択、つまり圧倒的に強すぎるアイテムや戦略もなくそうとしている。バランスは完璧ではないし、そもそも完璧を狙ってもいない。たとえば種族は難易度の調整つまみとして使われていて、<a href="Mummy.html" title="Mummy">ミイラ</a>は<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>よりずっと難しい。それでも <i>Crawl</i> は全体として見ればわりとバランスがとれている。なにしろ一人用のゲームなら、「バランス」という考え方にはずっと融通がきくのだ。
+</p><p>その一方で、<i>Stone Soup</i> は、どんなに愛されている要素でも容赦なく削除することで有名だ。<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>は害のなさそうな種族だったが、<a href="Hill_Orc.html" title="Hill Orc">丘オーク</a>や<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>に<a rel="nofollow" class="external text" href="http://crawl.develz.org/wordpress/whisper-farewell-when-you-leave-gimli">似すぎているという理由で削除された</a>。3つとも近接戦闘と防具が得意な種族だったのだ。山ドワーフを遊ばなければいいだけの話ではあるが、開発者は、似た種族があることで生まれる「見せかけの選択」がゲームを損なうと判断した。言いかえれば、山ドワーフがいると「どの種族もはっきり違っていて独特だと感じられる」ことが損なわれる。この削除を一番の例として、大胆な変更を受け入れる開発チームとコミュニティができあがった。とはいえ自由なオープンソースのゲームなので、古いバージョンや、<i>Crawl</i> のたくさんの<a href="Variants.html" title="Variants">派生版</a>のどれかを遊ぶこともいつでもできる(ただ、気に入ったかもしれない今後の変更をあきらめることになるのは、やはり残念かもしれない)。
+</p>
+<h3><span class="mw-headline" id="Difference_in_Character_Building">キャラクター育成の違い</span></h3>
+<p>ほかの古典的なローグライクや、CRPG 全般の多くとくらべて、<i>Crawl</i> はクラス(<i>Crawl</i> でいう<a href="Background.html" title="Background">職業</a>)をあまり重く見ていない。職業ごとの特別でずっと続くルールはない。キャラクターの得意分野を本当に決めるのは、ゲームの中で鍛える<a href="Skill.html" title="Skill">スキル</a>だ。
+</p><p><a href="God.html" title="God">神</a>もキャラクターを形づくるもう一つの要素で、これも(たいていは)ゲームの途中で選ぶ。26柱のそれぞれ個性的な神のどれかと一緒に冒険すると<a href="Piety.html" title="Piety">信仰心</a>がたまり、さまざまな特別な能力や恩恵が得られる。ほとんどの神は、見捨てられると<a href="Divine_retribution.html" title="Divine retribution">怒る</a>。だから普通にゲームをクリアするキャラクターは、たいてい一柱の神を信仰し続けることになる。
+</p>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li>Wikipedia の<a href="http://en.wikipedia.org/wiki/Roguelike" class="extiw" title="wikipedia:Roguelike">ローグライク</a>の記事</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

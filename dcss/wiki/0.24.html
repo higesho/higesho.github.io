@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.24 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.24(0.24)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.24 <span class="en">0.24</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.24">0.24</a>」(対象の版の記載なし、2020-06-23 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.24&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="http://crawl.chaosforge.org/Crawl" data-untr="1" class="mw-redirect" title="Crawl">Crawl</a> の以前のリリースについてのものだ。最新版を含むほかのバージョンについては、<a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を参照。</i></div>
+<p><b>0.24</b> は <i>Dungeon Crawl Stone Soup</i> のバージョンの一つで、2019年10月25日にリリースされた。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Highlights"><span class="tocnumber">1</span> <span class="toctext">主な変更</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Branches.2C_Environment"><span class="tocnumber">2</span> <span class="toctext">分岐・環境</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Character"><span class="tocnumber">3</span> <span class="toctext">キャラクター</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Gods"><span class="tocnumber">4</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Interface"><span class="tocnumber">5</span> <span class="toctext">インターフェース</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Items"><span class="tocnumber">6</span> <span class="toctext">アイテム</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Lua"><span class="tocnumber">7</span> <span class="toctext">Lua</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Monsters"><span class="tocnumber">8</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Spells"><span class="tocnumber">9</span> <span class="toctext">呪文</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Highlights">主な変更</span></h2>
+<ul><li> 種族の吸血鬼が単純になった。</li>
+<li> 投擲武器が整理された。</li>
+<li> フェダスが新しく作り直された。</li>
+<li> シフ・ムーナが作り直された。</li></ul>
+<h2><span class="mw-headline" id="Branches.2C_Environment">分岐・環境</span></h2>
+<ul><li> 逐次事前生成:
+<ul><li> このモードでは、プレイヤーがどの順で進んでも、すべてのゲームでダンジョンが決まった順番で生成される。そのため、オンラインとオフラインのゲームで、シードの振る舞いが同じになるはずだ。</li>
+<li> 同じシードのゲームは、逐次事前生成なら同じダンジョンになる。0.23 で導入された完全な事前生成のように、最初に長い生成時間を待つ必要はない。</li>
+<li> 新しいゲームでは、逐次事前生成が標準のモードになった。</li>
+<li> サーバーは、CPU に重い負担をかけずにシードの選択を有効にできるようになった。</li></ul></li>
+<li> 何度も掘削しなければならない宝の埋蔵庫のマップが削除された。</li>
+<li> 識別の巻物は、宝の埋蔵庫の代価に選ばれなくなった。</li>
+<li> ヴォールトの転送装置が、アビスでも正しく置かれるようになった。</li>
+<li> ポータルの階、塩の荒野で霧が発生する頻度が 1 ターンあたりずっと少なくなり、CPU の使いすぎによる動作の重さが大きく減った。</li>
+<li> ランダムな罠が、ヴォールトの置いたアイテムの下には置かれなくなった。</li></ul>
+<h2><span class="mw-headline" id="Character">キャラクター</span></h2>
+<ul><li> フォーミシッドが、掘れる彫像に掘削の能力を使えるようになった。</li>
+<li> マンティコアの逆棘を抜けるのは、プレイヤーが動けて、混乱しておらず、眠っていないときだけになった。</li>
+<li> 網の罠は、プレイヤーが踏むと必ず作動するようになった。</li>
+<li> 吸血の武器を構えても空腹にならなくなった。</li>
+<li> 吸血鬼の単純化: プレイヤーの吸血鬼は食べることも血を飲むこともなくなり、血の状態はちょうど二つになった:
+<ul><li> 血が通っている状態: 回復が速く、HP の補正はふつう。アンデッドとしての利点はなく、コウモリ化はできない。変身やバーサークはふつうにできる。</li>
+<li> 血が通っていない状態: 視界にモンスターがいると回復しない。HP が 20% 下がり、隠密にボーナスがつき、アンデッドとしての耐性を持つ。コウモリ化はできるが、ほかの変身とバーサークはできない。</li>
+<li> 血の状態は、時間のかかる能力で切り替える。血が通っていない状態になるときには何の不利もないが、血が通っている状態になると一時的に虚弱の変異がつく。</li>
+<li> コウモリ化すると能力値が下がる。</li></ul></li></ul>
+<h2><span class="mw-headline" id="Gods">神</span></h2>
+<ul><li> フェダスが新しく作り直された:
+<ul><li> 信仰心は、死体が腐ることではなく、殺害だけで得られるようになった。</li>
+<li> フェダスの能力は、植物を使ってずっと残る従者を作るのではなく、植物の従者を一時的な召喚として直接作り出すようになった。どの能力も、食料ではなく信仰心を消費する。</li>
+<li> 新しい能力:
+<ul><li> 2*: 発動型の能力「茨の壁」。プレイヤーのまわりを荊棘で囲む。敵対するモンスターは、あなたに近づくために荊棘を攻撃し、そのたびにダメージを受ける。</li>
+<li> 3*: 発動型の能力「放出菌糸の生育」。半径 2 以内の好きな場所に放出菌糸を置く。放出菌糸は敵を追いかける胞子を放ち、胞子は半径 1 の爆発でダメージを与えたうえ、生き物を混乱させる。</li>
+<li> 4*: 発動型の能力「繁茂」。3x3 の範囲にある永久岩以外の壁を壊し、植物の従者に置き換える。たいていは這いずりキノコか燃える藪で、ときどき放出菌糸やオクロブ草になる。</li>
+<li> 5*: 発動型の能力「オクロブ草の生育」。半径 2 以内の好きな場所にオクロブ草を置く。</li></ul></li>
+<li> フェダスは死霊術の呪文を嫌わなくなり、アンデッドの種族も信仰できるようになった。</li>
+<li> 削除された能力: キノコの生育、胞子の繁殖、迷宮草の生育、植物の改良、降雨。</li></ul></li>
+<li> シフ・ムーナが作り直された:
+<ul><li> 信仰心は殺害だけで得られるようになった。</li>
+<li> 「魔力回復」が使えるのが、信仰心 3* からではなく 1* からになった。</li>
+<li> 「呪文の忘却」が使えるのが、信仰心 4* からではなく 3* からになった。</li>
+<li> 新しい 4* の能力「神聖なる釈義」。スキルの鍛え具合に関係なく、ライブラリにあるどの呪文でも唱えられる。呪文の威力には祈祷スキルにもとづくボーナスがつき、その大きさは、同じだけのレベルをその呪文の系統で鍛えたときに得られる呪文の威力の 1.5 倍だ。</li>
+<li> 「神気の供給」の能力と、シフ・ムーナによる呪文失敗からの保護は削除された。</li></ul></li>
+<li> トログとオカワルが、ブランドのないブーメランとジャベリンを贈るようになった。</li>
+<li> ジーヴァの「スライム化」の能力が、骸骨、ゾンビ、幻像にも正しく効くようになった。</li>
+<li> 拷問で、ジーヴァのジェリーやゾムの蝶が湧くようになった。</li></ul>
+<h2><span class="mw-headline" id="Interface">インターフェース</span></h2>
+<ul><li> 'X' キーの地図表示が拡大・縮小に対応した。標準は 60% 表示。</li>
+<li> 閉ざされた場所にいるモンスター、壁に張りついたモンスター、感知済みのモンスターがいても、自動探索が止まらなくなった。</li>
+<li> 装備が体に溶け込んでも、自動探索と自動移動が止まらなくなった。</li>
+<li> 防具、装身具、武器を、床の上から直接身につけたり構えたりできるようになった。</li>
+<li> カーソルを召喚されたモンスターに合わせると、それを召喚したモンスターが強調表示されるようになった。</li>
+<li> 罠が Ctrl-X の一覧に出るようになり、アイテムの記録にも載るようになった。</li>
+<li> スカーフが、プレイヤーのタイルに正しく表示されるようになった。</li>
+<li> 種族と職業の選択メニューにタイルがついた。</li>
+<li> メインメニュー、ハイスコアなどの画面の見た目が新しくなった。</li></ul>
+<h2><span class="mw-headline" id="Items">アイテム</span></h2>
+<ul><li> 新しい固定アーティファクト: 戦いの杖。妖術の杖で、敵対するモンスターが見えていると戦闘球を生み出す。</li>
+<li> 固定アーティファクトの変更:
+<ul><li> 嵐の弓に貫通の効果がついた。</li>
+<li> 『ジャイル』と『ギンブル』に護りのブランドがつき、強化値が +7 になり、器用-3 がなくなった。</li>
+<li> 『貫くもの』が削除され、その効果は嵐の弓にまとめられた。</li></ul></li>
+<li> 神罰のエゴがついた武器も呪われうるようになった。</li>
+<li> ランダムアーティファクトの指輪に、rCorr と *Corrode が両方つくことはなくなった。</li>
+<li> 投擲武器が整理された。
+<ul><li> 吹き矢筒が削除され、吹き矢針は投げるダーツに置き換えられた。
+<ul><li> ダーツの効果は、投擲と隠密のスキルで強くなる。</li>
+<li> 睡眠、麻痺、混乱のダーツは削除された。</li>
+<li> 凶暴化のダーツは、ダチュラ毒のダーツに名前が変わった。</li>
+<li> ダーツの新しいブランド、アトロパ毒が加わった。アトロパ毒のダーツは、相手を短い間混乱させ、それより長く盲目にする。</li></ul></li>
+<li> トマホークはブーメランに名前が変わり、必ず戻ってくるようになった。</li>
+<li> ジャベリンは必ず貫通するようになった。</li>
+<li> 鋼と銀は、一つのブランド「銀」にまとめられた。銀の矢弾の追加ダメージは、ヴォーパルの追加ダメージと以前の銀の追加ダメージのうち、大きいほうになる。</li>
+<li> 毒、帰還、貫通、爆発のブランドは、トマホークとジャベリンにはつかなくなった。</li></ul></li></ul>
+<h2><span class="mw-headline" id="Lua">Lua</span></h2>
+<ul><li> CLua の monster.info クラスで、モンスターの AC、EV、MR、最大 HP、説明文を取れるようになった。</li>
+<li> 新しい関数 'defeat_mr()'。ある呪文がモンスターの魔法抵抗を破る確率を求める。</li>
+<li> 簡単なシードの探索ツールが scripts/seed_explorer.lua に入った。</li></ul>
+<h2><span class="mw-headline" id="Monsters">モンスター</span></h2>
+<ul><li> モンスターが、雲、吹雪、散弾のワンドを使えるようになった。</li>
+<li> マーラとラクシャーサが作る分身の HP が、本来の意図どおり元のモンスターより少なくなった。以前はその何倍もあった。</li>
+<li> 掘削の呪文を持っているモンスターが、視界の外から呪文を唱えることはなくなった。</li>
+<li> アズラエルとドラコニアンの焼却者が、HP が少ないとき以外にも天罰の招来を使えるようになった。</li>
+<li> プレイヤーの幽霊が縦穴に落ちるようになった。</li>
+<li> 黄金の眼球の凝視の呪文の威力が、ランダムではなくなった。</li>
+<li> モンスターの旋風の一撃がプレイヤーと同じ式を使うようになり、ダメージのばらつきが小さくなった。</li>
+<li> ピケルの奴隷は、死体もアイテムも落とさなくなった。</li></ul>
+<h2><span class="mw-headline" id="Spells">呪文</span></h2>
+<ul><li> 死のとば口の HP は、ずっと更新され続けるのではなく唱えたときに決まるようになった。そのため、呪文の威力の変化に左右されるようになった。</li>
+<li> オルグレブの毒気の光輪を唱えたとき、従者に関する行いの判定が正しく働くようになった。</li>
+<li> オルグレブの毒気の光輪の直接のダメージと毒の状態が、各ターンの時間を考えて与えられるようになった。</li>
+<li> ゴルブリアの帷子の呪文の威力の上限が 50 になった。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

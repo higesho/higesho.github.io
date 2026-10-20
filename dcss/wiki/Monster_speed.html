@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>モンスターの速度 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="モンスターの速度(Monster speed)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>モンスターの速度 <span class="en">Monster speed</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Monster_speed">Monster speed</a>」(0.31 向け、2025-09-12 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Monster_speed&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p>モンスターの<b>速度</b>は、そのモンスターが 1 ターンに何回行動できるかを決める。速度が高いほど、モンスターは速い。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Displaying_Speed"><span class="tocnumber">1</span> <span class="toctext">速度の表示</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Speed_vs_delay"><span class="tocnumber">1.1</span> <span class="toctext">速度と所要時間</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Useful_Info"><span class="tocnumber">2</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Energy"><span class="tocnumber">2.1</span> <span class="toctext">エネルギー</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Displaying_Speed">速度の表示</span></h2>
+<p>ゲーム内でモンスターの説明を見ると、速度は百分率で表示される。速度 100% のモンスターは 1.0 <a href="Decaaut.html" class="mw-redirect" title="DecaAut">ターン</a>(10 aut)に 1 回行動する。速度 200% なら 1.0 ターンに 2 回、速度 50% なら 1.0 ターンに 0.5 回、という具合だ。表示される百分率は整数に丸められている点に注意。
+</p><p>この wiki とゲームのコードでは、モンスターの速度を数値で表す。速度 1 が 10% にあたり、wiki で速度 10 とあるモンスターは、ゲーム内では速度 100% と表示される。「速度 10 のモンスター」という言い方はこの数値から来ている。
+</p><p>ふつう、速度は<i>すべての</i>行動にかかる。ただし、特定の種類の行動にだけ補正がかかるモンスターもいる。たとえば<a href="Ogre_(monster).html" title="Ogre (monster)">オーガ</a>は、攻撃の速度が 67% だ(ゲーム内の表示で)。wiki ではこの補正を (攻撃: 150%) と書く。つまりオーガは攻撃に 150% の時間がかかる。
+</p>
+<h3><span class="mw-headline" id="Speed_vs_delay">速度と所要時間</span></h3>
+<p>速度は行動をどれだけ速くこなせるかを表し、高いほど速い。所要時間(delay)は行動にどれだけ<i>長く</i>かかるかを表し、低いほど速い。
+</p><p>所要時間は速度の逆数なので、次の式で速度から所要時間に、またその逆に換算できる。
+</p><p>ゲーム内で表示される速度の百分率を使う場合:
+</p>
+<ul><li><code>speed% = 100% * (1.0 / delay)</code></li>
+<li><code>delay = 1.0 * (100% / speed%)</code> ターン(小数第 1 位に、確率で重みをつけて丸める)</li></ul>
+<p>wiki で表示される速度を使う場合:
+</p>
+<ul><li><code>speed = 10 / delay</code></li>
+<li><code>delay = 10 / speed</code>(小数第 1 位に、確率で重みをつけて丸める)</li></ul>
+<p>たとえば速度 200% のモンスターの所要時間は 0.5 ターンだ。
+</p>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>速度はモンスターがどれだけ速く動くかの尺度だ。速度 100% のモンスターは、プレイヤーの時間で 1.0 ターンごとに 1 回行動する。
+</p><p>丸めが起きなければ(下の<a href="#Energy">エネルギーの節</a>を参照)、速度による行動回数は決まっていて、ぶれない。たとえば次のようになる。
+</p>
+<ul><li>速度 150% のモンスターは、1.0 ターンに平均 1.5 回行動する。</li>
+<li>プレイヤーが 1.0 ターン<a href="Wait.html" title="Wait">待機</a>しても、モンスターは 1.5 回は行動できないので、1 回か 2 回行動する……</li>
+<li>……が、2.0 ターンで 3 回という割合は<i>必ず</i>守られる。1.0 ターンのあいだに 2 回行動したら、次の 1.0 ターンでは 1 回しか行動しない。</li></ul>
+<h3><span class="mw-headline" id="Energy">エネルギー</span></h3>
+<p>ゲームのコードでは、速度に応じてエネルギーという単位が貯まっていく。モンスターは、プレイヤーの時間 1.0 <a href="Decaaut.html" class="mw-redirect" title="DecaAut">ターン</a>あたり、速度 1 につき 1 のエネルギーを得る。式で書くと <code>energy_gain = speed * you_time_taken</code>(単位はターン)となる。補正がなければ、1 回の行動に 10 のエネルギーがいる。余ったエネルギーは次のターンに持ち越される。
+</p><p>行動に必要なエネルギーを増やしたり減らしたりする補正を持つモンスターもいる。たとえば<a href="Ugly_thing.html" title="Ugly thing">醜きもの</a>は、9 のエネルギーで移動できる。これはゲーム内では移動速度 111% と表示され、wiki では (移動: 90%) と書かれる。
+</p><p>プレイヤーが行動するたびに、エネルギーは確率で重みをつけて整数に丸められる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> モンスターが 6.66 のエネルギーを得るはずなら、66% の確率で 7、34% の確率で 6 を得る。そのため、エネルギーが端数になる場合は、不利な丸めが起きることがある。
+</p>
+<ul><li>たとえば、<a href="Slow.html" title="Slow">減速</a>した速度 100% のモンスター(実質の速度は 66.6%)は、100 ターンのうちに、期待される 66〜67 回ではなく 60〜70 回行動することがある。</li>
+<li>この丸めは、プレイヤーが速い行動や遅い行動をしたときにも起きる。速度 130% のモンスターは、0.5 ターンあたり平均 6.5 のエネルギーを得る。プレイヤーが 0.5 ターンの行動ばかりしていると、モンスターはプレイヤーの行動 1 回ごとに 6 か 7 のエネルギーを得る。</li></ul>
+<p><a href="#Useful_Info">基本情報</a>に挙げた例の速度 150% のモンスターは、プレイヤーの行動(1.0 ターン)ごとに必ず 15 のエネルギーを得るので、丸めは起きない。このモンスターは、エネルギーが 5 以上「余って」いれば 2 回行動し(5 + 15 = 20)、そうでなければ 1 回だけ行動する。
+</p>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/mon-act.cc#L1319">mon-act.cc:1319</a> (0.30.1)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自動探索 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="自動探索(Autoexplore)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>自動探索 <span class="en">Autoexplore</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Autoexplore">Autoexplore</a>」(0.28 向け、2022-07-31 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Autoexplore&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.28 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.28.html" title="0.28">0.28</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><a href="http://crawl.chaosforge.org/O" data-untr="1" title="O">o</a> キーを押すと、キャラクターは今いる階を<b>自動探索</b>する。まだ見ていない場所を地図に描き込みながら進み、モンスターやアイテム、変わった<a href="Dungeon_feature.html" class="mw-redirect" title="Dungeon features">ダンジョンの地形</a>など、気になるものを見つけたところで止まる。この機能はおもに手間を省くためのもので、何も起きない場所をさっさと通り抜けられる。とはいえ、自動探索ならではの利点と欠点もある。
+</p><p><b>利点:</b>
+</p>
+<ul><li> 自動探索は、敵を見つけると必ずいったん止まる。手で不用意に動いていると、新たな脅威に反応する前に1〜2歩進んでしまい、離れたところから攻撃したり逃げたりする機会をふいにしかねない。敵にただで攻撃させてしまうこともある。扉を開けるときや、見通しのきかない角を曲がるときはとくにそうだ。なお、<b>Shift+方向キー</b>での移動も、何か「気になるもの」を見つけると止まる。</li>
+<li> 時間と気力の節約になる。実時間を競う<a href="http://crawl.chaosforge.org/Speedrun" data-untr="1" class="mw-redirect" title="Speedrun">スピードラン</a>は別として、たいていのプレイヤーにとって、時間と退屈さは<i>れっきとした</i>コストだ。Crawl は複雑さを楽しむゲームなので、何も起きない場所をさっさと通り抜けておけば、本当に危ないことが起きたときに気を張っていやすい。階の探索がほぼ終わったところで、残りを比較的安全に自動探索で片づける、という使い方もできる。</li></ul>
+<p><b>欠点:</b>
+</p>
+<ul><li> 自動探索の進み方は、あまり効率がよくない。部屋の隅や通路の突き当たりを、階のほかの場所をすべて見終わるまで見ずに残してしまうことがよくあり、全マスを探索するには階をもう一度歩き回る羽目になる。もちろん、その場所の全マスを探索するつもりがない場合や、ターン数を気にしない場合は、自動探索で何の問題もない。</li>
+<li> 安全を何より重んじるなら、自動探索は危ないこともある。<a href="Spriggan.html" title="Spriggan">スプリガン</a>なら、うかつに視界を広げすぎて、間の悪いことに<a href="Orc_priest.html" title="Orc priest">オークの司祭</a>がすぐ近くにいたり、角を曲がったすぐ先に<a href="Ogre.html" title="Ogre">オーガ</a>がいたりするのは避けたいところだ。これが問題になるのはおもに<a href="The_Dungeon.html" class="mw-redirect" title="Dungeon">迷宮</a>の上半分だが、ゲーム全体を通しても、わずかながら理屈の上では危険がある。</li></ul>
+<p>また、一部の<a href="Dungeon_branches.html" class="mw-redirect" title="Branch">分岐</a>では、自動探索は技術的な壁にぶつかる。とくに<a href="The_Shoals.html" title="The Shoals">浅瀬</a>では潮の満ち引きのせいで動きがおかしくなる。<a href="The_Abyss.html" title="The Abyss">アビス</a>で自動探索すると、忘れたばかりの場所を探索し直すために、実りのない後戻りを何度も繰り返すことになる。
+</p>
+<h2><span class="mw-headline" id="Options">オプション</span></h2>
+<p>自動探索の動きは、<a href="http://crawl.chaosforge.org/Rcfile" data-untr="1" class="mw-redirect" title="Rcfile">設定ファイル(rcfile)</a>の設定で変えられる。
+</p>
+<ul><li><code>explore_delay = #</code> で自動探索の速さを決められる。オンラインのサーバーでは既定値が -1(瞬時に移動)だが、オフラインではもっと大きな値になっている。</li>
+<li><code>explore_wall_bias = #</code> を設定すると、自動探索は壁のほうへ進むのを好むようになる。値が大きいほど強く好む。負の値にすると、逆に壁から離れるように進む。</li>
+<li><code>travel_avoid_terrain = shallow water, deep water</code> とすると、指定した種類の水のマスには自動移動で入らなくなる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li>自動探索を含む自動移動のパッチは DCSS 以前の <i>Crawl</i> に導入され、それ以来すべての Stone Soup のバージョンに組み込まれている。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

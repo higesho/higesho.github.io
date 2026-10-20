@@ -16,7 +16,7 @@
 <h1>命中率 <span class="en">To hit</span></h1>
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/To_hit">To hit</a>」(0.30 向け、2025-05-01 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=To_hit&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
 <div class="wiki">
-<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
 <p><b>命中率</b>(to hit、chance to hit の略)は、攻撃が相手に当たる確率だ。攻撃がうまくいくかどうかを決める 2 つの大きな要素の一つで、もう一つはダメージだ。
 </p><p>命中率は近接攻撃と遠隔攻撃のどちらにもあり、プレイヤーとモンスターでは計算のしかたが違う。プレイヤーの場合に一番効くのは武器(または素手)のスキルと戦闘スキルだ。両方をしっかり鍛え、器用もそこそこあれば、たいていの相手に外すことはまずない。
 </p>
@@ -56,7 +56,7 @@
 <ul><li><code>14 + dex/2 + 1d(Fighting + 1)</code> から始める(dex は器用、Fighting は戦闘スキル)。</li></ul>
 <h4><span class="mw-headline" id="Weapons">武器</span></h4>
 <ul><li><code>1d(weapon skill + 1) -1 </code>(0 から武器スキルまでの数)を足す。</li>
-<li>武器の基本命中修正を足す(素手は +2、<a href="http://crawl.chaosforge.org/Claws" data-untr="1" title="Claws">爪</a>があれば +4)。</li>
+<li>武器の基本命中修正を足す(素手は +2、<a href="Claws.html" title="Claws">爪</a>があれば +4)。</li>
 <li>武器の<a href="Enchant.html" title="Enchant">強化値</a>と、<a href="Slaying.html" title="Slaying">殺戮</a>のボーナスを足す。</li></ul>
 <h4><span class="mw-headline" id="Other_modifiers">その他の修正</span></h4>
 <ul><li>霧化、茸化、豚化、または(吸血鬼以外の)コウモリに変身しているときは、上の武器スキルのかわりに <code>[1d(XL * 100 + 100) / 100] - 1</code> を足す。</li>
@@ -68,17 +68,17 @@
 <ul><li><a href="Amulet_of_the_Air.html" title="Amulet of the Air">大気の護符</a>を着けているか、<a href="Ru.html#Sacrifices" title="Ru">ルー</a>に片目を捧げていれば 5 を引く。</li>
 <li>混乱していれば 5 を引く。</li>
 <li>相手が見えない(透明)なら 6 を引く。</li>
-<li>相手が照らし出されている(<a href="Corona.html" title="Corona">照明</a>、<a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>、<a href="http://crawl.chaosforge.org/Halo" data-untr="1" class="mw-redirect" title="Halo">光輪</a>の中にいる)なら、2 + 0〜7 の乱数を足す。</li>
+<li>相手が照らし出されている(<a href="Corona.html" title="Corona">照明</a>、<a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>、<a href="Aura.html" class="mw-redirect" title="Halo">光輪</a>の中にいる)なら、2 + 0〜7 の乱数を足す。</li>
 <li>相手が暗影の中にいて、自分に暗視(ディスメノスとイレデレンヌルが授ける)がなければ、2 + 0〜3 の乱数を引く。</li>
 <li><a href="Confusing_Touch.html" title="Confusing Touch">混乱の一撃</a>の呪文で +0〜+(器用 - 1)。</li>
 <li>次の変身中はボーナスがつく。
-<ul><li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>: 0〜+8</li>
-<li><a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>: 0〜+9</li>
-<li><a href="http://crawl.chaosforge.org/Necromutation" data-untr="1" title="Necromutation">死者の躯</a>(リッチの姿): 0〜+9</li>
-<li><a href="http://crawl.chaosforge.org/Ice_Form" data-untr="1" title="Ice Form">氷の躯</a>: 0〜+9</li>
-<li><a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛</a>: 0〜+9</li>
+<ul><li><a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>: 0〜+8</li>
+<li><a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>: 0〜+9</li>
+<li><a href="Necromutation.html" title="Necromutation">死者の躯</a>(リッチの姿): 0〜+9</li>
+<li><a href="Ice_Form.html" title="Ice Form">氷の躯</a>: 0〜+9</li>
+<li><a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>: 0〜+9</li>
 <li><a href="Bat_Form.html" title="Bat Form">コウモリ</a>: 0〜+11</li>
-<li><a href="http://crawl.chaosforge.org/Blade_Hands" data-untr="1" class="mw-redirect" title="Blade Hands">刃の手</a>: 0〜+11</li>
+<li><a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>: 0〜+11</li>
 <li><a href="Fungus_Form.html" title="Fungus Form">茸化</a>: 0〜+9</li>
 <li><a href="Tree_Form.html" title="Tree Form">樹化</a>: 0〜+9</li>
 <li><a href="Wisp_Form.html" title="Wisp Form">霧化</a>: 0〜+9</li></ul></li></ul>
@@ -89,12 +89,12 @@
 <p>基本値は 18 だ。
 </p>
 <h3><span class="mw-headline" id="Hit_Dice">HD</span></h3>
-<p><a href="Fighter_flag.html" title="Fighter flag">戦士フラグ</a>を持つモンスターは +(2.5 * <a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">HD</a>)、ほかのモンスターは +(1.5 * HD) のボーナスを得る。小数点以下は切り捨てる。
+<p><a href="Fighter_flag.html" title="Fighter flag">戦士フラグ</a>を持つモンスターは +(2.5 * <a href="Hit_dice.html" class="mw-redirect" title="HD">HD</a>)、ほかのモンスターは +(1.5 * HD) のボーナスを得る。小数点以下は切り捨てる。
 </p>
 <h3><span class="mw-headline" id="Situational_Modifiers">状況による修正</span></h3>
 <ul><li>水棲のモンスターが「地形を活かして」いるときは +5。</li>
 <li>武器を持ったモンスターは、その武器の基本の命中修正と魔法による命中修正を得る。</li>
-<li><a href="http://crawl.chaosforge.org/Confused" data-untr="1" class="mw-redirect" title="Confused">混乱</a>しているモンスターは -5。</li>
+<li><a href="Confusion.html" class="mw-redirect" title="Confused">混乱</a>しているモンスターは -5。</li>
 <li><a href="Corona.html" title="Corona">照らし出された</a>相手を攻撃するモンスターは +2〜+9。</li>
 <li>透明な相手を攻撃するモンスターは(透明を見通せない場合)、命中値が下がる。近接攻撃では 35%、遠隔攻撃では 50% 下がる。</li></ul>
 <p><br />

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.11 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.11(0.11)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.11 <span class="en">0.11</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.11">0.11</a>」(対象の版の記載なし、2022-02-08 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.11&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="http://crawl.chaosforge.org/Crawl" data-untr="1" class="mw-redirect" title="Crawl">Crawl</a> の以前のリリースについてのものだ。最新版を含むほかのバージョンについては、<a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を参照。</i></div>
+<p><b>0.11</b> は <i>Dungeon Crawl Stone Soup</i> のバージョンの一つで、2012年10月1日にリリースされた。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Highlights"><span class="tocnumber">1</span> <span class="toctext">主な変更</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Branches.2C_environment"><span class="tocnumber">2</span> <span class="toctext">分岐・環境</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Character"><span class="tocnumber">3</span> <span class="toctext">キャラクター</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Monsters"><span class="tocnumber">4</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Spells"><span class="tocnumber">5</span> <span class="toctext">呪文</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Items"><span class="tocnumber">6</span> <span class="toctext">アイテム</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Cards"><span class="tocnumber">7</span> <span class="toctext">カード</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Gods"><span class="tocnumber">8</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Interface"><span class="tocnumber">9</span> <span class="toctext">インターフェース</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Wizmode"><span class="tocnumber">10</span> <span class="toctext">ウィザードモード</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Technical"><span class="tocnumber">11</span> <span class="toctext">技術面</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Highlights">主な変更</span></h2>
+<ul><li>新しい分岐: <a href="Spider's_Nest.html" title="Spider&#39;s Nest">蜘蛛の穴ぐら</a>。</li>
+<li><a href="The_Swamp.html" class="mw-redirect" title="Swamp">沼</a>の分岐が、前ほどうっとうしくなくなった。</li>
+<li>矢弾の強化値がなくなった。</li>
+<li>モンスターがプレイヤーにかける<a href="Constriction.html" title="Constriction">締めつけ</a>を作り直した。</li>
+<li>新しいモンスター: <a href="Arachne.html" title="Arachne">アラクネ</a>、<a href="http://crawl.chaosforge.org/Fannar" data-untr="1" title="Fannar">ファンナール</a>、<a href="Orb_spider.html" title="Orb spider">球体の蜘蛛</a>、<a href="Bog_body.html" title="Bog body">湿地の屍骸</a>、<a href="http://crawl.chaosforge.org/Hell_Sentinel" data-untr="1" title="Hell Sentinel">地獄の番人</a>。</li>
+<li>削除されたモンスター: <a href="http://crawl.chaosforge.org/Jozef" data-untr="1" title="Jozef">ヨゼフ</a>、<a href="http://crawl.chaosforge.org/Bog_mummy" data-untr="1" title="Bog mummy">湿地のミイラ</a>、<a href="http://crawl.chaosforge.org/Midge" data-untr="1" title="Midge">ミッジ</a>、<a href="http://crawl.chaosforge.org/Pit_fiend" data-untr="1" title="Pit fiend">奈落の魔神</a>、<a href="http://crawl.chaosforge.org/Hairy_devil" data-untr="1" title="Hairy devil">毛むくじゃらの悪魔</a>。</li>
+<li>新しいヴォールトとタイルをたくさん追加。</li>
+<li><a href="http://crawl.chaosforge.org/Crawl_options" data-untr="1" title="Crawl options">設定ファイル</a>を作り直した。リストに追加するときは += が必要になる。(今回が最後(?)で)これからは設定ファイルを手で書き換えて対応させる必要はない。</li></ul>
+<h2><span class="mw-headline" id="Branches.2C_environment">分岐・環境</span></h2>
+<ul><li>新しい<a href="Wizard_Laboratory.html" class="mw-redirect" title="Wizlab">魔術師の研究所</a>: ゴルブリアのルーレット。</li>
+<li>新しいヴォールトがとんでもなく大量に追加された。いくつかの新しい分岐の最下層と、メインの迷宮の深い階に出る、階全体を使ったヴォールトもある。</li>
+<li>st による、<a href="Ziggurat.html" title="Ziggurat">ジグラット</a>をもとにした新しい<a href="Dungeon_Sprint.html" title="Dungeon Sprint">ダンジョンスプリント</a>のマップ。</li>
+<li><a href="Vault.html" title="Vault">ヴォールト</a>がよく出るようになった。</li>
+<li>迷宮といくつかの分岐に、新しい階の構造が3種類加わった。</li>
+<li>ポータル・ヴォールトから追放されても、そのポータル・ヴォールトを失わなくなった。</li>
+<li><a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a>から脱出すると、元いた場所に戻される。そのかわり、しばらくはほとんどの<a href="Banishment.html" title="Banishment">アビスへの追放</a>が効かなくなる。</li>
+<li><a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>: 迷宮への出口は少し減ったが、アビスを経由する出口(そこから迷宮に戻れる)がずっと増えた。</li>
+<li><a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>は3階までになった。</li>
+<li><a href="Dungeon_branches.html" class="mw-redirect" title="Branch">分岐</a>の難しさは、入口がどこにあったかに左右されなくなった。</li>
+<li>同じ種類の罠は、どこにあっても同じダメージを与える。</li>
+<li><a href="http://crawl.chaosforge.org/Axe_trap" data-untr="1" title="Axe trap">斧の罠</a>はばっさりと切り捨てられた。</li>
+<li><a href="http://crawl.chaosforge.org/Wax_wall" data-untr="1" class="mw-redirect" title="Wax wall">蝋の壁</a>はなくなった。</li>
+<li>ランダムに生成される<a href="Door.html#History" title="Door">隠し扉</a>はなくなった。ヴォールトの中にはまだある。</li>
+<li><a href="The_Swamp.html" class="mw-redirect" title="Swamp">沼</a>の構造を改良し、階はより小さくまとまり、木が増えた。霧も前より少ない。</li>
+<li>沼の木はマングローブになり、視線をさえぎるようになった。</li>
+<li>蜘蛛の穴ぐら: 以前の蜘蛛のポータル・ヴォールトに代わるもので、遊糸のルーンがある。</li>
+<li>ゲームには蜘蛛の穴ぐらと<a href="Snake_Pit.html" title="Snake Pit">蛇穴</a>のどちらか一方と、沼と<a href="The_Shoals.html" class="mw-redirect" title="Shoals">浅瀬</a>のどちらか一方が出る。毒がテーマの分岐と水がテーマの分岐が、必ず一つずつあることになる。</li></ul>
+<h2><span class="mw-headline" id="Character">キャラクター</span></h2>
+<ul><li><a href="Human.html" title="Human">人間</a>は能力値が上がる回数が少し増えた。</li>
+<li><a href="Naga.html" title="Naga">ナーガ</a>は XL13 で締めつけを得るようになった。</li>
+<li><a href="Tengu.html" title="Tengu">天狗</a>は変身中も飛べる。</li>
+<li><a href="Draconian.html#Grey" title="Draconian">灰色ドラコニアン</a>は<a href="Earth_Magic.html" class="mw-redirect" title="Earth">地の魔術</a>が得意になり、<a href="Air_Magic.html" class="mw-redirect" title="Air">風の魔術</a>が苦手になった。<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a> が上がり、<a href="Shallow_water.html" title="Shallow water">浅い水脈</a>でもたつかなくなった。</li>
+<li><a href="Felid.html" title="Felid">フェリッド</a>は戦闘と<a href="Evocations.html" title="Evocations">発動</a>が得意になり、<a href="Summonings.html" title="Summonings">召喚術</a>が苦手になった。</li>
+<li>フェリッドの<a href="http://crawl.chaosforge.org/Jump_attack" data-untr="1" title="Jump attack">飛びかかり</a>(不意打ち)のダメージが上がった。</li>
+<li>発動のスキルで最大 <a href="Magic_points.html" class="mw-redirect" title="MP">MP</a> が増える。</li>
+<li>手にあたるものがない姿では、<a href="Wand.html" class="mw-redirect" title="Wands">ワンド</a>などを使えない。</li></ul>
+<h2><span class="mw-headline" id="Monsters">モンスター</span></h2>
+<ul><li><a href="Player_ghost.html" title="Player ghost">プレイヤーの幽霊</a>の<a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>は必ず命中するが、射程は1。</li>
+<li><a href="Berserk.html" title="Berserk">バーサーク</a>中のモンスターには<a href="Fear.html" title="Fear">恐慌</a>が効かない。</li>
+<li><a href="List_of_plants.html" title="List of plants">植物</a>は<a href="Torment.html" title="Torment">拷問</a>を感じない。<a href="http://crawl.chaosforge.org/Oklob" data-untr="1" class="mw-redirect" title="Oklob">オクロブ草</a>農場の始まりだ!</li>
+<li>地面に根づいたモンスターはテレポートしない(-TELE)。</li>
+<li><a href="Jelly.html" class="mw-redirect" title="Jellies">ジェリー類</a>、<a href="http://crawl.chaosforge.org/Porcupines" data-untr="1" class="mw-redirect" title="Porcupines">ヤマアラシ</a>、<a href="http://crawl.chaosforge.org/Flaming_corpse" data-untr="1" title="Flaming corpse">燃える死体</a>は締めつけられない。</li>
+<li>魔法の<a href="Staff.html" title="Staff">杖</a>は、モンスターが持ってもただの棍棒以上の働きをするようになった。</li>
+<li>モンスターが<a href="Ring.html" title="Ring">指輪</a>や<a href="Amulet.html" title="Amulet">護符</a>を使える。</li>
+<li>心を持たないモンスターはスキルを一切持たない(苦痛の武器を持ったゾンビなど)。</li>
+<li>新しいユニーク:
+<ul><li><a href="Arachne.html" title="Arachne">アラクネ</a>。半人半蜘蛛。</li>
+<li><a href="http://crawl.chaosforge.org/Fannar" data-untr="1" title="Fannar">ファンナール</a>。エルフの氷の精霊使い。</li></ul></li>
+<li><a href="Margery.html" title="Margery">マージェリー</a>がドラゴンの鎧を着るようになった。</li>
+<li>秘術系の呪文を使うモンスターは、重い防具を着ない。</li>
+<li><a href="http://crawl.chaosforge.org/Donald" data-untr="1" title="Donald">ドナルド</a>が<a href="Labyrinth.html" title="Labyrinth">ラビリンス</a>に出ることがあり、ラビリンスに文句を言う。</li>
+<li><a href="http://crawl.chaosforge.org/Urug" data-untr="1" title="Urug">ウルグ</a>が大幅に強くなった。</li>
+<li><a href="http://crawl.chaosforge.org/Mimic_(monster)" data-untr="1" title="Mimic (monster)">ミミック</a>には「未熟な」、(形容詞なし)、「貪欲な」、「怪物的な」の段階があり、順に強さと能力が上がっていく。</li>
+<li>新しいモンスター: <a href="Orb_spider.html" title="Orb spider">球体の蜘蛛</a>。弱い<a href="http://crawl.chaosforge.org/Orbs_of_destruction" data-untr="1" class="mw-redirect" title="Orbs of destruction">破壊の球体</a>を撃ってくる。</li>
+<li>削除: <a href="http://crawl.chaosforge.org/Jozef" data-untr="1" title="Jozef">ヨゼフ</a>、<a href="http://crawl.chaosforge.org/Midge" data-untr="1" title="Midge">ミッジ</a>、<a href="http://crawl.chaosforge.org/Killer_bee_larva" data-untr="1" title="Killer bee larva">殺人蜂の幼虫</a>、<a href="http://crawl.chaosforge.org/Hairy_devil" data-untr="1" title="Hairy devil">毛むくじゃらの悪魔</a>。</li>
+<li><a href="http://crawl.chaosforge.org/Porcupines" data-untr="1" class="mw-redirect" title="Porcupines">ヤマアラシ</a>が棘を飛ばすようになった。</li>
+<li><a href="http://crawl.chaosforge.org/Hell_Sentinel" data-untr="1" title="Hell Sentinel">地獄の番人</a>が<a href="http://crawl.chaosforge.org/Pit_fiend" data-untr="1" title="Pit fiend">奈落の魔神</a>に取って代わった。</li>
+<li><a href="Boulder_beetle.html" title="Boulder beetle">岩石の甲虫</a>は大岩になって転がれる。</li>
+<li><a href="Jumping_spider.html" title="Jumping spider">飛びつき蜘蛛</a>は、近接攻撃で<a href="Web.html" title="Web">蜘蛛の巣</a>を絡めてくることがある。</li>
+<li><a href="http://crawl.chaosforge.org/Sea_snake" data-untr="1" title="Sea snake">ウミヘビ</a>と<a href="http://crawl.chaosforge.org/Redback" data-untr="1" title="Redback">背赤蜘蛛</a>の毒攻撃は、<a href="Poison.html" class="mw-redirect" title="Poison resistance">毒耐性</a>で一部しか防げない。</li>
+<li>蜘蛛の敵はすべて、<a href="Hit_dice.html" title="Hit dice">HD</a> とダメージが上がった。</li>
+<li><a href="Emperor_scorpion.html" title="Emperor scorpion">皇帝サソリ</a>がずっと強くなった。</li>
+<li><a href="Ghost_moth.html" title="Ghost moth">幽体蛾</a>は弱体化された。</li>
+<li><a href="Vampire_mosquito.html" title="Vampire mosquito">吸血蚊</a>は病気の攻撃を失い、そのかわりより強い<a href="Vampiric.html" title="Vampiric">吸血</a>の攻撃を得た。</li>
+<li><a href="Swamp_worm.html" title="Swamp worm">沼ワーム</a>の近接攻撃の命中率が上がった。</li>
+<li><a href="http://crawl.chaosforge.org/Giant_leech" data-untr="1" class="mw-redirect" title="Giant leech">大ヒル</a>がより危険になった。</li>
+<li><a href="http://crawl.chaosforge.org/Bog_mummies" data-untr="1" class="mw-redirect" title="Bog mummies">湿地のミイラ</a>は<a href="Bog_body.html" class="mw-redirect" title="Bog bodies">湿地の屍骸</a>に置き換えられた。死の呪いがなく、呪文が強く、<a href="Fedhas_Madash.html" class="mw-redirect" title="Fedhas">フェダス</a>の祈りで分解できる。</li>
+<li><a href="http://crawl.chaosforge.org/Submerge" data-untr="1" class="mw-redirect" title="Submerge">水に潜る</a>モンスターは、潜ると逃げるのをやめる。</li>
+<li><a href="Aura.html#Umbra" title="Aura">暗影</a>は、悪魔に恩恵を与えなくなった。</li>
+<li>モンスター(とプレイヤーの幽霊)が<a href="Ozocubu's_Refrigeration.html" title="Ozocubu&#39;s Refrigeration">オゾクブの瞬間凍結</a>を唱えられる。</li>
+<li>モンスターが緊急用の呪文を唱える頻度が上がった。</li>
+<li>モンスターの<a href="Constriction.html" title="Constriction">締めつけ</a>を作り直した。抜け出しやすくなり、<a href="http://crawl.chaosforge.org/Blinking" data-untr="1" title="Blinking">瞬間移動</a>は(必ず成功するのではなく)脱出の試み2回分として扱われる。ダメージの値もまともになった。</li>
+<li>一部のモンスター、特にミミックのために、「ダメージのない締めつけ」の効果を実装した。</li>
+<li><a href="The_Royal_Jelly.html" title="The Royal Jelly">ロイヤルジェリー</a>が再生できるようになった。</li></ul>
+<h2><span class="mw-headline" id="Spells">呪文</span></h2>
+<ul><li><a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>が<a href="The_Slime_Pits.html" class="mw-redirect" title="Slime Pits">スライムの穴ぐら</a>でも効くようになった。</li>
+<li><a href="Iskenderun's_Mystic_Blast.html" title="Iskenderun&#39;s Mystic Blast">イスケンデルンの爆破の秘術</a>はよく爆発するが、至近距離でも安全に使える。</li>
+<li><a href="Death_Channel.html" title="Death Channel">死の霊媒術</a>はレベル6になった。</li>
+<li><a href="Simulacrum_(monster).html" class="mw-redirect" title="Simulacrum">幻像</a>が<a href="http://crawl.chaosforge.org/Beef_jerky" data-untr="1" title="Beef jerky">ビーフジャーキー</a>、<a href="http://crawl.chaosforge.org/Sausage" data-untr="1" title="Sausage">ソーセージ</a>、<a href="http://crawl.chaosforge.org/Meat_ration" data-untr="1" title="Meat ration">肉の携帯食</a>にも使える。</li>
+<li>削除: <a href="http://crawl.chaosforge.org/Projected_Noise" data-untr="1" title="Projected Noise">騒音の投射</a>。</li></ul>
+<h2><span class="mw-headline" id="Items">アイテム</span></h2>
+<ul><li><a href="Artefact.html" class="mw-redirect" title="Artefacts">アーティファクト</a>に<a href="Distortion.html" title="Distortion">歪曲</a>がつくことがある。</li>
+<li><a href="Blowgun.html" title="Blowgun">吹き矢筒</a>に<a href="http://crawl.chaosforge.org/Evasion_(brand)" data-untr="1" title="Evasion (brand)">回避</a>がつくことがある。</li>
+<li>防具の着脱を途中でやめられるようになった。</li>
+<li>見た目が決まっている固定アーティファクトは、最初から鑑定済みになった。</li>
+<li>ジェリーを急所攻撃すると、武器が<a href="Acid.html" class="mw-redirect" title="Corrode">腐食</a>することがある。</li>
+<li><a href="http://crawl.chaosforge.org/Ambrosia" data-untr="1" title="Ambrosia">アンブロシア</a>で回復する MP が増えたが、消化するにつれて少しずつ回復する。</li>
+<li>加工していない<a href="http://crawl.chaosforge.org/Troll_hide" data-untr="1" title="Troll hide">トロルの皮</a>で再生が得られる。</li>
+<li><a href="http://crawl.chaosforge.org/Jewelry" data-untr="1" class="mw-redirect" title="Jewelry">装身具</a>は、はっきりした効果が現れると自動で鑑定される。</li>
+<li><a href="http://crawl.chaosforge.org/Ankus" data-untr="1" title="Ankus">アンカス</a>、<a href="http://crawl.chaosforge.org/Scroll_of_detect_curse" data-untr="1" title="Scroll of detect curse">呪い感知の巻物</a>、<a href="http://crawl.chaosforge.org/Amulet_of_controlled_flight" data-untr="1" title="Amulet of controlled flight">飛行制御の護符</a>、<a href="http://crawl.chaosforge.org/Rod_of_smiting" data-untr="1" class="mw-redirect" title="Rod of smiting">打擲のロッド</a>はなくなった。</li>
+<li><a href="http://crawl.chaosforge.org/Rod_of_striking" data-untr="1" title="Rod of striking">打撃のロッド</a>が強くなった。</li>
+<li><a href="http://crawl.chaosforge.org/Staff_of_energy" data-untr="1" title="Staff of energy">活力の杖</a>は、<a href="http://crawl.chaosforge.org/Spell_hunger" data-untr="1" class="mw-redirect" title="Spell hunger">呪文による空腹</a>をなくすのではなく、1/3 に減らすようになった。</li>
+<li>矢弾の強化値がなくなり、所持品の管理がずっと楽になった。
+<ul><li>その埋め合わせとして計算式を変え、矢弾の強化値の役割をスキルが担うようにした。</li></ul></li>
+<li>矢弾の<a href="Brand.html" class="mw-redirect" title="Brands">ブランド</a>は、最初からすべて見えている。</li>
+<li>面頬つきの<a href="Helmet.html" title="Helmet">兜</a>でも噛みつき攻撃はできる。</li>
+<li>武器を使って鑑定するのは一瞬で済むようになったが、アイテムごとにランダムに決まるスキルのレベルが必要になる。</li>
+<li>ブランドのないアイテムは、呪われていない限り「輝く」や「ルーンの刻まれた」にならない。</li>
+<li>新しいアイテム: <a href="Lightning_rod.html" title="Lightning rod">稲妻のロッド</a>。何回か続けて振ると効果がつながり、扇状に広がる電撃を敵に浴びせられる。</li>
+<li><a href="Randart.html" title="Randart">ランダムアーティファクト</a>の武器の名前の種類が増えた。</li>
+<li><a href="Acquirement.html" title="Acquirement">獲得</a>では、信仰している神が嫌うアイテムが出なくなった。</li></ul>
+<h2><span class="mw-headline" id="Cards">カード</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Trowel_card" data-untr="1" title="Trowel card">鏝</a>がどこでも使えるようになった。</li>
+<li><a href="http://crawl.chaosforge.org/Sage_card" data-untr="1" title="Sage card">賢者</a>は時間切れにならず、新しく引いても上書きされない。</li>
+<li>削除: <a href="http://crawl.chaosforge.org/Spade_card" data-untr="1" title="Spade card">鋤</a>。</li>
+<li><a href="http://crawl.chaosforge.org/Map_card" data-untr="1" title="Map card">地図</a>と<a href="http://crawl.chaosforge.org/Dowsing_card" data-untr="1" title="Dowsing card">探知</a>を一つにまとめた。</li>
+<li><a href="http://crawl.chaosforge.org/Tomb_card" data-untr="1" title="Tomb card">玄室</a>でできた壁は、しばらくすると消える。</li>
+<li>新しいカード: <a href="http://crawl.chaosforge.org/Mercenary_card" data-untr="1" title="Mercenary card">傭兵</a>。お金を払って仲間を雇える。</li>
+<li><a href="http://crawl.chaosforge.org/Warpwright_card" data-untr="1" title="Warpwright card">歪曲の匠</a>のテレポートの罠は、すぐに消える。</li></ul>
+<h2><span class="mw-headline" id="Gods">神</span></h2>
+<ul><li><a href="Trog.html" title="Trog">トログ</a>は神聖なモンスターを倒すことも認める。</li>
+<li><a href="Kikubaaqudgha.html" title="Kikubaaqudgha">キクバークッグァ</a>を見捨てると、その時点で存在する死体がすべて腐る。</li>
+<li>キクバークッグァは、すべての<a href="Necromancy.html" title="Necromancy">死霊術</a>の呪文を必ず授けるのではなく、呪文がランダムに選ばれた<a href="http://crawl.chaosforge.org/Books" data-untr="1" class="mw-redirect" title="Books">魔法書</a>を贈るようになった。</li>
+<li>モンスターを追放すると、いくらかの経験値と<a href="Lugonu.html" title="Lugonu">ルゴヌ</a>の信仰心が得られる。</li>
+<li><a href="Xom.html" title="Xom">ゾム</a>の新しい効果: 集団への<a href="Inner_Flame.html" title="Inner Flame">内なる炎</a>。</li>
+<li><a href="Nemelex_Xobeh.html" class="mw-redirect" title="Nemelex">ネメレクス</a>が<a href="Deck_of_summoning.html" title="Deck of summoning">召喚のデッキ</a>を贈ることがずっと減った。</li>
+<li>ネメレクスはマーク・フォーの能力を失い、ディール・フォーを得た。</li>
+<li>ネメレクスは、カードの「正当な」使い方を求めなくなった。判定が不正確すぎたためだ。</li>
+<li>ゾムは永続する仲間を贈らなくなった。</li>
+<li>ゾムがアイテムを贈ることはずっと少なくなった。</li>
+<li>苦しい戦いの最中には、ゾムが動く頻度が大幅に上がる。</li>
+<li><a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>は、仲間の命を救っても信仰心を取らなくなった。</li>
+<li>入信したばかりでないエリヴィロンの信者は、不浄でない武器を破壊できない。</li>
+<li><a href="Fedhas_Madash.html" class="mw-redirect" title="Fedhas">フェダス</a>の陽光は、その場に留まるようになった。</li>
+<li><a href="Okawaru.html" title="Okawaru">オカワル</a>は、弱いモンスターを倒したり捧げたりしてもほとんど気に留めず、手ごわい戦いほど多く報いる。</li>
+<li>同時に受けている複数の神の<a href="Divine_retribution.html" title="Divine retribution">神罰</a>が、互いに薄まらなくなった。</li></ul>
+<h2><span class="mw-headline" id="Interface">インターフェース</span></h2>
+<ul><li>アイテムの<a href="Stash.html" title="Stash">置き場</a>の記録や注釈などが、ポータルの階でも使えるようになった。</li>
+<li><a href="Mutation.html" title="Mutation">変異</a>のノートに、どのようにして得たか・失ったかが書かれる。</li>
+<li>削除したオプション: pizza、ood_interesting、rare_interesting、note_all_spells。</li>
+<li>新しいオプション: auto_drop_chunks、autofight_throw、dump_kill_breakdowns、show_travel_trail、sacrifice_before_explore。</li>
+<li><a href="http://crawl.chaosforge.org/Webtiles" data-untr="1" class="mw-redirect" title="Webtiles">WebTiles</a> のチャットが記録されるようになった(note_chat_messages で無効にできる)。</li>
+<li>show_gold_turns と show_game_turns のオプションが初めから有効になった。持っている金貨の量と、行動にかかった時間が表示される。</li>
+<li>冗談の翻訳: dwarven、jägerkin、kraut、wide。</li>
+<li>新しいタイルを大量に追加。</li>
+<li>パンデモニウムと地獄のユニークの君主に、縦長の特別なタイルがついた。</li>
+<li>ゲーム内でハイスコアを見られるようになった。</li>
+<li>重ねられるアイテムを拾うと、いくつ拾ったかが表示される。</li>
+<li>すべてのアイテム、モンスター、地形に説明がついた。</li>
+<li>多くの説明を改良した。</li>
+<li><a href="Autoexplore.html" title="Autoexplore">自動探索</a>は、信仰している神に捧げられるアイテムがあると止まる。</li>
+<li><a href="http://crawl.chaosforge.org/Rods" data-untr="1" class="mw-redirect" title="Rods">ロッド</a>は独立したアイテムの種類として表示される。</li>
+<li>自動拾いの設定を、ゲーム内で '\' キーから変えられるようになった。</li>
+<li>チュートリアルをいくつか改良した。</li>
+<li><a href="http://crawl.chaosforge.org/Lantern_of_shadows" data-untr="1" title="Lantern of shadows">影のランタン</a>を持っても、コンソール版で画面全体が暗い灰色になることはなくなった。</li>
+<li>狙いをつける画面を大幅に改良した。範囲に効果がある呪文のほぼすべてに対応し、跳ね返る経路(稲妻の矢など)も表示される。</li>
+<li>状態の表示をいくつか追加・改良した。</li>
+<li>メッセージのフィルタは大文字と小文字を区別しない。</li>
+<li>WebTiles と dgamelaunch の両方を動かしているサーバーで、コンソール版のゲームを WebTiles から観戦する機能を試験的に用意した。</li>
+<li>ローカルのタイル版に能力のタブがついた。</li></ul>
+<h2><span class="mw-headline" id="Wizmode">ウィザードモード</span></h2>
+<ul><li>&amp;^P で変身する。</li>
+<li>&amp;P でヴォールトをもとに階を作り直す。</li>
+<li>&amp;^M で呪文を覚える。</li>
+<li>&amp;# でキャラクターのダンプファイルを(一部)読み込む。</li></ul>
+<h2><span class="mw-headline" id="Technical">技術面</span></h2>
+<ul><li>ローカルのタイル版で ASCII 以外の文字を表示できる。標準のビルドではラテン文字、ギリシャ文字、キリル文字のみ。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

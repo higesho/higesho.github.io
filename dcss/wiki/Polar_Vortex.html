@@ -16,7 +16,7 @@
 <h1>極渦 <span class="en">Polar Vortex</span></h1>
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Polar_Vortex">Polar Vortex</a>」(0.30 向け、2024-06-29 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Polar_Vortex&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
 <div class="wiki">
-<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
 <div>
 <table class="prettytable" style=" width:18em">
 <tr>
@@ -74,7 +74,7 @@
 </td>
 <td style="width: 100%"> 術者の周りの空気を凍てつく渦に変え、巻き込まれた者すべてに途方もないダメージを与える。このダメージは冷気への耐性でも半分しか軽減できない。影響を受けた者は空中に巻き上げられ、振り回される。安全なのは嵐の目だけで、それは術者についていく。渦は長距離の転移では術者についていけない。閉ざされた場所では呪文の効果が大きく弱まる。渦が消えたあとは、しばらくの間再び呼び出すことができない。
 </td></tr></table>
-<p><b>極渦</b>はレベル9の<a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a>の呪文で、あなたの周囲最大6マスに荒れ狂う風を巻き起こし、壊滅的な<a href="http://crawl.chaosforge.org/Cold" data-untr="1" title="Cold">冷気</a>のダメージを与える。
+<p><b>極渦</b>はレベル9の<a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a>の呪文で、あなたの周囲最大6マスに荒れ狂う風を巻き起こし、壊滅的な<a href="Cold.html" title="Cold">冷気</a>のダメージを与える。
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
 <ul>
@@ -91,14 +91,14 @@
 </div>
 
 <h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
-<p>極渦は荒れ狂う風の<a href="Cloud.html" title="Cloud">雲</a>を生み出し、1.0 ターンごとに基本で <code>12d(pow/15)</code> のダメージを与える。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><a href="http://crawl.chaosforge.org/Cold_resistance" data-untr="1" class="mw-redirect" title="Cold resistance">冷気耐性</a>で軽減できるのは、ダメージの 50% だけだ。
+<p>極渦は荒れ狂う風の<a href="Cloud.html" title="Cloud">雲</a>を生み出し、1.0 ターンごとに基本で <code>12d(pow/15)</code> のダメージを与える。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><a href="Cold.html" class="mw-redirect" title="Cold resistance">冷気耐性</a>で軽減できるのは、ダメージの 50% だけだ。
 </p><p>このダメージは、さらに次の要素で補正される。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
 </p>
 <ul><li> 開けたマスの割合。狭い場所ではダメージが下がる。ダメージには <code>(tiles with wind) / (tiles that could have wind)</code>(風が吹いているマスの数 / 風が吹きうるマスの数)の比が掛かる。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup></li>
 <li> 「持続時間と半径」による係数。渦の外側にいるモンスターほど大きなダメージを受ける。<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup></li></ul>
-<p>渦の半径は <code>sqrt(<a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a>_passed) * 7/5</code>、つまり 1.0 ターンにおよそ1マスずつ広がり、最大で5マスになる。中に巻き込まれたモンスターと<a href="Cloud.html" title="Cloud">雲</a>は反時計回りに回される。この「回転」は四角い軌道を描き、おおよそ6ターンで1周する。
-</p><p>呪文を唱えている間、術者と渦に巻き込まれたものはしばらく<a href="Fly.html" title="Fly">飛行</a>する。呪文が終わっても、飛行が切れるまでに1ターンの猶予がある。<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>モンスターは<a href="Deep_water.html" title="Deep water">深い水脈</a>や<a href="http://crawl.chaosforge.org/Lava" data-untr="1" title="Lava">溶岩</a>に落ちないよう気をつけたりはしない。
-</p><p>極渦は6ターン続く。どんな手段であれ<a href="Blink.html" title="Blink">瞬間移動</a>や<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>をしたり、別の階に移ったりすると、渦はその場で消える。消えたあとは 3.5〜4.5 ターンの再使用待ちがある。
+<p>渦の半径は <code>sqrt(<a href="Action.html" class="mw-redirect" title="Aut">aut</a>_passed) * 7/5</code>、つまり 1.0 ターンにおよそ1マスずつ広がり、最大で5マスになる。中に巻き込まれたモンスターと<a href="Cloud.html" title="Cloud">雲</a>は反時計回りに回される。この「回転」は四角い軌道を描き、おおよそ6ターンで1周する。
+</p><p>呪文を唱えている間、術者と渦に巻き込まれたものはしばらく<a href="Fly.html" title="Fly">飛行</a>する。呪文が終わっても、飛行が切れるまでに1ターンの猶予がある。<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>モンスターは<a href="Deep_water.html" title="Deep water">深い水脈</a>や<a href="Lava.html" title="Lava">溶岩</a>に落ちないよう気をつけたりはしない。
+</p><p>極渦は6ターン続く。どんな手段であれ<a href="Blink.html" title="Blink">瞬間移動</a>や<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>をしたり、別の階に移ったりすると、渦はその場で消える。消えたあとは 3.5〜4.5 ターンの再使用待ちがある。
 </p><p>極渦を唱えている最中のモンスター(<a href="http://crawl.chaosforge.org/Twister" data-untr="1" title="Twister">竜巻</a>を含む)には、ほかの者が唱えた極渦が効かない。それ以外に極渦が効かないモンスターはいない。
 </p>
 <h2><span class="mw-headline" id="Strategy">戦略</span></h2>
@@ -107,16 +107,16 @@
 </p><p>系統が一つだけの呪文なので、<a href="Fire_Storm.html" title="Fire Storm">炎の嵐</a>や<a href="Chain_Lightning.html" title="Chain Lightning">連鎖する稲妻</a>などに比べればスキルを上げやすいが、それでも XP の投資はかなりのものになる。ルーン3個のゲームでは、レベル9の呪文のためにスキルを上げると、たいてい守りが手薄になる。ところが極渦は射程が短く、時間をかけてダメージを与え、開けた場所で力を発揮する呪文なので、守りはしっかりしておきたい。そのため、この呪文を取る理由づけはなおさら難しい。極渦は使う価値のある呪文だが、急いで取りにいくほどではない。
 </p>
 <h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
-<ul><li>半径が5のとき、騒音の量は15だ。この数値に直前の行動にかかった時間(<a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a>)を掛け、10で割ったものが実際の騒音になる。</li>
+<ul><li>半径が5のとき、騒音の量は15だ。この数値に直前の行動にかかった時間(<a href="Action.html" class="mw-redirect" title="Aut">aut</a>)を掛け、10で割ったものが実際の騒音になる。</li>
 <li>呪文の効果をわざと終わらせたいのでなければ、呪文が続いている間に<a href="Blink.html" title="Blink">瞬間移動</a>を使わないよう気をつけよう。</li>
 <li>極渦の範囲内にある<a href="http://crawl.chaosforge.org/Tree" data-untr="1" class="mw-redirect" title="Tree">樹木</a>は、呪文で壊れることがある。</li></ul>
 <h2><span class="mw-headline" id="Gallery">ギャラリー</span></h2>
 <div class="thumb tleft"><div class="thumbinner" style="width:352px"><a href="http://crawl.chaosforge.org/File:Polar_Vortex_demo.png" data-untr="1" class="image"><img alt="" src="img/350px-Polar_Vortex_demo.png" width="350" height="359" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="http://crawl.chaosforge.org/File:Polar_Vortex_demo.png" data-untr="1" class="internal" title="Enlarge"></a></div>半径が最大になった極渦。</div></div></div>
 <div></div>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> より前は、極渦のダメージの 60% は耐性で防げなかった。</li>
-<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、極渦の威力は唱えたときに固定されなかった。<a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a>の神聖なる釈義で唱えると、2ターン目からは威力0の渦になってしまった。また、装備を替えると威力が計算し直された。</li>
-<li>極渦は <a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> で、<a href="http://crawl.chaosforge.org/Tornado" data-untr="1" title="Tornado">荒れ狂う嵐</a>の題材を変えたものとして追加された。荒れ狂う嵐に比べてダメージは 33% 多いが、一部は耐性で防げる。またこのとき、いくつかのモンスターが rTornado を失った。</li></ul>
+<ul><li><a href="0.30.html" title="0.30">0.30</a> より前は、極渦のダメージの 60% は耐性で防げなかった。</li>
+<li><a href="0.28.html" title="0.28">0.28</a> より前は、極渦の威力は唱えたときに固定されなかった。<a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a>の神聖なる釈義で唱えると、2ターン目からは威力0の渦になってしまった。また、装備を替えると威力が計算し直された。</li>
+<li>極渦は <a href="0.27.html" title="0.27">0.27</a> で、<a href="http://crawl.chaosforge.org/Tornado" data-untr="1" title="Tornado">荒れ狂う嵐</a>の題材を変えたものとして追加された。荒れ狂う嵐に比べてダメージは 33% 多いが、一部は耐性で防げる。またこのとき、いくつかのモンスターが rTornado を失った。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/spl-vortex.cc#L377">spl-vortex.cc:377</a> (0.30.0)</span>

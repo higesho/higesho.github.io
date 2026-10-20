@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ダンジョンスプリント &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ダンジョンスプリント(Dungeon Sprint)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ダンジョンスプリント <span class="en">Dungeon Sprint</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Dungeon_Sprint">Dungeon Sprint</a>」(0.29 向け、2025-02-11 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Dungeon_Sprint&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.29 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.29.html" title="0.29">0.29</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容と<b>合っていないかもしれない</b>。</i></div>
+<p><b>ダンジョンスプリント</b>はテンポの速い Crawl の変種で、たいていは恐ろしく難しいひとつの階を探索し、<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を手に入れることを目指す。どのマップもそれぞれ固有の、ほぼ固定された階になっている。階の構造、モンスター、アイテムや店の場所はたいてい変わらない(いくつかの区画に複数のパターンがあるマップもある)が、実際に見つかるアイテムや店の中身はたいていランダムだ。
+</p><p>ひとつの階を進むあいだに、ゴブリンやネズミと戦っていたかと思えば、高レベルの<a href="Unique_monster.html" class="mw-redirect" title="Unique">ユニーク</a>と戦うことになる。スプリントにしか出てこないボスもいる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Maps"><span class="tocnumber">1</span> <span class="toctext">マップ</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Differences_from_Crawl"><span class="tocnumber">2</span> <span class="toctext">通常の Crawl との違い</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Trivia"><span class="tocnumber">3</span> <span class="toctext">こぼれ話</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#See_Also"><span class="tocnumber">5</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">出典</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_Links"><span class="tocnumber">7</span> <span class="toctext">外部リンク</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Maps">マップ</span></h2>
+<p>現在、スプリントのマップは 9 つある(マップ名はゲームでも英語のまま表示される)。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Red_Sonja" data-untr="1" title="Red Sonja">Red Sonja</a></li>
+<li><a href="http://crawl.chaosforge.org/The_Violet_Keep_of_Menkaure" data-untr="1" title="The Violet Keep of Menkaure">The Violet Keep of Menkaure</a></li>
+<li><a href="http://crawl.chaosforge.org/The_Ten_Rune_Challenge" data-untr="1" title="The Ten Rune Challenge">The Ten Rune Challenge</a></li>
+<li><a href="http://crawl.chaosforge.org/Fedhas%27_Mad_Dash" data-untr="1" title="Fedhas&#39; Mad Dash">Fedhas' Mad Dash</a></li>
+<li><a href="http://crawl.chaosforge.org/Ziggurat_Sprint" data-untr="1" title="Ziggurat Sprint">Ziggurat Sprint</a></li>
+<li><a href="http://crawl.chaosforge.org/Thunderdome" data-untr="1" title="Thunderdome">Thunderdome</a></li>
+<li><a href="http://crawl.chaosforge.org/The_Pits" data-untr="1" title="The Pits">The Pits</a></li>
+<li><a href="Arena_of_Blood.html" title="Arena of Blood">Arena of Blood</a></li>
+<li><a href="http://crawl.chaosforge.org/Linesprint" data-untr="1" title="Linesprint">Linesprint</a> (|||||||||||||||)</li></ul>
+<p>プレイヤーは <i>source/dat/des/sprint/</i> フォルダのファイルを書き換えて、既存の階に手を加えたり、スプリント用の新しい階を作ったりすることも簡単にできる。新しいマップを作るのはかなり素直な作業だ。Crawl の .des ファイルはプログラマーでなくても読み書きしやすいし、手引き<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>も用意されている。
+</p>
+<h2><span class="mw-headline" id="Differences_from_Crawl">通常の Crawl との違い</span></h2>
+<p>ダンジョンスプリントの階はひとつだけだが、そこにモンスターと危険がぎっしり詰まっている。そのため、通常の Crawl とは仕組みの面で多くの違いがある。
+</p>
+<ul><li>ゲームがずっと短いので、<a href="Skill_point.html" title="Skill point">スキルポイント</a>が 9 倍の速さでたまる。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup></li>
+<li>敵を倒したときに得られる<a href="Piety.html" title="Piety">信仰心</a>は 9 倍、探索で得られる信仰心は 27 倍になる。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+<ul><li><a href="Gozag_Ym_Sagoz.html" class="mw-redirect" title="Gozag">ゴザーグ</a>の信者は、死体から得られる金貨が増える。<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup></li>
+<li><a href="Okawaru.html" title="Okawaru">オカワル</a>と<a href="Uskayaw.html" title="Uskayaw">ウスカヤー</a>の信仰心は増えない。</li>
+<li><a href="Ashenzari.html" title="Ashenzari">アシェンザリ</a>と<a href="Ru.html" title="Ru">ルー</a>は、提案をふだんより速いペースで持ちかけてくる。</li>
+<li><a href="Trog.html" title="Trog">トログ</a>の戦友の召喚と、<a href="Makhleb.html" title="Makhleb">マクレブ</a>の上級従者の召喚は、使うときのコストが 2.5 倍になる。<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup></li></ul></li>
+<li>階はひとつしかない。
+<ul><li><a href="Shaft.html" title="Shaft">縦穴</a>、<a href="Formicid.html" title="Formicid">フォーミシッド</a>の縦穴掘り、<a href="Delver.html" title="Delver">探索者</a>の生い立ち、<a href="Ignis.html" title="Ignis">イグニス</a>の昇炎はすべて使えない。</li>
+<li><a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a>が存在しないので、プレイヤーが追放されることはない。モンスターを追放すると、実質的に倒したのと同じになる。深淵の騎士は迷宮から始まる。</li>
+<li><a href="Okawaru.html" title="Okawaru">オカワル</a>の闘技場もないので、決闘も使えない。</li>
+<li>スプリントの進行が狂ってしまうので、階全体に及ぶ(プレイヤーとモンスターの)<a href="Teleportation.html" title="Teleportation">テレポート</a>は使えない。<a href="Blink.html" title="Blink">瞬間移動</a>は使える。</li></ul></li>
+<li>モンスターが全員起きてしまわないよう、叫んだときの騒音は半分になり、騒音の巻物は出ない。<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup></li>
+<li>勝利するには、<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持って戻らなければならない。<a href="Rune_of_Zot.html" class="mw-redirect" title="Rune">ルーン</a>は必須とは限らない。マップによってルーンが 1 つもないこともあれば、17 個すべて(<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>の分岐 4 つ分も含む)そろっていることもあり、独自のルーンが置かれていることさえある。</li>
+<li>マップによっては、独自のアイテムやモンスター、<a href="Score.html" title="Score">スコア</a>の計算方法がある。</li>
+<li>通常のゲームの仕組みのうち、いくつかは以前の形に戻されている。
+<ul><li><a href="Trap.html" class="mw-redirect" title="Sourceless malevolence">出どころのない悪意</a>はない(どのみち 3 つの効果はどれも意味をなさない)。</li>
+<li><a href="Zot_clock.html" title="Zot clock">ゾットの時計</a>はない。そのため、<a href="Meteoran.html" title="Meteoran">メテオラン</a>の種族は選べない。</li></ul></li></ul>
+<h2><span class="mw-headline" id="Trivia">こぼれ話</span></h2>
+<p>ダンジョンスプリントは、理不尽なほどの死にやすさで悪名高い 1970 年代のダンジョンズ&amp;ドラゴンズのモジュール、<a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Tomb_of_Horrors">Tomb of Horrors</a> に着想を得ている。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li>スプリントのマップそのものはあまり更新されないが、Crawl の新しい版での変更がしみ込んで、さまざまなスプリントのバランスが変わることはよくある。</li>
+<li>ダンジョンスプリントを最初に考えたのは <a href="http://crawl.chaosforge.org/Chapayev" data-untr="1" class="mw-redirect" title="Chapayev">Chapayev</a> だ。<a href="0.7.0.html" class="mw-redirect" title="0.7">0.7</a> でダウンロード版の <i>Crawl</i> に公式に組み込まれ、それ以来マップがいくつも追加されている。</li></ul>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/Zot_Defence" data-untr="1" title="Zot Defence">ゾット防衛</a> - Chapayev が作った、Crawl のもうひとつの変種。</li>
+<li><a href="Sprint_guide.html" title="Sprint guide">スプリントのガイド</a> - スプリントを攻略するための小技。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/crawl/crawl/blob/master/crawl-ref/docs/develop/levels/syntax.txt">https://github.com/crawl/crawl/blob/master/crawl-ref/docs/develop/levels/syntax.txt</a></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/player.cc#L2482">player.cc:2482</a> (0.28.0)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/religion.cc#L2809">religion.cc:2809</a> (0.28.0)</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/sprint.cc#L17">sprint.cc:17</a> (0.28.0)</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/mon-death.cc#L407">mon-death.cc:407</a> (0.28.0)</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/ability.cc#L3433">ability.cc:3433</a> (0.28.0)</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.28.0/crawl-ref/source/makeitem.cc#L1381">makeitem.cc:1381</a> (0.28.0)</span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="External_Links">外部リンク</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://sites.google.com/site/crawlvariations/dungeon-sprint">最初のリリースのソースコード</a></li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

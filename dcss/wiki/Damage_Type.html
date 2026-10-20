@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ダメージの種類 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ダメージの種類(Damage Type)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ダメージの種類 <span class="en">Damage Type</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Damage_Type">Damage Type</a>」(0.30 向け、2023-09-10 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Damage_Type&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p>攻撃はどれもダメージを与えるが、その与え方はみな同じではない。攻撃ごとに決まった種類(属性)のダメージがある。<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a>は、特に断りがなければ<i>あらゆるダメージ</i>を防ぐ。そのうえで、それぞれの属性に対する耐性があれば、受けるダメージをさらに減らせる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Physical"><span class="tocnumber">1</span> <span class="toctext">物理</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Fire"><span class="tocnumber">2</span> <span class="toctext">火炎</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Steam"><span class="tocnumber">2.1</span> <span class="toctext">蒸気</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Cold"><span class="tocnumber">3</span> <span class="toctext">冷気</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Partial_Physical"><span class="tocnumber">4</span> <span class="toctext">一部が物理</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Negative_Energy"><span class="tocnumber">5</span> <span class="toctext">負のエネルギー</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Torment"><span class="tocnumber">5.1</span> <span class="toctext">拷問</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Poison"><span class="tocnumber">6</span> <span class="toctext">毒</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Poison_Arrow"><span class="tocnumber">6.1</span> <span class="toctext">毒素の矢</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Acid"><span class="tocnumber">7</span> <span class="toctext">酸</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Electricity"><span class="tocnumber">8</span> <span class="toctext">電撃</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Smite_Damage"><span class="tocnumber">9</span> <span class="toctext">打擲のダメージ</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Holy_Damage"><span class="tocnumber">10</span> <span class="toctext">聖なるダメージ</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Damnation"><span class="tocnumber">11</span> <span class="toctext">天罰</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#History"><span class="tocnumber">12</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Physical">物理</span></h2>
+<p>物理ダメージは、ゲームでいちばんよく受けるダメージだ。ほとんどのモンスターがふつうの攻撃でこれを与え、<a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>の呪文の多くもこれを与える。ここに挙げるほかのダメージの大半と同じく、物理ダメージは 0 から相手の<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a>までの値だけ減る。<a href="Attack_flavour.html" title="Attack flavour">攻撃の追加効果</a>の多く(<a href="Ice_beast.html" title="Ice beast">氷の獣</a>の冷気のダメージなど)は、物理ダメージを 1 以上与えないと発動しない。
+</p><p><a href="Guaranteed_damage_reduction.html" title="Guaranteed damage reduction">保証ダメージ軽減</a>が働くのはこの種類のダメージだけで、それも近接戦闘によるダメージに限られる。
+</p>
+<h2><span class="mw-headline" id="Fire">火炎</span></h2>
+<p>火炎のダメージはたいてい呪文や能力によるものだが、武器の<a href="Brand.html" title="Brand">ブランド</a>にも火炎のダメージを与えるものがある。<a href="Fire.html" class="mw-redirect" title="Fire resistance">火炎耐性</a>で防げる。ただし、火炎のダメージを与える近接攻撃(ブランド付きの武器によるものでも、生まれつき火の攻撃を持つモンスターによるものでも)は下の表の例外で、弱点を持つ相手には、攻撃のうち火炎の部分が 150% ではなく 200% のダメージを与える。
+</p>
+<table class="wikitable">
+<tr>
+<th> 火炎耐性 </th>
+<th> 弱点 </th>
+<th> 0 </th>
+<th> 1 </th>
+<th> 2 </th>
+<th> 3
+</th></tr>
+<tr>
+<th>プレイヤー
+</th>
+<td> 150% </td>
+<td> 100% </td>
+<td> 50% </td>
+<td> 33% </td>
+<td> 20%
+</td></tr>
+<tr>
+<th>モンスター
+</th>
+<td> 150% </td>
+<td> 100% </td>
+<td> 50% </td>
+<td> 20% </td>
+<td> 0%
+</td></tr></table>
+<p>おもな例:
+</p>
+<ul><li><a href="Fireball.html" title="Fireball">ファイアボール</a></li>
+<li><a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a></li></ul>
+<h3><span class="mw-headline" id="Steam">蒸気</span></h3>
+<p>蒸気のダメージは、モンスターの呪文の<a href="http://crawl.chaosforge.org/Steam_Ball" data-untr="1" title="Steam Ball">蒸気の爆裂球</a>と、蒸気の<a href="Cloud.html" title="Cloud">雲</a>によるものだ。<a href="http://crawl.chaosforge.org/Steam_resistance" data-untr="1" class="mw-redirect" title="Steam resistance">蒸気耐性</a>があれば蒸気の雲はまったく効かず、蒸気の爆裂球のダメージも 66% 減るが、雲が<a href="Line_of_sight.html" title="Line of sight">視界</a>をさえぎることに変わりはない。<a href="Fire.html" class="mw-redirect" title="Fire resistance">火炎耐性</a>が 1 段階でもあれば、蒸気耐性も得られる。
+</p><p>おもな例:
+</p>
+<ul><li><a href="Steam_dragon.html" title="Steam dragon">スチームドラゴン</a></li>
+<li><a href="Smoke_demon.html" title="Smoke demon">噴煙のデーモン</a></li></ul>
+<h2><span class="mw-headline" id="Cold">冷気</span></h2>
+<p>冷気のダメージはたいてい呪文や能力によるものだが、武器の<a href="Brand.html" title="Brand">ブランド</a>にも冷気のダメージを与えるものがある。<a href="Cold.html" class="mw-redirect" title="Cold resistance">冷気耐性</a>で防げる。火の近接攻撃と同じく、冷気の近接攻撃も例外で、弱点を持つ相手には、冷気の部分が 150% ではなく 200% のダメージを与える。
+</p>
+<table class="wikitable">
+<tr>
+<th> 冷気耐性 </th>
+<th> 弱点 </th>
+<th> 0 </th>
+<th> 1 </th>
+<th> 2 </th>
+<th> 3
+</th></tr>
+<tr>
+<th>プレイヤー
+</th>
+<td> 150% </td>
+<td> 100% </td>
+<td> 50% </td>
+<td> 33% </td>
+<td> 20%
+</td></tr>
+<tr>
+<th>モンスター
+</th>
+<td> 150% </td>
+<td> 100% </td>
+<td> 50% </td>
+<td> 20% </td>
+<td> 0%
+</td></tr></table>
+<p>おもな例:
+</p>
+<ul><li><a href="Frozen_Ramparts.html" title="Frozen Ramparts">凍てつく城壁</a></li>
+<li><a href="Bolt_of_Cold.html" title="Bolt of Cold">凍結の矢</a></li></ul>
+<h2><span class="mw-headline" id="Partial_Physical">一部が物理</span></h2>
+<p>多くの呪文は混合ダメージを与える。50% が物理ダメージ、50% が属性のダメージになる(つまり 50% は耐性で防げない)。
+</p>
+<table class="wikitable">
+<tr>
+<th> 耐性 </th>
+<th> 弱点 </th>
+<th> 0 </th>
+<th> 1 </th>
+<th> 2 </th>
+<th> 3
+</th></tr>
+<tr>
+<th>プレイヤー
+</th>
+<td> 125% </td>
+<td> 100% </td>
+<td> 75% </td>
+<td> 66.7% </td>
+<td> 60%
+</td></tr>
+<tr>
+<th>モンスター
+</th>
+<td> 125% </td>
+<td> 100% </td>
+<td> 75% </td>
+<td> 60% </td>
+<td> 50%
+</td></tr></table>
+<p>おもな例:
+</p><p><b>氷:</b>
+</p>
+<ul><li><a href="Hailstorm.html" title="Hailstorm">雹の嵐</a></li>
+<li><a href="http://crawl.chaosforge.org/Iceblast" data-untr="1" class="mw-redirect" title="Iceblast">凍てつく吹雪</a></li>
+<li><a href="Polar_Vortex.html" title="Polar Vortex">極渦</a></li></ul>
+<p><b>火:</b>
+</p>
+<ul><li><a href="Bolt_of_Magma.html" title="Bolt of Magma">溶岩の矢</a></li>
+<li><a href="Fire_Storm.html" title="Fire Storm">炎の嵐</a></li></ul>
+<p><b>電撃:</b>
+</p>
+<ul><li><a href="Chain_Lightning.html" title="Chain Lightning">連鎖する稲妻</a></li></ul>
+<h2><span class="mw-headline" id="Negative_Energy">負のエネルギー</span></h2>
+<p>負のエネルギーのダメージは、多くの<a href="Necromancy.html" title="Necromancy">死霊術</a>の呪文、一部の<a href="Undead.html" title="Undead">アンデッド</a>のモンスターの攻撃、一部の武器のブランドによるものだ。中には<a href="Draining.html" title="Draining">衰弱</a>の効果もあわせ持つ攻撃があり、プレイヤーなら最大 HP が、モンスターなら<a href="Hit_dice.html" class="mw-redirect" title="HD">HD</a>が減る。<a href="Negative_energy.html" class="mw-redirect" title="Life protection">生命力保護</a>は、ダメージと HP の減少の両方を防ぐ。アンデッドや悪魔のモンスターには生まれつき効かず、アンデッドのプレイヤーにも効かない。
+</p>
+<table class="wikitable">
+<tr>
+<th> 生命力保護 </th>
+<th> 0 </th>
+<th> 1 </th>
+<th> 2 </th>
+<th> 3
+</th></tr>
+<tr>
+<th>プレイヤー
+</th>
+<td> 100% </td>
+<td> 66% </td>
+<td> 33% </td>
+<td> 0%
+</td></tr>
+<tr>
+<th>モンスター
+</th>
+<td> 100% </td>
+<td> 0% </td>
+<td> 0% </td>
+<td> 0%
+</td></tr></table>
+<p>おもな例:
+</p>
+<ul><li><a href="Draining.html" title="Draining">衰弱</a>のブランド</li>
+<li><a href="Pain.html" title="Pain">苦痛</a></li>
+<li><a href="Bolt_of_Draining.html" title="Bolt of Draining">衰弱の矢</a></li></ul>
+<h3><span class="mw-headline" id="Torment">拷問</span></h3>
+<p>拷問のダメージは負のエネルギーの中でもとりわけ破壊的なもので、邪悪なものがさまざまな形で用いる。ふつうは相手の HP の半分に等しいダメージを与えるが、この割合はいくつかの方法で減らせる。生命力保護(効き目は小さくなる)のほか、<a href="Transformation.html" title="Transformation">変身</a>によって得られる rTorm でダメージが半分になり、さらに減らす方法もいくつかある。AC は効かない。くわしくは<a href="Torment.html" title="Torment">拷問</a>の記事を参照。
+</p>
+<h2><span class="mw-headline" id="Poison">毒</span></h2>
+<p>毒のダメージは、ふつうは<a href="Poison.html" title="Poison">毒</a>に冒されることで受けるが、毒の攻撃の中には、当たったときにすぐダメージを与えるものもある。<a href="Poison.html" class="mw-redirect" title="Poison resistance">毒耐性</a>があると、毒に冒される確率と、当たったときの毒のダメージが減る。ただし、いったん毒に冒された<i>ときの</i>毒の量は減らない。AC は当たったときのダメージを減らせるが、毒の状態そのものは減らせない。アンデッドや悪魔のモンスターには生まれつき毒が効かず、アンデッドのプレイヤーにも効かない。
+</p>
+<table class="wikitable">
+<tr>
+<th> 毒耐性 </th>
+<th> 弱点 </th>
+<th> 0 </th>
+<th> 1
+</th></tr>
+<tr>
+<th>プレイヤー
+</th>
+<td> 150% </td>
+<td> 100% </td>
+<td> 33%
+</td></tr>
+<tr>
+<th>モンスター
+</th>
+<td> 150% </td>
+<td> 100% </td>
+<td> 33%
+</td></tr></table>
+<p>おもな例:
+</p>
+<ul><li> <a href="Venom_Bolt.html" title="Venom Bolt">猛毒の矢</a></li>
+<li> <a href="Poisonous_Cloud.html" title="Poisonous Cloud">猛毒の雲</a></li></ul>
+<h3><span class="mw-headline" id="Poison_Arrow">毒素の矢</span></h3>
+<p><a href="Sting.html" title="Sting">毒針</a>、<a href="Poison_Arrow.html" title="Poison Arrow">毒素の矢</a>、<a href="Eringya's_Noxious_Bog.html" title="Eringya&#39;s Noxious Bog">エリンギャの毒沼</a>は混合ダメージを与え、70% が毒、30% が物理ダメージになる。ふつうの毒の攻撃と違い、毒耐性を押し切って毒の状態にできる。
+</p>
+<table class="wikitable">
+<tr>
+<th> 毒耐性 </th>
+<th> 弱点 </th>
+<th> 0 </th>
+<th> 1 </th>
+<th> 無効
+</th></tr>
+<tr>
+<th>プレイヤー
+</th>
+<td> 135% </td>
+<td> 100% </td>
+<td> 53% </td>
+<td> 30%
+</td></tr>
+<tr>
+<th>モンスター
+</th>
+<td> 135% </td>
+<td> 100% </td>
+<td> 53% </td>
+<td> 30%
+</td></tr></table>
+<h2><span class="mw-headline" id="Acid">酸</span></h2>
+<p>酸のダメージは、一部のモンスターの攻撃と、いくつかの能力によるものだ。酸のダメージを受けると<a href="Acid.html" class="mw-redirect" title="Corrosion">腐食</a>することがあり、1 段階ごとに<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a>と<a href="Slaying.html" title="Slaying">殺戮</a>が 4 ずつ下がる。rCorr(酸耐性)があると、ダメージと腐食する確率の両方が減る。
+</p>
+<table class="wikitable">
+<tr>
+<th> 酸耐性 </th>
+<th> 0 </th>
+<th> 1
+</th></tr>
+<tr>
+<th>プレイヤー
+</th>
+<td> 100% </td>
+<td> 50%
+</td></tr>
+<tr>
+<th>モンスター
+</th>
+<td> 100% </td>
+<td> 33%
+</td></tr></table>
+<h2><span class="mw-headline" id="Electricity">電撃</span></h2>
+<p>電撃のダメージはかなり珍しいが、ダメージの振れ幅が大きい。最大ダメージがきわめて高いものが多いが、これは電撃そのものではなく、それぞれの攻撃の性質だ。rElec でダメージを減らせるが、rElec 自体もかなり珍しく、「主な」耐性の中で専用の<a href="Ring.html" title="Ring">指輪</a>がないのはこれだけだ。
+</p>
+<table class="wikitable">
+<tr>
+<th> 電撃耐性 </th>
+<th> 0 </th>
+<th> 1
+</th></tr>
+<tr>
+<th>プレイヤー
+</th>
+<td> 100% </td>
+<td> 33%
+</td></tr>
+<tr>
+<th>モンスター
+</th>
+<td> 100% </td>
+<td> 33%
+</td></tr></table>
+<p>おもな例:
+</p>
+<ul><li><a href="Electrocution.html" title="Electrocution">電撃</a>のブランド</li>
+<li><a href="Lightning_Bolt.html" title="Lightning Bolt">稲妻の矢</a></li></ul>
+<h2><span class="mw-headline" id="Smite_Damage">打擲のダメージ</span></h2>
+<p>打擲の攻撃は、神や地獄の怒りを相手に向けたものだ。ダメージはたいして大きくないが、決して避けられず、打つ手もほとんどない。ダメージを減らす方法はないが、<a href="Spirit_shield.html" title="Spirit shield">精霊の盾</a>があれば、いつもどおりダメージを MP に肩代わりさせられる。
+</p><p>出どころ:
+</p>
+<ul><li><a href="Smiting.html" title="Smiting">打擲の一撃</a></li></ul>
+<h2><span class="mw-headline" id="Holy_Damage">聖なるダメージ</span></h2>
+<p>聖なる攻撃は、<a href="Good_gods.html" class="mw-redirect" title="Good god">善神</a>の気に障る者に効く。ごく珍しく、一部の<a href="Holy.html" title="Holy">神聖</a>なモンスターしか使わない。弱点を持つ相手には、ビームのダメージが 150%、近接攻撃のダメージが 75% 増える。厳密には、<a href="Holy_wrath.html" title="Holy wrath">神罰</a>のブランドとは別物だ。こちらは単に、アンデッドと悪魔に対して物理ダメージを上乗せするだけである。プレイヤーが聖なるダメージへの耐性を得る方法はないが、神聖なモンスターと<a href="Profane_servitor.html" title="Profane servitor">涜神の従者</a>にはまったく効かない。
+</p><p>おもな例:
+</p>
+<ul><li><a href="The_Shining_One.html" title="The Shining One">浄化の炎</a></li>
+<li><a href="Pearl_dragon.html" title="Pearl dragon">パールドラゴン</a></li></ul>
+<h2><span class="mw-headline" id="Damnation">天罰</span></h2>
+<p><a href="Damnation.html" title="Damnation">天罰</a>は地獄の力だ。働きは打擲とよく似ていて、必ず当たり AC も効かないが、ダメージは目に見えて大きい。天罰への耐性があればダメージはすべて防げるが、これは珍しい性質で、そもそも天罰を放てるモンスターしか持っていない。
+</p><p>出どころ:
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Call_Down_Damnation" data-untr="1" class="mw-redirect" title="Call Down Damnation">天罰の招来</a></li>
+<li><a href="http://crawl.chaosforge.org/Hurl_Damnation" data-untr="1" class="mw-redirect" title="Hurl Damnation">天罰</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.30.html" title="0.30">0.30</a>より前は、一部を耐性で防げない火/水/氷の攻撃のうち、耐性で防げる割合は、すべて 50% ではなく、それぞれ 55%/40%/40% だった。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -72,9 +72,9 @@
 <ul><li><b>横切り</b> - 一列に連なった生き物のあいだを超人的な速さですり抜け、別の場所に移る。すり抜けられた生き物は混乱する。混乱の持続時間は祈祷スキルとモンスターの HD で決まる。(信仰心 20、4 MP)</li></ul>
 <p><b><a href="Piety.html" title="Piety">信仰心 ***</a></b>
 </p>
-<ul><li><b>独演の時間</b> - この段階に達したとき、およびこの段階以上にいるあいだ不定期に、ウスカヤーは<a href="Line_of_sight.html" title="Line of sight">視界</a>内のすべての敵を短いあいだ<a href="http://crawl.chaosforge.org/Paralyze" data-untr="1" class="mw-redirect" title="Paralyze">麻痺</a>させる。持続時間は祈祷スキルで決まり、<code>(2 * Invocations) + (<a href="Experience.html" class="mw-redirect" title="XL">player_XL</a> - <a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">mons_HD</a>) + 6</code> <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a>(最小 10 aut、最大 40 aut、つまり 1-4 ターン)になる。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup></li></ul>
+<ul><li><b>独演の時間</b> - この段階に達したとき、およびこの段階以上にいるあいだ不定期に、ウスカヤーは<a href="Line_of_sight.html" title="Line of sight">視界</a>内のすべての敵を短いあいだ<a href="Paralyse.html" class="mw-redirect" title="Paralyze">麻痺</a>させる。持続時間は祈祷スキルで決まり、<code>(2 * Invocations) + (<a href="Experience.html" class="mw-redirect" title="XL">player_XL</a> - <a href="Hit_dice.html" class="mw-redirect" title="HD">mons_HD</a>) + 6</code> <a href="Action.html" class="mw-redirect" title="Aut">aut</a>(最小 10 aut、最大 40 aut、つまり 1-4 ターン)になる。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup></li></ul>
 <dl><dd>独演の時間が発動するきっかけは2つある:</dd></dl>
-<dl><dd><ul><li> 1. 信仰心が 3* に達したとき。理由が何であれ独演の時間が発動すると、<code>299 + 1d201</code>(300 - 501)<a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> のクールダウンに入る。クールダウン中にふたたび 3* に達しても、独演の時間は発動しない。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> </li></ul></dd></dl>
+<dl><dd><ul><li> 1. 信仰心が 3* に達したとき。理由が何であれ独演の時間が発動すると、<code>299 + 1d201</code>(300 - 501)<a href="Action.html" class="mw-redirect" title="Aut">aut</a> のクールダウンに入る。クールダウン中にふたたび 3* に達しても、独演の時間は発動しない。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> </li></ul></dd></dl>
 <dl><dd><ul><li> 2. 信仰心が 3* 以上のときに不定期に。こちらはクールダウン中でも発動<i>しうる</i>。そのかわり、上のクールダウンの残り時間が長いほど発動しにくくなる。具体的には、行動のたびに <code>(time_taken) / (100 + cooldown) * 100%</code> の確率で独演の時間が発動する。<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup></li></ul></dd></dl>
 <p><b><a href="Piety.html" title="Piety">信仰心 ****</a></b>
 </p>
@@ -101,8 +101,8 @@
 <p>ウスカヤーの信仰心のしくみは、ほかにない遊び方を生む。大きく長い戦い、とくに大勢の敵との戦いがおすすめになる。それを後押しするため、ウスカヤーは強力な恩恵をいくつも授けてくれる。うまくいけば、こうした戦いはずっと楽になる。この遊び方はとくに次のようなキャラクターに向いている:
 </p>
 <ul><li> <a href="Axes.html" title="Axes">斧</a>は一度に何体もの敵を<a href="Cleaving.html" class="mw-redirect" title="Cleave">薙ぎ払い</a>でき、斧使いは戦いに踏みとどまるための重い鎧を着ていることが多い。</li>
-<li> <a href="Stabbing.html" title="Stabbing">急所攻撃</a>を狙うキャラクターは、<i>抵抗できない</i>混乱と麻痺の恩恵を受ける。急所攻撃は大きなダメージを出せるので、信仰心がたくさん得られるうえに痛み分けも起こり、ダメージがモンスターのあいだに広がる。グランド・フィナーレを使えば、<a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a>や<a href="Hell.html" title="Hell">地獄</a>の君主、<a href="http://crawl.chaosforge.org/Orbs_of_fire" data-untr="1" class="mw-redirect" title="Orbs of fire">炎の球体</a>のように急所攻撃をしにくい手ごわいモンスターも一撃で片づけられる。</li></ul>
-<p><a href="Summonings.html" title="Summonings">召喚術</a>や<a href="Necromancy.html" title="Necromancy">死霊術</a>を得意とするキャラクターは、ウスカヤーからあまり恩恵を受けられない。また、<a href="Poison.html" title="Poison">毒</a>や<a href="Freezing_Cloud.html" title="Freezing Cloud">凍気の雲</a>のように時間をかけてダメージを与える効果では信仰心が得られない。<a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>の使い手や属性魔法の使い手もウスカヤーを活かせるが、MP が足りなくなりがちだ。
+<li> <a href="Stabbing.html" title="Stabbing">急所攻撃</a>を狙うキャラクターは、<i>抵抗できない</i>混乱と麻痺の恩恵を受ける。急所攻撃は大きなダメージを出せるので、信仰心がたくさん得られるうえに痛み分けも起こり、ダメージがモンスターのあいだに広がる。グランド・フィナーレを使えば、<a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a>や<a href="Hell.html" title="Hell">地獄</a>の君主、<a href="Orb_of_fire.html" class="mw-redirect" title="Orbs of fire">炎の球体</a>のように急所攻撃をしにくい手ごわいモンスターも一撃で片づけられる。</li></ul>
+<p><a href="Summonings.html" title="Summonings">召喚術</a>や<a href="Necromancy.html" title="Necromancy">死霊術</a>を得意とするキャラクターは、ウスカヤーからあまり恩恵を受けられない。また、<a href="Poison.html" title="Poison">毒</a>や<a href="Freezing_Cloud.html" title="Freezing Cloud">凍気の雲</a>のように時間をかけてダメージを与える効果では信仰心が得られない。<a href="Conjurations.html" title="Conjurations">妖術</a>の使い手や属性魔法の使い手もウスカヤーを活かせるが、MP が足りなくなりがちだ。
 </p><p>ウスカヤーは全体として<a href="Invocations.html" title="Invocations">祈祷</a>スキルを伸ばすほど得をする神だ。独演の時間が長く続くようになり、グランド・フィナーレも成功しやすくなる。
 </p>
 <h3><span class="mw-headline" id="Tips_and_Tricks">小技</span></h3>
@@ -118,13 +118,13 @@
 </p><p>参考までに、「手強い」(黄色)とされるモンスターの脅威度は 6-33、「凶悪」(赤)とされるモンスターの脅威度は 34 以上だ。
 </p>
 <h3><span class="mw-headline" id="Piety_Loss">信仰心の減少</span></h3>
-<p>信仰心の減少量は、最後に信仰心を得た行動からの経過時間(<a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a>)に比例する。30 aut(3.0 ターン)以上たつと、信仰心が減る:
+<p>信仰心の減少量は、最後に信仰心を得た行動からの経過時間(<a href="Action.html" class="mw-redirect" title="Aut">aut</a>)に比例する。30 aut(3.0 ターン)以上たつと、信仰心が減る:
 </p><p><code>piety_loss = (aut since piety gain)/10</code> <sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
 </p><p>端数は確率で丸める。たとえば 5.1 なら、10% の確率で 6、90% の確率で 5 減る。この減少で信仰心が 30(1*)を下回ることはない。1* 以下なら信仰心は減らない。
 </p>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a>より前は、敵対的な<a href="Summon.html" title="Summon">召喚物</a>にダメージを与えても信仰心は得られなかった。</li>
-<li>ウスカヤーは<a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a>で追加された。もとの名前は Ukayaw だったが、Okawaru の略称とまぎらわしかった(Oka と Uka)。</li></ul>
+<ul><li><a href="0.29.html" title="0.29">0.29</a>より前は、敵対的な<a href="Summon.html" title="Summon">召喚物</a>にダメージを与えても信仰心は得られなかった。</li>
+<li>ウスカヤーは<a href="0.19.html" title="0.19">0.19</a>で追加された。もとの名前は Ukayaw だったが、Okawaru の略称とまぎらわしかった(Oka と Uka)。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/god-abil.cc#L4950">god-abil.cc:4950</a> (0.30.0)</span>

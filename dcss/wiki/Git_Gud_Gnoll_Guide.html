@@ -1,0 +1,1588 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>腕を磨け! ノールのガイド &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="腕を磨け! ノールのガイド(Git Gud Gnoll Guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>腕を磨け! ノールのガイド <span class="en">Git Gud Gnoll Guide</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Git_Gud_Gnoll_Guide">Git Gud Gnoll Guide</a>」(対象の版の記載なし、2026-09-17 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Git_Gud_Gnoll_Guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b><a href="Trunk.html" title="Trunk">Trunk</a> 限定</b>: この記事は Crawl でテスト中の要素を扱っている。次のリリースまでに変わる可能性が高く、まるごと削除されることさえある。</i></div>
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p><br />
+</p><p>平均的なオーストラリア人をつかまえて「腕を磨くならどの DCSS の組み合わせがいちばん?」と聞けば、たぶん「Gnar, mate.(GnAr だろ、相棒)」という答えがやたらと返ってくる。
+そしてそれは正解だ!
+</p><p><a href="Yredelemnul.html" title="Yredelemnul">イレデレンヌル</a>という闇の神を信仰する<a href="Gnoll.html" title="Gnoll">ノール</a>の<a href="Artificer.html" title="Artificer">発動術師</a>なら、初心者でもリソースの管理と脅威の見極めという基本の習得に集中できるうえ、ときに痛い目を見る<a href="http://crawl.chaosforge.org/RNG" data-untr="1" title="RNG">乱数</a>の影響も小さく抑えられる。
+</p><p><br />
+</p>
+<table>
+<tr>
+<td> <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#How_this_works"><span class="tocnumber">1</span> <span class="toctext">このビルドの仕組み</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Why_this_is_beginner_friendly"><span class="tocnumber">1.1</span> <span class="toctext">なぜ初心者向けなのか</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#What_you_will_learn_with_this_build"><span class="tocnumber">1.2</span> <span class="toctext">このビルドで学べること</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Resource_Economy"><span class="tocnumber">1.2.1</span> <span class="toctext">リソースの経済</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Skills_and_Power_Scaling"><span class="tocnumber">1.2.2</span> <span class="toctext">スキルと強さの伸び</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Learning_About_Enemies"><span class="tocnumber">1.2.3</span> <span class="toctext">敵について学ぶ</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a href="#Resource_Discipline"><span class="tocnumber">1.3</span> <span class="toctext">リソースの節制</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#What_we_won.E2.80.99t_be_learning"><span class="tocnumber">1.4</span> <span class="toctext">このビルドでは学べないこと</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Yredelemnul"><span class="tocnumber">2</span> <span class="toctext">イレデレンヌル</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Homies"><span class="tocnumber">2.1</span> <span class="toctext">ダチ</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Recall_Homies"><span class="tocnumber">2.2</span> <span class="toctext">ダチの招集</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Lighting_the_Torch"><span class="tocnumber">2.3</span> <span class="toctext">松明の点火</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Living_Without_Stairs"><span class="tocnumber">2.3.1</span> <span class="toctext">階段に頼らない暮らし</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="#Hurl_Torch"><span class="tocnumber">2.4</span> <span class="toctext">松明の投擲</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Suck_Life"><span class="tocnumber">2.5</span> <span class="toctext">生命の吸い取り</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Soul_Binding"><span class="tocnumber">2.6</span> <span class="toctext">魂の呪縛</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Playing_the_Game"><span class="tocnumber">3</span> <span class="toctext">ゲームの進め方</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#Early_Combat"><span class="tocnumber">3.1</span> <span class="toctext">序盤の戦闘</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Early_Gear"><span class="tocnumber">3.2</span> <span class="toctext">序盤の装備</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="#Early_Weapons"><span class="tocnumber">3.2.1</span> <span class="toctext">序盤の武器</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Armour"><span class="tocnumber">3.2.2</span> <span class="toctext">防具</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Resists"><span class="tocnumber">3.2.3</span> <span class="toctext">耐性</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Resource_Identification"><span class="tocnumber">3.2.4</span> <span class="toctext">リソースの鑑定</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-24"><a href="#Attributes"><span class="tocnumber">3.3</span> <span class="toctext">能力値</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Help.21_Yred_didn.E2.80.99t_spawn_by_D:7.21"><span class="tocnumber">3.4</span> <span class="toctext">助けて! 迷宮:7 までにイレデレンヌルが出ない!</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="#Equipping_your_Adventurer"><span class="tocnumber">4</span> <span class="toctext">冒険者の装備</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="#Weapons"><span class="tocnumber">4.1</span> <span class="toctext">武器</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Armour_.26_Shields"><span class="tocnumber">4.2</span> <span class="toctext">防具と盾</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Orbs"><span class="tocnumber">4.3</span> <span class="toctext">オーブ</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Jewellery"><span class="tocnumber">4.4</span> <span class="toctext">装身具</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Resists_.26_Specials"><span class="tocnumber">4.5</span> <span class="toctext">耐性と特殊な効果</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Evokables"><span class="tocnumber">4.6</span> <span class="toctext">発動アイテム</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Consumables"><span class="tocnumber">4.7</span> <span class="toctext">消耗品</span></a>
+<ul>
+<li class="toclevel-3 tocsection-34"><a href="#Wands"><span class="tocnumber">4.7.1</span> <span class="toctext">ワンド</span></a></li>
+<li class="toclevel-3 tocsection-35"><a href="#Thrown_Weapons"><span class="tocnumber">4.7.2</span> <span class="toctext">投擲武器</span></a></li>
+<li class="toclevel-3 tocsection-36"><a href="#Scrolls"><span class="tocnumber">4.7.3</span> <span class="toctext">巻物</span></a></li>
+<li class="toclevel-3 tocsection-37"><a href="#Potions"><span class="tocnumber">4.7.4</span> <span class="toctext">薬</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-38"><a href="#Spells"><span class="tocnumber">4.8</span> <span class="toctext">呪文</span></a>
+<ul>
+<li class="toclevel-3 tocsection-39"><a href="#Level_1"><span class="tocnumber">4.8.1</span> <span class="toctext">レベル1</span></a></li>
+<li class="toclevel-3 tocsection-40"><a href="#Level_2"><span class="tocnumber">4.8.2</span> <span class="toctext">レベル2</span></a></li>
+<li class="toclevel-3 tocsection-41"><a href="#Level_3"><span class="tocnumber">4.8.3</span> <span class="toctext">レベル3</span></a></li>
+<li class="toclevel-3 tocsection-42"><a href="#Level_4"><span class="tocnumber">4.8.4</span> <span class="toctext">レベル4</span></a></li>
+<li class="toclevel-3 tocsection-43"><a href="#Level_5"><span class="tocnumber">4.8.5</span> <span class="toctext">レベル5</span></a></li>
+<li class="toclevel-3 tocsection-44"><a href="#Level_6"><span class="tocnumber">4.8.6</span> <span class="toctext">レベル6</span></a></li>
+<li class="toclevel-3 tocsection-45"><a href="#Level_7"><span class="tocnumber">4.8.7</span> <span class="toctext">レベル7</span></a></li>
+<li class="toclevel-3 tocsection-46"><a href="#Level_8"><span class="tocnumber">4.8.8</span> <span class="toctext">レベル8</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-47"><a href="#Adventuring"><span class="tocnumber">5</span> <span class="toctext">冒険</span></a>
+<ul>
+<li class="toclevel-2 tocsection-48"><a href="#Branch_Entries"><span class="tocnumber">5.1</span> <span class="toctext">分岐の入り口</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="#Staircase_Selection"><span class="tocnumber">5.2</span> <span class="toctext">階段の選び方</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="#Branch_End_Vaults"><span class="tocnumber">5.3</span> <span class="toctext">分岐の最下層のヴォールト</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="#Branches"><span class="tocnumber">5.4</span> <span class="toctext">分岐</span></a>
+<ul>
+<li class="toclevel-3 tocsection-52"><a href="#Lair"><span class="tocnumber">5.4.1</span> <span class="toctext">獣の棲み処</span></a></li>
+<li class="toclevel-3 tocsection-53"><a href="#Orc"><span class="tocnumber">5.4.2</span> <span class="toctext">オークの坑道</span></a></li>
+<li class="toclevel-3 tocsection-54"><a href="#Late_Dungeon"><span class="tocnumber">5.4.3</span> <span class="toctext">迷宮の後半</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-55"><a href="#S-Branches"><span class="tocnumber">5.5</span> <span class="toctext">S系の分岐</span></a>
+<ul>
+<li class="toclevel-3 tocsection-56"><a href="#Swamp"><span class="tocnumber">5.5.1</span> <span class="toctext">沼</span></a></li>
+<li class="toclevel-3 tocsection-57"><a href="#Spider"><span class="tocnumber">5.5.2</span> <span class="toctext">蜘蛛の穴ぐら</span></a></li>
+<li class="toclevel-3 tocsection-58"><a href="#Shoals"><span class="tocnumber">5.5.3</span> <span class="toctext">浅瀬</span></a></li>
+<li class="toclevel-3 tocsection-59"><a href="#Snake"><span class="tocnumber">5.5.4</span> <span class="toctext">蛇穴</span></a></li>
+<li class="toclevel-3 tocsection-60"><a href="#Elf"><span class="tocnumber">5.5.5</span> <span class="toctext">エルフの大広間</span></a>
+<ul>
+<li class="toclevel-4 tocsection-61"><a href="#Elf:3"><span class="tocnumber">5.5.5.1</span> <span class="toctext">エルフの大広間:3</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-62"><a href="#3rd_Rune"><span class="tocnumber">5.6</span> <span class="toctext">3つ目のルーン</span></a>
+<ul>
+<li class="toclevel-3 tocsection-63"><a href="#Vaults_1-4"><span class="tocnumber">5.6.1</span> <span class="toctext">宝物庫:1〜4</span></a></li>
+<li class="toclevel-3 tocsection-64"><a href="#Crypt"><span class="tocnumber">5.6.2</span> <span class="toctext">地下墓地</span></a></li>
+<li class="toclevel-3 tocsection-65"><a href="#Depths"><span class="tocnumber">5.6.3</span> <span class="toctext">深層</span></a></li>
+<li class="toclevel-3 tocsection-66"><a href="#Slime"><span class="tocnumber">5.6.4</span> <span class="toctext">スライムの穴ぐら</span></a></li>
+<li class="toclevel-3 tocsection-67"><a href="#Vaults:5"><span class="tocnumber">5.6.5</span> <span class="toctext">宝物庫:5</span></a></li>
+<li class="toclevel-3 tocsection-68"><a href="#Abyss"><span class="tocnumber">5.6.6</span> <span class="toctext">アビス</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-69"><a href="#End_Game"><span class="tocnumber">5.7</span> <span class="toctext">終盤</span></a>
+<ul>
+<li class="toclevel-3 tocsection-70"><a href="#Zot"><span class="tocnumber">5.7.1</span> <span class="toctext">ゾットの領域</span></a></li>
+<li class="toclevel-3 tocsection-71"><a href="#Zot:5"><span class="tocnumber">5.7.2</span> <span class="toctext">ゾットの領域:5</span></a></li>
+<li class="toclevel-3 tocsection-72"><a href="#Tesseract"><span class="tocnumber">5.7.3</span> <span class="toctext">テッセラクト</span></a></li>
+<li class="toclevel-3 tocsection-73"><a href="#Orb_Run"><span class="tocnumber">5.7.4</span> <span class="toctext">オーブを持っての脱出</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-74"><a href="#Portals"><span class="tocnumber">5.8</span> <span class="toctext">ポータル</span></a></li>
+<li class="toclevel-2 tocsection-75"><a href="#Things_to_Avoid"><span class="tocnumber">5.9</span> <span class="toctext">避けるべきもの</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-76"><a href="#Where_to_Next"><span class="tocnumber">6</span> <span class="toctext">次に進むなら</span></a>
+<ul>
+<li class="toclevel-2 tocsection-77"><a href="#Other_Guides"><span class="tocnumber">6.1</span> <span class="toctext">ほかのガイド</span></a>
+<ul>
+<li class="toclevel-3 tocsection-78"><a href="#Draconius.E2.80.99_Gnoll_of_Ashenzari:_Win_Consistency_through_Tactical_Maximalism_.5BIntermediate.5D_.280.34.29"><span class="tocnumber">6.1.1</span> <span class="toctext">Draconius のアシェンザリ信仰ノール: 戦術を突き詰めて安定して勝つ [中級者向け] (0.34)</span></a></li>
+<li class="toclevel-3 tocsection-79"><a href="#Repo_Troll_Guide.2C_TrFi.5EWu_Jian_.5BBeginner.5D_.280.32.29"><span class="tocnumber">6.1.2</span> <span class="toctext">取り立て屋トロルのガイド TrFi^ウー・ジアン [初心者向け] (0.32)</span></a></li>
+<li class="toclevel-3 tocsection-80"><a href="#Onei.27s_Velvet-Pawed_Path_to_Immortality_.5BAdvanced.5D_.280.32.29"><span class="tocnumber">6.1.3</span> <span class="toctext">Onei の肉球で歩む不死への道 [上級者向け] (0.32)</span></a></li>
+<li class="toclevel-3 tocsection-81"><a href="#H.27s_Minotaur_Fighter_Guide_.5BBeginner.5D_.280.31.29"><span class="tocnumber">6.1.4</span> <span class="toctext">H のミノタウロス戦士ガイド [初心者向け] (0.31)</span></a></li>
+<li class="toclevel-3 tocsection-82"><a href="#How_to_win_more_at_crawl:_a_guide"><span class="tocnumber">6.1.5</span> <span class="toctext">Crawl でもっと勝つには: ガイド</span></a></li>
+<li class="toclevel-3 tocsection-83"><a href="#Dextopode"><span class="tocnumber">6.1.6</span> <span class="toctext">Dextopode</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-84"><a href="#Crawl_Cosplay_Academy"><span class="tocnumber">6.2</span> <span class="toctext">Crawl Cosplay Academy</span></a></li>
+<li class="toclevel-2 tocsection-85"><a href="#DCSS_Stats_-_Community_Achievements"><span class="tocnumber">6.3</span> <span class="toctext">DCSS Stats: コミュニティの実績</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-86"><a href="#Closing"><span class="tocnumber">7</span> <span class="toctext">おわりに</span></a></li>
+</ul>
+</div>
+
+</td></tr></table>
+<p><a href="http://crawl.chaosforge.org/File:01_GnAr_of_Yred.png" data-untr="1" class="image"><img alt="01 GnAr of Yred.png" src="img/01_GnAr_of_Yred.png" width="600" height="719" /></a>
+</p><p><span id="how-this-works"></span>
+</p>
+<h2><span class="mw-headline" id="How_this_works">このビルドの仕組み</span></h2>
+<p>ノールの生まれつきのスキルの伸び方は、序盤をすんなり進ませてくれるし、終盤には山ほどの選択肢をくれる。ただ、中盤は力不足で乱数頼みに感じることがある。
+</p><p>イレデレンヌルは、信仰してすぐに恩恵をくれる数少ない神のひとつとして、ひときわ(えへん)輝いている。その能力は S系の分岐まで押し切れるほど強いが、終盤になるとやや物足りなくなってくる。
+</p><p>そこへ発動術師という職業を組み合わせる。最初から二十いくつもの非常ボタンを抱えているので、いちばん楽なスタートのひとつと言ってもいい。
+</p><p>中くらいの重さの防具を着たハイブリッドのキャラクターとして、S系の分岐に入るころにはレベル4〜5の呪文を唱え、宝物庫のあたりで最短の所要時間に届き、ゾットの領域と地上への帰還に挑むころにはレベル7や8の呪文まで使えるようになっているはずだ。
+</p><p><span id="why-this-is-beginner-friendly"></span>
+</p>
+<h3><span class="mw-headline" id="Why_this_is_beginner_friendly">なぜ初心者向けなのか</span></h3>
+<p>新しいプレイヤーからよく聞く不満に、縦穴は理不尽だ、勝てるかどうかは乱数しだいだ、スキルの振り方が覚えにくい、といったものがある。
+</p><p>どの階でも足を踏み出す前にイレデレンヌルの松明に火を灯しておけば、闇の神が意地の悪い縦穴から守ってくれると安心していられる。おまけにイレデレンヌルは、厄介な警報やテレポートの悪意に対処する強力な手段までくれる。
+</p><p>ノールの生まれつきの適応力とハイブリッドな戦い方のおかげで、「あの一つの良いアイテム」が落ちるのを待つ必要はほとんどない……ノールが活かせる良いものはたくさんあるのだ。この適応力にはスキル管理を考えなくていいという利点もついてくるので、新しいプレイヤーは、スキルが伸びるにつれて使える道具がどう変わり、目の前の脅威にどう対応できるようになるかに集中できる。
+</p><p>もうひとつよくある不満が<a href="Attacks_of_opportunity.html" title="Attacks of opportunity">機会攻撃</a>(AoO)だ。序盤の発動アイテムがあれば、迷宮の最初の数階で逃げ出す必要は減るし、味方と位置を入れ替えれば機会攻撃はそもそも起きない。肉の壁と幽体の盾がいつも次々と入れ替わりでやってくるので、きつい戦いから離脱するのに消耗品を使う必要もない。
+</p><p><span id="what-you-will-learn-with-this-build"></span>
+</p>
+<h3><span class="mw-headline" id="What_you_will_learn_with_this_build">このビルドで学べること</span></h3>
+<div class="floatleft"><a href="http://crawl.chaosforge.org/File:02_pack_kiting.gif" data-untr="1" class="image"><img alt="02 pack kiting.gif" src="img/600px-02_pack_kiting.gif" width="600" height="642" /></a></div>
+<p>このビルドでは、リソースの経済の基本を学べるだけでなく、スキルのレベルと強さの伸びの感覚も身につくし、新しい敵について調べる習慣もつく。
+</p><p>成長する気持ちを持って、このビルドを練習のつもりで遊ぶといい。連勝用のキャラを作るのではない。ゲームの重要な基本のいくつかについて、しっかりした土台を作るのが目的だ。
+</p><p><span id="resource-economy"></span>
+</p>
+<h4><span class="mw-headline" id="Resource_Economy">リソースの経済</span></h4>
+<p>安定して勝つために理解すべきいちばん大事な仕組みは、リソースの経済だ。Crawl で生き延びるというのは、すべての戦闘を力ずくで踏みつぶすことではない。にっちもさっちもいかなくなったときに、打てる手が残っていることだ……雑魚なら誰でも焼ける。
+</p><p>どんな状況でも、そこから抜け出すいちばん安い手を知っている。これは多くの人が育てていないスキルだ。私はこのスキルを磨くことに集中したおかげで、いろいろな組み合わせのキャラクターで、30日間の勝率を安定して10%に保てるようになった。
+</p><p>具体的に、需要と供給という基本的な観点からリソースを考えてみよう。HP や信仰心のように、時間とともに回復したり(イレデレンヌルの場合は)何かを倒すことで回復したりするリソースは供給の多いものと考えられる。一方、薬と巻物はたいてい最も供給が少ない。しかも価値の高い薬や巻物ほど、落ちる確率は低い。
+</p><p>天秤のもう片側にあるのが、リソースの価値(つまり需要)だ。価値はビルドの細かい点や、どんな装備や呪文が手に入ったかにずっと大きく左右されるので、ここでは一般的な GnAr^Yred だけを考えることにする。
+</p><p>経済で最後に考えるのはコストだ。かなり主観的なものだが、練習すれば見極めがうまくなっていく。
+</p><p>このビルドは呪文の力もそこそこ手に入るかもしれないが、オルグレブと毒の燃焼を運よく拾うとか、魔術強化や知力の装備が見事にそろうとかでもなければ、ハイブリッド向きになる。だから MP の価値は比較的低い。戦闘の始めに安く使えて、回復もするし、MP を使い切ることはほとんどない。MP が 0 になったときの欠点は、運よく落ちたすごい武器からジャベリンや発動アイテムまで、ほかのあらゆる手段に頼って敵を倒すしかなくなることだ。あるいは位置を変えて、しばらく味方に殴り合わせておけばいい。要するに……このビルドでは MP にあまり価値がない。安くて価値も低いのだから、もっと価値の高いものを温存するために、どんどん使うのが理にかなっている(非常ボタンの分は残しておくこと!)。
+</p><p>価値の階段をひとつ上がると、投擲アイテムとダチがいる。この二つは互いの価値を下げ合う。ダチ越しには物を投げられないからだ。それに、ダチはどのモンスターから作られたかにある程度左右される。原則として、派生アンデッドは元になった敵に合わせてかなりよく強くなるが、深い階では範囲攻撃や貫通する炎の攻撃に出くわしやすく、仲間がまとめて片づけられてしまうこともある。早いうちにダーツが見つかれば、ずっと高くつくアイテムの節約に大いに役立つ……毒のダガーを持ったコボルドなどは貴重な&#160;!治療を使わされかねないが、毒のダーツを当てて引き撃ちすれば済む。
+</p><p>このビルドで中くらいの価値の層には、信仰心、HP、発動アイテム、ワンドなどがある。HP を除けば、これらの本当の価値は状況にかなり左右される。とはいえ、どれも巻物や薬よりはずっと安いので、使いどころを覚えておけば、いざというときに&#160;?瞬間移動や&#160;!魔力解除がちゃんと手元に残る。位置取り(HP を払う)や稲妻のロッドで済んだはずの場面でそれらを無駄にせずに済むのだ。HP はおもしろいリソースで、死に近づくほど価値が跳ね上がる(球体の蜘蛛の一撃死もこれに含まれる)。しかしゲームの大半では比較的安いリソースで、味方のようなほかのリソースを守るのに使える。そしてその味方が、&#160;?蝶のようなもっと価値の高いリソースを守ってくれる。
+</p><p>最後に、窮地から尻を引っぱり出してくれる本当に価値の高いアイテム……巻物と薬だ。この区分のほとんどは中くらいの価値で、ここまでに見たリソースと同じく状況しだいのものだが、価値の高いものは本当に価値が高い。&#160;?瞬間移動、&#160;?蝶、&#160;!魔力解除、&#160;!怪我の治療のようなものは大事にして、ほかの選択肢が死しかない場面のために取っておくべきだ。
+</p><p>アイテムの価値とコストは、ゲームの進行につれて変わっていく。序盤の&#160;?毒は群れを抑えるのに優れた道具だが、先に進むほど効き目が落ち、所持品の枠はほかのものに回したほうがよくなるので、早めに使ってしまったほうがいい。&#160;!スピードと&#160;?瞬間移動はオーブを持っての脱出でいちばん価値が高い。脱出のためにわざわざアイテムを取っておくのは一般にはおすすめしないが、リソースの節制をきちんと実践していれば、次の階段までたどり着く分くらいは手元に残っているはずだ。
+</p>
+<table class="wikitable">
+
+<tr>
+<th> 種類
+</th>
+<th> 供給
+</th>
+<th> 需要・価値
+</th>
+<th> コスト
+</th>
+<th> 回復するか
+</th></tr>
+<tr>
+<td> MP
+</td>
+<td> 多い
+</td>
+<td> 低い
+</td>
+<td> 低い
+</td>
+<td> する
+</td></tr>
+<tr>
+<td> 投擲武器
+</td>
+<td> 中
+</td>
+<td> 低い[3]
+</td>
+<td> 低い
+</td>
+<td> しない
+</td></tr>
+<tr>
+<td> 神の従者
+</td>
+<td> 多い
+</td>
+<td> 低〜中
+</td>
+<td> 低い
+</td>
+<td> する
+</td></tr>
+<tr>
+<td> 信仰心[1]
+</td>
+<td> 多い
+</td>
+<td> 中
+</td>
+<td> 低〜中
+</td>
+<td> する
+</td></tr>
+<tr>
+<td> HP
+</td>
+<td> 多い
+</td>
+<td> 中
+</td>
+<td> 低〜中
+</td>
+<td> する
+</td></tr>
+<tr>
+<td> 発動アイテム
+</td>
+<td> 中[2]
+</td>
+<td> 中
+</td>
+<td> 低〜中
+</td>
+<td> する
+</td></tr>
+<tr>
+<td> ワンド
+</td>
+<td> 中
+</td>
+<td> 中
+</td>
+<td> 中
+</td>
+<td> しない
+</td></tr>
+<tr>
+<td> 薬
+</td>
+<td> 少ない
+</td>
+<td> 中〜高
+</td>
+<td> 高い
+</td>
+<td> しない
+</td></tr>
+<tr>
+<td> 巻物
+</td>
+<td> 少ない
+</td>
+<td> 中〜高
+</td>
+<td> 高い
+</td>
+<td> しない
+</td></tr></table>
+<ul><li> [1] - 神による</li>
+<li> [2] - 発動アイテムは発動スキルによってばらつきがある。</li>
+<li> [3] - 投擲武器はふつうワンドと同じく中くらいの価値だが、このビルドは味方が多すぎる</li></ul>
+<p><span id="skills-and-power-scaling"></span>
+</p>
+<h4><span class="mw-headline" id="Skills_and_Power_Scaling">スキルと強さの伸び</span></h4>
+<p>スキルの仕組みは、新しいプレイヤーには少しとっつきにくいことがある。自動訓練という選択肢もあるにはあるが、誰もおすすめしない。ノール生まれつきの均等な訓練はこれを補ってくれるし、特定のアイテムや装備にどれくらいのスキルレベルが要るのか、新しいプレイヤーが感覚でつかむ助けにもなる。
+</p><p>最初から見ておくべきなのは主に、最短の所要時間、防御の合計(total D)、呪文の成功率だ。
+</p><p>ゲームの始めから、すぐに 1.0 で振れるダガーとショートソードを探そう。いくつかの特別なアーティファクトや重いスピアでもない限り、このビルドで 1.0 より遅い攻撃をすべき場面はない。主に片手武器を探すことになるが、どの武器スキルも同時に伸びていくので、武器の種類ごとの使い心地がよくわかる。一回のゲームでは比べられないこともあるが、何回か遊ぶうちに、ゲームのどの時点でどの武器の種類がどれくらい強いのか、感覚がつかめてくる。私自身はこのビルドでは短剣と長柄武器を基本にしているが、同じくらいの頻度で、とんでもないランダムアーティファクトのメイスや棒を使うこともある。そのときの乱数がそう転んだから、というだけの話だ。
+</p><p>分岐を進むにつれて、装備をそれぞれの分岐の脅威に合わせて組み替えるのが簡単だとわかるだろう。中くらいの重さの胴防具の範囲なら、防御の合計とその分岐で必要な耐性とを自由に引き換えられる。蜘蛛の穴ぐらで rPois を得るためにレザーアーマーを着ることになっても、重い防具に注ぎ込んだ埋没費用を気にしなくていい。シミターを最短の所要時間まで鍛えたとたんに裂け目が目の前に迫っていても、買ってから後悔することもない。
+</p><p>いろいろなビルドを遊んで経験を積むうちに、スキルの仕組みについて、もっと洗練された定量的な理解が自然と身についてくる。だがそれは消防ホースで水を浴びせるようなものなので、新しいプレイヤーはまだ浴びなくていい。
+</p><p><span id="learning-about-enemies"></span>
+</p>
+<h4><span class="mw-headline" id="Learning_About_Enemies">敵について学ぶ</span></h4>
+<div class="floatright"><a href="http://crawl.chaosforge.org/File:03_monster_inspection.png" data-untr="1" class="image"><img alt="03 monster inspection.png" src="img/300px-03_monster_inspection.png" width="300" height="220" /></a></div>
+<p>Dungeon Crawl のゲームとしての最大の強みであり成功点のひとつは、ゲーム内の説明だ。ここも新しいプレイヤーにはとっつきにくく感じる部分で、新しい敵に出会うたびに調べないと、あっという間に「Play Now!」の画面に逆戻りしかねない。
+</p><p>イレデレンヌルの魂の呪縛は、もっと自然で楽しいやり方で敵を調べるよう促してくれる。「こいつにどうやって殺されるんだろう?」という心配が、「こいつはどんなすげえことをしてくれるんだろう?」という期待に変わるのだ。そのモンスターに思いがけない耐性や特殊攻撃があると気づけたら、それはおまけだ。
+</p><p>このガイドのほかのすべてと同じく、これも学びの過程だ。ほとんどの敵は、最初か二度目に出会ったときに調べれば十分になる……trunk を遊ぶなら話は別で、その場合は <a rel="nofollow" class="external text" href="https://crawl.develz.org/trunk/changes.txt">changes.txt</a> を追いかけておくべきだ。
+</p><p>しかも、ノールのスキルの伸び方のおかげで、この敵に出会うときの相対的な強さは毎回だいたい同じになる。だから、装備や呪文の選び方がそのモンスターとの戦いにどう影響するのかも、よりよく感じ取れるようになる。
+</p><p><br />
+<span id="resource-discipline"></span>
+</p>
+<h3><span class="mw-headline" id="Resource_Discipline">リソースの節制</span></h3>
+<p><a href="http://crawl.chaosforge.org/File:04_resource_bar.png" data-untr="1" class="image"><img alt="04 resource bar.png" src="img/800px-04_resource_bar.png" width="800" height="31" /></a>
+</p><p>ここでは、リソースの経済のうちこのビルドに特に関わる細かい点と、それが新しいプレイヤーにとってこうした損得の理解にどう役立つかを取り上げたい。
+</p><p>ゲームの始めから、強力だが数の限られたリソースが一式渡される。最初のワンドの組み合わせだけで、トップクラスのプレイヤーなら神を見つけるなり、ゲームに勝てると確信できるところまで進むなりできるはずだ。迷宮の最初の数階では、この三本のワンドと HP のバーを使ってリソースの節制を練習することになる。
+</p><p>ゴブリン、クワッカ、コボルドのような相手との序盤の戦いは、たいていダガーやショートソードで勝てる。だが乱数がひどいと狼の群れに放り込まれることもある。こういう雑魚との戦いでは、一体ずつ、多くても通路で二体ずつ釣ってから、HP が50%になるまで tab で殴る。HP が50%になったら火炎のワンドを撃ち込む。チャージは15発あるので、乱数がひどくても迷宮:2 を片づけるには足りるはずだ。
+</p><p>魅了のワンドは、ノールやオークのような雑魚の群れに使う……いちばん脅威になるやつを見つけて、仲間を殴らせるのだ。もちろん、一体ずつ釣れば魅了のチャージを後に取っておける(火炎のチャージを使うことになるかもしれないが)。魅了した味方は、HP を少し差し出せば長生きさせられる。危険がないわけではないが、急所攻撃のボーナスがつくので、一時の相棒にとどめを刺すのも楽になる。
+</p><p>吹雪のワンドは最初の「やべえことになった」ボタンで、5回使える。手ごわいオークの司祭の群れとユニークのために取っておこう。理想を言えば、松明の投擲が使えるようになるころにちょうど使い切るくらいのペースで使うといい。
+</p><p>トップクラスのプレイヤーなら、ひどく意地の悪いシードでもない限り、この三つの基本アイテムだけで寺院までたどり着ける。とはいえ、迷宮:4 に着くころにはほかのリソースも見つかっているはずだ。
+</p><p>迷宮:4 に着いたら、巻物をすべて読んで鑑定する。リソースの節制とは逆のことに思えるかもしれないし、どのキャラクターでも盲目的に従うべきやり方でもないが、私自身はたいていそうしている。いちばんの理由は、イレデレンヌルを早く信仰するほど、獣の棲み処とオークの坑道を片づける手段が早く手に入るからだ。もうひとつ、鑑定していないものはどのみち使えないし、イレデレンヌルは獣の棲み処とオークの坑道を押し切ってくれるので、イレデレンヌルに早くたどり着く短期的な利益が、たとえば&#160;?瞬間移動が一枚減るという長期的なコストを上回る。途中で店を見つけたなら、薬や巻物の鑑定に少しお金を使う価値もある。主に、&#160;?鑑定そのもの、供給の少ないもの(?瞬間移動)、害のあるもの(!突然変異)だ。
+</p><p>寺院に着いたら、リソース管理は次の段階に入る。
+</p>
+<div class="floatright"><a href="http://crawl.chaosforge.org/File:05_recall_homies.gif" data-untr="1" class="image"><img alt="05 recall homies.gif" src="img/600px-05_recall_homies.gif" width="600" height="523" /></a></div>
+<p>すぐに、次々と入れ替わる肉の鎧が手に入る。最初のワンドと同じく、この肉の鎧も HP と天秤にかけながら使うことになる。HP 50%という同じ目安が、離脱してダチに一発受けてもらうタイミングとしてたいていちょうどいい。それ以外は、ほとんどの戦闘を自分で受け持ってダチの蓄えを増やしていこう。
+</p><p><br />
+敵の周り、あるいは群れのど真ん中に全軍を招集したときの威力を甘く見てはいけない。斧使いと獣の棲み処の手ごわい住人を別にすれば、S系の分岐を終えるまで、ダチは受けた分だけきっちりやり返してくれる。イレデレンヌルの祭壇がよほど遅く見つかったのでもなければ、獣の棲み処に入るずっと前から、階に着くたびに新しいダチの一団ももらえる。これは最初のダチの群れをそろえるために使い潰していい。
+</p><p>イレデレンヌルを信仰してしばらくすると、松明の投擲が授けられる。リソースの節制を学ぶ道具としてこれがいいのは、階ごとに決まった回数だけ使えることだ。それに、祈祷はノールでかなりよく伸びるので、いつも松明のチャージを一つ予備に残すようにしておけば、こじれた戦いを仕切り直すいい手段になる。中くらいの価値のリソースを使ってみるのにもいい時期だ。リソースはオークの坑道の最後まで、&#160;?瞬間移動や&#160;?怪我の治療を使わずにたどり着くことに注ぎ込もう。&#160;?瞬間移動か死かの二択なら、もちろん瞬間移動するしかないが、そうでなければこの二つは後に取っておくようにしたい。毒の治療用に&#160;!治療を2本残してある限り、HP がまだ少ない序盤ではそちらのほうがいい回復薬になる。
+</p><p>オークの坑道の店が使えるようになれば、リソースの基本の練習は完了だ。ルーン3個のゲームの残りでもこの基本ルールに従うのが賢明だが、ここから先は物の価値がずっと乱数しだいになる。リソースの節制を意識し続けて、松明のチャージを一つ予備に残すよう心がけていれば、このスキルは自然と身についていく。
+</p><p><span id="what-we-wont-be-learning"></span>
+</p>
+<h3><span class="mw-headline" id="What_we_won.E2.80.99t_be_learning">このビルドでは学べないこと</span></h3>
+<p>このビルドの中心にあるのは、ノール生まれつきの適応力と、イレデレンヌルのわかりやすさとルーン3個まで押し切る力だ。そのため、このガイドの範囲では鍛えられないスキルもいくつかある。スキルの足りない変身術は欠点が大きいので、拾ったどのタリスマンよりも、ほぼ必ず防具のほうがましだ。呪文は主に補助用か、やべえ状況に対処するためのものになるし、味方を中心に戦うイレデレンヌルは攻撃呪文の魔術師のような戦い方には向かない。時間制限のあるポータルも、縦穴からの保護が崩れてしまうので、探索する余地はあまりない。
+</p><p>何も考えずに tab を押し続けるのに向いたビルドでもないが、乱数がうまくかみ合えば、ときにはそうなることもある。最後に、分岐の最下層とときどきの分岐の入り口を別にすれば、階段ダンスを磨く機会はない。
+</p><p><span id="yredelemnul"></span>
+</p>
+<h2><span class="mw-headline" id="Yredelemnul">イレデレンヌル</span></h2>
+<p>最近の大改修のおかげで、イレデレンヌルはフェダスやネメレックスと並ぶ、ゲームに勝たせてくれる最上位の神々の仲間入りを果たした。しかも戦い方はずっと許容範囲が広い。たいていの神と違って、イレデレンヌルの恵みは信仰したその瞬間から始まり、上位の能力もその後の数階のうちにどんどん授けられる。S系の分岐までは十分に押し切れるし、標準的なゲームの残りでもそこそこの影響力を保てる。
+</p><p><span id="homies"></span>
+</p>
+<h3><span class="mw-headline" id="Homies">ダチ</span></h3>
+<p>味方は DCSS の武器庫のなかでも特に強力な道具のひとつだ。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:06_kiting_monsters.gif" data-untr="1" class="image"><img alt="06 kiting monsters.gif" src="img/600px-06_kiting_monsters.gif" width="600" height="600" /></a></div></div>
+<p>うまく使えば、実質の HP を増やしたり、守りを数で押し切ったり、視界に作用する効果をさえぎったりできる。だが、たいていのキャラクターにとって味方の数を保つのは面倒だ。死霊の蘇生と死の霊媒術をやりくりするか、戦闘のたびに同じ仲間を召喚したり鍛造したりすることになる……私はこの戦い方をいつも退屈に感じてきた。ところがイレデレンヌルなら、ダチはタダで手に入る。こちらが指一本動かさなくても勝手に現れてくれるし、派生アンデッドの味方のいいところは、出てきた分岐に合わせて自然と強くなることだ。いちばん弱いゾンビでも、位置を入れ替えれば機会攻撃を防いでくれるし、全体にゾンビはかなり打たれ強い。
+</p><p>たいていの戦闘では、敵を一体ずつ引き離して相手にできるはずなので、大きな戦いで呼び出すダチをたっぷり貯め込む機会はいくらでもある。とはいえ、毎回幅1マスの通路で戦えという意味ではない。たいていの場面では、ダチが動ける余地のある幅2マスの通路のほうがこのビルドには向いている。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:07_homie_preservation.png" data-untr="1" class="image"><img alt="07 homie preservation.png" src="img/07_homie_preservation.png" width="600" height="600" /></a></div></div>
+<p>やりたいのは、HP の上半分を差し出してダチの群れを守り、できれば増やしていくような戦い方だ。つまり、斧使いや矢の呪文を撃つ敵の周りでは気をつけること……大きな範囲攻撃の多くはユニークが持っているが、ユニークはそもそも倒すのに高くつくものだ。序盤に戦う斧使いはたいてい群れの一員なので、魅了のチャージを使って、その凶悪な武器を仲間に向けさせる価値がある。そいつが生き残ったら、取り囲んでから急所攻撃を決め、ダチ全員でタダ殴りにすれば、こちらに来るダメージを最小限に抑えられる。あるいは幅1マスの通路に連れ込んで、正面から殴り倒してもいい。
+</p><p>矢の呪文は少し抑え込みにくい。たいていは、乱戦に突っ込むあなたについてくるダチに当たるからだ。私は近くまで寄ってから、相手の周りにダチの大群を招集するのが好きだ。複数の敵を貫く矢の能力をさっさと封じつつ、呪文使いのお粗末な守りをたいてい押し切れる。
+</p><p>味方の仕組みで覚えておくべき大事な点は、味方は(一般に)あなたからさえぎられずに見えていない相手を攻撃しないことだ。つまり画面の外にいるモンスターだけでなく、ガラスの壁の向こうにいるモンスターも、ダチに反撃されずにダチを傷つけられる。召喚術師や鍛冶師のビルドなら、これはたいてい脅威をおおむね把握している戦闘中に起きることだが、派生アンデッドは半永続なので、ふつうに探索しているあいだにも仲間を失うことがある。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:08_off_screen_damage.gif" data-untr="1" class="image"><img alt="08 off screen damage.gif" src="img/800px-08_off_screen_damage.gif" width="800" height="740" /></a></div></div>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:09_off_screen_damage.png" data-untr="1" class="image"><img alt="09 off screen damage.png" src="img/800px-09_off_screen_damage.png" width="800" height="71" /></a></div></div>
+<p>見えない何かがダチを傷つけていないか、メッセージ欄に目を配っておくことが大事だ。宝物庫:5 のように特に敵の多い階を片づけるときは、ダチの行列の最後尾が、遅れてやってきた悪党に一体ずつ狩られていないか確かめるために、何度も引き返す必要があると気づくだろう。
+</p><p><span id="recall-homies"></span>
+</p>
+<h3><span class="mw-headline" id="Recall_Homies">ダチの招集</span></h3>
+<div class="floatright"><a href="http://crawl.chaosforge.org/File:10_phantom_recall.gif" data-untr="1" class="image"><img alt="10 phantom recall.gif" src="img/720px-10_phantom_recall.gif" width="720" height="666" /></a></div>
+<p>イレデレンヌルの能力の基本中の基本だ。これをセットしておいて、ほぼすべての戦闘で使う。この能力がどれほど効くかは、いくら強調してもしきれない。神の能力以外でプレイヤーが招集を使えなくなったのにはわけがあるのだ。しかも信仰心のコストは0!
+</p><p>ゲームの大半で、ダチの群れはあなたの後ろについてきて、ばらばらに広がっていく。そのおかげで危険から遠ざけておけるのはいいのだが、いざ戦闘になったときにどう有効に使うかという問題も出てくる。刈り取った死者の招集は、たったの 2 MP でこの問題を解決してくれる。序盤のナターシャと鼻を突き合わせているところを想像してほしい。こちらは相手の鼻を少し血まみれにして、この戦いはいけそうだと思っている。そこへ突然、ナターシャが周りにインプを何体か呼び出し、そいつらが嬉々としてあなたを殴りはじめる。これと同じことを敵にやれるのだ。ついさっきまで鎧を着た巨大なネズミ一匹と戦っていたのに、次の瞬間には、よろよろ歩く死体にぐるりと囲まれて、全員から一発ずつ食らう。
+</p><p>招集は、大きな戦闘で戦場を組み替えるのにも役に立つ。敵はきまってあちこちの方向から流れ込んでくるので、ダチが集まる場所や、あなたが支援に回る場所は変わっていく。気がつくと、ダチが画面の反対側にたまっていたり、画面のさらに外にいる敵から撃たれていたりする。戦いから一息つかせたい貴重な呪縛した魂なら、なおさらだ。大きな戦闘中にキーボードから手を離して「次の一手は?」と考えるとき、招集は真っ先に検討すべき選択肢のひとつだ。練習すれば、招集でダチがどう配置し直されるか、そしてそれが手持ちのなかでいちばんお得な行動になるのはいつか、感覚がつかめてくる。
+</p><p><br />
+</p><p><span id="lighting-the-torch"></span>
+</p>
+<h3><span class="mw-headline" id="Lighting_the_Torch">松明の点火</span></h3>
+<p>黒き松明の点火を最大限に活かすにはちょっとしたコツがあるが、ここでは安全第一で、いくつかの簡単なルールに従って確実に縦穴を避けることにする。
+</p><p>新しい分岐に入ったら、周りに数マスの空きができた瞬間に松明に火を灯す。新しい分岐で最初の足場を固めるにはいくらかリソースを使うかもしれないが、縦穴を心配しなくていいので、少し積極的に使っていける。分岐の入り口は、たいてい縦穴に落とされるよりリソース面で安くつくので、こうすることでリソースの節制もしっかり練習できる。
+</p><p>階段が一つしかない分岐の入り口でなければ、三つの階段をすべて偵察して、最初のダチを置く空間がどれだけあるか、そしてダチの助けでどんな派生アンデッドを作れそうかをもとに、いちばんいい階段を決めよう。隠密はそれなりに高いはずなので、偵察しているあいだ、たいていのモンスターは眠ったままだと思っていい。階段から見える範囲に敵がいなくても、階段から離れる前に松明に火を灯して、縦穴に落とされないようにする価値は必ずある。
+</p><p>すぐに松明に火を灯さなくても済む場面がいくつかある:
+</p>
+<ul><li> 分岐の最下層: ヴォールトを破るとき、テレポートさせられたとき、あるいは手ごわい戦闘になったときのために取っておく。</li>
+<li> ルーンのある分岐の最下層のひとつ上の階: ルーンのある分岐の最下層へは縦穴で落とされない。それでも敵を見つけたらすぐに使う。</li>
+<li> 時間制限のあるポータル: 必要になったときか、最後のヴォールトでの戦闘のために取っておく。</li></ul>
+<p>松明に火を灯したら、先に偵察した三つの上り階段のあいだを片づけて、拠点を築く。注意深く、ダチの大群を育てるつもりでやれば、たいていは階の残りを o と tab で片づけられる。拠点とダチの群れが整うまでは、隠密を活かして手ごわい戦闘を避ける練習をしよう。こうしておけば、戦いの雲行きが怪しくなったときに退却してダチを立て直す安全な場所にもなる。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:11_bastion.gif" data-untr="1" class="image"><img alt="11 bastion.gif" src="img/600px-11_bastion.gif" width="600" height="476" /></a></div></div>
+<p>階を片づけたあと、ヴォールトを一つ二つ片づけるかどうかの選択が残るかもしれない。どのヴォールトでも、片づけるのにかかりそうなコストをよく見積もること。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:12_ghost_vaults.png" data-untr="1" class="image"><img alt="12 ghost vaults.png" src="img/600px-12_ghost_vaults.png" width="600" height="185" /></a></div></div>
+<p>扉のあるヴォールトなら、たいていはダチを何体か犠牲にして逃げ、それからヴォールトの住人を一体ずつ相手にすればいい。テレポートで入る幽霊のヴォールトは死の罠になりうる。脅威度をよく見極めたのでなければ避けることをおすすめする。ここは賭けに出る場所ではない。一人で対処できるくらい強くなってから戻ってくればいいので、取り逃がす不安に負けないこと。最後に、アビスに送られる可能性のあるヴォールトは避けよう。イレデレンヌルはアビスではたいして役に立たないし、アビスは何としても避けたい。
+</p><p><span id="living-without-stairs"></span>
+</p>
+<h4><span class="mw-headline" id="Living_Without_Stairs">階段に頼らない暮らし</span></h4>
+<p>われらが闇の神の欠点のひとつは、すっかり片づいた階を好むことだ。たいていの場合、これは階段ダンスという安全網なしでやっていくことを意味する……恐れることはない。これはバグではなく仕様だ。
+</p><p>階段ダンスは合わせて2.5ターンかかるので、危険がないわけではない。MiBe のような頑丈なキャラクターでもなければ、階段ダンスは大きな脅威とのあいだに安全な距離があるときだけにすべきだ。上の階へ逃げる必要が出たときに備えて階段の上に立っておくべきでない、というわけではないが、それは一回のゲームでせいぜい一度か二度にすべきことだ。
+</p><p>ありがたいことに、イレデレンヌルと迷宮が、この弱点を強みに変えるすばらしい道具をいくつかくれる。&#160;?テレポートの巻物はほぼどのゲームでも特に多く手に入る消耗品のひとつで、置き去りにされるのが怖くて、使わないまま十数枚も所持品に抱えているキャラクターは多い。イレデレンヌルのダチの招集はこの心配を和らげてくれるので、必要なら何度続けてテレポートしても、かなり安全だ。階段を偵察し、片づけた拠点を築くという戦略のおかげで、新しい悪党の群れに囲まれる可能性も下がる。
+</p><p>テレポートは発動まで数ターンかかるので、&#160;?テレポートを早めに読むことを覚えるのが、ここで力を入れるべきスキルだ。イレデレンヌルがある程度の安全をくれるので、最初より悪い状況に飛ばされてしまっても、誤差の余裕はずっと大きい。それに、新しい状況には、前の状況では使えなかった手で対処できることも多い。たとえば、アンデッドの大群から逃げてきた直後なら枷が使える、といった具合だ。死で終わりそうな戦いから逃げるだけでなく、厄介な群れをばらばらにするのに&#160;?テレポートを使えば、&#160;?瞬間移動や&#160;!怪我の治療のようなもっと高くつく消耗品を節約できる。
+</p><p>状況が変わって、最初に恐れていたほど切羽詰まっていないとわかったら、&#160;?テレポートをもう一枚読めばテレポートの状態を取り消せることも忘れずに。たいていのゲームでは、&#160;?テレポート一枚は安い代償だ。
+</p><p><span id="hurl-torch"></span>
+</p>
+<h3><span class="mw-headline" id="Hurl_Torch">松明の投擲</span></h3>
+<p>松明の投擲は楽しい仕組みで、範囲攻撃と光線の軌道の仕組みを学ぶのに役立つ。松明の爆発には、派生アンデッドを強化しつつ、爆発に巻き込まれた生きている敵、聖なる敵、悪魔の敵を傷つけるという独特の性質がある。自分には何の効果もないので、敵の大群を食い止めているダチの列のすぐ後ろに立っていても安全に使える。これは悪臭の雲と rPois の組み合わせで悪用できる狙い方なので、慣れておこう。必ずしも敵に向けて使う必要もない。ヒドラのゾンビの上に落として、敵の群れが虐殺されるのを笑って眺めていればいい。
+</p><p>ノールは生まれつき祈祷の適性が高めなので、松明のダメージはゲームを通してうまく伸びていく。ゾットの領域:5 でさえ、敵の HP のバーが目に見えて減るはずだ。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:13_initial_pack.gif" data-untr="1" class="image"><img alt="13 initial pack.gif" src="img/600px-13_initial_pack.gif" width="600" height="600" /></a></div></div>
+<p>松明のチャージは、消耗品を管理するうえでの軸にもなる。階に入ったときの分として松明のチャージを一つ見込んでおき、各階の終わりには一つ残しておくようにしよう。残りの松明のチャージは、ダチを守ることを念頭に階の中でどんどん使えばいい。斧を振るう族長や燃える子ブタには遠慮なくぶっ放そう。ユニークを倒すたびにイレデレンヌルがチャージを一つ追加でくれるので、ユニークにも気兼ねなく使える。高くつくリソースを犠牲にしてまで最後の松明のチャージを残す必要はないが、そのチャージの代わりに&#160;?毒を使ってみるとか、所持品の枠を食っている8本の&#160;!狂戦士のうち一本を飲んで、斧使いがダチを全滅させる前に始末するとかはしてみよう。
+</p><p><span id="suck-life"></span>
+</p>
+<h3><span class="mw-headline" id="Suck_Life">生命の吸い取り</span></h3>
+<div class="floatright"><a href="http://crawl.chaosforge.org/File:14_ghost_vaults_2.png" data-untr="1" class="image"><img alt="14 ghost vaults 2.png" src="img/600px-14_ghost_vaults_2.png" width="600" height="538" /></a></div>
+<p>イレデレンヌルの最後の力は、標準的なゲームの最後まで役に立ち続ける、すばらしい命綱だ。信仰心をそれほど食わないので、一つ目の底知れぬ枷が切れたらすぐ二つ目を使う必要が出ても、手詰まりになることはない。
+</p><p>たいていは、一つ目の枷が効いているあいだに攻撃のボタンを押しまくれば、大きな戦闘の大半は片づく。生命を吸い取る効果で受けるダメージを完全に打ち消せるとは思わないこと。敵が毎ターン HP を少しくれていても、脅威はできるだけ早く倒したい。これに頼りすぎて信仰心が減り続け、いつでも使える状態を保てなくなるようなら、少し時間をとってビルドを見直したほうがいいだろう……全体の生存力を上げるために使える呪文や武器、装備の組み替えがあるかもしれない。効果範囲は時間とともに縮むので、位置取りに気を配れば、巻き込める敵の数を増やせる。
+</p><p>底知れぬ枷は、獣の棲み処を終えるころには使えるようになっているはずだ。攻めに使う計画を立てられる最初の場所は、たぶんオークの坑道:2 のヴォールトだろう。それより前にも役立つことはあるだろうが、&#160;!誘引と枷を組み合わせれば、オークの本隊をあっという間に一掃できる。射撃とセントールのヴォールトを引いても、この戦法は有効だ。瞬間移動の連発で視界がさえぎられ、相手はすぐに目の前まで来てしまうからだ。&#160;!誘引は活かされていない消耗品で、これからいろいろなビルドで、かなり独特なやり方で利用できる。
+</p><p><br />
+</p><p>標準的なゲームの大半では、生命を吸い取れる相手が射程内に何かしらいるはずだ。それでも、ある場所から退却しなければならない場面では、この押さえ込む能力がとてつもなく役に立つ。画面の外でダチが虐殺されないように、招集するのを忘れずに。エルフの大広間と宝物庫でエルフの死人使いがいるときは、これに頼りすぎないよう特に気をつけたい。倒したばかりの悪党を、片っ端から敵のアンデッドとしてよみがえらせてくるが、そいつらからは生命を吸い取れない。乱戦に加わってくる敵の流れを制御しやすいので、これは宝物庫:5 よりエルフの大広間:3 のほうがずっと対処しやすい。魔術強化に支えられた、よほど強い装備や呪文を運よく手に入れたのでもなければ、このビルドでは宝物庫:5 を避けることをおすすめする。
+</p><p>底知れぬ枷をいつでも使えるだけの信仰心と MP を手元に残しておくことも、リソースの節制を練習するうえで重要な目標だ。これは強力な非常ボタンで、イレデレンヌルが直接は守ってくれないテレポートや警報の悪意に使う消耗品を減らすのに役立つ。マップの反対側からでもダチの群れを安く招集できることと組み合わせれば、厄介な乱数のせいでゲームが台無しになる心配はまずない。
+</p><p><span id="soul-binding"></span>
+</p>
+<h3><span class="mw-headline" id="Soul_Binding">魂の呪縛</span></h3>
+<p>魂の呪縛は、ゲームでいちばん楽しい能力で間違いない(僅差の二番手が天の嵐だ)。悪ふざけの可能性は無限にあり、冒険のあちこちでとても楽しい相乗効果が見つかる。大きな脅威と思えるような敵なら、ほぼどれも呪縛する価値がある。分岐ごとに検討すべき基本的なモンスターの種類についての大まかなおすすめ以外は、プレイヤーが自分で選択肢を探ってほしい。
+</p><p>原則として、イレデレンヌルとはあまり相性がよくない、あるいはむしろ逆効果になるモンスターの種類がいくつかある:
+</p>
+<ul><li> 雲を残すもの(カトブレパスなど)
+<ul><li> イフリートとアズラエルは、幽体になると炎の跡を残さない。</li></ul></li>
+<li> 範囲攻撃に頼るモンスター
+<ul><li> ザックリクシスのプリズムはダチを傷つけないが、燃やした毒はやはりダメージを与える炎の雲を作る。</li></ul></li>
+<li> 視界の直線上で撃つ射撃攻撃に頼るモンスター</li></ul>
+<p>ルールではなく原則と言ったのは、たとえばイカした弓とハルバードを持ったセントールの戦士なら、何度かの戦闘を通してとても役に立つこともあるからだ。そのモンスターがほかにどんな手を持っているか考えよう。ほかのダチを直接傷つけることはないが、よくてもただ突っ立って何もしていないことが多くなる。
+</p><p><span id="playing-the-game"></span>
+</p>
+<h2><span class="mw-headline" id="Playing_the_Game">ゲームの進め方</span></h2>
+<p>Nintendo Power を読んで育った身としては、手順をきっちり指示してくれて隠し要素もたっぷりだった昔の攻略本を懐かしく思い出す。Crawl はその性質上、こういう攻略本には向かないが、ほぼ確実に落ちるアイテムがいくつかあるおかげで、最初の数階の大事なところはかなり具体的に指示できる。そこから先は、気まぐれな乱数がほぼ確実に、キャラクターを育てる機会をいくらか与えてくれるだろう。
+</p><p><span id="early-combat"></span>
+</p>
+<h3><span class="mw-headline" id="Early_Combat">序盤の戦闘</span></h3>
+<div class="floatright"><a href="http://crawl.chaosforge.org/File:15_charm_stab.gif" data-untr="1" class="image"><img alt="15 charm stab.gif" src="img/720px-15_charm_stab.gif" width="720" height="720" /></a></div>
+<p>発動術師という職業は、迷宮:4 まで降りるのに必要なものを最初から全部持っている。イレデレンヌルの祭壇が早めに出ることもあるが、ここでは迷宮:4 から迷宮:7 のあいだにある寺院に出るものとして、序盤の消耗品の予算を立てる。
+</p><p>すぐに隠密に数ポイント入るので、序盤のリソースを節約するうえで大事なのは、OOD のモンスターとユニークを避けることだ。調べる画面で注意対象にしたモンスターは、迷宮の情報の画面に自動で書き込まれるので、後で戻って倒したり呪縛したりできる。
+</p><p>どのゲームでもだいたい同じ顔ぶれのモンスターと戦うことになるので、出てくるたびの対処法はすぐに覚えられる。最初の数階より先については、ゲームの進み具合によって選択肢がいくつもあるので、具体的な戦術は書かないことにする。
+</p><p>迷宮:1 と迷宮:2 では、ほぼどの敵も一体なら、HP が50%になるまで近接攻撃で削り、とどめが必要なら火炎のワンドを撃ち込もう。魅了のワンドは群れの相手に役立つし、吹雪のワンドは非常ボタンだ。事実上抵抗できないダメージを十分に与えるので、出くわしたどのユニークや OOD のモンスターにも対抗できる。ほかに倒しようのない敵にいちばん賢く対処するには、魅了してから、片づけ済みの階に置き去りにしてしまうのがいいこともある。
+</p><p><br />
+序盤の山場を越えるために、ほかにも使える具体的な対策をいくつか挙げておく。たいていは、あるモンスターや群れに最初の二、三回出会ったときに消耗品を使うかどうかだけ気にすればよく、その後はたぶんほかのやり方で対処できるくらい強くなっている:
+</p>
+<dl><dt> 電撃と歪曲のブランドの武器を持った敵</dt>
+<dd> 間合いに入られる前に火炎か吹雪</dd>
+<dt> ワーム</dt>
+<dd> 魅了して急所攻撃。網に捕まったら火炎</dd>
+<dt> マムシ、赤いスライム</dt>
+<dd> まず火炎。死にそうになったときのために、角から吹雪を撃てる位置を残しておく</dd>
+<dt> 重装備の敵</dt>
+<dd> プレートアーマーを着た序盤のオークの戦士には吹雪か魅了。毒やクラーレのダーツがあれば最高</dd>
+<dt> オーガ</dt>
+<dd> 隣に立たせないこと。火炎かダーツで弱らせて、吹雪でとどめを刺す。</dd>
+<dt> ノール</dt>
+<dd>
+<dl><dt> 一体</dt>
+<dd> ハルバードを持っていたら火炎。それ以外は近接攻撃</dd>
+<dt> 群れ</dt>
+<dd> 長柄武器か斧を持ったやつを魅了</dd></dl></dd></dl>
+<dl><dt> ウフェツバス</dt>
+<dd> 一体を火炎か魅了で。囲まれないように</dd>
+<dt> 巨大サソリ</dt>
+<dd> まず火炎か毒のダーツ。</dd>
+<dt> 氷の獣</dt>
+<dd> まず火炎。</dd>
+<dt> 黒熊</dt>
+<dd> できれば毒。バーサークしたら火炎か吹雪でとどめ。</dd>
+<dt> オーク</dt>
+<dd>
+<dl><dt> ふつうのオーク、一体でも群れでも</dt>
+<dd> 武器を確かめて、通路で戦う。長柄武器を持っていたら魅了</dd>
+<dt> 魔術師、一体</dt>
+<dd> 火炎。迷宮:4 あたりから先は近接攻撃でいい</dd>
+<dt> 司祭、一体</dt>
+<dd> 視界を切って、引き寄せて近接攻撃。HP が50%なら火炎</dd>
+<dt> 群れの中の魔術師か司祭</dt>
+<dd> 魔術師か司祭、あるいは斧使いを魅了するか、魔術師か司祭に吹雪</dd>
+<dt> 魔術師や司祭が何体も</dt>
+<dd> 退いて、一体ずつ引きはがしてみる。戦うしかないときは、司祭と、まとめて巻き込める相手を優先して吹雪。</dd></dl></dd></dl>
+<dl><dt> スチームドラゴン</dt>
+<dd> 吹雪</dd>
+<dt> 見えざる恐怖</dt>
+<dd> 吹雪。あるいは、自分とダチや壁とのあいだに挟み込んで、何か重いものでぶん殴る。&#160;?テレポートで逃げるのがいちばんいいこともある。</dd>
+<dt> マロウクーダ</dt>
+<dd> 幅1マスの通路で戦う。</dd>
+<dt> ドウェンとデュヴェッサ</dt>
+<dd> ドウェンを魅了して、デュヴェッサを正面から受け止める。ドウェンを先に死なせると、デュヴェッサにずたずたにされる。</dd>
+<dt> シグムンド</dt>
+<dd> 吹雪</dd>
+<dt> グラインダー</dt>
+<dd> 火炎。ほかの敵と一緒にいたら魅了。</dd>
+<dt> メンカウラー王</dt>
+<dd> まず火炎</dd>
+<dt> イジェィブ</dt>
+<dd> 相手と同じワンドを使うか、そのワンドの危険度に応じて火炎か吹雪。周りに彼女を倒してくれそうな群れがいれば魅了する。</dd>
+<dt> ロビン</dt>
+<dd> ロビンを魅了するか吹雪を撃ち、それから群れを分断してみる。迷宮の浅い階で3体以上の(ホブ)ゴブリンの集団を見たら用心すること。</dd></dl>
+<p><span id="early-gear"></span>
+</p>
+<h3><span class="mw-headline" id="Early_Gear">序盤の装備</span></h3>
+<p>職業のおかげで最初の数階を抜ける道具がそろっているのはありがたいが、どんなにひどい乱数でも、旅の助けになるものはほかにもいくらか見つかるはずだ。
+</p><p><span id="early-weapons"></span>
+</p>
+<h4><span class="mw-headline" id="Early_Weapons">序盤の武器</span></h4>
+<p>最初は棍棒を持っている。これはおおむね並以下の武器だ。
+</p><p>まずやるべきは、1.0 以下で振れるようにすることだ。つまり、ダガー、ショートソード、スピア(迷宮:1 を終えるころに 1.0 になる)のどれかだ。このうち一つは迷宮:1 でほぼ確実に落ちるし、そうでなくても迷宮:2 までにはまず見つかる。これらの代わりに、毒液や護りのブランドがついた武器なら何でも役に立つ。そうでなければ、平均的なゲームより火炎のチャージを少し多めに使うことになるかもしれない。1.0 で振れるということは、こちらの一回の行動のあいだに、思っていた以上に敵から攻撃されることがないということだ。調べる画面に攻撃2回とあれば2回だと思っていい。(棍棒で)1.2 で振っているせいで3回になる、ということがなくなる。ダガーと短剣があれば、序盤のオークの族長や装甲の厚い甲虫のような AC の高い敵を別にすれば、獣の棲み処の入り口あたりまでは乗り切れる。
+</p><p>迷宮で武器を拾っていくなかで、いちばん気にすべきは攻撃の速さを保つことだ。乱数が気前よくくれた本当にいいアーティファクトや強力なブランドの武器なら、1.1 や 1.2 の速さでもやっていける。だが、長く生き延びてダメージの急な跳ね上がりを抑えるには、たいていの場合、速く振れるほうがいい。
+</p><p>スリングと投擲アイテムもいくつか見つかるはずだ。最初に見つけたスリングは、所持品の枠が足りなくなるまで拾って持っておこう。水や溶岩の多いヴォールトや、最大射程から眠っている敵を弱らせるのに、とてつもなく役に立つことがある。石は序盤に群れを分断したり、視界の端からモンスターを釣ったりするのに便利だ。ダーツは序盤の戦闘でどんどん使おう。イレデレンヌルを信仰するようになると、視界がダチにふさがれがちになるからだ。ブーメランとジャベリンは画面の端のオーガ相手なら使ってもいいが、スリングと同じく投げるのに時間がかかることに注意し、敵が2マス動いたうえに攻撃もしてくると思っておくこと。
+</p><p>最終的な装備では、私はクラーレ、銀のジャベリン、投げ網を手元に置いておくのが好きだ。所持品の枠に対していちばんお得だからだ。それ以外は、もっと価値の高いリソースを温存するために序盤で使ってしまおう。
+</p><p><span id="armour"></span>
+</p>
+<h4><span class="mw-headline" id="Armour">防具</span></h4>
+<p>最初の防具の組み立てはかなり単純だ。落ちたものがすべてブランドなしだとすれば、駆け出しのノールにいちばん高い防御の合計をくれるのはリングメイルだ。呪文と隠密への悪影響もひどくはないので、こうした副次的な能力の邪魔にはならない。リングメイルはたいてい迷宮:1 で見つかり、迷宮:3 より遅れることはまずない。すぐ見つからなくても、レザーアーマーかスケイルメイル(特に強化値やいいエゴがついているもの)でしのげる。このゲームではずっと中くらいの重さの防具を着ることになるので、重さ4〜11の範囲に慣れておこう。
+</p><p>盾も見つけたらすぐに拾って使いはじめたい。最初のうちは、防御の合計が大きく上がるので盾は大きいほどいい。ただし攻撃の速さは 1.2 未満、理想を言えば 1.0 未満に保ちたい。大きなタワーシールドは、もともと振りの遅い武器を危ないほど遅くしてしまうし、着けたままではまともに呪文を唱えられないので、ゲームの大半はバックラーかカイトシールドを使うことになると思っておこう。序盤にタワーシールドを見つけたとしても、レベル3と4の呪文を使えるようにするために、獣の棲み処かオークの坑道のあたりで格下げすることになるだろう。
+</p><p>最後に、イレデレンヌルを信仰するまでは、光のオーブでも空いた手をそれなりに埋められる。ただ、この段階ではほかのオーブの利点はどれも活かせない。このビルドは生存力を軸にしている。狡知のオーブと騒乱のオーブは小技に頼るビルドではどちらもとんでもなく強いが、今回はその出番ではない。
+</p><p><span id="resists"></span>
+</p>
+<h4><span class="mw-headline" id="Resists">耐性</span></h4>
+<p>迷宮の最初の数階で、わざわざ手間をかけて装備すべき耐性は rPois と意志だけだ。前者が重要なのは、HP が少ないので毒が1ポイントでもバーのほぼ半分を削り、2ポイント以上だとほぼ必ず&#160;!治療が必要になるからだ(手元にないかもしれないので、飲んで鑑定するのはとても高くつく)。意志は、序盤の迷宮のあちこちにいるオークの魔術師たちに混乱させられるのを防ぐのに役立つ。
+</p><p>とはいえ、気にすべき耐性がこれだけというわけではない。ノールはスキルを共有するので、ほかのキャラクターにはない現実的な持ち替えの選択肢がいくつも開ける。たとえば大気の杖は迷宮の序盤でわりとよく落ちるが、ほかでは手に入れにくい重要な耐性をくれる。棒はもともと振りが速いし、棒術、発動、風術に数ポイント入っていれば、持ち替えてもそれなりのダメージを出せる。
+</p><p>少しでも使い物になりそうな耐性つきのものを見つけたら、ため込んでおこう。少なくとも今のところは。アーティファクトが見つかるにつれて、持ち替え用の荷物はごく少数の重要なものに絞れていく。着るのに数ターンかかる防具もこれに含まれる。氷の洞穴では、冷気耐性のローブのほうがブランドなしのリングメイルよりダメージを減らしてくれるし、アズラエルのような敵なら、隠密がそこそこ高いので、いったん退いてその一戦のためだけに火炎耐性のタワーシールドに持ち替えることもできる。武器と指輪のほうがたいてい実用的なので、もっと早く持ち替えられるものが手に入ったら、余分な防具は捨ててしまおう。
+</p><p><span id="resource-identification"></span>
+</p>
+<h4><span class="mw-headline" id="Resource_Identification">リソースの鑑定</span></h4>
+<p>迷宮:4 に着いたら、巻物と薬をすべて鑑定しはじめていい。
+</p><p>まず、巻物を枚数の多い束から順に読んでいき、&#160;?鑑定を見つける。見つけたら、それを薬の束に使い、次に1枚だけの巻物に使う。(枚数が足りれば)それから巻物を少ない束から順にさかのぼっていく。&#160;!突然変異が見つかったら、2本以上ある薬の束も飲んで鑑定してしまおう。
+</p><p>これはすべて、迷宮:4 で最初に見つけた、周りに何もいない(または片づけた)階段の下でやる。&#160;?テレポートを引いたら上の階へ戻ればいいし、&#160;?召喚を引いたら、呼んだやつらを連れて敵を倒しに行けばいい。そうでなければ、残りの巻物も全部読んで鑑定してしまう。&#160;?啓示が見つかったら最高だ! 寺院が見つかるか確かめよう。何枚も束であるなら、急いで戻ろうとせずに迷宮:4 を片づけてしまえばいい。ただし新しい階に着くたびに、すぐに寺院を探すこと。
+</p><p>鑑定したばかりのリソースは、これでリソースの銀行口座の一部になった。神を手に入れるための予算だ。祭壇を見つけたあとに余っていれば最高だが、次の二つの分岐を片づけるのに必要なものは、じきにイレデレンヌルが全部くれる。新しい階に降りるたびに、何でも読んで鑑定してしまえばいい。
+</p><p><span id="attributes"></span>
+</p>
+<h3><span class="mw-headline" id="Attributes">能力値</span></h3>
+<p>迷宮の序盤で、能力値を上げる機会が何度か来る。このビルドでは、私はたいてい最初の2回(合計4ポイント)を器用に、次を腕力に、もう1回を知力に振り、残りはキャラクターの育ち具合を見て決める。
+</p><p>器用を上げると、隠密が少し上がり、戦闘でもちょっとした恩恵があるので、序盤の生存力がすぐに上がる。呪文はそれほど気にしていないし、リングメイルとカイトシールドの重さはS系の分岐を終えるまでスキルではたいして軽くならないので、盾と防具の不利を和らげるために腕力に数ポイント入れるのは後でいい。最後に、S系の分岐に入るころに知力に振ったポイントは、レベル4とレベル5の呪文の威力を少し後押ししてくれる。その先は、残りのポイントを器用に振っておけば間違いないが、ビルドがどう仕上がったかをよく考えてみよう。腕力に数ポイント足せばアーティファクトの鎖かたびらを着られるようになるか、知力を足せば点火やおぞましきものの召喚を使えるようになるか(たぶん魔術強化と、ほかにも運よく知力＋の装備がないと無理だろう)。
+</p><p><span id="help-yred-didnt-spawn-by-d7"></span>
+</p>
+<h3><span class="mw-headline" id="Help.21_Yred_didn.E2.80.99t_spawn_by_D:7.21">助けて! 迷宮:7 までにイレデレンヌルが出ない!</span></h3>
+<p>標準的な神の祭壇はどれも迷宮:10 までに必ず出るが、寺院でも迷宮:7 までにもイレデレンヌルが見つからなければ、最初の持ち物はたぶん使い果たしている。たいていのゲームでは、祭壇が見つかるまでの数階をなんとかしのげるくらいの新しいリソースは拾っているはずだ。とはいえ、神の力の助けなしでは、迷宮:8〜10 は経験の浅いプレイヤーにはかなり手ごわい。
+</p><p>迷宮:8 に進む前に、見落としている装備がないか時間をかけて見直そう。ふだんなら要らない重いバトルアックスが、オークの坑道を終えるまで見たくなかった OOD のモンスターに対処するための、ちょうどいい持ち替え用の武器になるかもしれない。巻物と、1本だけではない薬の束がすべて鑑定済みか確かめ、これからの階で役に立ちそうな呪文がないか探そう。もうすぐレベル3の呪文が使えるようになるはずで、神がいない穴を埋める助けになる。ダーツも、出会う敵の多くにまだ十分に効く。
+</p><p>イレデレンヌルの祭壇にたどり着くためなら、集めたリソースをためらわずに何でも全部使ってしまおう。タダのダチが手に入りはじめれば一息つけるし、松明の投擲が使えるようになればもう一息つける。
+</p><p><span id="equipping-your-adventurer"></span>
+</p>
+<h2><span class="mw-headline" id="Equipping_your_Adventurer">冒険者の装備</span></h2>
+<p>迷宮の序盤を片づけたので、ここからは指示を少しゆるめる。ここがノールの生まれつきの適応力が本当に光るところで、ハイブリッドな戦い方を存分に発揮できる。
+</p><p>獣の棲み処とオークの坑道を終えるころには、それなりの装備がたまっていて、たぶん所持品の枠の限界にぶつかっている。それぞれのアイテムの価値や、今回と以前のゲームで役に立ったかどうかをよく考えて、物を捨てはじめよう。
+</p><p>最初の一、二回の装備の処分は、たぶん格上げして要らなくなった最初の装備をまとめて捨てるだけだろう。だがその後は、もう少し考えて選ぶ必要がある。これは、地面に捨てる代わりに使ってしまえる価値の低いリソースを見極める機会にもなる。たとえば、急所攻撃を主にするキャラでなくても、投擲と隠密があるので、中盤ならアトロパ毒もそれなりに効く。目の見えない敵は、ダチからより多くのダメージを受け、ダチに与えるダメージも減る。
+</p><p>階や分岐を終えるたびに、いくつかのことを確認する習慣をつけるといい。
+</p><p>階を終えるたびに、<code>Ctrl+F</code> を押してからピリオド(<code>.</code>)でその階を検索して、何が落ちたか必ず確認しよう。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:16_level_search.png" data-untr="1" class="image"><img alt="16 level search.png" src="img/600px-16_level_search.png" width="600" height="464" /></a></div></div>
+<p>たいていのものを鑑定し終えるまでは、巻物や薬に、巻物か使ってみることで鑑定できる未鑑定の束がないかも確かめたい。
+</p><p>分岐を移るときは、新しい呪文が使えるようになっていないか確かめるいい機会だ。成功率が10%台後半から20%台前半のものがあれば覚えておこう。次の分岐を終えるころには使えるようになっているはずだ。
+</p><p><span id="weapons"></span>
+</p>
+<h3><span class="mw-headline" id="Weapons">武器</span></h3>
+<p>獣の棲み処に着くころには、戦闘中に役に立つ位置を保とうとして、ダチの周りでうろうろ位置を変えるのにずいぶん時間を使っていると気づくだろう。この時点で使える打擲型の呪文がいくつかあれば助けにはなるが、ダメージを叩き込むもっといい手段がほしい。このビルドに理想の武器は、生まれつきリーチのあるトライデントか悪魔の三叉戟だ。ダチの後ろに安全に立ったまま、ダメージを与えられる。獣の棲み処のころにはトライデントを 1.0 以下で振れるようにもなっているので、手放せないアーティファクトの武器を運よく拾ったのでもなければ、途中で落ちたブランドなしのトライデントを一本拾っておこう。トライデントの最短の所要時間は訓練14で 0.6 と比較的速い。これは弱い敵を片づけてダチの手を空け、ほかの敵を倒すのに回させるのにうってつけだ。最近追加されたパルチザンは、振りが遅いぶん一撃の重い片手の代替品で、S系の分岐に入るころに 1.0 で振れるようになりはじめる。
+</p><p>事実上どんな武器でも振れるので、斧を少なくとも一本と、火炎のブランドの刃物を一本(同じ武器でもいい)持っておく価値はたいていある。囲まれたり、ヒドラと向き合わなければならなくなったりする場面は必ず来るので、そういうときに消耗品を使わずに済む選択肢を持っておくのはいい投資だ。斧なら、&#160;!狂戦士を飲めば群れを効率よく片づけられ、その後の減速をしのげるだけのダチも作れるかもしれない。火炎の武器は、S系の分岐を終えてヒドラを一人で何とかできるくらい強くなったら捨てていい。
+</p><p>ブランドはいつも選べるわけではないが、このビルドで(悪魔の)トライデントにつくといいものは、冷気、掠奪、絡みつき、吸血だ。ゲームの大半で、吸血なら tab キーに頼りきれるし、掠奪は優れた弱体化で、ダチが敵を早く倒せるうえ、衰弱した敵から受けるダメージも減る。冷気はゲームの大半で十分に使え、一部の敵を減速させることがあり、ゾットの領域の最大の脅威たちに最も抵抗されにくい属性でもある。絡みつきは新しいブランドで、敵に巻きついて足止めしておき、そのあいだにダチに殴らせることができるので、かなり強力だ。ただし、イレデレンヌルは神聖なブランドを使わせてくれないので、アンデッドの多い戦闘には気をつける必要がある。主武器には霊体化と重撃のブランドは避けたほうがいいと私はおおむね考えている。どちらも余計なダメージを招くからだ。とはいえ、どちらのブランドも、パルチザンと並んで、手ごわいモンスターの高い守りを破るための持ち替え用としては非常に貴重になりうる。
+</p><p>結局のところ、片手武器ならどの基本の武器でも使えるが、短剣や格下の選択肢だと、炎の球体に対処するために&#160;!怪力や持ち替え用の武器を手元に置いておく必要があるかもしれない。とはいえ、宝物庫に着くころには隠密も十分に上がっているので、乱数がそちらの方向にも恵んでくれたなら、眠っている敵や呪術にかかった敵に確実に急所攻撃を決められる。
+</p><p><span id="armour-shields"></span>
+</p>
+<h3><span class="mw-headline" id="Armour_.26_Shields">防具と盾</span></h3>
+<p>ゲームを通して生存力を上げるために、たいていの分岐のあいだで装備の組み合わせを組み替えることになる。
+</p><p>呪文にどれくらい頼るかにもよるが、だいたいはレザーアーマー、リングメイルかスケイルメイル、あるいは沼ドラゴンやファイアドラゴンやアイスドラゴンの鱗一式を着ることになる。一般には、その分岐に必要な最低限の耐性を満たしたうえで、防御の合計ができるだけ高くなるようにしよう。
+</p><p>上位の呪文に頼るなら、カイトシールドよりバックラーを選ぶのもありだ。そうでなければ、攻撃の速さを 1.0 以下に保てて、呪文の成功率がだいたい20%を下回らない範囲で、いちばん大きな盾を使おう。
+</p><p><a href="http://crawl.chaosforge.org/File:17_kite_shield_success.png" data-untr="1" class="image"><img alt="17 kite shield success.png" src="img/600px-17_kite_shield_success.png" width="600" height="234" /></a>
+</p><p>このビルドにとって呪文は補助で、MP はかなり使い捨てでいいと考えているので、攻撃呪文の魔術師なら落ち着かないくらい空振りしても構わない。例外は召喚呪文だ。名状しがたき恐怖があっという間に MP を吸い尽くして、非常ボタンが使えなくなることがあるからだ。とはいえ、失敗率10%以下なら大丈夫だろう。
+</p><p><span id="orbs"></span>
+</p>
+<h3><span class="mw-headline" id="Orbs">オーブ</span></h3>
+<p>盾の代わりになるオーブは、発動スキルの高いノールが使えばとても強力になりうる。
+</p>
+<dl><dt> 星屑</dt>
+<dd> 呪文中心の戦い方に最適。星屑はレベルが上がるにつれてよく伸びる。</dd>
+<dt> 魅惑</dt>
+<dd> 盾の代わりとして堅実。魅惑の閃光は、位置を変えてほかの誰かに攻撃を受け止めてもらう合図にちょうどいい。</dd>
+<dt> ガラス</dt>
+<dd> これも盾の代わりにいいが、もう少し攻め寄り。速い武器と組み合わせると、脆弱の効果を早く発動させられて相性がいい。</dd>
+<dt> 活力</dt>
+<dd> このビルドでは効果はほどほど。もともと呪文の成功率が少し遅れ気味になりやすいからだ。ただし、知力が高いか魔術強化があれば補える。</dd>
+<dt> 騒乱</dt>
+<dd> このビルドでは使わないこと。これが本当に輝くジグラットには潜らないし、厄介な凶暴化を打ち消すヤーラの強制魔法解除術は中盤の終わりまで使えない。</dd>
+<dt> 放火魔</dt>
+<dd> このビルドでは使うな。ダチを傷つけるだけだ。</dd></dl>
+<p><span id="jewellery"></span>
+</p>
+<h3><span class="mw-headline" id="Jewellery">装身具</span></h3>
+<p>乱数に恵まれて、イレデレンヌルにたいして直接手を借りずにどの階も踏みつぶせているのでもなければ、何よりも信仰の護符を優先すべきだ。僅差の二番手が再生の護符だ。イレデレンヌルの助けをそれほど必要としないキャラクターなら、再生が信仰をわずかに上回る。呪文の面で乱数がたっぷり味方してくれたなら、MP 再生という手もありだ。軽業師と反射もそれなりに役に立つことはあるが、迷宮の序盤を過ぎたら精霊の盾は避けたほうがいい。
+</p><p>指輪は、手放せないほどいいアーティファクトがいくつか見つかるまで、かなり頻繁に入れ替えることになるだろう。迷ったら、躱し身の指輪も護りの指輪も役に立つ。意志+++ になるまでは、出会う呪術(アビスへの追放を使う敵も含む)にそこそこかかりやすい(10〜20%)。
+</p><p><span id="resists-specials"></span>
+</p>
+<h3><span class="mw-headline" id="Resists_.26_Specials">耐性と特殊な効果</span></h3>
+<p>分岐ごとにそろえたい耐性はだいたい決まっているが、これさえあれば例外的な場合を除いて持ち替えを気にしなくていい「十分な」最低限の組み合わせもたいていある。意志++、rF+、rC+、rPois、rElec、SInv だ。
+</p><p>ある耐性が恒久的に、あるいはほぼ恒久的にまかなえるようになるまでは、所持品の枠を使ってでも余分なアイテムを持ち歩く価値が必ずある。
+</p><p>理想は指輪だが、武器も僅差の二番手だ。どちらもすぐに持ち替えられるからだ。防具、盾、護符は、それなりに手に入るようになりしだい、同じ耐性の指輪や武器と取り替えよう。隠密があるので、いったん退いて戦闘を仕切り直すこともできるが、戦いに欠かせない耐性を身につけるのに10ターンも邪魔されずにいられるとは限らない。
+</p><p>S系の分岐に入るころから、AC を無視する冷気や、跳ね上がりの激しい電撃のダメージを浴びせてくるユニークや、ありふれたモンスターに出会うようになる。毒の蓄積による影響は迷宮の深くに進むほどひどくなり、毒が満タンまで回ると、気づいたときにはバー半分から HP 0 まで一気に持っていかれかねない。
+</p><p>標準的なゲームには、負のエネルギーで大きな脅威になる敵はあまりいないので、rN+ はたいてい、あればうれしいという程度だ。このビルドでは意志+++ も、あればいいが必須ではない部類に入る。たいていはダチを招集して、呪術やアビスへの追放の視界をさえぎれるからだ。
+</p><p>クロークの部位にはおもしろい可能性があって、反発のエゴがあれば、ゾットの領域に着くまでに必要な耐性の大半を補える。特に蛇穴、浅瀬、エルフの大広間では、反発は rC、rF、rPois それぞれの1ポイントと同じくらい効くというのが経験談だ。ダメージが跳ね上がることがあるので、何も考えずに tab で階を進むわけにはいかないが、ほかに乱数が恵んでくれなかったなら検討する価値のある選択肢だ。透明化もちょっと変わった使い道があるが、スカーフならたいてい耐性のほうがいい。痛撃と影は避けよう。前者は賭けの要素が大きすぎるし、後者は画面の外からダチに一方的にダメージを受けさせることになる。単一の耐性がついたクロークもよく見つかるし有力な候補だが、一部のアーティファクトを別にすれば、クロークの部位で得られる AC の恩恵は全体としてたいしたことはない。
+</p><p><span id="evokables"></span>
+</p>
+<h3><span class="mw-headline" id="Evokables">発動アイテム</span></h3>
+<p>再充填できる少数のアイテムだ。これらは強力な非常ボタンで、もっと価値の高いリソースを温存するために戦略的に使うべきだ。このビルドの発動スキルは祈祷とほぼ同じくらいよく伸びるので、ルーン3個のゲームから地上への帰還まで、ずっと強力で役に立つ。以下の発動アイテムと、続く消耗品の一覧は、だいたい価値の高い順に並べてある。戦い方が固まってくるにつれて、感じ方は少し変わるかもしれない。
+</p>
+<dl><dt> <a href="Gell's_gravitambourine.html" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a></dt>
+<dd> &#160;?蝶と&#160;?瞬間移動を温存するために使う。ゲームで指折りの発動アイテムで、狙える範囲を広げるために、どのキャラクターでも発動を9くらいまで上げるべきだ。</dd>
+<dt> <a href="Box_of_beasts.html" title="Box of beasts">獣の匣</a></dt>
+<dd> 中盤には、獣はどのダチよりも、そしてたいていの敵や呪縛した魂よりも強い。ガラスの大砲になりがちなので、鏡と組み合わせて効果を最大にしよう。</dd>
+<dt> <a href="Sack_of_spiders.html" title="Sack of spiders">蜘蛛の袋</a></dt>
+<dd> 蜘蛛は毒に弱いので、オルグレブの毒気の光輪や悪臭の雲に頼っていると相性はよくない。だが、視界にいるモンスターを蜘蛛の巣で捕らえられる可能性があるので、たいていの戦闘に勝てる。</dd>
+<dt> <a href="Phantom_mirror.html" title="Phantom mirror">幻影の鏡</a></dt>
+<dd> 鏡像は、敵の進路をふさぐのではなく、敵の横や後ろに出ることが多い。強いモンスターや呪縛した魂に使おう。獣の匣とは抜群に相性がいい。</dd>
+<dt> <a href="Phial_of_floods.html" title="Phial of floods">大水の小瓶</a></dt>
+<dd> 状況によってはとても強いが、水はダチの働きに響くし、ダチが視界をさえぎることも多い。</dd>
+<dt> <a href="Lightning_rod.html" title="Lightning rod">稲妻のロッド</a></dt>
+<dd> 再充填できる矢の攻撃として使う。群れをまとめて貫くように撃てば、たいてい3回目のチャージまでにダチが一、二体手に入る。もっとも、そのダチを犠牲にする価値はあるかもしれない。</dd>
+<dt> <a href="Tin_of_tremorstones.html" title="Tin of tremorstones">震動石の缶</a></dt>
+<dd> これもやべえとき用。範囲攻撃の狙いがランダムなので、ダチの大群をごっそり削ってしまう。</dd>
+<dt> <a href="Condenser_vane.html" title="Condenser vane">凝結の風見</a></dt>
+<dd> やべえとき用に取っておく。ダチと雲の相性はよくない。</dd></dl>
+<p><span id="consumables"></span>
+</p>
+<h3><span class="mw-headline" id="Consumables">消耗品</span></h3>
+<p>このビルドのリソース経済の大部分を占めるのは、ワンド、投擲武器、巻物、薬だ。
+</p><p><span id="wands"></span>
+</p>
+<h4><span class="mw-headline" id="Wands">ワンド</span></h4>
+<p>最初の三本のほかにも、Crawl には落ちる可能性のあるワンドがいくつもある。範囲攻撃のワンドと呪術のワンドは(矢のワンドに加えて)1回のゲームでそれぞれ一種類しか生成されないので、発動術師は平均的なプレイヤーより多くのワンドを持てるかもしれないという独特の立場にある。範囲攻撃の組で、最初から持っている吹雪のワンドと並ぶのは、根縛りのワンドと歪曲のワンドだ。魅了は金縛りと入れ替わりで出る。それから、水銀、光、強酸のどれか一つもいずれ見つかる。ワンドはこのビルドの完全なハイブリッドな戦い方の中核だ。非常時に備えて2〜3チャージをいくつか残しておく以外は、薬と巻物を守るためにかなり気前よく使っていい。
+</p>
+<div class="floatright"><a href="http://crawl.chaosforge.org/File:27_Progressive_Murderholes.png" data-untr="1" class="image"><img alt="27 Progressive Murderholes.png" src="img/600px-27_Progressive_Murderholes.png" width="600" height="389" /></a></div>
+<dl><dt> <a href="Wand_of_quicksilver.html" title="Wand of quicksilver">水銀</a></dt>
+<dd> 敵の強化を打ち消す。透明を解除すれば、ゾンビが恐怖のリッチのような大きな脅威を狙えるようになる。氷の躯の状態は解除できない。</dd>
+<dt> <a href="Wand_of_roots.html" title="Wand of roots">根縛り</a></dt>
+<dd> このノールにとって最上位。EV と移動を下げるので、敵が早く死ぬか、こちらが逃げ出せる。&#160;?瞬間移動や&#160;?蝶とほぼ同じくらい価値がある。</dd>
+<dt> <a href="Wand_of_light.html" title="Wand of light">光</a></dt>
+<dd> ゲームのたいていの敵を盲目にし、戦闘力を下げて、弱いほうの急所攻撃を決められる状態にしてくれる。気前よく使っていいが、一、二チャージは残しておくこと。</dd>
+<dt> <a href="Wand_of_digging.html" title="Wand of digging">掘削</a></dt>
+<dd> 幅2〜3マスの通路を作ったり、部屋の柱を取り除いてダチ全員が敵を攻撃できるようにしたり、やべえときに殺し間を作ったりする。オーブを持っての脱出用に4〜5チャージ残しておこう。</dd>
+<dt> <a href="Wand_of_acid.html" title="Wand of acid">強酸</a></dt>
+<dd> 根縛りが EV にすることを、AC にする。AC の高いモンスターに一度当てたら、あとはボコボコにしてやれ。</dd>
+<dt> <a href="Wand_of_charming.html" title="Wand of charming">魅了</a></dt>
+<dd> 悪党がほかの悪党を倒すのは何度見ても飽きない。最初に覚えた対群れの戦術をそのまま使おう。</dd>
+<dt> <a href="Wand_of_paralysis.html" title="Wand of paralysis">金縛り</a></dt>
+<dd> 特に序盤、眠っている相手への急所攻撃の下ごしらえに最適。発動、隠密、短剣がどれもよく伸びるので、ゲームを通して役に立ち続ける。</dd>
+<dt> <a href="Wand_of_iceblast.html" title="Wand of iceblast">吹雪</a></dt>
+<dd> 堅実な範囲攻撃。ゾンビには冷気耐性がいくらかあるので、ダチを爆発に巻き込んでもあまり気にしなくていい。</dd>
+<dt> <a href="Wand_of_warping.html" title="Wand of warping">歪曲</a></dt>
+<dd> 根縛りより早めに使う必要があり、範囲攻撃がダチを傷つけることもある。ダチの大群を(作り直して)いるときの、やべえ状況用に使おう。</dd>
+<dt> <a href="Wand_of_mindburst.html" title="Wand of mindburst">精神破壊</a></dt>
+<dd> AC や EV が高くて意志の低い敵か、序盤に使うのがいちばん役に立つ。</dd>
+<dt> <a href="Wand_of_flame.html" title="Wand of flame">火炎</a></dt>
+<dd> 中盤にはおおむね力不足になるが、浅瀬で視界を切るのには使える。S系の分岐を終えたら捨てていい。</dd>
+<dt> <a href="Wand_of_polymorph.html" title="Wand of polymorph">変化</a></dt>
+<dd> 使いどころはごく限られるが、序盤と中盤のユニークには意外とよく効く。迷宮の後半を過ぎたら捨てていい。 </dd></dl>
+<p><br />
+</p><p><span id="thrown-weapons"></span>
+</p>
+<h4><span class="mw-headline" id="Thrown_Weapons">投擲武器</span></h4>
+<p>よろよろ歩くアンデッドの大群がずっといるので、投擲スキルの出番はあまりないが、薬と巻物を節約する道具がもう一つあることを甘く見てはいけない。毒のダーツのダメージの積み重ねは、序盤のオーガに大きく効くし、トロルの生まれつきの再生を打ち消して削り倒すこともできる。短剣を別にすれば、ルーンを2つほど手に入れるまでは、ダーツは振るどの武器よりもずっと速く投げられるので、手ごわいモンスターの顔面に直接何本か投げつけるのも立派な戦術だ。アトロパ毒とダチュラ毒は意志ではなく HD と比べられるので、ワンドやたいていの呪文が効きにくいモンスターを封じられることがある。投擲も隠密もよく伸びるので、ブーメランは獣の棲み処の終わりごろに 1.0、S系の分岐を片づけるころに最短の所要時間に届くと思っていい。ジャベリンは、ブーメランが最短の所要時間に届くころに 1.0 になり、宝物庫のどこかで自分の最短の所要時間に届く。
+</p>
+<dl><dt> <a href="Javelin.html" title="Javelin">銀のジャベリン</a></dt>
+<dd> 必要なら序盤に使ってもいいが、終盤にとんでもないダメージを出すので、中盤のあいだは温存しよう。</dd>
+<dt> <a href="Throwing_net.html" title="Throwing net">投げ網</a></dt>
+<dd> 急所攻撃の下ごしらえ、なぎ払い武器持ちの封じ込め、あるいはただ逃げるのに使う。かなり価値は高いが、気前よく使おう。</dd>
+<dt> <a href="Curare.html" title="Curare">クラーレ</a></dt>
+<dd> 毒に耐性のないものなら何でも減速させる。太った双頭のオーガをダチの横を抜けて(あるいは一人で)引き撃ちするのに最適。</dd>
+<dt> <a href="Javelin.html" title="Javelin">ジャベリン</a></dt>
+<dd> 画面の端まで届く矢の攻撃で、ダメージも堅実。序盤と中盤にこれを使って、銀のジャベリンと矢のワンドを温存しよう。</dd>
+<dt> <a href="Disjunction.html" title="Disjunction">分解</a></dt>
+<dd> 置き換えられる前の離散よりずっといい。打擲型の呪文を使う敵を数ターン画面の外に追いやったり、群れを分断したり、逃げ出したりするのに使おう。</dd>
+<dt> <a href="Atropa.html" title="Atropa">アトロパ毒</a></dt>
+<dd> 適性がちょうどいいので、ルーン3個のゲームを通して役に立ち続けるが、中盤はダチが邪魔で、うまく当てられないことが多い。</dd>
+<dt> <a href="Boomerang.html" title="Boomerang">ブーメラン</a></dt>
+<dd> 投擲使いの基本中の基本。イレデレンヌルが使えるようになったらたいして出番はないので、序盤に使おう。</dd>
+<dt> <a href="Poison.html" title="Poison">毒</a></dt>
+<dd> 釣るのにも、離れたところから少しダメージを上乗せするのにも最適。イレデレンヌルにたどり着く助けになるくらい早く見つかるはずだ。</dd>
+<dt> <a href="Datura.html" title="Datura">ダチュラ毒</a></dt>
+<dd> 呪文使いを封じたり、閉じた扉の向こうから知能のない群れをばらばらにしたりするのにたまに役立つが、それ以外では危険が大きすぎる。</dd>
+<dt> <a href="Stone.html" title="Stone">石</a></dt>
+<dd> 序盤に釣るのに使い、所持品の枠が尽きはじめたら捨てる。</dd></dl>
+<p><span id="scrolls"></span>
+</p>
+<h4><span class="mw-headline" id="Scrolls">巻物</span></h4>
+<p>攻め、守り、長く続く強化と、巻物にはいろいろな種類がある。このビルドには、攻撃や便利な選択肢がいくつもあるのに加え、最強クラスのやべえとき用の道具が二つある。&#160;?瞬間移動と&#160;?蝶だ。巻物を使うのはたいてい、もっと安い手では片がつかないときにすべきだが、それでも貴重な&#160;?瞬間移動と&#160;!治療は使いたくない。攻撃の巻物はどれも見えている画面全体に効くので、&#160;?脆弱や&#160;?焼き討ちを読むときは、自分とダチの大群への影響をよく考えること。
+</p>
+<dl><dt> <a href="Scroll_of_blinking.html" title="Scroll of blinking">瞬間移動</a></dt>
+<dd> 神がくれるもの以外では最高の「脱獄カード」。オーブを持っての脱出用にいくらか取っておくようにしたいし、十分な数を保っておくことはリソースの節制の要になる。</dd>
+<dt> <a href="Scroll_of_butterflies.html" title="Scroll of butterflies">蝶</a></dt>
+<dd> &#160;?瞬間移動に次ぐ二番手(状況によってはこちらが上)で、開けた場所で戦うダチの大群と相性がいい。強打を持つ敵や、視界内に呪術をかけてくる敵の集団に囲まれそうになったら使おう。</dd>
+<dt> <a href="Scroll_of_fear.html" title="Scroll of fear">恐慌</a></dt>
+<dd> 戦闘の途中で使うと効果はほどほど。ダチは逃げる悪党をこれ幸いと殴って、恐慌を解いてしまうことが多いからだ。</dd>
+<dt> <a href="Scroll_of_teleportation.html" title="Scroll of teleportation">テレポート</a></dt>
+<dd> ほかのキャラクターと違って、イレデレンヌルのおかげでテレポートは比較的安全なだけでなく、状況を大きく変える唯一の手段にもなる。押し負けそうな戦いになったら、早めに、何度でも使おう。着いたらすぐにダチの群れを招集すること。</dd>
+<dt> <a href="Scroll_of_summoning.html" title="Scroll of summoning">召喚</a></dt>
+<dd> いる分岐に合わせて強くなり、戦闘の早い段階で使うと強力。ダチの群れが減っていくやべえ状況や、特別な呪縛した魂を守るために取っておこう。</dd>
+<dt> <a href="Scroll_of_poison.html" title="Scroll of poison">毒</a></dt>
+<dd> ダチの群れと相性抜群。戦闘を制御したり、距離を詰めてこようとする脅威にダメージを与えたりするのに、どんどん使おう。毒の燃焼に頼っているなら気をつけること。</dd>
+<dt> <a href="Scroll_of_noise.html" title="Scroll of noise">騒音</a></dt>
+<dd> モンスターでいっぱいのヴォールトから、狭い通路や閉じた空間の外へ敵を釣り出すのに使う。ゾットの領域の肺を釣るのに2〜3枚取っておこう。</dd>
+<dt> <a href="Scroll_of_vulnerability.html" title="Scroll of vulnerability">脆弱</a></dt>
+<dd> &#160;?恐慌、/金縛り、/魅了をはじめ、意志で抵抗される多くの呪術を強めてくれる。ダーツやアリステイアの酩酊のような、HD で抵抗される効果は強まらない。</dd>
+<dt> <a href="Scroll_of_immolation.html" title="Scroll of immolation">焼き討ち</a></dt>
+<dd> ダチの群れが大きいときは慎重に使うこと。だが&#160;?焼き討ちがあれば、しがないゴブリンのゾンビ一体で、オークの戦士でいっぱいの部屋をまるごと片づけられることもある。</dd>
+<dt> <a href="Scroll_of_fog.html" title="Scroll of fog">煙幕</a></dt>
+<dd> ダチの群れがいなくなったやべえときにしか役に立たない。それ以外では、ダチがやり返せないダメージを招くだけだ。</dd>
+<dt> <a href="Scroll_of_silence.html" title="Scroll of silence">静寂</a></dt>
+<dd> 神の力も非常ボタンのいくつかもすべて封じられてしまう。もっと上級のプレイヤーに任せておこう。これを使うような数少ない脅威には、ほかにいくらでも対処法がある。</dd></dl>
+<p><span id="potions"></span>
+</p>
+<h4><span class="mw-headline" id="Potions">薬</span></h4>
+<p>ここにあるのは強化と回復だけだ。前者は戦闘の早いうちに使いたい。そうすれば後で後者を使わずに済む。&#160;!堕落が&#160;!密造酒に置き換えられたので、序盤に切羽詰まって飲んで鑑定する賭けは、以前より危なくなっている。たとえ安全なときに2本以上の束を飲んで鑑定することになっても、薬は早めに鑑定しておこう。私は上り階段の下か、ヴォールトの扉を開ける直前にこれをやるのが好きだ。そうすれば見つかった強化の恩恵を受けられるし、望ましくない効果は休んで消せる。
+</p>
+<dl><dt> <a href="Potion_of_haste.html" title="Potion of haste">スピード</a></dt>
+<dd> 戦闘力と逃げ足を上げる。オーブを持っての脱出用に一、二本取っておき、戦闘では早めに使って、後で&#160;?瞬間移動を使わずに済むようにしよう。</dd>
+<dt> <a href="Potion_of_heal_wounds.html" title="Potion of heal wounds">怪我の治療</a></dt>
+<dd> できれば中盤から終盤まで取っておきたいが、&#160;!治療ではまだ次のターンまでに死にかねない域から抜けられないなら、ためらわずに飲むこと。</dd>
+<dt> <a href="Potion_of_enlightenment.html" title="Potion of enlightenment">悟り</a></dt>
+<dd> アビスを避けるための要。意志+++ でなければ、アビスへの追放の呪文を持つモンスターが画面に入るたびに一本飲もう。</dd>
+<dt> <a href="Potion_of_cancellation.html" title="Potion of cancellation">魔力解除</a></dt>
+<dd> 魔力汚染の効果のために取っておき、標的状態を解くのに使うのはなるべく避けよう。たいていの分岐では、それはイレデレンヌルが何とかしてくれるはずだ。</dd>
+<dt> <a href="Potion_of_might.html" title="Potion of might">怪力</a></dt>
+<dd> AC や EV の高い敵、あるいは削られて&#160;!怪我の治療が必要になりそうな大集団との戦闘で、早めに使う。</dd>
+<dt> <a href="Potion_of_resistance.html" title="Potion of resistance">耐性</a></dt>
+<dd> ユニーク、OOD のモンスター、耐性のない属性の攻撃を持つ大きな脅威を相手に、必要に応じて使う。</dd>
+<dt> <a href="Potion_of_curing.html" title="Potion of curing">治療</a></dt>
+<dd> HP 40〜50%で一本飲めば、もっと貴重な&#160;!怪我の治療を節約できる。ただし、混乱や毒の状態を治すために何本かは取っておくこと。</dd>
+<dt> <a href="Potion_of_magic.html" title="Potion of magic">魔力</a></dt>
+<dd> 必要になるまでは必要ない。緊急で枷を使うときのために、いつも一本は取っておこう。それ以外は、長い戦闘に踏みとどまるために気前よく使っていい。</dd>
+<dt> <a href="Potion_of_ambrosia.html" title="Potion of ambrosia">アンブロシア</a></dt>
+<dd> 長い戦闘に踏みとどまるために、ダチに完全に守られているときだけ使う。敵が防衛線を突破してきたら、&#160;!治療を使う覚悟をしておくこと。</dd>
+<dt> <a href="Potion_of_attraction.html" title="Potion of attraction">誘引</a></dt>
+<dd> 吸血の斧や枷と組み合わせて、標的状態を強化に変える。敵のアンデッドを引き寄せすぎないよう用心!</dd>
+<dt> <a href="Potion_of_brilliance.html" title="Potion of brilliance">知性</a></dt>
+<dd> 多重攻撃のような MP を食う呪文があるなら、大きな戦力の掛け算になる。</dd>
+<dt> <a href="http://crawl.chaosforge.org/Potion_of_invisibility" data-untr="1" title="Potion of invisibility">透明化</a></dt>
+<dd> ほぼいつもダチがいるので、序盤と分岐の入り口以外ではあまり役に立たない。ただ、大きな脅威に透明状態の急所攻撃ボーナスを乗せるために、一、二本手元に置いておくと元が取れることもある。</dd>
+<dt> <a href="Potion_of_berserk_rage.html" title="Potion of berserk rage">狂戦士</a></dt>
+<dd> ゾットの領域のお誂え向きの球体のために取っておく。ただし、戦闘の準備を整えてから使うこと。必要なら&#160;!魔力解除で減速の効果を消せる。</dd>
+<dt> <a href="Potion_of_lignification.html" title="Potion of lignification">樹木化</a></dt>
+<dd> 毒が効かず AC も高いので序盤は強いこともあるが、ルーン3個のゲームでは力不足になっていく。&#160;?拷問や&#160;?焼き討ちの巻物を何枚か組み合わせれば、ロイヤルジェリーを叩きのめせる。</dd></dl>
+<p><span id="spells"></span>
+</p>
+<h3><span class="mw-headline" id="Spells">呪文</span></h3>
+<p>このビルドはハイブリッドという扱いだが、使う呪文はほぼいつも補助的なものになる。
+</p><p>ノールのスキルの伸び方のせいで、呪文の威力はたいてい今いる分岐に追いつかない。私がレベル8の呪文を唱えられるようになったのは一度だけで、そのときは魔術強化と合計+10の知力の装備を身につけていた……それでも使えるようになったのは XL26 になってからだった。たいていのゲームでは、獣の棲み処の始めから深層を片づけるころにかけて、使えるようになったレベル3から7の呪文を余裕をもって使っていくことになる。
+</p><p>呪文専門のキャラクターでも、標準的なゲームならレベル5と6の呪文で十分に地上へ帰還できる。だから、事実上タダで使えるうちに時間をとって試し、覚えておけば、この先ほかのビルドを遊ぶときに大きな見返りがある。枷の分を残しておく限り、MP は手元でいちばん安いリソースだということを忘れずに。
+</p><p>呪文の情報があふれて決められなくなるのを避けるために、各レベルで特に効果的な呪文を以下にアルファベット順で並べた。迷わずすぐに覚えるべき呪文は、大きな戦力の掛け算になるので、グループの先頭に置いてある。
+</p><p>呪文の記憶枠はたいてい十分に余るが、この一覧のものを片っ端から覚えていくとすぐに足りなくなる。このビルドは柔軟さが売りなので、この一覧にない呪文にも使えるものはたくさんある。ここに挙げたのは、私がいちばんうまく使えたものというだけだ。
+</p><p>放射の光とヤーラを除けば、弧状電撃や灼心のゴーレムのような、ダチを傷つけるおそれのあるものははっきり避けるべきだ。自分の周りに効く範囲攻撃の呪文はほかにもあるが、どれもダメージが物足りない。だが放射の光は、どんなキャラクターにとっても、目の前の脅威を封じる最良の手段のひとつだ。当たり判定が1マスなので、星の炸裂のようなものほどダチを傷つけることもない。
+</p><p>ヤーラの強制魔法解除術は、ほかの多くの呪文と組み合わせて大きな相乗効果を生む可能性があり、悪臭の雲のようなものをゾットの領域まで通用させることもできる。守りに使うなら、ヤーラがダチに与えるかもしれないダメージと、その敵を強化されたままにしておくコストとを天秤にかけるべきだ。加速した岩トロルはダチの大群を引き裂いてしまうし、ゾンビには透明なものが見えない。
+</p><p>最悪の事態で離脱するために、召喚呪文を少なくとも一つは持っておく価値がたいていある。移動系の呪文は、一度も使わずに終わるかもしれない安全網だ。打擲型の呪文も何か一つ覚えておこう。動かないのがいちばんいい場面もあるが、そんなときは戦闘で意味のあることをするほかの手段を、ダチがことごとくふさいでしまう。オーブを持っての脱出に向けて呪文をさっと入れ替えられるように、&#160;?忘却を一、二枚取っておくのも検討するといい。そのころには、移動系の呪文と強い召喚呪文がずっと重要になる。
+</p><p>今使えるすべての呪文を網羅した一覧なら、<a rel="nofollow" class="external text" href="https://tavern.dcss.io/t/oneis-personal-tier-list-of-every-spell-in-the-game-with-explanations-0-33-danger-subjectivity/">Onei の呪文ランク表</a>がすばらしい資料だ。主観の入った評価のなかにはほかのビルド向きのものもあることは頭に入れておいてほしいが、ある呪文をどう活かせるかを大まかに理解するにはとてもいい。
+</p><p><span id="level-1"></span>
+</p>
+<h4><span class="mw-headline" id="Level_1">レベル1</span></h4>
+<p>レベル1の呪文については、あまり言うことがない。覚えて唱えられるようになるころには、効果がおおむね落ちてしまっている。これらの呪文を最初から持っているキャラクターはたくさんいるので、学ぶ機会はいくらでもある。
+</p>
+<dl><dt> <a href="Apportation.html" title="Apportation">収拾</a></dt>
+<dd> 必要になるまでは必要ない。うまく使えば、ほかの方法では高くつく戦闘が必要になりかねない貴重な消耗品を、安く手に入れられる。</dd>
+<dt> <a href="Foxfire.html" title="Foxfire">狐火</a></dt>
+<dd> 視界を切り、透明な敵に確実に当たり、蒸気を作る。敵にたどり着けないと、狐火は数ターンたまってから消えはじめる。</dd>
+<dt> <a href="Poisonous_Vapours.html" title="Poisonous Vapours">有毒の蒸気</a></dt>
+<dd> 打擲型で狙える毒。オルグレブを持っていないなら、毒の燃焼とよく合う。</dd></dl>
+<p><span id="level-2"></span>
+</p>
+<h4><span class="mw-headline" id="Level_2">レベル2</span></h4>
+<p>レベル1の呪文と同じく、迷宮:6 あたりで使えるようになるころには、たいてい力不足になりはじめている。
+</p>
+<dl><dt> <a href="Grave_Claw.html" title="Grave Claw">墓場の鉤爪</a></dt>
+<dd> 打擲型で、ルーン3個までずっと役に立つこともある。</dd>
+<dt> <a href="Blink.html" title="Blink">瞬間移動</a></dt>
+<dd> 行き先を選べないという欠点は、招集と、ダチがたいてい敵の方向のマスをふさいでいることで補われる。</dd>
+<dt> <a href="Call_Imp.html" title="Call Imp">インプの召喚</a></dt>
+<dd> リーチのある武器を持っているので、群れとの戦いでもちまちまダメージを与えられるし、逃げる必要があるときは攻撃を受け止めて隙間を作ってくれる。</dd>
+<dt> <a href="Construct_Spike_Launcher.html" title="Construct Spike Launcher">棘射出機の建造</a></dt>
+<dd> 序盤の透明な敵への確実な対抗手段。S系の分岐のあたりで力不足になるが、多少の出番はまだある。</dd>
+<dt> <a href="Jinxbite.html" title="Jinxbite">不運の牙</a></dt>
+<dd> 獣の棲み処を過ぎると力不足になるが、抵抗できないダメージと衰弱で、重装甲の敵も回避の高い敵もあっさり片づけられる。ダメージを与える投擲武器や射撃武器でも発動させられる。</dd>
+<dt> <a href="Lesser_Beckoning.html" title="Lesser Beckoning">引き寄せ</a></dt>
+<dd> 戦闘や騒音が広がるのを抑えるのに役立ち、ゾットの領域まで十分に使える。</dd>
+<dt> <a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a></dt>
+<dd> HP を MP に換える。呪文使い寄りで遊んでいるなら、どんどん頼ろう。</dd></dl>
+<p><span id="level-3"></span>
+</p>
+<h4><span class="mw-headline" id="Level_3">レベル3</span></h4>
+<p>標準的なゲームの大半で役に立ち続ける呪文が出てきはじめる。どれもたいてい安くて、これから遊ぶたいていのビルドでも手が届くので、覚えて試してみる価値がある。獣の棲み処に入る準備ができるころには、確実に唱えられるようになっているはずだ。
+</p>
+<dl><dt> <a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a></dt>
+<dd> 特に rPois があれば、ゲームの50%で事実上タダで敵を倒せる。唯一の欠点は騒音だが、混乱寸前の敵がなだれ込んでくる勢いより、ダチの大群が増える勢いのほうが勝つことも多い。</dd>
+<dt> <a href="Gloom.html" title="Gloom">薄闇</a></dt>
+<dd> 意志ではなく HD と比べられる。ダチには効果がないので、悪党だけを純粋に弱らせられる。</dd>
+<dt> <a href="Frozen_Ramparts.html" title="Frozen Ramparts">凍てつく城壁</a></dt>
+<dd> ゾットの領域まで通用する効果的な呪文だが、これ(とオゾクブの鎧)を使うと、その恩恵をうまく活かすためにダチの大群を少し細かく管理する必要がたいてい出てくる。これらの呪文に頼らないゲームとは、戦い方がはっきり変わるだろう。</dd>
+<dt> <a href="Fugue_of_the_Fallen.html" title="Fugue of the Fallen">斃れし者の遁走曲</a></dt>
+<dd> 特に 0.6 以下で振っているなら、殺戮が3〜7増えるのはかなりのダメージになる。ダチが倒した分も、最大まで上げるのに一役買ってくれる。</dd>
+<dt> <a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a></dt>
+<dd> AC が2〜11増えれば、HP と高価なリソースを長持ちさせられる。通路で一体ずつ相手にしてダチの群れを育てるときに特に役立つ。戦闘が大きくなるにつれて、動きの制限が足かせになることもある。このビルドはたいていリングメイルかそれより重い防具を着ているので、移動系ではないほかの呪文と組み合わせて使うのがいちばんいい。</dd>
+<dt> <a href="Passwall.html" title="Passwall">壁の透過</a></dt>
+<dd> 隠密が十分にあるので、多くの敵に眠っているところへの急所攻撃を確実に決められる。たいてい肉の盾がいるので、壁を抜けるまでの遅れも、ほかのキャラクターほどの弱点にはならない。大事な仲間を守るために、壁の向こうに出たらすぐに招集しよう。</dd>
+<dt> <a href="Passage_of_Golubria.html" title="Passage of Golubria">ゴルブリアの通り道</a></dt>
+<dd> モンスターの群れとのあいだに距離を取れる。画面の外でダメージを受けないように、ダチを招集するのを忘れずに。</dd>
+<dt> <a href="Summon_Ice_Beast.html" title="Summon Ice Beast">氷の獣の召喚</a></dt>
+<dd> たいてい一、二発は受け止めてくれるので、そのあいだに逃げられる。氷の攻撃で、獣の棲み処の敵の約半分を減速させられる。</dd>
+<dt> <a href="Swiftness.html" title="Swiftness">俊足</a></dt>
+<dd> 距離を取って戦闘を仕切り直すのに使う。画面の外で無力なしんがりとして虐殺されないように、こまめにダチを招集すること。</dd>
+<dt> <a href="Tukima's_Dance.html" title="Tukima&#39;s Dance">ツキマーの舞踏</a></dt>
+<dd> 効く相手なら(そして&#160;?脆弱を使う価値があるなら)、歪曲の武器を持った敵にアビスへ送られないことを確実にする唯一の手段だ。斧使いにも役立ち、ゾットの領域まで通用することもある。蛇穴ではあまりうまく働かない。</dd>
+<dt> <a href="Vampiric_Draining.html" title="Vampiric Draining">ヴァンパイアの吸血</a></dt>
+<dd> ふつうはダメージと HP の交換としてかなり効率が悪いが、ダチが敵を殴っているあいだなら意味があることもある。</dd></dl>
+<p><span id="level-4"></span>
+</p>
+<h4><span class="mw-headline" id="Level_4">レベル4</span></h4>
+<p>レベル4の呪文になると、キャラクターの戦略全体を形づくれる呪文が出てくる。このレベルの呪文はたいてい MP の効率がかなりいいので、戦闘の最中に選択肢を検討するとき、真っ先に考えるべきもののひとつだ。獣の棲み処を終えるころには使えるようになっているはずだ。
+</p>
+<dl><dt> <a href="Olgreb's_Toxic_Radiance.html" title="Olgreb&#39;s Toxic Radiance">オルグレブの毒気の光輪</a></dt>
+<dd> ゲームの50%でタダのダメージを与え、ゾットの領域まで通用する。運よくこれと毒の燃焼の両方を引けたら、3〜4ターンで体の内から燃え尽きない数少ない敵を相手にするのに、十分すぎるほどのダチが手元にいるはずだ。</dd>
+<dt> <a href="Cigotuvi's_Putrefaction.html" title="Cigotuvi&#39;s Putrefaction">シゴツヴィの腐敗</a></dt>
+<dd> 広い範囲に瘴気をまき散らす。ダチには効かないが、巻き込まれた生きている敵にはすべて壊滅的な効果がある。ゾットの領域まで強く、このビルドはこの独特な呪文の使い方を練習するのにうってつけだ。</dd>
+<dt> <a href="Airstrike.html" title="Airstrike">旋風の一撃</a></dt>
+<dd> 主に、画面全体に届く打擲型の呪文として優秀。味方に頼っているので最適なダメージを出せないことも多いが、このビルドの目的からすれば、MP とダメージの交換としてはおおむね上々だ。</dd>
+<dt> <a href="Anguish.html" title="Anguish">苦悩</a></dt>
+<dd> あるモンスターにかけるのに何度か唱え直す必要があることもあるので、大集団に使うのがいちばんいい。ダチの守りはたいていお粗末なので、悪党どもは少なくともその報いとして余計に HP を失うことになる。</dd>
+<dt> <a href="Brom's_Barrelling_Boulder.html" title="Brom&#39;s Barrelling Boulder">ブロムの転がる巨岩</a></dt>
+<dd> モンスターを押し戻して隙間を作るのに最適。まだ空きがあるうちに唱えること。</dd>
+<dt> <a href="Cause_Fear.html" title="Cause Fear">恐慌の喚起</a></dt>
+<dd> これは非常ボタンではない。非常ボタンは&#160;?恐慌のほうだ。戦場を仕切り直すために、戦闘の1/3から2/3あたりで唱えよう。&#160;?毒と招集と組み合わせると最も効果的だ。</dd>
+<dt> <a href="Dimensional_Bullseye.html" title="Dimensional Bullseye">次元の的</a></dt>
+<dd> 投擲アイテムを強くし、リソースとしての価値を上げる。打擲型で狙えるので、後列を片づけるのに最適。</dd>
+<dt> <a href="Eringya's_Surprising_Crocodile.html" title="Eringya&#39;s Surprising Crocodile">エリンギャの驚きのクロコダイル</a></dt>
+<dd> どんな敵とのあいだにも強い味方を置いてくれる。ダチがいなくなったときによく効くが、背後にダチの群れがいると、クロコダイルが出てこられないことがある。</dd>
+<dt> <a href="Dispel_Undead.html" title="Dispel Undead">アンデッドの解呪</a></dt>
+<dd> 出会う敵の75%のうち、イレデレンヌルが直接は助けてくれない相手への対抗手段の筆頭。宝物庫、深層、ゾットの領域で出会う高レベルのアンデッドに対処するためだけでも覚える価値がある。地下墓地に挑むなら必須。</dd>
+<dt> <a href="Ignite_Poison.html" title="Ignite Poison">毒の燃焼</a></dt>
+<dd> このビルドで本当に役に立つのは、オルグレブがあるときだけだ。悪臭の雲やダーツとの組み合わせは、味方に頼っているせいでうまくいかない。</dd>
+<dt> <a href="Martyr's_Knell.html" title="Martyr&#39;s Knell">殉教者の弔鐘</a></dt>
+<dd> ダチを長生きさせるすばらしい手段。</dd>
+<dt> <a href="Summon_Seismosaurus_Egg.html" title="Summon Seismosaurus Egg">セイスモサウルスの卵の召喚</a></dt>
+<dd> ダチのおかげで卵をかえす時間と空間が稼げるし、セイスモサウルス自身はダチの大群越しに攻撃できる。</dd></dl>
+<p><span id="level-5"></span>
+</p>
+<h4><span class="mw-headline" id="Level_5">レベル5</span></h4>
+<p><a href="http://crawl.chaosforge.org/File:18_slime_metabolic_homie_fear.png" data-untr="1" class="image"><img alt="18 slime metabolic homie fear.png" src="img/600px-18_slime_metabolic_homie_fear.png" width="600" height="557" /></a>
+</p><p>ゲームのかなりの部分をまるごと封じてしまう呪文が出てくる。おかげで、増えていくダチの大群は、慢心への耐性(rHubris)が足りなかった哀れな敵のために取っておける。ここから先の呪文は、MP の面でも呪文の記憶枠の面でも少し高くつくので、試すかどうかはよく考えるべきだ。オークの坑道を終えるころに使えるようになりはじめるだろう。
+</p>
+<dl><dt> <a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a></dt>
+<dd> 呪文を使うキャラなら誰でも取り入れるべき戦力の掛け算。攻めにも守りにも補助にも使えて戦闘の形を整えられるし、ルーン3個のゲームなら、ゾットの領域に入るまでのたいていの戦闘を押し切れる。</dd>
+<dt> <a href="Summon_Mana_Viper.html" title="Summon Mana Viper">マナバイパーの召喚</a></dt>
+<dd> 召喚呪文のなかでいちばんお得なうえに、ダチより先に戦闘にたどり着けるほど速い。のろまが戦いに加わるまでにダチが何体かやられないよう祈るのではなく、MP をそのままダメージに換えられるわけだ。ほかに手がなければ、マナバイパーと&#160;!怪力や!スピードで、お誂え向きの球体にも勝てる。</dd>
+<dt> <a href="Yara's_Violent_Unravelling.html" title="Yara&#39;s Violent Unravelling">ヤーラの強制魔法解除術</a></dt>
+<dd> ダチを傷つけるとしても、頻繁に使う価値がある。</dd>
+<dt> <a href="Alistair's_Intoxication.html" title="Alistair&#39;s Intoxication">アリステイアの酩酊</a></dt>
+<dd> 画面いっぱいの敵に使うのがいちばんだが、効かなさそうに思える人間並みの知能の敵にも、意外なほど高い確率で効く。ゾットの領域では力不足になるし、酩酊の効果のせいで、それ以外では私はあまり使い道を見つけたことがない。ダチには効果がないので、後ろに立ってこれをぶっ放すことに欠点はほとんどない。</dd>
+<dt> <a href="Hoarfrost_Cannonade.html" title="Hoarfrost Cannonade">霧氷の砲撃</a></dt>
+<dd> ゾットの領域まで通用し、退却の援護や、失ったダチの群れの立て直しにも役立つ。</dd>
+<dt> <a href="Irradiate.html" title="Irradiate">放射の光</a></dt>
+<dd> 必要なときの命綱。</dd>
+<dt> <a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a></dt>
+<dd> ほかの方法では倒しにくい、ごく特定の敵への対抗手段。たいてい呪文の記憶枠5つ分の価値はある。</dd>
+<dt> <a href="Metabolic_Englaciation.html" title="Metabolic Englaciation">代謝の凍結</a></dt>
+<dd> 授かった最初のダチの群れの一部にも効いてしまうが、冷気耐性のないものにはすべて驚くほど高い確率で効く。仲間へのダメージが減ることを考えれば、MP を払う価値がある。</dd>
+<dt> <a href="Silence.html" title="Silence">静寂</a></dt>
+<dd> 呪文使いを封じる。近接寄りかハイブリッドで遊んでいるなら最適だが、呪文に大きく頼っているならそうでもない。</dd>
+<dt> <a href="Summon_Forest.html" title="Summon Forest">ドライアドの召喚</a></dt>
+<dd> ダチがたいていドライアドの突進をさえぎってくれるので、すぐに死なれることはない。そのあいだにドライアドが敵をその場に縫い止め、木に食わせてくれる。視界が変わることと、画面の外からのダメージには気をつけること。</dd></dl>
+<p><span id="level-6"></span>
+</p>
+<h4><span class="mw-headline" id="Level_6">レベル6</span></h4>
+<p>攻撃呪文の魔術師にとっては基本中の基本だが、ハイブリッドにはたいしたものがない。これらの呪文は高くつくが、うまく使えば効果的だ。宝物庫に着くころから検討しはじめていい。
+</p>
+<dl><dt> <a href="Bombard.html" title="Bombard">砲撃</a></dt>
+<dd> 使えるようになった時点で通用し、ゾットの領域まで伸びていく唯一の直接ダメージ呪文。お誂え向きの球体への対抗手段のひとつでもある。</dd>
+<dt> <a href="Forge_Phalanx_Beetle.html" title="Forge Phalanx Beetle">ファランクス甲虫の鍛造</a></dt>
+<dd> オゾクブの鎧のように戦い方を変える必要なしに、タダで AC が得られる。退却のときに視界をさえぎるのに最適。</dd>
+<dt> <a href="Fortress_Blast.html" title="Fortress Blast">要塞の爆風</a></dt>
+<dd> 練習と計画が要るが、ダチには当たらない。たぶん中くらいの重さの防具を着ているので、ダメージもそこそこ出る。</dd>
+<dt> <a href="Gell's_Gavotte.html" title="Gell&#39;s Gavotte">ゲルのガヴォット</a></dt>
+<dd> 厄介なモンスターを画面の外へ追いやったり、さっと逃げ出したりするのに最適。</dd>
+<dt> <a href="Summon_Cactus_Giant.html" title="Summon Cactus Giant">サボテンの巨人の召喚</a></dt>
+<dd> ほぼ一体でルーン3個のゲームを片づけられる。ただ、ダチが死にはじめる前に戦闘に加わらせるには、多少の計画が要る</dd></dl>
+<p><span id="level-7"></span>
+</p>
+<h4><span class="mw-headline" id="Level_7">レベル7</span></h4>
+<p>ここには本当にゲームに勝たせてくれる呪文がある。どれもたいていとても費用対効果がよく、MP を払う価値がある。これらの呪文の相対的な強さと使い方は、今後のビルドのために注意して見ておこう。レベル7はスキルレベルで14〜16くらいにすぎず、適性のいい種族なら安いと言える。こういう呪文こそ、ほかの点では冴えないゲームで勝利をもぎ取るために取り入れられるたぐいのものだ。
+</p>
+<dl><dt> <a href="Haunt.html" title="Haunt">招霊</a></dt>
+<dd> ルーン3個のゲームで、イレデレンヌルが直接は助けてくれないあらゆるものへの効果的な対抗手段。お誂え向きの球体も含む。</dd>
+<dt> <a href="Hellfire_Mortar.html" title="Hellfire Mortar">業火の迫撃砲</a></dt>
+<dd> ルーン3個のゲームで手に負えないのは、炎の球体(と Vv)だけだ。罠をふさいでくれるので、罠のせいで守りに使えなかった位置も使えるようになる。</dd>
+<dt> <a href="Diamond_Sawblades.html" title="Diamond Sawblades">ダイヤモンドの丸鋸</a></dt>
+<dd> 早めに展開する必要があり、管理が少し細かいが、それ以外はダチの大群と相性がいい。</dd>
+<dt> <a href="Enfeeble.html" title="Enfeeble">衰弱</a></dt>
+<dd> ゲームの大きな脅威のほとんどに対抗できる。ほかに何もなければ、お誂え向きの球体を乗り越えるのにも使える。</dd>
+<dt> <a href="Manifold_Assault.html" title="Manifold Assault">多重攻撃</a></dt>
+<dd> 使えるようになるころには、ダブルソード、イブニングスター、パルチザン、ブロードアックスが最短の所要時間に届いているはずだ。とても MP を食う呪文なので、MP の残りに気を配ること。</dd>
+<dt> <a href="http://crawl.chaosforge.org/Spellforged_Servitor" data-untr="1" class="mw-redirect" title="Spellforged Servitor">魔火花の従者</a></dt>
+<dd> 砲撃と組み合わせれば、イレデレンヌルの手に負えないあらゆるものへの効果的な対抗手段になる。オーブを持っての脱出では、レベル6以上のどの呪文と組み合わせてもいい。</dd>
+<dt> <a href="Summon_Hydra.html" title="Summon Hydra">ヒドラの召喚</a></dt>
+<dd> ヒドラ2体いればほぼ何でも倒せるし、少なくとも身をかわして逃げる時間は稼いでくれる。ダチと敵の注意を分け合うので、ガラスの大砲という性質も補われる。</dd></dl>
+<p><a href="http://crawl.chaosforge.org/File:19_zot_mortar.png" data-untr="1" class="image"><img alt="19 zot mortar.png" src="img/600px-19_zot_mortar.png" width="600" height="396" /></a>
+</p><p><span id="level-8"></span>
+</p>
+<h4><span class="mw-headline" id="Level_8">レベル8</span></h4>
+<p>乱数が魔術強化と大量の知力を恵んでくれない限り、ここまでは届かないと思っておこう。
+</p>
+<dl><dt> <a href="Borgnjor's_Revivification.html" title="Borgnjor&#39;s Revivification">ボーグンジョルの究極治癒</a></dt>
+<dd> 「脱獄カード」。ゾットの領域での最後の戦いでとても役に立つ。</dd>
+<dt> <a href="Ignition.html" title="Ignition">点火</a></dt>
+<dd> 炎の球体を除けば、ゲームのほぼすべてを片づける。</dd>
+<dt> <a href="Summon_Horrible_Things.html" title="Summon Horrible Things">おぞましきものの召喚</a></dt>
+<dd> 失敗率を15%未満にできるなら、このビルドでオーブを持っての脱出に最適の呪文。ゾットの領域を押し切れる。</dd>
+<dt> <a href="Maxwell's_Capacitive_Coupling.html" title="Maxwell&#39;s Capacitive Coupling">マクスウェルの容量結合</a></dt>
+<dd>  ゾットのオーブを含め、ゲームの何でも一撃で倒す。</dd></dl>
+<p><span id="adventuring"></span>
+</p>
+<h2><span class="mw-headline" id="Adventuring">冒険</span></h2>
+<p>リソースの節制とモンスターを調べるという原則があれば、ゲームの大半は乗り切れるはずなので、各分岐については役に立つ基本的な注意だけを書いておく。
+</p><p>いろいろな敵に出会うが、どれもかなり一般的ないくつかの型に当てはまる。強さの伸びは急になり、呪文は手が込んでくるかもしれないが、最初の数階で学ぶ戦術のほとんどは、新しい脅威が出てきたときに、どう対処するか最初の作戦を立てる助けになるはずだ。型を見分けるのは、モンスターを調べて情報に目を通すだけでいい。ロールプレイ好きなら、調べる画面はイレデレンヌルからの神託だと思えばいい……
+</p>
+<dl><dt> 雑魚</dt>
+<dd> クワッカ。ちまちま削って気を散らすためだけにいる。あっさりなぎ倒していると、慢心への耐性が下がる。</dd>
+<dt> AC の高い近接</dt>
+<dd> オークの戦士。たいていは発動アイテムと投擲武器で脅威を減らせる。</dd>
+<dt> EV の高い近接</dt>
+<dd> ヘビ。範囲攻撃で回避を無視するか、拘束や掴みでその場に留めるか、ダチの横を抜けて引き撃ちする。</dd>
+<dt> ダメージの大きい近接</dt>
+<dd> オーガ。近寄らせないか、発動アイテム、投擲武器、ダチを使って引き撃ちする。</dd>
+<dt> 射撃</dt>
+<dd> セントール。ダチや地形で視界をさえぎり、近くまで来させて取り囲む。</dd>
+<dt> 攻撃呪文の使い手</dt>
+<dd> ミイデラゴミムシ。最大射程から毒を当て、視界を利用して近づいてとどめを刺す。かけられた状態異常は振り払う。</dd>
+<dt> 打擲型の呪文の使い手</dt>
+<dd> オークの司祭。地形で視界をさえぎり、集中攻撃し、自分の打擲型の攻撃で撃ち返す。</dd>
+<dt> 召喚術師</dt>
+<dd> 序盤のユニーク、コボルドの悪魔術師。召喚されたものは無視して、親玉だけを倒す。</dd>
+<dt> 群れ</dt>
+<dd> ノール。通路で戦うか、分断する。</dd>
+<dt> 親玉つきの群れ</dt>
+<dd> コボルドの群れを連れたコボルドの山賊。消耗品を一つ二つ見込んでおき、位置取りで受けるダメージを減らして、親玉をできるだけ早く倒す</dd>
+<dt> 視界内に呪術をかけてくるもの</dt>
+<dd> オークの魔術師。ダチで視界をさえぎり、打擲型の呪文か松明のチャージで撃ち返す。</dd>
+<dt> イレデレンヌルが効かないもの</dt>
+<dd> ワイト。ノールの適応力と迷宮で拾ったもので穴を埋める。火炎のワンドの残りのチャージを使い切るか、集中攻撃するのが、とっさの手としてたいてい有効だ。</dd>
+<dt> 守護つき</dt>
+<dd> 時計仕掛けのゴキブリ。隣接したものからしかダメージを受けない敵。近寄って倒すか、ダチに囲ませて殴らせる。</dd>
+<dt> 破滅</dt>
+<dd>  ドラウグル。元の種類と、生成された武器によってはとても恐ろしい。離れたところから倒し、近接攻撃の間合いに入らせないこと。</dd></dl>
+<p>これらの型への基本的な戦術を覚えれば、どんな敵でも、どう戦いはじめればいいかの80%はわかったことになる。
+</p><p>こうした区分にすっきり当てはまらない特殊な敵も確かにいる。ユニークや、エクステンデッドで出会いうるものを考えればなおさらだ。それでも、これらの型への対抗手段という枠組みで考えれば、たとえそれが逃げるという判断であっても、効果的な判断を下す助けになる。身につく戦術はたいていそのゲームかぎりのものだが、自分の戦い方に合っていて、たいていのゲームで通用する工夫もいくつか生まれてくる(たとえば、オークの坑道ではとにかくダチュラ毒のダーツ、という自分なりの答えが見つかるかもしれない)。
+</p><p>結局のところ、片手武器ならどの基本の武器でも使えるが、短剣や格下の選択肢だと、お誂え向きの球体に対処するために&#160;!怪力や持ち替え用の武器を手元に置いておく必要があるかもしれない。とはいえ、宝物庫に着くころには隠密も十分に上がっているので、乱数がそちらの方向にも恵んでくれたなら、眠っている敵や呪術にかかった敵に確実に急所攻撃を決められる。
+</p><p><span id="branch-entries"></span>
+</p>
+<h3><span class="mw-headline" id="Branch_Entries">分岐の入り口</span></h3>
+<p>分岐の入り口は、ふつうの階を片づけるのとは少し違う。偵察していちばんいい階段を選ぶことができないので、アクセルを踏み込んで、出てくるものを片っ端から倒しはじめる覚悟が必要だ。こうして分岐の入り口を突破する経験は、宝物庫:5 や、いずれは地獄に挑むようなこれからのビルドへのいい準備になる。今のところは、階段ダンスに頼らずに階の入り口を片づけるという、同じ基本のスキルを練習するだけだ。
+</p><p>まず、状況が悪くなりそうなら、いつでも&#160;?テレポートして立て直せるよう備えておくこと。どのみち階段には頼っていないので、もし厄介な固定の入り口ヴォールトに出くわしたら、すぐに&#160;?テレポートで離れて、片づけた拠点の安全なところから攻めるのが賢明だ。
+</p><p>分岐の入り口での拠点の片づけは、車輪の輻のように進めるといい。8方向それぞれに、できる範囲で数マスずつ出ていって、少し空間を空けるのだ。動くと死角ができて、画面の外からのダメージでダチを失いかねないことに気をつけ、一回の移動で見えるようになるマスの数をなるべく抑えよう。どの方向にも画面いっぱいの余裕ができたら、特定の方向を重点的に片づけはじめるか、階の残りを自動探索で済ませればいい。
+</p><p><span id="staircase-selection"></span>
+</p>
+<h3><span class="mw-headline" id="Staircase_Selection">階段の選び方</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:232px"><a href="http://crawl.chaosforge.org/File:28_picking_stairs.png" data-untr="1" class="image"><img alt="" src="img/230px-28_picking_stairs.png" width="230" height="370" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="http://crawl.chaosforge.org/File:28_picking_stairs.png" data-untr="1" class="internal" title="Enlarge"></a></div>いちばん南の階段から片づけはじめよう。早いうちに強いダチが手に入る見込みがあり、真ん中の階段を守るモンスターを釣り込むときにも、うまくばらけさせられる。いちばん上の階段は見通しが悪く、狭い場所に閉じ込められるおそれが大きい。</div></div></div>
+<p>いちばんいい階段を選ぶのは、ちょっとした技術であり芸でもある。最初のダチで片づけられるくらい群れや大きな脅威に近く、それでいて囲まれない位置がいい。
+</p><p>その分岐の住人について多少知っておくのも役に立つ。迷宮の浅い階や獣の棲み処では背にしていて安心な壁も、そのうち洞窟トロルの地術師に逆手に取られるようになるからだ。
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px"><a href="http://crawl.chaosforge.org/File:29_picking_stairs_2.png" data-untr="1" class="image"><img alt="" src="img/300px-29_picking_stairs_2.png" width="300" height="251" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="http://crawl.chaosforge.org/File:29_picking_stairs_2.png" data-untr="1" class="internal" title="Enlarge"></a></div>北の階段は背後の守りがよく、味方を増やす余地もあるうえ、放射能ゴキブリにいきなり目の前に来られずに電光蜂だけをきれいに釣れる。東の階段がまずい理由はわかるだろうか?</div></div></div>
+<p>昔ながらのテレポート、縦穴、警報の罠があるのはむしろ好都合かもしれないが、転送の罠やゾットの罠、それに貪食者の罠のような最近追加された罠の近くで戦うのは用心すること。
+</p><p><span id="branch-end-vaults"></span>
+</p>
+<h3><span class="mw-headline" id="Branch_End_Vaults">分岐の最下層のヴォールト</span></h3>
+<p>どの分岐の最下層にも、悪党がぎっしり詰まったヴォールトが少なくとも一つある。ルーンのある分岐では、ルーンと宝石のほかに戦利品がないこともあるが、ルーンのない分岐なら、装備や金貨や呪文が入っていると思っていい。モンスターはこちらがまだ見ていない装備を拾えるので、最下層のヴォールトに住む人間並みの知能のモンスターには用心すること。
+</p><p>最下層のヴォールトは、たいてい壁の材質が階のほかの部分と違う、ルーンで封印されていない扉やいかにもな通路で仕切られている、あるいはそれらの組み合わせで見分けられる。午前2時に何も考えずに tab を押し続けているのでもなければ、まず見落とさない。
+</p><p>最下層のヴォールトは慎重に扱うべきで、消耗品をいくらか使うと思っておこう。入り口はたいてい狭くなっているので、&#160;?騒音で敵を、もっと多くのダチを投入できる場所までおびき出すのがいい手であることが多い。たいていのヴォールトではこれもある程度までしか通用せず、いずれは頭から突っ込むしかなくなる。ダチが遅れてついてきても大丈夫だ。いつでも目の前に大群を招集できる。ただ、戦闘の主導権はできるだけ握り続けること。最下層のヴォールトのなかには、狭い角だらけに作られたものもある。強い近接ビルドにはありがたいが、味方頼みのキャラクターにはあまりうれしくない。逆に、近接の殴り屋を苦しめるだだっ広いヴォールトに出くわしたら、そこは底知れぬ枷の絶好の舞台だ。
+</p><p><span id="branches"></span>
+</p>
+<h3><span class="mw-headline" id="Branches">分岐</span></h3>
+<p>各分岐に挙げた魂は、その分岐でほぼ確実に出てきて、一、二階を片づける助けになるくらい使えるものだ。網羅した一覧ではないし、ユニークはわざと外してある。いろいろなモンスターを呪縛して、どう使えるか探ってみてほしい。目指すべき基本的な耐性も、最低限のものを重要な順に挙げておいた。もっと準備したいなら、分岐ごとの一般的なおすすめは <a rel="nofollow" class="external text" href="http://crawl.chaosforge.org/Crawl_Wiki">wiki</a>、<a rel="nofollow" class="external text" href="https://crawl.develz.org/info/index.php">learndb</a>、<a rel="nofollow" class="external text" href="https://tavern.dcss.io">Tavern</a>、<a rel="nofollow" class="external text" href="https://www.reddit.com/r/dcss/">reddit</a> にいくらでもある。
+</p><p>挙げた耐性は、一般に必要とされる最低限のものだ。たいていは持ち替え用の装備でまかなえるが、基本をそろえるためなら防御の合計を数ポイント手放しても構わない。
+</p><p>これも網羅した一覧ではないが、気をつけるべき大きな脅威も挙げておいた。特に trunk を遊んでいるなら変わることもあるし、ビルドによってはもっと脅威になるモンスターも間違いなくいる。型との対応も大まかに示したが、特に厄介なものの多くは複数の区分に当てはまる(たとえばジャガーノートはダメージも大きいし AC も高い)。そういう場合は、私にとっていちばんしっくりくる区分に入れてある。あなたの戦い方は違う形で育っていくかもしれないので、私の型は絶対のルールではなく目安として使ってほしい。多くの戦闘は、ダチの大群の数の力だけで押し切れる。こうした大きな脅威を一体だけで捕まえたときは特にそうだ。ゲームによっては、オルグレブの毒気の光輪、毒の燃焼、代謝の凍結のようなずるい呪文を連発するだけで、敵の90%を片づけられることもある。
+</p><p>意志や HD で抵抗される呪術というのは、必ずしも呪術の系統の呪文という意味ではない。悪臭の雲、アリステイアの酩酊、ダーツ、ワンドなども含まれる。何が落ちても合わせられるように、おすすめはわざと大まかにしてある。
+</p><p><span id="lair"></span>
+</p>
+<h4><span class="mw-headline" id="Lair"><a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a></span></h4>
+<p>獣の棲み処で出会うおもな脅威は、イレデレンヌルの力でどれも乗り越えられるはずだ。群れを釣って戦う必要があれば、外周の壁にはたいてい幅1マスの通路のくぼみがある。
+</p><p>ここの敵はたいてい毒に弱いか毒の攻撃を持っていて、ほとんどは近接攻撃の間合いまで寄らないと攻撃できない。迷宮の浅い階で集めたダーツを使うにはいい場所だ。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:20_hydra.gif" data-untr="1" class="image"><img alt="20 hydra.gif" src="img/600px-20_hydra.gif" width="600" height="642" /></a></div></div>
+<p>ヒドラは、松明のチャージを使ってダチの横を抜けて引き撃ちすればかなりうまくいくが、入る前に火炎のブランドの刃物がないか確かめておくこと( <code>flame &amp;&amp; &lt;&lt; long blade || axe &gt;&gt;</code> )。
+</p>
+<dl><dt> 魂</dt>
+<dd> マンティコア、ヒドラ、カタツムリ</dd>
+<dt> 耐性</dt>
+<dd> rPois、意志+</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> ダメージの大きい近接</dt>
+<dd>
+<dl><dt> <a href="Hydra.html" title="Hydra">ヒドラ</a></dt>
+<dd> ダチの横を抜けて引き撃ちし、松明を投げるか、ほぼどのワンドでもいいので弱らせてから、火炎の刃物で首を切り落とす。MiBe のときほど怖い相手ではまったくない。</dd>
+<dt> <a href="Skyshark.html" title="Skyshark">スカイシャーク</a></dt>
+<dd> 意志で抵抗される呪術を使う。クラーレと毒。ダチに攻撃を受け止めさせて、ダメージを分散させる。</dd></dl></dd></dl>
+<dl><dt> EV の高い近接</dt>
+<dd>
+<dl><dt> <a href="Black_mamba.html" title="Black mamba">ブラックマンバ</a></dt>
+<dd> 毒によらない、意志か HD で抵抗される呪術を使う。</dd></dl></dd></dl>
+<dl><dt> AC の高い近接</dt>
+<dd>
+<dl><dt> <a href="Boulder_beetle.html" title="Boulder beetle">岩石の甲虫</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。丸まっていなければダチの周りを回って引き撃ちし、丸まっていればダチのほうへ引き込む。</dd></dl></dd></dl>
+<dl><dt> 射撃</dt>
+<dd>
+<dl><dt> <a href="Catoblepas.html" title="Catoblepas">カトブレパス</a></dt>
+<dd> 毒を重ね、近づいてくるあいだに松明のチャージ、ダメージを与えるワンド、投擲武器を当ててから、ダチと一緒に近接で殴る。石化させようとしてくるので、カトブレパスの周りを動き続けること。</dd>
+<dt> <a href="http://crawl.chaosforge.org/Dragon" data-untr="1" class="mw-redirect" title="Dragon">ドラゴン</a></dt>
+<dd> 意志で抵抗される呪術を使う。/光で盲目にし、松明のチャージを何発か、あるいはダメージを与えるワンドを当てる。囲んで近接で殴り倒せる群れがいなければ、逃げるのがいちばんかもしれない。</dd></dl></dd></dl>
+<dl><dt> 群れ</dt>
+<dd>
+<dl><dt> <a href="Death_yak.html" title="Death yak">人食いヤク</a></dt>
+<dd> 群れに松明のチャージを当ててから、戦場を通路に移して一対一に持ち込む。クラーレを使い、毒を重ねる。作れた人食いヤクのゾンビは、前に出して大事に使おう。</dd>
+<dt> <a href="Dream_sheep.html" title="Dream sheep">眠りの羊</a></dt>
+<dd> 画面に多くいるほど、眠らされやすくなる。もっと危険なものから群れを引き離すように引き撃ちし、ダチに戦わせよう。</dd></dl></dd></dl>
+<dl><dt> 守護つき</dt>
+<dd>
+<dl><dt> <a href="Mountainshell.html" title="Mountainshell">山甲羅</a></dt>
+<dd> 離れたところから毒を重ねることはできるが、距離を詰めてダチで囲むようにしよう。</dd></dl></dd></dl>
+<dl><dt> 破滅</dt>
+<dd>
+<dl><dt> <a href="Raven.html" title="Raven">ワタリガラス</a></dt>
+<dd> 召喚したものかダチで視界をさえぎる。打擲型の呪文か、意志や HD で抵抗される呪術で脅威を減らす。</dd></dl></dd></dl></dd></dl>
+<p><span id="orc"></span>
+</p>
+<h4><span class="mw-headline" id="Orc"><a href="Orc.html" title="Orc">オークの坑道</a></span></h4>
+<p>オークの坑道で出会う敵のほとんどにはイレデレンヌルの力が効くので、乱数が並以下でも全滅をそれほど心配しなくていい。オークの坑道:2 に悪魔のいるヴォールトを引く可能性もあるので、引き撃ちの心構えはしておこう。
+</p><p>オークの坑道:1 はつながっていないことがあるので、&#160;?啓示が4枚以上あるなら、それで地形を確かめる価値がある。いざとなれば、アイテムの探知で掘れる場所が見つかるかもしれない。下り階段がすぐ見えるなら、オークの坑道:2 にまっすぐ降りてから逆向きに偵察するのが理にかなうこともあるが、イレデレンヌルに一階分捧げそこねても世界の終わりではない。オークの坑道は、&#160;!誘引と&#160;?毒の巻物をいくらか使い切って、底知れぬ枷の一、二回分をとびきり強力にするのにうってつけの場所だ。
+</p><p>黒曜石のコウモリの周りでは気をつけること。そいつのヘルハウンドにダチの大群を全滅させられる前に、魅了するか金縛りにしよう。
+</p><p>オークの坑道:2 の店で見つけたアイテムを買い物リストに入れておけば、今いる階の床に落ちたガラクタの検索を <code>@!!gold</code> に絞り込める。
+</p>
+<dl><dt> 魂</dt>
+<dd> 大司祭、魔道士、斧を持った族長</dd>
+<dt> 耐性</dt>
+<dd> 意志+、rPois</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> 召喚術師</dt>
+<dd>
+<dl><dt> <a href="Orc_high_priest.html" title="Orc high priest">オークの大司祭</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。ジャベリン、矢を撃つ発動アイテム、松明、打擲型の呪文のどれでもあっさり片づく。3級悪魔を呼んだら火力を倍にしよう。</dd>
+<dt> <a href="Orc_sorcerer.html" title="Orc sorcerer">オークの魔道士</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。毒を重ねる。3級悪魔に気をつけること。</dd></dl></dd></dl>
+<dl><dt> 射撃</dt>
+<dd>
+<dl><dt> <a href="Stone_giant.html" title="Stone giant">岩の巨人</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。必要なら松明のチャージと発動アイテムをつぎ込むか、ただダチの大群にちまちま削らせる。</dd>
+<dt> <a href="Cyclops.html" title="Cyclops">サイクロプス</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。近接の間合いまで詰めて、ダチで囲む。</dd>
+<dt> <a href="Kobold_blastminer.html" title="Kobold blastminer">コボルドの発破工</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。毒を重ねて、ダチに倒させる。</dd></dl></dd></dl>
+<dl><dt> 親玉つきの群れ</dt>
+<dd>
+<dl><dt> <a href="Obsidian_bat.html" title="Obsidian bat">黒曜石のコウモリ</a></dt>
+<dd> 通路に閉じ込めるか、ダチの横を抜けて引き撃ちする。攻撃が当たりやすい相手なので、ダチに直接戦わせないこと。当たるたびに黒曜石のコウモリがヘルハウンドとヘルラットを呼び出してしまう。ほかのコウモリと同じく、離れるように動けば攻撃を受ける回数が減る。</dd></dl></dd></dl>
+<dl><dt> ダメージの大きい近接</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Iron_troll" data-untr="1" title="Iron troll">鉄トロル</a></dt>
+<dd> 毒を重ねる。拘束するか掴んでその場に留める。転位術か発動アイテムで距離を取り、ダチに倒させる。</dd></dl></dd></dl></dd></dl>
+<p><span id="late-dungeon"></span>
+</p>
+<h4><span class="mw-headline" id="Late_Dungeon">迷宮の後半</span></h4>
+<p>アビスへ追放してくるふつうのモンスター、オカルティストが出てくるようになる。かなり打たれ弱いので、ダチに視界をさえぎらせて片づけよう。ここまでに出会ったのと同じ種類のモンスターやその強化版のほか、これから入るルーンのある分岐で出てくるようになるものとも戦うことになる。
+</p><p>これらの階にはたいていユニークが何体か散らばっていて、そいつらを呪縛すればS系の分岐を楽に片づけられる。
+</p>
+<dl><dt> 魂</dt>
+<dd> ここで特に目立つものはない。ほかの分岐に挙げたものが出てこないか目を光らせておこう。</dd>
+<dt> 耐性</dt>
+<dd> 意志+++、rPois</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> アビスへ追放してくるもの</dt>
+<dd>
+<dl><dt> <a href="Occultist.html" title="Occultist">オカルティスト</a></dt>
+<dd> 意志で抵抗される呪術を使う。&#160;!透明化を飲むか、何かほかの方法で視界をさえぎる。&#160;!悟りを飲むか指輪を持ち替えて、意志+++ にする。<br /></dd></dl></dd></dl>
+<dl><dt> 親玉つきの群れ</dt>
+<dd>
+<dl><dt> <a href="Rakshasa.html" title="Rakshasa">ラクシャーサ</a></dt>
+<dd> 松明、ダメージを与える発動アイテム、投擲武器を当てる。ダチの大群を招集できるところまで近づくが、力場の槍で HP をごっそり削られかねないので、前線の後ろにいること。</dd></dl></dd></dl>
+<dl><dt> 群れ</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Yaktaur" data-untr="1" title="Yaktaur">ヤクトール</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。角の向こうまで下がって、同時にこちらを撃てる数を減らすようにする。</dd>
+<dt> <a href="Meliai.html" title="Meliai">メリアイ</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。打擲型の攻撃もしてくるし、EV も高い。呪術がなければ、ダメージを与える確率の高い範囲攻撃を使うか唱える。あるいは、掴んでその場に留めて命中率を上げる(拘束では命中率は上がらない。上がるのは掴みだけだ)。</dd></dl></dd></dl></dd></dl>
+<p><span id="s-branches"></span>
+</p>
+<h3><span class="mw-headline" id="S-Branches">S系の分岐</span></h3>
+<p>ここからは独特な攻撃を持つ敵が出てくるようになる。状態の欄とメッセージのログに注意しよう。このあたりでレベル5の呪文がいくつか使えるようになりはじめているはずだ。イレデレンヌルは慎重に遊べばS系の分岐4つをすべて押し切れるが、使えるはずのレベル4〜6の呪文を活かしたほうがずっと費用対効果がいい。ジャベリンもだいたい 1.0 の速さで投げられるようになっているはずなので、隙があれば、ジャベリンや最短の所要時間に届いたブーメランを投げる価値がある。
+</p><p>どのS系の分岐でも、最初の3階を片づけるのに力不足を感じるなら、ルーンのある階はエルフの大広間で経験値を稼いだ後に回そう。
+</p><p><span id="swamp"></span>
+</p>
+<h4><span class="mw-headline" id="Swamp"><a href="The_Swamp.html" class="mw-redirect" title="Swamp">沼</a></span></h4>
+<p>まともな飛行の手段がまだなくても、ダチと長柄武器があれば濡れずに済む。とはいえ、水の中で脅威の大きいモンスターと戦わざるを得ない場面のために、&#160;!悟りを一、二本使うことは覚悟しておこう。ここの派生アンデッドはたいてい強く、この分岐の元素攻撃の大半に耐性があるし、開けた地形はダチで敵を圧倒するのに向いている。蜘蛛の穴ぐらと同じく、最下層のヴォールトがアンデッドのものなら、ゾンビになったレルネーのヒドラを一人で相手にできるくらい強くなるまで、ルーンは後回しにする価値があるかもしれない。
+</p>
+<dl><dt> 魂</dt>
+<dd> ヒドラ、赤ガエル、スプリガンのドルイド、スプリガンの狂戦士</dd>
+<dt> 耐性</dt>
+<dd> rPois、rC+、rN+、飛行</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> 視界内に呪術をかけてくるもの</dt>
+<dd>
+<dl><dt> <a href="Fenstrider_witch.html" title="Fenstrider witch">沼渡りの魔女</a></dt>
+<dd> 呪術に抵抗するので、打擲型の呪文と長柄武器で攻撃する。苦悶の一撃の小さな拷問と麻痺の効果は、アンデッドのダチにはね返させよう。</dd></dl></dd></dl>
+<dl><dt> 召喚術師</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Spriggan_berserker" data-untr="1" title="Spriggan berserker">スプリガンの狂戦士</a></dt>
+<dd> 呪術に抵抗する。かわせない範囲攻撃を持つバーサーク状態の仲間を呼びはじめる前に片づけるか、掴みの攻撃とジャベリン数本を使う。</dd>
+<dt> <a href="Spriggan_druid.html" title="Spriggan druid">スプリガンのドルイド</a></dt>
+<dd> 呪術に抵抗する。ダチはドルイドが怒らせた木を避けるほど賢くないので、すばやく片づけるようにしよう。ドルイドが死ぬと動物並みの知能のモンスターが回復して腕力強化を得るので、&#160;?テレポートを読むのが賢明かもしれない。</dd></dl></dd></dl>
+<dl><dt> 射撃</dt>
+<dd>
+<dl><dt> <a href="Death_drake.html" title="Death drake">デスドレイク</a></dt>
+<dd> 画面の端に留まって、ダチに倒させる。<br /></dd>
+<dt> <a href="Thorn_hunter.html" title="Thorn hunter">棘の狩人</a></dt>
+<dd> 矢か打擲型の攻撃で、荊棘の向こうから攻撃する。</dd></dl></dd></dl>
+<dl><dt> 親玉つきの群れ</dt>
+<dd>
+<dl><dt> <a href="Shambling_mangrove.html" title="Shambling mangrove">よろめき歩くマングローブ</a></dt>
+<dd> マングローブを集中攻撃するが、HP が減ると呼び出す巨大赤色蜂に狙いを切り替える準備をしておくこと。根に捕まったらすぐに振りほどこう。掴みの効果は、こちらが根縛りで敵にかけて頼りにしているのと同じ命中ボーナスを敵に与えてしまう。</dd></dl></dd></dl></dd></dl>
+<p><span id="spider"></span>
+</p>
+<h4><span class="mw-headline" id="Spider"><a href="http://crawl.chaosforge.org/Spider" data-untr="1" title="Spider">蜘蛛の穴ぐら</a></span></h4>
+<p>狭い通路と死角だらけなので、多くの戦闘を自分で受け止めることになり、画面の外でダチもそこそこの数を失う。足の速い蜘蛛に機会攻撃をいくらか食らうとしても、6〜8ターンかけて広い部屋に移る価値はたいていある。ここではアンデッドもそこそこ速い。
+</p><p>SInv がないと、幽体蛾がいることはメッセージと MP の減り具合でしかわからない。たいていはダチの群れの中の空いたマスで見つけられるので、呪縛した魂と幽体が倒してくれないなら、&#160;!怪力を飲んで叩きのめそう。底知れぬ枷はオークの坑道:2 のときより少し弱く感じるが、ここで見つかるアンデッドでない最下層のヴォールトを片づけるのを助けるには十分に強い。ルーンのヴォールトを大量のゾンビや幽体が守っているなら、宝物庫と深層を片づけてからルーンを取りに来るのがたぶんいちばんだ。
+</p>
+<dl><dt> 魂</dt>
+<dd> クリシボラ、カタツムリ、母蜘蛛</dd>
+<dt> 耐性</dt>
+<dd> rPois、rElec、SInv</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> 攻撃呪文の使い手</dt>
+<dd>
+<dl><dt> <a href="Orb_spider.html" title="Orb spider">球体の蜘蛛</a></dt>
+<dd> 意志で抵抗される呪術を使い、毒を重ねる。こちらに投げてくる球体はダチに受け止めさせよう。</dd>
+<dt> <a href="Sun_moth.html" title="Sun moth">太陽の蛾</a></dt>
+<dd> 意志か HD で抵抗される呪術を使い、毒を重ねる。焼夷の炎に用心し、画面にいるあいだは動き回ること。</dd></dl></dd></dl>
+<dl><dt> 親玉つきの群れ</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Pharaoh_ant" data-untr="1" title="Pharaoh ant">ファラオアリ</a></dt>
+<dd> ほかの親玉と違って、こいつは遠ざけておき、群れのほうを先に倒すようにしよう。</dd></dl></dd></dl>
+<dl><dt> AC の高い近接</dt>
+<dd>
+<dl><dt> <a href="Emperor_scorpion.html" title="Emperor scorpion">皇帝サソリ</a></dt>
+<dd> 毒によらない、意志で抵抗される呪術を使う。ダチを招集して囲ませ、動き回ってダメージを分散させる。</dd></dl></dd></dl>
+<dl><dt> EV の高い近接</dt>
+<dd>
+<dl><dt> <a href="Death_scarab.html" title="Death scarab">死の太陽虫</a></dt>
+<dd> かわせない範囲攻撃を当てるか、掴みでその場に留める。</dd>
+<dt> <a href="Ghost_moth.html" title="Ghost moth">幽体蛾</a></dt>
+<dd> SInv を装備するか、&#160;!透明化を飲む。見えないなら、ダメージを与える矢か範囲攻撃を使うか、透明な敵が見える味方を召喚するか鍛造する。</dd>
+<dt> <a href="Spark_wasp.html" title="Spark wasp">電光蜂</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。もっといい rElec の手段が見つかっていなければ、大気の杖に持ち替える。</dd></dl></dd></dl>
+<dl><dt> ダメージの大きい近接</dt>
+<dd>
+<dl><dt> <a href="Radroach.html" title="Radroach">放射能ゴキブリ</a></dt>
+<dd> 意志で抵抗される呪術を使う。拘束するか掴んでその場に留め、隣に来させないようにして、ダチの壁の後ろから長柄武器で攻撃する。</dd></dl></dd></dl>
+<dl><dt> 召喚術師</dt>
+<dd>
+<dl><dt> <a href="Broodmother.html" title="Broodmother">母蜘蛛</a></dt>
+<dd> 意志で抵抗される呪術を使い、毒を重ねる。仲間をたくさん呼びはじめる前に、戦闘の早いうちに狙うこと。噛みつきのダメージにも用心。</dd></dl></dd></dl></dd></dl>
+<p><span id="shoals"></span>
+</p>
+<h4><span class="mw-headline" id="Shoals"><a href="The_Shoals.html" class="mw-redirect" title="Shoals">浅瀬</a></span></h4>
+<div class="floatright"><a href="http://crawl.chaosforge.org/File:21_bound_kraken.png" data-untr="1" class="image"><img alt="21 bound kraken.png" src="img/600px-21_bound_kraken.png" width="600" height="676" /></a></div>
+<p>沼と同じく、長柄武器と便利な呪文がいくつかあれば飛行の必要はかなり減るので、まずは耐性をそろえておくこと。射撃してくる敵が多いので、ダチの誰かが画面の外から攻撃されていることを示すログのメッセージには特に気を配ろう。このころには、たいてい耐性のないここのモンスターとの戦いに役立つ、画面全体に効く範囲攻撃の呪文がいくつか使えるはずだ。アリステイアの酩酊、オルグレブの毒気の光輪(毒の燃焼があってもなくても)、苦悩、代謝の凍結(蛇穴でもとても役に立つ)などを探そう。
+</p><p>ダーツなどの投擲武器も役に立つ。投げるときに二度目の <code>f</code> ではなくピリオド <code>.</code> で確定すると、投げた武器は画面の端まで飛んで深い水脈に落ちたりせず、敵のマスで止まる。欲しいアイテムを持った敵に出会ったら、深い水脈の上で倒さないこと。倒すと手に入らなくなる。
+</p><p>ここの敵のほとんどにはしっかり枷が効くので、全滅の心配はそれほどないが、射撃してくる敵が画面に一度に大勢いると、受けるダメージがあっという間に跳ね上がることは覚えておこう。&#160;?テレポートと招集で仕切り直せる手ごわい戦闘もある。
+</p>
+<dl><dt> 魂</dt>
+<dd> ワニガメ、クラーケン</dd>
+<dt> 耐性</dt>
+<dd> 意志++、rPois、rElec、飛行、反発</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> 射撃</dt>
+<dd>
+<dl><dt> <a href="Merfolk_javelineer.html" title="Merfolk javelineer">水棲の民の投槍兵</a></dt>
+<dd> 意志で抵抗される呪術を使う。ワンドで盲目にするか腐食させる(ここでは火炎で蒸気が出て視界を切れる)。特に複数いるときや、ほかの射撃の群れが援護しているときは、画面の外へ位置を変える。ジャベリンはダチの群れも HP のバーもごっそり削っていく。</dd>
+<dt> <a href="http://crawl.chaosforge.org/Alligator_snapping_turtle" data-untr="1" title="Alligator snapping turtle">ワニガメ</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。ダチの横を抜けて引き撃ちする。</dd></dl></dd></dl>
+<dl><dt> 召喚術師</dt>
+<dd>
+<dl><dt> <a href="Merfolk_avatar.html" title="Merfolk avatar">水棲の民の生き神</a></dt>
+<dd> 下がってダチの群れの中へおびき寄せ、囲ませてから、詰め寄ってとどめを刺す。深い水脈の奥まで下がられたら、&#160;!悟りが要るかもしれない。</dd></dl></dd></dl>
+<dl><dt> ダメージの大きい近接</dt>
+<dd>
+<dl><dt> <a href="Kraken.html" title="Kraken">クラーケン</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。頭か触手のかたまりに範囲攻撃か矢を当てる。</dd></dl></dd></dl></dd></dl>
+<p><span id="snake"></span>
+</p>
+<h4><span class="mw-headline" id="Snake"><a href="http://crawl.chaosforge.org/Snake" data-untr="1" class="mw-redirect" title="Snake">蛇穴</a></span></h4>
+<p>ダチは元になったナーガやヘビと同じくらい強くて速い。蛇穴に多い、つながっていない部屋は、何も知らずに眠っているナーガの部屋の上にダチの群れを呼び込むのにうってつけだ。
+</p><p>守護の大蛇の包囲攻撃には気をつけること。視界を必要としないし、このノールは怒ったヘビ6、7匹を受け止めるには少し力不足だ。瞬間移動の呪文を覚えられるなら、もっと高くつく&#160;?恐慌や&#160;?瞬間移動よりずっと安い選択肢になる。
+</p><p>サラマンダーの呪文使いは、炎の攻撃でまばたきする間に仲間を半分にしてしまうので、できるだけ早く倒そう。
+</p><p>浅瀬と同じく、画面の外からの攻撃でじわじわ数を減らされることになるだろう。
+</p>
+<dl><dt> 魂</dt>
+<dd> ナーガの豪族、長柄武器を持った達人射手</dd>
+<dt> 耐性</dt>
+<dd> rPois、意志++、rF+、rElec</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> ダメージの大きい近接</dt>
+<dd>
+<dl><dt> <a href="Nagaraja.html" title="Nagaraja">ナーガの豪族</a></dt>
+<dd> ワンドで弱らせてみて、集中攻撃する。</dd></dl></dd></dl>
+<dl><dt> 射撃</dt>
+<dd>
+<dl><dt> <a href="Shock_serpent.html" title="Shock serpent">電撃の大蛇</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。電撃を返されないように、敵に倒させるようにする。</dd></dl></dd></dl>
+<dl><dt> 親玉つきの群れ</dt>
+<dd>
+<dl><dt> <a href="Guardian_serpent.html" title="Guardian serpent">守護の大蛇</a></dt>
+<dd> 集中攻撃し、範囲攻撃か矢を当てる。守護の大蛇を片づける必要があるなら、ダチ越しにジャベリンを投げる価値もある。</dd></dl></dd></dl>
+<dl><dt> 攻撃呪文の使い手</dt>
+<dd>
+<dl><dt> <a href="Salamander_tyrant.html" title="Salamander tyrant">サラマンダーの暴君</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。守護の大蛇と同じく、仲間を犠牲にしてもいいくらいの脅威だ。</dd></dl></dd></dl></dd></dl>
+<p><span id="elf"></span>
+</p>
+<h4><span class="mw-headline" id="Elf"><a href="Elf.html" title="Elf">エルフの大広間</a></span></h4>
+<p>&#160;?悟りを使っても意志+++ に届かないなら、アビスに送られる危険は避けたほうがいい。完全に安全策で勝ちを狙うなら、エルフの大広間はただ素通りしよう。それに、戦闘のたびに最初に姿を消したがる厄介な騎士を片づけるために、持ち替え用でいいので SInv の手段が少なくとも一つほしい。最後に、耐性を持ち替え用の装備に大きく頼っているなら、先に宝物庫:1〜4 に挑むのが賢明かもしれない。耐性を同時にいくつも必要とする戦闘が少ないからだ。
+</p><p>一般には、このころにはこの分岐に対処できるくらい装備が整っているはずだし、枷のおかげでこの分岐はおおむね安全な賭けだ(エルフの死人使いがみんなをよみがえらせるのは別として)。刃の広間は今は飛ばしたほうがいい。運よく悪魔の三叉戟が見つかっていれば、深層の後に戻ってきてそれを飾り立てればいい。中にテレポートで飛ばされてしまったら、&#160;?テレポートで外に出るだけだ。
+</p><p>意志のおかげでアビスへの追放の呪文は事実上効かないとしても、歪曲の武器にはまだいくつか出会うだろう。経験値と装備の両面で見返りはまだ大きいので、あらゆる手段を使って近づけないようにしよう。歪曲や根縛りのワンド、ボーグンジョルの忌まわしき掌握、網がいちばん手っ取り早いが、転位術や味方を使う呪文にも、この役目を十分に果たせるものがいくつもある。
+</p><p>とはいえ、この分岐は慎重に遊び、ワンドや安い消耗品を使って深刻な脅威を和らげよう。クラーレ、強酸、光、&#160;?毒は、どれも脅威を「深刻」から「対処できる」まで下げる助けになる。
+</p><p>敵の死人使いを最初に片づけるようにしたいが、大司祭が打擲型の天罰を使うことには気をつけること。反射が戦闘に意味のある影響を与えるのは、ここが最後の分岐のひとつだ。手に入れられるなら、反発があればほぼ弾が当たらなくなる。
+</p>
+<dl><dt> 魂</dt>
+<dd> 黄色いエルフ</dd>
+<dt> 耐性</dt>
+<dd> 意志+++、rF+/rC+、rElec、rPois、SInv、反発</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> ダメージの大きい近接</dt>
+<dd>
+<dl><dt> <a href="Deep_elf_blademaster.html" title="Deep elf blademaster">闇エルフの剣豪</a></dt>
+<dd> 盲目にするか、腐食させるか、掴んでその場に留める。毒を重ねる。周りにダチの群れを招集して、ダメージを分散させる。</dd>
+<dt> <a href="Dancing_weapon.html" title="Dancing weapon">宙を舞う武器</a></dt>
+<dd> 掴むか拘束してその場に留める。前列の後ろから長柄武器で突く。群れを一人で受け止めざるを得ないなら&#160;!透明化。</dd></dl></dd></dl>
+<dl><dt> 打擲型の呪文を使う敵</dt>
+<dd>
+<dl><dt> <a href="Deep_elf_high_priest.html" title="Deep elf high priest">闇エルフの大司祭</a></dt>
+<dd> 意志と HD で抵抗される呪術の成功率を確かめる。毒を重ねる。矢かジャベリンで手早くとどめを刺す。</dd></dl></dd></dl>
+<dl><dt> 親玉つきの群れ</dt>
+<dd>
+<dl><dt> <a href="Deep_elf_death_mage.html" title="Deep elf death mage">闇エルフの死の魔術師</a></dt>
+<dd> 最優先の標的。盲目にし、毒を重ねて、すばやく倒す。魂は気にせず、とにかくとどめを刺す。</dd></dl></dd></dl>
+<dl><dt> アビスへ追放してくるもの</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Deep_elf_sorcerer" data-untr="1" title="Deep elf sorcerer">闇エルフの魔道士</a></dt>
+<dd> 意志+++ にするか、前列の後ろから戦う。打擲型の攻撃か松明のチャージを当てる。</dd>
+<dt> <a href="Deep_elf_demonologist.html" title="Deep elf demonologist">闇エルフの悪魔術師</a></dt>
+<dd> 魔道士と同じだが、意志と HD で抵抗される呪術の成功率を確かめること。</dd></dl></dd></dl>
+<dl><dt> 召喚術師</dt>
+<dd>
+<dl><dt> <a href="Deep_elf_elementalist.html" title="Deep elf elementalist">闇エルフの精霊使い</a></dt>
+<dd> 背後に霜の大砲を呼び出される前に片づけるようにしよう。精霊使いを集中攻撃するか、必要なら位置を変えて戦力を招集し直す。</dd></dl></dd></dl></dd></dl>
+<p><span id="elf3"></span>
+</p>
+<h5><span class="mw-headline" id="Elf:3">エルフの大広間:3</span></h5>
+<p>S系の分岐でいくつかヴォールトを見てきたが、初めてエルフの大広間:3 のヴォールトに挑むときの心の準備になるようなものは何もない。エルフの大広間:3 のヴォールトでは薬と巻物を半ダース以上使うと思っておくべきだが、装備、消耗品、呪文という見返りは、その損失を補って余りあるはずだ。
+</p>
+<div class="center"><div class="floatnone"><a href="http://crawl.chaosforge.org/File:25_Elf_Doublewide_Minimap.png" data-untr="1" class="image"><img alt="25 Elf Doublewide Minimap.png" src="img/600px-25_Elf_Doublewide_Minimap.png" width="600" height="560" /></a></div></div>
+<p>エルフの大広間:3 では、まず&#160;?啓示を使って、マップ上の最後のヴォールトの場所を確かめる。ランダムに生成されたようには見えない区画で、中央へ向かう幅1マスか2マスの通路が1〜3本あり、小さな宝物部屋がいくつかついている場所を探そう。階の調査(<code>X</code>)を使って、ヴォールトの入り口それぞれの口に注意対象(<code>e</code>)を設定し、松明に火を灯さずに階の残りを片づける。標的状態にされたら、すぐに最寄りの上り階段へ向かう。ヴォールトの部屋にテレポートで飛ばされたら、松明に火を灯し、枷を使い、&#160;!誘引を飲んで、強化を始める。生命を吸い取れないアンデッドにあっという間に囲まれることがあるので、&#160;?テレポートと招集の準備をしておくこと。
+</p><p>すべて計画どおりに進めば、手に負えなくなったときに&#160;?テレポートで逃げ込める、すっかり片づいた階が手に入っているはずだ。やってはいけないのは、すぐにヴォールトに突っ込むことだ。宝を守るエルフの軍勢の正確な顔ぶれはわからないのだから。派生したダチか召喚したダチを盾にしてヴォールトを覗き込み、最初に見えた数体のエルフを引き撃ちで釣り出す。理想を言えば、一度に2〜3体を釣り、画面の外からぽつぽつ流れ込んでくる程度にしたい……これならたいてい、神の力を使わなくても対処できるし、味方のしっかりした群れも育つ。悪魔と、打擲や打擲型の地獄の効果(天罰、業火)で攻撃してくるものには警戒すること。たとえゾンビの頭蓋骨の後ろを貫くことになっても、銀のジャベリンを投げつけはじめる必要があるかもしれない。
+</p>
+<div class="floatleft"><a href="http://crawl.chaosforge.org/File:26_Elf_Double_Wide.png" data-untr="1" class="image"><img alt="26 Elf Double Wide.png" src="img/600px-26_Elf_Double_Wide.png" width="600" height="356" /></a></div>
+<p>たいていは、最初は小さな敵の群れだが、残りのエルフの守備兵が仲間を助けに駆けつけてきて、すぐに洪水になる。もっと臭いいとこ連中と同じく、エルフも枷と&#160;!誘引がよく効く。誘引にはうれしい副作用もあって、こちらがやり返せないダメージを浴びせてきそうな敵の視界をさえぎってくれる。これは、視界を失うのが実はいいことになる、ゲームでも数少ない場面のひとつだ。この戦闘ではダチは脇役で、長く生き残るとはあまり期待できないので、画面の外の悪党にやられても、ほかの場所ほど大きな損失ではない。
+</p><p>最初の守備兵の本隊を片づけても、ヴォールトの残りを進むあいだにはまだ手ごわい抵抗が残る場所があるので、片づけた拠点まで退いて、強い群れとあと一、二回やり合う覚悟をしておこう。エルフの大広間を安全に抜けるのに、枷が2回、ときには3回必要になるのも珍しくない。宝物部屋にもそれぞれ一、二体の守備兵がいると思っておこう。アビスへ追放してくるものが含まれることもあるので、部屋にはダチを先に行かせるのが賢明だ。
+</p><p>守備兵を全員倒したら、最初の大勝利の取り分を確かめよう。足りなかった耐性や、弱点を埋めるのにどうしても欲しかった呪文、さらに、もともと強いキャラクターを仕上げる強力なアーティファクトもいくつか見つかるだろう。
+</p><p><span id="rd-rune"></span>
+</p>
+<h3><span class="mw-headline" id="3rd_Rune">3つ目のルーン</span></h3>
+<p>このころには、戦闘の流れを変えるかなり強力な呪文がいくつか使えるはずだ。イレデレンヌルの直接の助けは力不足になりはじめるので、これが役に立つ。ダチはゲームの残りではおおむね力不足で、一体一体が独立した存在の大群というより、生きた肉の盾という役割になっていく。
+</p><p>雑魚との戦いの多くは生きている相手だが、最大級の脅威のなかには、枷の生命を吸い取る効果が効かないものもいる。
+</p><p>ここからは、ノール生まれつきのスキルの素質に再び頼ることになる。ここまでは強さの伸びに少し遅れをとっていたものだ。スキルは10台半ばになっているので、武器は最短の所要時間かその近くに届き、呪文の成功率を台無しにせずにカイトシールドを持て、レベル5、もうすぐ6の呪文を唱えられる。防御の合計は50を超え、できれば60近くになっているはずだし、基本的な耐性もいくつか、戦闘のたびに持ち替えなくてもまかなえているはずだ。
+</p><p><span id="vault-1-4"></span>
+</p>
+<h4><span class="mw-headline" id="Vaults_1-4"><a href="Vault.html" class="mw-redirect" title="Vaults">宝物庫</a>:1〜4</span></h4>
+<p>いろいろな種類の部屋と広い通路が入り混じったところで戦うことになる。時間をかけて戦場を開けた場所へ誘導しよう。そうしないと、すぐに一人で戦うはめになる。
+</p><p>水晶のゴーレムの群れは、ダチの大群で圧倒すれば対処できる。だが私は、こいつら(と後の呪いの頭蓋骨)を片づけるためだけに、リーの瞬間解体術を覚えることもある。
+</p>
+<dl><dt> 魂</dt>
+<dd> 鉄縛の雷巨人、鉄縛の凍心者</dd>
+<dt> 耐性</dt>
+<dd> rC+、rElec、意志+++、SInv</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> ダメージの大きい近接</dt>
+<dd>
+<dl><dt> <a href="Crystal_guardian.html" title="Crystal guardian">水晶の守護者</a></dt>
+<dd> こいつらのためだけでもリーの瞬間解体術を覚えよう。脆弱にされたら逃げること。脆弱状態で水晶の弾を食らうと、あっという間にゲームが終わりかねない。</dd></dl></dd></dl>
+<dl><dt> 視界内に呪術をかけてくるもの</dt>
+<dd>
+<dl><dt> <a href="Vault_sentinel.html" title="Vault sentinel">宝物庫の警告者</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。毒を重ねる。ダチで視界をさえぎり、後列から突く。</dd></dl></dd></dl>
+<dl><dt> 召喚術師</dt>
+<dd>
+<dl><dt> <a href="Boggart.html" title="Boggart">ボガート</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。強打を持つ悪党の群れを呼び出される前に、早めに矢か範囲攻撃を当てる。こいつらは群れで動く!</dd></dl></dd></dl>
+<dl><dt> 親玉つきの群れ</dt>
+<dd>
+<dl><dt> <a href="Ironbound_convoker.html" title="Ironbound convoker">鉄縛の招集者</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。毒を重ねる。招集を始めたら、すぐに混乱させるか、静寂で封じるか、解呪するか、何かほかの方法で招集を最後までさせないようにする。</dd>
+<dt> <a href="Undying_armoury.html" title="Undying armoury">不滅の武具庫</a></dt>
+<dd> ほかの敵を強力な武器で強化し、たいていのダメージに耐性がある。アンデッドの解呪が使えないなら、優先して集中攻撃しよう。</dd></dl></dd></dl>
+<dl><dt> 打擲型の呪文を使う敵</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Ironbound_thunderhulk" data-untr="1" title="Ironbound thunderhulk">鉄縛の雷巨人</a></dt>
+<dd> 意志で抵抗される呪術を使う。毒を重ねる。たとえ大気の杖でもいいので、rElec に持ち替える。</dd>
+<dt> <a href="Ironbound_frostheart.html" title="Ironbound frostheart">鉄縛の凍心者</a></dt>
+<dd> 意志で抵抗される呪術を使い、HD で抵抗される呪術の成功率も確かめる。壁から離れれば、脅威度はぐっと下がる。</dd></dl></dd>
+<dd> 射撃
+<dl><dt> <a href="http://crawl.chaosforge.org/Yaktaur_captain" data-untr="1" title="Yaktaur captain">ヤクトールの族長</a></dt>
+<dd> 意志で抵抗される呪術を使う。矢がダチを貫いて HP を大きく削っていくので、早めに片づけること。</dd></dl></dd></dl></dd></dl>
+<p><span id="crypt"></span>
+</p>
+<h4><span class="mw-headline" id="Crypt"><a href="The_Crypt.html" class="mw-redirect" title="Crypt">地下墓地</a></span></h4>
+<p>rN+++ と SInv があり、アンデッドの解呪と強い召喚呪文(マナバイパー、サボテンの巨人など)がそろっているのでもなければ、この分岐には挑まないこと。イレデレンヌルは事実上何もしてくれないし、攻撃呪文で突破できるほどたくさんの呪文を覚えている見込みも低い。戦利品はたいていいまひとつだが、発動アイテム、魔法書、アーティファクトをさらに拾える機会はある。ほぼすべてに神の力が効かないという特有の脅威を別にすれば、地下墓地はたいてい楽勝なので、せめてこの分岐の感触をつかむために足を浸してみる価値はたぶんある。この分岐で&#160;!怪我の治療と&#160;?瞬間移動を一つずつより多く使いそうなら、イレデレンヌルを少し満足させられないとしても、最後まで片づける価値はないかもしれない。
+</p>
+<dl><dt> 魂</dt>
+<dd> なし。ほぼすべてアンデッドだ</dd>
+<dt> 耐性</dt>
+<dd> rN+++、意志+++、rPois、SInv、rC+、rElec</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> 召喚術師</dt>
+<dd>
+<dl><dt> <a href="Dread_lich.html" title="Dread lich">恐怖のリッチ</a></dt>
+<dd> 意志+++ とアンデッドの解呪。</dd>
+<dt> <a href="Curse_skull.html" title="Curse skull">呪いの頭蓋骨</a></dt>
+<dd> rN+++ とアンデッドの解呪。</dd></dl></dd></dl>
+<dl><dt> 攻撃呪文の使い手</dt>
+<dd>
+<dl><dt> <a href="Ancient_lich.html" title="Ancient lich">太古のリッチ</a></dt>
+<dd> ダチに守られながら近づき、アンデッドの解呪。</dd></dl></dd></dl>
+<dl><dt> AC の高い近接</dt>
+<dd>
+<dl><dt> <a href="Bone_dragon.html" title="Bone dragon">骸骨ドラゴン</a></dt>
+<dd> アンデッドの解呪。たぶん MP のバーをまるごと使うことになる。</dd></dl></dd></dl></dd></dl>
+<p><span id="depths"></span>
+</p>
+<h4><span class="mw-headline" id="Depths"><a href="The_Depths.html" class="mw-redirect" title="Depths">深層</a></span></h4>
+<p>深層は、手ごわいモンスターだらけの大きな戦闘の連続だ。ダチも手ごわいのがたくさんいるが、それでもすぐに死ぬ。
+</p><p>死角があって、そこから釣り出すのが必ずしも楽ではない小さなヴォールトがかなりある。モンスターの群れとの戦闘に、自分から先頭で突っ込むことがたびたびあると思っておこう。隙間が見えたら、画面の外から仲間を招集して埋めるようにしよう。
+</p><p>このころには、強い召喚呪文、画面全体にかける弱体化、ダチに優しい範囲攻撃、そしてボーグンジョルの忌まわしき掌握か砲撃のどちらかが少なくとも一つずつあるはずだ。最後の二つは必須というより、あればうれしいものだ。
+</p><p>何回かの戦闘は、&#160;?テレポートを何枚も使ったり、ほかの消耗品を使ったりして仕切り直すことになるだろう。
+</p>
+<dl><dt> 魂</dt>
+<dd> 輝くオレンジ色の脳髄、ラクシャーサ</dd>
+<dt> 耐性</dt>
+<dd> 意志++、rPois、rElec、rC+、rF+、SInv</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> 攻撃呪文の使い手</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Walking_tome" data-untr="1" title="Walking tome">歩く魔導書</a></dt>
+<dd> 角に釣り込み、開けすぎた場所は避けよう。特に神聖版と水晶版は、HP のバーをあっという間に減らしてくる!</dd>
+<dt> <a href="Wyrmhole.html" title="Wyrmhole">竜穴</a></dt>
+<dd> 集中攻撃し、矢の呪文の射程の外にいるようにする。深層の敵のさらに大きな集団の中へランダムにテレポートさせられても、支えてくれるダチの群れはいない。効果を消す必要があるなら&#160;?テレポートを読む。</dd></dl></dd></dl>
+<dl><dt> 射撃</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Dragon" data-untr="1" class="mw-redirect" title="Dragon">ドラゴン</a></dt>
+<dd> 角に釣り込んで、近接で受け止める。高レベルの弱体化も効くことがあるので、成功率を確かめよう。ダチの群れを貫いてブレスを吐かれないように、斜めに並ぶようにする。</dd></dl></dd></dl>
+<dl><dt> ダメージの大きい近接</dt>
+<dd>
+<dl><dt> <a href="Juggernaut.html" title="Juggernaut">ジャガーノート</a></dt>
+<dd> 隣に立たないこと。エリンギャの驚きのクロコダイルがこれにはうってつけだ。ワンドで盲目にするか腐食させる。</dd></dl></dd></dl>
+<dl><dt> 群れ</dt>
+<dd>
+<dl><dt> <a href="http://crawl.chaosforge.org/Hell_knight" data-untr="1" title="Hell knight">地獄の騎士</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。毒を重ねる。群れのど真ん中にダチを招集し、矢があまり多くの仲間に当たらないようにする。</dd>
+<dt> <a href="Caustic_shrike.html" title="Caustic shrike">焼酸の百舌</a></dt>
+<dd> 意志で抵抗される呪術の成功率を確かめる。この群れのためだけでも底知れぬ枷を使う価値があるが、&#160;!誘引は絶対に飲まないこと。代わりに、効果範囲を横切るように引き撃ちする。</dd></dl></dd></dl>
+<dl><dt> アビスへ追放してくるもの</dt>
+<dd>
+<dl><dt> <a href="Occultist.html" title="Occultist">オカルティスト</a></dt>
+<dd> 意志か HD で抵抗される呪術を使う。装備を持ち替えるか&#160;!悟りを飲んで意志++ にする。ダチの群れが大きければ、その後ろに隠れて集中攻撃すればいい。</dd></dl></dd></dl></dd></dl>
+<p><span id="slime"></span>
+</p>
+<h4><span class="mw-headline" id="Slime"><a href="The_Slime_Pits.html" class="mw-redirect" title="Slime Pits">スライムの穴ぐら</a></span></h4>
+<p>スライムの穴ぐらは最近の変更があったので、初心者がこの分岐に入るのはおすすめしない。あえて入るなら、ジェリー系のモンスターの群れに加えて、スライム化のヒドラ、打擲型の魔力汚染、反撃の星屑と戦うことになる。ここには呪縛する価値のあるものがあまりいないし、派生アンデッドもかなり脆い。
+</p><p><span id="vault5"></span>
+</p>
+<h4><span class="mw-headline" id="Vaults:5">宝物庫:5</span></h4>
+<p>宝物庫:5 は、これまでのどの階にもまして、上の階へ逃げるという手を奪ってくる。下り階段を降りて出迎えの一団に枷を使うこともできるが、それでもあらゆる方向から敵の増援が流れ込んでくるだろう。そうする代わりに、宝物庫:4 から縦穴かハッチで降りたい。どちらもなければ、ふつうの階段を降りる前に&#160;?テレポートを読んでおく手が使える。スピード、知性、怪力で強化しておくと、最初の突入のリソース効率が少しよくなる。
+</p><p>最初に降り立った場所は踏みとどまるのに向いていないかもしれないので、松明に火を灯したりリソースを使ったりしはじめる前に、何度か&#160;?テレポートする覚悟をしておこう。テレポートを待っているあいだに、&#160;?煙幕で視界を切ったり、&#160;?啓示で地形を戦術的によく把握したりしてみるのもいい。いい場所に降り立ったら、ダチを呼び込み、追加で呼べる仲間を召喚して、拠点を切り開こう。
+</p><p>マップの一角を片づけてしまえば、安全に退却できる場所ができるので、残りを片づけるのはずっと楽になる。次にやるべきは、中央で待ち構えているものを片づけて階段を解放することだ。事態がひどく悪化したときの究極の逃げ道になる。最後に、マップの外周をぐるりと回ってから、最後の三つの部屋を片づけよう。
+</p><p><span id="abyss"></span>
+</p>
+<h4><span class="mw-headline" id="Abyss"><a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a></span></h4>
+<p>何としても避けること。イレデレンヌルはアビスではまったく役に立たないし、ここに飛ばされれば、アビスへ送ってくる脅威に追放の機会すら与えずに対処するより、もっと多く、もっと価値の高い消耗品を使うことになるだろう。
+</p><p><span id="end-game"></span>
+</p>
+<h3><span class="mw-headline" id="End_Game">終盤</span></h3>
+<p>ゾットの領域と終盤では、迷宮がくれたものを何でも使いこなせるノールの能力に大きく頼ることになる。
+</p><p>このころには、迷宮が持っている攻撃のパターンと戦術はすべて浴びせられているので、視界をさえぎる、呪術使いを封じる、瞬間移動してくる敵に囲まれた状態から抜け出す、といったことへの答えはそれぞれ持っているはずだし、弱点もおおむね埋まっているはずだ。このノールは防御の合計が60を超え、強化値の高い片手武器でそれなりに重く速い攻撃を繰り出し、レベル6か7の呪文を唱え、耐性のほとんどを持ち替えなしでまかなえているはずだ。
+</p><p>これから相手にする敵は、毒と負の攻撃にたいてい耐性がある。冷気のブランドは、武器につけられるエゴのなかでいちばん抵抗されにくいものになる。最悪の場合でも、お誂え向きの球体を相手に強化して叩きのめせる、しっかりした手段を用意しておくこと。
+</p><p>ゾットの領域に足を踏み入れる前に、迷宮を探索するなかで拾い残した消耗品を集めておくといい。
+</p><p>これを効率よくやるために、私はまず、持っていない巻物と薬をすべて見つける検索パターンを作る。要らないとわかっているものはいくつか除いておく: <code>&lt;&lt;potion || scroll&gt;&gt; &amp;&amp;&#160;!!&lt;&lt;carried || ligni || attract || immo || enchant || brand &gt;&gt;</code>。
+</p><p>一覧にざっと目を通し、拾いに行きたくないものがあれば除外の一覧に足していく(新しい <code>||</code> の後、最後の <code>&gt;&gt;</code> の前に)。検索結果に本当に欲しいものだけが残るまでこれを繰り返す。あとは Ctrl+F を押して、すべて集め終わるまで最初の結果(一覧に店が出てくるなら2番目)を選び続ければいい。
+</p><p>この作業はほんの一、二分で済むはずだ。炎の球体からそのうちえげつない変異をもらいそうなら、そこらに転がっている&#160;!突然変異もすべて拾っておく価値がたぶんある。
+</p><p><span id="zot"></span>
+</p>
+<h4><span class="mw-headline" id="Zot"><a href="The_Realm_of_Zot.html" class="mw-redirect" title="Zot">ゾットの領域</a></span></h4>
+<p>ふだん私がすすめるのは、ゾットの領域:1 に入ったらすぐに&#160;?啓示を使い、ゾットの領域:5 用に一枚取っておくやり方だ。ほかの階もすべて明らかにしつつ、縦穴に落ちたときのために予備の&#160;?啓示を残しておくわけだ。イレデレンヌルがまだ縦穴から守ってくれているので、残りの&#160;?啓示はあいだの階でかなり自由に使い切っていい。
+</p><p>ダメージの量と複数回攻撃の頻度がすさまじいので、ダチの群れは今やクァズラルの雲とほぼ同じくらいの速さで入れ替わっていく。ゾットの領域ではどのダチにも愛着を持たないこと。たまに手に入る呪縛した魂でさえすぐ死ぬ。ここでは松明のチャージのダメージは少し物足りなくなるので、爆発に敵を4体以上巻き込めないなら、味方として戦っているもともと強いゾンビを強化するのに使おう。
+</p>
+<dl><dt> 魂</dt>
+<dd> 呪縛したモンスターはここでは長く持たない。長く使える仲間がいないなら、強いほうのドラゴンを試してみよう</dd>
+<dt> 耐性</dt>
+<dd> rF++、rPois、意志++、rElec、rC+、rN+、SInv</dd>
+<dt> 要注意の敵</dt>
+<dd>
+<dl><dt> <a href="Curse_toe.html" title="Curse toe">呪いの足指</a></dt>
+<dd> アンデッドの解呪がなければ、いい対抗手段はあまりない。消耗品を使って、正面から削り倒すしかない。</dd>
+<dt> <a href="Orb_of_fire.html" title="Orb of fire">炎の球体</a></dt>
+<dd> rF++ 以上で正面から受け止める。マナバイパー、従者、衰弱、招霊がいい対抗手段で、唱えられるはずだ。</dd>
+<dt> <a href="Orb_of_winter.html" title="Orb of winter">冬の球体</a></dt>
+<dd> rC++ 以上にして、距離を保つようにする。マナバイパー、従者、衰弱、業火の迫撃砲がいい対抗手段で、唱えられるはずだ。</dd>
+<dt> <a href="Orb_of_entropy.html" title="Orb of entropy">エントロピーの球体</a></dt>
+<dd> rN+++ と rCorr を目指す。ほかの球体と同じく、マナバイパーか衰弱。従者、業火の迫撃砲、スフィンクスの姉妹がいい対抗手段だ。</dd>
+<dt> <a href="Electric_golem.html" title="Electric golem">電気のゴーレム</a></dt>
+<dd> rElec を用意して正面から受け止める。ダチをそれほど傷つけないが、ダメージをたっぷり吸収する。</dd></dl></dd></dl>
+<p><span id="zot5"></span>
+</p>
+<h4><span class="mw-headline" id="Zot:5"><a href="Zot_5.html" title="Zot:5">ゾットの領域:5</a></span></h4>
+<p>松明に火を灯すのは、できるだけ後に取っておく。肺に直接テレポートで飛ばされる可能性があるし、そうなったとき、イレデレンヌルが最初にくれる仲間にはとても強いやつらがそろっていて助けになる。
+</p><p>オーブの守護者のゾンビは動きが速く攻撃も重いが、それでも炎の球体にかかればちょっとした染みにすぎない。松明に火を灯すのを控えておけば、階段まで引き撃ちして少し階段ダンスをするという選択肢も残る。
+</p><p>戦闘を仕切り直して逃げ出す助けにするために、ダチを何体か安全なところに隠しておくのもいい考えだ。お誂え向きの球体を相手に長くは持たないが、何発か攻撃を入れたり、悪性変異をさえぎったりはしてくれるかもしれない。
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px"><a href="http://crawl.chaosforge.org/File:22_zot_parking.png" data-untr="1" class="image"><img alt="22 zot parking.png" src="img/300px-22_zot_parking.png" width="300" height="549" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="http://crawl.chaosforge.org/File:22_zot_parking.png" data-untr="1" class="internal" title="Enlarge"></a></div></div></div></div>
+<p>ここでは、1回のゲームでお誂え向きの球体に6体前後はふつうに出会うので、それに対処する呪文があることがかなり重要だ。関係する耐性がいくらかあれば、最悪の場合でも余裕をもって強化して叩きのめせるが、その場合でも引きはがして一体ずつ相手にするようにしよう。ゾットの領域:5 には最初の二、三回は挑んで全滅すると思っておくこと。ボス戦にいちばん近いものだし、トップクラスのプレイヤーでもときには窮地に陥る。
+</p><p><span id="tesseract"></span>
+</p>
+<h4><span class="mw-headline" id="Tesseract"><a href="http://crawl.chaosforge.org/Tesseract" data-untr="1" class="mw-redirect" title="Tesseract">テッセラクト</a></span></h4>
+<p>ゾットの領域の最後の試練に新しく加わったテッセラクトは、ゾットの領域:5 に新しい敵を補充し続ける役目を担っている。これがある限り、ゾットの領域:5 のマップのランダムな場所に、一定の間隔で半永続のモンスターを生み出すので、つい急ぎたくなるかもしれない。だが逆に、ここはゆっくり着実に進めたいところだ。この時点でテッセラクトが生み出すのはほとんど雑魚で、こちらはお誂え向きの球体、恐怖のリッチ、呪いの足指を片づけることに集中する必要があるからだ。
+</p><p>まず肺の手前までを全部片づけるが、少し強化を済ませるまでは最後の部屋に入らないこと。準備ができたら最初の部屋に入り、オーブの守護者を片づける……これでテッセラクトが敵を生み出しはじめる。最初の部屋はすばやく片づけ、途中にある罠を見て、どちらの肺に対処するほうが安全か決めたい。狭い場所に入って、叫んで敵を一、二体おびき出してみるが、あまり長く待ちすぎないこと。何も出てこなければ中に入る。
+</p><p>最初の肺を片づけるのはかなりの難関で、お誂え向きの球体が一、二体(あるいは四体)、ほかのとても強い敵と一緒に出てくると思っておこう。罠の配置が許すなら、こうした大きな脅威を中央の部屋まで、あるいは階段まで引き戻そう……必要なら階段ダンスもする。松明は最悪の事態のために取ってあることを忘れずに。ここが最後と言っていい戦いなので、必要なら消耗品をつぎ込めばいい。ただし、テッセラクトが敵を生み出し続ける時間の圧力に焦らされないこと。
+</p><p>最初の肺を片づければ、テッセラクトまでまっすぐ行ける。最初の肺と同じく、テッセラクトに近づいて倒すあいだに消耗品をつぎ込むのは想定のうちだ。この時点で十分にハイブリッドになっているはずなので、近接武器でテッセラクトを直接倒せるが、召喚と組み合わせて砲撃を使うのも効果的な戦略だ。テッセラクトが死んだらすぐに角の向こうまで下がって、二つ目の肺の住人に対処する準備をしよう。
+</p><p>この時点で大きな拠点が3つ(最初の肺、中央の部屋、片づけた階)あるので、ゾットの領域:5 の残りを片づけるのは、あとは忍耐の問題だ。最後の二つの肺を片づけずにオーブだけこっそり持ち出すこともできるが、そのときはテレポートの罠に頼って危険から逃れることはできない。
+</p><p><span id="orb-run"></span>
+</p>
+<h4><span class="mw-headline" id="Orb_Run"><a href="http://crawl.chaosforge.org/Ascension" data-untr="1" class="mw-redirect" title="Ascension">オーブを持っての脱出</a></span></h4>
+<p>オーブを持っての脱出は、ゲームのほかの部分とはまったく違う戦い方になる。
+</p><p>目標はただ一つ、次の階段にたどり着いて上ることだ。必要でない限り戦わなくていい。攻撃を受け止めたり敵の気をそらしたりしてくれる召喚呪文があれば、そのあいだに動き続けられるので、HP と消耗品を本当に必要なときのために取っておける。
+</p><p>オーブを持っての脱出に向いた呪文をまだ持っていないなら、呪文を入れ替えるために&#160;?忘却を一、二枚取っておく価値がたいていある。
+</p><p>検討すべき呪文は、強い召喚呪文と移動系の呪文だ。サボテンの巨人、招霊、壁の透過、瞬間移動などだ。&#160;?瞬間移動と&#160;!スピードが手持ちでいちばん価値の高い消耗品になるので、迷宮:1 用にそれぞれ一つずつ取っておくようにしよう。
+</p><p>パンデモニウムの君主を除けば、出現する悪魔の悪党はたいてい呪縛できる。半永続の味方がいれば、次の階段までたどり着くのに使う消耗品を節約できる。パンデモニウムの君主に出会ったらすぐに調べる習慣をつけるといい。瞬間移動の呪文、静寂、アビスへの追放や歪曲、レベル9の呪文に目を光らせよう。
+</p><p>祭壇を早く見つけたのでなければ、迷宮のいちばん上のほうの階でも、まだ松明に火を灯せる。
+</p>
+<dl><dt> 魂</dt>
+<dd> <a href="Executioner.html" title="Executioner">処刑の悪魔</a></dd></dl>
+<p><span id="portals"></span>
+</p>
+<h3><span class="mw-headline" id="Portals">ポータル</span></h3>
+<p>このビルドは時間制限のあるポータルに毎回入るのにはあまり向いていないが、何回か遊ぶうちに、いくつかは探索する機会がある。取り逃がす不安と付き合うことになるだろうが、ポータルは決まった作りなので、貴重な練習の場になる。特に序盤の下水道と納骨堂のポータルは、リソースの節制をきちんと守っていれば、たいていのキャラクターで片づけられる。使った分より多くの消耗品が手に入ることもよくある。
+</p><p>一般に、ポータルに挑むかどうかはすぐに決める必要がある。&#160;?啓示の束がたくさんあれば決めやすくなる。階段の上で待って、どれかの階段の近くにポータルがあるか確かめるのも、たいてい安全だ。近くになければ、たぶん飛ばして松明に火を灯すのがいちばんだ。
+</p><p>階によっては、松明に火を灯したまま階のほとんどを片づけ、ポータルに入ってから、残った敵を片づけられる作りのこともある。だがこれは、狙ってできることというより、うれしい偶然のようなものだ。
+</p><p>ポータルを目指して走ると決めたなら、ゲームのあいだずっと頼ってきた縦穴からの大事な保護がないことを覚えておくこと。以下のおすすめは「腕を磨け! ノール」の場合のものだ。ほかのビルドなら、これらへの向き合い方がうまくいくことも、いかないこともある。
+</p>
+<div class="floatright"><a href="http://crawl.chaosforge.org/File:24_timed_portals_bazaar_clearing.png" data-untr="1" class="image"><img alt="24 timed portals bazaar clearing.png" src="img/600px-24_timed_portals_bazaar_clearing.png" width="600" height="549" /></a></div>
+<dl><dt> <a href="The_Sewers.html" class="mw-redirect" title="Sewer">下水道</a></dt>
+<dd> 序盤のノールでも片づけられる。脳髄ワーム、クロコダイル、クラーレのダーツを持った大きなコボルドに気をつけること。</dd>
+<dt> <a href="Ossuary.html" title="Ossuary">納骨堂</a></dt>
+<dd> 序盤のノールでも片づけられる。罠の仕掛けられた作りもあるので、出口へ駆け込む覚悟をしておこう。</dd>
+<dt> <a href="Bailey.html" title="Bailey">濠城</a></dt>
+<dd> 少なくとも松明の投擲が使えるなら、イレデレンヌルのおかげでかなり楽になる。そうでなければ、たぶん飛ばすのがいちばんだ。</dd>
+<dt> <a href="Necropolis.html" title="Necropolis">死者の都</a></dt>
+<dd> 入って戦利品と脅威を確かめよう。扉のあるヴォールトの戦利品を、&#160;?テレポート一、二枚と引き換えにくすねられることもある。</dd>
+<dt> <a href="Gauntlet.html" title="Gauntlet">試練場</a></dt>
+<dd> 入って道筋を確かめよう。最初の味方で片づけられることもあるし、脅威ゼロで完全に全体を見渡して脅威を見極められる。</dd>
+<dt> <a href="Volcano.html" title="Volcano">火山</a></dt>
+<dd> 避けよう。ダチへの脅威が大きすぎて、こちらが無防備になる。</dd>
+<dt> <a href="Ice_cave.html" class="mw-redirect" title="Ice Cave">氷の洞穴</a></dt>
+<dd> 入っていいのは、生きているものかスライムのときだけ(スライムには rC+ が必要)。最下層のヴォールトの OOD のモンスターに気をつけること。ただ、本命の宝にたどり着く前に、途中にも宝が隠してあることがある。</dd>
+<dt> <a href="Desolation_of_Salt.html" class="mw-redirect" title="Desolation">塩の荒野</a></dt>
+<dd> 避けよう。視界がおかしなことになりすぎるし、生きていない敵に圧倒される。</dd>
+<dt> <a href="http://crawl.chaosforge.org/Gulch" data-untr="1" title="Gulch">峡谷</a></dt>
+<dd> やめておこう。ここには派生アンデッドに変えられるものがほとんどいない。</dd>
+<dt> <a href="Wizard_Laboratory.html" title="Wizard Laboratory">魔術師の研究所</a></dt>
+<dd> すでに強すぎると感じているのでなければ避けよう。wiki で調べる価値があるし、どれも敵と対峙する前ならすぐに出ても安全だ。</dd>
+<dt> <a href="Treasure_trove.html" class="mw-redirect" title="Trove">宝の埋蔵庫</a></dt>
+<dd> たぶん代価に見合わないが、どうせやるんだろう。</dd>
+<dt> <a href="Ziggurat.html" title="Ziggurat">ジグラット</a></dt>
+<dd> 飛ばそう。イレデレンヌルのおかげで各階で松明に火を灯してチャージを満タンにできるが、問題になる階では役に立たない。</dd></dl>
+<p><span id="things-to-avoid"></span>
+</p>
+<h3><span class="mw-headline" id="Things_to_Avoid">避けるべきもの</span></h3>
+<p>前に挙げた分岐とポータルのほかにも、このビルドではとにかく避けたほうがいいモンスター、呪縛する魂、アイテムがいくつかある。
+</p>
+<dl><dt> <a href="Vv.html" title="Vv">Vv</a></dt>
+<dd> 殴られることも含めて、ほぼ何も効かない。呪縛もできない。あなたをトイレットペーパー代わりにして、ダチの大群をきれいに拭き取ってしまう。</dd>
+<dt> <a href="Mennas.html" title="Mennas">メナス</a></dt>
+<dd> エクステンデッドなら呪縛するのにすばらしい魂だが、標準的なゲームでは危険すぎる。</dd>
+<dt> <a href="Singing_Sword.html" title="Singing Sword">謳う剣</a></dt>
+<dd> 残念ながらダチに当たる</dd></dl>
+<dl><dt> 呪縛する価値のないもの</dt>
+<dd>
+<dl><dt> <a href="Merfolk_avatar.html" title="Merfolk avatar">水棲の民の生き神</a></dt>
+<dd> こちらをあれほどひどい目にあわせた、あの小さな幽霊みたいなやつらを呼び出してくれない。</dd>
+<dt> <a href="http://crawl.chaosforge.org/TRJ" data-untr="1" class="mw-redirect" title="TRJ">ロイヤルジェリー</a></dt>
+<dd> とにかく割に合わない。</dd>
+<dt> <a href="Jorgrun.html" title="Jorgrun">ジョーグルン</a></dt>
+<dd> <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=ytWz0qVvBZ0">Diggy diggy hole</a>。</dd>
+<dt> <a href="Mennas.html" title="Mennas">メナス</a></dt>
+<dd> 静寂にされるのが本当に好きなら別だが。</dd>
+<dt> <a href="Killer_Klown.html" title="Killer Klown">殺人ピエロ</a></dt>
+<dd> 瞬間移動で画面の外に消えるし、ダチとしては情緒不安定だ。</dd></dl></dd></dl>
+<p><span id="where-to-next"></span>
+</p>
+<h2><span class="mw-headline" id="Where_to_Next">次に進むなら</span></h2>
+<p>おめでとう! 何十回かかったかもしれないが、あなたは「腕を磨け! ノール」で見事に地上へ帰還し、次の挑戦に向かう準備ができた。私と同じように、お気に入りの種族で帰還する夢を抱いてこのゲームを始めたのかもしれない。それなら、新しく身につけたゲームの基本を携えて、ルーン集めを始めよう!
+</p><p>もう少し道しるべが欲しいプレイヤーもいるだろうし、それもいい。ほかの最近のガイドをひとつ遊んでみるのもいいし、Crawl Cosplay Academy に参加するのもいいし、プレイヤーの実績をいろいろ狙ってみるのもいい。
+</p><p><span id="other-guides"></span>
+</p>
+<h3><span class="mw-headline" id="Other_Guides">ほかのガイド</span></h3>
+<p>このコミュニティのすばらしいところのひとつは、ファンによるガイドが定期的に公開されることだ。私は自分の腕を磨くために、これらのガイドをどれも何度も、自分で遊んだり読んだりしてきた。
+</p><p><span id="draconius-gnoll-of-ashenzari"></span>
+</p>
+<h4><span class="mw-headline" id="Draconius.E2.80.99_Gnoll_of_Ashenzari:_Win_Consistency_through_Tactical_Maximalism_.5BIntermediate.5D_.280.34.29"><a href="http://crawl.chaosforge.org/Draconius%E2%80%99_Gnoll_of_Ashenzari:_Win_Consistency_through_Tactical_Maximalism" data-untr="1" title="Draconius’ Gnoll of Ashenzari: Win Consistency through Tactical Maximalism">Draconius のアシェンザリ信仰ノール: 戦術を突き詰めて安定して勝つ</a> [中級者向け] (0.34)</span></h4>
+<p>Draconius の61連勝の土台になったガイド。アシェンザリと一緒にノールの生き方にどっぷり浸かれば、S系の分岐のころにはレベル9の呪文を唱えているかもしれない。
+</p><p><span id="repo-troll-guide-trfiwu-jian-0.32"></span>
+</p>
+<h4><span class="mw-headline" id="Repo_Troll_Guide.2C_TrFi.5EWu_Jian_.5BBeginner.5D_.280.32.29"><a href="Repo_Troll_Guide,_TrFi^Wu_Jian.html" title="Repo Troll Guide, TrFi^Wu Jian">取り立て屋トロルのガイド TrFi^ウー・ジアン</a> [初心者向け] (0.32)</span></h4>
+<p>楽しくて、技術的で、強力なビルド。ゲームで(私見では)二番目に楽しい神の力、天の嵐を使って、敵の大群を爪で引き裂きながら進んでいく。Crawl を遊ぶ人なら一度は味わっておくべき体験だ。
+</p><p><span id="oneis-velvet-pawed-path-to-immortality-walkthrough---fesukikubaaqudghajiyva-0.32"></span>
+</p>
+<h4><span class="mw-headline" id="Onei.27s_Velvet-Pawed_Path_to_Immortality_.5BAdvanced.5D_.280.32.29"><a href="Onei's_Velvet-Pawed_Path_to_Immortality_Walkthrough_-_FeSu^Kikubaaqudgha_Jiyva.html" title="Onei&#39;s Velvet-Pawed Path to Immortality Walkthrough - FeSu^Kikubaaqudgha/Jiyva"> Onei の肉球で歩む不死への道</a> [上級者向け] (0.32)</span></h4>
+<p>違うタイプの味方ビルド。ここで学んだモンスターと味方の動き方の知識が、猫ちゃんの命を一つ一つできるだけ長持ちさせる助けになる。味方にまだうんざりしていないなら、「腕を磨け! ノール」の次にうってつけだ。
+</p><p><span id="hs-minotaur-fighter-guide-0.31"></span>
+</p>
+<h4><span class="mw-headline" id="H.27s_Minotaur_Fighter_Guide_.5BBeginner.5D_.280.31.29"><a href="H's_Minotaur_Fighter_Guide.html" title="H&#39;s Minotaur Fighter Guide">H のミノタウロス戦士ガイド</a> [初心者向け] (0.31)</span></h4>
+<p>おおむねまったくの新人向けのガイドだが(もしかすると最初にこれを試したかもしれない)、H の MiFi のガイドは、楽しい O と tab のキャラで口直しするのにちょうどいい。厄介な状況に飛び込んでは、新しく身につけたリソースの知識を使って、できるだけ安く切り抜けよう。
+</p><p><span id="how-to-win-more-at-crawl-a-guide"></span>
+</p>
+<h4><span class="mw-headline" id="How_to_win_more_at_crawl:_a_guide"><a rel="nofollow" class="external text" href="https://www.reddit.com/r/dcss/comments/1bq86vv/how_to_win_more_at_crawl_a_guide/">Crawl でもっと勝つには: ガイド</a></span></h4>
+<p>0.31 ごろに reddit に書かれた簡潔なガイド。さっと読めるのに、小技とコツと苦労して得た知識がぎっしり詰まっている。何回か帰還するたびに読み返して、腕がなまらないようにするおさらいだと思えばいい。
+</p><p><span id="dextopode"></span>
+</p>
+<h4><span class="mw-headline" id="Dextopode"><a rel="nofollow" class="external text" href="https://www.reddit.com/r/dcss/comments/11ang48/dextopode_build_a_note/">Dextopode</a></span></h4>
+<p>0.30 ごろのガイドだが、器用を軸にした近接ビルドの多くの枠組みとして今でも使えるし、オクトポードなら現在の 0.33a の trunk でも十分に通用する。
+</p><p><span id="crawl-cosplay-academy"></span>
+</p>
+<h3><span class="mw-headline" id="Crawl_Cosplay_Academy"><a rel="nofollow" class="external text" href="https://cosplay.kelbi.org/cca/about_cca">Crawl Cosplay Academy</a></span></h3>
+<p>Crawl Cosplay Academy は入門向けの練習の場で、4つの型について、ゲームのユニークをそれぞれ元にした12種類のビルドを用意している。プレイヤーは「腕を磨け! ノール」で身につけた基本のスキルを、よく練られた練習用のビルドにすぐに活かせる。そこで終わりにしてもいいし、本格的な毎週の Crawl Cosplay Challenge に進んでもいい。ゲームのユニークを元にした、手ごわいビルドの挑戦だ。
+</p><p><br />
+<span id="community-achievements"></span>
+</p>
+<h3><span class="mw-headline" id="DCSS_Stats_-_Community_Achievements"><a rel="nofollow" class="external text" href="https://dcss-stats.com">DCSS Stats</a>: コミュニティの実績</span></h3>
+<p>統計のページ。すべての職業や種族で帰還することに挑んでもいいし、スキルに基づいた何百もの独自の称号のどれかを手に入れるだけでもいい。ドラコニアン好きはティアマトの実績をぜひ見てほしい!
+</p><p><br />
+</p><p><span id="closing"></span>
+</p>
+<h2><span class="mw-headline" id="Closing">おわりに</span></h2>
+<p>crawler のあなたへ。時間をとってこのガイドを読み、できれば実際に従ってくれてありがとう。私がこのガイドを書いて楽しんだのと同じくらい、このビルドを遊んでゲームを学ぶのを楽しんでもらえたならうれしい。感想は Tavern 2.0 の公式の Git Guide Gnoll Guide のスレッドまで寄せてほしい。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

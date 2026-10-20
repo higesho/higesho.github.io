@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>器用 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="器用(Dexterity)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>器用 <span class="en">Dexterity</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Dexterity">Dexterity</a>」(0.30 向け、2023-10-02 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Dexterity&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>器用</b>(DEX)は、<a href="Strength.html" title="Strength">腕力</a>・<a href="Intelligence.html" title="Intelligence">知力</a>と並ぶ、キャラクターの三つの主要な<a href="Stats.html" class="mw-redirect" title="Attributes">能力値</a>のひとつだ。回避を高くしたいなら重要になる。
+</p><p>器用は次のものに影響する。
+</p>
+<ul><li>一部の武器(<a href="Short_Blades.html" title="Short Blades">短剣</a>、<a href="Long_Blades.html" title="Long Blades">長剣</a>、<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>)のダメージが上がる。</li>
+<li><a href="Dodging.html" title="Dodging">躱し身</a>のスキルが回避にもたらす効果が大きくなる。</li>
+<li>モンスターに<a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>を決められる確率が上がる。</li>
+<li><a href="Shields.html" title="Shields">盾</a>による <a href="Shield_(stat).html" class="mw-redirect" title="SH">SH</a> の上乗せが少し増える。</li>
+<li><a href="Stealth.html" title="Stealth">隠密</a>が少し上がる。</li>
+<li>戦闘での<a href="To_hit.html" class="mw-redirect" title="To-hit">命中</a>がほんの少し上がる。</li></ul>
+<p>器用はおおむね役に立つ防御向きの能力値だ。ただし、重い防具を着るキャラクターには腕力のほうが、呪文詠唱に専念するキャラクターには知力のほうが効いてくることが多い。
+</p><p>器用が 0 以下になると、<a href="Stat_zero.html" title="Stat zero">能力値ゼロ</a>に苦しむことになる。
+</p>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>くわしく書くと、器用の効果は次のとおりだ。
+</p>
+<ul><li> 武器のダメージ: 1 ポイントごとにダメージ +2.5%。DEX 10 のときをダメージ 100% とする。</li>
+<li> 躱し身: 躱し身のスキルによる EV の上乗せは <code>0.8 * DEX * Dodging / (20 - size)</code> になる。つまり器用は倍率として働く。</li>
+<li> 急所攻撃: 下位の急所攻撃を決められる確率が +(DEX)% される。</li>
+<li> 隠密: 1 ポイントごとに隠密の値が +3。参考までに、<a href="Ego.html#Stealth" title="Ego">隠密</a>のブーツは +50 だ。</li>
+<li> 盾: SH の上乗せは <code>DEX * 38 * (base_SH + 13) / 5200</code>。おおよそ、10 ポイントごとに(盾の基本 SH の 7.3%)+ 0.95 SH になる。</li>
+<li> 命中: 1 ポイントごとに<a href="To_hit.html" class="mw-redirect" title="To-hit">命中</a> +0.5。</li></ul>
+<p>腕力や知力と違い、器用には収穫逓減がない。DEX はどの 1 ポイントでも同じだけの効果がある。また、器用の効果は<a href="Dodging.html" title="Dodging">躱し身</a>のスキルに比例して大きくなる。躱し身のスキルが 5 なら DEX 5 で EV 0.2 ほどだが、スキル 25 なら DEX 1 で EV 1 になる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.29.html" title="0.29">0.29</a> より前は、短剣・長剣・<a href="Ranged_Weapons.html" class="mw-redirect" title="Ranged weapons">射撃武器</a>のダメージは器用ではなく腕力で伸びた。</li>
+<li><a href="0.28.html" title="0.28">0.28</a> より前は、器用で<a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>の発生率が上がった。また、<a href="Shields.html" class="mw-redirect" title="Shield">盾</a>の <a href="Shield_(stat).html" class="mw-redirect" title="SH">SH</a> を上げる能力値は DEX だけではなかった。</li>
+<li><a href="0.27.html" title="0.27">0.27</a> より前は、器用に逓減があり、DEX が 24 を超えると EV の伸びが鈍った。さらに EV そのものにも逓減があり、EV を 30 より上げるのは難しかった。くわしくは<a href="Dodging.html#History" title="Dodging">躱し身</a>と<a href="Evasion.html#History" title="Evasion">回避</a>を参照。</li>
+<li><a href="0.18.html" title="0.18">0.18</a> より前は、武器の種類ごとに腕力の比重が決まっていて、それによってダメージと命中に器用がどれだけ寄与するかが決まった。今は器用はどの武器でも命中を同じだけ上げ、ダメージには影響しない。</li>
+<li><a href="0.17.html" title="0.17">0.17</a> より前は、器用によって<a href="Door.html" title="Door">扉</a>が<a href="Noise.html" title="Noise">きしむ</a>確率が変わった。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

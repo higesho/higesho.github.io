@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>オンラインで遊ぶ &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="オンラインで遊ぶ(Playing online)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>オンラインで遊ぶ <span class="en">Playing online</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Playing_online">Playing online</a>」(対象の版の記載なし、2023-06-16 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Playing_online&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Playing_online"><span class="tocnumber">1</span> <span class="toctext">オンラインで遊ぶ</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Servers"><span class="tocnumber">2</span> <span class="toctext">サーバー</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#WebTiles"><span class="tocnumber">3</span> <span class="toctext">WebTiles</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Console"><span class="tocnumber">4</span> <span class="toctext">コンソール</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Options"><span class="tocnumber">4.1</span> <span class="toctext">設定</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Playing_online">オンラインで遊ぶ</span></h2>
+<p>DCSS をオンラインで遊べるサーバーがいくつかあり、ブラウザ(<a href="http://crawl.chaosforge.org/WebTiles" data-untr="1" title="WebTiles">WebTiles</a>)か、<a href="http://crawl.chaosforge.org/SSH" data-untr="1" class="mw-redirect" title="SSH">SSH</a>/telnet で遊べる。
+</p><p>オンラインで遊ぶと、特に IRC のチャットルームに参加した場合、おもな利点が三つある。
+</p>
+<ul><li> ほかの人にプレイを生で観戦してもらい、メッセージや助言を送ってもらえる(よく無視される「hit _」の表示がそれだ……)。</li>
+<li> 同じ組み合わせばかり遊んでいても、倒しに行くプレイヤーの幽霊が、より楽しく多彩な顔ぶれになる。</li>
+<li> 調べ方さえわかれば、どのマイルストーンや死亡のリプレイでも見られる。どこで間違えたかを振り返ったり、笑える場面をもう一度味わったりするのにうってつけだ。 </li></ul>
+<h2><span class="mw-headline" id="Servers">サーバー</span></h2>
+<table style=" width:100%">
+<tr>
+<td style="width:50%; vertical-align:top">
+<div><a class="mw-selflink selflink"> 今すぐオンラインで <i>Crawl</i> を遊ぶ</a></div>
+<div>
+<p><b>北アメリカのサーバー</b>
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://crawl.akrasiac.org:8080/">CAO</a> - アリゾナ州。<a href="0.10.html" title="0.10">0.10</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョンと <a href="Trunk.html" title="Trunk">trunk</a> がある。</li>
+<li><a rel="nofollow" class="external text" href="https://cbro.berotato.org/">CBR2</a> - オハイオ州。<a href="0.26.html" title="0.26">0.26</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョンと <a href="Trunk.html" title="Trunk">trunk</a> がある。</li>
+<li><a rel="nofollow" class="external text" href="https://crawl.kelbi.org/">CKO</a> - ニューヨーク州。<a href="0.18.html" title="0.18">0.18</a>、<a href="0.21.html" title="0.21">0.21</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョン、<a href="Trunk.html" title="Trunk">trunk</a> がある。</li></ul>
+<p><b>ヨーロッパのサーバー</b>
+</p>
+<ul><li>CDO - ドイツ。<a href="0.10.html" title="0.10">0.10</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョンと <a href="Trunk.html" title="Trunk">trunk</a> がある(コンソールのみ)。</li>
+<li><a rel="nofollow" class="external text" href="http://underhound.eu:8080/">CUE</a> - オランダのアムステルダム。<a href="0.10.html" title="0.10">0.10</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョンと <a href="Trunk.html" title="Trunk">trunk</a> がある。</li>
+<li><a rel="nofollow" class="external text" href="http://crawl.xtahua.com/">CXC</a> - フランス。<a href="0.14.html" title="0.14">0.14</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョンと <a href="Trunk.html" title="Trunk">trunk</a> がある。</li></ul>
+<p><b>アジアのサーバー</b>
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://webzook.net:8080/">CWZ</a> - 韓国。<a href="0.11.html" title="0.11">0.11</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョンと <a href="Trunk.html" title="Trunk">trunk</a> がある(WebTiles のみ)。</li>
+<li><a rel="nofollow" class="external text" href="http://lazy-life.ddo.jp:8080/">LLD</a> - 日本。<a href="0.13.html" title="0.13">0.13</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョンと <a href="Trunk.html" title="Trunk">trunk</a> がある(WebTiles のみ)。</li></ul>
+<p><b>オーストラリアのサーバー</b>
+</p>
+<ul><li><a rel="nofollow" class="external text" href="https://crawl.project357.org/">CPO</a> - シドニー。<a href="0.16.html" title="0.16">0.16</a> から <a href="0.28.html" title="0.28">0.28</a> までの全バージョンと <a href="Trunk.html" title="Trunk">trunk</a> がある(WebTiles のみ)。</li></ul>
+</div>
+</td></tr></table>
+<h2><span class="mw-headline" id="WebTiles">WebTiles</span></h2>
+<p><a href="http://crawl.chaosforge.org/WebTiles" data-untr="1" title="WebTiles">WebTiles</a> は、DCSS の中でも手軽に始められ、グラフィックも凝った版だ。Chromium などのたいていの最近のブラウザなら、手順は簡単だ。サーバーのサイト(上のリンク)に行き、アカウントを作って遊び始めるだけでいい。個人情報を入力する必要はなく、メールアドレスもパスワードを忘れたとき用の任意の項目だ。
+</p>
+<h2><span class="mw-headline" id="Console">コンソール</span></h2>
+<p>コンソール版は、遊ぶのに <a href="http://crawl.chaosforge.org/SSH" data-untr="1" class="mw-redirect" title="SSH">SSH</a> クライアントが要るので、たいてい準備がもっと面倒だ。Mac や Linux なら SSH はたぶん最初から入っているが、Windows でコンソール版をちゃんとオンラインで遊ぶには、<a href="http://crawl.chaosforge.org/PuTTY" data-untr="1" title="PuTTY">PuTTY</a> というプログラムをダウンロードする必要がある。
+</p><p>SSH での接続の手引きは<a rel="nofollow" class="external text" href="http://crawl.develz.org/wordpress/howto#connecting">こちら</a>にある。そのすぐ上には<a rel="nofollow" class="external text" href="http://crawl.develz.org/wordpress/howto">サーバーとその SSH 鍵の一覧</a>もある。
+</p>
+<h3><span class="mw-headline" id="Options">設定</span></h3>
+<p>動作が重いと感じたら、SSH の圧縮を有効にするのを忘れずに! キーボードがきちんと動くよう、NetHack モードにするのも忘れずに! これによってテンキーで入力される文字が実質的に変わるので、<b>数字の段のキーとテンキーとでは、入力されるパスワードが違ってしまう</b>点によく注意すること(CAO に接続したあと、ログインして遊ぶとき)。先の手引きに書かれていないこととして、Terminal-&gt;Features で「Disable Application keypad mode」を設定できる。これで +-=/ を使って標的を切り替えられるようになる。今のところ、テンキーの 5 で長い休憩をとれるようにする方法はない。現状、オンラインで長い休憩をとるには、数字の段の 5 を押すしかない。
+</p><p>多くの人は文字セットを変えて、壁をもっと「詰まった」見た目にしたり、ポータルや店がワンドや杖のように見えないようにしたりしている。そうするには、設定に「char_set = IBM」という行を足し、PuTTY の Window-&gt;Translation-&gt;Received data assumed to be in which character set で文字セットを CP437 にするだけでいい。
+</p><p>Gnome や KDE のデスクトップ、そのほか UTF-8 に対応した端末では、「char_set = unicode」でそれを有効にでき、見た目がより良くなる。
+</p><p>端末の色パレットを、タイル版の「公式の」パレットに合わせたい人もいるだろう。
+設定する色は次のとおり。
+</p>
+<pre>
+    VColour(  0,   0,   0), // BLACK
+    VColour(  0,  82, 255), // BLUE
+    VColour(100, 185,  70), // GREEN
+    VColour(  0, 180, 180), // CYAN
+    VColour(255,  48,   0), // RED
+    VColour(238,  92, 238), // MAGENTA
+    VColour(165,  91,   0), // BROWN
+    VColour(162, 162, 162), // LIGHTGREY
+    VColour( 82,  82,  82), // DARKGREY
+    VColour( 82, 102, 255), // LIGHTBLUE
+    VColour( 82, 255,  82), // LIGHTGREEN
+    VColour( 82, 255, 255), // LIGHTCYAN
+    VColour(255,  82,  82), // LIGHTRED
+    VColour(255,  82, 255), // LIGHTMAGENTA
+    VColour(255, 255,  82), // YELLOW
+    VColour(255, 255, 255)  // WHITE
+</pre>
+<p>PuTTY の場合:
+</p>
+<pre>
+    RGB(  0,   0,   0), // ANSI BLACK
+    RGB(  0,  82, 255), // ANSI BLUE
+    RGB(100, 185,  70), // ANSI GREEN
+    RGB(  0, 180, 180), // ANSI CYAN
+    RGB(255,  48,   0), // ANSI RED
+    RGB(238,  92, 238), // ANSI MAGENTA
+    RGB(165,  91,   0), // ANSI YELLOW
+    RGB(162, 162, 162), // ANSI WHITE
+    RGB( 82,  82,  82), // ANSI BLACK BOLD
+    RGB( 82, 102, 255), // ANSI BLUE BOLD
+    RGB( 82, 255,  82), // ANSI GREEN BOLD
+    RGB( 82, 255, 255), // ANSI CYAN BOLD
+    RGB(255,  82,  82), // ANSI RED BOLD
+    RGB(255,  82, 255), // ANSI MAGENTA BOLD
+    RGB(255, 255,  82), // ANSI YELLOW BOLD
+    RGB(255, 255, 255)  // ANSI WHITE BOLD
+</pre>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

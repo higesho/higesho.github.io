@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ゾットの時計 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ゾットの時計(Zot clock)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ゾットの時計 <span class="en">Zot clock</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Zot_clock">Zot clock</a>」(0.31 向け、2025-08-19 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Zot_clock&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> ゾットが何者なのか、誰も知らない。悪魔か、神か、魔術師か、それともまったく別の何かなのか。ただ、オーブを求める冒険者は、逆にゾットに狩られることになる。ゾットにほんの一瞬触れられただけでも、体は二度と元に戻らない傷を負う。
+<p>ゾットの動きはひどく鈍く、冒険者がダンジョンの一つの区域にとんでもなく長く居座ってはじめて、その気配を感じ取る。そうなってからでも警告は十分に早く届くので、冒険者はその区域のさらに深くへ降りて(ゾットの注意をふたたび散らして)もいいし、区域そのものを離れてもいい。
+</p><p>アビスはゾットの理解の及ばない場所で、そこにいる冒険者はゾットからは安全だ(ほかの危険はいくらでもあるが)。ゾットにとっては、地獄の各階層とその入り口はひとつの区域として扱われる。ゾットの追跡から永遠に逃れる方法があるという噂もあるが、あれほど執念深い存在を食い止められる魔法など、本当にあるのだろうか。
+</p>
+</td></tr></table>
+<p><b>ゾットの時計</b>は、ダンジョンの一つの<a href="Dungeon_branches.html" class="mw-redirect" title="Branch">分岐</a>に居られる時間を制限する仕組みだ。時計を補充するには、まだ訪れていない階へ行かなければならない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Timer"><span class="tocnumber">1.1</span> <span class="toctext">時間</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Punishment"><span class="tocnumber">1.2</span> <span class="toctext">罰</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Display"><span class="tocnumber">1.3</span> <span class="toctext">表示</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Tips_.26_Tricks"><span class="tocnumber">2</span> <span class="toctext">小技</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<h3><span class="mw-headline" id="Timer">時間</span></h3>
+<p>ゾットの時計は deca<a href="Action.html" class="mw-redirect" title="Aut">Aut</a> 単位で数える。1 decaAut は、通常の速さで行動したときの 1 <a href="Turn.html" title="Turn">ターン</a>にあたる。基本的に、時計は分岐ごとに別々だ。ふつうは新しい階に入るたびに 6,000 decaAut が加わる。<a href="Felid.html" title="Felid">フェリッド</a>が死んだときも、1 階ぶんの時間が戻る。一つの分岐にためておけるのは最大で <a href="27.html" title="27">27</a>,000 decaAut までだ。時計の進み方は、次のような効果で変わる。
+</p>
+<ul><li><a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>の信者は時計の進みが 1.5 倍遅くなる(1 階につき 9,000 decaAut、最大 40,500 decaAut)。</li>
+<li><a href="Ziggurat.html" title="Ziggurat">ジグラット</a>を踏破するか、<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を手に入れると、その時点ですべての分岐の時計が止まる。</li>
+<li><a href="Dungeon_Sprint.html" title="Dungeon Sprint">ダンジョンスプリント</a>では時計そのものが無い。</li></ul>
+<p><a href="The_Abyss.html" title="The Abyss">アビス</a>にはゾットの時計が無く、いくらでも探索できる。<a href="Hell.html" title="Hell">地獄</a>の各分岐は、<a href="http://crawl.chaosforge.org/Vestibule" data-untr="1" class="mw-redirect" title="Vestibule">地獄の入り口</a>もふくめて、同じ時計を共有する。
+</p>
+<h3><span class="mw-headline" id="Punishment">罰</span></h3>
+<p>時計が 0 になると、<a href="http://crawl.chaosforge.org/Zot_(mythical_wizard)" data-untr="1" title="Zot (mythical wizard)">ゾット</a>に見つかり、最大 HP が<i>現在の</i>値の 16.6% だけ<i>永久に</i>減る。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<ul><li>時計が何度も尽きた場合、罰はそのときの実際の HP をもとに計算される。最大 HP が 36 なら 36 -&gt; 30 になり、もう一度時計が 0 になると 30 -&gt; 25 になる。</li>
+<li>最大 HP が 36 -&gt; 30 に減らされた場合、「最大 HP -6」という永続の補正がつく。この補正は最大 HP が増えても大きくならず、ゲームの最後まで「HP -6」のままだ。</li>
+<li>最悪の場合、最大 HP が 1 になることもある。</li></ul>
+<p>ゾットに見つかったあと、時計は 1,000 decaAut に戻される。
+</p>
+<h3><span class="mw-headline" id="Display">表示</span></h3>
+<p>残り時間は <b>E</b> を押すと確かめられる。時計が 1,000 になると警告が出て、残り時間を示す <span class="nhsym clr-yellow">Zot(<i>数値</i>)</span> の<a href="Status_effects.html" class="mw-redirect" title="Status effect">状態異常</a>がつく。<a href="http://crawl.chaosforge.org/Rcfile" data-untr="1" class="mw-redirect" title="Rcfile">設定ファイル(rcfile)</a>で <code>always_show_zot = true</code> を指定すれば、それほど差し迫っていないときにも残り時間がステータス欄に表示される。
+</p>
+<h2><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h2>
+<ul><li>この時計は、ふつうに遊んでいれば邪魔にならないように作られている。平均的なキャラクターなら、休憩や撤退をこまめに挟み、<a href="Autoexplore.html" title="Autoexplore">自動探索</a>を使っても、与えられた時間の半分もかけずに 1 階を探索しきれる。<a href="Oni.html" title="Oni">鬼</a>のように HP が多い種族や、<a href="Naga.html" title="Naga">ナーガ</a>のように足の遅い種族でもそれは変わらない。ただ、来た道を引き返すときにかかる時間には気をつけたほうがいい。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.30.html" title="0.30">0.30</a>より前は、ゾットの時計が尽きると最大 HP の約 36% が一時的に減少していた。最大 HP の 90% を超えて減少した状態になると、ゾットに殺された。</li>
+<li><a href="0.29.html" title="0.29">0.29</a>より前は、ゾットの時計が尽きると、HP を減らされる代わりに<a href="http://crawl.chaosforge.org/Instant_death" data-untr="1" class="mw-redirect" title="Instant death">即死</a>した。</li>
+<li><a href="0.27.html" title="0.27">0.27</a>より前は、<a href="Ziggurat.html" title="Ziggurat">ジグラット</a>を踏破しても時計は止まらなかった。</li>
+<li>ゾットの時計は、<a href="Comestibles_and_satiation.html" class="mw-redirect" title="Food">食料</a>の時計に代わるものとして <a href="0.26.html" title="0.26">0.26</a> で追加された。以前の時計と違って、<a href="Mummy.html" class="mw-redirect" title="Mummies">ミイラ</a>や<a href="Vampire.html" class="mw-redirect" title="Vampires">吸血鬼</a>をふくむすべての種族に影響する。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/zot.cc#L183">zot.cc:183</a> (0.30.0)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

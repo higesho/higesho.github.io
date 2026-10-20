@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ズホルの皮 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ズホルの皮(Skin of Zhor)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ズホルの皮 <span class="en">Skin of Zhor</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Skin_of_Zhor">Skin of Zhor</a>」(0.30 向け、2023-10-04 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Skin_of_Zhor&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 寒く遠い地に住むある奇妙な動物の悪臭を放つ皮だ。生まれ故郷の冷気を放ち、暖かい土地から来た生き物の動きを鈍らせる。
+</td></tr></table>
+<p><a href="http://crawl.chaosforge.org/File:Skin_of_zhor.png" data-untr="1" class="image"><img alt="Skin of zhor.png" src="img/Skin_of_zhor.png" width="32" height="32" /></a> <i><b>+4 ズホルの皮</b></i>
+</p><p>+4 の<a href="Animal_skin.html" title="Animal skin">獣の皮</a>
+</p><p>常時発動の<a href="Metabolic_Englaciation.html" title="Metabolic Englaciation">代謝の凍結</a><br />
+rC+++<br />
+<a href="See_invisible.html" title="See invisible">霊視</a>
+</p>
+<h2><span class="mw-headline" id="Mechanics">仕組み</span></h2>
+<p>敵対的なモンスターが1体以上<a href="Line_of_sight.html" class="mw-redirect" title="LOS">視界</a>にいると、1.0 <a href="Decaaut.html" class="mw-redirect" title="DecaAut">ターン</a>(1.0 decaAut)ごとに 1/7 の確率で、<a href="Spell_Power.html" class="mw-redirect" title="Spell power">威力</a>30 の代謝の凍結が発動する。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> プレイヤーは何の行動もいらず、MP も使わず、スキルを鍛える必要もなく、モンスターに気づかれることもない。ただし威力が低いので、<a href="Hit_dice.html" class="mw-redirect" title="HD">HD</a> の高いモンスターには抵抗されることがある。
+</p><p>威力30の代謝の凍結は、<code>(3d31)/6 - HD/2 - 0.5</code> ターンのあいだ相手を減速させる。ターン数が 0 以下なら減速は失敗し、そうでなければ最低でも 2-5 ターン(発動ごとにランダム)は続く。したがって、減速させられる確率は次のとおりだ。
+</p>
+<table class="prettytable" style="text-align: center">
+
+<tr>
+<th><a href="Hit_dice.html" class="mw-redirect" title="HD">HD</a> </th>
+<th> 減速させる確率
+</th></tr>
+<tr>
+<td>5 </td>
+<td> 97.7%
+</td></tr>
+<tr>
+<td>10 </td>
+<td> 78.1%
+</td></tr>
+<tr>
+<td>15 </td>
+<td> 51.2%
+</td></tr>
+<tr>
+<td>20 </td>
+<td> 13.6%
+</td></tr></table>
+<h2><span class="mw-headline" id="Desirability">評価</span></h2>
+<p><b>ズホルの皮</b><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>は、何もしなくても敵を<a href="Slow.html" title="Slow">減速</a>させる。これで<a href="Kiting.html" title="Kiting">引き撃ち</a>の戦法が取れるようになる。近接攻撃の敵から歩いて離れれば、そのあいだにただで凍結の機会が得られるのだ。減速はモンスターの攻撃速度も下げるので、効く相手ならどんな敵にも役立つ。冷気耐性が付くのもありがたい(特に<a href="Ice_cave.html" title="Ice cave">氷の洞穴</a>では)。
+</p><p>とはいえ、このアーティファクトも完璧ではない。
+</p>
+<ul><li>+4 の獣の皮なので、<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a> はほとんど上がらない。重装の近接戦闘キャラクターは手を出さないほうがいいし、呪文使いでも<a href="Troll_leather_armour.html" title="Troll leather armour">トロル革の鎧</a>や<a href="Swamp_dragon_scales.html" title="Swamp dragon scales">沼ドラゴンの鱗一式</a>のような頼れる防具のほうを好むかもしれない。減速は確かに受けるダメージを減らすが、安定しない。凍結の確率は 1/7 なので、<a href="Shaft.html" title="Shaft">縦穴</a>に落ちたり<a href="http://crawl.chaosforge.org/Teleport_trap" data-untr="1" title="Teleport trap">テレポート</a>させられたりした直後は、効き始めるまでしばらくかかることがある。</li>
+<li>すべてのモンスターに効くわけではない。どんな程度でも<a href="Cold.html" class="mw-redirect" title="Cold resistance">rC+</a> を持つ生き物には代謝の凍結はまったく効かないし、<a href="Hit_dice.html" class="mw-redirect" title="HD">HD</a> の高い相手にはかなりの確率で抵抗される。ゲーム終盤では減速できる敵がほとんどいなくなり、この防具の有用性は大きく下がる。</li>
+<li>冷気耐性のない<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">仲間</a>にも効いてしまうので、<a href="Summoner.html" title="Summoner">召喚術師</a>にとっては使いにくい。</li></ul>
+<p>とはいえ、減速の効果は強力で、しかも時間を使わない。呪文使いや EV 頼みの戦士なら、この防具をうまく生かせる。<a href="http://crawl.chaosforge.org/Cold-blooded" data-untr="1" class="mw-redirect" title="Cold-blooded">冷血</a>の生き物だらけの<a href="The_Lair.html" title="The Lair">獣の棲み処</a>では特に強く、相手を長く減速させられる。<a href="Spider's_Nest.html" title="Spider&#39;s Nest">蜘蛛の穴ぐら</a>のように HD の低い敵が群れている場所でも頼りになる。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.23.html" title="0.23">0.23</a> より前は、ズホルの皮に常時発動の代謝の凍結は付いていなかった。霊視(SInv)もなかった。</li>
+<li><a href="0.14.html" title="0.14">0.14</a> より前は、ズホルの皮の耐性は rC++ だけだった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/art-func.h#L1403">art-func.h:1403</a> (0.30.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/art-data.txt#L906">art-data.txt:906</a> (0.30.1)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>扉 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="扉(Door)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>扉 <span class="en">Door</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Door">Door</a>」(0.28 向け、2026-06-24 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Door&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.28 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.28.html" title="0.28">0.28</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 木の扉。
+</td></tr></table>
+<p><a href="http://crawl.chaosforge.org/File:Door.png" data-untr="1" class="image"><img alt="Door.png" src="img/Door.png" width="32" height="32" /></a> <b>扉</b>は<a href="The_Dungeon.html" class="mw-redirect" title="Dungeon">迷宮</a>の地形の一つで、ふつうは部屋と部屋を仕切っているが、部屋の真ん中にぽつんと立っていることもある。迷宮とほぼすべての<a href="http://crawl.chaosforge.org/Branches" data-untr="1" class="mw-redirect" title="Branches">分岐</a>にあり、壁にはめ込まれている。大きさはたいてい 1x1 か 2x1 だ(<a href="Vault.html" title="Vault">ヴォールト</a>によってはずっと大きな扉もある)。扉に向かって歩けば開き、隣にいるときに <b><a href="http://crawl.chaosforge.org/C" data-untr="1" title="C">C</a></b> を押せば閉まる。扉の向こうに<a href="Monster.html" title="Monster">モンスター</a>がいるとわかっているなら、閉めたままにしておけば足止めできる。ただし相手がこちらに気づいていて、<a href="http://crawl.chaosforge.org/Category:Open_doors" data-untr="1" title="Category:Open doors">扉を開けられる</a>(あるいは<a href="http://crawl.chaosforge.org/Category:Eats_doors" data-untr="1" title="Category:Eats doors">扉を食べてしまえる</a>)なら、あまり役に立たない(モンスターは扉を壊せるからだ)。
+</p><p>扉を開け閉めすると、ときどき<a href="Noise.html" title="Noise">軋む音</a>がして、近くのモンスターに居場所を知られてしまう。どうせ何もかも起こしてしまう重装の力押しキャラよりも、<a href="Stealth.html" title="Stealth">隠密</a>を重視するキャラにとって困る話だ。幸い、軋む確率は <code>8 + 4 * <a href="Stealth.html" title="Stealth">隠密</a> / 3</code> 分の 1 なので、隠密の高いキャラならまず起こらない。<a href="Silence.html" title="Silence">静寂</a>の中でも扉は軋まない。
+</p><p>戸口にアイテムがあるときは、扉を閉めるとたいてい隣のマスへ押し出される。ただし、押し出す先が深い水や溶岩になる場合は、扉が閉まらない。
+</p><p><a href="http://crawl.chaosforge.org/File:Transparent_door.png" data-untr="1" class="image"><img alt="Transparent door.png" src="img/Transparent_door.png" width="32" height="32" /></a> 半透明の扉もあり、向こう側が見える。ふつうの扉との違いはそれだけだ。透けて見える壁と同じで、閉じた半透明の扉の向こうにいるものは、こちらに何の影響も与えられない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Broken_Door"><span class="tocnumber">1</span> <span class="toctext">壊れた扉</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Runed_Door"><span class="tocnumber">2</span> <span class="toctext">ルーンで封印された扉</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Sealed_Door"><span class="tocnumber">3</span> <span class="toctext">魔法で封印された扉</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Tips_.26_Tricks"><span class="tocnumber">4</span> <span class="toctext">小技</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Broken_Door">壊れた扉</span></h2>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> がっかりするほど手入れの行き届いていない木の扉。魔法でも使わない限り、きちんと閉じることはできないだろう。
+</td></tr></table>
+<p><a href="http://crawl.chaosforge.org/File:Broken_door.png" data-untr="1" class="image"><img alt="Broken door.png" src="img/Broken_door.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Transparent_broken_door.png" data-untr="1" class="image"><img alt="Transparent broken door.png" src="img/Transparent_broken_door.png" width="32" height="32" /></a> こちらに気づいていて扉を開けられるモンスターは、扉を開けるときに 3 分の 1 の確率でそれを壊す(<a href="Berserk.html" title="Berserk">バーサーク</a>中なら必ず壊す)。
+</p><p>壊れた扉を直せるのは、<a href="Vault_warden.html" title="Vault warden">宝物庫の監視者</a>の呪文<a href="Seal_Doors.html" title="Seal Doors">扉の封印</a>だけだ。
+</p>
+<h2><span class="mw-headline" id="Runed_Door">ルーンで封印された扉</span></h2>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> ルーン文字に覆われた扉。向こう側には何か特別なものがあるようだ――危険か、あるいは財宝か。他の扉と同じように開ければルーンを破ることができる。
+</td></tr></table>
+<p><a href="http://crawl.chaosforge.org/File:Runed_door.png" data-untr="1" class="image"><img alt="Runed door.png" src="img/Runed_door.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Transparent_runed_door.png" data-untr="1" class="image"><img alt="Transparent runed door.png" src="img/Transparent_runed_door.png" width="32" height="32" /></a> <b>ルーンで封印された扉</b>は特別なヴォールトにしかなく、壊すことができない。たいていは非常に強力なモンスターや、とりわけ価値のある財宝を閉じ込めるのに使われている。ありがたいことに、この扉を開けられるのはプレイヤーだけなので、中のモンスターはこちらが挑む気になるまで出てこられない。かなり<a href="Out_of_depth.html" class="mw-redirect" title="Out-of-depth">階層に不相応な強さの</a>相手にも対処できる自信がないなら、開けないほうがいい。逃げたりテレポートしたりする途中でさらに厄介ごとに出くわさないよう、先にその階のほかの場所を片付けておくのがおすすめだ。それに、扉をもう一度閉めれば中の脅威を封じ込められる場合もあることを忘れないように。
+</p><p>なお、ランダムなテレポートや、上の階からの<a href="Escape_hatch.html" title="Escape hatch">脱出ハッチ</a>で、ルーンで封印された扉に囲まれた区画の中に出てしまうことはある。そうなったら、すぐにもう一度テレポートしたほうがいいかもしれない。
+</p><p><a href="Crazy_Yiuf.html" title="Crazy Yiuf">狂人ヰゥフ</a>の小屋、<a href="Hall_of_Blades.html" title="Hall of Blades">刃の広間</a>の入口、多くの<a href="Player_ghost.html" title="Player ghost">プレイヤーの幽霊</a>のヴォールトなど、いくつかのヴォールトには必ずルーンで封印された扉がある。その多くは半透明で、中の財宝が戦ってまで手に入れる価値があるかを見きわめられるが、中にいるものが目を覚ましてこちらに気づくきっかけにもなる。
+</p>
+<h2><span class="mw-headline" id="Sealed_Door">魔法で封印された扉</span></h2>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 神秘のルーンによって固く封印された扉。その魔法が認めない者に対しては、決して開かない。
+</td></tr></table>
+<p><a href="http://crawl.chaosforge.org/File:Sealed_door.png" data-untr="1" class="image"><img alt="Sealed door.png" src="img/Sealed_door.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Transparent_sealed_door.png" data-untr="1" class="image"><img alt="Transparent sealed door.png" src="img/Transparent_sealed_door.png" width="32" height="32" /></a> <b>魔法で封印された扉</b>は、<a href="Vault_warden.html" title="Vault warden">宝物庫の監視者</a>の呪文<a href="Seal_Doors.html" title="Seal Doors">扉の封印</a>で閉ざされ、鍵をかけられた扉だ。このとき戸口にあるアイテム、生き物、プレイヤーはすべて外へ押し出される。扉を開けるには封印を解かなければならない。それには、呪文が切れるのを待つ、唱えた宝物庫の監視者を倒す、扉そのものを壊す、ほかのモンスターに開けてもらう(まず期待できない)のいずれかが要る。
+</p>
+<h2><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h2>
+<ul><li>扉を開けられる追っ手を足止めしようと何度も扉を閉めても、稼げるのはせいぜい 1、2 ターンだ。立て直したいなら、<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>や<a href="Blink.html" title="Blink">瞬間移動</a>を使うか、移動速度を上げるかして、安全な場所まで完全に逃げきること。</li>
+<li>扉を開けたとたん、手の届かない場所に<a href="Smiting.html" title="Smiting">打擲の一撃</a>や<a href="Torment.html" title="Torment">拷問</a>、<a href="Damnation.html" title="Damnation">天罰</a>など、遠くから大きなダメージを与えてくる敵が見えたら、後ずさりしてはいけない。視界に入っているかぎり、逃げる間ずっと攻撃される。先に扉を<a href="http://crawl.chaosforge.org/C" data-untr="1" title="C">閉めて</a>しまえば、敵のほうから近づいてくるしかなくなる。撃ち込まれるはずだった何ターンかを奪えるうえ、ほぼ確実にこちらが先手を取れる。序盤の<a href="Orc_priest.html" title="Orc priest">オークの司祭</a>から終盤の<a href="http://crawl.chaosforge.org/Fiend" data-untr="1" title="Fiend">魔神</a>や<a href="Lich.html" title="Lich">リッチ</a>まで、ゲームを通して使える手だ。
+<ul><li>あるいは、扉の近くで<a href="http://crawl.chaosforge.org/Shout" data-untr="1" title="Shout">叫び声</a>を上げて向こうの部屋の住人を起こし、少し下がって相手が扉を開けてくれるのを待つ手もある。</li></ul></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.28.html" title="0.28">0.28</a> より前は、モンスターが開けても扉は壊れなかった。開けられるたびにすぐ閉め直せば、モンスターをいつまでも足止めできた(<a href="http://crawl.chaosforge.org/Random_energy" data-untr="1" class="mw-redirect" title="Random energy">エネルギーのランダム化</a>で相手が余分に 1 ターン得るまでは)。</li>
+<li><a href="0.23.html" title="0.23">0.23</a> で半透明の扉が加わった。</li>
+<li><a href="0.22.html" title="0.22">0.22</a> より前は、<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>で扉を壊せた。</li>
+<li><a href="0.21.html" title="0.21">0.21</a> より前は、戸口に<a href="Item.html" title="Item">アイテム</a>があると、大きさにかかわらず扉を閉められなかった。</li>
+<li><a href="0.20.html" title="0.20">0.20</a> より前は、<a href="http://crawl.chaosforge.org/Wands_of_disintegration" data-untr="1" class="mw-redirect" title="Wands of disintegration">分解のワンド</a>と<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>で扉を壊せた。</li>
+<li><a href="0.17.html" title="0.17">0.17</a> より前は、扉が軋む確率は<a href="Dexterity.html" title="Dexterity">器用</a>と<a href="Stealth_(skill).html" title="Stealth (skill)">隠密(スキル)</a>の影響を受けていた。</li>
+<li>ルーンで封印された扉は <a href="0.12.html" title="0.12">0.12</a> で加わった。ただし、ヴォールトごとに定義された警告文つきの扉はそれより何版も前からあった。宝物庫の監視者と魔法で封印された扉も 0.12 で加わった。</li>
+<li><a href="0.12.html" title="0.12">0.12</a> より前は、ときおり隠し扉があり、視界に入ったうえで<a href="Traps_&_Doors.html" title="Traps &amp; Doors">罠と扉</a>スキルの判定に成功しないと見つからなかった。隠し扉が削除されたため、このスキルは<a href="Traps_(skill).html" title="Traps (skill)">罠</a>に改名された。隠し扉はもともとどこにでもあったが、<a href="0.11.html" title="0.11">0.11</a> で特別な<a href="Vault.html" title="Vault">ヴォールト</a>にしか出なくなった。</li></ul>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 巧妙に隠された木の扉。かつては隠し扉だったが、少なくともあなたにとってはもう秘密ではない。
+</td></tr></table>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

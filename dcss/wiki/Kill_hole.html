@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>キルホール &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="キルホール(Kill hole)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>キルホール <span class="en">Kill hole</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Kill_hole">Kill hole</a>」(0.30 向け、2023-09-13 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Kill_hole&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.30.html" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>キルホール</b>(kill hole、<b>殺人孔</b>とも)は、<a href="Line_of_sight.html" title="Line of sight">視界</a>に一度にモンスターが 1 体しか入らないような<a href="Wall.html" title="Wall">壁</a>の形のことだ。たいていのモンスターは視界の外にいるあいだ何もできないので、キルホールはふつうの通路よりも有利に戦える。通路だと<a href="Orc_priest.html" title="Orc priest">オークの司祭</a>がほかのオークの後ろから<a href="Smiting.html" class="mw-redirect" title="Smite">打擲の一撃</a>を撃ってくるかもしれないが、キルホールならこちらが見えないので攻撃もできない。
+</p><p>キルホールは自然にできていることもたまにあるが、たいていは<a href="Formicid.html" title="Formicid">フォーミシッド</a>の掘る能力や<a href="Wand_of_digging.html" title="Wand of digging">掘削のワンド</a>で人工的に作るもののことを指す。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Explanation"><span class="tocnumber">1</span> <span class="toctext">しくみ</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Natural_Examples"><span class="tocnumber">2</span> <span class="toctext">自然にできたものの例</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Creating_a_kill_hole"><span class="tocnumber">3</span> <span class="toctext">キルホールの作り方</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Strategy"><span class="tocnumber">4</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Tips_.26_Tricks"><span class="tocnumber">4.1</span> <span class="toctext">小技</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Explanation">しくみ</span></h2>
+<p>ひとことで言えば、キルホールは 2 本の斜めの線が交わるところ('V'、'^'、'&lt;'、'&gt;' の形)だ。上下左右の方向ではうまくいかない。下の図を参照。
+</p>
+<ul class="gallery mw-gallery-nolines left">
+		<li class="gallerybox" style="width: 405px"><div style="width: 405px">
+			<div class="thumb" style="width: 400px"><div><a href="http://crawl.chaosforge.org/File:Killhole.png" data-untr="1" class="image"><img alt="" src="img/400px-Killhole.png" width="400" height="206" /></a></div></div>
+			<div class="gallerytext">
+<p>X は今の<a href="Line_of_sight.html" title="Line of sight">視界</a>の範囲を示す。<br />左: キルホールではない。司祭は 2 マス離れたところから攻撃できる<br />右: キルホール。司祭は近接戦闘を強いられる。
+</p>
+			</div>
+		</div></li>
+</ul>
+<h2><span class="mw-headline" id="Natural_Examples">自然にできたものの例</span></h2>
+<pre>#########
+####.####
+###.#.###
+##.###@## &lt;--@ の位置に
+..#####g#    立つ
+##.###g##
+###.#g###
+####g####
+####.####
+</pre>
+<p>これは<a href="The_Dungeon.html" class="mw-redirect" title="Dungeon">迷宮</a>や<a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>で見かけるような、自然にできたキルホールの例だ。この形だと背後からモンスターが来られることに注意。このノールたちがもう一方の入口を見つけることはまずないが、ほかのモンスターが<a href="Noise.html" title="Noise">騒音</a>を聞きつけて西からやって来るかもしれない。
+</p>
+<pre>.######
+..YY#..
+.YY+@.# &lt;--@ の位置に
+..#####    立つ
+#######
+</pre>
+<p>もう一つの例は、獣の棲み処のわりとよくある地形で見かけるものだ。この例では<a href="Door.html" title="Door">扉</a>(ヤクとプレイヤーのあいだの +)が敵の通り抜けを防いでいる。敵が扉を開けられるなら、このキルホールはうまく働かない。また前の例と同じく、東からモンスターが現れて背後から攻撃してくることもある。
+</p>
+<h2><span class="mw-headline" id="Creating_a_kill_hole">キルホールの作り方</span></h2>
+<p>自分でキルホールを作るには、岩の壁がある程度の広さで続いている場所と、それを<a href="Dig.html" title="Dig">掘削</a>する手段(<a href="Wand_of_digging.html" title="Wand of digging">掘削のワンド</a>や<a href="Formicid.html" title="Formicid">フォーミシッド</a>の能力)が要る。壁の向こうには空間が無いほうがいい。あると新たな面倒の種を抱えかねない。床の端のあたりならたいてい安全だが、マップの端に近すぎると、壊せない外周の壁に突き当たることがある。
+</p><p><a href="Shatter.html" title="Shatter">粉砕</a>は壁を(石や金属の壁でさえ)壊せる<i>ことは壊せる</i>が、狙いが定まらない。運よくキルホールができることもあれば、壁が丸ごと崩れるだけのこともある。どちらにしても、とんでもない<a href="Noise.html" title="Noise">騒音</a>を立てることになる。
+</p><p>完璧なキルホール(敵が常に 1 体しか視界に入らないもの)はこんな形だ。
+</p>
+<pre>####
+.#@#
+#.##
+####
+</pre>
+<p>フォーミシッドは壁を 1 マスずつ掘れるので、この形を作るのは簡単だ。いっぽう<a href="Wand_of_digging.html" title="Wand of digging">掘削のワンド</a>は、ある方向に何マスもまとめて掘ってしまう。それでも十分に使えるキルホールは作れるが、背後に空間が残る。
+</p><p>まず、手ごろな岩の壁を見つける。
+</p>
+<pre>#############
+.############
+..###########
+...##########
+..@##########
+...*######### &lt;-- アスタリスクに
+...##########     向けて掘る
+...##########
+..###########
+.############
+#############
+</pre>
+<p>次に、掘ったトンネルに 2 歩ほど入り、反対の方向に斜めに掘る。
+</p>
+<pre>#############
+.############
+..###########
+...##########
+...##########
+....#*####### &lt;-- アスタリスクに
+...#@########     向けて掘る
+...##.#######
+..####.######
+.######.#####
+########.####
+</pre>
+<p>2 本目のトンネルの入口のすぐ内側に立てば、おめでとう、キルホールの完成だ!
+</p>
+<pre>##########.##
+.########.###
+..######.####
+...####.#####
+...###.######
+....#@#######
+...#.########
+...##.#######
+..####.######
+.######.#####
+########.####
+</pre>
+<p>余分な空間があると、ちょっとした欠点がいくつかある。<a href="Blink.html" title="Blink">瞬間移動</a>を使う敵に背後へ回られることがある。敵の召喚術師はその空間にモンスターを呼び出せるし、<a href="Trample.html" title="Trample">踏みつけ</a>などで後ろへ押しやられることもある。それ以外は、上で書いた「完璧な」キルホールと同じように働く。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>キルホールがいちばん役に立つのは、モンスターの群れがいると<i>わかっていて</i>、そのうち少なくとも何体かが射線を無視する能力を持っているときだ。<a href="Smiting.html" title="Smiting">打擲の一撃</a>、<a href="Damnation.html" title="Damnation">天罰</a>、<a href="Torment.html" title="Torment">拷問</a>がその代表例だ。探索中にこうした能力を持つモンスターを何体も起こしてしまったら、キルホールを作るのも手だ。
+</p><p>そうしたモンスターがいる<a href="Vault.html" title="Vault">ヴォールト</a>があるとわかっているなら、前もってキルホールを掘っておくのもいい。向いている場所としては<a href="Orcish_Mines.html" title="Orcish Mines">オークの坑道</a>:2、<a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>:3(ただし<a href="Deep_elf_elementalist.html" title="Deep elf elementalist">闇エルフの精霊使い</a>には気をつけること)、<a href="The_Realm_of_Zot.html" class="mw-redirect" title="Zot">ゾットの領域</a>:5 などがある。あとは穴の中にとどまり、<a href="http://crawl.chaosforge.org/Shout" data-untr="1" title="Shout">叫んで</a>モンスターをおびき寄せればいい。
+</p><p>キルホールも万能ではない。次のような場合は効き目が薄れる。
+</p>
+<ul><li>向かってくる相手と戦えるか、キルホールから逃げる手段(たとえば近くの階段まで前もって掘っておいた道)が必要だ。</li>
+<li>背後に空間があると、モンスターが<a href="Blink.html" title="Blink">瞬間移動</a>で後ろに回り込んだり、<a href="Trample.html" title="Trample">踏みつけ</a>や吹き飛ばしで押し戻してきたり、背後に何かを召喚してきたりする。<a href="http://crawl.chaosforge.org/Draconian_shifter" data-untr="1" title="Draconian shifter">ドラコニアンの移相者</a>は<a href="http://crawl.chaosforge.org/Blink_Other" data-untr="1" title="Blink Other">他者の瞬間移動</a>も使ってくる。</li>
+<li><a href="Dig.html" title="Dig">掘削</a>と<a href="http://crawl.chaosforge.org/Awaken_Earth" data-untr="1" title="Awaken Earth">大地の喚起</a>の呪文は、モンスターがこちらの視界の外から使える数少ないものだ。<a href="Deep_elf_elementalist.html" title="Deep elf elementalist">闇エルフの精霊使い</a>、<a href="http://crawl.chaosforge.org/Deep_troll_earth_mage" data-untr="1" title="Deep troll earth mage">洞窟トロルの地術師</a>、<a href="Cacodemon.html" title="Cacodemon">混沌の悪鬼</a>、それに掘削のワンドを持っているモンスターなら、壁を破って入ってこられる。</li></ul>
+<p>また、敵が遠隔攻撃を持っていないならキルホールは要らない。近接攻撃しかしない敵の群れと戦うときは、ふつうの通路を掘れば十分で、掘削のワンドのチャージを 1 回ぶん節約できる。
+</p>
+<h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
+<ul><li>キルホールはモンスターからこちらを見えなくするが、こちらからもモンスターが見えなくなる。戦っている相手の後ろから物音がするというメッセージには気を配ろう。退いたときには知らなかったモンスターがいる知らせかもしれない。フォーミシッドならここでも有利で、<a href="http://crawl.chaosforge.org/Antennae" data-untr="1" title="Antennae">触角</a>でモンスターを感知できる。</li>
+<li>逃げる手立ては必ず用意しておこう。敵と 1 体ずつ向き合えるといっても、運が悪ければ押し込まれて追い詰められることもある。また、戦っていた相手よりはるかに危険なものが騒音に引き寄せられ、ほとんど前触れもなく突然現れることもある。逃げるには<a href="Scroll_of_teleportation.html" title="Scroll of teleportation">テレポートの巻物</a>がうってつけだ。ただし効き始めるまでの時間は見込んでおくこと。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.22.html" title="0.22">0.22</a> より前は、<a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>で壁を壊せたので、石や水晶や金属でできた構造物にもキルホールを作れることがあった。運がよければ<a href="The_Tomb.html" class="mw-redirect" title="Tomb">太古の霊廟</a>:3 にさえキルホールを作れた。</li>
+<li><a href="0.20.html" title="0.20">0.20</a> より前は、<a href="http://crawl.chaosforge.org/Wands_of_disintegration" data-untr="1" class="mw-redirect" title="Wands of disintegration">分解のワンド</a>で岩の壁を 1 マスずつ取り除けたので、どのキャラクターでもフォーミシッド並みの精度でキルホールを作れた。</li>
+<li><a href="0.14.html" title="0.14">0.14</a> より前は、プレイヤーも<a href="Dig.html" title="Dig">掘削</a>の呪文を使えた。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

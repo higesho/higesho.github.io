@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.22 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.22(0.22)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.22 <span class="en">0.22</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.22">0.22</a>」(対象の版の記載なし、2019-02-07 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.22&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="http://crawl.chaosforge.org/Crawl" data-untr="1" class="mw-redirect" title="Crawl">Crawl</a> の以前のリリースについてのものだ。最新版を含むほかのバージョンについては、<a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を参照。</i></div>
+<p><b>0.22</b> は <i>Dungeon Crawl Stone Soup</i> のバージョンの一つで、2018年8月10日にリリースされた。
+</p>
+<hr />
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Highlights"><span class="tocnumber">1</span> <span class="toctext">主な変更</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Branches.2C_Environment"><span class="tocnumber">2</span> <span class="toctext">分岐・環境</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Character"><span class="tocnumber">3</span> <span class="toctext">キャラクター</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Gods"><span class="tocnumber">4</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Interface"><span class="tocnumber">5</span> <span class="toctext">インターフェース</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Items"><span class="tocnumber">6</span> <span class="toctext">アイテム</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Monsters"><span class="tocnumber">7</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Spells"><span class="tocnumber">8</span> <span class="toctext">呪文</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Highlights">主な変更</span></h2>
+<ul><li> <a href="Player_ghost.html" title="Player ghost">プレイヤーの幽霊</a>は、封印された幽霊のヴォールトにしか現れなくなった。</li>
+<li> 呪文ライブラリの新しいインターフェース。</li>
+<li> タイル版と WebTiles のユーザーインターフェースを一新した。</li></ul>
+<h2><span class="mw-headline" id="Branches.2C_Environment">分岐・環境</span></h2>
+<ul><li> プレイヤーの幽霊のヴォールト:
+<ul><li> 幽霊は、ルーンで封印された扉か転送装置で閉ざされたヴォールトにしか現れなくなった。</li>
+<li> 幽霊は、透明な壁ごしにヴォールトの外からいつでも見える。</li>
+<li> さまざまな趣向の幽霊のヴォールトが数十個加わった。どれにも戦利品があり、ほかのモンスターと追加の戦利品が置かれているものも多い。</li>
+<li> 迷宮:3 以降は、つながっているたいていの分岐で、各階に一定の確率で幽霊のヴォールトが置かれる。</li></ul></li>
+<li> <a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a>:1-4 にいるプレイヤーは、ときどき 1 階深くへ引き込まれるようになった。その確率は XL が高いほど上がり、今いる階が深いほど下がる。</li>
+<li> 魔術師の研究所「<a href="http://crawl.chaosforge.org/Hall_of_the_Hellbinder" data-untr="1" title="Hall of the Hellbinder">地獄を束ねしものの大広間</a>」で、上位の悪魔が減った。</li>
+<li> <a href="Two-headed_ogre.html" title="Two-headed ogre">双頭のオーガ</a>が、迷宮の浅い階であまり出なくなった。</li></ul>
+<h2><span class="mw-headline" id="Character">キャラクター</span></h2>
+<ul><li> どんな変身中でも<a href="Wand.html" title="Wand">ワンド</a>を使えるようになった。</li>
+<li> 混乱しているあいだは、仲間に命令できなくなった。</li>
+<li> MP でワンドを使う変異は、MP が 0 でもワンドを使えるようになり、良い変異の扱いになった。</li></ul>
+<h2><span class="mw-headline" id="Gods">神</span></h2>
+<ul><li> <a href="Dithmenos.html" title="Dithmenos">ディスメノス</a>の見直し:
+<ul><li> ディスメノスの能力「影歩き」は、対象のモンスターが「じっとしている」必要がなくなった。代わりに最大 HP の 8% を消費する。</li>
+<li> ディスメノスは火を嫌う戒律がなくなり、火にまつわる呪文やアイテム、能力を使ってもよくなった。</li>
+<li> ディスメノスは邪神になった。そのため善神と聖なるモンスターに嫌われる。</li></ul></li>
+<li> <a href="Fedhas_Madash.html" class="mw-redirect" title="Fedhas">フェダス</a>の「陽光」が 1* の能力に、「進化」が 2* の能力になった。</li>
+<li> <a href="Makhleb.html" title="Makhleb">マクレブ</a>の「大いなる破壊」は射程が 7 に伸び、「小なる破壊」は射程が 5 に縮んだ。</li>
+<li> <a href="Yredelemnul.html" title="Yredelemnul">イレデレンヌル</a>の能力「魂の隷属」は、対象を直接狙う形になった。</li>
+<li> <a href="Trog.html" title="Trog">トログ</a>の、魔法書を燃やす能力がなくなった。</li></ul>
+<h2><span class="mw-headline" id="Interface">インターフェース</span></h2>
+<ul><li> タイル版のミニマップで、探索済みの範囲の境目が別の色で表示されるようになった。</li>
+<li> WebTiles のチャットの改善(サーバーによっては使えないこともある):
+<ul><li> チャットの参加者に `/mute' と `/unmute' のコマンドを使える。</li>
+<li> `/mutelist' のコマンドで、今のミュートの一覧を見られる。</li>
+<li> チャット欄に最小化ボタンがつき、これを押すとメッセージの通知が出なくなる。</li>
+<li> `/hide' と `/hide forever` のコマンドで、チャット欄を最小化したり消したりできる。</li></ul></li>
+<li> 掘削のワンドに、掘れる範囲を示す照準表示がついた。</li>
+<li> タイル版と WebTiles の見た目のテーマを新しくした。</li>
+<li> タイル版と WebTiles の情報画面で、必要なところにタイルが表示されるようになった。</li></ul>
+<h2><span class="mw-headline" id="Items">アイテム</span></h2>
+<ul><li> 新しい護符: <a href="Amulet_of_the_acrobat.html" title="Amulet of the acrobat">軽業師の護符</a>。攻撃しない移動や休憩のときに、身に着けた者の EV を 15 上げる。</li>
+<li> <a href="Mace_of_Variability.html" title="Mace of Variability">変幻のメイス</a>を作り直した。ときどき混沌の弧を生み出し、近くのモンスターを傷つける(使い手は傷つかない)。強化値は +7 で固定になった。</li>
+<li> <a href="Vampire's_Tooth.html" title="Vampire&#39;s Tooth">吸血鬼の牙</a>は、+4 のダガーから +12 のクイックブレードに変わった。</li>
+<li> <a href="Maxwell's_thermic_engine.html" class="mw-redirect" title="Maxwell&#39;s Thermic Engine">マクスウェルの熱機関</a>から rC- と rF- がなくなった。</li>
+<li> <a href="http://crawl.chaosforge.org/Scrolls_of_fog" data-untr="1" class="mw-redirect" title="Scrolls of fog">煙幕の巻物</a>で出る霧は、どの種類も灰色の霧や黒い霧と同じように広がるようになった。</li></ul>
+<h2><span class="mw-headline" id="Monsters">モンスター</span></h2>
+<ul><li> プレイヤーの幽霊が、階段を使ってプレイヤーを追いかけてくるようになった。</li>
+<li> モンスターの<a href="Minotaur_(monster).html" title="Minotaur (monster)">ミノタウロス</a>は、HP、守り、HD が上がった。また、防具と、トマホークかジャベリンのどちらかを持って現れるようになった。</li>
+<li> <a href="Swamp_worm.html" title="Swamp worm">沼ワーム</a>と<a href="http://crawl.chaosforge.org/Iron_giant" data-untr="1" title="Iron giant">鉄の巨人</a>が<a href="http://crawl.chaosforge.org/Harpoon_Shot" data-untr="1" title="Harpoon Shot">銛の射撃</a>を持つようになった。射程 6 の能力で、命中するとプレイヤーを隣まで引き寄せる。</li>
+<li> <a href="http://crawl.chaosforge.org/Harold" data-untr="1" title="Harold">ハロルド</a>は近接攻撃のダメージと防具がよくなり、より浅い階に出るようになった。猛火の矢と瞬間移動の呪文は、銛の射撃と番兵の標的に置き換わった。</li>
+<li> <a href="Jorgrun.html" title="Jorgrun">ジョーグルン</a>は粉砕の代わりに鉄塊の矢を持つようになり、より浅い階に出るようになった。</li>
+<li> <a href="Ilsuiw.html" title="Ilsuiw">イルスィウ</a>は、ほぼ必ず浅瀬:4 に出ていたのが、浅瀬:2-4 に出るようになった。</li>
+<li> <a href="Water_elemental.html" title="Water elemental">水の精霊</a>による包み込みの状態は、神の能力を封じるようになったが、移動は遅くならなくなった。</li>
+<li> <a href="Manticore.html" title="Manticore">マンティコア</a>の逆棘による「逆棘」の状態は、移動以外のどんな行動でも外れていくようになった。</li>
+<li> 沼ワームは、水に潜った状態で現れなくなった。</li>
+<li> <a href="Sojobo.html" title="Sojobo">僧正坊</a>、<a href="Air_elemental.html" title="Air elemental">大気の精霊</a>、<a href="Ball_lightning.html" title="Ball lightning">球雷</a>、<a href="http://crawl.chaosforge.org/Twister" data-untr="1" title="Twister">竜巻</a>は、風による攻撃すべてへの耐性ではなく、荒れ狂う嵐への耐性を持つようになった。</li>
+<li> <a href="Shock_serpent.html" title="Shock serpent">電撃の大蛇</a>の反撃が、rElec をきちんと判定するようになった。</li></ul>
+<h2><span class="mw-headline" id="Spells">呪文</span></h2>
+<ul><li> 呪文ライブラリ:
+<ul><li> 魔法書の呪文は、拾ったときに自動で全体の呪文ライブラリに加わる。</li>
+<li> ライブラリの呪文は、'M' の画面からどこでも覚えられる。</li>
+<li> 魔法書は、その呪文がライブラリに加わると消える。</li>
+<li> ヴェフメットは、すでにライブラリにある呪文を授けようとしない。</li></ul></li>
+<li> <a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>の締めつけのダメージが 25% 下がった。また、死人使いの初期の魔法書(<a href="http://crawl.chaosforge.org/Book_of_Necromancy" data-untr="1" title="Book of Necromancy">死霊術の魔法書</a>)に入らなくなった。</li>
+<li> <a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>で壁を壊せなくなった。</li>
+<li> <a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a>は、移動するとすぐに切れるようになった。</li>
+<li> 呪文の成功率の計算で、高い値を段階的に減らす処理(step-down)を使わなくなった。そのため、レベル 9 の呪文が少し唱えやすくなった。</li>
+<li> <a href="Passwall.html" title="Passwall">壁の透過</a>は、呪文の威力に応じて射程が伸びやすくなり、呪文の威力の上限が下がり、射程を示す照準表示がついた。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

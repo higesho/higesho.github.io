@@ -16,13 +16,13 @@
 <h1>行動 <span class="en">Action</span></h1>
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Action">Action</a>」(0.33 向け、2025-10-31 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Action&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
 <div class="wiki">
-<p><i><a href="http://crawl.chaosforge.org/Dungeon_Crawl" data-untr="1" title="Dungeon Crawl">ダンジョンクロウル</a></i>はターン制のゲームだ。キャラクターが<b>行動</b>するたびに<b>ターンのカウンター</b>が 1 つ進み、行動と行動のあいだはゲームが止まっている。とはいえ、キャラクターやモンスターの動きが単純なターン数では測れないことには、すぐに気づくだろう。
+<p><i><a href="Dungeon_Crawl.html" title="Dungeon Crawl">ダンジョンクロウル</a></i>はターン制のゲームだ。キャラクターが<b>行動</b>するたびに<b>ターンのカウンター</b>が 1 つ進み、行動と行動のあいだはゲームが止まっている。とはいえ、キャラクターやモンスターの動きが単純なターン数では測れないことには、すぐに気づくだろう。
 </p><p>キャラクターの行動にはそれぞれ<b>ディレイ</b>(delay)があり、<b>aut</b>(<b>a</b>rbitrary <b>u</b>nits of <b>t</b>ime、任意の時間単位)で測られる。そのターンのあいだにどれだけ時間が流れ、モンスターがどれだけ行動できるかは、このディレイで決まる。そのターンに行動しなかったモンスターも、次の行動に向けて時間を溜めている。
-</p><p>1 ターンにかかる標準の時間は 10 aut、つまり 1 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">decaAut</a> だ。実際にかかる時間は行動の種類によって違うが、<a href="Haste.html" title="Haste">加速</a>や<a href="Slow.html" title="Slow">減速</a>、武器の<a href="Skill.html" title="Skill">スキル</a>などでも変わる。ほとんどの<a href="Species.html" title="Species">種族</a>と<a href="Monster.html" title="Monster">モンスター</a>は 1 decaAut で移動し、アイテムを使うのにかかる通常の時間も 1 decaAut だ。ただし、これよりずっと速い(または遅い)モンスターもいるので気をつけたい。
+</p><p>1 ターンにかかる標準の時間は 10 aut、つまり 1 <a href="Decaaut.html" class="mw-redirect" title="DecaAut">decaAut</a> だ。実際にかかる時間は行動の種類によって違うが、<a href="Haste.html" title="Haste">加速</a>や<a href="Slow.html" title="Slow">減速</a>、武器の<a href="Skill.html" title="Skill">スキル</a>などでも変わる。ほとんどの<a href="Species.html" title="Species">種族</a>と<a href="Monster.html" title="Monster">モンスター</a>は 1 decaAut で移動し、アイテムを使うのにかかる通常の時間も 1 decaAut だ。ただし、これよりずっと速い(または遅い)モンスターもいるので気をつけたい。
 </p>
 <h2><span class="mw-headline" id="Players_get_their_turn_before_monsters">プレイヤーはモンスターより先に動く</span></h2>
 <p>プレイヤーは、モンスターの番が来る前に必ず行動をひとつ最後まで終える。たとえば武器を振るのに 2.0 decaAut かかるなら、まずプレイヤーが 2.0 ターンをまるごと使い、そのあとモンスターがまるまる 2.0 decaAut ぶん反撃してくる(武器の一振りでモンスターを倒せば、そのモンスターは動けない)。
-</p><p>これがとくに重要になるのが<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>だ。移動したあとで<a href="http://crawl.chaosforge.org/Scroll_of_teleport" data-untr="1" class="mw-redirect" title="Scroll of teleport">テレポートの巻物</a>の効果が発動すると、テレポートはプレイヤーの行動の後、モンスターが動く前に起こる。そのため、飛んだ先にいるモンスターにすぐ行動の機会が回ってくる。<a href="http://crawl.chaosforge.org/Sourceless_malevolence" data-untr="1" class="mw-redirect" title="Sourceless malevolence">出どころのない悪意</a>など、ほかの種類のテレポートでも同じだ。とびきり運が悪ければ、理屈の上では<a href="http://crawl.chaosforge.org/Instant_death" data-untr="1" class="mw-redirect" title="Instant death">即死</a>もありうる。
+</p><p>これがとくに重要になるのが<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>だ。移動したあとで<a href="Scroll_of_teleportation.html" class="mw-redirect" title="Scroll of teleport">テレポートの巻物</a>の効果が発動すると、テレポートはプレイヤーの行動の後、モンスターが動く前に起こる。そのため、飛んだ先にいるモンスターにすぐ行動の機会が回ってくる。<a href="Trap.html" class="mw-redirect" title="Sourceless malevolence">出どころのない悪意</a>など、ほかの種類のテレポートでも同じだ。とびきり運が悪ければ、理屈の上では<a href="http://crawl.chaosforge.org/Instant_death" data-untr="1" class="mw-redirect" title="Instant death">即死</a>もありうる。
 </p>
 <h2><span class="mw-headline" id=".22Delay.22_vs_.22Speed.22">「ディレイ」と「速度」</span></h2>
 <ul><li>「ディレイ」は 1 回の行動にかかる時間で、数値が大きいほど遅い。</li>
@@ -31,7 +31,7 @@
 </p>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
 <ul><li><a href="0.31.html" title="0.31">0.31</a> で<a href="Energy_randomisation.html" title="Energy randomisation">エネルギーのランダム化</a>が復活したが、敵から離れる方向に移動するときだけに適用される。</li>
-<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、敵対するモンスターすべてに<a href="Energy_randomisation.html" title="Energy randomisation">エネルギーのランダム化</a>がかかっていた。移動するとき、33% の確率で 1 aut の時間を得し、33% の確率で 1 aut 損した。</li></ul>
+<li><a href="0.29.html" title="0.29">0.29</a> より前は、敵対するモンスターすべてに<a href="Energy_randomisation.html" title="Energy randomisation">エネルギーのランダム化</a>がかかっていた。移動するとき、33% の確率で 1 aut の時間を得し、33% の確率で 1 aut 損した。</li></ul>
 </div>
 </main>
 <footer class="foot"><div class="band">

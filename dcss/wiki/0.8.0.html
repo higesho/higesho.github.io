@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.8.0 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.8.0(0.8.0)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.8.0 <span class="en">0.8.0</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.8.0">0.8.0</a>」(対象の版の記載なし、2013-12-11 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.8.0&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="http://crawl.chaosforge.org/Crawl" data-untr="1" class="mw-redirect" title="Crawl">Crawl</a> の過去のリリースについてのものである。最新版を含むほかのバージョンについては <a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を参照。</i></div>
+<p><b>0.8.0</b> は Dungeon Crawl Stone Soup の古いバージョンで、2011年4月26日にリリースされた。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Changelog"><span class="tocnumber">1</span> <span class="toctext">変更点</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Stone_Soup_0.8_.2820110426.29"><span class="tocnumber">1.1</span> <span class="toctext">Stone Soup 0.8 (20110426)</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#0.8_Highlights"><span class="tocnumber">1.2</span> <span class="toctext">0.8 の主な変更</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Gods"><span class="tocnumber">1.3</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Character"><span class="tocnumber">1.4</span> <span class="toctext">キャラクター</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Interface"><span class="tocnumber">1.5</span> <span class="toctext">インターフェース</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Spells"><span class="tocnumber">1.6</span> <span class="toctext">呪文</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Monsters"><span class="tocnumber">1.7</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Levels"><span class="tocnumber">1.8</span> <span class="toctext">階層</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Items"><span class="tocnumber">1.9</span> <span class="toctext">アイテム</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Tiles"><span class="tocnumber">1.10</span> <span class="toctext">タイル</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Technical"><span class="tocnumber">1.11</span> <span class="toctext">技術面</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Options"><span class="tocnumber">1.12</span> <span class="toctext">オプション</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Changelog">変更点</span></h2>
+<h3><span class="mw-headline" id="Stone_Soup_0.8_.2820110426.29">Stone Soup 0.8 (20110426)</span></h3>
+<hr />
+<p>おことわり: ここに挙げたのはおもな変更だけで、すべての変更を網羅したものではない。
+0.7 のセーブデータとの互換性はない。
+</p>
+<h3><span class="mw-headline" id="0.8_Highlights">0.8 の主な変更</span></h3>
+<hr />
+<ul><li> 新しい神: 占いの神、<a href="Ashenzari.html" title="Ashenzari">アシェンザリ</a>。</li>
+<li> 新しい種族: 知性を持つ猫、<a href="Felid.html" title="Felid">フェリッド</a>。</li>
+<li> 新しい呪文: <a href="Malign_Gateway.html" title="Malign Gateway">邪悪なる通り道</a>、<a href="http://crawl.chaosforge.org/Tornado" data-untr="1" title="Tornado">荒れ狂う嵐</a>、<a href="Leda's_Liquefaction.html" title="Leda&#39;s Liquefaction">レダの流動術</a>、<a href="Summon_Dragon.html" title="Summon Dragon">ドラゴンの召喚</a>、<a href="Summon_Hydra.html" title="Summon Hydra">ヒドラの召喚</a>、<a href="http://crawl.chaosforge.org/Darkness" data-untr="1" title="Darkness">暗闇の喚起</a>。</li>
+<li> 削除された呪文: <a href="http://crawl.chaosforge.org/Bone_Shards" data-untr="1" title="Bone Shards">骨の破片</a>、<a href="http://crawl.chaosforge.org/Tame_Beasts" data-untr="1" title="Tame Beasts">獣の調教</a>、<a href="Portal.html" title="Portal">ポータル</a>、<a href="http://crawl.chaosforge.org/Alter_Self" data-untr="1" title="Alter Self">自己変容</a>、<a href="http://crawl.chaosforge.org/Extension" data-untr="1" title="Extension">延長</a>。</li>
+<li> 付呪術を<a href="Hexes.html" title="Hexes">呪術</a>(敵を害する)と<a href="Charms.html" title="Charms">加護</a>(自分を強化する)に分けた。</li>
+<li> <a href="http://crawl.chaosforge.org/Selective_Amnesia" data-untr="1" title="Selective Amnesia">選択的忘却</a>の呪文をなくし、代わりに<a href="Scroll_of_amnesia.html" title="Scroll of amnesia">忘却の巻物</a>と、魔法書を破壊して呪文を忘れる仕組みを入れた。</li>
+<li> 重い鎧を強くした。</li>
+<li> <a href="Makhleb.html" title="Makhleb">マクレブ</a>と<a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>は、ゲーム開始時の神には選べなくなった。</li>
+<li> <a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>を短くした。</li></ul>
+<h3><span class="mw-headline" id="Gods">神</span></h3>
+<hr />
+<ul><li> 新しい神: 占いの神、アシェンザリ。</li>
+<li> 寺院のヴォールトによっては、ゲームに一部の神が出てこないことがあったのを直した。</li>
+<li> ジーヴァを除き、祈りは(信仰心を得るための)捧げ物にしか使わなくなった。ほかの効果は能力になった。</li>
+<li> 神の怒りで出てきたモンスターを倒しても、経験値やアイテムは得られなくなった。</li>
+<li> 宙を舞う武器、球雷、渦を倒しても、神は気にかけなくなった。</li>
+<li> 神の報いがいきなり下ることはなくなった。</li>
+<li> ケイブリアドスの怒りを強めた。ケイブリアドスへの懺悔中は能力値が上がらない。</li>
+<li> ケイブリアドスを信仰していても、食事で信仰心は得られない。</li>
+<li> ケイブリアドスは、疾走のブーツや怒りの護符を着けようとすると警告してくれる。</li>
+<li> 防具は融合しても鈍重さを失わない。</li>
+<li> エリヴィロンの守護を祈るのは能力になった。</li>
+<li> エリヴィロンの名のもとに武器を破壊するのは祈りで行うようになった。</li>
+<li> エリヴィロンは杖の破壊も認める。</li>
+<li> エリヴィロンの回復や懐柔のメッセージをわかりやすくした。</li>
+<li> フェダスは森林火災で焼けた樹木のことも気にかける。</li>
+<li> フェダスによる死体の分解は、祈りで起こすようになった。</li>
+<li> ジーヴァの信者は、ジェリーがアイテムを飲み込むと食料、HP、MP を得る。</li>
+<li> ジーヴァが保存や腐食への耐性の効果を重ねて与えることはなくなった。</li>
+<li> ネメレクス・ソベーに捧げるアイテムを、プレイヤーがより細かく決められるようにした('^!' の画面で)。</li>
+<li> キクバークッグァの祈祷は死霊術のスキルを使う。</li>
+<li> キクバークッグァによる、ミイラの死の呪いからの守りを弱めた。</li>
+<li> キクバークッグァから授かる死体が、ちゃんと蘇生に使えるものになった。授かる死体の数は減らした。</li>
+<li> キクバークッグァは、ミイラのふつうの呪いから信者を守る。</li>
+<li> オカワル: 怪力 -&gt; 英雄化。すべての武器スキルが 5 上がる(上限 27)。</li>
+<li> オカワル: 加速 -&gt; 早業。戦闘の速さ(近接攻撃と射撃)が 2 倍になる。</li>
+<li> オカワルが聖なる存在を倒すことも認めるようになった。</li>
+<li> シフ・ムーナは魔法書の破壊を罰する。</li>
+<li> シフ・ムーナによる呪文の失敗で懺悔は減らない。</li>
+<li> トログがバーサークを延ばしても、発光は起きない。</li>
+<li> 輝けるものは、アイテムの捧げ物を受け付けなくなった。</li>
+<li> 輝けるものによる、聖なる存在でない召喚の延長は、今の持続時間の 2 倍までになった。</li>
+<li> ゾムに吸血の武器へ持ち替えさせられて飢え死にすることがないようにした。</li>
+<li> イレデレンヌルの祈り(創傷の鏡)は能力になった。</li>
+<li> 創傷の鏡が拷問のダメージも跳ね返せるようになった。</li>
+<li> イレデレンヌルは、人造の存在(ゴーレム、ガーゴイル)を倒すことも認める。</li>
+<li> ジンの祈祷「朗読」を作り直した。ずっと強力で面白くなった。</li>
+<li> ジンは信仰心に応じた確率で、地獄の効果から守ってくれる。</li>
+<li> ジンは変身の呪文を禁じ、キルケーの豚化の呪文から守ってくれる。</li>
+<li> ジンは、死体が変異性や腐敗性を持つモンスターを嫌う。</li>
+<li> すでに黄色く発光しているときに呪文を失敗すると、ジンが怒る。</li>
+<li> 禁じられた死体を解体しようとすると、確認を求められる。</li>
+<li> 懺悔中は、神の歓迎のメッセージが変わることがある。</li></ul>
+<h3><span class="mw-headline" id="Character">キャラクター</span></h3>
+<hr />
+<ul><li> 新しい種族: 知性を持つ猫、フェリッド。</li>
+<li> 胴鎧による GDR を増やした。新しい GDR の式は 14 * (基本AC-2)^(1/2)。</li>
+<li> モンスターを倒して得られる経験値は、与えられたダメージの合計のうち、プレイヤーと仲間が与えた割合に比例する。</li>
+<li> 麻痺の連鎖をなくした。麻痺が解けたあと 1d3 ターンは麻痺しない。</li>
+<li> 聖騎士、略奪者、秘術の射手を削除した。</li>
+<li> マクレブの混沌の騎士を削除した。</li>
+<li> 分割: ルゴヌの混沌の騎士 -&gt; 深淵の騎士、イレデレンヌルの司祭 -&gt; 死の騎士。</li>
+<li> ドラコニアンを作り直して、もっと面白くした。</li>
+<li> 危険な雲を、自動移動で安全だとみなしてしまうことがあったのを直した。</li>
+<li> ふつうの変異を持っていると、それを永続的な変異として得られなくなることがあったのを直した。</li>
+<li> すばやい行動で捜索が速くなることはなくなった。</li>
+<li> 「とても空腹」になると、どんな手段でもバーサークできない。「飢餓」になるとバーサークは自動で止まる。</li>
+<li> 経験値プールの上限をなくした。10万を超えると、経験値プールは略して表示する。</li>
+<li> 追跡者の職業を、変成術を軸にした急所攻撃型に変えた。</li>
+<li> 戦士と闘士はファルシオンを持って始められるようにした。トライデントもこの 2 つの職業だけにした。</li>
+<li> ハーフリングとコボルドのスキル適性に違いをつけた。コボルドは召喚術、死霊術、呪術が得意で、ハーフリングは加護と転位術が得意。</li>
+<li> ハーフリングは生まれつき変異への耐性 1 を持つ。</li>
+<li> 浮遊は、浮遊のつく装備を最後の 1 つまで外したときに切れるようにした。</li>
+<li> 能力値による死が近づくと、麻痺することがある。その確率はだんだん上がる。</li>
+<li> 水棲の民は、水の中でも変身できるようにした。</li>
+<li> 足爪、牙、尾は、ふさわしい変身ならそのまま残るようにした。</li>
+<li> 角 3 や触角 3 があると、頭の防具はどれも着けられない。</li>
+<li> 変異を起こすものや発光で、ときどき良い変異がついてしまうのを直した。</li>
+<li> 悪魔の血族の変異のいくつか(悪魔の従者、闇隠れ)の釣り合いを取った。</li>
+<li> 悪魔の血族のブレスの変異を削除した。</li>
+<li> 注意対象の範囲を、闇隠れの変異に合わせるようにした。</li>
+<li> 悪魔の血族の新しい変異、苦痛よりの力: 十分なダメージを受けると MP が回復する。</li>
+<li> 悪魔の血族の火と氷の系統は、両立しなくなった。</li>
+<li> グールは飢餓状態でも、食料を消費する能力を使えるようになった。</li>
+<li> グールと吸血鬼は、飢餓状態や血が通っていない状態でも、発動による透明化を使える。</li>
+<li> 地獄の業火がモンスターの AC を無視するようにした。</li>
+<li> 占術の呪文の失敗のうち、地図を忘れる効果と呪文を忘れる効果を削除した。</li>
+<li> 瞬間移動で危険な雲の中に出ることを防がないようにした。</li>
+<li> 懐柔したモンスターに対しては、隠密が鍛えられないようにした。</li>
+<li> 水棲の民とケンクは、瞬間移動で深い水を越えられるようにした。</li>
+<li> ケンクが飛行をやめられるようにした。</li>
+<li> アビスへ追放されたとき、地形の変化をプレイヤーにも当てはめるようにした。</li>
+<li> 水棲の民の HP を、人間と同じ水準まで下げた。</li>
+<li> ミイラの基本 MR を 3 -&gt; 5 に上げた。</li>
+<li> 視界を狭めるものの効果を、足し算ではなく掛け算で重ねるようにした。</li>
+<li> 経験の薬と経験のカードで、まるまる 1 レベル上がるようにした。同じように、吸収でも 1 レベルまるまる下がる。</li>
+<li> 能力値が上がる変異が、満腹の吸血鬼にも働くようにした。</li>
+<li> 知力ゼロのときに巻物を読むペナルティを、80% の失敗率に置き換えた。</li>
+<li> 射撃武器を構えて殴ると、強化値に関係なく、モンスターを「不器用に殴る」だけになる。</li>
+<li> 発動による透明化から、満腹度の条件をなくした。</li>
+<li> ウィザードモードの非デバッグモードでは、幽霊の作成や読み込みをしないようにした。</li>
+<li> 変身や浮遊が切れるときの警告メッセージをわかりやすくした。</li>
+<li> 停滞や -TELE を身に着けているときは、テレポートの試みを常に打ち切るようにした。</li>
+<li> オーガは HP がレベルごとに 1 多く増え、戦闘と鈍器のスキル適性が +3 された。</li>
+<li> 'A' の画面で、ミイラの食べ物と飲み物の習慣についても触れるようにした。</li>
+<li> 構えた武器も融合するようにした。</li>
+<li> 蜘蛛や氷の躯に変身中は帽子をかぶれず、石像に変身中は盾を着けられるようにした。</li>
+<li> 氷の躯に変身中、深い水の底にあるアイテムを拾えないようにした。</li>
+<li> おすすめの組み合わせを見直した。</li></ul>
+<h3><span class="mw-headline" id="Interface">インターフェース</span></h3>
+<hr />
+<ul><li> 新しいチュートリアル。いくつかのマップ(レッスン)に分かれている。</li>
+<li> restart_after_game のあとでゲームを読み込み直すと落ちるのを直した。</li>
+<li> 持ち物の画面からアイテムを操作できるようにした。</li>
+<li> 探索中でなくても、何かが視界に入るとメッセージが出るようにした。</li>
+<li> Tab に autofight、shift-Tab に autofight_nomove を割り当てた。</li>
+<li> 自動戦闘: 射撃武器を構えていれば、いちばん近い敵を撃つ。</li>
+<li> 状態表示を増やした: 変身、バーサーク後の疲労、一時的な耐性。</li>
+<li> 一時的な耐性と霊視の残り時間を表示するようにした。</li>
+<li> 職業選択の画面を新しくし、職業を種類ごとにまとめた。</li>
+<li> メイン画面に信仰心を表示するようにした。</li>
+<li> 能力値の欄と&#160;% の画面に、持ち物の色を使うようにした。</li>
+<li> 情報が多く、マウスでも操作できる新しいスキルのメニュー('m' の画面)。</li>
+<li> スライムの壁の隣は「安全」とみなさないようにした。</li>
+<li> 半径 1 の注意対象になった階段も、自動移動で通り抜けられるようにした。</li>
+<li> 効かない雲については、自動で注意対象を作らないようにした。</li>
+<li> 雲のせいで注意対象になった階段について、確認を求めないようにした。</li>
+<li> i_feel_safe() が、溶岩や彫像などの向こうにいる生き物について、より賢く判断するようにした。</li>
+<li> 壊れていく持ち物のアイテムの名前をはっきり出すようにした。</li>
+<li> 幽霊が視界に入ったとき、その XL の階級、種族、職業を表示するようにした。</li>
+<li> コンソール版で、バーサーク中にモンスターの色を上書きしないようにした。</li>
+<li> 注意対象の視界がきちんと更新されないのを直した。</li>
+<li> shift を押しての移動でも、注意対象を考慮するようにした。</li>
+<li> ' で、素手から b の枠の武器へ自動で持ち替えられるようにした。</li>
+<li> アイテムを積み重ねの上に置いたら、その積み重ねの自動拾いのフラグを消すようにした。</li>
+<li> 確認の選択肢をはっきり書くようにした。たとえば "y/n" ではなく "(y)es or (n)o" とする。</li>
+<li> ゲーム開始時のサブメニュー: Escape を押すと、ゲームを終わらずにメインメニューへ戻る。</li>
+<li> 阻まれるとわかっている巻物によるテレポートや瞬間移動を試して、ターンを無駄にしないようにした。</li>
+<li> アイテムを変える巻物に "tried on foo" と銘を刻むようにした。</li>
+<li> バーサーク中は自動探索できないようにした。</li>
+<li> 1 階の上り階段と分岐の出口を、まだ行っていない場所として扱わないようにした。</li>
+<li> Ctrl-F の出力に色をつけた。</li>
+<li> ノートの強調表示を復活させた。</li>
+<li> 概要の注釈に色をつけた。</li>
+<li> ラビリンスのメッセージに色をつけた。</li>
+<li> バザールとラビリンスの告知に force_more_messages を追加した。</li>
+<li> 指輪の片方が呪われていれば、どちらを付け替えるか確認しないようにした。</li>
+<li> 正体のわからない防具を強化したときは、呪われていないものとして印をつけるようにした。</li>
+<li> 「.」による置く・拾う選択で、入力した数量を考慮するようにした。</li>
+<li> '*' は drop_filter を選ぶ代わりに選択を反転し、',' は反転ではなくすべてを選ぶようにした。</li>
+<li> 攻撃が外れたときの情報を増やした。</li>
+<li> MR が効いたときの情報を増やした。</li>
+<li> 加速と減速が同時にかかっていれば、HUD にそう表示するようにした。</li>
+<li> 発見済みアイテムの画面に、_未_発見のアイテムを表示する切り替えを追加した。</li>
+<li> 移動先の確認で、雲より先に地形を調べるようにした。</li>
+<li> 注意対象になったポータルに入るときに警告しないようにした。</li>
+<li> 死んだときに必ず -more- を出すようにした。</li>
+<li> 死んだあと、ランダムアーティファクトに自動で銘を刻むようにした。</li>
+<li> タスクバーとの重なりを自動で検出し、ウィンドウをそのすぐ上に置くようになった。</li>
+<li> ウィンドウの大きさを、画面の大きさに対する割合で決められるようにした。</li>
+<li> 起動時のメニューで Tab が正しく働かないのを直した。</li>
+<li> restart_after_game のとき、メッセージウィンドウとノートを初期化し直すようにした。</li>
+<li> いろいろな行動を取りやめたとき、ターンや魔力を無駄にしないようにした。</li>
+<li> ローカルでビルドしたものでは、ハイスコアのあとやキャラクターダンプのときにモルグの場所を知らせるようにした。</li>
+<li> チュートリアルと解説付きモードのコマンドのヘルプを増やし、並べ直した。</li>
+<li> いろいろな確認を取り消したときの反応をわかりやすくした。</li>
+<li> モンスターと地形の引用を別の画面に分け、'!' で切り替えられるようにした。</li>
+<li> 足りなかった説明をいくつか加え、すでにある説明もいくつか良くした。</li></ul>
+<h3><span class="mw-headline" id="Spells">呪文</span></h3>
+<hr />
+<ul><li> 付呪術のスキルと呪文の系統を、<a href="Charms.html" title="Charms">加護</a>と<a href="Hexes.html" title="Hexes">呪術</a>に分けた。</li>
+<li> <a href="http://crawl.chaosforge.org/Bone_Shards" data-untr="1" title="Bone Shards">骨の破片</a>、<a href="http://crawl.chaosforge.org/Tame_Beasts" data-untr="1" title="Tame Beasts">獣の調教</a>、<a href="Portal.html" title="Portal">ポータル</a>、<a href="http://crawl.chaosforge.org/Alter_Self" data-untr="1" title="Alter Self">自己変容</a>、<a href="http://crawl.chaosforge.org/Extension" data-untr="1" title="Extension">延長</a>を削除した。</li>
+<li> 新しい呪文: <a href="Passage_of_Golubria.html" title="Passage of Golubria">ゴルブリアの通り道</a>(転位術 5)。</li>
+<li> 新しい呪文: <a href="Malign_Gateway.html" title="Malign Gateway">邪悪なる通り道</a>(召喚術/転位術 7)。</li>
+<li> 新しい呪文: <a href="http://crawl.chaosforge.org/Tornado" data-untr="1" title="Tornado">荒れ狂う嵐</a>(風 9)。</li>
+<li> 新しい呪文: <a href="Leda's_Liquefaction.html" title="Leda&#39;s Liquefaction">レダの流動術</a>(変成術/地 4)。周りの範囲を鈍らせる効果。</li>
+<li> 新しい呪文: <a href="Summon_Dragon.html" title="Summon Dragon">ドラゴンの召喚</a>(召喚術 9)。</li>
+<li> 新しい呪文: <a href="Summon_Hydra.html" title="Summon Hydra">ヒドラの召喚</a>(召喚術 7)。頭が 4〜12 本のヒドラを短いあいだ呼び出す。</li>
+<li> 新しい呪文: <a href="http://crawl.chaosforge.org/Darkness" data-untr="1" title="Darkness">暗闇の喚起</a>(呪術 7)。視界の半径を 2 狭める。</li>
+<li> 壁抜けで深い水や溶岩に入ると死ぬ場合は、入れないようにした。</li>
+<li> <a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>が壁を壊すとき、一部の確認を守っていなかったのを直した。</li>
+<li> 雲の呪文を射程の外や、壁の上(や壁越し)に唱えられたのを直した。</li>
+<li> テレポートで<a href="Passwall.html" title="Passwall">壁の透過</a>が中断される。</li>
+<li> 刃の広間で、<a href="Shadow_Creatures.html" title="Shadow Creatures">影の怪物</a>を使って武器を稼げたのを直した。</li>
+<li> <a href="Animate_Dead.html" title="Animate Dead">死霊の蘇生</a>は壁の向こうの死体を蘇らせなくなった。</li>
+<li> 必中の呪文を仲間の「方向へ」唱えるときに、確認しないようにした。</li>
+<li> <a href="Haste.html" title="Haste">加速</a>を弱めた: 速さは 2 倍ではなく 1.5 倍になる。<a href="Slow.html" title="Slow">減速</a>にも同じ倍率がかかる。</li>
+<li> <a href="http://crawl.chaosforge.org/Selective_Amnesia" data-untr="1" title="Selective Amnesia">選択的忘却</a>を<a href="Scroll_of_amnesia.html" title="Scroll of amnesia">忘却の巻物</a>に置き換えた。</li>
+<li> 魔法書の呪文を忘れられるようにした。その魔法書は破壊される。</li>
+<li> <a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>の射程を 1 に弱めた。</li>
+<li> 魔法の系統のスキルが上がりにくくなる仕組みをなくし、対立する系統の経験値のコストを 2 倍にした。</li>
+<li> 悪魔やアンデッドとわかっている相手には、<a href="Vampiric_Draining.html" title="Vampiric Draining">ヴァンパイアの吸血</a>を使えないようにした。</li>
+<li> 浮遊中は<a href="http://crawl.chaosforge.org/Fulsome_Distillation" data-untr="1" title="Fulsome Distillation">豊潤なる蒸留</a>を使えないようにした。</li>
+<li> 簡単な呪文のセットを入れた。最後に唱えた呪文を覚えておく。</li>
+<li> 呪文の習得画面に、呪文の説明を表示する切り替えを追加した。</li>
+<li> 呪文詠唱のスキルがあれば、魔術強化のアイテムを自動で鑑定するようにした。</li>
+<li> <a href="Vampiric_Draining.html" title="Vampiric Draining">ヴァンパイアの吸血</a>と<a href="Freeze.html" title="Freeze">氷結</a>で、自動で狙いをつけられるようにした。</li>
+<li> <a href="Borgnjor's_Revivification.html" title="Borgnjor&#39;s Revivification">ボーグンジョルの究極治癒</a>のコストを、最大 HP の 2〜11 *パーセント* にした。</li>
+<li> 対象を狙う呪文を唱えたときの騒音を戻した。</li>
+<li> 呪文の説明に騒音の大きさを加えた。</li>
+<li> <a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>の爪のダメージを増やし、踏みつけもできるようにした。</li>
+<li> <a href="Draconian.html" title="Draconian">ドラコニアン</a>が<a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>すると、自分の色に合ったドラゴンになる。</li>
+<li> <a href="http://crawl.chaosforge.org/Animate_Skeleton" data-untr="1" title="Animate Skeleton">スケルトンの造成</a>は、まだ骨になっていない死体にも使え、あとに肉が残る。</li>
+<li> <a href="Shadow_Creatures.html" title="Shadow Creatures">影の怪物</a>は、動けるモンスターだけを呼び出す。</li>
+<li> <a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>(IOOD)のダメージを少し上げた。</li>
+<li> <a href="Sticks_to_Snakes.html" title="Sticks to Snakes">棒切れの蛇</a>を杖やジャベリンにも使えるようにし、鋼や銀のものには使えないようにした。</li>
+<li> 杖にもツキマーの舞踏を使えるようにした。</li>
+<li> <a href="Air_Magic.html" class="mw-redirect" title="Air">風</a>の<a href="Miscast_effect.html" class="mw-redirect" title="Miscast">呪文の失敗</a>に新しい段階 3 を加え、<a href="Air_Magic.html" class="mw-redirect" title="Air">風</a>の<a href="Miscast_effect.html" class="mw-redirect" title="Miscast">呪文の失敗</a>を強くした。</li>
+<li> <a href="Static_Discharge.html" title="Static Discharge">空電放射</a>を強くした: ダメージが上がり、電撃が飛び移る確率も上がった。</li>
+<li> <a href="http://crawl.chaosforge.org/Summon_Butterflies" data-untr="1" title="Summon Butterflies">胡蝶の召喚</a>の効き目が呪文の威力に左右されるようにした。</li>
+<li> オーブの<a href="Apportation.html" title="Apportation">収拾</a>を大きく弱めた。確率と距離は、呪文の威力と全体の距離で決まる。</li>
+<li> <a href="Death_Channel.html" title="Death Channel">死の霊媒術</a>の幽体を一時的なものにし、仲間が倒した相手でも働くようにした。レベルは 7 に下げた。</li>
+<li> 半分だけ制御された<a href="Blink.html" title="Blink">瞬間移動</a>は、行き先が見つからなければランダムになるようにした。</li>
+<li> <a href="http://crawl.chaosforge.org/Evaporate" data-untr="1" title="Evaporate">蒸発</a>は<a href="Throwing.html" title="Throwing">投擲</a>のスキルを使わなくなった。</li>
+<li> <a href="http://crawl.chaosforge.org/Summon_Swarm" data-untr="1" title="Summon Swarm">大群の召喚</a>で出てくるモンスターは常に友好的になった。レベルは 5 に下げた。</li>
+<li> <a href="http://crawl.chaosforge.org/Ring_of_Flames" data-untr="1" title="Ring of Flames">炎の円環</a>が効いているあいだは、炎の雲を踏むとその雲が消える。</li>
+<li> 視界に影響する呪文が、透明な壁越しにも働くようにした。</li>
+<li> リーの瞬間解体術のダメージを上げた。</li>
+<li> <a href="Apportation.html" title="Apportation">収拾</a>の狙いを、+/- で切り替えられるようにした。</li>
+<li> 積み重ねの一部を収拾したとき、残りを壊さないようにした。</li>
+<li> <a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>のあいだは<a href="http://crawl.chaosforge.org/Rot" data-untr="1" title="Rot">腐敗</a>しない。</li>
+<li> <a href="Death_Channel.html" title="Death Channel">死の霊媒術</a>の幽体のモンスターは、解放の宣誓で消せない。</li>
+<li> 呪文の成功率の低い段階を表す言葉(Cruddy、Bad、Very Poor)を Very Poor にまとめた(今は 5〜30%)。</li>
+<li> 呪文をいろいろな魔法書のあいだで入れ替えた。</li>
+<li> 魔法書が威力の魔法書や魔術の魔法書に置き換わる確率を 10% から 4% に下げた。</li>
+<li> 対応する耐性を持っていれば、雲で自分を狙うときに確認しないようにした。</li>
+<li> <a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>で HP が必ず 1 以上残るようにした。</li>
+<li> 着ると<a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a>が解けるのは、重い鎧だけにした。</li>
+<li> 大岩を使うと<a href="Sandblast.html" title="Sandblast">砂の突風</a>のダメージが増えるようにした。</li>
+<li> <a href="Sandblast.html" title="Sandblast">砂の突風</a>を覚えていれば、大岩に持ち替えられるようにした。</li>
+<li> <a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>のために、凝固した血を構えることを勧めるようにした。</li>
+<li> 変身が<a href="Stealth.html" title="Stealth">隠密</a>に影響するようにした。</li>
+<li> 瞬間移動やテレポートをしても<a href="http://crawl.chaosforge.org/Condensation_Shield" data-untr="1" title="Condensation Shield">凝結の盾</a>が消えないようにした。</li>
+<li> rC- のプレイヤーが<a href="http://crawl.chaosforge.org/Condensation_Shield" data-untr="1" title="Condensation Shield">凝結の盾</a>で傷つかないようにした。</li>
+<li> <a href="http://crawl.chaosforge.org/Warp_Weapon" data-untr="1" title="Warp Weapon">歪曲の武器</a>のブランドがついた武器を外すときに、確認しないようにした。</li>
+<li> ミイラやリッチ化中は、自分に<a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>を唱えられないようにし、<a href="Passwall.html" title="Passwall">壁の透過</a>は唱えられるようにした。</li>
+<li> <a href="Haunt.html" title="Haunt">招霊</a>の持続時間を減らした</li>
+<li> <a href="Sandblast.html" title="Sandblast">砂の突風</a>の射程を、石がなければ 2、あれば 3 に上げた。</li>
+<li> <a href="Stone_Arrow.html" title="Stone Arrow">石錐の矢</a>のダメージを、威力 50 で 2d12 から 3d11 に上げた。</li>
+<li> いくつかの呪文のレベルを、よりふさわしいものに変えた。</li>
+<li> <a href="Haste.html" title="Haste">加速</a>と<a href="Invisibility.html" title="Invisibility">透明化</a>の呪文の説明で、発光について触れるようにした。</li>
+<li> 下級魔術の魔法書を 1 冊にまとめた。</li>
+<li> キャラクターダンプに呪文の空腹度を載せるようにした。</li></ul>
+<h3><span class="mw-headline" id="Monsters">モンスター</span></h3>
+<hr />
+<ul><li> 新しいモンスターの一群: 地形に化けるミミック。</li>
+<li> 新しいモンスターの一群: 聖なるモンスター。</li>
+<li> 新しいモンスターの一群: スプリガン。</li>
+<li> 新しいモンスターの一群: 闇ドワーフ(アビスとジグラットに出る)。</li>
+<li> 新しいモンスターをいくつか加えた。<a href="Silent_spectre.html" title="Silent spectre">静寂の亡霊</a>、<a href="Sky_beast.html" title="Sky beast">雷雲の獣</a>、<a href="http://crawl.chaosforge.org/Porcupine" data-untr="1" title="Porcupine">ヤマアラシ</a>、<a href="Fire_crab.html" title="Fire crab">火吹き蟹</a>、<a href="http://crawl.chaosforge.org/Bog_mummy" data-untr="1" title="Bog mummy">湿地のミイラ</a>と、新しい蜘蛛が何種類か。</li>
+<li> 新しいユニーク: 人を魅了する吸血鬼、ジョリー。</li>
+<li> 新しいモンスターの呪文: 恐慌の喚起、生命の簒奪、苦悶、精霊の召喚、悪臭の雲烟。</li>
+<li> データベースの検索で幽霊を調べると落ちるのを直した。</li>
+<li> 静寂が悪魔や炎の球体などに効いていたのを直した。</li>
+<li> モンスターが視界に入ったときのメッセージが、幻惑を無視していたのを直した。</li>
+<li> モンスターがバーサーク中に呪文を唱えたり、静寂の中で巻物を読んだりできたのを直した。</li>
+<li> 水に潜ったモンスターへの、いろいろな攻撃をできないようにした。</li>
+<li> アイズルとマーラが仲間越しに呪文を唱えていたのを直した。</li>
+<li> 岩ワームが攻撃せずに壁の中をあてもなくうろつくのを直した。</li>
+<li> ミイラの死の呪いで、薬が腐敗の薬に変わることはなくなった。</li>
+<li> 神の怒りや呪文の失敗で出てきたモンスターを倒しても、経験値やアイテムは得られない。</li>
+<li> 視界に入ってきたモンスターが、視界の端に跡を残さないようにした。</li>
+<li> アスモデウスに常に炎の円環をまとわせ、上位悪魔を呼ぶ呪文を炎の召喚に変え、衰弱の矢を取り除いた。</li>
+<li> ディスペータには稲妻の矢の代わりにレフディブの水晶槍を持たせた。</li>
+<li> ゲリュオンに間合いのある攻撃を持たせ、その獣たちが踏みつけるようにした。</li>
+<li> ロム・ロボンに魔力阻害の攻撃を持たせた。</li>
+<li> ムノレグに瞬間移動と変異させる攻撃を持たせ、上位悪魔の代わりに眼球の怪物を呼ぶようにし、HP を増やした。</li>
+<li> ランダムなパンデモニウムの君主のうち、呪文を唱えないもの(10% の確率)は、近接攻撃に必ずブランドがつき、速さが上がることもある。</li>
+<li> 加速を弱めた埋め合わせに、たいていのプレイヤーが加速して戦うモンスターのいくつかを遅くした。</li>
+<li> 巨大なモンスター(ドラゴン、象)は、小さなモンスターを踏みつけて押しのけられる。</li>
+<li> クラーケンは、いくつもの節に分かれた触手を持つ。</li>
+<li> 蜘蛛などいくつかのモンスターは壁に張りつけるので、水などの障害物を実質的に無視できる。</li>
+<li> 愚かでないモンスターは、スライムの壁を避けようとする。</li>
+<li> 仲間が死者を蘇らせても、段階 3 の空腹な草食の者には問題ない。</li>
+<li> モンスターが防具を拾うかどうかを決めるとき、AC だけでなく耐性も考えるようにした。</li>
+<li> 仲間が拾えるのは、武器、防具、矢弾だけにした。</li>
+<li> エティンを強くして、二刀流の岩の巨人と同じくらい強く殴るようにした。出てくる階は深くした。</li>
+<li> 羊は火がつき、ほかの羊に燃え移らせる。</li>
+<li> 変化させられたユニークは、話せる場合にしか呪文を唱えられない。</li>
+<li> 遠距離攻撃をするモンスターの動きの AI を良くした。射線を取り戻そうとする。</li>
+<li> ヤク、人食いヤク、醜きもの、スライムは、うろつくときにまとまって行動するようにした。</li>
+<li> うろついている徒党の手下が、リーダーのそばを離れないようにした。</li>
+<li> うろついている徒党の手下が、リーダーのもとへ道を探して戻るようにした。</li>
+<li> 徒党のリーダーが手下と場所を入れ替われるようにした。</li>
+<li> 友好的なモンスターが、階の向こう側からでもあなたのもとへ道を探して来られるようにした。</li>
+<li> 友好的なモンスターは、狙った相手を倒したあと、うろつかずにまたあなたについてくる。</li>
+<li> 賢いモンスターは道を探して浅い水を回り込む。</li>
+<li> 浅い水でもがいているモンスターは、移動が遅く、攻撃もしくじりやすい。</li>
+<li> 大きなモンスターは浅い水でもがかない。</li>
+<li> 巨大なモンスターは、深い水も浅い水のように歩いて渡れる。</li>
+<li> ロイヤルジェリーがスライムの穴ぐら:6 にとどまるようにした。</li>
+<li> 炎のランプと疾風の扇で呼び出せる数を制限した。</li>
+<li> 骸骨の戦士が静寂に従うようにした。</li>
+<li> 混沌の悪鬼を大きく強くした。</li>
+<li> 飢えた幽霊の攻撃は、満腹度の 25% を奪う。</li>
+<li> 混乱した巨大眼球は、麻痺させないようにした。</li>
+<li> 水棲のモンスターは、できるなら潜らずに追いかけてくるようにした。</li>
+<li> 「ここで待て」と命じた友好的なモンスターは、階段を通ってついてこない。</li>
+<li> 合体したスライムは、変化させると分かれる。</li>
+<li> 豚にされたモンスターも呪文を唱えられない。</li>
+<li> カタツムリやカメの殻を入れた。殻に引っ込むと守りが固くなる。</li>
+<li> 視界の外で友好的なモンスターがゾットの罠を作動させたら、'zot!' という音を表示するようにした。</li>
+<li> ゾンビにしたモンスターが、元の能力値(少なくとも HD と HP)を保つようにした。</li>
+<li> 穴掘りの甲虫は、斜めにも掘り進めるようになった。</li>
+<li> 象は迷宮と宝物庫に出なくなり、獣の棲み処で出る頻度も少し下がった。</li>
+<li> 熊を削除し、場所に応じてグリズリーか黒熊に置き換えた。</li>
+<li> モンスターのグールの HP とダメージを上げた。</li>
+<li> モンスターは透明化を唱えるかどうかを決めるとき、発光を考慮する。</li>
+<li> 醜きものは、放射で光っているモンスターの隣にいると変異することがある。</li>
+<li> 善良なモンスターと厳格な中立のモンスターは、近くの敵を狙わないようにした。</li>
+<li> 防具のミミックが皮に化けないようにした。</li>
+<li> モンスターが竜の皮からプレイヤーと同じボーナスを得られなかったのを直した。</li>
+<li> ナーガと大蛇の記号を変えた('settings/071_monster_glyphs.txt' を参照)。</li>
+<li> モンスターの吸血の処理を整理した。</li>
+<li> グラインダーの呪文と武器を調整し、出てくる深さを下げた(6-10 -&gt; 3-6)。</li>
+<li> グラインダーに上位のワンドを持たせず、スプリントのイジェィブにも持たせないようにした。</li>
+<li> グラインダー(攻撃に苦痛の効果がある)とピケル(電撃の鞭)には、苦痛の武器を渡さないようにした。</li>
+<li> 上位のワンドの一覧に、金縛りと衰弱を加えた。</li>
+<li> 植物や菌類は、どれほど珍しくても「興味深い」とみなさないようにした。</li>
+<li> 雲や毒などを正しく帰属させるため、すべてのモンスターにゲーム全体で一意な ID を持たせた。</li></ul>
+<h3><span class="mw-headline" id="Levels">階層</span></h3>
+<hr />
+<ul><li> 新しいゲームモード: 「ゾット防衛」。</li>
+<li> エルフの大広間を 7 -&gt; 5 階に短くした。</li>
+<li> もとの寺院のマップが使えなくなったときは、ランダムな寺院のマップを使うようにした。</li>
+<li> ポータルのヴォールトが、出たあとに消えないのを直した。</li>
+<li> オークの坑道の孤立した区画すべてに、脱出ハッチを置くようにした。</li>
+<li> 地獄からポータルのヴォールトに正しく入れるようにした。</li>
+<li> 地獄の入り口への自動移動や、そこからの自動移動ができるようになった。</li>
+<li> ダンジョンスプリントのマップ「Ten Rune Challenge」を、少し手直しして入れた。</li>
+<li> 78291 による新しいスプリントのマップ。</li>
+<li> スライムの穴ぐら:6 の宝物部屋に、ランダムなテレポートで入れないようにした。</li>
+<li> テーマを持った小さなヴォールトをいくつかつなげた、連作ヴォールトを入れた。</li>
+<li> パンデモニウムのランダムなヴォールトは、どれも 1/9 の確率で悪魔のルーンを持つようになった。</li>
+<li> 地獄の効果でアビスへ追放されることはなくなった。</li>
+<li> ゲヘナ:7 やグロオルクス・ヴロックの階で、暗い灰色の壁や床が出なくなった。</li>
+<li> ダンジョンの分岐ごとに環境音の大きさを決めた(隠密に影響する)。</li>
+<li> 1 階の上り階段を「ダンジョンの出口の階段」と説明するようにした。</li>
+<li> エルフの泉の水を飲んでも、テレポート制御は得られないようにした。</li>
+<li> ただの水の泉からは、満腹度を得られない。</li>
+<li> テレポート制御ができないことの告知が、転位術のスキルに左右されていたのを直した。</li>
+<li> ラビリンスは 1 ゲームに多くても 1 つ(約 70% の確率)で、深さ 10〜20 に生成される。スライムの穴ぐらとオークの坑道には出ない。</li>
+<li> 宝の埋蔵庫には時間制限がなくなり、入るには必ずアイテムがいる。</li>
+<li> 宝の埋蔵庫を弱めた: 入場料を上げ、宝を減らした。</li>
+<li> 宝の埋蔵庫で虎の巻を正しく扱うようにした。</li>
+<li> 自分の種族にとってまるで役に立たない宝の埋蔵庫は生成しないようにした。</li>
+<li> 時限のマーカーに、見えたときに動き出す 2 つめのタイマーをつけた。</li>
+<li> 告知のないポータルのタイマーを、約 3000 ターンに延ばした。</li>
+<li> 透明な隠し扉は、警告つきでは開かないようにした。</li>
+<li> 壁や扉を考慮した、新しい騒音の伝わり方の仕組み。</li>
+<li> good_item の金貨がとんでもない額になるのを直した。</li>
+<li> ゾットの領域:5 に罠が生成されないのを直した。</li>
+<li> 視界の中でモンスターが作動させたテレポートの罠を明らかにするようにした。</li>
+<li> 地獄の出口の階段をポータルに置き換えた。</li>
+<li> 警報の罠の騒音を 25 に上げた。</li>
+<li> 特製の罠を 2 つ: 蜘蛛のかご、落ちてくる格子。</li>
+<li> temple_entry_steam を霧に変えた。こちらは自動移動を妨げない。</li>
+<li> ヴォールトで店、モンスターの神、ワンドの充電回数を指定できるようにした。</li>
+<li> 新しい寺院のマップ。祭壇が 12 より少ないものも多い。</li>
+<li> すばらしい新しいヴォールトがたくさん(入口のヴォールト、連作ヴォールト、獣の棲み処や蛇穴の最下層など)。</li></ul>
+<h3><span class="mw-headline" id="Items">アイテム</span></h3>
+<hr />
+<ul><li> 新しいアイテム: 装身具呪いの巻物、忘却の巻物。</li>
+<li> 紙の巻物、発見のロッド、凝視の水晶玉を削除した。</li>
+<li> 俊足のブランドを弱めた。ダメージを 90% に下げた。</li>
+<li> 防具による確定ダメージ軽減を増やした。</li>
+<li> 胴鎧は、基本 AC と同じ値まで強化できる。</li>
+<li> 防具強化の巻物は、強化値が高くても失敗しなくなった。</li>
+<li> 反魔法の武器のブランド。</li>
+<li> スライムの壁による装備の腐食をなくした。</li>
+<li> 大賢者のローブの経験値のペナルティをなくした。</li>
+<li> 大賢者のローブから魔術強化の効果をなくし、代わりに変成術と転位術の呪文を強化できるようにした。</li>
+<li> ツキマーの舞踏をかけられた武器を自動で拾うようにした。</li>
+<li> 静寂の中ではゲリュオンの角笛を吹けないようにした。</li>
+<li> ジェリーに一部を食べられたとき、血液の薬の積み重ねが崩れるのを直した。</li>
+<li> 基本の種類がわからないランダムアーティファクトに、&#160;?identify を使えないことがあったのを直した。</li>
+<li> ロッドの強化値が&#160;?identify の対象として考慮されないのを直した。</li>
+<li> ロッドの呪文の説明が誤解を招くものだったのを直した。平均の威力を表示する。</li>
+<li> 悪魔の武器のランダムアーティファクトに、神罰のブランドがつかないようにした。</li>
+<li> 霊視のアーティファクトを装備しても、自動拾いが再開されないのを直した。</li>
+<li> 投げ網が状況によって「はまって」しまうのを直した。</li>
+<li> 保存のきく食料が、汚染された肉と同じ茶色で表示されていたのを直した。</li>
+<li> &#160;?enchant foo で呪いが解けたアイテムに "was cursed" と銘を刻むようにした。</li>
+<li> 未鑑定のアイテムから、魔法抵抗についての情報が漏れていたのを直した。</li>
+<li> 時間がたつと杖がランダムに鑑定される仕組みをなくした。武器やロッドと同じように、構えたときに種類がわかる。</li>
+<li> 杖とロッドが呪われた状態で生成されることがあるようにした。</li>
+<li> 毒の杖が rPois を持つモンスターにも効くようにした。オルグレブの毒気の光輪は 1/4 が耐性を無視する。</li>
+<li> 死の杖に rN+ をつけた。</li>
+<li> 召喚の杖に守りの効果をつけ、攻撃が当たると召喚されたものを解放させることがあるようにした。</li>
+<li> 窒息への耐性はクラーレのダメージを防ぐが、減速は防がない。</li>
+<li> 毒耐性があれば、クラーレを完全に防げる。</li>
+<li> 毒があり、しかも汚染されてもいる、新しい種類の肉を加えた。</li>
+<li> ランダムアーティファクトから +AC と +EV をなくした。固定アーティファクトにはそのまま残る。</li>
+<li> ミイラでなく、完全な草食(段階 3)でもないなら、美食家を自動で鑑定するようにした。</li>
+<li> 巻物の一部は、消費せずに取りやめられるようにした。</li>
+<li> 床にある魔法書からも (M) で呪文を習得できるようにした。</li>
+<li> アイテムで能力値が下がるときの確認を復活させた。</li>
+<li> 呪われているとわかっているアイテムを着ける前や構える前に、確認するようにした。</li>
+<li> 武器の腕力と器用さの重みについての、誤解を招くメッセージを削除した。</li>
+<li> 矢弾でジェリーを不器用に殴っても、その矢弾が腐食しないようにした。</li>
+<li> 獲得で、まったく役に立たないスキルの虎の巻や賢者のカードを得ないようにした。</li>
+<li> 打撃のロッドを強くした: 1d5 -&gt; 1d8。</li>
+<li> 直接効果を与えるロッドの呪文で、敵かどうかをきちんと確かめるようにした。</li>
+<li>&#160;?EWII で吹き矢筒の呪いを解けることがある。</li>
+<li> 吸血の武器で攻撃を当てたときに満腹度を得られる効果をなくした。</li>
+<li> 発動のスキルで、透視の水晶玉の半径が広がるようにした。</li>
+<li> 飢餓状態では魔力供給の杖を使えないようにした。</li>
+<li> 炎と霜の矢弾のダメージを少し上乗せした。</li>
+<li> 矢弾に騒音をつけた。</li>
+<li> 構えるときの重さの確認を、すべてのアイテムに当てはめるようにした。</li>
+<li> いくつかのカードの出やすさと効果を調整した。</li>
+<li> 腐食への耐性についての情報を詳しくした。</li>
+<li> 死体の説明で、食べるには解体が必要なことに触れるようにした。</li>
+<li> 血液の薬の説明を調整し、草食でない者にとっての栄養についても触れるようにした。</li>
+<li> 刈り取りの矢弾と弓が生成されないようにした。</li>
+<li> 充填の巻物が電撃の武器に及ぼす効果をなくした。</li>
+<li> 種族製の矢弾が生成されないようにした。</li>
+<li> 活力の水晶玉で能力値が下がるときは、知力が 1 から最大値の 2/3 まで減るようにした。</li>
+<li> 固定アーティファクトの武器のいくつかを強くした: ブランドを加え、ダメージを増やした。</li>
+<li> マクスウェルの特許甲冑を強くした: AC+15、保存のエゴ、+MR。</li>
+<li> ウカド・ムーの杖を強くした: 魔力供給のとき以外は呪文の失敗の効果が起きない。</li>
+<li> 経験の薬で、スキルにもいくらか経験値が入るようにした。</li>
+<li> 獲得で「ふつうの」水晶の鎧やドラゴンの鎧がめったに出なかったのを直した。</li>
+<li> 獲得の「余分な防具」の判定で、着ているものではなく見たことがあるものを考えるようにした。</li>
+<li> 獲得で、ふつうでない盾もスキルに応じた重みで出るようにした。</li>
+<li> 未鑑定の薬や巻物を使ったときは、その名前をメッセージに出すようにした。</li>
+<li> 悪魔の斧の新しい固定アーティファクト: 黒曜石の斧。セイレーンのように近くのモンスターを引き寄せる。</li>
+<li> どの武器も、攻撃の間隔は最小で 7 か、それより短くなる。</li></ul>
+<h3><span class="mw-headline" id="Tiles">タイル</span></h3>
+<hr />
+<ul><li> データベースでゾンビを検索すると落ちるのを直した。</li>
+<li> マウスのクリックによる移動が、内部で vi のキーを使っていたのを直した。</li>
+<li> バーサーク中や「知力ゼロ」のときに虎の巻を読めたのを直した。</li>
+<li> ツールチップからミミックの情報が漏れていたのを直した。</li>
+<li> メッセージの重ね表示では、マウスのクリックをメッセージ履歴ではなくマップ(移動など)に向けたものとして扱うようにした。</li>
+<li> 非デバッグのビルドでは、pngcrush が入っていれば実行し、ダウンロードを 1 回あたり 700KB 減らすようにした。</li>
+<li> 未鑑定のワンドや矢弾のアニメーションのランダム化を直した。</li>
+<li> よく使うコマンドとスキルの管理のための、新しいタイルのタブ。</li>
+<li> 場所があれば、モンスター、呪文、コマンドのタブを切り離す。</li>
+<li> 使える場所いっぱいに、ミニマップを自動で拡大するようにした。</li>
+<li> アサーションが起きたら、Windows の警告ダイアログを出すようにした。</li>
+<li> 注意対象や動かないモンスターを越えて、マウスのクリックで移動できるようにした。</li>
+<li> 射撃武器を構えているときに敵をクリックすると、その敵を撃つ。</li>
+<li> 敵を撃ったり敵に呪文を唱えたりするのに、2 回クリックしなければならなかったのを直した。</li>
+<li> ctrl+クリックで唱えると、ふさわしければ最後に唱えた呪文を唱える。</li>
+<li> マウスを重ねたときに、樹木の説明を出さないようにした。</li>
+<li> マウスを重ねたときの説明が、マウスを動かしたときにしか出ないようにした。</li>
+<li> Ctrl+マウスのクリックで置く・拾うとき、数量を尋ねるようにした。</li>
+<li> 雲の中にいる透明なモンスターに、気配のタイルを加えた。</li>
+<li> 注意対象のタイルを、役に立って目障りでないものにした。</li>
+<li> バーサーク中の赤いもやを復活させた。</li>
+<li> 種族ごとのリッチ化と石像のタイルを加えた。武器も表示できる。</li>
+<li> 毒を受けているときは、プレイヤーの人形に毒のアイコンを使う。</li>
+<li> 新しいタイトル画面(Denzi、Omndra)。</li>
+<li> 起動時のメニューにタイルを加えた。</li>
+<li> 盾を持たないモンスターのいくつかから、盾のタイルを取り除いた。</li>
+<li> ルーン文字の刻まれた防具や武器の新しいタイル。</li>
+<li> ランダムアーティファクトのアイテムのタイルが、実際にはまったく使われていなかったのを直した。</li>
+<li> すばらしい新しいモンスターのタイルがたくさん。</li>
+<li> 沼と獣の棲み処の床を良くした。</li>
+<li> 迷宮の彫像、血、ゾムの祭壇の新しいタイル。</li>
+<li> バージョン間で TILE_WALL_MAX が変わったら、ダンジョンのタイルを初期化し直すようにした。</li>
+<li> ヴォールトで決めたタイルの名前をセーブに保存するようにした。</li>
+<li> tiles_help.txt を書き直した。</li></ul>
+<h3><span class="mw-headline" id="Technical">技術面</span></h3>
+<hr />
+<ul><li> セキュリティの問題が多いため、setgid でのインストールをやめた。つまり、スコアや幽霊は共有されない。</li>
+<li> セーブは 1 つのファイルにまとめて保存し、落ちたときに備えてトランザクションで守る。</li>
+<li> セーブファイルに lua のチャンクを含めないようにした。</li>
+<li> ゲームの開始時とスプリントで自動セーブし、落ちてもゲームを失わないようにした。</li>
+<li> モンスター、視界、マップ、UI の扱いについての内部の変更を、NetTiles から取り込んだ。</li>
+<li> 何もしていないとみなす時間のしきい値を下げ、プレイ時間の計測のバグをいくつか直した。</li>
+<li> 公開サーバーを除き、ファイルシステムが落ちても大丈夫なようにした。</li>
+<li> 特別な固定アーティファクトもそうでないものも、同じ生成コードを使う。</li>
+<li> 呪文のコードを系統と機能ごとに並べ直した。</li>
+<li> 幽霊の入出力を簡単にした。</li>
+<li> 階の生成コードを整理した。</li></ul>
+<h3><span class="mw-headline" id="Options">オプション</span></h3>
+<hr />
+<ul><li> explore_stop オプションの既定値で greedy_pickup_smart を使うようにした。</li>
+<li> 新しい travel_key_stop オプション: キーを押したときに自動移動や休息を中断するかどうか。</li>
+<li> easy_exit_menu の既定値を false にした。キーのヘルプのメニューもすべてこのオプションに従う。</li>
+<li> autopickup_no_burden の既定値を true にした。</li>
+<li> コンソール版の新しいオプション: 'show_player_species'(既定値は false)。ふさわしいモンスターの記号を使う。</li>
+<li> 新しいオプション: 'show_real_turns'(既定値はオフ)。</li>
+<li> タイル版: 新しいオプション 'tile_layout_priority'。タイルのタブを自由に並べられる。</li>
+<li> タイル版: 'tile_title_screen'(既定値は true)を 'tile_skip_title'(false)に置き換えた。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

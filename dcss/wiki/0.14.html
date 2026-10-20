@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.14 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.14(0.14)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.14 <span class="en">0.14</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.14">0.14</a>」(対象の版の記載なし、2022-02-08 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.14&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="http://crawl.chaosforge.org/Crawl" data-untr="1" class="mw-redirect" title="Crawl">Crawl</a> の過去のリリースについてのものだ。最新版を含むほかのバージョンについては、<a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を見てほしい。</i></div>
+<p><br />
+<b>0.14</b> は <i>Dungeon Crawl Stone Soup</i> のバージョンの一つで、2014年4月9日にリリースされた。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Highlights"><span class="tocnumber">1</span> <span class="toctext">主な変更</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Branches.2C_environment"><span class="tocnumber">2</span> <span class="toctext">分岐・環境</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Character"><span class="tocnumber">3</span> <span class="toctext">キャラクター</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Monsters"><span class="tocnumber">4</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Spells"><span class="tocnumber">5</span> <span class="toctext">呪文</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Items"><span class="tocnumber">6</span> <span class="toctext">アイテム</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Cards"><span class="tocnumber">7</span> <span class="toctext">カード</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Gods"><span class="tocnumber">8</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Interface"><span class="tocnumber">9</span> <span class="toctext">インターフェース</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Release_0.14.1"><span class="tocnumber">10</span> <span class="toctext">リリース 0.14.1</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Release_0.14.2"><span class="tocnumber">11</span> <span class="toctext">リリース 0.14.2</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Highlights">主な変更</span></h2>
+<ul><li> 迷宮の下半分が、新しい分岐の<a href="The_Depths.html" class="mw-redirect" title="Depths">深層</a>になった。</li>
+<li> 新しい種族が2つ加わった: <a href="Formicid.html" title="Formicid">フォーミシッド</a>と<a href="Vine_Stalker.html" title="Vine Stalker">歩き蔓</a>。</li>
+<li> 新しい神: 陰影の<a href="Dithmenos.html" title="Dithmenos">ディスメノス</a>。</li>
+<li> <a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>の分岐に出るモンスターの顔ぶれが大きく変わった。</li>
+<li> 召喚の呪文の顔ぶれが大きく変わった。</li></ul>
+<h2><span class="mw-headline" id="Branches.2C_environment">分岐・環境</span></h2>
+<ul><li> 本筋の迷宮は15階になった。</li>
+<li> 新しい分岐: 深層。迷宮の最下層から入る5階建ての分岐で、<a href="The_Realm_of_Zot.html" class="mw-redirect" title="Realm of Zot">ゾットの領域</a>への入り口がある。</li>
+<li> <a href="The_Vaults.html" title="The Vaults">宝物庫</a>の入り口は迷宮:13〜14 になり、入るにはルーンが必要になった。</li>
+<li> <a href="The_Abyss.html" class="mw-redirect" title="Abyss">アビス</a>の階段がこれまでより多く現れるようになり、その出方は深さで決まるようになった。</li>
+<li> <a href="Ziggurat.html" title="Ziggurat">ジグラット</a>はルーン3つで入れるようになった。深層には入り口が必ずあり、<a href="http://crawl.chaosforge.org/Pan" data-untr="1" class="mw-redirect" title="Pan">パンデモニウム</a>でもこれまでどおり現れる。</li>
+<li> <a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持っていても、ポータルが閉じなくなった。</li>
+<li> 地獄の分岐に入るのに<a href="Horn_of_Geryon.html" title="Horn of Geryon">ゲリュオンの角笛</a>が要らなくなった。</li>
+<li> <a href="Labyrinth.html" title="Labyrinth">ラビリンス</a>の敵が増え、<a href="Minotaur.html" title="Minotaur">ミノタウロス</a>はふだんから起きているようになった。</li>
+<li> ジグラットの敵の組み合わせが増えた。</li>
+<li> <a href="The_Crypt.html" class="mw-redirect" title="Crypt">地下墓地</a>の最奥に、場所にちなんだ戦利品がいくつか置かれるようになった。衰弱・苦痛・吸血のいずれか(または複数)の武器、生命力保護の指輪と守護の護符、何種類かある固定アーティファクトのうち1つ、ネクロノミコン、あるいは発動アイテムや魔法の杖だ。</li>
+<li> 易しい<a href="Ice_cave.html" title="Ice cave">氷の洞穴</a>のポータルは、迷宮、獣の棲み処、オークの坑道にだけ現れるようになった。難しい氷の洞穴のポータルは、エルフの大広間と、ゲームごとに入れ替わる獣の棲み処の分岐に現れる。</li>
+<li> ポータルの制限時間は全体に短くなり、ポータルどうしのばらつきも小さくなった。また、初めて目にしたときに始まっていた短いほうの制限時間はなくなった。</li>
+<li> 宝物庫の最下層の構造が変わり、4つの区画はどれも角の部分が開いている形になった。</li>
+<li> 魔道具<a href="Shop.html" title="Shop">店</a>と<a href="Wand.html" title="Wand">ワンド</a>店が一つにまとめられ、新しい魔道具店では<a href="http://crawl.chaosforge.org/Rod" data-untr="1" title="Rod">ロッド</a>も売るようになった。</li>
+<li> 店のアイテムの値段が見直された。</li>
+<li> パンデモニウムでルーンを手に入れるほど、パンデモニウムの出口が現れやすくなった。</li></ul>
+<h2><span class="mw-headline" id="Character">キャラクター</span></h2>
+<ul><li> 新しい種族:
+<ul><li> フォーミシッドは4本の力強い腕を持ち、大きな武器と<a href="Shields.html" class="mw-redirect" title="Shield">盾</a>を一緒に使える。さらに、生まれつき穴掘りが得意で、常に停滞の効果がかかっている。</li>
+<li> 歩き蔓は回復が速いが、ワンドや薬では傷を治せない。生まれつき精霊の盾と反魔法の牙を持つ。</li></ul></li>
+<li> <a href="Felid.html" title="Felid">フェリッド</a>は生まれつき跳躍攻撃の能力を持つようになった。ほかのモンスターを跳び越えて、1ターンで目標に攻撃できる。</li>
+<li> フェリッドがワンドを使えるようになった。</li>
+<li> <a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a>の負のエネルギーの系統で、rN の2段階目が「黒の紋様」に置き換わった。近接攻撃のときに、ときどきプレイヤーの傷が癒え、相手に悪い状態がかかる。</li>
+<li> 治癒が遅い変異の段階1と2は、敵が見えているときの回復の速さにだけ効くようになった(段階1では半分になり、段階2ではまったく回復しない)。能力値の回復と、この変異の段階3は変わらない。</li>
+<li> 俊足と移動が遅いの変異は、ランダムな変異としては出なくなった。</li>
+<li> おすすめの職業と種族が調整された。特に、職業がおすすめする種族と、その種族がおすすめする職業が食い違ってもよくなった(たとえば CK -&gt; Tr はおすすめでも、Tr -&gt; CK はおすすめでない、ということがありうる)。</li>
+<li> <a href="Poison.html" title="Poison">毒</a>のダメージが乱数で変わらなくなった。</li>
+<li> 触角の変異があると、視界内のすべての透明な敵に、透明なモンスターの目印が表示されるようになった。</li>
+<li> <a href="Merfolk.html" title="Merfolk">水棲の民</a>も人魚やセイレーンに魅了されるようになった。</li>
+<li> <a href="Artificer.html" title="Artificer">発動術師</a>、<a href="Wanderer.html" title="Wanderer">放浪者</a>、<a href="Brigand.html" class="mw-redirect" title="Assassin">暗殺者</a>、<a href="Venom_Mage.html" title="Venom Mage">毒魔術師</a>は、持っていない<a href="Potion.html" title="Potion">薬</a>や<a href="Scroll.html" title="Scroll">巻物</a>を最初から識別していることがなくなった。</li>
+<li> <a href="Fighter.html" title="Fighter">戦士</a>と<a href="Gladiator.html" title="Gladiator">闘士</a>の初期武器が、より上位のものになった。</li>
+<li> 戦士は<a href="Potion_of_might.html" title="Potion of might">怪力の薬</a>を持って始まるようになった。</li>
+<li> 悪魔の血族の氷の鎧は、少しずつではなく一度に元に戻るようになり、炎の呪文を唱えても乱されなくなった。</li></ul>
+<h2><span class="mw-headline" id="Monsters">モンスター</span></h2>
+<ul><li> <a href="Guardian_serpent.html" title="Guardian serpent">守護の大蛇</a>は<a href="Teleport_Other.html" title="Teleport Other">他者のテレポート</a>を失い、代わりに<a href="Blink_Allies_Encircling.html" title="Blink Allies Encircling">盟友の招集</a>を得た。</li>
+<li> <a href="Lom_Lobon.html" title="Lom Lobon">ロム・ロボン</a>が<a href="http://crawl.chaosforge.org/Tornado" data-untr="1" title="Tornado">荒れ狂う嵐</a>を唱えられるようになった。</li>
+<li> ただの「ドラゴン」は「<a href="http://crawl.chaosforge.org/Fire_dragon" data-untr="1" title="Fire dragon">ファイアドラゴン</a>」という名前になった。</li>
+<li> ドラゴン、ドレイク、カニ、酸のブロブは、HP が減っても逃げなくなった。</li>
+<li> <a href="Jelly.html" class="mw-redirect" title="Jellies">ジェリー</a>がまた分裂するようになった。</li>
+<li> モンスターにも召喚数の上限がかかるようになった。</li>
+<li> 召喚されたものは、召喚主が死ぬと消えるようになった。</li>
+<li> <a href="Word_of_Recall.html" title="Word of Recall">招集の宣言</a>にブレスと同じ待ち時間がかかるようになり、(クラーレ毒などで)ブレスの待ち時間を起こさせれば中断させられるようになった。</li>
+<li> ラビリンスの外に自然に現れるミノタウロスは、装備を持って現れるようになった。</li>
+<li> 忌まわしきものは自然には回復しなくなった。呪文で生み出されたものは、這いずる死体やおぞましい肉塊とさらに融合することで回復できる。</li>
+<li> 新しい敵:
+<ul><li> <a href="Faun.html" title="Faun">ファウヌス</a>。プレイヤーに呪術をかけてから、遠くから攻撃してくる。その大柄な同族のサテュロスは、近くの仲間を強化できる。</li>
+<li> <a href="Wind_drake.html" title="Wind drake">風ドレイク</a>。強烈な突風を吐き、プレイヤーに旋風の一撃を放つ。</li>
+<li> 棘の蓮。水に浮かぶ植物で、遠くから棘を浴びせてくる。</li>
+<li> <a href="Thorn_hunter.html" title="Thorn hunter">棘の狩人</a>。棘を連射し、荊棘を生やして敵の動きを妨げる。</li>
+<li> ドライアド。スプリガンのドルイドのように森林の喚起を唱えたり、敵を引きずり回す鞭打蔦を呼び出したりして、森をあなたにけしかける。</li>
+<li> 水のニンフ。自分の周りにひとりでに水たまりを作り、その水でプレイヤーを打ちのめす。</li>
+<li> <a href="Shambling_mangrove.html" title="Shambling mangrove">よろめき歩くマングローブ</a>。動きは遅いが頑丈な植物で、ワタリガラスや蜂が巣を作っている。</li>
+<li> <a href="Raiju.html" title="Raiju">雷獣</a>。自分の体を稲妻の矢に変えて攻撃してくる。</li>
+<li> <a href="http://crawl.chaosforge.org/Worldbinder" data-untr="1" title="Worldbinder">ワールドバインダー</a>。アビスの敵で、ほかの分岐から下位の敵を召喚する。</li>
+<li> <a href="Shock_serpent.html" title="Shock serpent">電撃の大蛇</a>。電気をため込んで空電放射を起こす。</li>
+<li> <a href="Mana_viper.html" title="Mana viper">マナバイパー</a>。反魔法の牙を持つヘビ。</li>
+<li> <a href="Naga_sharpshooter.html" title="Naga sharpshooter">ナーガの達人射手</a>。射出物の転送でプレイヤーを狙撃する。</li>
+<li> <a href="http://crawl.chaosforge.org/Naga_ritualist" data-untr="1" title="Naga ritualist">ナーガの儀式者</a>。敵の体内の毒を強めたり、オルグレブの毒気の光輪を唱えたりする。</li>
+<li> <a href="Salamander_mystic.html" title="Salamander mystic">サラマンダーの秘伝者</a>。溶岩の矢、他者の加速、単体を狙う版の毒の燃焼、イスケンデルンの爆破の秘術を使う。</li>
+<li> <a href="http://crawl.chaosforge.org/Salamander_firebrand" data-untr="1" title="Salamander firebrand">サラマンダーの炎術師</a>。攻撃すると、相手の周りに炎の輪が現れる。</li>
+<li> <a href="http://crawl.chaosforge.org/Octopode_crusher" data-untr="1" title="Octopode crusher">オクトポードの粉砕者</a>。締めつけた相手を投げ飛ばすことも、氷柱を投げることもできる。</li></ul></li>
+<li> 悪魔の血族をもとにした新しい敵の一団が、パンデモニウムに現れるようになった。
+<ul><li> 基本の種類:</li>
+<li> 怪物的(補助攻撃と高い HP)</li>
+<li> 凍てつく(rC++ と氷の鎧。氷の鎧は AC を上乗せするが、火炎のダメージを受けると消えていく)</li>
+<li> 地獄の(rF++ と炎の攻撃)</li>
+<li> 腐臭の(rPois。近くで何かが死ぬと HP が増える)</li>
+<li> 拷問好きの(攻撃力の増大、苦痛よりの力、棘)</li>
+<li> 職業:</li>
+<li> 血の聖者(強力な妖術をランダムに放つ伝説的な破壊と、近くの仲間を一時的に回復させる束の間の治癒)</li>
+<li> 混沌の勇者(自分と相手の両方に呪術のようなランダムな効果をかける混沌の反射と、破壊のロッドと同じ無作為の矢)</li>
+<li> 戦争屋(大いなる化身と魔法の阻害。大いなる化身は戦闘球と幽体の武器を合わせたようなもので、近くの仲間が十分なダメージを与える攻撃をすると動き出す。魔法の阻害は呪術で、呪文を唱えるたびに呪文の成功率がだんだん下がっていく)</li>
+<li> 堕落者(ほかの分岐から上位の敵を召喚する空間断裂と、いくつかの一時的な変異を与える身体の崩壊)</li>
+<li> 黒い太陽(近くの仲間に、当たると傷が癒えるさまざまな吸収の攻撃を与える黒の紋様と、以前からある呪文の衰弱の矢、悪意の供物、アンデッドの解呪)</li></ul></li>
+<li> 獣の棲み処の分岐の敵の調整:
+<ul><li> <a href="Spriggan_druid.html" title="Spriggan druid">スプリガンのドルイド</a>のドルイドの呼び声は、近くの視界の外から生き物を2〜3体呼ぶようになり、見えないところで生き物に怪力をかけることはなくなった。その代わり、ドルイドが死ぬと、近くの生き物が回復して狂乱する。また、呪文の顔ぶれで陽光が石錐の矢に置き換わった。</li>
+<li> セイレーンの唄による引き寄せは、プレイヤーがすでに魅了されていれば抵抗できなくなった。</li>
+<li> セイレーンの唄が水死者の魂を呼ぶようになった。溺れさせる攻撃を持つ、一時的な弱い敵だ。</li>
+<li> <a href="Manticore.html" title="Manticore">マンティコア</a>の棘は相手に刺さるようになった。刺さった棘は、何もせずに数ターン過ごして抜くまで、移動するたびにダメージを与える。</li>
+<li> ハーピーは食べ物を盗んだり、床の食べ物を食べたりしなくなった。</li>
+<li> ただの<a href="Salamander.html" title="Salamander">サラマンダー</a>は弱くなった。また、どのサラマンダーも陸の上を這い回れるようになった。</li></ul></li>
+<li> そのほかの敵の調整:
+<ul><li> <a href="Quokka.html" title="Quokka">クワッカ</a>の速度が12になった(実質的に灰色ネズミと同じになった)。</li>
+<li> <a href="Boggart.html" title="Boggart">ボガート</a>が打たれ強くなった。</li>
+<li> <a href="Rakshasa.html" title="Rakshasa">ラクシャーサ</a>はモンスター用の呪文「幻影の鏡」を得た。近くの仲間のモンスターの分身を HP 半分で呼び出し、50% の確率で分身と本物が入れ替わる。これまでの自分を複製する能力は、これに置き換わった。さらに<a href="Iskenderun's_Mystic_Blast.html" title="Iskenderun&#39;s Mystic Blast">イスケンデルンの爆破の秘術</a>も唱えられるようになり、HP が 50% になると一度だけ、自分の分身を2体呼び出す。</li>
+<li> <a href="http://crawl.chaosforge.org/Giant_orange_brain" data-untr="1" class="mw-redirect" title="Giant orange brain">巨大なオレンジ色の脳髄</a>は<a href="Confusion.html" title="Confusion">混乱</a>の代わりに<a href="http://crawl.chaosforge.org/Mass_Confusion" data-untr="1" title="Mass Confusion">集団の混乱</a>を使うようになった。</li>
+<li> <a href="Spriggan_(monster).html" title="Spriggan (monster)">スプリガン</a>全般は、行動全体が速いのではなく、移動だけが速くなった。また、ダメージが増え、EV が下がった。</li>
+<li> <a href="Spriggan_air_mage.html" title="Spriggan air mage">スプリガンの風術師</a>は<a href="Haste.html" title="Haste">加速</a>を使うようになった(電撃と入れ替え)。</li>
+<li> <a href="Deep_elf_demonologist.html" title="Deep elf demonologist">闇エルフの悪魔術師</a>は、下級の悪魔よりも上級の悪魔を多く召喚するようになった。</li>
+<li> <a href="http://crawl.chaosforge.org/Draconian_knight" data-untr="1" title="Draconian knight">ドラコニアンの騎士</a>の呪文の組み合わせは、数が減ったぶん、氷と死霊術を中心としたはっきり違うものになった。</li>
+<li> <a href="http://crawl.chaosforge.org/Gargoyle_(monster)" data-untr="1" title="Gargoyle (monster)">ガーゴイル</a>は<a href="Stone_Arrow.html" title="Stone Arrow">石錐の矢</a>を、<a href="http://crawl.chaosforge.org/Molten_gargoyle" data-untr="1" title="Molten gargoyle">溶岩ガーゴイル</a>は<a href="Bolt_of_Magma.html" title="Bolt of Magma">溶岩の矢</a>を使うようになり、どちらもメイス系の武器を持って現れるようになった。</li>
+<li> 金属のガーゴイルは<a href="War_gargoyle.html" title="War gargoyle">凶暴なガーゴイル</a>になった。素早く、相手に金属の破片を撃ち出す。</li>
+<li> 水晶のゴーレムは<a href="Crystal_guardian.html" title="Crystal guardian">水晶の守護者</a>になった。HP は減ったが、どんな壁にも跳ね返る水晶の矢を撃てる。矢は1発ごとに、火炎か冷気のどちらかのダメージを与える。</li>
+<li> <a href="Raven.html" title="Raven">ワタリガラス</a>と<a href="Eldritch_tentacle.html" title="Eldritch tentacle">別次元の触手</a>は死体を食べなくなった。</li></ul></li>
+<li> 新しいユニーク:
+<ul><li> <a href="Asterion.html" title="Asterion">アステリオン</a>。<a href="Makhleb.html" title="Makhleb">マクレブ</a>に仕えるミノタウロスで、<a href="http://crawl.chaosforge.org/Major_Destruction" data-untr="1" title="Major Destruction">大いなる破壊</a>を放ち、悪魔の武器で<a href="http://crawl.chaosforge.org/Spectral_Weapon" data-untr="1" title="Spectral Weapon">幽体の武器</a>を使う。</li>
+<li> <a href="Natasha.html" title="Natasha">ナターシャ</a>。元は使い魔だったフェリッドで、ちょっとした呪文を使える。</li>
+<li> <a href="Vashnia.html" title="Vashnia">ヴァシュニア</a>。ナーガの達人射手の一隊を率い、それにふさわしい転位術の力を持つ。</li></ul></li>
+<li> 抑制の蛾、岩ワーム、溶岩魚、レムレース、クラゲ、灰色ネズミ、棘のワーム、大アメーバ、闇ドワーフの狂戦士、瑪瑙カタツムリ、巨大ムカデ、腐れの悪魔、粘土のゴーレム、石のゴーレムがいなくなった。</li>
+<li> 球雷は常に混乱しているわけではなくなり、巨大胞子のように目標を探して向かっていくようになった。</li>
+<li> <a href="Killer_Klown.html" title="Killer Klown">殺人ピエロ</a>の攻撃につく追加効果の候補が変わった: 強い毒、苦痛、速度を奪う、炎、冷気、電撃、反魔法。</li>
+<li> 飛んでいる敵にも<a href="Throwing_net.html" title="Throwing net">投げ網</a>が効くようになった。</li>
+<li> <a href="Geryon.html" title="Geryon">ゲリュオン</a>がまた飛べるようになった。</li>
+<li> <a href="Antaeus.html" title="Antaeus">アンテウス</a>は<a href="Flash_Freeze.html" title="Flash Freeze">瞬間凍結</a>を得た。相手の動きを3ターン妨げる氷の妖術だ。</li>
+<li> プレイヤーの幽霊が<a href="http://crawl.chaosforge.org/Dazzling_Spray" data-untr="1" title="Dazzling Spray">目くらましの噴射</a>を覚えたまま唱えられるようになった。プレイヤーに当たると混乱させることがある。</li>
+<li> パンデモニウムの君主はすべて、透明なものが見えるようになった。</li>
+<li> <a href="http://crawl.chaosforge.org/The_Enchantress" data-untr="1" title="The Enchantress">女呪術師</a>が、深層に普通のユニークとして現れるようになった。</li>
+<li> <a href="Josephine.html" title="Josephine">ジョセフィーヌ</a>の呪文が新しくなり(鬼火の火球、アンデッドの解呪、ヴァンパイアの吸血、死霊の蘇生)、rN+++ を得た。</li>
+<li> ラミアは王座を追われた。</li></ul>
+<h2><span class="mw-headline" id="Spells">呪文</span></h2>
+<ul><li> 状態付与に抵抗されたときのメッセージは、その抵抗判定でうまく抵抗したか下手に抵抗したかではなく、その相手が全体としてどのくらい状態付与にかかりにくいかを示すようになった。</li>
+<li> 新しい呪文:
+<ul><li> <a href="http://crawl.chaosforge.org/Summon_Lightning_Spire" data-untr="1" class="mw-redirect" title="Summon Lightning Spire">稲妻の渦巻の召喚</a>(L4 召喚術/風の魔術)。プレイヤーから2マス以内に稲妻の渦巻を置く。招集の魔法書で蠍の召喚と入れ替わった。</li>
+<li> <a href="http://crawl.chaosforge.org/Summon_Guardian_Golem" data-untr="1" title="Summon Guardian Golem">守護のゴーレムの召喚</a>(L4 召喚術/加護)。創傷の絆でプレイヤーを守り、死ぬとときどき爆発するゴーレムを生み出す。招集の魔法書に載っている。</li>
+<li> <a href="Summon_Forest.html" title="Summon Forest">ドライアドの召喚</a>(L5 召喚術/転位術)。ドライアドを呼び出し、プレイヤーの近くの地形を一時的に森に変える。次元歪曲の魔法書に載っている。</li>
+<li> <a href="Summon_Mana_Viper.html" title="Summon Mana Viper">マナバイパーの召喚</a>(L5 召喚術/呪術)。獣の魔法書に載っている。</li>
+<li> <a href="Monstrous_Menagerie.html" title="Monstrous Menagerie">怪物園の開場</a>(L6 召喚術)。マンティコア、ハーピー数体、リンドヴルム、(呪文の威力が高ければ)スフィンクスのどれかを呼び出す。獣の魔法書と、召喚術の魔法書(醜きものの召喚と入れ替え)に載っている。</li>
+<li> <a href="http://crawl.chaosforge.org/Forceful_Dismissal" data-untr="1" title="Forceful Dismissal">強制的な送還</a>(L6 召喚術)。プレイヤーが召喚したものをすべて消し、その隣にいる敵にダメージを与える。<a href="http://crawl.chaosforge.org/Grand_Grimoire" data-untr="1" title="Grand Grimoire">グラン・グリモア</a>に載っている。</li>
+<li> <a href="http://crawl.chaosforge.org/Aura_of_Abjuration" data-untr="1" title="Aura of Abjuration">解放のオーラ</a>(L6 召喚術)。効き目は弱いが、毎ターン集団に解放の宣誓をかける。グラン・グリモアで<a href="http://crawl.chaosforge.org/Mass_Abjuration" data-untr="1" title="Mass Abjuration">集団への解放の宣誓</a>と入れ替わった。</li>
+<li> <a href="http://crawl.chaosforge.org/Spellforged_Servitor" data-untr="1" class="mw-redirect" title="Spellforged Servitor">魔火花の従者</a>(L7 妖術/召喚術)。プレイヤーの覚えている破壊的な妖術のいくつかを使う従者を呼び出す。魔術の魔法書で<a href="Fireball.html" title="Fireball">ファイアボール</a>と入れ替わった。</li>
+<li> <a href="Glaciate.html" title="Glaciate">凍てつく嵐</a>(L9 氷の魔術/妖術)。円錐状に強烈な氷の爆風を放ち、倒したモンスターを氷の塊に変え、生き残ったものを瞬間凍結させる。殲滅の魔法書で氷の嵐と入れ替わった。</li>
+<li> <a href="Dragon's_Call.html" title="Dragon&#39;s Call">ドラゴンの呼び声</a>(L9 召喚術)。効果が続くあいだ、視界の端にいる目標の近くにドラゴンを呼び出す(1体呼ぶごとに、呪文1回分のコストがまるごとかかる)。<a href="http://crawl.chaosforge.org/Book_of_the_Dragon" data-untr="1" title="Book of the Dragon">ドラゴンの魔法書</a>でドラゴンの召喚と入れ替わった。</li></ul></li>
+<li> <a href="Sticks_to_Snakes.html" title="Sticks to Snakes">棒切れの蛇</a>は、矢弾(<a href="http://crawl.chaosforge.org/Arrow" data-untr="1" title="Arrow">矢</a>と<a href="Javelin.html" title="Javelin">ジャベリン</a>)にしか効かなくなった。</li>
+<li> <a href="Conjure_Ball_Lightning.html" title="Conjure Ball Lightning">魔術の球雷</a>のレベルが7から6に下がり、球雷の持続時間が短くなった。</li>
+<li> <a href="Metabolic_Englaciation.html" title="Metabolic Englaciation">代謝の凍結</a>のレベルが6から5に下がり、減速の持続時間が唱えるたびに積み重なるようになった。</li>
+<li> <a href="Bolt_of_Draining.html" title="Bolt of Draining">衰弱の矢</a>のレベルが6から5に下がった。</li>
+<li> <a href="Fulminant_Prism.html" title="Fulminant Prism">爆発性の晶柱</a>のレベルが5から4に下がった。</li>
+<li> <a href="Iskenderun's_Battlesphere.html" title="Iskenderun&#39;s Battlesphere">イスケンデルンの戦闘球</a>のレベルが4から5に上がった。</li>
+<li> <a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a>は重さ4までの防具でしか使えなくなり、まだらドラゴンの鎧とは一緒に使えなくなった。</li>
+<li> <a href="http://crawl.chaosforge.org/Song_of_Slaying" data-untr="1" class="mw-redirect" title="Song of Slaying">殺戮の歌</a>は持続時間が延び、殺戮の上乗せも増えたが、威力の上限が下がった。</li>
+<li> <a href="Swiftness.html" title="Swiftness">俊足</a>は、切れたあとしばらく動きが鈍くなるようになり、重ねがけできなくなった。</li>
+<li> <a href="http://crawl.chaosforge.org/LRD" data-untr="1" class="mw-redirect" title="LRD">リーの瞬間解体術</a>のダメージの種類にあった特別な場合がいくつか削除された。氷、骨、石、岩(石化した敵を含む)は、どれも同じ爆発になる。</li>
+<li> <a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>は<a href="http://crawl.chaosforge.org/Book_of_Power" data-untr="1" title="Book of Power">力の魔法書</a>にしか載らなくなった(以前は殲滅の魔法書にもあった)。</li>
+<li> <a href="Call_Canine_Familiar.html" title="Call Canine Familiar">犬族のしもべの召喚</a>は犬を1匹しか呼ばなくなり、ジャッカルも呼ばなくなった。</li>
+<li> <a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>と<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>は、持続時間で切れるのではなく、はじいた回数に応じて切れるようになった。</li>
+<li> 射出物の転送は、1発ずつ撃つのではなく、一定時間続く効果になった。</li>
+<li> プレイヤーが出した雲はすべて、視界の外ではずっと速く消えるようになった。</li>
+<li> 破壊の爆裂球は、少し進むより前に別の破壊の爆裂球とぶつかっても爆発しなくなった。</li>
+<li> 削除された呪文: 掘削、蠍の召喚、守りの歌、変化、氷の嵐、悪魔の大群、醜きものの召喚、ドラゴンの召喚、集団への解放の宣誓。</li></ul>
+<h2><span class="mw-headline" id="Items">アイテム</span></h2>
+<ul><li> ゾットのオーブが所持品の枠をふさがなくなった。</li>
+<li> 武器は装備したとたんに鑑定されるようになった。</li>
+<li> ワンドは振ったとたんに鑑定されるようになった。</li>
+<li> 元素の発動アイテムは1つずつ充填されるようになり、満タンに一番近いものから先に充填される。</li>
+<li> 床に置いてあるアイテムは壊れなくなった。</li>
+<li> まだらドラゴンの鎧の重さが5になった(以前は4)。</li>
+<li> 跳躍のエゴ(ブーツにしかつかない)で、フェリッドのような跳躍攻撃の能力が得られる。</li>
+<li> 鞭の間合いのブランドがなくなった。</li>
+<li> 混沌の矢弾による状態付与のような効果は、抵抗できなくなった。</li>
+<li> スピア、ダガー、棍棒、ハンドアックスは投擲に向かなくなった。</li>
+<li> 新しいアイテム「トマホーク」: フェリッド以外の誰でも使える投擲用の矢弾で、ダメージはダーツとジャベリンの中間。
+<ul><li> 体の小さい種族の狩人と秘術の射手は、トマホークを選べる。</li></ul></li>
+<li> 新しい「樹木化の薬」: 飲むと樹化する。</li>
+<li> 体の小さい種族も投げ網を使えるようになった。</li>
+<li> 投げ網は傷まなくなった。代わりに、ほかの矢弾と同じように一定の確率で壊れる。</li>
+<li> 固定アーティファクトのいろいろな変更:
+<ul><li> ロングボウ『貫くもの』に貫通のブランドがついた(以前はヴォーパル)。</li>
+<li> 暗殺者のブーツが新しい形で復活した。モンスターを感知でき、どんな武器でも(素手でも)短剣並みの急所攻撃ができる。</li>
+<li> 地獄の業火は地獄の業火の矢を撃つようになった。地獄の業火のブランドのダメージを与え、爆発する。</li>
+<li> 元素の杖が大きく作り直された。rElec、rF++、rC++、MR++、AC+5 がつき、使い手の発動スキルに応じて、ランダムに属性のブランドの攻撃をくり出す。</li>
+<li> ズホルの皮に rC+++ がついた。</li>
+<li> 悪魔の刃『蛭』は、当てるたびに必ず HP を吸うようになった(ほかの吸血の武器は 3/5 の確率)。</li>
+<li> 大型クロスボウ『狙撃手』は +15 のヴォーパルのクロスボウになり、撃つ間隔が長くなった。</li>
+<li> 鞭『蛇の一咬み』は +5 の毒液の鞭になり、5回に2回の割合でクラーレ毒の効果を与える。</li>
+<li> 謳う剣はバスタードソードになった。</li>
+<li> 銅鑼の盾は +27 になり、EV -5 がついた。</li>
+<li> 影の指輪は、EV +4 と命中 -4 の代わりに影の領域を持つようになった。</li>
+<li> 新しい固定アーティファクト「不気味な指のネックレス」: 守護の効果と、指輪の枠が1つ増える効果がある。</li>
+<li> 新しい固定アーティファクト「蜘蛛のブーツ」: 壁に張りつく力と跳躍攻撃が得られる。</li>
+<li> 新しい固定アーティファクト「ダークモール」: 鈍器スキルを使う、とても大きくとても遅い両手武器。</li>
+<li> 新しい固定アーティファクト「最高会議の帽子」: 呪文の成功率と引き換えに、呪文の威力が上がる。</li>
+<li> 新しい固定アーティファクト「電弧の刃」: 当てた相手に静電気の放電を浴びせるカトラス。</li>
+<li> 新しい固定アーティファクト「スペルバインダー」: 反魔法の悪魔の鞭で、魔法を使う相手に呪文の失敗の効果を起こさせる。</li>
+<li> 新しい固定アーティファクト「秩序のラジャタン」: (矢弾のブランドと同じ)銀のダメージを与え、変異への耐性がつく。</li>
+<li> 新しい固定アーティファクト「ファイアスターター」: +7 の大型メイス {flame, rF++}。巻物を炎から守り、当てた相手に内なる炎をかける。</li>
+<li> 暗殺者の吹き矢筒、ブルズアイ、(固定アーティファクトの)レフディブの水晶槍がなくなった。</li></ul></li>
+<li> 種類がわかっていて、飲んでも効果がない薬は、そもそも飲めなくなった。</li>
+<li> 粥の薬と血液の薬のほかは、薬を飲んでも満腹度が回復しなくなった。</li>
+<li> 手甲と腕当てはすべて手袋になった。</li>
+<li> キャップと魔術師の帽子はすべて、ただの「帽子」になった。</li>
+<li> 大型メイスはダメージが少し下がり、以前よりずっと手に入りにくくなった。</li>
+<li> 巻物はすべて、読めば鑑定されるようになった。</li>
+<li> 回復の薬のうち最後の1種類は、それが回復の薬だとわかっていれば自動的に鑑定されるようになった。</li>
+<li> 魔法の力で貫通する飛び道具は、盾も貫くようになった。</li>
+<li> 鈍重のアイテムによる移動の遅れは -1 になった(以前は -2)。疾走のアイテムとそろえるためだ。</li>
+<li> 電撃の武器は、水の中にいる相手に当てても放電を起こさなくなった。</li>
+<li> 胴鎧や指輪を着けるのに、先にクロークや手袋を外す必要がなくなった。</li>
+<li> 焼夷の炎で巻物が燃えることが減った。</li>
+<li> ゴールドドラゴンの鎧、水晶の鎧、プレートアーマーの重さが下がった(それぞれ 27 -&gt; 25、24 -&gt; 23、19 -&gt; 18)。</li>
+<li> 早業のブランドは、武器の攻撃の間隔を 2/3 にし、ダメージは下げなくなった(以前は間隔が 1/2 になり、近接武器ではダメージが 10% 下がっていた)。</li>
+<li> 種族ごとの装備がなくなった。</li>
+<li> ロッドのいろいろな変更:
+<ul><li> 破壊のロッドは、あらかじめ決まった中から選ぶのではなく、ランダムな矢を撃つようになった。</li>
+<li> 新しいロッド: 点火のロッド。一直線に矢を放ち、当たった目標ごとに火球が爆発する。</li>
+<li> 新しいロッド: 影の怪物のロッド。使い手の発動スキルとおおよそ同じ深さの階から影の怪物を呼び出す。スキルが16を超えると、その深さより深い階のモンスターも呼び出す。</li>
+<li> 新しいロッド: 雲烟のロッド。威力に応じてさまざまな雲を生み出す。スキルが高ければ、何種類かの新しい雲も出せる。</li>
+<li> 守護、毒液、悪魔学、炎の破壊、冷気の破壊のロッドがなくなった。</li></ul></li>
+<li> ゲリュオンの角笛は、経験値で充填される発動アイテムに作り直された。1〜4体の地獄の獣を呼び出し、味方になるかどうかは発動の威力で決まる。</li>
+<li> 名前の変わったアイテム:
+<ul><li> サーベルはカトラスになった(船長のカトラスもそれに合わせて調整された)。</li>
+<li> ダブルソードはバスタードソードになった。</li>
+<li> トリプルソードはクレイモアになった。</li>
+<li> 俊足の薬はスピードの薬になった。</li></ul></li>
+<li> 脆弱の巻物が出やすくなった。</li>
+<li> 呪いの巻物と血液の薬は、ランダムには生成されなくなった。</li>
+<li> 呪いの巻物はすべて、対象を選べるようになった(以前のバージョンでアシェンザリを信仰していたときと同じ)。</li>
+<li> 魔法抵抗を上げるアイテムは、決まった量ずつ魔法抵抗を上げるようになった(&#160;% の画面に表示される)。</li>
+<li> 減速の薬が削除された。</li></ul>
+<h2><span class="mw-headline" id="Cards">カード</span></h2>
+<ul><li> 霊薬のカードは、すぐに回復するのではなく、時間をかけて回復するようになった。</li>
+<li> 錬金術師のカードは脱出のデッキに入り、不思議のデッキには入らなくなった。</li>
+<li> 取引のカードが削除された。</li>
+<li> 鏝のカードは不思議のデッキに入り、ポータルしか作らなくなった。</li>
+<li> 闘争心のカードは、威力が高いと主に腕力強化と器用強化を与えるようになり、遅れてバーサークになる効果は威力が低いときに起こるようになった。</li></ul>
+<h2><span class="mw-headline" id="Gods">神</span></h2>
+<ul><li> 新しい神: 陰影のディスメノス。
+<ul><li> 寺院の神で、諸宗派の寺院か迷宮:2〜9 のどこかに必ず祭壇がある。</li>
+<li> 迷宮のたいていの敵を倒すことを喜び、特に火や光に関わる敵を好む。</li>
+<li> 火や光を使うことを嫌う。</li>
+<li> 信仰心 1* で影の領域を授かる。影の領域は信仰心とともに広がる。</li>
+<li> 2*: 影歩き。影の領域より遠くない、動けない生き物の隣へ移動する。</li>
+<li> 信仰心 3* では、大きなダメージを受けると、ときどき煙を噴き出すようになる。</li>
+<li> 4*: 影の模倣。プレイヤーの影が、近接攻撃、遠隔攻撃、狙いをつける呪文(自分を対象にするものは除く)をときどきまねる。</li>
+<li> 5*: 影の躯。スキルの吸収、近接攻撃のダメージ半減、呪文の威力の大幅な低下と引き換えに、透明化、闇に関わる多くの効果への耐性、50% のダメージ軽減が得られる。</li></ul></li>
+<li> 鑑定済みのでたらめのワンドや混沌の武器が起こした効果でも、神が嫌うものは大目に見てもらえなくなった。</li>
+<li> ケイブリアドスを信仰するトロルは、腹の減り方がかなり遅くなった。</li>
+<li> ケイブリアドスの時間の歪曲は、すべての信者が使えるようになった(以前は 1* の能力)。</li>
+<li> ジンとオカワルは仲間の死を気にしなくなった。</li>
+<li> オカワルを信仰しても、悪魔の血族の変異「悪魔の従者」が抑えられなくなった。</li>
+<li> ゾムの効果が、明晰と能力値の維持を尊重するようになった(ゾムが意地悪な気分でない限り)。</li>
+<li> ゾムによる混乱は最長20ターンになった。</li>
+<li> ジンの説法の朗読で、該当する朗読のそれぞれが何に効くかが表示されるようになった。</li>
+<li> ルゴヌの信者は、歪曲の武器を外したときの効果を受けなくなった。</li>
+<li> イレデレンヌルは凍気のレイスの代わりに吸血鬼を授けるようになった。</li>
+<li> イレデレンヌルの軍勢に入れられる涜神の従者と骸骨ドラゴンは、合わせて3体までになった。</li>
+<li> 聖なる御言葉の巻物を読んで鑑定しても、イレデレンヌルのしもべが怒らなくなった。</li>
+<li> ネメレクスは迷宮のデッキを授けなくなり、授けるデッキの種類は捧げたアイテムの種類と関係なくなった。</li>
+<li> ジーヴァの能力は祈祷を使わなくなった。</li>
+<li> 神の怒りは経験値を得ることで進むようになり、待つだけでやり過ごすことはできなくなった。</li>
+<li> オカワル、トログ、マクレブ、イレデレンヌル、キクバークッグァの怒りは、プレイヤーの XL に合わせて以前よりうまく強くなるようになった。</li>
+<li> ヴェフメットの怒りでは、呪文の失敗の効果ではなく本物の妖術が飛んでくるようになった。</li>
+<li> マクレブの怒りは、しもべの召喚だけでなく、プレイヤーに破壊の力を投げつけてくるようになった。</li>
+<li> 神の能力でいずれ鍛えられるようになるスキルは、その神を信仰した時点ですぐ鍛えられるようになった(多くの神では祈祷、ネメレクスでは発動、キクでは死霊術、輝けるものでは神気の盾のための盾)。</li>
+<li> アシェンザリは、解呪の巻物1枚につき呪いの巻物を1〜3枚生成するようになった。</li>
+<li> 信仰している神が嫌う生来の能力には、そのことが表示されるようになった。</li></ul>
+<h2><span class="mw-headline" id="Interface">インターフェース</span></h2>
+<ul><li> 自動戦闘に似た「Automagic」の機能が、オプション automagic_enable、automagic_stop、automagic_fight として加わった。戦闘中に、指定した枠の呪文を自動で唱えるのに使える。</li>
+<li> 魔法の罠は、種類ごとに違う色で表示されるようになった。</li>
+<li> 異常に硬い岩の壁に、新しい標準の記号がついた。</li>
+<li> &#160;% の画面の配置が新しくなった。</li>
+<li> 防具を着たり脱いだりしている途中でモンスターが見えると、続けるかどうか確認されるようになった。</li>
+<li> 「pickup_mode = multi|single」は「pickup_menu = true|false」になり、標準は true になった。古い「auto:X」の設定の代わりに「pickup_menu_limit」が加わった。</li>
+<li> 「auto_list」オプションが削除された。</li>
+<li> WebTiles の観戦者の欄で名前が並べ替えられ、オンラインのプレイヤーのプロフィールへのリンクがつくようになった。</li>
+<li> WebTiles のチャットに書かれた URL がリンクになるようになった。</li>
+<li> ミニマップの標準の色が新しくなった。</li>
+<li> モンスターを調べると、ふだんの速度より遅い行動や速い行動があれば、その速度が表示されるようになった。</li>
+<li> アリーナの進行とアニメーションの速さを決める arena_delay が、アリーナのモード以外でも view_delay として使えるようになった。</li>
+<li> モンスターがプレイヤーから見えなくなったあと1ターンのあいだ、透明なモンスターの目印が表示されるようになった。</li>
+<li> 店の画面の配置が見直された。</li></ul>
+<h2><span class="mw-headline" id="Release_0.14.1">リリース 0.14.1</span></h2>
+<p><b>0.14.1</b> はバグを修正したアップデートで、2014年4月28日にリリースされた。
+</p>
+<ul><li> クラッシュをいくつか修正した。</li>
+<li> ファイアドラゴンを倒したときに、ディスメノスの信仰心の上乗せが正しく得られるようになった。</li>
+<li> 透明なモンスターから遠隔攻撃を受けたとき、正しく自動拾いが止まるようになった。</li>
+<li> 負のエネルギーの雲について、善の神がプレイヤーを正しく罰するようになった。</li>
+<li> ナターシャは、懐柔されたあとは生き返らなくなり、生き返るときに新しいアイテムを得なくなった。</li>
+<li> 常に飛べる種族なら、危険な地形の上でも、飛行を与えるアイテムを外せるようになった。</li>
+<li> 放浪者がときどきほかの職業より多くの MP を得ることがなくなった。</li></ul>
+<h2><span class="mw-headline" id="Release_0.14.2">リリース 0.14.2</span></h2>
+<p><b>0.14.2</b> はバグを修正したアップデートで、2014年8月27日にリリースされた。
+</p>
+<ul><li> クラッシュをさらに修正した。</li>
+<li> 文章をいくつか修正した。</li>
+<li> 変身中に大きすぎる武器を持てることがなくなった。</li>
+<li> チュートリアルのスキル画面で、またスキルを切り替えられるようになった。</li>
+<li> 指輪を付け替えるとき、アーティファクトの指輪とそうでない指輪が正しく区別されるようになった。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

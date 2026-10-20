@@ -18,7 +18,7 @@
 <div class="wiki">
 </i>
 <p>何かに傷つけられたとき、<b>アーマークラス</b>(armour class、多くは <b>AC</b> と略される)の分だけ受けるダメージが減る。値は高いほど良い。
-</p><p>AC を上げるいちばん一般的な方法は、<a href="Armour.html" title="Armour">防具</a>を身につけることだ。重い<a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>ほど AC は高いが、そのぶん<a href="Encumbrance_rating.html" class="mw-redirect" title="Encumbrance">重さ</a>の代償があり、<a href="Evasion.html" class="mw-redirect" title="EV">EV</a>、<a href="Spell_Success.html" class="mw-redirect" title="Spell failure">呪文の成功率</a>、<a href="Stealth.html" title="Stealth">隠密</a>が下がる。<a href="http://crawl.chaosforge.org/Helmet" data-untr="1" title="Helmet">兜</a>や<a href="Boots.html" title="Boots">ブーツ</a>のようなほかの種類の防具は、ペナルティなしで AC をくれる。
+</p><p>AC を上げるいちばん一般的な方法は、<a href="Armour.html" title="Armour">防具</a>を身につけることだ。重い<a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>ほど AC は高いが、そのぶん<a href="Encumbrance_rating.html" class="mw-redirect" title="Encumbrance">重さ</a>の代償があり、<a href="Evasion.html" class="mw-redirect" title="EV">EV</a>、<a href="Spell_Success.html" class="mw-redirect" title="Spell failure">呪文の成功率</a>、<a href="Stealth.html" title="Stealth">隠密</a>が下がる。<a href="Helmet.html" title="Helmet">兜</a>や<a href="Boots.html" title="Boots">ブーツ</a>のようなほかの種類の防具は、ペナルティなしで AC をくれる。
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
 <ul>
@@ -35,20 +35,20 @@
 <h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
 <p>AC は攻撃のダメージを、0 から現在の AC の値までのあいだの絶対値で減らす。AC が 10 なら、ダメージは 0〜10 のランダムな値だけ減る。ほかのゲームなら防具を素通りするのが普通の<a href="Spell.html" title="Spell">呪文</a>による魔法ダメージにも、これは適用される。
 </p><p>ゲームは内部で AC を小数第2位まで保持している。AC が整数でないときは、ダメージを受けるたびにこの内部値が確率で切り上げか切り捨てに丸められる。たとえば AC が 10.60 なら、60% の確率で AC 11、40% の確率で AC 10 として扱われる。
-</p><p><code>BEAM_ELEC</code> のダメージ(<a href="http://crawl.chaosforge.org/Shock" data-untr="1" title="Shock">電撃</a>や<a href="http://crawl.chaosforge.org/Lightning_Bolt" data-untr="1" title="Lightning Bolt">稲妻の矢</a>など)は、対象の AC の半分を無視する。<code>BEAM_FRAG</code> のダメージ(<a href="http://crawl.chaosforge.org/Sandblast" data-untr="1" title="Sandblast">砂の突風</a>や<a href="Tin_of_tremorstones.html" title="Tin of tremorstones">震動石の缶</a>など)は、AC の影響を3倍受ける。
+</p><p><code>BEAM_ELEC</code> のダメージ(<a href="Shock.html" title="Shock">電撃</a>や<a href="Lightning_Bolt.html" title="Lightning Bolt">稲妻の矢</a>など)は、対象の AC の半分を無視する。<code>BEAM_FRAG</code> のダメージ(<a href="Sandblast.html" title="Sandblast">砂の突風</a>や<a href="Tin_of_tremorstones.html" title="Tin of tremorstones">震動石の缶</a>など)は、AC の影響を3倍受ける。
 </p><p>AC がどう計算されるかは、<a href="http://crawl.chaosforge.org/AC_calculations" data-untr="1" class="mw-redirect" title="AC calculations">AC の計算</a>を参照。
 </p>
 <h3><span class="mw-headline" id="Guaranteed_Damage_Reduction">確定ダメージ軽減</span></h3>
-<p><i>メイン記事: <a href="http://crawl.chaosforge.org/GDR" data-untr="1" class="mw-redirect" title="GDR">GDR</a></i>
+<p><i>メイン記事: <a href="Guaranteed_damage_reduction.html" class="mw-redirect" title="GDR">GDR</a></i>
 </p><p>近接攻撃、射撃武器、投擲による物理ダメージを受けるときは、確定ダメージ軽減(Guaranteed Damage Reduction)が AC のロールを底上げする。GDR% は <code>16*(AC)^1/4</code> に等しい。GDR が適用されると、AC のロールの最小値は (damage*GDR%) と (AC/2) のうち低いほうになる。呪文や能力は、<a href="http://crawl.chaosforge.org/Harpoon_Shot" data-untr="1" title="Harpoon Shot">銛の射撃</a>や<a href="Stone_Arrow.html" title="Stone Arrow">石錐の矢</a>のような「物理的な」呪文も含めて GDR を使わない。GDR の恩恵を受けるのはプレイヤーだけだ。
 </p>
 <h2><span class="mw-headline" id="List_of_Damage_that_ignores_AC">AC を無視するダメージの一覧</span></h2>
-<ul><li><a href="Torment.html" title="Torment">拷問</a>と<a href="http://crawl.chaosforge.org/Holy_Word" data-untr="1" class="mw-redirect" title="Holy Word">聖なる御言葉</a>。</li>
-<li><a href="http://crawl.chaosforge.org/Smite" data-untr="1" class="mw-redirect" title="Smite">打擲の一撃</a>。</li>
+<ul><li><a href="Torment.html" title="Torment">拷問</a>と<a href="Holy_word.html" class="mw-redirect" title="Holy Word">聖なる御言葉</a>。</li>
+<li><a href="Smiting.html" class="mw-redirect" title="Smite">打擲の一撃</a>。</li>
 <li><a href="Damnation.html" title="Damnation">天罰</a>。</li>
 <li><a href="Anguish.html" title="Anguish">苦悩</a>、<a href="Injury_Mirror.html" title="Injury Mirror">創傷の鏡</a>、<a href="http://crawl.chaosforge.org/Injury_Bond" data-untr="1" title="Injury Bond">創傷の絆</a>、<a href="Uskayaw.html#Given_Abilities" title="Uskayaw">痛み分け</a>、<a href="http://crawl.chaosforge.org/Spectral_weapon" data-untr="1" class="mw-redirect" title="Spectral weapon">幽体の武器</a>による<b>肩代わりされたダメージ</b>(代わりに元の対象の AC を使う)。</li>
 <li><b>状態異常</b>: <a href="Poison.html" title="Poison">毒</a>、<a href="Sticky_Flame.html" class="mw-redirect" title="Sticky flame">焼夷の炎</a>、<a href="Flay.html" title="Flay">皮剥ぎ</a>。</li>
-<li><b>呪術の効果</b>: <a href="http://crawl.chaosforge.org/Pain" data-untr="1" title="Pain">苦痛</a> / <a href="http://crawl.chaosforge.org/Necrotise" data-untr="1" title="Necrotise">壊死化</a>(Necrotise)、<a href="Wand_of_mindburst.html" title="Wand of mindburst">精神破裂</a>、<a href="Anguish.html" title="Anguish">苦悩</a>、<a href="Agony.html" title="Agony">苦悶</a></li>
+<li><b>呪術の効果</b>: <a href="Pain.html" title="Pain">苦痛</a> / <a href="http://crawl.chaosforge.org/Necrotise" data-untr="1" title="Necrotise">壊死化</a>(Necrotise)、<a href="Wand_of_mindburst.html" title="Wand of mindburst">精神破裂</a>、<a href="Anguish.html" title="Anguish">苦悩</a>、<a href="Agony.html" title="Agony">苦悶</a></li>
 <li><b>武器の<a href="Brand.html" title="Brand">エゴ</a>によるダメージ</b>と、<b>モンスターの<a href="Attack_flavour.html" title="Attack flavour">攻撃の追加効果</a></b>(attack flavour)。
 <ul><li> ただし武器のエゴによるダメージは、もともと AC で減ったあとのダメージの何割か、という形のものが多い。</li>
 <li> モンスターの攻撃の追加効果には、AC 判定のある物理攻撃がダメージを与えないと発動しないものもある。それでも追加効果そのものは AC の影響を受けない。</li></ul></li>
@@ -56,8 +56,8 @@
 <ul><li><a href="Draconian_(monster).html" title="Draconian (monster)">白色ドラコニアン</a>の冷気の<a href="http://crawl.chaosforge.org/Draconian_breath_attack" data-untr="1" class="mw-redirect" title="Draconian breath attack">ブレス攻撃</a>。</li></ul></li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
 <ul><li><a href="0.32.html" title="0.32">0.32</a> より前は、AC は小数第2位まで保持されていなかった。</li>
-<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、<a href="Frozen_Ramparts.html" title="Frozen Ramparts">凍てつく城壁</a>と<a href="Ozocubu's_Refrigeration.html" title="Ozocubu&#39;s Refrigeration">オゾクブの瞬間凍結</a>は AC を無視していた。</li>
-<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、<a href="Irradiate.html" title="Irradiate">放射の光</a>は AC を無視していた。</li></ul>
+<li><a href="0.29.html" title="0.29">0.29</a> より前は、<a href="Frozen_Ramparts.html" title="Frozen Ramparts">凍てつく城壁</a>と<a href="Ozocubu's_Refrigeration.html" title="Ozocubu&#39;s Refrigeration">オゾクブの瞬間凍結</a>は AC を無視していた。</li>
+<li><a href="0.26.html" title="0.26">0.26</a> より前は、<a href="Irradiate.html" title="Irradiate">放射の光</a>は AC を無視していた。</li></ul>
 
 </div>
 </main>

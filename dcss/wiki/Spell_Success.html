@@ -51,7 +51,7 @@
 成功率は次の要素が複雑に組み合わさって決まる。
 </p>
 <ol><li> 呪文のレベル</li>
-<li> 呪文に関わるスキルと<a href="http://crawl.chaosforge.org/Intelligence" data-untr="1" title="Intelligence">知力</a></li>
+<li> 呪文に関わるスキルと<a href="Intelligence.html" title="Intelligence">知力</a></li>
 <li> <a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>と<a href="Shields.html" title="Shields">盾</a>によるペナルティ(<a href="Armour_(skill).html" title="Armour (skill)">甲冑スキル</a>/<a href="Shields_(skill).html" title="Shields (skill)">盾スキル</a>で軽くなる)</li>
 <li> <a href="Wizardry.html" title="Wizardry">魔術強化</a>や<a href="Good_mutations.html#Wild_Magic" title="Good mutations">暴走する魔力</a>などの補正</li></ol>
 <h2><span class="mw-headline" id="Base_Chance">基本の失敗値</span></h2>
@@ -65,12 +65,12 @@
               + Encumbrance penalties
 </pre>
 <ul><li>60 は基準として決められた失敗値で、特に根拠はない。</li>
-<li>知力と呪文スキル(その呪文の系統のスキル<i>と</i><a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a>)を上げると失敗値は下がる。</li>
+<li>知力と呪文スキル(その呪文の系統のスキル<i>と</i><a href="Spellcasting.html" title="Spellcasting">呪文詠唱</a>)を上げると失敗値は下がる。</li>
 <li>レベルの高い呪文ほど難しく、防具や盾を着けるとさらに難しくなる。</li></ul>
 <p>この時点で spellFailure の上限は 210 だ。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
 </p>
 <h3><span class="mw-headline" id="Spell_skills">呪文スキル</span></h3>
-<p>"Spell_skills" には呪文詠唱と、その呪文の系統のスキルの平均が入る(たとえば妖術/炎の系統の呪文なら、<a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a>スキルと<a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>スキルの平均)。式は次のとおり。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+<p>"Spell_skills" には呪文詠唱と、その呪文の系統のスキルの平均が入る(たとえば妖術/炎の系統の呪文なら、<a href="Conjurations.html" title="Conjurations">妖術</a>スキルと<a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>スキルの平均)。式は次のとおり。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
 <sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
 </p>
 <pre> spell_skills = [Spellcasting / 2] + [Average(Skill_level) * 2]
@@ -162,9 +162,9 @@
 <ul><li><a href="Wizardry.html" title="Wizardry">魔術強化</a>: すべての呪文に ×<code>6 / (7 + sources)</code>%。魔術強化が1つ以上ある場合の値だ(魔術強化 x1 なら ×75%、x2 なら ×66.6%、以下同様)。</li>
 <li><a href="Vehumet.html" title="Vehumet">ヴェフメット</a>: <a href="http://crawl.chaosforge.org/Destructive_spell" data-untr="1" class="mw-redirect" title="Destructive spell">破壊の呪文</a>に ×66.6%。<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></li>
 <li><a href="Transformation.html" title="Transformation">変身</a>:
-<ul><li><a href="http://crawl.chaosforge.org/Yak_Form" data-untr="1" class="mw-redirect" title="Yak Form">ヤク</a>: 氷の魔術に ×66.6%</li>
-<li><a href="http://crawl.chaosforge.org/Scarab_Form" data-untr="1" class="mw-redirect" title="Scarab Form">スカラベ</a>: 炎の魔術に ×66.6%</li>
-<li><a href="http://crawl.chaosforge.org/Sphinx_Form" data-untr="1" class="mw-redirect" title="Sphinx Form">スフィンクス</a>: 呪術に ×66.6%</li></ul></li>
+<ul><li><a href="Rimehorn_talisman.html" class="mw-redirect" title="Yak Form">ヤク</a>: 氷の魔術に ×66.6%</li>
+<li><a href="Scarab_talisman.html" class="mw-redirect" title="Scarab Form">スカラベ</a>: 炎の魔術に ×66.6%</li>
+<li><a href="Riddle_talisman.html" class="mw-redirect" title="Sphinx Form">スフィンクス</a>: 呪術に ×66.6%</li></ul></li>
 <li>防具の<a href="Ego.html" title="Ego">エゴ</a>:
 <ul><li><a href="Command.html" title="Command">統率</a>: 召喚術に ×<code>18/(18+Armour)</code></li>
 <li><a href="Death_(ego).html" title="Death (ego)">死</a>: 死霊術に ×50%</li>
@@ -257,7 +257,7 @@
 </p>
 <ul><li>高レベルの呪文は鍛えるのにとんでもない量の経験値が要るので、あと何レベル必要かを前もって知っておけるのは便利だ。</li>
 <li>防具の<a href="Encumbrance_rating.html" class="mw-redirect" title="Encumbrance">重さ</a>を数値で表せる。たとえば術者が「<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>の呪文ペナルティは、各系統のスキル6レベル分に相当する」と言えるようになる。そうすれば、それを着る価値があるかを短期的にも(「これを着て<i>いま</i>呪文を唱えられるか」)長期的にも(「<i>ゾットの領域に着くころ</i>、これを着て呪文を唱えられるか」)判断できる。</li>
-<li>スキルの相対的な価値を計算できる。たとえば &lt;呪文の系統&gt; のスキル1レベルが甲冑スキル1レベルより役に立つのはいつか、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>1点が<a href="http://crawl.chaosforge.org/Intelligence" data-untr="1" title="Intelligence">知力</a>1点より価値を持つのはいつか、がわかる。</li></ul>
+<li>スキルの相対的な価値を計算できる。たとえば &lt;呪文の系統&gt; のスキル1レベルが甲冑スキル1レベルより役に立つのはいつか、<a href="Strength.html" title="Strength">腕力</a>1点が<a href="Intelligence.html" title="Intelligence">知力</a>1点より価値を持つのはいつか、がわかる。</li></ul>
 <p>もちろん、こんな計算をしなくても困らない。こうした情報のほとんど(あるいは全部)は、ゲーム中に失敗率を確かめるだけでわかる。防具を着てみて失敗率が許せないほど高ければ、着なければいい。計算はいらない! スキルを少し鍛えたら、着たい防具をもう一度着てみて、ましになったか確かめればいい。
 </p>
 <h2><span class="mw-headline" id="Analysis">分析</span></h2>
@@ -319,10 +319,10 @@
 <ul><li><a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a></li>
 <li><a href="Miscast_effect.html" title="Miscast effect">呪文失敗の効果</a></li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、魔術強化とヴェフメットによる生の失敗率の倍率は 50% が下限だった。そのため魔術強化は最大5つまで、ヴェフメットのボーナスと合わせるなら1つまでしか効かなかった。また、一部の<a href="http://crawl.chaosforge.org/Transmutations" data-untr="1" title="Transmutations">変成</a>の呪文は失敗率を上げていた。<a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(+10%)と<a href="http://crawl.chaosforge.org/Blade_Hands_(spell)" data-untr="1" title="Blade Hands (spell)">刃の手</a>(+20%)だ。</li>
-<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、spellFailure に上限が無かった。</li>
-<li><a href="http://crawl.chaosforge.org/0.22" data-untr="1" title="0.22">0.22</a> より前は、spell_schools が <code>50 * log2(1 + spell_schools/50)</code> で逓減されていたため、<code>(Spellcasting/2) + (2* AvgSpellSchool) &gt; 50</code> になると術者が損をした。その代わり、レベル9の呪文の spellFailure は 340 ではなく 330 だった。</li>
-<li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a> より前は、<a href="#Step_down">逓減</a>の関数が違っていて、多項式ではなく区切り点で計算していた。失敗率の計算のほかの部分にも区切り点がもっとあった。</li></ul>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、魔術強化とヴェフメットによる生の失敗率の倍率は 50% が下限だった。そのため魔術強化は最大5つまで、ヴェフメットのボーナスと合わせるなら1つまでしか効かなかった。また、一部の<a href="Transmutations.html" title="Transmutations">変成</a>の呪文は失敗率を上げていた。<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛の躯</a>(+10%)と<a href="http://crawl.chaosforge.org/Blade_Hands_(spell)" data-untr="1" title="Blade Hands (spell)">刃の手</a>(+20%)だ。</li>
+<li><a href="0.26.html" title="0.26">0.26</a> より前は、spellFailure に上限が無かった。</li>
+<li><a href="0.22.html" title="0.22">0.22</a> より前は、spell_schools が <code>50 * log2(1 + spell_schools/50)</code> で逓減されていたため、<code>(Spellcasting/2) + (2* AvgSpellSchool) &gt; 50</code> になると術者が損をした。その代わり、レベル9の呪文の spellFailure は 340 ではなく 330 だった。</li>
+<li><a href="0.20.html" title="0.20">0.20</a> より前は、<a href="#Step_down">逓減</a>の関数が違っていて、多項式ではなく区切り点で計算していた。失敗率の計算のほかの部分にも区切り点がもっとあった。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap mw-references-columns"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.32.1/crawl-ref/source/spl-cast.cc#L401">spl-cast.cc:401</a> (0.32.1)</span>

@@ -39,30 +39,30 @@
 <p>式の中の <code>uniform(x) = 1d(x+1)-1</code> は略記で、0 から x まで(x を含む)の値をランダムに取ることを表す。
 </p>
 <ul><li><b>基本ダメージ</b>(Base damage):
-<ul><li>素手で戦うとき: 3 + 徒手格闘スキル(今の<a href="http://crawl.chaosforge.org/Form" data-untr="1" class="mw-redirect" title="Form">変身</a>や爪の変異で変わる。<a href="Unarmed_Combat.html" class="mw-redirect" title="Unarmed combat">徒手格闘</a>を参照)</li>
+<ul><li>素手で戦うとき: 3 + 徒手格闘スキル(今の<a href="Transformation.html" class="mw-redirect" title="Form">変身</a>や爪の変異で変わる。<a href="Unarmed_Combat.html" class="mw-redirect" title="Unarmed combat">徒手格闘</a>を参照)</li>
 <li>武器を使うとき: その<a href="Weapon.html" title="Weapon">武器</a>の基本ダメージ</li>
 <li>投擲武器を使うとき:<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup> 投げる飛び道具の基本ダメージ + <a href="Throwing.html" title="Throwing">投擲</a>スキル
 <ul><li><a href="Stone.html" title="Stone">石</a>を投げるとき: 基本ダメージ + (<a href="Throwing.html" title="Throwing">投擲</a>スキル/2)</li></ul></li>
 <li><a href="Heavy.html" title="Heavy">重撃</a>のブランドは、武器の基本ダメージに倍率を掛ける。</li></ul></li>
 <li><b>能力値による補正</b>(Stat modifier):<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
 <ul><li><code>0.75 + (0.025 * <a href="Stats.html" title="Stats">Stat</a>)</code>。つまり能力値1につき 2.5% 上がる。</li>
-<li><a href="Short_Blades.html" title="Short Blades">短剣</a>、<a href="Long_Blades.html" title="Long Blades">長剣</a>、<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>は<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>を使う。それ以外の武器と徒手格闘は<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>を使う。</li>
+<li><a href="Short_Blades.html" title="Short Blades">短剣</a>、<a href="Long_Blades.html" title="Long Blades">長剣</a>、<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>は<a href="Dexterity.html" title="Dexterity">器用</a>を使う。それ以外の武器と徒手格闘は<a href="Strength.html" title="Strength">腕力</a>を使う。</li>
 <li>補正には下限があり、能力値が -30 のときの 0.01(1%)より下がらない。</li></ul></li>
 <li><b>スキルによる補正</b>(Skill modifier):
 <ul><li><code>1 + uniform(Weapon <a href="Skill.html" title="Skill">skill</a>)/25</code>(Weapon skill は武器のスキル。素手と投擲には掛からない)</li>
-<li>武器や徒手格闘のスキルを上げるもう一つの大きな利点は、<a href="http://crawl.chaosforge.org/Attack_delay" data-untr="1" class="mw-redirect" title="Attack delay">攻撃の所要時間</a>が短くなることだ。</li></ul></li>
+<li>武器や徒手格闘のスキルを上げるもう一つの大きな利点は、<a href="Attack_speed.html" class="mw-redirect" title="Attack delay">攻撃の所要時間</a>が短くなることだ。</li></ul></li>
 <li><b>戦闘スキルによる補正</b>(Fighting modifier):
 <ul><li><code>1 + uniform(<a href="Fighting.html" title="Fighting">Fighting</a> skill)/30</code>(Fighting skill は戦闘スキル)</li></ul></li>
 <li><b>その他の補正</b>(Misc modifiers):<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
-<ul><li><a href="http://crawl.chaosforge.org/Status_effects#Might" data-untr="1" title="Status effects">腕力強化</a>または<a href="http://crawl.chaosforge.org/Status_effects#Berserk" data-untr="1" title="Status effects">バーサーク</a>: +1d10</li></ul></li>
+<ul><li><a href="Status_effects.html#Might" title="Status effects">腕力強化</a>または<a href="Status_effects.html#Berserk" title="Status effects">バーサーク</a>: +1d10</li></ul></li>
 <li><b>殺戮ボーナス</b>(Slaying bonuses):
 <ul><li>武器の<a href="Scroll_of_enchant_weapon.html" title="Scroll of enchant weapon">強化値</a></li>
 <li><a href="Slaying.html#Sources" title="Slaying">殺戮をもたらすもの</a>による加算や減算</li></ul></li>
 <li><b>最終倍率</b>(final multipliers):<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
 <ul><li><a href="Cleaving.html" title="Cleaving">薙ぎ払い</a>で追加で当たった攻撃なら: 0.7 倍<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup></li>
-<li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>: 1.5 倍</li>
-<li><a href="http://crawl.chaosforge.org/Shadow_Form" data-untr="1" title="Shadow Form">影化</a>: 0.5 倍</li>
-<li><a href="Weak.html" title="Weak">虚弱</a>の<a href="http://crawl.chaosforge.org/Status_effect" data-untr="1" class="mw-redirect" title="Status effect">状態異常</a>: 0.75 倍</li>
+<li><a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>: 1.5 倍</li>
+<li><a href="Shadow_Form.html" title="Shadow Form">影化</a>: 0.5 倍</li>
+<li><a href="Weak.html" title="Weak">虚弱</a>の<a href="Status_effects.html" class="mw-redirect" title="Status effect">状態異常</a>: 0.75 倍</li>
 <li><a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>の武術の攻撃と<a href="Vhi's_Electric_Charge.html" title="Vhi&#39;s Electric Charge">ヴィーの電撃突進</a>によるボーナス</li>
 <li><a href="Confusing_Touch.html" title="Confusing Touch">混乱の一撃</a>: 0 になる</li></ul></li>
 <li><b>急所攻撃ボーナス</b>(Stabbing bonus): <a href="Stabbing.html" title="Stabbing">急所攻撃</a>を参照。</li>
@@ -72,20 +72,20 @@
 <ul><li>スキルが低いうちは、殺戮による命中率の上昇を無視すれば、基本ダメージ1はおよそ殺戮+1に相当する。スキルが上がると倍率が掛かるのは基本ダメージだけなので、基本ダメージの効き目のほうが大きくなる。命中率を無視すれば、基本ダメージ1は殺戮 <code>1 + (average of Stat mod * Skill mod * Fight mod)</code>(能力値の補正×スキルの補正×戦闘の補正の平均)に相当する。</li></ul>
 <ul><li>'<b>i'</b>(所持品)や <b>@</b> コマンドで武器のダメージを見たときの「スキル」によるボーナスは <code>Skill mod * Fighting mod</code>(スキルの補正×戦闘の補正)で、どちらもランダムな値の平均を使っている。</li></ul>
 <ul><li>武器の<a href="Brand.html" title="Brand">ブランド</a>(<a href="Heavy.html" title="Heavy">重撃</a>を除く)は、式の最後、AC による軽減のあとで適用される。そのため、ブランドで増えたダメージは AC を無視する。</li></ul>
-<dl><dd>つまり端数を考えなければ、<a href="Flaming.html" title="Flaming">火炎</a>と<a href="http://crawl.chaosforge.org/Freezing" data-untr="1" title="Freezing">冷気</a>のブランドは、<a href="Executioner's_axe.html" title="Executioner&#39;s axe">処刑人の斧</a>につけても<a href="http://crawl.chaosforge.org/Quickblade" data-untr="1" class="mw-redirect" title="Quickblade">クイックブレード</a>につけても同じだけの効果がある。ただし基本ダメージの低い武器ほど切り捨ての影響が大きいので、ブランドは大きな武器につけたほうがやや有利だ。</dd></dl>
+<dl><dd>つまり端数を考えなければ、<a href="Flaming.html" title="Flaming">火炎</a>と<a href="Freezing.html" title="Freezing">冷気</a>のブランドは、<a href="Executioner's_axe.html" title="Executioner&#39;s axe">処刑人の斧</a>につけても<a href="http://crawl.chaosforge.org/Quickblade" data-untr="1" class="mw-redirect" title="Quickblade">クイックブレード</a>につけても同じだけの効果がある。ただし基本ダメージの低い武器ほど切り捨ての影響が大きいので、ブランドは大きな武器につけたほうがやや有利だ。</dd></dl>
 <h3><span class="mw-headline" id="Rounding">端数の切り捨て</span></h3>
 <p>式の各項は順に計算され、そのたびに整数へ切り捨てられる。この切り捨ては、基本ダメージの低い武器ほど不利に働く。たとえば器用 16、短剣スキル 12 のプレイヤーなら、
 </p>
 <ul><li>殺戮ボーナスがなければ、基本ダメージ 4 の +0 のダガーでは 5 より大きなダメージは出ない。</li>
 <li>同じプレイヤーが基本ダメージ 7 の +0 のレイピアを持てば、最大 11 のダメージを出せる。</li></ul>
-<p>つまり能力値とスキルによるボーナスで、ダガーのダメージは 25%、レイピアのダメージは 57% 増えたことになる。10 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> あたりで見ると、ダガーは最大 10、レイピアは最大 18 のダメージを与える。
+<p>つまり能力値とスキルによるボーナスで、ダガーのダメージは 25%、レイピアのダメージは 57% 増えたことになる。10 <a href="Action.html" class="mw-redirect" title="Aut">aut</a> あたりで見ると、ダガーは最大 10、レイピアは最大 18 のダメージを与える。
 </p>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
-<ul><li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、すべての武器のダメージが<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>で伸びた。</li>
-<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、腕力による補正がランダムだった。</li>
-<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> より前は、武器ごとに腕力と器用を混ぜて使っていた。</li>
-<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、能力値が近接攻撃に与える影響は今の半分だった。</li>
-<li><a href="http://crawl.chaosforge.org/0.8" data-untr="1" class="mw-redirect" title="0.8">0.8</a> から <a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> までは、<a href="Speed_(brand).html" title="Speed (brand)">早業</a>のブランドの近接武器はダメージが 10% 下がった。</li></ul>
+<ul><li><a href="0.29.html" title="0.29">0.29</a> より前は、すべての武器のダメージが<a href="Strength.html" title="Strength">腕力</a>で伸びた。</li>
+<li><a href="0.27.html" title="0.27">0.27</a> より前は、腕力による補正がランダムだった。</li>
+<li><a href="0.18.html" title="0.18">0.18</a> より前は、武器ごとに腕力と器用を混ぜて使っていた。</li>
+<li><a href="0.13.html" title="0.13">0.13</a> より前は、能力値が近接攻撃に与える影響は今の半分だった。</li>
+<li><a href="0.8.0.html" class="mw-redirect" title="0.8">0.8</a> から <a href="0.13.html" title="0.13">0.13</a> までは、<a href="Speed_(brand).html" title="Speed (brand)">早業</a>のブランドの近接武器はダメージが 10% 下がった。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/attack.cc#L1202">attack.cc:1202</a> (0.31.0)</span>

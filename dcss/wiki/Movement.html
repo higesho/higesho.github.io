@@ -16,7 +16,7 @@
 <h1>移動 <span class="en">Movement</span></h1>
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Movement">Movement</a>」(0.33 向け、2025-10-24 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Movement&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
 <div class="wiki">
-<p><b>移動</b>は<a href="The_Dungeon.html" class="mw-redirect" title="Dungeon">ダンジョン</a>を歩き回るための基本の手段だ。<a href="Blink.html" title="Blink">瞬間移動</a>や<a href="http://crawl.chaosforge.org/Teleport" data-untr="1" class="mw-redirect" title="Teleport">テレポート</a>を使ったり、<a href="Passage_of_Golubria.html" title="Passage of Golubria">ゴルブリアの通り道</a>を作ったりもできるが、移動の大部分は方向を指定してマスからマスへ歩くことと、<a href="http://crawl.chaosforge.org/Stairs" data-untr="1" title="Stairs">階段</a>や<a href="http://crawl.chaosforge.org/Escape_hatch" data-untr="1" title="Escape hatch">脱出ハッチ</a>で階を移ることだ。キャラクターの移動速度によって、危険から逃げきれるかどうかと、移動しているあいだに敵が何回行動するかが決まる。
+<p><b>移動</b>は<a href="The_Dungeon.html" class="mw-redirect" title="Dungeon">ダンジョン</a>を歩き回るための基本の手段だ。<a href="Blink.html" title="Blink">瞬間移動</a>や<a href="Teleportation.html" class="mw-redirect" title="Teleport">テレポート</a>を使ったり、<a href="Passage_of_Golubria.html" title="Passage of Golubria">ゴルブリアの通り道</a>を作ったりもできるが、移動の大部分は方向を指定してマスからマスへ歩くことと、<a href="Stairs.html" title="Stairs">階段</a>や<a href="Escape_hatch.html" title="Escape hatch">脱出ハッチ</a>で階を移ることだ。キャラクターの移動速度によって、危険から逃げきれるかどうかと、移動しているあいだに敵が何回行動するかが決まる。
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
 <ul>
@@ -53,7 +53,7 @@
 
 <tr>
 <th> 表示 </th>
-<th> ディレイ(<a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a>) </th>
+<th> ディレイ(<a href="Action.html" class="mw-redirect" title="Aut">aut</a>) </th>
 <th> 速度%
 </th></tr>
 <tr>
@@ -85,7 +85,7 @@
 </p>
 <ul><li> どんな補正がかかっても、<a href="Haste.html" title="Haste">加速</a>中でないかぎり、プレイヤーの移動のディレイが6を下回ることはない。</li>
 <li> 遅いほうには上限がない(そんな冒涜は<a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>を怒らせるかもしれない)。</li>
-<li> <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> を<a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">decaAut</a> と混同しないこと(1 aut = 0.1 decaAut)。</li></ul>
+<li> <a href="Action.html" class="mw-redirect" title="Aut">aut</a> を<a href="Decaaut.html" class="mw-redirect" title="DecaAut">decaAut</a> と混同しないこと(1 aut = 0.1 decaAut)。</li></ul>
 <h3><span class="mw-headline" id="Monster_Speed">モンスターの速度</span></h3>
 <p>モンスターの速度の値はディレイとは違い、大きいほどモンスターの移動や行動が速い。モンスターの移動のディレイ(aut)は <code>100 / Speed</code> に等しく、速度は <code>100 / Delay</code> に等しい。たとえば「速度10」のモンスターは、1歩に 10 aut、つまり 1.0 decaAut かかる。<b>特に断りがないかぎり、モンスターの「速度」は移動だけでなく、すべての行動にかかることに注意。</b>
 </p><p>モンスターのディレイが aut の整数にならない場合は、重みをつけて丸められる。ディレイ 6.4 aut なら、40%の確率で 7 aut、60%の確率で 6 aut になる。
@@ -93,7 +93,7 @@
 </p>
 <h2><span class="mw-headline" id="Effect_in_Combat">戦闘への影響</span></h2>
 <p>あなたの<a href="Action.html" title="Action">行動</a>はどれもゲーム上の1ターンとして数えられるが、そのターンのあいだに敵が何回行動するか(あるいは行動の何割ぶんを貯めるか)は、あなたの行動の速さで決まる。<a href="Hydra.html" title="Hydra">ヒドラ</a>のような危険な敵より移動が遅いと、すぐに追いつかれてしまう。
-</p><p>たとえば1歩に 1.2 decaAut かかるなら、<a href="http://crawl.chaosforge.org/Orc" data-untr="1" title="Orc">オーク</a>は5歩ごとに1回「おまけの」行動ができる。これは決まった動きで、敵から離れる方向に移動するときだけ<a href="http://crawl.chaosforge.org/Random_energy" data-untr="1" class="mw-redirect" title="Random energy">エネルギーのランダム化</a>がはたらく。
+</p><p>たとえば1歩に 1.2 decaAut かかるなら、<a href="Orc.html" title="Orc">オーク</a>は5歩ごとに1回「おまけの」行動ができる。これは決まった動きで、敵から離れる方向に移動するときだけ<a href="http://crawl.chaosforge.org/Random_energy" data-untr="1" class="mw-redirect" title="Random energy">エネルギーのランダム化</a>がはたらく。
 </p>
 <h3><span class="mw-headline" id="Attacks_of_Opportunity">機会攻撃</span></h3>
 <p><i>詳しくは: <a href="http://crawl.chaosforge.org/Attack_of_opportunity" data-untr="1" class="mw-redirect" title="Attack of opportunity">機会攻撃</a></i>
@@ -106,7 +106,7 @@
 <li> <a href="Barachi.html" title="Barachi">バラチ</a>は鈍足 1(ディレイ12)で始まる。</li>
 <li> <a href="Spriggan.html" title="Spriggan">スプリガン</a>は俊足 3(ディレイ6)で始まる。 </li>
 <li> <a href="Bat_Form.html" title="Bat Form">コウモリ</a>の変身は俊足 3(ディレイ6)、<a href="http://crawl.chaosforge.org/Pig_Form" data-untr="1" title="Pig Form">豚化</a>は俊足 2(ディレイ7)を持つ。</li></ul>
-<p>ナーガとバラチは、体のつくりが変わる変身をすると鈍足の変異がなくなる。スプリガンはどんな変身をしても俊足 3 の変異を保つが、<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>や<a href="http://crawl.chaosforge.org/Fortress_Crab_Form" data-untr="1" class="mw-redirect" title="Fortress Crab Form">蟹</a>の変身では遅くなることがある。
+<p>ナーガとバラチは、体のつくりが変わる変身をすると鈍足の変異がなくなる。スプリガンはどんな変身をしても俊足 3 の変異を保つが、<a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>や<a href="Fortress_talisman.html" class="mw-redirect" title="Fortress Crab Form">蟹</a>の変身では遅くなることがある。
 </p>
 <table class="wikitable">
 <tr>
@@ -121,7 +121,7 @@
 <th colspan="2"> 効果
 </th></tr>
 <tr>
-<td> <a href="http://crawl.chaosforge.org/Swiftness" data-untr="1" title="Swiftness">俊足</a> </td>
+<td> <a href="Swiftness.html" title="Swiftness">俊足</a> </td>
 <td>
 <ul><li>-25%/+33.3%(移動のディレイ &gt; 7 のとき)<br /></li>
 <li>-14.28%/+20%(移動のディレイ = 7 のとき)<br /></li>
@@ -161,11 +161,11 @@
 <td> すべての行動が50%速くなる
 </td></tr>
 <tr>
-<td> <a href="Slow.html" title="Slow">減速</a><br /><a href="Petrify.html" title="Petrify">石化中</a><br /><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a> </td>
+<td> <a href="Slow.html" title="Slow">減速</a><br /><a href="Petrify.html" title="Petrify">石化中</a><br /><a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a> </td>
 <td> すべての行動が50%遅くなる
 </td></tr>
 <tr>
-<td> <a href="http://crawl.chaosforge.org/Fortress_Crab_Form" data-untr="1" class="mw-redirect" title="Fortress Crab Form">蟹</a> </td>
+<td> <a href="Fortress_talisman.html" class="mw-redirect" title="Fortress Crab Form">蟹</a> </td>
 <td> 移動が30%遅くなる
 </td></tr></table>
 <p><b>最小ディレイと加速についての注:</b>
@@ -174,17 +174,17 @@
 <li> ただし、<a href="Haste.html" title="Haste">加速</a>中のキャラクターは移動を含むすべての行動が50%速くなる。そのため、移動のディレイ6のキャラクターが加速すると、移動のディレイそのものは厳密には変わらないのに、ディレイ4のようにふるまうことがある。</li></ul>
 <p><b>泳ぎについての注:</b>
 </p>
-<ul><li> 泳ぎの不利は<a href="Merfolk.html" title="Merfolk">水棲の民</a>、<a href="Octopode.html" class="mw-redirect" title="Octopodes">オクトポード</a>、<a href="http://crawl.chaosforge.org/Barachim" data-untr="1" class="mw-redirect" title="Barachim">バラチ</a>にはかからない。水棲の民は魚の尾が生えて速く泳ぎ、残りの2種族はふだんの速さのままだ。</li>
+<ul><li> 泳ぎの不利は<a href="Merfolk.html" title="Merfolk">水棲の民</a>、<a href="Octopode.html" class="mw-redirect" title="Octopodes">オクトポード</a>、<a href="Barachi.html" class="mw-redirect" title="Barachim">バラチ</a>にはかからない。水棲の民は魚の尾が生えて速く泳ぎ、残りの2種族はふだんの速さのままだ。</li>
 <li> <a href="http://crawl.chaosforge.org/Flying" data-untr="1" class="mw-redirect" title="Flying">飛行</a>と<a href="Beogh.html" title="Beogh">水の上を歩くこと</a>は、水によるあらゆる影響を打ち消す。</li></ul>
 <p><b>その他の注:</b>
 </p>
 <ul><li> 倍率でかかる効果は、足し引きする効果をすべて足したあとで適用される。</li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
 <ul><li><a href="0.31.html" title="0.31">0.31</a> より前に、<a href="Energy_randomisation.html" title="Energy randomisation">エネルギーのランダム化</a>はなくなった。</li>
-<li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、モンスターの移動は<a href="Energy_randomisation.html" title="Energy randomisation">エネルギーのランダム化</a>の影響を受けていた。</li>
-<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> で、<a href="http://crawl.chaosforge.org/Encumbered" data-untr="1" title="Encumbered">重量超過(encumbered)</a>と<a href="http://crawl.chaosforge.org/Overloaded" data-untr="1" title="Overloaded">積載過多(overloaded)</a>の<a href="http://crawl.chaosforge.org/Status_effects" data-untr="1" title="Status effects">状態</a>(とアイテムの重さという仕組みそのもの)がなくなった。</li>
-<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、<a href="Ponderousness.html" title="Ponderousness">鈍重のエゴ</a>は移動のディレイを 2 aut 増やし、俊足は移動のディレイを 2 aut 減らして、そのあとの反動もなかった。</li>
-<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、疾走のエゴが移動のディレイを 2 aut 減らしていた。</li></ul>
+<li><a href="0.29.html" title="0.29">0.29</a> より前は、モンスターの移動は<a href="Energy_randomisation.html" title="Energy randomisation">エネルギーのランダム化</a>の影響を受けていた。</li>
+<li><a href="0.15.html" title="0.15">0.15</a> で、<a href="http://crawl.chaosforge.org/Encumbered" data-untr="1" title="Encumbered">重量超過(encumbered)</a>と<a href="http://crawl.chaosforge.org/Overloaded" data-untr="1" title="Overloaded">積載過多(overloaded)</a>の<a href="Status_effects.html" title="Status effects">状態</a>(とアイテムの重さという仕組みそのもの)がなくなった。</li>
+<li><a href="0.14.html" title="0.14">0.14</a> より前は、<a href="Ponderousness.html" title="Ponderousness">鈍重のエゴ</a>は移動のディレイを 2 aut 増やし、俊足は移動のディレイを 2 aut 減らして、そのあとの反動もなかった。</li>
+<li><a href="0.13.html" title="0.13">0.13</a> より前は、疾走のエゴが移動のディレイを 2 aut 減らしていた。</li></ul>
 
 </div>
 </main>

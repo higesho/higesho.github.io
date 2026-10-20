@@ -17,7 +17,7 @@
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Evasion">Evasion</a>」(0.33 向け、2026-09-29 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Evasion&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.33 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
 <div class="wiki">
 <p><i>このページはキャラクターの能力値についての記事だ。ブランドについては<a href="http://crawl.chaosforge.org/Evasion_(brand)" data-untr="1" title="Evasion (brand)">回避(ブランド)</a>の記事を参照。</i>
-</p><p><b>回避</b>(よく <b>EV</b> と略される)は、キャラクターや<a href="Monster.html" title="Monster">モンスター</a>が近接攻撃、射撃、魔法のビームをかわす能力を表す数値だ。攻撃の当たり外れを決めるときは、対象のその時点の EV でダイスを振り、攻撃側の<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>のダイスと比べる。このとき、状況による補正があればそれも加味する。命中のダイスが EV のダイスと同じか上回ったときだけ、攻撃は当たる。
+</p><p><b>回避</b>(よく <b>EV</b> と略される)は、キャラクターや<a href="Monster.html" title="Monster">モンスター</a>が近接攻撃、射撃、魔法のビームをかわす能力を表す数値だ。攻撃の当たり外れを決めるときは、対象のその時点の EV でダイスを振り、攻撃側の<a href="To_hit.html" class="mw-redirect" title="To-hit">命中</a>のダイスと比べる。このとき、状況による補正があればそれも加味する。命中のダイスが EV のダイスと同じか上回ったときだけ、攻撃は当たる。
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
 <ul>
@@ -94,12 +94,12 @@
 </td></tr>
 <tr>
 <td> 大きい </td>
-<td> <a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a> </td>
+<td> <a href="Serpent_talisman.html" class="mw-redirect" title="Serpent Form">大蛇</a> </td>
 <td> -2
 </td></tr>
 <tr>
 <td> 巨大 </td>
-<td> <a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a> </td>
+<td> <a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a> </td>
 <td> -4
 </td></tr>
 </table>
@@ -141,26 +141,26 @@ final_dodge_bonus = dodge_bonus * modifier
 <li><a href="Tengu.html" title="Tengu">天狗</a>はレベル 7 になると EV に +4 のボーナスを得る。</li></ul>
 <p>倍率:<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
 </p>
-<ul><li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>に変身中: -20% EV</li>
-<li><a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">絡めとられている</a>か<a href="Petrify.html" title="Petrify">石化中</a>: -50% EV(重ねがけにはならない)</li>
+<ul><li><a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>に変身中: -20% EV</li>
+<li><a href="Web.html" title="Web">絡めとられている</a>か<a href="Petrify.html" title="Petrify">石化中</a>: -50% EV(重ねがけにはならない)</li>
 <li>水のマスの中か上にいる<a href="Merfolk.html" title="Merfolk">水棲の民</a>: +25% EV(最低でも +2)</li></ul>
 <p>状態:
 </p>
 <ul><li><a href="Vertigo.html" title="Vertigo">酩酊</a>: -5 EV</li>
 <li><a href="Constriction.html" title="Constriction">締めつけ</a>(<a href="Grasping_Roots.html" title="Grasping Roots">絡まる木の根</a>によるものを含む): -10 EV</li>
 <li><a href="http://crawl.chaosforge.org/Agility" data-untr="1" title="Agility">器用強化</a>: +5 EV</li>
-<li><a href="http://crawl.chaosforge.org/Repulsion" data-untr="1" class="mw-redirect" title="Repulsion">反発</a>: 飛び道具に対して +15 EV</li>
+<li><a href="Repel_Missiles.html" class="mw-redirect" title="Repulsion">反発</a>: 飛び道具に対して +15 EV</li>
 <li><a href="http://crawl.chaosforge.org/Acrobat" data-untr="1" class="mw-redirect" title="Acrobat">軽業</a>の特性: 直前の行動が移動か待機なら +15 EV</li></ul>
 <h3><span class="mw-headline" id="Final_situational_modifiers">最後にかかる状況による補正</span></h3>
 <p>近接攻撃に対して:
 </p>
-<ul><li>攻撃してくる相手が見えないとき(つまり相手が<a href="Invisible.html" title="Invisible">透明</a>で、あなたに<a href="http://crawl.chaosforge.org/See_invisible" data-untr="1" title="See invisible">霊視</a>がないとき)は、その相手に対して EV に -10 のペナルティを受ける。</li>
-<li><a href="http://crawl.chaosforge.org/Stairs" data-untr="1" title="Stairs">階段</a>を下りようとしているところを攻撃されると、EV に -5 のペナルティを受ける。</li></ul>
+<ul><li>攻撃してくる相手が見えないとき(つまり相手が<a href="Invisible.html" title="Invisible">透明</a>で、あなたに<a href="See_invisible.html" title="See invisible">霊視</a>がないとき)は、その相手に対して EV に -10 のペナルティを受ける。</li>
+<li><a href="Stairs.html" title="Stairs">階段</a>を下りようとしているところを攻撃されると、EV に -5 のペナルティを受ける。</li></ul>
 <h2><span class="mw-headline" id="Monster_EV">モンスターの EV</span></h2>
 <p>モンスターの基本の EV は、モンスターの種類ごとに決まった固定の値だ。この値は防具や装身具、さまざまな状態によって変わる。
 </p>
 <h2><span class="mw-headline" id="To-hit_versus_EV">命中と EV</span></h2>
-<p>攻撃の<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>値が 1500(マジックナンバー AUTOMATIC_HIT)以上なら(<a href="http://crawl.chaosforge.org/Magic_Dart" data-untr="1" title="Magic Dart">魔法の矢</a>など)、攻撃は必ず当たる。
+<p>攻撃の<a href="To_hit.html" class="mw-redirect" title="To-hit">命中</a>値が 1500(マジックナンバー AUTOMATIC_HIT)以上なら(<a href="Magic_Dart.html" title="Magic Dart">魔法の矢</a>など)、攻撃は必ず当たる。
 </p><p>それ以外のときは、次の手順で判定する。
 </p>
 <ul><li>2.5% の確率で、攻撃の命中値や防御側の EV に関係なく攻撃は外れる。</li>
@@ -170,10 +170,10 @@ final_dodge_bonus = dodge_bonus * modifier
 <li>命中のダイスが EV のダイス以上なら攻撃は当たり、そうでなければ外れる。</li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
 <ul><li><a href="0.32.html" title="0.32">0.32</a> より前は、プレイヤーの EV にかかる倍率は一時的な補正のあとに適用されていた。また、麻痺や不器用のような効果で、「身動きできないとき」の EV のほうが今の EV より高ければ、かえって EV が上がることがあった。</li>
-<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、30 を超える EV に逓減がかかっていた。<code>adj_EV = 10 + 20 * log(1 + (EV-10)/20log2)</code>。躱し身のボーナスを計算するときの<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>にも逓減がかかっていた。</li>
-<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、<a href="http://crawl.chaosforge.org/Potion_of_agility" data-untr="1" title="Potion of agility">器用さの薬</a>で手軽に EV を上げられた。</li>
-<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、一部の射撃武器に<a href="http://crawl.chaosforge.org/Evasion_(brand)" data-untr="1" title="Evasion (brand)">回避</a>のブランドがつくことがあり、EV に +5 のボーナスを与えた。</li>
-<li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a> より前は、飛んでいる天狗と泳いでいる水棲の民の EV のボーナスは +9 が上限だった。</li></ul>
+<li><a href="0.27.html" title="0.27">0.27</a> より前は、30 を超える EV に逓減がかかっていた。<code>adj_EV = 10 + 20 * log(1 + (EV-10)/20log2)</code>。躱し身のボーナスを計算するときの<a href="Dexterity.html" title="Dexterity">器用</a>にも逓減がかかっていた。</li>
+<li><a href="0.25.html" title="0.25">0.25</a> より前は、<a href="http://crawl.chaosforge.org/Potion_of_agility" data-untr="1" title="Potion of agility">器用さの薬</a>で手軽に EV を上げられた。</li>
+<li><a href="0.19.html" title="0.19">0.19</a> より前は、一部の射撃武器に<a href="http://crawl.chaosforge.org/Evasion_(brand)" data-untr="1" title="Evasion (brand)">回避</a>のブランドがつくことがあり、EV に +5 のボーナスを与えた。</li>
+<li><a href="0.17.html" title="0.17">0.17</a> より前は、飛んでいる天狗と泳いでいる水棲の民の EV のボーナスは +9 が上限だった。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/player.cc#L1999">player.cc:1999</a> (0.31.0)<br />体格は <a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/size-type.h#L4">size-type.h:4</a> (0.31.0) で小さい順に並んでいる。</span>
