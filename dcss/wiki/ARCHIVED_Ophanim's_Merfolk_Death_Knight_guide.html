@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【保管】Ophanim の水棲の民の死の騎士ガイド &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="【保管】Ophanim の水棲の民の死の騎士ガイド(ARCHIVED Ophanim&#x27;s Merfolk Death Knight guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>【保管】Ophanim の水棲の民の死の騎士ガイド <span class="en">ARCHIVED Ophanim&#x27;s Merfolk Death Knight guide</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/ARCHIVED_Ophanim's_Merfolk_Death_Knight_guide">ARCHIVED Ophanim&#x27;s Merfolk Death Knight guide</a>」(0.10 向け、2021-07-29 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=ARCHIVED_Ophanim's_Merfolk_Death_Knight_guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.10 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.10.html" title="0.10">0.10</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">概要</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#At_the_Start"><span class="tocnumber">2.1</span> <span class="toctext">開始時</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Dungeon_Order"><span class="tocnumber">2.2</span> <span class="toctext">攻略の順番</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Weapons.2C_Spells.2C_and_Armour"><span class="tocnumber">2.3</span> <span class="toctext">武器、呪文、防具</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Skill_Planning"><span class="tocnumber">2.4</span> <span class="toctext">スキルの計画</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#God_Gifts"><span class="tocnumber">2.5</span> <span class="toctext">神の贈り物</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#General_Strategies"><span class="tocnumber">2.6</span> <span class="toctext">全体の戦略</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#About_Soul_Steal"><span class="tocnumber">2.7</span> <span class="toctext">魂の隷属について</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#See_Also"><span class="tocnumber">3</span> <span class="toctext">関連項目</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">概要</span></h2>
+<p>これは Reddit ユーザーの Ophanim が書いた手短なガイドだ。功績は書いた本人のものとしておく。
+</p><p>アンデッドの手下を従えるという考えは大好きなのに、<a href="Necromancer.html" title="Necromancer">死人使い</a>で遊ぶのは楽しくない。そんな人にひとつ提案がある。死人使いをさんざん遊んできた人間(実は DDNe のハイスコアを持っている)からの助言なので、ぜひ考えてみてほしい。
+</p><p><a href="Death_Knight_(background).html" title="Death Knight (background)">死の騎士</a>で遊ぼう。死霊術の楽しさをまるごと味わえて、手間は半分もかからない。範囲で<a href="Yredelemnul.html#Given_Abilities" title="Yredelemnul">アンデッドを蘇らせ</a>られるし、他者から受けたダメージを<a href="http://crawl.chaosforge.org/Mirror_Damage" data-untr="1" class="mw-redirect" title="Mirror Damage">ダメージ反射</a>で相手に返せるし、知性ある生き物なら何でも魂を奪って、そっくりそのままの写しをずっと味方にできる(悪魔とアンデッド以外なら、ほとんどのユニークも含む)。そのうえ<a href="Bone_dragon.html" title="Bone dragon">骸骨ドラゴン</a>、<a href="Profane_servitor.html" title="Profane servitor">涜神の従者</a>、<a href="Ghoul.html" class="mw-redirect" title="Ghouls">グール</a>といった高レベルのアンデッドをただでもらえる。すべて<a href="Yredelemnul.html" class="mw-redirect" title="Yred">イレデレンヌル</a>を信仰するというお手頃価格でだ。
+</p><p><a href="Minotaur.html" title="Minotaur">ミノタウロス</a>や<a href="Merfolk.html" title="Merfolk">水棲の民</a>のように<a href="Polearms.html" title="Polearms">長柄武器</a>が得意な種族を選び、手下を壁にしながら間合いを生かして敵を突く戦い方を覚えるのがおすすめだ。<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>に着いたら、<a href="Orcish_Mines.html" title="Orcish Mines">オークの坑道</a>で魂を奪えるように<a href="Invocations.html" class="mw-redirect" title="Invocation">祈祷</a>を 10〜12 にしておくといい。仲間を階から階へ連れていくのに<a href="Recall.html" title="Recall">招来</a>を使う必要があることを除けば、これはゲームでも屈指の簡単な組み合わせだ。運がよければ<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>で<a href="Bone_dragon.html" title="Bone dragon">骸骨ドラゴン</a>がもらえて、ルーン集めが必要になるまでは楽に進める。
+</p><p>以下は、死の騎士の遊び方をざっと追ったものだ。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<h3><span class="mw-headline" id="At_the_Start">開始時</span></h3>
+<p><a href="Merfolk.html" title="Merfolk">水棲の民</a>の<a href="Death_Knight_(background).html" title="Death Knight (background)">死の騎士</a>で始める。武器には<a href="Spear.html" title="Spear">スピア</a>を選ぶ。すぐに「m」を押してスキル画面を開き、<a href="Polearms.html" title="Polearms">長柄武器</a>以外をすべて止めて、10 になるまで訓練する。ほかのスキルは訓練しないこと。<a href="Merfolk.html" title="Merfolk">水棲の民</a>は適性が +4 なので、10 にはすぐ届く。
+</p>
+<h3><span class="mw-headline" id="Dungeon_Order">攻略の順番</span></h3>
+<p>ダンジョンは次の順番で攻略する。<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>に着くまで各階を掃除し(先に<a href="Orcish_Mines.html" title="Orcish Mines">オークの坑道</a>を見つけても飛ばす)、<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>を掃除する。<a href="Orcish_Mines.html" title="Orcish Mines">オークの坑道</a>に戻り(まだなら見つけて)、そこも掃除する。迷宮に戻って<a href="Vault.html" class="mw-redirect" title="Vaults">宝物庫</a>に着くまで各階を掃除し、宝物庫の最初の 2〜4 階をこなす。それから<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>の先にあるルーンのある 2 つの分岐を、それぞれ 4 階まで掃除する。最後に迷宮に戻って<a href="Vault.html" class="mw-redirect" title="Vaults">宝物庫</a>を 7 階まで、迷宮を 26 階まで掃除し、いちばん簡単な<a href="Rune_of_Zot.html" class="mw-redirect" title="Rune">獣の棲み処のルーン</a>、難しいほうの<a href="Rune_of_Zot.html" class="mw-redirect" title="Rune">獣の棲み処のルーン</a>、<a href="Rune_of_Zot.html" class="mw-redirect" title="Rune">宝物庫のルーン</a>を取って、迷宮:27 を掃除してからゾットの領域に向かう。エルフの大広間(オークの坑道にある)と<a href="The_Crypt.html" class="mw-redirect" title="Crypt">地下墓地</a>(<a href="Vault.html" class="mw-redirect" title="Vaults">宝物庫</a>にある)は早ければ<a href="Vault.html" class="mw-redirect" title="Vaults">宝物庫</a>:4 の時点で行けるが、自分ならルーン集めの直前まで残しておくと思う。
+</p>
+<h3><span class="mw-headline" id="Weapons.2C_Spells.2C_and_Armour">武器、呪文、防具</span></h3>
+<p><a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a>、<a href="Leather_armour.html" title="Leather armour">レザーアーマー</a>、それにできるかぎりの<a href="Slaying.html" title="Slaying">殺戮</a>を手に入れる。ゾットの領域を終える前に rF+++ と rMut が欲しい。呪文を覚えたければそうしてもいいが、使える経験値は限られることを承知しておくこと。
+</p>
+<h3><span class="mw-headline" id="Skill_Planning">スキルの計画</span></h3>
+<p>スキルについては、<a href="Polearms.html" title="Polearms">長柄武器</a>が 10 になったら訓練を止め、代わりに<a href="Dodging.html" title="Dodging">躱し身</a>と<a href="Fighting.html" title="Fighting">戦闘</a>を上げていい。<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>に着いたら、<a href="Trap.html" class="mw-redirect" title="Traps">罠と扉</a>と<a href="Invocations.html" class="mw-redirect" title="Invocation">祈祷</a>以外をすべて止め、それぞれ 10 と 12 まで訓練する。<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>で得られる経験値だけでそこまで届くこともよくある。それが済んだら、<a href="Dodging.html" title="Dodging">躱し身</a>と<a href="Fighting.html" title="Fighting">戦闘</a>に戻り、最大になるか<a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a>を見つけるまで上げる。三叉戟を見つけたら<a href="Polearms.html" title="Polearms">長柄武器</a>を 12 にする必要がある。HP に余裕があると思うなら<a href="Fighting.html" title="Fighting">戦闘</a>の代わりに<a href="Polearms.html" title="Polearms">長柄武器</a>を上げてもいいし、魔法も使う複合型にすると決めたなら<a href="Fighting.html" title="Fighting">戦闘</a>の代わりに<a href="Spellcasting.html" title="Spellcasting">呪文詠唱</a>や&lt;何かの系統&gt;を上げてもいい(自分なら<a href="Charms.html" title="Charms">加護</a>と<a href="Translocations.html" class="mw-redirect" title="Translocation">転位術</a>にしておく。<a href="Poisonous_Cloud.html" title="Poisonous Cloud">猛毒の雲</a>が欲しいなら<a href="Poison.html" title="Poison">毒の魔術</a>と<a href="Conjurations.html" title="Conjurations">妖術</a>も)。
+</p>
+<h3><span class="mw-headline" id="God_Gifts">神の贈り物</span></h3>
+<p>贈り物は死なせないようにしよう。HP が減っていても、あなたと同じように休めば回復する。いちばん良い贈り物は文句なしに<a href="Bone_dragon.html" title="Bone dragon">骸骨ドラゴン</a>で、HP もダメージも高いが、<a href="Profane_servitor.html" title="Profane servitor">涜神の従者</a>と<a href="Ghoul_(monster).html" title="Ghoul (monster)">グール</a>もどちらもとても優秀だ。<a href="Profane_servitor.html" title="Profane servitor">涜神の従者</a>は、EV ボーナスのような効果をくれるので 1 体いるとたいてい助かる。また、CTRL+T で<a href="Ghoul_(monster).html" title="Ghoul (monster)">グール</a>に何でも装備してよいと伝えるやり方を覚えておこう。<a href="Ranged_Weapons.html" class="mw-redirect" title="Crossbow">クロスボウ</a>を拾うときなどは特にそうだ。
+</p>
+<h3><span class="mw-headline" id="General_Strategies">全体の戦略</span></h3>
+<p>序盤は、ほかの近接キャラクターと同じように、倒せる相手とはとにかく戦えばいい。<a href="Yredelemnul.html" class="mw-redirect" title="Yred">イレデレンヌル</a>の能力でアンデッドを蘇らせられるようになったら、<a href="Zombie.html" title="Zombie">ゾンビ</a>に怖い相手を倒す手伝いをさせたり、逃げるあいだの壁にしたりできる。<a href="Yredelemnul.html#Given_Abilities" title="Yredelemnul">創傷の鏡</a>は、使わなければ負ける状況でないかぎり使わないこと(自分は、序盤のユニークを倒せるかわからないときか、追い詰められたときくらいしか使わない)。贈り物はかなり早くから届きはじめ、<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>の頃には<a href="Bone_dragon.html" title="Bone dragon">骸骨ドラゴン</a>や<a href="Flaming_corpse.html" title="Flaming corpse">燃える死体</a>までいることもある。高レベルの贈り物がまだいないなら、<a href="Hydra.html" title="Hydra">ヒドラ</a>(斬撃のダメージを与えるアンデッドもいる)と、本当に大きな相手には気をつけること(<a href="Rupert.html" title="Rupert">ルパート</a>はグール数体や従者に満たないものなら何でも消し飛ばす)。階から階への移動は、SHIFT+X を押してから &lt; か &gt; でそれぞれ上り階段か下り階段を探し、Enter で階段まで自動移動し、それから<a href="Yredelemnul.html" class="mw-redirect" title="Yred">イレデレンヌル</a>の招集で仲間を全員呼び寄せる、というやり方を覚えよう(全員がすぐ隣にいるか、隣にいる誰かと接しているのでないかぎり、階段を使わないこと)。いつも<a href="Polearms.html" title="Polearms">長柄武器</a>を使い、「v」を押して間合いの攻撃を発動するか、TAB で自動戦闘する(自動で間合いの攻撃を使ってくれる)。あなたと標的のあいだにアンデッドが立てるときは特にそうだ(アンデッド越しに自動で突いてくれる)。
+</p>
+<h3><span class="mw-headline" id="About_Soul_Steal">魂の隷属について</span></h3>
+<p>ああ、それと<a href="Yredelemnul.html#Given_Abilities" title="Yredelemnul">魂の隷属</a>について。<a href="Invocations.html" class="mw-redirect" title="Invocation">祈祷</a>が 12 あればまず失敗しない。この能力を選び、見えている「無傷の」(傷ついていない!)、「生きている」(悪魔やアンデッドは不可)、「知性のある」(動物は不可)標的を選ぶと、それを倒すための数ターン(多くはない)が与えられる。ここまでうまくやれば、生前の能力をすべて持った標的の霊体が手に入る。あなたのために戦い、階をまたいでついてきて、死なないかぎり去ることはない。序盤ならユニークがいちばんだが(特に<a href="Nergalle.html" title="Nergalle">ネルガレ</a>、<a href="Rupert.html" title="Rupert">ルパート</a>、<a href="Saint_Roka.html" title="Saint Roka">聖者ロカ</a>、<a href="Kirke.html" title="Kirke">キルケー</a>)、ほかにも良い候補はいる(<a href="Orc_sorcerer.html" title="Orc sorcerer">オークの魔道士</a>や<a href="Orc_high_priest.html" title="Orc high priest">大司祭</a>、<a href="Orc_warlord.html" title="Orc warlord">族長</a>)。後半になると、たいてい高レベルのモンスターを使うことになる(自分のお気に入りはたぶん<a href="Titan.html" title="Titan">タイタン</a>だが、高レベルのエルフや<a href="Draconian_stormcaller.html" class="mw-redirect" title="Draconian caller">ドラコニアンの召喚師</a>でもいい)。ほぼいつでも、何か一体はそばに置いておきたい。
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<p><a href="http://crawl.chaosforge.org/Mandevil,_Merfolk_Death_Knight" data-untr="1" title="Mandevil, Merfolk Death Knight">Mandevil、水棲の民の死の騎士</a> - この組み立てを実際に遊んだ例。
+</p>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

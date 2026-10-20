@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>峡谷 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="峡谷(Gulch)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>峡谷 <span class="en">Gulch</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Gulch">Gulch</a>」(対象の版の記載なし、2026-09-24 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Gulch&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<dl><dd><i>このページは<b><a href="http://crawl.chaosforge.org/Category:Stubs" data-untr="1" title="Category:Stubs">書きかけ</a></b>の記事だ。よければ<a rel="nofollow" class="external text" href="http://crawl.chaosforge.org/index.php?title=Gulch&amp;action=edit">加筆</a>してほしい。</i></dd></dl>
+<div style=" width: 100%; width: auto"><i><b><a href="Trunk.html" title="Trunk">Trunk</a> 限定</b>: この記事は、テスト中の Crawl の機能を扱っている。次のリリースまでに変わる可能性が高く、まるごと削除されることさえある。</i></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 迷宮の上層に下水の排水路があるように、宝物庫にもそれがある。この汚水の峡谷は、たまったゴミも、打ち捨てられたさまざまな実験の産物も、勝手に入りこんでくる害獣も、ひどく損なわれた侵入者の死体も、区別なくまとめて押しこめておく場所だ。流れる神秘の鉱滓とかびた水からは強い変異のエネルギーが放たれていて、敷居をまたいだだけで新しい客は一時的に変異してしまう。それでも、名高い宝物庫の守りは警備の穴をひとつも見逃さない。罰として回された衛兵たちのささやかな管理でも、この汚らしい部屋から隠された財宝を持ち出そうとする者がいれば、峡谷の怪物たちをけしかける程度の指図はかろうじてできている。
+</td></tr></table>
+<p><a href="http://crawl.chaosforge.org/File:Gulch_portal.png" data-untr="1" class="image"><img alt="Gulch portal.png" src="img/Gulch_portal.png" width="32" height="32" /></a><a class="mw-selflink selflink">峡谷</a>は<a href="The_Vaults.html" title="The Vaults">宝物庫</a>:1〜4 に現れる、一時的な<a href="Portal.html" title="Portal">ポータル</a>の階だ。<a href="Poison.html" title="Poison">毒</a>、<a href="Mutation.html" title="Mutation">変異</a>、ゴミ、そして全体にとにかく気持ち悪いことが峡谷の特徴だ。ポータルがあることは「汚泥がほとばしる音」で知らされる。ぐずぐずしていると(6000〜8000 <a href="Action.html" class="mw-redirect" title="Aut">aut</a>)、入り口は永久に閉じてしまう。
+</p><p>峡谷に入ると一時的な変異が 3 つつき、これは経験値を稼いで消していくしかない。ポータルに入ろうとすると、そのことを警告される。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Layout"><span class="tocnumber">1</span> <span class="toctext">構造</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Monsters"><span class="tocnumber">2</span> <span class="toctext">モンスター</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Layout">構造</span></h2>
+<p>峡谷の構造は毎回変わるが、いくつかの型に沿っている。入ったとたんに何体かのモンスターに待ち伏せされる。最初の部屋には必ず、強化値がマイナスの<a href="Flaming.html" title="Flaming">火炎</a>の斬撃武器と、斬撃でない<a href="Freezing.html" title="Freezing">冷気</a>の武器が置いてある(<a href="Slymdra.html" title="Slymdra">スライムドラ</a>が出てきたときに、必要ならそれなりに対処できるようにするためだ)。
+</p><p>峡谷の最後はボスのモンスター(下を参照)が守っている。下水の君主が出るときは 2 体組になる。峡谷のお宝は、毒液のブランドの武器、<a href="Alchemy.html" title="Alchemy">錬金術</a>・<a href="Hexes.html" title="Hexes">呪術</a>・<a href="Forgecraft.html" title="Forgecraft">鍛造術</a>の<a href="Spell.html" title="Spell">呪文</a>とその<a href="Spell_Power.html" class="mw-redirect" title="Spell enhancer">呪文強化</a>の品、rCorr・rPois・<a href="Fly.html" class="mw-redirect" title="Flight">飛行</a>のついた<a href="Jewellery.html" title="Jewellery">装身具</a>・<a href="Armour.html" class="mw-redirect" title="Armor">防具</a>・<a href="Talisman.html" title="Talisman">タリスマン</a>、<a href="Potion_of_mutation.html" class="mw-redirect" title="Potions of mutation">突然変異の薬</a>、そして必ず置かれる<a href="http://crawl.chaosforge.org/Purified_mutation_catalyst" data-untr="1" title="Purified mutation catalyst">浄化された変異触媒</a>だ。変異触媒は、使う(&gt; か &lt; を押す)と良い変異を 1 つ授けてくれる。
+</p>
+<h2><span class="mw-headline" id="Monsters">モンスター</span></h2>
+<table class="prettytable">
+<tr>
+<td> <span class="nhsym">l</span> <a href="http://crawl.chaosforge.org/File:Alligator.png" data-untr="1" class="image"><img alt="Alligator.png" src="img/Alligator.png" width="32" height="32" /></a> <b><a href="Alligator.html" title="Alligator">アリゲーター</a></b> </td>
+<td> <span class="nhsym clr-lightgray">S</span> <a href="http://crawl.chaosforge.org/File:Anaconda.png" data-untr="1" class="image"><img alt="Anaconda.png" src="img/Anaconda.png" width="32" height="32" /></a> <b><a href="Anaconda.html" title="Anaconda">アナコンダ</a></b> </td>
+<td> <span class="nhsym">w</span> <a href="http://crawl.chaosforge.org/File:Tyrant_leech.png" data-untr="1" class="image"><img alt="Tyrant leech.png" src="img/Tyrant_leech.png" width="32" height="32" /></a> <b><a href="Tyrant_leech.html" title="Tyrant leech">巨大ヒル</a></b> </td>
+<td> <span class="nhsym clr-brightgreen">G</span> <a href="http://crawl.chaosforge.org/File:Great_orb_of_eyes.png" data-untr="1" class="image"><img alt="Great orb of eyes.png" src="img/Great_orb_of_eyes.png" width="32" height="32" /></a> <b><a href="Great_orb_of_eyes.html" title="Great orb of eyes">あまたの目の球体</a></b>
+</td></tr>
+<tr>
+<td> <span class="nhsym">x</span> <a href="http://crawl.chaosforge.org/File:Crawling_flesh_cage.png" data-untr="1" class="image"><img alt="Crawling flesh cage.png" src="img/Crawling_flesh_cage.png" width="32" height="32" /></a> <b><a href="Crawling_flesh_cage.html" title="Crawling flesh cage">這い回る肉の檻</a></b> </td>
+<td> <span class="nhsym clr-white">J</span> <a href="http://crawl.chaosforge.org/File:Formless_jellyfish.png" data-untr="1" class="image"><img alt="Formless jellyfish.png" src="img/Formless_jellyfish.png" width="32" height="32" /></a> <b><a href="Formless_jellyfish.html" title="Formless jellyfish">形なきクラゲ</a></b>
+</td></tr>
+<tr>
+<td> <span class="nhsym clr-green">k</span> <a href="http://crawl.chaosforge.org/File:Mongrel_wurm.png" data-untr="1" class="image"><img alt="Mongrel wurm.png" src="img/Mongrel_wurm.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Mongrel_wurm" data-untr="1" title="Mongrel wurm">雑種ヴルム</a></b> </td>
+<td> <span class="nhsym clr-brightmagenta">F</span> <a href="http://crawl.chaosforge.org/File:Roaming_sludgefish.png" data-untr="1" class="image"><img alt="Roaming sludgefish.png" src="img/Roaming_sludgefish.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Roaming_sludgefish" data-untr="1" title="Roaming sludgefish">さまよう汚泥魚</a></b> </td>
+<td> <span class="nhsym clr-magenta">f</span> <a href="http://crawl.chaosforge.org/File:Fungal_shambler.png" data-untr="1" class="image"><img alt="Fungal shambler.png" src="img/Fungal_shambler.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Fungal_shambler" data-untr="1" title="Fungal shambler">よろめき歩く菌類</a></b> </td>
+<td> <span class="nhsym clr-brown">9</span> <a href="http://crawl.chaosforge.org/File:Rusted_inspector.png" data-untr="1" class="image"><img alt="Rusted inspector.png" src="img/Rusted_inspector.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Rusted_inspector" data-untr="1" title="Rusted inspector">錆びた検査官</a></b>
+</td></tr>
+</table>
+<p><b>まれに出るモンスター</b>
+</p>
+<table class="prettytable">
+<tr>
+<td> <span class="nhsym clr-brightcyan">G</span> <a href="http://crawl.chaosforge.org/File:Telencephalon.png" data-untr="1" class="image"><img alt="Telencephalon.png" src="img/Telencephalon.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Telencephalon" data-untr="1" title="Telencephalon">テレンセファロン</a></b> </td>
+<td> <span class="nhsym clr-green">w</span> <a href="http://crawl.chaosforge.org/File:Torpor_snail.png" data-untr="1" class="image"><img alt="Torpor snail.png" src="img/Torpor_snail.png" width="32" height="32" /></a> <b><a href="Torpor_snail.html" title="Torpor snail">無気力の蝸牛</a></b> </td>
+<td> <span class="nhsym clr-green">J</span> <a href="http://crawl.chaosforge.org/File:Slime_creature.png" data-untr="1" class="image"><img alt="Slime creature.png" src="img/Slime_creature.png" width="32" height="32" /></a> <b><a href="Slime_creature.html" title="Slime creature">スライム</a></b> </td>
+<td> <span class="nhsym clr-green">t</span> <a href="http://crawl.chaosforge.org/File:Snapping_turtle.png" data-untr="1" class="image"><img alt="Snapping turtle.png" src="img/Snapping_turtle.png" width="32" height="32" /></a> <b><a href="Snapping_turtle.html" title="Snapping turtle">カミツキガメ</a></b> </td>
+<td> <span class="nhsym">k</span> <a href="http://crawl.chaosforge.org/File:Lindwurm.png" data-untr="1" class="image"><img alt="Lindwurm.png" src="img/Lindwurm.png" width="32" height="32" /></a> <b><a href="Lindwurm.html" title="Lindwurm">リンドヴルム</a></b> </td>
+<td> <span class="nhsym clr-brightmagenta">f</span> <a href="http://crawl.chaosforge.org/File:Deathcap.png" data-untr="1" class="image"><img alt="Deathcap.png" src="img/Deathcap.png" width="32" height="32" /></a> <b><a href="Deathcap.html" title="Deathcap">殺人キノコ</a></b>
+</td></tr></table>
+<p><b>ボスのモンスター</b>
+</p>
+<table class="prettytable">
+<tr>
+<td> <span class="nhsym clr-cyan">H</span> <a href="http://crawl.chaosforge.org/File:Scrapshell_chimera.png" data-untr="1" class="image"><img alt="Scrapshell chimera.png" src="img/Scrapshell_chimera.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Scrapshell_chimera" data-untr="1" title="Scrapshell chimera">屑殻のキメラ</a></b> </td>
+<td> <span class="nhsym clr-brown">a</span> <a href="http://crawl.chaosforge.org/File:Sewage_sovereign.png" data-untr="1" class="image"><img alt="Sewage sovereign.png" src="img/Sewage_sovereign.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Sewage_sovereign" data-untr="1" title="Sewage sovereign">下水の君主</a></b> </td>
+<td> <span class="nhsym">J</span> <a href="http://crawl.chaosforge.org/File:Colossal_amoeba.png" data-untr="1" class="image"><img alt="Colossal amoeba.png" src="img/Colossal_amoeba.png" width="32" height="32" /></a> <b><a href="Colossal_amoeba.html" title="Colossal amoeba">巨大アメーバ</a></b> </td>
+<td> <span class="nhsym clr-magenta">J</span> <a href="http://crawl.chaosforge.org/File:Slymdra.png" data-untr="1" class="image"><img alt="Slymdra.png" src="img/Slymdra.png" width="32" height="32" /></a> <b><a href="Slymdra.html" title="Slymdra">スライムドラ</a></b>
+</td></tr></table>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>峡谷は、見つけた時点で育ちが遅れているキャラクター(最初のルーンを取ってから<a href="Vault.html" class="mw-redirect" title="Vaults">宝物庫</a>に入ったキャラクターなど)には大きな脅威になりうる。とはいえ、備えさえあれば、お宝は苦労に見合うだけの価値がある。
+</p><p>敵の多くは、次のどれかの形ではっきりした弱点を持っているので、それに備えておける。
+</p>
+<ul><li><a href="Lee's_Rapid_Deconstruction.html" title="Lee&#39;s Rapid Deconstruction">リーの瞬間解体術</a>の標的にできる構造物。</li>
+<li>知能が動物並みなので、<a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>の鎮静の能力がとくに効きやすい。</li>
+<li>強化の魔法や召喚を使うので、<a href="Yara's_Violent_Unravelling.html" title="Yara&#39;s Violent Unravelling">ヤーラの強制魔法解除術</a>が効きやすい。</li>
+<li>混沌の性質を持つので、銀や<a href="Zin.html" title="Zin">ジン</a>に弱い。</li>
+<li><a href="Willpower.html" title="Willpower">意志力</a>が低いか中くらいなので、<a href="Hexes.html" title="Hexes">呪術</a>や呪術のワンドで狙える。</li></ul>
+<p>ひどい毒を浴びせてくる相手に対処できる用意をしたうえで、上の分類のうち少なくともいくつかをカバーできる手段を持っていこう。ただし、どの手段も峡谷に出る脅威のすべてをカバーできるわけではない。近接型でも魔法型でも、自分の戦い方を脅かす敵にきっと出くわす。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li>峡谷は <a href="Trunk.html" class="mw-redirect" title="0.35">0.35</a> で追加された。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup></li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th>
+</th>
+<th> 一時的な<a href="Portal.html" class="mw-redirect" title="Portals">ポータル</a>
+</th></tr>
+<tr>
+<th> 序盤
+</th>
+<td> <a href="Ossuary.html" title="Ossuary">納骨堂</a> • <a href="The_Sewers.html" class="mw-redirect" title="Sewers">下水道</a>
+</td></tr>
+<tr>
+<th> 中盤
+</th>
+<td> <a href="Bailey.html" title="Bailey">濠城</a> • <a href="Gauntlet.html" title="Gauntlet">試練場</a> • <a href="Ice_cave.html" title="Ice cave">氷の洞穴</a> • <a href="Volcano.html" title="Volcano">火山</a>
+</td></tr>
+<tr>
+<th> 終盤
+</th>
+<td> <a href="Desolation_of_Salt.html" title="Desolation of Salt">塩の荒野</a> • <a href="Wizard_Laboratory.html" title="Wizard Laboratory">魔術師の研究所</a> • <a href="Ziggurat.html" title="Ziggurat">ジグラット</a> (<a href="Mega-Zig.html" title="Mega-Zig">メガジグ</a>)
+</td></tr>
+<tr>
+<th> ゲーム全体
+</th>
+<td> <a href="Necropolis.html" title="Necropolis">死者の都</a>
+</td></tr>
+<tr>
+<th> 戦いのない場所
+</th>
+<td> <a href="Bazaar.html" title="Bazaar">バザール</a> • <a href="Treasure_trove.html" title="Treasure trove">宝の埋蔵庫</a>
+</td></tr>
+</table>
+</center><div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/commit/62b9a60c63fd696ecaa48d33a2f1fddb932b05a2">Yet further Gulch updates</a></span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

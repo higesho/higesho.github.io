@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【保管】Drwhat の吸血鬼の妖術師ガイド &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="【保管】Drwhat の吸血鬼の妖術師ガイド(ARCHIVED Drwhat&#x27;s Vampire Conjurer guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>【保管】Drwhat の吸血鬼の妖術師ガイド <span class="en">ARCHIVED Drwhat&#x27;s Vampire Conjurer guide</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/ARCHIVED_Drwhat's_Vampire_Conjurer_guide">ARCHIVED Drwhat&#x27;s Vampire Conjurer guide</a>」(0.10 向け、2014-04-15 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=ARCHIVED_Drwhat's_Vampire_Conjurer_guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.10 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.10.html" title="0.10">0.10</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><br />
+</p>
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p><br />
+<b>この記事は <i>CRAWL</i> の古い版に向けて書かれたもので、もう当てにはならない。保管庫から外したいなら、今の版に合わせて書き直してほしい。</b>
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">概要</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Background"><span class="tocnumber">2.1</span> <span class="toctext">職業</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Early_Game"><span class="tocnumber">2.2</span> <span class="toctext">序盤</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Mid_Game"><span class="tocnumber">2.3</span> <span class="toctext">中盤</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Late_Game"><span class="tocnumber">2.4</span> <span class="toctext">終盤</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Tactics_And_Tips"><span class="tocnumber">3</span> <span class="toctext">戦術と小技</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Skills"><span class="tocnumber">4</span> <span class="toctext">スキル</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Items"><span class="tocnumber">5</span> <span class="toctext">アイテム</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#The_Good"><span class="tocnumber">5.1</span> <span class="toctext">役に立つもの</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#The_So-So"><span class="tocnumber">5.2</span> <span class="toctext">それなりのもの</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Potions"><span class="tocnumber">5.3</span> <span class="toctext">薬</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Satiation"><span class="tocnumber">6</span> <span class="toctext">満腹度</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#What_Can_Kill_You"><span class="tocnumber">7</span> <span class="toctext">死因になるもの</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Overview">概要</span></h2>
+<p><b>吸血鬼の妖術師</b>は、氷の魔術、死霊術、死体の活用という 3 つの柱を中心に戦う魔法使いだ。
+</p>
+<ul><li><a href="Vampire.html" title="Vampire">吸血鬼</a>の適性は、<a href="Spellcasting.html" title="Spellcasting">呪文詠唱</a>と<a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a>が平均的で、<a href="Necromancy.html" title="Necromancy">死霊術</a>と<a href="Charms.html" title="Charms">加護</a>が良い(+1)。困ったことに<a href="Conjurations.html" title="Conjurations">妖術</a>の適性はひどく(-3)、<a href="Invocations.html" title="Invocations">祈祷</a>も悪い(-2)。攻撃呪文は当然、氷の魔術が中心になる。残念ながら、妖術の悲惨な適性からは逃げられない。</li>
+<li>吸血鬼は祈祷が苦手なので、シフ・ムーナは神の選択としてはよくない。シフ・ムーナのいちばんの能力(魔力供給)には祈祷をかなり上げる必要があるからだ。ヴェフメットにする手もあるが、<a href="Kikubaaqudgha.html" title="Kikubaaqudgha">キクバークッグァ</a>は死体を届けてくれるし、その能力は祈祷ではなく死霊術を使うのだ！おかげでこのキャラクターは<a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>を使い倒せる。手もとにはいつも血液の薬と肉がたっぷりあるからだ。ほかにも、便利な呪文や予備の呪文は死霊術に頼ればいい。</li>
+<li>死体がたくさんあるので、吸血鬼の食料の時間制限も思いのままに調整できる。逃げるときにはコウモリ化がいつも頼りになり、スキル構成をうまく補ってくれる。そのうえ吸血鬼は、生まれつきの能力と、満腹度に応じた耐性がすばらしく充実しているので、呪文の詠唱を強化する装身具や防具を身に着けることに専念できる。</li></ul>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<h3><span class="mw-headline" id="Background">職業</span></h3>
+<p>氷に特化したビルドなら<a href="Ice_Elementalist.html" title="Ice Elementalist">氷の精霊使い</a>でも十分にやっていけるが、<a href="Conjurer.html" title="Conjurer">妖術師</a>のほうがより攻撃寄りの選択だ。強化の呪文と召喚の呪文を少し手放す代わりに、直接ぶっ放す呪文の手持ちが多く、雲の呪文もいくつか持っている。
+</p><p><b>氷の精霊使い</b>
+</p>
+<ul><li><a href="Freeze.html" title="Freeze">氷結</a></li>
+<li><a href="Throw_Frost.html" title="Throw Frost">冷気の投射</a></li>
+<li><a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a></li>
+<li><a href="Throw_Icicle.html" title="Throw Icicle">氷柱の投射</a></li>
+<li><a href="Summon_Ice_Beast.html" title="Summon Ice Beast">氷の獣の召喚</a></li>
+<li><a href="Condensation_Shield.html" title="Condensation Shield">凝結の盾</a></li></ul>
+<p><b>妖術師</b>
+</p>
+<ul><li><a href="Magic_Dart.html" title="Magic Dart">魔法の矢</a></li>
+<li><a href="Throw_Frost.html" title="Throw Frost">冷気の投射</a></li>
+<li><a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a></li>
+<li><a href="Lightning_Bolt.html" title="Lightning Bolt">稲妻の矢</a></li>
+<li><a href="Bolt_of_Cold.html" title="Bolt of Cold">凍結の矢</a></li>
+<li><a href="Freezing_Cloud.html" title="Freezing Cloud">凍気の雲</a></li></ul>
+<p>どう見ても魔法の矢は氷結より上だし、悪臭の雲もオゾクブの鎧より上だ。中盤は氷柱の投射を持つ氷の精霊使いが一歩リードする。それでも妖術師が凍結の矢と凍気の雲までたどり着ければ、氷の嵐を覚えるまで必要な殺傷力はすべてそろう。氷の嵐こそ最終目標で、獲得の巻物をいつも魔法書につぎ込む理由でもある！ただし妖術師は、早いうちから経験値の一部を風の魔術に回さなければならない。とはいえ、スキルをきちんと管理すれば簡単にこなせるし、妖術師にとってたいした痛手にはならないはずだ。
+</p>
+<h3><span class="mw-headline" id="Early_Game">序盤</span></h3>
+<p>食料の時間制限などあってないようなものなので、逃げることに何の不利もない。しかもコウモリ化があれば、この時点でゲームが繰り出してくる相手には、ほぼ確実に逃げ切れる。
+</p><p>キクの祭壇を見つけたらすぐに入信し、護符はかたっぱしから試着しよう。早めに<a href="Amulet_of_faith.html" title="Amulet of faith">信仰の護符</a>が手に入れば、キクから魔法書を授かるのがかなり早まる。<a href="Book_of_Necromancy.html" title="Book of Necromancy">死霊術の魔法書</a>を授かったら、<a href="Regeneration_rate.html" class="mw-redirect" title="Regeneration">再生</a>を覚えて死霊術を上げはじめる。キクからの 2 冊目の授かりものである<a href="Book_of_Death.html" title="Book of Death">死の魔法書</a>は、信仰心★3 でもらえる。もらったら一刻も早く安全な場所を探して、このキャラクターの要である<a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>を覚えよう。できれば<a href="Dispel_Undead.html" title="Dispel Undead">アンデッドの解呪</a>も覚えておきたい。残念ながら<a href="Book_of_Unlife.html" title="Book of Unlife">反生命の魔法書</a>にはたいした呪文はないが、<a href="Necronomicon.html" title="Necronomicon">ネクロノミコン</a>(苦痛のブランドなんて誰がほしがる?)からは<a href="Haunt.html" title="Haunt">招霊</a>を覚えられる。もっとも、それはゲームのかなり後半になる。死霊術を重点的に上げて、血の昇華の成功率と威力を不安のない水準まで持っていこう。今のところは成功率が Excellent で、威力の目盛りが 4〜5 あれば十分なはずだ。
+</p>
+<h3><span class="mw-headline" id="Mid_Game">中盤</span></h3>
+<p>戦闘のあとで傷を負っていたら、血液の薬を 1〜2 本ぐいっと飲んで、満腹度を一段上げるといい。ここでは<a href="Regeneration_rate.html" class="mw-redirect" title="Regeneration">再生</a>も役に立つが、満腹度が下がるにつれて効果は大きく落ちる(血液がない状態ではまったく効かない)。死体からはできるかぎり血を瓶に詰め、残りは肉に切り分けておこう。MP をさっと補充したいときは、どちらかを手に持つだけでいい。くり返しになるが、厄介な相手からはコウモリ化で逃げよう。
+</p><p>凍気の雲を覚えられるようになったら覚えて、機会があるたびにモンスターの群れを倒すのに使おう。この時点で氷の魔術と風の魔術を重点的に上げるのは悪くない考えだ。妖術より早くレベルが上がるからだ。どちらか、または両方のスキルが妖術より低いなら、ぜひそうすべきだ。凍結の矢が最後の武器になるが、これがあれば中盤の分岐(蛇穴、沼、エルフの大広間、宝物庫)の最後の数階を除いて、何でも片づけられるくらい強くなっているはずだ。
+</p><p>まだ準備ができていないうちにアビスに落とされたら、コウモリ化して死にものぐるいで逃げ回り、ついでに道中の戦利品を拾おう。レベルが低くても、本当に危険なのは噴煙のデーモン(打擲の一撃を浴びせてくるだけでなく、焼夷の炎も唱えてくる)と、解呪のエネルギーを吐きかけてくる紫色ドラコニアン(コウモリ化も含め、強化をすべて消してしまう！)くらいだ。この時点のほかのキャラクターより、生き延びられる見込みはずっと高い。
+</p>
+<h3><span class="mw-headline" id="Late_Game">終盤</span></h3>
+<p><i>近日公開…</i>
+</p>
+<h2><span class="mw-headline" id="Tactics_And_Tips">戦術と小技</span></h2>
+<ul><li><b>血の昇華で MP を補充したり、コウモリ化で逃げたりできるように、MP はいつも 2 残しておこう！</b></li>
+<li><a href="Holy_wrath.html" title="Holy wrath">神罰</a>の武器を持った敵や、銀の矢弾を使う敵からは追加のダメージを受ける。注意しよう。</li>
+<li>肉なら種類や鮮度に関係なく、どれでも血の昇華に使える。凝固した血液の薬でもかまわない。</li>
+<li>自分自身を血の昇華に使えるのは、とても満腹か生者のときだけなので、これを当てにしてはいけない。</li>
+<li>キクが届けてくれる死体の種類は、今いる分岐によって変わる。たとえば獣の棲み処では動物の死体が、オークの坑道ではオークの死体が届く、といった具合だ。場合によっては、迷宮や一つ前の分岐に戻って死体を受け取ってから戻ってくるのがいちばんいい。</li></ul>
+<pre>*ほとんど血液がない状態になるまで待ってから血液の薬を飲めば、毎回渇いている状態に戻る。毒耐性や隠密のボーナスを絶対に切らしたくない心配性の人でも、これなら簡単に繰り返せる。
+</pre>
+<ul><li>キクは、アンデッドでない仲間が倒した敵を自分の手柄として認めてくれない。なので、まだ魔法書を授かっているあいだは、氷の獣の召喚はどうしても必要なときだけにしよう。あとになればたいした問題ではない。</li></ul>
+<h2><span class="mw-headline" id="Skills">スキル</span></h2>
+<p>普通の呪文使いのスキルに加えて、キクを信仰する吸血鬼の妖術師は次のことを考えておくといい。
+</p>
+<ul><li><b><a href="Spellcasting.html" title="Spellcasting">呪文詠唱</a>:</b> 吸血鬼には呪文による空腹が問題にならないので、呪文レベルがこれ以上要らないなら、遠慮なく止めて妖術に回せばいい。ただし先のことは考えておこう。</li>
+<li><b><a href="Necromancy.html" title="Necromancy">死霊術</a>:</b> いつも上げておく。血の昇華を覚えたら、少しでも早く威力を上げるために重点的に上げる。</li>
+<li><b><a href="Stealth.html" title="Stealth">隠密</a>:</b> いつも上げておく。渇いている状態以下で得られるボーナスもあるので、戦う相手を非常にうまく選べる。</li></ul>
+<h2><span class="mw-headline" id="Items">アイテム</span></h2>
+<h3><span class="mw-headline" id="The_Good">役に立つもの</span></h3>
+<p>いちばんいい護符は、序盤なら信仰の護符、そのあとは保存の護符(血液の薬を守ってくれる)か明晰の護符だ。同じように、<a href="Preservation.html" class="mw-redirect" title="Cloak of preservation">保存のクローク</a>は 1 つの部位で 2 つの固有の性質が得られ、そのうち 1 つは MP の回復手段を守ってくれる。いちばんいい指輪は魔術の指輪と知力の指輪、そして瞬間移動を見つけているならテレポート制御の指輪だ。
+</p><p>冷気の杖と氷の指輪はどちらもいいものだが、それぞれ欠点もある。杖は、血の昇華で MP を回復するたびに持ち替えなければならないが、冷気耐性が 1 段階つき、それ以外の欠点はない。一方、指輪は火炎への弱点が 1 段階つくが、いつも着けたままにしておける(特定のモンスターのために決まった耐性の装身具を着ける必要があるときは別だ)。いちばんいいのは妖術の杖で、それがなければ死霊の杖か呪術の杖だ。
+</p>
+<h3><span class="mw-headline" id="The_So-So">それなりのもの</span></h3>
+<p>たいていの呪文使いは魔力の指輪や魔力の杖が大好きだが、戦闘中に MP を大量に回復できるキャラクターを使っているので、中盤にはもうあまり役に立たない。ただし序盤なら大きな違いになりうる。耐性のアイテムもよく見つかるが、こちらはほぼ好きなときに rPois、rN+++、rC++、拷問への耐性、変異への耐性を得られる、正真正銘の吸血鬼様だ。火炎耐性のほかはたいして必要ない。とはいえ、至近距離で氷の嵐をぶっ放さなければならないときに備えて、がんばって rC+++ まで上げておくのはとてもいい考えだ。魔法抵抗はそこそこ役に立つが、ゲームの大半は呪文詠唱のスキルが身を守ってくれる。隠密のボーナスがついたいいアーティファクトがあれば、生存力を上げられる。
+</p>
+<h3><span class="mw-headline" id="Potions">薬</span></h3>
+<p>血液の薬が 10〜15 本あれば、たいていの戦闘は乗り切れるはずだ。手もとに肉があるならもっと少なくていい。言うまでもないが、キクの宅配サービスは大きな戦闘の<i>前に</i>使おう。戦闘の最中にタイムを取って血を瓶に詰めるなんて、いちばんやりたくないことだ。渇いている状態かそれ以下のときは、薬(怪我の治療の薬など)の効果が半分になることを覚えておこう。
+</p>
+<h2><span class="mw-headline" id="Satiation">満腹度</span></h2>
+<ul><li><b>生者、とても満腹、満腹:</b> この段階にいることは、まずないはずだ。唯一の利点は HP の回復が速くなることだが、使っているのは妖術師なので、これが解決してくれる問題はまず起きない。それに、満腹以上だとコウモリ化も使えない。</li>
+<li><b>普通(つまり、特別なメッセージが出ない状態):</b> 戦闘のあとで回復したいなら、この段階を目指そう。回復速度が普通になる(再生の呪文を使えばもっと速くなる)。ただし探索を再開したら、呪文を 2〜3 回唱えて(まだ満腹度を消費する呪文なら、だが)渇いている状態まで下げよう。</li>
+<li><b>渇いている、とても渇いている:</b> ゲームの大半はこの状態で過ごすことになる。回復は遅い(たいした問題ではない)が、毒耐性や変異への耐性をはじめとする耐性がどっさり手に入り、隠密にもボーナスがつく。ゲームの始めには最初の血液の薬を飲まず、死体からも血を吸わずに、少しでも早く渇いている状態になって、序盤のマムシに毒を食らわないようにしよう。</li>
+<li><b>ほとんど血液がない:</b> そこそこ安全だと感じているなら、この段階もとてもいい。回復は相変わらず遅いし、戦闘のあとで普通まで戻すにはずっと多くの血が要る。その一方で、耐性と隠密のボーナスはさらに上がり、この段階では呪文による空腹もなくなる！</li>
+<li><b>血液がない:</b> HP がまったく回復しなくなるが、拷問への免疫(！)と、隠密への<i>大きな</i>ボーナスが得られる。キクバークッグァを信仰していれば、信仰心が十分に高いときは拷問から守ってもらえるので、この状態の利点は隠密のボーナスくらいだ。終盤は氷の嵐、飛び道具反発/飛来物の阻止、耐性のおかげで、モンスターが<i>いっさい</i>ダメージを与えてくる前に倒せるので、この状態を保つのはずっと楽になる。</li></ul>
+<h2><span class="mw-headline" id="What_Can_Kill_You">死因になるもの</span></h2>
+<ul><li>コウモリ化を使い忘れること。角を曲がったら、獣の棲み処の最初の階でバーサークしたルパートと鉢合わせしたって？飛んで逃げろ！</li>
+<li>血の昇華やコウモリ化のための MP を少なくとも 2 残しておかないこと。MP をきちんと管理しないと死ぬ。ただそれだけのことだ。</li></ul>
+<p><i>続きは近日公開。</i>
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

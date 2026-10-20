@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【保管】CapnCrunch のミイラの魔術師ガイド &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="【保管】CapnCrunch のミイラの魔術師ガイド(ARCHIVED CapnCrunch&#x27;s Mummy Wizard guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>【保管】CapnCrunch のミイラの魔術師ガイド <span class="en">ARCHIVED CapnCrunch&#x27;s Mummy Wizard guide</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/ARCHIVED_CapnCrunch's_Mummy_Wizard_guide">ARCHIVED CapnCrunch&#x27;s Mummy Wizard guide</a>」(0.10 向け、2016-01-15 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=ARCHIVED_CapnCrunch's_Mummy_Wizard_guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.10 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.10.html" title="0.10">0.10</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><br />
+</p>
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p><br />
+<b>(著作権のある引用のため本文は省略)</b>
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#WARNING:_Build_Not_Viable_Under_Current_Version"><span class="tocnumber">1</span> <span class="toctext">警告: 今の版ではこの育成は成り立たない</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Overview"><span class="tocnumber">2</span> <span class="toctext">概要</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#God_Choice"><span class="tocnumber">3</span> <span class="toctext">神の選択</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Kikubaaqudgha"><span class="tocnumber">3.1</span> <span class="toctext">キクバークッグァ</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Endgame_Gods"><span class="tocnumber">3.2</span> <span class="toctext">終盤の神</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Stats_and_Skills"><span class="tocnumber">4</span> <span class="toctext">能力値とスキル</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Skills"><span class="tocnumber">4.1</span> <span class="toctext">スキル</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Strategy"><span class="tocnumber">5</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Early_Game:_Stabber."><span class="tocnumber">5.1</span> <span class="toctext">序盤: 急所突きの使い手</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Midgame:_Necromancer."><span class="tocnumber">5.2</span> <span class="toctext">中盤: 死人使い</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Late-Midgame:_Summoner_of_Sif.2FNemelex"><span class="tocnumber">5.3</span> <span class="toctext">中盤の後半: シフ/ネメレクスの召喚術師</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#End-Game:_Arch-mage_of_Everything"><span class="tocnumber">5.4</span> <span class="toctext">終盤: 何でもこなす大魔導師</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Spells"><span class="tocnumber">6</span> <span class="toctext">呪文</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Gear"><span class="tocnumber">7</span> <span class="toctext">装備</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="WARNING:_Build_Not_Viable_Under_Current_Version">警告: 今の版ではこの育成は成り立たない</span></h2>
+<p>このガイドは、のちの版で削除されたキクの性質をいくつも当てにしている。おもに、決まった順番でとても早くもらえる魔法書と、忌まわしきものを盾にしてキクの憤怒をやり過ごせることだ。これがあるからこそ、最初にキクのもとへ寄り道してから別の神に乗り換える価値があった。今のキクでは寄り道する意味はないので、ミイラの魔術師はシフ・ムーナで始めるべきだ。新しいガイドを参照のこと。
+</p>
+<h2><span class="mw-headline" id="Overview">概要</span></h2>
+<p>このキャラクターの目標は、<a href="Haunt.html" title="Haunt">招霊</a>を覚えてしっかり使いこなせる呪文使いを作ることだ。呪文による空腹も病気もなく、MP の制約も(実質的に)ないミイラは、この呪文を覚えた時点でゲームに勝てるだけの強さになる。食事の時間制限もないので、ミイラはそのあとじっくり時間をかけて、この呪文を支えるスキルを幅広くそろえられる。「あとは自分がしくじらない限り勝てる」ところまでなかなかたどり着けないプレイヤーには、この育成がものすごく役に立つはずだ。ただし欠点もある。
+</p>
+<ul><li>魔術師は、とくにミイラの魔術師は、序盤がひどく弱い。この育成でいちばん苦労するのは、序盤から中盤を生き延びることだろう。</li>
+<li>このガイドでは、ある戦い方とスキル構成から別のものへ、すばやく何度も切り替えていく。戦略をうまく切り替えるには、気を抜かずに遊ぶ必要がある。</li>
+<li>終盤では、ミイラは死者の躯を使うキャラクターより弱い。</li></ul>
+<h2><span class="mw-headline" id="God_Choice">神の選択</span></h2>
+<p>この育成の全体の目標は、まず招霊を身につけ、それからそれを支える仕組みを整えることだ。最初の目標はキクバークッグァで果たし、別の神に乗り換えることで二つ目の目標を果たす。
+</p>
+<h3><span class="mw-headline" id="Kikubaaqudgha">キクバークッグァ</span></h3>
+<p>どうせ<a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a>に仕えることになり、彼女はゲーム中のすべての呪文をくれるのなら、なぜ待つのか？ 理由は三つある。まず、<a href="Kikubaaqudgha.html" title="Kikubaaqudgha">キク</a>は主要な死霊術の呪文を覚えやすい順番でかならずすべてくれる。シフのほうは、いらない呪文やまだ使えない呪文をくれることがある。次に、キクは★が増えていく途中で賜物をくれるので、魔術師の初期の魔法書の融通の利きやすさを失わずに、序盤から死霊術を使える。比べてシフは★5以上にならないと賜物をくれない。最後に、ミイラならキクを捨てるのがものすごく簡単だ。
+</p><p>ネクロノミコンを手に入れたら、キクを棄教する。<a href="http://crawl.chaosforge.org/Ring_of_sustain_abilities" data-untr="1" class="mw-redirect" title="Ring of sustain abilities">能力値維持の指輪</a>を一つか二つと<a href="Amulet_of_faith.html" title="Amulet of faith">信仰の護符</a>があれば、この流れが速くなり憤怒からも身を守れるが、必須ではない。諸宗派の寺院へ行き、キクの死体の配達と捻れた蘇生で寺院を忌まわしきものだらけにしておく。配達の運にもよるが、たぶん 40〜60 体の忌まわしきものがそろう。キクが送りこむモンスターを防ぐにはじゅうぶんすぎる数だ。憤怒が収まったら、シフかネメレクスを選ぶ。
+</p>
+<h3><span class="mw-headline" id="Endgame_Gods">終盤の神</span></h3>
+<p><b>このキャラクターの終盤の神の候補はおもに二柱、<a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a>か<a href="Nemelex_Xobeh.html" title="Nemelex Xobeh">ネメレクス・ソベー</a>だ。</b>
+</p><p><a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a>: さっき書いたとおり、ミイラにとって彼女の魔力回復の能力はとんでもなく強く、実質的に何の代償もなく MP が無限になる。ここで意味のある祈祷のスキルレベルは 4 の倍数だけだ、ということを覚えておこう。祈祷はレベル 4 で育成を止めてもいいが、終盤にそれ以上まで上げれば、唱えるのと同じ速さで MP を回復できる。召喚術師としては、魔力回復を使って招霊や影の怪物などを休みなく連発でき、画面いっぱいを手下で埋めつくせる。これはとても大きな恩恵だ。魔法書の賜物もありがたい。(上に書いたように)多くの呪文を使えることがこの育成ではかなり得になるからだ。ほかの恩恵はときどき役に立つ程度だ。最後に、影の怪物はゾットの領域でとても強く、ゾットの領域:5 を突破するのに必要な攻め手を足してくれる。
+</p><p>寺院にこもってやり過ごすミイラにとって、シフの憤怒はかなりおだやかだ。そのうちゲーム中のすべての呪文が載った魔法書をもらえるので、シフからネメレクスに乗り換えることもできなくはない。とはいえ魔力回復を十分なレベルまで鍛えられるなら、それは比べるもののない能力だ。ただし例外が一つある。<a href="Staff_of_Wucad_Mu.html" title="Staff of Wucad Mu">ウカド・ムーの杖</a>を見つけたら、あとでネメレクスに乗り換えることを真剣に考えよう。魔力を引き出す手段としてはずば抜けて強力だし、ネメレクスを信仰するならどのみち<a href="Evocations.html" title="Evocations">発動</a>を鍛えることになる。明晰を得る手段は忘れずに用意しておくこと。
+</p><p><a href="Nemelex_Xobeh.html" class="mw-redirect" title="Nemelex">ネメレクス</a>: ここから先を読む前に、ネメレクスのガイドを読んでおくのがおすすめだ。
+</p><p>招霊を安心して使えるスキルレベルまでなかなか上げられないなら、ネメレクスは魔法スキルに回す経験値を手早く稼ぐ手段になる。不思議のデッキを繰り返し引けば、とてつもない量の経験値が入る。本格的に稼ぐなら、改宗する前に信仰の護符を手に入れておきたい。ネメレクスは余ったアイテムで簡単に信仰心を稼げるので、中盤から終盤に乗り換えるのに向いている(最初の神にキクを使うこの育成とも相性がいい)。ネメレクスの恩恵のうち、ここで欲しいのはおもに<a href="Deck_of_wonders.html" title="Deck of wonders">不思議のデッキ</a>によるすばらしい経験値の上乗せだ。ほかのアイテムに手をつける前に、薬と保存食をできるだけ捧げて、デッキの比重を先に寄せておくこと。不思議のデッキを使いたいときにいつでもトリプル・ドローができるだけの信仰心を保っておこう。経験のカードが二枚出て片方を捨てるはめになることもたまにあるが、螺旋や暴走やシャッフルを引くよりはましだ。
+</p><p>脱出のデッキや召喚のデッキを引くのは、信仰心を稼ぐのにいい方法だ。ネメレクスは去るのがあまり楽しくない神だ。長いあいだ恨みを持ち続けるうえに、こちらにほとんど何でもしてくる(ほかの神をけしかけることさえできる)ので、一度入信したら抜けられないかもしれない。
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Stats_and_Skills">能力値とスキル</span></h2>
+<p>腕力と器用さは最低でも 8 を保つこと。地獄のさまざまな効果で、能力値は一度に最大 7 点下がることがあるからだ。残りは知力に振って、呪文の威力と成功率を上げる。
+</p>
+<h3><span class="mw-headline" id="Skills">スキル</span></h3>
+<p>この育成では、ゲームのいろいろな時期にさまざまなスキルを伸ばしていく。ある能力を使うためのスキルが育ったら、古いスキルは訓練を止め、次の能力のための訓練に集中する。
+</p>
+<ul><li>戦闘、躱し身、呪文詠唱は、ゲームを通して鍛える。</li>
+<li>得意な武器のスキルを、死霊術の呪文が使えるようになるまで鍛える。刀剣を使うなら、急所突きも何レベルか上げておく。</li>
+<li>呪術、炎の魔術、地の魔術、氷の魔術は、ゲームのかなり終わりのほうまで放っておく。盾と甲冑も放っておく。ただし良い<a href="Buckler.html" title="Buckler">バックラー</a>と<a href="Troll_leather_armour.html" title="Troll leather armour">トロル革の鎧</a>を見つけたら、呪文がそれらの影響を受けなくなるまで鍛える。</li>
+<li>妖術、風の魔術、毒の魔術(毒は 2 より上げない)を、悪臭の雲が「Excellent」(失敗率の表示)で唱えられるまで集中して鍛える。そうなったら三つとも止めて、キクを信仰するまで呪文詠唱に集中する。</li>
+<li>キクが魔法書をくれたら死霊術に集中する。ネクロノミコンを手に入れたら召喚術にも集中する。招霊が Excellent になったら、死霊術と召喚術の訓練は止める。</li>
+<li>神を乗り換えたら、祈祷か発動を鍛える。</li>
+<li>招霊のあとは、呪文詠唱を上限まで集中して鍛える。</li>
+<li>魔法の各スキルを、対応する呪文が Excellent で唱えられるまで順に集中して鍛える。飛来物の阻止や加速のような、大事な補助呪文を優先すること。</li>
+<li>すべての呪文が Excellent になったら、あとはゲームの最後まで戦闘、躱し身、祈祷か発動、召喚術に集中する。</li></ul>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<h3><span class="mw-headline" id="Early_Game:_Stabber.">序盤: 急所突きの使い手</span></h3>
+<p>この育成の出だしはきつい。使える武器が見つかるか、レベル 3 になる前に、ホブゴブリンやコボルドやジャッカルの群れに袋だたきにされる恐れがかなりある。探索済みの階でぐずぐず稼ぎすぎないこと。そうしているとすぐに OOD のモンスターにやられてしまう。強い幽霊やユニークが出た階は飛ばす覚悟をしておこう。
+</p><p>最初に見つけた武器と投擲物を拾って使う。理想の短剣を待ったりせず、魔法の矢に頼れるとも思わないこと。素手のスキルも呪文の腕もどちらもひどいものだ。見つけたアイテムを片っぱしから使えば、生き残れる見込みがぐっと上がる。良い装備を選ぶのはあとで考えればいい。
+</p><p>使えるようになったら、敵を倒すおもな手段は、<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>が効いている敵を近接攻撃で倒すことになる。耐性のある敵は、<a href="Magic_Dart.html" title="Magic Dart">魔法の矢</a>で引き撃ちするか、<a href="Call_Imp.html" title="Call Imp">インプの召喚</a>で数で押す。
+</p><p>火柱の幻出と減速は無視する。炎の魔術と呪術はゲームを通してほとんど役に立たないからだ。ほかの呪文は覚え、残りの記憶力は死霊術のためにとっておく。
+</p>
+<h3><span class="mw-headline" id="Midgame:_Necromancer.">中盤: 死人使い</span></h3>
+<p>上の急所突きの使い手とほとんど同じだが、下に挙げるキクの呪文をすべて足していく。苦悶を覚えれば、手ごわい単体の敵に対処できる。その次に優先するのは捻れた蘇生と招来だ(必要ならキクの死体の配達も使う)。忌まわしきものの部隊をいつも連れておくこと。逆に、死霊の蘇生はその安っぽい代用品にすぎない。死霊の蘇生がずっと役に立つのは終盤だ。そのころにはゾンビにできる強いモンスターが増え、招霊で連発した飢えた幽霊が死体をあらかた食べてしまい、忌まわしきもの用に死体を余分にくれるキクももういないからだ。
+</p><p>呪文: キクの魔法書からは、まず<a href="Pain.html" title="Pain">苦痛</a>を覚える。<b>苦痛を覚えたらすぐに、'=' コマンドで魔法の矢と苦痛の呪文の文字を入れ替えること！</b> 射程が 2 マス短くなることは覚えておこう。それでも遠くの敵や耐性のある敵には魔法の矢を使える。
+</p>
+<h3><span class="mw-headline" id="Late-Midgame:_Summoner_of_Sif.2FNemelex">中盤の後半: シフ/ネメレクスの召喚術師</span></h3>
+<p>どこかの時点で、招霊を安定して唱えられるようになる。思う存分悪用しよう。招霊のあとに招来を使えば手下のいい壁ができるが、念のため忌まわしきものも二、三体は残しておくこと。脱出と防御の呪文(瞬間移動、俊足、胡蝶の召喚)はできるだけ早く覚えるようにする。影の怪物は、アビスとアンデッドが中心の分岐二、三か所を除けば、どこでもかなりよく働く。手下が倒した敵から得られる経験値は少ないので、危なくない相手は自分で直接倒したほうが効率がいいことも覚えておこう。
+</p>
+<ul><li>宝物庫: 宝物庫:8 ではアリステイアの酩酊を唱えられないことに注意。よい戦略は、忌まわしきものを満員まで連れていき、通路の一つで瞬間移動の巻物を何枚か使い、悪臭の雲で宝物庫の番人の足を止め、そのあと招霊をひたすら送りこみ続けることだ。精密テレポートと魔法の地図の手段があれば、それでもうまくいく。</li></ul>
+<h3><span class="mw-headline" id="End-Game:_Arch-mage_of_Everything">終盤: 何でもこなす大魔導師</span></h3>
+<p>補助の呪文を育て、強化の呪文は切らさず、MP を高く保ち、慎重に遊び、新しい脅威やよく知らない脅威にはどれも、ばかばかしいほどの数の招霊をけしかけること。とくにきつい状況(下に挙げる)では、ためらわず加速を唱えるか精密テレポートに頼る。
+</p>
+<ul><li>アビス: アビスで稼いで経験値を得て、招霊のせいで入ってくる経験値が減っているぶんを埋め合わせる。</li>
+<li>地獄: 影の魔神(アンデッドの解呪)と硫黄の魔神(地獄の業火)にはとことん気をつけること。召喚した手下の壁がないと、この1級悪魔たちはとりわけ危険だ。いちばん危ない分岐はゲヘナだ。アスモデウスの炎の嵐が、招霊をあっという間に切り刻んでしまう。加速と、さっと逃げる手段なしに彼と戦おうとしないこと。何度も退いて立て直す覚悟もしておこう。</li>
+<li>パンデモニウム: パンデモニウムの君主たちを片づけたら、アビスよりも速く経験値を稼げ、多くのアイテムが見つかるパンデモニウムで稼ぐこともできる。ただし、これが必要なのはジグラットに挑むつもりのときだけだ。
+<ul><li>セレボブ: 炎の嵐で招霊が切り刻まれるので、何度も退いて回復することになる。そのあいだ、バルログに逃げ道をふさがれないよう気をつけよう。</li>
+<li>ムノレグ: 集団への解放の宣誓を使うので、じつはパンデモニウムの君主のなかでも危ない部類だ。不用意に近づけばセレボブ並みに危険になりうる。まずは彼自身が呼び出した手下を解放の宣誓で消すことに集中し、自分の手勢を保つのはその次にする。セレボブと同じく消耗戦になるので、何度も退く覚悟をしておこう。</li>
+<li>ロム・ロボン: 氷の嵐はセレボブの炎の嵐よりわずかにましな程度で、さらに瞬間移動で動き回るので、召喚した手下の壁を保てない。簡単に逃げられるよう、遠い間合いから戦うこと。</li>
+<li>グロオルクス・ヴロック: 群を抜いて楽なパンデモニウムの君主だ。手下たちが彼も処刑の悪魔たちもたやすく押しつぶしてくれる。</li></ul></li></ul>
+<h2><span class="mw-headline" id="Spells">呪文</span></h2>
+<ul><li>初期の魔法書からは、<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>、<a href="Blink.html" title="Blink">瞬間移動</a>、<a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>、<a href="Call_Imp.html" title="Call Imp">インプの召喚</a>を覚える。</li>
+<li>キクの魔法書からは、次の順に覚える。<a href="Pain.html" title="Pain">苦痛</a>、<a href="Vampiric_Draining.html" title="Vampiric Draining">ヴァンパイアの吸血</a>、<a href="Dispel_Undead.html" title="Dispel Undead">アンデッドの解呪</a>、<a href="Agony.html" title="Agony">苦悶</a>、<a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>、<a href="Twisted_Resurrection.html" class="mw-redirect" title="Twisted Resurrection (player spell)">捻れた蘇生</a>、<a href="Recall.html" title="Recall">招来</a>、<a href="Haunt.html" title="Haunt">招霊</a>。(魔力の杖などがあれば血の昇華は飛ばしてよく、シフ・ムーナに仕えることになったら忘れるつもりでいればいい。)記憶力が足りなければ、招霊を<i>安定して</i>使えるようになった時点で捻れた蘇生を忘れてもいい。その前に<a href="Recall.html" title="Recall">招来</a>か<a href="Shadow_Creatures.html" title="Shadow Creatures">影の怪物</a>、またはその両方を覚えておきたい。</li></ul>
+<p>ほかの呪文: いずれシフ・ムーナがゲーム中のすべての呪文をくれる。終盤に敵を倒すおもな道具は召喚になるので、余った記憶力は攻撃呪文を増やすより、便利な呪文をそろえきるのに使うほうがいい。
+</p>
+<ul><li>召喚: <a href="Shadow_Creatures.html" title="Shadow Creatures">影の怪物</a>は中くらいの難しさのすぐれた召喚呪文で、アビス、地獄、パンデモニウム以外ならどこでも先までよく通用する。<a href="Shadow_Creatures.html" title="Shadow Creatures">影の怪物</a>を覚えたら<a href="Call_Imp.html" title="Call Imp">インプの召喚</a>は忘れていい。できれば代わりに<a href="Summon_Butterflies.html" title="Summon Butterflies">胡蝶の召喚</a>を覚えると、守りのための連発がさらにはかどる。</li>
+<li>集団の制圧: 呪文使いには<a href="Alistair's_Intoxication.html" title="Alistair&#39;s Intoxication">アリステイアの酩酊</a>がよく勧められるが、ミイラには使えない。なのでゲームを通して悪臭の雲でやりくりするしかない(ゾットの領域ではずっと役に立たなくなる)。<a href="Mass_Abjuration.html" title="Mass Abjuration">集団への解放の宣誓</a>があれば召喚合戦に勝てるうえ、敵の召喚術師のまわりに場所を空けて招霊を送りこめる。そのうち、まわりに手下を呼び出す隙間を残さないことで、相手を封じこめられるようになる。</li>
+<li>防御: いずれ<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>が飛び道具反発に取って代わる。どちらを使っているにせよ、常にかけておくこと。<a href="Phase_Shift.html" title="Phase Shift">位相変移</a>も役に立つ。</li>
+<li>脱出: <a href="Swiftness.html" title="Swiftness">俊足</a>、<a href="Flight_(spell).html" title="Flight (spell)">飛行</a>、<a href="Haste.html" title="Haste">加速</a>、<a href="Control_Teleport.html" title="Control Teleport">精密テレポート</a>はとても役に立つ。</li>
+<li>直接攻撃: <a href="Freezing_Cloud.html" title="Freezing Cloud">凍気の雲</a>と<a href="Poisonous_Cloud.html" title="Poisonous Cloud">猛毒の雲</a>は招霊と相性がいい。終盤では<a href="Freezing_Cloud.html" title="Freezing Cloud">凍気の雲</a>のほうが役に立つ。<a href="Magic_Dart.html" title="Magic Dart">魔法の矢</a>は<a href="Airstrike.html" title="Airstrike">旋風の一撃</a>に置き換えるべきだ。</li></ul>
+<p><b><a href="Haunt.html" title="Haunt">招霊</a>:</b> この育成の一番の目標なので、少し書いておく。基本の戦術はこうだ。招霊を連発して、敵がこちらに近づく道や飛び道具の射線をすべてふさぐ。敵が貫通する飛び道具や打擲型の呪文を持っているなら、画面の外に出るまで下がる。それが済んだら魔力回復を連発し、新しい射線が開いたときにまた同じことができるよう備える。敵を倒したかどうかは経験値を見て判断する。必要なら加速を使って、招霊と魔力回復の繰り返しの効き目を上げてもいい。ほんのわずかな時間で、ばかげた数の幽霊がそろう。正しく使えば、この手はゲーム中のどんな敵にもすばらしくよく効く。
+</p>
+<h2><span class="mw-headline" id="Gear">装備</span></h2>
+<ul><li>強い武器を見つけたら、武器の種類を乗り換えるのを恐れないこと。どのみちどれも 3 か 4 より上には鍛えていないはずだ。</li>
+<li><a href="Pain_(brand).html" title="Pain (brand)">苦痛</a>の武器は、きみの手にかかれば凶悪だ。ただ、本当は殴り合い屋ではないことは忘れずに！</li>
+<li>火炎耐性は役に立ち、オーブを取りに行くときには欠かせない。rF++ のアーティファクトは貴重だ！</li>
+<li>ミイラは<a href="Regeneration_rate.html" class="mw-redirect" title="Regeneration">再生</a>の<i>呪文</i>を唱えられない……でも<i>アイテム</i>なら問題なく効く。初めて<a href="Troll.html" title="Troll">トロル</a>の死体を手に入れたら、解体して<a href="Troll_hide.html" title="Troll hide">トロルの皮</a>を取り、それを<a href="Scroll_of_enchant_weapon.html" title="Scroll of enchant weapon">強化</a>して<a href="Troll_leather_armour.html" title="Troll leather armour">トロル革の鎧</a>にしよう。ほかの鎧を着る理由があるとすれば、rF++ が付いている場合だけだ。</li>
+<li>魔力供給の杖は<i>とても</i>ありがたい。シフにたどり着く前から、ただで魔力が手に入る！ この杖で鍛えられるのは<a href="Invocations.html" title="Invocations">祈祷</a>ではなく<a href="Evocations.html" title="Evocations">発動</a>だということに注意。(ネメレクスに向かうつもりなら、むしろ好都合だ。)<a href="Evocations.html" title="Evocations">発動</a>が上限近くまで上がったら、<a href="Crystal_ball_of_energy.html" title="Crystal ball of energy">活力の水晶玉</a>に持ち替える。</li>
+<li>ミイラのキャラクターならどれもそうだが、<a href="Wand_of_heal_wounds.html" title="Wand of heal wounds">怪我の治療のワンド</a>は欠かせない。終盤までに一本見つけられれば、(加速や精密テレポートによる)発光はどうでもよくなる。そのころには充填の巻物が倉庫にたっぷりたまっているはずだからだ。これで、ばかげたほど長いあいだ加速したままでいられる。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

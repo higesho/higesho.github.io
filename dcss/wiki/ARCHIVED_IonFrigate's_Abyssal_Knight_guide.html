@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARCHIVED IonFrigate&#x27;s Abyssal Knight guide &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ARCHIVED IonFrigate&#x27;s Abyssal Knight guide(ARCHIVED IonFrigate&#x27;s Abyssal Knight guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ARCHIVED IonFrigate&#x27;s Abyssal Knight guide</h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/ARCHIVED_IonFrigate's_Abyssal_Knight_guide">ARCHIVED IonFrigate&#x27;s Abyssal Knight guide</a>」(0.10 向け、2024-08-30 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=ARCHIVED_IonFrigate's_Abyssal_Knight_guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.10 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto">この記事は<a href="Character_guides.html" title="Character guides"> <b>キャラクター別ガイド</b></a>だ。他のプレイヤーによる助言が含まれており、<i>主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある</i>。自己責任で読み、自分のプレイスタイルに合わせて適宜取捨選択してほしい！</div>
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.10.html" title="0.10">0.10</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><br />
+<b>注</b>: このガイドはもともと reddit への投稿として書かれたもので、元の投稿は<a rel="nofollow" class="external text" href="http://www.reddit.com/r/roguelikes/comments/tfzde/can_someone_help_me_with_worshipping/c4mbpbe">ここ</a>にある。wiki の形に整えてリンクしやすくし、関係するカテゴリにも載るように、ここへ転載した。<a href="0.10.html" title="0.10">0.10</a> を念頭に、<a href="0.8.0.html" class="mw-redirect" title="0.8">0.8</a> と <a href="0.9.0.html" class="mw-redirect" title="0.9">0.9</a> での経験をもとに書いている。古くなった部分もあり、<a href="0.12.html" title="0.12">0.12</a> が安定版になればさらに古くなるだろう。それでも、本編の迷宮でルゴヌのキャラクターを扱うための一般的な助言の大半は、<a href="0.11.html" title="0.11">0.11</a> の時点でもおおむね通用する。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_Starting_Abyss"><span class="tocnumber">1</span> <span class="toctext">開始時のアビス</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#The_Early_Game:_Kill_and_Banish_Dudes"><span class="tocnumber">2</span> <span class="toctext">序盤: 倒して、追放しまくれ</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#On_Skill_Training"><span class="tocnumber">3</span> <span class="toctext">スキルの訓練について</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#On_Distortion_Weapons"><span class="tocnumber">4</span> <span class="toctext">歪曲の武器について</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#On_Going_to_the_Abyss"><span class="tocnumber">5</span> <span class="toctext">アビスへ行くことについて</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#What_to_do_if_you_get_banished"><span class="tocnumber">6</span> <span class="toctext">追放されたらどうするか</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Later_On:_Corruption"><span class="tocnumber">7</span> <span class="toctext">後半: 階層の崩壊</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="The_Starting_Abyss">開始時のアビス</span></h2>
+<p>これは本当に鬱陶しいお飾りだ。見た目はひどいし、普通のアビスとも違う。拾えるアイテムは迷宮:1 程度のガラクタなのに、モンスターは普通のアビスと同じ迷宮:20〜27 級の連中で、深淵のルーンが見つかる見込みもない。こんな状況なら、さっさと抜け出したいに決まっている。能力を使えばすぐに出られるが、少しうろつけばたいてい出口のゲートが見つかるので、信仰心を節約できる。ただし、アビスが移り変わってしまったら話は別だ。そのときは能力でさっさと出よう。
+</p>
+<h2><span class="mw-headline" id="The_Early_Game:_Kill_and_Banish_Dudes">序盤: 倒して、追放しまくれ</span></h2>
+<p>ごく序盤なら、+2 の武器で迷宮:1 のザコどもは十分片づく。必要なら空間の歪曲で身を守ってもいいが、連発はしないこと。自分もダメージを受ける。食べる必要のないものは片っ端から犠牲に捧げて、信仰心を *** まで上げよう。そこからルゴヌの力が本領を発揮しはじめる。モンスターをアビスへ追放できるようになるのだ。追放されたモンスターはその階から即座に、永遠に消える(アビスに行けばまた出会うかもしれないが)。この祈祷は失敗することがあり、モンスターに抵抗されることもある点に注意。それに、発動に成功するたびに、たとえモンスターが抵抗しても信仰心を消費する。厄介な相手を何体か追放すると信仰心がみるみる減っていくが、たいていはそれだけの価値がある。
+</p><p>とはいえ、追放にはいくつか欠点があるので気をつけよう。ひとつめは、上で書いたとおり信仰心を消費すること。ふたつめは、経験値が減ること。0.10 では、すでに与えたダメージがそのモンスターの最大 HP の何割にあたるかに比例して経験値が入る。たとえば HP 30 のオーガに 10 ダメージを与えてから追放すると、普段の 33% の経験値しかもらえない。trunk ではこれが 50% + ダメージ/最大 HP に引き上げられたので、同じ場合でも 67% もらえる。最後の欠点は、そのモンスターが持っていたアイテムがひとまず手に入らなくなることだ。たいていのモンスターはガラクタしか持っていないが、一部のモンスター、特にユニークは良い物を持っている。
+</p>
+<h2><span class="mw-headline" id="On_Skill_Training">スキルの訓練について</span></h2>
+<p>これは何をしたいかで大きく変わる。深淵の騎士(AK)を素直な戦士として遊ぶこともできる。その場合に鍛えるのはお決まりのスキル、つまり武器のスキル、戦闘、躱し身か甲冑、盾などだ。一方、闇エルフ(DE)やハイエルフ(HE)のような呪文向きの種族なら、いずれは呪文を使いたくなるだろう。いつ、どう始めるかはどんな魔法書が見つかるかに大きく左右されるし、はっきり言って初心者向けの戦略ではない。ただし最終的にはずっと強い(ルゴヌの能力は妖術師型の構成と実に相性がいい)。
+</p><p>ただ、ルゴヌのキャラクターなら誰にでも当てはまることがひとつある。全員、祈祷を鍛える必要があるのだ。アビスへの追放を確実に、しかも十分な威力で使いたいし、アビスへの退避の能力も本当に頼れる命綱にしておきたい。追放と退避が納得のいく水準になるまで鍛えよう。この理由から、丘オーク(HO)は AK に向いている。祈祷の適性が高く(+2)、しかもほかに面倒なクセがついてこない(たとえば闇ドワーフ(DD)やアンデッドとは違う)。
+</p>
+<h2><span class="mw-headline" id="On_Distortion_Weapons">歪曲の武器について</span></h2>
+<p>歪曲の武器は、電撃の武器とゲーム最強のブランドの座を争っている。たいていのブランドは武器の基本ダメージに応じて追加ダメージが決まるが、歪曲は平均すると一定量の追加ダメージを与える。だから速い武器(基本の攻撃間隔が 13 [130%] 以下のもの)につけるのがいちばんいい。断然いいのはクイックブレードで、最小の攻撃間隔は 3 だ。残念ながらとても珍しく、手に入れるには獲得の巻物を何枚かつぎ込むことになるだろう。
+</p><p>ただし、歪曲の武器には大きな欠点がふたつある。ひとつめは、装備を外すとアビスへの追放、発光、混乱、HP へのダメージなどの危険があること。ルゴヌが守ってくれるのは追放だけで、ほかの効果は変わらず厄介だ。つまり実質的に、もっといい武器へ気軽に持ち替えられない。射撃武器や魔法の杖、ロッドは選択肢から外れることになる。さらに、歪曲の鈍器を持っていると死体の解体もできない。これはスケルトンの造成でおおむね回避できる。唱えるのは簡単だが、いつも見つかるとは限らない。
+</p><p>ふたつめの欠点は単純で、歪曲の武器はうっとうしいのだ。あと少しで倒せたモンスターを階の反対側までテレポートさせて回復させるし、セントールをこちらの周りで瞬間移動させて弓を撃つ機会を何回も余計に与えるし、やたらとモンスターをアビスへ追放してアイテムと経験値の一部を取り逃がさせる。我慢できなくはないが、武器としての魅力が下がるのは間違いない。
+</p><p>なお、またたきガエルには歪曲の追加ダメージが効かない。もっとも、追放(上を参照)やワンドで簡単に片づくので、大した問題ではない。
+</p><p>いつ手に入れるべきか? それは完全にあなた次第だ。何に使いたいかにもよる。終盤まで通用する武器が欲しいなら、クイックブレードか悪魔の武器が出るまで粘ろう。中盤を乗り切れればいい(明らかに見劣りはするが、終盤まで使えなくもない)というなら、サーベルやトライデントのような平凡な武器に歪曲をつけてしまえばいい(トライデントの場合は、死霊の蘇生を覚えて唱えられるようにしておくこと)。
+</p>
+<h2><span class="mw-headline" id="On_Going_to_the_Abyss">アビスへ行くことについて</span></h2>
+<p>意外に思うかもしれないが、歪曲の武器で自分をアビスへ追放するのは、たとえルゴヌを信仰していても、ほぼ例外なく悪手だ。たしかに好きなときに出られるが、歪曲の武器を外すとほかの効果も起こりうる。ランダムなテレポートと混乱か、もっと悪いと黄色から赤の発光だ。前者は危険だし、後者はひどく悪性変異しかねない。しかもルゴヌはそこでは何の助けにもならない。命を救うのに使えるか? 使えるが、まるで当てにならない。追放が起きるのは半分以下の確率だ(1/5 だったか 1/3 だったか、すぐには思い出せない)。
+</p><p>命を救うのは能力の出番だ。迷宮:20 あたりでアビスへのポータルが見つかるより前に、AK であっても自分からアビスへ行く理由はこれしかない。軽々しく使う能力ではない。信仰心をごっそり持っていかれるうえに、最大 HP もかなり減る。だが、これはいわば無条件の脱出券だ。自分を追放するとき、何もついてこられないし、攻撃もされない。祈祷のスキルを鍛えて、この能力を確実に使えるようにしよう。
+</p>
+<h2><span class="mw-headline" id="What_to_do_if_you_get_banished">追放されたらどうするか</span></h2>
+<p>ここはルゴヌのゲームがほかと少し違うところだ。追放されたキャラクターのたいていの対処法は、出口が見つかるまでうろつくことだ。ルゴヌのキャラクターは好きなときにアビスを離脱でき、深淵のルーンもずっと早く見つかる。だから、手に負えないとわかっている相手が見えるまでうろつき、見えたら能力で出ていくのが得だ。出口を使っても信仰心を少し節約できるだけなので、開始時のあのちんけなアビス以外では、普通はわざわざ探す価値はない。
+</p>
+<h2><span class="mw-headline" id="Later_On:_Corruption">後半: 階層の崩壊</span></h2>
+<p>控えめに言っても風変わりな能力だが、うまく使えばとてつもなく強力だ。とんでもない量の信仰心を食うが、その効果は、階のかなりの部分をアビスのような地形に置き換え、おまけに中立のアビスのモンスターまで呼び込むというもの。モンスターはしばらくすると消えるが地形は残るので、多くのヴォールトに本来の手順を飛ばして入り込める(崩壊は岩、石、金属の壁を突き抜けるが、いくつかの重要なヴォールトを守っている「異常に硬い」壁は突き抜けられない)。モンスターは中立なので何にでも襲いかかり、行く手に立っていればあなたも例外ではない。こちらに飛び道具は使ってこないようだが、こちらから攻撃すると敵対する。しかもゲームは確認してくれない。処刑の悪魔や太古のリッチのような危ない連中の近くでは気をつけよう。
+</p><p>で、何の役に立つのか? 手ごわい分岐の最下層だ。オークの坑道、蛇穴、エルフの大広間などがそうだ。そこにいるモンスターを全部とは言わないまでもかなり片づけてくれて、入っていく道を空けてくれる。1 回のゲームで何度も使うものではないのは言うまでもないが、楽しくて役に立つのは間違いない。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

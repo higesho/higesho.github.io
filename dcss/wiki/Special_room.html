@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>特別な部屋 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="特別な部屋(Special room)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>特別な部屋 <span class="en">Special room</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Special_room">Special room</a>」(対象の版の記載なし、2021-08-08 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Special_room&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン不明</b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>特別な部屋</b>は<a href="Vault.html" title="Vault">ヴォールト</a>の中でも独特な種類だ。壁の厚さが 1 マスの長方形の部屋で、大きさは決まっておらず(横 6〜9、縦 5〜9)、中には最大 <a href="27.html" title="27">27</a> 体のモンスターが詰め込まれている。出現できる分岐と階の構造ごとに、ごく小さな一定の確率で現れる。普通のヴォールトと違って、(たいていの組では)1 回のゲームで何度も現れることがあり、その出現率は分岐に用意されたミニヴォールトの数に左右されない。初期のローグライクにも、この手のヴォールトを持つものが多い。
+</p><p>特別な部屋が現れるのは、<a href="The_Dungeon.html" title="The Dungeon">迷宮</a>、<a href="The_Lair.html" title="The Lair">獣の棲み処</a>、<a href="Spider's_Nest.html" title="Spider&#39;s Nest">蜘蛛の穴ぐら</a>、<a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>、<a href="The_Crypt.html" title="The Crypt">地下墓地</a>、<a href="The_Depths.html" title="The Depths">深層</a>と、<a href="Orcish_Mines.html" title="Orcish Mines">オークの坑道</a>、<a href="The_Vaults.html" title="The Vaults">宝物庫</a>、<a href="The_Slime_Pits.html" title="The Slime Pits">スライムの穴ぐら</a>、<a href="Gehenna.html" title="Gehenna">ゲヘナ</a>、<a href="Cocytus.html" title="Cocytus">コキュートス</a>、<a href="Tartarus.html" title="Tartarus">タルタロス</a>、<a href="The_Iron_City_of_Dis.html" title="The Iron City of Dis">鉄の都ディース</a>の最下層以外の階だ。モンスターの組には深さに応じた大まかな段階がはっきり決められているので、たとえば獣の棲み処:8 でジェリーの穴に出くわすことは、そもそもかなり珍しい。たいていの特別な部屋には、報酬としてちょっとしたアイテムや、少し役に立つダンジョンの地形が用意されている。また、たいていの特別な部屋にはボスが出ることがある。ボスは、深さに応じた範囲の最上位のモンスターが必ず置かれるだけのこともあれば、テーマに沿った別の脅威が加わることもある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Kobolds"><span class="tocnumber">1</span> <span class="toctext">コボルド</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Orcs"><span class="tocnumber">2</span> <span class="toctext">オーク</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Bee_hive"><span class="tocnumber">3</span> <span class="toctext">蜂の巣</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Morgue"><span class="tocnumber">4</span> <span class="toctext">死体置き場</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Jelly_pit"><span class="tocnumber">5</span> <span class="toctext">ジェリーの穴</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Mythical_zoo"><span class="tocnumber">6</span> <span class="toctext">神話の動物園</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#History"><span class="tocnumber">7</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="Kobolds">コボルド</span></h3>
+<p>1 回のゲームで二度は現れない 2 つの組の一つ。
+</p><p><b>深さ</b>: <a href="The_Dungeon.html" title="The Dungeon">迷宮:7-12</a>、<a href="Orcish_Mines.html" title="Orcish Mines">オークの坑道:1-3</a>
+</p><p><b>モンスター</b>: コボルドとコボルドの山賊。コードには今使われているよりも細かい段階分けがあるが、実際の変化は次のように単純だ。
+</p>
+<table class="wikitable" style="text-align: center">
+
+<tr>
+<td>確率
+</td>
+<td>迷宮:7-8
+</td>
+<td>迷宮:9-12、オークの坑道:1-3
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brown">K</span> <a href="http://crawl.chaosforge.org/File:Kobold.png" data-untr="1" class="image"><img alt="Kobold.png" src="img/Kobold.png" width="32" height="32" /></a> <b><a href="Kobold_(monster).html" title="Kobold (monster)">コボルド</a></b>
+</td>
+<td>50%
+</td>
+<td>40%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-yellow">K</span> <a href="http://crawl.chaosforge.org/File:Kobold_brigand.png" data-untr="1" class="image"><img alt="Kobold brigand.png" src="img/Kobold_brigand.png" width="32" height="32" /></a> <b><a href="Kobold_brigand.html" title="Kobold brigand">コボルドの山賊</a></b>
+</td>
+<td>50%
+</td>
+<td>60%
+</td></tr>
+</table>
+<p>ボスは迷宮:7-11 では必ずコボルドの山賊だが、迷宮:12 とオークの坑道:1-3 では、五分五分の確率で次のモンスターになる。
+</p>
+<ul><li> <span class="nhsym clr-magenta">K</span> <a href="http://crawl.chaosforge.org/File:Kobold_demonologist.png" data-untr="1" class="image"><img alt="Kobold demonologist.png" src="img/Kobold_demonologist.png" width="32" height="32" /></a> <b><a href="Kobold_demonologist.html" title="Kobold demonologist">コボルドの悪魔術師</a></b></li></ul>
+<h3><span class="mw-headline" id="Orcs">オーク</span></h3>
+<p><b>深さ</b>: <a href="The_Dungeon.html" title="The Dungeon">迷宮:9-15</a>、<a href="Orcish_Mines.html" title="Orcish Mines">オークの坑道:1-3</a>、<a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>、<a href="The_Vaults.html" title="The Vaults">宝物庫:1-4</a>
+</p><p><b>モンスター</b>: <a href="List_of_orcs.html" title="List of orcs">オーク</a>。オークの坑道と同じように、ときどきオーガやトロルも混じる。
+</p>
+<table class="wikitable" style="text-align: center">
+<tr>
+<td>深さ
+</td>
+<td>迷宮:9
+</td>
+<td>迷宮:10-14
+</td>
+<td>オークの坑道
+</td>
+<td>迷宮:15、宝物庫:1
+</td>
+<td>エルフの大広間、宝物庫:2-4
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">o</span> <a href="http://crawl.chaosforge.org/File:Orc.png" data-untr="1" class="image"><img alt="Orc.png" src="img/Orc.png" width="32" height="32" /></a> <b><a href="Orc.html" title="Orc">オーク</a></b>
+</td>
+<td>88%
+</td>
+<td>70%
+</td>
+<td>60%
+</td>
+<td>45%
+</td>
+<td>16.67%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-yellow">o</span> <a href="http://crawl.chaosforge.org/File:Orc_warrior.png" data-untr="1" class="image"><img alt="Orc warrior.png" src="img/Orc_warrior.png" width="32" height="32" /></a> <b><a href="Orc_warrior.html" title="Orc warrior">オークの戦士</a></b>
+</td>
+<td>10%
+</td>
+<td>20%
+</td>
+<td>25%
+</td>
+<td>25%
+</td>
+<td>33.33%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brown">O</span> <a href="http://crawl.chaosforge.org/File:Ogre.png" data-untr="1" class="image"><img alt="Ogre.png" src="img/Ogre.png" width="32" height="32" /></a> <b><a href="Ogre_(monster).html" title="Ogre (monster)">オーガ</a></b>
+</td>
+<td>2%
+</td>
+<td>6%
+</td>
+<td>0%
+</td>
+<td>5%
+</td>
+<td>3.33%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-green">o</span> <a href="http://crawl.chaosforge.org/File:Orc_priest.png" data-untr="1" class="image"><img alt="Orc priest.png" src="img/Orc_priest.png" width="32" height="32" /></a> <b><a href="Orc_priest.html" title="Orc priest">オークの司祭</a></b>
+</td>
+<td>0%
+</td>
+<td>4%
+</td>
+<td>10%
+</td>
+<td>10%
+</td>
+<td>13.33%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-cyan">o</span> <a href="http://crawl.chaosforge.org/File:Orc_knight.png" data-untr="1" class="image"><img alt="Orc knight.png" src="img/Orc_knight.png" width="32" height="32" /></a> <b><a href="Orc_knight.html" title="Orc knight">オークの騎士</a></b>
+</td>
+<td colspan="2">0%
+</td>
+<td>5%
+</td>
+<td>15%
+</td>
+<td>26.67%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightgreen">o</span> <a href="http://crawl.chaosforge.org/File:Orc_high_priest.png" data-untr="1" class="image"><img alt="Orc high priest.png" src="img/Orc_high_priest.png" width="32" height="32" /></a> <b><a href="Orc_high_priest.html" title="Orc high priest">オークの大司祭</a></b>
+</td>
+<td rowspan="2" colspan="4">0%
+</td>
+<td>3.33%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brown">T</span> <a href="http://crawl.chaosforge.org/File:Troll.png" data-untr="1" class="image"><img alt="Troll.png" src="img/Troll.png" width="32" height="32" /></a> <b><a href="Troll_(monster).html" title="Troll (monster)">トロル</a></b>
+</td>
+<td>3.33%
+</td></tr>
+<tr>
+<td>ボス
+</td>
+<td>迷宮:9
+</td>
+<td>迷宮:10-14
+</td>
+<td>オークの坑道
+</td>
+<td>迷宮:15、宝物庫:1
+</td>
+<td>エルフの大広間、宝物庫:2-4
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-yellow">o</span> <a href="http://crawl.chaosforge.org/File:Orc_warrior.png" data-untr="1" class="image"><img alt="Orc warrior.png" src="img/Orc_warrior.png" width="32" height="32" /></a> <b><a href="Orc_warrior.html" title="Orc warrior">オークの戦士</a></b>
+</td>
+<td>66.67%
+</td>
+<td>10%
+</td>
+<td colspan="3">0%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-green">o</span> <a href="http://crawl.chaosforge.org/File:Orc_priest.png" data-untr="1" class="image"><img alt="Orc priest.png" src="img/Orc_priest.png" width="32" height="32" /></a> <b><a href="Orc_priest.html" title="Orc priest">オークの司祭</a></b>
+</td>
+<td>33.33%
+</td>
+<td>70%
+</td>
+<td colspan="3">0%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-cyan">o</span> <a href="http://crawl.chaosforge.org/File:Orc_knight.png" data-untr="1" class="image"><img alt="Orc knight.png" src="img/Orc_knight.png" width="32" height="32" /></a> <b><a href="Orc_knight.html" title="Orc knight">オークの騎士</a></b>
+</td>
+<td>0%
+</td>
+<td>20%
+</td>
+<td>40%
+</td>
+<td>50%
+</td>
+<td>0%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightmagenta">o</span> <a href="http://crawl.chaosforge.org/File:Orc_sorcerer.png" data-untr="1" class="image"><img alt="Orc sorcerer.png" src="img/Orc_sorcerer.png" width="32" height="32" /></a> <b><a href="Orc_sorcerer.html" title="Orc sorcerer">オークの魔道士</a></b>
+</td>
+<td rowspan="3" colspan="2">0%
+</td>
+<td>4%
+</td>
+<td>0%
+</td>
+<td>0%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightgreen">o</span> <a href="http://crawl.chaosforge.org/File:Orc_high_priest.png" data-untr="1" class="image"><img alt="Orc high priest.png" src="img/Orc_high_priest.png" width="32" height="32" /></a> <b><a href="Orc_high_priest.html" title="Orc high priest">オークの大司祭</a></b>
+</td>
+<td>36%
+</td>
+<td>45%
+</td>
+<td>10%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightcyan">o</span> <a href="http://crawl.chaosforge.org/File:Orc_warlord.png" data-untr="1" class="image"><img alt="Orc warlord.png" src="img/Orc_warlord.png" width="32" height="32" /></a> <b><a href="Orc_warlord.html" title="Orc warlord">オークの族長</a></b>
+</td>
+<td>5%
+</td>
+<td>20%
+</td>
+<td>90%
+</td></tr>
+</table>
+<p><b>報酬</b>: ボス以外のモンスターがいるマスには、それぞれ 11.11% の確率で、深さに応じた少しの<a href="Gold.html" title="Gold">金貨</a>が置かれる。ボスの足元には必ず、階に応じて少し増減する普通の量の金貨が一山ある。さらに五分五分の確率で、ボスはベオウの祭壇の上に立っている。
+</p>
+<h3><span class="mw-headline" id="Bee_hive">蜂の巣</span></h3>
+<p>1 回のゲームで二度は現れない 2 つの組の一つ。蜘蛛の穴ぐらの特別な部屋は必ず蜂の巣で、壁はランダムに床に置き換わる。
+</p><p><b>深さ</b>: <a href="The_Dungeon.html" title="The Dungeon">迷宮:9-15</a>、<a href="The_Lair.html" title="The Lair">獣の棲み処</a>、<a href="Orcish_Mines.html" title="Orcish Mines">オークの坑道:1-3</a>、<a href="Spider's_Nest.html" title="Spider&#39;s Nest">蜘蛛の穴ぐら</a>
+</p><p><b>モンスター</b>: 特別な部屋の中で群を抜いて単純だ。2 つ目を 1 体置き、残りを 1 つ目で埋め尽くす。
+</p>
+<ul><li><span class="nhsym clr-brown">y</span> <a href="http://crawl.chaosforge.org/File:Killer_bee.png" data-untr="1" class="image"><img alt="Killer bee.png" src="img/Killer_bee.png" width="32" height="32" /></a> <b><a href="Killer_bee.html" title="Killer bee">殺人蜂</a></b></li>
+<li><span class="nhsym clr-brightmagenta">y</span> <a href="http://crawl.chaosforge.org/File:Queen_bee.png" data-untr="1" class="image"><img alt="Queen bee.png" src="img/Queen_bee.png" width="32" height="32" /></a> <b><a href="Queen_bee.html" title="Queen bee">女王蜂</a></b></li></ul>
+<p><b>報酬</b>: 蜂がいるマスには、それぞれ 2% の確率で<a href="http://crawl.chaosforge.org/Royal_jelly_(item)" data-untr="1" title="Royal jelly (item)">ロイヤルゼリー</a>、48% の確率で<a href="Honeycomb.html" title="Honeycomb">蜂の巣</a>が置かれ、50% の確率で何も置かれない。
+</p>
+<h3><span class="mw-headline" id="Morgue">死体置き場</span></h3>
+<p><b>深さ</b>: <a href="The_Depths.html" title="The Depths">深層</a>、<a href="The_Crypt.html" title="The Crypt">地下墓地</a>、<a href="Gehenna.html" title="Gehenna">ゲヘナ</a>、<a href="Cocytus.html" title="Cocytus">コキュートス</a>、タルタロス、<a href="The_Iron_City_of_Dis.html" title="The Iron City of Dis">鉄の都ディース</a>
+</p><p><b>モンスター</b>: アンデッドとその仲間が実に幅広く出る。<a href="Derived_undead.html" title="Derived undead">派生アンデッド</a>から<a href="Demon.html" class="mw-redirect" title="Demons">悪魔</a>までさまざまだ。地獄では、骸骨の戦士、吸血鬼の騎士、切り裂きの悪魔の武器の性質が決められている点に注意したい。ゲヘナでは<a href="Flaming.html" title="Flaming">火炎</a>、コキュートスでは<a href="Freezing.html" title="Freezing">冷気</a>、タルタロスでは<a href="Draining.html" title="Draining">衰弱</a>のブランドがつき、ディースではその武器につきうるどのブランドにもなる。この骸骨の戦士と吸血鬼の騎士が持つ武器は、<a href="Great_mace.html" title="Great mace">大型メイス</a>、<a href="Glaive.html" title="Glaive">グレイブ</a>、<a href="Battleaxe.html" title="Battleaxe">バトルアックス</a>のどれかに限られる。
+</p>
+<table class="wikitable" style="text-align: center">
+<tr>
+<td>モンスター
+</td>
+<td>深層での確率
+</td>
+<td>地下墓地・地獄での確率
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brown">z</span> <a href="http://crawl.chaosforge.org/File:Small_zombie.png" data-untr="1" class="image"><img alt="Small zombie.png" src="img/Small_zombie.png" width="32" height="32" /></a> <a href="Zombie.html" title="Zombie">ゾンビ</a>
+</td>
+<td>20%
+</td>
+<td>17.5%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-lightgray">z</span> <a href="http://crawl.chaosforge.org/File:Skeleton_small_humanoid.png" data-untr="1" class="image"><img alt="Skeleton small humanoid.png" src="img/Skeleton_small_humanoid.png" width="32" height="32" /></a> <a href="Skeleton_(monster).html" title="Skeleton (monster)">骸骨</a>
+</td>
+<td>7.14%
+</td>
+<td>6.25%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-green">W</span> <a href="http://crawl.chaosforge.org/File:Spectral_small_humanoid.png" data-untr="1" class="image"><img alt="Spectral small humanoid.png" src="img/Spectral_small_humanoid.png" width="32" height="32" /></a> <a href="Spectral_thing.html" title="Spectral thing">幽体</a>
+</td>
+<td>1.43%
+</td>
+<td>1.25%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightmagenta">W</span> <a href="http://crawl.chaosforge.org/File:Shadow_wraith.png" data-untr="1" class="image"><img alt="Shadow wraith.png" src="img/Shadow_wraith.png" width="32" height="32" /></a> <b><a href="Shadow_wraith.html" title="Shadow wraith">シャドウレイス</a></b>
+</td>
+<td>2.86%
+</td>
+<td>2.5%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">3</span> <a href="http://crawl.chaosforge.org/File:Soul_eater.png" data-untr="1" class="image"><img alt="Soul eater.png" src="img/Soul_eater.png" width="32" height="32" /></a> <b><a href="Soul_eater.html" title="Soul eater">魂を貪るもの</a></b>
+</td>
+<td>2.86%
+</td>
+<td>2.5%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">V</span> <a href="http://crawl.chaosforge.org/File:Vampire_(monster).png" data-untr="1" class="image"><img alt="Vampire (monster).png" src="img/Vampire_(monster).png" width="32" height="32" /></a> <b><a href="Vampire_(monster).html" title="Vampire (monster)">吸血鬼</a></b>
+</td>
+<td>2.86%
+</td>
+<td>2.5%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">@</span> <a href="http://crawl.chaosforge.org/File:Shadowghast.png" data-untr="1" class="image"><img alt="Shadowghast.png" src="img/Shadowghast.png" width="32" height="32" /></a> <b><a href="Shadowghast.html" class="mw-redirect" title="Shadow">シャドウ</a></b>
+</td>
+<td>2.86%
+</td>
+<td>2.5%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">W</span> <a href="http://crawl.chaosforge.org/File:Flayed_ghost.png" data-untr="1" class="image"><img alt="Flayed ghost.png" src="img/Flayed_ghost.png" width="32" height="32" /></a> <b><a href="Flayed_ghost.html" title="Flayed ghost">皮剥げ幽霊</a></b>
+</td>
+<td>2.86%
+</td>
+<td>2.5%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-cyan">z</span> <a href="http://crawl.chaosforge.org/File:Skeletal_warrior.png" data-untr="1" class="image"><img alt="Skeletal warrior.png" src="img/Skeletal_warrior.png" width="32" height="32" /></a> <b><a href="Skeletal_warrior.html" title="Skeletal warrior">骸骨の戦士</a></b>
+</td>
+<td>21.43%
+</td>
+<td>18.75%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-cyan">V</span> <a href="http://crawl.chaosforge.org/File:Vampire_knight.png" data-untr="1" class="image"><img alt="Vampire knight.png" src="img/Vampire_knight.png" width="32" height="32" /></a> <b><a href="Vampire_knight.html" title="Vampire knight">吸血鬼の騎士</a></b>
+</td>
+<td>7.14%
+</td>
+<td>6.25%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-lightgray">2</span> <a href="http://crawl.chaosforge.org/File:Reaper.png" data-untr="1" class="image"><img alt="Reaper.png" src="img/Reaper.png" width="32" height="32" /></a> <b><a href="Reaper.html" title="Reaper">切り裂きの悪魔</a></b>
+</td>
+<td rowspan="2">0%
+</td>
+<td>11.25%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-lightgray">D</span> <a href="http://crawl.chaosforge.org/File:Bone_dragon.png" data-untr="1" class="image"><img alt="Bone dragon.png" src="img/Bone_dragon.png" width="32" height="32" /></a> <b><a href="Bone_dragon.html" title="Bone dragon">骸骨ドラゴン</a></b>
+</td>
+<td>1.25%
+</td></tr>
+<tr>
+<td style="text-align: left">分岐ごとのモンスター(合計)
+</td>
+<td>28.57%
+</td>
+<td>25.00%
+</td></tr>
+</table>
+<p>分岐ごとのモンスターの内訳:
+</p>
+<table class="wikitable" style="text-align: center">
+<tr>
+<td>分岐
+</td>
+<td>モンスター
+</td>
+<td>確率
+</td></tr>
+<tr>
+<td rowspan="3">深層
+</td>
+<td style="text-align: left"><span class="nhsym clr-white">@</span> <a href="http://crawl.chaosforge.org/File:Necromancer.png" data-untr="1" class="image"><img alt="Necromancer.png" src="img/Necromancer.png" width="32" height="32" /></a> <b><a href="Necromancer_(monster).html" title="Necromancer (monster)">死人使い</a></b>
+</td>
+<td>16.67%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-white">e</span> <a href="http://crawl.chaosforge.org/File:Deep_elf_death_mage.png" data-untr="1" class="image"><img alt="Deep elf death mage.png" src="img/Deep_elf_death_mage.png" width="32" height="32" /></a> <b><a href="Deep_elf_death_mage.html" title="Deep elf death mage">闇エルフの死の魔術師</a></b>
+</td>
+<td>7.69%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">D</span> <a href="http://crawl.chaosforge.org/File:Shadow_dragon.png" data-untr="1" class="image"><img alt="Shadow dragon.png" src="img/Shadow_dragon.png" width="32" height="32" /></a> <b><a href="Shadow_dragon.html" title="Shadow dragon">シャドウドラゴン</a></b>
+</td>
+<td>7.69%
+</td></tr>
+<tr>
+<td rowspan="6">地下墓地・タルタロス
+</td>
+<td style="text-align: left"><span class="nhsym clr-brown">W</span> <a href="http://crawl.chaosforge.org/File:Eidolon.png" data-untr="1" class="image"><img alt="Eidolon.png" src="img/Eidolon.png" width="32" height="32" /></a> <b><a href="Eidolon.html" title="Eidolon">アイドロン</a></b>
+</td>
+<td>8.11%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-yellow">V</span> <a href="http://crawl.chaosforge.org/File:Jiangshi.png" data-untr="1" class="image"><img alt="Jiangshi.png" src="img/Jiangshi.png" width="32" height="32" /></a> <b><a href="Jiangshi.html" title="Jiangshi">僵尸</a></b>
+</td>
+<td>7.69%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brown">n</span> <a href="http://crawl.chaosforge.org/File:Plague_shambler.png" data-untr="1" class="image"><img alt="Plague shambler.png" src="img/Plague_shambler.png" width="32" height="32" /></a> <b><a href="Plague_shambler.html" title="Plague shambler">疫病の徘徊者</a></b>
+</td>
+<td>2.56%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">M</span> <a href="http://crawl.chaosforge.org/File:Mummy_priest.png" data-untr="1" class="image"><img alt="Mummy priest.png" src="img/Mummy_priest.png" width="32" height="32" /></a> <b><a href="Mummy_priest.html" title="Mummy priest">司祭のミイラ</a></b>
+</td>
+<td>2.56%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-green">q</span> <a href="http://crawl.chaosforge.org/File:Deep_dwarf_death_knight.png" data-untr="1" class="image"><img alt="Deep dwarf death knight.png" src="img/Deep_dwarf_death_knight.png" width="32" height="32" /></a> <b><a href="Deep_dwarf_death_knight.html" title="Deep dwarf death knight">闇ドワーフの死の騎士</a></b>
+</td>
+<td>2.56%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">z</span> <a href="http://crawl.chaosforge.org/File:Revenant_soulmonger.png" data-untr="1" class="image"><img alt="Revenant soulmonger.png" src="img/Revenant_soulmonger.png" width="32" height="32" /></a> <b><a href="Revenant.html" title="Revenant">レヴナント</a></b>
+</td>
+<td>2.56%
+</td></tr>
+<tr>
+<td rowspan="4">ゲヘナ
+</td>
+<td style="text-align: left"><span class="nhsym clr-white">Z</span> <span class="nhsym clr-brown">Z</span> <a href="http://crawl.chaosforge.org/File:Skeleton_large_humanoid.png" data-untr="1" class="image"><img alt="Skeleton large humanoid.png" src="img/Skeleton_large_humanoid.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Large_zombie.png" data-untr="1" class="image"><img alt="Large zombie.png" src="img/Large_zombie.png" width="32" height="32" /></a> <b><a href="Fire_giant.html" title="Fire giant">炎の巨人</a>の<a href="Skeleton.html" title="Skeleton">骸骨</a>/<a href="Zombie.html" title="Zombie">ゾンビ</a></b>
+</td>
+<td>8.11%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-white">Z</span> <span class="nhsym clr-brown">Z</span> <a href="http://crawl.chaosforge.org/File:Skeleton_dragon.png" data-untr="1" class="image"><img alt="Skeleton dragon.png" src="img/Skeleton_dragon.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Zombie_dragon.png" data-untr="1" class="image"><img alt="Zombie dragon.png" src="img/Zombie_dragon.png" width="32" height="32" /></a> <b><a href="Fire_dragon.html" title="Fire dragon">ファイアドラゴン</a>の<a href="Skeleton.html" title="Skeleton">骸骨</a>/<a href="Zombie.html" title="Zombie">ゾンビ</a></b>
+</td>
+<td>5.26%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">z</span> <a href="http://crawl.chaosforge.org/File:Flaming_corpse.png" data-untr="1" class="image"><img alt="Flaming corpse.png" src="img/Flaming_corpse.png" width="32" height="32" /></a> <b><a href="Flaming_corpse.html" title="Flaming corpse">燃える死体</a></b>
+</td>
+<td>6.67%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">W</span> <a href="http://crawl.chaosforge.org/File:Flayed_ghost.png" data-untr="1" class="image"><img alt="Flayed ghost.png" src="img/Flayed_ghost.png" width="32" height="32" /></a> (追加分)<b><a href="Flayed_ghost.html" title="Flayed ghost">皮剥げ幽霊</a></b>
+</td>
+<td>6.67%
+</td></tr>
+<tr>
+<td rowspan="4">コキュートス
+</td>
+<td style="text-align: left"><span class="nhsym clr-white">Z</span> <span class="nhsym clr-brown">Z</span> <a href="http://crawl.chaosforge.org/File:Zombie_hydra_5.png" data-untr="1" class="image"><img alt="Zombie hydra 5.png" src="img/Zombie_hydra_5.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Simulacrum_hydra_5.png" data-untr="1" class="image"><img alt="Simulacrum hydra 5.png" src="img/Simulacrum_hydra_5.png" width="32" height="32" /></a> <b><a href="Hydra.html" title="Hydra">ヒドラ</a>の<a href="Zombie.html" title="Zombie">ゾンビ</a>/<a href="Simulacrum_(monster).html" title="Simulacrum (monster)">幻像</a></b>
+</td>
+<td>8.11%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-white">Z</span> <span class="nhsym clr-brown">Z</span> <a href="http://crawl.chaosforge.org/File:Skeleton_turtle.png" data-untr="1" class="image"><img alt="Skeleton turtle.png" src="img/Skeleton_turtle.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Zombie_turtle.png" data-untr="1" class="image"><img alt="Zombie turtle.png" src="img/Zombie_turtle.png" width="32" height="32" /></a> <b><a href="Alligator_snapping_turtle.html" title="Alligator snapping turtle">ワニガメ</a>の<a href="Skeleton.html" title="Skeleton">骸骨</a>/<a href="Zombie.html" title="Zombie">ゾンビ</a></b>
+</td>
+<td>5.26%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">W</span> <a href="http://crawl.chaosforge.org/File:Freezing_wraith.png" data-untr="1" class="image"><img alt="Freezing wraith.png" src="img/Freezing_wraith.png" width="32" height="32" /></a> <b><a href="Freezing_wraith.html" title="Freezing wraith">凍気のレイス</a></b>
+</td>
+<td>9.59%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-green">n</span> <a href="http://crawl.chaosforge.org/File:Bog_body.png" data-untr="1" class="image"><img alt="Bog body.png" src="img/Bog_body.png" width="32" height="32" /></a> <b><a href="Bog_body.html" title="Bog body">湿地の屍骸</a></b>
+</td>
+<td>3.9%
+</td></tr>
+<tr>
+<td rowspan="4">鉄の都ディース
+</td>
+<td style="text-align: left"><span class="nhsym clr-white">Z</span> <span class="nhsym clr-brown">Z</span> <a href="http://crawl.chaosforge.org/File:Skeleton_dragon.png" data-untr="1" class="image"><img alt="Skeleton dragon.png" src="img/Skeleton_dragon.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Zombie_dragon.png" data-untr="1" class="image"><img alt="Zombie dragon.png" src="img/Zombie_dragon.png" width="32" height="32" /></a> <b><a href="Iron_dragon.html" title="Iron dragon">鉄ドラゴン</a>の<a href="Skeleton.html" title="Skeleton">骸骨</a>/<a href="Zombie.html" title="Zombie">ゾンビ</a></b>
+</td>
+<td>8.11%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-white">Z</span> <span class="nhsym clr-brown">Z</span> <a href="http://crawl.chaosforge.org/File:Skeleton_large_humanoid.png" data-untr="1" class="image"><img alt="Skeleton large humanoid.png" src="img/Skeleton_large_humanoid.png" width="32" height="32" /></a> <a href="http://crawl.chaosforge.org/File:Large_zombie.png" data-untr="1" class="image"><img alt="Large zombie.png" src="img/Large_zombie.png" width="32" height="32" /></a> <b><a href="Iron_troll.html" title="Iron troll">鉄トロル</a>の<a href="Skeleton.html" title="Skeleton">骸骨</a>/<a href="Zombie.html" title="Zombie">ゾンビ</a></b>
+</td>
+<td>5.26%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightcyan">z</span> <a href="http://crawl.chaosforge.org/File:Ancient_champion.png" data-untr="1" class="image"><img alt="Ancient champion.png" src="img/Ancient_champion.png" width="32" height="32" /></a> <b><a href="Ancient_champion.html" title="Ancient champion">太古の王者</a></b>
+</td>
+<td>9.59%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightgreen">W</span> <a href="http://crawl.chaosforge.org/File:Phantasmal_warrior.png" data-untr="1" class="image"><img alt="Phantasmal warrior.png" src="img/Phantasmal_warrior.png" width="32" height="32" /></a> <b><a href="Phantasmal_warrior.html" title="Phantasmal warrior">幻想の戦士</a></b>
+</td>
+<td>3.9%
+</td></tr>
+</table>
+<p>ボスはリッチだ。ただし深層と地下墓地では、深さに応じたもう一つの判定に通ると吸血鬼の魔術師になる。
+</p>
+<ul><li> <span class="nhsym clr-lightgray">L</span> <a href="http://crawl.chaosforge.org/File:Lich.png" data-untr="1" class="image"><img alt="Lich.png" src="img/Lich.png" width="32" height="32" /></a> <b><a href="Lich.html" title="Lich">リッチ</a></b></li>
+<li> <span class="nhsym clr-magenta">V</span> <a href="http://crawl.chaosforge.org/File:Vampire_mage.png" data-untr="1" class="image"><img alt="Vampire mage.png" src="img/Vampire_mage.png" width="32" height="32" /></a> <b><a href="Vampire_mage.html" title="Vampire mage">吸血鬼の魔術師</a></b></li></ul>
+<p>また、どの分岐でも、テーマにゆるく沿った<a href="Corpse.html" title="Corpse">死体</a>と<a href="Skeleton.html" title="Skeleton">骸骨</a>がヴォールトのあちこちに散らばっている。死体が置かれる確率は各マス 40% だ(深層、地下墓地、タルタロスでは 33%)。死体の種類は、深層ではその分岐に出るモンスター、ゲヘナ・コキュートス・ディースでは属性に関わる巨人やトロルとドラゴン、タルタロスと地下墓地ではシャドウドラゴン、<a href="List_of_draconians.html" title="List of draconians">職業なしのドラコニアン</a>、<a href="Dire_elephant.html" title="Dire elephant">凶暴化した象</a>が混ざったものになる。当然ながら、ヴォールトの中のモンスターはこれを使って<a href="Animate_Dead.html" title="Animate Dead">死霊の蘇生</a>やその仲間の呪文を唱えられる。
+</p><p><b>報酬</b>: 深層と地下墓地では、ボスの足元に<a href="Necromancy.html" title="Necromancy">死霊術</a>のアーティファクトの<a href="Spell_book.html" class="mw-redirect" title="Spellbook">魔法書</a>がある。<a href="Hell.html" title="Hell">地獄</a>では、モンスター 1 体の場所が、60% の確率で下り階段(その階のほかのヴォールトが階段を必要としていない場合。すべての階段がそうしたヴォールトに使われているときは、階の階段がそれらのヴォールトにランダムに割り振られる)、20% の確率で下りの<a href="Escape_hatch.html" title="Escape hatch">脱出ハッチ</a>、20% の確率で何もない床に置き換わる。
+</p>
+<h3><span class="mw-headline" id="Jelly_pit">ジェリーの穴</span></h3>
+<p>スライムの穴ぐらの特別な部屋はジェリーの穴だけで、壁はランダムに床に置き換わる。
+</p><p><b>深さ</b>: <a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処:8</a>、<a href="The_Depths.html" title="The Depths">深層</a>、<a href="The_Slime_Pits.html" title="The Slime Pits">スライムの穴ぐら</a>
+</p><p><b>モンスター</b>: 脈打つ肉塊とスライムの化け物を除く<a href="List_of_jellies.html" title="List of jellies">あらゆる種類のジェリー</a>。モンスターの配置は深さの絶対値に応じて多少変わり、スライムの穴ぐらではその効果が強まる。下の表は、出現する階のうち最も浅いところ、最も深いところ、いちばんよく見かける範囲をまとめたものだ。途中の値については、スライムの穴ぐら:1 が深層:4 と同じになる。
+</p>
+<table class="wikitable" style="text-align: center">
+<tr>
+<td>確率の例
+</td>
+<td>獣の棲み処:8
+</td>
+<td>深層:1
+</td>
+<td>深層:5
+</td>
+<td>スライムの穴ぐら:5
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-lightgray">J</span> <a href="http://crawl.chaosforge.org/File:Endoplasm.png" data-untr="1" class="image"><img alt="Endoplasm.png" src="img/Endoplasm.png" width="32" height="32" /></a> <b><a href="Endoplasm.html" title="Endoplasm">内質</a></b>
+</td>
+<td>29.33%
+</td>
+<td>23.53%
+</td>
+<td>20.65%
+</td>
+<td>16.50%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">J</span> <a href="http://crawl.chaosforge.org/File:Jelly.png" data-untr="1" class="image"><img alt="Jelly.png" src="img/Jelly.png" width="32" height="32" /></a> <b><a href="Jelly.html" title="Jelly">ジェリー</a></b>
+</td>
+<td>20.00%
+</td>
+<td>17.65%
+</td>
+<td>16.30%
+</td>
+<td>14.56%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brown">J</span> <a href="http://crawl.chaosforge.org/File:Brown_ooze.png" data-untr="1" class="image"><img alt="Brown ooze.png" src="img/Brown_ooze.png" width="32" height="32" /></a> <b><a href="Brown_ooze.html" title="Brown ooze">茶色のウーズ</a></b>
+</td>
+<td>30.67%
+</td>
+<td>32.94%
+</td>
+<td>34.78%
+</td>
+<td>35.92%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">J</span> <a href="http://crawl.chaosforge.org/File:Death_ooze.png" data-untr="1" class="image"><img alt="Death ooze.png" src="img/Death_ooze.png" width="32" height="32" /></a> <b><a href="Death_ooze.html" title="Death ooze">死のウーズ</a></b>
+</td>
+<td>16.00%
+</td>
+<td>18.82%
+</td>
+<td>19.57%
+</td>
+<td>21.36%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">J</span> <a href="http://crawl.chaosforge.org/File:Azure_jelly.png" data-untr="1" class="image"><img alt="Azure jelly.png" src="img/Azure_jelly.png" width="32" height="32" /></a> <b><a href="Azure_jelly.html" title="Azure jelly">紺碧ジェリー</a></b>
+</td>
+<td>2.67%
+</td>
+<td>4.71%
+</td>
+<td>5.43%
+</td>
+<td>6.80%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightcyan">J</span> <a href="http://crawl.chaosforge.org/File:Acid_blob.png" data-untr="1" class="image"><img alt="Acid blob.png" src="img/Acid_blob.png" width="32" height="32" /></a> <b><a href="Acid_blob.html" title="Acid blob">酸のブロブ</a></b>
+</td>
+<td>1.33%
+</td>
+<td>2.35%
+</td>
+<td>3.26%
+</td>
+<td>4.85%
+</td></tr>
+</table>
+<p><b>報酬</b>: ヴォールトが深層か獣の棲み処:8 に置かれた場合は、五分五分の確率で<a href="Jiyva.html" title="Jiyva">ジーヴァ</a>の祭壇がヴォールトの中に置かれる。場所はランダムで、モンスターか床のマスと置き換わる。
+</p>
+<h3><span class="mw-headline" id="Mythical_zoo">神話の動物園</span></h3>
+<p><b>深さ</b>: <a href="The_Dungeon.html" title="The Dungeon">迷宮:14-15</a>、<a href="The_Depths.html" title="The Depths">深層</a>、<a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処:4-8</a>、<a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>
+</p><p><b>モンスター</b>: これを追加したコミットによれば「定番の神話の獣たち」。モンスターの重みは深さの絶対値に応じてごく細かく変わり、獣の棲み処とエルフの大広間ではさらに特別扱いされる。下の表は、エルフの大広間・深層の境目をはさんだ両側で、いちばん弱い段階といちばん強い段階をまとめたものだ。表のとおり、ハーピー、ファイアドラゴン、スフィンクスは境目より深い側にしか出ない。途中の値については、迷宮:14 の確率は獣の棲み処:6 と、深層:1 の確率はエルフの大広間:2 と同じになる。
+</p>
+<table class="wikitable" style="text-align: center">
+<tr>
+<td>確率の例
+</td>
+<td>獣の棲み処:4
+</td>
+<td>獣の棲み処:8
+</td>
+<td>エルフの大広間:1
+</td>
+<td>深層:5
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">k</span> <a href="http://crawl.chaosforge.org/File:Fire_drake.png" data-untr="1" class="image"><img alt="Fire drake.png" src="img/Fire_drake.png" width="32" height="32" /></a> <b><a href="Fire_drake.html" title="Fire drake">炎のドレイク</a></b>
+</td>
+<td>20.59%
+</td>
+<td>11.32%
+</td>
+<td>1.35%
+</td>
+<td>0.71%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">l</span> <a href="http://crawl.chaosforge.org/File:Basilisk.png" data-untr="1" class="image"><img alt="Basilisk.png" src="img/Basilisk.png" width="32" height="32" /></a> <b><a href="Basilisk.html" title="Basilisk">バジリスク</a></b>
+</td>
+<td>20.59%
+</td>
+<td>11.32%
+</td>
+<td>1.35%
+</td>
+<td>0.71%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightgreen">k</span> <a href="http://crawl.chaosforge.org/File:Wyvern.png" data-untr="1" class="image"><img alt="Wyvern.png" src="img/Wyvern.png" width="32" height="32" /></a> <b><a href="Wyvern.html" title="Wyvern">ワイバーン</a></b>
+</td>
+<td>26.47%
+</td>
+<td>18.87%
+</td>
+<td>1.35%
+</td>
+<td>0.71%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-yellow">H</span> <a href="http://crawl.chaosforge.org/File:Hippogriff.png" data-untr="1" class="image"><img alt="Hippogriff.png" src="img/Hippogriff.png" width="32" height="32" /></a> <b><a href="Hippogriff.html" title="Hippogriff">ヒポグリフ</a></b>
+</td>
+<td>26.47%
+</td>
+<td>18.87%
+</td>
+<td>1.35%
+</td>
+<td>0.71%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-cyan">h</span> <a href="http://crawl.chaosforge.org/File:Hell_hound.png" data-untr="1" class="image"><img alt="Hell hound.png" src="img/Hell_hound.png" width="32" height="32" /></a> <b><a href="Hell_hound.html" title="Hell hound">ヘルハウンド</a></b>
+</td>
+<td>1.47%
+</td>
+<td>9.43%
+</td>
+<td>13.51%
+</td>
+<td>11.43%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-yellow">H</span> <a href="http://crawl.chaosforge.org/File:Griffon.png" data-untr="1" class="image"><img alt="Griffon.png" src="img/Griffon.png" width="32" height="32" /></a> <b><a href="Griffon.html" title="Griffon">グリフォン</a></b>
+</td>
+<td>1.47%
+</td>
+<td>7.55%
+</td>
+<td>18.92%
+</td>
+<td>18.57%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightgreen">D</span> <a href="http://crawl.chaosforge.org/File:Hydra.png" data-untr="1" class="image"><img alt="Hydra.png" src="img/Hydra.png" width="32" height="32" /></a> <b><a href="Hydra.html" title="Hydra">ヒドラ</a></b>
+</td>
+<td>1.47%
+</td>
+<td>11.32%
+</td>
+<td>21.62%
+</td>
+<td>20%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">H</span> <a href="http://crawl.chaosforge.org/File:Manticore.png" data-untr="1" class="image"><img alt="Manticore.png" src="img/Manticore.png" width="32" height="32" /></a> <b><a href="Manticore.html" title="Manticore">マンティコア</a></b>
+</td>
+<td>1.47%
+</td>
+<td>11.32%
+</td>
+<td>21.62%
+</td>
+<td>20%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-green">H</span> <a href="http://crawl.chaosforge.org/File:Harpy.png" data-untr="1" class="image"><img alt="Harpy.png" src="img/Harpy.png" width="32" height="32" /></a> <b><a href="Harpy.html" title="Harpy">ハーピー</a></b>
+</td>
+<td rowspan="3" colspan="2">0%
+</td>
+<td>8.11%
+</td>
+<td>8.57%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">D</span> <a href="http://crawl.chaosforge.org/File:Fire_dragon.png" data-untr="1" class="image"><img alt="Fire dragon.png" src="img/Fire_dragon.png" width="32" height="32" /></a> <b><a href="Fire_dragon.html" title="Fire dragon">ファイアドラゴン</a></b>
+</td>
+<td>6.76%
+</td>
+<td>12.14%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-lightgray">H</span> <a href="http://crawl.chaosforge.org/File:Sphinx.png" data-untr="1" class="image"><img alt="Sphinx.png" src="img/Sphinx.png" width="32" height="32" /></a> <b><a href="Sphinx.html" title="Sphinx">スフィンクス</a></b>
+</td>
+<td>4.05%
+</td>
+<td>6.43%
+</td></tr></table>
+<p>ボスの深さによる段階分けは、もっと大まかだ。
+</p>
+<table class="wikitable" style="text-align: center">
+<tr>
+<td>確率
+</td>
+<td>獣の棲み処:4-7、迷宮:14-15
+</td>
+<td>獣の棲み処:8
+</td>
+<td>エルフの大広間、深層
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-magenta">Y</span> <a href="http://crawl.chaosforge.org/File:Catoblepas.png" data-untr="1" class="image"><img alt="Catoblepas.png" src="img/Catoblepas.png" width="32" height="32" /></a> <b><a href="Catoblepas.html" title="Catoblepas">カトブレパス</a></b>
+</td>
+<td>11.11%
+</td>
+<td>11.11%
+</td>
+<td>11.11%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-yellow">H</span> <a href="http://crawl.chaosforge.org/File:Griffon.png" data-untr="1" class="image"><img alt="Griffon.png" src="img/Griffon.png" width="32" height="32" /></a> <b><a href="Griffon.html" title="Griffon">グリフォン</a></b>
+</td>
+<td>44.44%
+</td>
+<td>0%
+</td>
+<td rowspan="3">0%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brightgreen">D</span> <a href="http://crawl.chaosforge.org/File:Hydra.png" data-untr="1" class="image"><img alt="Hydra.png" src="img/Hydra.png" width="32" height="32" /></a> <b><a href="Hydra.html" title="Hydra">ヒドラ</a></b>
+</td>
+<td>44.44%
+</td>
+<td>44.44%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym">D</span> <a href="http://crawl.chaosforge.org/File:Fire_dragon.png" data-untr="1" class="image"><img alt="Fire dragon.png" src="img/Fire_dragon.png" width="32" height="32" /></a> <b><a href="Fire_dragon.html" title="Fire dragon">ファイアドラゴン</a></b>
+</td>
+<td rowspan="4">0%
+</td>
+<td>38.89%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-white">Y</span> <a href="http://crawl.chaosforge.org/File:Apis.png" data-untr="1" class="image"><img alt="Apis.png" src="img/Apis.png" width="32" height="32" /></a> <b><a href="Apis.html" title="Apis">アピス</a></b>
+</td>
+<td>5.56%
+</td>
+<td>22.22%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-brown">2</span> <a href="http://crawl.chaosforge.org/File:Hell_beast.png" data-untr="1" class="image"><img alt="Hell beast.png" src="img/Hell_beast.png" width="32" height="32" /></a> <b><a href="Sin_beast.html" class="mw-redirect" title="Hell beast">地獄の獣</a></b>
+</td>
+<td rowspan="2">0%
+</td>
+<td>22.22%
+</td></tr>
+<tr>
+<td style="text-align: left"><span class="nhsym clr-lightgray">H</span> <a href="http://crawl.chaosforge.org/File:Sphinx.png" data-untr="1" class="image"><img alt="Sphinx.png" src="img/Sphinx.png" width="32" height="32" /></a> <b><a href="Sphinx.html" title="Sphinx">スフィンクス</a></b>
+</td>
+<td>44.44%
+</td></tr>
+</table>
+<p><b>報酬</b>: ボスの足元には、少しか多めの<a href="Gold.html" title="Gold">金貨</a>の山がある。どちらになるかの確率は深さで少し変わり、獣の棲み処:4 ではそれぞれ 79.16% と 20.83%、深層:5 ではそれぞれ 62.96% と 37.04% だ。少ないほうは普通の金貨の山と同じように深さに応じて少し増え、多いほうは 100〜499 枚で固定されている(どの枚数も同じ確率)。また、15% の確率で<a href="Box_of_beasts.html" title="Box of beasts">獣の匣</a>もある。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li> <a href="0.9.0.html" class="mw-redirect" title="0.9">0.9-5b059c0c</a> で、死体置き場以外の特別な部屋がゲヘナ、コキュートス、タルタロスに出なくなった。 </li>
+<li> <a href="0.11.html" title="0.11">0.11-1deeae5e</a> で、特別な部屋の中身が 30 体までに制限された。それまでは、モンスターの組から最大で 121 体も置かれていた。</li>
+<li> 特別な部屋に対する最近の変更の大部分は <a href="0.12.html" title="0.12">0.12-6cbb9191</a> で行われた。神話の動物園の組が加わったほか、それまではジェリーの穴以外には深さによる段階分けがほとんどなく、組はずっと弱く、出現範囲はずっと広かった。コボルドと蜂の部屋以外はモンスターも欠けていて、蜂の部屋以外には決まったアイテムや地形もなかった。部屋の形も 1 種類に限られていた(その代わり、その形では今より出やすかった)。部屋は今より少し大きく、入口に扉があったが、このとき上限が 27 体に下げられた。</li>
+<li> <a href="0.14.html" title="0.14">0.14-188663e2</a> で、<a href="0.13.html" title="0.13">0.13</a> の地下墓地の作り直しに合わせて、死体置き場のモンスターの組が大きく変わった。</li>
+<li> <a href="0.14.html" title="0.14">0.14</a> で深層ができてダンジョンが分かれたことで、深さによる段階分けの計算がさらに両極端になり、今の形になった。</li>
+<li> <a href="0.15.html" title="0.15">0.15</a> で茶色のウーズが削除されたため、ジェリーの穴には代わりに<a href="Great_orb_of_eyes.html" title="Great orb of eyes">あまたの目の球体</a>が出るようになった。疫病の徘徊者の削除は死体置き場の確率の調整に反映されなかったが、燃える死体の削除によって、その分の重みは追加の皮剥げ幽霊に回された。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

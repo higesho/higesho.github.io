@@ -16,7 +16,6 @@
 <h1>魔力汚染 <span class="en">Magic contamination</span></h1>
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Magic_contamination">Magic contamination</a>」(0.34 向け、2026-07-10 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Magic_contamination&amp;action=history">編集履歴</a>をご覧ください。</p>
 <div class="wiki">
-</i>
 <p><b>魔力汚染</b>は、呪文の詠唱失敗や一部の魔法の効果によって起こる危険な状態だ。
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
@@ -42,7 +41,7 @@
 </div>
 
 <h2><span class="mw-headline" id="Overview">概要</span></h2>
-<p>さまざまな行動によって、有害な魔力が体内に溜まっていく。魔力汚染が少しだけ(灰色の「汚染: ○%」表示)なら害はなく、何も起こらないまま時間とともに消えていく。それより多く溜まると(黄色または赤の「魔力汚染」表示)、汚染された魔力で体が<a href="http://crawl.chaosforge.org/Glow" data-untr="1" class="mw-redirect" title="Glow">発光</a>し始める。汚染は最大300%に対する百分率で表示され、内部では0-3000ポイントとして管理されている。
+<p>さまざまな行動によって、有害な魔力が体内に溜まっていく。魔力汚染が少しだけ(灰色の「汚染: ○%」表示)なら害はなく、何も起こらないまま時間とともに消えていく。それより多く溜まると(黄色または赤の「魔力汚染」表示)、汚染された魔力で体が<a href="Corona.html" class="mw-redirect" title="Glow">発光</a>し始める。汚染は最大300%に対する百分率で表示され、内部では0-3000ポイントとして管理されている。
 </p><p>汚染がひどい段階にあると、攻撃が当たりやすくなり、<a href="Invisible.html" title="Invisible">透明</a>でも姿があらわになる。<a href="Corona.html" title="Corona">照明</a>の呪文と似た効果だ。さらに隠密が下がり、<a href="Bad_mutations.html" title="Bad mutations">悪い変異</a>やダメージを受ける爆発の危険にもさらされる。爆発の確率は汚染がひどいほど上がる。ダメージはプレイヤーの<a href="Experience.html" class="mw-redirect" title="XL">XL</a>に応じて大きくなる。汚染が200%以上のときの爆発は、範囲もダメージも大きい。爆発が起きると変異の判定も行われ、1/5の確率で悪い変異1つかランダムな<a href="Mutation.html" title="Mutation">変異</a>が付く(結果は悪い変異に大きく偏っている)。
 </p><p>汚染が少しでもあると、隣にいる<a href="Ugly_thing.html" title="Ugly thing">醜きもの</a>の色が変わることがある。
 </p>
@@ -94,7 +93,7 @@
 <ul><li>*Contam の付いた<a href="Artefact.html" title="Artefact">アーティファクト</a>を外す: 1200</li>
 <li><a href="Distortion.html" title="Distortion">歪曲</a>のブランドが付いた武器を外す: 3000(25%の確率)</li>
 <li><a href="Plutonium_sword.html" class="mw-redirect" title="Plutonium Sword">プルトニウムの剣</a>を外す: 700-1350</li>
-<li><a href="http://crawl.chaosforge.org/Mutagenic_fog" data-untr="1" title="Mutagenic fog">変異性の霧</a>: 1ターンにつき 250-500</li>
+<li><a href="Mutagenic_fog.html" title="Mutagenic fog">変異性の霧</a>: 1ターンにつき 250-500</li>
 <li><a href="Zot_trap.html" title="Zot trap">ゾットの罠</a>: 1500 - 3000(起こりうる多くの結果のうちの1つ)</li>
 <li><a href="Jiyva.html" title="Jiyva">ジーヴァ</a>の<a href="Divine_retribution.html" class="mw-redirect" title="Penance">贖罪</a>: 0 - <code>100 * penance</code>(起こりうる多くの結果のうちの1つ)</li></ul>
 <h2><span class="mw-headline" id="Dissipation">汚染の消散</span></h2>
@@ -123,7 +122,7 @@
 <li><a href="0.26.html" title="0.26">0.26</a>より前は、魔力汚染の減り方がずっと遅かった。1ターンあたり-75ではなく-25で、悪い効果が起こる間隔も長かった(200 - 600ターン)。</li>
 <li><a href="0.25.html" title="0.25">0.25</a>より前は<a href="Miscast_effect.html" title="Miscast effect">詠唱失敗の効果</a>が今とは違っていたので、汚染の量も違っていた。</li>
 <li><a href="0.19.html" title="0.19">0.19</a>より前は、薄い灰色の汚染段階は存在しなかった。</li>
-<li><a href="0.10.html" title="0.10">0.10</a>より前は、この効果は単に<a href="http://crawl.chaosforge.org/Glow" data-untr="1" class="mw-redirect" title="Glow">発光</a>と呼ばれていた。これはあいまいな言葉で、<a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>や<a href="Corona.html" title="Corona">照明</a>による光(と汚染そのもの)も指していた。</li></ul>
+<li><a href="0.10.html" title="0.10">0.10</a>より前は、この効果は単に<a href="Corona.html" class="mw-redirect" title="Glow">発光</a>と呼ばれていた。これはあいまいな言葉で、<a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>や<a href="Corona.html" title="Corona">照明</a>による光(と汚染そのもの)も指していた。</li></ul>
 <h3><span class="mw-headline" id="Sources_of_Contamination">汚染の原因</span></h3>
 <ul><li><a href="0.28.html" title="0.28">0.28</a>より前は、<a href="Invisibility.html" title="Invisibility">透明化</a>していると時間とともに汚染が溜まり、<a href="Disjunction.html" title="Disjunction">空間分離</a>は唱えると750 - 1250の汚染を受けた。</li>
 <li><a href="0.26.html" title="0.26">0.26</a>より前は、<a href="Controlled_Blink.html" title="Controlled Blink">精密瞬間移動</a>を唱えたり<a href="Scroll_of_blinking.html" title="Scroll of blinking">瞬間移動の巻物</a>を読んだりすると汚染を受けた。</li>

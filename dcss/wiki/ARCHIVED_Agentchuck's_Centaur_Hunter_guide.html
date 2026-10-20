@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【保管】Agentchuck のセントールの狩人ガイド &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="【保管】Agentchuck のセントールの狩人ガイド(ARCHIVED Agentchuck&#x27;s Centaur Hunter guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>【保管】Agentchuck のセントールの狩人ガイド <span class="en">ARCHIVED Agentchuck&#x27;s Centaur Hunter guide</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/ARCHIVED_Agentchuck's_Centaur_Hunter_guide">ARCHIVED Agentchuck&#x27;s Centaur Hunter guide</a>」(対象の版の記載なし、2021-07-29 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=ARCHIVED_Agentchuck's_Centaur_Hunter_guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p><br />
+<a href="Centaur_(monster).html" title="Centaur (monster)">セントール</a>はダンジョンのあちこちにいて、冒険者を嬉々として針山に変えている。<a href="Centaur.html" title="Centaur">セントール</a>の<a href="Hunter.html" title="Hunter">狩人</a>を遊べば、その恨みをいくらか晴らすチャンスだ！ セントールの狩人は強くて速い。魔法はあまり得意ではないが、低レベルの呪文をいくつかうまく使えば弱点を補える。ゲームを通してほぼ一貫した戦い方のまま、15ルーンの勝利まで持っていける。
+</p><p>ただし、これは楽に遊べるビルドではない。MiFi のような「突っ込んで全部叩きつぶす」も、DECj のような「軌道上から全部焼き払う」もできない。勝つには戦術的に動き、位置取りをよく考え、まずい状況からはすぐ逃げられるようにしておく必要がある。その代わり、こういう遊び方はとてもやりがいがある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Your_Inner_Equine"><span class="tocnumber">1</span> <span class="toctext">内なる馬</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Bows"><span class="tocnumber">2</span> <span class="toctext">弓</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Portal_Projectile"><span class="tocnumber">2.1</span> <span class="toctext">射出物の転送</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Ammunition_Management"><span class="tocnumber">2.2</span> <span class="toctext">矢弾のやりくり</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Melee"><span class="tocnumber">3</span> <span class="toctext">近接攻撃</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Strategy_Details"><span class="tocnumber">4</span> <span class="toctext">戦略の詳細</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#General_Branch_Ordering"><span class="tocnumber">4.1</span> <span class="toctext">分岐を回るおおまかな順番</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Gods"><span class="tocnumber">4.2</span> <span class="toctext">神</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Okawaru"><span class="tocnumber">4.2.1</span> <span class="toctext">オカワル</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#The_Shining_One"><span class="tocnumber">4.2.2</span> <span class="toctext">輝けるもの</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Skills"><span class="tocnumber">4.3</span> <span class="toctext">スキル</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Magic"><span class="tocnumber">4.4</span> <span class="toctext">魔法</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Your_Inner_Equine">内なる馬</span></h2>
+<p>種族についてのくわしい情報は<a href="Centaur.html" title="Centaur">セントール</a>のページを参照。
+</p><p>たいていの種族と同じく、セントールにも向いている遊び方がある。セントールの長所はどれも、強い狩人になるのに役立つ。長所と短所をいくつか挙げておく。
+</p>
+<ul><li>遠距離戦では、弓と投擲の適性がとても高い。きちんと強化した弓は、<a href="The_Tomb.html" title="The Tomb">太古の霊廟</a>、<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>、<a href="Hell.html" title="Hell">地獄</a>も含めて、ゲームを通して強力な武器になる。</li>
+<li>近接戦では、徒手格闘を除いてどれも平均よりやや下だ。CeHu なら徒手格闘も十分に使える。腕力が高くなるうえ、生まれつきの蹄で追加の攻撃ができるからだ。</li>
+<li>体のほうは HP が高いが、防具、盾、<i>そして</i>回避が苦手だ。セントールは遠距離でも近接でも、でかくて太った的になる。そのかわり、とても速い。その速さを生かして、引き撃ちで敵を思いどおりに動かそう。</li>
+<li>魔法はどれも平均以下だ。しかも狩人は知力がかなり低い状態で始まる。なので、魔法は低レベルの呪文をいくつか使う程度にとどまる。</li>
+<li>セントールの隠密はひどい。試そうとすら思わないこと。</li></ul>
+<h2><span class="mw-headline" id="Bows">弓</span></h2>
+<p>素のダメージだけで言えば、弓は最強ではない。それでもそこそこのダメージは出せるし、<a href="Longbow.html" title="Longbow">ロングボウ</a>が手に入ればなおさらだ。近づいてくる敵を前もって削っておける。それに、セントールの生まれつきの速さと組み合わせれば、引き撃ちで敵を翻弄できる。危険なユニークの呪文使いでさえ、いつまでたっても呪文の届く距離にこちらを捉えられない。毒のブランドがついた矢弾や射出武器が見つかれば、多くの敵をさらに早く倒せる。
+</p>
+<h3><span class="mw-headline" id="Portal_Projectile">射出物の転送</span></h3>
+<p>弓で終盤を戦い抜くつもりなら、<a href="Portal_Projectile.html" title="Portal Projectile">射出物の転送</a>はほぼ必須だろう。見えている敵ならどれでも、間に味方や敵がいても関係なく、狙いを定めて直接攻撃できる。危険な敵の多くは、間にほかの誰かがいるあいだはこちらを攻撃してこない。なので、前線の弱い敵からの攻撃だけを受けながら、優先して倒したい相手を攻撃できる。毒の攻撃がとてもよく効く。
+</p>
+<h3><span class="mw-headline" id="Ammunition_Management">矢弾のやりくり</span></h3>
+<p>序盤は、手ごわそうな相手にはなんでも矢に頼ることになるが、この時期は矢弾がいちばん乏しい時期でもある。ネズミやコウモリのような雑魚に矢を使うのは絶対にやめよう。レベルがいくつか上がって少し打たれ強くなってきたら、近接で相手にする敵の範囲を遠慮なく広げていこう。とはいえ、出し惜しみが<i>過ぎる</i>とやられてしまう。神から矢弾を授かるようになったら、もう少し気軽に矢を撃てる。<a href="Elven_Halls.html" title="Elven Halls">エルフの大広間</a>と<a href="The_Vaults.html" title="The Vaults">宝物庫</a>を片づけるころには、残りのゲームを戦えるだけの矢がそろっているはずだ。
+</p>
+<h2><span class="mw-headline" id="Melee">近接攻撃</span></h2>
+<p>いつものことだが、近接武器の選択肢はいろいろある。近接のスキルがある程度あれば、矢が乏しくなったときに生き延びやすくなる。スキルが 27 に届きはじめるころには、ロングボウよりも重い両手武器のほうがターンあたりのダメージが大きくなる。セントールは徒手格闘の適性がほかより少し高いが、ほかの選択肢もとても良い。CeHu で徒手格闘がうまくはまる理由はいくつかある。
+</p>
+<ul><li>序盤から中盤にかけて、セントールは蹄で十分なダメージを出せる。</li>
+<li>徒手格闘はオカワルの英雄化で大きく伸びる。</li>
+<li>終盤には腕力も器用さも高くなっている。この時点で<a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>を使えば、ゴールドドラゴンや魔神のような相手でもごく少ない手数で倒せる。</li>
+<li>輝けるものの神罰のブランドをロングボウのためにとっておける。</li>
+<li>所持品の枠が空くので、ブランドつきの矢弾や射出武器を多く持ち歩ける。</li>
+<li>武器強化の巻物を近接武器に使わずに済み、メインの射出武器と矢弾の強化に回せる。</li></ul>
+<p>長柄武器も検討の価値がある。セントールの速さがあれば、間合いの長い武器での引き撃ちは、ほとんどあらゆる近接の敵に対してとても強力な戦法になる。たしかに強化の巻物を最低2つの武器に振り分ける必要はあるが、そのかわりとても強力な両手武器が使える。ほかの武器種も十分に選択肢になる。両手武器の重いダメージが出せるが、引き撃ちはできない。
+</p>
+<h2><span class="mw-headline" id="Strategy_Details">戦略の詳細</span></h2>
+<h3><span class="mw-headline" id="General_Branch_Ordering">分岐を回るおおまかな順番</span></h3>
+<p>ゲームのおおまかな流れは次のとおり。
+</p>
+<ul><li>オカワルの祭壇が見つかるまで迷宮を進む。見つけたら入信する。</li>
+<li>SInv と rPois が手に入らないか、気にかけておく。</li>
+<li>獣の棲み処、オークの坑道、迷宮を進める。慎重に進み、きつくなってきたり、手に負えないユニークに出くわしたりしたら、引き返してほかの分岐を少し進める。</li>
+<li>獣の棲み処の主な2つの小分岐(<a href="The_Shoals.html" class="mw-redirect" title="Shoals">浅瀬</a>、<a href="Snake_Pit.html" title="Snake Pit">蛇穴</a>、<a href="Spider's_Nest.html" title="Spider&#39;s Nest">蜘蛛の穴ぐら</a>、<a href="The_Swamp.html" class="mw-redirect" title="Swamp">沼</a>のうち2つ)の最初の3階、エルフの大広間の最初の2階、宝物庫:1〜4、迷宮のさらに深い階へと進む。雲行きが怪しくなったら引き返すのを忘れずに。</li>
+<li>ゾットの領域に入るための3つのルーンは、獣の棲み処の2つの小分岐と宝物庫:5 で集めることになるだろう。</li>
+<li>地下墓地と悪魔の分岐は、ゾットの領域を片づけるまで後回しにする。</li>
+<li>ゾットの領域はよくよく慎重に進む。この時点で耐性がそろっていて近接にも自信があるなら、スライムの穴ぐらも片づけておく。ゾットの領域:5 に自信がなければ、後回しにするのも考えよう。</li>
+<li>もっと多くのルーンを狙うなら、オーブの間を片づけておいてもいいが、オーブは取らないこと。輝けるものに改宗して、祈祷を上げはじめる。</li>
+<li>地下墓地を完全に片づける。信仰の護符を使って信仰心を早く貯める。それでも信仰心が最大にならなければ、地獄に少し足を踏み入れる。</li>
+<li>信仰心が最大になったら、祭壇で良い悪魔の武器かロングボウに神罰のブランドをつける。この時点で信仰の護符は外す。</li>
+<li>パンデモニウムの5つのルーンを集めたら、自分をアビスに追放してアビスのルーンを取る。手ごわいパンデモニウムの君主には、天使を呼んで手伝わせよう。ルーンをこっそり盗むには<a href="Apportation.html" title="Apportation">収拾</a>がものすごく役に立つ。4体のパンデモニウムの君主には、それぞれ別の難しさがある。
+<ul><li><a href="Cerebov.html" title="Cerebov">セレボブ</a>:天使数体と解放の宣誓で倒せるが、たいていは城のつくりのおかげで、テレポート制御を使えば向こうがろくに反応できないうちにルーンを盗める。ここではセントールの速さが大いに役立つ。ただし、ただ横を歩いて通り抜けようとはしないこと。倒すか、テレポート制御でルーンをかすめ取るかのどちらかだ。</li>
+<li><a href="Mnoleg.html" title="Mnoleg">ムノレグ</a>:<a href="Abjuration.html" title="Abjuration">解放の宣誓</a>があれば楽勝だ。なければルーンだけかすめ取るほうがたいてい賢い(テレポート制御があるのが望ましいが、なくてもできる)。ムノレグと、その階にうじゃうじゃいる<a href="Neqoxec.html" title="Neqoxec">ネクオゼク</a>の両方に備えて、<a href="Mutation.html" class="mw-redirect" title="Mutation resistance">変異への耐性</a>は必ず用意しておくこと。</li>
+<li><a href="Lom_Lobon.html" title="Lom Lobon">ロム・ロボン</a>:大きなダメージを与えてくるが、少なくともほかと比べればかなり柔らかい。天使を2体ほど呼んで倒すか、収拾でルーンを取ってさっさと済ませよう。最低でも rC++ と、何かしらの rElec は必ず用意しておくこと。</li>
+<li><a href="Gloorx_Vloq.html" title="Gloorx Vloq">グロオルクス・ヴロック</a>:たいていのプレイヤーにとって一番手ごわいパンデモニウムの君主で、セントールも例外ではない。ここではセントールの速さもあまり役に立たない。グロオルクスも配下の処刑の悪魔たちも、楽々とこちらに追いついてくる。幸い、本人はそれほど頑丈ではないので、自分と呼び出した天使数体でたいてい倒せる。まずくなったら回復やテレポートができるよう、しっかり備えておくこと。テレポート制御はルーンを盗むのに役立つが、階のつくりのせいで、たいていちょっと難しい。</li>
+<li>悪魔のルーン:ランダムに見つかることもあるが、3つの特定のヴォールトには必ずある。ヘリオンの島のヴォールトは相手にするだけ無駄だ。向こうに殺される前に倒しきれるだけのダメージを出す手段がない。衰弱の箱のヴォールトは、攻略できるかどうか場合による。ルーンへの扉があるのはときどきだけで、それ以外のときに中に入るには LRD(リーの瞬間解体術)か粉砕か<a href="Wand_of_mindburst.html" class="mw-redirect" title="Wand of disintegration">分解のワンド</a>が要る。打擲のヴォールトは段違いに簡単だ。中央の部屋から厄介な連中をおびき出し、加速して一気に走り抜けろ。打擲で殺されないためには、セントールの速さがとても役に立つ。テレポート制御でこのヴォールトを抜けることもできるが、何度も試すことになる。</li></ul></li>
+<li>太古の霊廟は、慎重に立ち回り、天使の味方をうまく扱い、解放の宣誓の手段(呪文かロッド)を用意して片づける。上位のミイラは、角の向こうや階段の上へ1体ずつおびき出せるまで、速さを生かして視界に入れないようにする。このとき<a href="Recall.html" title="Recall">招来</a>の呪文があれば天使の味方を生かしておきやすく、信仰心の負担も軽くなる。上位のミイラ以外のミイラは天使の味方に倒させよう。<a href="Death_curse.html" title="Death curse">死の呪い</a>を受けてまで倒す価値があるだけの経験値をくれるのは、上位のミイラだけだ。<a href="Amulet_of_stasis.html" title="Amulet of stasis">停滞の護符</a>と<a href="http://crawl.chaosforge.org/Ring_of_sustain_abilities" data-untr="1" class="mw-redirect" title="Ring of sustain abilities">能力維持の指輪</a>があれば、呪いのつらさはぐっと減る。</li>
+<li>地獄に挑む。その前にジンに改宗するのも考えよう。ジンは地獄の効果を完全に防いでくれる。セントールは移動が速いぶん、移動中に受ける地獄の効果も少ないので、ほかのキャラクターほどこれを必要としない。守りを重視するならジン、攻めを重視するなら輝けるものだ。地獄はそれぞれ別の難しさがある。
+<ul><li>タルタロス:輝けるもののほうが楽かもしれない。ここにたくさんある衰弱の効果が効かなくなるからだ。<a href="Ereshkigal.html" title="Ereshkigal">エレシュキガル</a>は厄介だが、それほど頑丈ではない。ただし、走って振り切れるとは思わないこと。解放の宣誓の手段を用意しておこう。</li>
+<li>ディース:だいたいかなりおとなしい。<a href="Dispater.html" title="Dispater">ディスペータ</a>は楽に振り切れるので、ルーンを盗んでしまえる。あるいは天使を数体呼び、向こうの召喚を解放の宣誓で消して倒してもいい。</li>
+<li>コキュートス:こちらはもっと厄介で、<a href="Conservation.html" title="Conservation">保護</a>があっても薬をたくさん失うことになるだろう。<a href="Antaeus.html" title="Antaeus">アンテウス</a>自身はそれほど速くないかもしれないが、たいていその階には<a href="Ice_Fiend.html" class="mw-redirect" title="Ice fiend">氷の魔神</a>が大勢いて、rC+++ がなければその近接攻撃は痛い。こちらに浴びせてくる<a href="Torment.html" title="Torment">拷問</a>の嵐は言うまでもない。rC+++ と rElec があるなら、近接で倒そうとするより、矢で引き撃ちするほうがずっと楽だ。<a href="Fly.html" title="Fly">飛行</a>の手段があれば、アンテウスの水だらけの戦場ではずっと楽になる。</li>
+<li>ゲヘナ:<a href="Asmodeus.html" title="Asmodeus">アスモデウス</a>自身はそれほどひどくないが、ほとんどのマップでは本人と対決せずにルーンを取るのが難しい。マップの1つでは収拾でルーンを取れるかもしれないが、天使を呼んで倒す覚悟はしておこう。それから、この地獄にはあちこちにヘリオンがいるので、射出物の転送か、ほかに狙った相手を直接攻撃する手段があると良い。</li></ul></li>
+<li>まだならゾットの領域:5 を片づけて、オーブを手に、地上へ！</li></ul>
+<h3><span class="mw-headline" id="Gods">神</span></h3>
+<h4><span class="mw-headline" id="Okawaru">オカワル</span></h4>
+<p><a href="Okawaru.html" title="Okawaru">オカワル</a>は、メインのゲームのほとんどで頼れる味方だ。生き延びるのに必要なものをいくつも与えてくれる。
+</p>
+<ul><li>ブランドつきや強化済みの矢を大量にくれるうえ、ときどき防具もくれる。どこかで強化済みの馬甲をくれる可能性が高い。馬甲はほかではなかなか手に入らない。</li>
+<li>英雄化はオカワルから簡単に得られる能力だ。肉体系のスキルすべてにボーナスがつき、徒手格闘とも相性が良い。弓の攻撃の命中と速さも上がり、盾を持っているときは特にありがたい。</li>
+<li>早業はとてつもなく強い。加速中(1.5倍)よりも速く(2倍)攻撃できる。弓と徒手格闘は大物を倒すのに手数がかかることがあるので、2倍の速さで攻撃できるのはとても大きい。早業があれば、敵がこちらへ1歩進むあいだに3回攻撃できることも多い。</li></ul>
+<p>オカワルはこちらへの関心をどんどん失っていくことを忘れずに。能力は控えめに使い、できるだけたくさん敵を倒し、食べる必要のない死体はすべて生贄に捧げよう。それから、召喚した味方が死ぬと信仰心が下がることも忘れずに。<a href="Summon_Butterflies.html" title="Summon Butterflies">胡蝶の召喚</a>は最後の手段だ。
+</p>
+<h4><span class="mw-headline" id="The_Shining_One">輝けるもの</span></h4>
+<p><a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>は、長い終盤戦を戦うのにうってつけだ。地下墓地、太古の霊廟、地獄、パンデモニウムを除いて(ゾットの領域も含めて)すべて片づけたら改宗しよう。オカワルがときどき巨人をけしかけてくるが、この時点ではたいした脅威ではない。地下墓地で信仰心を最大にしたら、祭壇で神罰のロングボウを作る。その弓と射出物の転送があれば、見えるものなら何にでも深手を負わせられる。
+</p><p>輝けるものは毒を嫌うことを忘れずに。うっかり罰を受けないよう、毒つきの矢弾はすべて捨ててしまおう。
+</p>
+<h3><span class="mw-headline" id="Skills">スキル</span></h3>
+<p>弓、使う武器のスキル、それに(レベルがいくつか上がってからは)戦闘を、最大になるまで重点的に上げる。経験値の一部は呪文詠唱と、主力の呪文を「優秀」にするのに必要な系統のスキル(特に転位術)にも回す。ゾットの罠にうっかり踏み込みはじめる前に、罠のスキルにもいくらか(10〜12 あれば十分)振っておくのを忘れずに。
+</p><p>セントールが甲冑を上げるのはつらいが、中盤になったら、防具による呪文のペナルティを減らすためにいくらか上げておきたくなるかもしれない。また、知力ではなく器用さを上げることにしたなら、躱し身も少し上げておく価値はあるかもしれない。とはいえ、HP とダメージを最大まで伸ばすほうが、ずっとすぐに効果が出る。
+</p>
+<h3><span class="mw-headline" id="Magic">魔法</span></h3>
+<p>主に肉体で戦うので、たいていは MP がだいぶ余る。とても役立つ低レベルの呪文がいくつかある。
+</p>
+<ul><li><a href="Portal_Projectile.html" title="Portal Projectile">射出物の転送</a>は必須。遠距離攻撃で狙った相手を直接攻撃できる。待てよ……その手に持っているのは何だ？ 弓じゃないか。命中も上がるうえ、武器で攻撃するのと同じ速さで唱えられるので、早業や英雄化とも組み合わさる。</li>
+<li><a href="Swiftness.html" title="Swiftness">俊足</a>も必須。速さを使って戦いの流れを支配しよう。</li>
+<li><a href="Blink.html" title="Blink">瞬間移動</a>はちょっと運任せだが、それでもとても役立つ。できればテレポート制御と組み合わせよう。</li>
+<li><a href="Apportation.html" title="Apportation">収拾</a>を使えば、矢弾を歩いて拾いに行かずに回収できる。おかげで、ほかのモンスターを起こさずに矢弾を回収できる。</li>
+<li><a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>は、距離をとって戦うことが多いのでとても役立つ。巻物や薬の節約にもいくらかなる。</li>
+<li><a href="Flight_(spell).html" title="Flight (spell)">飛行</a>は場面によってはとても便利だ。</li>
+<li><a href="Summon_Butterflies.html" title="Summon Butterflies">胡蝶の召喚</a>は、すぐに使える盾を作り出す。蝶ごしに矢を撃てるし、通り抜けることもできるが、敵の足止めになる。オカワルは蝶の味方が死ぬのを見るのを嫌がることを忘れずに。</li>
+<li><a href="Abjuration.html" title="Abjuration">解放の宣誓</a>はとても役立つが、それなりの威力がないと、何かを消せるまでに何ターンも無駄にすることになるだろう。<a href="Evocations.html" title="Evocations">発動</a>にはほかの利点もあるので、ロッドで済ませるほうが良いこともある。</li></ul>
+<p>ゲームが進むにつれて、目標にできる高レベルの呪文もいくつかある。
+</p>
+<ul><li><a href="Haste.html" title="Haste">加速</a>はいつでも役立つ。そのうえ、輝けるものに改宗したあとは、天使の味方を加速できる。加速した天使はとんでもない。もちろん、<a href="Wand_of_hasting.html" title="Wand of hasting">加速のワンド</a>が見つかれば、スキル上げの手間がだいぶ省ける。</li>
+<li><a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>は、徒手格闘を使うなら役立つ。中盤には、これなしでは十分なダメージを出せない敵がいると気づくかもしれない。このビルドなら、刃の手でターンあたりに驚くほどのダメージを出せる。</li>
+<li><a href="Condensation_Shield.html" title="Condensation Shield">凝結の盾</a>は、場所によってはあると便利だ。攻撃を遅くせずに盾が得られる。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

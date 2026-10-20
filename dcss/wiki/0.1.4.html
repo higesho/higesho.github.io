@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>バージョン 0.1.4 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="バージョン 0.1.4(0.1.4)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>バージョン 0.1.4 <span class="en">0.1.4</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/0.1.4">0.1.4</a>」(対象の版の記載なし、2012-12-21 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=0.1.4&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 古い版 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i>この記事は <a href="Dungeon_Crawl.html" class="mw-redirect" title="Crawl">Crawl</a> の過去のリリースについてのものだ。最新版を含むほかのバージョンについては、<a href="List_of_Stone_Soup_versions.html" title="List of Stone Soup versions">Stone Soup のバージョンの一覧</a>を参照。</i></div>
+<p><b>0.1.4</b> は <i>Dungeon Crawl Stone Soup</i> の古いバージョンで、2006年11月28日にリリースされた。
+</p>
+<h2><span class="mw-headline" id="Release_notes">リリースノート</span></h2>
+<p>Stone Soup 0.1.4 (20061128)
+</p>
+<ul><li> シフ・ムーナの信仰心が、上限を超えて一周してしまうことはなくなった。</li>
+<li> 視界の計算を速くした。</li>
+<li> レベルコンパイラは、Crawl の起動時に splev.des と vaults.des を読み込むようになった。</li>
+<li> [1603062] save_dir と LOAD_PACKAGE_CMD を組み合わせたときの問題を直した(sartak)。</li>
+<li> ハイスコアの処理で起きるセグメンテーション違反を、さらにいくつか直した。</li>
+<li> セーブしたゲームの一覧が、経験値の順に並ぶようになった。</li>
+<li> [1601205] 階のマップで、* と ' を使ってアイテムを記録した場所へ飛べるようになった。</li>
+<li> [1581184] 視界の外にある腐った肉や死体が見えてしまうのを直した。</li>
+<li> [1601595] 溶岩から煙が上がるようになり、沼の浅い水からは霧が立ちやすくなった。</li>
+<li> 1594106 を修正: 生来の能力がダンプに書き出されていなかった。</li>
+<li> 1601227 を実装: pickup_mode。</li>
+<li> [1601588] 地獄の業火、猛火の矢、溶岩の矢で蝋が溶けるようになった。</li>
+<li> [1601349] プレイヤーの立っているマスに視界の判定が及んでいなかったのを直した。</li>
+<li> [1599883] 階層間自動移動は、除外した場所をできるだけ避けるようになった。</li>
+<li> levdes の構文強調スクリプトに、端末(tty)用の色を加えた。</li>
+<li> farm_and_country が出るもっとも浅い階を 16 にした。</li>
+<li> 1601230 を実装: sort_menus を auto:5(初期値)の形で指定できるようになった。この場合、アイテムが 5 個以上ある分類だけが並べ替えられる。</li>
+<li> 1601277 を実装: 狙いをつけるとき、'f' が 't' と同じ働きをする。</li>
+<li> [1601161] 彫像の能力値を調整した。</li>
+<li> モンスターがかける魔法効果の威力が、-1 ではなく 4*HD になった。</li>
+<li> ドラコニアンの説明文を加えた。</li>
+<li> ドラコニアンの移相者と招集者を少し強くした。</li>
+<li> 1601016 を実装: 武器を構えるときと投げるときのメニューの見出しを改善した。</li>
+<li> 1601061 を実装: 怪力や透明化を延長したときのメッセージを改善した。</li>
+<li> プレイヤーの状態表示に、荷重も出るようになった。</li>
+<li> ナーガの速度の変異についてのメッセージを整理した。</li>
+<li> 金色ドラコニアンに、自分が酸に耐性を持つことがわかるようにした。</li>
+<li> 金貨を落とせなくなった。</li>
+<li> [1597621] 自動で食事をする Lua スクリプトが腐った肉塊を勧めるのは、それを食べられる種族に対してだけになった。</li>
+<li> Windows でのカーソルのふるまいを直した。</li>
+<li> [1600189] ミイラの回復は、何も起こらないときには MP もターンも使わなくなった。</li>
+<li> 黄色ドラコニアンが、ふたたび唾を立て続けに吐けるようになった。</li>
+<li> 160093 を修正: 盾に関するメッセージが多すぎた。</li>
+<li> 守護の護符で、負のエネルギーへの耐性が 1 段階得られるようになった。</li>
+<li> 負のエネルギーへの耐性は、1 段階につき拷問のダメージを 10% 減らす。守護の護符でも負のエネルギーへの耐性が 1 段階得られる。</li>
+<li> 1599765 を実装: 自動で解体しているあいだは、武器を持ち替えるメッセージを出さない。</li>
+<li> 1599805 を修正: ゾムが、すでに死んだモンスターを稲妻でもう一度殺していた。</li>
+<li> [1597595] 落とすアイテムを選ぶメニューに、所持品の重さの合計を出すようにした。</li>
+<li> マクロの作成と保存は ~ で行う。</li>
+<li> [1598730] モンスターの持ち物がでたらめに入れ替わるのを直した。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

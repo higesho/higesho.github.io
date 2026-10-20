@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARCHIVED Flaming Corpse&#x27;s Deep Elf Air Elementalist/Summoner/Necromancer guide &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ARCHIVED Flaming Corpse&#x27;s Deep Elf Air Elementalist/Summoner/Necromancer guide(ARCHIVED Flaming Corpse&#x27;s Deep Elf Air Elementalist/Summoner/Necromancer guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ARCHIVED Flaming Corpse&#x27;s Deep Elf Air Elementalist/Summoner/Necromancer guide</h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/ARCHIVED_Flaming_Corpse's_Deep_Elf_Air_Elementalist/Summoner/Necromancer_guide">ARCHIVED Flaming Corpse&#x27;s Deep Elf Air Elementalist/Summoner/Necromancer guide</a>」(0.10 向け、2024-08-30 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=ARCHIVED_Flaming_Corpse's_Deep_Elf_Air_Elementalist/Summoner/Necromancer_guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.10 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.10.html" title="0.10">0.10</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><br />
+</p>
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p><br />
+このガイドでは、<a href="Deep_Elf.html" title="Deep Elf">闇エルフ</a>の<a href="Air_Elementalist.html" title="Air Elementalist">風の精霊使い</a>に向いたスキルの伸ばし方を順に説明する。適性の似たほかの種族でも同じ道をたどれるし、ほかの<a href="Background.html" title="Background">職業</a>(<a href="Hedge_Wizard.html" class="mw-redirect" title="Wizard">魔術師</a>や、ほかの系統の精霊使いなど)でもかまわない。
+</p><p>全体の流れはこうだ。序盤は風の魔術を中心に戦い、中盤までに<a href="Summon_Elemental.html" title="Summon Elemental">精霊の召喚</a>で大気の精霊を呼べるようにする。その後は<a href="Necromancy.html" title="Necromancy">死霊術</a>に集中して<a href="Necromutation.html" title="Necromutation">死者の躯</a>を安定して唱えられるようにし、そこからは<a href="Haunt.html" title="Haunt">招霊</a>を攻撃の主力にする。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Starting_Spellbook"><span class="tocnumber">1</span> <span class="toctext">最初の魔法書</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Initial_Skills"><span class="tocnumber">2</span> <span class="toctext">序盤のスキル</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Melee"><span class="tocnumber">3</span> <span class="toctext">近接戦闘</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Equipment"><span class="tocnumber">4</span> <span class="toctext">装備</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Weapons"><span class="tocnumber">4.1</span> <span class="toctext">武器</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Armour"><span class="tocnumber">4.2</span> <span class="toctext">防具</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Jewelery"><span class="tocnumber">4.3</span> <span class="toctext">装身具</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Other"><span class="tocnumber">4.4</span> <span class="toctext">その他</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Gods"><span class="tocnumber">5</span> <span class="toctext">神</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Stats"><span class="tocnumber">6</span> <span class="toctext">能力値</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Summoning"><span class="tocnumber">7</span> <span class="toctext">召喚</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#General_Use"><span class="tocnumber">7.1</span> <span class="toctext">基本的な使い方</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Weak_Companions"><span class="tocnumber">7.2</span> <span class="toctext">弱い仲間</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Summon_Elemental"><span class="tocnumber">7.3</span> <span class="toctext">精霊の召喚</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Haunt"><span class="tocnumber">7.4</span> <span class="toctext">招霊</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Shadow_Creatures"><span class="tocnumber">7.5</span> <span class="toctext">影の怪物</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Summon_Horrible_Things"><span class="tocnumber">7.6</span> <span class="toctext">おぞましきものの召喚</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Late_Game_Skills"><span class="tocnumber">8</span> <span class="toctext">終盤のスキル</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Starting_Spellbook">最初の魔法書</span></h2>
+<p>最初に持っている魔法書で、序盤にとれる戦術と、伸ばせる呪文の系統が決まる。闇エルフは戦闘の適性が低く HP も少ないので、基本的には離れたところから敵を倒すことになる。
+</p><p>風の精霊使いは<a href="Book_of_Air.html" title="Book of Air">大気の魔法書</a>を持って始まる。火力は十分で、生き残りやすさを大きく上げてくれる呪文もいくつか入っている。収録呪文とその使い道は<a href="Book_of_Air.html" title="Book of Air">大気の魔法書</a>の記事を見てほしい。
+</p><p>この育成方針では、<a href="Hedge_Wizard.html" class="mw-redirect" title="Wizard">魔術師</a>から始めるのもとてもよい選択だ。<a href="Book_of_Minor_Magic.html" title="Book of Minor Magic">下級魔術の魔法書</a>には役に立つ呪文が雑多に詰まっていて、手放せない<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>も入っている。
+</p>
+<h2><span class="mw-headline" id="Initial_Skills">序盤のスキル</span></h2>
+<p>最初は<a href="Spellcasting.html" title="Spellcasting">呪文詠唱</a>、<a href="Conjurations.html" title="Conjurations">妖術</a>、<a href="Air_Magic.html" title="Air Magic">風の魔術</a>に集中する。<a href="Swiftness.html" title="Swiftness">俊足</a>を確実に唱えるだけなら<a href="Charms.html" title="Charms">加護</a>は数レベルで足りる。<a href="Haste.html" title="Haste">加速</a>や<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>を使えるようにするための訓練は、もっとあとでよい。<a href="Translocations.html" title="Translocations">転位術</a>も数レベル上げておき、<a href="Blink.html" title="Blink">瞬間移動</a>を覚えたら成功率を Excellent まで持っていきたい。
+</p>
+<h2><span class="mw-headline" id="Melee">近接戦闘</span></h2>
+<p>闇エルフは打たれ弱く、殴り合いも苦手なので、近接戦闘はしないに越したことはない。ただし<a href="Short_Blades.html" title="Short Blades">短剣</a>はそこそこ扱えるし、<a href="Stabbing.html" title="Stabbing">急所攻撃</a>はかなり得意だ。<a href="Confusion.html" class="mw-redirect" title="Confused">混乱</a>したモンスターはまともに反撃できず、<a href="Stabbing.html" title="Stabbing">急所攻撃</a>をとても受けやすい。そのため闇エルフにとって、悪臭の雲とダガーの組み合わせは使う価値がある。とはいえ、近接戦闘を丸ごと避けるほうが安全な戦い方だ。急所攻撃は召喚中心の戦い方ともそれなりに相性がよい。気をそらされたモンスターも急所を突きやすくなるからだ(混乱しているモンスターほどではないが)。
+</p><p>近接戦闘をあまりするつもりがなくても、<a href="Fighting.html" title="Fighting">戦闘</a>スキルは HP をささやかながら大事な分だけ増やしてくれる。
+</p>
+<h2><span class="mw-headline" id="Equipment">装備</span></h2>
+<h3><span class="mw-headline" id="Weapons">武器</span></h3>
+<p>闇エルフは短剣と急所攻撃が得意なので、<a href="Dagger.html" title="Dagger">ダガー</a>が一番の選択肢になる。<a href="Venom.html" title="Venom">毒液</a>のダガーはよいし、<a href="Electrocution.html" title="Electrocution">電撃</a>のブランドのものもよい。<a href="Quick_blade.html" title="Quick blade">クイックブレード</a>もよい選択だ。<a href="Undead.html" title="Undead">アンデッド</a>用に、<a href="Holy_wrath.html" title="Holy wrath">神罰</a>のブランドのついた短剣を予備に持ち歩くと便利だ。それから、<a href="Draining_(brand).html" title="Draining (brand)">掠奪のブランド</a>の武器は、序盤ではいちばん「守り」に向いた武器かもしれない。弱いモンスターならヒットダイスを下げてすぐに倒してしまえるからだ。代わりに倒したときの経験値が減るが、その減り方はわずかだそうだ。召喚した仲間に倒させるよりはずっと少ない。
+</p><p>ダガーには問題が一つある。基本ダメージがとても低いのだ。ゲームが進むと、1 ターンあたりのダメージはまともな痛手を与えるには低すぎる。急所攻撃のダメージに頼る(先にモンスターを混乱させる、眠らせるなどしておくか、透明になっておく)か、ダガーをすっぱり捨てるかのどちらかにしよう。たいていの場合、ダガーを<a href="Weapon_speed.html" class="mw-redirect" title="Weapon Speed">最小の攻撃間隔</a>まで上げるのにかかる経験値は、手間に見合わない。
+</p><p>ダメージの低い武器にいちばん合うのは、基本ダメージを倍にするタイプ(<a href="Vorpal.html" title="Vorpal">ヴォーパル</a>や<a href="Flaming.html" title="Flaming">火炎</a>など)ではないブランドだ。<a href="Draining_(brand).html" title="Draining (brand)">掠奪</a>、<a href="Electrocution.html" title="Electrocution">電撃</a>、<a href="Venom.html" title="Venom">毒液</a>、さらには<a href="Distortion.html" title="Distortion">歪曲</a>あたりを狙おう。<a href="Antimagic.html" title="Antimagic">反魔法</a>も場面によっては使える(MP が切れたときに敵の呪文使いと鉢合わせしたら、これに持ち替える)。
+</p><p>近接戦闘をあまりしないなら、<a href="Magical_staff.html" title="Magical staff">魔法の杖</a>のほうがよい。成功率(<a href="Spell_Success.html" class="mw-redirect" title="Spell success">呪文の成功率</a>)の低い呪文があるなら魔術の杖、MP を増やしたいなら魔力の杖、シフ・ムーナの魔力回復の能力がないなら魔力供給の杖だ。
+</p><p><a href="Rod.html" title="Rod">ロッド</a>も、見つかるならよい選択だ。<a href="Rod_of_Smiting.html" title="Rod of Smiting">打擲のロッド</a>は仲間を巻き込まないので、召喚中心の戦い方とよく合う。<a href="Rod_of_demonology.html" class="mw-redirect" title="Rod of Demonology">悪魔学のロッド</a>があれば、<a href="Abjuration.html" title="Abjuration">解放の宣誓</a>と<a href="Recall.html" title="Recall">招来</a>を覚える呪文の一覧から外せるかもしれないし、召喚呪文を補うように唱えることもできる。
+</p>
+<h3><span class="mw-headline" id="Armour">防具</span></h3>
+<p><a href="Armour.html" title="Armour">甲冑</a>スキルを 2、3 レベル上げておくと、重い防具による呪文詠唱のペナルティを減らせる。ただし大して減るわけではないので、呪文使いは基本的にローブ、レザーアーマー、トロル革の鎧、まだらドラゴンの鎧あたりにとどめておくべきだ。甲冑スキルを上げれば、リングメイルや沼ドラゴンの鎧、もしかするとエルフのスケイルメイルも着られるだろう。運がよければ、よい耐性やほかの付呪がいくつかついた軽い<a href="Artefact.html" title="Artefact">アーティファクト</a>の防具が見つかる。
+</p><p>盾やラージシールドは避けよう。ただ、呪文の成功率が高ければ、バックラー(特にエルフのバックラー)ならたいてい問題なく使える。反射のバックラーがあればうれしいし、防護のバックラーならなおよい。見つかればの話だが。
+</p>
+<h3><span class="mw-headline" id="Jewelery">装身具</span></h3>
+<p>食料が乏しい序盤は、<a href="Amulet_of_the_gourmand.html" title="Amulet of the gourmand">美食家の護符</a>がとても役に立つ。呪文使いは<a href="Spell_Hunger.html" class="mw-redirect" title="Spell hunger">呪文による空腹</a>があるので、ほかのタイプのキャラクターより食料がたくさん要る。これに対抗するには、できるだけいつも腹一杯にしておくのが一番だ。食料がたっぷりあれば<a href="Channeling.html" class="mw-redirect" title="Channel energy">魔力回復</a>も遠慮なく使える。もっとも、<a href="Comestibles_and_satiation.html" class="mw-redirect" title="Chunk">肉</a>を魔力に変えるなら<a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>という呪文もよい代わりになる。
+</p><p><a href="Amulet_of_clarity.html" title="Amulet of clarity">明晰の護符</a>をつけていると、自分の悪臭の雲の効果を受けなくなる(毒耐性があっても同じだ)。<a href="Alistair's_Intoxication.html" title="Alistair&#39;s Intoxication">アリステイアの酩酊</a>を唱えるなら、ほとんど必須と言ってよい。
+</p><p>常識で考えれば、<a href="Amulet_of_guardian_spirit.html" title="Amulet of guardian spirit">守護霊の護符</a>は呪文使いにとって最悪だ。しかし闇エルフの HP はレベル 27 でも 124 止まり(戦闘を数レベル上げても 135)で、<a href="Lehudib's_Crystal_Spear.html" title="Lehudib&#39;s Crystal Spear">レフディブの水晶槍</a>のような危険な攻撃で一撃死しかねない。呪文詠唱を上げきっていれば、守護霊の護符は MP の形で HP を 50 増やしてくれるようなものだ。しかもこの MP は、魔力回復や<a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>ですばやく<a href="Healing.html" title="Healing">回復</a>できる。この護符をつけていると、強烈な一撃で MP がすべて吹き飛ぶおそれはある。それでも HP がすべて吹き飛ぶよりはましだ。
+</p><p><a href="Levitation.html" title="Levitation">浮遊</a>は使えても<a href="Flight_(spell).html" title="Flight (spell)">飛行</a>は使えないなら、<a href="Amulet_of_controlled_flight.html" title="Amulet of controlled flight">飛行制御の護符</a>が<a href="The_Swamp.html" title="The Swamp">沼</a>、<a href="The_Shoals.html" title="The Shoals">浅瀬</a>、<a href="The_Abyss.html" title="The Abyss">アビス</a>で役に立つ。
+</p><p><a href="Ring_of_teleport_control.html" title="Ring of teleport control">テレポート制御の指輪</a>は強くおすすめだ。<a href="Blink.html" title="Blink">瞬間移動</a>の呪文と組み合わせれば確実性の高い逃げ道になるし、テレポートの<a href="Trap.html" title="Trap">罠</a>をうっかり踏んだときに危険な敵数体に囲まれるのも避けられる。
+</p><p><a href="Ring_of_magical_power.html" title="Ring of magical power">魔力の指輪</a>は、攻撃的な呪文使いにとって最良の指輪の一つだ。守護霊の護符と組み合わせれば、実質 HP が 9 増えることにもなる。
+</p>
+<h3><span class="mw-headline" id="Other">その他</span></h3>
+<p>魔法書をたくさん持ち歩きたくなっても、ぐっとこらえよう。1 冊 7 aum もあるのだ。持ち歩くのは、次の呪文を覚える予定の魔法書、緊急用の薬を少し、それにレーションかほかの食料を 2、3 個。残りはすべて<a href="Stash.html" title="Stash">置き場</a>に置いておく。
+</p><p>呪文使いにはワンドはあまり要らないし、1 本 10 aum もある。テレポートのワンドや癒しのワンドは、見つかれば緊急時に役立つ。<a href="Conjurations.html" class="mw-redirect" title="Conjuration">妖術</a>系のワンドも、序盤の危険な敵には有効だ。
+</p>
+<h2><span class="mw-headline" id="Gods">神</span></h2>
+<p>この育成方針なら、まず思い浮かぶのは<a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a>だ。闇エルフはどの系統の呪文も得意なので、シフがくれるさまざまな魔法書はとても価値がある。<a href="Channeling.html" class="mw-redirect" title="Channel energy">魔力回復</a>も攻撃的な呪文使いにはすばらしい能力だ(魔力供給の杖で代わりはきくが)。
+</p><p>困ったことに、このガイドの召喚術師/死人使いの部分のかなめになる<a href="Necromutation.html" title="Necromutation">死者の躯</a>の呪文は、<a href="Necronomicon.html" title="Necronomicon">ネクロノミコン</a>以外ではめったに見つからない。そしてシフ・ムーナはネクロノミコンをくれない。ネクロノミコン自体は、ダンジョンの床や<a href="Shop.html" title="Shop">店</a>、シフがくれるアーティファクトの魔法書の中で見つかることも多い。だが<i>確実に</i>手に入れる方法は、<a href="Kikubaaqudgha.html" title="Kikubaaqudgha">キクバークッグァ</a>を信仰することしかない。キクの<a href="Corpse.html" title="Corpse">死体</a>を出す能力は、<a href="Sublimation_of_Blood.html" title="Sublimation of Blood">血の昇華</a>と組み合わせれば魔力回復の代わりにもなる。キクはシフの代わりとして十分ありうる選択肢だ。
+</p><p><a href="Vehumet.html" title="Vehumet">ヴェフメット</a>もよい選択だ。特に、<a href="Book_of_Conjurations.html" title="Book of Conjurations">妖術の魔法書</a>を贈り物としてもらい、<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>を早めに手に入れたいならおすすめできる。終盤に(欲しい呪文をシフの贈り物で一通り手に入れたら)シフからヴェフメットに乗り換えるのも考える価値がある。ヴェフメットは妖術と召喚術の威力を上げ、モンスターを倒すと MP をくれるので、<a href="Ziggurat.html" title="Ziggurat">ジグラット</a>のような危険な場所ではより強力だ。
+</p>
+<h2><span class="mw-headline" id="Stats">能力値</span></h2>
+<p>いつも重量オーバーにならないよう、腕力が最低でも 8 になるまでは能力値の上昇をすべて腕力に回す。腕力の上がるアーティファクトが見つかれば少なめでもなんとかなるかもしれないが、能力値の低下には気をつけよう。あとで飛行と死者の躯が使えるようになれば、運べる重さは 500 aum くらいまで増える。
+</p><p>残りの上昇は知力に回す。
+</p>
+<h2><span class="mw-headline" id="Summoning">召喚</span></h2>
+<h3><span class="mw-headline" id="General_Use">基本的な使い方</span></h3>
+<p>階を移るとき(つまり階段を降りるとき)は、キャラクターにとって特に危ない瞬間の一つだ。とんでもなく危険な<a href="Unique_monster.html" class="mw-redirect" title="Unique">ユニーク</a>のすぐ隣に出てしまうかもしれない。そいつは階段を上って戻る間に一発お見舞いしてきて、そのまま上の階まで追いかけてきてとどめを刺すかもしれない。だから階段を初めて使うとき(降りるときも上るときも)は、前もって使える限りの<a href="Charms.html" title="Charms">加護</a>の呪文を自分にかけ、敵の気をそらして遠ざけておける召喚した仲間で周りを固めておこう。階を移るときに連れて行けるのは、すぐ隣にいる仲間だけだ。つまり最大 8 体で、階段の隣が壁ならもっと少なくなる。連れて行けるだけ連れて行こう。
+</p><p><a href="Recall.html" title="Recall">招来</a>は、曲がり角の先にいるモンスターと戦うのに便利だ。召喚した仲間が階のどこかに何体かいれば、彼らが周りを取り囲むように集まって角の先まで広がり、そこでモンスターと戦い始める。新しく召喚しても同じ効果が得られることがある。特に精霊の召喚は、方向を決めて呼び出せる。
+</p><p>仲間に 't' で話しかけるのを忘れずに。心を持たない仲間でも、攻撃の命令なら理解してくれる。命令しないと、たいていは周りに集まってくるだけで何もしない。
+</p>
+<h3><span class="mw-headline" id="Weak_Companions">弱い仲間</span></h3>
+<p>低レベルの召喚呪文はあまり役に立たない。ただし<a href="Summon_Butterflies.html" title="Summon Butterflies">胡蝶の召喚</a>は逃げるときにすばらしい手段になる。一瞬で、自分の周りを 2 マスの厚さの蝶の雲で囲んでくれるのだ。蝶はこちらには道を空けるが、攻撃してくる敵には道を空けない。蝶は遠隔攻撃も邪魔してくれるので、セントールや呪文使いから後ずさりするときの隠れ蓑になる。深い階でテレポートの罠やゾットの<a href="Trap.html" title="Trap">罠</a>を見つけるのにも最適だ。蝶の雲を呼び出し、部屋の中をひらひら飛び回らせて、何かに引っかからないか見ていればよい(ただし蝶は飛んでいるので、ダーツや刃や警報などの罠は作動させないし、縦穴も見つけられない)。
+</p><p>いざというときは、<a href="Summon_Small_Mammal.html" class="mw-redirect" title="Summon Small Mammals">小動物の召喚</a>でも似たように身を守れる。少なくとも、通路を通って退くときに敵をふさぐ役には立つ。
+</p>
+<h3><span class="mw-headline" id="Summon_Elemental">精霊の召喚</span></h3>
+<p><a href="Summon_Elemental.html" title="Summon Elemental">精霊の召喚</a>は、中盤ですばらしい働きをする召喚呪文だ。呼び出される精霊の種類は、召喚する方向にあるマスの種類で決まる。何もないマスなら<a href="Air_elemental.html" title="Air elemental">大気の精霊</a>、岩(石ではない)のマスなら<a href="Earth_elemental.html" title="Earth elemental">大地の精霊</a>、溶岩や煙なら<a href="Fire_elemental.html" title="Fire elemental">火の精霊</a>、水なら<a href="Water_elemental.html" title="Water elemental">水の精霊</a>が出る。
+</p><p>火の精霊は弱い。水の精霊はよいが、近くに水場が必要だ。大気の精霊はしぶとく、攻撃も強く、信じられないほど速い。5 体以上の群れなら、中盤の敵はほとんど何でも倒せる。飛んでいるので<a href="The_Shoals.html" title="The Shoals">浅瀬</a>や<a href="The_Swamp.html" title="The Swamp">沼</a>など、どの<a href="Dungeon_branches.html" class="mw-redirect" title="Branch">分岐</a>でも役に立つ。おまけに足が速いので、こちらが俊足と飛行と加速を<i>全部</i>かけていてもついてこられる。
+</p><p>いちばんの難点は、<i>友好的な</i>大気の精霊を呼ぶには風の魔術のスキルが 15 は欲しいことだ。闇エルフの風の精霊使いなら、たいてい経験レベル 10〜15 でここに届き、それからは大気の精霊の軍勢を呼び出せる。大気の精霊は電撃が効かないので、<a href="Shock.html" title="Shock">電撃</a>や<a href="Lightning_Bolt.html" title="Lightning Bolt">稲妻の矢</a>を彼ら越しに遠慮なく撃てる。同じ風の魔術の<a href="Airstrike.html" title="Airstrike">旋風の一撃</a>も召喚との相性が抜群だ。<a href="Smiting.html" class="mw-redirect" title="Smite">打擲型</a>の狙い方なので、仲間に当てずにすむ。倒す手段がないなら、大気の精霊を呼ぶのはやめておこう。走って逃げきれる相手ではないし、攻撃もかなり痛い。加速と<a href="Summon_Butterflies.html" title="Summon Butterflies">胡蝶の召喚</a>、それに近くの階段があれば逃げられるかもしれない。0.9 の時点では、旋風の一撃は裏切った大気の精霊にはまったく効かない。
+</p><p><a href="Evocable_items.html#Air_elemental_fan" title="Evocable items">大気の精霊の扇</a>を使えば、MP を減らさずに精霊をたくさん呼び出せる(たとえば MP の回復を待つ間に使える)。使い物になるには<a href="Evocations.html" title="Evocations">発動</a>が 5 レベルくらいは必要だ。そこまで上げても、90% 以上の確率で失敗する。
+</p><p><a href="Earth_elemental.html" title="Earth elemental">大地の精霊</a>もよい仲間になる。足は遅いが攻撃はとても強い。大地の精霊の召喚は、岩(石ではない)の壁を 1 枚掘り抜く手っ取り早い方法でもある。友好的な精霊が出る確率を最大にするのに必要な<a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>のスキルは 5 レベルだけだ(それに、どのみち走って逃げるのも簡単だ)。ただし地の魔術は風の魔術と反対の<a href="http://crawl.chaosforge.org/Element" data-untr="1" title="Element">元素</a>なので、風の魔術のスキルがすでに高いと、地の魔術はとても上がりにくい(逆も同じだ)。
+</p>
+<h3><span class="mw-headline" id="Haunt">招霊</span></h3>
+<p><a href="Haunt.html" title="Haunt">招霊</a>は、召喚呪文の中の邪悪なる聖杯だ。ゲームの召喚呪文で唯一、<a href="Smiting.html" class="mw-redirect" title="Smite">打擲型</a>の狙い方をする。召喚したモンスターで自分を囲むのではなく、相手を囲むのだ。3〜5 回唱えれば、相手はたいてい邪悪な霊にすっかり囲まれ、その結果すっかり気をとられる。
+</p><p>欠点もいくつかある。唱えると<a href="Sickness.html" class="mw-redirect" title="Sick">病気</a>になることがあるし、消費 MP が多い(7)し、<a href="Spell_Hunger.html" class="mw-redirect" title="Spell hunger">呪文による空腹</a>も大きい。だがこうした欠点は、招霊を<a href="Necromutation.html" title="Necromutation">死者の躯</a>と一緒に使えばほぼ完全に消える。リッチ化している間は病気にかからず、何をしても空腹にならない。つまり招霊を 5〜8 回続けて唱え、魔力回復を何度も使い、それを数十ターンごとに繰り返せるわけだ。こんな猛攻に耐えられる相手はほとんどいない。
+</p>
+<h3><span class="mw-headline" id="Shadow_Creatures">影の怪物</span></h3>
+<p><a href="Shadow_Creatures.html" title="Shadow Creatures">影の怪物</a>は、今いる階にふさわしい「ランダムな遭遇」を 1 つ呼び出す。弱いモンスターと危険なモンスターが混ざっている階では、役に立つかどうかは運しだいだ。たとえば迷宮:10 なら、<a href="Ogre_mage.html" title="Ogre mage">オーガの魔術師</a>入りの<a href="Ogre.html" title="Ogre">オーガ</a>の大集団が出ることもあれば……<a href="Hobgoblin.html" title="Hobgoblin">ホブゴブリン</a>が 1 体出るだけのこともある。どのモンスターも危険な<a href="The_Realm_of_Zot.html" class="mw-redirect" title="Realm of Zot">ゾットの領域</a>では、ときどき<a href="Moth_of_wrath.html" title="Moth of wrath">憤怒せる蛾</a>が出てしまうとはいえ、とても役に立つ。
+</p>
+<h3><span class="mw-headline" id="Summon_Horrible_Things">おぞましきものの召喚</span></h3>
+<p><a href="Summon_Horrible_Things.html" title="Summon Horrible Things">おぞましきものの召喚</a>は、「ランダムな」遭遇は弱いのに、特別な遭遇がとても強い階で役に立つ。<a href="The_Tomb.html" title="The Tomb">太古の霊廟</a>や、<a href="The_Vaults.html" title="The Vaults">宝物庫</a>の最下層などだ。こうした階では影の怪物は役に立たないし、招霊で呼んだ霊たちは<a href="Guardian_mummy.html" title="Guardian mummy">衛兵のミイラ</a>や大勢の<a href="List_of_dragons.html" class="mw-redirect" title="Dragon">ドラゴン</a>を倒すのに苦労するかもしれない。
+</p>
+<h2><span class="mw-headline" id="Late_Game_Skills">終盤のスキル</span></h2>
+<p>この育成方針で死霊術に力を入れるのは、ほとんど 2 つの呪文のためだけだ。<a href="Necromutation.html" title="Necromutation">死者の躯</a>と<a href="Haunt.html" title="Haunt">招霊</a>である。これらをうまく唱えるには、死者の躯なら死霊術と<a href="Transmutations.html" title="Transmutations">変成術</a>をそれぞれ 15 以上、招霊なら死霊術を 15 以上と<a href="Summonings.html" title="Summonings">召喚術</a>を 10 以上にしておきたい。
+</p><p><a href="Channeling.html" class="mw-redirect" title="Channel energy">魔力回復</a>を使い始めたら、<a href="Invocations.html" title="Invocations">祈祷</a>スキルもそこそこ欲しい。祈祷を鍛えるには、その魔力回復を使うのが一番だ。ここで大事なのは 4 の倍数のスキルレベルだけだという点に注意してほしい。スキルが 4、8、12……になるたびに、1 回で回復する魔力が増える。4 レベルあるだけでも戦闘の合間にすばやく魔力を回復でき、さらに上げればもっと速くなり、ひょっとすると戦闘<i>中</i>にも回復できる。
+</p><p><a href="Spellcasting.html" title="Spellcasting">呪文詠唱</a>はレベル 27 まで上げきるべきだ。MP、覚えられる呪文の数、<a href="Spell_Success.html" class="mw-redirect" title="Spell success">呪文の成功率</a>に影響する。闇エルフは呪文詠唱の適性が +4 なので、<a href="Zot_5.html" title="Zot:5">ゾットの領域:5</a>に着くころには 27 に届く。
+</p><p>召喚中心の戦い方に切り替えると、<a href="Conjurations.html" title="Conjurations">妖術</a>は重要ではなくなる。招霊を使いこなせるようになったら、たいていは訓練を止めてしまってかまわない。ただしそれまでは、<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の球体</a>がいくつかの危険な<a href="Unique_monster.html" class="mw-redirect" title="Unique">ユニーク</a>相手にものすごく役に立つ。
+</p><p><a href="Air_Magic.html" title="Air Magic">風の魔術</a>を 20 くらいまで上げると、ゲームでも指折りの恐ろしい攻撃呪文、<a href="Tornado.html" title="Tornado">荒れ狂う嵐</a>を唱えられるようになる。おまけに大気の精霊はこの呪文のダメージを受けないので、召喚と荒れ狂う嵐はすばらしいワンツーパンチになる。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

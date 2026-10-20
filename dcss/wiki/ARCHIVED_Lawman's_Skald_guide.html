@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【保管】Lawman の吟遊詩人ガイド &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="【保管】Lawman の吟遊詩人ガイド(ARCHIVED Lawman&#x27;s Skald guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>【保管】Lawman の吟遊詩人ガイド <span class="en">ARCHIVED Lawman&#x27;s Skald guide</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/ARCHIVED_Lawman's_Skald_guide">ARCHIVED Lawman&#x27;s Skald guide</a>」(0.10 向け、2021-07-29 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=ARCHIVED_Lawman's_Skald_guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.10 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.10.html" title="0.10">0.10</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><br />
+</p>
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Notes_on_This_Guide"><span class="tocnumber">1</span> <span class="toctext">このガイドについて</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Core_Races"><span class="tocnumber">2</span> <span class="toctext">主な種族</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Kobold"><span class="tocnumber">2.1</span> <span class="toctext">コボルド</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Halfling"><span class="tocnumber">2.2</span> <span class="toctext">ハーフリング</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#High_Elf"><span class="tocnumber">2.3</span> <span class="toctext">ハイエルフ</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Merfolk"><span class="tocnumber">2.4</span> <span class="toctext">水棲の民</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Vampire"><span class="tocnumber">2.5</span> <span class="toctext">吸血鬼</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Skills_strategy"><span class="tocnumber">3</span> <span class="toctext">スキルの方針</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Early_Game"><span class="tocnumber">3.1</span> <span class="toctext">序盤</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Mid-game"><span class="tocnumber">3.2</span> <span class="toctext">中盤</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Late_Game"><span class="tocnumber">3.3</span> <span class="toctext">終盤</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Fighting_Strategy"><span class="tocnumber">4</span> <span class="toctext">戦い方</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Item_Strategy"><span class="tocnumber">5</span> <span class="toctext">アイテムの方針</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Early_Game_Items"><span class="tocnumber">5.1</span> <span class="toctext">序盤のアイテム</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Weapons"><span class="tocnumber">5.2</span> <span class="toctext">武器</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Jewelry"><span class="tocnumber">5.3</span> <span class="toctext">装身具</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Staves"><span class="tocnumber">5.4</span> <span class="toctext">杖</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Spell_Strategy"><span class="tocnumber">6</span> <span class="toctext">呪文の方針</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="#Stat_Strategy"><span class="tocnumber">7</span> <span class="toctext">能力値の方針</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="#Game_Plan"><span class="tocnumber">8</span> <span class="toctext">攻略の流れ</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="#Early_game_2"><span class="tocnumber">8.1</span> <span class="toctext">序盤</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Middle_Game"><span class="tocnumber">8.2</span> <span class="toctext">中盤</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#End_Game"><span class="tocnumber">8.3</span> <span class="toctext">終盤</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Notes_on_This_Guide">このガイドについて</span></h2>
+<p>このガイドで扱うのはキャラクター固有の部分だけだ。ゲーム全体の進め方については<a href="Walkthrough.html" title="Walkthrough">攻略の流れ</a>とあわせて読んでほしい。吟遊詩人という職業は、0.6 から 0.10 にかけて大きく作り直されてきた。昔は水棲の民の聖戦士(今はもう無い)が、強力な補助呪文で殴る戦士として遊べた。今の吟遊詩人は、よくある「身軽な暗殺者」に近い遊び方になる。
+</p><p>終盤の吟遊詩人は、よく育った補助魔法と強い戦闘スキルを兼ね備え、ずば抜けて器用なキャラクターになりうる。ただし始めたばかりの吟遊詩人は、「何でも屋」によくある弱点を抱えている。戦闘と魔法の両方を育てなければならないので、どちらも中途半端なのだ。
+</p><p>このガイドが扱うのは、吟遊詩人のよくある育て方だ。たいていは序盤を強い戦士として過ごし、のちに呪文使い・戦士・TSO の祈祷使いを兼ねる形に移っていく。もっと効果的な育て方を知っているプレイヤーは、ぜひ自分の考えを書き足してほしい。
+</p>
+<h2><span class="mw-headline" id="Core_Races">主な種族</span></h2>
+<p>理屈の上では、戦闘向きの種族ならどれでも良い吟遊詩人になる。吟遊詩人に必要なのは、回避(魔法を唱えるため)、しっかりした武器スキル(主な攻撃手段になる)、そしてそれなりの呪文詠唱か加護のスキルだ。とはいえ吟遊詩人は序盤、戦闘も魔法も弱い。中盤まで生き延びるには、戦闘にかなり寄った種族のほうが助かる。
+</p>
+<h3><span class="mw-headline" id="Kobold"><a href="Kobold.html" title="Kobold">コボルド</a></span></h3>
+<p>コボルドは、ハーフリングが良い吟遊詩人になるのと同じ理由で、それなりの吟遊詩人になる。変化がほしいならハーフリングの代わりに試してみてもいいが、全体としては二つのうち弱いほうだ。呪文系のスキル(呪文詠唱・加護・召喚術・転位術)の適性は両者でだいたい同じで、戦闘面の利点はコボルドの HP の低さで帳消しになる。肉食なので序盤の呪文による空腹は多少ましになるが、そもそも使う呪文のレベルが低いので、たいした問題にはならない。さらにコボルドは序盤に選べる射撃武器の幅が狭い。ただ終盤には、相互訓練のおかげで長剣に楽に乗り換えられる。終盤のコボルドは、手に入る肉が少ないのと器用さが低いのとで劣る。それでも、どちらの種族も水棲の民よりはましだ。
+</p><p>コボルドの吟遊詩人の効果的な変種として、早いうちにキクバークッグァの信仰に乗り換える手がある。キクがくれる死体は、終盤の頼れる食料源になる。苦痛の武器か、呪文「苦痛の傷痕」があれば、「生きている」相手には手のつけられない強さになる。
+</p>
+<h3><span class="mw-headline" id="Halfling"><a href="Halfling.html" title="Halfling">ハーフリング</a></span></h3>
+<p>こっそり急所を突く種族であるハーフリングは、有能な吟遊詩人になる。呪文詠唱の適性が -2、戦闘が -1 という足かせはあるが、躱し身が高く(しかも小柄な種族だ！)、加護のスキルもそこそこで、レベルの上がり方は人間と同じ速さだ。ハーフリングは吟遊詩人としての優れた近接戦を、本来の(そしてもっと得意な)射撃戦で補える。序盤は高い器用さと多彩な戦闘手段のおかげで楽になり、終盤には長剣やそのほかいろいろな育て方に移っていける。ハーフリングは生まれつき変異への耐性が少しあり、代謝が遅い(1 段階)ので、死体が無く変異を招くものの多い終盤の分岐を長く探索するときに役立つ。
+</p>
+<h3><span class="mw-headline" id="High_Elf"><a href="High_Elf.html" title="High Elf">ハイエルフ</a></span></h3>
+<p>ハイエルフは、おそらくもう一つの定番の吟遊詩人の種族だ。尖っていながらも全体に偏りの少ない適性、優れた能力値、大きな MP を持ち、吟遊詩人のいつもの呪文系統から元素の系統や妖術にも手を広げやすい。ハイエルフの吟遊詩人が、吟遊詩人のいつもの呪文をひととおり身につけたうえで、宝物庫:8 に乗り込むために荒れ狂う嵐を用意しておく、というのもありえない話ではない。ただしハイエルフはハーフリングよりさらに打たれ弱く、序盤はかなりきつく感じるはずだ。魔法の適性が高いので、ハイエルフの吟遊詩人は魔法に手を広げやすい。そうすれば、終盤には魔法寄りの神も幅広く選べるようになる。
+</p>
+<h3><span class="mw-headline" id="Merfolk"><a href="Merfolk.html" title="Merfolk">水棲の民</a></span></h3>
+<p>水棲の民は長柄武器の適性が +4 ととんでもなく高く、加護も +1 ある。戦闘と躱し身の適性が優れた強力な戦士で、レベルの上がりもかなり速い。HP も回避も高い吟遊詩人を作るなら手堅い選択だ。下の呪文の表も、この種族をもとにしている。
+</p>
+<h3><span class="mw-headline" id="Vampire"><a href="Vampire.html" title="Vampire">吸血鬼</a></span></h3>
+<p>吸血鬼といえば、ずば抜けた呪術使い(呪術の適性が +4！)として、またまともな空腹の時計が無いことを気にせず(むしろ悪用して)戦える呪文使いとして知られている。だが、独特の遊び方に慣れてしまえば有能な吟遊詩人にもなる。吸血鬼は刃物の武器の扱いに優れ、トレードマークの牙のおかげで徒手格闘に常時ボーナスがある(しかも必ず徒手格闘を 1 レベル以上持って始まる)。吸血鬼の吟遊詩人は、ほかの種族と同じようにオカワルを信仰してもうまくいくし、ほかの神の旗を掲げてもいい。たとえばマクレブ(血が無い状態でも回復でき、強力な召喚の祈祷もある)や、キクバークッグァ(強力な死霊術の魔法書と、新鮮な血への渇きを満たすほぼ無限の死体をすぐにくれる！)だ。どちらも普通のプレイでも、15 ルーンを狙うときでも、最後まで役に立つ。
+</p>
+<h2><span class="mw-headline" id="Skills_strategy">スキルの方針</span></h2>
+<h3><span class="mw-headline" id="Early_Game">序盤</span></h3>
+<ul><li>加護以外の魔法系のスキルはすべて切る。呪文詠唱もだ。唯一の攻撃手段である戦闘より補助呪文を優先すると、あっという間に死ぬ。呪文詠唱を鍛える理由は、呪文の枠を増やすことだけだ。そして序盤なら、レベルが上がれば同じことが達成できる。加護は、最初の呪文を高い成功率で唱えられるまで鍛える。呪文詠唱は 1、2 レベル上げるだけでいい。最初の呪文を覚えるにはそれで足りる。</li>
+<li>呪文詠唱をそれ以上鍛えるのは、役に立つ呪文の載った魔法書を見つけてからにする。見つけたら、その呪文を覚えられるまで呪文詠唱に集中し、覚えたらまた切る。</li>
+<li>主力の武器スキルに集中し、戦闘と躱し身を鍛える。それ以外はすべて切る。</li></ul>
+<h3><span class="mw-headline" id="Mid-game">中盤</span></h3>
+<ul><li>短剣は迷宮:15 あたりから弱さが目立ちはじめる。それまでに長剣へ乗り換えておきたい。</li>
+<li>うまくいく吟遊詩人は、加護を鍛えるのをやめて、召喚術・転位術・祈祷・発動といったほかの魔法系のスキルを育てる。最初の魔法書の呪文が安定して唱えられるようになったら、すぐに加護から、新しく見つけた呪文のほうへ切り替える。</li>
+<li>甲冑と盾のスキルは、まともな装備を見つけてから育てる。</li>
+<li>射撃武器のスキルを 8 まで上げては「いけない」。スキルが 8 になると、オカワルは武器や防具に加えて矢弾まで授けてくるようになる。矢弾は、ほかのアイテムほど必要にならない。</li>
+<li>隠密や急所突きに大きく(というか少しでも)つぎ込まないこと。輝けるものを信仰しはじめると、どちらも役に立たなくなる。</li></ul>
+<h3><span class="mw-headline" id="Late_Game">終盤</span></h3>
+<ul><li>加護の代わりに転位術を、精密瞬間移動が安定して唱えられるまで鍛える。</li>
+<li>輝けるものに改宗するなら、祈祷と召喚術を鍛える。</li>
+<li>強力なロッドを見つけたら、発動を鍛える。</li>
+<li>地獄やパンデモニウムのような終盤の場所に挑む前に、罠と扉を 10 くらいまで鍛えておく。</li></ul>
+<h2><span class="mw-headline" id="Fighting_Strategy">戦い方</span></h2>
+<p>この節はまだ書きかけだ。ぜひ意見を寄せてほしい。
+</p><p>目の前の危険から逃れるには、半精密な瞬間移動(<a href="Blink.html" title="Blink">瞬間移動</a>の呪文とテレポート制御の組み合わせ、または終盤のテレポートできない階では<a href="Controlled_Blink.html" title="Controlled Blink">精密瞬間移動</a>)を使う。そのあと<a href="Swiftness.html" title="Swiftness">俊足</a>と<a href="Flight_(spell).html" title="Flight (spell)">飛行</a>を唱えて歩き去ればいい。
+</p>
+<h2><span class="mw-headline" id="Item_Strategy">アイテムの方針</span></h2>
+<h3><span class="mw-headline" id="Early_Game_Items">序盤のアイテム</span></h3>
+<p>主な武器スキルを主力から外すべきではないが、見つけたアイテムは一つ残らず拾って使うべきだ。射撃武器、ワンド、薬、巻物など、何でもだ。いつものやり方でアイテムを識別したら、少しでも危険な相手と近接戦の間合いに入る前に、それを全部使い切る。投擲武器や、運が良ければワンドで相手を弱らせ、恐慌の巻物や怪力の薬なども使っていく。スキルをつぎ込むアイテムを選ぶのはあとでいい。今はとにかく何でも使うことだ。
+</p>
+<h3><span class="mw-headline" id="Weapons">武器</span></h3>
+<p>最初の呪文それぞれに対応するブランド付きの武器が見つかるまでは、ブランドの無い武器を常に一本持ち歩いておく。強化値の良い状態で出てきた高ダメージの武器を探し、ゲームの後半に高い強化値まで上げることを目指す。見つけた武器は、+4,+4 を超えて強化しないこと。巻物はオカワルを見限るときまで取っておく。そのときになったら手持ちを見渡して、一番良い武器を選んで強化すればいい。ブランドの無い射撃用の発射台を持っておくのも良い考えだ。そうすれば、相手が近づきすぎる前に、強化した弾で弱らせておける。
+</p><p>お気に入りの武器を構えたまま未識別の巻物を読むときは、細心の注意を払うこと。+4,+4 のサーベルを台無しにするには、うっかりありきたりなヴォーパルのブランドを永久に付けてしまうのが一番だ。
+</p><p>ブランドが永久に付いた武器は、いちいち MP を使って呪文をかけずに済むぶん、強化した武器より優れている。とはいえゲームの後半に、ブランドの無い +9,+9 のクイックブレードを一本用意するほうが、ブランドの種類ごとに +9,+9 の武器をそろえるよりずっと簡単だ。
+</p><p>輝けるものに何かを祝福してもらうときのために、高い強化値まで上げられる高ダメージの武器(ブランド付きの武器でもいい)をもう一本持っておく。
+</p>
+<h3><span class="mw-headline" id="Jewelry">装身具</span></h3>
+<p>逃げる手段を増やしてくれるものなら何でもありがたい。特に<a href="Ring_of_teleport_control.html" title="Ring of teleport control">テレポート制御の指輪</a>があれば、<a href="Blink.html" title="Blink">瞬間移動</a>が<a href="Controlled_Blink.html" title="Controlled Blink">精密瞬間移動</a>の安上がり版になる。<a href="Amulet_of_rage.html" title="Amulet of rage">怒りの護符</a>は何かと便利だ。<a href="Amulet_of_faith.html" title="Amulet of faith">信仰の護符</a>はオカワルの贈り物を増やしてくれる(輝けるものに改宗したら外す)。
+</p>
+<h3><span class="mw-headline" id="Staves">杖</span></h3>
+<p>呪文による空腹を減らすアイテムはゲームの後半には役立つが、低レベルの呪文にはほとんど意味が無いし、序盤に当てにするには珍しすぎる。
+</p>
+<h2><span class="mw-headline" id="Spell_Strategy">呪文の方針</span></h2>
+<p>この節はまだ書きかけだ。ぜひ意見を寄せてほしい。
+</p><p>以下は、上位に名を連ねる水棲の民の吟遊詩人、evilmike の呪文の統計だ。
+</p>
+<table class="wikitable sortable">
+<tr>
+<th>呪文
+</th>
+<th>詠唱回数
+</th></tr>
+<tr>
+<td><a href="Regeneration_rate.html" class="mw-redirect" title="Regeneration">再生</a>
+</td>
+<td>322
+</td></tr>
+<tr>
+<td><a href="Shroud_of_Golubria.html" title="Shroud of Golubria">ゴルブリアの帷子</a>
+</td>
+<td>203
+</td></tr>
+<tr>
+<td><a href="Poison_Weapon.html" title="Poison Weapon">毒の武器</a>
+</td>
+<td>29
+</td></tr>
+<tr>
+<td><a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>
+</td>
+<td>307
+</td></tr>
+<tr>
+<td><a href="Fire_Brand.html" title="Fire Brand">火炎の武器</a>
+</td>
+<td>6
+</td></tr>
+<tr>
+<td><a href="Freezing_Aura.html" title="Freezing Aura">凍結の武器</a>
+</td>
+<td>42
+</td></tr>
+<tr>
+<td><a href="Control_Teleport.html" title="Control Teleport">精密テレポート</a>
+</td>
+<td>8
+</td></tr>
+<tr>
+<td><a href="Haste.html" title="Haste">加速</a>
+</td>
+<td>79
+</td></tr>
+<tr>
+<td><a href="Swiftness.html" title="Swiftness">俊足</a>
+</td>
+<td>73
+</td></tr>
+<tr>
+<td><a href="Blink.html" title="Blink">瞬間移動</a>
+</td>
+<td>11
+</td></tr>
+<tr>
+<td><a href="Flight_(spell).html" title="Flight (spell)">飛行</a>
+</td>
+<td>36
+</td></tr>
+<tr>
+<td><a href="Apportation.html" title="Apportation">収拾</a>
+</td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Phase_Shift.html" title="Phase Shift">位相変移</a>
+</td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Controlled_Blink.html" title="Controlled Blink">精密瞬間移動</a>
+</td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Abjuration.html" title="Abjuration">解放の宣誓</a>
+</td>
+<td>82
+</td></tr>
+<tr>
+<td><a href="Recall.html" title="Recall">招来</a>
+</td>
+<td>66
+</td></tr>
+<tr>
+<td><a href="Cure_Poison.html" title="Cure Poison">毒の治療</a>
+</td>
+<td>8
+</td></tr>
+<tr>
+<td><a href="Dispersal.html" title="Dispersal">転送</a>
+</td>
+<td>1
+</td></tr></table>
+<p><br />
+最初の魔法書から: いずれは全部の呪文を覚えることになる。ただし、ゴルブリアの帷子と再生はすぐに覚えること。次は火炎の武器だ。毒の武器のほうがずっと役に立つのだが、たまに出てくる毒の効かない敵のほうがずっと危険なのだ。続いて毒の武器、飛び道具反発、凍結の武器の順に覚える。序盤の大半は、再生と、帷子か飛び道具反発の組み合わせが主な呪文の組み立てになる。
+</p><p>中盤の呪文: 迷宮:15 に着くころには、精密テレポート、加速、俊足、瞬間移動、飛行を覚えているべきだ。このうち加速と俊足は群を抜いて役に立つので、どんどん唱えよう。戦うより逃げるべき場面では、収拾も役に立つ。
+</p><p>終盤の呪文: 迷宮:25 あたりから先では、位相変移、精密瞬間移動、解放の宣誓、招来を覚える。ここで優先するのは召喚術の呪文だ。召喚されたものの群れに対処するには欠かせない。位相変移は、ゴルブリアの帷子からのぜひとも欲しい上位版になる。そのあとの転送と毒の治療は……まあ、役に立つらしい。
+</p><p>この育て方では、終盤には集団への解放の宣誓を目標にしたいところだが、このスキル構成だと現実的ではないかもしれない。飛来物の阻止もあれば便利だが、覚えるのはおそらく難しすぎる。ぜひ意見を寄せてほしい。
+</p>
+<h2><span class="mw-headline" id="Stat_Strategy">能力値の方針</span></h2>
+<p>呪文を唱えるのだから、毎回知力を上げるべきだ。
+</p>
+<h2><span class="mw-headline" id="Game_Plan">攻略の流れ</span></h2>
+<h3><span class="mw-headline" id="Early_game_2">序盤</span></h3>
+<p>寺院を見つけたら、いちばん簡単なのは<a href="Okawaru.html" title="Okawaru">オカワル</a>を信仰することだ。武器や防具の贈り物はすばらしいし、<a href="Okawaru.html" class="mw-redirect" title="Heroism">英雄化</a>も強い。
+</p><p><a href="The_Lair.html" class="mw-redirect" title="Lair">獣の棲み処</a>を見つけたら、すぐにそこに荷物の置き場を作る。
+</p>
+<h3><span class="mw-headline" id="Middle_Game">中盤</span></h3>
+<p>締めつけから確実に逃れる手段が無いうちは、<a href="Snake_Pit.html" title="Snake Pit">蛇穴</a>に挑まないこと。小柄な種族は、この攻撃に特に弱い。
+</p><p>分岐の最下層に挑む前に、半精密な瞬間移動を用意しておきたい。半精密な瞬間移動と<a href="Haste.html" title="Haste">加速</a>、できれば<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>がそろったら、<a href="The_Vestibule_of_Hell.html" class="mw-redirect" title="Vestibule of Hell">地獄の入り口</a>を制圧して、そこに荷物の置き場を作る。入るときは、補助呪文を全部かけた状態で入ること。
+</p><p><a href="The_Vaults.html" title="The Vaults">宝物庫</a>を回っているあいだに、経験値とオカワルの信仰心を使って<a href="Invocations.html" title="Invocations">祈祷</a>を 8〜12(10 が目安)まで鍛えておく。
+</p><p><a href="The_Crypt.html" class="mw-redirect" title="Crypt">地下墓地</a>に入る前に、<a href="Okawaru.html" title="Okawaru">オカワル</a>から<a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>に改宗しておくといい。すると<a href="Okawaru.html" title="Okawaru">オカワル</a>がときどき、敵対する巨人であなたを取り囲んでくる。そうなったら瞬間移動を唱えて半精密な瞬間移動で逃げるか、<a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>か<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>、<a href="Swiftness.html" title="Swiftness">俊足</a>、<a href="Flight_(spell).html" title="Flight (spell)">飛行</a>を唱えて歩き去ればいい。巨人は倒すか避けるかしなければならないが、元の階に戻るころには散らばっているはずなので、一体ずつ相手にできる。
+</p><p><a href="The_Crypt.html" class="mw-redirect" title="Crypt">地下墓地</a>を回るうちに、<a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>への信仰心がうまくいけば最大になる(それまでは能力を一つも使わないこと)。そうなったら、それまでに見つけた一番良い武器(たぶんオークの坑道か刃の広間で手に入れたもの)を手に取り、祭壇で祝福してもらい、武器強化の巻物を全部つぎ込む。輝けるものの信仰心がもっと必要なら、邪悪な武器を捧げるか、<a href="Tartarus.html" title="Tartarus">タルタロス</a>を探索する。<a href="Hell.html" title="Hell">地獄</a>や<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>では、常にこの武器を使うこと。
+</p>
+<h3><span class="mw-headline" id="End_Game">終盤</span></h3>
+<p>できれば、<a href="Hell.html" title="Hell">地獄</a>の最深部に挑む前に<a href="Controlled_Blink.html" title="Controlled Blink">精密瞬間移動</a>を鍛えておく。
+</p><p><a href="Hell.html" title="Hell">地獄</a>や<a href="Pandemonium.html" title="Pandemonium">パンデモニウム</a>の君主たちと戦うとき、そして<a href="Zot_5.html" title="Zot:5">ゾットの領域:5</a> では、<a href="Swiftness.html" title="Swiftness">俊足</a>、<a href="Flight_(spell).html" title="Flight (spell)">飛行</a>、<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>、<a href="Ozocubu's_Armour.html" title="Ozocubu&#39;s Armour">オゾクブの鎧</a>、<a href="The_Shining_One.html" class="mw-redirect" title="Divine Shield">神気の盾</a>を切らさないようにする。聖なる戦士を何体か呼んで一緒に戦わせ、彼らに<a href="Haste.html" title="Haste">加速</a>をかけ、敵に出くわしたら自分にも<a href="Haste.html" title="Haste">加速</a>をかける。
+</p><p><a href="The_Tomb.html" class="mw-redirect" title="Tomb">太古の霊廟</a>では、どうしても必要でない限りミイラとは戦わないこと。代わりに聖なる戦士を呼んで(<a href="Haste.html" title="Haste">加速</a>をかけるのを忘れずに)、見えている中で一番強いミイラを倒させる。それが司祭のミイラか上位のミイラなら、拷問を何度も浴びせられたときに逃げられるよう射程ぎりぎりに陣取り、ミイラが何かを召喚したら<a href="Abjuration.html" title="Abjuration">解放の宣誓</a>を唱える。階段を使う前には必ず自分に<a href="Haste.html" title="Haste">加速</a>をかけ、加速した聖なる戦士を少なくとも一体呼んでおき、ミイラを一体ずつ階段の上へ連れていって片付ける。それから、スフィンクスと戦うときは魔法抵抗の装備をたくさん身につけて、麻痺させられないようにすること。
+</p>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

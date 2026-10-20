@@ -17,7 +17,7 @@
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Tension">Tension</a>」(0.28 向け、2022-07-28 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Tension&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.28 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
 <div class="wiki">
 <div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.28.html" title="0.28">0.28</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
-<p><b>緊張度</b>(tension)とは、ざっくり言えば、いまの状況がどれだけ危険かをゲームが判断した値だ。敵の数、敵の強さ、プレイヤーの現在の状態など、いくつもの要素から自動で計算される。
+<p>緊張度(tension)とは、ざっくり言えば、いまの状況がどれだけ危険かをゲームが判断した値だ。敵の数、敵の強さ、プレイヤーの現在の状態など、いくつもの要素から自動で計算される。
 </p>
 <h2><span class="mw-headline" id="Effects">効果</span></h2>
 <p>ゲームのいくつかの仕組みは、緊張度をもとに動いている。
@@ -30,7 +30,7 @@
 <p>緊張度は、周りのモンスターとプレイヤーの現在の状況を見て決まる。視界内のモンスターそれぞれについて経験値の値を求め、それを次の要素で補正する。これらの補正はすべて重ねてかかる。
 </p>
 <ul><li> 見えていても、プレイヤーを傷つけられないモンスターは緊張度に何も加えない。
-<ul><li> <a href="Disposition.html" class="mw-redirect" title="Neutral">中立</a>や<a href="http://crawl.chaosforge.org/Peaceful" data-untr="1" class="mw-redirect" title="Peaceful">平和的</a>なモンスターは緊張度に何も加えない。</li>
+<ul><li> <a href="Disposition.html" class="mw-redirect" title="Neutral">中立</a>や<a href="Disposition.html" class="mw-redirect" title="Peaceful">平和的</a>なモンスターは緊張度に何も加えない。</li>
 <li> <a href="Paralysis.html" title="Paralysis">麻痺</a>しているモンスター、<a href="Sleep.html" title="Sleep">眠っている</a>モンスター、<a href="http://crawl.chaosforge.org/Flee" data-untr="1" class="mw-redirect" title="Flee">逃げている</a>モンスターは緊張度に加わらない。</li></ul></li>
 <li> HP が満タンでないモンスターは、緊張度への寄与がそのぶん減る。HP が半分のモンスターなら、緊張度に足す(または引く)量も半分になる。</li>
 <li> 神に関わる効果のために緊張度を求めるときは、怒った神が呼び出した敵対モンスターは緊張度に加わらない。神は自分が送り込んだ手下のことまでは気にかけない、という理屈だ。</li>

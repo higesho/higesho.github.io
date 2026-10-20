@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARCHIVED A.Siochi&#x27;s Felid Transmuter guide &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ARCHIVED A.Siochi&#x27;s Felid Transmuter guide(ARCHIVED A.Siochi&#x27;s Felid Transmuter guide)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ARCHIVED A.Siochi&#x27;s Felid Transmuter guide</h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/ARCHIVED_A.Siochi's_Felid_Transmuter_guide">ARCHIVED A.Siochi&#x27;s Felid Transmuter guide</a>」(0.9 向け、2014-04-15 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=ARCHIVED_A.Siochi's_Felid_Transmuter_guide&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.9 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.9.0.html" class="mw-redirect" title="0.9">0.9</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><br />
+</p>
+<div style=" width: 100%; width: auto"><b>この記事には他のプレイヤーによる助言が含まれており、主観的だったり、古かったり、不正確だったり、的外れだったりする可能性がある。</b> 助言は適宜取捨選択し、自己責任で読んでほしい！</div>
+<p><br />
+<b>この記事は <i>CRAWL</i> の古い版に向けて書かれたもので、今の版では当てにならない。保管庫から外してほしければ、今の版に合わせて書き直すこと。</b>
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Why_a_Felid_Transmuter.3F"><span class="tocnumber">1</span> <span class="toctext">なぜフェリッドの変成術師なのか</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Introduction"><span class="tocnumber">2</span> <span class="toctext">はじめに</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Overall_Strategy"><span class="tocnumber">3</span> <span class="toctext">全体の戦略</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Skills"><span class="tocnumber">4</span> <span class="toctext">スキル</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Combat_Skills"><span class="tocnumber">4.1</span> <span class="toctext">戦闘スキル</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Magic_Skills"><span class="tocnumber">4.2</span> <span class="toctext">魔法スキル</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Invocations_and_Evocations"><span class="tocnumber">4.3</span> <span class="toctext">祈祷と発動</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Stats"><span class="tocnumber">5</span> <span class="toctext">能力値</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Gods"><span class="tocnumber">6</span> <span class="toctext">神</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Elyvilon"><span class="tocnumber">6.1</span> <span class="toctext">エリヴィロン</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Jiyva"><span class="tocnumber">6.2</span> <span class="toctext">ジーヴァ</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Spells"><span class="tocnumber">7</span> <span class="toctext">呪文</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Transmutation"><span class="tocnumber">7.1</span> <span class="toctext">変成術</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Other"><span class="tocnumber">7.2</span> <span class="toctext">その他</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#Equipment"><span class="tocnumber">8</span> <span class="toctext">装備</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Why_a_Felid_Transmuter.3F">なぜフェリッドの変成術師なのか</span></h1>
+<p>コボルドの狂戦士には飽きた？ハイエルフの魔術師はバランスを取るのが難しすぎる？とにかく何か違うものがやりたい？それならフェリッドの変成術師はどうだろう。
+</p><p>フェリッドのプレイはかなり頭を使うものになる。<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>のように真正面から殴り合えるほど頑丈ではない。かといって<a href="Deep_Elf.html" title="Deep Elf">闇エルフ</a>のように強力な妖術を撃ち込む力もない。<a href="Vampire.html" title="Vampire">吸血鬼</a>並みに忍び足は得意だが、ダガーが使えないので急所攻撃を存分に活かすこともできない。極めつけに、装身具以外の装備は何ひとつ身に着けられない！力で押し勝つことも、魔法で吹き飛ばすことも、顔面にナイフを突き立てることもできないわけだ。となれば、知恵で敵を出し抜くしかない！
+</p><p>そこで変成術の呪文の出番だ。状況に合わせて手を選べる柔軟さがある。敵が何匹もいる？<a href="Evaporate.html" title="Evaporate">蒸発</a>で混乱させろ！相手に毒が効く？<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>だ！<a href="Ice_statue.html" title="Ice statue">氷の像</a>の前を通りたい？<a href="Ice_Form.html" title="Ice Form">氷の躯</a>！手っ取り早く大ダメージを出したい？<a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>！部屋にいるクソ野郎どもを、何が何でも一匹残らずぶっ殺さなきゃならない？<a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>！変成術師なら、どんな場面でも同じ戦法に縛られずに済む。
+</p><p>興味が湧いた？それならこのガイドはあなたのためのものだ。
+</p>
+<h1><span class="mw-headline" id="Introduction">はじめに</span></h1>
+<p>フェリッドにはうれしい長所がいくつかある。体が小さく、もともと<a href="Dodging.html" title="Dodging">躱し身</a>の適性が高いので、<a href="Evasion.html" title="Evasion">回避</a>が高くなる。生まれつき足が速く、<a href="Stealth.html" title="Stealth">隠密</a>も得意なので、戦う相手を選びやすい。武器は使えないが牙と爪があり、<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>の助けになる。最後に、いつでも肉を食べられるので、空腹に悩まされることはまずない。
+</p><p>空腹を気にしなくていいということは、呪文を遠慮なく使えるということでもある。フェリッドは直接ダメージを与える呪文はあまり得意ではないが、<a href="Translocations.html" title="Translocations">転位術</a>と<a href="Hexes.html" title="Hexes">呪術</a>の適性はずば抜けて高く、<a href="Charms.html" title="Charms">加護</a>の適性も高い。<a href="Transmutations.html" title="Transmutations">変成術</a>も平均より上だ。おまけに、生まれつき MP が 20% 多い。
+</p>
+<h1><span class="mw-headline" id="Overall_Strategy">全体の戦略</span></h1>
+<p>あなたは待ち伏せ型の捕食者だ。獲物よりも忍び足がうまく、足も速い。これを活かそう！
+</p><p>忍び足と速さを使ってまず獲物を見つけ、いったん角の向こうへ下がる。隠れたまま強化呪文をかける。そして物陰から飛び出し、獲物にまっすぐ向かって、相手が何が起きたのか気づく前に仕留めにかかる！戦いが有利に進んでいるかどうかは<i>すばやく</i>見極めること。不利なら退いて、態勢を立て直し、もう一度挑む。大事なのは最後の結果だけで、何回やり直したかなんて誰も数えていない。
+</p><p>一番うまくいくのは、敵と一対一で戦うときだ。分断して、各個撃破しよう。
+</p>
+<ul><li>忍び足を活かして、敵を一匹ずつおびき寄せる。</li>
+<li>混乱させる手段で敵の群れを無力化し、一匹ずつ片付ける。序盤なら<a href="Evaporate.html" title="Evaporate">蒸発</a>と<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>がこれにうってつけだ。</li>
+<li>速さを使って敵をばらけさせる。速い敵はついてくるが、遅い敵は後ろに取り残される。速い組を始末してから、遅い組に取りかかればいい。<a href="Swiftness.html" title="Swiftness">俊足</a>があるとずいぶん楽になる。</li></ul>
+<p>相手が一匹だけでも、戦術の選択肢はいくつもある。
+</p>
+<ul><li>大物は引き撃ちで相手をする。あなたはたいていの敵より速い。<a href="Haste.html" title="Haste">加速</a>と<a href="Swiftness.html" title="Swiftness">俊足</a>を使えば、ほぼすべての敵より速くなる。だから相手には追いかけるのにターンを使わせよう。<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>の毒攻撃とは特に相性がいい。運が良くて慎重にやれば、序盤のオーガを一発も食らわずに倒せる。</li>
+<li>打たれ弱い敵は手数で押し切る。使える中で一番ダメージの高い変身で<a href="Haste.html" title="Haste">加速</a>するか<a href="Berserk.html" title="Berserk">バーサーク</a>する。これには<a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>が最適だ。<a href="Potion_of_might.html" title="Potion of might">怪力の薬</a>を飲むのも手だ。軽装の呪文使いを相手にするときに非常によく効く。</li>
+<li>しぶとい敵には耐久戦を挑む。<a href="Ice_Form.html" title="Ice Form">氷の躯</a>や<a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>で守りを固め、毒を入れた<a href="Evaporate.html" title="Evaporate">蒸発</a>でじわじわダメージを与える。氷の躯は<a href="Hydra.html" title="Hydra">ヒドラ</a>相手に特に有効だ。</li>
+<li>遠隔攻撃をしてくる敵は、混乱させてから一気に詰め寄る。<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>をかけたあと、<a href="Swiftness.html" title="Swiftness">俊足</a>、<a href="Haste.html" title="Haste">加速</a>、あるいはある程度狙いの付けられる<a href="Blink.html" title="Blink">瞬間移動</a>で、すばやく殴れる距離まで近づく。特にセントールは、遠隔戦にくらべて近接戦がかなり弱い。</li>
+<li>弱点を突く。相手に毒が効くなら、<a href="Evaporate.html" title="Evaporate">蒸発</a>か<a href="Poisonous_Cloud.html" title="Poisonous Cloud">猛毒の雲</a>と<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>を使う。冷気が効くなら<a href="Ice_Form.html" title="Ice Form">氷の躯</a>。火が効くなら<a href="Poisonous_Cloud.html" title="Poisonous Cloud">猛毒の雲</a>と<a href="Ignite_Poison.html" title="Ignite Poison">毒の燃焼</a>を使い、そのあと<a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>する。</li></ul>
+<h1><span class="mw-headline" id="Skills">スキル</span></h1>
+<p>最初の目標は、変成術のスキルを<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>の呪文を唱えられるところまで上げることだ。序盤はこれが主力の呪文になる。
+</p><p>戦闘スキルと呪文スキルのバランスを取るのは少し難しい。どの魔法書をいつ見つけるかに大きく左右される。基本的には、上げられるときは戦闘スキルを上げ、新しい呪文を覚える必要があるときに呪文スキルを上げるといい。
+</p><p>フェリッドはもともと攻めより守りのほうがずっと得意だ。だからそれを補うように、攻撃面のスキルに力を入れよう。
+</p>
+<h2><span class="mw-headline" id="Combat_Skills">戦闘スキル</span></h2>
+<p>ハイブリッドの職業で普通に上げるスキルのほかに、FeTr は次のスキルを上げるといい……
+</p>
+<ul><li><a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>:高ければ高いほどいい。ダメージを出す手段はほぼこのスキルだけになる。5 の倍数ごとに攻撃の遅延が 0.1 aut ずつ減るので、5 の倍数まで上げるのが一番効率がいい。</li>
+<li><a href="Stabbing.html" title="Stabbing">急所攻撃</a>:フェリッドはこの適性がとても高いので、何レベルか上げておく価値はある。<a href="Spriggan.html" title="Spriggan">スプリガン</a>のように一撃で仕留めることはまずできないが、何レベルかあれば、混乱したり動けなくなったりしたモンスターをすばやく片付けるのに役立つ。</li></ul>
+<h2><span class="mw-headline" id="Magic_Skills">魔法スキル</span></h2>
+<p>主な魔法スキルは変成術、転位術、加護だ。
+</p>
+<ul><li><a href="Transmutations.html" title="Transmutations">変成術</a>:かなり高くしておきたい。おかしなことに、変成術の呪文の多くは変成術スキルを上げても直接は強くならない。むしろ、二つの系統にまたがる変成術の呪文を全部使いこなすために、変成術スキルを高くしておく必要があるのだ。</li>
+<li><a href="Translocations.html" title="Translocations">転位術</a>:<a href="Blink.html" title="Blink">瞬間移動</a>の載った魔法書を見つけたら、Excellent(当時の失敗率の表示で、ほとんど失敗しない段階)で使えるまで転位術を上げる。<a href="Shroud_of_Golubria.html" title="Shroud of Golubria">ゴルブリアの帷子</a>と<a href="Phase_Shift.html" title="Phase Shift">位相変移</a>を見つけたときも同じだ。</li>
+<li><a href="Charms.html" title="Charms">加護</a>:転位術と同じ考え方だ。<a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>の載った魔法書を見つけたら、それが Excellent で唱えられるまで上げる。<a href="Haste.html" title="Haste">加速</a>と<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>も同様だ。</li></ul>
+<p>変成術の呪文の多くは二つの系統にまたがっている。だから元素の系統もいくつか、少なくとも数レベルは上げておきたい。残念ながら、フェリッドの元素魔法の適性はかなり平凡だ。その中ではまだましなのが火、大気、毒だ。それぞれ数レベルずつ上げると、いい結果が得られる。火は<a href="Ignite_Poison.html" title="Ignite Poison">毒の燃焼</a>と<a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>を強くする。大気と毒があれば<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>と<a href="Poisonous_Cloud.html" title="Poisonous Cloud">猛毒の雲</a>が使える。大気は<a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>、<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>、<a href="Swiftness.html" title="Swiftness">俊足</a>を覚える助けになり、毒は<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>を強くする。
+</p>
+<ul><li><a href="Conjurations.html" title="Conjurations">妖術</a>:元素の系統を少なくとも一つは上げることになるだろうから、妖術も少し上げておく価値がある。役に立つ遠隔攻撃が使えるようになる。<a href="Throw_Icicle.html" title="Throw Icicle">氷柱の投射</a>や<a href="Iskenderun's_Mystic_Blast.html" title="Iskenderun&#39;s Mystic Blast">イスケンデルンの爆破の秘術</a>のような呪文は、ある種の厄介な相手に対して命綱になることがある。</li></ul>
+<h2><span class="mw-headline" id="Invocations_and_Evocations">祈祷と発動</span></h2>
+<p>エリヴィロンを信仰しているなら祈祷を上げる。発動も何レベルか上げておくと元が取れる。発動できる指輪や護符が使えるようになるからだ。
+</p>
+<h1><span class="mw-headline" id="Stats">能力値</span></h1>
+<p>まずは腕力を 8〜10 まで上げる。そこから先は、能力値の上げ方に簡単な決まりはなさそうだ。どれも少しずつ必要になる。
+</p>
+<ul><li>腕力は多いほどいい。戦闘のダメージと持てる量が増える。</li>
+<li>知力が上がると、呪文を覚えるときや唱えるときに成功しやすくなる。</li>
+<li>器用さが上がると、隠密、回避、そして<a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>を使っているときのダメージが上がる。</li></ul>
+<p>全体としては、腕力よりも知力と器用さのほうが少しだけ大事なようだ。
+</p>
+<h1><span class="mw-headline" id="Gods">神</span></h1>
+<h2><span class="mw-headline" id="Elyvilon">エリヴィロン</span></h2>
+<p>フェリッドは打たれ弱いので、<a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a>はゲームのどの段階でもすばらしい選択だ。
+</p>
+<h2><span class="mw-headline" id="Jiyva">ジーヴァ</span></h2>
+<p><a href="Jiyva.html" title="Jiyva">ジーヴァ</a>は中盤から終盤にかけての面白い選択肢だ。ジーヴァの能力はランダムだが、耐性の穴を埋める助けになる。特に、<a href="Mutation.html" title="Mutation">変異</a>をある程度コントロールできるようにしてくれるのがジーヴァ(彼か彼女か、それとも「それ」か)の真骨頂だ。ほかにも……
+</p>
+<ul><li>メインの迷宮を片付けてから改宗すれば、ほぼすぐに信仰心が最大になる。各階でジェリーを呼び出して、何もかも食べさせておけばいい。</li>
+<li>フェリッドは装身具しか着けられないので、耐性は本当に悩みの種だ。ジーヴァはランダムな変異を授けてくれる(つまり耐性がつくこともある)うえに、悪い変異を取り除く能力もくれる。だから突然変異の薬を飲んで、恐れずに耐性を探しに行ける。変成術師なら(少なくとも 0.9 では)最初から豊潤なる蒸留を持っているので、突然変異の薬をさらに手に入れられる。この呪文があるなら、死体をそのまま食べてはいけない。死体によっては悪い変異が出やすいものがあるし、平均すれば蒸留したほうが全体として多くの変異が得られる。</li>
+<li>フェリッドにとって、蹄、角、足爪の変異には欠点が一つもない！どうせ装備は何も使えないし、これらの変異は徒手格闘のダメージを大きく伸ばしてくれる。</li>
+<li>ジーヴァは持ち物を破壊から守ってくれる。フェリッドは薬と巻物に大きく頼ることになるので、これはありがたい。</li></ul>
+<h1><span class="mw-headline" id="Spells">呪文</span></h1>
+<h2><span class="mw-headline" id="Transmutation">変成術</span></h2>
+<p>フェリッドの変成術師の要は柔軟さだ。いろんな状況に対応できる呪文を探そう。各種の変身呪文はそのいい例だ。守りを上げるもの、攻めを上げるもの、バランスの取れたものがある。耐性がつくものもあれば、弱点ができるものもある。いつでも状況に合った手を選ぶようにしよう！
+</p><p>どの呪文を覚えて使うかは、どの元素スキルを上げるかに影響するし、逆に影響されもする。たとえば火と毒を上げるなら、<a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>、<a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>、<a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>は使うだろうが、<a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>はおそらく使わない。
+</p><p>変成術師の最初の魔法書には、次の呪文が載っている。
+</p>
+<ul><li><a href="Fulsome_Distillation.html" title="Fulsome Distillation">豊潤なる蒸留</a>/<a href="Evaporate.html" title="Evaporate">蒸発</a>:序盤では強力な組み合わせだ。唯一の範囲攻撃なので、序盤のオークの群れを片付けるのにうってつけだ。雲の呪文を覚えたら、あとで<a href="Scroll_of_amnesia.html" title="Scroll of amnesia">忘却の巻物</a>でこれらの呪文を忘れるのも手だ。エリヴィロンは死霊術の呪文を使うといい顔をしないので、エリヴィロンを信仰しているなら特にそうするといい。</li>
+<li><a href="Spider_talisman.html" class="mw-redirect" title="Spider Form">蜘蛛</a>:序盤の主力の呪文だ。蜘蛛に変身すると AC と回避が上がり、攻撃に毒のブランドがつく！さらに、壁に張り付けるので水の上を渡れるし、(一部の)罠を避けられる！</li>
+<li><a href="Ice_Form.html" title="Ice Form">氷の躯</a>:この呪文から、変成術がいよいよ本領を発揮し始める。フェリッドは装備の制限があるので、ゲームを通して耐性に苦しむ。氷の躯は戦闘能力を上げるだけでなく、rP+ と rC+++ もくれる！ヒドラ相手にも特に便利だ。普通、フェリッドはヒドラが苦手だ。爪で首を切り落としてしまうからだ。氷の躯なら首は切り落とさないうえ、おまけに追加のダメージも与える。</li>
+<li><a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>:中盤から終盤の主力だ。刃の手(いや、正しくは「刃の前足」か)は、変身中も戦闘向きの変異を全部使えるのが特に便利だ。刃、拳、牙、角などで攻撃する。それに<a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>とちがって、フェリッドの生まれつきの高い回避もそのまま活かせる。これはボルト系の呪文をかわすのに特に役立つ。</li></ul>
+<p>ほかに役立つ変成術の呪文には次のものがある。
+</p>
+<ul><li><a href="Granite_talisman.html" class="mw-redirect" title="Statue Form">石像</a>:さらに耐性が増える！石像になると rPois、rElec、rN+ がつく。一撃ごとのダメージも刃の手より大きくなるが、攻撃の頻度は落ちる。そのため AC の高い敵に有効で、<a href="Haste.html" title="Haste">加速</a>と組み合わせるのが一番だ。</li>
+<li><a href="Necromutation.html" title="Necromutation">死者の躯</a>:普通の 3 ルーンのゲームではそれほど役に立たず、フェリッドにとってはほかの種族以上に役に立たない。主な特徴は、拷問への耐性がつくことと、呪文による空腹がなくなることだ。3 ルーンのゲームでは拷問はたいした問題にならないし、フェリッドはほかの種族ほど拷問への耐性を必要としない。HP がとても少ないので、拷問されても失うものがずっと少ないのだ。呪文による空腹のほうも、肉を腹いっぱい詰め込めるフェリッドにはたいして関係ない。</li>
+<li><a href="Death's_Door.html" title="Death&#39;s Door">死のとば口</a>:<a href="Haste.html" title="Haste">加速</a>と組み合わせて検討する価値がある。フェリッドはどちらの系統の適性も高く、ほかのどの種族よりもこの呪文の恩恵が大きい。もともと HP が低く、命が複数あるからだ。この呪文を唱えても、唱える前とくらべてたいして悪い状況にはならないし、無敵の時間はたいてい手ごわい敵を仕留めるのに十分なくらい続く。命が複数あるおかげで、フェリッドにとってこの呪文はほかの種族よりかなり危険が少ない。とはいえ、それでも十分に気をつけて使うこと。強力だがそのぶん危険も大きい<a href="Berserk.html" title="Berserk">バーサーク</a>だと思えばいい。戦闘力が大きく上がる代わりに、効果が切れたときに状況が悪くなる。持っていない耐性を補うのにも使える。たとえば<a href="Orb_of_fire.html" title="Orb of fire">炎の球体</a>に出くわしたときなどだ。</li>
+<li><a href="Dragon-coil_talisman.html" class="mw-redirect" title="Dragon Form">竜化</a>:終盤の大きなご褒美だ。rPois と rF++ がつき、欠点として rC- がつく。ただしフェリッドは生まれつき rC+ を持っているので、この欠点は実はそれほど痛くない。HP も 50% 増える！AC は大きく上がるが、その代わり回避が下がる。とはいえ一番の目的は、とにかく「ものすごい」ダメージを出せることだろう。ドラゴンだってほんの数発で片付けられる。</li>
+<li><a href="Dig.html" title="Dig">掘削</a>:すばらしい便利呪文だ。敵とは一対一で戦う必要があり、その一番簡単な方法は幅 1 マスの通路で戦うことだ。ジグザグに掘って、敵の視線を切ろう。ジーヴァを信仰すると決めて<a href="The_Slime_Pits.html" class="mw-redirect" title="Slime Pits">スライムの穴ぐら</a>の祭壇が必要になったときにも大いに役立つ。スライムの穴ぐらで掘削を使って幅 3 マスの通路を作れば、腐食性の壁に触れずに済む。<a href="The_Slime_Pits.html" class="mw-redirect" title="Slime Pits">スライムの穴ぐら</a>の宝物庫に入る方法もこれしかない。</li>
+<li><a href="Ignite_Poison.html" title="Ignite Poison">毒の燃焼</a>:<a href="Poisonous_Cloud.html" title="Poisonous Cloud">猛毒の雲</a>とすばらしく相性がいい。敵に毒が効くなら毒で攻める。効かないなら(アンデッドなど)燃やしてしまえ！</li></ul>
+<h2><span class="mw-headline" id="Other">その他</span></h2>
+<p>フェリッドは転位術の呪文の適性が驚くほど高い。役に立つ転位術には次のものがある。
+</p>
+<ul><li><a href="Blink.html" title="Blink">瞬間移動</a>:理由は言うまでもない。フェリッドならたいてい敵より速いのだから、なおさらだ。まずくなったら瞬間移動で間合いを空け、一番近い隠れ場所へ逃げ込もう。</li>
+<li><a href="Shroud_of_Golubria.html" title="Shroud of Golubria">ゴルブリアの帷子</a>:欠かせない防御呪文だ。本来ならダメージを受けるはずの攻撃、つまり回避をすり抜けてしまった攻撃の一部について、ダメージを打ち消してくれる。フェリッドは HP がとても低いので、ダメージを避けることが何より大事だ。</li>
+<li><a href="Phase_Shift.html" title="Phase Shift">位相変移</a>:やりすぎくらいがちょうどいいこともある。回避は上げるほど効果が薄れる、ということはないようで、高ければ高いほどいいらしい。フェリッドにとってはダメージを避けることが何より大事だ！それに、回避はボルト系の呪文やドラゴンのブレスをかわすのにも役立つことをお忘れなく。</li></ul>
+<p>それに、フェリッドは加護もとても得意だ。
+</p>
+<ul><li><a href="Repel_Missiles.html" title="Repel Missiles">飛び道具反発</a>と<a href="Deflect_Missiles.html" title="Deflect Missiles">飛来物の阻止</a>:高い回避と組み合わせれば、呪文の威力の高い飛来物の阻止があるかぎり、遠隔攻撃もボルト系の呪文もドラゴンのブレスも、とにかく当たらなくなる。</li>
+<li><a href="Swiftness.html" title="Swiftness">俊足</a>:逃げるのも、殴れる距離まで詰めるのも、引き撃ちも、逃げる敵を追うのも、俊足があればずっと楽になる。</li>
+<li><a href="Haste.html" title="Haste">加速</a>:素手の攻撃はもともとゲームで一番速い。牙、爪、角などがあれば、素手の攻撃回数はとんでもないことになる。そこに加速を加えれば、敵は一発も当てられないうちに細かな血しぶきになって消える。</li></ul>
+<p>元素スキルは少なくとも一つは上げることになるだろう。たとえば毒を上げるなら、次の呪文も役に立つ。
+</p>
+<ul><li><a href="Sting.html" title="Sting">毒針</a>:要するに、遠隔攻撃はあると便利だ。逃げる敵を仕留めるのに、ほんの少し削れば足りることもある。</li>
+<li><a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>:エリヴィロンを信仰しているなら、豊潤なる蒸留と蒸発の組み合わせの代わりになる。</li>
+<li><a href="Poisonous_Cloud.html" title="Poisonous Cloud">猛毒の雲</a>:毒の燃焼とすばらしく相性がいい。</li></ul>
+<h1><span class="mw-headline" id="Equipment">装備</span></h1>
+<p>FeTr が特に探しておきたいのは……
+</p>
+<ul><li><a href="Amulet_of_rage.html" title="Amulet of rage">怒りの護符</a>はいつも手元に置いておき、確実に使えるところまで<a href="Evocations.html" title="Evocations">発動</a>を上げておこう。序盤から中盤のフェリッドは一撃あたりのダメージがとても低い。だから AC の高い敵が本当に手ごわい。いいタイミングでバーサークすれば見違えるように戦える。</li>
+<li><a href="Ring_of_wizardry.html" title="Ring of wizardry">魔術の指輪</a>は変成術師には特にありがたい。変身の多くは呪文の成功率が下がる(特に<a href="Blade_talisman.html" class="mw-redirect" title="Blade Hands">刃の手</a>)。魔術の指輪があれば、変身中でも呪文を確実に唱えやすくなる。</li>
+<li>薬と巻物にこれほど頼るしかないのだから、<a href="Amulet_of_conservation.html" title="Amulet of conservation">保存の護符</a>は必須だ。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
