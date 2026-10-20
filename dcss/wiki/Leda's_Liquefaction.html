@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>レダの流動術 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="レダの流動術(Leda&#x27;s Liquefaction)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>レダの流動術 <span class="en">Leda&#x27;s Liquefaction</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Leda's_Liquefaction">Leda&#x27;s Liquefaction</a>」(0.31 向け、2024-07-03 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Leda's_Liquefaction&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Leda%27s_liquefaction.png" data-untr="1" class="image"><img alt="Leda&#39;s liquefaction.png" src="img/Leda's_liquefaction.png" width="32" height="32" /></a>&#8195;レダの流動術
+</th></tr>
+<tr>
+<th align="left"> レベル
+</th>
+<td> 4
+</td></tr>
+<tr>
+<th align="left"> 系統<sup>1</sup>
+</th>
+<td> <a href="Alchemy.html" title="Alchemy">錬金術</a>
+</td></tr>
+
+<tr>
+<th align="left"> 系統<sup>2</sup>
+</th>
+<td> <a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>
+</td></tr>
+
+<tr>
+<th align="left"> 入手元
+</th>
+<td><a href="http://crawl.chaosforge.org/Book_of_the_Earth" data-untr="1" title="Book of the Earth">大地の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Sloth" data-untr="1" title="Book of Sloth">怠惰の魔法書</a>
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 4
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 0
+</td></tr>
+
+<tr>
+<th align="left"> 威力の上限
+</th>
+<td> 200
+</td></tr>
+
+<tr>
+<th align="left"> フラグ
+</th>
+<td> 範囲(Area)
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 術者の周りの地面を液状化させ、通り抜けにくくする。液状化した地面での移動はすべて遅くなり、液状化した地面にはまったモンスターは飛べなくなる。術者への近接攻撃は失敗することがある。
+<p>効果は威力に応じた半径で始まり、やがて縮んでいき、最後には術者だけを覆うようになってから切れる。地面との繋がりを保つため、術者は飛んでいても移動が遅くなる。
+</p>
+</td></tr></table>
+<p><b>レダの流動術</b>はレベル 4 の<a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>/<a href="Alchemy.html" title="Alchemy">錬金術</a>の呪文で、術者の周りを動きにくい地形に変える。
+</p>
+<h2><span class="mw-headline" id="Effect">効果</span></h2>
+<p>レダの流動術を唱えると、術者の立っているマスも含めて、周りの地面が液状化する。範囲の広さは呪文の残り持続時間で決まり(<a href="Silence.html" title="Silence">静寂</a>と同じような仕組み)、半径は最大 5 だ。液状化した範囲は術者と一緒に動き、床が固い地形ならどこにでも効果が及ぶ。持続時間は <code>14 + 2d(power)/2</code> ターン(最大 100 ターン)。
+</p><p>液状化した地面では、移動のディレイが術者は 3、モンスターは 6 余分にかかる。モンスターの近接攻撃は、<a href="Shallow_water.html" title="Shallow water">浅い水脈</a>にいるときと同じようにしくじることがあり、これは<a href="Amphibious.html" title="Amphibious">水陸両生</a>や<a href="http://crawl.chaosforge.org/Aquatic" data-untr="1" title="Aquatic">水棲</a>のモンスターでも変わらない。術者自身は近接攻撃の不利を受けないが、<a href="http://crawl.chaosforge.org/Flight" data-untr="1" class="mw-redirect" title="Flight">飛行</a>していても移動は遅くなる。<a href="http://crawl.chaosforge.org/Flying" data-untr="1" class="mw-redirect" title="Flying">飛行</a>しているモンスター、<a href="Stationary.html" title="Stationary">移動しない</a>モンスター、<a href="Insubstantial.html" title="Insubstantial">実体のない</a>モンスターは、どの不利も受けない。
+</p><p>効果が完全に切れるまで、この呪文はかけ直せない。そのため、半径が 1 マスまで縮んで術者が遅くなるだけになった短い間は、無防備な時間になる。
+</p><p>泥にはまったモンスターは<a href="Polar_Vortex.html" title="Polar Vortex">極渦</a>で巻き上げられず、術者の周りを回ることもない。ただし、渦のダメージはいつもどおり受ける。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<ul><li>敵が近接攻撃をしくじる見込みがあるので、この呪文は誰にとっても役に立つ。とりわけ遠隔攻撃でダメージを稼ぐキャラクターにはありがたい。近接攻撃しかできない相手があなたのところへたどり着くまでに、余分なターンがかかるからだ。</li>
+<li>相手がようやくあなたのもとへたどり着いても、<a href="Blink.html" title="Blink">瞬間移動</a>や<a href="http://crawl.chaosforge.org/Iskenderun%27s_Mystic_Blast" data-untr="1" title="Iskenderun&#39;s Mystic Blast">イスケンデルンの爆破の秘術</a>で距離を取り直せば、安全に狙い撃てるターンがさらに何ターンか稼げる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、レダの流動術は<a href="Earth_Magic.html" class="mw-redirect" title="Earth">地の魔術</a>/<a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>の呪文だった。また、基本の持続時間がわずかに短かった。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、<a href="http://crawl.chaosforge.org/Arcane_Marksmen" data-untr="1" class="mw-redirect" title="Arcane Marksmen">秘術の射手</a>がこの呪文を初期呪文として持っていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、術者も近接攻撃をしくじる不利を受けていた。また、呪文がかかっている間は飛べなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、この呪文はモンスターに<a href="Slow.html" title="Slow">減速</a>の状態をかけていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a> より前は、<a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>/<a href="http://crawl.chaosforge.org/Transmutations" data-untr="1" title="Transmutations">変成</a>の呪文だった。</li>
+<li>レダの流動術は <a href="http://crawl.chaosforge.org/0.8" data-untr="1" class="mw-redirect" title="0.8">0.8</a> で追加された。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

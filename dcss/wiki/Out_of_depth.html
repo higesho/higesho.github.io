@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OOD(本来より浅い階に出るモンスター) &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="OOD(本来より浅い階に出るモンスター)(Out of depth)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>OOD(本来より浅い階に出るモンスター) <span class="en">Out of depth</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Out_of_depth">Out of depth</a>」(0.30 向け、2023-12-28 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Out_of_depth&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><i>もう一つの OOD については<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>を参照。</i>
+</p><p>Crawl では、<b>本来より浅い階に出てくる</b>モンスター(out of depth、略して <b>OOD</b>)がよく生成される。「ふつう」出てくる階よりも上の階に現れたモンスターのことだ。ソースファイル mon-pick-data.h<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> で各モンスターの基準の階が決められており、それより上の階に出たものは厳密にはすべて OOD になる。ただ、この言葉はふつう、ゲームの進み具合に比べてずっと手ごわい<a href="Unique_monster.html" class="mw-redirect" title="Unique">ユニーク</a>以外のモンスター、たとえば迷宮:2 に出た<a href="Sky_beast.html" title="Sky beast">雷雲の獣</a>のようなものを指す。
+</p>
+<h2><span class="mw-headline" id="Creation">生成</span></h2>
+<p>ほかのモンスターと同じく、OOD のモンスターも階が生成されるときに置かれる。その「基準の階」には揺らぎがかかり、もとの数値になりやすいものの、上下にずれることもよくある。
+</p><p>また、モンスターの生成には、「ふつう」の規則から外れる特別な場合もいくつかある。
+</p>
+<ul><li>モンスターは「群れ」で出てくることがよくあり、群れには群れの深さがある。オークの司祭は本来迷宮:4 から出てくるが、オークの群れの一員としてなら迷宮:3、ときには迷宮:2 にも出てくる(これはよくあることなので、迷宮:3 の司祭は OOD とみなされないことが多い)。</li>
+<li>モンスターは、あらかじめ作られた<a href="Vault.html" title="Vault">ヴォールト</a>に配置されていることもある。たとえば<a href="http://crawl.chaosforge.org/Lair" data-untr="1" class="mw-redirect" title="Lair">獣の棲み処</a>の入口のヴォールトの一つには<a href="Death_yak.html" title="Death yak">人食いヤク</a>がいる。人食いヤクはふつう迷宮には出てこないが、迷宮:8 で出会うにはとても手ごわい敵だ。</li></ul>
+<p>とんでもなく手ごわい一部のモンスターについては、出てこないようにプログラムで保証されている。たとえば<a href="http://crawl.chaosforge.org/Water_moccasin" data-untr="1" title="Water moccasin">沼マムシ</a>は迷宮:2 には決して出てこない。ただし迷宮:3 には出てくる。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>OOD が一番目立つのは<a href="The_Dungeon.html" title="The Dungeon">迷宮</a>だ。迷宮は一番長い分岐で、階ごとにモンスターの強さが上がり、しかも逃げる手段があまりないうちに探索することになる。ほかの分岐でも OOD が問題になることはあるが、迷宮ほどではない。たとえば、たいていのキャラクターにとっては、<a href="http://crawl.chaosforge.org/Depths" data-untr="1" class="mw-redirect" title="Depths">深層</a>:2 の<a href="Caustic_shrike.html" title="Caustic shrike">焼酸の百舌</a>より迷宮:5 の<a href="Killer_bee.html" title="Killer bee">殺人蜂</a>のほうが危険だ。もっと先に進むと、「平均より強いモンスター」の役回りは<a href="Unique_monster.html" class="mw-redirect" title="Unique">ユニーク</a>が担うようになる。
+</p><p>OOD のモンスターに出会ったら、そのモンスターの説明、特に速度と射程を確かめ、歩いて離れるだけで済むかどうかを判断しよう。
+</p>
+<ul><li>OOD の<a href="Ogre_(monster).html" title="Ogre (monster)">オーガ</a>や<a href="Hydra.html" title="Hydra">ヒドラ</a>の近接攻撃は強烈だが、どちらも速度 100% の近接攻撃しかしない敵だ。間に何もなければ、見つけた時点で歩いて離れればいい。そのまま階段を上り、別の階段から降り直せばよい。</li>
+<li>OOD の<a href="Orc_priest.html" title="Orc priest">オークの司祭</a>はとても恐ろしいことがある。見えている場所ならどこからでも 17 ダメージの<a href="http://crawl.chaosforge.org/Smiting" data-untr="1" title="Smiting">打擲の一撃</a>を撃ってくるからだ。それでも、司祭が<a href="Line_of_sight.html" title="Line of sight">視界</a>の端にいるなら、やはり歩いて離れられる(モンスターは視界の外には攻撃できず、オークの司祭は足が速くない)。 </li>
+<li>OOD の<a href="Centaur_(monster).html" title="Centaur (monster)">セントール</a>は(<a href="Spriggan.html" title="Spriggan">スプリガン</a>を除く)どのプレイヤーよりも速く、<i>しかも</i>遠隔攻撃を持つ。少なくともアイテムを使わずに逃げきることはできない。</li></ul>
+<h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
+<ul><li><a href="Escaping_from_(and_avoiding)_trouble.html#Options_when_in_immediate_danger" title="Escaping from (and avoiding) trouble">消耗品を使おう</a>! 歩いて離れるだけでは逃げられないときは<i>なおさら</i>だ。</li>
+<li>何をやってもだめなら、その階を飛ばして下へ降りてしまえばいい。なんだかんだで、迷宮:11 や獣の棲み処:1 のほうが、<a href="Storm_dragon.html" title="Storm dragon">ストームドラゴン</a>がうろついている迷宮:10 より<i>たぶん</i>安全だ。下の階が危険だったとしても、少なくとも実際に何が待っているかを確かめて、そこから決めることはできる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.21" data-untr="1" title="0.21">0.21</a> より前は、時間経過によるモンスターの生成も OOD のモンスターを生み出す手段になっていた。<a href="http://crawl.chaosforge.org/Out-of-depth_timer" data-untr="1" title="Out-of-depth timer">OOD タイマー</a>が長く進むほど、こうした手ごわいモンスターが出てきやすくなった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/mon-pick-data.h#L1">mon-pick-data.h:1</a> (0.30.1)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

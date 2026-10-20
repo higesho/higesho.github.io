@@ -65,7 +65,7 @@
 <ul><li><b>殺害によって体力を回復すること</b> - <b>あなた自身が</b>モンスターを殺すと、信仰心に応じた確率で HP が回復する。回復量は倒したモンスターの<a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">HD</a>で決まる。<code>30 + (50 * (max(piety - 30, 130)/130)</code>% の確率で<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup> <code>HD/2 + 1d(HD/2) - 0.5</code> の HP が回復する。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>信仰心が最大なら、80%の確率で平均 <code>3/4 * HD - 0.25</code> の HP が回復する。仲間がとどめを刺した場合は発動しない。(常時効果)</li></ul>
 <p><b><a href="Piety.html" title="Piety">信仰心 **</a></b>: 『虐殺の凱歌』
 </p>
-<ul><li><b>破壊の解放</b> - 火炎・冷気・電撃・負のエネルギーのうちランダムな破壊のエネルギーを、貫通しない爆風として放つ。ダメージと命中は<a href="http://crawl.chaosforge.org/Invocations" data-untr="1" title="Invocations">祈祷</a>スキルで決まり、ダメージは <code>3d(5 + Invocations*2/3)</code> だ。この能力は 4* で強化される。(6.5% + 2 HP)</li></ul>
+<ul><li><b>破壊の解放</b> - 火炎・冷気・電撃・負のエネルギーのうちランダムな破壊のエネルギーを、貫通しない爆風として放つ。ダメージと命中は<a href="Invocations.html" title="Invocations">祈祷</a>スキルで決まり、ダメージは <code>3d(5 + Invocations*2/3)</code> だ。この能力は 4* で強化される。(6.5% + 2 HP)</li></ul>
 <p><b><a href="Piety.html" title="Piety">信仰心 ***</a></b>: 『悪魔の化身』
 </p>
 <ul><li><b>地獄の従者</b> - 下の表からランダムに選ばれた悪魔を短い間(およそ40ターン)召喚する。祈祷スキルが高いほど強い悪魔が出る。1/6の確率で、長く居座る敵対的な悪魔も一緒に現れる。このとき味方の悪魔はレベルが上がるが、敵対的な悪魔より上の階級になるとは限らない。(8 HP、信仰心 4-6)</li></ul>
@@ -156,7 +156,7 @@
 <ul><li><b>破壊の強化</b> - 変異をひとつ永続的に得る。この変異によって破壊の解放にランダムな地獄の性質が付き、放つものがすべて貫通する矢になる:</li></ul>
 <dl><dd><ul><li><a href="Gehenna.html" title="Gehenna">ゲヘナ</a>: 火炎(rF- を与える)、溶岩、電撃、負のエネルギー</li>
 <li><a href="http://crawl.chaosforge.org/Cocytus" data-untr="1" title="Cocytus">コキュートス</a>: 冷気(凍結を与える)、氷、電撃、負のエネルギー</li>
-<li><a href="http://crawl.chaosforge.org/Tartarus" data-untr="1" title="Tartarus">タルタロス</a>: 火炎、冷気、負のエネルギー(ダメージ増加)、破滅(意志力を半減させる)</li>
+<li><a href="Tartarus.html" title="Tartarus">タルタロス</a>: 火炎、冷気、負のエネルギー(ダメージ増加)、破滅(意志力を半減させる)</li>
 <li><a href="http://crawl.chaosforge.org/Dis" data-untr="1" class="mw-redirect" title="Dis">ディース</a>: 火炎、冷気、電撃、酸、鉄片。</li></ul></dd></dl>
 <p><b><a href="Piety.html" title="Piety">信仰心 *****</a></b>: 『修羅』
 </p>
@@ -174,7 +174,7 @@
 </th></tr>
 <tr>
 <td> 殲滅の印 </td>
-<td> 地獄の従者が<b>消滅の球体</b>に置き換わる。<a href="http://crawl.chaosforge.org/Orb_of_Destruction" data-untr="1" title="Orb of Destruction">破壊の球体</a>に似た破壊のエネルギーの球を作り出す呪文で、球は飛んだ距離に応じた半径で爆発する(至近距離でぶつかったときは3x3の範囲で爆発する)。ダメージの属性は、どの破壊を得ているかで変わる。
+<td> 地獄の従者が<b>消滅の球体</b>に置き換わる。<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の球体</a>に似た破壊のエネルギーの球を作り出す呪文で、球は飛んだ距離に応じた半径で爆発する(至近距離でぶつかったときは3x3の範囲で爆発する)。ダメージの属性は、どの破壊を得ているかで変わる。
 </td></tr>
 <tr>
 <td> 残虐の印 </td>
@@ -186,7 +186,7 @@
 </td></tr>
 <tr>
 <td> 処刑の印 </td>
-<td> 近接攻撃で敵を倒すたびに20%の確率で、一時的に<b>処刑</b>の状態になる。この状態では<a href="http://crawl.chaosforge.org/Rampage" data-untr="1" class="mw-redirect" title="Rampage">猛進</a>が付き、さらに自分に外れた攻撃へ自動で反撃する補助攻撃を得る。攻撃以外の行動をすると、変身はすぐに切れてしまう。
+<td> 近接攻撃で敵を倒すたびに20%の確率で、一時的に<b>処刑</b>の状態になる。この状態では<a href="Rampaging.html" class="mw-redirect" title="Rampage">猛進</a>が付き、さらに自分に外れた攻撃へ自動で反撃する補助攻撃を得る。攻撃以外の行動をすると、変身はすぐに切れてしまう。
 </td></tr>
 <tr>
 <td> 血砕の印 </td>
@@ -280,9 +280,9 @@
 <ul><li>XL 1-8 (100%)、XL 9-13 (50%):
 <ul><li><a href="Throw_Flame.html" title="Throw Flame">火炎の投射</a>、<a href="http://crawl.chaosforge.org/Pain" data-untr="1" title="Pain">苦痛</a>、<a href="Stone_Arrow.html" title="Stone Arrow">石錐の矢</a>、<a href="http://crawl.chaosforge.org/Shock" data-untr="1" title="Shock">電撃</a>、<a href="http://crawl.chaosforge.org/Spit_Acid" data-untr="1" title="Spit Acid">酸の唾</a></li></ul></li>
 <li>XL 9-13 (50%)、XL 14-17 (100%)、XL 18-27 (50%):
-<ul><li><a href="http://crawl.chaosforge.org/Bolt_of_Fire" data-untr="1" title="Bolt of Fire">猛火の矢</a>、<a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>、<a href="http://crawl.chaosforge.org/Lightning_Bolt" data-untr="1" title="Lightning Bolt">稲妻の矢</a>、<a href="http://crawl.chaosforge.org/Sticky_Flame" data-untr="1" title="Sticky Flame">焼夷の炎</a>、<a href="Iron_Shot.html" title="Iron Shot">鉄塊の矢</a>、<a href="http://crawl.chaosforge.org/Bolt_of_Draining" data-untr="1" title="Bolt of Draining">衰弱の矢</a>、<a href="http://crawl.chaosforge.org/Orb_of_Electricity" data-untr="1" title="Orb of Electricity">電撃の爆裂球</a></li></ul></li>
+<ul><li><a href="http://crawl.chaosforge.org/Bolt_of_Fire" data-untr="1" title="Bolt of Fire">猛火の矢</a>、<a href="Fireball.html" title="Fireball">ファイアボール</a>、<a href="http://crawl.chaosforge.org/Lightning_Bolt" data-untr="1" title="Lightning Bolt">稲妻の矢</a>、<a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>、<a href="Iron_Shot.html" title="Iron Shot">鉄塊の矢</a>、<a href="http://crawl.chaosforge.org/Bolt_of_Draining" data-untr="1" title="Bolt of Draining">衰弱の矢</a>、<a href="http://crawl.chaosforge.org/Orb_of_Electricity" data-untr="1" title="Orb of Electricity">電撃の爆裂球</a></li></ul></li>
 <li>XL 18-27 (50%):
-<ul><li><a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>、<a href="Lehudib's_Crystal_Spear.html" title="Lehudib&#39;s Crystal Spear">レフディブの水晶槍</a>、<a href="http://crawl.chaosforge.org/Orb_of_Electricity" data-untr="1" title="Orb of Electricity">電撃の爆裂球</a>、<a href="Flash_Freeze.html" title="Flash Freeze">瞬間凍結</a>、<a href="Ghostly_Fireball.html" title="Ghostly Fireball">鬼火の火球</a></li></ul></li></ul></li>
+<ul><li><a href="Fireball.html" title="Fireball">ファイアボール</a>、<a href="Lehudib's_Crystal_Spear.html" title="Lehudib&#39;s Crystal Spear">レフディブの水晶槍</a>、<a href="http://crawl.chaosforge.org/Orb_of_Electricity" data-untr="1" title="Orb of Electricity">電撃の爆裂球</a>、<a href="Flash_Freeze.html" title="Flash Freeze">瞬間凍結</a>、<a href="Ghostly_Fireball.html" title="Ghostly Fireball">鬼火の火球</a></li></ul></li></ul></li>
 <li>マクレブがあなたを罰するために悪魔を送り込む。悪魔の総数は <code>1dXL/5 + 0.8</code> で、XL 25 で上限の6体になる。
 <ul><li>XL 7 から、マクレブの上級従者が召喚される可能性が出てくる。XL 27 では最大6体がそうなる。残りはマクレブの下級従者になる。</li>
 <li>上級従者は<a href="Executioner.html" title="Executioner">処刑の悪魔</a>、<a href="Green_death.html" title="Green death">緑の殲滅者</a>、<a href="Blizzard_demon.html" title="Blizzard demon">氷河の悪魔</a>、<a href="Balrug.html" title="Balrug">バルログ</a>、<a href="Cacodemon.html" title="Cacodemon">混沌の悪鬼</a>だ。</li>
@@ -290,21 +290,21 @@
 <h2><span class="mw-headline" id="Strategy">戦略</span></h2>
 <p>マクレブは強力な召喚の能力と、信仰心も MP も消費しない妖術系の能力を授けてくれる。回復もある。信仰心が低いうちは少しだが、6* になるとかなりの量になる。いちばんありがたみがあるのは近接戦闘のキャラクターだが、どんなキャラクターでも役に立つ。
 </p><p>地獄の従者は頼れる味方になる。数がそろえばなおさらだ。中盤なら、悪魔を何体か並べれば<a href="Hydra.html" title="Hydra">ヒドラ</a>のような手ごわい敵も倒せる。祈祷スキルが上がると2級悪魔が出はじめ、これは単体でも群れでも強い。ただ、Crawl ではよくあることだが、悪魔の味方は手ごわい敵と戦う<i>前に</i>呼んでおくのがいちばんだ。すでに危ない状況で敵対的な悪魔まで呼んでしまったら、まず助けにはならない。
-</p><p>回復は、HP を使って呪文を唱える<a href="http://crawl.chaosforge.org/Djinn" data-untr="1" class="mw-redirect" title="Djinn">ジンニー</a>には特にありがたい。この回復だけに頼るべきではないが、戦闘で少し長く持ちこたえる助けにはなる。
+</p><p>回復は、HP を使って呪文を唱える<a href="Djinni.html" class="mw-redirect" title="Djinn">ジンニー</a>には特にありがたい。この回復だけに頼るべきではないが、戦闘で少し長く持ちこたえる助けにはなる。
 </p><p>残念ながら、マクレブにはいざというときの逃げ手になる能力があまりない。HP がすでに少ないなら、この神はあまり助けてくれない。また、マクレブの能力を当てにできるようにするには、祈祷スキルをそれなりに上げる必要がある。
 </p>
 <h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
 <ul><li>破壊の解放は、<a href="http://crawl.chaosforge.org/Water" data-untr="1" title="Water">水</a>の中にいる敵にはより強くなることがある。矢が<a href="http://crawl.chaosforge.org/Steam" data-untr="1" title="Steam">蒸気</a>の雲(火炎から)や凍気の雲(氷から)を生むからだ。</li>
-<li>マクレブを捨ててほかの<a href="God.html" title="God">神</a>に乗り換えるなら、マクレブの怒りは決して外れないことを覚えておこう。<a href="Dodging.html" title="Dodging">躱し身</a>も<a href="Shields.html" title="Shields">盾</a>も<a href="http://crawl.chaosforge.org/Repel_Missiles#Player_sources" data-untr="1" title="Repel Missiles">飛び道具反発</a>も役に立たない。間の悪いときに<a href="Lehudib's_Crystal_Spear.html" title="Lehudib&#39;s Crystal Spear">レフディブの水晶槍</a>が飛んでくれば、それだけでゲームが終わることもある。<a href="http://crawl.chaosforge.org/HP" data-untr="1" class="mw-redirect" title="HP">HP</a> の最大値がとても低いならなおさらだ。</li></ul>
+<li>マクレブを捨ててほかの<a href="God.html" title="God">神</a>に乗り換えるなら、マクレブの怒りは決して外れないことを覚えておこう。<a href="Dodging.html" title="Dodging">躱し身</a>も<a href="Shields.html" title="Shields">盾</a>も<a href="http://crawl.chaosforge.org/Repel_Missiles#Player_sources" data-untr="1" title="Repel Missiles">飛び道具反発</a>も役に立たない。間の悪いときに<a href="Lehudib's_Crystal_Spear.html" title="Lehudib&#39;s Crystal Spear">レフディブの水晶槍</a>が飛んでくれば、それだけでゲームが終わることもある。<a href="Hit_points.html" class="mw-redirect" title="HP">HP</a> の最大値がとても低いならなおさらだ。</li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
 <ul><li><a href="0.33.html" title="0.33">0.33</a>より前は、処刑の印の発動率は14%しかなく、補助攻撃の基本ダメージの XL による伸びも小さかった。</li>
 <li><a href="0.32.html" title="0.32">0.32</a>でマクレブは大きく作り直され、地獄の印が追加された。それまでの発動型の能力は次のとおり:
 <ul><li>2* - 小なる破壊 - 1 HP の固定コストで、<a href="Throw_Flame.html" title="Throw Flame">火炎の投射</a>、<a href="http://crawl.chaosforge.org/Throw_Frost" data-untr="1" title="Throw Frost">冷気の投射</a>、<a href="http://crawl.chaosforge.org/Vitriol" data-untr="1" class="mw-redirect" title="Vitriol">硫酸</a>、<a href="Stone_Arrow.html" title="Stone Arrow">石錐の矢</a>、<a href="http://crawl.chaosforge.org/Pain" data-untr="1" title="Pain">苦痛</a>のどれかをランダムに放つ。</li>
 <li>3* - マクレブの下級従者 - レベル3-4の味方の<a href="Demon.html" title="Demon">悪魔</a>を召喚する。祈祷スキルが低いと、敵対的な悪魔が現れることがあった。</li>
-<li>4* - 大いなる破壊 - <a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>、<a href="http://crawl.chaosforge.org/Bolt_of_Cold" data-untr="1" title="Bolt of Cold">凍結の矢</a>、<a href="http://crawl.chaosforge.org/Bolt_of_Draining" data-untr="1" title="Bolt of Draining">衰弱の矢</a>、<a href="http://crawl.chaosforge.org/Corrosive_Bolt" data-untr="1" title="Corrosive Bolt">腐食の矢</a>、<a href="http://crawl.chaosforge.org/Lightning_Bolt" data-untr="1" title="Lightning Bolt">稲妻の矢</a>のどれかをランダムに放つ。</li>
+<li>4* - 大いなる破壊 - <a href="Fireball.html" title="Fireball">ファイアボール</a>、<a href="http://crawl.chaosforge.org/Bolt_of_Cold" data-untr="1" title="Bolt of Cold">凍結の矢</a>、<a href="http://crawl.chaosforge.org/Bolt_of_Draining" data-untr="1" title="Bolt of Draining">衰弱の矢</a>、<a href="http://crawl.chaosforge.org/Corrosive_Bolt" data-untr="1" title="Corrosive Bolt">腐食の矢</a>、<a href="http://crawl.chaosforge.org/Lightning_Bolt" data-untr="1" title="Lightning Bolt">稲妻の矢</a>のどれかをランダムに放つ。</li>
 <li>5* - マクレブの上級従者 - レベル2の味方の悪魔か<a href="Executioner.html" title="Executioner">処刑の悪魔</a>を召喚する。祈祷スキルが低いか中くらいだと、敵対的な悪魔が現れることがあった。</li></ul></li></ul>
 <dl><dd>また、殺害で回復する確率は <code>(piety - 30)/2</code>% だった。このため信仰心が低いうちはほとんど回復せず、6* を超えても信仰心が影響していた。</dd></dl>
-<ul><li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a>より前は、殺害で回復する HP が今の倍(<code>HD + 1d(HD) - 1</code>)だった。大いなる破壊は今より弱く、<a href="http://crawl.chaosforge.org/Corrosive_Bolt" data-untr="1" title="Corrosive Bolt">腐食の矢</a>と<a href="http://crawl.chaosforge.org/Bolt_of_Magma" data-untr="1" title="Bolt of Magma">溶岩の矢</a>の代わりに<a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>、<a href="http://crawl.chaosforge.org/Orb_of_Electricity" data-untr="1" title="Orb of Electricity">電撃の爆裂球</a>、<a href="http://crawl.chaosforge.org/Sticky_Flame" data-untr="1" title="Sticky Flame">焼夷の炎</a>、<a href="Iron_Shot.html" title="Iron Shot">鉄塊の矢</a>が出ることがあった。</li>
+<ul><li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a>より前は、殺害で回復する HP が今の倍(<code>HD + 1d(HD) - 1</code>)だった。大いなる破壊は今より弱く、<a href="http://crawl.chaosforge.org/Corrosive_Bolt" data-untr="1" title="Corrosive Bolt">腐食の矢</a>と<a href="http://crawl.chaosforge.org/Bolt_of_Magma" data-untr="1" title="Bolt of Magma">溶岩の矢</a>の代わりに<a href="Fireball.html" title="Fireball">ファイアボール</a>、<a href="http://crawl.chaosforge.org/Orb_of_Electricity" data-untr="1" title="Orb of Electricity">電撃の爆裂球</a>、<a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>、<a href="Iron_Shot.html" title="Iron Shot">鉄塊の矢</a>が出ることがあった。</li>
 <li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a>より前は、新鮮な<a href="http://crawl.chaosforge.org/Corpse" data-untr="1" title="Corpse">死体</a>を捧げて信仰心を上げることができた。</li>
 <li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a>より前は、マクレブの怒りは敵対的な悪魔の従者を呼び出すことだけだった。</li>
 <li><a href="http://crawl.chaosforge.org/0.11" data-untr="1" title="0.11">0.11</a>より前は、マクレブの能力は HP ではなく MP を消費した。</li>
@@ -326,12 +326,12 @@
 <tr>
 <th> 善
 </th>
-<td> <a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a> • <a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a> • <a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>
+<td> <a href="Elyvilon.html" title="Elyvilon">エリヴィロン</a> • <a href="Zin.html" title="Zin">ジン</a> • <a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>
 </td></tr>
 <tr>
 <th> 中立
 </th>
-<td> <a href="Ashenzari.html" title="Ashenzari">アシェンザリ</a> • <a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a> • <a href="Dithmenos.html" title="Dithmenos">ディスメノス</a> • <a href="Fedhas_Madash.html" title="Fedhas Madash">フェダス・マダシュ</a> • <a href="Gozag_Ym_Sagoz.html" title="Gozag Ym Sagoz">ゴザーグ・イム・サゴーズ</a> • <a href="Hepliaklqana.html" title="Hepliaklqana">ヘプリアクルカナ</a> • <a href="Ignis.html" title="Ignis">イグニス</a> • <a href="Okawaru.html" title="Okawaru">オカワル</a> • <a href="Qazlal_Stormbringer.html" title="Qazlal Stormbringer">クァズラル</a> • <a href="Ru.html" title="Ru">ルー</a> • <a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a> • <a href="Trog.html" title="Trog">トログ</a> • <a href="http://crawl.chaosforge.org/Uskayaw" data-untr="1" title="Uskayaw">ウスカヤー</a> • <a href="Vehumet.html" title="Vehumet">ヴェフメット</a> • <a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>
+<td> <a href="Ashenzari.html" title="Ashenzari">アシェンザリ</a> • <a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a> • <a href="Dithmenos.html" title="Dithmenos">ディスメノス</a> • <a href="Fedhas_Madash.html" title="Fedhas Madash">フェダス・マダシュ</a> • <a href="Gozag_Ym_Sagoz.html" title="Gozag Ym Sagoz">ゴザーグ・イム・サゴーズ</a> • <a href="Hepliaklqana.html" title="Hepliaklqana">ヘプリアクルカナ</a> • <a href="Ignis.html" title="Ignis">イグニス</a> • <a href="Okawaru.html" title="Okawaru">オカワル</a> • <a href="Qazlal_Stormbringer.html" title="Qazlal Stormbringer">クァズラル</a> • <a href="Ru.html" title="Ru">ルー</a> • <a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a> • <a href="Trog.html" title="Trog">トログ</a> • <a href="Uskayaw.html" title="Uskayaw">ウスカヤー</a> • <a href="Vehumet.html" title="Vehumet">ヴェフメット</a> • <a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>
 </td></tr>
 <tr>
 <th> 混沌

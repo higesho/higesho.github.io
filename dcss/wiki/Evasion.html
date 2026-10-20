@@ -46,7 +46,7 @@
 </p>
 <pre> 10 + size_factor
 </pre>
-<p>「体格の係数」(size_factor)は<a href="Species.html" title="Species">種族</a>の<a href="http://crawl.chaosforge.org/Size" data-untr="1" title="Size">体格</a>で決まる。中くらいの体格で 0 になり、そこから体格が 1 段階小さくなるごとに 2 ずつ増える。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+<p>「体格の係数」(size_factor)は<a href="Species.html" title="Species">種族</a>の<a href="Size.html" title="Size">体格</a>で決まる。中くらいの体格で 0 になり、そこから体格が 1 段階小さくなるごとに 2 ずつ増える。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
 </p>
 <table class="prettytable">
 <tr>
@@ -84,7 +84,7 @@
 </th></tr>
 <tr>
 <td> 極小 </td>
-<td> <a href="Bat_Form.html" title="Bat Form">コウモリ</a>、<a href="http://crawl.chaosforge.org/Wisp_Form" data-untr="1" title="Wisp Form">霧化</a>、<a href="Fungus_Form.html" title="Fungus Form">茸化</a> </td>
+<td> <a href="Bat_Form.html" title="Bat Form">コウモリ</a>、<a href="Wisp_Form.html" title="Wisp Form">霧化</a>、<a href="Fungus_Form.html" title="Fungus Form">茸化</a> </td>
 <td> +6
 </td></tr>
 <tr>
@@ -128,8 +128,8 @@ final_dodge_bonus = dodge_bonus * modifier
 <p>基本の EV と躱し身のボーナスを足したあと、防具と盾による EV の直接の減少を差し引く。下に挙げる防具にはそれぞれ「重さの値」(encumbrance rating)があり、これを EV の減少に換算する(換算の式は種類ごとに違う)。
 </p>
 <ul><li><a href="Barding.html" title="Barding">馬甲</a>: -2 EV</li>
-<li><a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>: <code>-1/225 * encumbrance^2 * (90 - 2 × armour_skill) / (str + 3)</code></li>
-<li><a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>: <code>-2/5 * encumbrance^2 / (str + 5) * ((27 - shield_skill) / 27)</code></li></ul>
+<li><a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>: <code>-1/225 * encumbrance^2 * (90 - 2 × armour_skill) / (str + 3)</code></li>
+<li><a href="Shields.html" class="mw-redirect" title="Shield">盾</a>: <code>-2/5 * encumbrance^2 / (str + 5) * ((27 - shield_skill) / 27)</code></li></ul>
 <h3><span class="mw-headline" id="Modifiers">補正</span></h3>
 <p>EV はさまざまな効果で増減する。これらは上の計算を終えたあとの EV の合計に直接加わり、次の順番で計算される。
 </p><p>「永続的な」効果:
@@ -142,7 +142,7 @@ final_dodge_bonus = dodge_bonus * modifier
 <p>倍率:<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
 </p>
 <ul><li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>に変身中: -20% EV</li>
-<li><a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">絡めとられている</a>か<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化中</a>: -50% EV(重ねがけにはならない)</li>
+<li><a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">絡めとられている</a>か<a href="Petrify.html" title="Petrify">石化中</a>: -50% EV(重ねがけにはならない)</li>
 <li>水のマスの中か上にいる<a href="Merfolk.html" title="Merfolk">水棲の民</a>: +25% EV(最低でも +2)</li></ul>
 <p>状態:
 </p>
@@ -154,7 +154,7 @@ final_dodge_bonus = dodge_bonus * modifier
 <h3><span class="mw-headline" id="Final_situational_modifiers">最後にかかる状況による補正</span></h3>
 <p>近接攻撃に対して:
 </p>
-<ul><li>攻撃してくる相手が見えないとき(つまり相手が<a href="http://crawl.chaosforge.org/Invisible" data-untr="1" title="Invisible">透明</a>で、あなたに<a href="http://crawl.chaosforge.org/See_invisible" data-untr="1" title="See invisible">霊視</a>がないとき)は、その相手に対して EV に -10 のペナルティを受ける。</li>
+<ul><li>攻撃してくる相手が見えないとき(つまり相手が<a href="Invisible.html" title="Invisible">透明</a>で、あなたに<a href="http://crawl.chaosforge.org/See_invisible" data-untr="1" title="See invisible">霊視</a>がないとき)は、その相手に対して EV に -10 のペナルティを受ける。</li>
 <li><a href="http://crawl.chaosforge.org/Stairs" data-untr="1" title="Stairs">階段</a>を下りようとしているところを攻撃されると、EV に -5 のペナルティを受ける。</li></ul>
 <h2><span class="mw-headline" id="Monster_EV">モンスターの EV</span></h2>
 <p>モンスターの基本の EV は、モンスターの種類ごとに決まった固定の値だ。この値は防具や装身具、さまざまな状態によって変わる。

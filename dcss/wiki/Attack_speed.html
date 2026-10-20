@@ -17,8 +17,8 @@
 <p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Attack_speed">Attack speed</a>」(0.32 向け、2026-05-12 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Attack_speed&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.32 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
 <div class="wiki">
 <div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.32.html" title="0.32">0.32</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>に対応して<b>いない可能性がある</b>。</i></div>
-<p><i>この情報を表にまとめたものは<a href="http://crawl.chaosforge.org/Weapon_Speed" data-untr="1" class="mw-redirect" title="Weapon Speed">武器の速度</a>を参照。</i>
-</p><p><b>攻撃速度</b>(attack speed)は、プレイヤーが<a href="http://crawl.chaosforge.org/Melee_weapon" data-untr="1" title="Melee weapon">近接武器</a>、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>、<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>でどれだけ速く攻撃できるかを表す。
+<p><i>この情報を表にまとめたものは<a href="Weapon_speed.html" class="mw-redirect" title="Weapon Speed">武器の速度</a>を参照。</i>
+</p><p><b>攻撃速度</b>(attack speed)は、プレイヤーが<a href="Melee_weapon.html" title="Melee weapon">近接武器</a>、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>、<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>でどれだけ速く攻撃できるかを表す。
 </p><p>攻撃速度はふつう「<b>攻撃の所要時間</b>」(attack delay)の形で表す。通常の行動にかかる時間は 1.0 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>、つまり 10 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> だ。かかる aut が多いほど行動は遅くなる。つまり攻撃の所要時間が短いほど、速く攻撃できる。
 </p>
 <div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
@@ -54,33 +54,33 @@
 <p>次の条件が順に適用される。
 </p>
 <h3><span class="mw-headline" id="Base_delay">基本の所要時間</span></h3>
-<p><a href="Ranged_Weapons.html" class="mw-redirect" title="Ranged weapons">射撃武器</a>や<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>用の道具も含め、どの武器にも基本の攻撃の所要時間がある。'<b>i'</b>(所持品)で武器を見ると、基本の攻撃の所要時間が(ターン単位で)わかる。たとえば<a href="Dagger.html" title="Dagger">ダガー</a>の基本の所要時間は 1.0 ターン(10 aut)だ。
-</p><p><a href="http://crawl.chaosforge.org/Weapon_Speed" data-untr="1" class="mw-redirect" title="Weapon Speed">武器の速度</a>のページに、すべての武器の値を aut でまとめた表がある。
+<p><a href="Ranged_Weapons.html" class="mw-redirect" title="Ranged weapons">射撃武器</a>や<a href="Throwing.html" title="Throwing">投擲</a>用の道具も含め、どの武器にも基本の攻撃の所要時間がある。'<b>i'</b>(所持品)で武器を見ると、基本の攻撃の所要時間が(ターン単位で)わかる。たとえば<a href="Dagger.html" title="Dagger">ダガー</a>の基本の所要時間は 1.0 ターン(10 aut)だ。
+</p><p><a href="Weapon_speed.html" class="mw-redirect" title="Weapon Speed">武器の速度</a>のページに、すべての武器の値を aut でまとめた表がある。
 </p>
 <h3><span class="mw-headline" id="Skill">スキル</span></h3>
 <p>対応する武器の<a href="Skill.html" title="Skill">スキル</a>が2レベル上がるごとに、攻撃の所要時間が 0.1 ターン短くなる。ただし限度があり、どの武器にも<b>最短の所要時間</b>(minimum delay)があって、そこから先はスキルを上げても攻撃は速くならない。
-</p><p>武器の最短の所要時間は、たいてい <code>base delay / 2</code> と 0.7 ターンのうち<i>小さいほう</i>だ。たとえば<a href="Dagger.html" title="Dagger">ダガー</a>の基本の所要時間は 1.0 なので、最短の所要時間は 0.5 になる。<a href="Large_rock.html" title="Large rock">大岩</a>の基本の所要時間は 2.0 だが、最短の所要時間はやはり 0.7 ターンだ。この決まりには<a href="http://crawl.chaosforge.org/Rapier" data-untr="1" title="Rapier">レイピア</a>や<a href="http://crawl.chaosforge.org/Triple_crossbow" data-untr="1" title="Triple crossbow">トリプルクロスボウ</a>など、いくつか例外がある。
+</p><p>武器の最短の所要時間は、たいてい <code>base delay / 2</code> と 0.7 ターンのうち<i>小さいほう</i>だ。たとえば<a href="Dagger.html" title="Dagger">ダガー</a>の基本の所要時間は 1.0 なので、最短の所要時間は 0.5 になる。<a href="Large_rock.html" title="Large rock">大岩</a>の基本の所要時間は 2.0 だが、最短の所要時間はやはり 0.7 ターンだ。この決まりには<a href="Rapier.html" title="Rapier">レイピア</a>や<a href="Triple_crossbow.html" title="Triple crossbow">トリプルクロスボウ</a>など、いくつか例外がある。
 </p><p>徒手格闘は仕組みが違う。<a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>スキル 5.4 ごとに、攻撃の所要時間が 0.1 ターン短くなる。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>それ以外は武器とほぼ同じだ。
 </p>
 <h3><span class="mw-headline" id="Brands">ブランド</span></h3>
 <p>武器の<a href="Brand.html" title="Brand">ブランド</a>で速度が変わることもある。これはスキルを計算に入れたあとに適用される。
 </p>
 <ul><li><a href="http://crawl.chaosforge.org/Speed_brand" data-untr="1" class="mw-redirect" title="Speed brand">早業</a>のブランドは、武器の所要時間を x66% にする。</li>
-<li><a href="http://crawl.chaosforge.org/Heavy" data-untr="1" title="Heavy">重撃</a>のブランドは、武器の所要時間を +50% 増やす。</li></ul>
+<li><a href="Heavy.html" title="Heavy">重撃</a>のブランドは、武器の所要時間を +50% 増やす。</li></ul>
 <h3><span class="mw-headline" id="Body_Armour">胴鎧</span></h3>
-<p>「<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>」(<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>武器は<i>含まない</i>)を使っていると、<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>で攻撃が遅くなる(ブランドの適用後)。どれだけ遅くなるかは、胴鎧の<a href="Encumbrance_rating.html" title="Encumbrance rating">重さ</a>で決まる。
+<p>「<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>」(<a href="Throwing.html" title="Throwing">投擲</a>武器は<i>含まない</i>)を使っていると、<a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>で攻撃が遅くなる(ブランドの適用後)。どれだけ遅くなるかは、胴鎧の<a href="Encumbrance_rating.html" title="Encumbrance rating">重さ</a>で決まる。
 </p><p>式は <code>(encumbrance^2 / 2250) * (90 - 2 * <a href="Armour_(skill).html" title="Armour (skill)">armor_skill</a>) / (3 + str)</code> ターンだ。
 </p><p>防具の重さの値は<a href="Armour.html" title="Armour">防具</a>のページにある。盾と違って、この不利はスキルで完全には消せない。
 </p>
 <h3><span class="mw-headline" id="Shields">盾</span></h3>
-<p><a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>は持ち主の動きを妨げ、武器の速度を落とす(ブランドの適用後)。
+<p><a href="Shields.html" class="mw-redirect" title="Shield">盾</a>は持ち主の動きを妨げ、武器の速度を落とす(ブランドの適用後)。
 </p><p>EV の減少 = <code>0.4 * encumbrance^2 / (5 + <a href="http://crawl.chaosforge.org/Str" data-untr="1" class="mw-redirect" title="Str">str</a>) * (27 - <a href="Shields_(skill).html" title="Shields (skill)">sh_skill</a>) / 27</code> とすると、盾は攻撃を <code>EV Penalty / 10</code> ターン遅くする。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>EV の減少が整数でなければ、ダイスを振る前に重みつきで丸められる。
 </p><p>盾の重さの値は<a href="Shields.html" title="Shields">盾</a>のページにある。盾スキルを最大の 27 まで上げれば、盾の不利は0にできる。
 </p>
 <h3><span class="mw-headline" id="Statuses">状態</span></h3>
 <ul><li><a href="Haste.html" title="Haste">加速</a>(<a href="Berserk.html" title="Berserk">バーサーク</a>によるものも含む)は、すべての行動の所要時間を 2/3 倍にする。</li>
 <li><a href="Okawaru.html" title="Okawaru">オカワル</a>の早業の技巧の能力は、武器の所要時間を半分にする。これは加速とは<i>重ならない</i>。</li>
-<li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化中</a>、<a href="Slow.html" title="Slow">減速</a>は、すべての所要時間を 3/2 倍にする。これらは加速とも、互いにも重なる。</li></ul>
+<li><a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>、<a href="Petrify.html" title="Petrify">石化中</a>、<a href="Slow.html" title="Slow">減速</a>は、すべての所要時間を 3/2 倍にする。これらは加速とも、互いにも重なる。</li></ul>
 <p>最後に、0.1 ターンという絶対の下限があり、即時と定められた行動(<a href="Wu_Jian.html" title="Wu Jian">蛇の鞭打ち</a>の移動など)でないかぎり、これより短い時間で行動することはできない。
 </p>
 <h2><span class="mw-headline" id="Spells">呪文</span></h2>
@@ -97,7 +97,7 @@
 <h3><span class="mw-headline" id="Martial_Arts_Attacks">武術の攻撃</span></h3>
 <p><a href="http://crawl.chaosforge.org/Wu_Jian_Council" data-untr="1" class="mw-redirect" title="Wu Jian Council">ウー・ジアン評議会</a>を信仰すると、移動に応じた攻撃ができる。
 </p><p>攻撃の所要時間 &gt;= 移動の所要時間 なら、1回の移動につき1回攻撃し、攻撃が遅い分だけダメージが比例して下がる。たとえば移動が 1.0 ターンで攻撃が 1.2 ターンなら、(1.0/1.2) = 83.3% のダメージで1回攻撃する。
-</p><p>移動の所要時間 &gt; 攻撃の所要時間 なら、攻撃の所要時間に応じて追加の攻撃が出ることがある。移動が 1.0 ターンで攻撃が 0.7 ターンなら、必ず1回攻撃し(時間の 0.7 / 1.0 を使う)、3/7 (0.3 / 0.7) の確率で2回目の攻撃が出る。極端な例として、<a href="http://crawl.chaosforge.org/Rapier" data-untr="1" title="Rapier">レイピア</a>(攻撃の所要時間 0.5)を持った<a href="Naga.html" title="Naga">ナーガ</a>(移動の所要時間 1.4)なら、1回の移動で2回攻撃し、80%の確率で3回目の攻撃が出る。
+</p><p>移動の所要時間 &gt; 攻撃の所要時間 なら、攻撃の所要時間に応じて追加の攻撃が出ることがある。移動が 1.0 ターンで攻撃が 0.7 ターンなら、必ず1回攻撃し(時間の 0.7 / 1.0 を使う)、3/7 (0.3 / 0.7) の確率で2回目の攻撃が出る。極端な例として、<a href="Rapier.html" title="Rapier">レイピア</a>(攻撃の所要時間 0.5)を持った<a href="Naga.html" title="Naga">ナーガ</a>(移動の所要時間 1.4)なら、1回の移動で2回攻撃し、80%の確率で3回目の攻撃が出る。
 </p><p>蛇の鞭打ちの間は、実際の移動の所要時間にかかわらず、移動の所要時間は常に 1.0 ターンとして扱われる。壁蹴りは2回の行動として数えるので、移動の所要時間が2倍になる。
 </p>
 <h3><span class="mw-headline" id="Rampaging">猛進</span></h3>
@@ -107,12 +107,12 @@
 <p>上の式で、平均の攻撃の所要時間はかなり正確に近似できる。ただし丸めのせいで、1回1回の攻撃には、いくつもの要因によるばらつきが生じうる:
 </p>
 <ul><li>武器の所要時間(スキルとブランドの適用後)が <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> で端数になる場合は、重みつきで丸められる。たとえば「平均」の攻撃が 5.1 aut (0.51 ターン) なら、10%の確率で 6 aut、90%の確率で 5 aut で攻撃する。</li></ul>
-<ul><li><a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>を着けている場合、盾の不利も重みつきで丸められる。EV の減少(<code>2/5 * encumbrance^2 / (5 + <a href="http://crawl.chaosforge.org/Str" data-untr="1" class="mw-redirect" title="Str">str</a>) * (27 - <a href="Shields_(skill).html" title="Shields (skill)">sh_skill</a>) / 27</code>)を計算し、それから丸める。</li></ul>
-<ul><li><a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>を使っている場合は、<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>による不利も重みつきで丸めてから、所要時間に足される。</li></ul>
+<ul><li><a href="Shields.html" class="mw-redirect" title="Shield">盾</a>を着けている場合、盾の不利も重みつきで丸められる。EV の減少(<code>2/5 * encumbrance^2 / (5 + <a href="http://crawl.chaosforge.org/Str" data-untr="1" class="mw-redirect" title="Str">str</a>) * (27 - <a href="Shields_(skill).html" title="Shields (skill)">sh_skill</a>) / 27</code>)を計算し、それから丸める。</li></ul>
+<ul><li><a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>を使っている場合は、<a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>による不利も重みつきで丸めてから、所要時間に足される。</li></ul>
 <p>そのため、端数の所要時間を平均しただけで考えるより、攻撃の所要時間の幅は広くなりうる。
 </p>
 <h3><span class="mw-headline" id="Example">例</span></h3>
-<p>ショートソードとバックラーを持った人間で考えてみよう。この人間の<a href="http://crawl.chaosforge.org/Short_Blades" data-untr="1" title="Short Blades">短剣</a>スキルは 7.5、<a href="Shields_(skill).html" title="Shields (skill)">盾</a>スキルは 5.4、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>は 15 だ。<a href="Buckler.html" title="Buckler">バックラー</a>の重さは 5 とする。
+<p>ショートソードとバックラーを持った人間で考えてみよう。この人間の<a href="Short_Blades.html" title="Short Blades">短剣</a>スキルは 7.5、<a href="Shields_(skill).html" title="Shields (skill)">盾</a>スキルは 5.4、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>は 15 だ。<a href="Buckler.html" title="Buckler">バックラー</a>の重さは 5 とする。
 </p>
 <ul><li>ショートソードの基本の所要時間は 11 aut で、スキルによって 7.25 aut まで短くなる。-&gt; (75%で 7 aut、25%で 8 aut)</li>
 <li>盾の不利は 1d(0.40) -&gt; (40%の確率で +1、60%で +0)。</li></ul>
@@ -155,7 +155,7 @@
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>
 <ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、攻撃の所要時間に 0.2 ターンという絶対の下限があった。</li>
 <li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、胴鎧で<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>の攻撃が遅くなることはなかった。</li>
-<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、<a href="http://crawl.chaosforge.org/Shield" data-untr="1" class="mw-redirect" title="Shield">盾</a>の不利の式が違っていた。一定のスキル(バックラーは 4、カイトシールドは 15、タワーシールドは 25)に達すると不利がなくなった。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、<a href="Shields.html" class="mw-redirect" title="Shield">盾</a>の不利の式が違っていた。一定のスキル(バックラーは 4、カイトシールドは 15、タワーシールドは 25)に達すると不利がなくなった。</li>
 <li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、盾による攻撃の不利が小さかった({1d(EV_penalty), 1d(EV_penalty)} のうち小さいほうと同じ)。</li>
 <li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、盾を着けたときの不利をなくすのに必要なスキルの量が、もっと込み入っていた。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>

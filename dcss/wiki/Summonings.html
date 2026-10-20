@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>召喚術 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="召喚術(Summonings)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>召喚術 <span class="en">Summonings</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Summonings">Summonings</a>」(0.30 向け、2025-05-10 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Summonings&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>召喚術</b>は、モンスターなどを呼び出して自分のために戦わせる力を左右する魔法のスキルだ。ただし、未熟な術者はかわりに敵対的な<a href="http://crawl.chaosforge.org/Nameless_horror" data-untr="1" title="Nameless horror">名状しがたき恐怖</a>を呼び出してしまうことがある。<a href="Summon.html" title="Summon">召喚されたモンスター</a>はふつうのモンスターとよく似ているが、一時的な存在で、階段を通ってあなたについて来ることはできない。
+</p><p>この系統には、召喚されたモンスターを生み出さない呪文がひとつだけある。<a href="Malign_Gateway.html" title="Malign Gateway">邪悪なる通り道</a>の呪文で現れる<a href="Eldritch_tentacle.html" title="Eldritch tentacle">別次元の触手</a>で、これは解放の宣誓で消すことができない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Aptitudes"><span class="tocnumber">1</span> <span class="toctext">スキル適性</span></a></li>
+<li class="toclevel-1"><a href="#Spells"><span class="tocnumber">2</span> <span class="toctext">呪文</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Level_1"><span class="tocnumber">2.1</span> <span class="toctext">レベル 1</span></a></li>
+<li class="toclevel-2"><a href="#Level_2"><span class="tocnumber">2.2</span> <span class="toctext">レベル 2</span></a></li>
+<li class="toclevel-2"><a href="#Level_3"><span class="tocnumber">2.3</span> <span class="toctext">レベル 3</span></a></li>
+<li class="toclevel-2"><a href="#Level_4"><span class="tocnumber">2.4</span> <span class="toctext">レベル 4</span></a></li>
+<li class="toclevel-2"><a href="#Level_5"><span class="tocnumber">2.5</span> <span class="toctext">レベル 5</span></a></li>
+<li class="toclevel-2"><a href="#Level_6"><span class="tocnumber">2.6</span> <span class="toctext">レベル 6</span></a></li>
+<li class="toclevel-2"><a href="#Level_7"><span class="tocnumber">2.7</span> <span class="toctext">レベル 7</span></a></li>
+<li class="toclevel-2"><a href="#Level_8"><span class="tocnumber">2.8</span> <span class="toctext">レベル 8</span></a></li>
+<li class="toclevel-2"><a href="#Level_9"><span class="tocnumber">2.9</span> <span class="toctext">レベル 9</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-1"><a href="#Sources"><span class="tocnumber">3</span> <span class="toctext">入手先</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Duration"><span class="tocnumber">4</span> <span class="toctext">持続時間</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Summoning_Limits"><span class="tocnumber">5</span> <span class="toctext">召喚数の上限</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Non-standard_summoning"><span class="tocnumber">5.1</span> <span class="toctext">変則的な召喚</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#History"><span class="tocnumber">6</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#See_Also"><span class="tocnumber">7</span> <span class="toctext">関連項目</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Aptitudes">スキル適性</span></h2>
+<table class="wikitable">
+
+<tr>
+<td><b><a href="Armataur.html" title="Armataur">At</a></b>
+</td>
+<td><b><a href="Barachi.html" title="Barachi">Ba</a></b>
+</td>
+<td><b><a href="Coglin.html" title="Coglin">Co</a></b>
+</td>
+<td><b><a href="Deep_Elf.html" title="Deep Elf">DE</a></b>
+</td>
+<td><b><a href="Demigod.html" title="Demigod">Dg</a></b>
+</td>
+<td><b><a href="Demonspawn.html" title="Demonspawn">Ds</a></b>
+</td>
+<td><b><a href="Djinni.html" title="Djinni">Dj</a></b>
+</td>
+<td><b><a href="Draconian.html" title="Draconian">Dr</a></b>
+</td>
+<td><b><a href="Felid.html" title="Felid">Fe</a></b>
+</td>
+<td><b><a href="Formicid.html" title="Formicid">Fo</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Gale_Centaur" data-untr="1" title="Gale Centaur">GC</a></b>
+</td>
+<td><b><a href="Gargoyle.html" title="Gargoyle">Gr</a></b>
+</td>
+<td><b><a href="Gnoll.html" title="Gnoll">Gn</a></b>
+</td>
+<td><b><a href="Human.html" title="Human">Hu</a></b>
+</td>
+<td><b><a href="Kobold.html" title="Kobold">Ko</a></b>
+</td>
+<td><b><a href="Merfolk.html" title="Merfolk">Mf</a></b>
+</td>
+<td><b><a href="Minotaur.html" title="Minotaur">Mi</a></b>
+</td>
+<td><b><a href="Mountain_Dwarf.html" title="Mountain Dwarf">MD</a></b>
+</td>
+<td><b><a href="Mummy.html" title="Mummy">Mu</a></b>
+</td>
+<td><b><a href="Naga.html" title="Naga">Na</a></b>
+</td>
+<td><b><a href="Octopode.html" title="Octopode">Op</a></b>
+</td>
+<td><b><a href="Oni.html" title="Oni">On</a></b>
+</td>
+<td><b><a href="Poltergeist.html" title="Poltergeist">Po</a></b>
+</td>
+<td><b><a href="Revenant.html" title="Revenant">Re</a></b>
+</td>
+<td><b><a href="Spriggan.html" title="Spriggan">Sp</a></b>
+</td>
+<td><b><a href="Tengu.html" title="Tengu">Te</a></b>
+</td>
+<td><b><a href="Troll.html" title="Troll">Tr</a></b>
+</td>
+<td><b><a href="Vine_Stalker.html" title="Vine Stalker">VS</a></b>
+</td></tr>
+<tr>
+<td> -2
+</td>
+<td> 2
+</td>
+<td> 0
+</td>
+<td> 1
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> 11
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -2
+</td>
+<td> -1
+</td>
+<td> 6
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -3
+</td>
+<td> -2
+</td>
+<td> -2
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> -1
+</td>
+<td> -2
+</td>
+<td> 2
+</td>
+<td> -3
+</td>
+<td> 0
+</td></tr></table>
+<h2><span class="mw-headline" id="Spells">呪文</span></h2>
+<table class="prettytable">
+<tr>
+<th>アイコン
+</th>
+<th>名前
+</th>
+<th>系統
+</th>
+<th>レベル
+</th>
+<th>威力の<br />上限
+</th>
+<th>射程
+</th>
+<th>騒音
+</th>
+<th>フラグ
+</th>
+<th>魔法書
+</th></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_1">レベル 1</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Summon_small_mammal.png" data-untr="1" class="image"><img alt="Summon small mammal.png" src="img/Summon_small_mammal.png" width="32" height="32" /></a>
+</td>
+<td><a href="Summon_Small_Mammal.html" title="Summon Small Mammal">小動物の召喚</a>
+</td>
+<td>召喚術
+</td>
+<td>1
+</td>
+<td>25
+</td>
+<td>
+</td>
+<td>1
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Callings" data-untr="1" title="Book of Callings">招集の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Cantrips" data-untr="1" title="Book of Cantrips">悪戯の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_2">レベル 2</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Call_imp.png" data-untr="1" class="image"><img alt="Call imp.png" src="img/Call_imp.png" width="32" height="32" /></a>
+</td>
+<td><a href="Call_Imp.html" title="Call Imp">インプの召喚</a>
+</td>
+<td>召喚術
+</td>
+<td>2
+</td>
+<td>50
+</td>
+<td>
+</td>
+<td>2
+</td>
+<td>不浄(Unholy)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Callings" data-untr="1" title="Book of Callings">招集の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Minor_Magic" data-untr="1" title="Book of Minor Magic">下級魔術の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_3">レベル 3</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Call_canine_familiar.png" data-untr="1" class="image"><img alt="Call canine familiar.png" src="img/Call_canine_familiar.png" width="32" height="32" /></a>
+</td>
+<td><a href="Call_Canine_Familiar.html" title="Call Canine Familiar">犬族のしもべの召喚</a>
+</td>
+<td>召喚術
+</td>
+<td>3
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Callings" data-untr="1" title="Book of Callings">招集の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_the_Hunter" data-untr="1" title="Book of the Hunter">狩人の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Summon_ice_beast.png" data-untr="1" class="image"><img alt="Summon ice beast.png" src="img/Summon_ice_beast.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Summon_Ice_Beast" data-untr="1" title="Summon Ice Beast">氷の獣の召喚</a>
+</td>
+<td><a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a>/召喚術
+</td>
+<td>3
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>3
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Beasts" data-untr="1" title="Book of Beasts">獣の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_the_Tundra" data-untr="1" title="Book of the Tundra">凍土の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_4">レベル 4</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Eringya%27s_surprising_crocodile.png" data-untr="1" class="image"><img alt="Eringya&#39;s surprising crocodile.png" src="img/Eringya's_surprising_crocodile.png" width="32" height="32" /></a>
+</td>
+<td><a href="Eringya's_Surprising_Crocodile.html" title="Eringya&#39;s Surprising Crocodile">エリンギャの驚きのクロコダイル</a>
+</td>
+<td>召喚術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>1
+</td>
+<td>4
+</td>
+<td>自分は対象外(Not self)、対象指定(Target)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Callings" data-untr="1" title="Book of Callings">招集の魔法書</a><br /><a href="My_Sojourn_through_Swampland.html" title="My Sojourn through Swampland">我が沼地滞在記</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Martyr%27s_knell.png" data-untr="1" class="image"><img alt="Martyr&#39;s knell.png" src="img/Martyr's_knell.png" width="32" height="32" /></a>
+</td>
+<td><a href="Martyr's_Knell.html" title="Martyr&#39;s Knell">殉教者の弔鐘</a>
+</td>
+<td><a href="Necromancy.html" title="Necromancy">死霊術</a>/召喚術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>
+</td>
+<td><a href="Book_of_Decay.html" title="Book of Decay">腐朽の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Unlife" data-untr="1" title="Book of Unlife">反生命の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Summon_seismosaurus_egg.png" data-untr="1" class="image"><img alt="Summon seismosaurus egg.png" src="img/Summon_seismosaurus_egg.png" width="32" height="32" /></a>
+</td>
+<td><a href="Summon_Seismosaurus_Egg.html" title="Summon Seismosaurus Egg">セイスモサウルスの卵の召喚</a>
+</td>
+<td><a href="Earth_Magic.html" title="Earth Magic">地の魔術</a>/召喚術
+</td>
+<td>4
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>4
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Beasts" data-untr="1" title="Book of Beasts">獣の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_the_Wilderness" data-untr="1" title="Book of the Wilderness">荒野の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_5">レベル 5</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Summon_forest.png" data-untr="1" class="image"><img alt="Summon forest.png" src="img/Summon_forest.png" width="32" height="32" /></a>
+</td>
+<td><a href="Summon_Forest.html" title="Summon Forest">ドライアドの召喚</a>
+</td>
+<td>召喚術/<a href="Translocations.html" title="Translocations">転位術</a>
+</td>
+<td>5
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>10
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Fen_Folio" data-untr="1" title="Fen Folio">沼沢の書</a><br /><a href="http://crawl.chaosforge.org/Book_of_the_Wilderness" data-untr="1" title="Book of the Wilderness">荒野の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Summon_mana_viper.png" data-untr="1" class="image"><img alt="Summon mana viper.png" src="img/Summon_mana_viper.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Summon_Mana_Viper" data-untr="1" title="Summon Mana Viper">マナバイパーの召喚</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>/召喚術
+</td>
+<td>5
+</td>
+<td>100
+</td>
+<td>
+</td>
+<td>5
+</td>
+<td>召喚解除可(Mons abjure)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Beasts" data-untr="1" title="Book of Beasts">獣の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_the_Wilderness" data-untr="1" title="Book of the Wilderness">荒野の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_6">レベル 6</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Summon_cactus_giant.png" data-untr="1" class="image"><img alt="Summon cactus giant.png" src="img/Summon_cactus_giant.png" width="32" height="32" /></a>
+</td>
+<td><a href="Summon_Cactus_Giant.html" title="Summon Cactus Giant">サボテンの巨人の召喚</a>
+</td>
+<td>召喚術
+</td>
+<td>6
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>6
+</td>
+<td>
+</td>
+<td><a href="Book_of_Scorching.html" title="Book of Scorching">灼熱の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_the_Wilderness" data-untr="1" title="Book of the Wilderness">荒野の魔法書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_7">レベル 7</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Haunt.png" data-untr="1" class="image"><img alt="Haunt.png" src="img/Haunt.png" width="32" height="32" /></a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Haunt" data-untr="1" title="Haunt">招霊</a>
+</td>
+<td><a href="Necromancy.html" title="Necromancy">死霊術</a>/召喚術
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>視界(LOS)
+</td>
+<td>7
+</td>
+<td>召喚解除可(Mons abjure)、自分は対象外(Not self)、対象指定(Target)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Death" data-untr="1" title="Book of Death">死の魔法書</a><br /><a href="http://crawl.chaosforge.org/Necronomicon" data-untr="1" title="Necronomicon">ネクロノミコン</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Malign_gateway.png" data-untr="1" class="image"><img alt="Malign gateway.png" src="img/Malign_gateway.png" width="32" height="32" /></a>
+</td>
+<td><a href="Malign_Gateway.html" title="Malign Gateway">邪悪なる通り道</a>
+</td>
+<td>召喚術/<a href="Translocations.html" title="Translocations">転位術</a>
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>15
+</td>
+<td>混沌(Chaotic)、不浄(Unholy)
+</td>
+<td><a href="http://crawl.chaosforge.org/Grand_Grimoire" data-untr="1" title="Grand Grimoire">グラン・グリモア</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Sphinx_sisters.png" data-untr="1" class="image"><img alt="Sphinx sisters.png" src="img/Sphinx_sisters.png" width="32" height="32" /></a>
+</td>
+<td><a href="Sphinx_Sisters.html" title="Sphinx Sisters">スフィンクスの姉妹</a>
+</td>
+<td><a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a>/召喚術
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>7
+</td>
+<td>召喚解除可(Mons abjure)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Beasts" data-untr="1" title="Book of Beasts">獣の魔法書</a><br /><a href="http://crawl.chaosforge.org/Book_of_Misfortune" data-untr="1" title="Book of Misfortune">災難の魔法書</a>
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Summon_hydra.png" data-untr="1" class="image"><img alt="Summon hydra.png" src="img/Summon_hydra.png" width="32" height="32" /></a>
+</td>
+<td><a href="Summon_Hydra.html" title="Summon Hydra">ヒドラの召喚</a>
+</td>
+<td>召喚術
+</td>
+<td>7
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>7
+</td>
+<td>召喚解除可(Mons abjure)
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_Blood" data-untr="1" title="Book of Blood">血の魔法書</a><br /><a href="http://crawl.chaosforge.org/Fen_Folio" data-untr="1" title="Fen Folio">沼沢の書</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_8">レベル 8</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Summon_horrible_things.png" data-untr="1" class="image"><img alt="Summon horrible things.png" src="img/Summon_horrible_things.png" width="32" height="32" /></a>
+</td>
+<td><a href="Summon_Horrible_Things.html" title="Summon Horrible Things">おぞましきものの召喚</a>
+</td>
+<td>召喚術
+</td>
+<td>8
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>8
+</td>
+<td>混沌(Chaotic)、召喚解除可(Mons abjure)、不浄(Unholy)
+</td>
+<td><a href="http://crawl.chaosforge.org/Grand_Grimoire" data-untr="1" title="Grand Grimoire">グラン・グリモア</a>
+</td></tr>
+<tr>
+<th colspan="9" style="text-align:left">
+<h4><span class="mw-headline" id="Level_9">レベル 9</span></h4>
+</th></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/File:Dragon%27s_call.png" data-untr="1" class="image"><img alt="Dragon&#39;s call.png" src="img/Dragon's_call.png" width="32" height="32" /></a>
+</td>
+<td><a href="Dragon's_Call.html" title="Dragon&#39;s Call">ドラゴンの呼び声</a>
+</td>
+<td>召喚術
+</td>
+<td>9
+</td>
+<td>200
+</td>
+<td>
+</td>
+<td>15
+</td>
+<td>
+</td>
+<td><a href="http://crawl.chaosforge.org/Book_of_the_Dragon" data-untr="1" title="Book of the Dragon">ドラゴンの魔法書</a>
+</td></tr>
+</table>
+<h2><span class="mw-headline" id="Sources">入手先</span></h2>
+<dl><dt>主な魔法書</dt>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Beasts" data-untr="1" title="Book of Beasts">獣の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Summon_Ice_Beast" data-untr="1" title="Summon Ice Beast">氷の獣の召喚</a>、<a href="Summon_Seismosaurus_Egg.html" title="Summon Seismosaurus Egg">セイスモサウルスの卵の召喚</a>、<a href="http://crawl.chaosforge.org/Summon_Mana_Viper" data-untr="1" title="Summon Mana Viper">マナバイパーの召喚</a>、<a href="Sphinx_Sisters.html" title="Sphinx Sisters">スフィンクスの姉妹</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Callings" data-untr="1" title="Book of Callings">招集の魔法書</a></b>: <a href="Summon_Small_Mammal.html" title="Summon Small Mammal">小動物の召喚</a>、<a href="Call_Imp.html" title="Call Imp">インプの召喚</a>、<a href="Call_Canine_Familiar.html" title="Call Canine Familiar">犬族のしもべの召喚</a>、<a href="Eringya's_Surprising_Crocodile.html" title="Eringya&#39;s Surprising Crocodile">エリンギャの驚きのクロコダイル</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_the_Wilderness" data-untr="1" title="Book of the Wilderness">荒野の魔法書</a></b>: <a href="Summon_Seismosaurus_Egg.html" title="Summon Seismosaurus Egg">セイスモサウルスの卵の召喚</a>、<a href="Summon_Forest.html" title="Summon Forest">ドライアドの召喚</a>、<a href="http://crawl.chaosforge.org/Summon_Mana_Viper" data-untr="1" title="Summon Mana Viper">マナバイパーの召喚</a>、<a href="Summon_Cactus_Giant.html" title="Summon Cactus Giant">サボテンの巨人の召喚</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Grand_Grimoire" data-untr="1" title="Grand Grimoire">グラン・グリモア</a></b>: <a href="Malign_Gateway.html" title="Malign Gateway">邪悪なる通り道</a>、<a href="Summon_Horrible_Things.html" title="Summon Horrible Things">おぞましきものの召喚</a></dd>
+<dt>その他の魔法書</dt>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Blood" data-untr="1" title="Book of Blood">血の魔法書</a></b>: <a href="Summon_Hydra.html" title="Summon Hydra">ヒドラの召喚</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Cantrips" data-untr="1" title="Book of Cantrips">悪戯の魔法書</a></b>: <a href="Summon_Small_Mammal.html" title="Summon Small Mammal">小動物の召喚</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Death" data-untr="1" title="Book of Death">死の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Haunt" data-untr="1" title="Haunt">招霊</a></dd>
+<dd><b><a href="Book_of_Decay.html" title="Book of Decay">腐朽の魔法書</a></b>: <a href="Martyr's_Knell.html" title="Martyr&#39;s Knell">殉教者の弔鐘</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_the_Dragon" data-untr="1" title="Book of the Dragon">ドラゴンの魔法書</a></b>: <a href="Dragon's_Call.html" title="Dragon&#39;s Call">ドラゴンの呼び声</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Fen_Folio" data-untr="1" title="Fen Folio">沼沢の書</a></b>: <a href="Summon_Forest.html" title="Summon Forest">ドライアドの召喚</a>、<a href="Summon_Hydra.html" title="Summon Hydra">ヒドラの召喚</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_the_Hunter" data-untr="1" title="Book of the Hunter">狩人の魔法書</a></b>: <a href="Call_Canine_Familiar.html" title="Call Canine Familiar">犬族のしもべの召喚</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Minor_Magic" data-untr="1" title="Book of Minor Magic">下級魔術の魔法書</a></b>: <a href="Call_Imp.html" title="Call Imp">インプの召喚</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Misfortune" data-untr="1" title="Book of Misfortune">災難の魔法書</a></b>: <a href="Sphinx_Sisters.html" title="Sphinx Sisters">スフィンクスの姉妹</a></dd>
+<dd><b><a href="My_Sojourn_through_Swampland.html" title="My Sojourn through Swampland">我が沼地滞在記</a></b>: <a href="Eringya's_Surprising_Crocodile.html" title="Eringya&#39;s Surprising Crocodile">エリンギャの驚きのクロコダイル</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Necronomicon" data-untr="1" title="Necronomicon">ネクロノミコン</a></b>: <a href="http://crawl.chaosforge.org/Haunt" data-untr="1" title="Haunt">招霊</a></dd>
+<dd><b><a href="Book_of_Scorching.html" title="Book of Scorching">灼熱の魔法書</a></b>: <a href="Summon_Cactus_Giant.html" title="Summon Cactus Giant">サボテンの巨人の召喚</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_the_Tundra" data-untr="1" title="Book of the Tundra">凍土の魔法書</a></b>: <a href="http://crawl.chaosforge.org/Summon_Ice_Beast" data-untr="1" title="Summon Ice Beast">氷の獣の召喚</a></dd>
+<dd><b><a href="http://crawl.chaosforge.org/Book_of_Unlife" data-untr="1" title="Book of Unlife">反生命の魔法書</a></b>: <a href="Martyr's_Knell.html" title="Martyr&#39;s Knell">殉教者の弔鐘</a></dd></dl>
+<h2><span class="mw-headline" id="Duration">持続時間</span></h2>
+<p>召喚されたモンスターは、1 から 6 までの持続時間をもって生み出される。この値は、おおよそ次の <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a>(時間の単位。10 aut = 1「ターン」)に相当する:
+</p>
+<ol><li> 90 aut </li>
+<li> 180 aut</li>
+<li> 270 aut</li>
+<li> 360 aut</li>
+<li> 810 aut</li>
+<li> 1710 aut</li></ol>
+<p>召喚術の呪文の中には、持続時間が固定のものがある。それ以外の呪文では、呪文の威力が高いほどモンスターの持続時間が延びる。
+</p>
+<h2><span class="mw-headline" id="Summoning_Limits">召喚数の上限</span></h2>
+<p>召喚術の呪文の多くには、その種類のモンスターを同時に何体まで維持できるかの上限もある。呪文を唱えすぎて上限を超えると、いちばん古いモンスターがほぼすぐに時間切れで消える。
+</p>
+<table class="prettytable">
+<tr>
+<th> 呪文 </th>
+<th> レベル </th>
+<th> 持続時間の種類 </th>
+<th> 持続時間 </th>
+<th> 召喚数の上限
+</th></tr>
+<tr>
+<td> <a href="Summon_Small_Mammal.html" title="Summon Small Mammal">小動物の召喚</a> </td>
+<td> 1 </td>
+<td> 固定 </td>
+<td> 3 </td>
+<td> 2
+</td></tr>
+<tr>
+<td> <a href="Call_Imp.html" title="Call Imp">インプの召喚</a> </td>
+<td> 2 </td>
+<td> 呪文の威力 </td>
+<td> 2-6 </td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a href="Call_Canine_Familiar.html" title="Call Canine Familiar">犬族のしもべの召喚</a> </td>
+<td> 3 </td>
+<td> 呪文の威力 </td>
+<td> 2-6 </td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Summon_Guardian_Golem" data-untr="1" title="Summon Guardian Golem">守護のゴーレムの召喚</a> </td>
+<td> 3 </td>
+<td> 固定 </td>
+<td> 3 </td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Summon_Ice_Beast" data-untr="1" title="Summon Ice Beast">氷の獣の召喚</a> </td>
+<td> 4 </td>
+<td> 呪文の威力 </td>
+<td> 2-4 </td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Summon_Lightning_Spire" data-untr="1" class="mw-redirect" title="Summon Lightning Spire">稲妻の渦巻の召喚</a> </td>
+<td> 4 </td>
+<td> 固定 </td>
+<td> 2 </td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a href="Summon_Forest.html" title="Summon Forest">ドライアドの召喚</a> </td>
+<td> 5 </td>
+<td> 固定 </td>
+<td> 1 </td>
+<td> 上限なし*
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Summon_Mana_Viper" data-untr="1" title="Summon Mana Viper">マナバイパーの召喚</a> </td>
+<td> 5 </td>
+<td> 固定 </td>
+<td> 2 </td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a href="Summon_Cactus_Giant.html" title="Summon Cactus Giant">サボテンの巨人の召喚</a> </td>
+<td> 6 </td>
+<td> 固定 </td>
+<td> 3 </td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Haunt" data-untr="1" title="Haunt">招霊</a> </td>
+<td> 7 </td>
+<td> 固定 </td>
+<td> 3 </td>
+<td> 8
+</td></tr>
+<tr>
+<td> <a href="Monstrous_Menagerie.html" title="Monstrous Menagerie">怪物園の開場</a> </td>
+<td> 7 </td>
+<td> 固定 </td>
+<td> 4 </td>
+<td> 2
+</td></tr>
+<tr>
+<td> <a href="Malign_Gateway.html" title="Malign Gateway">邪悪なる通り道</a> </td>
+<td> 7 </td>
+<td> ランダム </td>
+<td> - </td>
+<td> 1**
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Spellforged_Servitor" data-untr="1" class="mw-redirect" title="Spellforged Servitor">魔火花の従者</a> </td>
+<td> 7 </td>
+<td> 固定 </td>
+<td> 4 </td>
+<td> 1
+</td></tr>
+<tr>
+<td> <a href="Summon_Hydra.html" title="Summon Hydra">ヒドラの召喚</a> </td>
+<td> 7 </td>
+<td> 固定 </td>
+<td> 1 </td>
+<td> 2
+</td></tr>
+<tr>
+<td> <a href="Summon_Horrible_Things.html" title="Summon Horrible Things">おぞましきものの召喚</a> </td>
+<td> 8 </td>
+<td> 固定 </td>
+<td> 3 </td>
+<td> 8
+</td></tr>
+<tr>
+<td> <a href="Dragon's_Call.html" title="Dragon&#39;s Call">ドラゴンの呼び声</a> </td>
+<td> 9 </td>
+<td> 固定 </td>
+<td> 2 </td>
+<td> 上限なし
+</td></tr></table>
+<pre>* - 持続時間が切れるまで唱え直せない。
+** - 誰が作ったかにかかわらず、迷宮に存在できる邪悪なる通り道は同時にひとつだけ。
+</pre>
+<p>次のものは本来の召喚術の呪文ではないが、似たような働きをする:
+</p>
+<table class="prettytable">
+<tr>
+<th> 呪文 </th>
+<th> レベル </th>
+<th> 持続時間の種類 </th>
+<th> 持続時間 </th>
+<th> 召喚数の上限
+</th></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Necrotise" data-untr="1" title="Necrotise">壊死</a> </td>
+<td> 1 </td>
+<td> 固定 </td>
+<td> 3 </td>
+<td> 上限なし
+</td></tr>
+<tr>
+<td> <a href="Tukima's_Dance.html" title="Tukima&#39;s Dance">ツキマーの舞踏</a> </td>
+<td> 3 </td>
+<td> 呪文の威力 </td>
+<td> 2-6 </td>
+<td> 上限なし
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Death_Channel" data-untr="1" title="Death Channel">死の霊媒術</a> </td>
+<td> 6 </td>
+<td> 固定 </td>
+<td> 5 </td>
+<td> 上限なし
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Simulacrum" data-untr="1" class="mw-redirect" title="Simulacrum">幻像</a> </td>
+<td> 6 </td>
+<td> 固定 </td>
+<td> 6 </td>
+<td> 上限なし
+</td></tr></table>
+<h3><span class="mw-headline" id="Non-standard_summoning">変則的な召喚</span></h3>
+<p>次の変則的な方法で呼び出した味方は、同時に出せる数に上限がない。ただし、たいていコストがきわめて重い:
+</p>
+<dl><dt><b>入手元&#160;: 持続時間</b></dt>
+<dd><a href="Trog.html#Given_Abilities" title="Trog">戦友の召喚</a>&#160;: 2-6</dd>
+<dd><a href="http://crawl.chaosforge.org/TSO#Given_Abilities" data-untr="1" class="mw-redirect" title="TSO">聖なる戦士の召喚</a>&#160;: 2-6</dd>
+<dd><a href="http://crawl.chaosforge.org/Qazlal#Given_Abilities" data-untr="1" class="mw-redirect" title="Qazlal">精霊召喚</a>: 1</dd>
+<dd><a href="Scroll_of_summoning.html" title="Scroll of summoning">召喚の巻物</a>&#160;: モンスターの <a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">HD</a> による</dd></dl>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a>より前は、召喚物がいると得られる経験値が減ったが、そのかわり召喚術の呪文の多くは召喚数の上限がずっと高かった。<a href="http://crawl.chaosforge.org/Shadow_Creatures" data-untr="1" title="Shadow Creatures">影の怪物</a>はプレイヤーが唱えられる呪文から外され、新たにレベル 6 の呪文<a href="Summon_Cactus_Giant.html" title="Summon Cactus Giant">サボテンの巨人の召喚</a>が加わった。</li>
+<li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a>で、<a href="http://crawl.chaosforge.org/Summon_Demon" data-untr="1" title="Summon Demon">デーモンの召喚</a>と<a href="http://crawl.chaosforge.org/Summon_Greater_Demon" data-untr="1" title="Summon Greater Demon">上位デーモンの召喚</a>がプレイヤーの唱えられる呪文から外された(<a href="Makhleb.html" title="Makhleb">マクレブ</a>の能力では今もデーモンを呼び出せる)。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a>で、この系統に残っていた最後の2つの補助呪文、<a href="http://crawl.chaosforge.org/Aura_of_Abjuration" data-untr="1" title="Aura of Abjuration">解放のオーラ</a>と<a href="http://crawl.chaosforge.org/Recall" data-untr="1" title="Recall">招来</a>が削除された。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a>で、召喚術の呪文に失敗すると<a href="http://crawl.chaosforge.org/Nameless_horror" data-untr="1" title="Nameless horror">名状しがたき恐怖</a>が現れるようになった。プレイヤーが召喚したモンスターは、プレイヤーに傷つけられたり、ほかの理由で敵対しそうになったりすると、プレイヤーを攻撃するのではなく消えるようになった。また、召喚されたモンスターも<a href="Inner_Flame.html" title="Inner Flame">呪文</a>や<a href="Scroll_of_immolation.html" title="Scroll of immolation">焼き討ちの巻物</a>で<a href="http://crawl.chaosforge.org/Status_effects#Inner_Flame" data-untr="1" title="Status effects">内なる炎の状態</a>になるようになった。</li>
+<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a>より前は、<a href="Warding.html" title="Warding">守護</a>が召喚された生き物の近接攻撃と遠距離攻撃をある程度防いでいた。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a>より前は、召喚した者が倒されたあとも召喚された生き物が残ったので、一部の敵の召喚術師にはずっと慎重に立ち回る必要があった。敵の召喚術師の多くはもっと打たれ弱かったが、プレイヤーと同じ召喚数の上限も課されていなかった。0.14 では召喚術の呪文の顔ぶれも大きく見直され、<a href="http://crawl.chaosforge.org/Summon_Lightning_Spire" data-untr="1" class="mw-redirect" title="Summon Lightning Spire">稲妻の渦巻の召喚</a>、<a href="http://crawl.chaosforge.org/Summon_Guardian_Golem" data-untr="1" title="Summon Guardian Golem">守護のゴーレムの召喚</a>、<a href="Summon_Forest.html" title="Summon Forest">ドライアドの召喚</a>、<a href="http://crawl.chaosforge.org/Summon_Mana_Viper" data-untr="1" title="Summon Mana Viper">マナバイパーの召喚</a>、<a href="Monstrous_Menagerie.html" title="Monstrous Menagerie">怪物園の開場</a>、<a href="http://crawl.chaosforge.org/Aura_of_Abjuration" data-untr="1" title="Aura of Abjuration">解放のオーラ</a>、<a href="http://crawl.chaosforge.org/Forceful_Dismissal" data-untr="1" title="Forceful Dismissal">強制的な送還</a>、<a href="http://crawl.chaosforge.org/Spellforged_Servitor" data-untr="1" class="mw-redirect" title="Spellforged Servitor">魔火花の従者</a>が加わり、<a href="http://crawl.chaosforge.org/Summon_Scorpions" data-untr="1" title="Summon Scorpions">蠍の召喚</a>、<a href="http://crawl.chaosforge.org/Summon_Ugly_Thing" data-untr="1" title="Summon Ugly Thing">醜きものの召喚</a>、<a href="http://crawl.chaosforge.org/Mass_Abjuration" data-untr="1" title="Mass Abjuration">集団への解放の宣誓</a>、<a href="http://crawl.chaosforge.org/Demonic_Horde" data-untr="1" title="Demonic Horde">悪魔の大群</a>、<a href="http://crawl.chaosforge.org/Summon_Dragon" data-untr="1" title="Summon Dragon">ドラゴンの召喚</a>と入れ替わった。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a>より前は、MP が続くかぎり、召喚術の呪文で同時に呼び出せるモンスターの数に上限がなかった。そのためプレイヤーはいつもモンスターの大群を呼び出しておくようになり、ほとんどのモンスターはプレイヤーに手出しできず、最適な遊び方がひどく退屈なものになっていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.12" data-untr="1" title="0.12">0.12</a>より前は、召喚されたモンスターがプレイヤーの<a href="Line_of_sight.html" title="Line of sight">視界</a>の外にいるモンスターを攻撃できた。また、<a href="http://crawl.chaosforge.org/Lava" data-untr="1" title="Lava">溶岩</a>や<a href="Deep_water.html" title="Deep water">深い水脈</a>の上を飛んでいるモンスターは招来できなかった。</li></ul>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="Summoner.html" title="Summoner">召喚術師</a></li>
+<li><a href="Summon.html" title="Summon">召喚</a></li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Skill.html" title="Skill">スキル</a>
+</th></tr>
+<tr>
+<th> <a href="Weapon.html" class="mw-redirect" title="Weapons">武器</a>
+</th>
+<td> <a href="Short_Blades.html" title="Short Blades">短剣</a> • <a href="Long_Blades.html" title="Long Blades">長剣</a> • <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+<p><a href="Axes.html" title="Axes">斧</a> • <a href="Maces_&_Flails.html" title="Maces &amp; Flails">鈍器</a> • <a href="Polearms.html" title="Polearms">長柄武器</a> • <a href="Staves.html" title="Staves">棒術</a> • <a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a> • <a href="Throwing.html" title="Throwing">投擲</a>
+</p>
+</td></tr>
+<tr>
+<th> 身体
+</th>
+<td> <a href="Fighting.html" title="Fighting">戦闘</a> • <a href="Armour_(skill).html" title="Armour (skill)">甲冑</a> • <a href="Dodging.html" title="Dodging">躱し身</a> • <a href="Stealth_(skill).html" title="Stealth (skill)">隠密</a> • <a href="Shields_(skill).html" title="Shields (skill)">盾</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Magic" data-untr="1" title="Magic">魔法</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a> • <a href="Invocations.html" title="Invocations">祈祷</a> • <a href="Evocations.html" title="Evocations">発動</a> • <a href="Shapeshifting.html" title="Shapeshifting">変身術</a>
+</td></tr>
+<tr>
+<th> <a href="List_of_spells_by_school.html" title="List of spells by school">呪文の系統</a>
+</th>
+<td> <a href="Air_Magic.html" class="mw-redirect" title="Air">風の魔術</a> • <a href="Alchemy.html" title="Alchemy">錬金術</a> • <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> • <a href="Earth_Magic.html" class="mw-redirect" title="Earth">地の魔術</a> • <a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a> • <a href="Forgecraft.html" title="Forgecraft">鍛造術</a> • <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> • <a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a> • <a href="Necromancy.html" title="Necromancy">死霊術</a> • <a href="Summonings.html" class="mw-redirect" title="Summoning">召喚術</a> • <a href="Translocations.html" title="Translocations">転位術</a>
+</td></tr>
+</table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

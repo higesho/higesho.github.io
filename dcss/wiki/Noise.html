@@ -40,8 +40,8 @@
 <p>初期設定では、画面右上の情報パネルに騒音メーターが表示される。バーの色と長さは、そのターンにプレイヤーのいるマスで聞こえた騒音の、いちばん大きな音量を表している。そのため、プレイヤー自身が立てた音はたいてい最大の音量のままメーターに出るが、数マス離れたところで鳴った音は、その効果の最大音量ではなく、プレイヤーに届いた音量で表示される。
 </p><p>メーターの色と音量の対応は次のとおり。
 </p>
-<ul><li><b>白: 0〜6</b>: この音量の騒音は、プレイヤーの<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外まではあまり届かない。近接攻撃や遠距離攻撃のほとんどと、低レベルの呪文がここに入る。</li>
-<li><b>黄: 7〜13</b>: この音量の騒音は、プレイヤーの<a href="http://crawl.chaosforge.org/Line_of_sight" data-untr="1" title="Line of sight">視界</a>の外からもモンスターを呼び寄せる。ダメージの大きい近接攻撃や遠距離攻撃、叫び声、中レベルの呪文の多くがここに入る。</li>
+<ul><li><b>白: 0〜6</b>: この音量の騒音は、プレイヤーの<a href="Line_of_sight.html" title="Line of sight">視界</a>の外まではあまり届かない。近接攻撃や遠距離攻撃のほとんどと、低レベルの呪文がここに入る。</li>
+<li><b>黄: 7〜13</b>: この音量の騒音は、プレイヤーの<a href="Line_of_sight.html" title="Line of sight">視界</a>の外からもモンスターを呼び寄せる。ダメージの大きい近接攻撃や遠距離攻撃、叫び声、中レベルの呪文の多くがここに入る。</li>
 <li><b>赤: 14〜29</b>: 大きな音で、今いる階のかなりの範囲のモンスターを起こして呼び寄せる。爆発する効果はたいていここに入る。</li>
 <li><b>マゼンタ: 30以上</b>: ダンジョンで最もやかましい音で、その階のほぼすべてを起こしてしまう。ここに入るのは<a href="Shatter.html" title="Shatter">粉砕</a>、<a href="Alarm_trap.html" title="Alarm trap">警報の罠</a>など、とりわけ音の大きいごく一部の効果だけだ。</li></ul>
 <h2><span class="mw-headline" id="Noise_propagation">騒音の伝わり方</span></h2>
@@ -101,7 +101,7 @@
 <h3><span class="mw-headline" id="Player_shouts">プレイヤーの叫び声</span></h3>
 <p><a href="http://crawl.chaosforge.org/Form" data-untr="1" class="mw-redirect" title="Form">変身</a>によって叫び声の音量が変わる。
 </p>
-<ul><li><a href="Bat_Form.html" title="Bat Form">コウモリ</a>、<a href="http://crawl.chaosforge.org/Vampire_Form" data-untr="1" class="mw-redirect" title="Vampire Form">コウモリ群</a>、<a href="Fungus_Form.html" title="Fungus Form">茸化</a>、<a href="http://crawl.chaosforge.org/Wisp_Form" data-untr="1" title="Wisp Form">霧化</a>に変身中の叫び声は音量4</li>
+<ul><li><a href="Bat_Form.html" title="Bat Form">コウモリ</a>、<a href="http://crawl.chaosforge.org/Vampire_Form" data-untr="1" class="mw-redirect" title="Vampire Form">コウモリ群</a>、<a href="Fungus_Form.html" title="Fungus Form">茸化</a>、<a href="Wisp_Form.html" title="Wisp Form">霧化</a>に変身中の叫び声は音量4</li>
 <li><a href="http://crawl.chaosforge.org/Spider_Form" data-untr="1" class="mw-redirect" title="Spider Form">蜘蛛</a>、<a href="http://crawl.chaosforge.org/Scarab_Form" data-untr="1" class="mw-redirect" title="Scarab Form">スカラベ</a>に変身中の叫び声は音量8</li>
 <li><a href="http://crawl.chaosforge.org/Walking_Scroll_Form" data-untr="1" class="mw-redirect" title="Walking Scroll Form">巻物</a>、<a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a>に変身中の叫び声は音量10</li>
 <li><a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>中の叫び声は音量18</li>
@@ -115,7 +115,7 @@
 <li><a href="http://crawl.chaosforge.org/Shield_of_the_Gong" data-untr="1" class="mw-redirect" title="Shield of the Gong">銅鑼の盾</a>で攻撃を防いだとき: 40</li>
 <li>モンスターの叫び声</li>
 <li><a href="http://crawl.chaosforge.org/Spell_slot_flag" data-untr="1" title="Spell slot flag">騒音フラグ</a>の付いたモンスターの呪文</li>
-<li>軋む扉: 10(確率は 1/<code>8 + 4 * <a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">Stealth</a> / 3</code>。「扉はやかましく軋みながら開いた!」/「閉まった!」)</li>
+<li>軋む扉: 10(確率は 1/<code>8 + 4 * <a href="Stealth.html" title="Stealth">Stealth</a> / 3</code>。「扉はやかましく軋みながら開いた!」/「閉まった!」)</li>
 <li><a href="Alarm_trap.html" title="Alarm trap">警報の罠</a>: 40</li>
 <li><a href="Horn_of_Geryon.html" title="Horn of Geryon">ゲリュオンの角笛</a>を使ったとき: 15</li></ul>
 <h2><span class="mw-headline" id="History">変更履歴</span></h2>

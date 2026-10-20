@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麻痺 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="麻痺(Paralyse)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>麻痺 <span class="en">Paralyse</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Paralyse">Paralyse</a>」(0.30 向け、2026-07-20 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Paralyse&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<div>
+<table class="prettytable" style=" width:18em">
+<tr>
+<th colspan="2"> <a href="http://crawl.chaosforge.org/File:Paralyse.png" data-untr="1" class="image"><img alt="Paralyse.png" src="img/Paralyse.png" width="32" height="32" /></a>&#8195;麻痺
+</th></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">詠唱の騒音</a>
+</th>
+<td> 4
+</td></tr>
+<tr>
+<th align="left"> <a href="Spell_noise.html" title="Spell noise">呪文の騒音</a>
+</th>
+<td> 0
+</td></tr>
+
+<tr>
+<th align="left"> 射程
+</th>
+<td> LOS
+</td></tr>
+
+<tr>
+<th align="left"> フラグ
+</th>
+<td> 意志力判定(Will check)、方向・対象指定(Dir or target)、射線の確認が必要(Needs tracer)
+</td></tr>
+</table></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 短い間、モンスターをいかなる行動もとれないようにする。
+</td></tr></table>
+<p><b>麻痺</b>はモンスター専用の呪文で、相手を 2〜5 ターンの<a href="Paralysis.html" title="Paralysis">麻痺</a>状態にしようとする。麻痺しているあいだは何もできない。<a href="Shield_(stat).html" class="mw-redirect" title="SH">SH</a>は 0 になり、<a href="Evasion.html" class="mw-redirect" title="EV">EV</a>もほぼ 0 になる。麻痺が解けたあと、プレイヤーは少しのあいだ(1〜3 ターン)麻痺にかからなくなる。
+</p><p><a href="Formicid.html" title="Formicid">フォーミシッド</a>には麻痺がまったく効かない。ほかの種族は<a href="Willpower.html" title="Willpower">意志力</a>でこの呪文に抵抗できる。
+</p><p>なお、<a href="http://crawl.chaosforge.org/Floating_eye" data-untr="1" title="Floating eye">浮遊する巨大眼球</a>の<a href="http://crawl.chaosforge.org/Paralysis_Gaze" data-untr="1" title="Paralysis Gaze">麻痺の眼光</a>は、この呪文とは仕組みが違う。眼光には射線が要らず、意志力の判定もない。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Monsters"><span class="tocnumber">1</span> <span class="toctext">モンスター</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Spellpower"><span class="tocnumber">1.1</span> <span class="toctext">呪文威力</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1"><a href="#Paralysis_Spell_Table"><span class="tocnumber">3</span> <span class="toctext">麻痺の呪文の表</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Monsters">モンスター</span></h2>
+<p>麻痺を唱える敵は次のとおり。
+</p>
+<ul><li> <span class="nhsym clr-brightmagenta">L</span> <a href="http://crawl.chaosforge.org/File:Dread_lich.png" data-untr="1" class="image"><img alt="Dread lich.png" src="img/Dread_lich.png" width="32" height="32" /></a> <b><a href="Dread_lich.html" title="Dread lich">恐怖のリッチ</a></b></li>
+<li> <span class="nhsym clr-white">&amp;</span> <a href="http://crawl.chaosforge.org/File:Ereshkigal.png" data-untr="1" class="image"><img alt="Ereshkigal.png" src="img/Ereshkigal.png" width="32" height="48" /></a> <b><a href="http://crawl.chaosforge.org/Ereshkigal" data-untr="1" title="Ereshkigal">エレシュキガル</a></b></li>
+<li> <span class="nhsym clr-brightmagenta">H</span> <a href="http://crawl.chaosforge.org/File:Fenstrider_witch.png" data-untr="1" class="image"><img alt="Fenstrider witch.png" src="img/Fenstrider_witch.png" width="32" height="32" /></a> <b><a href="Fenstrider_witch.html" title="Fenstrider witch">沼渡りの魔女</a></b></li>
+<li> <span class="nhsym">5</span> <a href="http://crawl.chaosforge.org/File:Grinder.png" data-untr="1" class="image"><img alt="Grinder.png" src="img/Grinder.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Grinder" data-untr="1" title="Grinder">グラインダー</a></b></li>
+<li> <span class="nhsym clr-lightgray">H</span> <a href="http://crawl.chaosforge.org/File:Guardian_sphinx.png" data-untr="1" class="image"><img alt="Guardian sphinx.png" src="img/Guardian_sphinx.png" width="32" height="32" /></a> <b><a href="Guardian_sphinx.html" title="Guardian sphinx">守護のスフィンクス</a></b></li>
+<li> <span class="nhsym clr-magenta">O</span> <a href="http://crawl.chaosforge.org/File:Ogre_mage.png" data-untr="1" class="image"><img alt="Ogre mage.png" src="img/Ogre_mage.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Ogre_mage" data-untr="1" title="Ogre mage">オーガの魔術師</a></b></li>
+<li> <span class="nhsym clr-brightmagenta">o</span> <a href="http://crawl.chaosforge.org/File:Orc_sorcerer.png" data-untr="1" class="image"><img alt="Orc sorcerer.png" src="img/Orc_sorcerer.png" width="32" height="32" /></a> <b><a href="Orc_sorcerer.html" title="Orc sorcerer">オークの魔道士</a></b></li>
+<li> <span class="nhsym">@</span> <a href="http://crawl.chaosforge.org/File:Rupert.png" data-untr="1" class="image"><img alt="Rupert.png" src="img/Rupert.png" width="32" height="32" /></a> <b><a href="Rupert.html" title="Rupert">ルパート</a></b></li>
+<li> <span class="nhsym clr-lightgray">H</span> <a href="http://crawl.chaosforge.org/File:Sphinx.png" data-untr="1" class="image"><img alt="Sphinx.png" src="img/Sphinx.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Sphinx" data-untr="1" title="Sphinx">スフィンクス</a></b></li>
+<li> <span class="nhsym clr-cyan">V</span> <a href="http://crawl.chaosforge.org/File:Vampire_knight.png" data-untr="1" class="image"><img alt="Vampire knight.png" src="img/Vampire_knight.png" width="32" height="32" /></a> <b><a href="http://crawl.chaosforge.org/Vampire_knight" data-untr="1" title="Vampire knight">吸血鬼の騎士</a></b></li>
+<li> <span class="nhsym">D</span> <a href="http://crawl.chaosforge.org/File:Xtahua.png" data-untr="1" class="image"><img alt="Xtahua.png" src="img/Xtahua.png" width="32" height="32" /></a> <b><a href="Xtahua.html" title="Xtahua">ザッハ</a></b></li></ul>
+<p>呪文の組み合わせによっては、次の敵も麻痺を唱えることがある。
+</p>
+<ul><li> <span class="nhsym clr-lightgray">&amp;</span> <a href="http://crawl.chaosforge.org/File:Pandemonium_lord.png" data-untr="1" class="image"><img alt="Pandemonium lord.png" src="img/Pandemonium_lord.png" width="32" height="48" /></a> <b><a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a></b>(確率 3.4%)</li></ul>
+<p>プレイヤー(やほかのモンスター)は、<a href="http://crawl.chaosforge.org/Wand_of_paralysis" data-untr="1" title="Wand of paralysis">金縛りのワンド</a>で同じ効果を出せる。プレイヤーの場合の威力(逓減の前)は <code>15 + 3.5 * <a href="Evocations.html" title="Evocations">発動</a></code> だ。
+</p>
+<h3><span class="mw-headline" id="Spellpower">呪文威力</span></h3>
+<p>ほとんどの呪術と同じく、モンスターが唱える麻痺の<a href="http://crawl.chaosforge.org/Spellpower" data-untr="1" class="mw-redirect" title="Spellpower">呪文威力</a>は <code>4 * <a href="http://crawl.chaosforge.org/HD" data-untr="1" class="mw-redirect" title="HD">HD</a></code> だ。これに<a href="Willpower.html#Enchantment_power" title="Willpower">逓減の関数</a>をかけたものが、こちらの意志力と比べられる。意志力が威力より 99 以上高ければ、そのモンスターの麻痺はまったく効かない。意志力と威力が同じなら、抵抗できる確率は 50% だ。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>麻痺は<i>とてつもなく</i>危険になりうる。<a href="http://crawl.chaosforge.org/Instant_death" data-untr="1" class="mw-redirect" title="Instant death">即死</a>と同じものとして扱うべきだ。5 ターンも好きに動けるなら、1 体だけでこちらを殺せるモンスターはいくらでもいる。たとえば<a href="Orc_sorcerer.html" title="Orc sorcerer">オークの魔道士</a>は 1 ターンに 3d17 のダメージを与えられるので、5 ターンなら最大 270 になる。モンスターが群れていれば、生き延びる見込みは指数関数的に下がっていく。
+</p><p>麻痺は、ふつうの呪術の呪文と同じように働く。次のような手で対抗できる。
+</p>
+<ul><li>この呪術をかけるには射線が要る。ほかのモンスターの陰に隠れれば防げる。<a href="Line_of_sight.html" title="Line of sight">視界</a>をさえぎる手段なら、どれでも呪文を唱えさせずに済む。</li>
+<li>モンスターは<a href="Silence.html" title="Silence">静寂</a>の中では呪文を唱えられない。麻痺を使うモンスターが出るたびに<a href="http://crawl.chaosforge.org/Scroll_of_silence" data-untr="1" title="Scroll of silence">静寂の巻物</a>を使っていてはとても割に合わないが、いざというときには役に立つ。<a href="Phial_of_floods.html" title="Phial of floods">大水の小瓶</a>でモンスターを<a href="http://crawl.chaosforge.org/Waterlog" data-untr="1" class="mw-redirect" title="Waterlog">浸水</a>させても同じ効果がある(<a href="Dread_lich.html" title="Dread lich">恐怖のリッチ</a>と悪魔は除く)。</li>
+<li><a href="Willpower.html" title="Willpower">意志力</a>。ただし、成功率を 0% にするにはかなり高い意志力が要る。<a href="Experience.html" class="mw-redirect" title="XL">XL</a>と<a href="Species.html" title="Species">種族</a>によって変わるので、「Will+++」だからといって安心はできない。くわしくは下の表を見てほしい。
+<ul><li>恐怖のリッチや<a href="http://crawl.chaosforge.org/Ereshkigal" data-untr="1" title="Ereshkigal">エレシュキガル</a>がいる<a href="Tartarus.html" title="Tartarus">タルタロス</a>では、十分な意志力をそろえるのはまず無理だ。タルタロスでは意志力が半分になる。</li></ul></li>
+<li>ほかの<a href="http://crawl.chaosforge.org/Allies" data-untr="1" class="mw-redirect" title="Allies">仲間</a>をそばに置いておく。こちらが麻痺していても仲間は戦えるし、モンスターはこちらより仲間を狙うことも多い。もちろん、これで確実に守れるわけではない。</li></ul>
+<h2><span class="mw-headline" id="Paralysis_Spell_Table">麻痺の呪文の表</span></h2>
+<p><a class="mw-selflink selflink">麻痺</a>の呪文(ほかの麻痺の原因は除く)には、<a href="Willpower.html" title="Willpower">意志力</a>で抵抗できる。たいていは強いモンスターほど抵抗しにくい。次の意志力があれば 100% 抵抗できる。つまり、麻痺する確率が 0% になる。
+</p>
+<table class="prettytable">
+<caption style="text-align: center"><b>よく出るモンスターの麻痺を 0% にするのに必要な<a href="Willpower.html" title="Willpower">意志力</a>と<a href="Experience.html" class="mw-redirect" title="XL">XL</a></b>
+</caption>
+<tr>
+<th>モンスター </th>
+<th> Will </th>
+<th> <a href="Human.html" title="Human">人間</a>(XL ごとに Will +3) </th>
+<th> <a href="Oni.html" title="Oni">鬼</a>(XL ごとに Will +4) </th>
+<th> <a href="Mummy.html" title="Mummy">ミイラ</a>(XL ごとに Will +5) </th>
+<th> <a href="Felid.html" title="Felid">フェリッド</a>(XL ごとに Will +6) </th>
+<th> <a href="Spriggan.html" title="Spriggan">スプリガン</a>(XL ごとに Will +7)
+</th></tr>
+<tr>
+<td><a href="Orc_sorcerer.html" title="Orc sorcerer">オークの魔道士</a> </td>
+<td> 135 </td>
+<td> XL 19 + Will++<br />外部から Will+++ </td>
+<td> XL 14 + Will++ </td>
+<td> XL 19 + Will+<br />XL 11 + Will++ </td>
+<td> XL 16 + Will+<br />外部から Will++ </td>
+<td> XL 20<br />XL 14 + Will+
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Ogre_mage" data-untr="1" title="Ogre mage">オーガの魔術師</a> </td>
+<td> 139 </td>
+<td> XL 20 + Will++<br />外部から Will+++ </td>
+<td> XL 15 + Will++ </td>
+<td> XL 20 + Will+<br />XL 12 + Will++ </td>
+<td> XL 17 + Will+<br />外部から Will++ </td>
+<td> XL 20<br />XL 15 + Will+
+</td></tr>
+<tr>
+<td><a href="http://crawl.chaosforge.org/Vampire_knight" data-untr="1" title="Vampire knight">吸血鬼の騎士</a> </td>
+<td> 143 </td>
+<td> XL 21 + Will++<br />外部から Will+++ </td>
+<td> XL 16 + Will++ </td>
+<td> XL 21 + Will+<br />外部から Will++ </td>
+<td> XL 24<br />XL 18 + Will+ </td>
+<td> XL 21<br />XL 15 + Will+
+</td></tr>
+<tr>
+<td><a href="Fenstrider_witch.html" title="Fenstrider witch">沼渡りの魔女</a><br /><a href="http://crawl.chaosforge.org/Sphinx" data-untr="1" title="Sphinx">スフィンクス</a> </td>
+<td> 154 </td>
+<td> XL 25 + Will++<br />外部から Will+++ </td>
+<td> XL 19 + Will++ </td>
+<td> XL 23 + Will+<br />外部から Will++ </td>
+<td> XL 19 + Will+ </td>
+<td> XL 22<br />XL 17 + Will+
+</td></tr>
+<tr>
+<td><a href="Dread_lich.html" title="Dread lich">恐怖のリッチ</a> </td>
+<td> 172 </td>
+<td> 外部から Will+++ </td>
+<td> XL 23 + Will++ </td>
+<td> XL 27 + Will+<br />XL 18 + Will++ </td>
+<td> XL 22 + Will+<br />外部から Will++ </td>
+<td> XL 25<br />XL 19 + Will+
+</td></tr></table>
+<p><b>表の見方</b>
+</p><p>ゲームの中では、意志力は「Will+」の目盛りの数で表される。しかし実際の意志力は 0〜200 の数値で、Will+ ひとつが 40 にあたる。レベルが上がるたびに、種族ごとに決まった量の意志力が少しずつ増える。成功率を 0% にしたいときは、これが効いてくる。Will+++ があるだけでは足りないこともあるのだ。
+</p><p><a href="Human.html" title="Human">人間</a>がオークの魔道士の麻痺を 0% にするには、XL 19 で<a href="http://crawl.chaosforge.org/Rings_of_willpower" data-untr="1" class="mw-redirect" title="Rings of willpower">意志力の指輪</a>を 2 つ(またはレベルによる分とは別の Will+ の源を 2 つ)そろえる必要がある。XL 19 の人間で、<b>%</b> の画面に Will++ と表示されていても、魔道士の麻痺を完全に防げるわけでは<i>ない</i>。XL が低い場合は、長くなるので一部を省いた。厳密には、人間が外部から Will+++ を得ていれば XL 5 でオークの魔道士に完全に抵抗できる。
+</p><p>絶対に安全を期すなら、<b>x v</b> でモンスターを調べて、その呪文の成功率が本当に 0% になっているか確かめること。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.29" data-untr="1" title="0.29">0.29</a> より前は、麻痺は 2〜7 ターン続いた。</li>
+<li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> で削除されるまでは、<a href="http://crawl.chaosforge.org/Amulet_of_stasis" data-untr="1" title="Amulet of stasis">停滞の護符</a>を着けて麻痺を防ぐことができた。</li>
+<li><a href="http://crawl.chaosforge.org/0.4" data-untr="1" class="mw-redirect" title="0.4">0.4</a> より前は、麻痺はプレイヤーも使えるレベル 4 の<a href="http://crawl.chaosforge.org/Enchantments" data-untr="1" title="Enchantments">付呪術</a>の呪文だった。<a href="Petrify.html" title="Petrify">石化</a>に置き換えられて削除された。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

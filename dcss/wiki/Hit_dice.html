@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ヒットダイス &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="ヒットダイス(Hit dice)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>ヒットダイス <span class="en">Hit dice</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Hit_dice">Hit dice</a>」(0.31 向け、2025-11-14 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Hit_dice&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>に対応して<b>いない可能性がある</b>。</i></div>
+<p><i>「HD」はここに転送される。廃止されたプレイヤーの種族については<a href="http://crawl.chaosforge.org/Hill_Dwarf" data-untr="1" title="Hill Dwarf">丘ドワーフ</a>を参照。</i>
+</p><p><b>ヒットダイス</b>(Hit dice、<b>HD</b>)は、おおまかに言えばモンスターの<a href="Experience.html" class="mw-redirect" title="Experience level">経験レベル</a>にあたる。<a href="Hit_points.html" title="Hit points">HP</a> とは<i>別もの</i>だ。
+</p>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>モンスターにはそれぞれ決まった HD の値がある。HD は次のものに影響する。
+</p>
+<ul><li>モンスターの命中精度。近接攻撃の<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>は <code>18 + HD * 1.5</code>、<a href="Fighter_flag.html" title="Fighter flag">戦士フラグ</a>があれば <code>18 + HD * 2.5</code> になる。ビームの命中は <code>12 * HD</code>。</li>
+<li>モンスターの<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>。HD が高いほど呪文は強くなる。具体的な効果は呪文ごとに違う。
+<ul><li><a href="Wand.html" title="Wand">ワンド</a>や<a href="http://crawl.chaosforge.org/Pain_brand" data-untr="1" class="mw-redirect" title="Pain brand">苦痛のブランド</a>など、一部のアイテムの効き目も HD に左右される。</li></ul></li>
+<li>一部の<a href="Attack_flavour.html" title="Attack flavour">攻撃の追加効果</a>は HD によって変わる。たとえば「冷気」の追加効果は、攻撃する側の HD が高いほどダメージが大きい。</li>
+<li><a href="http://crawl.chaosforge.org/Dazzling_Flash" data-untr="1" class="mw-redirect" title="Dazzling Flash">目くらましの閃光</a>、<a href="Mephitic_Cloud.html" title="Mephitic Cloud">悪臭の雲</a>、<a href="Atropa.html" title="Atropa">アトロパ毒</a>/<a href="http://crawl.chaosforge.org/Datura" data-untr="1" title="Datura">ダチュラ毒</a>の<a href="Dart.html" title="Dart">ダーツ</a>など、プレイヤーが使う効果の中には相手の HD を直接見るものがある。HD の見方は効果によって違う。</li></ul>
+<p>最大 HP と<a href="Willpower.html" title="Willpower">意志力</a>も、間接的に HD で決まる。モンスターの HP と意志力は種類ごとにあらかじめ決まっていて、HD とは関係がない(たとえば<a href="Hydra.html" title="Hydra">ヒドラ</a>と<a href="Cacodemon.html" title="Cacodemon">混沌の悪鬼</a>はどちらも HD 13 だが、HP と意志力の値は違う)。ただし HD が下がればモンスターの HP と意志力も下がり、HD が上がればその逆になる。
+</p><p>いくつか例を挙げる。<a href="Hobgoblin.html" title="Hobgoblin">ホブゴブリン</a>をはじめ迷宮:1 のモンスターのほとんどは HD 1、<a href="Ogre_(monster).html" title="Ogre (monster)">オーガ</a>は 5、<a href="Ancient_lich.html" title="Ancient lich">太古のリッチ</a>は 27。<a href="Cerebov.html" title="Cerebov">セレボブ</a>は恐ろしい呪文を使うわりに 21 しかない。HD がいちばん高いのは<a href="Orb_of_fire.html" title="Orb of fire">炎の球体</a>の 30 で、呪文のダメージがあれほど大きいのはそのためだ。
+</p>
+<h3><span class="mw-headline" id="Modifying">HD を変える</span></h3>
+<p>プレイヤーは、モンスターを<a href="Draining.html" title="Draining">衰弱</a>させたり(<a href="Draining_(brand).html" title="Draining (brand)">掠奪</a>の武器や、<a href="Negative_energy.html" title="Negative energy">負のエネルギー</a>を使ったいくつかの攻撃)、<a href="Malmutate.html" title="Malmutate">悪性変異</a>させたり(<a href="Irradiate.html" title="Irradiate">放射の光</a>など)することで、一時的に HD を下げられる。
+</p><p><a href="Summonings.html" title="Summonings">召喚術</a>の呪文なら、<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>を上げれば<a href="Summon.html" title="Summon">召喚物</a>の HD も上がる。
+</p>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

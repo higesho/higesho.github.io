@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>終盤のキャラクター育成 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="終盤のキャラクター育成(Late Game Character Building)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>終盤のキャラクター育成 <span class="en">Late Game Character Building</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Late_Game_Character_Building">Late Game Character Building</a>」(0.31 向け、2024-05-27 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Late_Game_Character_Building&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p>このガイドは、すでにルーンを 1 つ以上手に入れていて、<a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持って脱出するまでにルーンを 3〜4 個集めるつもりのプレイヤー向けに、キャラクター育成の基本的な方針をまとめたものだ。<a href="Mid_Game_Character_Building.html" title="Mid Game Character Building">中盤の方針</a>で扱った内容を土台にしている。
+</p><p>キャラクターのスキルの仕上げに入ろう。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Melee_Focused"><span class="tocnumber">1</span> <span class="toctext">近接戦闘中心</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Weapon"><span class="tocnumber">1.1</span> <span class="toctext">武器</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Defense"><span class="tocnumber">1.2</span> <span class="toctext">防御</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Range"><span class="tocnumber">1.3</span> <span class="toctext">遠距離攻撃</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Spell_Focused"><span class="tocnumber">2</span> <span class="toctext">呪文中心</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Weapon_2"><span class="tocnumber">2.1</span> <span class="toctext">武器</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Spellcasting"><span class="tocnumber">2.2</span> <span class="toctext">呪文詠唱</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Spell_Schools"><span class="tocnumber">2.3</span> <span class="toctext">呪文の系統</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Defense_2"><span class="tocnumber">2.4</span> <span class="toctext">防御</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Spell_Choice"><span class="tocnumber">3</span> <span class="toctext">呪文の選び方</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Choice_by_Armour"><span class="tocnumber">3.1</span> <span class="toctext">防具の重さで選ぶ</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="#Light_.28Robe.29"><span class="tocnumber">3.1.1</span> <span class="toctext">軽装(ローブ)</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Mid_.28Dragon_Scales.29"><span class="tocnumber">3.1.2</span> <span class="toctext">中装(竜の鱗)</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Heavy_.28Plate.29"><span class="tocnumber">3.1.3</span> <span class="toctext">重装(プレートアーマー)</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Natural"><span class="tocnumber">3.1.4</span> <span class="toctext">変身で代用</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Choice_by_category"><span class="tocnumber">3.2</span> <span class="toctext">種類で選ぶ</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Melee_Focused">近接戦闘中心</span></h2>
+<p>近接戦闘中心のキャラクターは、この段階でも重い防具を着込み、大きなダメージを叩き出す白兵戦の戦士のままだ。
+</p>
+<h3><span class="mw-headline" id="Weapon">武器</span></h3>
+<p>武器スキルは、まだ届いていなければ、使っている武器の最小ディレイまで上げきる。片手武器ならたいていもう最小ディレイに達しているはずだが、大型の武器ほど多くの訓練がいる。
+</p>
+<ul><li><a href="Executioner's_axe.html" title="Executioner&#39;s axe">処刑人の斧</a>、<a href="Bardiche.html" title="Bardiche">バルディッシュ</a>、<a href="Giant_spiked_club.html" title="Giant spiked club">釘つき巨大棍棒</a>は 24</li>
+<li><a href="Triple_sword.html" title="Triple sword">トリプルソード</a>は 22</li>
+<li><a href="Great_mace.html" title="Great mace">大型メイス</a>、<a href="Battleaxe.html" title="Battleaxe">バトルアックス</a>、<a href="Glaive.html" title="Glaive">グレイブ</a>、<a href="Great_sword.html" title="Great sword">グレートソード</a>は 20</li></ul>
+<p>最小ディレイに届いたあとも訓練を続けてかまわない。この段階では細かな調整はさほど重要ではなく、最小ディレイのところで止めておいても、上限の 27 まで上げ続けてもいい。<a href="Demon_whip.html" title="Demon whip">悪魔の鞭</a>や<a href="Eveningstar.html" title="Eveningstar">イブニングスター</a>のように最小ディレイの低い武器は、ダメージを伸ばすためにもう少しスキルを足しておきたい。
+</p><p>このころには、珍しい武器も手に入りはじめる。詳しくは<a href="Weapon_choice.html" title="Weapon choice">武器の選び方</a>の記事を見てほしいが、この段階で武器の系統を乗り換えるのはまず得策ではない。とはいえ、短剣使いは長剣(または別の武器の系統)への乗り換えを考えはじめたほうがいい。<a href="Orb_of_fire.html" title="Orb of fire">炎の球体</a>に急所突きを決めるのは、たいていの場合無理な話だからだ。
+</p>
+<h3><span class="mw-headline" id="Defense">防御</span></h3>
+<p>特定のスキルばかり鍛えてきたなら、守りの要となる<a href="Fighting.html" title="Fighting">戦闘</a>、<a href="Armour.html" title="Armour">甲冑</a>、<a href="Dodging.html" title="Dodging">躱し身</a>、<a href="Shields.html" title="Shields">盾</a>のどれか(あるいは全部)が足りていないかもしれない。理想を言えば、甲冑・躱し身・盾のうち 2 つは 10 以上にしておきたい。戦闘も引き続き大事なスキルだ。ゾットの領域に入るずっと前から、戦闘スキルは武器スキル以上に重要になる。
+</p>
+<h3><span class="mw-headline" id="Range">遠距離攻撃</span></h3>
+<p><a href="Throwing.html" title="Throwing">投擲</a>は、<a href="Javelin.html" title="Javelin">ジャベリン</a>が十分に残っているなら、10 からジャベリンの最小ディレイである 16 までの間で上げておく。ただし(<a href="Okawaru.html" title="Okawaru">オカワル</a>を信仰しているのでなければ)しょっちゅう投げているとすぐに尽きる。<a href="Size.html" title="Size">体格</a>も関係してくる。<a href="Kobold.html" title="Kobold">コボルド</a>や<a href="Spriggan.html" title="Spriggan">スプリガン</a>はジャベリンを使えないし、<a href="Troll.html" title="Troll">トロル</a>や<a href="http://crawl.chaosforge.org/Ogre" data-untr="1" title="Ogre">オーガ</a>は<a href="Large_rock.html" title="Large rock">大岩</a>を強くするためにさらに上げたくなるかもしれない。
+</p><p><a href="Evocations.html" title="Evocations">発動</a>も同じ考え方でいいが、こちらには最小ディレイがないので 27 まで上げるのもありだ。<a href="http://crawl.chaosforge.org/Wand_of_acid" data-untr="1" title="Wand of acid">強酸のワンド</a>と<a href="Wand_of_iceblast.html" title="Wand of iceblast">吹雪のワンド</a>は最後まで頼りになるし、呪術系のワンドで無力化できる弱めの相手もまだ大勢いる。<a href="Condenser_vane.html" title="Condenser vane">凝結の風見</a>や<a href="Tin_of_tremorstones.html" title="Tin of tremorstones">震動石の缶</a>といった、経験値で再充填される<a href="Evocable_items.html" class="mw-redirect" title="Evocable">発動アイテム</a>の多くも、スキルを注ぎ込めば強力な効果を発揮する。
+</p><p>ここでも、<a href="Apportation.html" title="Apportation">収拾</a>、<a href="Blink.html" title="Blink">瞬間移動</a>、<a href="Animate_Dead.html" title="Animate Dead">死霊の蘇生</a>のような低レベルの補助呪文を検討しよう。今ならそのためのスキルを確保するのもずっと現実的になっているはずだ。ルーン 3〜5 個のゲームより先を目指すのでなければ、攻撃呪文はまず役に立たない。
+</p>
+<h2><span class="mw-headline" id="Spell_Focused">呪文中心</span></h2>
+<p>呪文中心のキャラクターは、1 つか少数の呪文に力を集中させ、それで敵を仕留めていく。
+</p>
+<h3><span class="mw-headline" id="Weapon_2">武器</span></h3>
+<p>ある武器のスキル適性がとびきり高い(+3 か +4)なら、近接戦闘中心のキャラクター向けの終盤の武器を考えてもいい。そうでなければ、<a href="http://crawl.chaosforge.org/Magical_staves" data-untr="1" class="mw-redirect" title="Magical staves">魔法の杖</a>か片手武器、あるいはよほど強力な<a href="http://crawl.chaosforge.org/Unrand" data-untr="1" class="mw-redirect" title="Unrand">固定アーティファクト</a>以外には手を出さなくていい。
+</p>
+<h3><span class="mw-headline" id="Spellcasting">呪文詠唱</span></h3>
+<p>呪文が複雑になるにつれて、呪文レベルの枠がだんだん問題になってくる。またこの段階なら、最大 MP を増やすために呪文詠唱を気兼ねなく鍛えてかまわない。
+</p>
+<h3><span class="mw-headline" id="Spell_Schools">呪文の系統</span></h3>
+<p>ゾットの領域で通用する呪文が見つかったなら、その系統を貫こう。<a href="Bombard.html" title="Bombard">砲撃</a>、<a href="Summon_Horrible_Things.html" title="Summon Horrible Things">おぞましきものの召喚</a>、<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>、それにレベル 9 の呪文ならたいていどれでもそうだ。ただしレベル 9 の呪文は、スキル適性がよほど高いか、何らかの<a href="Wizardry.html" title="Wizardry">魔術強化</a>がない限り、唱えるのが難しい。
+</p><p>まだ<i>見つかっていない</i>なら、2 つ目のルーンに近づくよりずっと前の<i>どこか</i>で、重点を切り替える計画を立てておくべきだ。切り替え先が近接戦闘でも、遠距離攻撃でも、別の呪文の系統でも、<a href="Zot_5.html" title="Zot:5">ゾットの領域:5</a>で<a href="Ancient_lich.html" title="Ancient lich">太古のリッチ</a>と<a href="http://crawl.chaosforge.org/Orbs_of_fire" data-untr="1" class="mw-redirect" title="Orbs of fire">炎の球体</a>を相手にしなければならないことに変わりはない。
+</p><p>その呪文が見つかったら、攻撃呪文の呪文威力はできるだけ高めたい。より確実に、より強力に。高ければ高いほどいい。
+</p>
+<h3><span class="mw-headline" id="Defense_2">防御</span></h3>
+<p>ゾットの領域で敵を倒せる呪文が使えるようになったら、次は防御を優先する番だ。ふつうは<a href="Fighting.html" title="Fighting">戦闘</a>と<a href="Dodging.html" title="Dodging">躱し身</a>、それに<a href="Shields.html" class="mw-redirect" title="Shield">盾</a>を構えたまま呪文を唱えられるだけのスキルを鍛えることになる。この 2〜3 個のスキルは、どれも 12 前後かそれ以上まで上げておきたい。
+</p>
+<h2><span class="mw-headline" id="Spell_Choice">呪文の選び方</span></h2>
+<p>ゲームのこの段階まで来ると、経験値がたまりすぎて、近接戦闘中心のキャラクターと呪文中心のキャラクターの境目はかなりあいまいになる。そこで、呪文の選び方は防具の重さと呪文の種類で分けて考えるのがいちばんわかりやすい。
+</p>
+<h3><span class="mw-headline" id="Choice_by_Armour">防具の重さで選ぶ</span></h3>
+<h4><span class="mw-headline" id="Light_.28Robe.29">軽装(ローブ)</span></h4>
+<p><a href="Robe.html" title="Robe">ローブ</a>や<a href="Troll_leather_armour.html" title="Troll leather armour">トロル革の鎧</a>、軽めの<a href="http://crawl.chaosforge.org/Dragon_scales" data-untr="1" class="mw-redirect" title="Dragon scales">竜の鱗</a>を選ぶのが、呪文中心のキャラクターではいちばん一般的だ。武器を持たないか、持っても非常時や残敵の掃除にしか使わないキャラクターに最適で、どのレベルの呪文でも選択肢に入る。
+</p><p>とはいえ、ローブを着ていても、種族によってはレベル 9 の呪文はまだ扱いにくい。たとえばミノタウロスやトロルは、唱えることすら考えないほうがいい。あえて手を出さず、<a href="Freezing_Cloud.html" title="Freezing Cloud">凍気の雲</a>のような格下の攻撃呪文で済ませ、空いた呪文の枠でいろいろな補助呪文を活用するという手もある。
+</p>
+<h4><span class="mw-headline" id="Mid_.28Dragon_Scales.29">中装(竜の鱗)</span></h4>
+<p>ファイアドラゴンの鱗かそれより重い防具を着ているキャラクターは、たいていレベル 9 の呪文はもうあきらめている。攻撃の最上位は、おそらく<a href="Borgnjor's_Vile_Clutch.html" title="Borgnjor&#39;s Vile Clutch">ボーグンジョルの忌まわしき掌握</a>、<a href="Bombard.html" title="Bombard">砲撃</a>、<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>あたりになるだろう。
+</p><p>これは、もともと近接戦闘中心で今は逃げ手を確保したいキャラクター、レベル 9 の呪文を唱える気のない呪文使い、耐性がひどく足りないキャラクターに向いた選択だ。また、装備の選択肢が少なくて、これしか選べない種族もいる。
+</p><p>それに、これで決まりというわけでもない。重い竜の鱗をひとまず着ておき、上位の呪文を覚えるまでの間だけ使うという手もある。
+</p>
+<h4><span class="mw-headline" id="Heavy_.28Plate.29">重装(プレートアーマー)</span></h4>
+<p><a href="Plate_armour.html" title="Plate armour">プレートアーマー</a>、それに<a href="Crystal_plate_armour.html" title="Crystal plate armour">水晶の鎧</a>や<a href="http://crawl.chaosforge.org/Gold_dragon_scales" data-untr="1" class="mw-redirect" title="Gold dragon scales">ゴールドドラゴンの鱗一式</a>は、攻撃魔法をすっぱり捨てるキャラクターの選択肢だ。例外は、<a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a>の信者、神の血を引く<a href="Demigod.html" title="Demigod">神々の末裔</a>、そしてルーン 3 個より先を目指すキャラクターだ。
+</p>
+<h4><span class="mw-headline" id="Natural">変身で代用</span></h4>
+<p>一部の<a href="Talisman.html" title="Talisman">タリスマン</a>は、防具を体に取り込んで、変身した姿の守りでまるごと置き換える。<a href="http://crawl.chaosforge.org/Statue_Form" data-untr="1" class="mw-redirect" title="Statue Form">石像</a>、<a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>、<a href="http://crawl.chaosforge.org/Storm_Form" data-untr="1" class="mw-redirect" title="Storm Form">嵐化</a>は、いずれも <a href="Armour_class.html" class="mw-redirect" title="AC">AC</a>、<a href="Hit_points.html" class="mw-redirect" title="HP">HP</a>、<a href="Evasion.html" class="mw-redirect" title="EV">EV</a> のどれか(または複数)を与えてくれる。これらの変身は呪文詠唱の妨げにならない。
+</p><p><a href="Shapeshifting.html" title="Shapeshifting">変身術</a>を大きく鍛えているキャラクターなら、<a href="Talisman_of_death.html" class="mw-redirect" title="Death talisman">死のタリスマン</a>の恩恵を受けられるかもしれない。ルーン 15 個を目指すときにも、ルーン 3〜5 個のゲームを締めくくるだけのときにも重宝する。装備欄をひとつも取り込まず、面白い耐性と、近接攻撃で相手を弱らせる効果がつく。
+</p>
+<h3><span class="mw-headline" id="Choice_by_category">種類で選ぶ</span></h3>
+<p>レベル 9 の呪文を使うと決めたなら、えり好みはしないこと。経験値を莫大につぎ込むことになる。検討するだけでも、その系統をゲームのほぼ全体を通して鍛えてきている必要がある。それに<a href="Vehumet.html" title="Vehumet">ヴェフメット</a>を信仰していない限り(信仰していてもときには)、レベル 9 の呪文が安定して唱えられるのは、最後のルーンを取り終えるころになってしまうかもしれない。そこに力を集中させるのはやめよう。<i>今</i>抱えている問題を乗り切る助けにはならない。まずは防御と補助のスキルを上げることだ。
+</p><p>攻撃をおもに魔法に頼るキャラクターは、ゾットの領域に備えて、元素の属性を持たない高レベルのダメージ呪文を覚えておくべきだ。<a href="Lehudib's_Crystal_Spear.html" title="Lehudib&#39;s Crystal Spear">レフディブの水晶槍</a>、<a href="Orb_of_Destruction.html" title="Orb of Destruction">破壊の爆裂球</a>、<a href="Malign_Gateway.html" title="Malign Gateway">邪悪なる通り道</a>、そして(召喚術師なら)<a href="Dragon's_Call.html" title="Dragon&#39;s Call">ドラゴンの呼び声</a>は、どれもよい選択だ。<a href="http://crawl.chaosforge.org/Spellforged_Servitor" data-untr="1" class="mw-redirect" title="Spellforged Servitor">魔火花の従者</a>は、そもそも別の高レベルのダメージ呪文を唱えられるなら、とても役に立つ。
+</p><p>低レベルの呪文は役に立たなくなってくる。敵を一体ずつ片付けるなら、物理的な手段や発動のほうがいい。
+</p>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Strategy_guides.html" title="Strategy guides">攻略ガイド</a>
+</th></tr>
+<tr>
+<th> 全般
+</th>
+<td> <a href="Walkthrough.html" title="Walkthrough">攻略の流れ</a> • <a href="Escaping_from_(and_avoiding)_trouble.html" title="Escaping from (and avoiding) trouble">危機への対処</a> •  <a href="Tips_and_tricks.html" title="Tips and tricks">小技と豆知識</a> • <a href="Identification.html" title="Identification">鑑定</a> • <a href="Frequently_Asked_Questions.html" title="Frequently Asked Questions">よくある質問</a><br /><a href="Vault.html#Vaults:5" class="mw-redirect" title="Vaults">宝物庫:5</a> • <a href="Zot_5.html" title="Zot:5">ゾットの領域:5</a> • <a href="Mega-Zig.html" title="Mega-Zig">メガジグ(Mega-Zig)</a>
+</td></tr>
+<tr>
+<th> キャラクター育成
+</th>
+<td> <a href="Early_Game_Character_Building.html" title="Early Game Character Building">序盤</a> • <a href="Mid_Game_Character_Building.html" title="Mid Game Character Building">中盤</a> • <a class="mw-selflink selflink">終盤</a>
+<p><a href="Background_and_race_combinations_for_beginners.html" title="Background and race combinations for beginners">初心者向けキャラクター</a> •  <a href="Choosing_a_god.html" title="Choosing a god">神の選び方</a> • <a href="Weapon_choice.html" class="mw-redirect" title="Weapon Choice">武器の選び方</a> • <a href="Specialization.html" title="Specialization">特化</a>
+</p>
+</td></tr>
+<tr>
+<th> コミュニティのガイド
+</th>
+<td> <a href="Character_guides.html" title="Character guides">キャラクター別ガイド</a>
+</td></tr></table>
+</center>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

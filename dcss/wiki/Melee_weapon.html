@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>近接武器 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="近接武器(Melee weapon)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>近接武器 <span class="en">Melee weapon</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Melee_weapon">Melee weapon</a>」(0.30 向け、2026-02-26 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Melee_weapon&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>近接武器</b>とは、(いくつかの例外を除いて)隣接した相手しか攻撃できない<a href="Weapon.html" title="Weapon">武器</a>のことだ。<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>には射程という明らかな強みがあるが、性能そのものは近接武器のほうが上だ。近接武器はいくつかの種類に分かれ、種類ごとに対応する<a href="Skill.html" title="Skill">スキル</a>と固有の長所がある。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Weapon_attributes"><span class="tocnumber">1</span> <span class="toctext">武器の性能</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Short_Blades"><span class="tocnumber">2</span> <span class="toctext">短剣</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Long_Blades"><span class="tocnumber">3</span> <span class="toctext">長剣</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Maces_.26_Flails"><span class="tocnumber">4</span> <span class="toctext">鈍器</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Axes"><span class="tocnumber">5</span> <span class="toctext">斧</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Polearms"><span class="tocnumber">6</span> <span class="toctext">長柄武器</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Staves"><span class="tocnumber">7</span> <span class="toctext">棒術</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Retired_Weapons"><span class="tocnumber">8</span> <span class="toctext">廃止された武器</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#History"><span class="tocnumber">9</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Weapon_attributes">武器の性能</span></h2>
+<p>以下は <i>Crawl</i> のすべての近接武器の表だ。まず各欄を簡単に説明しておく。
+</p>
+<table class="wikitable">
+
+<tr style="vertical-align: top">
+<th style="text-align: left"> 名前
+</th>
+<td> Crawl の中で表示されるアイテムの名前。
+</td></tr>
+<tr style="vertical-align: top">
+<th style="text-align: left"> ダメージ
+</th>
+<td> いろいろなボーナスや補正がかかる前の、武器の基本ダメージ。
+</td></tr>
+<tr style="vertical-align: top">
+<th style="text-align: left"> 命中
+</th>
+<td> ほかの補正がかかる前の、武器の命中修正。
+</td></tr>
+<tr style="vertical-align: top">
+<th style="text-align: left"> <a href="Weapon_speed.html" title="Weapon speed">速度</a>
+</th>
+<td> 実際には攻撃のディレイ(<a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> 単位)だ。武器スキルが 2 レベル上がるごとに、ディレイは 1 aut 減る。武器の最小ディレイは、ふつう「基本ディレイの半分(端数切り捨て)」と 7 aut のうち小さいほうになる。<a href="Rapier.html" title="Rapier">レイピア</a>は 5 aut、<a href="http://crawl.chaosforge.org/Hand_crossbow" data-untr="1" class="mw-redirect" title="Hand crossbow">ハンドクロスボウ</a>、<a href="Arbalest.html" title="Arbalest">アーバレスト</a>、<a href="Triple_crossbow.html" title="Triple crossbow">トリプルクロスボウ</a>は 10 aut だ。<a href="Brand.html" title="Brand">ブランド</a>や<a href="http://crawl.chaosforge.org/Status_effect" data-untr="1" class="mw-redirect" title="Status effect">状態</a>によってさらに変わることがあり、その場合の絶対的な下限は 2 aut だ。
+</td></tr>
+<tr style="vertical-align: top">
+<th style="text-align: left"> <a href="http://crawl.chaosforge.org/Handedness" data-untr="1" title="Handedness">片手持ちの最小体格</a>
+</th>
+<td> 武器を片手で扱うのに必要な最小の体格。小さいほうから順に、とても小さい、小さい、中くらい、大きい、巨大。
+</td></tr>
+<tr style="vertical-align: top">
+<th style="text-align: left"> <a href="http://crawl.chaosforge.org/Handedness" data-untr="1" title="Handedness">両手持ちの最小体格</a>
+</th>
+<td> 武器を両手で扱うのに必要な最小の体格。プレイヤーの体格が「両手持ちの最小体格」以上で「片手持ちの最小体格」未満なら、その武器は<a href="Shields.html" class="mw-redirect" title="Shield">盾</a>と一緒には使えない。
+</td></tr>
+<tr style="vertical-align: top">
+<th style="text-align: left; white-space: nowrap"> ダメージの種類
+</th>
+<td> 斬撃と断ち割りの武器は<a href="Hydra.html" title="Hydra">ヒドラ</a>の首を切り落とす。それ以外の効果はない。
+</td></tr>
+<tr style="vertical-align: top">
+<th style="text-align: left"> 確率
+</th>
+<td> 数が大きいほど、<a href="Acquirement.html" title="Acquirement">獲得</a>の巻物で手に入りやすい。
+</td></tr></table>
+<h2><span class="mw-headline" id="Short_Blades">短剣</span></h2>
+<p><a href="Short_Blades.html" title="Short Blades">短剣</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>での攻撃はダメージが低めだが、そのぶん速く攻撃できる。<a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>のダメージにもボーナスがつく。ダメージは<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>ではなく<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>で伸び、<a href="Long_Blades.html" title="Long Blades">長剣</a>との間で<a href="Cross-train.html" title="Cross-train">相互訓練</a>がはたらく。
+</p>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> ダメージ </th>
+<th> 命中 </th>
+<th> 速度 </th>
+<th> 片手持ちの最小体格 </th>
+<th> 両手持ちの最小体格 </th>
+<th> ダメージの種類 </th>
+<th> 確率 </th>
+<th> 備考
+</th></tr>
+<tr>
+<td> <a href="Dagger.html" title="Dagger">ダガー</a> </td>
+<td> 4 </td>
+<td> +6 </td>
+<td> 10 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 刺突 </td>
+<td> 10 </td>
+<td> ほかの短剣より急所攻撃のダメージが大きい
+</td></tr>
+<tr>
+<td> <a href="Quick_blade.html" title="Quick blade">クイックブレード</a> </td>
+<td> 4 </td>
+<td> +6 </td>
+<td> 7 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 刺突 </td>
+<td> 2 </td>
+<td> <a href="http://crawl.chaosforge.org/Speed_brand" data-untr="1" class="mw-redirect" title="Speed brand">早業</a>のブランドはつかない
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Short_sword" data-untr="1" title="Short sword">ショートソード</a> </td>
+<td> 5 </td>
+<td> +4 </td>
+<td> 10 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 刺突 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr>
+<td> <a href="Rapier.html" title="Rapier">レイピア</a> </td>
+<td> 7 </td>
+<td> +4 </td>
+<td> 12 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 刺突 </td>
+<td> 10 </td>
+<td> 最小ディレイは 5
+</td></tr></table>
+<h2><span class="mw-headline" id="Long_Blades">長剣</span></h2>
+<p><a href="Long_Blades.html" class="mw-redirect" title="Long blades">長剣</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>は短剣より重い武器で、ダメージは<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>ではなく<a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>で伸びる。<a href="Short_Blades.html" title="Short Blades">短剣</a>との間で相互訓練がはたらく。
+</p>
+<table class="wikitable sortable">
+<tr>
+<th> 名前 </th>
+<th> ダメージ </th>
+<th> 命中 </th>
+<th> 速度 </th>
+<th> 片手持ちの最小体格 </th>
+<th> 両手持ちの最小体格 </th>
+<th> ダメージの種類 </th>
+<th> 確率 </th>
+<th> 備考
+</th></tr>
+<tr style="vertical-align: top">
+<td> <a href="Falchion.html" title="Falchion">ファルシオン</a> </td>
+<td> 8 </td>
+<td> +2 </td>
+<td> 13 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 斬撃 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Long_sword.html" title="Long sword">ロングソード</a> </td>
+<td> 10 </td>
+<td> +1 </td>
+<td> 14 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 斬撃 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="http://crawl.chaosforge.org/Scimitar" data-untr="1" title="Scimitar">シミター</a> </td>
+<td> 12 </td>
+<td> 0 </td>
+<td> 14 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 斬撃 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Demon_blade.html" title="Demon blade">悪魔の刃</a> </td>
+<td> 13 </td>
+<td> -1 </td>
+<td> 13 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 斬撃 </td>
+<td> 2 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Eudemon_blade.html" title="Eudemon blade">悪魔祓いの刃</a> </td>
+<td> 14 </td>
+<td> -2 </td>
+<td> 12 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 斬撃 </td>
+<td> - </td>
+<td> <a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>に祝福された悪魔の刃
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Double_sword.html" title="Double sword">ダブルソード</a> </td>
+<td> 15 </td>
+<td> -1 </td>
+<td> 15 </td>
+<td> 中くらい </td>
+<td> とても小さい </td>
+<td> 斬撃 </td>
+<td> 2 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Great_sword.html" title="Great sword">グレートソード</a> </td>
+<td> 17 </td>
+<td> -3 </td>
+<td> 17 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 斬撃 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Triple_sword.html" title="Triple sword">トリプルソード</a> </td>
+<td> 19 </td>
+<td> -4 </td>
+<td> 18 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 斬撃 </td>
+<td> 2 </td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="Maces_.26_Flails">鈍器</span></h2>
+<p><a href="Maces_&_Flails.html" title="Maces &amp; Flails">鈍器</a><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>には固有の特性がない。そのかわり、ほかの武器よりおおむねダメージが高く、基本ディレイが短い(つまり、少ないスキルで最小ディレイに届く)。<a href="Axes.html" title="Axes">斧</a>や<a href="Staves.html" title="Staves">棒術</a>との間で相互訓練がはたらく。
+</p><p><a href="http://crawl.chaosforge.org/Ogre" data-untr="1" title="Ogre">オーガ</a>、<a href="Troll.html" title="Troll">トロル</a>、<a href="Formicid.html" title="Formicid">フォーミシッド</a>は、ゲームで最も強力な 2 種類の武器、<a href="Giant_club.html" title="Giant club">巨大棍棒</a>と<a href="Giant_spiked_club.html" title="Giant spiked club">釘つき巨大棍棒</a>を使える。ただし、どちらも多くのスキルを必要とし、盾とは併用できない。
+</p>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> ダメージ </th>
+<th> 命中 </th>
+<th> 速度 </th>
+<th> 片手持ちの最小体格 </th>
+<th> 両手持ちの最小体格 </th>
+<th> ダメージの種類 </th>
+<th> 確率 </th>
+<th> 備考
+</th></tr>
+<tr style="vertical-align: top">
+<td> <a href="Whip.html" title="Whip">鞭</a> </td>
+<td> 6 </td>
+<td> +2 </td>
+<td> 11 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 鞭打ち </td>
+<td> 0 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Club.html" title="Club">棍棒</a> </td>
+<td> 5 </td>
+<td> +3 </td>
+<td> 13 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 打撃 </td>
+<td> 0 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Mace.html" title="Mace">メイス</a> </td>
+<td> 8 </td>
+<td> +3 </td>
+<td> 14 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 打撃 </td>
+<td> 10 </td>
+<td> 一部のヴォールトには、同じ性能の<a href="Hammer.html" title="Hammer">ハンマー</a>が出る
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Flail.html" title="Flail">フレイル</a> </td>
+<td> 10 </td>
+<td> 0 </td>
+<td> 14 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 打撃 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Morningstar.html" title="Morningstar">モーニングスター</a> </td>
+<td> 13 </td>
+<td> -2 </td>
+<td> 15 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 打撃(刺突) </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Demon_whip.html" title="Demon whip">悪魔の鞭</a> </td>
+<td> 11 </td>
+<td> +1 </td>
+<td> 11 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 鞭打ち </td>
+<td> 2 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="http://crawl.chaosforge.org/Sacred_scourge" data-untr="1" title="Sacred scourge">聖なる鞭</a> </td>
+<td> 12 </td>
+<td> 0 </td>
+<td> 11 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 鞭打ち </td>
+<td> - </td>
+<td> 祝福された悪魔の鞭
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Dire_flail.html" title="Dire flail">大型フレイル</a> </td>
+<td> 13 </td>
+<td> -3 </td>
+<td> 13 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 打撃(刺突) </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Eveningstar.html" title="Eveningstar">イブニングスター</a> </td>
+<td> 15 </td>
+<td> -1 </td>
+<td> 15 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 打撃(刺突) </td>
+<td> 2 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Great_mace.html" title="Great mace">大型メイス</a> </td>
+<td> 17 </td>
+<td> -4 </td>
+<td> 17 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 打撃 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Giant_club.html" title="Giant club">巨大棍棒</a> </td>
+<td> 20 </td>
+<td> -6 </td>
+<td> 16 </td>
+<td> - </td>
+<td> 大きい </td>
+<td> 打撃 </td>
+<td> 10 </td>
+<td> <a href="Formicid.html" title="Formicid">フォーミシッド</a>なら両方の腕の組を使って扱える
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Giant_spiked_club.html" title="Giant spiked club">釘つき巨大棍棒</a> </td>
+<td> 22 </td>
+<td> -7 </td>
+<td> 18 </td>
+<td> - </td>
+<td> 大きい </td>
+<td> 打撃(刺突) </td>
+<td> 10 </td>
+<td> <a href="Formicid.html" title="Formicid">フォーミシッド</a>なら両方の腕の組を使って扱える
+</td></tr></table>
+<h2><span class="mw-headline" id="Axes">斧</span></h2>
+<p><a href="Axes.html" title="Axes">斧</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>の攻撃は<a href="Cleaving.html" title="Cleaving">薙ぎ払い</a>になる。攻撃すると、あなたに隣接しているほかの敵すべてにも 70% のダメージを与える。<a href="Polearms.html" title="Polearms">長柄武器</a>や<a href="Maces_&_Flails.html" title="Maces &amp; Flails">鈍器</a>との間で相互訓練がはたらく。
+</p>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> ダメージ </th>
+<th> 命中 </th>
+<th> 速度 </th>
+<th> 片手持ちの最小体格 </th>
+<th> 両手持ちの最小体格 </th>
+<th> ダメージの種類 </th>
+<th> 確率 </th>
+<th> 備考
+</th></tr>
+<tr style="vertical-align: top">
+<td> <a href="Hand_axe.html" title="Hand axe">ハンドアックス</a> </td>
+<td> 7 </td>
+<td> +3 </td>
+<td> 13 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 断ち割り </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="War_axe.html" title="War axe">ウォーアックス</a> </td>
+<td> 11 </td>
+<td> 0 </td>
+<td> 15 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 断ち割り </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Broad_axe.html" title="Broad axe">ブロードアックス</a> </td>
+<td> 13 </td>
+<td> -2 </td>
+<td> 16 </td>
+<td> 中くらい </td>
+<td> とても小さい </td>
+<td> 断ち割り </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Battleaxe.html" title="Battleaxe">バトルアックス</a> </td>
+<td> 15 </td>
+<td> -4 </td>
+<td> 17 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 断ち割り </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Executioner's_axe.html" title="Executioner&#39;s axe">処刑人の斧</a> </td>
+<td> 18 </td>
+<td> -6 </td>
+<td> 19 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 断ち割り </td>
+<td> 2 </td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="Polearms">長柄武器</span></h2>
+<p><a href="Polearms.html" title="Polearms">長柄武器</a><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>は<a href="Reaching.html" title="Reaching">間合い</a>が長く、2 マス先の敵まで攻撃できる。<a href="Axes.html" title="Axes">斧</a>や<a href="Staves.html" title="Staves">棒術</a>との間で相互訓練がはたらく。
+</p>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> ダメージ </th>
+<th> 命中 </th>
+<th> 速度 </th>
+<th> 片手持ちの最小体格 </th>
+<th> 両手持ちの最小体格 </th>
+<th> ダメージの種類 </th>
+<th> 確率 </th>
+<th> 備考
+</th></tr>
+<tr style="vertical-align: top">
+<td> <a href="Spear.html" title="Spear">スピア</a> </td>
+<td> 6 </td>
+<td> +4 </td>
+<td> 11 </td>
+<td> とても小さい </td>
+<td> とても小さい </td>
+<td> 刺突 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Trident.html" title="Trident">トライデント</a> </td>
+<td> 9 </td>
+<td> +1 </td>
+<td> 13 </td>
+<td> 中くらい </td>
+<td> とても小さい </td>
+<td> 刺突 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="http://crawl.chaosforge.org/Halberd" data-untr="1" title="Halberd">ハルバード</a> </td>
+<td> 13 </td>
+<td> -3 </td>
+<td> 15 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 断ち割り(刺突) </td>
+<td> 10 </td>
+<td> <a href="http://crawl.chaosforge.org/Sigmund" data-untr="1" title="Sigmund">シグムンド</a>と<a href="Reaper.html" title="Reaper">切り裂きの悪魔</a>は、同じ性能の<a href="Scythe.html" title="Scythe">大鎌</a>を持って現れる
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a> </td>
+<td> 12 </td>
+<td> +1 </td>
+<td> 13 </td>
+<td> 中くらい </td>
+<td> とても小さい </td>
+<td> 刺突 </td>
+<td> 2 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="http://crawl.chaosforge.org/Trishula" data-untr="1" title="Trishula">トリシューラ</a> </td>
+<td> 13 </td>
+<td> 0 </td>
+<td> 13 </td>
+<td> 中くらい </td>
+<td> とても小さい </td>
+<td> 刺突 </td>
+<td> - </td>
+<td> 祝福された悪魔の三叉戟
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Glaive.html" title="Glaive">グレイブ</a> </td>
+<td> 15 </td>
+<td> -3 </td>
+<td> 17 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 断ち割り </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Bardiche.html" title="Bardiche">バルディッシュ</a> </td>
+<td> 18 </td>
+<td> -6 </td>
+<td> 19 </td>
+<td> - </td>
+<td> 中くらい </td>
+<td> 断ち割り </td>
+<td> 2 </td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="Staves">棒術</span></h2>
+<p><a href="Staves.html" title="Staves">棒術</a><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>は、棒を使って肉弾戦をするためのスキルだ。<a href="http://crawl.chaosforge.org/Quarterstaves" data-untr="1" class="mw-redirect" title="Quarterstaves">六尺棒</a>と<a href="Lajatang.html" title="Lajatang">ラジャタン</a>は基本ディレイのわりにダメージが高い(つまり、それほどスキルを必要としない)が、見つかりにくく、両手持ちだ。<a href="http://crawl.chaosforge.org/Magical_staves" data-untr="1" class="mw-redirect" title="Magical staves">魔法の杖</a>は主に<a href="Spell.html" title="Spell">呪文</a>の威力を高めるためのものだが、近接攻撃にも使える。
+</p><p>なお、魔法の杖は +0 の杖と同じように戦えるうえ、対応する魔法のスキルと<a href="Evocations.html" title="Evocations">発動</a>スキルに応じたダメージが上乗せされる。
+</p>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> ダメージ </th>
+<th> 命中 </th>
+<th> 速度 </th>
+<th> 片手持ちの最小体格 </th>
+<th> 両手持ちの最小体格 </th>
+<th> ダメージの種類 </th>
+<th> 確率 </th>
+<th> 備考
+</th></tr>
+<tr style="vertical-align: top">
+<td> <a href="http://crawl.chaosforge.org/Staff" data-untr="1" title="Staff">杖</a> </td>
+<td> 5 </td>
+<td> +5 </td>
+<td> 12 </td>
+<td> 中くらい </td>
+<td> とても小さい </td>
+<td> 打撃 </td>
+<td> - </td>
+<td> ゲームには出てこない。魔法の杖の基本の種類としてだけ使われている。
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="http://crawl.chaosforge.org/Quarterstaff" data-untr="1" title="Quarterstaff">六尺棒</a> </td>
+<td> 10 </td>
+<td> +3 </td>
+<td> 13 </td>
+<td> - </td>
+<td> とても小さい </td>
+<td> 打撃 </td>
+<td> 10 </td>
+<td>
+</td></tr>
+<tr style="vertical-align: top">
+<td> <a href="Lajatang.html" title="Lajatang">ラジャタン</a> </td>
+<td> 16 </td>
+<td> -3 </td>
+<td> 14 </td>
+<td> - </td>
+<td> とても小さい </td>
+<td> 斬撃 </td>
+<td> 2 </td>
+<td>
+</td></tr></table>
+<h2><span class="mw-headline" id="Retired_Weapons">廃止された武器</span></h2>
+<p>長年のあいだに、既存の武器と役割がかぶる、あるいは単に雰囲気に合わないといった理由で、いくつかの武器が <i>Dungeon Crawl Stone Soup</i> の武器庫から取り除かれてきた。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Knife" data-untr="1" title="Knife">ナイフ</a></li>
+<li><a href="http://crawl.chaosforge.org/Sabre" data-untr="1" title="Sabre">サーベル</a></li>
+<li><a href="http://crawl.chaosforge.org/Cutlass" data-untr="1" title="Cutlass">カトラス</a></li>
+<li><a href="http://crawl.chaosforge.org/Katana" data-untr="1" title="Katana">カタナ</a></li>
+<li><a href="http://crawl.chaosforge.org/Bastard_sword" data-untr="1" title="Bastard sword">バスタードソード</a></li>
+<li><a href="http://crawl.chaosforge.org/Claymore" data-untr="1" title="Claymore">クレイモア</a></li>
+<li><a href="http://crawl.chaosforge.org/Ankus" data-untr="1" title="Ankus">アンカス</a></li>
+<li><a href="http://crawl.chaosforge.org/Spiked_flail" data-untr="1" title="Spiked flail">釘つきフレイル</a></li>
+<li><a href="http://crawl.chaosforge.org/Staff" data-untr="1" title="Staff">杖</a></li>
+<li>いくつかの長剣の<a href="http://crawl.chaosforge.org/Blessed_weapon" data-untr="1" title="Blessed weapon">祝福された</a>版</li>
+<li><a href="http://crawl.chaosforge.org/Rods" data-untr="1" class="mw-redirect" title="Rods">ロッド</a></li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a> より前は、武器ごとに腕力の比重(パーセント)が決まっていて、それによって腕力と器用のどちらの恩恵をどれだけ受けるかが決まっていた。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/item-prop.cc#L543">item-prop.cc:543</a> (0.30.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/item-prop.cc#L589">item-prop.cc:589</a> (0.30.1)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/item-prop.cc#L457">item-prop.cc:457</a> (0.30.1)</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/item-prop.cc#L635">item-prop.cc:635</a> (0.30.1)</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/item-prop.cc#L652">item-prop.cc:652</a> (0.30.1)</span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/item-prop.cc#L690">item-prop.cc:690</a> (0.30.1)</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

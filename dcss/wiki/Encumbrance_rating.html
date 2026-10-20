@@ -18,10 +18,10 @@
 <div class="wiki">
 <div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
 <p><i>盾の重さについては<a href="Shields.html" title="Shields">盾</a>を参照。所持品の<a href="http://crawl.chaosforge.org/Aum" data-untr="1" class="mw-redirect" title="Aum">重量</a>による<a href="http://crawl.chaosforge.org/Encumbered" data-untr="1" title="Encumbered">重量超過(encumbered)</a>は別物で、今はもう無い仕組みだ。</i>
-</p><p><b>重さの値</b>(encumbrance rating)は<a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>に付いているペナルティだ。重い鎧ほど重さの値は大きい。重さが大きいほど、<a href="http://crawl.chaosforge.org/Ev" data-untr="1" class="mw-redirect" title="Ev">回避</a>、<a href="http://crawl.chaosforge.org/Spell_failure" data-untr="1" class="mw-redirect" title="Spell failure">呪文の詠唱</a>、<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>へのペナルティも大きくなる。重さは<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>と<a href="http://crawl.chaosforge.org/Armour_skill" data-untr="1" class="mw-redirect" title="Armour skill">甲冑スキル</a>で軽くできるが、なくすことはできない。
+</p><p><b>重さの値</b>(encumbrance rating)は<a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>に付いているペナルティだ。重い鎧ほど重さの値は大きい。重さが大きいほど、<a href="http://crawl.chaosforge.org/Ev" data-untr="1" class="mw-redirect" title="Ev">回避</a>、<a href="Spell_Success.html" class="mw-redirect" title="Spell failure">呪文の詠唱</a>、<a href="Stealth.html" title="Stealth">隠密</a>、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>へのペナルティも大きくなる。重さは<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>と<a href="http://crawl.chaosforge.org/Armour_skill" data-untr="1" class="mw-redirect" title="Armour skill">甲冑スキル</a>で軽くできるが、なくすことはできない。
 </p><p>このページで扱うのは胴鎧だけだ。ほかにも動きを「重く」する防具はあるが、仕組みが違う。
 </p>
-<ul><li><a href="Barding.html" title="Barding">馬甲</a>には <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> -2 のペナルティがある。呪文の詠唱や隠密などには響かず、腕力や甲冑スキルで減らすこともできない。</li>
+<ul><li><a href="Barding.html" title="Barding">馬甲</a>には <a href="Evasion.html" class="mw-redirect" title="EV">EV</a> -2 のペナルティがある。呪文の詠唱や隠密などには響かず、腕力や甲冑スキルで減らすこともできない。</li>
 <li><a href="Shields.html" title="Shields">盾</a>にも重さの値があるが、扱いはまったく別だ。詳しくは<a href="Shields.html#Shield_Penalties" title="Shields">盾</a>を参照。</li></ul>
 <p>重さの値を持つアイテムの数値は<a href="Armour.html#Tables_of_Armours" title="Armour">防具の表</a>にまとめてある。
 </p>
@@ -66,7 +66,7 @@
 </p><p>この式そのものは使われないが、ほかのペナルティのほとんどはこれをもとに決まる。
 </p>
 <h2><span class="mw-headline" id="Evasion">回避</span></h2>
-<p>重さの値は <a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a> に<i>二つ</i>の形で響く。
+<p>重さの値は <a href="Evasion.html" class="mw-redirect" title="EV">EV</a> に<i>二つ</i>の形で響く。
 </p>
 <ol><li> 重さの分だけ回避が直接下がる。これは甲冑スキルと腕力で減らせる。</li>
 <li> <a href="Dodging.html" title="Dodging">躱し身</a>スキルによる回避の上昇分が小さくなる。こちらは腕力でしか減らせない。</li></ol>
@@ -93,12 +93,12 @@
 <p>「spellFailure」は何段階かの変換を経て、実際の失敗率になる。詳しくは<a href="Spell_Success.html" class="mw-redirect" title="Spell success">呪文の成功率</a>を参照。
 </p>
 <h2><span class="mw-headline" id="Stealth_Penalty">隠密へのペナルティ</span></h2>
-<p>重さは<a href="http://crawl.chaosforge.org/Stealth" data-untr="1" title="Stealth">隠密</a>の値を下げる。<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+<p>重さは<a href="Stealth.html" title="Stealth">隠密</a>の値を下げる。<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
 </p><p><a href="http://crawl.chaosforge.org/File:StealthPenalty.gif" data-untr="1" class="image"><img alt="StealthPenalty.gif" src="img/StealthPenalty.gif" width="44" height="77" /></a>
-</p><p>これは甲冑スキルや腕力とは関係がない。下がるのは<a href="http://crawl.chaosforge.org/Stealth_(skill)" data-untr="1" title="Stealth (skill)">隠密スキル</a>ではないので、<a href="http://crawl.chaosforge.org/Stab" data-untr="1" class="mw-redirect" title="Stab">急所攻撃</a>の威力にも、<a href="Atropa.html" title="Atropa">アトロパ毒</a>や<a href="http://crawl.chaosforge.org/Datura" data-untr="1" title="Datura">ダチュラ毒</a>のダーツの効き目にも影響しない。
+</p><p>これは甲冑スキルや腕力とは関係がない。下がるのは<a href="Stealth_(skill).html" title="Stealth (skill)">隠密スキル</a>ではないので、<a href="Stabbing.html" class="mw-redirect" title="Stab">急所攻撃</a>の威力にも、<a href="Atropa.html" title="Atropa">アトロパ毒</a>や<a href="http://crawl.chaosforge.org/Datura" data-untr="1" title="Datura">ダチュラ毒</a>のダーツの効き目にも影響しない。
 </p>
 <h2><span class="mw-headline" id="Ranged_Weapon_Penalty">射撃武器へのペナルティ</span></h2>
-<p>重さは<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>を遅くする(<a href="http://crawl.chaosforge.org/Throwing" data-untr="1" title="Throwing">投擲</a>武器は遅くならない)。射撃武器の<a href="http://crawl.chaosforge.org/Attack_delay" data-untr="1" class="mw-redirect" title="Attack delay">攻撃の所要時間</a>が、<a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>(decaAut、10 aut)単位で次の分だけ増える。<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+<p>重さは<a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>を遅くする(<a href="Throwing.html" title="Throwing">投擲</a>武器は遅くならない)。射撃武器の<a href="http://crawl.chaosforge.org/Attack_delay" data-untr="1" class="mw-redirect" title="Attack delay">攻撃の所要時間</a>が、<a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>(decaAut、10 aut)単位で次の分だけ増える。<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
 </p><p><a href="http://crawl.chaosforge.org/File:AdjustedRangedPenalty.png" data-untr="1" class="image"><img alt="AdjustedRangedPenalty.png" src="img/610px-AdjustedRangedPenalty.png" width="610" height="121" /></a>
 </p><p>このペナルティは確率的に小数点以下第一位に丸められ、<a href="http://crawl.chaosforge.org/Attack_delay" data-untr="1" class="mw-redirect" title="Attack delay">攻撃の所要時間</a>に加わる。単位がターン(decaAut)なので、式は 10 で割ってある。ふつうの <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a> で知りたければ 10 を掛ければいい。
 </p>

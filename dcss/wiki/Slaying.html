@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>殺戮 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="殺戮(Slaying)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>殺戮 <span class="en">Slaying</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Slaying">Slaying</a>」(0.31 向け、2024-05-04 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Slaying&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>殺戮</b>(<b>Slay</b>)は、近接戦闘と遠隔戦闘での<a href="http://crawl.chaosforge.org/Accuracy" data-untr="1" class="mw-redirect" title="Accuracy">命中</a>と<a href="http://crawl.chaosforge.org/Damage" data-untr="1" title="Damage">ダメージ</a>を上げる特性だ。<a href="Spell.html" title="Spell">呪文</a>や<a href="Wand.html" title="Wand">ワンド</a>など、それ以外のものには効かない。はたらきは武器の<a href="Enchant.html" title="Enchant">強化値</a>とまったく同じだが、素手の攻撃や<a href="Auxiliary_attack.html" class="mw-redirect" title="Auxiliary attacks">補助攻撃</a>にも効く点が違う。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Mechanics"><span class="tocnumber">1</span> <span class="toctext">仕組み</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Accuracy"><span class="tocnumber">1.1</span> <span class="toctext">命中</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Damage"><span class="tocnumber">1.2</span> <span class="toctext">ダメージ</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Sources"><span class="tocnumber">2</span> <span class="toctext">入手元</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Mechanics">仕組み</span></h2>
+<p>ひと言でいえば、殺戮 +1 で命中の判定とダメージの判定の両方に +1 される。殺戮は武器の<a href="Enchant.html" title="Enchant">強化値</a>と同じものだが、補助攻撃にも効くところだけが違う。
+</p>
+<h3><span class="mw-headline" id="Accuracy">命中</span></h3>
+<p>殺戮のボーナスは、プレイヤーの<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>の値に加わる。
+</p><p>攻撃が当たるかどうかは、プレイヤーの命中の合計値を <a href="Evasion.html" class="mw-redirect" title="EV">EV</a> と比べて決まる。そのため、殺戮で命中率が一定の % だけ上がるわけではなく、平均して当たりやすくなる、ということになる。
+</p>
+<h3><span class="mw-headline" id="Damage">ダメージ</span></h3>
+<p>殺戮のボーナスは、武器・素手の攻撃・補助攻撃のダメージの判定に加わる。プレイヤーは <code>uniform(enchant + slaying)</code>(つまり 0 から &lt;enchant + slaying&gt; までの乱数)のダメージボーナスを得る。殺戮は<a href="Skill.html" title="Skill">スキル</a>や<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>の影響を受けないが、<a href="http://crawl.chaosforge.org/Freezing" data-untr="1" title="Freezing">冷気</a>や<a href="Flaming.html" title="Flaming">火炎</a>のような<a href="Brand.html" title="Brand">ブランド</a>の影響は<i>受ける</i>。
+</p>
+<h2><span class="mw-headline" id="Sources">入手元</span></h2>
+<p>殺戮のボーナスを得る手段はいくつかある。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<ul><li><a href="Ring_of_slaying.html" title="Ring of slaying">殺戮の指輪</a>。</li>
+<li><a href="Artefact.html" title="Artefact">アーティファクト</a>。ボーナスのことも低下のこともあり、{Slay ±X} と表示される。</li>
+<li><a href="Fugue_of_the_Fallen.html" title="Fugue of the Fallen">斃れし者の遁走曲</a>の呪文。殺戮の量は変動し、モンスターを 1 体倒すごとに 1 ずつ増える。</li>
+<li><a href="http://crawl.chaosforge.org/Wu_Jian_Council" data-untr="1" class="mw-redirect" title="Wu Jian Council">ウー・ジアン評議会</a>の天の嵐。殺戮と <a href="Evasion.html" class="mw-redirect" title="EV">EV</a> のボーナスは変動し、5 から始まって、武術の攻撃を 1 回行うごとに 1 ずつ増える。</li>
+<li><a href="Hurling.html" title="Hurling">投擲</a>のエゴの付いた<a href="Gloves.html" title="Gloves">手袋</a>。<a href="Throwing.html" title="Throwing">投擲</a>武器に殺戮 +4 のボーナスがつく。</li></ul>
+<p>殺戮を下げるものもある。
+</p>
+<ul><li><a href="Ru.html#Sacrifices" title="Ru">勇敢の犠牲</a>による「恐怖に怯えている」状態。</li></ul>
+<p>殺戮に似た効果もいくつかある。
+</p>
+<ul><li><a href="Might.html" title="Might">腕力強化</a>の状態では、近接攻撃のダメージに一律で +1d10 のボーナスがつく。これは殺戮や強化値とは別の効果として加わる。たとえば、腕力強化と殺戮 +10(1d10 + 1d11 - 1)の組み合わせは、平均のダメージの増え方がほぼ同じでも、殺戮 +20(1d21 - 1)よりダメージのばらつきが小さい。命中は上がらない。</li>
+<li><a href="http://crawl.chaosforge.org/Infusion" data-untr="1" class="mw-redirect" title="Infusion">魔力の装填</a>のエゴの付いた手袋は、1 回の攻撃ごとに MP を 1 消費して、近接攻撃(補助攻撃や遠隔攻撃は除く)のダメージボーナスにだけ +4 を加える。命中は上がらない。</li>
+<li><a href="http://crawl.chaosforge.org/Corrosion" data-untr="1" class="mw-redirect" title="Corrosion">腐食</a>は、腐食 1 段階につきダメージボーナスと AC を 4 ずつ下げる。命中は下がらない。</li>
+<li><a href="Ru.html" title="Ru">ル</a>の片目の犠牲は命中 -5 の低下のようにはたらくが、魔法にも影響するうえ、ダメージは下がらない。</li></ul>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>近接や遠隔で戦うキャラクターは、手に入るかぎり殺戮をできるだけ多く欲しがるだろう。殺戮によるダメージは武器の基本ダメージと関係ないので、攻撃の速い武器ほど相対的に得をする。ただし冷静に考えること。殺戮 +2 がついていても、-1 のランダムアーティファクトの<a href="Leather_armour.html" title="Leather armour">レザーアーマー</a>は、<a href="http://crawl.chaosforge.org/Mi" data-untr="1" class="mw-redirect" title="Mi">Mi</a><a href="http://crawl.chaosforge.org/Be" data-untr="1" class="mw-redirect" title="Be">Be</a> にとって検討する価値のある品ではない。
+</p><p><a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>は武器の(基本ダメージ × スキルによる倍率)に対して 2.5% ずつダメージを加える。ダメージだけで見れば、スキルを考慮したあと・腕力を考慮する前のダメージが 40 のとき、腕力 1 が殺戮 1 と等しくなる。腕力を考慮する前のダメージが高いほど、腕力のほうが有利になる。ただし殺戮は<a href="http://crawl.chaosforge.org/To-hit" data-untr="1" class="mw-redirect" title="To-hit">命中</a>も上げるが、腕力は上げない。また、補助攻撃を持っているなら殺戮の価値は上がる。補助攻撃は基本ダメージが低いので、殺戮のボーナスのほうが腕力よりも割合として大きく効く。
+</p><p>殺戮は、武器で攻撃する呪文を除いて呪文には効かないので、たいていの呪文使いにとっては重要ではない。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a> より前は、殺戮のボーナスは命中とダメージで別々だった。ボーナスは <i>+x, +y</i> の形で表示され、<i>x</i> が命中のボーナス、<i>y</i> がダメージのボーナスだった。</li>
+<li><a href="http://crawl.chaosforge.org/0.10" data-untr="1" title="0.10">0.10</a> より前は、ダメージに対する殺戮のボーナスは武器の基本ダメージに加算されていたので、武器や<a href="Fighting.html" title="Fighting">戦闘</a>のスキルが高いほど大きくなった。これが変更されたとき、埋め合わせとして殺戮のボーナスは全体的に引き上げられた。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/player.cc#L3494">player.cc:3494</a> (0.30.1)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

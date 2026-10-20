@@ -52,7 +52,7 @@
 </p>
 <ol><li> 呪文のレベル</li>
 <li> 呪文に関わるスキルと<a href="http://crawl.chaosforge.org/Intelligence" data-untr="1" title="Intelligence">知力</a></li>
-<li> <a href="http://crawl.chaosforge.org/Body_armour" data-untr="1" class="mw-redirect" title="Body armour">胴鎧</a>と<a href="Shields.html" title="Shields">盾</a>によるペナルティ(<a href="Armour_(skill).html" title="Armour (skill)">甲冑スキル</a>/<a href="Shields_(skill).html" title="Shields (skill)">盾スキル</a>で軽くなる)</li>
+<li> <a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>と<a href="Shields.html" title="Shields">盾</a>によるペナルティ(<a href="Armour_(skill).html" title="Armour (skill)">甲冑スキル</a>/<a href="Shields_(skill).html" title="Shields (skill)">盾スキル</a>で軽くなる)</li>
 <li> <a href="Wizardry.html" title="Wizardry">魔術強化</a>や<a href="Good_mutations.html#Wild_Magic" title="Good mutations">暴走する魔力</a>などの補正</li></ol>
 <h2><span class="mw-headline" id="Base_Chance">基本の失敗値</span></h2>
 <p>ソースコードは成功ではなく<i>失敗</i>の確率で計算している。だから spellFailure はできるだけ低いほうがいい。実のところ、失敗率を0%にするには失敗値を<b>マイナス</b>まで下げる必要がある。これについては後で詳しく述べる。
@@ -89,10 +89,10 @@
                    340 (レベル9)   (+80)
 </pre>
 <h3><span class="mw-headline" id="Encumbrance_penalties">重さによるペナルティ</span></h3>
-<p>鎧と盾による呪文のペナルティは、どちらもそれぞれの<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a>ペナルティから求める。まず EV ペナルティを出し、そこから呪文のペナルティを計算する。鎧と盾は互いに影響しない。<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>は鎧の重さを本来の半分として扱う。
+<p>鎧と盾による呪文のペナルティは、どちらもそれぞれの<a href="Evasion.html" class="mw-redirect" title="EV">EV</a>ペナルティから求める。まず EV ペナルティを出し、そこから呪文のペナルティを計算する。鎧と盾は互いに影響しない。<a href="Mountain_Dwarf.html" title="Mountain Dwarf">山ドワーフ</a>は鎧の重さを本来の半分として扱う。
 </p><p><b>鎧</b><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
 </p>
-<pre> ev penalty = 1/225 * <a href="http://crawl.chaosforge.org/Encumbrance" data-untr="1" class="mw-redirect" title="Encumbrance">encumbrance</a>^2 * (90 - 2 * <a href="Armour_(skill).html" title="Armour (skill)">armour_skill</a>) / (<a href="http://crawl.chaosforge.org/Str" data-untr="1" class="mw-redirect" title="Str">str</a> + 3)
+<pre> ev penalty = 1/225 * <a href="Encumbrance_rating.html" class="mw-redirect" title="Encumbrance">encumbrance</a>^2 * (90 - 2 * <a href="Armour_(skill).html" title="Armour (skill)">armour_skill</a>) / (<a href="http://crawl.chaosforge.org/Str" data-untr="1" class="mw-redirect" title="Str">str</a> + 3)
  spell penalty = 19 * ev penalty
 </pre>
 <p><b>盾</b><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
@@ -162,9 +162,9 @@
 <ul><li><a href="Wizardry.html" title="Wizardry">魔術強化</a>: すべての呪文に ×<code>6 / (7 + sources)</code>%。魔術強化が1つ以上ある場合の値だ(魔術強化 x1 なら ×75%、x2 なら ×66.6%、以下同様)。</li>
 <li><a href="Vehumet.html" title="Vehumet">ヴェフメット</a>: <a href="http://crawl.chaosforge.org/Destructive_spell" data-untr="1" class="mw-redirect" title="Destructive spell">破壊の呪文</a>に ×66.6%。<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></li>
 <li><a href="Transformation.html" title="Transformation">変身</a>:
-<ul><li><a href="http://crawl.chaosforge.org/Yak_Form" data-untr="1" class="mw-redirect" title="Yak Form">ヤクの形態</a>: 氷の魔術に ×66.6%</li>
-<li><a href="http://crawl.chaosforge.org/Scarab_Form" data-untr="1" class="mw-redirect" title="Scarab Form">スカラベの形態</a>: 炎の魔術に ×66.6%</li>
-<li><a href="http://crawl.chaosforge.org/Sphinx_Form" data-untr="1" class="mw-redirect" title="Sphinx Form">スフィンクスの形態</a>: 呪術に ×66.6%</li></ul></li>
+<ul><li><a href="http://crawl.chaosforge.org/Yak_Form" data-untr="1" class="mw-redirect" title="Yak Form">ヤク</a>: 氷の魔術に ×66.6%</li>
+<li><a href="http://crawl.chaosforge.org/Scarab_Form" data-untr="1" class="mw-redirect" title="Scarab Form">スカラベ</a>: 炎の魔術に ×66.6%</li>
+<li><a href="http://crawl.chaosforge.org/Sphinx_Form" data-untr="1" class="mw-redirect" title="Sphinx Form">スフィンクス</a>: 呪術に ×66.6%</li></ul></li>
 <li>防具の<a href="Ego.html" title="Ego">エゴ</a>:
 <ul><li><a href="Command.html" title="Command">統率</a>: 召喚術に ×<code>18/(18+Armour)</code></li>
 <li><a href="Death_(ego).html" title="Death (ego)">死</a>: 死霊術に ×50%</li>
@@ -256,13 +256,13 @@
 </p><p>とはいえ、戦略面から知っておくと便利なこともある。
 </p>
 <ul><li>高レベルの呪文は鍛えるのにとんでもない量の経験値が要るので、あと何レベル必要かを前もって知っておけるのは便利だ。</li>
-<li>防具の<a href="http://crawl.chaosforge.org/Encumbrance" data-untr="1" class="mw-redirect" title="Encumbrance">重さ</a>を数値で表せる。たとえば術者が「<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>の呪文ペナルティは、各系統のスキル6レベル分に相当する」と言えるようになる。そうすれば、それを着る価値があるかを短期的にも(「これを着て<i>いま</i>呪文を唱えられるか」)長期的にも(「<i>ゾットの領域に着くころ</i>、これを着て呪文を唱えられるか」)判断できる。</li>
+<li>防具の<a href="Encumbrance_rating.html" class="mw-redirect" title="Encumbrance">重さ</a>を数値で表せる。たとえば術者が「<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>の呪文ペナルティは、各系統のスキル6レベル分に相当する」と言えるようになる。そうすれば、それを着る価値があるかを短期的にも(「これを着て<i>いま</i>呪文を唱えられるか」)長期的にも(「<i>ゾットの領域に着くころ</i>、これを着て呪文を唱えられるか」)判断できる。</li>
 <li>スキルの相対的な価値を計算できる。たとえば &lt;呪文の系統&gt; のスキル1レベルが甲冑スキル1レベルより役に立つのはいつか、<a href="http://crawl.chaosforge.org/Strength" data-untr="1" title="Strength">腕力</a>1点が<a href="http://crawl.chaosforge.org/Intelligence" data-untr="1" title="Intelligence">知力</a>1点より価値を持つのはいつか、がわかる。</li></ul>
 <p>もちろん、こんな計算をしなくても困らない。こうした情報のほとんど(あるいは全部)は、ゲーム中に失敗率を確かめるだけでわかる。防具を着てみて失敗率が許せないほど高ければ、着なければいい。計算はいらない! スキルを少し鍛えたら、着たい防具をもう一度着てみて、ましになったか確かめればいい。
 </p>
 <h2><span class="mw-headline" id="Analysis">分析</span></h2>
 <h3><span class="mw-headline" id="Skill_Req.27d_to_Cast_L9_Spells">レベル9の呪文を唱えるのに必要なスキル</span></h3>
-<p>たとえば<a href="http://crawl.chaosforge.org/Fire_Storm" data-untr="1" title="Fire Storm">炎の嵐</a>を安定して唱えたいとする。例として失敗率10%を目標にしよう。それには上の表を見ればいい。
+<p>たとえば<a href="Fire_Storm.html" title="Fire Storm">炎の嵐</a>を安定して唱えたいとする。例として失敗率10%を目標にしよう。それには上の表を見ればいい。
 </p>
 <ul><li>「実際の」失敗率を10%にするには、生の失敗率を28%にする必要がある。</li>
 <li>魔術強化を考えずに生の失敗率を28%にするには、SpellFailure を 1 にする必要がある。</li></ul>
@@ -303,7 +303,7 @@
 <ul><li>甲冑スキルは SpellFailure を <code>-Armour * 38/225 * encumbrance^2 / (str + 3)</code> 減らす。</li>
 <li>呪文詠唱を除くすべての呪文の系統のスキルが1ずつ上がると、SpellFailure は 12 下がる。必要なら系統の数で割る。</li>
 <li>したがって甲冑スキル1レベルは、各系統のスキル <code>19/1350 * encumbrance^2 / (str + 3)</code> レベル分、ざっと <code>1/71 * encumbrance^2 / (str + 3)</code> レベル分に相当する。</li></ul>
-<p>たとえば腕力 11 で<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>を着ているなら、式は <code>1/71 * 11^2 / 14</code> = 0.122 で、甲冑 8.21 : 各系統 1 の比になる。<a href="http://crawl.chaosforge.org/Fireball" data-untr="1" title="Fireball">ファイアボール</a>のように2系統の呪文なら、甲冑スキル 4.1 が地の魔術 1 「または」妖術 1 に相当し、甲冑 8.21 が地の魔術と妖術の「両方」1 に相当する。
+<p>たとえば腕力 11 で<a href="Fire_dragon_scales.html" title="Fire dragon scales">ファイアドラゴンの鱗一式</a>を着ているなら、式は <code>1/71 * 11^2 / 14</code> = 0.122 で、甲冑 8.21 : 各系統 1 の比になる。<a href="Fireball.html" title="Fireball">ファイアボール</a>のように2系統の呪文なら、甲冑スキル 4.1 が地の魔術 1 「または」妖術 1 に相当し、甲冑 8.21 が地の魔術と妖術の「両方」1 に相当する。
 </p><p>もちろん、これは失敗率<b>だけ</b>を見た話だ。甲冑スキルを鍛えれば守りが固くなり、呪文の系統を鍛えれば威力が上がる。
 </p>
 <h3><span class="mw-headline" id="Strength_vs_Intelligence">腕力と知力</span></h3>
@@ -313,7 +313,7 @@
 <li>知力は1点につき SpellFailure を 2 下げる。</li></ul>
 <p>腕力 11、ファイアドラゴンの鱗一式、甲冑スキル 0 だとする。レベルアップで腕力+2か知力+2を選べるとき、腕力+2の効果は <code>(1/14 - 1/16) * 19/225 * 11^2 * (90 - 0)</code> = SpellFailure 8.21 で、知力による 2*2 = SpellFailure 4 より大きい。
 </p><p>この腕力 11 のキャラクターがさらに<a href="Kite_shield.html" title="Kite shield">カイトシールド</a>を持ち、盾スキルが 9 なら、腕力+2でさらに <code>(1/16 - 1/18) * 38/5 * 10^2 * 18/27</code> = SpellFailure 3.52 下がる。
-</p><p>もちろん、知力は<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>も上げるし、腕力は<a href="http://crawl.chaosforge.org/EV" data-untr="1" class="mw-redirect" title="EV">EV</a>のペナルティも減らす。
+</p><p>もちろん、知力は<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>も上げるし、腕力は<a href="Evasion.html" class="mw-redirect" title="EV">EV</a>のペナルティも減らす。
 </p>
 <h2><span class="mw-headline" id="See_also">関連項目</span></h2>
 <ul><li><a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a></li>

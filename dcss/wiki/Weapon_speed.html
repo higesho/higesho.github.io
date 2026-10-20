@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>武器の速度 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="武器の速度(Weapon speed)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>武器の速度 <span class="en">Weapon speed</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Weapon_speed">Weapon speed</a>」(0.31 向け、2024-08-30 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Weapon_speed&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><i>攻撃のディレイについて詳しくは<a href="Attack_speed.html" title="Attack speed">攻撃速度</a>を参照。</i>
+</p><p>このページでは、すべての近接武器と射撃武器の基本ディレイと最小ディレイ、そして最小ディレイに達するのに必要なスキルレベルを一覧にする。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Modifiers"><span class="tocnumber">1.1</span> <span class="toctext">補正</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#List_of_weapon_delays"><span class="tocnumber">2</span> <span class="toctext">武器のディレイの一覧</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Short_Blades"><span class="tocnumber">2.1</span> <span class="toctext">短剣</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Long_Blades"><span class="tocnumber">2.2</span> <span class="toctext">長剣</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Maces_and_Flails"><span class="tocnumber">2.3</span> <span class="toctext">鈍器</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Axes"><span class="tocnumber">2.4</span> <span class="toctext">斧</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Polearms"><span class="tocnumber">2.5</span> <span class="toctext">長柄武器</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Staves"><span class="tocnumber">2.6</span> <span class="toctext">棒術</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Ranged_Weapons"><span class="tocnumber">2.7</span> <span class="toctext">射撃武器</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Throwing"><span class="tocnumber">2.8</span> <span class="toctext">投擲</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#In-game_display"><span class="tocnumber">3</span> <span class="toctext">ゲーム内の表示</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#See_Also"><span class="tocnumber">4</span> <span class="toctext">関連項目</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#History"><span class="tocnumber">5</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>武器にはそれぞれ基本ディレイがある。対応する武器<a href="Skill.html" title="Skill">スキル</a>が 2 レベル上がるごとに、攻撃のディレイは 1 <a href="http://crawl.chaosforge.org/Aut" data-untr="1" class="mw-redirect" title="Aut">aut</a>(0.1 <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>)ずつ短くなり、最小ディレイに達するとそれ以上は縮まない。
+</p><p>ほとんどの武器の最小ディレイは 5、6、7 aut のどれかだ。最小ディレイは (基本ディレイ / 2) と 7 のうち小さいほうになるが、いくつか例外がある。
+</p>
+<ul><li><a href="Rapier.html" title="Rapier">レイピア</a>と<a href="Quick_blade.html" title="Quick blade">クイックブレード</a>は、ほかの<a href="Short_Blades.html" title="Short Blades">短剣</a>に合わせて 5 まで縮む。</li>
+<li>クロスボウ(<a href="http://crawl.chaosforge.org/Hand_crossbow" data-untr="1" class="mw-redirect" title="Hand crossbow">ハンドクロスボウ</a>、<a href="Arbalest.html" title="Arbalest">アーバレスト</a>、<a href="Triple_crossbow.html" title="Triple crossbow">トリプルクロスボウ</a>)は最小ディレイが 10 だ。</li>
+<li><a href="Stone.html" title="Stone">石</a>、<a href="Dart.html" title="Dart">ダーツ</a>、<a href="Boomerang.html" title="Boomerang">ブーメラン</a>は 7 が下限だ。</li></ul>
+<p><a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a>は仕組みが違う。スキルが 5.4 レベル上がるごとに、素手の攻撃のディレイが 1 aut 短くなる。つまり徒手格闘はディレイ 10 から始まり、スキル 27 でディレイ 5 になる。
+</p>
+<h3><span class="mw-headline" id="Modifiers">補正</span></h3>
+<p>次の要素によって、武器の速さはさらに変わることがある。
+</p>
+<ul><li> <a href="Speed_(brand).html" title="Speed (brand)">早業</a>のブランドが付いた武器は、スキルレベルにかかわらず攻撃のディレイが 33% 短くなる。</li>
+<li> <a href="Heavy.html" title="Heavy">重撃</a>のブランドが付いた武器は、スキルレベルにかかわらず攻撃のディレイが 50% 長くなる。</li>
+<li> <a href="Haste.html" title="Haste">加速</a>か<a href="Berserk.html" title="Berserk">バーサーク</a>の状態では、すべてのディレイが 66% になる。</li>
+<li> <a href="http://crawl.chaosforge.org/Finesse" data-untr="1" class="mw-redirect" title="Finesse">早業の技巧</a>はすべての攻撃のディレイを半分にする。加速やバーサークとは重ならない。</li>
+<li> 盾を装備していると、ペナルティを受けることがある。<a href="Shields.html#Shield_penalties" title="Shields">盾</a>を参照。</li>
+<li> <a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>は<a href="Armour.html" class="mw-redirect" title="Body armour">胴鎧</a>の重さの影響も受ける。<a href="Ranged_Weapons.html#Armour_penalty" title="Ranged Weapons">射撃武器</a>を参照。</li></ul>
+<p>ディレイの端数は、重み付きのランダムで丸められる(ディレイが 3.4 なら、40% の確率で 4 aut、60% の確率で 3 aut になる)。
+</p>
+<h2><span class="mw-headline" id="List_of_weapon_delays">武器のディレイの一覧</span></h2>
+<h3><span class="mw-headline" id="Short_Blades"><a href="Short_Blades.html" title="Short Blades">短剣</a></span></h3>
+<table class="wikitable">
+<tr>
+<th> 武器 </th>
+<th> 基本ディレイ </th>
+<th> 最小ディレイ </th>
+<th> 必要スキル
+</th></tr>
+<tr>
+<td> <a href="Dagger.html" title="Dagger">ダガー</a> </td>
+<td> 10 </td>
+<td> 5 </td>
+<td> 10
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Short_sword" data-untr="1" title="Short sword">ショートソード</a> </td>
+<td> 10 </td>
+<td> 5 </td>
+<td> 10
+</td></tr>
+<tr>
+<td> <a href="Rapier.html" title="Rapier">レイピア</a> </td>
+<td> 12 </td>
+<td> 5 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Quick_blade.html" title="Quick blade">クイックブレード</a>* </td>
+<td> 12 </td>
+<td> 5 </td>
+<td> 14
+</td></tr></table>
+<p>*クイックブレードは攻撃に費やす 1 ターンごとに 2 回攻撃する。
+</p>
+<h3><span class="mw-headline" id="Long_Blades"><a href="Long_Blades.html" title="Long Blades">長剣</a></span></h3>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> 基本ディレイ </th>
+<th> 最小ディレイ </th>
+<th> 必要スキル
+</th></tr>
+<tr>
+<td> <a href="Falchion.html" title="Falchion">ファルシオン</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Long_sword.html" title="Long sword">ロングソード</a> </td>
+<td> 14 </td>
+<td> 7 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Scimitar" data-untr="1" title="Scimitar">シミター</a> </td>
+<td> 14 </td>
+<td> 7 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Demon_blade.html" title="Demon blade">悪魔の刃</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Eudemon_blade.html" title="Eudemon blade">悪魔祓いの刃</a> </td>
+<td> 12 </td>
+<td> 6 </td>
+<td> 12
+</td></tr>
+<tr>
+<td> <a href="Double_sword.html" title="Double sword">ダブルソード</a> </td>
+<td> 15 </td>
+<td> 7 </td>
+<td> 16
+</td></tr>
+<tr>
+<td> <a href="Great_sword.html" title="Great sword">グレートソード</a> </td>
+<td> 17 </td>
+<td> 7 </td>
+<td> 20
+</td></tr>
+<tr>
+<td> <a href="Triple_sword.html" title="Triple sword">トリプルソード</a> </td>
+<td> 19 </td>
+<td> 7 </td>
+<td> 24
+</td></tr></table>
+<h3><span class="mw-headline" id="Maces_and_Flails"><a href="http://crawl.chaosforge.org/Maces_and_Flails" data-untr="1" class="mw-redirect" title="Maces and Flails">鈍器</a></span></h3>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> 基本ディレイ </th>
+<th> 最小ディレイ </th>
+<th> 必要スキル
+</th></tr>
+<tr>
+<td> <a href="Club.html" title="Club">棍棒</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Whip.html" title="Whip">鞭</a> </td>
+<td> 11 </td>
+<td> 5 </td>
+<td> 12
+</td></tr>
+<tr>
+<td> <a href="Mace.html" title="Mace">メイス</a> </td>
+<td> 14 </td>
+<td> 7 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Flail.html" title="Flail">フレイル</a> </td>
+<td> 14 </td>
+<td> 7 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Morningstar.html" title="Morningstar">モーニングスター</a> </td>
+<td> 15 </td>
+<td> 7 </td>
+<td> 16
+</td></tr>
+<tr>
+<td> <a href="Demon_whip.html" title="Demon whip">悪魔の鞭</a> </td>
+<td> 11 </td>
+<td> 5 </td>
+<td> 12
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Sacred_scourge" data-untr="1" title="Sacred scourge">聖なる鞭</a> </td>
+<td> 11 </td>
+<td> 5 </td>
+<td> 12
+</td></tr>
+<tr>
+<td> <a href="Dire_flail.html" title="Dire flail">大型フレイル</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Eveningstar.html" title="Eveningstar">イブニングスター</a> </td>
+<td> 15 </td>
+<td> 7 </td>
+<td> 16
+</td></tr>
+<tr>
+<td> <a href="Great_mace.html" title="Great mace">大型メイス</a> </td>
+<td> 17 </td>
+<td> 7 </td>
+<td> 20
+</td></tr>
+<tr>
+<td> <a href="Giant_club.html" title="Giant club">巨大棍棒</a> </td>
+<td> 16 </td>
+<td> 7 </td>
+<td> 18
+</td></tr>
+<tr>
+<td> <a href="Giant_spiked_club.html" title="Giant spiked club">釘つき巨大棍棒</a> </td>
+<td> 18 </td>
+<td> 7 </td>
+<td> 22
+</td></tr></table>
+<h3><span class="mw-headline" id="Axes"><a href="Axes.html" title="Axes">斧</a></span></h3>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> 基本ディレイ </th>
+<th> 最小ディレイ </th>
+<th> 必要スキル
+</th></tr>
+<tr>
+<td> <a href="Hand_axe.html" title="Hand axe">ハンドアックス</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="War_axe.html" title="War axe">ウォーアックス</a> </td>
+<td> 15 </td>
+<td> 7 </td>
+<td> 16
+</td></tr>
+<tr>
+<td> <a href="Broad_axe.html" title="Broad axe">ブロードアックス</a> </td>
+<td> 16 </td>
+<td> 7 </td>
+<td> 18
+</td></tr>
+<tr>
+<td> <a href="Battleaxe.html" title="Battleaxe">バトルアックス</a> </td>
+<td> 17 </td>
+<td> 7 </td>
+<td> 20
+</td></tr>
+<tr>
+<td> <a href="Executioner's_axe.html" title="Executioner&#39;s axe">処刑人の斧</a> </td>
+<td> 19 </td>
+<td> 7 </td>
+<td> 24
+</td></tr></table>
+<h3><span class="mw-headline" id="Polearms"><a href="Polearms.html" title="Polearms">長柄武器</a></span></h3>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> 基本ディレイ </th>
+<th> 最小ディレイ </th>
+<th> 必要スキル
+</th></tr>
+<tr>
+<td> <a href="Spear.html" title="Spear">スピア</a> </td>
+<td> 11 </td>
+<td> 5 </td>
+<td> 12
+</td></tr>
+<tr>
+<td> <a href="Trident.html" title="Trident">トライデント</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Trishula" data-untr="1" title="Trishula">トリシューラ</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Halberd" data-untr="1" title="Halberd">ハルバード</a> </td>
+<td> 15 </td>
+<td> 7 </td>
+<td> 16
+</td></tr>
+<tr>
+<td> <a href="Glaive.html" title="Glaive">グレイブ</a> </td>
+<td> 17 </td>
+<td> 7 </td>
+<td> 20
+</td></tr>
+<tr>
+<td> <a href="Bardiche.html" title="Bardiche">バルディッシュ</a> </td>
+<td> 19 </td>
+<td> 7 </td>
+<td> 24
+</td></tr></table>
+<h3><span class="mw-headline" id="Staves"><a href="Staves.html" title="Staves">棒術</a></span></h3>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> 基本ディレイ </th>
+<th> 最小ディレイ </th>
+<th> 必要スキル
+</th></tr>
+<tr>
+<td> <a href="Magical_staff.html" title="Magical staff">魔法の杖</a> </td>
+<td> 12 </td>
+<td> 6 </td>
+<td> 12
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Quarterstaff" data-untr="1" title="Quarterstaff">六尺棒</a> </td>
+<td> 13 </td>
+<td> 6 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="Lajatang.html" title="Lajatang">ラジャタン</a> </td>
+<td> 14 </td>
+<td> 7 </td>
+<td> 14
+</td></tr></table>
+<h3><span class="mw-headline" id="Ranged_Weapons"><a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a></span></h3>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> 基本ディレイ </th>
+<th> 最小ディレイ </th>
+<th> 必要スキル
+</th></tr>
+<tr>
+<td> <a href="Sling.html" title="Sling">スリング</a> </td>
+<td> 14 </td>
+<td> 7 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Shortbow" data-untr="1" title="Shortbow">ショートボウ</a> </td>
+<td> 14 </td>
+<td> 7 </td>
+<td> 14
+</td></tr>
+<tr>
+<td> <a href="http://crawl.chaosforge.org/Orcbow" data-untr="1" title="Orcbow">オークの弓</a> </td>
+<td> 15 </td>
+<td> 7 </td>
+<td> 16
+</td></tr>
+<tr>
+<td> <a href="Arbalest.html" title="Arbalest">アーバレスト</a> </td>
+<td> 19 </td>
+<td> 10 </td>
+<td> 18
+</td></tr>
+<tr>
+<td> <a href="Hand_cannon.html" title="Hand cannon">ハンドキャノン</a> </td>
+<td> 19 </td>
+<td> 10 </td>
+<td> 18
+</td></tr>
+<tr>
+<td> <a href="Longbow.html" title="Longbow">ロングボウ</a> </td>
+<td> 17 </td>
+<td> 7 </td>
+<td> 20
+</td></tr>
+<tr>
+<td> <a href="Triple_crossbow.html" title="Triple crossbow">トリプルクロスボウ</a> </td>
+<td> 23 </td>
+<td> 10 </td>
+<td> 26
+</td></tr></table>
+<h3><span class="mw-headline" id="Throwing"><a href="Throwing.html" title="Throwing">投擲</a></span></h3>
+<table class="wikitable">
+<tr>
+<th> 名前 </th>
+<th> 基本ディレイ </th>
+<th> 最小ディレイ </th>
+<th> 必要スキル
+</th></tr>
+<tr>
+<td> <a href="Dart.html" title="Dart">ダーツ</a> </td>
+<td> 10 </td>
+<td> 7 </td>
+<td> 6
+</td></tr>
+<tr>
+<td> <a href="Stone.html" title="Stone">石</a> </td>
+<td> 11 </td>
+<td> 7 </td>
+<td> 8
+</td></tr>
+<tr>
+<td> <a href="Boomerang.html" title="Boomerang">ブーメラン</a> </td>
+<td> 13 </td>
+<td> 7 </td>
+<td> 12
+</td></tr>
+<tr>
+<td> <a href="Javelin.html" title="Javelin">ジャベリン</a> </td>
+<td> 15 </td>
+<td> 7 </td>
+<td> 16
+</td></tr>
+<tr>
+<td> <a href="Large_rock.html" title="Large rock">大岩</a> </td>
+<td> 20 </td>
+<td> 7 </td>
+<td> 26
+</td></tr></table>
+<h2><span class="mw-headline" id="In-game_display">ゲーム内の表示</span></h2>
+<p>攻撃速度にかかわる情報は、3 通りの方法で確かめられる。
+</p>
+<ul><li>所持品(<b>i</b>)で武器を見ると、今の平均ディレイが表示される。</li>
+<li><b>@</b> コマンドで、攻撃の平均ディレイが表示される。</li>
+<li>ステータス欄のターン数の表示では、ゲームの経過時間の横の括弧内に、直前の行動にかかった時間が出る。ctrl+方向キーで何もないところに何回か攻撃してみれば、攻撃のディレイがかなり正確にわかる。</li></ul>
+<p>はじめの 2 つのコマンドで表示されるのは、aut 単位に丸めた<i>平均の</i>攻撃速度だ。攻撃のディレイが整数でないときは、半ばランダムに切り上げか切り捨てになる。
+</p>
+<h2><span class="mw-headline" id="See_Also">関連項目</span></h2>
+<ul><li><a href="Melee_weapon.html" title="Melee weapon">近接武器</a></li>
+<li><a href="Attack_speed.html" title="Attack speed">攻撃速度</a></li></ul>
+<p>それぞれの武器について詳しくは、武器ごとの記事を参照。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.17" data-untr="1" title="0.17">0.17</a>より前は、<a href="Unarmed_Combat.html" class="mw-redirect" title="Unarmed combat">徒手格闘</a>は防具によるペナルティを受けた。</li>
+<li><a href="http://crawl.chaosforge.org/0.15" data-untr="1" title="0.15">0.15</a>より前は、<a href="http://crawl.chaosforge.org/Ranged_weapon" data-untr="1" class="mw-redirect" title="Ranged weapon">射撃武器</a>のディレイはまったく別の式で計算されていた: <code>Base delay - Weapon Skill*4*Average Stat/250</code></li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a>より前は、<a href="Speed_(brand).html" title="Speed (brand)">早業</a>のブランドは攻撃のディレイを半分(端数切り上げ)にし、AC で減らす前のダメージを 10% 下げた。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a>より前は、早業の技巧は<a href="http://crawl.chaosforge.org/Blowgun" data-untr="1" title="Blowgun">吹き矢筒</a>以外の投擲武器には効果がなかった。</li></ul>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

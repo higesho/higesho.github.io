@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>戦闘 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="戦闘(Fighting)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>戦闘 <span class="en">Fighting</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Fighting">Fighting</a>」(0.30 向け、2025-11-09 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Fighting&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 戦闘スキルは物理的な戦闘での命中率とダメージを増加させる。また、最大HPも増加させる。
+</td></tr></table>
+<p><b>戦闘</b>は、戦い全般にかかわるスキルだ。近接攻撃と遠隔攻撃にボーナスを与えるほか、最大<a href="Hit_points.html" title="Hit points">HP</a> も増やす。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Aptitudes"><span class="tocnumber">1</span> <span class="toctext">スキル適性</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">2</span> <span class="toctext">基本情報</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Combat"><span class="tocnumber">2.1</span> <span class="toctext">戦闘への効果</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#HP_Gain"><span class="tocnumber">2.2</span> <span class="toctext">HP の増加</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Strategy"><span class="tocnumber">3</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#HP_Bonus_Examples"><span class="tocnumber">3.1</span> <span class="toctext">HP ボーナスの例</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Aptitudes">スキル適性</span></h2>
+<table class="wikitable">
+
+<tr>
+<td><b><a href="Armataur.html" title="Armataur">At</a></b>
+</td>
+<td><b><a href="Barachi.html" title="Barachi">Ba</a></b>
+</td>
+<td><b><a href="Coglin.html" title="Coglin">Co</a></b>
+</td>
+<td><b><a href="Deep_Elf.html" title="Deep Elf">DE</a></b>
+</td>
+<td><b><a href="Demigod.html" title="Demigod">Dg</a></b>
+</td>
+<td><b><a href="Demonspawn.html" title="Demonspawn">Ds</a></b>
+</td>
+<td><b><a href="Djinni.html" title="Djinni">Dj</a></b>
+</td>
+<td><b><a href="Draconian.html" title="Draconian">Dr</a></b>
+</td>
+<td><b><a href="Felid.html" title="Felid">Fe</a></b>
+</td>
+<td><b><a href="Formicid.html" title="Formicid">Fo</a></b>
+</td>
+<td><b><a href="http://crawl.chaosforge.org/Gale_Centaur" data-untr="1" title="Gale Centaur">GC</a></b>
+</td>
+<td><b><a href="Gargoyle.html" title="Gargoyle">Gr</a></b>
+</td>
+<td><b><a href="Gnoll.html" title="Gnoll">Gn</a></b>
+</td>
+<td><b><a href="Human.html" title="Human">Hu</a></b>
+</td>
+<td><b><a href="Kobold.html" title="Kobold">Ko</a></b>
+</td>
+<td><b><a href="Merfolk.html" title="Merfolk">Mf</a></b>
+</td>
+<td><b><a href="Minotaur.html" title="Minotaur">Mi</a></b>
+</td>
+<td><b><a href="Mountain_Dwarf.html" title="Mountain Dwarf">MD</a></b>
+</td>
+<td><b><a href="Mummy.html" title="Mummy">Mu</a></b>
+</td>
+<td><b><a href="Naga.html" title="Naga">Na</a></b>
+</td>
+<td><b><a href="Octopode.html" title="Octopode">Op</a></b>
+</td>
+<td><b><a href="Oni.html" title="Oni">On</a></b>
+</td>
+<td><b><a href="Poltergeist.html" title="Poltergeist">Po</a></b>
+</td>
+<td><b><a href="Revenant.html" title="Revenant">Re</a></b>
+</td>
+<td><b><a href="Spriggan.html" title="Spriggan">Sp</a></b>
+</td>
+<td><b><a href="Tengu.html" title="Tengu">Te</a></b>
+</td>
+<td><b><a href="Troll.html" title="Troll">Tr</a></b>
+</td>
+<td><b><a href="Vine_Stalker.html" title="Vine Stalker">VS</a></b>
+</td></tr>
+<tr>
+<td> -1
+</td>
+<td> 2
+</td>
+<td> 0
+</td>
+<td> -2
+</td>
+<td> -1
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 1
+</td>
+<td> 8
+</td>
+<td> 0
+</td>
+<td> 1
+</td>
+<td> 1
+</td>
+<td> 2
+</td>
+<td> 1
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 0
+</td>
+<td> 3
+</td>
+<td> -1
+</td>
+<td> 1
+</td>
+<td> -2
+</td>
+<td> 0
+</td>
+<td> -2
+</td>
+<td> -1
+</td></tr></table>
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<h3><span class="mw-headline" id="Combat">戦闘への効果</span></h3>
+<p>あなたの攻撃はすべて(近接でも遠隔でも)、戦闘スキルから次のボーナスを受ける。
+</p>
+<ul><li><b><a href="http://crawl.chaosforge.org/Accuracy" data-untr="1" class="mw-redirect" title="Accuracy">命中</a>:</b> <code>1d(Fighting + 1)</code> を加える</li>
+<li><b>基本ダメージ:</b> <code>1 + 1d(Fighting/30)</code> 倍になる</li></ul>
+<p>これは武器のスキルを鍛えて得られるボーナスより小さい。とくに、戦闘スキルでは<a href="Weapon_speed.html" title="Weapon speed">武器のディレイ</a>が縮まない。とはいえ、二つのスキルの効果は重なるので、両方を鍛える価値はある。
+</p><p><a href="Auxiliary_attack.html" title="Auxiliary attack">補助攻撃</a>も戦闘スキルの恩恵を受けるが、ダメージのボーナスは小さく、かわりに <code>1 + (1d(Fighting)-1)/40)</code> 倍になる。
+</p>
+<h3><span class="mw-headline" id="HP_Gain">HP の増加</span></h3>
+<p>戦闘スキルで増える HP の<i>基本値</i>は次のとおり。
+</p>
+<pre>XP level × Fighting / 14 + (3 × Fighting + 1) / 2
+</pre>
+<p>この基本値は<a href="Species.html" title="Species">種族</a>、<a href="Mutation.html" title="Mutation">変異</a>、<a href="Transformation.html" title="Transformation">変身</a>による補正を受けたあと、端数を切り捨てて整数になる。最終的には、戦闘スキル 1 レベルにつき HP がおよそ 2.2% 増えることになる。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>戦闘スキルは<i>どんな</i>キャラクターにも役に立つ。呪文使いでも、終盤までにはかなり鍛えておきたい。それだけ HP のボーナスは貴重なのだ。<a href="Armour_class.html" class="mw-redirect" title="AC">AC</a> や <a href="Evasion.html" class="mw-redirect" title="EV">EV</a> と違って、HP を完全に無視できる攻撃はない。
+</p><p><a href="Felid.html" title="Felid">フェリッド</a>や<a href="Spriggan.html" title="Spriggan">スプリガン</a>のような HP の低い種族は、戦闘スキルで得られる HP も少ないが、だからといって戦闘スキルが無駄になるわけではない。こうした種族にとっては、その HP が一撃死を防ぐ助けになる。
+</p>
+<h3><span class="mw-headline" id="HP_Bonus_Examples">HP ボーナスの例</span></h3>
+<ul><li>レベル 5 で戦闘スキル 5.0 の人間は、ボーナスが (5 × 5) / 14 + (3 × 5 + 1) / 2 = 1.79 + 8 = <b>9 HP</b> になる。</li>
+<li>レベル 15 で戦闘スキル 12.5 の人間は、ボーナスが (15 × 12.5) / 14 + (3 × 12.5 + 1) / 2 = 13.39 + 19.25 = <b>32 HP</b> になる。</li>
+<li>レベル 27 で戦闘スキル 27.0 の人間は、ボーナスが (27 × 27) / 14 + (3 × 27 + 1) / 2 = 52.07 + 41 = <b>93 HP</b> になる。</li>
+<li>レベル 27 で戦闘スキル 27.0 のフェリッドは、ボーナスが ((27 × 27) / 14 + (3 × 27 + 1) / 2) × 0.6 = <b>55 HP</b> になる。</li>
+<li>レベル 27 で強健 3、頑丈な茶色の鱗 3、戦闘スキル 27.0 のオーガは、ボーナスが ((27 × 27) / 14 + (3 × 27 + 1) / 2) × 1.67 = <b>155 HP</b> になる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、戦闘スキルで増える HP の式は <code>(XP level × Fighting) / 8</code> だった。</li></ul>
+<center>
+<table class="prettytable" style="text-align: center; width: 60%">
+
+<tr>
+<th colspan="2"> <a href="Skill.html" title="Skill">スキル</a>
+</th></tr>
+<tr>
+<th> <a href="Weapon.html" class="mw-redirect" title="Weapons">武器</a>
+</th>
+<td> <a href="Short_Blades.html" title="Short Blades">短剣</a> • <a href="Long_Blades.html" title="Long Blades">長剣</a> • <a href="Ranged_Weapons.html" title="Ranged Weapons">射撃武器</a>
+<p><a href="Axes.html" title="Axes">斧</a> • <a href="Maces_&_Flails.html" title="Maces &amp; Flails">鈍器</a> • <a href="Polearms.html" title="Polearms">長柄武器</a> • <a href="Staves.html" title="Staves">棒術</a> • <a href="Unarmed_Combat.html" title="Unarmed Combat">徒手格闘</a> • <a href="Throwing.html" title="Throwing">投擲</a>
+</p>
+</td></tr>
+<tr>
+<th> 身体
+</th>
+<td> <a class="mw-selflink selflink">戦闘</a> • <a href="Armour_(skill).html" title="Armour (skill)">甲冑</a> • <a href="Dodging.html" title="Dodging">躱し身</a> • <a href="Stealth_(skill).html" title="Stealth (skill)">隠密</a> • <a href="Shields_(skill).html" title="Shields (skill)">盾</a>
+</td></tr>
+<tr>
+<th> <a href="http://crawl.chaosforge.org/Magic" data-untr="1" title="Magic">魔法</a>
+</th>
+<td> <a href="http://crawl.chaosforge.org/Spellcasting" data-untr="1" title="Spellcasting">呪文詠唱</a> • <a href="Invocations.html" title="Invocations">祈祷</a> • <a href="Evocations.html" title="Evocations">発動</a> • <a href="Shapeshifting.html" title="Shapeshifting">変身術</a>
+</td></tr>
+<tr>
+<th> <a href="List_of_spells_by_school.html" title="List of spells by school">呪文の系統</a>
+</th>
+<td> <a href="Air_Magic.html" class="mw-redirect" title="Air">風の魔術</a> • <a href="Alchemy.html" title="Alchemy">錬金術</a> • <a href="http://crawl.chaosforge.org/Conjurations" data-untr="1" title="Conjurations">妖術</a> • <a href="Earth_Magic.html" class="mw-redirect" title="Earth">地の魔術</a> • <a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a> • <a href="Forgecraft.html" title="Forgecraft">鍛造術</a> • <a href="http://crawl.chaosforge.org/Hexes" data-untr="1" title="Hexes">呪術</a> • <a href="Ice_Magic.html" title="Ice Magic">氷の魔術</a> • <a href="Necromancy.html" title="Necromancy">死霊術</a> • <a href="Summonings.html" class="mw-redirect" title="Summoning">召喚術</a> • <a href="Translocations.html" title="Translocations">転位術</a>
+</td></tr>
+</table>
+</center>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

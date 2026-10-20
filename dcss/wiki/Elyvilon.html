@@ -47,7 +47,7 @@
 </div>
 
 <h2><span class="mw-headline" id="Racial_Restrictions">種族による制限</span></h2>
-<ul><li>ほかの<a href="http://crawl.chaosforge.org/Good_god" data-untr="1" class="mw-redirect" title="Good god">善神</a>と同じく、エリヴィロンは<a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a>とアンデッドの種族(<a href="http://crawl.chaosforge.org/Ghoul" data-untr="1" title="Ghoul">グール</a>、<a href="http://crawl.chaosforge.org/Vampire" data-untr="1" title="Vampire">吸血鬼</a>、<a href="Mummy.html" class="mw-redirect" title="Mummies">ミイラ</a>)を信徒として受け入れない。</li>
+<ul><li>ほかの<a href="Good_gods.html" class="mw-redirect" title="Good god">善神</a>と同じく、エリヴィロンは<a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a>とアンデッドの種族(<a href="http://crawl.chaosforge.org/Ghoul" data-untr="1" title="Ghoul">グール</a>、<a href="http://crawl.chaosforge.org/Vampire" data-untr="1" title="Vampire">吸血鬼</a>、<a href="Mummy.html" class="mw-redirect" title="Mummies">ミイラ</a>)を信徒として受け入れない。</li>
 <li><a href="Demigod.html" title="Demigod">神々の末裔</a>はエリヴィロンを信仰できない(ほかのどの神も同じだ)。</li></ul>
 <h2><span class="mw-headline" id="Appreciates">好む行い</span></h2>
 <ul><li>世界を探索すること。</li></ul>
@@ -64,11 +64,11 @@
 <ul><li><b>危害からの守り</b> - 本来なら死ぬはずの攻撃を、エリヴィロンが打ち消してくれることがある。懺悔中でも起こりうる。確率は信仰心で決まり、ほかの善神よりかなり高い。信仰心0で10%から始まり、信仰心 6* で確実になる。これが起きるとたいてい、信仰心によって長さが決まるタイムアウトが始まり、そのあいだは命を救われる確率が大きく下がる。詳しくは下を参照。(常時効果、コストなし)</li></ul>
 <p><b><a href="Piety.html" title="Piety">信仰心 *</a></b>: 『慰める者』
 </p>
-<ul><li><b>聖杯の清め</b> - 次の状態を取り除く: <a href="http://crawl.chaosforge.org/Sick" data-untr="1" class="mw-redirect" title="Sick">病気</a>、<a href="http://crawl.chaosforge.org/Drain" data-untr="1" class="mw-redirect" title="Drain">衰弱</a>、<a href="Poison.html" title="Poison">毒</a>、<a href="Confusion.html" title="Confusion">混乱</a>、<a href="Slow.html" title="Slow">減速</a>、<a href="http://crawl.chaosforge.org/Petrify" data-untr="1" title="Petrify">石化中</a>。さらに、すべての<a href="Stats.html" title="Stats">能力値</a>を最大値まで戻す。混乱していても使える。(3 MP、信仰心 2〜4)</li></ul>
+<ul><li><b>聖杯の清め</b> - 次の状態を取り除く: <a href="http://crawl.chaosforge.org/Sick" data-untr="1" class="mw-redirect" title="Sick">病気</a>、<a href="Draining.html" class="mw-redirect" title="Drain">衰弱</a>、<a href="Poison.html" title="Poison">毒</a>、<a href="Confusion.html" title="Confusion">混乱</a>、<a href="Slow.html" title="Slow">減速</a>、<a href="Petrify.html" title="Petrify">石化中</a>。さらに、すべての<a href="Stats.html" title="Stats">能力値</a>を最大値まで戻す。混乱していても使える。(3 MP、信仰心 2〜4)</li></ul>
 <p><b><a href="Piety.html" title="Piety">信仰心 **</a></b>: 『癒す者』
 </p>
 <ul><li><b>他者の治癒</b> - 対象のモンスターの HP が <code>2d(10 + Invocations/3) + (Invocations/3) + 8</code> 回復する。(2 MP、信仰心 2〜4)</li></ul>
-<dl><dd> 敵対するモンスターにこの能力を使うと、なだめられることがある。そうなれば、倒したときと同じだけの<a href="http://crawl.chaosforge.org/XP" data-untr="1" class="mw-redirect" title="XP">経験値</a>が手に入る。試みるたびに、あなたの「回復係数」とその生き物の最大 HP が比べられる。この判定に勝てばその生き物はなだめられ、いちばん近い上り階段から去っていく。なお、なだめられないモンスターもいる。</dd></dl>
+<dl><dd> 敵対するモンスターにこの能力を使うと、なだめられることがある。そうなれば、倒したときと同じだけの<a href="Experience.html" class="mw-redirect" title="XP">経験値</a>が手に入る。試みるたびに、あなたの「回復係数」とその生き物の最大 HP が比べられる。この判定に勝てばその生き物はなだめられ、いちばん近い上り階段から去っていく。なお、なだめられないモンスターもいる。</dd></dl>
 <dl><dd> 回復係数は 0 から <code>(Invocations + 1)×(HP_healed)/3</code> までの乱数だ。HP_healed は、モンスターの HP が満タンであっても、<i>回復したはずの</i>量で計算される。つまり、HP が満タンのモンスターも HP が1%しかないモンスターも、なだめられる確率は同じだ。さらに、回復係数にはモンスターの種類に応じた倍率がかかる。</dd></dl>
 <dl><dd><table class="prettytable">
 <tr>
@@ -191,7 +191,7 @@
 </p><p>エリヴィロンの怒りは比較的長く続く。
 </p>
 </td></tr></table>
-<p>エリヴィロンがあなたに<a href="Divine_retribution.html" title="Divine retribution">懲罰</a>を加えるのは、邪悪な神(ベオ、ディスメノス、イレデレンヌル、ルゴヌ、キクバークッグァ、マクレブ)に改宗したときだけだ。ほかの神に乗り換えても、エリヴィロンの戒律を破っても怒りは買わない。<a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a>か<a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>に改宗すれば、<a href="Piety.html" title="Piety">信仰心</a>の半分が引き継がれる。
+<p>エリヴィロンがあなたに<a href="Divine_retribution.html" title="Divine retribution">懲罰</a>を加えるのは、邪悪な神(ベオ、ディスメノス、イレデレンヌル、ルゴヌ、キクバークッグァ、マクレブ)に改宗したときだけだ。ほかの神に乗り換えても、エリヴィロンの戒律を破っても怒りは買わない。<a href="Zin.html" title="Zin">ジン</a>か<a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>に改宗すれば、<a href="Piety.html" title="Piety">信仰心</a>の半分が引き継がれる。
 </p><p>懲罰として、エリヴィロンは、あなたやあなたの仲間がとどめを刺そうとしている敵対モンスターをときどき回復させてしまう。ただし、<a href="http://crawl.chaosforge.org/List_of_tentacles" data-untr="1" title="List of tentacles">触手</a>や、あなたより弱い敵はたいてい回復されない。
 </p>
 <h2><span class="mw-headline" id="Strategy">戦略</span></h2>
@@ -287,13 +287,13 @@
 <li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a>より前は、3柱の善神は<a href="http://crawl.chaosforge.org/Cannibalism" data-untr="1" class="mw-redirect" title="Cannibalism">共食い</a>を禁じていた。</li>
 <li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a>より前は、神の守りが確実に働くのは信仰心120(5*)ではなく130のときだった。</li>
 <li><a href="http://crawl.chaosforge.org/0.23" data-untr="1" title="0.23">0.23</a>より前は、エリヴィロンの信徒は<a href="Pandemonium_lord.html" title="Pandemonium lord">パンデモニウムの君主</a>や<a href="Player_ghost.html" title="Player ghost">プレイヤーの幽霊</a>もなだめられた。</li>
-<li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a>より前は、エリヴィロンの怒りでプレイヤーが<a href="Confusion.html" title="Confusion">混乱</a>したり、ランダムな<a href="http://crawl.chaosforge.org/Miscast#Poison_Magic" data-untr="1" class="mw-redirect" title="Miscast">毒の魔術の呪文の失敗</a>が起きたり、所持品のアーティファクトでない武器の強化値が下がったりした。</li>
+<li><a href="http://crawl.chaosforge.org/0.20" data-untr="1" title="0.20">0.20</a>より前は、エリヴィロンの怒りでプレイヤーが<a href="Confusion.html" title="Confusion">混乱</a>したり、ランダムな<a href="Miscast_effect.html#Poison_Magic" class="mw-redirect" title="Miscast">毒の魔術の呪文の失敗</a>が起きたり、所持品のアーティファクトでない武器の強化値が下がったりした。</li>
 <li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a>より前は、エリヴィロンの信徒は仲間を死なせると信仰心を失った。</li>
 <li><a href="http://crawl.chaosforge.org/0.18" data-untr="1" title="0.18">0.18</a>より前は、エリヴィロンは昆虫をなだめられなかった。また、プレイヤーと同じ系統の生き物はなだめやすかった。</li>
 <li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a>より前は、<a href="http://crawl.chaosforge.org/Healer" data-untr="1" title="Healer">治癒師</a>の職業を選ぶとエリヴィロンを信仰した状態でゲームを始められた。また、エリヴィロンはなだめる能力を2つ授けていて、信仰心は敵をなだめたり武器を破壊したりして得るものだった。</li>
 <li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a>より前は、エリヴィロンは昆虫もなだめられた。</li>
 <li><a href="http://crawl.chaosforge.org/0.10" data-untr="1" title="0.10">0.10</a>より前は、<a href="http://crawl.chaosforge.org/Rot" data-untr="1" title="Rot">腐敗</a>のダメージだけを治す回復(Restoration)という能力があった。これは聖杯の清めに統合された。</li>
-<li><a href="http://crawl.chaosforge.org/0.9" data-untr="1" class="mw-redirect" title="0.9">0.9</a>より前は、時間とともに信仰心が増え(240ターンごとに+1、150まで)、<a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a>や<a href="http://crawl.chaosforge.org/TSO" data-untr="1" class="mw-redirect" title="TSO">輝けるもの</a>に乗り換えても怒りを買わなかった。</li></ul>
+<li><a href="http://crawl.chaosforge.org/0.9" data-untr="1" class="mw-redirect" title="0.9">0.9</a>より前は、時間とともに信仰心が増え(240ターンごとに+1、150まで)、<a href="Zin.html" title="Zin">ジン</a>や<a href="http://crawl.chaosforge.org/TSO" data-untr="1" class="mw-redirect" title="TSO">輝けるもの</a>に乗り換えても怒りを買わなかった。</li></ul>
 <h2><span class="mw-headline" id="References">出典</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.31.0/crawl-ref/source/religion.cc#L4137">religion.cc:4137</a> (0.31.0)</span>
@@ -308,12 +308,12 @@
 <tr>
 <th> 善
 </th>
-<td> <a class="mw-selflink selflink">エリヴィロン</a> • <a href="http://crawl.chaosforge.org/Zin" data-untr="1" title="Zin">ジン</a> • <a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>
+<td> <a class="mw-selflink selflink">エリヴィロン</a> • <a href="Zin.html" title="Zin">ジン</a> • <a href="The_Shining_One.html" title="The Shining One">輝けるもの</a>
 </td></tr>
 <tr>
 <th> 中立
 </th>
-<td> <a href="Ashenzari.html" title="Ashenzari">アシェンザリ</a> • <a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a> • <a href="Dithmenos.html" title="Dithmenos">ディスメノス</a> • <a href="Fedhas_Madash.html" title="Fedhas Madash">フェダス・マダシュ</a> • <a href="Gozag_Ym_Sagoz.html" title="Gozag Ym Sagoz">ゴザーグ・イム・サゴーズ</a> • <a href="Hepliaklqana.html" title="Hepliaklqana">ヘプリアクルカナ</a> • <a href="Ignis.html" title="Ignis">イグニス</a> • <a href="Okawaru.html" title="Okawaru">オカワル</a> • <a href="Qazlal_Stormbringer.html" title="Qazlal Stormbringer">クァズラル</a> • <a href="Ru.html" title="Ru">ルー</a> • <a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a> • <a href="Trog.html" title="Trog">トログ</a> • <a href="http://crawl.chaosforge.org/Uskayaw" data-untr="1" title="Uskayaw">ウスカヤー</a> • <a href="Vehumet.html" title="Vehumet">ヴェフメット</a> • <a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>
+<td> <a href="Ashenzari.html" title="Ashenzari">アシェンザリ</a> • <a href="Cheibriados.html" title="Cheibriados">ケイブリアドス</a> • <a href="Dithmenos.html" title="Dithmenos">ディスメノス</a> • <a href="Fedhas_Madash.html" title="Fedhas Madash">フェダス・マダシュ</a> • <a href="Gozag_Ym_Sagoz.html" title="Gozag Ym Sagoz">ゴザーグ・イム・サゴーズ</a> • <a href="Hepliaklqana.html" title="Hepliaklqana">ヘプリアクルカナ</a> • <a href="Ignis.html" title="Ignis">イグニス</a> • <a href="Okawaru.html" title="Okawaru">オカワル</a> • <a href="Qazlal_Stormbringer.html" title="Qazlal Stormbringer">クァズラル</a> • <a href="Ru.html" title="Ru">ルー</a> • <a href="Sif_Muna.html" title="Sif Muna">シフ・ムーナ</a> • <a href="Trog.html" title="Trog">トログ</a> • <a href="Uskayaw.html" title="Uskayaw">ウスカヤー</a> • <a href="Vehumet.html" title="Vehumet">ヴェフメット</a> • <a href="Wu_Jian.html" title="Wu Jian">ウー・ジアン</a>
 </td></tr>
 <tr>
 <th> 混沌

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>意志力 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="意志力(Willpower)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>意志力 <span class="en">Willpower</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Willpower">Willpower</a>」(0.30 向け、2024-06-25 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Willpower&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><b>意志力</b>(<b>Will</b>)は、<a href="Slow.html" title="Slow">減速</a>、<a href="Confusion.html" title="Confusion">混乱</a>、<a href="The_Abyss.html" title="The Abyss">アビス</a>への<a href="Banishment.html" title="Banishment">追放</a>、<a href="Paralysis.html" title="Paralysis">麻痺</a>といった敵対的な状態付与に抵抗する力だ。
+</p><p>意志力が高いほど、かけられた状態付与にかかりにくくなる。何かしら魔法に縁のある者(<a href="http://crawl.chaosforge.org/List_of_deep_elves" data-untr="1" title="List of deep elves">エルフ</a>や<a href="http://crawl.chaosforge.org/Siren" data-untr="1" class="mw-redirect" title="Siren">セイレーン</a>など)、魔法の使い手、<a href="http://crawl.chaosforge.org/Natural" data-untr="1" class="mw-redirect" title="Natural">生物</a>でない者は、ほかの生き物より意志力が高い傾向がある。
+</p><p>モンスターの意志力の一部は<a href="Hit_dice.html" title="Hit dice">ヒットダイス</a>で決まるので、ヒットダイスの高いモンスターは意志が強いことが多い。ヒットダイスが 1 のモンスターの大半は、通常の抵抗判定とは別に、50% の確率で問答無用に状態付与を受けてしまう。また、ほとんどの<a href="http://crawl.chaosforge.org/Nonliving" data-untr="1" title="Nonliving">非生物</a>のように、揺るがぬ意志を持ち、魔法による状態付与をまったく受けつけないモンスターもいる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Resistible_Enchantments"><span class="tocnumber">1</span> <span class="toctext">抵抗できる状態付与</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Notes"><span class="tocnumber">1.1</span> <span class="toctext">注</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Resisting_enchantments"><span class="tocnumber">2</span> <span class="toctext">状態付与への抵抗</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Enchantment_power"><span class="tocnumber">2.1</span> <span class="toctext">状態付与の威力</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Resistance_Descriptions"><span class="tocnumber">3</span> <span class="toctext">抵抗力の表示</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Player_Resistance"><span class="tocnumber">3.1</span> <span class="toctext">プレイヤーの意志力</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Resistible_Enchantments">抵抗できる状態付与</span></h2>
+<p>このうちいくつかの効果は、薬、武器のブランド、雲、状態付与に数えられない呪文からも生じることがある。
+</p>
+<div>
+<ul><li><a href="Agony.html" title="Agony">苦悶</a></li>
+<li><a href="Banishment.html#Monster_banishment" title="Banishment">アビスへの追放</a></li>
+<li><a href="http://crawl.chaosforge.org/Brain_Feed" data-untr="1" title="Brain Feed">脳の捕食</a></li>
+<li><a href="Cause_Fear.html" title="Cause Fear">恐慌の喚起</a></li>
+<li><a href="http://crawl.chaosforge.org/Confuse" data-untr="1" title="Confuse">混乱</a></li>
+<li><a href="Confusing_Touch.html" title="Confusing Touch">混乱の一撃</a></li>
+<li><a href="Corona.html" title="Corona">照明</a></li>
+<li><a href="http://crawl.chaosforge.org/Dimension_Anchor" data-untr="1" title="Dimension Anchor">次元の碇</a></li>
+<li><a href="Discord.html" title="Discord">精神不和</a></li>
+<li><a href="http://crawl.chaosforge.org/Dispersal" data-untr="1" title="Dispersal">転送</a>(混乱とテレポートのみ)</li>
+<li><a href="Enfeeble.html" title="Enfeeble">衰弱</a>(眩暈と盲目のみ)</li>
+<li><a href="Ensorcelled_Hibernation.html" title="Ensorcelled Hibernation">魔法の眠り</a></li>
+<li><a href="Inner_Flame.html" title="Inner Flame">内なる炎</a></li>
+<li><a href="http://crawl.chaosforge.org/Necrotise" data-untr="1" title="Necrotise">壊死</a></li>
+<li><a href="http://crawl.chaosforge.org/Mass_Confusion" data-untr="1" title="Mass Confusion">集団の混乱</a></li>
+<li><a href="http://crawl.chaosforge.org/Pain" data-untr="1" title="Pain">苦痛</a></li>
+<li><a href="Paralyse.html" title="Paralyse">麻痺</a></li>
+<li><a href="Petrify.html" title="Petrify">石化</a></li>
+<li><a href="http://crawl.chaosforge.org/Porkalator" data-untr="1" title="Porkalator">豚化の光線</a></li>
+<li><a href="Scroll_of_fear.html" title="Scroll of fear">恐慌の巻物</a></li>
+<li><a href="Sentinel's_Mark.html" title="Sentinel&#39;s Mark">番兵の標的</a></li>
+<li><a href="Sleep.html" title="Sleep">睡眠</a>(ただし<a href="Dream_sheep.html" title="Dream sheep">眠りの羊</a>の<a href="Dream_Dust.html" title="Dream Dust">眠りの霧</a>による効果は除く)</li>
+<li><a href="Slow.html" title="Slow">減速</a></li>
+<li><a href="http://crawl.chaosforge.org/Strip_Willpower" data-untr="1" title="Strip Willpower">意志力の剥奪</a>(33% の確率で意志力を無視する)</li>
+<li><a href="Teleport_Other.html" title="Teleport Other">他者のテレポート</a></li>
+<li><a href="http://crawl.chaosforge.org/Virulence" data-untr="1" title="Virulence">免疫の低下</a></li>
+<li><a href="Wand_of_mindburst.html" title="Wand of mindburst">精神破壊のワンド</a></li>
+<li><a href="Wand_of_charming.html" title="Wand of charming">魅了のワンド</a></li>
+<li><a href="http://crawl.chaosforge.org/Wand_of_paralysis" data-untr="1" title="Wand of paralysis">金縛りのワンド</a></li>
+<li><a href="Wand_of_polymorph.html" title="Wand of polymorph">変化のワンド</a></li></ul>
+</div>
+<h3><span class="mw-headline" id="Notes">注</span></h3>
+<ul><li>これらの状態付与の多くは、意志力以外の理由で防がれることもある。たとえばアンデッド、非生物、植物のモンスターは<a href="Sleep.html" title="Sleep">眠らせる</a>ことができない。</li>
+<li>(<a href="Very_ugly_thing.html" title="Very ugly thing">甚だしく</a>)<a href="Ugly_thing.html" title="Ugly thing">醜きもの</a>は<a href="http://crawl.chaosforge.org/Polymorph" data-untr="1" title="Polymorph">変化</a>に抵抗せず、かならず色が変わる。<a href="Shapeshifter_(monster).html" title="Shapeshifter (monster)">変身能力者</a>は、揺るがぬ意志を持つものに化けているときしか変化に抵抗できない。</li>
+<li><a href="Chaos.html" title="Chaos">混沌</a>のブランドによる効果では意志力の判定が行われない。</li></ul>
+<h2><span class="mw-headline" id="Resisting_enchantments">状態付与への抵抗</span></h2>
+<p>状態付与に抵抗できるかどうかは、抵抗する側の意志力と、かけられた状態付与の<a href="#Enchantment_power">威力</a>(<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>から計算される)で決まる。式は次のとおり。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<blockquote>(1d100 + 1d101) が (102 + 意志力 - 状態付与の威力) より小さければ、状態付与に抵抗する。</blockquote>
+<p>これは<i>ダンジョンズ&amp;ドラゴンズ</i>で使われるダイスによる抵抗の仕組みにならって、「<a rel="nofollow" class="external text" href="http://en.wiktionary.org/wiki/saving_throw">セーヴィング・スロー</a>」と呼ばれることもある。
+</p><p><a href="http://crawl.chaosforge.org/File:Magic_resistance_saving_throw.png" data-untr="1" class="image"><img alt="Magic resistance saving throw.png" src="img/Magic_resistance_saving_throw.png" width="640" height="480" /></a>
+</p><p><code>(意志力) ≥ (状態付与の威力 + 99)</code> なら状態付与にはかならず抵抗する。<code>(状態付与の威力) ≥ (意志力 + 100)</code> なら状態付与はかならず成功する。
+</p>
+<h3><span class="mw-headline" id="Enchantment_power">状態付与の威力</span></h3>
+<p>プレイヤーが呪文を唱えたりワンドを使ったりすると、ゲームは状態付与の威力を使う。これは<a href="Spell_Power.html" class="mw-redirect" title="Spell power">呪文の威力</a>と、唱えた呪文の種類から決まる。
+</p><p>まず、呪文の威力に呪文ごとに決まった倍率をかける(<code>spellpower * factor</code>)。たとえば<a href="Cause_Fear.html" title="Cause Fear">恐慌の喚起</a>のような「一斉にかける状態付与」の倍率は 3/2 だ。ふつうの呪文の倍率は 1 である。補正後の威力が 35 を超える場合は、さらに逓減の関数 <code>35 * log2(1 + adj_pow/35)</code> を通す。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p><p>この逓減のせいで、状態付与の威力を 35 上げるごとに、次の 35 を得るには倍の呪文の威力が要る。呪文の場合は呪文の威力そのものにも<a href="Spell_Power.html#Step_down" class="mw-redirect" title="Spell power">逓減</a>がかかるので、高いところで威力を伸ばすのはかなり難しい。その埋め合わせとして、<a href="Agony.html" title="Agony">苦悶</a>や<a href="Enfeeble.html" title="Enfeeble">衰弱</a>など高レベルの呪文の多くには大きな倍率がついている。
+</p><p>モンスターの場合、状態付与の威力は 1. 固定の値か、2. モンスターの<a href="Hit_dice.html" title="Hit dice">ヒットダイス</a>にもとづく値のどちらかだ。
+</p><p>状態付与の威力が求まったら、対象の意志力と比べる(くわしくは上を参照)。
+</p>
+<h2><span class="mw-headline" id="Resistance_Descriptions">抵抗力の表示</span></h2>
+<p>プレイヤーの意志力も、モンスターの意志力も、正確な数値が表示されることはない。どのくらい抵抗できるかの目安は、プレイヤーなら <a href="http://crawl.chaosforge.org/%25" data-untr="1" title="%">%</a> キーを押して、モンスターなら <b>x</b> で説明を調べて確かめられる。
+</p><p>これらの画面の「+」の数は、プレイヤーやモンスターの意志力に次のように対応している。
+</p>
+<table class="prettytable">
+<tr>
+<th>表示される「+」
+</th>
+<th>プレイヤーの意志力
+</th>
+<th>モンスターの意志力
+</th></tr>
+<tr>
+<td> ..... </td>
+<td> 0-39 </td>
+<td> 0
+</td></tr>
+<tr>
+<td> +.... </td>
+<td> 40-79 </td>
+<td> 1-40
+</td></tr>
+<tr>
+<td> ++... </td>
+<td> 80-119 </td>
+<td> 41-80
+</td></tr>
+<tr>
+<td> +++.. </td>
+<td> 120-159 </td>
+<td> 81-120
+</td></tr>
+<tr>
+<td> ++++. </td>
+<td> 160-199 </td>
+<td> 121-160
+</td></tr>
+<tr>
+<td> +++++ </td>
+<td> 200 </td>
+<td> 161 以上
+</td></tr></table>
+<p>モンスターの意志力はつねに決まった値で、この wiki のそれぞれのモンスターのページに載っている。プレイヤーの意志力は下の式で計算できる。
+</p><p>実際のところ、Will++++ あればゲーム中でもっとも危険な状態付与の使い手(<a href="Deep_elf_demonologist.html" title="Deep elf demonologist">闇エルフの悪魔術師</a>、<a href="Lich.html" title="Lich">リッチ</a>、<a href="Ancient_lich.html" title="Ancient lich">太古のリッチ</a>など)にもたいてい抵抗できる。それ以上意志力を上げればこれらの呪文はさらに通りにくくなるが、そこから先の伸びはあまり重要ではない。
+</p>
+<h3><span class="mw-headline" id="Player_Resistance">プレイヤーの意志力</span></h3>
+<p>プレイヤーの生まれつきの意志力は次の式で決まる。
+</p>
+<pre>経験レベル × 種族ごとの倍率
+</pre>
+<p>種族ごとの倍率は次のとおり。
+</p>
+<table class="prettytable">
+<tr>
+<th>XL あたりの意志力
+</th>
+<th>種族
+</th></tr>
+<tr>
+<td> 7 </td>
+<td> <a href="Spriggan.html" title="Spriggan">スプリガン</a>
+</td></tr>
+<tr>
+<td> 6 </td>
+<td> <a href="Felid.html" title="Felid">フェリッド</a>、紫<a href="Draconian.html" title="Draconian">ドラコニアン</a>
+</td></tr>
+<tr>
+<td> 5 </td>
+<td> <a href="http://crawl.chaosforge.org/Meteoran" data-untr="1" title="Meteoran">メテオラン</a>、<a href="Mummy.html" title="Mummy">ミイラ</a>、<a href="Naga.html" title="Naga">ナーガ</a>、<a href="Vine_Stalker.html" class="mw-redirect" title="Vine stalker">歩き蔓</a>
+</td></tr>
+<tr>
+<td> 4 </td>
+<td> <a href="Deep_Elf.html" class="mw-redirect" title="Deep elf">闇エルフ</a>、<a href="Demigod.html" title="Demigod">神々の末裔</a>、<a href="Formicid.html" title="Formicid">フォーミシッド</a>、<a href="http://crawl.chaosforge.org/Ogre" data-untr="1" title="Ogre">オーガ</a>、<a href="http://crawl.chaosforge.org/Vampire" data-untr="1" title="Vampire">吸血鬼</a>
+</td></tr>
+<tr>
+<td> 3 </td>
+<td> その他の種族すべて
+</td></tr></table>
+<p>次のものは意志力を増やす(または減らす)。
+</p>
+<ul><li> Will+ の源ひとつにつき +40
+<ul><li> <a href="Ego.html" title="Ego">意志力の防具</a>(Will+)</li>
+<li> <a href="Ring_of_willpower.html" title="Ring of willpower">意志力の指輪</a>(Will+)</li>
+<li> <a href="Good_mutations.html#Magic_Resistance" title="Good mutations">強い意志の変異</a>(1 段階につき Will+ ひとつ)</li>
+<li> <a href="http://crawl.chaosforge.org/Lichform" data-untr="1" class="mw-redirect" title="Lichform">リッチ化</a>(Will+)</li>
+<li> <a href="Artefact.html" title="Artefact">アーティファクト</a>(最大 Will+++)</li></ul></li>
+<li> <a href="Trog.html" title="Trog">トログ</a>の御手を使っているあいだは +80</li>
+<li> <a href="Guile.html" title="Guile">狡知のオーブ</a>を持っていると -80</li></ul>
+<p>ここまでの意志力は 200 が上限だ。そのあと、次の要素が順に意志力を変える。
+</p>
+<ul><li><b>意志半減</b>(Will/2)の状態のときは、合計が半分になる(<a href="http://crawl.chaosforge.org/Scroll_of_vulnerability" data-untr="1" title="Scroll of vulnerability">脆弱の巻物</a>、<a href="http://crawl.chaosforge.org/Phantasmal_warrior" data-untr="1" title="Phantasmal warrior">幻想の戦士</a>や<a href="Imperial_myrmidon.html" title="Imperial myrmidon">帝国の護衛兵</a>の<a href="http://crawl.chaosforge.org/Category:Vuln_flavour" data-untr="1" title="Category:Vuln flavour">攻撃</a>、<a href="http://crawl.chaosforge.org/Strip_Willpower" data-untr="1" title="Strip Willpower">意志力の剥奪</a>の呪文によるもの、または<a href="Tartarus.html" title="Tartarus">タルタロス</a>にいるあいだ)。</li>
+<li><a href="Robe_of_Folly.html" title="Robe of Folly">愚劣のローブ</a>は意志力を 0 にする。</li>
+<li><a href="http://crawl.chaosforge.org/Shadow_Form" data-untr="1" title="Shadow Form">影化</a>中は意志力が無限になる。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> より前は、意志力に 200(Will+++++)の上限がなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、意志力は<b>魔法抵抗</b>(<b>MR</b>)と呼ばれていた。</li>
+<li><a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> より前は、<a href="http://crawl.chaosforge.org/Blink_Other" data-untr="1" title="Blink Other">他者の瞬間移動</a>も魔法抵抗の判定の対象だった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/actor.cc#L121">actor.cc:121</a> (0.30.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/beam.cc#L6806">beam.cc:6806</a> (0.30.0)<br />逓減の関数は <a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/stepdown.cc#L14">stepdown.cc:14</a> (0.30.0) にある</span>
+</li>
+</ol></div>
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

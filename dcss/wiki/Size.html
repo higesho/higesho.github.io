@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>体格 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="体格(Size)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>体格 <span class="en">Size</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Size">Size</a>」(0.31 向け、2024-03-03 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Size&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.31 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="0.31.html" title="0.31">0.31</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p>Crawl では、<a href="Monster.html" title="Monster">モンスター</a>の大きさを段階に分けた<a class="mw-selflink selflink">体格</a>で表す。小さいほうから順に、次の 6 段階がある。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Category:Tiny_monsters" data-untr="1" title="Category:Tiny monsters">極小</a>(<a href="http://crawl.chaosforge.org/Bat" data-untr="1" title="Bat">コウモリ</a>ぐらい)</li>
+<li><a href="http://crawl.chaosforge.org/Category:Little_monsters" data-untr="1" title="Category:Little monsters">とても小さい</a>(<a href="Spriggan.html" title="Spriggan">スプリガン</a>ぐらい)</li>
+<li><a href="http://crawl.chaosforge.org/Category:Small_monsters" data-untr="1" title="Category:Small monsters">小さい</a>(<a href="Kobold.html" title="Kobold">コボルド</a>ぐらい)</li>
+<li><a href="http://crawl.chaosforge.org/Category:Medium_monsters" data-untr="1" title="Category:Medium monsters">中くらい</a>(<a href="Human.html" title="Human">人間</a>ぐらい)</li>
+<li><a href="http://crawl.chaosforge.org/Category:Large_monsters" data-untr="1" title="Category:Large monsters">大きい</a>(<a href="http://crawl.chaosforge.org/Ogre" data-untr="1" title="Ogre">オーガ</a>ぐらい)</li>
+<li><a href="http://crawl.chaosforge.org/Category:Giant_monsters" data-untr="1" title="Category:Giant monsters">巨大</a>(<a href="http://crawl.chaosforge.org/Giant" data-untr="1" class="mw-redirect" title="Giant">巨人</a>や<a href="http://crawl.chaosforge.org/Dragon" data-untr="1" class="mw-redirect" title="Dragon">ドラゴン</a>ぐらい)</li></ul>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Sizes"><span class="tocnumber">2</span> <span class="toctext">体格の種類</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Medium"><span class="tocnumber">2.1</span> <span class="toctext">中くらい</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Small"><span class="tocnumber">2.2</span> <span class="toctext">小さい</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Little"><span class="tocnumber">2.3</span> <span class="toctext">とても小さい</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Tiny"><span class="tocnumber">2.4</span> <span class="toctext">極小</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Hybrids"><span class="tocnumber">2.5</span> <span class="toctext">混成</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Large"><span class="tocnumber">2.6</span> <span class="toctext">大きい</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Giant"><span class="tocnumber">2.7</span> <span class="toctext">巨大</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>体格の影響は次のとおり。
+</p><p><b>プレイヤーだけ:</b>
+</p>
+<ul><li> <a href="Evasion.html" title="Evasion">回避</a>が変わる。小さいほど EV が上がり、大きいほど下がる。具体的には、体格によって基本の EV に<a href="Evasion.html#Base_EV" title="Evasion">一定のボーナスかペナルティ</a>がつき、<a href="Dodging.html" title="Dodging">躱し身</a>スキルから得られる EV の量も変わる。 </li>
+<li> 使える<a href="Armour.html" title="Armour">防具</a>と<a href="Weapon.html" title="Weapon">武器</a>が決まる。<a href="#Medium">中くらい</a>でない種族は、たいてい一部の装備を使えない。体格とは別の制限がある種族もいる。たとえば<a href="Octopode.html" title="Octopode">オクトポード</a>がかぶれるのは<a href="Hat.html" title="Hat">帽子</a>だけだ。</li></ul>
+<p><b>すべての生き物:</b>
+</p>
+<ul><li>生き物が<a href="http://crawl.chaosforge.org/Constrict" data-untr="1" class="mw-redirect" title="Constrict">締めつけ</a>られるのは、自分と同じかそれより小さい相手だけだ。</li>
+<li>大きい生き物ほど、(<a href="Primal_Wave.html" title="Primal Wave">原初の大波</a>などの)押し流す効果や<a href="http://crawl.chaosforge.org/Trample" data-untr="1" title="Trample">踏みつけ</a>攻撃に強い。</li>
+<li>体格が大きいか巨大の生き物は、<a href="http://crawl.chaosforge.org/Water" data-untr="1" title="Water">水場</a>を楽に進める。</li></ul>
+<p><b>モンスターだけ:</b>
+</p>
+<ul><li>大きいモンスターほど、<a href="Throwing_net.html" title="Throwing net">投げ網</a>や<a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">蜘蛛の巣</a>に捕まったときに EV が大きく下がる。</li>
+<li><a href="http://crawl.chaosforge.org/Gozag" data-untr="1" class="mw-redirect" title="Gozag">ゴザーグ</a>の信者が倒したとき、大きいモンスターほど多くの金貨を落とす。</li>
+<li>体格が極小のモンスターでは<a href="Inner_Flame.html" title="Inner Flame">内なる炎</a>の爆発が弱くなり、巨大なモンスターでは爆発の範囲が広くなる。</li></ul>
+<h2><span class="mw-headline" id="Sizes">体格の種類</span></h2>
+<h3><span class="mw-headline" id="Medium">中くらい</span></h3>
+<p>プレイヤーの種族の大半は中くらいで、ほとんどの種類のアイテムを使える。使えないのは<a href="Giant_club.html" title="Giant club">巨大棍棒</a>、<a href="Giant_spiked_club.html" title="Giant spiked club">釘つき巨大棍棒</a>、<a href="Large_rock.html" title="Large rock">大岩</a>、<a href="Barding.html" title="Barding">馬甲</a>だけだ。
+</p>
+<ul><li><a href="Barachi.html" title="Barachi">バラチ</a></li>
+<li><a href="Deep_Elf.html" class="mw-redirect" title="Deep elf">闇エルフ</a></li>
+<li><a href="Demigod.html" title="Demigod">神々の末裔</a></li>
+<li><a href="Demonspawn.html" title="Demonspawn">悪魔の血族</a></li>
+<li><a href="Djinni.html" title="Djinni">ジンニー</a></li>
+<li><a href="Draconian.html" title="Draconian">ドラコニアン</a></li>
+<li><a href="Formicid.html" title="Formicid">フォーミシッド</a></li>
+<li><a href="Gargoyle.html" title="Gargoyle">ガーゴイル</a></li>
+<li><a href="http://crawl.chaosforge.org/Ghoul" data-untr="1" title="Ghoul">グール</a></li>
+<li><a href="Gnoll.html" title="Gnoll">ノール</a></li>
+<li><a href="http://crawl.chaosforge.org/Hill_orc" data-untr="1" class="mw-redirect" title="Hill orc">丘オーク</a></li>
+<li><a href="Human.html" title="Human">人間</a></li>
+<li><a href="Merfolk.html" title="Merfolk">水棲の民</a></li>
+<li><a href="Minotaur.html" title="Minotaur">ミノタウロス</a></li>
+<li><a href="Mummy.html" title="Mummy">ミイラ</a></li>
+<li><a href="Octopode.html" title="Octopode">オクトポード</a></li>
+<li><a href="Tengu.html" title="Tengu">天狗</a></li>
+<li><a href="http://crawl.chaosforge.org/Vampire" data-untr="1" title="Vampire">吸血鬼</a></li>
+<li><a href="Vine_Stalker.html" title="Vine Stalker">歩き蔓</a></li></ul>
+<h3><span class="mw-headline" id="Small">小さい</span></h3>
+<p>体格が小さいキャラクターは、中くらいの種族が使えないものに加えて、<a href="Bardiche.html" title="Bardiche">バルディッシュ</a>、<a href="Battleaxe.html" title="Battleaxe">バトルアックス</a>、<a href="Dire_flail.html" title="Dire flail">大型フレイル</a>、<a href="Executioner's_axe.html" title="Executioner&#39;s axe">処刑人の斧</a>、<a href="Glaive.html" title="Glaive">グレイブ</a>、<a href="Great_mace.html" title="Great mace">大型メイス</a>、<a href="Great_sword.html" title="Great sword">グレートソード</a>、<a href="http://crawl.chaosforge.org/Halberd" data-untr="1" title="Halberd">ハルバード</a>、<a href="Tower_shield.html" title="Tower shield">タワーシールド</a>、<a href="Longbow.html" title="Longbow">ロングボウ</a>、<a href="Scythe.html" title="Scythe">大鎌</a>、<a href="Triple_sword.html" title="Triple sword">トリプルソード</a>、<a href="Javelin.html" title="Javelin">ジャベリン</a>も使えない。さらに、<a href="Broad_axe.html" title="Broad axe">ブロードアックス</a>、<a href="Double_sword.html" title="Double sword">ダブルソード</a>、<a href="http://crawl.chaosforge.org/Magical_staves" data-untr="1" class="mw-redirect" title="Magical staves">魔法の杖</a>、<a href="Trident.html" title="Trident">トライデント</a>、<a href="Demon_trident.html" title="Demon trident">悪魔の三叉戟</a>は両手持ちの武器として扱われる。
+</p><p>プレイヤーの種族で小さいのはひとつだけだ。
+</p>
+<ul><li><a href="Kobold.html" title="Kobold">コボルド</a></li></ul>
+<p><a href="http://crawl.chaosforge.org/Pig_Form" data-untr="1" title="Pig Form">豚化</a>するとプレイヤーの体格は小さいになるが、ほとんどの種類の装備が使えなくなる。
+</p>
+<h3><span class="mw-headline" id="Little">とても小さい</span></h3>
+<p>とても小さいプレイヤーは、小さいプレイヤーが持てないものはやはり持てず、さらに次のものを身に着けられない。
+</p>
+<ul><li><a href="Robe.html" title="Robe">ローブ</a>、<a href="Troll_leather_armour.html" title="Troll leather armour">トロル革の鎧</a>、各種の<a href="http://crawl.chaosforge.org/Dragon_armour" data-untr="1" class="mw-redirect" title="Dragon armour">ドラゴンの鎧</a>以外の胴の防具</li>
+<li>あらゆる<a href="Gloves.html" title="Gloves">手袋</a></li>
+<li>あらゆる<a href="Boots.html" title="Boots">ブーツ</a></li>
+<li><a href="http://crawl.chaosforge.org/Helmet" data-untr="1" title="Helmet">兜</a></li>
+<li><a href="Kite_shield.html" title="Kite shield">カイトシールド</a></li></ul>
+<p>また、<a href="Triple_crossbow.html" title="Triple crossbow">トリプルクロスボウ</a>も構えられない。
+</p><p>プレイヤーの種族でとても小さいのは次の 2 つだ。
+</p>
+<ul><li><a href="Felid.html" title="Felid">フェリッド</a></li>
+<li><a href="Spriggan.html" title="Spriggan">スプリガン</a></li></ul>
+<h3><span class="mw-headline" id="Tiny">極小</span></h3>
+<p>極小に当たるほど小さいプレイヤーの種族はいないが、キャラクターをそこまで縮める<a href="Transformation.html" title="Transformation">変身</a>がいくつかある。回避が大きく上がる代わりに、重い欠点を伴うことが多い(なにより、ほとんどの装備が使えなくなる)。
+</p>
+<ul><li><a href="Bat_Form.html" title="Bat Form">コウモリ</a></li>
+<li><a href="Wisp_Form.html" title="Wisp Form">霧化</a></li>
+<li><a href="Fungus_Form.html" title="Fungus Form">茸化</a></li></ul>
+<h3><span class="mw-headline" id="Hybrids">混成</span></h3>
+<p>混成の種族は、体は大きいが胴体は中くらいの大きさで、ブーツを除けば中くらいのキャラクターが着られるものは何でも着られる。ブーツの代わりに<a href="Barding.html" title="Barding">馬甲</a>を使える。また、体が大きいので<a href="Shallow_water.html" title="Shallow water">浅い水脈</a>での移動や攻撃のペナルティを受けない。ただし<a href="http://crawl.chaosforge.org/Deformed" data-untr="1" title="Deformed">体の形が変わっている</a>ため、胴の防具から得られる基本の AC は通常の半分になる。
+</p>
+<ul><li><a href="Naga.html" title="Naga">ナーガ</a></li>
+<li><a href="Armataur.html" title="Armataur">アルマタウル</a></li></ul>
+<h3><span class="mw-headline" id="Large">大きい</span></h3>
+<p>大きい種族は、とても小さい種族と同じ防具の制限をすべて受ける。ただしカイトシールドとタワーシールドは使え、逆に<a href="Buckler.html" title="Buckler">バックラー</a>は使えない。一方、武器は見つけたものを何でも使える。ゲームでも屈指の威力を持つ<a href="Giant_club.html" title="Giant club">巨大棍棒</a>、<a href="Giant_spiked_club.html" title="Giant spiked club">釘つき巨大棍棒</a>、<a href="Large_rock.html" title="Large rock">大岩</a>も扱える。体が大きいので、<a href="Shallow_water.html" title="Shallow water">浅い水脈</a>でもふだんどおりに移動や攻撃ができる。
+</p>
+<ul><li><a href="Oni.html" title="Oni">鬼</a></li>
+<li><a href="Troll.html" title="Troll">トロル</a></li></ul>
+<p><a href="http://crawl.chaosforge.org/Serpent_Form" data-untr="1" class="mw-redirect" title="Serpent Form">大蛇</a>に変身したプレイヤーも大きいとみなされるが、装備はいっさい使えない。
+</p>
+<h3><span class="mw-headline" id="Giant">巨大</span></h3>
+<p>巨大な種族はいないが、<a href="http://crawl.chaosforge.org/Dragon_Form" data-untr="1" class="mw-redirect" title="Dragon Form">竜化</a>するとこの体格になる。
+</p><p>巨大な生き物は「見かけの水陸両生」という性質を持ち、<a href="Deep_water.html" title="Deep water">深い水脈</a>を溺れずに進める(背が高いので頭が水の上に出ている)。本当に水陸両生の生き物や水に棲む生き物とは違って、深い水脈に立っていると戦闘にペナルティを受ける。もっとも、竜化すると常に<a href="http://crawl.chaosforge.org/Flight" data-untr="1" class="mw-redirect" title="Flight">飛行</a>状態になるので、竜化ではこの点は関係ない。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="0.31.html" title="0.31">0.31</a> より前は、巨大なモンスターには<a href="http://crawl.chaosforge.org/Net" data-untr="1" class="mw-redirect" title="Net">網</a>や<a href="http://crawl.chaosforge.org/Web" data-untr="1" title="Web">蜘蛛の巣</a>が効かなかった。</li>
+<li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> より前は、体格が<a href="Shields.html" class="mw-redirect" title="Shield">盾</a>に影響した。混成や大きい種族は盾による負担が軽いが、盾から得られる SH がやや少なかった。小さい種族は負担が重いが、盾から得られる SH がやや多かった。また、大きいプレイヤーの種族は浅い水脈を歩くと移動にペナルティを受けた。</li>
+<li><a href="http://crawl.chaosforge.org/0.28" data-untr="1" title="0.28">0.28</a> より前は、体格が「かなり大きい」(Big。大きいと巨大の間)のモンスターがいた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> より前は、体格によって<a href="Throwing_net.html" title="Throwing net">投げ網</a>からの抜け出し方が変わった。</li>
+<li><a href="http://crawl.chaosforge.org/0.16" data-untr="1" title="0.16">0.16</a> より前は、小さいモンスターやプレイヤーほど<a href="Shaft.html" title="Shaft">縦穴</a>の罠から逃れやすかった。</li></ul>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

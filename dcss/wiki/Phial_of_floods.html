@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大水の小瓶 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="大水の小瓶(Phial of floods)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>大水の小瓶 <span class="en">Phial of floods</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Phial_of_floods">Phial of floods</a>」(0.30 向け、2026-02-19 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Phial_of_floods&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<div>
+<table class="prettytable" style=" width:18em">
+
+<tr>
+<th align="left"> 種類
+</th>
+<td> 道具類
+</td></tr>
+<tr>
+<th align="left"> 名前
+</th>
+<td> 大水の小瓶
+</td></tr>
+<tr>
+<th align="left"> アイコン
+</th>
+<td> <a href="http://crawl.chaosforge.org/File:Phial_of_floods.png" data-untr="1" class="image"><img alt="Phial of floods.png" src="img/Phial_of_floods.png" width="32" height="32" /></a>
+</td></tr></table>
+</div>
+<table style=" width:auto; text-align:left">
+
+<tr>
+<td>
+</td>
+<td style="width: 100%"> 元素の水が込められた魔法の器だ。栓を抜くと激流が解き放たれ、標的を打ちのめし、周囲を水浸しにする。波に飲み込まれた生き物が呼吸に空気を必要とするなら、回復するまで呪文を唱えられなくなる。激流の強さと浸水の持続時間は、発動のスキルに応じて増す。
+</td></tr></table>
+<p><b>大水の小瓶</b>は発動して使うアイテムで、<a href="Primal_Wave.html" title="Primal Wave">原初の大波</a>に似た効果の激流を放つ。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Useful_Info"><span class="tocnumber">1</span> <span class="toctext">基本情報</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strategy"><span class="tocnumber">2</span> <span class="toctext">戦略</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Tips_.26_Tricks"><span class="tocnumber">2.1</span> <span class="toctext">小技</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#History"><span class="tocnumber">3</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Useful_Info">基本情報</span></h2>
+<p>狙った方向に射程 5 の水のビームを放つ。ダメージを与えるほかに、次の効果がある。
+</p>
+<ul><li> ビームが当たったところの周りに<a href="Shallow_water.html" title="Shallow water">浅い水脈</a>を作る。<a href="http://crawl.chaosforge.org/Stair" data-untr="1" class="mw-redirect" title="Stair">階段</a>が水に覆われることはない。</li>
+<li> モンスターを押し戻すことがある。</li>
+<li> モンスターを<i>水浸し</i>にする。この状態のあいだモンスターは<a href="Silence.html" title="Silence">静寂</a>状態になり、声に出して唱える呪文を使えなくなる。水浸しになるのは、(押し戻される前に)水ができたマスに立っていたモンスターで、敵か味方かは問わない。狙った中心の相手は、そのマスに水ができなくても水浸しになる。なお、<a href="http://crawl.chaosforge.org/Unbreathing" data-untr="1" title="Unbreathing">呼吸しない</a>者にはこの効果は効かない。</li></ul>
+<p><a href="Evocations.html" title="Evocations">発動</a>のスキルが高いほど、小瓶のダメージ、水が残る時間、水浸しの持続時間が増える。
+</p>
+<ul><li>小瓶のダメージは <code>4d(5 + 3 * Evocations / 5)</code> だ。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup><a href="http://crawl.chaosforge.org/Unbreathing" data-untr="1" title="Unbreathing">呼吸しない</a>者、<a href="Amphibious.html" title="Amphibious">水陸両生</a>の者、<a href="http://crawl.chaosforge.org/Aquatic" data-untr="1" title="Aquatic">水棲</a>の者は 50% のダメージしか受けない。</li>
+<li>水浸しの基本の持続時間は <code>2.1 + 2 * Evocations / 5</code> <a href="http://crawl.chaosforge.org/DecaAut" data-untr="1" class="mw-redirect" title="DecaAut">ターン</a>で<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>、これに 1 倍から 1.5 倍のランダムな倍率がかかる。<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>繰り返しになるが、呼吸しない者にはこの効果は効かない。</li></ul>
+<p>大水の小瓶は一度使うと力を使い果たす。経験値を得ると再び使えるようになる。
+</p><p>ほかの道具類の発動アイテムと同じく、大水の小瓶は1回のゲームで1つしか出ない。
+</p>
+<h2><span class="mw-headline" id="Strategy">戦略</span></h2>
+<p>かなり強力な発動アイテムで、<a href="http://crawl.chaosforge.org/List_of_deep_elves" data-untr="1" title="List of deep elves">闇エルフ</a>や<a href="http://crawl.chaosforge.org/Jorgrun" data-untr="1" title="Jorgrun">ジョーグルン</a>のような危険な呪文使いを封じ込められる。押し戻しと水で敵の足止めもでき、攻撃そのもののダメージもなかなかのものだ。水浸しをそれなりの時間続かせるには、発動のスキルをある程度上げておく必要がある。
+</p>
+<h3><span class="mw-headline" id="Tips_.26_Tricks">小技</span></h3>
+<ul><li>小瓶の水には、ほかにもいくつか使い道がある。
+<ul><li>水の上で<a href="Fire_Magic.html" title="Fire Magic">炎の魔術</a>を使うと、ダメージを与える<a href="http://crawl.chaosforge.org/Steam" data-untr="1" title="Steam">蒸気</a>の雲が出る。小瓶を使えば、炎で与えるダメージを少しだけ増やせる。</li>
+<li>水は<a href="Sticky_Flame.html" title="Sticky Flame">焼夷の炎</a>を消す。自分の1マス先の床を狙って撃てば(撃つときに <b>f</b> や <b>Enter</b> ではなく <b>.</b> を使う)、火を消せる。逆に、小瓶の水は敵についた焼夷の炎も消してしまう。</li>
+<li>水は、<a href="http://crawl.chaosforge.org/Flying" data-untr="1" class="mw-redirect" title="Flying">飛行</a>していない<a href="Invisible.html" title="Invisible">透明</a>な者の姿を浮かび上がらせ、透明でいることの戦闘上の利点をすべて打ち消す。もちろん、透明なプレイヤーも水で姿が見えてしまう。</li></ul></li>
+<li>小瓶の攻撃は<a href="http://crawl.chaosforge.org/Ev" data-untr="1" class="mw-redirect" title="Ev">回避</a>されることがある。特定のモンスターをどうしても水浸しにしたいなら、<b>.</b> で発射を確定して、波を狙ったマスで止めるとよい。波は止まったマスにいる者をかならず水浸しにする。</li></ul>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a> より前は、小瓶の射程は<a href="http://crawl.chaosforge.org/LOS" data-untr="1" class="mw-redirect" title="LOS">視界</a>いっぱいまであった。水浸しの持続時間もずっと長かった。</li>
+<li><a href="http://crawl.chaosforge.org/0.26" data-untr="1" title="0.26">0.26</a> より前は、小瓶は別々の水たまりを2つ作っていた。1つは小瓶自体から、もう1つは原初の大波の呪文からで、生き物を水浸しにするのは小瓶の水たまりだけだった。</li>
+<li><a href="http://crawl.chaosforge.org/0.25" data-untr="1" title="0.25">0.25</a> より前は、モンスターを水浸しにする代わりに、味方の<a href="Water_elemental.html" title="Water elemental">水の精霊</a>を召喚していた。また、<a href="Confusion.html" title="Confusion">混乱</a>中でも小瓶を使えた。</li>
+<li><a href="http://crawl.chaosforge.org/0.19" data-untr="1" title="0.19">0.19</a> で、命中時のダメージが大きく下がった。</li>
+<li><a href="http://crawl.chaosforge.org/0.14" data-untr="1" title="0.14">0.14</a> より前は、<a href="Evocable_items.html#elementalevokers" title="Evocable items">精霊の発動アイテム</a>はすべて同時に再使用できるようになっていた。</li>
+<li>このアイテムは <a href="http://crawl.chaosforge.org/0.13" data-untr="1" title="0.13">0.13</a> で追加された。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/zap-data.h#L538">zap-data.h:538</a> (0.30.0)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/evoke.cc#L499">evoke.cc:499</a> (0.30.0)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/beam.cc#L2495">beam.cc:2495</a> (0.30.0)</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/evoke.cc#L499">evoke.cc:499</a> (0.30.0)</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.0/crawl-ref/source/beam.cc#L2402">beam.cc:2402</a> (0.30.0)</span>
+</li>
+</ol></div>
+<p><br />
+</p>
+<center>
+<table class="prettytable" style="text-align: center; width: 65%">
+
+<tr>
+<th>道具類の<a href="Evocable_items.html" class="mw-redirect" title="Evocable">発動アイテム</a>
+</th></tr>
+<tr>
+<td> <a href="Figurine_of_a_ziggurat.html" title="Figurine of a ziggurat">ジグラットの模型</a> • <a href="Horn_of_Geryon.html" title="Horn of Geryon">ゲリュオンの角笛</a> • <a href="Lightning_rod.html" title="Lightning rod">稲妻のロッド</a> • <a href="http://crawl.chaosforge.org/Phantom_mirror" data-untr="1" title="Phantom mirror">幻影の鏡</a><br /><a class="mw-selflink selflink">大水の小瓶</a> / <a href="Gell's_gravitambourine.html" title="Gell&#39;s gravitambourine">ゲルの重力タンバリン</a> • <a href="Condenser_vane.html" title="Condenser vane">凝結の風見</a> / <a href="Tin_of_tremorstones.html" title="Tin of tremorstones">震動石の缶</a> • <a href="Box_of_beasts.html" title="Box of beasts">獣の匣</a> / <a href="Sack_of_spiders.html" title="Sack of spiders">蜘蛛の袋</a>
+</td></tr></table>
+</center>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>

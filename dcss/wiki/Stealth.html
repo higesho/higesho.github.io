@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隠密 &mdash; DCSS wiki 翻訳</title>
+<meta name="description" content="隠密(Stealth)の日本語訳。">
+<link rel="stylesheet" href="../dcss.css">
+</head>
+<body>
+<header class="top"><div class="band">
+  <a class="brand" href="../index.html">DCSS スポイラー</a>
+  <nav><a href="../index.html">入口</a><a href="../monster.html">モンスター</a><a href="../spell.html">呪文</a><a href="../item.html">アイテム</a><a href="../artefact.html">固定アーティファクト</a><a href="../species.html">種族</a><a href="../job.html">職業</a><a href="../god.html">神</a><a href="../branch.html">ダンジョン</a><a href="../mutation.html">変異</a><a href="../misc.html">事典</a><a href="index.html">wiki 翻訳</a></nav>
+</div></header>
+<main class="band">
+<h1>隠密 <span class="en">Stealth</span></h1>
+<p class="wnote">英語版 CrawlWiki の記事「<a href="http://crawl.chaosforge.org/Stealth">Stealth</a>」(0.30 向け、2024-01-18 版)の翻訳です。原文の著者は<a href="http://crawl.chaosforge.org/index.php?title=Stealth&amp;action=history">編集履歴</a>をご覧ください。<br><b>この記事は 0.30 の時点の内容で、最新の 0.34 とは違うところがあるかもしれません。</b></p>
+<div class="wiki">
+<div style=" width: 100%; width: auto"><i><b>バージョン <a href="http://crawl.chaosforge.org/0.30" data-untr="1" title="0.30">0.30</a></b>: この記事は Crawl の<a href="0.34.html" title="0.34">最新の安定版</a>の内容に<b>追いついていないかもしれない</b>。</i></div>
+<p><i>このページでは、能力値としての隠密と、隠密の仕組み全般について説明する。スキルについては<a href="Stealth_(skill).html" title="Stealth (skill)">隠密(スキル)</a>を、防具のエゴの隠密については<a href="Ego.html" title="Ego">エゴの一覧</a>を参照。</i>
+</p><p><b>隠密</b>の値は、あなたがどれだけ見つかりにくいかを決める。この値にいちばん直接に効くのは<a href="Stealth_(skill).html" title="Stealth (skill)">隠密スキル</a>だが、ほかにもさまざまな要素が関わってくる。
+</p>
+<div id="toc" class="toc"><div class="toctitle"><h2>目次</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Stealth_Score"><span class="tocnumber">1</span> <span class="toctext">隠密値</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Modifiers"><span class="tocnumber">2</span> <span class="toctext">補正</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Confusion"><span class="tocnumber">2.1</span> <span class="toctext">混乱</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Flat_Modifiers"><span class="tocnumber">2.2</span> <span class="toctext">加算の補正</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Multipliers"><span class="tocnumber">2.3</span> <span class="toctext">倍率</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#In-Game_Display"><span class="tocnumber">2.4</span> <span class="toctext">ゲーム内の表示</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Detection"><span class="tocnumber">3</span> <span class="toctext">発見</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#History"><span class="tocnumber">4</span> <span class="toctext">変更履歴</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">出典</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Stealth_Score">隠密値</span></h2>
+<p>キャラクターの忍びやすさを表すのが隠密値(stealth score)だ。キャラクターはもともと基本の隠密値を持っていて、それがさまざまな外的要因で増減する。
+</p><p>基本の隠密値は次のとおり。<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<blockquote>(3 × <a href="http://crawl.chaosforge.org/Dexterity" data-untr="1" title="Dexterity">器用</a>) + (隠密スキル × 15)</blockquote>
+<h2><span class="mw-headline" id="Modifiers">補正</span></h2>
+<p>次の補正がこの順にかかる。<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Confusion">混乱</span></h3>
+<p>混乱による低下は、ほかのどの補正よりも先にかかる。
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Confused" data-untr="1" class="mw-redirect" title="Confused">混乱</a>: x0.33</li></ul>
+<h3><span class="mw-headline" id="Flat_Modifiers">加算の補正</span></h3>
+<p><b>プラス</b>
+</p>
+<ul><li>隠密の<a href="Ego.html" title="Ego">エゴ</a>の防具: 1 つにつき +50</li>
+<li>Stlth+ の付いたアーティファクト: Stlth+ 1 つにつき +50</li>
+<li><a href="Mutation.html" class="mw-redirect" title="Mutations">変異</a>:
+<ul><li><a href="http://crawl.chaosforge.org/Nightstalker" data-untr="1" title="Nightstalker">闇隠れ</a>の変異: 1 段階につき +50</li>
+<li><a href="http://crawl.chaosforge.org/Camouflage" data-untr="1" title="Camouflage">迷彩</a>の変異: 1 段階につき +50</li>
+<li><a href="http://crawl.chaosforge.org/Thin_Skeletal_Structure" data-untr="1" title="Thin Skeletal Structure">薄い骨格構造</a>の変異: 1 段階につき +50</li>
+<li><a href="http://crawl.chaosforge.org/Translucent_Skin" data-untr="1" title="Translucent Skin">半透明な体</a>の変異: 段階にかかわらず +50</li></ul></li>
+<li>血が通っていない状態の<a href="http://crawl.chaosforge.org/Vampire" data-untr="1" title="Vampire">吸血鬼</a>: +100
+<ul><li><a href="Bat_Form.html" title="Bat Form">コウモリ化</a>した吸血鬼: +50</li></ul></li>
+<li><a href="http://crawl.chaosforge.org/Water" data-untr="1" title="Water">水</a>の上にいる<a href="Merfolk.html" title="Merfolk">水棲の民</a>/<a href="Octopode.html" title="Octopode">オクトポード</a>(<a href="http://crawl.chaosforge.org/Flying" data-untr="1" class="mw-redirect" title="Flying">飛行中</a>でも): +50</li></ul>
+<p><b>マイナス</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Armour_encumbrance" data-untr="1" class="mw-redirect" title="Armour encumbrance">胴体防具の重さ</a>: -2 × (<a href="Encumbrance_rating.html" title="Encumbrance rating">重さ</a>)<sup>2</sup> / 3</li>
+<li><a href="Silence.html" title="Silence">静寂</a>を放っているとき: -50</li>
+<li>Stlth- の付いたアーティファクト: Stlth- 1 つにつき -50</li></ul>
+<h3><span class="mw-headline" id="Multipliers">倍率</span></h3>
+<p><b>プラス</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Umbra" data-untr="1" class="mw-redirect" title="Umbra">影の領域</a>: 発生源によって違い、いちばん隠密が高くなるものが使われる。プレイヤー自身が影の領域の発生源である場合にだけ効く。
+<ul><li><a href="http://crawl.chaosforge.org/Ring_of_Shadows" data-untr="1" title="Ring of Shadows">影の指輪</a>: ×1.5</li>
+<li><a href="Dithmenos.html" title="Dithmenos">ディスメノス</a>: 信仰心によって変わる。×<code>(piety + 200)/200</code> で、最低 ×1、最大 ×2。 </li></ul></li>
+<li><a href="http://crawl.chaosforge.org/Shadow_Form" data-untr="1" title="Shadow Form">影化</a>: ×2</li></ul>
+<p><b>マイナス</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Backlit" data-untr="1" class="mw-redirect" title="Backlit">照らし出されている</a>(<a href="Corona.html" title="Corona">照明</a>や<a href="http://crawl.chaosforge.org/Halo" data-untr="1" class="mw-redirect" title="Halo">光輪</a>など): ×0.40</li>
+<li><a href="Shallow_water.html" title="Shallow water">浅い水脈</a>の中にいる(<a href="http://crawl.chaosforge.org/Flying" data-untr="1" class="mw-redirect" title="Flying">飛行中</a>でも、体格が<a href="http://crawl.chaosforge.org/Large" data-untr="1" class="mw-redirect" title="Large">大きい</a>のでも、<a href="Amphibious.html" title="Amphibious">水陸両生</a>でもない場合): ×0.5</li>
+<li><a href="Orb_of_Zot.html" title="Orb of Zot">ゾットのオーブ</a>を持っている: ×0.33</li>
+<li><a href="http://crawl.chaosforge.org/Qazlal" data-untr="1" class="mw-redirect" title="Qazlal">クァズラル</a>(信仰心 1* 以上): ×<code>(200 - piety) / 170</code>。信仰心は 160 までで頭打ちになる。6* 以上ではおよそ x0.24 の倍率になる。</li></ul>
+<p>次の状態では隠密が 0 になる。
+</p>
+<ul><li><a href="Berserk.html" title="Berserk">バーサーク</a></li>
+<li><a href="http://crawl.chaosforge.org/Clumsy" data-untr="1" class="mw-redirect" title="Clumsy">不器用</a>(Dex=0)</li>
+<li><a href="Ru.html#Sacrifices" title="Ru">隠密の犠牲</a></li></ul>
+<p>隠密値が 0 を下回る場合は、0 として扱われる。
+</p>
+<h3><span class="mw-headline" id="In-Game_Display">ゲーム内の表示</span></h3>
+<p>正確な隠密値を表示する方法はないが、<b>%</b> の画面でおおよその値がわかる。'+' 1 つが隠密 50、'*' 1 つが 100、'#' が 150、'!' が 200 にあたる。
+</p>
+<h2><span class="mw-headline" id="Detection">発見</span></h2>
+<p>モンスターはそれぞれ警戒値(Monster Awareness)を持っている。基本の警戒値はどのモンスターも 10 で、次のように補正される。<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p><p><b>プラスの要素</b>
+</p>
+<ul><li><a href="http://crawl.chaosforge.org/Monster_intelligence" data-untr="1" title="Monster intelligence">モンスターの知能</a>: 心を持たないなら +0、動物並みなら +8、人間並みなら +12</li>
+<li><a href="Hit_dice.html" title="Hit dice">HD</a>: HD 1 につき +1</li>
+<li>眠っておらず、うろついているモンスター: +15</li>
+<li>分類が<a href="http://crawl.chaosforge.org/Natural" data-untr="1" class="mw-redirect" title="Natural">生物</a>でないモンスター: +10</li></ul>
+<p><b>マイナスの要素</b>
+</p>
+<ul><li><a href="Ensorcelled_Hibernation.html" title="Ensorcelled Hibernation">魔法の眠り</a>の効果を受けているモンスター: -10</li>
+<li>プレイヤーが<a href="Invisible.html" title="Invisible">透明</a>で、そのモンスターが透明なものを見られない場合: -75</li></ul>
+<p>警戒値が 0 を下回る場合は、0 として扱われる。
+</p><p>あなたが移動や行動をするたびに、あなたの<a href="Line_of_sight.html" title="Line of sight">視界</a>にいるすべてのモンスターが、<code>(Awareness + 1) / (Your Stealth)</code> の確率であなたに気づく。行動にかかる時間の長短は関係ない。隠密値が同じなら、<a href="Naga.html" title="Naga">ナーガ</a>でも<a href="Spriggan.html" title="Spriggan">スプリガン</a>でも、1 回の移動で見つかる確率は同じだ。いったん気づかれると、しばらく相手の視界から外れないかぎり見失ってはもらえない。心を持たない敵は、知能のある敵よりずっと早くあなたを見失う。
+</p>
+<h2><span class="mw-headline" id="History">変更履歴</span></h2>
+<ul><li><a href="http://crawl.chaosforge.org/0.27" data-untr="1" title="0.27">0.27</a> より前は、泳いでも飛んでもいないときは<a href="http://crawl.chaosforge.org/Hooves" data-untr="1" title="Hooves">蹄</a>で隠密が少し下がり、<a href="http://crawl.chaosforge.org/Translucent_Skin" data-untr="1" title="Translucent Skin">半透明な体</a>で上がる隠密も今より少なかった。また、<a href="Felid.html" title="Felid">フェリッド</a>は泳いでも飛んでもいないときに隠密が 20 上がったが、泳いでも飛んでもいないときに<a href="http://crawl.chaosforge.org/Blade_Hands" data-untr="1" class="mw-redirect" title="Blade Hands">刃の手</a>になっていると隠密が 50 下がった。</li></ul>
+<h2><span class="mw-headline" id="References">出典</span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/player.cc#L3063">player.cc:3063</a> (0.30.1)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/player.cc#L3067">player.cc:3067</a> (0.30.1)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/crawl/crawl/blob/0.30.1/crawl-ref/source/shout.cc#L287">shout.cc:287</a> (0.30.1)</span>
+</li>
+</ol></div>
+
+</div>
+</main>
+<footer class="foot"><div class="band">
+  <p>このページは英語版 CrawlWiki(<a href="http://crawl.chaosforge.org/">crawl.chaosforge.org</a>)の記事を日本語に訳したもので、<a href="gfdl.html">GNU Free Documentation License 1.3</a> で公開しています。ゲームの用語は DCSS 日本語版の訳語に合わせました。</p>
+</div></footer>
+</body>
+</html>
