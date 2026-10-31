@@ -282,6 +282,8 @@ footer b{color:var(--dim)}
       <a class="btn btn-sub" href="https://github.com/rmgames0-eng/Toband2-PR10-fork" target="_blank" rel="noopener">TOband 公式サイト</a>
       <a class="btn btn-sub" href="https://crawl.develz.org/" target="_blank" rel="noopener">Dungeon Crawl Stone Soup 公式サイト</a>
       <a class="btn btn-sub" href="https://github.com/higesho/crawl-ja" target="_blank" rel="noopener">Dungeon Crawl Stone Soup 日本語版</a>
+      <a class="btn btn-sub" href="https://www.nethack.org/" target="_blank" rel="noopener">NetHack 公式サイト</a>
+      <a class="btn btn-sub" href="https://github.com/satokiyon/NetHackJP" target="_blank" rel="noopener">NetHackJP</a>
     </div>
     <div class="actions docs">
       <a class="btn btn-doc" href="silq/index.html">Sil-Q スポイラー</a>
@@ -318,6 +320,8 @@ footer b{color:var(--dim)}
       <a class="btn btn-sub" href="https://github.com/rmgames0-eng/Toband2-PR10-fork" target="_blank" rel="noopener">Official TOband site</a>
       <a class="btn btn-sub" href="https://crawl.develz.org/" target="_blank" rel="noopener">Official Dungeon Crawl Stone Soup site</a>
       <a class="btn btn-sub" href="https://github.com/higesho/crawl-ja" target="_blank" rel="noopener">Dungeon Crawl Stone Soup (Japanese edition)</a>
+      <a class="btn btn-sub" href="https://www.nethack.org/" target="_blank" rel="noopener">Official NetHack site</a>
+      <a class="btn btn-sub" href="https://github.com/satokiyon/NetHackJP" target="_blank" rel="noopener">NetHackJP</a>
     </div>
     <div class="actions docs">
       <a class="btn btn-doc" href="silq/en/index.html">Sil-Q spoilers</a>
@@ -431,6 +435,17 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-11-01</p>
+        <ul class="news">
+          <li>NetHack のゲームコアを追加（日本語 / 英語）</li>
+          <li>変愚蛮怒・短愚蛮怒に公式タイルのボクセル表示を追加</li>
+          <li>階段の矢印の表示を追加</li>
+          <li>手前のブロックの透過を半透明に変更</li>
+          <li>Android 版の更新時の処理を改善</li>
+          <li>バグ修正</li>
+        </ul>
+      </div>
       <div class="entry">
         <p class="kicker">2026-10-27</p>
         <ul class="news">
@@ -654,7 +669,7 @@ footer b{color:var(--dim)}
     <div class="unblock">
       <div>
         <p>ダウンロードした ZIP を展開しただけでは、Windows が「他のコンピューターから取得したファイル」と見なして実行を止めることがあります。</p>
-        <p><b>展開する前に</b>、ダウンロードした <code>HengbandHD-win.zip</code> を右クリックして「プロパティ」を開き、全般タブのいちばん下にある<b>セキュリティの「許可する」にチェック</b>を入れて OK を押してから展開してください。中のファイル（<code>HengbandHd2d.exe</code> と、<code>cores</code> フォルダの中のコア 12 本）がまとめて解除されます。</p>
+        <p><b>展開する前に</b>、ダウンロードした <code>HengbandHD-win.zip</code> を右クリックして「プロパティ」を開き、全般タブのいちばん下にある<b>セキュリティの「許可する」にチェック</b>を入れて OK を押してから展開してください。中のファイル（<code>HengbandHd2d.exe</code> と、<code>cores</code> フォルダの中のコア 14 本）がまとめて解除されます。</p>
         <p>すでに展開してしまった場合は、上の手順のあとで展開し直すか、展開したフォルダで PowerShell を開いて <code>Get-ChildItem -Recurse | Unblock-File</code> を実行してください。</p>
       </div>
       <figure class="reveal">
@@ -765,6 +780,17 @@ footer b{color:var(--dim)}
     </div>
 
     <div class="log">
+      <div class="entry">
+        <p class="kicker">2026-11-01</p>
+        <ul class="news">
+          <li>Added the NetHack game core (Japanese / English)</li>
+          <li>Added voxel display of the official tiles to Hengband and Tangband</li>
+          <li>Added stair arrows</li>
+          <li>Changed the see-through effect for blocks in front to translucency</li>
+          <li>Improved updates on Android</li>
+          <li>Bug fixes</li>
+        </ul>
+      </div>
       <div class="entry">
         <p class="kicker">2026-10-27</p>
         <ul class="news">
@@ -982,7 +1008,7 @@ footer b{color:var(--dim)}
     <div class="unblock">
       <div>
         <p>Unzipping the download is not always enough. Windows may decide the files came from another computer and refuse to run them.</p>
-        <p><b>Before extracting</b>, right-click the downloaded <code>HengbandHD-win.zip</code>, open Properties, tick <b>Unblock</b> at the bottom of the General tab, press OK, and then extract it. Everything inside (<code>HengbandHd2d.exe</code> and the twelve cores in the <code>cores</code> folder) is unblocked at once.</p>
+        <p><b>Before extracting</b>, right-click the downloaded <code>HengbandHD-win.zip</code>, open Properties, tick <b>Unblock</b> at the bottom of the General tab, press OK, and then extract it. Everything inside (<code>HengbandHd2d.exe</code> and the fourteen cores in the <code>cores</code> folder) is unblocked at once.</p>
         <p>If you have already extracted it, either do the above and extract again, or open PowerShell in the extracted folder and run <code>Get-ChildItem -Recurse | Unblock-File</code>.</p>
       </div>
       <figure class="reveal">
@@ -1014,7 +1040,7 @@ footer b{color:var(--dim)}
       ゲーム本体・データ・タイルの著作権はそれぞれの権利者に帰属します。
       見え方の違いや不具合は本作の描画側の問題であって、本家に報告すべきものではありません。
     </p>
-    <p>Moria &copy; 1985 Robert Alan Koeneke ／ Umoria &copy; 1989 James E. Wilson ／ Angband・ZAngband・変愚蛮怒・短愚蛮怒・幻想蛮怒・TOband・Sil-Q・FroxComposband・Dungeon Crawl Stone Soup の各作者に感謝します。</p>
+    <p>Moria &copy; 1985 Robert Alan Koeneke ／ Umoria &copy; 1989 James E. Wilson ／ Angband・ZAngband・変愚蛮怒・短愚蛮怒・幻想蛮怒・TOband・Sil-Q・FroxComposband・Dungeon Crawl Stone Soup・NetHack・NetHackJP の各作者に感謝します。NetHack のコアは NetHack General Public License で配布します。</p>
     </div>
     <div class="i18n" lang="en">
     <div class="links">
@@ -1032,7 +1058,7 @@ footer b{color:var(--dim)}
       development team. The game, its data and its tiles belong to their respective authors.
       Anything that looks wrong here is this project&rsquo;s rendering, not something to report upstream.
     </p>
-    <p>Moria &copy; 1985 Robert Alan Koeneke &middot; Umoria &copy; 1989 James E. Wilson &middot; with thanks to the authors of Angband, ZAngband, Hengband, Tangband, Gensoband, TOband, Sil-Q, FroxComposband and Dungeon Crawl Stone Soup.</p>
+    <p>Moria &copy; 1985 Robert Alan Koeneke &middot; Umoria &copy; 1989 James E. Wilson &middot; with thanks to the authors of Angband, ZAngband, Hengband, Tangband, Gensoband, TOband, Sil-Q, FroxComposband, Dungeon Crawl Stone Soup, NetHack and NetHackJP. The NetHack cores are distributed under the NetHack General Public License.</p>
     </div>
   </div>
 </footer>
